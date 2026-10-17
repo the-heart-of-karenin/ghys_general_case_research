@@ -1,0 +1,719 @@
+
+===== PDF PAGE 1 =====
+Paciﬁc
+Journal of
+Mathematics
+THE INV ARIANT CONNECTION OF A 1
+2 -PINCHED ANOSOV
+DIFFEOMORPHISM AND RIGIDITY
+RENATO FERES
+V olume 171 No. 1 November 1995
+
+===== PDF PAGE 2 =====
+PACIFIC JOURNAL OF MATHEMATICS
+Vol. 171 No. 1 1995
+THE INVARIANT CONNECTION OF A f-PINCHED
+ANOSOV DIFFEOMORPHISM AND RIGIDITY
+RENATO FERES
+Let / be a C°° Anosov diffeomorphism of a compact man-
+ifold M, preserving a smooth measure. If / satisfies the |-
+pinching assumption defined below, it must preserve a con-
+tinuous affine connection for which the leaves of the Anosov
+foliations are totally geodesic, geodesically complete, and flat
+(its tangential curvature is defined along individual leaves). If
+this connection, which is the unique /-invariant affine connec-
+tion on M, is Cr-differentiable, r > 2, then / is conjugate via a
+Cr+2-affine diffeomorphism to a hyperbolic automorphism of a
+geodesically complete flat manifold. If / preserves a smooth
+symplectic form, has C3 Anosov foliations, and satisfies the
+2 : 1-nonresonance condition (an assumption that is weaker
+than pinching), then / is C°° conjugate to a hyperbolic au-
+tomorphism of a complete flat manifold. (In the symplectic
+case, the invariant connection is the one previously defined by
+Kanai in the context of geodesic flows.) If the foliations are
+C2 and the holonomy pseudo-groups satisfy a certain growth
+conditipn, the same conclusion holds.
+1. Introduction
+Let M be a compact C°° manifold and / a C°° diffeomorphism of M. The
+diffeomorphism is Anosov if TM decomposes continuously as a direct sum
+TM = E+ 0 E~ of invariant subbundles E+ and E~, so that the following
+estimate applies: For some (in fact, any) Riemannian metric || ||, there exist
+positive constants (7 > 1, e < a < A, such that for all x G M, for all positive
+integers n, and for all υ E E±(x),
+(1) ^ll«||e-n>1<||T/^u||<C||«||e-»-.
+The subbundles E± are the tangent bundles of C° foliations E±, the Anosov
+foliations of /, whose leaves are smooth (if / is smooth.)
+We say that / satisfies the ^-pinching condition if A < 2a.
+In this paper we assume that / leaves invariant a smooth measure λ, which
+implies, in particular, that it is ergodic.
+139
+
+===== PDF PAGE 3 =====
+140 RENATO FERES
+The following theorem is proved in [BL]:
+Theorem 1. Let M be a C°° compact manifold equipped with a C°° affine
+connection. Let f be a topologically transitive Anosov diffeomorphism pre-
+serving the connection and such that the stable and unstable distributions
+E+ and E~ are C°°. Then f is C°° conjugate to a hyperbolic automorphism
+of an infranilmanifold.
+If / satisfies the ^-pinching condition (more generally, if it satisfies the
+non-resonance condition defined below), the conclusion of the above theorem
+holds with the infranilmanifold replaced with a flat one, as can be easily
+verified.
+The main result of the present paper is the following observation:
+Theorem 2. Let M be a C°° compact manifold and f a C°° Anosov
+diffeomorphism that satisfies the ^-pinching assumption. Then f preserves
+a continuous affine connection. This connection is unique among the f-
+invariant affine connections, it is torsion-free and, with respect to it, the
+leaves of the stable and unstable Anosov foliations are totally geodesic, com-
+plete and flat. (The restriction of this connection to the leaves of the stable
+and unstable foliations is differentiate, so it makes sense to define its cur-
+vature tensor there.) If this connection is Cτ-differentiate, r > 2, then f is
+Cr+2 -conjugate to a hyperbolic automorphism of a complete flat manifold.
+In [Kanai], M. Kanai defined an affine connection on the unit tangent
+bundle of a negatively curved Riemannian manifold, invariant under the
+geodesic flow. Essentially the same construction produces an affine connec-
+tion that is invariant under symplectic Anosov diίfeomorphisms (or Anosov
+diffeomorphisms preserving any other nondegenerate bilinear form) with dif-
+ferentiable stable and unstable foliations: one uses the Bott connection to
+define the covariant derivative transversely to the Anosov foliations and the
+duality obtained from the symplectic form to define a covariant derivative
+tangentially (here one uses that the Anosov foliations must be Lagrangian
+foliations). In this symplectic case, CΓ+1 -regularity of the Anosov foliations
+is equivalent to the Cr regularity of the invariant connection. Before stating
+the next theorem, we define a nonresonance condition for / that is implied
+by ^-pinching. Many of the results discussed here require only this weaker
+assumption.
+Definition 3. Let / be a diffeomorphism of a compact manifold M. Define
+for v G TMx\{0} the numbers
+p
+n-»±oo Π
+
+===== PDF PAGE 4 =====
+THE INVARIANT CONNECTION 141
+We say that / satifies the 2 : 1-nonresonance condition if for all x £ M there
+do not exist vectors ^1,^2,^3 G TMx\{0} such that
+Theorem 4. Let M be a C°° compact manifold and f a C°° Anosoυ
+diffeomorphism preserving a C°° symplectic form, whose Anosov foliations
+are C3. Assume moreover that f satifies the 2 : 1-nonresonance condition.
+Then f is C°° conjugate to a hyperbolic automorphism of a complete flat
+manifold.
+It is interesting to note that in [Llave] de la Llave constructed, for every r,
+examples of C°° Anosov diίfeomorphisms on the torus that are Cr conjugate,
+but not Cr+1 conjugate to a linear automorphism of the torus. We note,
+however, that under the assumption that / be symplectic, C1 conjugacy
+implies C°° conjugacy.1
+For systems satisfying the ^-pinching assumption we show that the invari-
+ant connection can be defined without recourse to a symplectic structure. In
+this case it can be shown (as we do later; in fact, avoiding a 2 : 1-resonance,
+rather than ^-pinching, is sufficient for this) that the distributions E+ and
+E" are parallel, so assuming Cr regularity of the connection implies Cr+1-
+regularity of those distributions. For symplectic systems the converse can be
+easily verified. Such is not always the case, however, for nonsymplectic sys-
+tems, due again to de la Llave's examples. In fact, if/ is Ck (but not Cfc+1)
+conjugate to a hyperbolic linear automorphism of a torus, by pulling back
+the Euclidian connection under the conjugating diffeomorphism we obtain a
+Ck~2 invariant connection, which cannot be Ck~x (due to a simple argument
+used in the last section of this paper, which shows that the conjugacy is two
+units more differentiable than the pulled-back connection). But the Anosov
+foliations must be Ck since they are preserved by the conjugacy.
+The conjugacy claimed in Theorem 1 was obtained with the help of a
+general result due to M. Gromov [Gr] concerning transformation groups of
+rigid geometric structures. (An example of such structure is a (differen-
+tiable) affine connection.) Gromov's theorem was used there to show that
+the pseudo-group of local transformations preserving a C°° connection and
+the (C°°) distributions E+ and E~ is a Lie pseudo-group that acts transi-^
+tively on an open dense /-invariant set. The proof of Theorem 2 does not
+rely on Gromov's theorem and uses instead a more direct argument that
+*We thank R. de la Llave for pointing this out.
+
+===== PDF PAGE 5 =====
+142 RENATO FERES
+requires much less differentiability. We show here that the pseudo-group re-
+ferred to above acts transitively on M by proving that the curvature of the
+/-invariant connection is parallel and using classical results on affine locally
+symmetric connections.
+It is conjectured that the conclusion of the previous theorem should still
+hold for systems whose Anosov foliations are only C2 (the connection being
+Cι). The place where we use more regularity is at showing that the invariant
+connection is locally symmetric (there we need to work with the covariant
+derivative of the curvature tensor). If by other means one shows that the
+connection is flat, the same conclusion will hold with the optimal degree of
+smoothness. The next two results illustrate this point.
+By allowing the leaves of the Anosov foliations to spread apart only very
+slowly, as in the definition below, we obtain the theorem that follows next.
+Definition 5. Let T be a C2 foliation of codimension q. Given a differen-
+tiable path 7 : [0,1] -> M in a leaf of T and smooth cross-sections Σo, Σi
+of dimension q transversal to T at 7(0) and 7(1), we may consider the cor-
+responding element of the holonomy pseudogroup of (germs of) transverse
+maps. By making the cross-sections sufficiently small, we may describe this
+element as a C2 diffeomorphism HΊ : Σo -+ Σx. Let || • ||(1) be a C1 norm
+defined on such maps as y £ Σo —> (THΊ)y and assume that
+KJengthif)-' < ||TW7||% < K2length(Ί)δ
+for positive constants Kι,K2,δ that are independent of 7. In this case we
+say that the foliation T spreads more slowly than power lδ.
+Theorem 6. Assume that f is a C°° Anosov diffeomorphism of a compact
+manifold M, whose Anosov foliations are C2 and spread more slowly than
+power 1~^Λ % for some e > 0. Then
+1. // / is 7;-pinched, the f -invariant connection V is flat and f is C3
+conjugate to an automorphism of a complete flat manifold.
+2. // / is symplectic, the Kanai connection is flat and f is C°° conjugate
+to an automorphism of a complete flat manifold.
+It is interesting to note what happens in dimension 2. In this case, it
+is well known that if the Anosov foliations of a volume preserving Anosov
+diffeomorphism of a compact manifold M are C2 differentiate, they are
+automatically C°° and the diffeomorphism is smoothly conjugate to a linear
+automorphism of the 2-torus. (For a precise description of the threshold
+of regularity where rigidity occurs in this case, see [HK]. We also refer to
+that paper for historical and bibliographical information concerning these
+questions.) We give below a geometric proof of this fact.
+
+===== PDF PAGE 6 =====
+THE INVARIANT CONNECTION 143
+Theorem 7. Let f be a C°° volume preserving Anosov diffeomorphism of
+a compact 2-dimensional manifold whose Anosov foliations are C2. Then
+these foliations are C°° and f is smoothly conjugate to a linear hyperbolic
+automorphism of the 2-torus.
+2. Existence of an invariant affine connection
+Our first concern is the question of existence of invariant connections under
+the Anosov diffeomorphism. In this section we show the first part of Theorem
+2:
+Proposition 8. Let M be a C°° compact manifold and f a C°° Anosov
+diffeomorphism. If f avoids a 2 : 1-resonance, it must preserve a unique
+Borel connection on TM. Suppose now the stronger condition that f satisfies
+the \-pinching assumption {in particular, the Anosov distributions E± are
+C1, according to [Ha].) Then f preserves a continuous affine connection.
+With respect to this connection the Anosov distributions E± are parallel; its
+restriction to the leaves of the stable and unstable foliations is differentiate,
+so it makes sense to define its (tangential) curvature tensor. The connection
+is torsion-free and the leaves of the Anosov foliations are totally geadesic,
+complete and flat.
+We begin with a few basic comments about invariant connnections.
+Let p : F -» M be a Cr vector bundle over M. Let Jx (F) denote the vector
+bundle over M consisting of first jets of germs of differentiate sections of
+F. The following short sequence of vector bundles is exact ([KS]):
+A connection on F can be described as a splitting of this exact sequence:
+σ : F -» Ji (F), πoσ = Id/?. Such splitting defines a covariant derivative map
+V : ΓX(F) -> Γ°(T*M ® F), where Γr(F) denotes the space of Cr-sections
+of F, as follows: For X e Tι(F), and denoting jxX G Γ^J^F)) the first jet
+of X, set: VX = (Id -σ o π)jλX.
+We now assume that (/, /) is a Cr automorphism of p : F —> M (so that
+p o / = / op), from which we obtain automorphisms of Jλ(F) and T*M <&F
+as follows: For jλX(x) e Ji(f%, f jiX(x) = ji(fX o /"^(/(z)) and for
+a ® X e T*MX ® Fx, f{a ® X) = fa ® fX, where fa = ao Tf'1\TMHxy
+With these definitions, the diagram
+
+===== PDF PAGE 7 =====
+144 RENATO FERES
+commutes.
+An /-invariant Cr-connection V : Γr+1(F) -> Yr(T*M ® F) can be de-
+scribed as a Cr-splitting σ of the last diagram, for which σof\F = /| JX(F) oσ.
+Equivalently, it can be described as an /-equivariant Cr subbundle in Ji(-F),
+complementary to i(T*M ® F).
+Let p : E —» M be a smooth vector bundle over M and (/, /) a bundle
+automorphism, so that f o p = p o f. In the following theorem (adapted
+from [Margulis, Mane, Wa]) B denotes the σ-algebra of Borel subsets of
+M and M(M,f) the set of all /-invariant probability measures on /?, for a
+diffeomorphism / of M.
+Theorem 9 (Multiplicative ergodic theorem). Let E -» M be a smooth,
+real vector bundle of rank q over a compact manifold M and (/, /) a bundle
+automorphism. Then there exist:
+1. a set Ae B such that μ(A) = 1 for all μ G M(M, f) and /(A) = A,
+2. measurable, f -invariant functions s : A —> {1, , q}, χι : A —> K (1 <
+i < s) satisfying χx < < χs, and
+3. a measurable, f-invariant decomposition E\\ = Eγ φ θ Es (the
+Oseledec decomposition for j) such that for all v G Ei(x)\{0},
+exists and the convergence is uniform over the vectors of unit norm in
+Edx).
+For all x e A and all υ G E(x)\{0}, the limits
+χ+(f,υ)d^ lim -log||/»ϋ||, χ~(/» d= lim - log ||/"«||
+n>+oo γι n—too γι
+also exist. χ+(/, v) > χ~(/,υ) and we have χ+(/, v) — χ~(f,v) if and only
+ifυe Ei(x)\{0} for some i.
+If L is a smooth, f-invariant (vector) subbundle of E with projection π :
+E —» F = E/L, let F = Fλ φ © Fs> be the decomposition of F associated
+with characteristic exponents χ\ < < χ's, (s' and χ'j being measurable
+functions on A). Then, for each j (1 < j < s') there is i(j), 1 < i(j) < s,
+such that χ'j — χ^j) and Fj = π(Ei^) on A. Moreover L\\ = φsi=ι(LΠEi).
+Definition 10. We will refer to A = Λ# as the set of regular points of (/, /).
+The measurable decomposition E = 0 E{ is the Oseledec decomposition of
+E and χ; are the Lyapunov exponents.
+
+===== PDF PAGE 8 =====
+THE INVARIANT CONNECTION 145
+Lemma 11. Let E -» M and (/,/) be as above and consider the vector
+bundle
+F = E* ® ® E\ ® JE ® • - ® E.
+TΛen F Λαs α measurable, f-invariant decomposition F = φ7 jEj^, where
+I = (ii, Λ), «/= (JIΓ jjβ
+so that for every f -invariant Borel probability measure μ, μ-a.e. x G M,
+and v e JB/
+Proof. We first show that the Lyapunov exponents on the dual bundle E*
+are the negative of those on E. Denoting by ( , •) the pairing between E*
+and Ei, we have: for any 0 Φ η* G E*(x) there exists 77 G JE?»(X) such that
+(τ/ ,τ/) φO and
+0 < const. = \(η\η)\ = \(fnη*Jnη)\ < ||/V!I WFvl
+Therefore, for n > 0,
+-ln||/Vll > --ln||/n??|| + -const.
+Let a: G AE Π Λβ*, where ΛF is the set of regular points defined in the
+previous theorem. For such points we may take limits and conclude:
+lim ±ln|l/VI! >-*(*)•
+Similarly,
+lim In-> —oo γι
+It now follows from Theorem 9 (3) that
+In a similar way, one shows that given vι G Fi(x)\{0}, i = 1,2, where
+Fj is a tensor product of subbundles chosen among the Ej and E*, and
+assuming that linv+ioo Mn ||/n^i|| = u^ then for w = V\ ® υ2 we have
+^ In ||/n^|| = ^i + i^ The claim now follows. D
+
+===== PDF PAGE 9 =====
+146 RENATO FERES
+Denote by π/j : F -> EJJ the natural (measurable) /-invariant projec-
+tions. It follows from the above remark that:
+Lemma 12. Ifτ is f-invariant and πi,jτ φ 0 on a set of positive μ-measure
+for an f -invariant Borel probability measure μ, then for μ-almost every x in
+that set,
+-Xn (x) Xir ix) + Xh (x) + '"+ Xis (x) = 0.
+Proof. Let Ω denote the /-invariant set of positive measure consisting of
+regular points at which τx φ 0. Then for every e > 0, there exists a set
+Ωe C Ω and a constant L > 1 such that μ(Ω\Ωe) < e and ||τa.|| < L for
+all x G Ω€. On the other hand, according to Poincare's recurrence theorem,
+for a.e. x E Ωe we can find a biinfinite sequence {nf : i E Z} such that
+fnt (x) E Ω€. For any x with this property, let ξ — vι ® ®vr ®aχ ® Θas
+be in EJJ(X) so that {τx,ξ) φ 0. Since τ is /-invariant, we have:
+0< \{τx,vλ ®-- ®as)\ = \(f nirrι(xhVι ® ®αβ>|
+<Lf[\\Γvp\\f[\\raq\\.p=l q=l
+After taking In, dividing by rii and passing to the limit as i —> oo and
+z -> — oo, the claim follows. D
+Lemma 13. /// is a diffeomorphism of a compact manifold M preserving
+a Borel connection V and such that it avoids a 2 : 1-resonance, then V is
+the unique f -invariant affine connection on TM and its torsion vanishes
+identically. If f is Anosov with C1 distributions £?±; then E+ and E~ are
+parallel.
+Proof. If V' is another /-invariant continuous connection, V — V is an /-
+invariant tensor field. If it is not zero, it produces 2 : 1-resonance as in-
+dicated in Lemma 12. More generally, if r is an /-invariant measurable
+tensor field of type (r, s) for r + s — 3, then if r φ 0 it would produce a
+2 : 1-resonance, contradicting the assumption. Other tensors of this type
+are the torsion of V and the covariant derivatives of the (C1) projections
+Π^3 : TM -> E±. Therefore V is torsion-free and the Anosov subbundles
+E± are parallel. D
+By the uniqueness property obtained in the previous lemma, the covariant
+derivative of vector fields tangent to one Anosov foliation along a vector
+
+===== PDF PAGE 10 =====
+THE INVARIANT CONNECTION 147
+tangent to the complementary foliation can be characterized as follows: If
+X e Γ^E^.Y E Γ1^), VXY = U*[X,Y] (the Bott connection for the
+foliations f*).
+Before we establish the existence of the invariant connection for a general
+|-pinched Anosov diffeomorphism, we recall for later use how the connec-
+tion can be defined in the presence of an invariant symplectic form ω. The
+construction is due to Kanai. Define the involution a : E+ φ E~ —>> E+ © E~~
+given by t>+ + υ~ —>• v+ — υ~. Then the bilinear form g(- , •) = ω(- , a •)
+is symmetric and nondegenerate. In general g is only continuous, but it
+is clearly differentiate if the subbundles E± are differentiate. If such is
+the case, one obtains the continuous Levi-Civita connection associated to
+this pseudo-Riemannian C1 metric. That the connection defined in this way
+agrees with the previously constructed one is a consequence of the uniqueness
+property established in Lemma 13.
+Definition 14. We refer to the invariant symplectic connection defined
+above as the Kanai connection. It is immediate from the definition that the
+connection is Cr if and only if the foliations are Cr+1.
+Lemma 15. Let f be a ^-pinched Anosov diffeomorphism of a compact
+manifold. Then f preserves a continuous affine connection V. The leaves of
+the stable and unstable foliations S~ and £+ are totally geodesic with respect
+to V and the restriction of V to individual leaves is differentiate.
+Proof. Let V^ be a smooth affine connection on M. Define VXY =
+Π+V^Π+F + irV^Π-F, a C°-connection. Note that the restriction of
+V' to the leaves of S+ and E~ is C1. Define Θ(n) = V'r - V;, a C° sec-
+tion of T*M ® T*M ® TM, neZ. Here, we denote VlfxY = f~ιVf.xf*Y.
+Note that the component of θ(n) in E±* ® E±if ® E±, which we denote
+Θ±(n), is differentiate along leaves of S±. θ satisfies the cocycle property:
+θ(n + l) = θ(l) + / θ(n), where/ Θ = /-1Θ(Λ ,Λ ) We have: θ(0) = 0,
+θ(-l) = -f-1 θ(l), θ(n) = ΣΓ=o fι' θ(l).
+To obtain a C° connection preserved under /, we need to verify that
+the cohomology class represented by θ, over the Z-action defined by /, is
+trivial; i.e., there exists a continuous section Φ of T*M ® T*M ® TM such
+that θ(l) = Φ-/ Φ;in that case V = V + Φ will be preserved under /.
+Also note that it suffices to solve for Φ± in θ±(l) = Φ* - / Φ*, where Φ^1
+is now a C° section of E±* ® E±* ® E±. In fact, if V(+) and V(~} define
+continuous families of connections on the leaves of £+ and £~, we obtain
+a connection on TM as follows: For C1 vector fields X and F, with (C1)
+decomposition X = X+ + X~ and 7 = y+-f7",
+
+===== PDF PAGE 11 =====
+148 RENATO FERES
+If a solution to Φ* = Θ±(l) + / Φ* exists, it must satisfy
+Φ± = Θ±(l) + / Θ±(l) + • + Γ"1 θ±(l) + fn Φ±
+Φ± = θ±(-l) + f'1 - Θ±(-l) + -- + /"n+1 θ±(-l) + f~n
+We are thus led to define Φ" = ΣZof+i ' Θ"(!) (respectively, Φ+ =
+ΣSo f~ι ' θ+(l)) To see that this series actually defines a continuous sec-
+tion Φ~, we set η = Θ~(l) (a similar discussion will apply to Φ+) and note
+that for any vectors X, Y in E~(x),
+\\Γ.ηx{X,Y)\\ =
+<c'enA\\τf:x\\ \\τf;γ\\
+<C"e-n{2a-A)\\X\\ \\Y\\.
+Therefore we are justified in writing the uniformly convergent series defined
+above. Note that each term fι ηoί this series is differentiate along the
+leaves of E~. We show next that the series consisting of derivatives of /* η
+also converges uniformly.
+By considering a sufficiently high power of / rather than / itself, we may
+assume instead of (1) that for any α', A1 for which 0<a'<a<A<A',
+(1) \\v\\e-«A' < \\Tf^v\\ < \\v\\e-™\ v e E*(x).
+(Note that if V is preserved by /*, then V = £ ΣiJoί/*)*^ is preserved by
+/. If A < 2α, a' and A' can be chosen so that A' < 2a'. Therefore, there is
+no loss in generality to assume, as we do from now on, that C= 1, in (1).)
+Let U C ε~{x) be an open neighborhood of x1 in 8~(x). Consider the
+neighborhoods ZY, /(W), , fs(U), , where fs(U) is a neighborhood of
+fs(xf) in ε~(fs(x)). We may assume that each open set fs{U) is contained
+in a coordinate neighborhood (note that their diameters are decreasing).
+Denote the coordinate vector fields: e^ = ^f-|/*(w) We write Tf^e^ =
+A\f(x)e(js+n\ where A\? are functions defined on IJ^o /*(W). Let A{j =
+$. Then the following relations are satisfied:
+A^(x) = A(x)A(f(x))- -A(r~1(x))
+and e~A < \\A(x)\\ < e~a, e° < ^(-^(a;)! < eA for all x. Also set
+
+===== PDF PAGE 12 =====
+THE INVARIANT CONNECTION 149
+so that
+r,s,k
+A simple computation shows:
+(2)
+We also have:
+dx, H <κie-na.
+adx,
+Aof
+d
+ButΣΓ=iΊ|Λ(ί>)H^
+(3)
+Also:
+< Σ7=oe-pa < «>, so
+I—\dxu
+< K2e~na.
+dx,,
+d
+dxu
+(A(~ι) o fn • • • A('1} o /)
+d
+p=l
+So
+(4)
+It follows from (3), (4) and (5) that
+d .„
+dxu
+< Const. e~n{2a-A\
+
+===== PDF PAGE 13 =====
+150 RENATO FERES
+which establishes the claim. •
+Once the restriction of V to individual leaves of £± is differentiate, we
+may consider its curvature. Using Lemma 12 we conclude that this (tangen-
+tial) curvature tensor vanishes.
+To show that V is complete along the leaves of the stable and unstable
+foliations, one just has to note the following. Since M is compact, there
+exists an open set U C TM containing all vectors υ of norm ||i>|| < α, for
+some positive constant α, where the exponential map of V is defined. But
+as the connection is /-invariant, it follows that U contains the stable and
+unstable subbundles. With this, the proof of Proposition 8 is complete.
+If V is C^differentiable, the foliations £+ and £~ are of class C2, and
+it makes sense to ask whether V is projectable transversely to these folia-
+tions. If such is the case, it would follow immediately that V is flat and the
+main theorem would hold under the optimal regularity assumption on the
+connection. The question of projectability of V can be related to growth
+properties of the holonomy pseudogroup of the Anosov foliations. We make
+that precise below.
+Lemma 16. Assume that f : M —» M is an Anosov diffeomorphism with
+A < 2a, whose Anosov foliations spread more slowly than power l~^ e for
+some e > 0. Then the f -invariant connection V is projectable tranversely to
+the Anosov foliations. In particular, the curvature tensor of V vanishes.
+Proof. Given a path 7 as in the above definition, define aΊ — VΉΊ — V. Then
+Tfnay = αΛθ7(Γ/n , Tfn ).
+Assume the connection is not projectable transversely to the stable foliation.
+Then there are vectors X and Y such that aΊ(X,Y) -φ 0. It follows that
+e-"A\\aΊ(X,Y)\\<\\Tra,(X,Y)\\
+= \\af^(TrX,TfnY)\\
+< \\afnoy\\ \\TfnX\\ \\TfnY\\
+Therefore
+(5)
+On the other hand
+The contradiction establishes that aΊ should vanish. D
+
+===== PDF PAGE 14 =====
+THE INVARIANT CONNECTION 151
+3. Establishing that V is locally symmetric
+In this section we show:
+Proposition 17. Let f be a C°° Anosov diffeomorphism of a compact
+manifold M that preserves a Cr affine connection V, r > 2. Assume that f
+avoids 2 : 1-resonances. Denoting by M the universal cover of M and £/ the
+Anosov distributions pulled-back to M, then the group G of diffeomorphisms
+of M that preserve E+ and E~ is a Lie group which acts transitively on M
+and the action is Cr.
+The conclusion of the above proposition is the starting point of [BL],
+where Theorem 1 is proved. Since we are assuming the nonresonance condi-
+tion, the infranilmanifods obtained in that theorem can only be flat. There-
+fore, once we establish the proposition, it will follow from [BL]:
+Proposition 18. Assume the same conditions of Proposition 17. Then f is
+conjugate via an affine Cr diffeomorphism to a hyperbolic automorphism of
+a complete flat manifold.
+We proceed as follows: In this section we show that under the condi-
+tions of the proposition, Vi? = 0. It then follows from classical results in
+differential geometry [KN] that the peudogroup of local affine diffeomor-
+phisms preserving E± is a Lie pseudogroup that acts transitively on M.
+Due to [BFL, Lemma 3.4.4] (see also [FK, Proposition 3]), the invariant
+connection is complete. Therefore the local affine diffeomorphisms induce
+diffeomorphisms of M, establishing the proposition.
+Lemma 19. Assume τ is a f -invariant C1 tensor field and V an f-
+invariant affine connection where f is an Anosov diffeomorphism that avoids
+2 : 1-resonances and has C1-differentiate Anosov foliations. Also assume
+that f leaves invariant a smooth measure λ. Then Vr = 0.
+Proof. Without loss of generality we assume that
+r e Γ^E61* 0 0 E€r* 0 Eδl 0 0 E6').
+Assume Vr φ 0 . Then, by ergodicity, there exists a set of full measure A
+where Vr φ 0 and r φθ. For every point in A we can find
+vι 0 0 υr 0 αi 0 0 as e E\l*{x) 0 0 E£*(x) 0 E]\ (X) 0 0 E]\ (X)
+and vo E E^(x) such that (V^r,^ 0 0 as) φ 0. It follows from Lemma
+12 that
+(1) eoχio(x) + '" + erχir(x) - δλχh(x) δsχjs(x) = 0.
+
+===== PDF PAGE 15 =====
+152 RENATO FERES
+Let ϋi, , άs be C1 extensions of vλ, , as such that ίJ^ E i?eΐ, , ά3 E
+Eδj*. We can write:
+-(r, Vvot5i ® ® a.) (r, υλ ® ® Vvoάs).
+We claim that (r, VυoVι ® ® αs), , (r, Ϊ I ® ® Vυoάs) vanish. Suppose
+that is not so, say:
+(r, vi ® ® VVQvk Θ - - ® as) Φ 0.
+It follows, again by Lemma 12,
+^oXio 0*0 + +erXir (a:) - ίiXji (a;)
+*.Xi. (a?) ~ eoXi0 (a?) - ^Xifc Or) + ekχ'(x) = 0.
+Together with the previous equation (7) it yields
+Similarly, if
+(r, vi ® • ® Vυoάk ® ® as) φ 0.
+We obtain
+Therefore, due to the nonresonance condition,
+(Vυoτ, vi ® ® αβ) = vo(τ, ϋι ® ® άs)
+at a; for almost every x e M and arbitrary extensions of v1? , as.
+Let p : N = E€l* ® ® £7^ ->• R be the C1 function defined by pairing
+with r. Locally, iV ~ M x V where V is a vector space and p : M xV -^R
+is linear in the second argument. If X G TN^X^ = TMX ®TVξ we can write
+X = vo + η. Let X = j^oC ° 7 where Y(0) = v0 and | = ϋλ ® ® άs.
+Note that X projects onto v0. We have
+TpiXtξ)(ϋ0
+But at x, p(x, •) 7^ 0. Therefore there exists η eV such that
+77) = 0. This contradicts (Vυoτ, vx ® ® a8) φ 0. Therefore the lemma.
+D
+
+===== PDF PAGE 16 =====
+THE INVARIANT CONNECTION 153
+4. Bootstrap of regularity in the symplectic case
+In this section we show the following:
+Proposition 20. Let f be a C°° Anosov diffeomorphism of a compact
+C°° manifold M. Suppose that f leaves invariant a flat torsion-free Cr
+connection V (r > 1). Also assume that the tangent distribution to the
+Anosov foliations are differentiate and parallel with respect to V. Then these
+distributions are Cr+2. If f is a symplectic Anosov diffeomorphism with C2
+foliations and the Kanai connection V is flat, then the Anosov foliations and
+the connection are C°°.
+Proof. Let M be a C°° manifold equipped with a Cr affine connection V,
+r > 1. Assume that V is symmetric and flat, that is its curvature and torsion
+tensors vanish identically. For each x £ M and any basis a = {eu , en} of
+TMX consider the local parallel fields Xx, , Xn that agree with ex, , en
+at #. In a C°° coordinate system we may write X{ = ]Γ^ ai3;g~. The equation
+describing parallel transport is a system of ordinary differential equations
+with Cr coefficients given by the Christoffel symbols. By the theorem on
+Cr dependence of solutions of O.D.E.s on parameters, X{ are Cr. In fact,
+as VXi = 0, the coefficients ai3- of X{ should satisfy dkai3 = — Σ/ an^iι f°Γ
+all k,i,j. Since the right hand side is Cr, the functions ai3 must be Cr+1,
+so that the vector fields are CΓ+1. As V is symmetric (T = 0), these vector
+fields commute, and so do their local flows φf1, , φ*n. For x G M, define
+Φ(ί i,
+for tu , tn sufficiently small. Φ defines a local Cr+1 affine diffeomorphism
+between an open set VcRn containing 0 (W1 is equipped with the Euclidian
+affine structure) and an open set U C M such that Φ(0) = x.
+We claim that Φ (which is the exponential map of V at x) is Cr+2. To
+see that, consider the locally defined pulled-back connection Vφ on V. With
+respect to the (normal) coordinate vector fields τ~, , ^-, the Christoffel
+symbols of Vφ vanish, so that
+Denoting by Φj, Φ^ the partial derivatives of the Zth component of Φ, it
+follows:
+k,r
+The right hand side of this equation is Cr, so that Φ is Cr+2.
+
+===== PDF PAGE 17 =====
+154 RENATO FERES
+If E+ and E~ are two complementary subbundles parallel under V, then
+by choosing the basis {βi, ,en} at x so that {eu - ,ek] spans E+{x)
+and {eΛ+1, ,en} spans E~(x), we obtain that E+ and J5~ are locally
+the tangent bundles of coordinate planes associated to the Cr+2 normal
+coordinates defined before. Therefore the foliations 6+ and S~ that integrate
+E+ and E- are Cr+2.
+If V is the Kanai connection associated to a symplectic Anosov diffeomor-
+phism, having Cr+2 Anosov foliations implies that the connection is Cr+1.
+Note that we started with a Cr connection and concluded that it is Cr+1.
+Since r was arbitrary, this yields that V is C°°. Since E± are parallel, it
+also follows that the distributions are C°°. Therefore, the conjugacy is also
+smooth. D
+Theorems 2 and 4 follow now from Propositions 20, 18 and 8. Theorem 6
+follows from Lemma 16 and Proposition 20.
+Proof of Theorem 7. Under that regularity assumption, the curvature tensor
+R of the invariant connection V is continuous (in fact, to carry out this
+proof it seems to be sufficient that the curvature be measurable. Such is
+the case if the foliations have measurable transversal second derivative). On
+the other hand, we can write R — hω ® /, where ω is the invariant volume
+form and h is a continuous /-invariant function. But / is ergodic, so h is
+constant and R must coincide with a constant multiple of the volume form.
+Therefore R is smooth and we can consider its covariant derivative VR. It
+follows from Lemma 12 that such tensor vanishes, so that by classifying the
+possible homogeneous structures that arise (as done in [FK]) one obtains
+that R = 0. The result now follows from Proposition 20. D
+References
+[BFL] Y. Benoist, P. Foulon and F. Labourie, Flots d}Anosov a distribuitions stables et
+instables differentiates, Preprint.
+[BL] Y. Benoist and F. Labourie, Sur les diffeomorphismes d'Anosoυ affines a feuilletages
+stable et instable differentiables. Preprint.
+[FK] L. Flaminio and A. Katok, Rigidity of symplectic Anosov diffeomorphisms on low
+dimendional tori, Ergod. Th. & Dynam. Sys., 11 (1991), 427-440.
+[Gr] M. Gromov, Rigid transformation groups, in Geometrie differentielle, Travaux en
+cours, 33, Hermann, Paris 1988.
+[Ha] B. Hasselblatt, Regularity of the Anosov splitting and of horospheric foliations,
+preprint.
+[HK] S. Hurder and A. Katok. Differentiability, rigidity and Godbillon-Vey classes for
+Anosov flows, Publications Mathematiques, IHES, 72, 1990.
+
+===== PDF PAGE 18 =====
+THE INVARIANT CONNECTION 155
+[HPS] M.W. Hirsch, C.C. Pugh and M. Shub, Invariant manifolds Springer LNM,1977.
+[Kanai] M. Kanai, Geodesic flows of negatively curved manifolds with smooth stable and
+unstable foliations, Ergod. Th. & Dynam. Sys., 8 (1988), 215-240.
+[KN] S. Kobayashi and K. Nomizu, Foundations of Differential Geometry, Volume I, John
+Wiley & Sons, 1963.
+[KS] A. Kumpera and D. Spencer, Lie Equations - Volume I: General Theory, Princeton
+University Press, 1972.
+[Llave] R. de la Llave, Smooth conjugacy and S-R-B measures for uniformly and non-
+uniformly hyperbolic systems, preprint of the Institut des Hautes Etudes Scien-
+tifiques, April 1991.
+[Mane] R. Mane, Ergodic theory and differentiate dynamics, Springer-Verlag, 1987.
+[argulis] G.A. Margulis, Discrete subgroups of semisimple Lie groups, Springer-Verlag, 1991.
+Mather] J. Mather, Characterization of Anosov diffeomorphisms, Indagationes Math.,
+30 (1968), 479-483.
+[Wa] P. Walters, An introduction to ergodic theory, Springer-Verlag, 1982.
+Received February 25, 1993.
+WASHINGTON UNIVERSITY
+ST. LOUIS, MO 63130
+E-MAIL: FERES@MATH.WUSTL.EDU
+
+===== PDF PAGE 19 =====
+
+
+===== PDF PAGE 20 =====
+PACIFIC JOURNAL OF MATHEMATICS
+Founded by E. F. Beckenbach (1906-1982) and F. Wolf (1904-1989)
+EDITORS
+Sun-Yung Alice Chang (Managing Editor)
+University of California,
+Los Angeles, CA 90095-1555
+pacific@math.ucla.edu
+F. Michael Christ
+University of California
+Los Angeles, CA 90095-1555
+christ@math.ucla.edu
+Thomas Enright
+University of California
+San Diego, La Jolla, CA 92093
+tenright@ucsd.edu
+Nicholas Ercolani
+University of Arizona
+Tucson, AZ 85721
+ercolani@math.arizona.edu
+Robert Finn
+Stanford University
+Stanford, CA 94305
+finn@gauss.stanford.edu
+Vaughan F. R. Jones
+University of California
+Berkeley, CA 94720
+vfr@math.berkeley.edu
+Steven Kerckhoff
+Stanford University
+Stanford, CA 94305
+spk@gauss.stanford.edu
+SUPPORTING INSTITUTIONS
+Martin Scharlemann
+University of California
+Santa Barbara, CA 93106
+mgscharl@math.ucsb.edu
+Gang Tian
+Courant Institute
+New York University
+New York, NY 10012-1100
+tiang@taotao.cims.nyu.edu
+V. S. Varadarajan
+University of California
+Los Angeles, CA 90095-1555
+vsv@math.ucla.edu
+UNIVERSITY OF MONTANA
+UNIVERSITY OF NEVADA, RENO
+UNIVERSITY OF OREGON
+UNIVERSITY OF SOUTHERN CALIFORNIA
+UNIVERSITY OF UTAH
+UNIVERSITY OF WASHINGTON
+WASHINGTON STATE UNIVERSITY
+CALIFORNIA INSTITUTE OF TECHNOLOGY
+NEW MEXICO STATE UNIVERSITY
+OREGON STATE UNIVERSITY
+STANFORD UNIVERSITY
+UNIVERSITY OF ARIZONA
+UNIVERSITY OF BRITISH COLUMBIA
+UNIVERSITY OF CALIFORNIA
+UNIVERSITY OF HAWAII
+The supporting Institutions listed above contribute to the cost of publication of this Journal, but they are not owners
+or publishers and have no responsibility for its contents or policies.
+Manuscripts must be prepared in accordance with the instructions provided on the inside back cover.
+The Pacific Journal of Mathematics (ISSN 0030-8730) is published monthly except for July and August. Regular sub-
+scription rate: $215.00 a year (10 issues). Special rate: $108.00 a year to individual members of supporting institutions.
+Subscriptions, orders for back issues published within the last three years, and changes of subscribers address should be
+sent to Pacific Journal of Mathematics, P.O. Box 4163, Berkeley, CA 94704-0163, U.S.A. Prior back issues are obtainable
+from Kraus Periodicals Co., Route 100, Millwood, NY 10546.
+The Pacific Journal of Mathematics at the University of California, c/o Department of Mathematics, 981 Evans Hall,
+Berkeley, CA 94720 (ISSN 0030-8730) is published monthly except for July and August. Second-class postage paid
+at Berkeley, CA 94704, and additional mailing offices. POSTMASTER: send address changes to Pacific Journal of
+Mathematics, P.O. Box 6143, Berkeley, CA 94704-0163.
+PUBLISHED BY PACIFIC JOURNAL OF MATHEMATICS at University of California,
+Berkeley, CA 94720, A NON-PROFIT CORPORATION
+This publication was typeset using A MS-LATEX,
+the American Mathematical Society's TEX macro system.
+Copyright © 1995 by Pacific Journal of Mathematics
+
+===== PDF PAGE 21 =====
+PACIFIC JOURNAL OF MATHEMATICS
+V olume 171 No. 1 November 1995
+1 Generalized ﬁxed-point algebras of certain actions on crossed products
+BEATRIZ ABADIE
+23 Partitions, vertex operator constructions and multi-component KP
+equations
+MAARTEN BERGVELT and A. P. E. TEN KROODE
+89 Holomorphy tests based on Cauchy’s integral formula
+CARMEN CASCANTE and DANIEL PASCUAS
+117 The Euler characteristic of a nonpositively curved, piecewise Euclidean
+manifold
+RUTH CHARNEY and MICHAEL WALTER DAVIS
+139 The invariant connection of a1
+2-pinched Anosov diffeomorphism and
+rigidity
+RENATO FERES
+157 The inverse Riemann mapping theorem for relative circle domains
+ZHENG -X U HE and ODED SCHRAMM
+167 Multipliers and Bourgain algebras ofH ∞ + C on the polydisk
+KEI JI IZUCHI and YASOU MATSUGU
+209 Irreducible bimodules associated with crossed product algebras. II
+TSUYOSHI KAJIWARA and SHIGERU YAMAGAMI
+231 Elliptic ﬁbrations on quarticK 3 surfaces with large Picard numbers
+MASATO KUWATA
+245 Automatic continuity for weakly decomposable operators
+RIDGLEY LANGE , SHENG -WANG WANG and YONG ZHONG
+261 Crosscap number of a knot
+HITOSHI MURAKAMI and AKIRA YASUHARA
+275 Symmetric minimal surfaces inR3
+YOUYU XU
+Paciﬁc Journal of Mathematics1995V ol. 171, No. 1

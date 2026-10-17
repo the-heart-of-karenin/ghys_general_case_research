@@ -1,0 +1,1219 @@
+
+===== PDF PAGE 1 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS
+BORIS KALININ1 AND VICTORIA SADOVSKAYA2
+Abstract.We consider a perturbationfof a hyperbolic toral automorphismL.
+We study rigidity related to exceptional properties of the strong and weak stable
+foliations forf. If the strong foliation is mapped to the linear one by the conjugacyh
+betweenfandL, we obtain smoothness ofhalong the weak foliation and regularity
+of the joint foliation of the strong and unstable foliations. We also establish a similar
+global result. If the weak foliation is sufficiently regular, we obtain smoothness of the
+conjugacy along the strong foliation and regularity of the joint foliation of the weak
+and unstable foliations. If both conditions hold then we get smoothness ofhalong
+the stable foliation. We also deduce a rigidity result for the symplectic case. The
+main theorems are obtained in a unified way using our new result on relation between
+holonomes and normal forms.
+1.Introduction
+In this paper we consider a perturbationfof a hyperbolic toral automorphismL. We
+study rigidity related to exceptional properties of the strong and weak stable foliations
+forf. We recall that an automorphismLofT d is hyperbolic if the matrix has no
+eigenvalues on modulus 1. We denote its stable and unstable subspaces byE s andE u.
+Letfbe aC ∞ diffeomorphism ofT d which isC 1 close toL. Thenfis an Anosov
+diffeomorphism, i.e., the tangent bundle ofT d splits into aDf-invariant direct sum of
+the stable and unstable subbundlesE s andE u, where
+∥Df| E s∥<1 and∥Df −1|E u∥<1
+for some Riemannian metric. Also,fis conjugate toLby a homeomorphismh, i.e.,
+h◦f=L◦h.
+The conjugacy close to the identity is unique, and it is bi-H¨ older but usually notC 1.
+Any two conjugacies differ by an affine automorphism ofT d commuting withL, and
+hence they have the same regularity.
+We denote the stable and unstable foliations forLbyW s andW u, and forfbyW s
+andW u. The foliationsW s andW u have uniformlyC ∞ leaves, but they are not even
+Date: September 19, 2025.
+Key words:Anosov diffeomorphism, conjugacy, strong and weak foliations, joint integrability, normal
+forms.
+1 Supported in part by Simons Foundation grant 855238.
+2 Supported in part by Simons Foundation grant MP-TSM-00002874.
+1
+arXiv:2509.13986v2  [math.DS]  18 Sep 2025
+
+===== PDF PAGE 2 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 2
+C 1 foliations in general. A foliation isC r if it hasC r local foliation charts. We say that
+the leaves are uniformlyC r if locally they can beC r embedded with the embeddings
+varying continuously in theC r topology. For a foliationWwith uniformlyC r leaves,
+we say that a function onT d is uniformlyC r alongWif locally its restrictions to the
+leaves areC r and vary continuously in theC r topology, see Section 4 for more details
+and nonintegerr.
+We recall that the Lyapunov space for an exponentχofLis the sum of generalized
+eigenspaces of all eigenvalues ofLwith moduluse χ. IfLhas more than one stable
+Lyapunov exponent, one can take a dominated splittingE s =E ss ⊕E ws into strong
+and weak parts by combining one or more Lyapunov spaces into each part. Sincef
+isC 1 close toL, its stable subbundle also has the corresponding dominated splitting
+C 0-close to that ofL:
+(1.1)E s =E ss ⊕ E ws.
+The bundleE ss is integrable to the strong foliationW ss, which has uniformlyC ∞
+leaves and is aC ∞ subfoliation of the leaves ofW s. The bundleE ws is also integrable
+to the weak foliationW ws , but in general even the leaves ofW ws are only uniformly
+C 1+H¨ older. We always haveh(W s) =W s andh(W ws) =W ws by [G08], but usually not
+h(W ss) =W ss. Our main goal is to explore what rigidity properties follow if assume
+thath(W ss) =W ss or thatW ws is sufficiently regular.
+Lethbe the conjugacy betweenLandfclose to the identity. Then it can be written
+ash(x) =x+ ∆(x), where ∆ :T d →R d. We will consider the components ∆ ∗ of ∆,
+where∗=u, s, ss, ws, with respect to the splittings
+Rd =E u ⊕E s =E u ⊕E ss ⊕E ws.
+We will also writeh ∗(x) =x ∗ + ∆∗(x), which can be defined globally for the lift ofh
+to the universal coverR d, or locally onT d. Thus the regularity ofh ∗ is well-defined.
+First we consider the rigidity of a strong foliation.
+Theorem 1.1(Rigidity of a strong foliation).LetLbe a hyperbolic automorphism of
+Td with dense leaves ofW ss. Letfbe aC ∞ diffeomorphism sufficientlyC 1 close toL,
+and lethbe a topological conjugacy betweenfandL. Then for the statements below
+we have
+(1)⇐ ⇒(2)⇐ ⇒(3) =⇒(5) =⇒(4).
+Moreover, if the leaves of each of the Lyapunov subfoliations ofW ws are dense inT d,
+then the five statements are equivalent.
+(1)h(W ss) =W ss,
+(2)W u andW ss are jointly integrable to a foliationW u+ss,
+(3)(2) holds and the foliationW u+ss is conjugate to the linear foliationW u ⊕W ss
+by aC ∞ diffeomorphism ofT d,
+
+===== PDF PAGE 3 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 3
+(4)his aC 1 diffeomorphism along the leaves ofW ws, and
+the derivativeD(h| W ws(x)) :E ws
+x →R d is H¨ older continuous onTd,
+(5)h ws isC ∞ onT d, and if the leaves ofW ws are uniformlyC q,
+thenhis a uniformlyC q diffeomorphism alongW ws.
+In Section 2.1 we give basic examples of perturbationsfsatisfying the assumptions of
+Theorem 1.1, illustrating the regularity we obtain and necessity of the extra assumption
+for the implications (4) =⇒(5) and (4) =⇒(1). Similar examples for subsequent
+theorems are also included. Our results essentially recover the main features of the
+basic models.
+Remark 1.2(Irreducibility conditions).A matrixL∈SL(d,Z)is calledirreducible
+if it has no nontrivial rational invariant subspaces or, equivalently, if its character-
+istic polynomial is irreducible overQ. IfLis irreducible, or more generally, weakly
+irreducible, then all Lyapunov foliations forLhave dense leaves, and hence the five
+statements in Theorem 1.1 are equivalent. We define and discuss weak irreducibility in
+Section 2.2.
+Joint integrability ofW u andW ss plays an important role in the study of ergodic
+properties of foliationW ss, and it is also related to the Lyapunov exponents onE ws.
+It has been extensively studied, primarily onT 3, see e.g. [ALOS, ACEPW, DR24,
+GaSh20]. In higher dimensions, its relation to rigidity was considered by Gogolev and
+Shi in [GSh23]. They proved that (1)⇐ ⇒(2) in general, and that (2)⇐ ⇒(4) under
+the assumption thatLis irreducible and has at most two-dimensional Lyapunov spaces.
+Our assumptions onLare considerably weaker and we obtain stronger conclusions (3)
+and (5). Our approach is completely different, it yields higher smoothness directly, and
+does not rely on [GSh23] aside from (1)⇐ ⇒(2). Our techniques are mostly global,
+but require narrow spectrum ofDf| E ws to use normal forms.
+Combining our techniques with the spectral rigidity forDf| E ws obtained in [GSh23]
+we obtain the following global version of Theorem 1.1. The bunching assumption
+(1.2) in the theorem means that nonconformality ofDfonE ws is dominated by the
+expansion onE u, and is trivially satisfied if dimE ws = 1.A splittingE s =E ss ⊕ E ws
+is calledabsolutely dominatedif there exists 0< ρ <1 such that with respect to some
+continuous family of Riemannian norms onE s we have
+∥Df(u)∥< ρ <∥Df(v)∥for all unit vectorsu∈ E ss andv∈ E ws.
+This condition automatically holds in the setting of Theorem 1.1.
+Theorem 1.3(Global rigidity of a strong foliation).LetLbe an irreducible hyperbolic
+automorphism ofT d and letfbe aC ∞ Anosov diffeomorphism ofT d conjugate toL
+by a homeomorphismh. Suppose thatfhas an absolutely dominated splittingE s =
+E ss ⊕ E ws and satisfies the bunching condition
+(1.2)∥Df| E ws(x)∥ · ∥(Df| E ws(x))−1∥ · ∥(Df| E u(x))−1∥<1for allx∈T d.
+
+===== PDF PAGE 4 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 4
+Then the statements (1), (2), (3 ′), (4), (5) are equivalent, where (1), (2), (4), (5) are
+as in Theorem 1.1 and (3 ′) is
+(3′)W u andW ss are jointly integrable to aC ∞ foliationW u+ss
+whose holonomies preserve a H¨ older continuous Riemannian metric onE ws.
+Our approach also allows us to obtain rigidity related to regularity of the weak
+foliation. We recall thath(W ws) =W ws, and henceW u andW ws are jointly integrable
+to the foliationW u+ws =h −1(W u ⊕W ws) with uniformlyC 1+H¨ olderleaves.
+Letr ss(L) be the ratio of the top and bottom Lyapunov exponents ofLonE ss, i.e.,
+(1.3)r ss(L) = (logρ min)/(logρ max)≥1,
+where 0< ρ min ≤ρ max <1 are the smallest and the largest moduli of the eigenvalues
+ofLonE ss.
+Theorem 1.4(Rigidity of a weak foliation).LetLbe a hyperbolic automorphism of
+Td with dense leaves ofW ws. Letfbe aC ∞ diffeomorphism sufficientlyC 1 close to
+L, and lethbe a topological conjugacy betweenfandL. Ifr > r ss(L)andr /∈N, then
+the following are equivalent.
+(1)W ws is a uniformlyC r subfoliation ofW s,
+(2)h ss is a uniformlyC ∞ diffeomorphism alongW ss, andh ss isC r onT d,
+(3)The joint foliationW u+ws is conjugate to the linear foliationW u ⊕W ws by a
+C r diffeomorphism.
+If in additionh(W ss) =W ss, then(1, 2, 3) =⇒his uniformlyC ∞ alongW ss.
+This theorem follows from a more general technical result, Theorem 7.1, where we
+assume only regularity of the holonomies ofW ws between the leaves ofW ss, rather
+than regularity of the subfoliation. The distinction is not assuming higher regularity
+of the leaves ofW ws, which in general are onlyC 1+H¨ older.
+Combining rigidity of the weak and strong subfoliations, Theorems 1.1 and 1.4, we
+obtain the following characterizations of smoothness of the conjugacy alongW s.
+Theorem 1.5(Rigidity of strong and weak foliations).LetLbe a hyperbolic auto-
+morphism ofT d. Suppose thatW ws andW ss have dense leaves. Letfbe aC ∞
+diffeomorphism sufficientlyC 1 close toL, and lethbe a topological conjugacy between
+fandL. Then the following are equivalent.
+(1)h(W ss) =W ss andW ws is a uniformlyC ∞ subfoliation ofW s,
+(2)ha is uniformlyC ∞ diffeomorphism alongW s,
+(2′)h s is inC ∞(Td)and a diffeomorphism alongW s,
+(3)W u is conjugate to the linear foliationW u by aC ∞ diffeomorphism.
+Symplectic case.Now we apply the above results to obtain rigidity results for sym-
+plecticLandf.
+
+===== PDF PAGE 5 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 5
+LetLbe a symplectic hyperbolic automorphism ofT d with dominated splittings
+(1.4)E s =E ss ⊕E ws andE u =E uu ⊕E wu
+such that dimE ss = dimE uu and hence dimE ws = dimE wu. HereE uu andE wu are
+strong and weak unstable subbundles. Letfbe aC 1 small perturbation ofL. Thenf
+has corresponding dominated splittings
+E s =E ss ⊕ E ws andE u =E uu ⊕ E wu.
+The subbundleE ws+wu is integrable withC 1+H¨ olderleaves, andh(W ws+wu) =W ws+wu.
+Theorem 1.6(Symplectic rigidity).LetLbe a symplectic hyperbolic automorphism
+ofT d. Suppose that the foliationsW ws,W ss,W wu, andW uu have dense leaves. Let
+fbe aC ∞ diffeomorphism sufficientlyC 1 close toLand preserving aC ∞ symplectic
+form. Lethbe a topological conjugacy betweenfandL. Then for the statements below
+we have
+(1)⇐ ⇒(2)⇐ ⇒(3) =⇒(4).
+Moreover, if the leaves of each of the Lyapunov subfoliations ofW ws+wu are dense in
+Td, then the four statements are equivalent.
+(1)his aC ∞ diffeomorphism,
+(2)h(W ss) =W ss andh(W uu) =W uu,
+(3)hisα-H¨ older withαsufficiently close to 1,
+(4)his aC 1 diffeomorphism along the leaves ofW ws+wu, and the derivative
+D(h|W ws+wu (x)) :E ws+wu
+x →R d is H¨ older continuous onTd.
+For an irreducibleLwith one-dimensional weak foliations, Gogolev and Shi showed
+in the proof of [GSh23, Theorem 6.1] that joint integrability ofW uu andW ss implies
+(2). Hence we obtain the following corollary, which extends [GSh23, Theorem 1.4] from
+d= 4 to anyd≥4.
+Corollary 1.7.LetLbe an irreducible symplectic hyperbolic automorphism ofT d
+with splitting(1.4)such thatdimE ws = dimE wu = 1. Letfbe aC ∞ diffeomorphism
+sufficientlyC 1 close toLand preserving aC ∞ symplectic form. If the strong foliations
+W uu andW ss are jointly integrable thenfisC ∞ conjugate toL.
+Remark 1.8(Finite regularity).Our results hold iffis aC t diffeomorphism rather
+thanC ∞, provided thattis sufficiently large, and with theC ∞ regularity of other
+objects replaced byC t−δ for anyδ >0. Theorems 1.1 and 1.3 requiret > r ws defined
+similarly to(1.3). In particular, ifLhas one Lyapunov exponent onE ws then anyt >1
+suffices. Theorem 1.4 requirest > r, Theorem 1.5 requirest >max{r ws, rss}, Theorem
+1.6 requirest >max{r wu, ruu, rws, rss}, and Corollary 1.7 requirest >max{r uu, rss}.
+These are the regularities needed to apply the results on normal forms. The proofs work
+without any significant modifications.
+
+===== PDF PAGE 6 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 6
+Normal forms and holonomies.The proofs of the theorems above rely on our new
+results of on normal forms and holonomies, which are of independent interest. We give
+preliminaries on normal forms in Section 3 and formulate and prove the new results
+in Section 4. In the context of two invariant transverse subfoliationsWandVofW s
+we prove in Theorem 4.4 that ifDf| TW has narrow spectrum and the holonomies of
+VbetweenWare sufficiently smooth then they preserve normal forms, i.e., they are
+sub-resonance polynomials when written in normal form coordinates. This allows us
+to use holonomies alongVtogether with density of its leaves to obtain regularity of
+the conjugacy alongW. Prior results using normal forms with holonomies were in the
+context ofneutralfoliations [FKSp11, GKS23] and they do not apply to expanding or
+contracting foliations. We use our results with bothW=W ss andW=W ws. In the
+latter case, even existence of normal forms is nontrivial since the leaves are ofWws have
+low regularity. We overcome this problem in Theorem 4.3 by using smooth holonomies
+ofV=W ss.
+Structure of the paper.In Section 2 we give examples to illustrate the main the-
+orems, and discuss irreducibility. In Section 3 we give preliminaries on normal forms,
+and in Section 4 formulate and prove the new results. We prove Theorem 1.1 in Section
+5, Theorem 1.3 in Section 6, Theorem 1.4 in Section 7, Theorem 1.5 in Section 8, and
+Theorem 1.6 in Section 9.
+2.Examples and weak irreducibility
+2.1.Examples.
+(i)We illustrate Theorem 1.1 in a basic setting of a hyperbolic automorphism ofT 3,
+which is aways irreducible. LetLbe a hyperbolic automorphism ofT 3 with eigenvalues
+0< λ ss < λ ws <1< λ u,
+and lete ss,e ws, ande u be corresponding unit eigenvectors. We consider aC 1 small
+perturbationfofLof the form
+f(x) =L(x) +φ u(x)eu +φ ss(x)ess,
+whereφ u andφ ss are smooth real-valued functions onT 3.
+Then a conjugacy betweenfandLcan be found in the form
+h(x) =x+ϕ u(x)eu +ϕ ss(x)ess.
+One can take smooth functionsφ u andφ ss for which the corresponding functionsϕ u
+andϕ ss are not smooth, for example trigonometric polynomials as in [L92, Theorem
+6.3] and [KtN, Theorem 5.5.5 and Remark 5.5.6].
+For such a perturbation, the linear foliationW u+ss is preserved byfandh, and
+henceW u+ss =W u+ss =h(W u+ss). WhileW ss ̸=W ss, we haveh(W ss) =W ss
+sinceW ss =W u+ss ∩ W s andh(W s) =W s. We see that whilehis not smooth,
+h(x)ws =x ws and hence is smooth onT d. One can also see by differentiating term-wise
+thatϕ ss(x) =− P∞
+k=1 λk−1
+ss φ(f −kx) has one derivative in the direction ofe ws. This
+
+===== PDF PAGE 7 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 7
+shows thathisC 1 alongW ws, which corresponds to (4) in Theorem 1.1. However, the
+series for higher derivatives may diverge, and the bundleE ws is only H¨ older in general.
+(ii)One can modify this example to show that the implications (4) =⇒(5) and (4) =⇒
+(1) in Theorem 1.1 can fail without density of the Lyapunov leaves. We take an
+automorphism
+L=L 1 ×L 2 ofT 5 =T 3 ×T 2,
+whereL 1 is as in (i), andL 2 is an automorphism ofT 2 with eigenvalues 0< µ s <1<
+µu =µ −1
+s and unit eigenvectorsv s andv u. Ifµ s < λ ws, we can takeW ss forLas the
+span ofe ss andv s andW ws as the span ofe ws. We consider the perturbation
+f(x 1, x2) = (L1(x1) +φ(x 2)ews, L 2(x2)).
+Then the conjugacy can be written ash(x 1, x2) = (x1 +ϕ(x 2)ews, x 2). Thus for a fixed
+x2 the conjugacy is a translation onT 3 inW ws direction, and hence (4) is satisfied. If
+φis taken so thatϕis notC 1 onT 2 then componenth ws is notC 1 onT 3 ×T 2. Thus (5)
+fails and hence (1) has to fail too since (1) =⇒(5). It can also be directly computed
+as in [KtN, Remark 5.5.6] thath(W ss)̸=W ss.
+(iii)In the setting of (i), we can similarly obtain perturbations satisfying the assump-
+tions of the theorems below. Specifically,
+f(x) =L(x) +φ u(x)eu +φ ws(x)ess for Theorem 7.1,
+f(x) =L(x) +φ ws(x)ess for Theorem 1.4, and
+f(x) =L(x) +φ u(x)eu for Theorem 1.5.
+These examples illustrate the conclusions we get in these theorems.
+2.2.Irreducibility and weak irreducibility.
+We recall thatL∈SL(d,Z) isirreducibleif it has no nontrivial rational invariant
+subspaces or, equivalently, if its characteristic polynomial is irreducible overQ. The
+eigenvalues of an irreducibleLare simple. Irreducibility ofLimplies that anyL-
+invariant linear foliation ofT d is dense inT d.
+A weaker assumption onL, calledweak irreducibility, gives denseness of every Lya-
+punov foliation forL. It was introduced and discussed in [KSW23], see Section 3.3
+there. Letρ 1, . . . , ρm be distinct moduli of eigenvalues ofLand letE ρ1, . . . , Eρm be
+the corresponding Lyapunov subspaces. We say thatLisweakly irreducibleif for each
+ithe space ˆEρi =⊕ j̸=iEρj contains non non-zero elements ofZ d. Equivalently, there is
+a setS⊂Rso that for each irreducible overQfactor of the characteristic polynomial
+ofLthe set of moduli of its roots equalsS. A weakly irreducibleLis not necessarily
+diagonalizable.
+Lemma 2.1(Weak irreducibility).A matrixL∈SL(d,Z)is weakly irreducible if and
+only if for each Lyapunov foliation ofLthe leaves are dense inT d.
+
+===== PDF PAGE 8 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 8
+Proof.We will prove the equivalence to the second condition above. Letp L be the
+characteristic polynomial ofLandp L =QK
+k=1 pdk
+k be its prime decomposition overQ.
+LetS={ρ 1, . . . , ρm}be the set of moduli of roots for eachp k. Suppose that for
+someithe leaves of the Lyapunov foliation ofW ρi are not dense inT d. LetEbe the
+minimal rationalL-invariant subspace containingE ρi. ThenE̸=R d. We consider the
+restrictionB=L| E and the induced operatorCon the quotientR d/E. Then we have
+pL =p B ·p C, and all three are rational polynomials. Hencep C =QK
+k=1 pck
+k , and so by
+the assumptionp C has at least one root of modulusρ i. Thenp L has more roots of
+modulusρ i, counted with multiplicities, than the corresponding number forp B. This
+is impossible since both should be dimE ρi, asE ρi ⊂E.
+To prove the converse, assume that for each Lyapunov foliation ofLthe leaves are
+dense inT d. LetS={ρ 1, . . . , ρm}be the set of moduli of roots ofp L, and suppose that
+for someρ i ∈Sandk 0 ∈ {1, . . . , K}no root ofp k0 has modulusρ i. LetR d =⊕V k be
+the splitting into rationalL-invariant subspacesV k = kerp dk
+k (L). As the eigenvalues of
+L|Vk are the roots ofp k, we naveE ρi ∩Vk0 = 0. This implies thatE ρi ⊂ ⊕ k̸=k0Vk. Indeed
+Eρi =⊕ k(Vk ∩E ρi) since the splittings⊕ jEρj and⊕ kVk have a common refinement.
+Since⊕ k̸=k0Vk is a rationalL-invariant subspace smaller thanR d, we conclude that the
+leaves of corresponding Lyapunov foliationW ρi are not dense inT d.□
+3.Preliminaries on normal forms
+3.1.Smooth extensions and sub-resonance polynomials.LetEbe a continuous
+vector bundle over a compact metric spaceM, letNbe a neighborhood of the zero
+section inE, and letfbe a homeomorphism ofM. We consider an extensionF:N →
+Ethat projects tofand preserves the zero section. We assume that the corresponding
+fiber mapsF x :N x → E f x areC r diffeomorphisms. We will considerr >1, and for
+r /∈Nwe will understandC r in the usual sense that the derivative of orderN=⌊r⌋is
+H¨ older with exponentα=r− ⌊r⌋.
+We assume that the fibersE x are equipped with a continuous family of Riemannian
+norms. We denote byB x,σ the closed ball of radiusσ >0 centered at 0∈ E x. For
+N∈Nand 0≤α <1 we denote byC N+α(Bx,σ) =C N+α(Bx,σ,E f x) the space of
+functionsR:B x,σ → E f x with continuous derivatives up to orderNonB x,σ and, if
+α >0, withα-H¨ olderN th derivative at 0.
+Definition 3.1.We say thatFis aC N+α extension off, whereN∈Nand0≤α <1,
+if for someσ >0the fiber mapsF x :B x,σ → E f x areC N+α diffeomorphisms which
+depend continuously onxinC N topology with uniformly bounded norms∥Fx∥CN+α (Bx,σ).
+We say thatφ={φ x}x∈X, whereφ x :B x,σ → E f x, is aC N+α coordinate changeif
+it is aC N+α extension of the identity map onMpreserving the zero section.
+For a smooth extensionFwe will denote byFits derivative of at the zero section,
+i.e.F:E → Eis a continuous linear extension offwhose fiber maps are linear
+isomorphismsF x =D 0Fx :E x → E f x.
+
+===== PDF PAGE 9 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 9
+Definition 3.2.Letε >0and let
+(3.1)χ= (χ 1, . . . , χℓ),whereχ 1 <· · ·< χ ℓ <0.
+We say that a linear extensionFhas(χ, ε)-spectrumif there is a continuousF-
+invariant splitting
+(3.2)E=E 1 ⊕ · · · ⊕ E ℓ
+and a continuous family of Riemannian norms∥.∥ x onE x such that
+(3.3)e χi−ε∥t∥x ≤ ∥F x(t)∥f x ≤e χi+ε∥t∥x for everyt∈ E i
+x
+and the splitting(3.2)is orthogonal.
+We say that a map between vector spaces ispolynomialif each component is given
+by a polynomial in some, and hence every, basis. We will consider a polynomial map
+P:E x → E y withP(0 x) = 0 y and split it into components (P 1(t), . . . , Pℓ(t)), where
+Pi :E x → E i
+y. EachP i can be written uniquely as a linear combination of polynomials of
+specific homogeneous types. A mapQ:E x → E i
+y hashomogeneous types= (s 1, . . . , sℓ),
+wheres 1, . . . , sℓ are non-negative integers, if for any real numbersa1, . . . , aℓ and vectors
+tj ∈ E j
+x,j= 1, . . . , ℓ,we have
+(3.4)Q(a 1t1 +· · ·+a ℓtℓ) =a s1
+1 · · ·a sℓ
+ℓ ·Q(t 1 +· · ·+t ℓ).
+Definition 3.3.We say that a homogeneous types= (s 1, . . . , sℓ)forQ:E x → E i
+y is
+(3.5)sub-resonanceifχ i ≤
+ℓX
+j=1
+sjχj.
+We say that a polynomial mapP:E x → E y issub-resonanceif each componentP i
+has only terms of sub-resonance homogeneous types. We denote byS x,y the set of all
+sub-resonance polynomialsP:E x → E y withP(0) = 0and invertible derivative at0.
+Clearly, for any sub-resonance relation we haves j = 0 forj < iand P sj ≤χ 1/χℓ.
+Hence sub-resonance polynomials have degree at mostd(χ) =⌊χ 1/χℓ⌋.
+We will denoteS x,x byS x, which is a finite-dimensional Lie group group with respect
+to the composition ifε >0 is sufficiently small [GuKt98]. Any mapP∈ S x,y induces
+an isomorphism betweenS x andS y by conjugation. In particular, this holds for any
+invertible linear map which respects the splitting (3.2).
+3.2.Normal forms for contracting extensions.The following theorem was estab-
+lished in [GuKt98, Gu02] forr∈N∪ {∞}, and in [K24] for this setting.
+For a givenχas in (3.1), there isε 0 =ε 0(χ)>0 given by [K24, (3.13)] which ensures
+that the spectrum is sufficiently narrow and will suffice for all results and proofs below.
+Theorem 3.4.[K24, Theorem 4.3] (Normal forms for contracting extensions)
+Letf:X→Xbe a homeomorphism of a compact metric spaceM, letEbe a contin-
+uous vector bundle overM, letNbe a neighborhood of the zero section inE, and let
+
+===== PDF PAGE 10 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 10
+F:N → Ebe aC r extension offthat preserves the zero section. Suppose that the
+derivativeFofFat the zero section has(χ, ε)-spectrum withχ 1/χℓ < randε < ε 0.
+Then there exists aC r coordinate changeφ={φ x}x∈X with diffeomorphismsφ x :
+Bx,σ → E x satisfyingφ x(0) = 0andD 0φx =Id which conjugatesFto a continuous
+polynomial extensionP:E → Eoffof sub-resonance type, i.e.,
+(3.6)φ f x ◦ Fx =P x ◦φ x,whereP x ∈ S x,f x for allx∈X.
+IfFis aC ∞ extension then the coordinate changeφis alsoC ∞.
+Any two such coordinate changesφ x andφ ′
+x satisfyφ ′
+x =φ x ◦g x for someg x ∈ S x.
+4.Normal forms for contracting foliations
+Letfbe aC r diffeomorphism of a compact manifoldM, wherer=N+α. We will
+consider anf-invariant continuous foliationWofXwithuniformlyC r leaves. By this
+we mean that for someR >0 the ballsB W(x, R) of radiusRin the intrinsic Riemannian
+metric of the leaf can be given byCr embeddings which depend continuously onxinC N
+topology and, ifr /∈N, haveα-H¨ older derivative of orderNwith uniformly bounded
+H¨ older constant. Similarly, for such a foliation we will say that a functiongisuniformly
+C r alongWif its restrictions toB W(x, R) depend continuously onxinC N topology
+and haveα-H¨ older derivative of orderNwith uniformly bounded H¨ older constant. We
+also allowr=∞, in which case uniformlyC ∞ means uniformlyC N for eachN.
+Definition 4.1(Normal forms on a contracting foliation).
+Letfbe aC 1 diffeomorphism of a compact manifoldM, and letEbe a continuous
+f-invariant subbundle ofTMtangent to anf-invariant topological foliationWwith
+uniformlyC 1 leaves. Suppose that the linear extensionF=Df| TW has(χ, ε)-spectrum.
+We say that a family{φ x}x∈M ofC 1 diffeomorphismsφ x :W x →T xW, which
+depend continuously onxinC 1 topology, is anormal form forfonWif for each
+x∈ Mwe haveφ x(0) = 0andD 0φx =Id ,
+Px =φ f x ◦f◦φ −1
+x :T xW →T f(x) Wis inS x,f x,
+and for anyy∈ W x the mapφ y◦φ−1
+x :T xW →T yWis a composition of a sub-resonance
+polynomial inS x,y with a translation.
+IdentifyingW(x) withT xWbyφ x we can view the transition mapsφ y ◦φ −1
+x as maps
+ofT xWand see that they are in the finite-dimensional group ¯Sx generated byS x and
+the translations ofT xW.
+In Theorems 1.4 and 7.1 we will use normal forms forfonW=W ss. In this case
+the leaves ofWare uniformlyC ∞, so we can obtain a natural uniformlyC ∞ extension
+offby locally identifyingT xWwithW(x) and apply Theorem 3.4. The following
+theorem yields a normal form forfonW=W ss, which is uniformlyC ∞. The proof
+thatφ y ◦φ −1
+x ∈ ¯Sx is given in [KS16, KS17].
+
+===== PDF PAGE 11 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 11
+Theorem 4.2.[K24, Theorem 4.6] (Normal forms for foliations withC r leaves)
+Letfbe aC r,r∈(1,∞], diffeomorphism of a compact manifoldM, and letWbe
+anf-invariant topological foliation ofMwith uniformlyC r leaves. Suppose that the
+linear extensionF=Df| TW has(χ, ε)-spectrum withχ 1/χℓ < randε < ε 0. Then
+there exists a normal form forfonWsuch thatφ x :W x →T xWare uniformlyC r
+diffeomorphisms.
+4.1.Normal forms onC 1 leaves.In Theorem 1.1 we will use normal forms forf
+onW=W ws. In general, the leaves ofW=W ws are onlyC 1+H¨ olderand so the above
+result may not apply. In this case we construct the normal form using the next theorem
+and smoothness ofW ss insideW s. The latter yields that holonomies ofW ss areC ∞,
+betweenC ∞ transversals toW ss insideW s.
+Theorem 4.3.(Normal forms for foliations withC 1 leaves)
+Letfbe aC r diffeomorphism of a compact manifoldM. LetUbe anf-invariant
+topological foliation ofMwith uniformlyC r leaves. LetWandVbef-invariant
+topological subfoliations ofUwith uniformlyC 1 leaves transverse in the leaves ofU,
+i.e.,T xU=T xW ⊕T xVfor eachx∈ M.
+Suppose that the holonomiesHofVinsideUare uniformlyC r, andDf| T W has
+(χ, ε)spectrumχ 1/χℓ < randε < ε 0. Then there is a normal form{φ x}forfonW
+such that for anyx∈ Mand anyy∈ V(x)the lifted holonomy maps
+(4.1) ¯Hx,y =φ y ◦ Hx,y ◦φ −1
+x :T xW →T yW
+areC r diffeomorphisms, uniformly inxandy.
+Proof.To construct the normal form we need to define aC r extensionFthat corre-
+sponds to the restriction offto the leaves ofW. Since the leaves ofWare onlyC 1,
+we use the action offtransversally toVinsideUto defineF. More precisely, for
+anyx∈ Mwe identify in a uniformlyC r way a small ballB ρ(x) inT xWwith aC r
+submanifold ofU(x) tangent toT xWatx. Thus we obtain a uniformlyC r familyT x
+of transversals toVinsideU:
+(4.2)i x :T xW ⊃B ρ(x)→U(x), i x(Bρ) =T x, D xix = Id.
+Using these transversals we consider the following holonomy maps ofV:
+(4.3)H x :T x → W(x) and ˜Hf x :f(T x)→ T f x.
+We note that ˜Hf x is uniformlyC r by the assumption on holonomies ofVsincef(T x)
+andT f x are uniformlyC r transversals, butH x is only uniformlyC 1 asW(x) is assumed
+onlyC 1. Using these maps and the identificationsi x we define theC r extension off
+Fx =i −1
+f x ◦ ˜Hf x ◦f| Tx ◦i x = (H f x ◦i f x)−1 ◦f| W(x) ◦(H x ◦i x) :T xW →T f xW.
+In fact, the mapsH x ◦i x give an atlas of local coordinates on the leaves ofWwithC r
+transition maps. This givesW(x) a structure ofC r manifold, which isC 1 consistent
+with the submanifold structure. We will denote by ˜W(x) the leaf equipped with this
+
+===== PDF PAGE 12 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 12
+C r structure. With respect to it, the restriction offto each leaf,f x : ˜W(x)→ ˜W(f x),
+becomes uniformlyC r, as in these local coordinates it coincides with the extensionF x.
+Now this setting becomes essentially the same as in the case ofC r leaves. Theorem
+3.4 gives normal form coordinates ˆφx :T xW →T xWfor the extensionFand hence
+(4.4)φ x = ˆφx ◦(H x ◦i x)−1 :W(x)→T xW
+is a normal form forfonW, moreoverφ x ∈C r( ˜W(x), TxW). The proof thatφ y ◦φ−1
+x ∈
+¯Sx is the same as in [KS16, KS17].
+For anyy∈ V(x), the holonomies ofVbetween the transversals ˜Hx,y :T x → T y are
+uniformlyC r and are related to the holonomies between the leavesHx,y :W(x)→ W(y)
+by ˜Hx,y =H −1
+y ◦Hx,y◦Hx. By the construction ofφthis yields that the lifted holonomies
+¯Hx,y are also uniformlyC r, since
+(4.5) ¯Hx,y =φ y ◦ Hx,y ◦φ −1
+x = ˆφy ◦i −1
+y ◦ ˜Hx,y ◦i x ◦φ −1
+x :T xW →T yW.
+Even though the holonomiesH x,y :W(x)→ W(y) are onlyC 1, the holonomies
+Hx,y : ˜W(x)→ ˜W(y) areC r.□
+In the setting of the previous theorem, we formulate our main technical result on
+relationship between holonomies and normal forms. We will apply this theorem with
+U=W s to both (V,W) = (W ss,W ws) and (V,W) = (W ws,W ss) .
+Theorem 4.4(Holonomy invariance of normal forms).In addition to the assumptions
+of Theorem 4.3, suppose that the foliationUis contracted byf, i.e.,∥Df| T U∥<1for
+some metric. Then for anyx∈ Mandy∈ V(x)the lifted holonomy map(4.1)is a
+sub-resonance polynomial, i.e., ¯Hx,y ∈ S x,y.
+4.2.Proof of Theorem 4.4.
+We denoteTWbyEand letE=E 1 ⊕ · · · ⊕ E ℓ be the invariant splitting forDf| E.
+First we show that the derivativeDH x,y =D ¯Hx,y :E x → E y preserves the flag of
+strong subbundles, i.e., for eachk= 1, . . . , ℓ,
+DHx,y(E 1,k
+x )⊆ E 1,k
+y ,whereE 1,k =E 1 ⊕ · · · ⊕ E k.
+Since the foliationsWandVaref-invariant, we have the commutation relation
+(4.6)f n ◦ Hx,y =H f nx,f ny ◦f n :W x → W f ny.
+Differentiating this relation we obtain
+Df n|Ey ◦DH x,y(x) =DH f nx,f ny(f nx)◦Df n|Ex :E x → E y.
+We consider a non-zero vectoru∈ E k
+x and letjbe largest index so that thejcomponent
+ofv=DH x,y(x)uis non-zero. We need to show thatj≤k. Suppose thatj > kand
+henceχ k +ε < χ j −εsinceε < ε 0. Then we obtain a contradiction as follows. First
+we have
+∥Df n|Ey ◦DH x,y(x)u∥=∥Df nv∥ ≥e (χj −ε)n∥vj∥.
+
+===== PDF PAGE 13 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 13
+On the other hand,
+∥DHf nx,f ny(f nx)◦Df n|Exu∥ ≤ ∥DH f nx,f ny(f nx)∥ · ∥Df n|Exu∥ ≤Ce (χk+ε)n∥u∥,
+since∥DH f nx,f ny(f nx)∥is uniformly bounded innas dist V(f nx, f ny) decreases. This
+is impossible for largensinceχ k +ε < χ j −ε. ThereforeDH x,y preserves the flag.
+We take arbitraryx∈ Mandy∈ V(x) and consider the lifted holonomy (suppressing
+the bar in this proof)
+Hx,y = ¯Hx,y =φ y ◦ Hx,y ◦φ −1
+x :E x → E y.
+We write its Taylor polynomial of degreeM=⌊r⌋at 0∈ E x as
+TM(Hx,y)(t) =
+MX
+m=1
+H (m)
+x,y (t) :E x → E y,
+whereH (m)
+x,y :E x → E y is a homogeneous polynomial of degreem. Now we show
+inductively that this Taylor polynomial contains only sub-resonance terms. Writingf n
+in normal form coordinates we have
+φf nx ◦f n|W(x) ◦φ −1
+x =P n
+x :E x → E f nx,
+where the polynomial mapP n
+x (t) = Pd
+m=1 P (m)
+x (t) contains only sub-resonance terms
+and in particular has degree at mostd=⌊χ 1/χℓ⌋ ≤M. With similar notations fory,
+the commutation relation (4.6) becomes
+(4.7)H f nx,f ny ◦ P n
+x =P n
+y ◦H x,y :E x → E f ny.
+We already proved that the first derivativeH (1)
+x,y =D xHx,y preserves the strong flag,
+which means exactly that it is a sub-resonance linear map.
+Inductively, we assume thatH (m)
+x,y has only sub-resonance terms for allx∈ M,
+y∈ V x, andm= 1, . . . , k−1 and show that the same holds forH (k)
+x,y. We split
+H (k)
+x,y =S x,y +N x,y
+into the sub-resonance part and the rest. It suffices to show thatN x,y = 0 for all
+y∈ W x that are sufficiently close tox. Assuming the contrary, we fix suchxandy
+withN x,y ̸= 0. We will writeN x forN x,y andN f nx forN f nx,f ny. We consider the Taylor
+terms of orderkin the commutation relation (4.7). They come from the compositions
+of the respective Taylor polynomials
+MX
+j=1
+H (j)
+f nx,f ny
+ dX
+m=1
+P (m)
+x (t)
+!
+and
+dX
+m=1
+P (m)
+y
+ MX
+j=1
+H (j)
+x,y(t)
+!
+.
+By the inductive assumption,N x andN f nx are the only non sub-resonance terms of
+orderkin these polynomials, and all lower order terms are sub-resonance. Since any
+
+===== PDF PAGE 14 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 14
+composition of sub-resonance terms is again sub-resonance, taking non sub-resonance
+terms of orderkon both sides yields the equation
+(4.8)N f nx
+Ä
+P (1)
+x (t)
+ä
+=P (1)
+y (Nx(t)).
+We decomposeN x into componentsN x = (N 1
+x , . . . , Nℓ
+x) and letibe the largest index
+such thatN i
+x ̸= 0, i.e., there existst ′ ∈ E x so thatz=N i
+x(t′)∈ E y has component
+0̸=z i ∈ E i
+y. We denote
+(4.9)w=P (1)
+y (z) =DP n
+y (0)z=Df n(y)z∈ E f ny andw i =Df n(y)zi ∈ E i
+f ny
+itsith component. Then
+(4.10)∥w i∥ ≥Ce n(χi−ε),
+where the constantC=∥z i∥does not depend onn.
+Now we estimate from above theith component ofN f nx(P (1)
+x (t′)). First,
+∥P (1)
+x (t′
+j)∥=∥Df n(x)t ′
+j∥ ≤ ∥t ′∥e n(χj +ε) for anyj.
+LetN s
+f nx be a term of homogeneity types= (s 1, . . . , sℓ) in the componentN i
+f nx. By
+homogeneity, its norm can be estimated as
+∥N s
+f nx
+Ä
+P (1)
+x (t′)
+ä
+∥ ≤ ∥N f nx∥ · ∥t′∥k ·e n P sj (χj +ε).
+Since no term inN i
+f nx is a sub-resonance one, we haveχ i >P sjχj and hence, since
+ε < ε 0, we also haveχ i >P sjχj + (n+ 2)ε. Then the left side of (4.8) att ′ can be
+estimated as
+∥N s
+f nx
+Ä
+P (1)
+x (t′)
+ä
+∥ ≤C ′en(χi−2ε),
+where the constantC ′ does not depend onnsince the norms ofH (k)
+f nx,f ny, and hence
+those ofN f nx, are uniformly bounded. This contradicts (4.10) for largen.
+Thus we have shown thatT M(Hx,y), the Taylor polynomial of degreeMforH x,y at
+0∈ E x, contains only sub-resonance terms for allx∈ Mandy∈ V(x). It remains to
+show thatH x,y coincides withT M(Hx,y).
+In addition to (4.7), the same commutation relation holds for the Taylor polynomials
+(4.11)T M(Hf nx,f ny)◦ P n
+x =P n
+y ◦T M(Hx,y).
+Indeed, the two sides must have the same terms up to orderM, but they are sub-
+resonance polynomials and thus have no terms of order higher thand≤M. Denoting
+∆n =H f nx,f ny −T(H f nx,f ny)
+we obtain from (4.7) and (4.11) that
+(4.12)P n
+y ◦H x,y − P n
+y ◦T M(Hx,y) = ∆n ◦ P n
+x .
+We denote
+∆ =H x,y −T M(Hx,y) :E x → E y
+
+===== PDF PAGE 15 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 15
+and suppose that ∆̸= 0 for somex, y. Letibe the largest index for which theith
+component of ∆ is nonzero. Then there exist arbitrarily smallt ′ ∈ E x such that the
+ith componentz i ofz= ∆(t ′) is nonzero. SinceP n
+y is a sub-resonance polynomial, the
+nonlinearterms in itsith component can depend only onjcomponents of the input
+withj > i, which are the same forH y,x andT(H x,y) by the choice ofi. The linear part
+ofP n
+y isDf n(y) and it preserves the splitting. Thus theith component of the left side
+of (4.12) att ′ isDf n(y)zi. So we can estimate the left side of (4.12) att ′
+(4.13)∥(P n
+y ◦H x,y − P n
+y ◦T(H x,y))(t′)∥ ≥ ∥Df n(y)zi∥ ≥e n(χi−ε)∥zi∥ ≥e n(χ1−ε)∥zi∥.
+Now we estimate the right side of (4.12). SinceH f nx,f ny isC M+α, there exists a
+constantCdetermined by∥H f nx,f ny∥CM+α such that
+(4.14)∥∆ n(t)∥ ≤C∥t∥ M+α for allt∈ E f nx with∥t∥ ≤δ
+for a sufficiently smallδ >0. ThisCcan be chosen uniform innand closex, y.
+Also, for a sufficiently smallδ >0 we can estimateP n
+x as
+(4.15)∥P n
+x (t)∥ ≤e n(χℓ+2ε)∥t∥for alln∈Nand∥t∥< δ.
+This follows from the fact that for allx∈ Mwe have
+∥D0Px∥=∥Df| Ex∥ ≤e χℓ+ε and hence∥D tPx∥ ≤e χℓ+2ε
+for all pointst∈ E x with∥t∥ ≤δfor a sufficiently smallδ >0. HenceP x is a
+eχℓ+2ε-contraction on theδball in eachE x, and (4.15) follows.
+Combining (4.14) and (4.15) we estimate the right side of (4.12) att ′ as
+∥(∆ n ◦ P n
+x ) (t′)∥ ≤C∥P n
+x (t′)∥M+α ≤C∥t ′∥M+α en(M+α)(χ ℓ+2ε).
+Now we see that this contradicts (4.13) for largensince (M+α)χ ℓ =rχ ℓ < χ 1 and
+sinceε < ε 0 is sufficiently small. Thus, ∆ = 0, i.e., the holonomy mapH x,y coincides
+with its Taylor polynomial of orderM. This completes the proof of Theorem 4.4.
+5.Proof of Theorem 1.1
+We first note that
+(3) =⇒(2) is clear, and
+(1) =⇒(2) holds since we always haveh(W u) =W u
+and hence the joint foliation forW u andW ss ish −1(W u ⊕W ss).
+The converse (2) =⇒(1) is part of [GSh23, Theorem 1.1].
+Next we prove that
+(1) =⇒(5) =⇒(4) and
+(1) =⇒(3), more precisely (5)+(2) =⇒(3).
+Finally we show (4) =⇒(1) under the assumption on density of Lyapunov leaves.
+(1)=⇒(5).We assume thath(W ss) =W ss. We apply Theorems 4.3 and 4.4 with
+U=W s,W=W ws andV=W ss, and denoteE ws =TW ws. SincefisC 1 close toL,
+the linear extensionDf| E ws has the corresponding (χ, ε) spectrum with smallε. Since
+
+===== PDF PAGE 16 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 16
+W ss is aC ∞ subfoliation inside the leaves ofW s, Theorems 4.3 applies and yields the
+normal form coordinatesφ x onW ws given by equation (4.4)
+φx :W ws(x)→ E ws
+x .
+The mapsφ x areC 1 diffeomorphisms which depend continuously onxinC 1 topology.
+Further, Theorem 4.4 yields that the holonomiesH=H ss ofW ss insideW s between
+leaves ofW ws are sub-resonance polynomials in these coordinates (4.1), i.e.,
+¯Hx,y =φ y ◦ Hx,y ◦φ −1
+x :E ws
+x → E ws
+y is inS x,y.
+Sinceh(W ss) =W ss andh(W ws) =W ws, the two foliations form a global product
+structure inside the leaves ofW s conjugate byhto that of the linear foliations. In par-
+ticular, the holonomiesHare globally defined on the leaves ofW ws. The corresponding
+linear holonomiesHforLare translations alongW ss:
+ify∈W ss(x) thenH x,y(z) =z+ (y−x),
+andhconjugatesHandHas follows
+Hh(x), h(y) =h◦ H x,y ◦h −1.
+We fix an arbitraryx∈T d andy∈ W ws(x). By the assumption, the linear leaf
+W ss(x) is dense inT d. Hence there exists a sequence of vectorsv n ∈E ss such that
+h(x) +v n converges toh(y). Denotingy n =h −1(h(x) +v n) we obtain a sequence of
+pointsy n ∈ W ss(x) converging toy.
+The corresponding linear holonomiesH vn =H h(x), h(yn) converge inC 0 to the trans-
+lationH v inW ws(h(x)) by the vectorv=h(y)−h(x). Hence the holonomiesH x,yn
+converge inC 0 norm to the homeomorphism
+Hv :W ws(x)→ W ws(y) =W ws(x) such thatH v =h◦ H v ◦h −1.
+Since the normal form coordinatesφ y depend continuously ony, the corresponding
+lifted holonomies ¯Hx,yn =φ yn ◦ Hx,yn ◦φ −1
+x ∈ S x,yn converge to the homeomorphism
+Px,y =φ y ◦ Hv ◦φ −1
+x =φ y ◦h −1 ◦H v ◦h◦φ −1
+x :E ws
+x → E ws
+y .
+The mapP x,y is also a sub-resonance polynomial, i.e.,P x,y ∈ S x,y.
+Now we lift the restriction ofhtoW ws(x) toE x using coordinatesφ x
+¯hx =h◦φ −1
+x :E ws
+x →W ws(h(x)),
+and conjugate by ¯hx the translationH v ofW ws(h(x)) to the corresponding map ofE x
+¯Hv = (¯hx)−1 ◦H v ◦ ¯hx =φ x ◦h −1 ◦H v ◦h◦φ −1
+x =φ x ◦φ −1
+y ◦P x,y :E ws
+x → E ws
+x .
+By the property of normal form coordinates, the mapφ x ◦φ −1
+y :E ws
+y → E ws
+x is a
+composition of a sub-resonance polynomial inS y,x with a translation ofE ws
+x . SinceP x,y
+is a sub-resonance polynomial inS x,y, we conclude that ¯Hv ∈ ¯Sx, the finite dimensional
+Lie group generated byS x and the translations ofE x. Thus ¯hx conjugates the action of
+
+===== PDF PAGE 17 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 17
+Ews =R k by translations ofW ws(h(x)) with the corresponding continuous action ofR k
+by elements of the Lie group ¯Sx. This yields the injective continuous homomorphism
+ηx :E ws → ¯Sx given byη x(v) = ¯Hv = (¯hx)−1 ◦H v ◦ ¯hx.
+It is a classical result that a continuous homomorphism between Lie groups is automat-
+ically a Lie group homomorphism, and so it is automaticallyC ∞, see for example [Ha,
+Corollary 3.50]. Thusη x is aC ∞ diffeomorphism onto its image in ¯Sx. We conclude
+that (¯hx)−1 is aC ∞ diffeomorphism betweenW ws(h(x)) andE ws
+x since it is determined
+byη x as follows
+(¯hx)−1(h(x) +v) = ¯Hv(0) =η x(v)(0).
+Hence ¯hx :E ws
+x →W ws(h(x)) is also aC ∞ diffeomorphism. Further, since the normal
+form coordinatesφ x, as well as holonomies and their limits, depend continuously on
+x, the constructed continuous action onE ws
+x and the corresponding homomorphismη x
+also depend continuously onx. This implies thatη x depend continuously onxinC ∞
+topology, because it is determined by the corresponding linear homomorphism of the
+Lie algebras. This yields that ¯hx :E ws
+x →W ws(h(x)) also depends continuously onx
+inC ∞ topology. We conclude that the restriction ofhtoW ws(x)
+h|W ws(x) = ¯hx ◦φ x :W ws(x)→W ws(h(x))
+is as regular asφ x. If the leaves ofW ws are uniformlyC q, then so are the mapsφ x
+given by (4.4) since the holonomyH x from a smooth transversal to the leafW ws(x) is
+as regular as the leaves. Hence in this caseh| W ws(x) is a uniformlyC q diffeomorphism.
+In particular, since the leaves ofW ws at least uniformlyC 1+H¨ older,h| W ws(x) is at least
+a uniformlyC 1+H¨ olderdiffeomorphism.
+To complete the proof of (5) we will now show that the componenth ws isC ∞ onT d.
+First,h ws is (locally) constant alongW u+ss and hence is uniformlyC ∞ along it, since
+its leaves are uniformlyC ∞. By Journe lemma [J88],[KtN, Theorem 3.3.1] it suffices
+to show thath ws is also uniformlyC ∞ along smooth transversals toW u+ss.
+As in the construction of normal forms onW ws we consider the embeddings of small
+ballsB ws
+ρ (x) inE ws
+x as a local family of smooth transversals (4.2) and denote
+ix :B ws
+ρ (x)→ W s, i x(Bws
+ρ (x)) =T x,H x =H W ss
+x :T x → W ws(x).
+We recall that the normal form coordinates (4.4) are given by
+φx = ˆφx ◦(H x ◦i x)−1 :W ws → E ws
+x ,
+where ˆφx :E ws
+x → E ws
+x is the uniformlyC ∞ coordinate change for the extensionF x.
+Since we know that both ¯hx andi x ◦( ˆφx)−1 are uniformlyC ∞ diffeomorphism and since
+¯hx =h◦(φ x)−1 =h◦ H x ◦i x ◦( ˆφx)−1 :E ws
+x →W ws(hx)
+we conclude thath◦ H x :T x →W ws(hx) is also uniformlyC ∞, and in particular so
+is itsws-component. We claim that (h◦ H x)ws = (h| Tx)ws. Indeed, for anyy∈ T x
+we haveH x(y)∈ W ss(y) and, sinceh(W ss) =W ss, we geth(H x(y))∈W ss(h(y)) and
+
+===== PDF PAGE 18 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 18
+thus they have the samews-component. Therefore, (h| Tx)ws =h ws|Tx is uniformlyC ∞
+along this family of transversals toW u+ss, and we conclude thath ws isC ∞ onT d.
+This concludes the proof of (1) =⇒(5).
+(5)=⇒(4).Since (5) yields thath| W ws(x) is aC 1 diffeomorphism, it remains to
+show that its derivative is H¨ older onT d. SincehmapsW ws(x) to the linear leaf
+W ws(h(x)), this derivative coincides with the restriction of the derivative ofh ws,
+D(h|W ws(x))(x) =D(h ws|W ws(x))(x) =D(h ws)|E ws(x) :E ws
+x →E ws ⊂R d.
+Sinceh ws isC ∞ onT d by (5), this restriction is as regular as the subbundleE ws
+x , and
+so at least H¨ older continuous onTd.
+(1)=⇒(3).Since (1) implies (2), we have the joint topological foliationW u+ss =
+h−1(W u ⊕W ss). Now we use (5), which follows from (1), to show thatW u+ss is
+conjugate to the linear foliationW u ⊕W ss by aC ∞ diffeomorphism. We takehto be
+the conjugacy close to the identity and write
+h(x) =x+ ∆(x) =x+ ∆ ws(x) + ∆u+ss(x),
+where ∆ :T d →R d is split into components ∆ ws :T d →E ws and ∆ u+ss :T d →
+Eu ⊕E ss. Now we consider the map
+˜h(x) =h(x)−∆ u+ss(x) =x+ ∆ ws(x) :T d →T d.
+We note that bothhand ˜hareC 0 close to the identity. The first formula shows that
+˜his an adjustment ofhalongW u ⊕W ss and thus, sinceh(W u+ss) =W u ⊕W ss, we
+also have that ˜h(W u+ss) =W u ⊕W ss. Now we show that ˜his aC ∞ diffeomorphism
+ofT d, and hence it smoothly conjugatesW u+ss toW u ⊕W ss. We can locally write
+˜h(x) =x+ ∆ ws(x) =x u+ss +x ws + ∆ws(x) =x u+ss +h ws(x).
+While the componentsh ws,x u+ss, andx ws are globally well-defined only for the lifts to
+Rd, they make sense locally onT d. By (5), the componenth ws isC ∞ onT d and hence so
+is ˜h. Thus to prove that ˜his locally aC ∞ diffeomorphism it suffices to show invertibility
+of its derivative. We viewD ˜hwith respect to splittingsE ws
+x ⊕ E u+ss
+x →E ws ⊕E u+ss.
+Sinceh ws is constant alongW u+ss and aC 1 diffeomorphism alongW ws we see thatD ˜h
+is block triangular with invertible blockE ws
+x →E ws. Now invertibility ofD ˜hfollows
+from that of the other diagonal blockD(x u+ss)|E u+ss
+x . The latter is clear sinceE u+ss
+x is
+transverse toE ws and thus the derivative ofx u+ss, which is justE u+ss-component of
+the identity, has full rank onE u+ss
+x . The global surjectivity and injectivity of ˜halso
+follow now since it isC 0 close to the identity. This concludes the proof of (1) =⇒(3).
+(4)=⇒(1) if the leaves ofW 1, . . . , Wℓ are dense inT d.
+SincefisC 1 close toL, the linear extensionDf| E ws has the corresponding (χ, ε)
+spectrum and the H¨ older continuous splitting
+(5.1)E ws =E 1 ⊕ · · · ⊕ E ℓ
+
+===== PDF PAGE 19 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 19
+which isC 0 close to the Lyapunov splitting forLonE ws. We recall thatE 1 is the
+strongest andE ℓ is the weakest. We let
+E i,ss =E i ⊕ · · · ⊕ E 1 ⊕ E ss.
+SinceE i,ss is a strong subfbundle ofE s, it is tangent to aC ∞ subfoliationW i,ss inside
+W s. Since we assume thath| W ws(x) is aC 1 diffeomorphism, each bundleE i is tangent
+to the foliationW i =h −1(W i). The implication (4) =⇒(1) follows from the next
+proposition.
+Proposition 5.1.Assume thathis aC 1 diffeomorphism alongW ws with the derivative
+D(h|W ws(x))(x) :E ws
+x →E ws ⊂R d H¨ older continuous onTd.
+Ifh(W i,ss) =W i,ss thenh(W i−1,ss) =W i−1,ss.
+We apply the proposition inductively fromi=ℓtoi= 1. Fori=ℓ, the assumption
+h(W i,ss) =W i,ss is satisfied since it ish(W s) =W s. Fori= 1 we obtain (1).
+The proof of this proposition is similar to that of [GKS11, Proposition 2.5]. However,
+in [GKS11] the automorphismLwas assumed to be irreducible, while we only assume
+density of the leaves ofW ss and the Lyapunov subfoliations ofW ws.
+Proof of Proposition 5.1.We will use the following notation in this proof:
+W=W i, V=W i−1,ss, U=W⊕V=W i ⊕W i−1,ss =W i,ss,
+and similarly for the corresponding nonlinear invariant foliations off,
+W=W i,V=W i−1,ss,U=W ⊕ W=W i,ss.
+By the assumption,h(U) =U. We let ˜V=h(V). Then ˜Vis a subfoliation ofUwith
+continuous leaves. We need to show that ˜V=V. SinceW=h(W), the foliation ˜Vis
+topologically transverse toW, i.e., any leaf of ˜Vand any leaf ofWin the same leaf of
+Uintersect at exactly one point. Thus for any pointa∈T d and anyb∈ ˜V(a) we can
+define the holonomy map ˜Ha,b :W(a)→W(b) along the foliation ˜V. The key step is
+to show that ˜Ha,b a parallel translation insideU. This is similar to [GKS11, Lemma
+2.6], but in [GKS11] the automorphismLwas assumed to be irreducible, which yields
+conformality ofLonW. We modify the argument for the general case when Jordan
+blocks may create nonconformality.
+Lemma 5.2.For any pointa∈T d and anyb∈ ˜V(a)the holonomy map ˜Ha,b is a
+restriction toW(a)of a parallel translation insideU.
+Proof.For any pointc∈T d and anyd∈ V(c) we denote byH c,d :W(c)→ W(d) the
+holonomy along the foliationV. SinceVis a strong subfoliation ofU, it isC ∞ inside
+the leaves ofUand hence the holonomiesH c,d areC 1 with the derivative
+DcHc,d :T cW →T dW
+
+===== PDF PAGE 20 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 20
+depending H¨ older continuously oncandd. Since ˜V=h(V) andh(W) =Wwe have
+˜Ha,b =h◦ H h−1(a),h−1(b) ◦h −1.
+It follows from the regularity assumption onh| W ws that the maps ˜Ha,b are alsoC 1. To
+show that ˜Ha,b is a parallel translation, we prove that the differentialD ˜Ha,b = Id. We
+applyL n, which contractsU, and denotea n =L n(a) andb n =L n(b). Since ˜V=h(V)
+andfpreserves the foliationV, the mapLpreserves ˜Vand we can write
+˜Ha,b =L −n ◦ ˜Han, bn ◦L n.
+Differentiating and denotingD an
+˜Han,bn = Id + ∆n we obtain
+Da ˜Ha,b = (L−n|W )◦(D an
+˜Han,bn)◦L n|W = Id +L −n|W ◦∆ n ◦L n|W .
+SinceWis a Lyapunov foliation forL, all eigenvalues ofLonWhave the same modulus
+and hence the quasiconformal distortion ofL n|W grows at most polynomially,
+∥L−n|W ∥ · ∥Ln|W ∥ ≤Cn 2k for alln,
+wherek+ 1 is the largest size of Jordan blocks ofL n|W . Thus we obtain
+∥L−n|W ◦∆ n ◦L n|W ∥ ≤Cn 2k∥∆n∥for alln.
+It remains to show that∥∆ n∥ →0 exponentially inn. We differentiate the equation
+˜Han,bn =h◦ H h−1(an), h−1(bn) ◦h −1 ata n
+Dan
+˜Han,bn = (Dh−1(bn)h|W)◦(D h−1(an)Hh−1(an), h−1(bn))◦(D an(h|W)−1),
+and denotingD h−1(an)Hh−1(an), h−1(bn) = Id + ∆′
+n we obtain
+Dan
+˜Han,bn = (Dh−1(bn)h|W)◦D an(h|W)−1 + (Dh−1(bn)h|W)◦∆ ′
+n ◦D an(h|W)−1.
+DenotingD h−1(bn)h|W ◦D an(h|W)−1 = Id + ∆′′
+n we conclude that
+∥∆n∥=∥Id−D an
+˜Han,bn∥ ≤ ∥∆ ′′
+n∥+∥D h−1(bn)h|W∥ · ∥∆′
+n∥ · ∥Dan(h|W)−1∥.
+By the regularity assumption onh| W ws and H¨ older continuity ofTxW=E i
+x we have
+H¨ older dependence ofDx(h|W) :T xW →Wonx. It follows that that
+∥Dh−1(bn)h|W∥ · ∥Dan(h|W)−1∥is uniformly bounded and
+∥∆′′
+n∥is H¨ older in dist(an, bn).
+Also,∥∆ ′
+n∥is H¨ older in dist(an, bn) sinceD cHc,d depends H¨ older continuously oncand
+dandD cHc,d = Id. Now since dist(a n, bn)→0 exponentially asn→ ∞we conclude
+that so does∥∆ n∥and henceD ˜Ha,b = Id.□
+Now we complete the proof of Proposition 5.1 as in [GKS11, Proposition 2.5]. Let
+abe a fixed point ofLand letBbe the unit ball inV(a) centered ata. IfB⊂ ˜V(a),
+thenV(a) = ˜V(a) by invariance ofVand ˜VunderL −1. By the assumption, the leaf
+V(a) is dense inT d. It follows that the set of pointsxsuch thatV(x) = ˜V(x) is dense
+inT d and henceV= ˜V. Therefore, it suffices to show thatB⊂ ˜V(a).
+
+===== PDF PAGE 21 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 21
+We argue by contradiction. Assume that there isz 1 ∈Bsuch thatz 1 /∈˜V(a). Let
+x1 =W(z 1)∩ ˜V(a).SinceWhas dense leaves we can choose a sequence{b n, n≥1}
+inW(a) so thatb n →x 1 asn→ ∞. Lety n = ˜Ha,x1(bn).Continuity of ˜Vimplies that
+the sequence{y n}converges to a pointx 2 ∈ ˜V(a). Moreover, Lemma 5.2 implies that
+{x1, x2}is a parallel translation of{a, x 1}.
+We continue this procedure inductively to construct the sequence{x n, n≥1}in
+˜V(a). Letz n =W(x n)∩V(a).Then by the construction
+dV (zn, a) =n·d V (z1, a) andd W (xn, zn) =n·d W (x1, z1),
+but this is impossible sinceLcontractsVexponentially stronger thanW. Indeed, if
+we takeN(n) to be the smallest integer such thatL N(n)(zn)∈B, then
+dW (LN(n)(xn), LN(n)(zn))→ ∞asn→ ∞,
+which contradicts max z∈B dW (z, W(z)∩ ˜V(a))<∞.Thus ˜V=V.□
+6.Proof of Theorem 1.3
+The proof of Theorem 1.1 works for the global setting with only minor adjustments.
+In this case, (2) =⇒(1) as well ash(W ws) =W ws is given by [GSh23, Theorem 1.1].
+Further, [GSh23, Theorem 1.2] yields the dominated splitting and spectrum forDf| E ws
+matching that ofL, which implies thatDf| E ws has (χ, ε) spectrum for anyε >0. The
+remaining arguments work without change, except in (1) =⇒(3) we only obtain that ˜h
+is a localC ∞ diffeomorphism, as its injectivity is not clear. Still ˜hgives local foliation
+charts forW u+ss. Moreover, the H¨ older continuous metric onEws invariant under the
+holonomies ofW u+ss can be pulled by ˜husing the linear foliation as in the proof of
+Theorem 1.5(3) =⇒(2) below, since this is a local property.
+7.Proof of Theorem 1.4
+Theorem 1.4 follows from Theorem 7.1 below where we assume only the regularity
+of holonomies ofW ws between the leaves ofW ss.
+Theorem 7.1(Rigidity of weak holonomies).LetLbe a hyperbolic automorphism of
+Td with dense leaves ofW ws. Letfbe aC ∞ diffeomorphism sufficientlyC 1 close to
+L, and lethbe a topological conjugacy betweenfandL.
+Letr ss(L)be given by(1.3). and letq >1be anonintegersuch that the leaves of
+W ws are uniformlyC q. Then for the statements below we have
+(1)⇐ ⇒(1 ′)⇐ ⇒(2) =⇒(3) =⇒(4).
+(1)Holonomies ofW ws between the leaves ofW ss are uniformlyC r withr >
+rss(L),
+(1′)Holonomies ofW ws between the leaves ofW ss are uniformlyC ∞,
+
+===== PDF PAGE 22 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 22
+(2)h ss is a uniformlyC ∞ diffeomorphism alongW ss,
+andh ss isC q onT d,
+(3)The joint foliationsW u+ws is conjugate to the linear foliationW u ⊕W ws by
+aC q diffeomorphism,
+(4)W ws is a uniformlyC q subfoliation ofW s.
+If in additionh(W ss) =W ss, then
+(1, 1′, 2)⇐ ⇒his a uniformlyC ∞ diffeomorphism alongW ss
+⇐ ⇒his a uniformlyC r diffeomorphism alongW ss withr > r ss(L).
+7.1.Deducing Theorem 1.4 from Theorem 7.1.
+We recall that for anonintegerr >1 a foliation isC r if and only if its leaves and
+local holonomy maps are uniformlyC r, see e.g. [PSW97, Theorem 6.1(i)].
+Also we always haveh(W ws) =W ws, and henceW u andW ws are jointly integrable
+and the foliationW u+ws ish −1(W u ⊕W ws).
+(1)=⇒(2).(1) implies Theorem 7.1(1) and hence Theorem 7.1(2). Since (1) also
+implies that we can takeq=rTheorem 7.1, we obtain thath ss isC r onT d.
+(2)=⇒(3).(2) implies Theorem 7.1(2) withq=rand hence it yields Theorem
+7.1(3) withq=r, which is (3).
+(3)=⇒(1).(3) implies Theorem 7.1(3) withq=rand hence it yields Theorem
+7.1(4) withq=r, which is (1).
+The additional statement forh(W ss) =W ss also follows from the corresponding part
+of Theorem 7.1.
+7.2.Proof of Theorem 7.1.It follows the same scheme as the proof of Theorem 1.1.
+We denoteE ss =TW ss. SincefisC 1 close toL, the linear extensionDf| E ss
+has (χ, ε) spectrum with smallε. SinceW ss has uniformlyC ∞ leaves, we can apply
+Theorems 4.2 toW=W ss and obtain the normal form coordinatesφ x onW ss
+φx :W ss(x)→ E ss
+x .
+The mapsφ x areC ∞ diffeomorphisms and depend continuously onxinC ∞ topology.
+(1)=⇒(1 ′).Suppose that holonomiesH=H ws ofW ws insideW s between the
+leaves ofW ss are uniformlyC r withr > r ss(L). Hence we can apply Theorem 4.4 with
+U=W s,W=W ss andV=W ws. Indeed, the lifted holonomies ¯Hin (4.1) are also
+C r, and so the theorem yields that they are sub-resonance polynomials:
+(7.1) ¯Hx,y =φ y ◦ Hx,y ◦φ −1
+x :E ss
+x → E ss
+y are inS x,y,
+and in particular areC ∞. Since the coordinatesφ x are also uniformlyC ∞, we conclude
+that holonomiesH=H ws are uniformlyC ∞.
+(1)=⇒(2).Now we use (7.1) to show thath ss is uniformlyC ∞ alongW ss. Since we
+do not assumeh(W ss) =W ss, we need to adjust the holonomy argument accordingly.
+
+===== PDF PAGE 23 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 23
+We fix a pointx∈T d and consider the map
+(7.2)
+ˆhx :W ss(x)→W ss(h(x)) given by ˆhx =H ws
+h(x) ◦h| W ss(x),where
+H ws
+h(x) :h(W ss(x))→W ss(h(x)) is the linear holonomy alongW ws.
+We will prove that the maps ˆhx are uniformlyC ∞.
+We fixy∈ W ss(x) and take a sequence of pointsy n ∈ W ws(x) converging toy. This
+can be done since the leaves of the linear foliationW ws are dense inT d and the leaf
+conjugacyhis a homeomorphism which sendsW ws toW ws.
+Sinceh(W ws) =W ws, the holonomy mapsH x,yn :W ss(x)→ W ss(yn) are conjugated
+to the corresponding linear holonomiesH h(x), h(yn) :W ss(h(x))→W ss(h(yn)),
+Hx,yn = (ˆhyn)−1 ◦H h(x), h(yn) ◦ ˆhx :W ss(x)→ W ss(yn).
+We note thatH h(x), h(yn) are translationsH vn by the vectorsv n =h(y n)−h(x). Since
+yn converge toy, and henceh(y n) converge toh(y), we see that forv=h(y)−h(x),
+Hh(x), h(yn) =H vn converge toH v :W ss(h(x))→W ss(h(y)).
+Since ˆhy depend continuously ony, we obtainC 0 convergence
+Hx,yn converge to ( ˆhy)−1 ◦H v ◦ ˆhx :W ss(x)→ W ss(y) =W ss(x).
+Fory∈ W ss(x) we have that ˆhy and ˆhx are related by the translation holonomyH ˜v
+ˆhx ◦( ˆhy)−1 =H ˜v:W ss(h(y))→W ss(h(x)),
+where ˜v= ˆhx(y)−h(y)∈E ws. We conclude that
+(7.3)H x,yn converges toH ˆv:= (ˆhx)−1 ◦H ˆv◦ ˆhx :W ss(x)→ W ss(x) =W ss(y),
+whereH ˆv=H ˜v◦H v is the translation by ˆv=v+ ˜v= ˆhx(y)−h(x).
+Sinceφ y depend continuously ony, using (7.1) and (7.3) we obtain that the corre-
+sponding lifted holonomies ¯Hx,yn converge to a sub-resonance polynomialP x,y ∈ S x,y,
+Px,y =φ y ◦ Hˆv◦φ −1
+x =φ y ◦( ˆhy)−1 ◦H ˆv◦( ˆhx)◦φ −1
+x :E ss
+x → E ss
+y .
+Now we lift ˆhx toW ss(x) toE x using coordinatesφ x
+¯hx = ˆhx ◦φ −1
+x :E ss
+x →W ss(h(x)),
+and conjugate the translationH ˆvby ¯hx to obtain
+¯Hˆv= (¯hx)−1 ◦H ˆv◦ ¯hx =φ x ◦h −1 ◦H ˆv◦h◦φ −1
+x =φ x ◦φ −1
+y ◦P x,y :E ss
+x → E ss
+x .
+SinceP x,y ∈ S x,y andφ x ◦φ −1
+y :E ss
+y → E ss
+x is a composition of a sub-resonance
+polynomial inS y,x with a translation ofE ss
+x we conclude that ¯Hv ∈ ¯Sx, the finite
+dimensional Lie group generated byS x and the translations ofE ss
+x . Thus ¯hx conjugates
+
+===== PDF PAGE 24 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 24
+the action ofE ss by translations ofW ss(h(x)) with the continuous action ofE ss by
+elements of ¯Sx. So we get the injective continuous homomorphism
+ηx :E ss → ¯Sx given byη x(ˆv) =¯Hˆv= (¯hx)−1 ◦H ˆv◦ ¯hx.
+which isC ∞ and depends continuously onxinC ∞ topology. This yields that ˆh−1
+x and
+ˆhx are alsoC ∞ diffeomorphisms that depend continuously onxinC ∞ topology.
+This proves that the componenth ss is uniformlyC ∞ along the leaves ofW ss, as
+it is easy to see that ˆhx =h ss|W ss(x) under a local identification ofW ss(h(x)) with
+Ess. Sinceh ss is also locally constant along the transversal leavesW u+ws, it is as
+regular along these leaves as they are. SinceW u has iniformlyC ∞ leaves andW ws
+has uniformlyC q, the leaves of the joint foliationW u+ws are uniformlyC q. By Journe
+lemma we conclude thath ss ∈C q(Td).
+(2)=⇒(1).Sinceh ss ∈C ∞(Td) and ˆhx =h ss|W ss, it follows that the maps ˆhx are
+uniformlyC ∞ along the leaves ofW ss. It is easy to see from the definition (7.2) that
+ˆhx conjugates the holonomies ofW ws insideW s with corresponding linear holonomies:
+Hx,y = (ˆhy)−1 ◦H x,y ◦ ˆhx and henceH x,y are uniformlyC ∞.
+The case whenh(W ss) =W ss.Whenh(W ss) =W ss, it is clear from (7.2) that
+h|W ss = ˆhx =h ss|W ss and hence (2) implies thathis a uniformlyC ∞ diffeomorphism
+alongW ss. Conversely, ifh(W ss) =W ss andhis a uniformlyC r diffeomorphism along
+W ss withr > r ss(L), then so are the holonomies ofW ws as they are conjugate to the
+linear holonomies:H x,y = (h|W ss(y))−1 ◦H x,y ◦h| W ss(x). This yields (1).
+(2)=⇒(3).The argument is almost identical to the proof of (3) of Theorem 1.1.
+We map the joint foliationW u+ws =h −1(W u ⊕W ws) toW u ⊕W ss by the map
+˜h(x) =h(x)−∆ u+ws(x) =x+ ∆ ss(x) =x u+ws +h ss(x) :T d →T d.
+This map isC 0 close to the identity and is inC q(Td) sinceh ss isC q(Td) by (2).
+Invertibility of its derivativeD ˜hfollows as in Theorem 1.1 from the fact that ˆhx =
+hss|W ss(x) :W ss(x)→W ss(h(x)) is aC ∞ diffeomorphism by the proof of (2).
+(3)=⇒(4).This follows by intersecting theC q foliationW u+ws with uniformly
+C ∞ leaves ofW s.
+8.Proof of Theorem 1.5
+We note that (2)⇐ ⇒(2 ′) does not require dense leaves.
+(2)=⇒(2 ′).Sinceh(W u) =W u, the componenth s is locally constant alongW u,
+and hence uniformlyC ∞ alongW u. Together with (2), this yields thath s is inC ∞(Td).
+(2′)=⇒(2).Sinceh(W s) =W s we haveh| W s =h s|W s under a local identification
+ofW s andE s, and hence a uniformlyC ∞ diffeomorphism.
+(1)=⇒(2 ′)follows by combining Theorems 1.1 and 1.4. Indeed,h(W ss) =W ss
+is Theorems 1.1(1) and hence yields Theorems 1.1(5), so thath ws is inC ∞(Td) and a
+
+===== PDF PAGE 25 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 25
+C q diffeomorphism alongW ws with someq >1. The second assumption in Theorem
+1.5(1) is Theorem 1.4(1) withr=∞and hence yields Theorem 1.4(2) withr=∞, so
+thath ss is inC ∞(Td) and aC ∞ diffeomorphism alongW ss. Henceh s =h ws +h ss is
+inC ∞(Td) and a diffeomorphism alongW s.
+(2′)=⇒(3).The argument is almost identical to the proof of (3) of Theorem 1.1.
+We map the foliationW u toW u by theC ∞ diffeomorphism
+˜h(x) =h(x)−∆ u(x) =x+ ∆ s(x) =x u +h s(x) :T d →T d.
+This map isC 0 close to the identity and is inC ∞(Td) sinceh s is inC ∞(Td) by (2).
+Invertibility of its derivativeD ˜hfollows as in Theorem 1.1 from the fact thath s is a
+diffeomorphism alongW s.
+(3)=⇒(2).This implication requires only thatW u has dense leaves, which is al-
+ways true for a hyperbolic automorphism. The proof highlights usefulness of conjugacy
+to a linear foliation. It is an easy version of the holonomy argument where normal form
+polynomials are replaced by isometries.
+Letϕbe aC ∞ diffeomorphism such thatϕ(W u) =W u and letW ′ =ϕ(W s). Since
+W u is linear, its holonomies betweenW s leaves are isometries with respect to the
+standard metric onT d. For eachx∈T d bothT xW s andT xW ′ are transverse to
+Eu =T W u, and so we can identify them by the projection alongE u. This defines
+a continuous Riemannian metricg ′ onTW ′ for which holonomies ofW u betweenW ′
+leaves are isometries. Moreover, since the leaves ofW s are uniformlyC ∞, so are the
+leaves ofW ′, and henceg ′ is uniformlyC ∞ on the leaves ofW ′. Theng=ϕ −1
+∗ (g′)
+defines a continuous Riemannian metric onTW s which is uniformlyC ∞ along the
+leaves ofW s and with respect to which the holonomies ofW u are isometries.
+We note that for eachxthe isometries of (W s(x), g) areC ∞ diffeomorphisms of
+W s(x) and form a finite dimensional Lie groupG x. Since we have that the holonomies
+ofW u are isometries, repeating the holonomy argument as in the proof of Theorem
+1.1, we see thath| W s(x) conjugates the action ofE s by translations ofW s(h(x)) to a
+continuous action ofE s by isometries inG x. This yields thath| W s(x) are uniformlyC ∞
+diffeomorphisms.
+9.Proof of Theorem 1.6
+(1)=⇒(2, 3, 4)is clear.
+(3)=⇒(2)Let 0< ρ <1 be the largest absolute value of eigenvalues ofLonE ss
+and 0< ρ ′ <1 be the smallest absolute value of eigenvalues ofLonE ws. Then iffis
+C 1-close toLandy∈ W ss(x) then dist(f nx, f ny)≤C(ρ+ε) n for alln∈N. Ifhis
+α-H¨ older then for alln∈N
+dist(Lnh(x), Lnh(y)) = dist(h(f nx), h(f ny))≤C ′dist(f nx, f ny)α ≤C ′C α(ρ+ε) αn.
+
+===== PDF PAGE 26 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 26
+Ifαis sufficiently close to 1 so that (ρ+ε) α < ρ ′, this implies thath(y)∈W ss(h(x))
+and thush(W ss(x))⊂W ss(h(x)). Sincehis a homeomorphism,h(W ss(x)) contains
+an open ball inW ss(h(x)), and then iterating byfyieldsh(W ss(x)) =W ss(h(x)).
+(4)=⇒(2)under the density of leaves assumption for Lyapunov subfoliations of
+W ws+wu follows from Theorem 1.1 (4) =⇒(1) applied tofforW ws and tof −1 for
+W wu, yieldingh(W ss) =W ss andh(W uu) =W uu respectively.
+(2)=⇒(1).Applying Theorem 1.1 (1) =⇒(3) we obtain that the bundleE u+ss is
+C ∞. Similarly usingf −1 we obtain thatE s+uu isC ∞ and hence so is the intersection
+E s+uu∩E u+ss =E ss+uu. SinceE ss+uu andE ws+wu are symplectic orthogonal, we conclude
+thatE ws+wu and hence the corresponding foliationW ws+wu areC ∞. This is the only
+place where we use thatfpreserving aC ∞ symplectic form. Since the foliationW ws+wu
+isC ∞, by intersecting it withW s andW u we obtain thatW ws andW wu are their
+respective uniformlyC ∞ subfoliations. Thus we obtain that Theorem 1.5(1) is satisfied
+for bothfandf −1 and hence yields (2 ′) in each case. Combining them we conclude
+thath=h s +h u is inC ∞(Td) with invertible derivative.
+References
+[ALOS] S. Alvarez, M. Leguil, D. Obata, and B. Santiago.Rigidity of U-Gibbs measures near conser-
+vative Anosov diffeomorphisms onT 3, arXiv:2208.00126.
+[ACEPW] A. Avila, S. Crovisier, A. Eskin, R. Potrie, A. Wilkinson, and Z. Zhang.uu-states for
+Anosov diffeomorphisms ofT 3. In preparation.
+[DR24]Rigidity of center Lyapunov exponents for Anosov diffeomorphisms on 3-torus.Proc. Amer.
+Math. Soc. 152 (2024), no. 3, 1019-1030.
+[L92] R. de la Llave.Smooth conjugacy and SRB measures for uniformly and nonuniformly hyperbolic
+systems.Communications in Mathematical Physics,150(1992), 289-320.
+[FKSp11] D. Fisher, B. Kalinin, R. Spatzier.Totally non-symplectic Anosov actions on tori and nil-
+manifolds.Geometry and Topology 15 (2011) 191-216.
+[GaSh20] S. Gan and Y. Shi,Rigidity of center Lyapunov exponents and su-integrability.Comment.
+Math. Helv. 95 (2020), no. 3, 569-592
+[G08] A. Gogolev.Smooth conjugacy of Anosov diffeomorphisms on higher dimensional tori.Journal
+of Modern Dynamics, 2, no. 4, 645-700. (2008)
+[GKS11] A. Gogolev, B. Kalinin, V. Sadovskaya.Local rigidity for Anosov automorphisms.(with
+appendix by R. de la Llave) Mathematical Research Letters, 18 (2011), no. 05, 843-858.
+[GKS23] A. Gogolev, B. Kalinin, V. Sadovskaya.Center foliation rigidity for partially hyperbolic toral
+diffeomorphisms.Mathematische Annalen, 387 (2023), 1579-1602.
+[GSh23] A. Gogolev and Y. Shi.Joint integrability and spectral rigidity for Anosov diffeomorphisms.
+Proc. London Math. Soc. (3) 2023; 127: 1693-1748.
+[Gu02] M. Guysinsky.The theory of non-stationary normal forms.Ergod. Theory Dyn. Syst.,22(3),
+(2002), 845–862.
+[GuKt98] M. Guysinsky and A. Katok.Normal forms and invariant geometric structures for dynam-
+ical systems with invariant contracting foliations.Math. Research Letters5(1998), 149-163.
+[Ha] B. Hall.Lie Groups, Lie Algebras, and Representations: An Elementary Introduction.Graduate
+Texts in Mathematics, 222, 2nd ed., (2015) Springer.
+[J88] J.-L. Journ´ e.A regularity lemma for functions of several variables.Revista Matem´ atica
+Iberoamericana 4 (1988), no. 2, 187-193.
+
+===== PDF PAGE 27 =====
+RIGIDITY OF STRONG AND WEAK FOLIATIONS 27
+[K24] B. Kalinin.Non-stationary normal forms for contracting extensions. A Vision for Dynamics in
+the 21st Century, pp. 207-231, Cambridge University Press (2024).
+[KS16] B. Kalinin and V. Sadovskaya.Normal forms on contracting foliations: smoothness and ho-
+mogeneous structure.Geometriae Dedicata, Vol. 183 (2016), no. 1, 181-194.
+[KS17] B. Kalinin and V. Sadovskaya.Normal forms for non-uniform contractions. Journal of Modern
+Dynamics, vol. 11 (2017), 341-368.
+[KSW23] B. Kalinin, V. Sadovskaya, Z. Wang.Smooth local rigidity for hyperbolic toral automor-
+phisms.Comm. AMS, Vol. 3 (2023), 290-328.
+[KtN] A. Katok and V. Nitica.Rigidity in Higher Rank Abelian Group Actions: Volume 1, Introduc-
+tion and Cocycle Problem,Cambridge University Press, 2011.
+[PSW97] C. Pugh, M. Shub, A. Wilkinson.H¨ older foliations.Duke Mathematical Journal, 86 (1997),
+no. 3, 517-546.
+Department of Mathematics, The Pennsylvania State University, University Park,
+PA 16802, USA.
+Email address:kalinin@psu.edu, sadovskaya@psu.edu

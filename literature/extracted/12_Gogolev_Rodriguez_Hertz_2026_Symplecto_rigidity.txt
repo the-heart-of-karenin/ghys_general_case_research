@@ -1,0 +1,950 @@
+
+===== PDF PAGE 1 =====
+SYMPLECTO-RIGIDITY AND BOOTSTRAP FOR ANOSOV
+SYMPLECTOMORPHISMS AND CONTACT ANOSOV FLOWS
+ANDREY GOGOLEV AND FEDERICO RODRIGUEZ HERTZ
+Abstract.This paper is a sequel to the authors’ paper on rigidity of higher dimensional contact
+Anosov flows [GH24]. At the time the authors were unaware of much earlier work of Hamenst¨ adt [Ham93]
+devoted to the same problem. The methods of [GH24] and [Ham93] are overlapping but not entirely
+the same. In this paper we strengthen some the results of Hamenst¨ adt, by further bootstrapping
+the regularity of the conjugacy of 2-pinched contact Anosov flows. We also introduce a notion
+of symplecto-rigidity for symplectomorphisms and prove that some Anosov diffeomorphisms are
+symplecto-rigid. We further combine symplecto-rigidity with various rigidity techniques to estab-
+lish a number of smooth rigidity results of Anosov symplectomorphisms. Some new phenomena are
+present in the realm of Anosov symplectomorphism. For example, while the well-known de la Llave
+example on the 4-torus demonstrates absence of rigidity in the space of smooth Anosov diffeomor-
+phisms, however, we prove that it is rigid in the space of Anosov sympelctomorphisms.
+1.Introduction and new results
+1.1.Symplecto-rigidity.LetMbe a closed manifold equipped with a symplectic formω. A symplec-
+tomorphismf: (M, ω)→(M, ω) issymplecto-rigidifωis the unique continuous invariant symplectic
+form in its cohomology class; equivalently,fadmits no non-trivial invariant exact 2-form. Indeed, the
+difference of two cohomologous invariant symplectic forms is an invariant exact 2-form. Conversely, if
+ηis a non-zero continuous invariant exact 2-form, thenω+tηis closed, invariant, and cohomologous to
+ω; since non-degeneracy is open in theC 0 topology, it is symplectic for all sufficiently smallt. While
+the definition makes sense beyond hyperbolic dynamics, here we focus on aspects of symplecto-rigidity
+pertaining to Anosov symplectomorphisms, since this will be relevant to bootstrapping regularity of
+conjugacies between Anosov symplectomorphisms. In fact, for such purposes, we could use a weaker
+version of the definition. Given anα≥0, a symplectomorphismfis calledC α-symplecto-rigidifωis
+the unique invariantC α-regular symplectic form in its cohomology class.
+Conjecture 1.1.Every Anosov symplectomorphism is symplecto-rigid.
+Yong Fang proved this conjecture for Anosov automorphisms of nilmanifolds [Fan03]. His theorem
+is stated for smooth forms, but the proof also works for continuous forms. For completeness, we include
+a straightforward Fourier proof for toral automorphisms in Appendix A, which is the case used here.
+Theorem 1.2.LetL: (T 4, ω)→(T 4, ω)be a symplectic Anosov automorphism. There exists a small
+α >0such that any Anosov symplectomorphismf: (T 4, ω)→(T 4, ω), which is sufficientlyC 1 close
+toL, isC α-symplecto-rigid.
+Addendum 1.3.Using work of Kalinin and Sadovskaya and an additional measurable Livshits argu-
+ment, the conclusion of Theorem 1.2 can be strengthened: under the same assumptionsfis symplecto-
+rigid.
+Theorem 1.4.A residual set of Anosov symplectomorphisms is symplecto-rigid.
+Here by a residual set we mean a countable intersection of subsets that are open and dense in the
+C 1 topology on the space of Anosov symplectomorphisms of (M, ω).
+Remark1.5.The notion of symplecto-rigidity together with the stronger property ofsymplecto-
+ergodicitywill be developed in a companion paper [GRH27]. Iff: (M, ω)→(M, ω) is a symplec-
+tomorphism then the non-vanishing top-dimensional formvol=ω ∧d is invariant. Generally speaking,
+symplecto-ergodicity and ergodicity with respect tovoldo not imply one another [GRH27].
+The authors were partially supported by NSF grants DMS-2247747 and DMS-2453688, respectively.
+1
+arXiv:2609.10769v1  [math.DS]  9 Sep 2026
+
+===== PDF PAGE 2 =====
+2 ANDREY GOGOLEV AND FEDERICO RODRIGUEZ HERTZ
+1.2.Bootstrap for Anosov symplectomorphisms.Let (M, ω) be a closed symplectic manifold and
+letf: (M, ω)→(M, ω) be an Anosov symplectomorphism with invariant splittingT M=E s ⊕E u.
+Throughout we will assume that Anosov diffeomorphisms we consider areC ∞ smooth, however all
+results also hold in appropriate finite regularity as well.
+We callfconformallyr-pinched(or justr-pinched) if for a sufficiently largenand allx∈M
+(1.1)∥Df n|Eu(x)∥< m(Df n|Eu(x))r,
+wheremdenotes the conorm,m(A) =∥A −1∥−1.
+Theorem 1.6.Letf 1, f2 : (M, ω)→(M, ω)be symplecto-rigid Anosov symplectomorphisms whose
+stable and unstable distributions are of classC 1+ε for someε∈(0,1). Assume thatf 1 andf 2 are
+conjugate via aC 1 diffeomorphism which is homotopic to the identity. Then the conjugacy is, in fact,
+aC 2+ε diffeomorphism.
+Using uniqueness of normal forms, we further obtain the following.
+Corollary 1.7.Letf 1, f2 : (M, ω)→(M, ω)be symplecto-rigid Anosov symplectomorphisms which are
+2-pinched. Assume thatf 1 andf 2 are conjugate via aC 1 diffeomorphism homotopic to the identity.
+Then the conjugacy is, in fact, aC ∞ diffeomorphism.
+We can also give some applications to periodic data rigidity of Anosov diffeomorphisms. Consider
+two Anosov diffeomorphismsf 1 andf 2 which are conjugate via a homeomorphismh,h◦f 1 =f 2 ◦h.
+Recall thatf 1 andf 2 have the sameperiodic datawith respect toh, if for each periodic pointp=f k
+1 (p)
+the differentialsD pf k
+1 andD h(p)f k
+2 are conjugate. Also recall that an Anosov toral automorphismL
+isirreducibleif the characteristic polynomial ofLis irreducible overZ.
+Combining the above result with symplecto-rigidity of automorphisms [Fan03] and work of Gogolev [Gog08]
+and DeWitt-Gogolev [DG24] we have the following corollary.
+Corollary 1.8.LetL: (T d, ω)→(T d, ω)be an irreducible symplectic2-pinched hyperbolic automor-
+phism such that no three of its eigenvalues have the same modulus. Assume thatf: (T d, ω)→(T d, ω)is
+aC ∞ Anosov symplectomorphism conjugate toLvia a continuous conjugacyhwith the same periodic
+data. Thenhis aC ∞ diffeomorphism.
+We note that this is now a particular case of a recent spectacular result of Kalinin–Sadovskaya–
+Wang [KSW26], who do not require symplecticity or pinching. However, it is still of interest, as our
+bootstrap argument is different, shorter, and more elementary.
+The next corollary also follows directly from Theorem 1.2 and Corollary 1.7 in conjunction with
+rigidity results in [Gog08, DG24].
+Corollary 1.9.LetL: (T 4, ω)→(T 4, ω)be an irreducible symplectic2-pinched hyperbolic automor-
+phism with real spectrum. Then there exists aC 1 neighborhoodU ∋Lsuch that iff∈ Uis a
+symplectomorphism of(T 4, ω)and an Anosov symplectomorphismg: (T 4, ω)→(T 4, ω)is continuously
+conjugate tofwith the same periodic data, then the conjugacy is aC ∞ diffeomorphism.
+We finish this discussion with an interesting twist: it turns out that symplecticity can sometimes
+replace irreducibility in smooth rigidity problems.
+First we recall the de la Llave example [dlL92]. LetAandBbe automorphisms of the 2-torusT 2
+induced by hyperbolic matrices inSL(2,Z). We will assume that the smaller eigenvaluesλandµof
+AandB, respectively, satisfy the following pinching inequalities
+(1.2) 0< µ 2 < λ < µ <1.
+Consider the linear automorphismL=A×B. De la Llave considered the perturbations of the form
+Lφ(x, y) = (Ax, By+φ(x)),(x, y)∈T 2 ×T 2
+and proved that, in general, the conjugacy betweenLandL φ is merelyC logµ/logλ despite the fact
+that they have the same periodic data. Note, however, that the de la Llave perturbationL φ is not
+symplectic with respect to the standard symplectic formω 0 =dx 1 ∧dx 2 +dy 1 ∧dy 2.
+Theorem 1.10.LetL: (T 4, ω0)→(T 4, ω0)be a2-pinched product hyperbolic automorphism as de-
+scribed above. Then any sufficientlyC 1-small symplectic perturbationfwith the same periodic data is
+C ∞ conjugate toL.
+
+===== PDF PAGE 3 =====
+SYMPLECTO-RIGIDITY AND BOOTSTRAP FOR ANOSOV SYMPLECTOMORPHISMS AND CONTACT ANOSOV FLOWS 3
+Remark1.11.In the case whenA=B(andλ=µ) de la Llave examples do not have the same periodic
+data as the automorphism. This case was considered by de la Llave who establishedC ∞ periodic data
+rigidity [dlL02] without any additional assumptions. The case of 4-dimensional automorphisms with
+Jordan blocks was studied by DeWitt [DeW25] who provedC 1+ regularity of the conjugacy when
+eigenvalue and Jordan periodic data coincide for the perturbation. Under the additional assumption
+that the perturbation is symplectic (preserves a smooth symplectic form), Corollary 1.7 applies to
+further bootstrap regularity of conjugacy toC ∞.
+1.3.Bootstrap for contact Anosov flows.Four years ago, we wrote the paper [GH24], whose
+main result was thatC 0-conjugate contact flows withC r,r >1, stable and unstable distributions
+are, in fact,C r−ε-conjugate for anyε >0. When writing [GH24], we were regrettably unaware of
+the much earlier work of Hamenst¨ adt [Ham93] devoted to the same question. We are very grateful to
+Karen Butt, who pointed out this reference to us. The two papers overlap significantly in their results;
+however, their proof techniques are quite different.
+Hamenst¨ adt concludesC2 regularity of the conjugacy for flows withC 1 distributions by first es-
+tablishing Lipschitz regularity, thenC 1 regularity, and finally bootstrapping toC 2 with the help of
+the Kanai connection. The present authors used the matching functions technique together with non-
+stationary normal forms [GH24], and could bootstrap the regularity fromC 1 toC ∞ only when the
+distributions were assumed to be at leastC
+√
+2. In this follow-up paper, we first give a self-contained
+exposition of Hamenst¨ adt’s bootstrap argument [Ham93] and then combine it with our techniques
+from [GH24] to bootstrap the regularity of the conjugacy in the setting of contact flows.
+LetMbe a contact manifold equipped with a contact 1-formα. Letφ t :M→Mbe an Anosov
+flow with invariant splittingT M=E s ⊕RX⊕E u,X=∂φ t/∂t, which preserves the contact structure:
+(φt)∗α=α. We always normalizeαso thatα(X) = 1. We call such a flowconformallyr-pinched(or
+simplyr-pinched) if for a sufficiently largetand allx∈M
+(1.3)∥Dφ t|Eu(x)∥< m(Dφ t|Eu(x))r,
+Theorem 1.12(Hamenst¨ adt [Ham93]).Fori= 1,2, let(M i, αi)be a closed contact manifold and let
+φt
+i :M i →M i be a contact Anosov flow whose stable and unstable distributions are of classC 1+ε for
+someε∈(0,1). Ifφ t
+1 andφ t
+2 are conjugate by a time-preserving homeomorphism, then the conjugacy
+is aC 2+ε diffeomorphism.
+Utilizing uniqueness of normal forms we have.
+Corollary 1.13.Fori= 1,2, letφ t
+i :M i →M i be a contact Anosov flow which is2-pinched. Ifφ t
+1 and
+φt
+2 are conjugate by a time-preserving homeomorphism, then the conjugacy is aC ∞ diffeomorphism.
+In particular, this corollary applies to geodesic flows of metrics with 1
+4-pinched negative sectional
+curvature (cf. [GH24, Corollary 1.4]).
+Organization.Section 2 reviews bunching, non-stationary linearization, and Kanai parallelism. Sec-
+tion 3 proves the bootstrap results for contact Anosov flows, and Section 4 proves the smooth-conjugacy
+results for Anosov symplectomorphisms. Section 5 establishes the symplecto-rigidity results. The ap-
+pendices contain the Fourier argument for invariant forms on tori and the regularity calculation for
+holonomy-invariant vector fields.
+Acknowledgments.Most of all we are very thankful to Karen Butt for a discussion at Oberwolfach
+in July 2025 and for pointing out the reference [Ham93]. We also would like to thank Boris Kalinin
+for discussions on rigidity.
+AI.The authors completed the bulk of the paper in the summer of 2025 without AI assistance. While
+finishing the proofs of symplecto-rigidity in the summer of 2026, conversations with Claude Opus 4.8
+and ChatGPT 5.6 were helpful. The paper was written by the authors, except that initial drafts of the
+proofs of Theorem 1.4 and Appendix A were generated by ChatGPT and subsequently edited by the
+authors. We also used Claude Opus 4.8 and ChatGPT 5.6 to check and proofread the paper. Needless
+to say, the authors bear full responsibility for its correctness.
+
+===== PDF PAGE 4 =====
+4 ANDREY GOGOLEV AND FEDERICO RODRIGUEZ HERTZ
+2.Preliminaries
+2.1.Bunching and regularity of distributions.We fix a background Riemannian metric⟨·,·⟩on
+M, which induces the norm∥ · ∥. We will recall the well-known bunching and pinching conditions
+for Anosov diffeomorphisms and their implications for the regularity of invariant distributions. For
+Anosov flows, the parallel discussion of regularity is more subtle because strong stable subbundles
+are not as regular as weak subbundles. However, in the contact case, the strong subbundles are the
+intersections of the weak subbundles with the kernel of the contact form, which is smooth. Hence
+the strong subbundles have exactly the same regularity as the weak ones, and the discussion is fully
+analogous to the diffeomorphism case.
+The stable distributionE s of an Anosov diffeomorphismfsatisfies ther-bunching conditionif for
+somen >0 and allx
+∥Df n|Es(x)∥ · ∥Df n|Eu(x)∥r < m(Df n|Eu(x)).
+This condition impliesC r regularity ofE s [Has94]. Analogously, the condition
+∥Df n|Es(x)∥< m(Df n|Eu(x))·m(Df n|Es(x))r
+implies that the unstable distributionE u isC r.
+For Anosov symplectomorphisms, the symmetry between the stable and unstable subbundles sim-
+plifies the bunching conditions. Indeed, ifv∈E s(x) is non-zero, thenω(v,·):E u(x)→Ris a nonzero
+linear functional and hence is represented by the scalar product asω(v,·) =⟨·,ˆv⟩for some ˆv∈E u(x).
+Therefore, we havem(Df n|Es(x))≃ ∥Df n|Eu(x)∥−1 and∥Df n|Es(x)∥ ≃m(Df n|Eu(x))−1 (up to a
+uniform constant). This symmetry immediately implies that the twor-bunching conditions above are
+equivalent and reduce to
+∥Df n|Eu(x)∥< m(Df n|Eu(x))
+2
+r .
+Consequently, ther-pinching assumption (1.1) implies that both distributionsE s andE u satisfy 2
+r -
+bunching and hence areC 2/r-regular.
+2.2.Pinching and uniqueness of non-stationary linearization.We will rely a lot on Guysinsky-
+Katok non-stationary normal form theory [GK98]. We the following normal form result for 2-pinched
+diffeomorphisms is due to Sadovskaya.
+Proposition 2.1([GK98, Sad05]).Letf:M→Mbe an Anosov diffeomorphism. Assume thatfis
+2-pinched, that is, there existsn >0such that for allx∈M
+∥Df n|Eu(x)∥< m(Df n|Eu(x))2.
+Then for allx∈Mthere existsH x :E u(x)→W u(x)such that
+(1)H x is a smooth diffeomorphism for allx∈M;
+(2)H x(0) =x;
+(3)D 0Hx =id;
+(4)H f nx ◦Df n|Eu(x) =f n ◦ Hx for alln;
+(5)Non-stationary linearization{H x, x∈M}is unique amongC 2 smooth linearizations satisfying
+properties(2)−(4)above.
+For more details, especially discussion of uniqueness, we also refer to [Kal24] and to [GH24] for a
+proof of an even more precise uniqueness statement.
+2.3.Kanai parallelism.Kanai constructed a connection adapted to an Anosov symplectomorphism
+withC r,r≥1, invariant distributions [Kan88, Kan93]. We recall the idea and provide some details
+which will be important for us. Letγ: [0,1]→W u(x) be a smooth curve connectinga=γ(0)
+tob=γ(1). Given a vectorV 0 ∈E u(a) Kanai defines its parallel transport{V t}alongγin the
+following way. LetH u
+t :W s
+loc(a)→W s
+loc(γ(t)) be the family of unstable holonomies alongγ. By
+our assumption these holonomies areC r and given a vectorW 0 ∈E s(a) we obtain a vector field
+Wt =DH u
+t (W0)∈E s(γ(t)).
+Lemma 2.2.The holonomy invariant vector fieldW t isC r.
+We give a sketch of the proof of this calculus lemma in the appendix.
+Now a vectorV 0 ∈E u(a) defines a linear functional ˆV0 :E s(a)→Rgiven by ˆV0(·) =ω(V 0,·). We
+extend it alongγby
+ˆVt = ˆV0 ◦(D aH u
+t )−1.
+
+===== PDF PAGE 5 =====
+SYMPLECTO-RIGIDITY AND BOOTSTRAP FOR ANOSOV SYMPLECTOMORPHISMS AND CONTACT ANOSOV FLOWS 5
+Again, sinceωis non-degenerate, there exists a uniqueV t ∈E u(γ(t)) such that ˆVt =ω(V t,·).
+Lemma 2.3.The dual field ˆVt and the vector fieldV t areC r regular.
+Proof.Fix a scalar product⟨·,·⟩ 0 onE s(a) and push it forward to a scalar product⟨·,·⟩ t onE s(γ(t)),
+t∈[0,1], via the unstable holonomyD pH u
+t . Pushing forward an orthonormal basis ofE s(a) yields an
+orthonormal basis ofE s(γ(t)). By Lemma 2.2, the basis vectors areC r with respect tot. It follows
+that⟨·,·⟩ t is alsoC r int.
+There is a uniqueW 0 such that ˆV0 =⟨W 0,·⟩ 0; setW t =D pH u
+t (W0). Then
+ˆVt =⟨W t,·⟩ t.
+Since bothW t and⟨·,·⟩ t areC r int, so is ˆVt. Finally, sinceωis smooth we can also conclude thatV t
+isC r. □
+Hence we have constructed aC r parallel vector fieldV t alongγ. In particular, we have transported
+V0 ∈E u(a) toV 1 ∈E u(b). Note thatV 1 is independent of the choice ofγand hence is canonically
+defined. In other words, the connection providing the parallel transport is flat. Indeed, the holonomy
+DH u
+1 :E s(a)→E s(b) used to defineV 1 depends only on the homotopy class ofγ⊂W u(a), andW u(a)
+is simply connected.
+Remark2.4.Analogously the symplectic formωand the stable holonomies give rise to parallel trans-
+port along stable leaves. All this information can be incorporated into a singleKanai connectionwhich,
+in fact, has further geometric meaning. Namely, theAvez metricis defined by
+g(v, w) =ω(v, Iw)
+whereI(w u +w s) =w u −w s,w=w u +w s ∈E u ⊕E s. It is immediate to check thatgis a non-
+degenerate pseudo-Riemannian metric of signature (n, n) and that the stable and unstable subspaces
+are Lagrangian. Then the Kanai connection is the unique affine connection with respect to whichgis
+parallel and whose torsion vanishes [Kan93].
+2.4.Non-stationary linearization via Kanai parallelism.Pick a basis{e a
+1, ea
+2, . . . ea
+n}ofE u(a).
+Then, via the parallel transport, we have a basis{e b
+1, eb
+2, . . . eb
+n}ofE u(b) for everyb∈W u(a). This
+family of frames constitutes aparallel framingof the unstable manifold. Each pair of vector fieldse i
+ande j commute.
+We next explain how the parallel framing gives another construction of the non-stationary lineariza-
+tion. The link between the Kanai connection and normal forms is natural here; however, our proofs
+will not rely on it directly. For eachi, the equation ˙ψi =e i defines a flowψ s
+i onW u(a). These flows
+commute, so we can defineH a :E u(a)→W u(a) by setting
+Ha
+ X
+i
+siea
+i
+!
+=ψ s1
+1 ◦ψ s2
+2 ◦. . .◦ψ sn
+n (a).
+Differentiating with respect tos 1 givesDH a( ∂
+∂s1
+) =e 1. Since the order in the above composition does
+not matter, we can rearrange the factors so thatψ si
+i is last and similarly obtainDH a( ∂
+∂si
+) =e i. Recall
+that the vector fieldse i areC r by Lemma 2.3. HenceH a isC r+1.
+In this way we obtain a family of parametrizations{H a :a∈M}. We haveH a(0) =aand
+DHa(ea
+i ) =e a
+i . A straightforward diagram chase, using the fact that the dynamics commutes with
+holonomy, shows that the differential ofH −1
+f na ◦f n ◦ Ha is a constant linear map. HenceH −1
+f na ◦f n ◦ Ha
+itself is linear. Therefore, sincer+ 1≥2, item (5) of Proposition 2.1 shows that we have recovered
+the non-stationary linearization from Kanai parallelism.
+2.5.Kanai parallelism for contact flows.Letφ t be a contact Anosov flow preserving a contact
+formα. By invariance, the formdαvanishes onE s and onE u, and pairsE s andE u non-degenerately.
+Consequently, the construction in Subsection 2.3 applies verbatim, withdαin place of the symplectic
+form: unstable holonomy defines parallel transport along strong unstable leaves, and stable holonomy
+defines parallel transport along strong stable leaves. These are the leafwise parallelisms induced by
+the Kanai connection [Kan88, Kan93, Ham93].
+3.Proofs — Hamenst ¨adt’s theorem
+Here we give an exposition of Hamenst¨ adt’s theorem (Theorem 1.12) and its Corollary 1.13.
+
+===== PDF PAGE 6 =====
+6 ANDREY GOGOLEV AND FEDERICO RODRIGUEZ HERTZ
+3.1.Step 1: the conjugacy is aC 1+ε diffeomorphism.This step uses the joint non-integrability
+of the stable and unstable bundles of a contact flow and the fact that the conjugacyhpreserves the
+temporal function, which isC 1+ε. The inverse function theorem then givesC 1+ε regularity of both
+handh −1. This argument was first discovered by Feldman and Ornstein in dimension three [FO87]
+and then improved by Hamenst¨ adt [Ham93] and the current authors [GH24]. Hamenst¨ adt’s proof is
+different, even though it exploits the same basic mechanism of non-integrability: she first establishes
+Lipschitz continuity and then improves it toC 1.
+3.2.Step 2: aC 1+ε conjugacy isC 2+ε.By Step 1, the conjugacyhisC 1+ε. SinceDh(X 1) =X 2
+andDh(kerα 1) = kerα 2, we haveh ∗α2 =α 1 and henceh ∗dα2 =dα 1.
+Fixaand a basis{e a
+1, . . . , ea
+n}ofE u
+1 (a), and extend it to a parallel frame{e 1, . . . , en}onW u
+1 (a).
+Push the basis ataforward byDh a and extend it to a parallel frame{¯e 1, . . . ,¯en}onW u
+2 (h(a)). The
+contact Kanai parallelism from Subsection 2.5 depends only on the holonomies and ondα i. Because
+hconjugates the holonomies andh ∗dα2 =dα 1, it follows that
+Dh(ei) = ¯ei, i= 1, . . . , n.
+Recall that parallel framing isC 1+ε regular. Hence, with respect to a smooth coordinate chart,
+the above equation becomes a system of linear equations on partial derivatives∂h j/∂xi along the
+unstable leaves withC 1+ε coefficients. More explicitly, ifEand ¯Edenote the frame matrices in these
+coordinates, then
+Dh·E= ¯E◦h,and henceDh= ( ¯E◦h)E −1.
+SinceEand ¯EareC 1+ε andhisC 1, the right hand side isC 1. HencehisC 2 along unstable leaves.
+Now differentiate the last formula. The derivative ofDhis a sum of terms involvingD ¯E◦h,Dh,E −1
+andD(E −1). At this point, along each unstable leaf,handDhare Lipschitz, whileD ¯EandD(E −1)
+areC ε. ThereforeD(Dh) isC ε. ThushisC 2+ε along the unstable leafW u
+1 (a). Since the choice ofa
+was arbitrary, we obtain thathisC 2+ε along the unstable leaves, in fact, uniformly so, since all the
+considerations were uniform with respect to the choice ofa. Then the symmetric argument givesC 2+ε
+smoothness along the strong stable foliation.
+Finally,his smooth along flow orbits because the conjugacy is time-preserving. Journ´ e’s lemma [Jou88],
+applied first inside each weak stable leaf to the strong stable and flow foliations, givesC 2+ε regularity
+along weak stable leaves. Applying it once more to the weak stable and strong unstable foliations gives
+globalC 2+ε regularity. This completes the proof of Theorem 1.12.
+Proof of Corollary 1.13.By compactness, 2-pinching impliesr-pinching for somer <2. The discussion
+in Subsection 2.1 then givesC 1+ε stable and unstable distributions for someε >0. Theorem 1.12
+makes the conjugacyC 2+ε. Uniqueness of the non-stationary linearizations in Proposition 2.1 1 now
+implies that the conjugacy isC ∞ along the strong stable and unstable leaves. It is smooth along flow
+orbits, and the two applications of Journ´ e’s lemma used above give globalC ∞ regularity.□
+4.Proofs — smooth conjugacy for Anosov symplectomorphisms
+Here we give proofs of smooth conjugacy results for Anosov symplectomorphisms assuming the
+results on symplecto-rigidity, which we will derive in the last section of this paper.
+Proof of Theorem 1.6.Denote the conjugacy byh—h◦f 1 =f 2 ◦h. Thenh ∗ωis a continuousf 1-
+invariant symplectic form. Sincehis homotopic to the identity,h ∗ωbelongs to the same cohomology
+class asω. Hence, by symplecto-rigidity off 1,h ∗ω=ω.
+Just as in the proof of Theorem 1.12, on corresponding unstable leaves we can choose Kanai-parallel
+frames{e 1, . . . , en}and{¯e 1, . . . ,¯en}such that
+Dh(ei) = ¯ei, i= 1, . . . n.
+The same construction applies on stable leaves. The exact same argument as in the proof of Theo-
+rem 1.12 then shows thathisC 2+ε.□
+Proof of Corollary 1.7.By compactness, the 2-pinching assumption impliesr-pinching for somer <2.
+Hence, by the discussion in Section 2, the stable and unstable distributions off 1 andf 2 areC 1+ε for
+someε >0. Applying Theorem 1.6, we obtain that the conjugacyhisC 2+ε.
+1To be precise, we use the completely analogous flow version of Proposition 2.1.
+
+===== PDF PAGE 7 =====
+SYMPLECTO-RIGIDITY AND BOOTSTRAP FOR ANOSOV SYMPLECTOMORPHISMS AND CONTACT ANOSOV FLOWS 7
+LetH i
+x :E u
+i (x)→W u
+i (x),i= 1,2, be the non-stationary linearizations from Proposition 2.1. Since
+hisC 2 and conjugates the dynamics, the maps
+h◦ H 1
+x ◦(Dh x|Eu
+1 (x))−1 :E u
+2 (hx)→W u
+2 (hx)
+form aC 2 non-stationary linearization forf 2 satisfying the normalization properties (2)–(4). By
+uniqueness in Proposition 2.1, this linearization coincides withH 2
+hx. Thus
+h|W u
+1 (x) =H 2
+hx ◦Dh x|Eu
+1 (x) ◦(H 1
+x)−1.
+ThereforehisC ∞ along unstable leaves. The same argument for stable leaves givesC ∞ regularity
+along stable leaves. Journ´ e’s lemma now implies thathisC ∞.
+□
+Proof of Corollary 1.8.After conjugating by the toral automorphism induced byh, we may assume
+thathis homotopic to the identity (and replaceωby the corresponding constant symplectic form).
+By [DG24, Proposition 1.6],hisC 1+ν for someν >0. Sinceh ∗ωis H¨ older andL-invariant, symplecto-
+rigidity ofLgivesh ∗ω=ω. Thushis symplectic, so symplecto-rigidity transfers fromLtof; also,
+theC 1 conjugacy transfers the 2-pinching ofLtof. Then Corollary 1.7 implies thathisC ∞.□
+Proof of Corollary 1.9.The global version of Gogolev’s rigidity theorem [DG24, Theorem 1.4] (see
+also [Gog08, Theorem A]) gives a conjugacyh, homotopic to the identity, of classC 1+ν0, whereν 0 >0
+is uniform on a sufficiently small neighborhoodUofL. The proof of Theorem 1.2 allows us to shrinkU
+further and choose an exponentα∈(0, ν 0] such that everyf∈ UisC α-symplecto-rigid and 2-pinched.
+Thenh ∗ωisC α,f-invariant, and, sincehis homotopic to the identity, cohomologous toω. Thus the
+C α-symplecto-rigidity offgivesh ∗ω=ω, sohis symplectic. TheC 1 conjugacy also transfers the
+2-pinching offtog. The bootstrap argument in the proof of Corollary 1.7 now applies verbatim and
+implies thathisC ∞. □
+Proof of Theorem 1.10.We can apply [Gog08, Theorem C] to get aC 1+ν diffeomorphismH, homo-
+topic to the identity, such that
+H◦f◦H −1 =L φ, L φ(x, y) = (Ax, By+φ(x)).
+Letω 0 denote the standard product symplectic form and setω 1 = (H −1)∗ω0. Thenω 1 is a closed,
+non-degenerate,L φ-invariantC ν form cohomologous toω 0.
+Consider the product splittingT pT4 =R 2
+x ⊕R 2
+y,p= (x, y). SinceDL φ|R2y =B, we may write
+(ω1)p|R2y =a(p)ω B, whereω B is the standard area form onR 2
+y. By invariance of both forms,a◦L φ =a,
+and transitivity ofL φ implies thatais constant; integration over{x} ×T 2 givesa= 1. ThusR 2
+y is
+a symplectic subspace. Its symplectic orthogonal is an invariant complement toR 2
+y, hence it is the
+graph of mapsP p :R 2
+x →R 2
+y. Invariance gives
+(4.1)P Lφ(p)A=dφ x +BP p.
+Lemma 4.1.The mapP p =P (x,y) depends only onx. Moreover,ω 1 is invariant under translations
+in they-variable.
+Proof.Fixx∈T 2 andy, y ′ ∈T 2. Iterating the difference of the two graph-transform identities gives,
+for everyn∈Z,
+PLnφ(x,y) −P Lnφ(x,y′) =B n 
+P(x,y) −P (x,y′)
+
+A−n.
+The left-hand side is bounded. In eigenbases ofAandB, each coefficient on the right-hand side is
+multiplied by (µ±1/λ±1)n. The pinching inequalities imply that none of these four ratios has absolute
+value 1. Boundedness for both positive and negativentherefore forces every coefficient ofP (x,y) −P(x,y′)
+to vanish. ThusP (x,y) =P (x,y′).
+It remains to prove the assertion aboutω 1. WriteP (x,y) =P x, and letω A be the standard area
+form onR 2
+x. Since the graph ofP x is theω 1-orthogonal complement ofR 2
+y, there is a functionbsuch
+that
+ω1,(x,y)(u+P xu, w+P xw) =b(x, y)ω A(u, w).
+The graph-transform identity gives
+DLφ(u+P xu) =Au+P AxAu.
+
+===== PDF PAGE 8 =====
+8 ANDREY GOGOLEV AND FEDERICO RODRIGUEZ HERTZ
+Sinceω 1 isL φ-invariant andApreservesω A, it follows thatb◦L φ =b. Transitivity ofL φ therefore
+implies thatbis constant. Finally, decomposing
+(u, v) = (u, Pxu) + (0, v−P xu)
+and using that the two summands belong toω 1-orthogonal subspaces, we obtain
+ω1,(x,y)
+ 
+(u, v),(w, z)
+
+=bω A(u, w) +ω B(v−P xu, z−P xw).
+The right-hand side is independent ofy, which proves thatω 1 is invariant under translations in the
+y-variable. □
+By Lemma 4.1, we may writeP p =P x. The family of mapsP x :T xT2 →R 2
+y can be considered as a
+C ν one-formPonT 2 with values inR 2. The mixed component ofω 1 is determined by
+(4.2)ω 1(u, v) =−ω B(Pxu, v), u∈R 2
+x, v∈R 2
+y.
+Lemma 4.2.There exists aC 1+ν mapΨ = (ψ 1, ψ2):T 2
+x →R 2 such thatP=dΨ.
+Proof.We writeP= (p 1, p2), wherep 1 andp 2 are 1-forms. We first show thatp 1 is closed in the
+weak sense. LetXandYbe constant vector fields onT 2. By (4.2)ω 1(X, ∂y2) =−p 1(X), the identity
+dω1 = 0 gives, in distributional sense
+0 =dω 1(X, Y, ∂y2) =X
+
+ω1(Y, ∂y2)
+
+−Y
+
+ω1(X, ∂y2)
+
++∂ y2
+
+ω1(X, Y)
+
+=−X[p 1(Y)] +Y[p 1(X)] +∂ y2
+
+ω1(X, Y)
+
+=−dp 1(X, Y) +∂ y2
+
+ω1(X, Y)
+
+.
+By Lemma 4.1,ω 1 is independent ofy, so the last term vanishes as a distribution. Hencedp 1(X, Y) = 0.
+SinceXandYwere arbitrary,dp 1 = 0 in the weak sense.
+We next check that all periods ofp 1 vanish. Letγbe a closed loop inT 2
+x and lety 2(t) = (0, t)
+(modZ 2) be they 2-coordinate loop. Since [ω 1] = [ω0] andω 0 has no mixed component,
+0 =
+Z
+γ×y2
+(ω1 −ω 0) =−
+Z
+γ
+p1.
+Thusp 1 has zero periods. Fixx 0 ∈T 2. Forx∈T 2, choose a pathσfromx 0 toxand set
+ψ1(x) =
+Z
+σ
+p1.
+Becausep 1 is closed and has zero periods, this definition is independent of the choice ofσ. Moreover,
+dψ1 =p 1, and theC ν regularity ofp 1 givesψ 1 ∈C 1+ν. The argument forp 2 is analogous: it is weakly
+closed, and usingω 1(X, ∂y1) =p 2(X) together with they 1-coordinate loop, we obtain aC 1+ν function
+ψ2 withdψ 2 =p 2. Therefore Ψ = (ψ 1, ψ2) satisfiesP=dΨ.□
+By Lemma 4.2,P=dΨ. Substituting in (4.1) yields
+dΨAx ◦A=B◦dΨ x +dφ x.
+Here the chain rule gives
+d(Ψ◦A) x =dΨ Ax ◦A, d(B◦Ψ) x =B◦dΨ x,
+becauseAandBare fixed linear maps. Thus
+d(Ψ◦A−B◦Ψ−φ) = 0,
+so there is a constantc∈R 2 such that
+Ψ(Ax)−BΨ(x)−φ(x) =c.
+Since 1 is not an eigenvalue ofB, the mapI−Bis invertible. Replacing Ψ by Ψ−(I−B) −1ctherefore
+gives
+Ψ(Ax) =BΨ(x) +φ(x).
+Consequently,S(x, y) = (x, y+ Ψ(x)) satisfiesS◦L=L φ ◦S. Thush=S −1 ◦His aC 1+ν
+diffeomorphism, homotopic to the identity, which conjugatesftoL.
+After shrinking the neighborhood ofL, the mapfis 2-pinched and is symplecto-rigid by Adden-
+dum 1.3; the automorphismLis symplecto-rigid by Lemma A.1. Corollary 1.7 now implies thathis
+C ∞. □
+
+===== PDF PAGE 9 =====
+SYMPLECTO-RIGIDITY AND BOOTSTRAP FOR ANOSOV SYMPLECTOMORPHISMS AND CONTACT ANOSOV FLOWS 9
+5.Proofs — symplecto-rigidity
+We prove Theorem 1.2.
+Letf: (T 4, ω)→(T 4, ω) be a symplectic perturbation of a symplectic automorphismL: (T 4, ω)→
+(T4, ω). First note thatωhas constant coefficients. Indeed, letω 0 be the unique constant-coefficient
+representative of the cohomology class [ω]. SinceL ∗[ω] = [ω], the constant-coefficient formsL ∗ω0 and
+ω0 are cohomologous and hence equal. Thusω−ω 0 is an invariant exact 2-form, so Lemma A.1 gives
+ω=ω 0.
+Letω ′ be an invariantC α regular symplectic form in the same cohomology class asω. Then
+η=ω−ω ′ =dαis an exactC α invariant 2-form. Thenω∧ηis a 4-form which must be a constant
+multiple ofvolby ergodicity. On the other hand
+Z
+M
+ω∧η=
+Z
+M
+d(ω∧α) = 0.
+Henceω∧η= 0, soηis so calledprimitive form. Similarly we deduce thatη∧η= 0.
+Sinceωis non-degenerate we can representηvia an endomorphismB:T M→T M:
+η(v, u) =ω(Bv, u)
+Invariance ofηandωimmediately implies thatBcommutes with dynamics —B◦Df=Df◦B,
+which in turn implies invariance of the stable and unstable subbundles —B(E s)⊂E s,B(E u)⊂E u
+and we can splitB=B s ⊕B u :E s ⊕E u →E s ⊕E u.
+By invariance and uniform contraction, bothηandωvanish onE s ∧E s and onE u ∧E u. At any
+pointp, choose bases{e 1, e2}ofE s(p) and{f 1, f2}ofE u(p) that are dual with respect toω. Thenω
+takes the standard form
+ω=e 1 ∧f 1 +e 2 ∧f 2.
+Atp, we can writeηas
+η=ae 1 ∧f 1 +be 2 ∧f 1 +ce 1 ∧f 2 +de 2 ∧f 2,
+whereB s
+p =
+  a b
+c d
+
+relative to{e 1, e2}. The skew-symmetry ofηandωgivesB u
+p = (B s
+p)t relative to
+{f1, f2}. Finally,ω∧η= 0 yields tr(B s
+p) =a+d= 0, whileη∧η= 0 yields det(B s
+p) =ad−bc= 0.
+HenceB s
+p is nilpotent.
+Now given a periodic pointp=f n(p) we have thatBs
+p commutes withD pf n|Es(p) which immediately
+implies that eitherD pf n|Es(p) has equal real eigenvalues orB s
+p vanishes.
+Lemma 5.1.IfLhas real stable eigenvalues of distinct moduli thenη≡0.
+Proof.Letλ 1, λ2 be the stable eigenvalues ofLand assume|λ 1|<|λ 2|<1. Then the splitting of
+Es
+L into the corresponding one-dimensional eigenspaces is dominated. Hence, for anyfsufficientlyC 1
+close toL, we have a dominated splitting
+Es =E s
+1 ⊕E s
+2
+with one-dimensional subbundles.
+By the preceding observation, at every periodic pointp=f n(p) the nilpotent operatorB s
+p commutes
+with a linear map with two distinct real eigenvalues. ThereforeB s
+p = 0. Periodic points are dense and
+Bs is continuous, henceB s ≡0. SinceB u = (B s)t in the dual bases above, we also haveB u ≡0.
+ThusB≡0 andη≡0. □
+Letℓ s ⊂E s be the kernel ofB s and, similarly, letℓ u ⊂E u be the kernel ofB u. They are invariant
+distributions of dimension≥1, note that dimℓ s(x) = dimℓ u(x),∀x∈T 4. The setKwhere this
+distribution coincides withE s is closed and invariant, this is precisely the set whereηvanishes. If
+K=T 4 thenη≡0 and we are done. Note that ifK̸=T 4 thenKhas empty interior because
+it is invariant. In particular, we already have that all periodic points inT 4\Khave repeated real
+eigenvalues.
+Lemma 5.2.IfK̸=T 4 thenK=∅.
+Proof.We show thatKis saturated by stable and unstable leaves. Recall thatηisC α. Since
+the distinct-real-moduli case has already been excluded, all stable eigenvalues ofLhave a common
+modulusρ <1 and, by symplecticity, all unstable eigenvalues have modulusρ −1. Possible Jordan
+
+===== PDF PAGE 10 =====
+10 ANDREY GOGOLEV AND FEDERICO RODRIGUEZ HERTZ
+blocks contribute only polynomial factors, which can be absorbed intoκ n for anyκ >1. Fixκ >1 so
+close to 1 thatρ ακα+2 <1. Then, after shrinking theC 1 neighborhood ofLif needed, we have
+d(f nx, f ny)≤C(ρκ) nd(x, y),∥Df n|Es(y)∥ ≤C(ρκ) n,∥Df n|Eu(y)∥ ≤C(ρ −1κ)n.
+Settingθ:=ρ ακα+2 <1, we obtain
+d(f nx, f ny)α∥Df n|Es(y)∥ ∥Df n|Eu(y)∥ ≤Cθ n
+for ally∈W s
+loc(x) and alln≥0, and the analogous estimate forf −1.
+Letx∈Kandy∈W s
+loc(x). Given unit vectorsv, w∈T yT4, writev=v s +v u,w=w s +w u. Since
+ηvanishes onE s ∧E s andE u ∧E u, invariance gives
+ηy(v, w) =η f ny(Df nvs, Df nwu) +η f ny(Df nvu, Df nws).
+Sincef nx∈K, we may subtractη f nx, using the standard trivialization ofTT 4. By the H¨ older
+regularity ofηand the above estimate, the right-hand side is bounded byCθ n. Lettingn→ ∞gives
+ηy(v, w) = 0. HenceW s
+loc(x)⊂K. Applying the same argument tof −1 givesW u
+loc(x)⊂K.
+Now, ifKis non-empty, then local product structure impliesK=T 4, which is a contradiction.□
+We now finish the proof. Assume thatη̸≡0. ThenK̸=T 4 and, by the lemma,K=∅. HenceB s
+andB u have rank one at every point, andℓ s = kerB s is an invariant line field. We still have two cases.
+IfLhas complex stable eigenvalues, then, forfsufficientlyC 1 close toL, the stable derivative at the
+continuation of a fixed point ofLalso has complex eigenvalues. This is incompatible with the invariant
+lineℓ s. ThusLhas real stable eigenvalues. By Lemma 5.1, they cannot have distinct moduli; passing
+to the second iterate if necessary, we may assume that they are equal, and we proceed to argue in this
+case. SinceB s is nilpotent, ImB s =ℓ s. Also, from the formula forηabove,ℓ u is theω-annihilator of
+ℓs insideE u. Therefore
+kerη=ℓ s ⊕ℓ u.
+SubbundlesE s
+L andE u
+L are Lagrangian subspaces andωpairs them non-degenerately. Choose a
+linear mapJ:E s
+L →E u
+L such that
+ω(v, J v)>0, v̸= 0.
+Set
+P0 ={v+J v:v∈E s
+L}.
+For a lineℓ⊂E s
+L denote byℓ ⊥ itsω-annihilator inE u
+L and setH ℓ =ℓ⊕ℓ ⊥. ThenP 0 is transverse
+to everyH ℓ. Indeed, ifv+J v∈H ℓ, thenv∈ℓandJ v∈ℓ ⊥, soω(v, J v) = 0. This contradicts
+ω(v, J v)>0 unlessv= 0.
+By compactness this transversality is uniform inℓ. SincefisC 1 close toL, the planes kerη x =
+ℓs(x)⊕ℓ u(x) are uniformly close to the family{H ℓ}ℓ⊂Es
+L. HenceP 0 is transverse to kerη x for all
+x∈T 4. Rational two-planes are dense in the Grassmannian, so we can choose a rational two-planeP
+close toP 0 such that we still have
+P∩kerη x ={0}, x∈T 4.
+RegardPas a translation-invariant plane field onT 4, and letT P =P/(P∩Z 4) be the corresponding
+rational torus. The restrictionη| TP is a continuous nowhere vanishing 2-form. After orientingT P we
+can writeη| TP =ρ dA, whereρis continuous and nowhere zero. Henceρhas constant sign andZ
+TP
+η̸= 0.
+This contradicts exactness ofη, since an exact form pairs trivially with every closed cycle. Thusη≡0.
+Proof of Addendum 1.3.Letω ′ be an invariant continuous symplectic form in the same cohomology
+class asωand setη=ω−ω ′. We need to show thatη≡0.
+The case of distinct real stable eigenvalues was already treated in Lemma 5.1; its proof only uses
+continuity ofB. Thus we are in the remaining case. Assume thatη̸= 0. As in the proof of Theorem 1.2,
+letK={x:η x = 0}. By ergodicity,Khas zero measure. On the full measure setT 4\Kwe have
+kerη x =ℓ s(x)⊕ℓ u(x).
+The line fieldsℓ s andℓ u are invariant and are measurable when viewed as line fields onT 4.
+Assume for a moment thatfhas two distinct stable Lyapunov exponentsχ 1 < χ 2 <0, and let
+Es =E s
+1 ⊕E s
+2
+
+===== PDF PAGE 11 =====
+SYMPLECTO-RIGIDITY AND BOOTSTRAP FOR ANOSOV SYMPLECTOMORPHISMS AND CONTACT ANOSOV FLOWS 11
+be the stable Oseledets splitting forvol. The equivariance and boundedness ofB s imply that it
+preservesE s
+1. Indeed, ifv∈E s
+1(x), then
+∥Df n
+x (Bs
+xv)∥=∥B s
+f nx(Df n
+x v)∥ ≤ ∥B s∥C0 ∥Df n
+x v∥,
+so any non-zeroB s
+xvhas Lyapunov exponentχ 1 and therefore belongs toE s
+1(x). SinceB s
+x is nilpotent,
+its restriction to the one-dimensional spaceE s
+1(x) vanishes. Thusℓ s =E s
+1 almost everywhere. Choose
+measurable unit vectorse i(y)∈E s
+i (y). For almost everyy /∈K, the operatorB s
+y is non-zero and
+nilpotent, with ImB s
+y = kerB s
+y =ℓ s(y). Thus, in the basis{e 1(y), e2(y)},
+Bs
+y =
+
+0b(y)
+0 0
+
+, b(y)̸= 0.
+Chooseδ >0 such that the set Ω δ ={y:|b(y)| ≥δ}has positive measure, and choose an Oseledets-
+regular pointx∈Ω δ which is recurrent to Ω δ. In the Oseledets bases atxandf nx, we have
+Df n
+x |Es(x) =
+an 0
+0d n
+
+.
+The relation
+Bs
+f nx ◦Df n
+x |Es(x) =Df n
+x |Es(x) ◦B s
+x
+gives
+b(f nx)dn =a nb(x).
+Along return timesn j for whichf nj x∈Ω δ, the ratio|a nj /dnj |is bounded above and below by positive
+constants independent ofj. Hence,
+χ1 −χ 2 = lim
+j→∞
+1
+nj
+log
+
+anj
+dnj
+ = 0,
+a contradiction.
+Thereforevolhas only one stable Lyapunov exponent and, by symplecticity, only one unstable
+Lyapunov exponent. Also, sincefisC 1 close toL, the stable and unstable derivative cocycles are
+fiber bunched. Thus Kalinin–Sadovskaya [KS13, Theorem 3.3 and Corollary 3.8] applies and implies
+thatℓ s andℓ u coincide almost everywhere with H¨ older invariant line fields onT4. We keep the same
+notation for these extensions; then kerη⊃ℓ s ⊕ℓ u.
+Fix a smooth Riemannian metric and letP= (ℓ s ⊕ℓ u)⊥. ThenPis a H¨ older two-dimensional
+bundle. Passing to an iterate and, if necessary, to a double cover, we may assume that the relevant
+bundles are oriented and that their orientations are preserved; this does not affect the conclusion.
+WriteDfwith respect to (ℓ s ⊕ℓ u)⊕Pas
+Dfx =
+Ax Cx
+0Q x
+
+, Q x :P x →P f x.
+The cocycleQ x is H¨ older. Letρ x be the area form onP x induced by the Riemannian metric, and
+define the positive inverse JacobianJ ρ by
+Q∗
+xρf x =J ρ(x)−1ρx.
+ThenJ ρ is a positive H¨ older function. Sinceℓs ⊕ℓ u ⊂kerη, we can write
+η|Px =u(x)ρ x
+for a continuous functionu:T 4 →R. Invariance ofηgives, forv, w∈P x,
+u(x)ρx(v, w) =u(f x)ρ f x(Qxv, Qxw) =u(f x)J ρ(x)−1ρx(v, w).
+Hence
+u(x)Jρ(x) =u(f x).
+The zero set ofuis invariant. Thus eitheru= 0 a.e., in which caseη≡0 by continuity, oruis non-zero
+a.e. In the latter case the sign ofuis invariant and hence constant a.e. Reversing the orientation ofP
+if necessary, we may assume thatu >0 a.e. Applying the measurable Livshits theorem [Liv72] to
+logJ ρ = log(u◦f)−logu
+we conclude that logucoincides a.e. with a H¨ older functionφ. Henceu=e φ a.e. Since both sides
+are continuous, this equality holds everywhere. Thusuis positive and H¨ older, so its vanishing setK
+is empty. The final argument in the preceding proof of Theorem 1.2 now applies and givesη≡0.□
+
+===== PDF PAGE 12 =====
+12 ANDREY GOGOLEV AND FEDERICO RODRIGUEZ HERTZ
+Now we prove Theorem 1.4. We will use the same idea. Write dimM= 2d. Let{U j}be a
+countable basis of open sets inM. Denote byG j the set of Anosov symplectomorphisms which have
+a periodic pointp=f n(p) inU j such thatD pf n|Es(p) has simple spectrum overC. The setG j is
+open: the periodic point has a continuation and simplicity of the spectrum overCpersists. AlsoG j
+is dense. Indeed, periodic points are dense for an Anosov diffeomorphism, and the symplectic Franks’
+lemma [CH17, Lemma 2.3] allows us to perturb the derivative along the orbit so that the stable return
+has simple spectrum overC. Hence
+G=
+\
+j
+Gj
+is residual. For everyf∈ G, periodic points with simple stable spectrum overCare dense.
+Lemma 5.3.Letηbe an invariant exact continuous2-form. Then
+ηk ∧ω d−k = 0, k= 1, . . . , d.
+Proof.Each formη k ∧ω d−k is an invariant exact top-degree form. Hence, by ergodicity, it is a constant
+multiple ofω d. Since it is exact, its integral is zero. Therefore this multiple is zero.□
+Lemma 5.4.LetB s :E s →E s be defined by
+η(v s, vu) =ω(B svs, vu).
+ThenB s
+x is nilpotent for everyx.
+Proof.As before,ηvanishes onE s ∧E s and onE u ∧E u, and we have the splittingB=B s ⊕B u.
+Choose dual bases ofE s(x) andE u(x) with respect toω. Then
+(ω+tη) d = det(I+tB s
+x)ω d.
+By Lemma 5.3, all non-constant coefficients in this polynomial vanish. Hence det(I+tB s
+x)≡1.
+Therefore all eigenvalues ofB s
+x are equal to zero; henceB s
+x is nilpotent.□
+Letf∈ Gand letω ′ be an invariant continuous symplectic form in the cohomology class ofω. Set
+η=ω ′ −ω. Thenηis invariant and exact. As before,ηvanishes onE s ∧E s and onE u ∧E u, and
+η(v s, vu) =ω(B svs, vu).
+Invariance gives
+Bs
+f x ◦Df| Es(x) =Df| Es(x) ◦B s
+x.
+Thus, ifp=f n(p), thenB s
+p commutes withD pf n|Es(p). By Lemma 5.4,B s
+p is nilpotent. Since
+Dpf n|Es(p) has simple spectrum overC, this impliesB s
+p = 0. Since such periodic points are dense,
+Bs ≡0. Then alsoB u ≡0, and thereforeη≡0. This proves that everyf∈ Gis symplecto-rigid.
+AppendixA.Invariant forms for toral automorphisms
+Here we give a continuous version of Fang’s result in the case of toral automorphisms.
+Lemma A.1.LetL:T d →T d be a hyperbolic toral automorphism. Then any continuous invariant
+exact2-form onT d vanishes.
+Proof.We use the same symbolL∈GL(d,Z) for the matrix defining the automorphism. Letηbe
+a continuous invariant exact 2-form. Denote its 2-form Fourier coefficients bybη(k). Thenηhas the
+Fourier expansion
+ηx =
+X
+k∈Zd
+e2πi⟨k,x⟩bη(k),
+where the equality is understood inL 2. InvarianceL ∗η=ηgives
+bη((Lt)nk) = (L∗)nbη(k), n∈Z.
+Ifk̸= 0, then|(L t)nk| → ∞both asn→ ∞and asn→ −∞. By the Riemann–Lebesgue lemma we
+have
+(L∗)nbη(k)− →0
+both asn→ ∞and asn→ −∞. Hencebη(k) = 0 for everyk̸= 0.
+Thus all non-constant Fourier coefficients ofηvanish. By uniqueness of Fourier coefficients for
+continuous functions,ηis a constant form. Butηis exact; henceη≡0.□
+
+===== PDF PAGE 13 =====
+SYMPLECTO-RIGIDITY AND BOOTSTRAP FOR ANOSOV SYMPLECTOMORPHISMS AND CONTACT ANOSOV FLOWS 13
+AppendixB.Regularity property of the holonomy
+Here we sketch the proof of Lemma 2.2. Namely, we show that the vector fieldW(γ(t)) over a curve
+γ⊂W u(a),a=γ(0), given by unstable holonomy,W(γ(t)) =DH u
+a→γ(t)(W0), is aC r vector field
+provided that the stable and unstable distributions areC r,r≥1.
+For simplicity, assume that we are in dimension two anda= (0,0). Letγ(x) = (x,0) be the curve
+in the unstable leaf given by thex-axis, so thatF(x,0) = 0, and letW s(a) ={(0, y) :y∈R}. The
+stable and unstable distributions are
+Es(x, y) = span
+
+g(x, y) ∂
+∂x + ∂
+∂y
+
+and
+Eu(x, y) = span
+ ∂
+∂x +F(x, y) ∂
+∂y
+
+,
+wheregandFareC r, and hence at leastC 1, by assumption.
+The unstable manifolds are given by the solutions of the ODE
+αx(x, y) =F(x, α(x, y));
+α(0, y) =y.
+By standard ODE theory, the solutionαis unique and isC 1 as a function of two variables. Linearizing
+the ODE along thex-axis gives the vector fieldα y(x,0) ∂
+∂y and, accordingly, the vector fieldWis given
+by
+W(x,0) =α y(x,0)
+ ∂
+∂y +g(x,0) ∂
+∂x
+
+.
+Hence, we need to show thatα y(x,0) is aC 1 function ofx; in fact, we prove thatα y(x, y) isC 1 inx
+for everyy. Consider the approximations
+α(x, y; ∆y) =
+ 
+α(x, y+ ∆y)−α(x, y)
+
+/∆y.
+Differentiating these approximations with respect toxand using the ODE gives
+αx(x, y; ∆y) =
+ 
+F(x, α(x, y+ ∆y))−F(x, α(x, y))
+
+/∆y,
+which converges uniformly on compactx-intervals as ∆y→0 toF y(x, α(x, y))αy(x, y). On the other
+hand, sinceαisC 1, the functionsα(x, y; ∆y) converge uniformly toα y(x, y). The fundamental theorem
+of calculus gives
+α(x, y; ∆y) =α(0, y; ∆y) +
+Z x
+0
+αx(s, y; ∆y)ds= 1 +
+Z x
+0
+αx(s, y; ∆y)ds,
+where we used the initial conditionα(0, y) =y. Moreover,
+
+Z x
+0
+αx(s, y; ∆y)ds−
+Z x
+0
+Fy(s, α(s, y))αy(s, y)ds
+ ≤xsup
+s
+|αx(s, y; ∆y)−F y(s, α(s, y))αy(s, y)| − →0.
+Thus we may pass to the limit in the preceding integral identity and obtain
+αy(x, y) = 1 +
+Z x
+0
+Fy(s, α(s, y))αy(s, y)ds.
+Consequently,
+∂
+∂x αy(x, y) =F y(x, α(x, y))αy(x, y),
+andα y(x, y) isC 1 inx. In particular,α y(x,0) isC 1 inx, and the displayed formula forWshows that
+WisC 1. This finishes the proof in the case whenr= 1. Ifr= 1 +θ, 0< θ <1, then the right-hand
+side isθ-H¨ older inx, and hence bothα y(x,0) andWareC 1+θ inx. More generally, differentiating
+the variational equation inductively shows thatα y(x,0) andWareC r inxfor everyr≥1.
+Finally, the higher-dimensional case can be proved using the same method, but the notation for the
+derivatives is cumbersome.
+
+===== PDF PAGE 14 =====
+14 ANDREY GOGOLEV AND FEDERICO RODRIGUEZ HERTZ
+References
+[CH17] Thiago Catalan and Vanderlei Horita.C 1-genericity of symplectic diffeomorphisms and lower bounds for
+topological entropy.Dynamical Systems, 32(4):461–489, 2017.
+[DeW25] Jonathan DeWitt. Periodic data rigidity of Anosov automorphisms with Jordan blocks.Ergodic Theory and
+Dynamical Systems, 45(4):1129–1160, 2025.
+[DG24] Jonathan DeWitt and Andrey Gogolev. Dominated splitting from constant periodic data and global rigidity
+of Anosov automorphisms.Geom. Funct. Anal., 34(5):1370–1398, 2024.
+[dlL92] R. de la Llave. Smooth conjugacy and S-R-B measures for uniformly and non-uniformly hyperbolic systems.
+Comm. Math. Phys., 150(2):289–320, 1992.
+[dlL02] Rafael de la Llave. Rigidity of higher-dimensional conformal Anosov systems.Ergodic Theory Dynam. Systems,
+22(6):1845–1870, 2002.
+[Fan03] Yong Fang. A remark about hyperbolic infranilautomorphisms.C. R. Math. Acad. Sci. Paris, 336(9):769–772,
+2003.
+[FO87] Jacob Feldman and Donald Ornstein. Semi-rigidity of horocycle flows over compact surfaces of variable negative
+curvature.Ergodic Theory Dynam. Systems, 7(1):49–72, 1987.
+[GH24] Andrey Gogolev and Federico Rodriguez Hertz. Smooth rigidity for higher-dimensional contact Anosov flows.
+Ukrainian Math. J., 75(9):1361–1370, 2024. Reprint of Ukra¨ ın. Mat. Zh.75(2023), no. 9, 1195–1203.
+[GK98] M. Guysinsky and A. Katok. Normal forms and invariant geometric structures for dynamical systems with
+invariant contracting foliations.Math. Res. Lett., 5(1-2):149–163, 1998.
+[Gog08] Andrey Gogolev. Smooth conjugacy of Anosov diffeomorphisms on higher-dimensional tori.J. Mod. Dyn.,
+2(4):645–700, 2008.
+[GRH27] Andrey Gogolev and Federico Rodriguez Hertz. On symplecto-ergodicity.preprint, 2027.
+[Ham93] Ursula Hamenst¨ adt. Regularity of time-preserving conjugacies for contact Anosov flows withC 1-Anosov split-
+ting.Ergodic Theory Dynam. Systems, 13(1):65–72, 1993.
+[Has94] Boris Hasselblatt. Regularity of the Anosov splitting and of horospheric foliations.Ergodic Theory Dynam.
+Systems, 14(4):645–666, 1994.
+[Jou88] J.-L. Journ´ e. A regularity lemma for functions of several variables.Rev. Mat. Iberoamericana, 4(2):187–193,
+1988.
+[Kal24] Boris Kalinin. Non-stationary normal forms for contracting extensions. InA vision for dynamics in the 21st
+century—the legacy of Anatole Katok, pages 207–231. Cambridge Univ. Press, Cambridge, 2024.
+[Kan88] Masahiko Kanai. Geodesic flows of negatively curved manifolds with smooth stable and unstable foliations.
+Ergodic Theory Dynam. Systems, 8(2):215–239, 1988.
+[Kan93] Masahiko Kanai. Differential-geometric studies on dynamics of geodesic and frame flows.Japan. J. Math.
+(N.S.), 19(1):1–30, 1993.
+[KS13] Boris Kalinin and Victoria Sadovskaya. Cocycles with one exponent over partially hyperbolic systems.Geome-
+triae Dedicata, 167(1):167–188, 2013.
+[KSW26] Boris Kalinin, Victoria Sadovskaya, and Zhenqi Jenny Wang. Global smooth rigidity for toral automorphisms.
+Invent. Math., 2026.
+[Liv72] A. N. Livˇ sic. Cohomology of dynamical systems.Mathematics of the USSR-Izvestiya, 6(6):1278–1301, 1972.
+[Sad05] Victoria Sadovskaya. On uniformly quasiconformal Anosov systems.Math. Res. Lett., 12(3):425–441, 2005.
+Department of Mathematics, The Ohio State University, Columbus, OH 43210, USA
+Email address:gogolyev.1@osu.edu
+Department of Mathematics, The Pennsylvania State University, University Park, PA 16802, USA
+Email address:hertz@math.psu.edu

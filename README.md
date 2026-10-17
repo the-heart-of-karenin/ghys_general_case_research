@@ -2,9 +2,11 @@
 
 建立日期：2026-10-17。
 
-当前阶段：已从规划进入条件性证明。最新状态见 notes/09_results_and_frontier.md。已完成任意秩 Grassmann–Lp 正则化（04）、模型与共振核验（05）、周期非共振判据（06）、双 Lipschitz 接口核验（07），以及无需预设拓扑的保辛 pinching 分类（08）。一般猜想尚未证明。
+当前阶段：已从规划进入条件性证明。最新一轮依照用户要求研究“保辛、撤去全部夹逼”：准确归约见 notes/10_symplectic_without_pinching_reduction.md；全纯辛子情形的对称共振张量、有限嵌套阶及局部粗糙障碍见 notes/11_holomorphic_symplectic_resonance_tensors.md。无夹逼保辛分类及一般猜想均尚未证明。
 
-第一轮规划与检索记录保留在 notes/01–03。九篇核心 PDF 在 literature/，来源与散列见 literature/sources_manifest.json。
+此前已完成任意秩 Grassmann–Lp 正则化（04）、模型与共振核验（05）、周期非共振判据（06）、双 Lipschitz 接口核验（07），以及无需预设拓扑的保辛 pinching 分类（08）。上一阶段状态保留在 notes/09_results_and_frontier.md。
+
+第一轮规划与检索记录保留在 notes/01–03。十二篇 PDF 在 literature/，来源与散列见 literature/sources_manifest.json。新加入的 10–12 及适用范围审查见研究笔记 10 §5。
 
 ## 研究方向
 

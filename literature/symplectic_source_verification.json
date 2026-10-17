@@ -1,0 +1,44 @@
+[
+  {
+    "filename": "10_Feres_1995_Invariant_connection.pdf",
+    "title": "The invariant connection of a 1/2-pinched Anosov diffeomorphism and rigidity",
+    "download_url": "https://msp.org/pjm/1995/171-1/pjm-v171-n1-p05-s.pdf",
+    "landing_url": "https://doi.org/10.2140/pjm.1995.171.139",
+    "publication_note": "Pacific Journal of Mathematics 171 (1995), 139-155",
+    "collected_utc": "2026-10-17T11:31:25.167548+00:00",
+    "resolved_url": "https://msp.org/pjm/1995/171-1/pjm-v171-n1-p05-s.pdf",
+    "download_status": "downloaded",
+    "bytes": 1787267,
+    "sha256": "d10f6bb2e10bc126d25fcc048d5435582ab4487dff9ec3aac5fbf5036f38fdf4",
+    "pages": 21,
+    "first_page": "Paciﬁc\nJournal of\nMathematics\nTHE INV ARIANT CONNECTION OF A 1\n2 -PINCHED ANOSOV\nDIFFEOMORPHISM AND RIGIDITY\nRENATO FERES\nV olume 171 No. 1 November 1995"
+  },
+  {
+    "filename": "11_Kalinin_Sadovskaya_Strong_weak_foliations.pdf",
+    "title": "Rigidity of strong and weak foliations",
+    "download_url": "https://arxiv.org/pdf/2509.13986v2",
+    "landing_url": "https://arxiv.org/abs/2509.13986v2",
+    "publication_note": "ArXiv v2 served 2026-10-17; journal DOI 10.3934/jmd.2026009",
+    "collected_utc": "2026-10-17T11:31:29.908023+00:00",
+    "resolved_url": "https://arxiv.org/pdf/2509.13986v2",
+    "download_status": "downloaded",
+    "bytes": 503011,
+    "sha256": "8004d594fc927300ddb795e6b3141f64bc0d2a83820c6aaa171cc7978bd94f9d",
+    "pages": 27,
+    "first_page": "RIGIDITY OF STRONG AND WEAK FOLIATIONS\nBORIS KALININ1 AND VICTORIA SADOVSKAYA2\nAbstract.We consider a perturbationfof a hyperbolic toral automorphismL.\nWe study rigidity related to exceptional properties of the strong and weak stable\nfoliations forf. If the strong foliation is mapped to the linear one by the conjugacyh\nbetweenfandL, we obtain smoothness ofhalong the weak foliation and regularity\nof the joint foliation of the strong and unstable foliations. We also establish a similar\nglobal result. If the weak foliation is sufficiently regular, we obtain smoothness of the\nconjugacy along the s"
+  },
+  {
+    "filename": "12_Gogolev_Rodriguez_Hertz_2026_Symplecto_rigidity.pdf",
+    "title": "Symplecto-rigidity and bootstrap for Anosov symplectomorphisms and contact Anosov flows",
+    "download_url": "https://arxiv.org/pdf/2609.10769v1",
+    "landing_url": "https://arxiv.org/abs/2609.10769v1",
+    "publication_note": "ArXiv v1, 2026-09-09",
+    "collected_utc": "2026-10-17T11:31:32.636929+00:00",
+    "resolved_url": "https://arxiv.org/pdf/2609.10769v1",
+    "download_status": "downloaded",
+    "bytes": 375569,
+    "sha256": "7c3e02f2d3bbb695ef2e1baeb6970b6640148cfc08288921c7cbe0e3db7db908",
+    "pages": 14,
+    "first_page": "SYMPLECTO-RIGIDITY AND BOOTSTRAP FOR ANOSOV\nSYMPLECTOMORPHISMS AND CONTACT ANOSOV FLOWS\nANDREY GOGOLEV AND FEDERICO RODRIGUEZ HERTZ\nAbstract.This paper is a sequel to the authors’ paper on rigidity of higher dimensional contact\nAnosov flows [GH24]. At the time the authors were unaware of much earlier work of Hamenst¨ adt [Ham93]\ndevoted to the same problem. The methods of [GH24] and [Ham93] are overlapping but not entirely\nthe same. In this paper we strengthen some the results of Hamenst¨ adt, by further bootstrapping\nthe regularity of the conjugacy of 2-pinched contact Anosov flows. We also i"
+  }
+]
