@@ -1,0 +1,672 @@
+=== PDF PAGE 1 ===
+INVARIANT COMPLEX STRUCTURES FOR AFFINE AUTOMORPHISMS:
+A COCYCLE VIEWPOINT
+JIESONG ZHANG
+Abstract.We prove that if a holomorphic diffeomorphism of a compact complex manifold
+is bi-Lipschitz conjugate to an ergodic affine automorphismAon Γ\G, then the conjugacy is
+C ∞. Moreover, ifAis weakly mixing, then the induced complex structure on Γ\Gis left-
+invariant. As applications, we establish a regularity bootstrap result for holomorphic Anosov
+diffeomorphisms bi-Lipschitz conjugate to affine models, as well as a holomorphic analogue of
+the rigidity theorem for higher-rank abelian Anosov actions by Hertz–Wang [22].
+The key observation is that the condition for a diffeomorphism to preserve a complex struc-
+ture has the same form as the cocycle compatibility relation appearing in the study of central-
+izers. This places invariant complex structures and centralizers within a commonZ 2-cocycle
+framework. From this viewpoint, our main result may be regarded as a holomorphic coun-
+terpart of the Lipschitz centralizer rigidity theorem of Damjanovi´ c–Wilkinson–Wu–Xu [5] for
+affine automorphisms.
+1.Introduction
+An important problem in complex geometry is to determine which smooth real manifolds
+admit complex structures, and to understand the space of all such structures. A classical and
+still open example is the Hopf problem, which asks whetherS 6 admits a complex structure.
+In holomorphic dynamics, it is natural to consider a dynamical analogue: given a smooth
+diffeomorphismf:M→M, what are the complex structures onMfor whichfbecomes
+holomorphic?
+Problem1.1 (Invariant complex structures).LetMbe an even-dimensional smooth real mani-
+fold admitting complex structures, i.e., the spaceJ M of complex structures onMis nonempty.
+Letf:M→Mbe aC ∞ diffeomorphism. Describe the subset
+JM(f)⊂ J M
+consisting off-invariant complex structures onM, or equivalently, the space of complex struc-
+tures onMwith respect to whichfis holomorphic.
+This problem is particularly interesting when one imposes dynamical assumptions onf. For
+instance, iff:M→Mis a diffeomorphism of a compact 4-manifold with positive topological
+entropy, then any complex structure with respect to whichfis holomorphic must be K¨ ahler,
+and the resulting complex surfaces can be further classified up to birational equivalence [4,
+Theorem 10.1].
+Another important case is given by Anosov systems. Ghys conjectured [12] that every holo-
+morphic Anosov diffeomorphism is holomorphically conjugate to a holomorphic diffeomorphism
+of a complex infra-nilmanifold. This conjecture was proved by Ghys [12] for complex surfaces,
+and by Cantat [3] for projective varieties under the additional assumption that the stable and
+unstable distributionsE s andE u are holomorphic. From the viewpoint of Problem 1.1, this con-
+jecture can be formulated as follows: if an Anosov diffeomorphismf:M→Madmits an invari-
+ant complex structureJ, then (M, J) should be biholomorphic to a complex infra-nilmanifold,
+andfshould be biholomorphically conjugate to a holomorphic affine automorphism.
+Problem 1.1 is challenging even in specific settings. For example, it remains open whether a
+compact complex manifold diffeomorphic toT 2d,d≥3, and supporting a holomorphic Anosov
+diffeomorphism must be a complex torus 1. This difficulty is also illustrated by an example of
+1Ford≤2, this is always true by uniformization theorem and Kodaira classification.
+1
+arXiv:2606.17794v1  [math.DS]  16 Jun 2026
+
+=== PDF PAGE 2 ===
+2 JIESONG ZHANG
+Xu–Zhang [27]. For everyd≥5, they construct a linear partially hyperbolic automorphism
+L:T 2d →T 2d which is holomorphic both for the standard complex structure and for a non-
+standard complex structureJ. In the latter case, the resulting complex manifold is not K¨ ahler,
+and hence is not a complex torus.
+A key feature of the linear maps appearing in the example of Xu–Zhang is that they are not
+ergodic and hence not weakly mixing. In this note, we prove a rigidity result showing that this
+phenomenon cannot occur in the weakly mixing case: ifA: Γ\G→Γ\Gis weakly mixing and
+holomorphic with respect to a complex structureJ, thenJis a left-invariant complex structure
+(see Section 2.2 for the definition). This gives an answer to Problem 1.1 for weakly mixing affine
+automorphisms.
+The proof is based on a simple observation: once Problem 1.1 is formulated in the language
+ofcocycles over abelian actions, it becomes closely related to the following classical centralizer
+problem.
+Problem1.2 (Centralizer).Letf:M→Mbe aC ∞ diffeomorphism of a compact manifold.
+Describe theC ∞-centralizer off, namely
+Z ∞(f) :={g∈Diff ∞(M) :g◦f=f◦g}.
+1.1.Z 2-cocycles: centralizers and invariant complex structures.We now explain the
+relation between centralizers and invariant complex structures from the cocycle point of view.
+Letα:Z 2 →Diff ∞(M) be an abelian action, and letGbe a group. AG-valued cocycle overα
+is a map
+B:Z 2 ×M→G
+satisfying the cocycle identity
+B(n+m, x) =B(n, α mx)B(m, x),n,m∈Z 2, x∈M.
+Equivalently, ifαis generated by two commuting maps
+f=α (1,0), g=α (0,1),
+then the cocycle is determined by its values over the generators,
+Bf(x) :=B((1,0), x),B g(x) :=B((0,1), x),
+satisfying
+(1)B f(gx)B g(x) =B g(f x)B f(x).
+Example1.3 (Centralizers).Letf:M→Mbe aC ∞ diffeomorphism of a compact manifold.
+Ifg∈ Z ∞(f), then the relationf◦g=g◦fimplies
+Dfgx ◦Dg x =Dg f x ◦Df x.
+Thus the pairs
+(f,B f) = (f, Df),(g,B g) = (g, Dg).
+satisfy equation (1).
+Example1.4 (Invariant complex structures).Letf:M→Mbe aC ∞ diffeomorphism of a
+compact manifold. Suppose thatfis holomorphic with respect to a complex structureJ:T M→
+T M. Then
+Dfx ◦J x =J f x ◦Df x.
+In other words, the holomorphicity condition is precisely equation (1) for the two commuting
+mapsfand Id M, with
+(f,B f) = (f, Df),(g,B g) = (IdM , J).
+An interesting case is that whenf=A: Γ\G→Γ\Gis an affine automorphism, whereGis
+a simply connected real Lie group, and Γ< Gis a cocompact lattice. In [5], the authors study
+the Lipschitz centralizer
+ZLip(A) :={f∈Homeo(Γ\G) :fis bi-Lipschitz andf◦A=A◦f}
+ofAand show that
+
+=== PDF PAGE 3 ===
+INVARIANT COMPLEX STRUCTURES 3
+•ifAis ergodic with respect to the Haar measurem, thenZ Lip(A)⊂Diff ∞(M) is a
+finite-dimensional Lie group consisting ofC ∞ diffeomorphisms;
+•ifAis weakly mixing with respect tom, thenZ Lip(A)⊂Aff(Γ\G) consists of affine
+automorphisms.
+In this note, we establish an analogue of the result above forA-invariant complex structures.
+1.2.Main results.
+Theorem A.Letf:X→Xbe a holomorphic diffeomorphism of a compact complex manifold
+Xwith complex structureJ X. LetGbe a simply connected real Lie group, Γ< Gbe a
+cocompact lattice, andmbe the Haar measure on Γ\G. Suppose that there exists a bi-Lipschitz
+homeomorphismh:X→Γ\Gsuch that
+h◦f=A◦h
+for some affine automorphismA: Γ\G→Γ\G.
+•IfAis ergodic with respect tom, thenhisC ∞, and the push-forwardJ=h ∗JX belongs
+to a finite-dimensional linear subspaceE A ⊂C ∞(Γ\G,End(g)) depending only onA. In
+particular,
+h: (X, J X)→(Γ\G, J)
+is biholomorphic, andAis holomorphic with respect toJ.
+•Moreover, ifAis weakly mixing with respect tom, thenJ=h ∗JX is left-invariant.
+In particular, by takingh= id Γ\G, we obtain the following corollary.
+Corollary B.LetGbe a simply connected real Lie group, Γ< Gbe a cocompact lattice, and
+mbe the Haar measure on Γ\G. For any affine automorphismA: Γ\G→Γ\G, letJ Γ\G(A)
+denote the set of allA-invariant complex structures on Γ\G.
+•IfAis ergodic with respect tom, thenJ Γ\G(A) is contained in a finite-dimensional
+subspaceE A ⊂C ∞(Γ\G,End(g)) depending only onA;
+•IfAis weakly mixing with respect tom, thenJ Γ\G(A) consists of left-invariant complex
+structures.
+Remark1.5.Corollary B is not an existence statement. We do not assume that Γ\Gadmits
+a complex structure, nor that it admits anA-invariant one. In particular,J Γ\G(A) may be
+empty, in which case the conclusions are vacuous.
+Moreover, the weak mixing assumption in Theorem A and Corollary B is essential. This
+mirrors the centralizer rigidity theorem of [5]: whenAis ergodic but not weakly mixing with
+respect tom, Walters constructed examples [24] of elementsf∈ Z ∞(A) which are not affine
+(see also [5, Section 3]). This phenomenon also has an analogue in our setting, as shown in
+Section 4.
+Example C.In the setting of Corollary B, there exists an example for whichAis ergodic but
+not weakly mixing with respect tom, andJ Γ\G(A) contains a complex structure that is not
+left-invariant.
+1.3.An application to holomorphic Anosov diffeomorphisms.Theorem A can be ap-
+plied to study holomorphic Anosov diffeomorphisms. Recall that a diffeomorphismf:M→M
+of a compact Riemannian manifoldMis calledAnosovif the tangent bundle admits a continuous
+Df-invariant splitting
+T M=E s ⊕E u
+and there exists a positive integerksuch that, for everyx∈M,
+∥Df k|Es(x)∥<1 and∥Df −k|Eu(x)∥<1.
+All known examples of Anosov diffeomorphisms are topologically conjugate to affine automor-
+phisms of infra-nilmanifolds, and a long-standing conjecture going back to Anosov and Smale
+asserts that there are no other examples [23].
+
+=== PDF PAGE 4 ===
+4 JIESONG ZHANG
+In general, a topological conjugacy need not beC 1, since the Lyapunov exponents at corre-
+sponding periodic points may fail to coincide. Moreover, even when aC 1 conjugacy exists, it
+need not beC ∞ [6, Theorem 6.3]. Nevertheless, for Anosov diffeomorphisms on tori that are
+C1-conjugate to their linear models, the conjugacy is indeedC ∞ onT 2 [6,19] andT 3 [8,13,14].
+More recently, Kalinin–Sadovskaya–Wang [15, 16] proved that if aC ∞ Anosov diffeomorphism
+isC 1-conjugate to a very weakly irreducible hyperbolic toral automorphism, then the conju-
+gacy isC ∞. For general nilmanifolds, although irreducibility conditions can be formulated to
+study Lyapunov spectrum rigidity [7], no analogous bootstrap result seems to be known to the
+author’s knowledge.
+As a corollary of Theorem A, we get a holomorphic bootstrap result.
+Corollary D.Letf:X→Xbe a holomorphic Anosov diffeomorphism of a compact complex
+manifoldX. Suppose thatfis conjugate to an affine Anosov automorphismAof a real infra-
+nilmanifoldNvia a bi-Lipschitz homeomorphismh:X→N. ThenNadmits a complex
+infra-nilmanifold structureJ N such that
+h:X→(N, J N)
+is biholomorphic andA: (N, J N)→(N, J N) is a holomorphic affine automorphism.
+Remark1.6.The holomorphic setting leads to a somewhat different phenomenon: no irreducibil-
+ity assumption is needed for the bootstrap. Moreover, the corollary applies to affine models on
+general infra-nilmanifolds, not only to toral models.
+1.4.An application to Anosov actions.Theorem A can also be applied to study holomor-
+phic higher-rank Anosov actions. Recall that an action
+α:Z k →Diff ∞(M), k≥2,
+is called anAnosov actionifα(n) is an Anosov diffeomorphism for somen∈Z k. WhenM
+is homeomorphic to an infra-nilmanifold, the results of Franks [10] and Manning [18], together
+with the commutativity of the action and a result by Walters [25], imply thatαis topologically
+conjugate to an affine action
+ρ:Z k →Aff(N),
+whereNis an infra-nilmanifold homeomorphic toM. The actionρis called thelinearization
+ofα.
+Hertz–Wang [22] proved a global rigidity theorem for such actions: ifMis homeomorphic to
+an infra-nilmanifold and the linearizationρhas no rank-one factor 2, thenαisC ∞-conjugate to
+ρ. In particular,Mis diffeomorphic to an infra-nilmanifold.
+Applying Theorem A, we obtain the following holomorphic analogue of the Hertz–Wang
+theorem.
+Corollary E.Letα:Z k ↷Xbe a holomorphic Anosov action on a compact complex manifold
+X. Suppose thatXis homeomorphic to a real infra-nilmanifoldN, and that the linearization
+ρ:Z k →Aff(N)
+ofαhas no rank-one factor. ThenNadmits a complex infra-nilmanifold structureJ N. More-
+over, the Franks–Manning conjugacy
+h:X→(N, J N)
+satisfying
+h◦α(n) =ρ(n)◦h∀n∈Z k
+is biholomorphic. In particular,ρis an action by holomorphic affine automorphisms of (N, J N).
+2This means that there exists a subgroup Σ⊂Z k with Σ ∼= Z2 such thatρ(n) is ergodic for everyn∈Σ\ {0}.
+Other equivalent definitions can be found in [22, Section 2.5].
+
+=== PDF PAGE 5 ===
+INVARIANT COMPLEX STRUCTURES 5
+Remark1.7.Corollary E does not follow directly from Hertz–Wang [22], since, a priori, the
+underlying real infra-nilmanifoldNmay carry non-standard complex structures. Nevertheless,
+we use Hertz–Wang [22] to obtain theC ∞ conjugacy needed to apply Theorem A.
+For related works on holomorphic abelian actions on K¨ ahler manifolds and projective vari-
+eties, see [9,28].
+1.5.Further questions.The relationship between Problem 1.1 and Problem 1.2 suggests that
+conjectures and theorems concerning centralizers and abelian actions should have holomorphic
+analogues. We give two examples here.
+A guiding principle in the centralizer problem is that a large centralizer should force rigidity.
+One of the prominent conjectures reflecting this philosophy is the Katok–Spatzier conjecture.
+Conjecture1.8 (Katok–Spatzier).Letf∈Diff ∞(M) be an Anosov diffeomorphism. Suppose
+that theC ∞-centralizerZ ∞(f) is higher-rank. ThenMis diffeomorphic to an infra-nilmanifold,
+andfisC ∞-conjugate to an infra-nilmanifold automorphism.
+In view of the analogy between centralizers and invariant complex structures, the natural
+holomorphic counterpart of the Katok–Spatzier conjecture is Ghys’ conjecture on holomorphic
+Anosov diffeomorphisms.
+Conjecture1.9 (Ghys).Letf∈Diff ∞(M) be an Anosov diffeomorphism. Suppose that
+JM(f)̸=∅, i.e.fpreserves at least one complex structure. Then for everyJ∈ J M(f),
+the complex manifold (M, J) is biholomorphic to a complex infra-nilmanifold, andfis biholo-
+morphically conjugate to an infra-nilmanifold automorphism.
+On the other hand, trivial centralizers could be typical. A major problem in the study of
+centralizers is Smale’s conjecture, which predicts thatC r-generically the centralizer is triv-
+ial, i.e.,Z r(f) =⟨f⟩. This conjecture was proved in theC 1-topology by Bonatti–Crovisier–
+Wilkinson [2]. Motivated by the analogy above, one may ask for the following analogue of
+Smale’s conjecture for invariant complex structures.
+Question1.10 (An analogue of Smale’s conjecture for invariant complex structures).LetMbe
+a closed smooth manifold admitting at least one complex structure. Does there exist aC 1-open
+andC ∞-dense subsetU ⊂Diff ∞(M) such that
+JM(f) =∅
+for everyf∈ U? Equivalently, does everyf∈ Ufail to preserve any complex structure onM?
+Remark1.11.As shown by Bonatti–Crovisier–Vago–Wilkinson [1], the propertyZ r(f) =⟨f⟩is
+notC 1-open. Thus in the centralizer problem, one can at best expect such a property to hold
+generically, rather than on aC 1-open set.
+By contrast, the question above has a straightforward answer in theC 1-open andC 1-dense
+setting. Indeed, by theC 1 closing lemma [21] and Franks’ lemma [11], one can perturb a
+diffeomorphism so as to create a periodic point whose return map has a real simple eigenvalue.
+This is incompatible with the existence of anf-invariant complex structure.
+Acknowledgments.The author is grateful to Danijela Damjanovi´ c for her encouragement
+and many helpful discussions, especially for explaining the work [5] to the author. The author
+also thanks Ralf Spatzier, Amie Wilkinson, Chengyang Wu, Junyi Xie, and Disheng Xu for
+helpful discussions and valuable suggestions.
+2.Preliminaries
+2.1.Almost complex structures and integrability.LetMbe a smooth real manifold.
+A smooth (continuous, measurable)almost complex structureonMis a smooth (continuous,
+measurable) bundle endomorphismJ:T M→T Msuch that
+J2 =−Id.
+A manifoldMendowed with a smooth almost complex structureJis called analmost complex
+manifold, and is denoted by (M, J).
+
+=== PDF PAGE 6 ===
+6 JIESONG ZHANG
+We say that a smooth almost complex structureJisintegrableif it is induced by a complex
+manifold structure onM, i.e., if there exists an atlas{ϕ α :U α →C d}ofMwhose transition
+maps are holomorphic and such that, for everyα,
+Dϕα ◦J=i◦Dϕ α,
+whereidenotes the standard complex structure onC d, i.e. multiplication by √−1. In this case,
+Jis called thecomplex structureof the complex manifoldM.
+For later use, we record the following standard consequence of elliptic regularity.
+Lemma 2.1.Let(M, J)be a smooth2d-dimensional almost complex manifold. LetU⊂Mbe
+an open set, and letϕ:U→C d be a Lipschitz map. Sinceϕis differentiable almost everywhere
+by Rademacher’s theorem, suppose that
+Dϕy ◦J(y) =i◦Dϕ y for a.e.y∈U,
+whereidenotes the standard complex structure onC d, i.e. multiplication by √−1. Thenϕis
+smooth, and the above identity holds for everyy∈U.
+Proof.Sinceϕis Lipschitz, we haveϕ∈W 1,∞
+loc (U,C d). Define
+¯∂J ϕ= 1
+2
+ 
+Dϕ+i Dϕ◦J
+
+.
+Then the assumption is precisely
+¯∂J ϕ= 0
+in the weak sense. In local coordinates, the operator ¯∂J is a first-order elliptic linear differential
+operator with smooth coefficients. It follows from the standard regularity theorem for elliptic
+operators (see, for example, [26, Chapter IV, Section 4]) thatϕis smooth. The identity then
+holds everywhere by continuity.□
+2.2.Left-invariant complex structure.LetGbe a connected real Lie group and letgbe
+its Lie algebra. Any linear mapJ∈End(g) withJ 2 =−id defines a left-invariant almost
+complex structure onGby left translations. By the Newlander–Nirenberg theorem [20], this
+almost complex structure is integrable if and only if its Nijenhuis tensor
+NJ(X, Y) := [J X, J Y]−[X, Y]−J[J X, Y]−J[X, J Y]
+vanishes for allX, Y∈g. In this case, we say thatJis a left-invariant complex structure onG.
+Moreover, if Γ is a cocompact lattice inG, thenJdescends to a left-invariant complex structure
+JM onM= Γ\G.
+In particular, ifMis a nilmanifold endowed with a left-invariant complex structureJ M, then
+(M, JM) is called acomplex nilmanifold. If a finite group acts freely on (M, J M) by holomorphic
+affine automorphisms, then the quotient is called acomplex infra-nilmanifold.
+3.Proofs
+The key idea in the proof of Theorem A is to view the pushed-forward complex structure
+h∗JX as a bounded measurable map with values in End R(g). The invariance of the complex
+structure then becomes a linear equivariance relation over the affine automorphism. We first
+record some elementary rigidity results for such equivariant maps.
+3.1.Equivariant tensor fields over affine automorphisms.The argument in this subsec-
+tion is essentially linear algebraic, and is inspired by the proof of [5, Theorem B], where the au-
+thors prove the corresponding statement for derivative cocycles. Here we record a slightly more
+general version for tensor-valued equivariant maps. Although our application below concerns
+complex structures, the lemmas may also be useful for other tensor fields whose transformation
+laws are induced byDA.
+LetGbe a real connected Lie group, and letmbe the Haar measure on Γ\G, where Γ< Gis
+a cocompact lattice. LetA: Γ\G→Γ\Gbe an affine automorphism, and letDA:g→gdenote
+the Lie algebra automorphism induced by its linear part. Consider a bounded measurable map
+B: Γ\G→End R(g)
+
+=== PDF PAGE 7 ===
+INVARIANT COMPLEX STRUCTURES 7
+satisfying
+(2)B(Ax) =DA◦B(x)◦(DA) −1 form-a.e.x∈Γ\G.
+The next two lemmas describe the rigidity of such maps under ergodicity and weak mixing
+assumptions onA.
+Lemma 3.1.IfAism-ergodic, then there exists a finite-dimensional subspace
+EA ⊂C ∞(Γ\G,End R(g)),
+depending only onA, such that everyBsatisfying(2)agrees almost everywhere with an element
+ofE A.
+Proof.We first complexify (2). DenoteV= End C(gC), and define a linear transformation
+T:V→V, T(C) =DA C ◦C◦(DA C)−1.
+Then equation (2) becomes
+BC ◦A=T(B C).
+DecomposeVinto the direct sum of the generalized eigenspaces ofT:
+V=
+M
+ρ∈Spec(T)
+Vρ.
+LetP ρ :V→V ρ be the spectral projection and setB C,ρ =P ρ ◦B C. SinceP ρ commutes with
+T, applyingP ρ toB C ◦A=T(B C) gives
+BC,ρ ◦A=T(B C,ρ),
+and hence
+BC,ρ(Anx) =T nBC,ρ(x)
+for everyn≥0 and for almost everyx. More precisely, after replacing the original full-measure
+set by the intersection of its inverse images under all iterates ofA, we may assume that this
+relation holds along the entire forward orbit ofx.
+If|ρ|>1, thenT nvis unbounded for every nonzerov∈V ρ. SinceB C,ρ is essentially bounded,
+it follows thatB C,ρ = 0 almost everywhere. For|ρ|<1, applying the same argument toA −1
+gives the same conclusion. Thus only eigenvaluesρwith|ρ|= 1 may occur.
+Now assume|ρ|= 1. Write
+T| Vρ =ρ(I+N ρ),
+whereN ρ is nilpotent. For almost everyx, the sequence
+T nBC,ρ(x) =ρ n(I+N ρ)nBC,ρ(x)
+is bounded. HenceN ρBC,ρ(x) = 0 almost everywhere; otherwise the right-hand side would have
+polynomial growth. Therefore
+BC,ρ(x)∈ker(T−ρI)
+for almost everyx.
+Choose a basisC ρ,1, . . . , Cρ,dρ of ker(T−ρI). Then
+BC,ρ(x) =
+dρX
+j=1
+φρ,j(x)Cρ,j
+for some bounded measurable functionsφ ρ,j with
+φρ,j ◦A=ρφ ρ,j.
+Thusφ ρ,j ∈ K ρ, where
+Kρ ={φ∈L ∞(Γ\G, m) :φ◦A=ρφ}.
+By [5, Theorem 20], for an ergodic affine automorphismA, every nonzeroL 2-eigenspace
+Eρ ={φ∈L 2(Γ\G, m) :φ◦A=ρφ}
+
+=== PDF PAGE 8 ===
+8 JIESONG ZHANG
+is one-dimensional and is spanned by a smooth eigenfunction. SinceK ρ ⊂E ρ, every nonzero
+Kρ is also spanned by a smooth eigenfunction. ConsequentlyB C agrees almost everywhere with
+an element of the finite-dimensional space
+EC,A =
+M
+ρ∈Spec(T)
+|ρ|=1
+Eρ ⊗ker(T−ρI)⊂C ∞(Γ\G,End C(gC)),
+which depends only onA.
+LetF∈ E C,A be such thatF=B C almost everywhere. SinceB C is the complexification of
+a real tensor,Fpreserves the real formg⊂g C almost everywhere. By smoothness, this holds
+everywhere. HenceF=F 0,C is the complexification for a unique real tensor
+F0 ∈C ∞(Γ\G,End R(g)),
+andB=F 0 almost everywhere. Then
+EA ={F 0 :F 0,C ∈ E C,A}
+is the finite-dimensional space we require.□
+Lemma 3.2.IfAis weakly mixing with respect tom, then everyBsatisfying(2)is equal to a
+constantB 0 ∈End R(g)almost everywhere. Moreover,B 0 satisfies
+DA◦B 0 =B 0 ◦DA.
+Proof.Since weak mixing implies ergodicity, the proof of Lemma 3.1 also applies in this setting.
+In particular, for every generalized eigenspaceV ρ ofT, the componentB C,ρ =P ρ ◦B C satisfies
+the following properties:
+•B C,ρ(x) = 0 for almost everyxwhenever|ρ| ̸= 1.
+•B C,ρ(Ax) =ρB C,ρ(x) for almost everyxwhen|ρ|= 1.
+We then show thatB C,ρ = 0 for everyρ̸= 1. For any givenρ̸= 1, letℓ∈V ∗
+ρ be a linear
+functional onV ρ, and define
+φ(x) :=ℓ(B C,ρ(x)).
+Thenφ: Γ\G→Cis a bounded measurable function with
+(3)φ(Ax) =ℓ(B C,ρ(Ax)) =ℓ(ρB C,ρ(x)) =ρφ(x).
+SinceAis weakly mixing with respect tom, we have
+(4) 1
+N
+N−1X
+n=0
+
+Z
+Γ\G
+φ(Anx)φ(x)dm−
+ Z
+Γ\G
+φ dm
+! Z
+Γ\G
+φ dm
+!
+− →0.
+SincemisA-invariant, integrating equation (3) givesZ
+Γ\G
+φ dm=ρ
+Z
+Γ\G
+φ dm.
+Asρ̸= 1, it follows that
+(5)
+Z
+Γ\G
+φ dm= 0.
+On the other hand, equation (3) also implies, for everyn≥0,
+(6)
+Z
+Γ\G
+φ(Anx)φ(x)dm=ρ n
+Z
+Γ\G
+|φ(x)|2 dm.
+Since|ρ|= 1, substituting (5) and (6) into (4) givesZ
+Γ\G
+|φ(x)|2 dm= 0.
+Thusφ(x) = 0 for almost everyx. Since this holds for everyℓ∈V ∗
+ρ andρ̸= 1, we conclude
+that
+BC,ρ(x) = 0
+
+=== PDF PAGE 9 ===
+INVARIANT COMPLEX STRUCTURES 9
+for everyρ̸= 1 and almost everyx. Therefore,
+BC(Ax) =B C(x)
+isA-invariant. SinceAis weakly mixing, it is ergodic. HenceB C is constant almost everywhere,
+andBis also almost everywhere equal to a real constantB 0. Substituting this constant into
+(2) givesDA◦B 0 =B 0 ◦DA.□
+3.2.A lemma on push-forward complex structure.We prove a bootstrap lemma con-
+cerning the push-forward complex structure. Let (X, J X) be a complex manifold and letNbe
+a smooth real manifold. Ifh:X→Nis a bi-Lipschitz homeomorphism, then bothhandh −1
+are differentiable almost everywhere. At points where both differentials exist, the chain rule
+givesD(h −1)h(x) = (Dhx)−1. Thus
+(h∗JX)(y) =Dh x ◦J X(x)◦(Dh x)−1, y=h(x),
+defines anL ∞ almost complex structure onN. The following lemma says that if the measurable
+push-forwardh ∗JX agrees almost everywhere with a smooth almost complex structure, then
+that smooth almost complex structure is integrable.
+Lemma 3.3.If there exists a smooth almost complex structureJ N onNsuch that
+JN =h ∗JX for a.e.y∈N
+thenJ N is integrable and
+h: (X, J X)→(N, J N)
+is biholomorphic. In particular, the homeomorphismhisC ∞ andJ N =h ∗JX for everyy∈N.
+Proof.Letϕ α :U α →C d be holomorphic coordinates for (X, J X). Set
+Vα =h(U α), ψ α :=ϕ α ◦h −1 :V α →C d.
+The mapsψ α are bi-Lipschitz and the transition maps
+ψα ◦ψ −1
+β =ϕ α ◦h −1 ◦h◦ϕ −1
+β =ϕ α ◦ϕ −1
+β ,
+are holomorphic.
+Sinceh ∗JX agrees almost everywhere withJ N, for almost everyy=h(x), we have
+Dψα|y ◦J N(y) =Dψ α|y ◦(h ∗JX)(y).
+By the definition ofh ∗JX, this gives
+Dψα|y ◦J N(y) =Dϕ α|x ◦(Dh x)−1 ◦Dh x ◦J X(x)◦(Dh x)−1.
+Thus
+Dψα|y ◦J N(y) =Dϕ α|x ◦J X(x)◦(Dh x)−1.
+Sinceϕ α isJ X-holomorphic,
+Dϕα|x ◦J X(x) =i◦Dϕ α|x.
+Therefore,
+Dψα|y ◦J N(y) =i◦Dϕ α|x ◦(Dh x)−1 =i◦Dψ α|y for a.e.y∈V α.
+By Lemma 2.1, eachψ α is smooth and the above identity holds everywhere. Sinceψ α is bi-
+Lipschitz, there isc >0 such that|ψ α(p)−ψ α(q)| ≥c d(p, q) locally. Becauseψ α is now smooth,
+this implies thatDψ α is injective at every point. By dimension reasonsDψ α is invertible, and
+the inverse function theorem shows that theψ α are smooth coordinate charts. Hence the charts
+ψα are smoothJ N-holomorphic coordinates, andJ N is integrable.
+Finally, by construction of the pushed-forward chartsψ α =ϕ α ◦h −1, the coordinate repre-
+sentation ofhin the chartsϕ α onXandψ α onNis
+ψα ◦h◦ϕ −1
+α =ϕ α ◦h −1 ◦h◦ϕ −1
+α = id.
+Since the chartsψ α have just been shown to beJ N-holomorphic coordinates, it follows thathis
+biholomorphic. In particular, the homeomorphismhisC ∞ andJ N =h ∗JX for everyy∈N.□
+
+=== PDF PAGE 10 ===
+10 JIESONG ZHANG
+3.3.Proof of Theorem A.Sincehis bi-Lipschitz, bothhandh −1 are differentiable almost
+everywhere. At points where both differentials exist, the chain rule givesD(h−1)h(x) = (Dhx)−1.
+Thus, for almost everyy∈Γ\Gandx=h −1(y),
+(h∗JX)(y) =Dh x ◦J X(x)◦(Dh x)−1
+is well-defined for almost everyy∈Γ\G, and gives anL ∞ almost complex structure on Γ\G.
+To apply Lemma 3.1, we first check thath ∗JX satisfies (2).
+Lemma 3.4.For almost everyy∈Γ\G, we have
+h∗JX(Ay) =DA◦h ∗JX(y)◦DA −1.
+Proof.Choosexin a full-measure set such thathis differentiable at bothxandf x, and
+such thath −1 is differentiable at bothh(x) andh(f x). Differentiating the conjugacy relation
+h◦f=A◦hat such a point, we obtain
+Dhf x ◦Df x =DA y ◦Dh x.
+By the holomorphicity off, we have
+Dfx ◦J X(x) =J X(f x)◦Df x.
+Therefore,
+DAy ◦(h ∗JX)(y) =DA y ◦Dh x ◦J X(x)◦(Dh x)−1
+=Dh f x ◦Df x ◦J X(x)◦(Dh x)−1
+=Dh f x ◦J X(f x)◦Df x ◦(Dh x)−1
+=Dh f x ◦J X(f x)◦(Dh f x)−1 ◦DA y = (h∗JX)(Ay)◦DA y.
+This proves the lemma.□
+Using the left-invariant trivialization, we identify the tangent bundleT(Γ\G) with Γ\G×g.
+Thenh ∗JX is represented by a measurable map
+h∗JX : Γ\G→End(g).
+By Lemma 3.1, there exists a finite-dimensional subspaceE A ⊂C ∞(Γ\G,End R(g)) depending
+only onA, and an elementJ Γ\G ∈ E A, such that
+h∗JX(y) =J Γ\G(y),form-a.e.y∈Γ\G.
+SinceJ Γ\G agrees almost everywhere withh∗JX and (h∗JX)2 =−Id, smoothness impliesJ 2
+Γ\G =
+−Id everywhere. HenceJ Γ\G is a smooth almost complex structure. By Lemma 3.3,J Γ\G is
+integrable, andh ∗JX agrees everywhere withJ Γ\G. Moreover,
+h: (X, J X)→(Γ\G, J Γ\G)
+is biholomorphic. In particular, the affine automorphism
+A=h◦f◦h −1 : (Γ\G, JΓ\G)→(Γ\G, J Γ\G)
+is biholomorphic andfis biholomorphically conjugate toA. Moreover, ifAis weakly mixing,
+by Lemma 3.2, the complex structureJ Γ\G is constant in the left-invariant trivialization, and
+hence left-invariant.
+3.4.Proof of Corollary D.Pass to a finite nilmanifold coverπ N : eN→N. After replacing it
+by anA-invariant finite cover if necessary, the affine Anosov automorphismAlifts to an affine
+Anosov automorphism eAof eN. Taking the corresponding finite coverπ X : eX→X, the conju-
+gacyhlifts to a bi-Lipschitz conjugacy eh, andflifts to a holomorphic Anosov diffeomorphism
+efsuch that
+eh◦ ef= eA◦ eh.
+
+=== PDF PAGE 11 ===
+INVARIANT COMPLEX STRUCTURES 11
+The map eAis an affine Anosov automorphism of the nilmanifold eN, and hence is mixing
+with respect to Haar measure by the standard mixing criterion for nilmanifold automorphisms.
+Applying Theorem A, we obtain a left-invariant complex structureJ eN on eNsuch that
+eh: eX→( eN , J eN)
+is biholomorphic.
+It remains to descendJ eN toN. For every deck transformationδ N ofπ N, there is a deck
+transformationδ X ofπ X satisfyingeh◦δ X =δ N ◦eh. Since the lifted complex structure on eXis
+invariant underδ X, its push-forwardJ eN is invariant underδ N. Therefore the deck group acts on
+(eN , J eN) by holomorphic affine automorphisms, andJ eN descends to a complex infra-nilmanifold
+structureJ N onN. This finishes the proof.
+3.5.Proof of Corollary E.As in the proof of Corollary D, after passing to a finite nilmanifold
+cover and then descending the resulting complex structure, it suffices to consider the case where
+Nis a nilmanifold.
+By the global rigidity theorem of Hertz–Wang [22], the actionαisC ∞-conjugate to its
+linearization
+ρ:Z k →Aff(N)
+by aC ∞ diffeomorphismh:X→N. Choosen 0 ∈Z k such thatα(n 0) is Anosov. Thenρ(n 0)
+is an affine Anosov automorphism, and hence is mixing with respect to the Haar measure.
+Applying Theorem A toα(n 0) andρ(n 0), we obtain a complex nilmanifold structureJ N onN
+such that
+h:X→(N, J N)
+is biholomorphic.
+It remains to check that the whole affine action is holomorphic with respect toJ N. For every
+n∈Z k, we have
+ρ(n) =h◦α(n)◦h −1.
+Sinceα(n) is holomorphic andhis biholomorphic, it follows thatρ(n) is holomorphic for every
+n∈Z k.
+4.An ergodic but not weakly mixing example
+We include the following example to show that the weak mixing assumption cannot be re-
+placed by ergodicity in Theorem A and Corollary B. The construction is inspired by an example
+of Walters [24]; see also [5, Section 3].
+Example4.1.LetM=T 10 =T 4 ×T 4 ×T 2 with coordinates (x 1, x2, t, s). EndowMwith the
+constant complex structureJ 0 defined by
+J0(u1, u2, a, b) = (−u2, u1,−b, a),(u 1, u2, a, b)∈R 4 ⊕R 4 ⊕R⊕R.
+LetL∈SL(4,Z) be an ergodic toral automorphism with a pair of complex conjugate eigen-
+valuesλ=e iθ and ¯λ=e −iθ that are not roots of unity. LetV=V λ,¯λ ⊂R 4 be the real
+two-dimensional invariant subspace corresponding to the pairλ, ¯λ. After choosing linear coor-
+dinates onV, we may identifyL| V with the rotationR θ, whereR η denotes rotation by angle
+η. Writeα= θ
+2π and chooseβ∈R/Zsuch that 1, α, βare linearly independent overQ. Define
+A:M→M,(x 1, x2, t, s)7→
+ 
+Lx1, Lx2, t+α, s+β
+
+.
+ThenAis an ergodic holomorphic affine automorphism of (M, J 0), but it is not weakly mixing
+(see, for example, [17]).
+Choose a non-zero vectorv∈V, and define a smoothR 4-valued periodic function
+τ(t) =R 2πtv.
+Let ¯τ:T 1 →T 4 be its projection moduloZ 4. Define
+g(x1, x2, t, s) =
+ 
+x1 + ¯τ(t), x2, t, s
+
+.
+
+=== PDF PAGE 12 ===
+12 JIESONG ZHANG
+SinceL| V =R θ, we have
+τ(t+α) =R 2π(t+α)v=R θR2πtv=Lτ(t),
+and thereforeg◦A=A◦g.
+Define the pull-back complex structureJ:=g ∗J0, given by
+Jx = (Dgx)−1 ◦(J 0)g(x) ◦Dg x.
+Sincegcommutes withAandA ∗J0 =J 0, it follows that
+A∗J=A ∗g∗J0 =g ∗A∗J0 =J.
+ThusJisA-invariant, andAis holomorphic with respect toJ.
+However,Jis not left-invariant with respect to the standard Lie group structure onM.
+Indeed,
+Dg(∂t) =∂ t +τ ′(t), Dg(∂ s) =∂ s,
+and therefore
+J(∂ s) =Dg −1 
+J0(Dg(∂s))
+
+=−∂ t +τ ′(t).
+Sinceτ ′(t) is not constant, the coefficients ofJdepend non-trivially ont. ThusJis not left-
+invariant.
+Remark4.2.The complex manifold (T 10, J) constructed above is still biholomorphic to a com-
+plex torus, but the biholomorphism is given by the non-affine mapg. This is analogous to
+Walters’s example discussed in [5, Section 3]: the element in the centralizer is not affine with
+respect to the original homogeneous structure, but becomes affine after changing the homoge-
+neous structure.
+One may ask whether a complex structure preserved by an ergodic affine automorphism can
+become left-invariant after a suitable change of the compatible homogeneous structure. The
+weak mixing assumption in Theorem A gives precisely the stronger conclusion: the complex
+structure is already left-invariant without changing the homogeneous structure.
+References
+[1] C. Bonatti, S. Crovisier, G. M. Vago, and A. Wilkinson. Local density of diffeomorphisms with large cen-
+tralizers.Ann. Sci. ´Ec. Norm. Sup´ er. (4), 41(6):925–954, 2008.
+[2] C. Bonatti, S. Crovisier, and A. Wilkinson. TheC 1 generic diffeomorphism has trivial centralizer.Publ.
+Math. Inst. Hautes ´Etudes Sci., 109:185–244, 2009.
+[3] S. Cantat. Diff´ eomorphismes holomorphes Anosov.Comment. Math. Helv., 79(4):779–797, 2004.
+[4] S. Cantat. Dynamics of automorphisms of compact complex surfaces. InFrontiers in complex dynamics,
+volume 51 ofPrinceton Math. Ser., pages 463–514. Princeton Univ. Press, Princeton, NJ, 2014.
+[5] D. Damjanovi´ c, A. Wilkinson, C. Wu, and D. Xu. The symmetries of affineK-systems and a program for
+centralizer rigidity.arXiv preprint arXiv:2504.09084, 2025.
+[6] R. de la Llave. Smooth conjugacy and S-R-B measures for uniformly and non-uniformly hyperbolic systems.
+Comm. Math. Phys., 150(2):289–320, 1992.
+[7] J. DeWitt. Local Lyapunov spectrum rigidity of nilmanifold automorphisms.J. Mod. Dyn., 17:65–109, 2021.
+[8] J. DeWitt and A. Gogolev. Dominated splitting from constant periodic data and global rigidity of Anosov
+automorphisms.Geom. Funct. Anal., 34(5):1370–1398, 2024.
+[9] T. Dinh and N. Sibony. Groupes commutatifs d’automorphismes d’une vari´ et´ e k¨ ahl´ erienne compacte.Duke
+Math. J., 123(2):311–328, 2004.
+[10] J. Franks. Anosov diffeomorphisms. InGlobal Analysis (Proc. Sympos. Pure Math., Vols. XIV, XV, XVI,
+Berkeley, Calif., 1968), volume XIV-XVI ofProc. Sympos. Pure Math., pages 61–93. Amer. Math. Soc.,
+Providence, RI, 1970.
+[11] J. Franks. Necessary conditions for stability of diffeomorphisms.Trans. Amer. Math. Soc., 158:301–308,
+1971.
+[12] ´E. Ghys. Holomorphic Anosov systems.Invent. Math., 119(3):585–614, 1995.
+[13] A. Gogolev. Bootstrap for local rigidity of Anosov automorphisms on the 3-torus.Comm. Math. Phys.,
+352(2):439–455, 2017.
+[14] B. Kalinin and V. Sadovskaya. On Anosov diffeomorphisms with asymptotically conformal periodic data.
+Ergodic Theory Dynam. Systems, 29(1):117–136, 2009.
+[15] B. Kalinin, V. Sadovskaya, and Z. Wang. Smooth local rigidity for hyperbolic toral automorphisms.Commun.
+Am. Math. Soc., 3:290–328, 2023.
+
+=== PDF PAGE 13 ===
+INVARIANT COMPLEX STRUCTURES 13
+[16] B. Kalinin, V. Sadovskaya, and Z. J. Wang. Global smooth rigidity for toral automorphisms.Invent. Math.,
+2026.
+[17] A. Katok and V. Ni¸tic˘ a.Rigidity in higher rank abelian group actions. Volume I, volume 185 ofCambridge
+Tracts in Mathematics. Cambridge University Press, Cambridge, 2011. Introduction and cocycle problem.
+[18] A. Manning. There are no new Anosov diffeomorphisms on tori.Amer. J. Math., 96:422–429, 1974.
+[19] J. M. Marco and R. Moriy´ on. Invariants for smooth conjugacy of hyperbolic dynamical systems. III.Comm.
+Math. Phys., 112(2):317–333, 1987.
+[20] A. Newlander and L. Nirenberg. Complex analytic coordinates in almost complex manifolds.Ann. of Math.
+(2), 65:391–404, 1957.
+[21] C. Pugh. An improved closing lemma and a general density theorem.Amer. J. Math., 89:1010–1021, 1967.
+[22] F. Rodriguez Hertz and Z. Wang. Global rigidity of higher rank abelian Anosov algebraic actions.Invent.
+Math., 198(1):165–209, 2014.
+[23] S. Smale. Differentiable dynamical systems.Bull. Amer. Math. Soc., 73:747–817, 1967.
+[24] P. Walters. Topological conjugacy of affine transformations of tori.Trans. Amer. Math. Soc., 131:40–50,
+1968.
+[25] P. Walters. Conjugacy properties of affine transformations of nilmanifolds.Math. Systems Theory, 4:327–333,
+1970.
+[26] R. O. Wells.Differential Analysis on Complex Manifolds, volume 65 ofGraduate Texts in Mathematics.
+Springer, 3 edition, 2008.
+[27] D. Xu and J. Zhang. On holomorphic partially hyperbolic systems.J. Eur. Math. Soc. (JEMS), published
+online first, 2025.
+[28] D. Zhang.n-dimensional projective varieties with the action of an abelian group of rankn−1.Trans. Amer.
+Math. Soc., 368(12):8849–8872, 2016.
+Department of Mathematics, Kungliga Tekniska h ¨ogskolan, Lindstedtsv ¨agen 25, SE-100 44
+Stockholm, Sweden
+Email address:jiesongz@kth.se

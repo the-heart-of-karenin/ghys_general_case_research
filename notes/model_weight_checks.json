@@ -1,0 +1,38 @@
+[
+  {
+    "model": "torus_2_2",
+    "jacobian_log_lambda": 0,
+    "Ku2_log_lambda": -2,
+    "Ks2_log_lambda": -2,
+    "stable_defect_resonances": [],
+    "unstable_defect_resonances": []
+  },
+  {
+    "model": "nil_3_3",
+    "jacobian_log_lambda": 0,
+    "Ku2_log_lambda": 0,
+    "Ks2_log_lambda": 0,
+    "stable_defect_resonances": [
+      [
+        1,
+        -1,
+        2
+      ]
+    ],
+    "unstable_defect_resonances": [
+      [
+        -1,
+        1,
+        -2
+      ]
+    ]
+  },
+  {
+    "model": "anisotropic_torus_2_2",
+    "jacobian_log_lambda": 0,
+    "Ku2_log_lambda": 2,
+    "Ks2_log_lambda": 2,
+    "stable_defect_resonances": [],
+    "unstable_defect_resonances": []
+  }
+]

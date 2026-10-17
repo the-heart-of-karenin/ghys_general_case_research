@@ -1,0 +1,928 @@
+=== PDF PAGE 1 ===
+NORMAL FORMS ON CONTRACTING FOLIATIONS:
+SMOOTHNESS AND HOMOGENEOUS STRUCTURE
+BORIS KALININ AND VICTORIA SADOVSKAYA∗
+Abstract. In this paper we consider a diﬀeomorphism f of a compact manifold M
+which contracts an invariant foliation W with smooth leaves. If the diﬀerential of
+f on T W has narrow band spectrum, there exist coordinates Hx : Wx→ TxW in
+which f|W has polynomial form. We present a modiﬁed approach that allows us to
+construct maps Hx that depend smoothly on x along the leaves of W . Moreover,
+we show that on each leaf they give a coherent atlas with transition maps in a ﬁnite
+dimensional Lie group. Our results apply, in particular, to C 1-small perturbations of
+algebraic systems.
+1. Introduction
+The theory of normal forms of maps plays an important role in dynamics and goes
+back to the works of Poincare and Sternberg [St57]. Normal forms at ﬁxed points and
+invariant manifolds have been extensively studied [BKo]. More recently, the theory of
+non-stationary linearizations and, more generally, normal forms was developed in the
+context of diﬀeomorphisms with contracting foliation [KtL91, GKt98, G02, Fe04, S05].
+It proved useful in the study of smooth dynamics and rigidity for dynamical systems
+and group actions exhibiting various forms of hyperbolicity, see for example [KtSp97,
+KS03, KS06, F07, FFH10, GoKS11, KKtR11, FiKSp11].
+Let f be a C∞ diﬀeomorphism of a compact smooth manifold M, and let W be
+a continuous invariant foliation with C∞ leaves which is contracted by f, that is
+∥Df|TW∥ < 1 in some Riemannian metric. The goal of the normal form theory in
+this setting is to ﬁnd a family of diﬀeomorphismsHx :Wx→TxW such that the maps
+(1.1) ˜fx =Hfx◦f◦H−1
+x : TxW→TfxW
+are as simple as possible, for example linear maps or polynomial maps in a ﬁnite
+dimensional Lie group. The mapsHx should depend well on x and ideally form a good
+atlas on each leaf ofW . For technical reasons, it is often easier to operate with marked
+leaves, which can be identiﬁed with the tangent spaces TxW , producing an extension
+of the original system to TW . The results in [KtL91, GKt98, G02] are stated in such
+a setting, but most applications come from the foliated systems.
+∗ Supported in part by NSF grant DMS-1301693.
+1
+
+=== PDF PAGE 2 ===
+NORMAL FORMS ON CONTRACTING FOLIATIONS 2
+Non-stationary linearization, i.e. existence of Hx so that ˜fx in (1.1) are linear, was
+ﬁrst established by Katok and Lewis for one-dimensional W [KtL91]. For higher-
+dimensional foliations under a uniform 1/2 pinching assumption, non-stationary lin-
+earization follows from results of Guysinsky and Katok [GKt98] or from results of
+Feres in [Fe95], where a diﬀerential geometric point of view was developed. Under a
+weaker assumption of pointwise 1/2 pinching, it was obtained in [S05] and additional
+properties were established in [KS06]. These results are summarized below.
+Non-stationary linearization. Suppose that∥Df|TW∥ < 1, and there exist C > 0
+and γ <1 such that for all x∈ M and n∈ N,
+∥ (Dfn|TxW )−1∥·∥ Dfn|TxW∥2≤Cγn.
+Then for every x∈ M there exists a C∞ diﬀeomorphismHx :Wx→TxW such that
+(i)Hfx◦f◦H−1
+x =Df|TxW,
+(ii)Hx(x) = 0 and DxHx is the identity map,
+(iii)Hx depends continuously on x∈ M in C∞ topology,
+(iv) Such a family Hx is unique and depends smoothly on x along the leaves of W ,
+(v) The mapHy◦H−1
+x :TxW→TyW is aﬃne for any x∈ M and y∈Wx. Hence
+the non-stationary linearizationH deﬁnes aﬃne structures on the leaves of W .
+For higher-dimensional W without 1/2 pinching there may be no smooth non-
+stationary linearization, and so a polynomial normal form is sought. Under the narrow
+band spectrum assumption, such forms were introduced in [GKt98, G02]. The assump-
+tion is satisﬁed, for example, by perturbations of algebraic systems. It ensures that the
+polynomial maps involved belong to a ﬁnite dimensional Lie group, which is important
+for applications. In [GKt98, G02] Katok and Guysinsky proved existence of normal
+form coordinates{Hx} as well as a centralizer theorem. This was suﬃcient for some
+applications, such as local rigidity of higher rank actions [KtSp97]. However, smooth
+dependence ofHx along the leaves ofW was obtained under a strong extra assumption
+that the splitting of TW into the spectral subspaces is smooth along W , rather than
+just continuous. This assumption is not typically satisﬁed by perturbations of algebraic
+systems. There were also no results on the coherence of mapsHx on the leaves ofW . A
+geometric point of view on normal forms was developed by Feres in [Fe04], where he es-
+tablished existence of an f-invariant inﬁnitesimal structure. If this structure, a certain
+generalized connection, is smooth then it can be integrated to recover normal forms.
+The smoothness, however, again relied on the smoothness of the spectral splitting.
+In this paper we overcome these diﬃculties and obtain a system of normal form
+coordinates{Hx} which are smooth along the leaves of W and on each leaf give a
+coherent atlas with transition maps in a ﬁnite dimensional Lie group. This gives
+homogeneous space structures on the leaves of W which are invariant under f. Our
+results hold for any narrow band spectrum system without any extra assumptions. In
+particular, they apply to perturbations of algebraic systems. We also note that, in
+
+=== PDF PAGE 3 ===
+NORMAL FORMS ON CONTRACTING FOLIATIONS 3
+contrast to the case of the non-stationary linearization, the system{Hx} is not unique.
+In fact, the construction in [GKt98, G02] producesHx which may not be smooth if the
+spectral splitting in not. We give a modiﬁed construction that allows us to obtain the
+desired properties ofHx.
+2. Definitions and Results
+Let M be a smooth compact connected manifold and let f be a C∞ diﬀeomorphism
+of M. Let W be an f-invariant topological foliation of M with uniformly C∞ leaves.
+The latter means that all leaves are C∞ submanifolds and that all their derivatives are
+also continuous transversally to the leaves. Slightly more generally, we can consider a
+homeomorphism f which is uniformly smooth along the leaves of W . We assume that
+f contractsW , i.e.∥Df|TW∥< 1 in some metric.
+LetE = TW be the tangent bundle of the foliation W . We denote by F the
+automorphism ofE given by the derivative of f:
+Fx =Df|TxW :Ex→E fx.
+F induces a bounded linear operator F∗ on the space of continuous sections of E
+by F∗v(x) = F (v(f−1x)). The spectrum of complexiﬁcation of F∗ is called Mather
+spectrum ofF . Under a mild assumption that non-periodic points of f are dense in M,
+Mather spectrum consists of ﬁnitely many closed annuli centered at 0, see e.g. [P].
+Deﬁnition 2.1. We say that F has narrow band spectrum if its Mather spectrum is
+contained in a ﬁnite union of closed annuli Ai, i = 1,...,l , bounded by circles of radii
+eλi and eµi, where the numbers λ1≤µ1 <··· <λ l≤µl < 0 satisfy
+(2.1) µi +µl <λ i for i = 1,...,l.
+This condition can be written as µi−λi <−µl for i = 1,...,l, so it means that
+the length of each of the intervals [ λi,µi] is smaller than that of [ µl, 0]. When there
+is only one spectral interval, (2.1) is the uniform 1/2 pinching condition which yields
+non-stationary linearizations and was used in [Fe95] to construct an invariant aﬃne
+connection.
+For the given spectral intervals{[λi,µi]}, the bundleE splits into a direct sum
+(2.2) E =E1⊕···⊕E l
+of continuous F -invariant sub-bundles so that Mather spectrum of F|E i is contained
+in the annulus Ai. This can be expressed using a convenient metric [GKt98]: for each
+i = 1,...,l and each ε> 0 there exists a continuous metric ∥.∥x,ε onEi such that
+(2.3) eλi−ε∥t∥x,ε≤∥Fx(t)∥fx,ε≤eµi+ε∥t∥x,ε for every t∈E i
+x.
+Deﬁnition 2.2. A sub-resonance relation for (λ,µ ) = ( λ1,...,λ l, µ1,...,µ l) with
+λ1≤µ1 <··· <λ l≤µl < 0 is a relation of the form
+(2.4) λi≤
+∑
+sjµj, wheres1,...,s l are non-negative integers.
+
+=== PDF PAGE 4 ===
+NORMAL FORMS ON CONTRACTING FOLIATIONS 4
+Clearly,sj = 0 forj <i, and ∑sj≤λ1/µl. The narrow band condition (2.1) implies
+that if si̸= 0, then si = 1 and sj = 0 for j > i, and hence all sub-resonance relations
+are of the form λi≤µi or λi≤ ∑
+j≥i+1sjµj.
+For any vector spaces E and ¯E we say that a map P : E→ ¯E is polynomial if for
+some, and hence every, bases of E and ¯E each component of P is a polynomial. A
+polynomial map P is homogeneous of degree n if P (av) = anP (v) for all v∈ E and
+a∈ R. More generally, for a given splitting E =E1⊕···⊕ El we say that P :E→ ¯E
+has homogeneous type s = (s1,...,s l) if for any real numbers a1,...,a l and vectors
+tj∈Ej, j = 1,...,l, we have
+(2.5) P (a1t1 +··· +altl) =as1
+1 ·...·asl
+l P (t1 +··· +tl).
+Any polynomial map can be written uniquely as a linear combination of terms of
+speciﬁc homogeneous types.
+Deﬁnition 2.3. Suppose E = E1⊕···⊕ El, ¯E = ¯E1⊕···⊕ ¯El and P : E→ ¯E
+is a polynomial map. We split P into components Pi : E→ ¯Ei, P = (P1,...,P l).
+We say that P is of (λ,µ ) sub-resonance type if each component Pi has only terms of
+homogeneous typess = (s1,...,s l) satisfying sub-resonance relations λi≤ ∑sjµj.
+We denote bySλ,µ(E, ¯E) the space of all polynomials E→ ¯E of (λ,µ ) sub-resonance
+type.
+It follows from the deﬁnition that polynomials in Sλ,µ(E, ¯E) have degree at most
+(2.6) d =d(λ,µ ) =⌊λ1/µl⌋.
+It was shown in [GKt98] that in the case of point spectrum, that is λi = µi for i =
+1,...,l , the elements ofSλ,λ(E,E ) withP (0) = 0 and invertible derivative at the origin
+form a group Gλ,λ(E) with respect to composition. More generally, if ( λ,µ ) satisﬁes
+the narrow band condition, they generate (under composition) a ﬁnite-dimensional
+Lie group which we denote by Gλ,µ(E). The maps in Gλ,µ are called sub-resonance
+generated and can be described by adding ﬁnitely many relations to the set of sub-
+resonance ones. In fact, Gλ,µ(E) is contained in Gλ′,λ′
+(E) for a certain λ′, explicitly
+written in terms of (λ,µ ) [GKt98]. This larger group may be used in place of Gλ,µ(E),
+for simplicity, in all arguments.
+We return to our setting with ﬁxedF ,E, and (λ,µ ). We denote bySx,y =Sλ,µ(Ex,Ey)
+the space of sub-resonance polynomials and by Gx = Gλ,µ(Ex) the group of sub-
+resonance generated polynomial maps. For any x and y in M, any invertible linear
+map A :Ey → Ex that respects the splitting induces an isomorphism between the
+groups Gx and Gy. The set Gx,y of invertible sub-resonance generated polynomial
+maps from Ex toEy is also naturally deﬁned either by specifying homogeneity types
+using relations or simply by identifyingEx withEy: Gx,y ={P :Ex→E y|A◦P∈Gx}
+for anyA as above. Of course, if the bundle E and the sub-bundlesEi are trivial, then
+all Gx and Gx,y can be identiﬁed with a single group Gλ,µ(E).
+
+=== PDF PAGE 5 ===
+NORMAL FORMS ON CONTRACTING FOLIATIONS 5
+Theorem 2.4. Let M be a smooth compact connected manifold and let f be a C∞ dif-
+feomorphism of M. Let W be an f-invariant topological foliation of M with uniformly
+C∞ leaves. Suppose that W is contracted by f, i.e. ∥Df|TW∥ < 1 for some metric,
+and that Df|TW has narrow band spectrum, see Deﬁnition 2.1.
+Then there exist a family {Hx}x∈M of C∞ diﬀeomorphisms
+Hx :Wx→E x =TxW such that
+(i)Px =Hfx◦f◦H−1
+x :Ex→E fx is a polynomial map of sub-resonance type for
+eachx∈ M,
+(ii)Hx(x) = 0 and DxHx is the identity map for each x∈ M,
+(iii)Hx depends continuously on x∈ M in C∞ topology and it depends smoothly on
+x along the leaves of W ,
+(iv)Hy◦H−1
+x :Ex→E y is a sub-resonance generated polynomial for each x∈ M
+and each y∈Wx.
+Another way to interpret (iv) is to viewHx as a coordinate chart on Wx, identifying
+it withEx, see Section 3.2 for more details. In this coordinate chart, (iv) yields that
+all transition maps Hy◦H−1
+x for y∈ Wx are in ¯Gx, the group generated by Gx and
+the translations ofEx. ThusHx gives the leaf a structure of homogeneous space Wx∼
+¯Gx/Gx, which is consistent with other coordinate chartsHy fory∈Wx and is preserved
+by the normal formPx according to (i).
+Remark 2.5. An important and useful feature of normal forms for contractions was
+established in [GKt98]. Let g be a homeomorphism of M which commutes with f,
+preserves W , and is smooth along the leaves of W . Then the maps Hx bring g to a
+normal form as well, i.e. the map Qx =Hfx◦g◦H−1
+x is a sub-resonance generated
+polynomial for each x∈ M.
+3. Proof of Theorem 2.4
+3.1. Proof of (i), (ii), (iii). Let us ﬁx a small tubular neighborhood U of the zero
+section in TW such that for each x in M, we can identify the open set Ux =U∩TxW
+in TxW with a neighborhood of x in the leaf Wx using the exponential map. The size
+of this neighborhood can be chosen the same for all x∈ M. Thus we can view the
+diﬀeomorphismf as a family of mapsFx =f|Ux fromUx⊂TxW toUfx⊂TfxW . Our
+ﬁrst goal is to obtain a formal power series for Hx.
+For each mapFx :Ex→E fx we consider its formal power series at t = 0:
+(3.1) Fx(t) =
+∞∑
+n=1
+F (n)
+x (t).
+As a function of t for a ﬁxed x, F (n)
+x (t) : Ex→E fx is a vector valued homogeneous
+polynomial map of degree n (that is, in any bases of Ex andEfx, each coordinate in
+Efx is a homogeneous polynomial of degree n of the coordinates in Ex).
+
+=== PDF PAGE 6 ===
+NORMAL FORMS ON CONTRACTING FOLIATIONS 6
+First we construct the formal power series at t = 0 for the desired coordinate change
+Hx(t) as well as the ﬁnite power series at t = 0 for the resulting polynomial extension
+Px(t). We use notations for these series similar to (3.1):
+Hx(t) =
+∞∑
+n=1
+H(n)
+x (t) and Px(t) =
+d∑
+n=1
+P (n)
+x (t).
+We will use notation Fx =F (1)
+x for the ﬁrst derivative ofF. ForH andP we choose
+H(1)
+x = Id :Ex→E x and P (1)
+x =Fx for all x∈ M.
+We construct the terms H(n)
+x inductively to “eliminate” the part of F (n)
+x which is
+not of sub-resonance type. More precisely, we ensure that the terms P (n)
+x determined
+by the conjugacy equation are of sub-resonance type. The base of the induction is the
+linear terms chosen above. We will obtain H(n)
+x andF (n)
+x which are continuous in x on
+M and smooth in x along the leaves of W .
+Using the notations above we can write the conjugacy equation
+Hfx◦Fx =Px◦Hx
+as follows:(
+Id +
+∞∑
+k=2
+H(k)
+fx
+)
+◦
+(
+Fx +
+∞∑
+k=2
+F (k)
+x
+)
+=
+(
+Fx +
+∞∑
+k=2
+P (k)
+x
+)
+◦
+(
+Id +
+∞∑
+k=2
+H(k)
+x
+)
+for all x∈ M. Considering the terms of degree n, we obtain for n = 2
+F (2)
+x +H(2)
+fx ◦Fx =Fx◦H(2)
+x +P (2)
+x ,
+and in general for n≥ 2
+F (n)
+x + H(n)
+fx ◦F (x) +
+∑
+H(k)
+fx ◦F (j)
+x = Fx◦H(n)
+x +P (n)
+x +
+∑
+P (j)
+x ◦H(k)
+x ,
+where the summations are over all k and j such that kj = n and 1 < k,j < n. We
+rewrite the equation as
+(3.2) F−1
+x ◦P (n)
+x =−H(n)
+x +F−1
+x ◦H(n)
+fx ◦Fx +Qx,
+where
+Qx =F−1
+x
+(
+F (n)
+x +
+∑
+kj=n, 1<k,j<n
+H(k)
+fx ◦F (j)
+x −P (j)
+x ◦H(k)
+x
+)
+.
+We note that Qx is composed only of terms H(k) and P (k) with 1 < k < n, which are
+already constructed, and terms F (k) with 1 < k≤ n, which are given. Thus by the
+inductive assumption Qx is continuous in x on M and smooth along the leaves of W .
+We denote byR(n)
+x the vector space of all homogeneous polynomial maps of degree n
+fromEx toEx. Identifying these polynomial maps with symmetric n-linear maps, one
+can view this space asSymn(E∗
+x)⊗Ex, where the former is the space symmetric elements
+in thenth tensor power of the dual space ofEx, see [Fe04]. LetR(n) be the vector bundle
+
+=== PDF PAGE 7 ===
+NORMAL FORMS ON CONTRACTING FOLIATIONS 7
+over M whose ﬁber at x isR(n)
+x . We denote by S(n)
+x andN (n)
+x the subspaces of R(n)
+x
+consisting of sub-resonance and non sub-resonance polynomials respectively. These
+subspaces depend continuously on x and thus R(n) splits into the direct sum of the
+continuous sub-bundlesS(n)⊕N (n).
+Our goal is to ﬁnd a section H(n) ofR(n) so that the right side of (3.2) is a section
+ofS(n), and hence so is P (n) when deﬁned by this equation. The sub-bundle N (n)
+in general is only continuous. To construct H(n)
+x which depends smoothly on x along
+the leaves of W we will work with the factor bundle R(n)/S(n) rather than with the
+splittingS(n)⊕N (n). The ﬁber of R(n)/S(n) atx is the vector spaceR(n)
+x /S(n)
+x and, as
+a continuous vector bundle,R(n)/S(n) is isomorphic toN (n) via the natural identiﬁca-
+tion. A local trivialization of R(n)/S(n) can be obtained by ﬁxing locally a constant
+transversal toS(n) in any trivialization ofR(n). We will show in Lemma 3.3 below that
+the subspaceS(n)
+x depends smoothly on x along the leaves of W , and hence the bundle
+R(n)/S(n) and the projection to it from R(n) are smooth along the leaves of W .
+Projecting (3.2) to the factor bundle R(n)/S(n), our goal is to solve the equation
+(3.3) 0 = − ¯H(n)
+x +F−1
+x ◦ ¯H(n)
+fx ◦Fx + ¯Qx,
+where ¯H(n) and ¯Q are the projections of H(n) and Q respectively.
+We consider the bundle automorphism Φ : R(n)→R (n) covering f−1 : M→ M
+given by the maps Φx :R(n)
+fx →R (n)
+x
+(3.4) Φ x(R) =F−1
+x ◦R◦Fx.
+SinceF preserves the splittingE =E1⊕···⊕E l, it follows from the deﬁnition that the
+sub-bundlesS(n) andN (n) are Φ-invariant. We denote by ¯Φ the induced automorphism
+ofR(n)/S(n) and conclude that (3.3) is equivalent to
+(3.5) ¯H(n)
+x = ˜Φx( ¯H(n)
+fx ), where ˜Φx(R) = ¯Φx(R) + ¯Qx.
+Thus a solution of (3.3) is a ˜Φ-invariant section ofR(n)/S(n). Lemma 3.1 below shows
+that ˜Φ is a contraction and hence has a unique continuous invariant section, which can
+be explicitly written as
+(3.6) ¯H(n)
+x =
+∞∑
+k=0
+(Fk
+x )−1◦ ¯Qf kx◦Fk
+x, where Fk
+x =Ff k−1x◦···◦ Ffx◦Fx.
+To show that the maps ¯H(n)
+x depend smoothy on x along the leaves of W we use the
+version of the Cr Section Theorem of Hirsch, Pugh, and Shub formulated below. We
+apply the theorem with B =R(n)/S(n) and Ψ = ˜Φ. Since f−1 expands W , we have
+αx > 1, which yields that ¯Hx is Cr along the leaves of W for any r. We conclude that
+(3.6) gives the unique solution of (3.3) which is smooth along the leaves of W . Now we
+take a lift H(n) of ¯H(n) toR(n), which is not unique. We take a continuous sub-bundle
+˜N (n) which is smooth along the leaves of W so that subspace ˜N (n)
+x is suﬃciently close
+
+=== PDF PAGE 8 ===
+NORMAL FORMS ON CONTRACTING FOLIATIONS 8
+toN (n)
+x and hence is transverse to S(n)
+x for each x∈ M. Then we deﬁne H(n)
+x as the
+unique element in ˜N (n)
+x that projects to ¯H(n)
+x . This lift H(n) is smooth along the leaves
+of W and it is the desired section of R(n) so that the right side of (3.2) is section of
+S(n). Finally, we deﬁne P (n)
+x from (3.2) and note that it is in S(n)
+x,fx and smooth along
+the leaves of W since H(n)
+x is.
+Cr Section Theorem [HPS]. Let f be a Cr, r≥ 1, diﬀeomorphism of a compact
+smooth manifold M. Let W be an f-invariant topological foliation with uniformly Cr
+leaves. Let B be a normed vector bundle over M and Ψ :B→B be an extension of f
+such that both B and Ψ are uniformly Cr along the leaves of W .
+Suppose that Ψ contracts ﬁbers ofB, i.e. for any x∈ M and any u,w∈B (x)
+(3.7) ∥Ψ(u)− Ψ(w)∥fx≤kx∥u−w∥x with sup{kx : x∈ M}< 1.
+Then there exists a unique continuous Ψ-invariant section of B. Moreover, if
+(3.8) sup {kxαr
+x : x∈ M}< 1, where αx =∥(Df|TxW )−1∥,
+then the unique invariant section is uniformly Cr smooth along the leaves of W .
+This version of the Cr Section Theorem (see [KS07, Theorem 3.7]) summarizes for
+our context Theorems 3.1, 3.2, and 3.5, and Remarks 1 and 2 after Theorem 3.8 in
+[HPS]. In this theorem the smoothness of the invariant section is obtained only along
+W , so the smoothness of B and Ψ is required along W only. It also follows from the
+proof in [HPS] that the contraction in the base (3.8) needs to be estimated only along
+W (formally, this can be obtained by applying the theorem with the base manifold M
+considered as the disjoint union of the leaves of W ). This has been observed in the
+study of partially hyperbolic systems, see for example Introduction, Theorem 3.1 and
+remarks in [PSW97].
+Lemma 3.1. The map Φ :N (n)→N (n) given by (3.4) is a contraction in the sense
+of (3.7), and hence so is ˜Φ :R(n)/S(n)→R (n)/S(n) given by (3.5).
+Proof. We recall that the norm of a homogeneous polynomial map R : E → ¯E of
+degree n is deﬁned as ∥R∥ = sup{∥R(v)∥ : v∈ E, ∥v∥ = 1}. If P is a linear or a
+homogeneous polynomial map ˜E→E, then for the norm of the composition we have
+(3.9) ∥R◦P∥≤∥ R∥·∥ P∥n.
+Suppose that E = E1⊕...⊕El and∥v∥ = maxi∥vi∥ for v = (v1,...,v l). If R is of
+homogeneous type s = (s1,...,s l) then by (2.5) we get ∥R(v)∥≤∥ R∥∥v1∥s1...∥vl∥sl.
+We will use the norm on E which is the maximum of the norms on Ei used in (2.3):
+∥t∥ =∥t∥x,ε = maxi∥ti∥x,ε for any t = (t1,...,t l)∈E x.
+Then for a polynomial R :Efx→E i
+fx of homogeneous type s = (s1,...,s l) we have
+(3.10) ∥R◦Fx∥≤∥ R∥·∥ F|E 1x∥s1...∥F|E lx∥sl
+
+=== PDF PAGE 9 ===
+NORMAL FORMS ON CONTRACTING FOLIATIONS 9
+If R∈N fx then, by deﬁnition, we have λi > ∑sjµj. We can choose a suﬃciently
+small ε> 0 so that λi > ∑sjµj + (n + 2)ε for all such relations. It follows from (2.3)
+that∥F|E j
+x
+∥≤ eµj+ε and∥F|−1
+E ix
+∥≤ e−λi+ε, so we conclude that for each x∈ M
+∥Φx(R)∥≤∥ F|−1
+E ix
+∥·∥ R∥·
+∏
+j
+∥F|E j
+x
+∥sj≤e−λi+ε·∥R∥·
+∏
+j
+(eµj+ε)sj≤
+≤e−λi+∑sjµj+(n+1)ε·∥R∥≤ e−ε∥R∥.
+Thus Φ is a contraction onN (n). The second statement follows since the linear part ¯Φ of
+˜Φ is a contraction. Indeed, ¯Φ corresponds to Φ under the identiﬁcation ofR(n)/S(n) and
+N (n) as continuous vector bundles given by the natural linear isomorphisms between
+R(n)
+x /S(n)
+x andN (n)
+x , which depend continuously on the base point. Hence ∥¯Φx∥≤ e−ε
+with respect to a continuous family of norms on the ﬁbers of R(n)/S(n).
+□
+Proposition 3.2. The vector space of sub-resonance polynomialsS(E) =S(λ,µ)(E,E )
+for the given (λ,µ ) and splitting E =E1⊕···⊕ El depends only on the fast ﬂag V :
+E1 =V 1⊂V 2⊂...⊂Vl =E, where Vi =E1⊕···⊕ Ei.
+More precisely,S(E) = S( ˜E) if ˜E is E equipped with a splitting that generates the
+same fast ﬂag: Vi = ˜E1⊕···⊕ ˜Ei, for i = 1,...,l .
+Proof. Let A :E→ ˜E be a linear isomorphism with A(Ei) = ˜Ei, for i = 1,...,l . Then
+R∈S (E) if and only if ˜R =A◦R◦A−1∈S ( ˜E). Also, A andA−1 are block triangular
+for the splitting E =E1⊕···⊕ El, that is their matrices are block triangular in any
+basis adapted to this splitting or, equivalently, they belong to S(E). To complete the
+proof we need to show that if R∈S (E) then so are A◦R and R◦A−1.
+By splittingR into components and homogeneity types, it suﬃces to check this forR :
+E→Ei corresponding to a sub-resonance relation λi≤ ∑sjµj, whose combinatorial
+type we dente by (i;s1,...,s l). We call a relation (m;s′
+1,...,s′
+l) with|s′| =|s| subordinate
+to (i;s1,...,s l) if m≤ i and ∑
+j≤ks′
+j≤ ∑
+j≤ksj for each k (this gives a partial order
+on relations). It follows that λm≤ ∑s′
+jµj so that all subordinate relations are also
+of sub-resonance type. It is easy to see that the homogeneity type of any term in
+A◦R orR◦A−1 corresponds to a relation subordinate to (i;s1,...,s l), and hence these
+polynomials are inS(E).
+In fact, the subspace spanned by all sub-resonance polynomials corresponding to the
+relations subordinate to (i;s1,...,s l) can be explicitly described in terms of the ﬂag V
+only: it consists of all polynomial maps R :Ex→ Vi
+x such that for each k the degree
+of R along the subspace Vk
+x is at most ∑
+j≤ksj. This is an alternative way to see that
+S(E) depends only on the fast ﬂag. □
+Lemma 3.3. The ﬁbersS(n)
+x of the vector sub-bundle S(n)⊂R (n) depend smoothly on
+x along the leaves of W .
+
+=== PDF PAGE 10 ===
+NORMAL FORMS ON CONTRACTING FOLIATIONS 10
+Proof. We consider the fast ﬂagVx inEx:
+(3.11) E1
+x =V1
+x⊂V 2
+x⊂...⊂V l
+x =Ex, where Vi
+x =E1
+x⊕···⊕E i
+x
+First we note that the subspacesVi
+x depend smoothly on x alongW . This is relatively
+well-known and is proved by an application of the Cr Section Theorem to a suitable
+graph transform extension, see [KS07, Proposition 3.9] for an explicit reference. In
+fact, in our setting, smoothness of the fast ﬂag along W follows directly from normal
+forms sinceHx maps the fast sub-foliations of W to linear foliations ofEx, see Section
+3.2 for details (smooth dependence ofHx onx is not needed for this argument, so there
+is no circular reasoning).
+It now follows that there exist a splitting Ex = ˜E1
+x⊕···⊕ ˜El
+x which is smooth in x
+along W and deﬁnes the same ﬂag Vx. Then Proposition 3.2 implies that S(n)
+x = ˜S(n)
+x ,
+the space of all sub-resonance homogeneous polynomials of degreen for the same (λ,µ )
+and the new splitting. The latter clearly depends smoothly on x along W . □
+Thus we have constructed the formal seriesHx(t) = ∑∞
+n=1H(n)
+x (t) for the coordinate
+change and the polynomial map Px(t) = ∑d
+n=1P (n)
+x (t), where d =⌊λ1/µl⌋. Now we
+obtain the actual coordinate change function. We ﬁx N > dand conjugateF by the
+polynomial coordinate change ¯HN given by
+(3.12) ¯HN
+x (t) =
+N∑
+n=1
+H(n)
+x (t) and denote ˜Fx(t) = ¯HN
+fx◦Fx◦ ( ¯HN
+x )−1.
+We note that ¯HN
+x (t) is a diﬀeomorphism on a neighborhood ˜Ux⊂ Ux of 0∈E x since
+its diﬀerential at 0 is Id, moreover the size of ˜Ux can be bounded away from 0 by
+compactness of M. By the construction of ¯HN, the maps ˜Fx andPx have the same
+derivatives at t = 0 up to order N for each x∈ M. We now look for the coordinate
+change conjugating ˜Fx andPx in the space
+Cx ={Rx∈CN( ˜Ux,Ex) : Rx(0) = 0, D0Rx = Id, D(k)
+0 Rx = 0, k= 2,...,N}.
+It is a closed aﬃne subspace of CN( ˜Ux,Ex) with a standard norm
+∥R∥N = max{∥D(k)
+t R∥ : t∈Ux, 0≤k≤N}.
+Each element inCx is a diﬀeomorphism on a neighborhood of 0 ∈E x. We will ﬁx δ <1
+and then choose ˜Ux to be convex and small enough so that for any R1,R 2 inCx and
+R =R1−R2 we have
+(3.13) ∥D(k)R∥0≤δ∥D(N)R∥0 for 0≤k <N and hence ∥R∥N =∥R(N)∥0.
+This is possible sinceD(k)
+0 R = 0 for 0≤k≤N and hence for anyt∈ ˜Ux and 0≤k <N
+we can estimate
+∥D(k)
+t R∥≤∥ t∥· sup{∥D(k+1)
+s R∥ :∥s∥≤∥ t∥}≤ diam ˜Ux·∥R(k+1)∥0.
+
+=== PDF PAGE 11 ===
+NORMAL FORMS ON CONTRACTING FOLIATIONS 11
+We consider the spaceS of continuous sections of the bundle C and equip it with the
+distance dist(R1,R 2) =∥R1−R2∥N = supx∥(R1−R2)x∥N. We consider the operator
+T [R]x = (Px)−1◦Rfx◦ ˜Fx
+onS so that the ﬁxed point of T is the desired coordinate change. Note that T [R] is
+inS by the deﬁnition ofCx and the coincidence of the derivatives of P and ˜F at 0.
+To show that T is a contraction on S we denote R = R1−R2 for R1,R 2 inS and
+estimate∥T [R]∥N = supx∥T [R]x∥N, which by (3.13) equals to sup x∥T [R](N)
+x ∥0.
+(3.14)
+D(N)
+t T [R]x =D(N)
+t
+(
+(Px)−1◦Rfx◦ ˜Fx
+)
+=
+=D(1)
+Rf x( ˜Fx(t)) (Px)−1◦D(N)
+˜Fx(t)Rfx◦D(1)
+t ˜Fx + J,
+where J consists of a ﬁxed number of terms of the type
+D(i)
+Rf x( ˜Fx(t)) (Px)−1◦D(j)
+˜Fx(t)Rfx◦D(k)
+t ˜Fx, ijk =N, j <N,
+whose norm can be estimated using (3.9) as
+∥D(i)
+Rf x( ˜Fx(t)) (Px)−1∥·∥ D(j)
+˜Fx(t)Rfx∥i·∥D(k)
+t ˜Fx∥ij.
+By (3.13), ∥D(j)
+˜Fx(t)Rfx∥≤ δ∥D(N)Rfx∥0 < 1 if δ is small enough. Therefore, there
+exists a constant M =M(F,P,N ) such that
+(3.15) ∥J∥≤ M·δ∥D(N)Rfx∥0≤Mδ·∥R∥N.
+We estimate the main term in (3.14) as follows
+(3.16)
+∥D(1)
+Rf x( ˜Fx(t)) (Px)−1◦D(N)
+˜Fx(t)Rfx◦D(1)
+t ˜Fx∥≤
+≤∥ D(1)
+Rf x( ˜Fx(t))(Px)−1∥·∥ R∥N·∥D(1)
+t ˜Fx∥N ≤
+≤ e−λ1+ε·∥R∥N·eNµ l+Nε = k′·∥R∥N,
+where k′ = exp((Nµl−λ1) + (N + 1)ε). Since λ1 > Nµl by the choice of N we can
+takeε small enough so that k′ < 1. Combining the estimates (3.15) and (3.16) we get
+∥T [R1−R2]∥N = sup
+x
+∥T [R1−R2](N)
+x ∥0≤ (k′ +Mδ )·∥R1−R2∥N
+so thatT is a contraction ifδ is small enough. ThusT has a unique ﬁxed point, which is
+a continuous family ˜HN
+x of coordinate changes conjugatingPx and ˜Fx given by (3.12).
+We conclude that the maps HN
+x = ˜HN
+x ◦ ¯HN
+x give a family of CN diﬀeomorphisms
+deﬁned on a neighborhood of the zero section ofE which depend continuously onx∈ M
+inCN topology and satisfy (i) and (ii) of Theorem 2.4. Sincef contractsW , this family
+extends uniquely to a family of CN global diﬀeomorphismsHN
+x :Wx→E x that satisfy
+(i). Once we ﬁx a formal power series forH, the construction works for eachN >d and
+HN is unique amongCN diﬀeomorphisms whose derivatives up to orderN are given by
+the series. This means that all HN coincide and give a family of C∞ diﬀeomorphisms.
+
+=== PDF PAGE 12 ===
+NORMAL FORMS ON CONTRACTING FOLIATIONS 12
+Thus we have proved parts (i),(ii) and (iii) with smoothness along W established so
+far for the Taylor coeﬃcients of Hx at 0. The smoothness of Hx in x along W will
+follow from this once we establish part (iv). Indeed, in the coordinates on Wx given by
+Hx for a ﬁxed x, for all other y∈Wx the mapsHy are polynomials and thus coincide
+with their ﬁnite Taylor series.
+3.2. Consistency of the fast foliations. First we describe some properties of the
+fast ﬂag (3.11) and related properties ofHx and of sub-resonance generated maps. The
+leaves of W are subfoliated by unique foliations Uk tangent to Vk
+x =E1
+x⊕···⊕E k
+x.
+We denote by ¯Uk the corresponding foliations of Ex obtained by the identiﬁcation
+Hx : Wx→E x. Thus we obtain the foliations of ¯Uk ofE which are invariant under
+the polynomial normal form mapsPx. Since the mapsHx are diﬀeomorphisms, ¯Uk are
+also unique fast foliations with the same contraction rates. They are characterized by
+for y,z ∈E x z∈ ¯Uk(y) ⇔ dist(Pn
+x (y),Pn
+x (z))≤Cen(µk+ε) for all n∈ N
+for any ε suﬃciently small so that µk +ε<λ k+1.
+It follows from Deﬁnition 2.3 that sub-resonance polynomials R∈ Sx,y are block
+triangular in the sense that Ei component does not depend on Ej components for
+j < ior, equivalently, it maps the subspaces Vi
+x of fast ﬂag in Ex to those in Ey. By
+considering compositions, we obtain that any sub-resonance generated polynomial in
+Gx,y is also block triangular.
+It is easy to see that all derivatives of a sub-resonance polynomial are sub-resonance
+polynomials. In particular, the derivative DyPx at any point y∈E x is sub-resonance
+and hence is block triangular and thus maps subspaces parallel to Vk
+x to subspaces
+parallel toVk
+fx. Hence the foliation ofE by those parallel toVk
+x inEx is invariant under
+the mapsPx and hence coincides with ¯Uk by uniqueness of the fast foliation. It follows
+that for any x∈ M and any y∈Wx the diﬀeomorphism
+(3.17) Gx,y :=Hy◦H−1
+x :Ex→E y
+maps the fast ﬂag of linear foliations of Ex to that ofEy. In particular, the same holds
+for its derivative D0Gx,y = DxHy :Ex →E y and we conclude that D0Gx,y is block
+triangular and thus is a sub-resonance linear map.
+3.3. Proof of (iv): Consistency of normal form coordinates. In this section we
+show that the map Gx,y in (3.17) is a sub-resonance generated polynomial. First we
+note that
+Gx,y(0) =Hy(x) =: ¯x∈E y and D0Gx,y =DxHy.
+SinceH−1
+f nx◦P n
+x◦Hx =fn =H−1
+f ny◦P n
+y◦Hy we obtain that
+Hf ny◦H−1
+f nx◦P n
+x =Hf ny◦fn◦H−1
+x =Pn
+y◦Hy◦H−1
+x and hence
+(3.18) Gf nx,f ny◦P n
+x =Pn
+y◦Gx,y.
+
+=== PDF PAGE 13 ===
+NORMAL FORMS ON CONTRACTING FOLIATIONS 13
+Now we consider the formal power series for Gx,y :Ex→E y at t = 0∈E x:
+Gx,y(t)∼Gx,y(t) = ¯x +
+∞∑
+m=1
+G(m)
+x,y (t).
+Our ﬁrst goal is to show that all its terms are sub-resonance generated. We proved in
+Section 3.2 that the ﬁrst derivative G(1)
+x,y =DxHy is a sub-resonance linear map.
+Inductively, we assume that G(m)
+x,y has only sub-resonance generated terms for all
+x∈ M, y∈Wx, and m = 1,...,k − 1 and show that the same holds for G(k)
+x,y. We split
+G(k)
+x,y =Sx,y +Nx,y into the sub-resonance generated part and the rest. Using invariance
+under contracting maps Px, it suﬃces to show that Nx,y = 0 for all y∈ Wx that are
+suﬃciently close to x. Assuming the contrary, we ﬁx such x and y with Nx,y ̸= 0.
+We will write Nx for Nx,y and Nf nx for Nf nx,f ny. Now we consider order k terms in
+the Taylor series at 0 ∈E x for (3.18). Taylor series for Pn
+x at 0 ∈E x coincides with
+Pn
+x (t) = ∑M
+m=1P (m)
+x (t). We also consider the Taylor series for Pn
+y atGx,y(0) = ¯x∈E y
+Pn
+y (z) = ¯xn +
+M∑
+m=1
+Q(m)
+y (z− ¯x), where ¯xn =Pn
+y (¯x)
+All terms Q(m) are sub-resonance as the derivatives of a sub-resonance polynomial.
+Consider the formal power series for
+Gf nx,f ny(t)∼Gf nx,f ny(t) = ¯xn +
+∞∑
+m=1
+G(m)
+f nx,f ny(t).
+Now we obtain from (3.18)
+¯xn +
+∞∑
+j=1
+G(j)
+f nx,f ny
+( M∑
+m=1
+P (m)
+x (t)
+)
+= ¯xn +
+M∑
+m=1
+Q(m)
+y
+( ∞∑
+j=1
+G(j)
+x,y(t)
+)
+.
+Since any composition of sub-resonance generated terms is sub-resonance generated,
+taking non sub-resonance generated terms of order k in the above equation yields
+(3.19) Nf nx
+(
+P (1)
+x (t)
+)
+=Q(1)
+y (Nx(t)).
+We decompose N into components N = (N 1,...,N l) and let i be the largest index so
+thatNi
+x̸= 0, i.e. there exists t′∈E x so that z′ =Ni(t′) has non-zero component inEi
+y.
+We denote
+(3.20) w =Q(1)
+y (z′) =D¯xPn
+y (z′)∈E f ny and let wi =Pri(w)∈E i
+f ny
+be its i component. We claim that
+(3.21) ∥wi∥≥ Cen(λi−ε)
+where the constant C does not depend on n. This follows from (2.3) and the fact that
+D¯xPn
+y =Df nxHf ny◦Fn
+x◦ (DxHy)−1.
+
+=== PDF PAGE 14 ===
+NORMAL FORMS ON CONTRACTING FOLIATIONS 14
+Indeed, the diﬀerentials Df nxHf ny and DxH−1
+y preserve the fast ﬂag and are close
+to identity since x is close to y by our assumption and hence fnx is close to fny.
+Then z = (DxHy)−1(z′) has non-zero component zi inEi
+x, which is transformed by
+Fn
+x according to (2.3): ∥Fn
+x (zi)∥≥ en(λi−ε)∥zi∥. Then ﬁnally ∥wi∥≥ C′∥Fn
+x (zi)∥ as
+Df nxHf ny is close to identity and Fn
+x (z) has no j components for j >i.
+Now we estimate from above the i component of the left side of (3.19) at t′. First,
+∥P (1)
+x (t′
+j)∥ =∥Fn
+x (t′
+j)∥≤∥ (t′)∥en(µj+ε) for any j.
+Let Ns
+f nx be a term of homogeneity type s = (s1,...,s l) in the component Ni
+f nx. We
+estimate as in (3.10)
+∥Ns
+f nx
+(
+P (1)
+x (t′)
+)
+∥≤∥ Nf nx∥·∥ (t′)∥k·en ∑sj(µj+ε)
+Since no term in Ni
+f nx is a sub-resonance one, we have λi > ∑sjµj. We can choose a
+suﬃciently smallε> 0 so that λi > ∑sjµj + (n + 2)ε for all such relations. Hence the
+left side of (3.19) at t′ can be estimated as
+∥Ns
+f nx
+(
+P (1)
+x (t′)
+)
+∥≤ C′en(λi−2ε),
+where the constant C′ does not depend on n since the norms of G(k)
+f nx,f ny, and hence
+those of Nf nx, are uniformly bounded. This contradicts (3.19) and (3.21) for large n.
+Thus we shown that the Taylor series Gx,y of Gx,y at 0 contains only sub-resonance
+generated terms, and in particular it is a ﬁnite polynomial. It remains to show that
+Gx,y coincides with its Taylor series.
+In addition to (3.18) we have the same relation for their ﬁnite Taylor series
+(3.22) Gf nx,f ny◦P n
+x =Pn
+y◦Gx,y
+and hence denoting ∆n =Gf nx,f ny−Gf nx,f ny we obtain
+(3.23) ∆ 0 = (Pn
+y )−1◦ ∆n◦P n
+x
+Below we show that the right hand side of (3.23) tends to 0 as n→ ∞and thus
+Gx,y =Gx,y, completing the proof.
+Since ∆n is inﬁnitely ﬂat at 0 ∈E f nx, for each k there exists Ck,δ such that
+(3.24) ∥∆n(z)∥≤ Ck,δ∥z∥k for all z∈E f nx with∥z∥≤ δ.
+We can choose the constant Ck,δ independent of n sinceGx,y depends continuously on
+(x,y ) in C∞ topology and fnx remains close to fny. We ﬁx k and ε such that
+(3.25) kµl + 2(k + 1)ε<λ 1.
+We estimate (Pn
+y )−1 andPn
+x as follows:
+(3.26) ∥(Pn
+y )−1(t)∥≤ e−n(λ1−2ε)∥t∥ and ∥(Pn
+x )(t)∥≤ en(µl+2ε)∥t∥
+
+=== PDF PAGE 15 ===
+NORMAL FORMS ON CONTRACTING FOLIATIONS 15
+for anyn∈ N provided that sizes of both the input∥t∥ and the outputs∥(Pn
+y )(t)∥ and
+∥(Pn
+y )−1(t)∥ are at most δ. Both estimates follow from the fact that for any x∈ M
+∥D0Px∥ =∥Fx∥≤ eµl+ε and ∥D0(Px)−1∥ =∥(Fx)−1∥≤ e−λ1+ε
+by (2.3) and hence we have similar estimates for derivatives at all points t∈E x with
+∥t∥≤ δ for suﬃciently small δ >0:
+∥DtPx∥≤ eµl+2ε and ∥Dt(Px)−1∥≤ e−λ1+2ε.
+Then the bound for∥(Pn
+x )(t)∥ follows by simply estimating its derivative as the trajec-
+tory product, as long as all points involved are δ close to 0.
+Finally using (3.23), (3.24), and (3.26) we estimate
+∥∆0(t)∥≤∥ (Pn
+y )−1∥·∥ ∆n◦P n
+x (t)∥≤ e−n(λ1−2ε)Ck,δ
+(
+en(µl+2ε)∥t∥
+)k
+=
+= en(−λ1+kµl+2(k+1)ε)Ck,δ∥t∥k → 0 as n→∞
+by (3.25). Thus, ∆ 0 = 0, i.e. the map Gx,y coincides with its Taylor series.
+This completes the proof of Theorem 2.4 □
+References
+[BKo] I. U. Bronstein and A. Ya. Kopanskii. Smooth invariant manifolds and normal forms. World
+Scientiﬁc, 1994.
+[F07] Y. Fang. On the rigidity of quasiconformal Anosov ﬂows. Ergodic Theory Dynam. Systems 27
+(2007), no. 6, 1773–1802.
+[FFH10] Y. Fang, P. Foulon, and B. Hasselblatt. Zygmund strong foliations in higher dimension. J.
+Mod. Dyn. 4 (2010), no. 3, 549–569.
+[Fe95] R. Feres. The invariant connection of 1/2-pinched Anosov diﬀeomorphism and rigidity. Paciﬁc
+J. Math. Vol. 171 No. 1 (1995), 139–155.
+[Fe04] R. Feres. A diﬀerential-geometric view of normal forms of contractions. In Modern Dynamical
+Systems and Applications, Eds.: M. Brin, B. Hasselblatt, Y. Pesin, Cambridge University Press,
+(2004) 103–121.
+[FiKSp11] D. Fisher, B. Kalinin, and R. Spatzier. Totally non-symplectic Anosov actions on tori and
+nilmanifolds. Geometry and Topology 15 (2011) 191–216.
+[GoKS11] A. Gogolev, B. Kalinin, and V. Sadovskaya. Local rigidity for Anosov automorphisms. (with
+Appendix by R. de la Llave) Mathematical Research Letters, 18 (2011), no. 05, 843–858.
+[G02] M. Guysinsky. The theory of non-stationary normal forms. Ergod. Theory Dyn. Syst., 22 (3),
+(2002), 845–862.
+[GKt98] M. Guysinsky and A. Katok. Normal forms and invariant geometric structures for dynamical
+systems with invariant contracting foliations. Math. Research Letters 5 (1998), 149–163.
+[HPS] M. Hirsch, C. Pugh, and M. Shub. Invariant manifolds. Springer-Verlag, New York, 1977.
+[KKtR11] B. Kalinin, A. Katok, and F. Rodriguez-Hertz. Nonuniform measure rigidity. Annals of
+Mathematics 174 (2011), no. 1, 361–400.
+[KtL91] A. Katok and J. Lewis. Local rigidity for certain groups of toral automorphisms. Israel J.
+Math. 75 (1991), 203–241.
+[KtSp97] A. Katok and R. Spatzier. Diﬀerential rigidity of Anosov actions of higher rank abelian
+groups and algebraic lattice actions. Tr. Mat. Inst. Steklova 216 (1997), Din. Sist. i Smezhnye
+Vopr., 292319; translation in Proc. Steklov Inst. Math. 1997, no. 1 (216), 287–314.
+
+=== PDF PAGE 16 ===
+NORMAL FORMS ON CONTRACTING FOLIATIONS 16
+[KS03] B. Kalinin and V. Sadovskaya. On local and global rigidity of quasiconformal Anosov diﬀeo-
+morphisms. Journal of the Institute of Mathematics of Jussieu (2003) 2 (4), 567–582.
+[KS06] B. Kalinin and V. Sadovskaya. Global rigidity for totally nonsymplectic Anosov Zk actions.
+Geometry and Topology, vol. 10 (2006), 929–954.
+[KS07] B. Kalinin and V. Sadovskaya. On classiﬁcation of resonance-free Anosov Zk actions. Michigan
+Mathematical Journal, Vol 55 (2007), no. 3, 651–670.
+[P] Ya. Pesin. Lectures on Partial Hyperbolicity and Stable Ergodicity. Zurich Lectures in Advanced
+Mathematics, EMS, 2004.
+[PSW97] C. Pugh, M. Shub, and A. Wilkinson. H¨ older foliations. Duke Mathematical Journal, 86
+(1997), no. 3, 517–546.
+[S05] V. Sadovskaya. On uniformly quasiconformal Anosov systems. Math. Research Letters, vol. 12
+(2005), no. 3, 425–441.
+[St57] S. Sternberg. Local contractions and a theorem of Poincar´ e. Amer. J. of Math. 79 (1957),
+809–824.
+Department of Mathematics, The Pennsylvania State University, University Park,
+PA 16802, USA.
+E-mail address : kalinin@psu.edu, sadovskaya@psu.edu

@@ -1,0 +1,105 @@
+[
+  {
+    "filename": "01_Zhang_2026_Codimension_one_v2.pdf",
+    "title": "Codimension-one holomorphic Anosov diffeomorphisms",
+    "download_url": "https://arxiv.org/pdf/2609.37695v2",
+    "landing_url": "https://arxiv.org/abs/2609.37695",
+    "publication_note": "2026 preprint, v2, 2026-10-05",
+    "collected_utc": "2026-10-17T09:33:17.956970+00:00",
+    "download_status": "existing_verified",
+    "bytes": 354138,
+    "sha256": "44625f74139bc3b5a6e5597f96f05090f795d73cd37a7df8d99381d1ebedb1ad"
+  },
+  {
+    "filename": "02_Zhang_2026_Invariant_complex_structures.pdf",
+    "title": "Invariant complex structures for affine automorphisms: a cocycle viewpoint",
+    "download_url": "https://arxiv.org/pdf/2606.17794v1",
+    "landing_url": "https://arxiv.org/abs/2606.17794",
+    "publication_note": "2026 preprint, v1",
+    "collected_utc": "2026-10-17T09:33:17.957968+00:00",
+    "resolved_url": "https://arxiv.org/pdf/2606.17794v1",
+    "download_status": "downloaded",
+    "bytes": 409794,
+    "sha256": "98ae9ba19cc73f82e385838d9d04c4cc0a7c5d78c2111582b60f1261d6ce1137"
+  },
+  {
+    "filename": "03_Kalinin_Sadovskaya_Normal_forms_narrow_band.pdf",
+    "title": "Normal forms on contracting foliations: smoothness and homogeneous structure",
+    "download_url": "https://vsadovskaya.github.io/Papers/narrow_band.pdf",
+    "landing_url": "https://arxiv.org/abs/1612.03454",
+    "publication_note": "Author-hosted manuscript; arXiv first submitted 2016",
+    "collected_utc": "2026-10-17T09:33:17.958971+00:00",
+    "download_status": "existing_verified",
+    "bytes": 344377,
+    "sha256": "c2abcd6c0adbd39347b64f9844fbccf77f2a5458d687d7ce1a6a61708cbb9461"
+  },
+  {
+    "filename": "04_Kalinin_2020_Contracting_extensions.pdf",
+    "title": "Non-stationary normal forms for contracting extensions",
+    "download_url": "https://arxiv.org/pdf/2006.12662",
+    "landing_url": "https://arxiv.org/abs/2006.12662",
+    "publication_note": "ArXiv manuscript; version served on collection date",
+    "collected_utc": "2026-10-17T09:33:17.959969+00:00",
+    "download_status": "existing_verified",
+    "bytes": 311117,
+    "sha256": "ccf45c9939bb269b0f1ee637eb64f89c23c3e9e23b5afc2aec7f87cf6285ad80"
+  },
+  {
+    "filename": "05_Berteloot_Dupont_Molino_2008_Holomorphic_contractions.pdf",
+    "title": "Normalization of bundle holomorphic contractions and applications to dynamics",
+    "download_url": "https://arxiv.org/pdf/0705.2649",
+    "landing_url": "https://aif.centre-mersenne.org/articles/10.5802/aif.2409/",
+    "publication_note": "ArXiv manuscript of Annales de l'Institut Fourier 58 (2008), 2137-2168",
+    "collected_utc": "2026-10-17T09:33:17.980971+00:00",
+    "resolved_url": "https://arxiv.org/pdf/0705.2649",
+    "download_status": "downloaded",
+    "bytes": 443882,
+    "sha256": "74a42b76ee2d8f41f3f726ed2cb9df026e924971ea43b9c1a85d58577d34b193"
+  },
+  {
+    "filename": "06_Melnick_Nonstationary_geometric_structures.pdf",
+    "title": "Nonstationary smooth geometric structures for contracting measurable cocycles",
+    "download_url": "https://arxiv.org/pdf/1604.04423",
+    "landing_url": "https://arxiv.org/abs/1604.04423",
+    "publication_note": "ArXiv manuscript; publication DOI 10.1017/etds.2017.38",
+    "collected_utc": "2026-10-17T09:33:17.980971+00:00",
+    "resolved_url": "https://arxiv.org/pdf/1604.04423",
+    "download_status": "downloaded",
+    "bytes": 411206,
+    "sha256": "d7359c4e4eab9ddadc185c926fce4ed1a58a1c2109d99468f453b135ffef5c23"
+  },
+  {
+    "filename": "07_Bera_Verma_Uniform_non_autonomous_basins.pdf",
+    "title": "Uniform non-autonomous basins of attraction",
+    "download_url": "https://arxiv.org/pdf/2211.15169",
+    "landing_url": "https://arxiv.org/abs/2211.15169",
+    "publication_note": "ArXiv manuscript; journal publication Invent. Math. 238 (2024), 995-1040",
+    "collected_utc": "2026-10-17T09:33:20.872749+00:00",
+    "download_status": "existing_verified",
+    "bytes": 399690,
+    "sha256": "181cf878365228c47474d6b8d58baa32b30cd056f299881f6c5770f36f1008c9"
+  },
+  {
+    "filename": "08_Kalinin_Sadovskaya_2003_Quasiconformal_rigidity.pdf",
+    "title": "On local and global rigidity of quasiconformal Anosov diffeomorphisms",
+    "download_url": "https://vsadovskaya.github.io/Papers/qcdiff.pdf",
+    "landing_url": "https://doi.org/10.1017/S1474748003000161",
+    "publication_note": "Author-hosted manuscript; J. Inst. Math. Jussieu 2 (2003), 567-582",
+    "collected_utc": "2026-10-17T09:33:20.883749+00:00",
+    "resolved_url": "https://vsadovskaya.github.io/Papers/qcdiff.pdf",
+    "download_status": "downloaded",
+    "bytes": 221504,
+    "sha256": "6a41e68413061ec456b51abba264aa30a2666a60f4a9cd39c86259224bc35335"
+  },
+  {
+    "filename": "09_Rodriguez_Hertz_Wang_Higher_rank_rigidity.pdf",
+    "title": "Global rigidity of higher rank Anosov algebraic actions",
+    "download_url": "https://arxiv.org/pdf/1304.1234",
+    "landing_url": "https://arxiv.org/abs/1304.1234",
+    "publication_note": "ArXiv manuscript; Invent. Math. 198 (2014), 165-209",
+    "collected_utc": "2026-10-17T09:33:21.625722+00:00",
+    "download_status": "existing_verified",
+    "bytes": 403951,
+    "sha256": "403cd873128ee9cb6c8f34f5dcc22924b7e4d2a8e7868a524c548a89993af4c3"
+  }
+]

@@ -1,0 +1,866 @@
+=== PDF PAGE 1 ===
+CODIMENSION-ONE HOLOMORPHIC ANOSOV
+DIFFEOMORPHISMS
+JIESONG ZHANG
+Abstract.We prove that every codimension-one holomorphic Anosov dif-
+feomorphism of a compact connected complex manifold is biholomorphi-
+cally conjugate to a hyperbolic automorphism of a complex torus. This
+verifies a conjecture of Ghys [Ghy95] in the codimension-one case and, in
+particular, in complex dimension three.
+Contents
+1. Introduction 1
+2. Proof of Theorem 1.1 4
+3. Proof of Theorem 1.2 11
+4. Proof of Theorem 1.3 14
+5. An example with non-holomorphicE s andE u 17
+References 18
+1.Introduction
+A diffeomorphismf:M→Mof a connected compact Riemannian manifold
+is calledAnosovif there is a continuousDf-invariant splitting
+T M=E s ⊕E u
+and an integerk≥1 such that, for everyx∈M,
+Df k|Es(x)
+ <1 and
+(Df k|Eu(x))−1 <1.
+Franks and Manning proved that an Anosov diffeomorphism on an infra-
+nilmanifold is topologically conjugate to a hyperbolic affine automorphism
+[Fra70, Man74]. The conjugacy and its inverse are H¨ older continuous, but
+the conjugacy need not be aC 1 diffeomorphism in general: aC 1 conjugacy
+identifies the eigenvalues of the corresponding derivative return maps at pe-
+riodic points, whereas these eigenvalues can be changed by arbitrarily small
+localC ∞ perturbations. A conjecture going back to Anosov and Smale as-
+serts that every compact manifold supporting an Anosov diffeomorphism is
+homeomorphic to an infra-nilmanifold [Sma67].
+1
+arXiv:2609.37695v2  [math.DS]  5 Oct 2026
+
+=== PDF PAGE 2 ===
+2 JIESONG ZHANG
+The dynamics of holomorphic diffeomorphisms on complex manifolds are
+often more rigid than those of general differentiable maps, owing to the com-
+patibility between the dynamics and the complex structure. In [Ghy95], Ghys
+proposed the following conjecture.
+Every holomorphic Anosov diffeomorphism is biholomor-
+phically conjugate to an affine automorphism of a complex
+infra-nilmanifold.
+Ghys verified the conjecture for complex surfaces [Ghy95, Theorem A]. Can-
+tat [Can04, Theorem 1.4] proved the corresponding classification for projective
+manifolds, assuming either that both invariant distributions are holomorphic or
+that the diffeomorphism has complex codimension one. Zhang [Zha26] proved
+a regularity bootstrap and algebraic classification for holomorphic Anosov dif-
+feomorphisms that are bi-Lipschitz conjugate to affine models.
+In higher dimensions, the conjecture remains open in general. In this note,
+we prove it for holomorphic Anosov diffeomorphisms of complex codimension
+one, meaning that dim C Es = 1 or dim C Eu = 1.
+TheoremA.Letf:X→Xbe a codimension-one holomorphic Anosov dif-
+feomorphism of a compact complex manifold. ThenXis biholomorphic to a
+complex torus, andfis biholomorphically conjugate to a hyperbolic holomor-
+phic torus automorphism.
+In particular, Theorem A verifies Ghys’s conjecture for compact complex
+threefolds: since both invariant distributions are nonzero, one of them must
+have complex dimension one.
+1.1.Strategy of the proof.In this subsection, letf:X→Xbe a
+codimension-one holomorphic Anosov diffeomorphism of a compact complex
+manifold of complex dimensiond. Replacingfbyf −1 if necessary, we assume
+that dimC Es = 1.
+Topological conjugacy.The first step is to establish the topological conjugacy.
+Theorem 1.1.Letf:X→Xbe a holomorphic Anosov diffeomorphism of
+a compact complex manifold of complex dimensiond≥2, withdim C Es =
+1. ThenXis homeomorphic toT 2d, andfis topologically conjugate to a
+hyperbolic toral automorphism.
+The cased= 2 is covered by [Ghy95, Theorem A]. Ford≥3, Ghys [Ghy95,
+Theorem B] proved this statement under the additional assumption of topo-
+logical transitivity. The transitivity assumption is only used to show that the
+unstable holonomy maps are globally defined on every stable leaf. In this pa-
+per, we establish the global existence of the unstable holonomy by using a
+specific geometrically defined non-stationary linearization of the stable leaves,
+with respect to which the unstable holonomy maps are linear and thus glob-
+ally defined. This enables us to remove the topological transitivity assumption
+from Ghys’s Theorem B.
+
+=== PDF PAGE 3 ===
+CODIMENSION-ONE HOLOMORPHIC ANOSOV DIFFEOMORPHISMS 3
+We note that Theorem 1.1 does not follow from the Franks–Newhouse clas-
+sification of codimension-one Anosov diffeomorphisms [Fra70,New70], since in
+our settingE s andE u have real dimension at least two.
+Holomorphic conjugacy.The second step is to improve the regularity of the
+conjugacy. A difficulty is that a complex manifold homeomorphic toT 2d need
+not be a complex torus whend≥3: real tori admit nonstandard complex
+structures; see [Cat02,COP10]. 1 This leads to the following question.
+Can a nonstandard complex structure onT 2d,d≥3, admit a
+holomorphic Anosov diffeomorphism?
+We expect the answer to be negative. Theorem A proves this in complex
+dimension three and, more generally, in the codimension-one case. By contrast,
+Xu and Zhang [XZ25] constructed holomorphic partially hyperbolic systems
+on real tori with nonstandard complex structures in complex dimensions at
+least five.
+The following theorem gives a negative answer to the question above under
+the additional assumption thatE s andE u are holomorphic.
+Theorem 1.2.Letf:X→Xbe a holomorphic Anosov diffeomorphism of
+a compact complex manifold. Assume thatXis homeomorphic to a torus
+and that the invariant distributionsE s andE u are holomorphic. ThenXis
+biholomorphic to a complex torus, andfis biholomorphically conjugate to a
+holomorphic torus automorphism.
+The main idea is to decompose deck transformations of the universal cover
+into their stable and unstable components and use the holomorphicity of both
+foliations to show that these components are biholomorphic. Their closure
+gives a transitive action by holomorphic translations, forcing the complex struc-
+ture to be translation-invariant.
+To apply Theorem 1.2, we establish the holomorphicity of the invariant
+distributions.
+Theorem 1.3.Letf:X→Xbe a holomorphic Anosov diffeomorphism of
+a compact complex manifold withdim C Es = 1. Then bothE s andE u are
+holomorphic subbundles ofT 1,0X.
+The invariant distributionsE s andE u are a priori H¨ older continu-
+ous [HPS77]. In the setting of Theorem 1.3, Ghys [Ghy95, Proposition 2.2]
+proved thatE u is holomorphic by estimating the quasiconformal distortion
+of the unstable holonomy maps. This method does not extend directly to
+Es since holomorphicity and conformality are no longer equivalent in higher
+complex dimensions. As an alternative, we prove the holomorphicity ofE s
+directly by anL 2-estimate for the antiholomorphic derivatives of suitable
+smooth approximations.
+Theorem A then follows from Theorems 1.1, 1.2, and 1.3.
+1In contrast, a compact complex surface homeomorphic toT 4 is a complex torus, by the
+classification of compact complex surfaces.
+
+=== PDF PAGE 4 ===
+4 JIESONG ZHANG
+1.2.Obstructions in higher codimension.One may ask whether the strat-
+egy of the proof of Theorem A extends to higher codimension. The three steps
+of the proof encounter different obstructions.
+The topological conclusion of Theorem 1.1 does not extend to higher codi-
+mension in general. Cantat constructed a holomorphic Anosov diffeomorphism
+on a compact complex fourfold that is not homeomorphic to a torus, with
+dimC Es = dim C Eu = 2; see [Can04, Example 1.5]. Section 5 gives another
+example on a non-torus nilmanifold. Thus, a general classification must allow
+algebraic models beyond tori.
+Theorem 1.2 itself does not require the codimension-one assumption. Its
+proof, however, uses the additive structure of the toral model and the density
+of the stable and unstable projections of the lattice to construct a transi-
+tive group of holomorphic translations. This argument does not extend di-
+rectly to general infra-nilmanifolds. It is natural to ask whether an analogous
+classification by affine automorphisms holds for manifolds homeomorphic to
+infra-nilmanifolds, under the assumption that both invariant distributions are
+holomorphic. However, even if such a generalization holds, the holomorphicity
+assumption remains an obstruction to applying it in full generality.
+Indeed, Section 5 constructs a holomorphic Anosov automorphism of a com-
+pact nilmanifold with a left-invariant complex structure whose stable and un-
+stable distributions are both smooth but non-holomorphic. Thus, the regu-
+larity conclusion of Theorem 1.3 fails in higher codimension. This example
+is already an algebraic model consistent with Ghys’s conjecture, showing that
+the conjectured classification must accommodate non-holomorphic invariant
+distributions.
+1.3.Structure of the paper.Section 2 proves Theorem 1.1, Section 3 proves
+Theorem 1.2, and Section 4 proves Theorem 1.3. Section 5 constructs a holo-
+morphic Anosov automorphism whose invariant distributions are both non-
+holomorphic.
+2.Proof of Theorem 1.1
+Writed= dim C X. The cased= 2 follows from [Ghy95, Theorem A], so
+throughout this section we assumed≥3. By [Ghy95, Proposition 2.2], applied
+tof −1, the unstable bundleE u is holomorphic. Thus
+L:=T 1,0X/Eu
+is a holomorphic line bundle. Denote the quotient map byπ:T 1,0X→L. We
+can also regardπas anL-valued (1,0)-form. Set
+Sn(x) =D xf n|Esx, U n(x) =D xf n|Eux , Q n(x):L x − →Lf nx,
+whereQ n is the quotient map induced byDf n with
+πf nx ◦D xf n =Q n(x)◦π x.
+
+=== PDF PAGE 5 ===
+CODIMENSION-ONE HOLOMORPHIC ANOSOV DIFFEOMORPHISMS 5
+Fix a smooth Hermitian metric onT 1,0Xand equipE u andLwith the induced
+and quotient metrics. Uniform hyperbolicity gives constantsC >0, 0< τ <1,
+andλ >1 such that, for everyx∈Xandn≥1,
+(1)
+∥Sn(x)∥ ≤Cτ n,∥Q n(x)∥ ≤Cτ n,
+m(Un(x))≥C −1λn,∥D xf n∥ ≤C∥U n(x)∥.
+Herem(B) =∥B −1∥−1. Constants denoted byCmay change from one occur-
+rence to the next.
+2.1.A compatible invariant connection.The involutivity ofE u gives a
+canonical way to differentiate sections ofL=T 1,0X/Eu alongE u. For a
+smooth (1,0) vector fieldYtangent toE u and a smooth sectionsofL, the
+Bott partial connectionis given by
+(2)∇ B
+Y s:=π[Y,es], π(es) =s,
+whereesis any smooth local lift ofstoT 1,0X. The expression is independent
+of the liftes: two lifts differ by a sectionZofE u, andπ[Y, Z] = 0 becauseE u
+is involutive.
+Definition 2.1(Compatible connection).A complex connection∇onLis
+calledcompatibleif its(0,1)-part is ¯∂L and its restriction toE u is∇ B.
+In local holomorphic foliation coordinates (z, w 1, . . . , wd−1) withE u =
+kerdz, sete=π(∂ z). A connection is determined in this frame by a
+complex-valued one-formAthrough
+(3)∇e=A⊗e,∇(ue) = (du+uA)⊗e.
+Compatibility is equivalent to
+(4)A=a dz
+for a scalar functiona. Indeed,∇ 0,1 = ¯∂L excludes the (0,1)-part ofAaseis
+holomorphic, and∇ B
+∂wj
+e=π[∂ wj , ∂z] = 0 excludes thedw j-components. The
+local connections withA= 0 are therefore compatible. A smooth partition of
+unity combines them into a global smooth compatible connection∇ 0. We will
+use this local expression several times during the proof.
+The bundle mapQ 1 :L→Lcoveringfidentifies a pulled-back connection
+with a connection onL. More explicitly, put
+(f#s)(y) =Q 1(f −1y)s(f −1y).
+For a smooth vector fieldVand sections, our convention is
+(5) ((f ∗∇)V s)(x) =Q 1(x)−1 
+∇f∗V (f#s)
+
+(f x).
+In particular, the difference of two connections pulls back as an ordinary scalar
+one-form, since conjugation acts trivially on End(L).
+Lemma 2.2.The line bundleLadmits a unique continuous compatiblef-
+invariant connection∇.
+
+=== PDF PAGE 6 ===
+6 JIESONG ZHANG
+Proof.Define
+∇n = (f n)∗∇0, α=f ∗∇0 − ∇0.
+The Leibniz rule shows thatαisC ∞-linear in both the vector field and the
+section. Thusαis an End(L)-valued one-form. SinceLis a complex line
+bundle, we have the canonical identifications
+End(L) ∼= L⊗L ∗ ∼= X×C.
+We therefore regardαas an ordinary complex-valued one-form.
+Sincefis holomorphic and preservesE u, pullback preserves both ¯∂L and
+the Bott partial connection. Consequently, each∇ n is compatible, and
+α∈Ω 1,0(X), α| Eu = 0.
+The formαis smooth but need not be holomorphic.
+Forv∈T 1,0
+x X, writev=v s +v u according to the invariant splitting. Then 
+(f n)∗α
+
+x(v) =α f nx(Sn(x)vs).
+The projections ontoE s andE u are uniformly bounded, so (1) implies
+(6)∥∇ n+1 − ∇n∥C0 =∥(f n)∗α∥C0 ≤Cτ n∥α∥C0.
+The summability of the right-hand side shows that∇ n converges uniformly to
+a continuous compatible connection∇. Passing to the limit inf ∗∇n =∇ n+1
+givesf ∗∇=∇.
+If∇ ′ is another continuous compatible invariant connection, thenβ=∇ ′−∇
+is a scalar (1,0)-form vanishing onE u. The same calculation gives
+β= (f n)∗β,∥β∥ C0 ≤Cτ n∥β∥C0.
+Lettingn→ ∞yieldsβ= 0.□
+Lemma 2.3.The connection∇is holomorphic and flat.
+Proof.As shown in (3) and (4), in local holomorphic foliation coordinates
+(z, w1, . . . , wd−1) withE u = kerdzande=π(∂ z), the compatible connections
+∇n and∇have connection one-forms of the following type:
+(7)∇ ne=A n ⊗e, A n =a n dz,∇e=A⊗e, A=a dz.
+Therefore, the curvature of the connection∇ n is given by
+Rn =dA n +A n ∧A n =dA n =da n ∧dz.
+Naturality of curvature givesR n = (f n)∗R0; the usual conjugation byQ n
+disappears becauseLhas rank one. In a foliation chart aroundf nx, write
+R0 =da 0 ∧dz. On its inverse image,
+Rn = (f n)∗(da0)∧(f n)∗(dz).
+SincedzannihilatesE u, it factors through the quotientL, and therefore
+|(f n)∗dz|x ≤C∥Q n(x)∥,|(f n)∗da0|x ≤C∥D xf n∥.
+Fix a finite coverX= SN
+i=1 Vi, where eachV i is relatively compact in a
+holomorphic foliation chartU i. WritingR 0 =da 0,i ∧dz i onU i, the one-forms
+
+=== PDF PAGE 7 ===
+CODIMENSION-ONE HOLOMORPHIC ANOSOV DIFFEOMORPHISMS 7
+da0,i and the quotient covectors induced bydz i are uniformly bounded on the
+setsV i. For eachxandn, chooseisuch thatf nx∈V i and apply the preceding
+estimates in this chart. Thus we can choose a uniform constantC, independent
+of bothxandn, such that
+(8)|R n(x)|2 ≤C∥Q n(x)∥2∥Dxf n∥2 ≤C∥Q n(x)∥2∥Un(x)∥2.
+Letνbe the real volume form of the chosen Hermitian metric. In unitary
+frames adapted toE u ⊕(E u)⊥, the derivative has the block form
+Dxf n =
+
+Un(x)b n(x)
+0q n(x)
+
+,
+where|q n|=∥Q n∥. For any complex-linear mapB, its real determinant is
+detR B=|det C B|2. Thus
+(9)J ν(f n)(x) =∥Q n(x)∥2|det
+C
+Un(x)|2.
+Ifσ 1 ≥ · · · ≥σ d−1 >0 are the singular values ofU n(x), then
+|det
+C
+Un(x)|=
+d−1Y
+j=1
+σj ≥ ∥U n(x)∥m(U n(x))d−2.
+Combining this with (1), (8), and (9) gives
+(10)|R n(x)|2 ≤C m(U n(x))−2(d−2)Jν(f n)(x)≤Cλ −2(d−2)nJν(f n)(x).
+Integrating this inequality gives
+(11)
+∥Rn∥2
+L2(ν) ≤Cλ −2(d−2)n
+Z
+X
+Jν(f n)dν
+=Cλ −2(d−2)nν(X)− →0.
+Hered≥3 is essential. The volume formνneed not bef-invariant.
+On each fixed foliation chart,A n →Alocally uniformly anddA n =R n →0
+inL 2. Both convergences hold in the sense of distributions, and continuity of
+distributional differentiation givesdA= 0.
+SinceA=a dzhas type (1,0), the components∂Aand ¯∂Ahave distinct
+types and vanish separately. Thus ( ¯∂a)∧dz= 0, which implies ¯∂a= 0 coef-
+ficientwise. The distributional Cauchy–Riemann theorem [Dem12, Chapter I,
+Lemma (3.29)(a)] shows thatais holomorphic. Hence∇is holomorphic and
+its curvaturedAvanishes.□
+2.2.Affine unstable holonomy.Let∇be the flat holomorphic connection
+constructed above. We will use this connection to define a normal form coor-
+dinate alongW s for which the unstable holonomy is linear.
+Lemma 2.4.For everyx∈X, there is a neighborhoodU, a nowhere-
+vanishing∇-parallel holomorphic sectionσofL| U, and a holomorphic
+submersiont:U→Csuch that
+π=dt⊗σ,kerdt=E u.
+
+=== PDF PAGE 8 ===
+8 JIESONG ZHANG
+Proof.Choose a sufficiently small simply connected holomorphic foliation box
+Uwith coordinates (z, w 1, . . . , wd−1) such thatE u = kerdz. Pute=π(∂ z), so
+thatπ=dz⊗e.
+Recall that for anL-valued one-form, the exterior covariant derivative is
+given by
+(12)d ∇(ω⊗e) =dω⊗e−ω∧ ∇e.
+Since∇e=a dz⊗e, we have
+(13)d ∇π=
+ 
+d(dz)−dz∧(a dz)
+
+⊗e= 0.
+Flatness and simple connectedness give a nowhere-vanishing parallel section
+σofL| U. It is holomorphic because∇ 0,1 = ¯∂L. Writeπ=ω⊗σ, whereωis a
+holomorphic one-form. Since∇σ= 0, (12) and (13) give
+0 =d ∇π=d ∇(ω⊗σ) =dω⊗σ.
+Asσis nowhere vanishing, we obtaindω= 0. After shrinkingU, the holomor-
+phic Poincar´ e lemma yields a holomorphic functiont:U→Csuch thatdt=ω.
+Thusπ=dt⊗σ. Sinceπis fiberwise surjective,dtis nowhere vanishing. Hence
+tis a holomorphic submersion and kerdt= kerπ=E u|U.□
+Forx∈U, set
+Bx =dt x|Esx :E s
+x − →C.
+This map is an isomorphism. On a sufficiently small stable plaque throughx,
+define
+(14)k x(p) =B −1
+x
+ 
+t(p)−t(x)
+
+.
+We then prove this definition is independent of the choice of (t, σ).
+Lemma 2.5.The mapsk x are independent of the chosen pairs(t, σ)and
+depend continuously onx. Moreover, there exist constantsr, ε >0such that
+for everyx∈X,
+kx :W s
+r (x)− →k x(W s
+r (x))⊂E s
+x
+is a biholomorphism satisfying
+kx(x) = 0, D xkx = id.
+HereW s
+r (x)denotes the ball of radiusrin the stable leaf. Moreover, the image
+ofk x contains the ballB(0, ε)⊂E s
+x for everyx∈X.
+Proof.Choose a finite coverX= SN
+i=1 Ui, where eachU i carries a pair (ti, σi) as
+above. If (t i, σi) and (tj, σj) are two pairs, then on each connected component
+of their overlap we haveσ j =c ijσi. Since both sections are parallel,
+0 =∇σ j =dc ij ⊗σ i.
+Thusc ij ∈C ∗ is constant. Comparing the two expressions forπgives
+(15)t j =a ijti +b ij, a ij =c −1
+ij ∈C ∗, b ij ∈C.
+
+=== PDF PAGE 9 ===
+CODIMENSION-ONE HOLOMORPHIC ANOSOV DIFFEOMORPHISMS 9
+The factora ij therefore cancels in (14), so the local definitions ofk x agree on
+overlaps. The continuity and the normalizationsk x(x) = 0 andD xkx = id
+follow directly from the definition. The stable plaques vary continuously in
+the leafwiseC 1 topology. SinceD xkx = id, the inverse function theorem with
+parameters and compactness give uniform constantsr, ε >0 with the asserted
+properties.□
+Lemma 2.6.Forpsufficiently close toxinW s(x),
+kf x(f p) =S 1(x)kx(p).
+Proof.Choose a connected source boxUand a target boxU ′ withf(U)⊂U ′.
+Let (t, σ) and (t ′, σ′) be the corresponding pairs. Byf ∗∇=∇and (5), the
+sectionf #σonf(U) is parallel. Hence there is a constantc∈C ∗ such that
+Q1(x)σ(x) =c σ ′(f x), x∈U.
+Substitutingπ=dt⊗σin the source andπ=dt ′ ⊗σ ′ in the target into
+πf xDxf=Q 1(x)πx, we obtain
+d(t′ ◦f)⊗(σ ′ ◦f) =c dt⊗(σ ′ ◦f).
+Therefore, for some constantb∈C,
+(16)t ′ ◦f=c t+b.
+In particular,B f xS1(x) =cB x, and consequently
+(17)
+kf x(f p) =B −1
+f x
+ 
+t′(f p)−t ′(f x)
+
+=B −1
+f x c
+ 
+t(p)−t(x)
+
+=S 1(x)kx(p).
+□
+Lemma 2.7.The mapsk x extend to a continuous family of biholomorphisms
+φx :W s(x)− →E s
+x
+satisfying
+φx(x) = 0, D xφx = id, φ f x ◦f=S 1(x)◦φ x.
+Proof.Forp∈W s(x), choosensufficiently large thatf npbelongs to the local
+stable plaque on whichk f nx is defined, and set
+(18)φ x(p) =S n(x)−1kf nx(f np).
+By Lemma 2.6, this expression is independent of all sufficiently large choices
+ofn. It defines a holomorphic map agreeing withk x nearx.
+For injectivity, ifφ x(p) =φ x(q), choosenlarge enough thatf npandf nq
+lie inW s
+r (f nx). The injectivity ofk f nx then givesp=q. For surjectivity,
+letv∈E s
+x and choosenso large that∥S n(x)v∥< ε, whereεis given by
+Lemma 2.5. Then
+p=f −n 
+k−1
+f nx(Sn(x)v)
+
+
+=== PDF PAGE 10 ===
+10 JIESONG ZHANG
+lies inW s(x) and satisfiesφ x(p) =v. Thusφ x is a biholomorphism. The same
+formula, with a singlenchosen locally in (x, v), shows that (x, v)7→φ −1
+x (v) is
+continuous.
+The continuity of these biholomorphisms and the stated normalization and
+equivariance follow from the iteration and the local properties in Lemma 2.5.
+□
+This non-stationary linearization was essentially established by Ghys
+[Ghy95, Proposition 3.1], in the language of invariant affine structures. Our
+approach here is different and offers more information about the unstable
+holonomy maps.
+Lemma 2.8.For anyx∈Xandy∈W u
+loc(x), leth u
+xy be local unstable holo-
+nomy between stable plaques. Then
+(19)φ y ◦h u
+xy ◦φ −1
+x =D xhu
+xy
+on a neighborhood of0∈E s
+x. In particular, the conjugated local map is the
+restriction of a complex-linear isomorphism.
+Proof.Choose a transverse coordinate box as above containingxandy, and
+shrink the stable plaques so that each holonomy segment stays in an unstable
+plaque of this box. Sincetis constant on unstable plaques,
+t◦h u
+xy =t, t(y) =t(x).
+By (14) and Lemma 2.7, forpsufficiently close toxinW s(x),
+φy(hu
+xy(p)) =B −1
+y
+ 
+t(hu
+xy(p))−t(y)
+
+=B −1
+y
+ 
+t(p)−t(x)
+
+=B −1
+y Bxφx(p).
+Differentiating atp=xand usingD xφx = id andD yφy = id givesD xhu
+xy =
+B−1
+y Bx.□
+2.3.Global holonomy and the topological conclusion.Recall that Ghys
+[Ghy95, Theorem B] proved Theorem 1.1 under the additional assumption that
+fis topologically transitive. One main step is
+Proposition 2.9(Proof of Theorem B in [Ghy95], p.598).Letf:X→Xbe a
+holomorphic Anosov diffeomorphism of a compact manifold withdim C Es = 1.
+If the unstable holonomy maps are biholomorphisms between the entire stable
+leaves, thenXis homeomorphic toT 2d andfis topologically conjugate to a
+torus automorphism.
+This proposition does not use the transitivity assumption. To apply this
+proposition, Ghys established the global existence of the unstable holonomy
+by using the transitivity assumption [Ghy95, Lemma 5.1]. Here we prove the
+global existence of the unstable holonomy using a similar argument, but use
+Lemma 2.8 as an alternative to the transitivity assumption.
+
+=== PDF PAGE 11 ===
+CODIMENSION-ONE HOLOMORPHIC ANOSOV DIFFEOMORPHISMS 11
+Lemma 2.10.For anyx∈Xandy∈W u(x), the unstable holonomy is a
+biholomorphism
+hu
+xy :W s(x)− →W s(y).
+Proof.By composing holonomies, we may assume thaty∈W u
+loc(x) is close to
+x. Letγ: [0,1]→W u
+loc(x) be a path fromxtoy, and leth t denote holonomy
+alongγ| [0,t]. FixR >0 and set
+DR =φ −1
+x
+ 
+B(0, R)
+
+.
+Lett 0 be the supremum of timest∈[0,1] such thath s is defined on all of
+DR for everys∈[0, t]. Compactness ofD R and local product structure give
+t0 >0.
+Fort∈[0,1], define
+Ht :=φ −1
+γ(t) ◦D xhu
+xγ(t) ◦φ x :W s(x)− →W s(γ(t)).
+Fort < t 0, Lemma 2.8 and the identity theorem giveh t =H t onD R. Since
+(t, p)7→H t(p) is continuous on [0,1]×D R, we have
+ht − →Ht0 uniformly onD R ast↑t 0.
+For eachp∈D R, the patht7→h t(p) lies in a single unstable plaque for
+t < t 0 sufficiently close tot 0, so its limit belongs to the same plaque. Thus the
+holonomy extends tot 0. Compactness ofH t0(DR) and local product structure
+then allow further continuation ift 0 <1, contradicting the definition oft 0.
+Hencet 0 = 1, andh 1 is defined on all ofD R. SinceRwas arbitrary,h 1 is
+globally defined and coincides with the biholomorphismH 1.□
+Proposition 2.9 and Lemma 2.10 now prove Theorem 1.1.
+3.Proof of Theorem 1.2
+The proof rests on three observations. First, all deck transformations of
+the universal cover eXare biholomorphic. Second, each deck translation can
+be decomposed into stable and unstable components. When the stable and
+unstable foliations are holomorphic, both components act biholomorphically,
+and their translation vectors form dense subgroups of the corresponding linear
+subspaces. Third, locally uniform limits of holomorphic maps are holomorphic.
+Taking limits therefore shows that all translations act biholomorphically, which
+forces the corresponding complex structure to be translation-invariant.
+LetXandfsatisfy the assumptions of Theorem 1.2. By the Franks–
+Manning theorem [Fra69,Man74], there exist a real torus
+N=V /Γ, V≃R 2d,Γ≃Z 2d,
+a hyperbolic affine automorphismαofN, and a homeomorphismh:X→N
+such that
+h◦f=α◦h.
+
+=== PDF PAGE 12 ===
+12 JIESONG ZHANG
+The affine mapαhas a fixed point. After conjugating it by a translation, we
+may therefore assume that it is induced by a linear automorphismA:V→V
+satisfyingA(Γ) = Γ.
+Let eXbe the universal cover ofX, and letF, A, Hdenote compatible lifts
+off, α, h, respectively. Then
+(20)H◦F=A◦H.
+The homeomorphismHmaps lifted stable and unstable leaves to affine sub-
+spaces parallel to the stable and unstable subspaces ofA, respectively.
+WriteV=V s ⊕V u for the hyperbolic splitting ofA, and letp s :V→V s
+andp u :V→V u be the corresponding projections.
+Lemma 3.1.We have
+ps(Γ) =V s, pu(Γ) =V u.
+Proof.We give the argument forp s. Letπ:V→V /Γ be the quotient map.
+Since the unstable foliation of the hyperbolic toral automorphismAis minimal,
+π(V u) is dense inV /Γ. Equivalently,V u + Γ is dense inV. Passing to the
+quotientV /V u ≃V s shows thatp s(Γ) is dense inV s. Similarly, the minimality
+of the stable foliation implies thatp u(Γ) is dense inV u.□
+Forv∈V, define
+Φv :=H −1 ◦L v ◦H: eX→ eX,
+whereL v denotes translation byv.
+Lemma 3.2.The mapΦ v is biholomorphic for everyv∈V.
+Proof.For everyγ∈Γ, the map Φ γ is a deck transformation and hence is
+biholomorphic. We first show that Φ psγ is biholomorphic.
+SinceE s andE u are holomorphic subbundles, the lifted stable and unstable
+foliations are transverse holomorphic foliations. Fixo∈ eXwithH(o) = 0 and
+set
+S= fW s(o), U= fW u(o).
+The conjugacy gives global product structure on eX. Define
+rs(x) =fW u(x)∩S, r u(x) =fW s(x)∩U.
+Both projections are holomorphic. The pair (r s, ru) is a biholomorphism with
+inverse
+B:S×U− → eX, B(s, u) = fW u(s)∩ fW s(u).
+Since Φγ preserves both lifted foliations, it has the following form in the product
+coordinates given byB:
+B−1 ◦Φ γ ◦B(s, u) =
+ 
+ρs
+γ(s), ρu
+γ(u)
+
+,
+whereρ s
+γ :S→Sandρ u
+γ :U→Uare biholomorphisms.
+Moreover, sinceHpreserves both lifted foliations, we have
+H(B(s, u)) =H(s) +H(u), H(s)∈V s, H(u)∈V u,
+
+=== PDF PAGE 13 ===
+CODIMENSION-ONE HOLOMORPHIC ANOSOV DIFFEOMORPHISMS 13
+and
+B−1 ◦Φ γ ◦B(s, u) =B −1 ◦H −1 ◦L γ ◦H◦B(s, u)
+=
+ 
+H −1(H(s) +p sγ), H −1(H(u) +p uγ)
+
+.
+It follows that
+ρs
+γ(s) =H −1(H(s) +p sγ)
+is holomorphic. Consequently,
+B−1 ◦Φ psγ ◦B(s, u) =B −1 ◦H −1 ◦L psγ ◦H◦B(s, u) = (ρ s
+γ(s), u).
+The right-hand side is holomorphic, and hence Φ psγ is holomorphic.
+Now leta s ∈V s. By Lemma 3.1, we can chooseγ j ∈Γ such thatp sγj →a s.
+Then Φ psγj →Φ as locally uniformly, so Φ as is holomorphic. Similarly, the
+inverses Φ−psγj converge locally uniformly to Φ −as = Φ−1
+as , which is therefore
+holomorphic as well. Thus Φ as is biholomorphic.
+The same argument in the unstable direction shows that Φ au is biholo-
+morphic for everya u ∈V u. Since everyv∈Vhas a unique decomposition
+v=a s +a u and Φv = Φas ◦Φ au, the conclusion follows.□
+The maps{Φ v :v∈V}define a continuous, free, and transitive action of
+Von eXby biholomorphisms. To show that this action is smooth, we use the
+following consequence of the Bochner–Montgomery theorem [BM46].
+Theorem 3.3(Bochner–Montgomery).LetGbe a locally compact topological
+group acting continuously and effectively on a connected smooth manifoldMby
+C∞ diffeomorphisms. ThenGis a Lie group and the action mapG×M→M
+is smooth.
+In our caseG= (V,+) is a finite-dimensional Lie group acting freely on
+eX. Theorem 3.3 therefore makes the action smooth. Choosex 0 ∈ eXwith
+H(x0) = 0 and consider the orbit map
+Θ:V→ eX, v7− →Φ v(x0) =H −1(v).
+The kernel ofD 0Θ is the Lie algebra of the stabilizer ofx 0, which is zero
+because the action is free. Since dim R V= dim R eX, the orbit map is a local
+diffeomorphism. It is bijective by freeness and transitivity, and hence is a
+globalC ∞ diffeomorphism. Consequently,H= Θ −1 is aC ∞ diffeomorphism.
+LetJ 0 :=H ∗J eX be the induced complex structure onV. Since all transla-
+tions areJ 0-holomorphic,J 0 is translation-invariant. The conjugacy relation
+H◦F◦H −1 =A
+and the holomorphicity ofFimply
+AJ0 =J 0A.
+ThusAis complex linear with respect toJ 0, Γ acts by holomorphic translations,
+and
+h:X− →(V, J 0)/Γ
+
+=== PDF PAGE 14 ===
+14 JIESONG ZHANG
+is a biholomorphic conjugacy. This proves Theorem 1.2.
+4.Proof of Theorem 1.3
+We begin with a criterion for the holomorphicity of sections. Recall that a
+sequencef n ∈L 1
+loc(Ω), where Ω⊂C d is open, converges tof∈L 1
+loc(Ω) in the
+sense of distributions ifZ
+Ω
+fnφ dV− →
+Z
+Ω
+f φ dVfor everyφ∈C ∞
+c (Ω),
+wheredVdenotes Lebesgue measure. For sections of a holomorphic vector
+bundle, distributional convergence is understood coefficientwise in local holo-
+morphic frames.
+Lemma 4.1.LetXbe a complex manifold, and letE→Xbe a holomorphic
+vector bundle. Suppose thats∈C 0(X, E)ands n ∈C 0(X, E)satisfy
+sn − →sand ¯∂Esn − →0in the sense of distributions.
+Thensis a holomorphic section ofE.
+Proof.Since differentiation is continuous in the distribution topology, we have
+¯∂Esn → ¯∂Esin the sense of distributions. Uniqueness of the distributional
+limit gives ¯∂Es= 0. In a local holomorphic frame ofE, the coefficients
+ofsare therefore holomorphic by the distributional form of the Dolbeault–
+Grothendieck lemma [Dem12, Chapter I, Lemma (3.29)(a), withp=q= 0].
+Thussis holomorphic.□
+Letf:X→Xsatisfy the assumptions of Theorem 1.3, so dim C Es = 1.
+Putd= dim C X. Ifd= 2, both invariant bundles are holomorphic by [Ghy95,
+Proposition 2.2]. We may therefore assumed≥3. By Theorem 1.1, there exist
+a real torus
+N=V /Γ, V≃R 2d,Γ≃Z 2d,
+a hyperbolic linear automorphismαofNand a H¨ older homeomorphism
+h:X→Nsuch that
+h◦f=α◦h.
+Let eXbe the universal cover ofX, and letF, A, Hdenote compatible lifts of
+f, α, h, respectively. Then
+(21)H◦F=A◦H.
+Lemma 4.2.There exist a nowhere-vanishing closed holomorphic 1-formθon
+Xand a constantµ∈Cwith0<|µ|<1such that
+(22) kerθ=E u, f ∗θ=µθ.
+Proof.WriteV=V s ⊕V u for the invariant splitting ofAand setp=H −1(0),
+S= fW s(p). ThenF(p) =pandF(S) =S. IdentifyE s
+p withCand write
+φ=φ p :S→C. By Lemma 2.7,
+φ◦F| S ◦φ −1(z) =µzfor some 0<|µ|<1.
+
+=== PDF PAGE 15 ===
+CODIMENSION-ONE HOLOMORPHIC ANOSOV DIFFEOMORPHISMS 15
+Define
+q: eX→C, q(x) =φ
+ fW u(x)∩S
+
+.
+The topological conjugacy gives global product structure, so the intersection
+definingqexists and is unique. Locally, this projection ontoSis holonomy
+of the holomorphic foliationW u, followed byφ. Henceqis a holomorphic
+submersion satisfying
+(23) kerdq= eEu, q◦F=µq.
+For eachγ∈Γ, let
+Φγ =H −1 ◦L γ ◦H
+be the corresponding deck transformation, whereL γ denotes translation byγ
+onV. Then Φ γ : eX→ eXis a biholomorphism preserving the lifted stable and
+unstable foliations. In particular, Φ γ induces a biholomorphismg γ ofCsuch
+that
+q◦Φ γ =g γ ◦q.
+Forγ̸= 0, the map Φ γ cannot preserve a lifted unstable leaf. Indeed, that
+would giveγ∈V u ∩Γ; but thenA −nγ∈Γ would converge to zero, contradict-
+ing discreteness of Γ. Thusg γ has no fixed point and is therefore a translation
+map ofC. It follows thatdqis invariant under the deck group and descends
+to a nowhere-vanishing closed holomorphic 1-formθonX. The identities in
+(22) follow from (23).□
+Letebe the continuous vector field uniquely determined bye(x)∈E s(x)
+andθ x(e(x)) = 1. We show thateis holomorphic by constructing a sequence of
+smooth vector fields converging uniformly toewhose antiholomorphic deriva-
+tives converge to zero inL 2, and then applying Lemma 4.1.
+Lemma 4.3.The vector fieldeis holomorphic. In particular,E s is a holo-
+morphically trivial line subbundle ofT 1,0X.
+Proof.The normalization ofeand the invariance ofE s give
+Dxf ne(x) =µ ne(f nx), n≥0.
+Sinceθis nowhere vanishing, we may choose a smooth sectione 0 ofT 1,0Xsuch
+thatθ(e 0) = 1. The sectione 0 need not take values inE s. Set
+(24)e n(x) =µ n(Dxf n)−1e0(f nx), U n(x) =D xf n|Eux .
+Sincee 0 −etakes values inE u, we have
+en(x)−e(x) =µ nUn(x)−1(e0 −e)(f nx).
+Uniform expansion ofE u therefore implies thate n →euniformly.
+Sincefis holomorphic, differentiating (24) gives
+(25) ( ¯∂en)x =µ n(Dxf n)−1(¯∂e0)f nx ◦ Dxf n.
+Moreover, sinceθis holomorphic andθ(e 0) = 1, we have
+0 = ¯∂
+ 
+θ(e0)
+
+=θ( ¯∂e0),
+
+=== PDF PAGE 16 ===
+16 JIESONG ZHANG
+which means that ¯∂e0 takes values inE u = kerθ. Thus (25) reduces to
+(26) ( ¯∂en)x =µ nUn(x)−1(¯∂e0)f nx ◦ Dxf n.
+Choose a smooth Hermitian metric on the holomorphic bundleE u = kerθ
+and extend it toT 1,0Xby requiring
+Eu ⊥Ce 0,|e 0|= 1.
+All norms below are taken with respect to this metric. The letterCdenotes a
+positive constant independent ofxandn, whose value may change from one
+occurrence to the next.
+Relative to the smooth orthogonal splittingE u ⊕Ce 0, the relation (f n)∗θ=
+µnθgives the block matrix
+Dxf n =
+
+Un(x)b n(x)
+0µ n
+
+.
+Letνdenote the associated real volume form. The real Jacobian is
+(27)J ν(f n)(x) =|µ| 2n|detU n(x)|2,
+where|detU n(x)|denotes the modulus of the complex determinant computed
+in unitary frames.
+Letm(U n(x)) =∥U n(x)−1∥−1 denote the conorm ofU n(x). Uniform hyper-
+bolicity givesλ >1 such that, for everyx∈Xandn≥1,
+(28)m(U n(x))≥C −1λn,∥D xf n∥ ≤C∥U n(x)∥.
+Choosen 0 so thatm(U n(x))≥1 for allx∈Xandn≥n 0. For suchn, all
+singular values ofU n(x) are at least one, and hence
+(29)|detU n(x)| ≥ ∥U n(x)∥.
+Sincee 0 is smooth andXis compact, ¯∂e0 is uniformly bounded. Combining
+(26), (27), (28), and (29), we obtain, forn≥n 0,
+(30)
+|¯∂en(x)|2 ≤C|µ| 2n∥Un(x)−1∥2|¯∂e0(f nx)|2∥Dxf n∥2
+≤C |µ|2n∥Un(x)∥2
+m(Un(x))2 ≤Cλ −2nJν(f n)(x).
+Integrating (30) yields
+(31)
+∥¯∂en∥2
+L2(ν) ≤Cλ −2n
+Z
+X
+Jν(f n)dν
+=Cλ −2nν(X)− →0.
+Here we use only thatf n is an orientation-preserving diffeomorphism; the
+volume formνneed not be invariant.
+TheL 2 convergence of ¯∂en to zero implies convergence in the sense of dis-
+tributions. Likewise, the uniform convergencee n →eimplies distributional
+convergence. Lemma 4.1 therefore makeseholomorphic. Sinceeis nowhere
+vanishing and spansE s, this bundle is holomorphically trivial. This proves
+Theorem 1.3.□
+
+=== PDF PAGE 17 ===
+CODIMENSION-ONE HOLOMORPHIC ANOSOV DIFFEOMORPHISMS 17
+5.An example with non-holomorphicE s andE u
+We conclude with a holomorphic Anosov diffeomorphismf:M→Mon
+a compact nilmanifold of complex dimension six whose stable and unstable
+distributions are both smooth but non-holomorphic. The complex structure
+is left-invariant, andfis induced by an automorphism of the underlying real
+nilpotent Lie group. So this example fits into Ghys’s conjecture.
+The construction is a complex analogue of the Borel–Smale Anosov auto-
+morphism on a nilmanifold of real dimension six [Sma67].
+EquipG=C 6 with its standard complex structure and the multiplication
+(x, y, z, a, b, c)·(x ′, y′, z′, a′, b′, c′)
+= (x+x ′, y+y ′, z+z ′ + ¯xy′, a+a ′, b+b ′, c+c ′ + ¯ab′).
+This is a simply connected real two-step nilpotent Lie group. Every left trans-
+lation is holomorphic. Thus the standard complex structure is left-invariant.
+LetR=Z[i,
+√
+3], and letσ:R → Rbe the automorphism fixingiand
+sending
+√
+3 to−
+√
+3. Set
+Γ =
+
+(α, β, γ, σα, σβ, σγ) :α, β, γ∈ R
+	
+.
+Sinceσcommutes with complex conjugation and the embeddingα7→(α, σα)
+identifiesRwith a lattice inC 2, it is straightforward to check that Γ is a lattice
+ofG. ThusM= Γ\Gis a compact complex manifold.
+Putλ= 2 +
+√
+3 and define
+F(x, y, z, a, b, c) = (λ2x, λ−1y, λz, λ−2a, λb, λ−1c).
+The weights respect both cross terms, soF:G→Gis a holomorphic group
+automorphism. Sinceλ ±1 ∈ Randσ(λ) =λ −1, it preserves Γ and induces a
+biholomorphismf:M→M.
+The left-invariant (1,0) frame, which descends toM, is
+X=∂ x, Y=∂ y + ¯x ∂z, Z=∂ z,
+A=∂ a, B=∂ b + ¯a ∂c, C=∂ c.
+The multipliers ofDFin this frame areλ 2, λ−1, λ, λ−2, λ, λ−1, sofis Anosov.
+The stable and unstable distributions are given by
+Es = spanC{Y, A, C}, E u = spanC{X, Z, B}.
+Both invariant bundles are smooth but not holomorphic. Indeed,
+¯∂Y=d¯x⊗Z, ¯∂B=d¯a⊗C,
+and hence
+(¯∂Y)(∂ ¯x) =Z /∈E s,( ¯∂B)(∂ ¯a) =C /∈E u.
+For a holomorphic subbundle, the ¯∂-derivative of every smooth section must
+take values in that subbundle. Thus neitherE s norE u is holomorphic.
+
+=== PDF PAGE 18 ===
+18 JIESONG ZHANG
+References
+[BM46] Salomon Bochner and Deane Montgomery,Locally compact groups of differentiable
+transformations, Annals of Mathematics. Second Series47(1946), no. 4, 639–653.
+[Can04] Serge Cantat,Diff´ eomorphismes holomorphes Anosov, Commentarii Mathematici
+Helvetici79(2004), no. 4, 779–797.
+[Cat02] Fabrizio Catanese,Deformation types of real and complex manifolds, Contemporary
+Trends in Algebraic Geometry and Algebraic Topology (Tianjin, 2000), Nankai
+Tracts in Mathematics, vol. 5, World Scientific Publishing, River Edge, NJ, 2002,
+pp. 195–238.
+[COP10] Fabrizio Catanese, Keiji Oguiso, and Thomas Peternell,On volume-preserving com-
+plex structures on real tori, Kyoto Journal of Mathematics50(2010), no. 4, 753–
+775.
+[Dem12] Jean-Pierre Demailly,Complex analytic and differential geometry, 2012, Online
+book, version of June 21, 2012.
+[Fra69] John Franks,Anosov diffeomorphisms on tori, Transactions of the American Math-
+ematical Society145(1969), 117–124.
+[Fra70] ,Anosov diffeomorphisms, Global Analysis (Berkeley, Calif., 1968), Proceed-
+ings of Symposia in Pure Mathematics, vol. 14, American Mathematical Society,
+Providence, RI, 1970, pp. 61–93.
+[Ghy95] ´Etienne Ghys,Holomorphic Anosov systems, Inventiones Mathematicae119
+(1995), no. 3, 585–614.
+[HPS77] Morris W. Hirsch, Charles C. Pugh, and Michael Shub,Invariant manifolds, Lecture
+Notes in Mathematics, vol. 583, Springer-Verlag, Berlin-New York, 1977.
+[Man74] Anthony Manning,There are no new Anosov diffeomorphisms on tori, American
+Journal of Mathematics96(1974), 422–429.
+[New70] S. E. Newhouse,On codimension one Anosov diffeomorphisms, American Journal
+of Mathematics92(1970), no. 3, 761–770.
+[Sma67] Stephen Smale,Differentiable dynamical systems, Bulletin of the American Math-
+ematical Society73(1967), 747–817.
+[XZ25] D. Xu and J. Zhang,On holomorphic partially hyperbolic systems, Journal of the
+European Mathematical Society (2025), Published online first.
+[Zha26] Jiesong Zhang,Invariant complex structures for affine automorphisms: a cocycle
+viewpoint, 2026, arXiv:2606.17794.
+Department of Mathematics, Kungliga Tekniska h ¨ogskolan, Lindstedtsv ¨agen
+25, SE-100 44 Stockholm, Sweden
+Email address:jiesongz@kth.se
