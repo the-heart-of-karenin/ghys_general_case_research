@@ -1,0 +1,20 @@
+{
+  "filename": "15_Journe_1988_Regularity_lemma.pdf",
+  "title": "A Regularity Lemma for Functions of Several Variables",
+  "download_url": "https://ems.press/content/serial-article-files/37769",
+  "landing_url": "https://doi.org/10.4171/RMI/69",
+  "publication_note": "Rev. Mat. Iberoam. 4 (1988), no. 2; original publisher PDF",
+  "collected_utc": "2026-10-17T12:52:08.102775+00:00",
+  "resolved_url": "https://ems.press/content/serial-article-files/37769",
+  "download_status": "downloaded",
+  "bytes": 417958,
+  "sha256": "1db18dc7d742c3fc1ac19d564cf8e80d89a361990dcaf28a22f1d604dad5fa70",
+  "pages": 7,
+  "first_page": "",
+  "text_extraction_status": "scanned PDF; no extractable first-page text",
+  "visual_verified_pages": [
+    1
+  ],
+  "visual_preview": "previews/Journe_theorem.png",
+  "visual_verification_note": "The original theorem on journal p.187 was inspected in the rendered page on 2026-10-17."
+}
