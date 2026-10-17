@@ -1,0 +1,1023 @@
+
+===== PDF PAGE 1 =====
+arXiv:math/9910091v3  [math.DG]  5 Nov 2001
+J. Geom. Phys. (2002)
+math.DG/9910091
+Special complex manifolds
+D.V. Alekseevsky 1, V. Cort´ es2, C. Devchand 2
+1 Dept. of Mathematics, University of Hull, Cottingham Road, Hull HU6 7RX, U.K.
+1 Centr “Sofus Li”, Gen. Antonova 2 - 99, 117279 Moskva
+2 Mathematisches Institut der Universit¨ at Bonn, Beringstr. 1, D-53115 Bonn
+D.V.Alekseevsky@maths.hull.ac.uk, vicente@math.uni-b onn.de, devchand@math.uni-bonn.de
+Abstract
+We introduce the notion of a special complex manifold: a comp lex manifold
+(M, J ) with a ﬂat torsionfree connection ∇ such that ∇ J is symmetric. A special
+symplectic manifold is then deﬁned as a special complex mani fold together with a
+∇ -parallel symplectic form ω. This generalises Freed’s deﬁnition of (aﬃne) special
+K¨ ahler manifolds. We also deﬁne projective versions of all these geometries. Our
+main result is an extrinsic realisation of all simply connec ted (aﬃne or projective)
+special complex, symplectic and K¨ ahler manifolds. We prov e that the above three
+types of special geometry are completely solvable, in the se nse that they are locally
+deﬁned by free holomorphic data. In fact, any special comple x manifold is locally
+realised as the image of a holomorphic 1-form α : Cn → T ∗Cn. Such a realisation
+induces a canonical ∇ -parallel symplectic structure on M and any special sym-
+plectic manifold is locally obtained this way. Special K¨ ah ler manifolds are realised
+as complex Lagrangian submanifolds and correspond to close d forms α. Finally,
+we discuss the natural geometric structures on the cotangen t bundle of a special
+symplectic manifold, which generalise the hyper-K¨ ahler structure on the cotangent
+bundle of a special K¨ ahler manifold.
+Key words: special geometry, special K¨ ahler manifolds, hypercompl ex manifolds, ﬂat connections.
+MSC: 53C30
+This work was supported by the ‘Schwerpunktprogramm String theorie’ of the Deutsche Forschungsge-
+meinschaft, MPI f¨ ur Mathematik (Bonn), SFB 256 (Universit y of Bonn), MPI f¨ ur Mathematik in den
+Naturwissenschaften (Leipzig) and Erwin-Schr¨ odinger-Institut (Vienna).
+1
+
+===== PDF PAGE 2 =====
+Introduction
+Special K¨ ahler manifolds have attracted a great deal of int erest in both string theory
+and diﬀerential geometry since they ﬁrst arose in the pionee ring paper of de Wit and
+Van Proeyen [dW-VP] as the allowed target spaces for Maxwell supermultiplets coupled
+to 4-dimensional N=2 supergravity. These manifolds play a crucial role as admi ssible
+target spaces for scalar and vector couplings in both rigid supersymmetric theories and
+in supergravity theories, where the supersymmetry algebra is ‘locally’ realised. The spe-
+cial K¨ ahler manifolds occurring in rigid and local supersy mmetric theories correspond
+respectively to the aﬃne and projective variants of special K¨ ahler manifolds in the math-
+ematical literature [C1, C2, F, H]. Special K¨ ahler geometries, moreover, occur as natural
+geometric structures on certain moduli spaces. Projective special K¨ ahler manifolds oc-
+cur, for example, as moduli spaces of Calabi–Yau 3-folds (se e e.g. [C1, C2]) and aﬃne
+special K¨ ahler manifolds occur as moduli spaces of complex Lagrangian submanifolds of
+hyper-K¨ ahler manifolds [H]. Further, the base of any algeb raic integrable system is also
+aﬃne special K¨ ahler [DW, F].
+The purpose of this paper is to develop a uniﬁed perspective f rom which the various
+mathematical and physical approaches to special geometry ( aﬃne versus projective, in-
+trinsic versus extrinsic, deﬁnition versus construction) can be seen as diﬀerent aspects of
+the same structure. We introduce the notion of a special complex manifold as a complex
+manifold ( M, J ) with a ﬂat torsionfree connection ∇ such that
+d∇ J = 0 . (1)
+We call it special symplectic if, in addition, a ∇ -parallel symplectic form ω is speciﬁed.
+Further, if ω is J-invariant, or equivalently, of type (1 , 1), it is precisely a special K¨ ahler
+manifold in the sense of [F]. More generally, we shall see tha t the Hodge components
+ω11, ω20, ω02 of ω are closed (Proposition 4). If the form ω11 is nondegenerate, it deﬁnes
+a (pseudo) K¨ ahler metric g = ω11 ◦J on M and if ω11 is ∇ -parallel (e.g., if ω = ω11)
+then ( M, J, ∇ , ω11) is a special K¨ ahler manifold.
+We give an extrinsic realisation of simply connected specia l complex, symplectic and
+K¨ ahler manifolds as immersed complex submanifolds of T ∗Cn. The main property of a
+special complex manifold used in our construction, is that a ny aﬃne function f (i.e. a
+function satisfying ∇ d f = 0) can be extended to a holomorphic function F such that
+Re F = f . In particular, for a special symplectic manifold any local aﬃne symplectic
+coordinate system ( x1, . . . , xn, y1, . . . , yn) can be extended to a system of holomorphic
+functions (z1, . . . , zn, w1, . . . , wn), which deﬁnes a local holomorphic immersion of M into
+2
+
+===== PDF PAGE 3 =====
+C2n, such that the special symplectic structure is induced by ce rtain canonical stuctures
+on C2n.
+The fundamental example of a special complex manifold M is associated to a (local)
+holomorphic 1-form α = ∑Fidzi on Cn with invertible real matrix Im ∂Fi
+∂zj
+as follows:
+The complex manifold M = Mα is the image of the section α : Cn → T ∗Cn = C2n.
+The ﬂat torsionfree connection ∇ on M is deﬁned by the condition that the real part
+Re F of any complex aﬃne function F on C2n restricts to a ∇ -aﬃne function on M.
+Such a manifold M carries a natural ∇ -parallel symplectic form ω and can therefore
+be considered as a special symplectic manifold as well. If, i n addition, the 1-form α is
+closed (and hence locally α = dF for a holomorphic function F ), then Mα is a Lagrangian
+submanifold and ω is of type (1 , 1). So Mα is then a special K¨ ahler manifold. Conversely,
+we prove that any special complex, symplectic or K¨ ahler manifold can be locally obtained
+by this construction. More generally, we show that any total ly complex holomorphic
+immersion φ of a complex n-manifold M into C2n induces on M the structure of a
+special symplectic manifold. Here, we call an immersion totally complex if the intersection
+dφ(TpM) ∩ R2n = 0 for all p ∈ M. If in addition, the immersion φ is Lagrangian (i.e.
+dφ(TpM) is a Lagrangian subspace of T ∗Cn), then M is a special K¨ ahler manifold.
+Our main result is that any simply connected special complex , symplectic or K¨ ahler
+manifold can be constructed in this fashion. In particular, any special K¨ ahler manifold
+is locally deﬁned by a holomorphic function F . This result is used in [BC] in order to
+associate a parabolic aﬃne hypersphere of real dimension 2 n to any holomorphic function
+F (z1, z2, . . . , zn) with invertible real matrix Im ∂Fi
+∂zj
+.
+In section 2, by including special complex manifolds ( M, J, ∇ ) into a one-parameter
+family ( M, J, ∇ θ), θ ∈ S1, we deﬁne projective versions of special complex, symplec-
+tic and K¨ ahler manifolds in terms of an action of C∗ on M which is transitive on this
+family. Our approach is based on the following observation: Any special complex mani-
+fold ( M, J, ∇ ) can be included in a one-parameter family ( M, J, ∇ θ) of special complex
+manifolds, with the connection ∇ θ deﬁned by
+∇ θX := eθJ ∇ (e− θJ X) , (2)
+where eθJ X = ( cosθ)X + (sinθ)JX . A complex manifold ( M, J ) with a ﬂat torsion-
+free connection ∇ is called a conic complex manifold if it admits a local holomorphic
+C∗-action ϕλ with diﬀerential dϕλX = reθJ X for all ∇ -parallel (local) vector ﬁelds X,
+where λ = reiθ. This implies ϕ∗
+λ∇ = ∇ θ. We show that a conic complex manifold is
+automatically special.
+Assume that the manifold Mα ⊂ T ∗Cn, α =
+∑
+Fidzi, is a complex cone, i.e. it
+3
+
+===== PDF PAGE 4 =====
+is invariant under complex scalings. This is the case when th e coeﬃcient functions Fi
+are homogeneous of degree one. The induced special geometry on Mα is then conic.
+Conversely, we prove that any conic (special) complex, symp lectic or K¨ ahler manifold
+can be locally realised as such a cone. In particular, any con ic special K¨ ahler manifold is
+locally described by the diﬀerential α = dF of a holomorphic homogeneous function F
+of degree two. In the simply connected case, we give a global d escription of conic special
+manifolds in terms of holomorphic immersions.
+We then deﬁne a projective special complex, symplectic or K¨ahler manifold as the or-
+bit space M of a conic complex, symplectic or K¨ ahler manifoldM by the local C∗-action,
+assuming that M is a (Hausdorﬀ) manifold. From the realisation of simply con nected
+conic manifolds as immersed submanifolds of T ∗Cn, we obtain an analogous realisation
+of projective special manifolds as immersed submanifolds o f complex projective space
+P (T ∗Cn). From this it follows that our deﬁnition of projective spec ial K¨ ahler manifolds
+is consistent with that given by Freed [F].
+Finally, we discuss the natural geometric structures on the cotangent bundle of a spe-
+cial symplectic manifold which are generalisations of the k nown hyper-K¨ ahler structure
+on the cotangent bundle of a special K¨ ahler manifold [CFG, C 2, F, H]. We prove that
+the cotangent bundle N = T ∗M of a special symplectic manifold M carries two canonical
+complex structures : the standard complex structure J1 induced by J and a complex
+structure J ω, deﬁned by ω and ∇ . If the form ω11 is nondegenerate, then N = T ∗M
+carries also a natural almost hyper-Hermitian structure ( J1, J2, gN ), i.e. a Riemannian
+metric gN (which is an extension of the K¨ ahler metricg = ω11◦J) and two anticommuting
+gN -orthogonal almost complex structures J1, J2. This almost hyper-Hermitian structure
+is integrable, i.e. J1 and J2 are integrable, if and only if ω11 is ∇ -parallel. In this case
+(J1, J2, gN ) is a hyper-K¨ ahler structure and we recover the known hyper-K¨ ahler structure
+on the cotangent bundle of a special K¨ ahler manifold. Simil arly, if ω′ = ω20 + ω02 is
+nondegenerate, then N = T ∗M carries a natural almost para-hypercomplex structure 1,
+that is a pair ( J1, J2) of commuting almost complex structures. Here J1 is the standard
+integrable complex structure and J2 is integrable if and only if the form ω′ is ∇ -parallel.
+We should like to thank Maximiliano Pontecorvo for pointing out an error in our
+original manuscript.
+1The notion of para-hypercomplex structure used in this pape r, involving two commuting complex
+structures and one involution (the product J1J2), is a variant of the more standard notion consisting of
+two anticommuting involutions and one complex structure.
+4
+
+===== PDF PAGE 5 =====
+1 (Aﬃne) special geometry
+1.1 Special manifolds
+Deﬁnition 1 A special complex manifold (M, J, ∇ ) is a complex manifold (M, J ) to-
+gether with a ﬂat torsionfree connection ∇ (on its real tangent bundle) such that
+d∇ J = 0 .
+Here the complex structure J is considered as a 1-form with values in T M and d∇ de-
+notes the covariant exterior derivative deﬁned by ∇ .
+A special symplectic manifold (M, J, ∇ , ω) is a special complex manifold (M, J, ∇ ) to-
+gether with a ∇ -parallel symplectic structure ω.
+A special K¨ ahler manifold is a special symplectic manifold (M, J, ∇ , ω) for which ω is
+J-invariant, i.e. of type (1, 1). The (pseudo-)K¨ ahler metricg(·, ·) := ω(J·, ·) is called the
+special K¨ ahler metricof the special K¨ ahler manifold (M, J, ∇ , ω).
+Remark 1: The evaluation of the T M-valued 2-form d∇ J = alt(∇ J) on two tangent
+vectors X and Y is given by:
+d∇ J (X, Y ) = ( ∇ XJ)Y − (∇ Y J)X .
+Remark 2: Since we do not assume the deﬁniteness of the metric, it would be more
+accurate to speak of special pseudo-K¨ ahler manifolds/metrics. However, as the signature
+of the metric is not relevant for our present discussion, we s hall omit the preﬁx pseudo.
+Given a linear connection ∇ on a manifold M and an invertible endomorphism ﬁeld
+A on a manifold M, we denote by ∇ (A) the connection deﬁned by
+∇ (A)X = A∇ (A− 1X) .
+Given a ﬂat connection ∇ on (the real tangent bundle of) a complex manifold ( M, J ), we
+deﬁne a one-parameter family of connections ∇ θ = ∇ (eθJ ) parametrised by the projective
+line P 1 = R/πZ, where eθJ = (cos θ)Id + (sin θ)J. The connection ∇ θ is ﬂat, since:
+∇ θX = 0 ⇐ ⇒ ∇ (e− θJ X) = 0 ,
+where X is a local vector ﬁeld on M.
+Lemma 1 Let ∇ be a ﬂat connection with torsion T on a complex manifold (M, J ).
+Then
+∇ θ = ∇ + Aθ , where Aθ = eθJ ∇ (e− θJ ) = −(sin θ)eθJ ∇ J .
+5
+
+===== PDF PAGE 6 =====
+The torsion T θ of the connection ∇ θ is given by:
+T θ = T + alt(Aθ) = T − (sin θ)eθJ d∇ J . (3)
+Proposition 1 Let ∇ be a ﬂat torsionfree connection on a complex manifold (M, J ).
+Then the triple (M, J, ∇ ) deﬁnes a special complex manifold if and only if one of the
+following equivalent conditions holds:
+a) d∇ J = 0.
+b) The ﬂat connection ∇ θ is torsionfree for some θ ̸≡ 0 (mod πZ).
+b’) The ﬂat connection ∇ θ is torsionfree for all θ.
+c) There exists θ ̸≡ 0 (mod πZ) such that [eθJ X, eθJ Y ] = 0 for all ∇ -parallel local
+vector ﬁelds X and Y on M.
+c’) [eθJ X, eθJ Y ] = 0 for all θ and all ∇ -parallel local vector ﬁelds X and Y on M.
+d) There exists θ ̸≡ 0 (mod πZ) such that d(ξ ◦e− θJ ) = 0 for all ∇ -parallel local
+1-forms ξ on M.
+d’) d(ξ ◦e− θJ ) = 0 for all θ and all ∇ -parallel local 1-forms ξ on M.
+Proof: a) is the property deﬁning special complex manifolds. Since ∇ is torsionfree, the
+torsion T θ of ∇ θ is related to d∇ J in virtue of (3) by:
+T θ = −(sin θ)eθJ d∇ J .
+If θ ̸≡ 0 (mod πZ) the endomorphism (sin θ)eθJ is invertible. This implies the equiva-
+lence of a), b) and b’). Let X and Y be ∇ -parallel local vector ﬁelds. Then eθJ X and
+eθJ Y are ∇ θ-parallel, by the deﬁnition of ∇ θ, and hence
+T θ(eθJ X, eθJ Y ) = −[eθJ X, eθJ Y ] .
+This yields b) ⇔ c) and b’) ⇔ c’). For a ∇ -parallel local 1-form ξ and X, Y as above
+we compute:
+d(ξ ◦e− θJ )(eθJ X, eθJ Y )
+= −ξ(e− θJ [eθJ X, eθJ Y ]) + eθJ Xξ (Y ) − eθJ Xξ (X)
+= −ξ(e− θJ [eθJ X, eθJ Y ])
+6
+
+===== PDF PAGE 7 =====
+since the functions ξ(X) and ξ(Y ) are constant. This proves the equivalences c) ⇔ d)
+and c’) ⇔ d’), completing the proof of the proposition. ✷
+Given a complex manifold (M, J ) with a ﬂat connection ∇ , we say that the connection
+∇
+π
+2 = ∇ (e
+π
+2 J ) = ∇ (J) = ∇ − J∇ J
+is its conjugate connection.
+Corollary 1 Let (M, J ) be a complex manifold with a ﬂat torsionfree connection ∇ .
+Then the following are equivalent:
+a) (M, J, ∇ ) is a special complex manifold.
+b) The conjugate ﬂat connection ∇ (J) is torsionfree.
+c) [JX, JY ] = 0 for all ∇ -parallel local vector ﬁelds X and Y on M.
+d) d(ξ ◦J) = 0 for all ∇ -parallel local 1-forms ξ on M.
+Corollary 2 If (M, J, ∇ ) is a special complex manifold then (M, J, ∇ θ) is a spe-
+cial complex manifold for any θ. If (M, J, ∇ , ω) is a special K¨ ahler manifold then
+(M, J, ∇ θ, ω) is a special K¨ ahler manifold for any θ.
+The next proposition shows that any special complex manifol d also has a canonical
+torsionfree complex connection, which in general is not ﬂat.
+Proposition 2 Let (M, J, ∇ ) be a special complex manifold. Then D := 1
+2(∇ + ∇ (J))
+deﬁnes a torsionfree connection such that DJ = 0.
+Proof: As a convex combination of torsionfree connections, D is a torsionfree connection.
+For any vector ﬁeld X on M we compute:
+DXJ = ∇ XJ − 1
+2 [J∇ XJ, J] = ∇ XJ − ∇ XJ = 0 . ✷
+Proposition 3 Let (M, J, ∇ , ω) be a special K¨ ahler manifold with special K¨ ahler metric
+g and Levi-Civita connection ∇ g. Then the following hold:
+(i) ∇ g = D = 1
+2(∇ + ∇ (J)).
+(ii) The conjugate connection ∇ (J) is g-dual to ∇ , i.e.
+Xg (Y, Z) = g(∇ XY, Z) + g(Y, ∇ (J)
+X Z)
+for all vector ﬁelds X, Y and Z on M.
+7
+
+===== PDF PAGE 8 =====
+(iii) The tensor ∇ g is completely symmetric.
+Proof: (i) is an immediate consequence of Proposition 2 since g = ω(·, J·). (ii) follows
+from a direct computation, which only uses the fact that ω is ∇ -parallel and J-invariant:
+Xg (Y, Z) = Xω (Y, JZ ) = ω(∇ XY, JZ ) + ω(Y, ∇ XJZ )
+= g(∇ XY, Z) + ω(JY, J ∇ XJZ ) = g(∇ XY, Z) + g(Y, ∇ (J)
+X Z) .
+Finally, to prove (iii) it is suﬃcient to check that ∇ g is symmetric in the ﬁrst two
+arguments:
+(∇ Xg)(Y, Z) − (∇ Y g)(X, Z)
+= Xg (Y, Z) − g(∇ XY, Z) − g(Y, ∇ XZ) − Y g(X, Z) + g(∇ Y X, Z) + g(X, ∇ Y Z)
+(ii)
+= −g(∇ XY, Z) + g(∇ (J)
+X Y, Z) + g(∇ Y X, Z) − g(∇ (J)
+Y X, Z)
+= g(−[X, Y ] + [X, Y ], Z) = 0 . ✷
+Proposition 4 Let (M, J, ∇ , ω) be a special symplectic manifold and ω = ω11 +ω20 +ω02
+the Hodge decomposition of the symplectic form. Then each of the components ω11, ω20,
+ω02 are closed.
+Proof: It is suﬃcient to check that the (1,1)-component ω11 = 1
+2(ω + ω(J·, J·)) is closed.
+Since ∇ has no torsion, the exterior derivative is given by d = alt ◦ ∇. We compute:
+2dω11 = d(ω + ω(J·, J·)) = alt ◦ ∇ω(J·, J·) .
+Since ∇ ω = 0 for any X1, X2, X3 ∈ TpM we obtain:
+2dω11(X1, X2, X3)
+= 1
+3(ω((∇ X1J)X2, JX3) + ω(JX 2, (∇ X1J)X3) + cycl.)
+= 1
+3(ω((∇ X1J)X2, JX3) + ω(JX 2, (∇ X3J)X1) + cycl.) , using d∇ J=0 ,
+= 1
+3(ω((∇ X1J)X2, JX3) − ω((∇ X3J)X1, JX2) + cycl.) = 0 . ✷
+Proposition 5 Let (M, J, ∇ , ω) be a special symplectic manifold and assume that ω11 is
+nondegenerate. Then (M, J, ω11) is a K¨ ahler manifold with K¨ ahler metricg = ω11(J·, ·).
+(M, J, ∇ , ω11) is special K¨ ahler if and only if ∇ ω11 = 0.
+Proof: It is clear that g is a Hermitian metric on the complex manifold ( M, J ). By the
+previous proposition the K¨ ahler form ω11 of g is closed and hence ( M, J, g) is a K¨ ahler
+manifold. The last statement is obvious. ✷
+8
+
+===== PDF PAGE 9 =====
+1.2 Special coordinates
+A ﬂat torsionfree connection ∇ on a manifold M deﬁnes on it an aﬃne structure , i.e.
+an atlas with aﬃne transition functions. A (local) function f on ( M, ∇ ) is called aﬃne
+if ∇ d f= 0. A local coordinate system ( x1, . . . , xm) on M, m = dim M, is called aﬃne
+if the xi are aﬃne functions. Any aﬃne local coordinate system ( x1, . . . , xm) deﬁnes a
+parallel local coframe ( dx1, . . . , dxm). Conversely, since any parallel 1-form α is locally
+the diﬀerential of an aﬃne function f , given a parallel coframe ( α1, . . . , αm) deﬁned on a
+simply connected domain U ⊂ M there exist aﬃne functions xi on U such that dxi = αi.
+The tuple ( x1, . . . , xm) deﬁnes an aﬃne local coordinate system near each point p ∈ U.
+This coordinate system is unique (as a germ, i.e. up to restri ctions of the coordinate
+domain) up to translations in Rm. If we require in addition that the coordinate system
+is centred at p ∈ U, i.e. that xi(p) = 0, then it is uniquely determined.
+Deﬁnition 2 Let (M, J, ∇ , ω) be a special symplectic manifold. A ∇ –aﬃne local co-
+ordinate system (x1, . . . , xn, y1, . . . , yn) on M is called a real special coordinate system
+if ω = 2
+∑
+dxi ∧ dyi . A conjugate pair of special coordinates is a pair of holomorphic
+local coordinates (z1, . . . , zn) and (w1, . . . , wn) such that (x1 = Re z1 , . . . , xn =
+Re zn , y 1 = Re w1 , . . . , yn = Re wn) is a real special coordinate system.
+Theorem 1 (i) Any special symplectic manifold (M, J, ∇ , ω) admits a real special
+coordinate system near any point p ∈ M. A real special coordinate system is
+unique up to an aﬃne symplectic transformation.
+(ii) Any aﬃne local coordinate system (x1, . . . , xn, y1, . . . , yn) on a special complex man-
+ifold admits a holomorphic extension, i.e. there exist holo morphic functions zi and
+wj with Re zi = xi and Re wj = yj. The extension is unique up to (purely imagi-
+nary) translations.
+(iii) Near any point of a special K¨ ahler manifold there exis ts a real special coordinate
+system which admits a holomorphic extension to a conjugate p air of special coor-
+dinates.
+Proof: The existence and uniqueness statements about real special coordinate systems
+are obvious. Let ( x1, . . . , xn, y1, . . . , yn) be an aﬃne local coordinate system on a special
+complex manifold. Then we deﬁne ωi := dxi − √
+−1J ∗dxi. By Corollary 1 J ∗dxi =
+dxi ◦J is closed. This implies that ωi are closed 1-forms of type (1 , 0) and are hence
+closed holomorphic 1-forms. So there exist local holomorph ic functions zi such that
+9
+
+===== PDF PAGE 10 =====
+ωi = dzi. By adding real constants we can arrange that Re zi = xi. Similarly, there
+exist local holomorphic functions wj such that Re wj = yj. The uniqueness statement
+concerning this holomorphic extension is obvious. We claim that in the case of special
+K¨ ahler manifolds, real special coordinates can be chosen s uch that the dzi, as well as
+the wj, are linearly independent (over C). To see this, let us ﬁrst observe that the
+dxi and dyj deﬁne a Lagrangian splitting of T ∗
+p M with respect to ω− 1 for any point
+p in the coordinate domain: T ∗
+p M = Lx ⊕ Ly, where Lx = span {dx1, . . . , dxn} and
+Ly = span {dy1, . . . , dyn}. The J-invariance of the symplectic (K¨ ahler) formω implies the
+existence of a Lagrangian splitting of the form T ∗
+p M = L⊕J ∗L. Since any two Lagrangian
+splittings of a symplectic vector space are related by a line ar symplectic transformation,
+this shows that the real special coordinates x1, . . . yn near p can be chosen such that the
+corresponding Lagrangian subspaces Lx, Ly satisfy Lx ∩ J ∗Lx = Ly ∩ J ∗Ly = 0 at the
+point p and hence on a coordinate domain containing p. The equation Lx ∩ J ∗Lx = 0
+forces the dzi = dxi − √ −1J ∗dxi to be linearly independent. So the zi deﬁne local
+holomorphic coordinates on the special K¨ ahler manifold. S imilarly, as a consequence of
+the equation Ly ∩ J ∗Ly = 0, the wj are local holomorphic coordinates. ✷
+1.3 The extrinsic construction of special manifolds
+As in [C2], we consider the following fundamental algebraic data: the complex vector
+space V = T ∗Cn = C2n with canonical coordinates ( z1, . . . , zn, w1, . . . , wn) and standard
+complex symplectic form Ω =
+∑n
+i=1 dzi ∧ dwi, the standard real structure τ : V → V
+with ﬁxed point set V τ = T ∗Rn. Then γ := √
+−1 Ω( ·, τ·) deﬁnes a Hermitian form of
+(complex) signature ( n, n).
+Let M be a connected complex n-fold. A holomorphic immersion φ : M → V is
+called nondegenerate (respectively, Lagrangian) if φ∗γ is nondegenerate (respectively, if
+φ∗Ω = 0). If φ is nondegenerate, then φ∗γ deﬁnes a, possibly indeﬁnite, K¨ ahler metric
+g (= Re φ∗γ) on the complex manifold M. The correponding K¨ ahler form g(·, J·) is a
+J-invariant symplectic form on M, where J denotes the complex structure of M. φ is
+called totally complex if V τ ∩ dφTpM = 0 for all p ∈ M.
+Lemma 2 A holomorphic immersion φ : M → V is totally complex if and only if its
+real part Re φ : M → V τ is an immersion.
+Proof: Let φ : M → V be a totally complex holomorphic immersion. Restricting, i .e.
+pulling back via φ, the functions xi := Re zi and yj := Re wj to M we obtain 2n functions
+on M with everywhere linearly independent diﬀerentials. In fac t, let α = ∑aidxi+∑bjyj
+10
+
+===== PDF PAGE 11 =====
+be a real linear combination which vanishes on the complex n-dimensional linear subspace
+dφTpM ⊂ V . Then, since α is real, it must also vanish on τ dφTpM. Now we can conclude
+that α = 0 since, by our assumption on φ, dφTpM ∩ τ dφTpM = V τ ∩ dφTpM ⊕ iV τ ∩
+dφTpM = 0 and, therefore, V = dφTpM ⊕ τ dφTpM. This shows that the functions xi and
+yj restrict to local coordinates on M and, hence, that Re φ is an immersion. Conversely,
+let φ : M → V be a holomorphic immersion such that Re φ : M → V τ is an immersion.
+We have to show that V τ ∩ dφTpM = 0 for all p ∈ M. Suppose, that X ∈ TpM and
+dφX ∈ V τ . Then we have that 0 = Im dφX = −Re √ −1dφX = −Re dφJX . This
+implies that JX = 0, because dRe φ = Re dφ is injective. This shows that X = 0
+proving V τ ∩ dφTpM = 0. ✷
+A holomorphic totally complex immersion φ induces a ﬂat torsionfree connection on
+the real tangent bundle of M as follows. Since Re φ is an immersion, by Lemma 2,
+restricting the functions xi = Re zi and yj = Re wj to M we obtain local coordinates,
+which induce a ﬂat torsionfree connection ∇ on M. Moreover, 2 ∑dxi ∧ dyi restricts to
+a ∇ -parallel symplectic form ω on M. We call ∇ and ω the induced connection and the
+induced symplectic form respectively. Now we can easily pro ve:
+Theorem 2 Let φ be a totally complex holomorphic immersion of a complex mani fold
+(M, J ) into V = T ∗Cn, n = dimC M, ∇ the induced connection and ω = 2φ∗(∑dxi∧dyi)
+the induced symplectic form. Then the following hold:
+(i) (M, J, ∇ , ω) is a special symplectic manifold.
+(ii) The pull back via φ of the functions (x1 = Re z1, . . . , xn = Re zn, y1 = Re w1, . . . ,
+yn = Re wn) of V deﬁnes a real special coordinate system around each point of M.
+Proof: We have to prove that d∇ J = 0. By Corollary 1, it is suﬃcient to check that
+the 1-forms dxi ◦J and dyj ◦J are closed. This follows immediately from the fact that
+the 1-forms dzi = dxi − √ −1dxi ◦J and dwj = dyj − √ −1dyj ◦J are closed. ✷
+The next proposition clariﬁes the relation between the thre e notions deﬁned above.
+Proposition 6 Let φ be a holomorphic immersion of a complex n-fold M into V =
+T ∗Cn. The following conditions are equivalent:
+(i) φ is Lagrangian and nondegenerate.
+(ii) φ is Lagrangian and totally complex.
+11
+
+===== PDF PAGE 12 =====
+Theorem 3 Let φ be a holomorphic nondegenerate Lagrangian immersion of a co mplex
+manifold (M, J ) into V inducing the K¨ ahler metricg on M. The immersion φ is totally
+complex and hence induces also the data (∇ , ω) on M. Moreover, the following hold:
+(i) (M, J, ∇ , ω) is a special K¨ ahler manifold.
+(ii) ω coincides with the K¨ ahler form of g, i.e. ω = g(·, J·).
+(iii) The pull back via φ of the canonical coordinates (z1, . . . , zn, w1, . . . , wn) of V deﬁnes
+a conjugate pair of special coordinates around each point of M.
+Proof: Thanks to Proposition 6 and Theorem 2 it is suﬃcient to prove t hat g(·, J·) =
+ω = 2φ∗(
+∑
+dxi ∧ dyi). A straightforward computation, which only uses the deﬁni tion of
+g, shows that
+2g(·, J·) = ω + J ∗ω . (4)
+On the other hand, since φ is Lagrangian, we know also that
+0 = 2Re φ∗Ω = ω − J ∗ω .
+This implies that g(·, J·) = ω. ✷
+Now we will show that any simply connected special (complex, symplectic or K¨ ahler)
+manifold arises by the construction of Theorem 2 or Theorem 3 .
+Theorem 4 (i) Let (M, J, ∇ ) be a simply connected special complex manifold of com-
+plex dimension n. Then there exists a holomorphic totally complex immersion
+φ : M → V = T ∗Cn inducing the connection ∇ on M. Moreover, φ is unique
+up to an aﬃne transformation of V preserving the real structure τ . Here the real
+structure is considered as a (constant) ﬁeld of antilinear i nvolutions on the tangent
+spaces of V . Finally, ω = 2 φ∗(∑dxi ∧ dyi) is a ∇ -parallel symplectic structure
+deﬁning on (M, J, ∇ ) the structure of special symplectic manifold.
+(ii) Let (M, J, ∇ , ω) be a simply connected special symplectic manifold of comple x di-
+mension n. Then there exists a holomorphic totally complex immersion φ : M →
+V = T ∗Cn inducing the connection ∇ and the symplectic form ω on M. Moreover,
+φ is unique up to an aﬃne transformation of V preserving the complex symplectic
+form Ω and the real structure τ .
+(iii) Let (M, J, ∇ , ω) be a simply connected special K¨ ahler manifold of complex di men-
+sion n then there exists a holomorphic nondegenerate Lagrangian ( and hence totally
+12
+
+===== PDF PAGE 13 =====
+complex) immersion φ : M → V = T ∗Cn inducing the K¨ ahler metric g, the con-
+nection ∇ and the symplectic form ω = 2φ∗(∑dxi ∧dyi) = g(·, J·) on M. Moreover
+φ is unique up to an aﬃne transformation of V preserving the complex symplectic
+form Ω and the real structure τ . Here the real structure is considered as a ﬁeld of
+antilinear involutions on the tangent spaces of V .
+Proof: We prove (ii) and (iii). The proof of (i) is similar. By Theore m 1 there exist
+real special coordinates near each point of M. Since M is simply connected, we can
+choose these local coordinates in a compatible way obtainin g globally deﬁned functions
+xi and yj on M such that ( x1, . . . , xn, y1, . . . , yn) is a real special coordinate system near
+each point of M. Then again by Theorem 1 and the simple connectedness of M we
+can holomorphically extend these functions, i.e. there exi st globally deﬁned holomorphic
+functions zi and wj such that Re zi = xi and Re wj = yj. Moreover, if ( M, J, ∇ , ω)
+is special K¨ ahler we can assume that ( z1, . . . , zn, w1, . . . , wn) form a conjugate pair of
+special coordinates. We deﬁne the holomorphic map
+φ := (z1, . . . , zn, w1, . . . , wn) : M → C2n = V .
+The fact that φ is a totally complex immersion follows from the linear indep endence of
+(dx1, . . . , dxn, dy1, . . . , dyn). This proves the existence statement in (ii). To prove (iii ) we
+need to check that φ is Lagrangian, i.e. that the holomorphic 2-form Ω := ∑dzi∧dwi = 0.
+This follows from the J-invariance of ω = 2 ∑dxi ∧ dyi, since 2 Re Ω = ω − J ∗ω and
+2Im Ω = J ·ω = 2 ∑Jdx i ∧ dyi + 2 ∑Jdy i ∧ dxi. Here the ·stands for the natural action
+of gl(E) on ∧2E∗, where E = TpM, p ∈ M. The uniqueness statement is a consequence
+of the uniqueness statement in Theorem 1. ✷
+We will call a holomorphic 1-form ∑Fidzi on an open subset U ⊂ Cn regular if the real
+matrix Im ∂Fi/∂z j is invertible. A holomorphic function F on U is called nondegenerate
+if its diﬀerential dF is a regular holomorphic 1-form. Any holomorphic 1-form φ on a
+domain U ⊂ Cn can be considered as a holomorphic immersion
+φ : U → V = T ∗Cn .
+So it makes sense to speak of totally complex or Lagrangian ho lomorphic 1-forms.
+Lemma 3 Let φ be a holomorphic 1-form. Then the following hold:
+(i) φ is totally complex if and only if it is regular.
+(ii) φ is Lagrangian if and only if it is closed.
+13
+
+===== PDF PAGE 14 =====
+Proof: (ii) is a well known fact from classical mechanics. To see (i) let φ =
+∑
+Fidzi be
+a holomorphic 1-form on a domain U ⊂ Cn. It is totally complex if and only if the form
+1
+2ω = φ∗(
+∑
+dxi ∧ dyi) is nondegenerate on U. We compute
+1
+2 ω =
+∑
+dxi ∧ dRe Fi =
+∑
+(Re ∂Fi
+∂z j )dxi ∧ dxj −
+∑
+(Im ∂Fi
+∂z j )dxi ∧ duj .
+From this it is easy to see that ω is nondegenerate if and only if the matrix Im ∂Fi/∂z j
+is invertible, i.e. if and only if φ is regular. ✷
+The following is a corollary of Lemma 3, Theorem 2 and Theorem 4.
+Corollary 3 Any regular local holomorphic 1-form φ on Cn deﬁnes a special symplectic
+manifold of complex dimension n. Conversely, any special symplectic manifold of complex
+dimension n can be locally obtained in this way.
+Corollary 4 Any nondegenerate local holomorphic function on Cn deﬁnes a special
+K¨ ahler manifold of complex dimension n. Conversely, any special K¨ ahler manifold of
+complex dimension n can be locally obtained in this way.
+Proof: A nondegenerate holomorphic function F deﬁnes a regular and closed holomor-
+phic 1-form dF . The corresponding holomorphic immersion φ = dF is totally complex
+and Lagrangian (by Lemma 3) and, by Proposition 6, nondegene rate. So it deﬁnes a
+special K¨ ahler manifold by Theorem 3. The converse stateme nt follows from Theorem 4
+and the fact that any holomorphic nondegenerate Lagrangian immersion into V is locally
+deﬁned by a regular closed holomorphic 1-form (after choosi ng an appropriate isomor-
+phism V = T ∗Cn). Notice that every regular closed holomorphic 1-form on a s imply
+connected domain is the diﬀerential of a nondegenerate holo morphic function. ✷
+2 Projective special geometry
+2.1 Conic and projective special manifolds
+We recall that a local holomorphic C∗-action on a complex manifold M is a holomorphic
+map
+C∗ × M ∋ (λ, p) ↦→ ϕλ(p) ∈ M
+deﬁned on an open neighbourhood W of {1} ×M such that
+(i) ϕ1(p) = p for all p ∈ M and
+14
+
+===== PDF PAGE 15 =====
+(ii) ϕλ(ϕµ(p)) = ϕλµ(p) if both sides are deﬁned, i.e. if ( λ, ϕµ(p)) ∈ W and (λµ, p) ∈ W .
+From this deﬁnition it follows that for every p ∈ M there exist open neighbourhoods U1
+of 1 ∈ C∗ and Up of p such that U1 × Up ⊂ W and ϕλ|Up is a diﬀeomorphism onto its
+image for all λ ∈ U1. We will say that an equation involving ϕλ holds locally if it holds
+on any open set U ⊂ M on which ϕλ is deﬁned and on which it is a diﬀeomorphism onto
+its image. Of course, even if it is not explicitly mentioned, an equation involving ϕλ is
+always meant to hold only locally.
+We use polar coordinates ( r, θ) to parametrise C∗ = {λ = reiθ|r, θ ∈ R, r > 0} and
+consider θ as a map from C∗ to R/2πZ.
+Deﬁnition 3 (i) Let (M, J, ∇ ) be a complex manifold with a ﬂat torsionfree connec-
+tion. It is called a conic complex manifold if it admits a loca l holomorphic C∗-action
+ϕλ such that locally dϕλX = reθJ X = r(cos θ)X + r(sin θ)JX for all ∇ -parallel
+vector ﬁelds X, where λ = reiθ.
+(ii) A conic symplectic manifold is a conic complex manifold (M, J, ∇ ) together with a
+parallel symplectic form ω.
+(iii) A conic symplectic manifold (M, J, ∇ , ω) is called a conic K¨ ahler manifoldif ω is
+J-invariant.
+Notice that the condition dϕλX = reθJ X for all ∇ -parallel vector ﬁelds X implies that
+ϕ∗
+λ∇ = ∇ θ.
+Proposition 7 (i) Any conic complex manifold is a special complex manifold .
+(ii) Any conic symplectic manifold is a special symplectic m anifold.
+(iii) Any conic K¨ ahler manifold is a special K¨ ahler manifold.
+Proof: Let (M, J, ∇ ) be a conic complex manifold and ϕλ the corresponding local action.
+Since d∇ J = 0 is a local condition, it is suﬃcient to prove that any point p ∈ M has an
+open neighbourhood U such that (U, J, ∇ ) is a special complex manifold. By Proposition
+1 it is suﬃcient to check that for any point p ∈ M there exist open neighbourhoods
+U1 of 1 ∈ R/2πZ and Up of p such that ∇ θ is a torsionfree connection on Up for all
+θ ∈ U1. From the deﬁnition of local action it follows that for any p ∈ M there exist open
+neighbourhoods U1 of 1 ∈ R/2πZ and Up of p such that ϕλ is deﬁned on Up and ϕλ|Up
+is a diﬀeomorphism onto its image for all λ = eiθ with θ ∈ U1. Since ( M, J, ∇ ) is a conic
+complex manifold we have ∇ θ = ϕ∗
+λ∇ on Up for all θ ∈ U1. Thus ∇ θ is a torsionfree
+connection on Up, proving (i). Statements (ii) and (iii) follow easily from ( i). ✷
+15
+
+===== PDF PAGE 16 =====
+Theorem 5 (i) Let (M, J, ∇ ) be a complex manifold with a ﬂat torsionfree connec-
+tion. Then (M, J, ∇ ) is a conic complex manifold if and only if there exists a local
+holomorphic C∗-action ϕλ and for every p ∈ M holomorphic functions z1, . . . , zn
+and w1, . . . , wn deﬁned near p such that
+(a) zi ◦ϕλ = λzi and wj ◦ϕλ = λwj near p and
+(b) x1 := Re z1, . . . , xn := Re zn, y1 := Re w1, . . . , yn := Re wn are aﬃne local
+coordinates near p.
+(ii) Let (M, J, ∇ , ω) be a complex manifold with a ﬂat torsionfree connection and a par-
+allel symplectic form. Then (M, J, ∇ , ω) is a conic symplectic manifold if and only
+if there exists a local holomorphic C∗-action ϕλ and for every p ∈ M holomorphic
+functions z1, . . . , zn and w1, . . . , wn deﬁned near p such that
+(a) zi ◦ϕλ = λzi and wj ◦ϕλ = λwj near p and
+(b) x1 := Re z1, . . . , xn := Re zn, y1 := Re w1, . . . , yn := Re wn are aﬃne local
+coordinates near p.
+Moreover, if (M, J, ∇ , ω) is a conic (special) symplectic manifold then the local
+holomorphic functions zi and wj can be chosen such that their real parts xi and yj
+form a real special coordinate system.
+(iii) Let (M, J, ∇ , ω) be a complex manifold with a ﬂat torsionfree connection and a
+parallel J-invariant symplectic form. Then (M, J, ∇ , ω) is a conic K¨ ahler manifold
+if and only if there exists a local holomorphic C∗-action ϕλ and for every p ∈ M
+holomorphic functions z1, . . . , zn and w1, . . . , wn deﬁned near p such that
+(a) zi ◦ϕλ = λzi and wj ◦ϕλ = λwj near p and
+(b) x1 := Re z1, . . . , xn := Re zn, y1 := Re w1, . . . , yn := Re wn are aﬃne local
+coordinates near p.
+Moreover, if (M, J, ∇ , ω) is a conic (special) K¨ ahler manifold then the local holo-
+morphic functions zi and wj can be chosen such that they form a conjugate pair of
+special coordinates.
+Proof: We prove only (i). Parts (ii) and (iii) are proven similarly. Let ( M, J, ∇ )
+be a conic complex manifold and x1, . . . , xn, y1, . . . , yn aﬃne local coordinates on it.
+By Proposition 7 and Theorem 1 it is a special complex manifol d and the aﬃne local
+coordinates admit a holomorphic extension z1, . . . , zn, w1, . . . , wn. From dϕλX = reθJ X
+16
+
+===== PDF PAGE 17 =====
+for all ∇ -parallel vector ﬁelds it follows that zi ◦ϕλ = λzi + c(λ), where c : C∗ → Cn is a
+smooth map. Since ϕλ is a local action, the map c must satisfy the functional equation
+c(λµ) = λc(µ) + c(λ)
+for all λ, µ ∈ C∗ near 1 ∈ C∗ and c(1) = 0. It is easy to see that this implies c(λ) =
+(1 − λ)z0 for some constant vector z0 ∈ Cn. Up to adding (real) constants to the xi,
+we can assume that the vector z0 has purely imaginary components. Then changing the
+holomorphic extensions zi by adding purely imaginary constants, we can arrange that
+c = z0 = 0 and hence that zi ◦ϕλ = λzi. Similarly, we can show that by adding constants
+one can arrange that wj ◦ϕλ = λwj. This shows that a conic complex manifold admits
+a local holomorphic C∗-action and local holomorphic functions with the propertie s (a)
+and (b). Next we prove the converse statement of (i). So let ϕλ be a local holomorphic
+C∗-action on ( M, J, ∇ ) and z1, . . . , zn, w1, . . . , wn local holomorphic functions satisfying
+(a) and (b). From (a) and (b) it follows that dϕλX = reθJ X for all ∇ -parallel vector
+ﬁelds X, by diﬀerentiation. This shows that ( M, J, ∇ ) is a conic complex manifold. ✷
+Next we are going to deﬁne the notion of projective special (c omplex, symplectic
+or K¨ ahler) manifold. These manifolds arise as orbit spaces of conic special (complex,
+symplectic or K¨ ahler) manifolds. Let ϕλ be a local holomorphic C∗-action on a complex
+manifold M. To any point p ∈ M we associate the holomorphic curve ϕ(p) : λ ↦→ ϕλ(p)
+in M deﬁned on an open neighbourhood of 1 ∈ C∗. If ϕλ is the local C∗-action associated
+to a conic complex manifold then ϕ(p) is an immersion and Dp := ϕ(p)∗T1C∗ ⊂ TpM
+deﬁnes an integrable complex 1-dimensional holomorphic di stribution on M. Its leaves
+are by deﬁnition the orbits of the local C∗-action ϕλ. We denote by M = M/C∗ the
+set of orbits with the the quotient topology. M will be called the orbit space of M.
+If M is a conic (complex, symplectic or K¨ ahler) manifold and the projection M → M
+is a holomorphic submersion onto a Hausdorﬀ complex manifol d, then M is called a
+projective special (complex, symplectic or K¨ ahler)manifold.
+2.2 Conic special coordinates
+Deﬁnition 4 An aﬃne local coordinate system (x, y) := ( x1, . . . , xn, y1, . . . , yn) on a
+conic complex manifold (M, J, ∇ ) with corresponding local C∗-action ϕλ is called a
+conic aﬃne local coordinate system if it admits a holomorphic extension (z, w) :=
+(z1, . . . , zn, w1, . . . , wn) such that locally (z, w) ◦ϕλ = λ(z, w). Such a holomorphic ex-
+tension is called a conic holomorphic extension .
+17
+
+===== PDF PAGE 18 =====
+In view of Deﬁnition 4 we will freely speak of conic real speci al coordinate systems
+(x, y) on conic symplectic manifolds and of conic conjugate pairs of special coordinates
+(z, w) on conic K¨ ahler manifolds. The following theorem is a coro llary of Theorem 5.
+Theorem 6 (i) Any conic complex manifold admits a conic local aﬃne coor dinate
+system near any point p ∈ M. A conic local aﬃne coordinate system is unique up
+to a linear transformation.
+(ii) Any conic symplectic manifold admits a conic real speci al coordinate system near
+any point p ∈ M. A conic real special coordinate system is unique up to a line ar
+symplectic transformation.
+(iii) Any conic K¨ ahler manifold admits a conic conjugate pa ir of special coordinates.
+A conic conjugate pair of special coordinates is unique up to a (complex) linear
+symplectic transformation.
+2.3 The extrinsic construction of conic and projective spec ial
+manifolds
+Let us consider the same fundamental data V , Ω and τ as in 1.3. On V we have the
+standard (global) holomorphic C∗-action C∗ × V ∋ (λ, v) ↦→ λv ∈ V . A holomorphic
+immersion φ of a complex manifold M into V is called conic if for every point p ∈ M
+and every neighbourhood U of p there exist neighbourhoods U1 of 1 ∈ C∗ and Up of p
+such that λφ(Up) ⊂ φ(U) for all λ ∈ U1. Notice that we do not require the image φ(M)
+to be a complex cone, i.e. (globally) invariant under the C∗-action on V .
+Theorem 7 Let φ be a conic totally complex holomorphic immersion of a comple x
+manifold (M, J ) into V = T ∗Cn, n = dim C M, ∇ the induced connection and ω =
+2φ∗(∑dxi ∧ dyi) the induced symplectic form. Then the following hold:
+(i) (M, J, ∇ , ω) is a conic symplectic manifold.
+(ii) The pull back via φ of the functions (x1 = Re z1, . . . , xn = Re zn, y1 = Re w1, . . . ,
+yn = Re wn) of V deﬁnes a conic real special coordinate system around each po int
+of M.
+Proof: Since φ is a conic holomorphic immersion, the holomorphic C∗-action on V in-
+duces a local holomorphic C∗-action ϕλ on M. One can easily check that ϕλ deﬁnes on
+(M, J, ∇ , ω) the structure of a conic symplectic manifold with conic rea l special coordi-
+nates x1 ◦φ, . . . , xn ◦φ, y1 ◦φ, yn ◦φ. ✷
+18
+
+===== PDF PAGE 19 =====
+Theorem 8 Let φ be a conic holomorphic nondegenerate Lagrangian immersion of a
+complex manifold (M, J ) into V inducing the K¨ ahler metricg on M. The immersion φ
+is totally complex and hence induces also the data (∇ , ω) on M. Moreover, the following
+hold:
+(i) (M, J, ∇ , ω) is a conic K¨ ahler manifold.
+(ii) ω coincides with the K¨ ahler form of g, i.e. ω = g(·, J·).
+(iii) The pull back via φ of the canonical coordinates (z1, . . . , zn, w1, . . . , wn) of V deﬁnes
+a conic conjugate pair of special coordinates around each po int of M.
+Proof: This follows from Theorem 3 and Theorem 7. ✷
+Now we will show that any simply connected conic (complex, sy mplectic or K¨ ahler)
+manifold arises by the construction of Theorem 7 or Theorem 8 .
+Theorem 9 (i) Let (M, J, ∇ ) be a simply connected conic complex manifold of com-
+plex dimension n. Then there exists a conic holomorphic totally complex imme rsion
+φ : M → V = T ∗Cn inducing the connection ∇ on M. Moreover, φ is unique up to
+a linear transformation of V preserving the real structure τ . Here the real structure
+is considered as a (constant) ﬁeld of antilinear involution s on the tangent spaces
+of V . Finally, ω = 2 φ∗(
+∑
+dxi ∧ dyi) is a ∇ -parallel symplectic structure deﬁning
+on (M, J, ∇ ) the structure of conic symplectic manifold.
+(ii) Let (M, J, ∇ , ω) be a simply connected conic symplectic manifold of complex d i-
+mension n. Then there exists a conic holomorphic totally complex imme rsion
+φ : M → V = T ∗Cn inducing the connection ∇ and the symplectic form ω on
+M. Moreover, φ is unique up to a linear transformation of V preserving the com-
+plex symplectic form Ω and the real structure τ .
+(iii) Let (M, J, ∇ , ω) be a simply connected conic K¨ ahler manifold of complex dime n-
+sion n then there exists a conic holomorphic nondegenerate Lagran gian (and hence
+totally complex) immersion φ : M → V = T ∗Cn inducing the K¨ ahler metric g,
+the connection ∇ and the symplectic form ω = 2 φ∗(
+∑
+dxi ∧ dyi) = g(·, J·) on M.
+Moreover φ is unique up to a linear transformation of V preserving the complex
+symplectic form Ω and the real structure τ . Here the real structure is considered
+as a ﬁeld of antilinear involutions on the tangent spaces of V .
+19
+
+===== PDF PAGE 20 =====
+Proof: The proof is completely analogous to that of Theorem 4. To pro ve (ii), for
+instance, it is essentially suﬃcient to replace real specia l coordinates by conic real special
+coordinates in the proof of Theorem 4 (ii). ✷
+We will call a holomorphic 1-form ∑Fidzi on an open subset U ⊂ Cn conic if the
+corresponding holomorphic immersion U ∋ z ↦→
+∑
+Fi(z)dzi ∈ T ∗
+z Cn ⊂ T ∗Cn = V is
+conic. This is the case if and only if the functions Fi are locally homogeneous of degree
+one, i.e. if Fi(λz) = λFi(z) for all z ∈ U and all λ near 1 ∈ C∗.
+A holomorphic function F on U is called conic if its diﬀerential dF is conic. This is
+the case if and only if F is locally homogeneous of degree 2, i.e. if F (λz) = λ2F (z) for
+all z ∈ U and all λ near 1 ∈ C∗.
+We have the following analogues of Corollary 3 and Corollary 4.
+Corollary 5 Any conic regular local holomorphic 1-form φ on Cn deﬁnes a conic sym-
+plectic manifold of complex dimension n. Conversely, any conic symplectic manifold of
+complex dimension n can be locally obtained in this way.
+Corollary 6 Any conic nondegenerate local holomorphic function on Cn deﬁnes a conic
+K¨ ahler manifold of complex dimension n. Conversely, any conic K¨ ahler manifold of
+complex dimension n can be locally obtained in this way.
+Remark 3: Let M = M/C∗ be a projective special (complex, symplectic or K¨ ahler)
+manifold, with M simply connected. Then the holomorphic immersion φ : M → V
+constructed in Theorem 9 induces a holomorphic immersion φ : M → P (V ) into the
+complex projective space of complex dimension 2 n − 1. The holomorphic immersion φ is
+unique up to a projective transformation induced by a linear symplectic transformation
+of V preserving the real structure τ . To construct φ it is suﬃcient to assume that M is
+simply connected.
+3 Geometric structures on the cotangent bundle of
+special symplectic manifolds
+In this section we prove that the cotangent bundle of a specia l symplectic manifold carries
+two canonical complex structures J1, J2. Moreover, if the (1,1)-part of the symplectic
+form ω is nondegenerate it also carries an almost hyper-Hermitian structure. This almost
+hyper-Hermitian structure is hyper-K¨ ahler if and only if ω11 is parallel. If the (2 , 0)-part
+20
+
+===== PDF PAGE 21 =====
+of ω is nondegenerate we obtain an almost para-hypercomplex str ucture. It is para-
+hypercomplex if and only if ω20 is parallel. This generalises the known construction of
+a hyper-K¨ ahler metric on the cotangent bundle of a special K ¨ ahler manifold [CFG, C2,
+F, H].
+Let M be a manifold and denote by N = T ∗M its cotangent bundle. A connection
+∇ on M deﬁnes a decomposition
+TξN = H∇
+ξ ⊕ T v
+ξ N ∼= TpM ⊕ T ∗
+p M , ξ ∈ N , p = π(ξ) , (5)
+where π : N = T ∗M → M , T v
+ξ N is the vertical subspace and H∇
+ξ is the horizontal
+subspace deﬁned by the connection ∇ . Here we have a natural identiﬁcation of T v
+ξ N
+with T ∗
+p M and an identiﬁcation of H∇
+ξ with TpM deﬁned by the projection π. If M is a
+complex manifold with complex structure J, then N carries a natural complex structure
+JN . We note that the vertical subspace T v
+ξ N is JN -invariant, but the horizontal subspace
+H∇
+ξ is in general not. We denote by J ∇ the almost complex structure on N deﬁned with
+respect to the decomposition (5) by
+J ∇ =
+(
+J 0
+0 J ∗
+)
+(6)
+In general J ∇ is not integrable.
+Proposition 8 Let ∇ be a connection on a complex manifold (M, J ). The horizontal
+distribution H∇ ⊂ T N is JN -invariant if and only if there exists a torsionfree complex
+(i.e. DJ = 0 ) connection D on M such that the tensor ﬁeld A := ∇ − D satisﬁes the
+condition
+Aξ
+X ◦J = Aξ
+J X ∀ X ∈ T M , (7)
+where Aξ
+XY = ξ(AXY ).
+For the proof we need two lemmas. The ﬁrst one is well known.
+Lemma 4 Let D and ∇ be connections on a manifold M and A = ∇ − D. Then the
+corresponding horizontal distributions HD and H∇ are related by:
+H∇
+ξ = AξHD
+ξ = {ˆv = v + Aξ
+v|v ∈ HD
+ξ ∼= TpM},
+where ξ ∈ N = T ∗M and p = π(ξ).
+Lemma 5 Let ∇ be a torsionfree complex connection on a complex manifold (M, J ).
+Then the horizontal distribution H∇ ⊂ T N is JN -invariant and hence J ∇ = JN .
+21
+
+===== PDF PAGE 22 =====
+Proof: Let ( x1, . . . , xn, y1, . . . , yn, u1, . . . , un, v1, . . . , vn) be the local coordinate system
+on N = T ∗M associated to a holomorphic local coordinate system ( z1, . . . , zn) on M, i.e.
+zi = xi + √ −1yi and ω =
+∑
+dxi ∧ dui +
+∑
+dyj ∧ dvj is the canonical symplectic structure
+on N. Note that
+T vN = span
+{
+∂
+∂u1
+, . . . ∂
+∂un
+, ∂
+∂v1
+, . . . , ∂
+∂vn
+}
+.
+We denote by D the local connection on M with horizontal space
+HD := span
+{
+∂
+∂x1 , . . . ∂
+∂xn , ∂
+∂y1 , . . . , ∂
+∂yn
+}
+.
+This connection is ﬂat and torsionfree, with aﬃne local coor dinates x1, . . . , xn, y1, . . . , yn.
+It is also complex because the complex structure J is constant in these coordinates:
+J ∂
+∂xi = ∂
+∂y i , J ∂
+∂y i = − ∂
+∂xi .
+In terms of the induced coordinate system on N, JN is given by
+JN
+∂
+∂xi = ∂
+∂y i , J N
+∂
+∂uj
+= − ∂
+∂vj
+JN
+∂
+∂y i = − ∂
+∂xi , J N
+∂
+∂vj
+= ∂
+∂uj
+This clearly shows that J D = JN . Now let ∇ be any torsionfree complex connection on
+(M, J ). This means that the (1 , 2) tensor A = ∇ − D is symmetric and J-linear, i.e.
+AXY = AY X , [AX , J ] = 0 ∀ X, Y ∈ T M .
+The latter equation can also be written in the form J ∗Aξ
+X = AJ ∗ ξ
+X for all ξ ∈ T ∗M. We
+claim that this implies the JN -invariance of H∇ = AHD. In fact we have
+JN ˆv = JN (v + Aξ
+v) = Jv + J ∗Aξ
+v = Jv + AJ ∗ ξ
+v
+= Jv + AJ ∗ ξv = Jv + J ∗(Aξ)v = Jv + AξJv
+= Jv + Aξ
+J v = ˆJv ∀v ∈ HD
+ξ ∼
+= TpM , p = π(ξ) ∈ M . ✷
+Proof (of Proposition 8): Let D be a torsionfree complex connection on M and ∇ a
+connection on M such that A = ∇ − D satisﬁes (7). To prove that H∇ is JN -invariant
+it suﬃces to check that JN ˆv = ˆJv for all v ∈ HD
+ξ ∼= TpM. Using the identiﬁcation (5)
+and the identity (7) we compute:
+JN ˆv = JN (v + Aξ
+v) = Jv + J ∗Aξ
+v = Jv + Aξ
+v ◦J = Jv + Aξ
+J v = ˆJv .
+22
+
+===== PDF PAGE 23 =====
+Conversely, let ∇ be a connection on M such that H∇ is JN -invariant. From the inte-
+grability of J it follows that there exists a torsionfree complex connecti on D on M. Now
+we check that JN H∇ = H∇ implies (7). For ˆv = v + Aξ
+v ∈ H∇
+ξ , we have by Lemma 5:
+JN ˆv = Jv + J ∗Aξ
+v. This shows that JN ˆv ∈ H∇
+ξ if and only if JN ˆv = ˆJv . The latter
+equation is equivalent to J ∗Aξ
+v = Aξ
+J v, which is precisely (7). ✷
+Now let ω be a ﬁeld of nondegenerate bilinear forms on a manifold M, considered as
+a map T M → T ∗M, and ∇ a connection on M. Using the identiﬁcation (5) we deﬁne
+an almost complex structure J ω on N = T ∗M by
+J ω =
+(
+0 −ω− 1
+ω 0
+)
+(8)
+Lemma 6 If ∇ is ﬂat and torsionfree and ω is ∇ -parallel then J ω is integrable.
+Proof: If we express J ω in terms of the canonical coordinates on N = T ∗M induced
+by local aﬃne coordinates on M, then it has constant coeﬃcients. This shows that J ω
+is integrable. ✷
+Theorem 10 Let (M, J, ∇ , ω) be a special symplectic manifold. Then the cotangent
+bundle N = T ∗M carries two natural complex structures
+J1 = J ∇ =
+(
+J 0
+0 J ∗
+)
+and J2 = J ω =
+(
+0 −ω− 1
+ω 0
+)
+.
+The commutator and anticommutator of J1 and J2 are given by
+[J1, J2] = 2 J1
+(
+0 −(ω− 1)11
+ω11 0
+)
+= −2
+(
+0 −(ω− 1)11
+ω11 0
+)
+J1 ,
+{J1, J2}= 2J1
+(
+0 −(ω− 1)′
+ω′ 0
+)
+= 2
+(
+0 −(ω− 1)′
+ω′ 0
+)
+J1 ,
+where ω′= ω20 + ω02.
+Proof: The integrability of J2 follows from Lemma 6. To prove the integrability of J1,
+by Proposition 8, it is suﬃcient to check the identity (7) for A = ∇− D = 1
+2J∇ J, where
+D = 1
+2 (∇ + ∇ (J)) is the torsionfree complex connection of Proposition 3. Us ing the fact
+that ∇ J is symmetric we compute:
+2AX ◦J = J(∇ XJ) ◦J = ∇ XJ = (∇ .J)X = J(∇ .J)JX = J(∇ J XJ) = 2 AJ X . ✷
+Theorem 11 Let (M, J, ∇ , ω) be a special symplectic manifold.
+23
+
+===== PDF PAGE 24 =====
+(i) Assume that ω11 is nondegenerate. Then the cotangent bundle N = T ∗M carries a
+canonical almost hyper-Hermitian structure (J1, J2, J3 = J1J2 = −J2J1, gN ) given
+by
+J1 = J ∇ , J 2 = J ω11
+, g N = diag(g, g− 1) ,
+where g = ω11(J·, ·) is the K¨ ahler metric on M, see Proposition 5. J1 is the
+standard (integrable) complex structure on the cotangent b undle of the complex
+manifold (M, J ). The almost hyper-Hermitian manifold (M, J1, J2, J3, gN ) is
+hyper-Hermitian (i.e. the almost complex structures J1, J2, J3 are integrable) if and
+only if ∇ ω11 = 0. In this case (M, J1, J2, J3, gN ) is a hyper-K¨ ahler manifold.
+(ii) Assume that ω′= ω20+ω02 is nondegenerate. Then the cotangent bundle N = T ∗M
+carries a canonical almost para-hypercomplex structure (J1, J2), i.e. a commuting
+pair of almost complex structures, given by
+J1 = J ∇ , J 2 = J ω′
+.
+J1 is again the standard (integrable) complex structure and (J1, J2) is an (inte-
+grable) para-hypercomplex structure (i.e. J1 and J2 is integrable) if and only if
+∇ ω20 = 0.
+Note that in the second case J3 = J1J2 is not an almost complex structure but an almost
+product structure, i.e. an involution.
+Proof: Using the identities
+J ∗ ◦ω11 = −ω11 ◦J , J ∗ ◦ω′= ω′◦J ,
+where the two-forms ω11 and ω′ are considered as linear maps T M → T ∗M, one can
+check that J1 and J2 are anticommuting or commuting almost complex structures i n
+case (i) and (ii) respectively. To check that gN is Hermitian with respect to the almost
+complex structures ( J1, J2, J3) in case (i) we compute ωα := gN ◦Jα as follows:
+ω1 = −
+(∑
+ωijdqi ∧ dqj +
+∑
+ωijdpi ∧ dpj
+)
+,
+where ω11 =
+∑
+ωij(q)dqi ∧ dqj is the expression of the symplectic form ω11 in ∇ -aﬃne
+coordinates qi on M, (ωij) = ( ωij)− 1 and the pi are the conjugate momenta corresponding
+to the qi.
+ω2 =
+∑
+(J ∗dqj) ∧ dpj , ω 3 =
+∑
+dqj ∧ dpj .
+From these formulas we see that the ωα are skew-symmetric and therefore that the Jα are
+gN -orthogonal. This shows that ( J1, J2, J3, gN ) is an almost hyper-Hermitian structure.
+24
+
+===== PDF PAGE 25 =====
+The form ω3 is closed. The form ω2 is closed since dJ ∗η = 0 for any parallel 1-form
+η. The form ω1 is closed if and only if the coeﬃcients ωij are constant, i.e. if and
+only if ω11 is ∇ -parallel. If this is the case, then the almost hyper-Hermit ian structure
+(J1, J2, J3, gN ) is hyper-K¨ ahler, e.g. by Hitchin’s Lemma.
+Assume now that J2 is integrable, i.e. the Nijenhuis tensor NJ2 = 0. A direct calcu-
+lation shows that
+J2NJ2(∂qi, ∂ qj ) =
+∑
+k
+(ρjk,i − ρik,j )∂pk ,
+where ρij(q) are the coeﬃcients of ρ = ω11 or ω′ in cases (i) or (ii) respectively. Notice
+that ρik,j − ρjk,i are the coeﬃcients of the 2-form d(i∂qk ρ) = L∂qk ρ. This shows that
+NJ2(∂qi, ∂ qj ) = 0 implies that Lie derivative of ρ in the direction of any parallel vector
+ﬁeld on M vanishes and hence that ρ is parallel. ✷
+References
+[BC] O. Baues and V. Cort´ es, Realisation of special K¨ ahler manifolds as parabolic
+spheres, to appear in Proc. Amer. Math. Soc., math.DG/9911079
+[CFG] S. Cecotti, S. Ferrara and L. Girardello, Geometry of type II superstrings
+and the moduli space of superconformal ﬁeld theories , Int. J. Mod. Phys. A4
+(1989), 2475-2529
+[C1] V. Cort´ es, Homogeneous special geometry , Transform. Groups 1 (1996), no.
+4, 337-373.
+[C2] V. Cort´ es, On hyper-K¨ ahler manifolds associated to Lagrangian K¨ ahler sub-
+manifolds of T ∗C n, Trans. Amer. Math. Soc. 350 (1998), no. 8, 3193-3205
+[dW-VP] B. de Wit and A. Van Proeyen, Potentials and symmetries of general gauged
+N=2 supergravity–Yang-Mills models, Nucl. Phys. B245 (1984), 89-117
+[DW] R.Y. Donagi and E. Witten, Supersymmetric Yang–Mills theory and integrable
+systems, Nucl. Phys. B460 (1996), 299-334
+[F] D.S. Freed, Special K¨ ahler manifolds, Commun. Math. Phys. 203 (1999), no.
+1, 31-52
+[H] N.J. Hitchin, The moduli space of complex Lagrangian submanifolds , Asian J.
+Math. 3 (1999), no. 1, 77–91; math.DG/9901069
+25

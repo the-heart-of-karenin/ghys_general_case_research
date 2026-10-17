@@ -1,0 +1,30 @@
+[
+  {
+    "filename": "13_Alekseevsky_Cortes_Devchand_Special_complex_manifolds.pdf",
+    "title": "Special complex manifolds",
+    "download_url": "https://arxiv.org/pdf/math/9910091v3",
+    "landing_url": "https://arxiv.org/abs/math/9910091",
+    "publication_note": "ArXiv v3, 2001-11-05; J. Geom. Phys. 42 (2002), 85-105",
+    "collected_utc": "2026-10-17T11:52:54.950911+00:00",
+    "resolved_url": "https://arxiv.org/pdf/math/9910091v3",
+    "download_status": "downloaded",
+    "bytes": 249799,
+    "sha256": "29edb6fca9dff29749217be0ab62dc900f749fc19490fe9af668184fe0665976",
+    "pages": 25,
+    "first_page": "arXiv:math/9910091v3  [math.DG]  5 Nov 2001\nJ. Geom. Phys. (2002)\nmath.DG/9910091\nSpecial complex manifolds\nD.V. Alekseevsky 1, V. Cort´ es2, C. Devchand 2\n1 Dept. of Mathematics, University of Hull, Cottingham Road, Hull HU6 7RX, U.K.\n1 Centr “Sofus Li”, Gen. Antonova 2 - 99, 117279 Moskva\n2 Mathematisches Institut der Universit¨ at Bonn, Beringstr. 1, D-53115 Bonn\nD.V.Alekseevsky@maths.hull.ac.uk, vicente@math.uni-b onn.de, devchand@math.uni-bonn.de\nAbstract\nWe introduce the notion of a special complex manifold: a comp lex manifold\n(M, J ) with a ﬂat torsionfree connection ∇ such that ∇ J is symmetric. A special\nsymplectic manifold is then deﬁned as a special complex mani fold together wit"
+  },
+  {
+    "filename": "14_Loustau_Sanders_Bi_Lagrangian_structures.pdf",
+    "title": "Bi-Lagrangian structures and Teichmuller theory",
+    "download_url": "https://brice.loustau.eu/ressources/BiLagrangian.pdf",
+    "landing_url": "https://arxiv.org/abs/1708.09145",
+    "publication_note": "Author-hosted manuscript, version served 2026-10-17",
+    "collected_utc": "2026-10-17T11:52:57.313712+00:00",
+    "resolved_url": "https://brice.loustau.eu/ressources/BiLagrangian.pdf",
+    "download_status": "downloaded",
+    "bytes": 469189,
+    "sha256": "56e654723b7c54bd4ba4907afd696b0598dd978bae264b9bb9e78d90eff2a2bc",
+    "pages": 53,
+    "first_page": "Bi-Lagrangian structures and Teichmüller theory\nBrice Loustau∗ and Andrew Sanders†\nAbstract\nThis paper has two purposes: the ﬁrst is to study several structures on manifolds in the\ngeneral setting of real and complex diﬀerential geometry; the second is to apply this study\nto Teichmüller theory. We primarily focus on bi-Lagrangian structures, which are the data\nof a symplectic structure and a pair of transverse Lagrangian foliations, and are equivalent to\npara-Kählerstructures. Firstwecarefullystudyrealandcomplexbi-Lagrangianstructuresand\ndiscussothercloselyrelatedstructuresandtheirinterrelationships. Nextweprovetheexistence\nof a canonical complex bi-Lagrangian structure in the complexiﬁcatio"
+  }
+]

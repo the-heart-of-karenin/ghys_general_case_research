@@ -1,0 +1,23 @@
+{
+  "description": "P(z)=(z1,z2+conj(z1)^2,z3+conj(z2)^3)",
+  "stable_positive_weights": [
+    1,
+    2,
+    6
+  ],
+  "rank": 3,
+  "maximum_direct_degree": 3,
+  "inverse": [
+    "w1",
+    "w2-conj(w1)^2",
+    "w3-(conj(w2)-w1^2)^3"
+  ],
+  "maximum_inverse_degree": 6,
+  "proved_general_bound": 9,
+  "real_jacobian_determinant": "1: block triangular with all diagonal blocks I_2",
+  "exact_sample_count": 125,
+  "two_sided_inverse_checks_all_passed": true,
+  "weighted_equivariance_checks_all_passed": true,
+  "symbolic_argument": "Substitution cancels the added conjugate monomials in order; weights obey 2=1+1 and 6=2+2+2.",
+  "scope": "Exact rational sample checks plus a hand symbolic argument; no transverse C1 or classification conclusion."
+}

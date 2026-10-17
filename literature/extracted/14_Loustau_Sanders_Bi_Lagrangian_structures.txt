@@ -1,0 +1,2685 @@
+
+===== PDF PAGE 1 =====
+Bi-Lagrangian structures and Teichmüller theory
+Brice Loustau∗ and Andrew Sanders†
+Abstract
+This paper has two purposes: the ﬁrst is to study several structures on manifolds in the
+general setting of real and complex diﬀerential geometry; the second is to apply this study
+to Teichmüller theory. We primarily focus on bi-Lagrangian structures, which are the data
+of a symplectic structure and a pair of transverse Lagrangian foliations, and are equivalent to
+para-Kählerstructures. Firstwecarefullystudyrealandcomplexbi-Lagrangianstructuresand
+discussothercloselyrelatedstructuresandtheirinterrelationships. Nextweprovetheexistence
+of a canonical complex bi-Lagrangian structure in the complexiﬁcation of any real-analytic
+Kähler manifold and showcase its properties. We later use this bi-Lagrangian structure to
+construct a natural almost hyper-Hermitian structure. We then specialize our study to moduli
+spacesofgeometricstructuresonclosedsurfaces,whichtendtohavearichsymplecticstructure.
+We show that some of the recognized geometric features of these moduli spaces are formal
+consequences of the general theory, while revealing other new geometric features. We also
+gain clarity on several well-known results of Teichmüller theory by deriving them from pure
+diﬀerential geometric machinery.
+Key words and phrases: Bi-Lagrangian· para-Kähler· complex geometry· symplectic
+geometry of moduli spaces· Teichmüller theory· quasi-Fuchsian· hyper-Kähler
+2000 Mathematics Subject Classiﬁcation:Primary: 53C15; Secondary: 30F60· 32Q15·
+53B05· 53B35· 53C26· 53D05· 53D30· 57M50
+∗Rutgers University - Newark, Department of Mathematics and Computer Science. Newark, NJ 07105 USA.
+E-mail: brice.loustau@rutgers.edu
+†Heidelberg University, Mathematisches Institut. 69120 Heidelberg, Germany.
+E-mail: asanders@mathi.uni-heidelberg.de
+
+===== PDF PAGE 2 =====
+Contents
+Introduction 3
+Acknowledgments 7
+1 Lagrangian foliations and aﬃne structures 7
+1.1 Lagrangian foliations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+1.2 Aﬃne structures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+1.3 Bott connection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+2 Bi-Lagrangian structures 12
+2.1 Real bi-Lagrangian structures . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+2.2 Para-complex and para-Kähler structures . . . . . . . . . . . . . . . . . . . . . 12
+2.3 Properties of the bi-Lagrangian connection . . . . . . . . . . . . . . . . . . . . 13
+2.4 Complex bi-Lagrangian structures . . . . . . . . . . . . . . . . . . . . . . . . 14
+2.5 Holomorphic metrics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+2.6 Bicomplex Kähler structures . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+2.7 Complex bi-Lagrangian metric and connection . . . . . . . . . . . . . . . . . 16
+3 Bi-Lagrangian structure in the complexiﬁcation of a Kähler manifold 17
+3.1 Complexiﬁcation of real-analytic manifolds . . . . . . . . . . . . . . . . . . . 17
+3.2 Complexiﬁcation of complex manifolds . . . . . . . . . . . . . . . . . . . . . 18
+3.3 Complexiﬁcation of Kähler manifolds . . . . . . . . . . . . . . . . . . . . . . 19
+3.4 The bicomplex Kähler structure . . . . . . . . . . . . . . . . . . . . . . . . . 20
+3.5 Example: CP1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+4 Background on Teichmüller theory 24
+4.1 Geometric structures and character varieties . . . . . . . . . . . . . . . . . . . 24
+4.2 Fricke-Klein space F( S)and the character varietyX(π,PSL2(R)) . . . . . . . . 27
+4.3 Teichmüller spaceT( S)and the Weil-Petersson metric . . . . . . . . . . . . . 28
+4.4 Deformation space of complex projective structuresCP( S) . . . . . . . . . . . 29
+4.5 Fuchsian and quasi-Fuchsian structures . . . . . . . . . . . . . . . . . . . . . . 30
+5 Applications to Teichmüller theory 32
+5.1 Symplectic structure of deformation spaces . . . . . . . . . . . . . . . . . . . 33
+5.2 Complex bi-Lagrangian geometry of quasi-Fuchsian space . . . . . . . . . . . 34
+5.3 Weil-Petersson metric on Teichmüller space . . . . . . . . . . . . . . . . . . . 36
+5.4 Aﬃne bundle structure ofCP( S) . . . . . . . . . . . . . . . . . . . . . . . . . 36
+5.5 Aﬃne structures on Teichmüller space . . . . . . . . . . . . . . . . . . . . . . 37
+5.6 Derivative of the Bers embedding at the origin . . . . . . . . . . . . . . . . . . 38
+6 Almost hyper-Hermitian structure in the complexiﬁcation of a Kähler manifold 39
+6.1 Almost hyper-Hermitian structures . . . . . . . . . . . . . . . . . . . . . . . . 39
+6.2 The Feix-Kaledin hyper-Kähler structure . . . . . . . . . . . . . . . . . . . . . 40
+6.3 Construction of the almost hyper-Hermitian structure . . . . . . . . . . . . . . 41
+6.4 The biquaternionic structure . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+6.5 Example: CP1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+References 48
+
+===== PDF PAGE 3 =====
+Introduction
+Let M be a smooth manifold. A symplectic structure onM is a closed nondegenerate2-form ω. A
+Lagrangian foliation of(M, ω) is a foliation ofM by Lagrangian submanifolds,i.e. submanifolds
+thataremaximallyisotropicfor ω. Lagrangianfoliationsplayamajorroleingeometricquantization
+wheretheyarecalledrealpolarizations(seee.g. [BW97]). ItwasﬁrstprovedbyWeinstein[Wei71]
+that the leaves of a Lagrangian foliation admit a natural aﬃne structure, which is given by a ﬂat
+torsion-free aﬃne connection called the Bott connection. This is only apartial connection on M
+in the sense that∇XY is only deﬁned for vector ﬁeldsX and Y that are tangent to the foliation.
+This partial connection can always be extended to a “full” connection, but in general there is no
+canonical way to choose such an extension. However if(M, ω) is giventwotransverse Lagrangian
+foliationsF1andF2,thenthereexistsauniquesymplecticconnection ∇on MwhichextendstheBott
+connectionofeachfoliation(thiswasﬁrstprovedbyHeß[Heß80,Heß81], whostudiedsymplectic
+connections in (bi-)polarized symplectic manifolds as a tool for geometric quantization). In this
+scenario(ω,F1,F2) is called a bi-Lagrangian structure onM and∇ is called the bi-Lagrangian
+connection.
+Bi-Lagrangianstructurescanalternativelybedescribedaspara-Kählerstructuresviaadiﬀerent
+approach that may seem more appealing to complex geometers, though one is quick to realize
+that the two points of view are equivalent. First note that on a smooth manifoldM, the data of
+an ordered pair of distributionsL1, L2⊂ TM of the same dimension such thatTM = L1⊕ L2 is
+equivalent to analmost para-complexstructure F, i.e. a traceless endomorphism ofTM such that
+F2 = 1 (indeed, such an endomorphism is determined by its± 1-eigenspaces L1 and L2, which
+meet the requirements). Similarly to the case of an almost complex structure (recall that this is
+an endomorphism I of TM such that I2 =−1), there is a notion of integrability for an almost
+para-complex structure in terms of the vanishing of its Nijenhuis tensor, which amounts to the
+involutivity of both distributionsL1 and L2 (i.e. stability under the Lie bracket). By the Frobenius
+theorem, this is equivalent toL1 and L2 being the tangent bundles to two transverse foliationsF1
+andF2. Insummary,apara-complexstructure F isequivalenttoanorderedpairofequidimensional
+transverse foliations(F1,F2). In the presence of a symplectic structureω, the condition thatF1
+andF2 arebothLagrangianisequivalenttothetensorﬁeld g(u, v) := ω(Fu, v)beingsymmetric, in
+which case it is a pseudo-Riemannian metric of signature(n, n), also called a neutral metric. The
+result of this discussion is that a bi-Lagrangian structure(ω,F1,F2) is equivalent to apara-Kähler
+structure(g, F, ω), which is the para-complex analog of a Kähler structure(g, I, ω).
+Thus, bi-Lagrangian structures lie at the intersection of symplectic, para-complex, and neutral
+pseudo-Riemannian geometry. They also relate to aﬃne diﬀerential geometry via the Bott con-
+nections previously mentioned. Para-complex geometry is perhaps the least heavily investigated of
+theseﬁelds,althoughithaslongbeenonmathematicians’radars([Rs48],[Lib52a]). Itsharesmany
+similarities with complex geometry, with the algebra of para-complex numbers playing the role of
+complex numbers (the imaginary unit squares to1instead of−1), with some important diﬀerences
+nonetheless. Interested readers may refer to [CFG96] and [Cor10, Chapter 15] for expositions on
+para-complex geometry.
+In this paper we are interested in the natural analog of bi-Lagrangian structures in the com-
+plex (holomorphic) setting, which is essentially absent from the existing literature. Hence, we
+review complex symplectic structures and complex Lagrangian foliations, introduce complex Bott
+connections and complex bi-Lagrangian connections, etc., and study their basic properties. It is
+noteworthy that the algebra of bicomplex numbers naturally appears when one introduces para-
+complex structures in the complex setting. This is the algebra over the real numbers generated by
+three “units” i, j, f, such thati2 = j2 =− f 2 =−1 and i j = ji = f. The fact that any two of
+the three units are suﬃcient to generate this algebra enables several equivalent characterizations of
+3
+
+===== PDF PAGE 4 =====
+complex bi-Lagrangian structures, encapsulated by abicomplex Kählerstructure.
+In section 3 we focus on the complexiﬁcation of a real-analytic Kähler manifold. We show
+that there is a canonical complex bi-Lagrangian structure there and that it has a nice description
+(Theorem 3.8). Let us recall that any real-analytic manifoldN admits a complexiﬁcation,i.e. an
+embedding in a complex manifoldM as a maximally totally real submanifold. The germ of such a
+complexiﬁcationisuniqueinthesensethatanytwocomplexiﬁcationsagreeinsomeneighborhood
+of N. When N is a complex manifold, there is a canonical model for its complexiﬁcation which is
+N c = N× N, where N is diagonally embedded. In particular, there is a canonical pair(F1,F2) of
+transverse (“vertical” and “horizontal”) foliations in the complexiﬁcation of a complex manifold,
+which is another way of saying that it has a natural bicomplex structure (cf. Theorem 3.12). When
+N isKähler,thesymplecticstructureof N (locally)extendsasacomplexsymplecticstructureon N c
+which reﬁnes(F1,F2)into a complex bi-Lagrangian structure. This bi-Lagrangian structure can be
+identiﬁedtothebicomplexKählerstructurecomplexifyingtheKählerstructureof N(Theorem3.13).
+After giving a quick application (Corollary 3.9 and Corollary 3.11), we conclude this section by
+explicitly working out the example ofCP1 with the Fubini-Study metric (we describe in particular
+theaﬃnestructureinthecanonicalfoliationsof CP1× CP1). Figure1belowattemptstosummarize
+in a diagram some of the interrelationships between all the structures discussed so far.
+Delayingforthemomentsections4and5onTeichmüllertheory,intheﬁnalsection(section6)
+we push further the study of the complexiﬁcation of a real-analytic Kähler manifold. We construct
+anaturalalmosthyper-Hermitianstructure,relyingonthecomplexbi-Lagrangianstructurestudied
+in section 3. Hyper-Hermitian structures are the quaternionic analog of Hermitian structures, and
+they are called hyper-Kähler when integrable. The Calabi metric [Cal79] inT∗CPn (previously
+discovered by Eguchi-Hanson [EH79] forn = 1) was the ﬁrst nontrivial example of a hyper-
+Kähler structure on a noncompact manifold. Around the year 2000, Feix [Fei99] and Kaledin
+[VK99] independently proved that, more generally, there is a canonical hyper-Kähler structure in
+the cotangent bundle of any real-analytic Kähler manifold, although it is typically only deﬁned
+in a neighborhood of the zero section. This hyper-Kähler structure can be naturally transported
+from the cotangent bundle to the complexiﬁcation, although the resulting hyper-Kähler structure
+has never been properly characterized (cf. Question 6.8). We were initially hoping to recover the
+Feix-Kaledinhyper-Kählerstructureinamoretangiblewaywithourconstruction,butsoonrealized
+that our almost hyper-Hermitian structure is diﬀerent as it is typically not integrable, even though
+it satisﬁes every other sensible requirement that one can ask of a “hyper-Kähler extension” of the
+Kähler structure (Theorem 6.10). It is nevertheless an interesting alternative; we show for instance
+thatitispartofaricher biquaternionicstructure,inducinginparticularanalmostpara-quaternionic
+and para-hyper-Hermitian structure (Theorem 6.12 and Corollary 6.13). We conclude by working
+out the example ofCP1 in detail.
+Let us now turn to the applications to Teichmüller theory, which were the initial motivation of
+our work. Here we quote the ﬁrst paragraph of the Foreword written by Papadopoulos–which we
+recommend readingin extenso–in the Handbook of Teichmüller theory [Pap07] :
+In a broad sense, Teichmüller theory is the study of moduli spaces for geometric
+structuresonsurfaces. Thissubjectmakesimportantconnectionsbetweenseveralareas
+inmathematics, includinglow-dimensionaltopology, hyperbolicgeometry, dynamical
+systems theory, diﬀerential geometry, algebraic topology, representations of discrete
+groups in Lie groups, symplectic geometry, topological quantum ﬁeld theory, string
+theory, and there are others.
+Alongside diﬀerential and symplectic geometry, complex geometry and (pseudo-)Riemannian ge-
+ometry can surely be appended to Papadopoulos’ list; these features of Teichmüller theory are the
+focus of the present paper.
+4
+
+===== PDF PAGE 5 =====
+I0
+Complex
+g0
+Riemannian
+ω0
+Symplectic
+Kähler
+Complexiﬁcation
+F
+Para-complex
+g
+Neutral
+(pseudo-Riem.)
+Symplectic
+Para-Kähler
+⇔
+Bi-Lagrangian
+ω
+Real vs complex setting
+I, J, F = I J
+(I = I c
+0)
+Bicomplex
+g(=−igc
+0)
+Holomorphic
+Riemannian
+ω(= ωc
+0)
+Complex
+symplectic
+Bicomplex
+Kähler
+⇔
+Complex
+bi-Lagrangian
+Figure 1: Partial overview of interrelationships between complex, para-complex, symplectic, and
+(pseudo-)Riemannian metric structures on real and complex manifolds.
+Let SbeaclosedorientedsurfaceofnegativeEulercharacteristic. TheTeichmüllerspaceof Sis
+thespaceofisotopyclassesofcomplexstructureson S. Teichmüllerspaceanditscomplex-analytic
+structurewereoriginallyconstructedandstudiedbyOswaldTeichmüllerinthe1930s. Thenaturality
+ofitscomplexstructurewasfortiﬁedbythedeformationtheoryofKodaira-Spencer[KS58]andthe
+algebraic approach of Grothendieck [Gro]. The complex-analytic theory of Teichmüller space was
+then studied intensely until the 1970s by Lars Ahlfors, Lipman Bers, and others (we refer to [JP13]
+for a historical introduction).
+The story with which this paper is concerned properly started when Weil [Wei58] realized that
+the Petersson pairing of automorphic forms provides a Hermitian structure onT( S)now known as
+theWeil-Peterssonmetric. Ahlfors[Ahl61]soonprovedthatthisHermitianmetricisKählerforthe
+natural complex structure onT( S), unleashing the possibility of a rich symplectic geometry (Weil
+already claimed this in [Wei58], but in lieu of a proof he wrote that it is “stupid computation”).
+In the 1970s and 1980s, Teichmüller theory was deeply inﬂuenced by the singular geometric
+vision of William Thurston, and the emphasis partly shifted from complex analysis to hyperbolic
+geometry. It was eventually understood that the symplectic geometry of Teichmüller space is more
+intrinsic on the deformation space of hyperbolic structures onS, which we call the Fricke-Klein
+spaceF( S)(and which is in bijection withT( S)by the Poincaré uniformization theorem).
+Thesymplectictheoryof T( S)andF( S)wasbeautifullydevelopedbyWolpertinthe1980s(let
+us cite [Wol82, Wol83, Wol85]). Wolpert showed that given a (homotopy class of) simple closed
+curve γ on S, the Hamiltonian ﬂow of the hyperbolic length functionlγ :F( S)→ R is the ﬂow on
+F( S) that consists in twisting the hyperbolic structure alongγ. Wolpert’s work shows that given a
+pantsdecompositionof S,thelengthfunctionsofthepantscurvesdeﬁneanintegrableHamiltonian
+5
+
+===== PDF PAGE 6 =====
+system whose action-angle variables are the famous Fenchel-Nielsen coordinates relative to the
+pants decomposition.
+The full extent of the naturality of the symplectic structure of deformation spaces relative to
+closed surfaces was established by Goldman [Gol84] (following Atiyah-Bott [AB83]). Goldman
+showed that there is a natural (complex) algebraic symplectic structure on the character variety
+X(π1(S), G) for any (complex) algebraic semisimple Lie groupG (where the character variety is
+the space of (closed) conjugacy classes of group homomorphismsπ1(S)→ G). A consequence
+of Goldman’s work is that the Fricke-Klein spaceF( S), the quasi-Fuchsian spaceQF( S), and the
+deformation space of complex projective structuresCP( S) all enjoy natural symplectic structures,
+inherited from the character variety forG = PSL2(C).
+Thecomplexsymplecticgeometryof CP( S)wascarefullystudiedbyLoustauin[Lou15a](and
+[Lou15c]). Let us recall that a complex projective structure onS is a geometric structure deﬁned
+by an atlas onS whose charts take values inCP1, and whose transition functions are restrictions of
+projectivelineartransformations. Sincesuchanatlasis,inparticular,aholomorphicatlas,thereisa
+forgetfulprojection p:CP( S)→T( S). Oneofthemainresultsof[Lou15a]isthattheSchwarzian
+parametrization ofCP( S) relative to any Lagrangian section ofp provides a symplectomorphism
+CP( S)→ T∗T( S),generalizingaresultofKawai[Kaw96]. Loustaualsoshowedthatthesymplectic
+theory ofF( S) developed by Wolpert holomorphically extends to quasi-Fuchsian space, partially
+extending or clarifying results of Platis [Pla01] and Goldman [Gol04].
+Thepresentpaperisinpartacontinuationof[Lou15a]inthatweapplygeneralmachineryfrom
+symplecticgeometrytoobtainclariﬁcationsofresultsinTeichmüllertheory,whichuptothispoint
+only had proofs relying on idiosyncratic features of the spaces in consideration. Furthermore, we
+discover new geometric features of these deformation spaces.
+Oneverysimpleyetkeyobservationisthatquasi-Fuchsianspace QF( S)isthecomplexiﬁcation
+of Teichmüller spaceT( S). Without precisely deﬁningQF( S) in this introduction, let us just
+remember that it is a complex (symplectic) manifold that is isomorphic toT( S)× T( S) by the
+“simultaneousuniformization”biholomorphism QF :T( S)×T( S)→QF( S),whoserestrictionto
+thediagonalcoincideswiththeuniformizationmap F :T( S)→F( S). Ifwerecallthat T( S)×T( S)
+is the canonical complexiﬁcation ofT( S), and remember the uniqueness of complexiﬁcation,
+we see that simultaneous uniformization is “just” the complexiﬁcation of uniformization (see
+Proposition5.3formoredetails). Since T( S)isareal-analyticKählermanifold,itscomplexiﬁcation
+QF( S) must enjoy all the general properties of the complexiﬁcation of a real-analytic Kähler
+manifold. Inparticular,QF( S)hasanaturalcomplexbi-Lagrangianstructureasaresultofourstudy
+in section 3, and we show that the canonical transverse Lagrangian foliations are the well-known
+foliations ofQF( S) by Bers slices (Theorem 5.5). Other features of this complex bi-Lagrangian
+structurearenotwell-knownandyettobeexplored,suchasitsholomorphicRiemannianstructure,
+whichwelargelyelucidateinTheorem5.6,andthehyper-Hermitianstructuresdiscussedinsection
+6. NotethatsinceourconstructionyieldsastructurethatdiﬀersfromtheFeix-Kaledinhyper-Kähler
+structure,ourbi-Lagrangianandhyper-Hermitianpictureofquasi-Fuchsianspaceisnotthesameas
+the hyper-Kähler structure beautifully constructed by Donaldson in [Don03] and further described
+in [Hod05] and [Tra18].
+Let us conclude this introduction by listing the other main applications that we develop in
+section 5:
+• The Weil-Petersson metric can be deﬁned on Fricke-Klein spaceF( S)via symplectic geom-
+etry, without using the uniformization theorem (§ 5.3).
+• The remarkable aﬃne structure in the ﬁbers of the forgetful projectionp:CP( S)→T( S),
+which is classically described via the Schwarzian derivative, coincides with the Bott aﬃne
+structure in the leaves of a Lagrangian foliation (Theorem 5.8).
+• The family of aﬃne structures on Teichmüller space provided by the Bers embeddings
+6
+
+===== PDF PAGE 7 =====
+coincides with the family of aﬃne structures on a real-analytic Kähler manifold induced by
+the bi-Lagrangian structure in its complexiﬁcation (Theorem 5.9).
+• The derivative of the Bers embedding at the origin is equal to -1/2 times the musical isomor-
+phism induced by the Weil-Petersson metric (Theorem 5.11).
+Outline. Section 1 reviews Lagrangian foliations, aﬃne structures and Bott connections in the real
+and complex settings. Section 2 discusses real and complex bi-Lagrangian structures and other
+related notions. Section 3 investigates the complexiﬁcation of a real-analytic Kähler manifold and
+its natural complex bi-Lagrangian structure. Section 4 contains an introduction to Teichmüller
+theory with the necessary background material for the next section. Section 5 applies the general
+machinery of sections 1, 2, 3 to Teichmüller theory. Section 6 constructs and studies an almost
+hyper-Hermitian structure in the complexiﬁcation of a real-analytic Kähler manifold.
+Anotetothereader: Thesegmentofthepaperdealingwithgeneraldiﬀerentialgeometry(sections
+1,2,3and6)andthesegmentonTeichmüllertheory(sections4and5)arequitedissimilarinﬂavor
+and may appeal to diﬀerent audiences. We tried to make both expositions self-contained while
+trying to keep a reasonable length; it is inevitable that parts of the paper will feel too detailed and
+others too condensed to diﬀerent readers.
+Acknowledgments
+The authors wish to thank Charles Boubel, David Dumas, Jonah Gaster, Bill Goldman, Nigel
+Hitchin, John Loftin, Curt McMullen, Jean-Marc Schlenker, and Leon Takhtajan for valuable
+conversations and correspondences pertaining to this work.
+TheﬁrstauthorthankshispostdoctoraladvisorFrançoisLabouriefortheperiod2011-2014atthe
+MathematicsDepartmentoftheUniversityofParisXI.Duringthisperiodhereceivedfundingfrom
+the European Research Council under the European Community’s seventh Framework Programme
+(FP7/2007-2013)/ERC grant agreement.
+The second author thanks the University of Illinois at Chicago where he spent 2013–2016 as a
+postdoctoralfellow;heisverygratefulforthefreedomandhospitalityprovidedbytheMathematics
+Department. HealsogratefullyacknowledgespartialsupportfromtheNationalScienceFoundation
+Postdoctoral Research Fellowship 1304006.
+Both authors gratefully acknowledge research support from the NSF Grant DMS1107367
+RNMS: GEometric structures And Representation varieties(the GEAR Network).
+1 Lagrangian foliations and aﬃne structures
+In this section, we review basics of Lagrangian foliations, deﬁne aﬃne structures and discuss Bott
+connections, both in the real (smooth) setting and in the complex setting. Good references for
+LagrangianfoliationsandBottconnectionsintherealsettinginclude[Wei71],[Vai89]and[FY13].
+1.1 Lagrangian foliations
+Let M be a smooth manifold. Asymplectic structureon M is a diﬀerential2-form ω∈ Ω2(M, R)
+which is closed (such thatdω = 0) and nondegenerate (as a bilinear form onTM). ALagrangian
+7
+
+===== PDF PAGE 8 =====
+submanifold is a smoothly embedded submanifoldf : N→ M which is isotropic (i.e. such that
+f∗ω = 0) and of maximal dimension among isotropic submanifolds (i.e. dim N = dim M/2). A
+Lagrangian foliationof M is a foliationF of M such that every leafN∈F is Lagrangian.
+If M is a complex manifold, acomplex symplectic structure ω is a closed nondegenerate
+(2, 0)-form. The assumption onω implies that it is a holomorphic form: it is locally of the form
+ω = ωi j dzi∧ dz j in a complex chart(zi) on M, where the ωi js are holomorphic functions on
+M. Note that we use the Einstein notation that implies summation over repeated indices. In this
+category, a complex Lagrangian submanifoldis a holomorphically embedded half-dimensional
+submanifold f : N→ M such thatf∗ω = 0. Note that both the real and imaginary parts ofω are
+realsymplecticstructureson M,andacomplexLagrangiansubmanifoldisrealLagrangianforboth
+Re(ω)and Im(ω). AcomplexLagrangianfoliation isafoliation F of M suchthateachleaf N∈F
+is a complex Lagrangian submanifold.
+In either the smooth or complex setting, letp : M→ B be a ﬁber bundle where(M, ω) is a
+symplectic manifold. The ﬁber bundlep : M→ B is called aLagrangian ﬁbrationif for every
+b∈ B,the ﬁber p−1(b) is Lagrangian inM. Therefore, the total space of any Lagrangian ﬁbration
+has a Lagrangian foliation. Conversely, given a symplectic manifold with a Lagrangian foliation,
+projection to the leaf space yields a Lagrangian ﬁbration in any suﬃciently small open set.
+Example 1.1 (Cotangent bundle). A fundamental example of a symplectic manifold and a La-
+grangian ﬁbration is provided by the cotangent bundle of any manifold. LetN be a manifold
+either in the smooth or complex category. LetM = T∗N denote the total space of the cotangent
+bundle p : T∗N → N. Note that in the complex setting, we letT∗N denote the holomorphic
+cotangentbundle i.e. thecomplexdualoftheholomorphictangentbundle T(1,0)N. Then M admits
+a canonical 1-form ξ and acanonical symplectic structureω. The canonical formξ is deﬁned at
+a pointα∈ M as the pull-backξα = p∗α of the covectorα∈ T∗M, and the canonical symplectic
+structure is ω = dξ. The expression of ξ and ω in coordinates is as follows. Choosing local
+coordinates(q1, . . . ,qn)on N deﬁnes natural coordinates(q1, . . . ,qn, p1, . . . ,pn)on M = T∗N: the
+point with coordinates(q1, . . . ,qn, p1, . . . ,pn) is the covectorpi dqi∈ T∗N. In these coordinates,
+the canonical1-form and symplectic structure are given byξ = pi dqi and ω = dpi∧ dqi 1. It is
+straightforward to check that the bundle projectionp : T∗N→ N is a Lagrangian ﬁbration for the
+canonical symplectic structure.
+Lagrangianfoliationssatisfythefollowingstructuretheorems(bothinthesmoothandcomplex
+settings):
+Theorem 1.2(Theorem of Darboux-Lie). Let(M, ω) be a symplectic manifold with a Lagrangian
+foliationF. There exists local coordinates(q1, . . . ,qn, p1, . . . ,pn) on any suﬃciently small open
+set U such that:
+(i)(q1, . . . ,qn, p1, . . . ,pn)are Darboux coordinates for the symplectic structure up to sign:
+ω = dpi∧ dqi .
+(ii) The leaves of the foliations are the level sets ofq =(q1, . . . ,qn).
+The Darboux-Lie theorem implies that, given a Lagrangian submanifoldf : N→ M which
+is transverse to a Lagrangian foliationF of M, there is a canonical identiﬁcation between a
+neighborhood of the zero section inT∗N and a neighborhood off(N)⊂ M.
+Theorem 1.3(Weinstein’s symplectic tubular neighborhood theorem [Wei71]). Let(M, ω) be a
+symplecticmanifoldwithaLagrangianfoliation F andlet f : N→ MbeaLagrangiansubmanifold
+transverse toF. Denote by s0 : N→ T∗N the zero section of the cotangent bundle. Then there
+existsauniquegermofadiﬀeomorphism φ : U→ V where U isaneighborhoodof f(N)in M and
+V is a neighborhood ofs0(N)in T∗N such that:
+1Some authors’ deﬁnition of the canonical symplectic structureω diﬀers from ours by a minus sign.
+8
+
+===== PDF PAGE 9 =====
+(i) φ◦ f = s0.
+(ii) φ is a symplectomorphism.
+(iii) φ is ﬁber-preserving.
+1.2 Aﬃne structures
+Let M be a smooth or complex manifold of dimensionn.
+Deﬁnition 1.4. An aﬃne structureon M is equivalently the data of:
+(i) A compatible(X, G)-structure on M, where X = An is the standardn-dimensional aﬃne
+space andG = Aﬀ(An)is the group of aﬃne transformations ofAn.
+(ii) A ﬂat torsion-free [complex] connection∇ in the tangent bundleTM.
+We pause to quickly review the terminology appearing in the previous deﬁnition:
+• The standardn-dimensional aﬃne space isAn = k n and its group of aﬃne transformations
+is G = Aﬀ(k n)≈ GLn(k) ⋉ k n, wherek = Ror C.
+• A compatible(X, G)-structure on M is given by an atlas of smooth/complex charts with
+valuesin X suchthatthetransitionfunctionscoincidewiththeactionofelementsof G on X.
+For more background on(X, G)-structures, see § 4.1.1.
+• In the complex setting, we require the connection∇ to be acomplex connection, meaning
+that the almost complex structureI on M is parallel:∇I = 0. Any ﬂat torsion-free complex
+connection is in fact aholomorphic connection, meaning that∇XY is a holomorphic vector
+ﬁeld wheneverX and Y are holomorphic vector ﬁelds.
+The fact that the two deﬁnitions of an aﬃne structure given above are equivalent is rather
+elementary and left to the reader. A third possible characterization exists in terms of a locally
+deﬁned, free and transitive action of the vector spaceRn (resp. Cn) onM, but we will not discuss
+this approach here.
+An(X, G)-structureiscalled completewhenitisgivenasthequotientofthemodelspace X bya
+discretesubgroupof G(inthesituationwhere X issimplyconnected),see§4.1.1fordetails. Inthe
+caseofaﬃnestructures,thisisequivalenttosayingthattheconnection ∇isgeodesicallycomplete.
+1.3 Bott connection
+1.3.1 Real Bott connection
+Let us ﬁrst review Bott connections in the real setting: in what follows,M is a smooth manifold.
+We begin with the notion of a partial connection in a vector bundle along a distribution:
+Deﬁnition 1.5. Let V→ M be a vector bundle onM and L⊂ TM a distribution onM (i.e. a
+smooth subbundle ofTM). Apartial (linear) connectionin V along L is a map
+∇ :Γ(L)× Γ(V)→ Γ(V)
+(X, s)↦→∇ X s
+which isC∞(M, R)-linear in X and a derivation in s, i.e satisﬁes the Leibniz rule∇X( f s) =
+X( f)s + f∇X s for any functionf∈C∞(M, R). We use the notationΓ above to denote the space of
+smooth sections of a vector bundle.
+9
+
+===== PDF PAGE 10 =====
+One can then deﬁne the Bott connection in the annihilator of an involutive distribution as
+follows. Let L be an involutive2 distribution onM and L⊥⊂ T∗M be the annihilator ofL, i.e. the
+subbundle ofT∗M deﬁned byL⊥
+x :={α∈ T∗
+x M : Lx⊆ ker α}.
+Deﬁnition1.6. TheBottconnection in L⊥along Listhepartialconnectiondeﬁnedby ∇X α =LX α,
+whereL is the Lie derivative.
+Itisastraightforwardexercisetocheckthatthisdeﬁnesapartialconnection,andthatmoreover
+this connection is ﬂat:
+Proposition 1.7.The Bott connection inL⊥ along L is ﬂat.
+Now letω be a symplectic structure onM. Consider a Lagrangian involutive distributionL, or
+equivalently a Lagrangian foliationF of M (L is the tangent distribution to the foliationF).
+Deﬁnition 1.8. The Bott connection inL is the partial connection inL along L obtained from the
+Bott connection inL⊥ along L using the isomorphismL≈ L⊥ induced by the symplectic musical
+isomorphism ♭ : TM→ T∗M.
+Recall that the musical isomorphism♭ : T M→ T∗M, u↦→ u♭ is deﬁned byu♭ = ω(u,·) . It
+restricts to an isomorphismL→ L⊥.
+Here are essential facts about the Bott connection in a Lagrangian foliation:
+Proposition 1.9. Let(M, ω) be a real symplectic manifold, letF be a Lagrangian foliation ofM
+and denote by∇ the Bott connection as above.
+(i)∇ is characterized by the formula
+X· ω(Y, Z) = ω(∇XY, Z) + ω(Y,[X, Z])
+where X and Y are vector ﬁelds onM tangent to the foliation andZ is any vector ﬁeld.
+(ii)∇ is ﬂat and torsion-free.
+Note that the Bott connection may extend to a “full” connection inTM, but there is no
+canonical way to choose such an extension in general. In the next section, we will see that given
+twotransverseLagrangianfoliations,thereexistsauniquesymplecticconnectionin M thatextends
+both Bott connections (Proposition 2.2). On the other hand, the Bott connection restricts to a full
+connection in any leaf of the foliation, which moreover is ﬂat and torsion-free by Proposition 1.9.
+It thus deﬁnes an aﬃne structure in any leaf of the foliation according to Deﬁnition 1.4:
+Theorem 1.10. The Bott connection equips every leaf of a Lagrangian foliation with a natural
+aﬃne structure.
+WeshallcallthisaﬃnestructureintheleavesofaLagrangianfoliationthe Bottaﬃnestructure .
+Theorem 1.10 is closely related to the Liouville-Arnold theorem in the following way. Recall
+that a Lagrangian foliation is locally a Lagrangian ﬁbration. Choosing coordinates on the base
+of a Lagrangian ﬁbration deﬁnes an integrable Hamiltonian system on the total space. In this
+situation, theLiouville-Arnoldtheoremguaranteestheexistenceof“action-anglecoordinates”that
+are canonical for the foliation, as in the Darboux-Lie Theorem 1.2, and such that there is anRn-
+action (deﬁning the angle coordinates) in the level sets of the action coordinates. These level sets
+areexactlytheleavesofthefoliation. This(local) Rn-actionisanotherwaytothinkabouttheaﬃne
+structure of Theorem 1.10.
+2Recall that a smooth distributionL⊂ TM is calledinvolutive(or integrable) if the space of sections ofL is stable
+under the Lie bracket. The Frobenius theorem states that a distribution is involutive if and only if it is the tangent space
+to a smooth foliation.
+10
+
+===== PDF PAGE 11 =====
+1.3.2 Complex Bott connection
+Let us now turn to the Bott connection in the complex setting. In what follows,M is a complex
+manifold. Assume that M is equipped with a complex symplectic structureω and thatF is a
+complexLagrangianfoliationof M. Denoteby ω1 and ω2 therealandimaginarypartsof ω sothat
+ω = ω1 + iω2. Thesearerealsymplecticstructureson M,andF isarealLagrangianfoliationwith
+respect to bothω1 and ω2.
+The complex Bott connectionin the distributionL = TF is characterized as follows:
+Theorem 1.11.There is a unique partial connection∇ in L along L such that:
+(i)∇ is a ﬂat and torsion-free partial complex connection.
+(ii)∇ =∇1 =∇2, where∇i is the Bott connection ofωi in L (i = 1, 2).
+The proof of this theorem easily follows from the properties of real Bott connections stated in
+Proposition 1.9. One derives from Theorem 1.11 the following fundamental property of complex
+Lagrangian foliations:
+Theorem 1.12.The complex Bott connection equips every leaf of a complex Lagrangian foliation
+with a natural complex aﬃne structure.
+1.3.3 Fundamental example: cotangent bundles
+Let us work either in the smooth or complex setting in what follows. Recall from Example 1.1
+that if M = T∗N is the total space of a cotangent bundle, thenM carries a canonical symplectic
+structure ω and the bundle projectionp : M→ N is a Lagrangian ﬁbration. By Theorem 1.10 or
+Theorem 1.12, each ﬁber is equipped with a natural aﬃne structure, given by the Bott connection.
+On the other hand, any ﬁber has an “obvious” aﬃne structure since it is a vector space. It turns out
+that these two aﬃne structures coincide:
+Theorem 1.13.The Bott aﬃne structure in any ﬁber ofT∗N is the same as its aﬃne structure as a
+vector space.
+Since this theorem is key to proving Theorem 5.8, let us produce a complete proof, though it is
+a straightforward computation.
+Proof. Letuswriteaproof intherealsetting, the extensiontothecomplexsettingisanimmediate
+consequence of Theorem 1.11. The Bott connection∇ is characterized by the identity
+ω(∇XY, Z) = X· ω(Y, Z)− ω(Y,[X, Z])
+for any vector ﬁeldsX and Y on M = T∗N that are tangent to the foliation and for any vector
+ﬁeld Z on M (cf. Proposition 1.9). Let us work on some open setT∗U⊂ M with coordinates
+(q1, . . . ,qn, p1, . . . ,pn)as in Example 1.1. The canonical symplectic structureω is given by
+ω = dpi∧ dqi
+and the vector ﬁeldsX, Y, andZ can be written as follows (recall that we use the Einstein notation
+for writing tensors):
+X = ai
+∂
+∂pi
+Y = bi
+∂
+∂pi
+Z = ci ∂
+∂qi + di
+∂
+∂pi
+.
+It is now a direct computation that:
+X· ω(Y, Z)− ω(Y,[X, Z]) = ai c j ∂bj
+∂pi
+. (1)
+11
+
+===== PDF PAGE 12 =====
+On the other hand, writing∇XY in coordinates as∇XY = vj
+∂
+∂pj
+gives
+ω(∇XY, Z) = vj c j . (2)
+Equating(1)and(2)yields vj = ai
+∂bj
+∂ yi,whichgivesustheexpressionof ∇XY inthesecoordinates:
+∇XY = ai
+∂bj
+∂pi
+∂
+∂pj
+.
+Conclude by observing that this is the expression of the standard covariant derivative inRn in the
+coordinates(p1, . . . pn). □
+2 Bi-Lagrangian structures
+In this section, we review bi-Lagrangian and para-Kähler structures in the real setting and study
+properties of the bi-Lagrangian connection. Then, we turn our attention to complex bi-Lagrangian
+structures. A good reference for bi-Lagrangian structures in the real setting is [EST06].
+2.1 Real bi-Lagrangian structures
+In what follows,M is a smooth manifold.
+Deﬁnition 2.1. A bi-Lagrangian structurein M is the data of a symplectic structureω and an
+ordered pair(F1,F2)of transverse Lagrangian foliations.
+Bi-Lagrangian structures have also been calledbipolarizations, as a Lagrangian foliation is
+sometimes called a (real)polarization, especially in mathematical physics. We shall soon see that
+a bi-Lagrangian structure is also the same as apara-Kähler structure(cf § 2.2).
+Aconnection∇inasymplecticmanifold M iscalleda symplecticconnection ifitistorsion-free
+andparallelizesthesymplecticstructure: ∇ω = 0. Symplecticconnectionsalwaysexistbuttheyare
+not unique, contrary to Riemannian connections. However, the additional data of a bi-Lagrangian
+structureisenoughtodetermineauniquenaturalconnection ∇calledthe bi-Lagrangianconnection
+which can be characterized as follows.
+Proposition 2.2.Let(M, ω,F1,F2)be a bi-Lagrangian manifold. There exists a unique symplectic
+connection∇ on M which extends both the Bott connections inF1 and inF2.
+Onecanshowthatthebi-Lagrangianconnection ∇isinfacttheuniquesymplecticconnectionin
+M whichsatisﬁestheapparentlyweakerconditionthatitpreservesbothfoliations,seeTheorem2.6.
+2.2 Para-complex and para-Kähler structures
+The algebra ofpara-complex numbers3 is the commutative algebra
+R[X]/(X2− 1) ={a + f b :(a, b)∈ R2, f 2 = 1} .
+3Para-complexnumbersarealsosometimescalled split-complexnumbers,hyperbolicnumbers andavarietyofother
+names that are listed in [Wik17].
+12
+
+===== PDF PAGE 13 =====
+Para-complexstructuresonmanifoldsarethepara-complexanalogofcomplexstructures. Werefer
+to [CFG96] for a survey of para-complex geometry.
+Deﬁnition2.3. Let M beasmoothmanifold. An almostpara-complexstructure on M isasmooth
+ﬁeld of endomorphismsF∈ End(TM)such thatF2 = 1 and tr(F) = 0.
+Call L1 and L2 the +1 and−1 eigendistributions of an almost para-complex structureF, so
+the tangent bundle ofM splits as TM = L1⊕ L2. The condition tr(F) = 0 amounts to saying
+that dim L1 = dim L24. The almost para-complex structureF is calledintegrableif L1 and L2 are
+involutive, in other words there are two transverse foliationsF1 andF2 of M such that Li is the
+tangent subbundle toFi (i∈{ 1, 2}). When F is integrable, it is also just called apara-complex
+structure. It is clear that any ordered pair of equidimensional transverse distributions(L1, L2)
+conversely determines a unique almost para-complex structureF on M as above. Therefore, the
+data of a para-complex structure onM is equivalent to the data an ordered pair of equidimensional
+transverse foliations.
+Next we deﬁne para-Kähler structures, which are the para-complex analog of Kähler structures
+(compare with Deﬁnition 3.7).
+Deﬁnition 2.4. A para-Kählerstructure in a smooth manifoldM is the data of(g, F, ω), where:
+• g is a pseudo-Riemannian metric inM,
+• F is an (almost) para-complex structure inM and
+• ω is an (almost) symplectic structure inM
+such that:
+(i) ω(u, v) = g(Fu, v)for anyu, v (compatibility condition)
+(ii) F is parallel for the Levi-Civita connection ofg:∇F = 0(integrability condition).
+Itiseasytoseefromthisdeﬁnitionthatthesignatureof gmustbe(n, n)where dim M = 2n,such
+a pseudo-Riemannian metric is called aneutral metric. As in the complex case, the integrability
+condition is equivalent to the simultaneous integrability ofF as a para-complex structure and
+closedness of ω as a 2-form, so that a para-Kähler manifold is a para-complex manifold and a
+symplectic manifold in addition to a pseudo-Riemannian manifold, and these three structures are
+mutually compatible.
+If(g, F, ω) is a para-Kähler structure onM, then one quickly checks that the eigendistributions
+L1 and L2 of F are isotropic forg and ω. In particular, the two transverse foliationsF1 andF2
+deﬁned byF are Lagrangian forω and thus deﬁne a bi-Lagrangian structure onM. Conversely, it
+isclearthatanybi-Lagrangianstructureon M determinesauniquepara-Kählerstructure (g, F, ω).
+Proposition 2.5. Let M be a smooth manifold. There is a 1-1 correspondence between bi-
+Lagrangian structures(ω,F1,F2) on M and para-Kähler structures(g, F, ω) on M, where the
+tangent distributions toF1 andF2 are respectively the+1 and−1 eigendistributions of the para-
+complex structureF.
+2.3 Properties of the bi-Lagrangian connection
+Let(M, ω,F1,F2)be a bi-Lagrangian manifold. We shall call the neutral metricg of the associated
+para-Kählerstructurethe bi-Lagrangianmetric. Recallthatthereisauniquesymplecticconnection
+in M extending both the Bott connections inF1 andF2 called the bi-Lagrangian connection
+(cf Proposition 2.2). The following theorem ensures that the bi-Lagrangian connection can be
+alternatively deﬁned as the Levi-Civita connection ofg.
+4When this condition is not required,F is called analmost product structure.
+13
+
+===== PDF PAGE 14 =====
+Theorem2.6. Let(M, ω,F1,F2)beabi-Lagrangianmanifoldanddenoteby (g, F, ω)theassociated
+para-Kähler structure. The bi-Lagrangian connection ofM is the unique torsion-free connection
+∇ satisfying the following equivalent conditions:
+(i)∇ parallelizes g:∇g = 0.
+(ii)∇ parallelizes ω and F:∇ω = 0 and∇F = 0.
+(iii)∇ parallelizes ω and preserves both foliationsF1 andF2.
+Knowingthatthebi-Lagrangianconnection ∇istheLevi-Civitaconnectionofthebi-Lagrangian
+metric g allows one to compute it explicitly as follows. Let∇Bi denote the Bott connection inFi
+(i∈{ 1, 2}). Recall that for any vectoru∈ TM, we writeu = u1 + u2 where ui is tangent to the
+foliationFi (i∈{ 1, 2}). Then for any vector ﬁeldsX and Y:
+∇XY =∇B1
+X1
+Y1 +∇B2
+X2
+Y2 +[X1,Y2]2 +[X2,Y1]1 . (3)
+In particular one can derive from (3) that both foliations are totally geodesic. Note that they
+are also ﬂat since the Bott connections∇B1 and∇B2 are ﬂat there. Next we compute the curvature
+tensor R of the bi-Lagrangian connection, which is straightforward using (3):
+Proposition 2.7.Let X, Y, andZ be vector ﬁelds onM.
+• If X = Xi and Y = Yi are both tangent toFi where i∈{ 1, 2}, thenR(X,Y) = 0.
+• If X = X1 is tangent toF1 and Y = Y2 is tangent toF2, then:
+R(X,Y)Z =∇X[Y, Z1]1−[[ X,Y]2, Z1]1−∇[X,Y]1 Z1−[ Y,∇X Z1]1
+−∇ Y[X, Z2]2−[[ X,Y]1, Z2]2−∇[X,Y]2 Z2−[ X,∇Y Z2]2 .
+Bylinearityandantisymmetryofthecurvaturetensor Rin X and Y,Proposition2.7determines
+R completely. Note thatR(X,Y) always preserves both distributions in the sense thatR(X,Y)Z is
+tangenttoFi whenever Z istangentto Fi. Alsoobservethatwhileweestablishedthattherestriction
+of∇ to a leaf of either foliations is ﬂat, the fact thatR(X,Y) = 0 whenever X and Y are tangent to
+one foliation is somewhat stronger. It implies that parallel transport with respect to∇ of any tensor
+on M alongapathcontainedinaleafisindependentofthepath. Weshallmakeuseofthatproperty
+in the construction of Theorem 6.10, so let us record this precisely:
+Corollary 2.8.Let(M, ω,F1,F2)be a bi-Lagrangian manifold and denote by∇ the bi-Lagrangian
+connection. Let γ :[0, 1]→ M be a smooth path contained in a leaf of either foliationsFi and let
+T be a tensor onM at γ(0). Then the parallel transport ofT along γ with respect to∇ does not
+depend on the choice ofγ in its homotopy class in the leaf rel. endpoints.
+The proof of Corollary 2.8 can be adapted eﬀortlessly from a standard proof that the vanishing
+of the curvature of a connection is equivalent to the local path-independence of parallel transport,
+see e.g. [Vor09, Theorem 11.1].
+2.4 Complex bi-Lagrangian structures
+We now turn to complex bi-Lagrangian structures, which are a natural extension of real bi-
+Lagrangian structures in the complex setting.
+In what follows,M is a complex manifold. We letJ denotes the (integrable) almost complex
+structureof M. Werecallthatanalmostcomplexstructureonasmoothmanifold M isatensorﬁeld
+J∈ End(TM)suchthat J2 =−1. Thereisanotionofintegrabilityforalmostcomplexstructuresin
+terms of the vanishing of their so-calledNijenhuis tensor; the Newlander-Nirenberg theorem says
+that J is integrable if and only ifM can be given the structure of a complex manifold such thatJ is
+the natural almost complex structure onM, which corresponds to scalar multiplication byi in each
+tangent space.
+14
+
+===== PDF PAGE 15 =====
+Deﬁnition 2.9. A complex bi-Lagrangian structurein M is the data of a complex symplectic
+structure ω and an ordered pair(F1,F2)of transverse complex Lagrangian foliations.
+Similarly to the real case, the data of a complex bi-Lagrangian structure inM is equivalent to
+the data of abicomplex para-Kähler structure(g, F, ω), but before we deﬁne such structures, we
+need to review basic facts about holomorphic metrics.
+2.5 Holomorphic metrics
+By deﬁnition, aholomorphic (Riemannian) metricg on M is a holomorphic symmetric complex
+bilinear form on M (i.e. a holomorphic section of the symmetric productS2 T∗M) which is
+nondegenerate. The following proposition is elementary.
+Proposition 2.10.Let g be a holomorphic Riemannian metric onM, denote byg1 and g2 its real
+and imaginary parts respectively. Then
+(i) g1 and g2 are neutral metrics onM.
+(ii) g1(u, v) = g2(Ju, v)for any tangent vectorsu, v at a same point ofM.
+We recall that a neutral metric onM is a pseudo-Riemannian metric of signature(n, n), where
+dimR M = 2n.
+The “fundamental theorem of Riemannian geometry” holds for holomorphic metrics, more
+precisely:
+Theorem2.11. Let gbeaholomorphicmetricon M. Thereexistsauniquetorsion-freeholomorphic
+connection∇ which parallelizesg, called itsholomorphic Levi-Civita connection. Moreover,∇ is
+the Levi-Civita connection of both the real and imaginary parts ofg.
+TheproofofTheorem 2.11isthesameastheusualproof forRiemannianmetrics: the factthat
+∇ is torsion-free and parallelizesg implies that it has to satisfy theKoszul formula:
+2 g(∇XY, Z) = X· g(Y, Z) + Y· g(Z, X)− Z· g(X,Y)
++ g([X,Y], Z)− g([Y, Z], X)− g([X, Z],Y)
+which shows existence and uniqueness. The fact that∇ is the Levi-Civita connection ofg1 and g2
+is derived by taking the real and imaginary parts of the formula. Sinceg1(· ,·) = g2(J· ,·) , the fact
+that g1 and g2 are parallel implies thatJ is parallel, so that∇ is a complex connection. Finally, we
+can also derive directly from the Koszul formula andg being a holomorphic tensor ﬁeld that∇ is a
+holomorphic connection.
+2.6 Bicomplex Kähler structures
+The algebra ofbicomplex numbers BC is the unital associative algebra over the real numbers
+generated by three elementsi, j, and f satisfying thebicomplex relations:
+i2 =−1 j2 =−1 f 2 = +1
+i j = ji = f .
+The algebra of bicomplex numbersBC is a 4-dimensional algebra overR: a generic bicomplex
+number is writtenq = a + ib + jc + k d with(a, b, c, d)∈ R4. One quickly sees thatBC can be
+simply be described asC⊗R C by writingq =(a + bi) +(c + di) j. We refer to [LESSV15] for the
+reader interested to learn more about bicomplex numbers.
+15
+
+===== PDF PAGE 16 =====
+Deﬁnition 2.12. An bicomplex structureon a smooth manifoldM is the data of an ordered triple
+(I, J, K)where:
+• I and J are integrable almost complex structures.
+• F is an integrable para-complex structure.
+• I, J, F satisfy the bicomplex relations as above.
+Of course, the data of only two of the three structuresI, J, and F is enough to determine the
+third one via the relationI J = F. This allows us to give the following equivalent deﬁnitions of a
+holomorphic bicomplex structure onM when the complex structure onM corresponding to J is
+already given:
+Deﬁnition 2.13. Let(M, J) be a complex manifold. Aholomorphic bicomplex structureon M is
+equivalently the data of:
+(i) An integrable almost complex structureI which is complex linear as an endomorphism of
+TM and holomorphic as a tensor ﬁeld onM, and such thattr(I J) = 0.
+(ii) Anintegrablealmostpara-complexstructure F whichiscomplexlinearasanendomorphism
+of TM and holomorphic as a tensor ﬁeld onM.
+(iii) An ordered pair(F1,F2) of transverse holomorphic foliations of M by half-dimensional
+complex submanifolds.
+This deﬁnition of a holomorphic bicomplex structure is seemingly weaker than another natural
+deﬁnition, namely the data of an atlas onM with bicomplex-holomorphic transition functions (as
+in e.g. [BW11]), but they turn out to be equivalent. This follows from the fact that a holomorphic
+bicomplex manifold is locally biholomorphic to a product of complex manifolds, which is the
+complex declination of the well-known fact that an integrable para-complex structure induces a
+local product structure (see e.g. [Lib54] for details). A discussion and examples of bicomplex
+manifolds in terms of bicomplex atlases can be found in [BW11].
+We are now ready to deﬁne bicomplex Kähler structures:
+Deﬁnition 2.14. Let M be a complex manifold. A(holomorphic) bicomplex Kähler structureon
+M is the data of(g, F, ω), where:
+• g is a holomorphic metric inM,
+• F is a para-complex structure inM deﬁning a (holomorphic) bicomplex structure, and
+• ω is a complex symplectic structure inM
+such that:
+(i) ω(u, v) = g(Fu, v)for anyu, v (compatibility condition)
+(ii) F is parallel for the Levi-Civita connection ofg:∇F = 0 (integrability condition).
+As in the real setting, it is straightforward to show the following proposition.
+Proposition 2.15.Let M be a complex manifold. There is a 1-1 correspondence between complex
+bi-Lagrangian structures(ω,F1,F2) on M and holomorphic bicomplex Kähler structures(g, F, ω)
+on M,wherethetangentdistributionsto F1andF2arerespectivelythe +1and−1eigendistributions
+of the para-complex structureF.
+2.7 Complex bi-Lagrangian metric and connection
+Let M be a complex manifold equipped with a complex bi-Lagrangian structure(ω,F1,F2) and
+denote by(g, F, ω) the associated holomorphic bicomplex Kähler structure (cf Proposition 2.15).
+We shall callg the complex bi-Lagrangian metricand its Levi-Civita connection∇ the complex
+bi-Lagrangian connection.
+16
+
+===== PDF PAGE 17 =====
+Theorem 2.16.The complex bi-Lagrangian connection∇ is the unique torsion-free holomorphic
+connection inM which satisﬁes the equivalent conditions:
+(i)∇ parallelizes g.
+(ii)∇ parallelizes ω and preserves both foliationsF1 andF2.
+(iii)∇ parallelizes g and the bicomplex structure(I, J, F).
+Moreover,∇ extends both the complex Bott connections inF1 and inF2.
+Let us writeω in terms of its real and imaginary parts:ω = ω1 + iω2. Note that(ω1,F1,F2)
+and(ω2,F1,F2)arebothrealbi-Lagrangianstructuresin M,letuscallthemtherealandimaginary
+parts of the complex bi-Lagrangian structure.
+Theorem 2.17. The bi-Lagrangian metrics associated to the real and imaginary parts of the
+complex bi-Lagrangian structure are respectively the real and imaginary parts of the complex
+bi-Lagrangian metric. Moreover, the complex bi-Lagrangian connection is equal to the real
+bi-Lagrangian connection for both the real and imaginary parts of the complex bi-Lagrangian
+structure.
+The proofs of Theorem 2.16 and Theorem 2.17 are easily reduced to a combination of Theo-
+rem 1.11, Theorem 2.6, Theorem 2.11, and Proposition 2.15.
+3 Bi-Lagrangian structure in the complexiﬁcation of a Kähler mani-
+fold
+Inthissection,weshowthatthecomplexiﬁcationofareal-analyticKählermanifoldenjoysanatural
+complex bi-Lagrangian structure and study some of its properties.
+3.1 Complexiﬁcation of real-analytic manifolds
+Let us recall the essentials of complexiﬁcation of real-analytic manifolds.
+Deﬁnition 3.1. Let M be a complex manifold and denote byJ its almost complex structure. A
+real-analytically embedded submanifoldf : N→ M is calledmaximal totally realif for allp∈ N:
+Tp N⊕ J(Tp N) = Tp M .
+In this case the embeddingf : N→ M is called acomplexiﬁcation ofN.
+One can characterize complexiﬁcations of real-analytic manifolds in terms of ﬁxed points of
+anti-holomorphic involutions:
+Proposition 3.2. Let N be a real-analytic submanifold of a complex manifoldM. Then M is a
+complexiﬁcation ofN if and only if there exists an anti-holomorphic involutionτ : U→ U, where
+U is a neighborhood ofN in M, such thatN is the set of ﬁxed points ofτ.
+Thefollowingtheoremguaranteesexistenceofacomplexiﬁcationofanyreal-analyticmanifold
+and uniqueness “up to restriction” (so that thegermof a complexiﬁcation is unique):
+Theorem 3.3.Let N be a real-analytic manifold.
+(i) There exists a complexiﬁcationf : N→ M.
+17
+
+===== PDF PAGE 18 =====
+(ii) Let f1 : N→ M1 and f2 : N→ M2 be two complexiﬁcations. There exists a unique germ of
+a biholomorphism
+φ : U1→ U2
+where Ui is a connected neighborhood offi(N)in Mi (i = 1, 2), such thatf2 = φ◦ f1.
+Afundamentalfactaboutcomplexiﬁcationofareal-analyticmanifoldisthatanyanalytictensor
+ﬁeld extends uniquely to (a germ of) a holomorphic tensor ﬁeld in the complexiﬁcation:
+Proposition 3.4.Let N be a real-analytic manifold and letf : N→ M be a complexiﬁcation. Let
+T beareal-analytictensorﬁeldon N,thenthereexistsauniquegermofaholomorphictensorﬁeld
+T c in a neighborhood off(N)in M such that f∗T c = T.
+Theproofofthisproposition,inlocalcoordinates,boilsdowntostandardanalyticcontinuation
+usingpowerseries. Letusclarifythatby holomorphictensorﬁeld ,wemeanaholomorphicsection
+of the tensor product of a ﬁnite number of copies of the holomorphic tangent bundle and its dual.
+Here are a few examples of this phenomenon:
+• Any real-analytic function onN locally extends to a holomorphic function onM.
+• Anyreal-analyticsymplecticstructureon N locallyextendstoacomplexsymplecticstructure
+on M.
+• Any real-analytic Riemannian metric onN locally extends to a holomorphic metric onM.
+3.2 Complexiﬁcation of complex manifolds
+Given a real-analytic manifoldN, even though there exists an essentially unique complexiﬁcation
+M, there is no canonical model forM in general. However, ifN happens to be a complex manifold
+then such a canonical complexiﬁcation exists:
+Proposition 3.5. Let N be a complex manifold, denote byI0 its almost complex structure. Let
+N c := N× N;equip N c withtheintegrablealmostcomplexstructure J := I0⊕− I0 (inotherwords,
+N c = N× N according to a standard notation). Then the diagonal embeddingf : N→ N c is a
+complexiﬁcation ofN.
+Let us callN c := N× N thecanonical complexiﬁcationof N.
+Let(z1, . . . zn)beasystemoflocalholomorphiccoordinatesin N,denote wi = zi theconjugates
+in a copy ofN. Then (z1, . . . ,zn, w1, . . . ,wn) is a system of local holomorphic coordinates in
+N c. The complexiﬁcation map f : N → N c is given in these coordinates byf(z1, . . . ,zn) =
+(z1, . . . ,zn, z1, . . . ,zn).
+Note that in this situation, the anti-holomorphic involutionτ of Proposition 3.2 is simply the
+map τ(x, y) =(y, x),deﬁnedeverywherein N c = N× N. Inthecoordinates (z, w)above,itisgiven
+by τ(z, w) =(w, z).
+Remarkably, when N is a complex manifold, any complexiﬁcation M admits two natural
+transverse holomorphic foliationsF1 andF2 by half-dimensional complex submanifolds (at least
+in a neighborhood ofN in M). When M = N c is given as the canonical complexiﬁcation, these
+foliations are simply the vertical and horizontal foliations of the productN c = N× N. In the
+coordinates(z1, . . . ,zn, w1, . . . ,wn)above, theverticalfoliationisgivenby {z = z0}where z0∈ Cn
+is a constant, similarly the horizontal foliation is given by{w = w0}. Let us record this in a
+deﬁnition:
+Deﬁnition 3.6. Let N be a complex manifold and letM be a complexiﬁcation. The ordered pair
+(F1,F2) of transverse holomorphic foliations of (a neighborhood ofN in) M described above will
+be called thecanonical pair of foliationsof M.
+18
+
+===== PDF PAGE 19 =====
+Note that these foliations are not deﬁned in any complexiﬁcation ofN when N is not equipped
+with a complex structure to begin with, in other words they depend on the complex structure onN.
+3.3 Complexiﬁcation of Kähler manifolds
+We recall the deﬁnition of a Kähler manifold in order to ﬁx notations and conventions:
+Deﬁnition 3.7. A Kähler structure on a smooth manifoldN is the data of(g, I, ω), where:
+• g is a Riemannian metric inN,
+• I is an (integrable) almost complex structure, and
+• ω is an (almost) symplectic structure inN
+such that:
+(i) ω(u, v) = g(Iu, v)for any tangent vectorsu, v (compatibility condition)
+(ii) I is parallel for the Levi-Civita connection ofg:∇I = 0 (integrability condition).
+The integrability condition is equivalent to the simultaneous integrability ofI as a complex
+structure and closedness ofω as a2-form, so that a Kähler manifold is a complex manifold and a
+symplectic manifold in addition to a Riemannian manifold, and these three structures are mutually
+compatible.
+Now let(N, g0, I0, ω0) be areal-analytic Kähler manifold, i.e. a Kähler manifold such thatg0
+(and I0and ω0,automatically)arereal-analytictensorﬁeldsforthereal-analyticstructureunderlying
+thecomplex-analyticstructure. Let N ↪→ M beacomplexiﬁcationof N (wecantakethecanonical
+complexiﬁcation of Proposition 3.5). Denote byJ the (integrable) almost complex structure onM.
+By Proposition 3.4, in a neighborhoodU of N in M, the tensor ﬁeldsg0, I0, andω0 admit unique
+holomorphic extensions, namely:
+• The Riemannian metricg0 extends to a holomorphic metricgc
+0 (see § 2.5 for the deﬁnition
+of a holomorphic metric).
+• The almost complex structureI0 extends holomorphically to a complex endomorphismI c
+0 of
+TM which squares to−1.
+• The symplectic formω0 extends to a complex symplectic formωc
+0.
+In addition, M enjoys two canonical transverse holomorphic foliationsF1 andF2 as we saw in
+Deﬁnition 3.6. The following theorem shows that all this structure is encapsulated by a complex
+bi-Lagrangian structure.
+Theorem 3.8.Let(N, g0, I0, ω0) be a real-analytic Kähler manifold. LetM be a complexiﬁcation
+of N. Then M has a canonical complex bi-Lagrangian structure in a neighborhood ofN. More
+precisely, in a suﬃciently small connected open neighborhood ofN in M, there exists a unique
+complex bi-Lagrangian structure(ω,F1,F2)such that :
+(i) The complex symplectic structureω is the holomorphic extension ofω0:
+ω = ωc
+0 .
+(ii) The transverse complex Lagrangian foliationsF1 andF2 are the canonical foliations ofM
+deﬁned in Deﬁnition 3.6.
+(iii) The complex bi-Lagrangian metricg (see § 2.7) is−i times the holomorphic extension ofg0:
+g =−i gc
+0 .
+Proof. It is clear that we can take a neighborhoodU of N in M small enough so thatgc
+0, I c
+0,
+and ωc
+0, as well asF1 andF2, are all well-deﬁned (and uniquely deﬁned) inU. In order to show
+19
+
+===== PDF PAGE 20 =====
+that(ω,F1,F2) is a complex bi-Lagrangian structure, all that is left to show is that the canonical
+foliationsF1 andF2 areisotropicfor ω = ωc
+0. Asweareabouttosee,thisisverystraightforwardin
+local holomorphic coordinates. Let(z1, . . . ,zn) thus be a system of local holomorphic coordinates
+on N. Since the Kähler formω0 is of type(1, 1), it can be written:
+ω0 =− 1
+2i hj ¯k dz j∧ dzk
+where hj ¯k are real-analytic complex-valued functions on N which satisfy hk ¯j = hj ¯k. Each
+of these functions admits a unique holomorphic extensionhc
+j ¯k (provided U is small enough),
+obtained by holomorphically extending both the real and imaginary parts ofhj ¯k. Denote by
+(z1, . . . ,zn, w1, . . . ,wn) the local holomorphic coordinates inM as in § 3.2. Then the holomorphic
+extension ωc
+0 of ω0 is simply given by
+ωc
+0 =− 1
+2i hc
+j ¯k dz j∧ dwk =: ω .
+Indeed, by uniqueness of the holomorphic extension, it is enough to check that:
+(a) ω is a complex symplectic structure. This is immediate, because(z1, . . . ,zn, w1, . . . ,wn) are
+holomorphic coordinates andhc
+j ¯k are holomorphic functions.
+(b) ω restricts toω0 in N⊂ M. This is also immediate, becausewi = zi and hc
+j ¯k = hj ¯k at points
+of N⊂ M.
+Now recall that the canonical foliationsF1 andF2 of M are deﬁned by{z = constant} and
+{w = constant} respectively. With the expression ofωc
+0 above, it is immediate that both these
+foliations are isotropic forω. This concludes the proof of (i) and (ii). We delay proving (iii) until
+the proof of Theorem 3.13. □
+Observe in particular that the canonical foliationsF1 andF2 are not only isotropic for the
+holomorphic metric, but also totally geodesic and ﬂat (see § 2.3). Let us give the following
+corollary as a simple example of consequence.
+Corollary3.9. Let(N, g0, I0, ω0)beareal-analyticKählermanifold. Assumethattheholomorphic
+extension ω = ωc
+0 existseverywhereinthecanonicalcomplexiﬁcation N c = N× N. Then N admits
+a natural family of complex aﬃne structures, parametrized by the points ofN.
+This is just a consequence of the fact thatN can be identiﬁed to any horizontal leaf in the
+product N× N, and the leaf space is parametrized byN. Note that these aﬃne structures have no
+reason to be complete in general.
+Remark 3.10. The existence of a ﬂat connection in a compact complex manifold implies that all
+Chern classes of the tangent bundle vanish, in particular the Euler characteristic vanishes as it
+identiﬁes with the top Chern class. The next corollary follows.
+Corollary 3.11. Let N be a compact complex manifold which admits a Kähler form whose holo-
+morphic extension exists everywhere in the canonical complexiﬁcationN c = N× N. Then N has
+zero Euler characteristic.
+Note that recently, paracomplex geometry has been applied to prove a famous conjecture of
+ChernonthevanishingEulercharacteristicofclosedaﬃnemanifoldswithparallelvolume[Kli17].
+3.4 The bicomplex Kähler structure
+InthissubsectionweshowhowthebicomplexandbicomplexKählerstructuresintroducedin§2.6
+provide clarity on the complexiﬁcation of complex and Kähler manifolds.
+20
+
+===== PDF PAGE 21 =====
+3.4.1 Bicomplex structure in the complexiﬁcation of a complex manifold
+Let(N, I0) be a complex manifold and(M, J) a complexiﬁcation of N. Denote I := I c
+0 the
+holomorphic extension ofI0 (cf Proposition 3.4).
+Theorem 3.12. The triple(I, J, F := I J) is a well-deﬁned holomorphic bicomplex structure in a
+neighborhood ofN in M. Moreover:
+(i) F is the integrable para-complex complex structure associated to the canonical pair of
+foliations(F1,F2)of Deﬁnition 3.6.
+(ii) Thisholomorphicbicomplexstructureisdeﬁnedeverywhereinthecanonicalcomplexiﬁcation
+M = N c = N× N.
+Proof. The fact thatI and J commute and that the± 1-eigendistributions ofF = I Jare the vertical
+and horizontal foliations of M is a straightforward calculation in the local coordinates(zi, wi)
+introduced in § 3.2, we leave this calculation to the reader. It follows that(I, J, F) is a bicomplex
+structure, moreover it is holomorphic because I is holomorphic on(M, J) (alternatively: the
+foliationsF1 andF2 areholomorphic). Since J aswellasthefoliations F1 andF2 existeverywhere
+in M = N c, so doF and I =−JF. □
+3.4.2 Bicomplex Kähler structure in the complexiﬁcation of a Kähler manifold
+Let(N, g0, I0, ω0) be a real-analytic Kähler manifold and(M, J) a complexiﬁcation ofN. Denote
+I := I c
+0, ig := gc
+0, andω := ωc
+0 the holomorphic extensions ofI0, g0, andω0 respectively.
+Theorem 3.13. The triple(g, F := I J, ω) deﬁnes a holomorphic bicomplex Kähler structure in
+(a neighborhood of N in) M. Moreover, the associated complex bi-Lagrangian structure (cf
+Proposition 2.15) is the canonical bi-Lagrangian structure(ω,F1,F2)(cf Theorem 3.8).
+Proof. Wealreadyknowthat (I, J, F)isaholomorphicbicomplexstructurein M whoseassociated
+pair of foliations is(F1,F2) by Theorem 3.12, and that(ω,F1,F2) is a complex bi-Lagrangian
+structurebyTheorem3.8. Theonlythinglefttoshowisthat gisthecomplexbi-Lagrangianmetric,
+inotherwordsthattheidentity ω(u, v) = g(Fu, v)holds. Thisisaquickandsatisfyingcomputation:
+g(Fu, v) =−igc
+0(Fu, v) (by deﬁnition ofg)
+=−igc
+0(−J Iu, v) (since F =−I J =−J I)
+= gc
+0(Iu, v) (since gc
+0 is J-complex linear)
+= ωc
+0(u, v) (see argument below)
+The last line is justiﬁed by analytic continuation: sinceg0(I· ,·) = ω0(· ,·) holds in N ↪→ M, the
+identity gc
+0(I· ,·) = ωc
+0(· ,·) must hold everywhere deﬁned inM. □
+WerefertoFigure1intheIntroductionforapartialoverviewtheinterrelationshipsbetweenall
+the structures discussed so far.
+3.5 Example: CP1
+Let N = CP1bethecomplexprojectiveline. Let N c = CP1× CP1denotethecanonicalcomplexiﬁ-
+cationof N. Letzdenotetheusualcomplexcoordinateintheaﬃnepatch U := CP1\{[1 : 0]},and
+let w = z in a copy ofU. Then(z, w) are holomorphic coordinates inU× U⊂ N c. The manifold
+N = CP1 sits insideN c as the totally real locusw = z. The canonical foliations inU× U are the
+vertical and horizontal foliations ofU× U≈ C× C, given by{z = constant}and{w = constant}
+respectively.
+21
+
+===== PDF PAGE 22 =====
+3.5.1 Complexiﬁcation of the Fubini-Study Kähler structure
+Thecomplexprojectiveline CP1 hasanatural Fubini-StudyKählerstructureinheritedfromtheﬂat
+Kähler structure ofC2. Indeed, CP1 can be described as the quotient ofS3⊂ C2 by the isometric
+action of U(1) by multiplication (this yields the Hopf ﬁbrationS1→ S3→ S2). In the aﬃne
+coordinate z, the Fubini-Study Kähler structure(g0, I0, ω0)is given by
+g0 = dz d¯z
+(1 +|z|2)2
+I0 =i dz⊗ ∂
+∂z− i d¯z⊗ ∂
+∂z
+ω0 = i dz∧ d¯z
+2 (1 +|z|2)2 .
+The holomorphic extensions of these tensor ﬁelds inN c are the holomorphic metricgc
+0, the
+complex linear endomorphismI c
+0 and the complex symplectic formωc
+0 given by:
+gc
+0 = dz dw
+(1 + zw)2
+I c
+0 = i dz⊗ ∂
+∂z− i dw⊗ ∂
+∂w
+ωc
+0 = i dz∧ dw
+2(1 + zw)2
+Observethat gc
+0 and ωc
+0 areonlydeﬁnedinaneighborhoodof N ={z = w}in N c: theyaresingular
+at points where1 + zw = 0.
+3.5.2 Bi-Lagrangian structure and connection
+The canonical foliations ofN c are the vertical and horizontal foliationsF1 andF2 of CP1× CP1.
+Letuscall (F z0
+1
+)(for z0∈ CP1)and (F w0
+2
+)(for w0∈ CP1)theleavesofthefoliations, respectively
+given byF z0
+1 ={(z, w)∈ N c : z = z0}andF w0
+2 ={(z, w)∈ N c : w = w0}. It is clear that these
+leaves are complex Lagrangian forωc
+0.
+It is easy to check in this scenario that the complex bi-Lagrangian metricg is equal to−igc
+0 as
+predicted by Theorem 3.8 (iii), indeed:g = ωc
+0(F· ,·) where F = pr1− pr2, that is:
+g =−i dz dw
+(1 + zw)2 =−i gc
+0 .
+Wenowturntothecomplexbi-Lagrangianconnection ∇,whichwecomputeastheLevi-Civita
+connection ofg usingCartan’s structural equations. We choose ag-orthonormal frame(E1, E2)in
+the holomorphic tangent bundle ofN c and compute its dual coframe( χ1, χ2):
+E1 = α
+( ∂
+∂z + ∂
+∂w
+)
+E2 = iα
+( ∂
+∂z− ∂
+∂w
+)
+χ1 = dz + dw
+2α
+χ2 = dz− dw
+2iα
+where
+α = 1 + i√
+2
+(1 + zw) .
+22
+
+===== PDF PAGE 23 =====
+The connection 1-forms ω1
+2 and ω2
+1 =−ω1
+2 must satisfy d χ1 = χ2∧ ω1
+2 and d χ2 = χ1∧ ω2
+1
+according to Cartan’s ﬁrst structural equations, which yields
+ω1
+2 = −2i
+1 + zw(w dz− z dw) .
+Note that dω1
+2 = 4ωc
+0 as expected from Cartan’s second structural equation, knowing that the
+Fubini-Study metric has constant sectional curvature4. The connection∇ is then determined by
+∇E1 = ω2
+1⊗ E2 and∇E2 = ω1
+2⊗ E1. In the(z, w)coordinates,∇ is thus given by:
+∇ ∂
+∂z = −2w
+1 + zw dz⊗ ∂
+∂z
+∇ ∂
+∂w = −2z
+1 + zw dw⊗ ∂
+∂w
+∇ ∂
+∂z =∇ ∂
+∂z = −2w
+1 + zw d¯z⊗ ∂
+∂z
+∇ ∂
+∂w =∇ ∂
+∂w = −2z
+1 + zw d ¯w⊗ ∂
+∂w .
+(4)
+3.5.3 Geodesics and aﬃne structure in the vertical leaves
+Let L =F z0
+1 beaverticalleaf. Letuscomputethegeodesicsin L fortheBottconnection. Theseare
+also geodesics for the bi-Lagrangian connection∇, since∇ restricts to the Bott connection inL (in
+other words, the leaves are totally geodesic for the bi-Lagrangian connection). Letγ(t) =(z0, w(t))
+be a path inL. It is a geodesic if and only if∇t γ(t) = 0. Using the expression of∇ found above
+(equation (4)), this reduces to the equationw′′(t)− 2z0w′(t)2
+1 + z0w(t) = 0. This ODE is quickly solved
+noting that it is rewrittenf′′(t) = 0, where f(t) = 1
+1 + z0w(t). The following proposition follows.
+Proposition 3.14. The geodesicγ(t) in L (or in N c) with initial valueγ(0) =(z0, w0) and initial
+tangent vectorγ′(0) = a ∂
+∂w + a ∂
+∂w is given byγ(t) =(z0, w(t))with w(t) = at + w0(1 + z0w0)
+−z0at + 1 + z0w0
+.
+We can then proceed to describe the complex aﬃne structure in the leaf. The exponential
+map at a point(z0, w0) for the Bott connection inL identiﬁes (an open set of) the tangent space
+T(z0,w0)L with (an open set of)L as aﬃne spaces. We choosew0 = 0 and identifyT(z0,0)L≈ C via
+a ∂
+∂w + a ∂
+∂w↦→ a. The aﬃne structure inL (thought of as aC-action on L) is then given by, for
+(z0, w)∈ L and a∈ C:
+(z0, w)∗ a =(z0, fa(w))
+where fa is the projective linear transformation (homography) associated to the matrix
+Ma =
+( 1 + az0 a
+−az02 1− az0
+)
+.
+One can check thatMa = Pz0
+( 1 a
+0 1
+)
+P−1
+z0 where Pz0 =
+( z0 1
+−z02 0
+)
+. The following proposition
+ensues.
+Proposition3.15. Theaﬃnestructureintheleaf L =F z0
+1 ≈ CP1,inthecoordinate w,istheaﬃne
+structure identifyingCP1 (minus a point) with the aﬃne linear spaceCvia the map
+CP1→ C
+w↦→ −1
+z0(1 + z0w) .
+Note that the aﬃne structure is singular at the locus1 + z0w = 0, which is not surprising as we
+saw that the bi-Lagrangian structure is singular there. In particular, the bi-Lagrangian connection
+is incomplete.
+23
+
+===== PDF PAGE 24 =====
+4 Background on Teichmüller theory
+In this section we provide a brief introduction to Teichmüller theory and the theory of deformation
+spaces associated to surfaces. In particular, we will review:
+• The Teichmüller spaceT( S) of a surfaceS, parametrizing isotopy classes of complex struc-
+tures onS,
+• The Fricke-Klein deformation spaceF( S)of isotopy classes of hyperbolic structures onS,
+• The deformation spaceCP( S)of isotopy classes of complex projective structures onS,
+• Fuchsian spaceF( S) and quasi-Fuchsian spaceQF( S), parametrizing conjugacy classes of
+Fuchsian groups isomorphic toπ1(S)and their quasiconformal deformations,
+• The character varietyX(π1(S), PSL2(C)), parametrizing conjugacy classes of group homo-
+morphisms π1(S)→ PSL2(C).
+In the next section, we will see how to study these deformation spaces using symplectic geometry
+and in particular bi-Lagrangian structures.
+The primary purpose of this section is to establish the context and notations that we will
+rely on in the next section. However, the reader who is familiar with Teichmüller theory and the
+aforementioneddeformationspacesmaysafelyskipthissectionandreturntoitwhenevernecessary.
+Throughout this section,S is a connected, oriented, smooth, closed surface of negative Euler
+characteristic. We letg denote its genus (g⩾ 2) andπ its fundamental group with respect to some
+ﬁxed basepoint.
+4.1 Geometric structures and character varieties
+We start by introducing the general notion of locally homogeneous geometric structures on man-
+ifolds, their attendant deformation spaces, and the corresponding holonomy maps to character
+varieties. We refer to [Gol10] for a nice survey of geometric structures (also see [Thu97], [Gol88]
+and [Bau14]).
+4.1.1 Geometric structures and their deformation space
+Let X = G/H beahomogeneousspacefortheactionofaLiegroup G. Moreprecisely,assumethat
+Xisareal-analyticmanifoldonwhicharealLiegroup Gactsreal-analyticallyandtransitively. Inthe
+language of geometric structures, the pair(X, G) is called a(Klein) geometry. An(X, G)-structure
+on a smooth manifoldM is given by an (equivalence class of / maximal) atlas of charts mapping
+open sets ofM into X such that the transition functions coincide with the action of elements ofG
+on X. Such atlases are required to be compatible with the smooth structure onM and they must
+also respect the orientation ofM if M is oriented.
+The group Diﬀ(M) of (orientation-preserving ifM is oriented) diﬀeomorphisms ofM has a
+rightactiononthesetofall (X, G)-structureson M bypullingbackatlases. Let Diﬀ0(M) < Diﬀ(M)
+denoteitsidentitycomponent,consistingofalldiﬀeomorphismsof M isotopictotheidentitymap.
+The deformation space of (marked)(X, G)-structureson M is deﬁned as the quotient of the space
+of all(X, G)-structures by the action ofDiﬀ0(M):
+D(X,G)(M) ={(X, G)-structures onM}
+/
+Diﬀ0(M) .
+This deformation space comes with a natural topology (see [Gol88] for details). In general it
+may be quite pathological (for instance, the deformation space of aﬃne structures on a2-torus is
+24
+
+===== PDF PAGE 25 =====
+not Hausdorﬀ, see [BG05]), but in this paper we will study geometries for which the deformation
+space is a real-analytic manifold.
+Remark4.1. Themappingclassgroup π0(Diﬀ(M)) = Diﬀ(M)/Diﬀ0(M)(alsocalledthe diﬀeotopy
+groupof M) naturally acts on the deformation space, and the quotient space
+M(X,G)(M) =D(X,G)(M)
+/
+π0(Diﬀ(M)) ={(X, G)-structures onM}
+/
+Diﬀ(M)
+may be called themoduli space of(X, G)-structureson M.
+Remark 4.2. Some authors prefer to use the groupDiﬀ1(M) of homotopically trivialdiﬀeomor-
+phisms instead ofDiﬀ0(M) in the deﬁnition of the deformation space, see [Bau14, Remark 3.19].
+When M = S is a surface,Diﬀ0(S) and Diﬀ1(S) coincide, so the distinction does not matter. In
+general Diﬀ0(M)and Diﬀ1(M)may be diﬀerent but the former is always a normal subgroup of the
+latter with discrete quotient (see [Hat16] for more details).
+Holonomy
+A useful way to construct(X, G)-structures is to ﬁnd discrete groupsΓ < G acting freely and
+properly on open setsΩ⊆ X. Indeed, in that scenario the quotientM := Ω/Γ inherits a unique
+(X, G)-structure such that the covering mapΩ→ M is a morphism of(X, G)-manifolds. Such
+(X, G)-structuresarecalled embedded. Nowassume M isaﬁxedsmoothmanifoldanddenoteby π
+its fundamental group with respect to some ﬁxed basepoint. Any embedded(X, G)-structure onM
+can be described by a group homomorphismρ : π→ G with discrete imageΓ and a covering map
+f : ˜M→Ω⊆ X such that f is ρ-equivariant, i.e. equivariant for the action ofπ on the universal
+cover ˜M by deck transformations and onX via ρ : π→ G. It follows from the equivariance off
+that there is a quotient mapf : M→Ω/Γ which identiﬁesM toΩ/Γ as(X, G)-manifolds.
+More generally, any(X, G)-structure onM can be described by adeveloping map f : ˜M→ X
+and aholonomy representation ρ: π→ G, where f is a ρ-equivariant local diﬀeomorphism for
+some group homomorphism ρ. The developing map can be thought of as a global chart on˜M,
+conversely a developing map for a given(X, G)-structure on M can be reconstructed by analytic
+continuation starting with any local chart (refer to e.g. [Thu97] for a more detailed description).
+The development pair( f , ρ) for a given(X, G)-structure is unique up to the action ofG on such
+pairs by post-composition onf and conjugation onρ. Note that embedded(X, G)-structures are
+exactlythosewhosedevelopingmapisacoveringontoitsimage. Embedded (X, G)-structureswith
+a developing map which is a covering ontoX are calledcomplete.
+The diﬀeomorphism groupDiﬀ(M) has a natural right action on the setDev(X,G)(M) of all
+developmentpairs( f , ρ)byprecompositionon f. Thisactioncommuteswiththeleftactionof Gon
+such pairs (by post-composition onf and conjugation onρ). Consequently, assigning to a marked
+(X, G)-structure the conjugacy class of its holonomy representation is a well-deﬁned operation that
+induces a so-calledholonomy map
+hol:D(X,G)(M)→ Hom(π, G)/G . (5)
+In general, this map can be somewhat corrupt: one would like to say that it is a local home-
+omorphism but that is not always true, see Remark 4.3 below. However, we shall see that it is
+well-behaved for the geometries that we consider in this paper.
+Remark 4.3. The best positive result about the holonomy map in general is that itsG-equivariant
+lift
+ˆhol: Dev(X,G)(M)
+/
+Diﬀ0(M)→ Hom(π, G)
+25
+
+===== PDF PAGE 26 =====
+isalocalhomeomorphism( Deformationtheorem,see[Gol10]). Thequotientmap holisstillopen,
+butlocalinjectivitymayfailingeneral(see[Kap90],[Bau14]). However,inrestrictiontothe stable
+locus corresponding to(X, G)-structures with irreducible holonomy (see § 4.1.2 below), the action
+of G is proper, so thathol descends to a local homeomorphism at least away from the ﬁxed points
+of the action (which correspond to the orbifold points of the stable locus in the character variety).
+After deﬁning character varieties in § 4.1.2 below, we will preferably call holonomy map the
+map
+hol:D(X,G)(M)→X( π, G) (6)
+obtained by composition of the holonomy map (5) with the natural surjectionHom(π, G)/G→
+X(π, G).
+4.1.2 Character varieties
+The quotientHom(π, G)/G is usually quite pathological:Hom(π, G) can already be singular, but
+worse is the fact that the action ofG on it by conjugation is generally neither proper nor free. For
+thatreason,itisoftenpreferabletoworkwithaHausdorﬀquotientcalledthe charactervariety and
+denotedX(π, G) = Hom(π, G)//G, which moreover has an algebraic structure whenG is algebraic.
+Let us discuss this a bit more precisely in what follows and refer to [Sik12] for more details.
+Let π be a ﬁnitely generated group and letG be a reductive complex algebraic group5, for
+instance G = PSLn(C). LetHom(π, G) denote the space of group homomorphisms (also abusively
+called “representations”) fromπ to G. It is an aﬃne algebraic set on whichG acts by conjugation,
+and the character varietyX(π, G)is deﬁned as the algebraic quotient (orGIT quotient)6:
+X(π, G) = Hom(π, G)//G .
+The character varietyX(π, G) is an aﬃne algebraic set (but it is not necessarily irreducible when
+Hom(π, G)itselfisnot). Asatopologicalspace,itisthelargestHausdorﬀquotientof Hom(π, G)/G,
+in other words
+X(π, G) = Hom(π, G)/∼ (7)
+where the equivalence relation∼ on Hom(π, G) identiﬁes homomorphisms whose orbit closures
+intersect. Note that (7) may be taken as a deﬁnition of the character variety whenG is merely a
+real Lie group (or in fact a Hausdorﬀ topological group), for instanceG = PSLn(R). When G
+is a reductive complex algebraic group, any equivalence class contains a unique closed orbit, and
+representations ρ : π→ G with closed orbits are precisely the completely reducible representa-
+tions7. Such representations are thepolystablelocus Homps(π, G)⊂ Hom(π, G) in the language of
+Geometric Invariant Theory. Therefore, the character variety (forG reductive algebraic) may be
+deﬁned as a topological space as
+X(π, G) = Hom(π, G)/∼ = Homps(π, G)/G .
+5A reductive algebraic group is assumed aﬃne by deﬁnition (equivalently it is a linear group, according to a well-
+known theorem). A connected aﬃne algebraic group over the complex numbers is reductive if and only if it has a
+reductive Lie algebra and its center is of multiplicative type. It is also equivalent to the group being a complexiﬁcation
+of a compact real algebraic group.
+6Letusquicklyrecallhowthisisdeﬁned. Let M beanaﬃnealgebraicsetand Gareductivecomplexalgebraicgroup
+acting on M. Let C[M] denote the coordinate ring of regular functions onM and C[M]G⊂ C[M] the subalgebra of
+G-invariant functions. C[M]G is ﬁnitely generated providedG is reductive by Nagata’s theorem solving Hilbert’s 14th
+problem. Therefore C[M]G is the coordinate ring of an aﬃne algebraic set (namelySpec C[M]G). This aﬃne set is
+called the(aﬃne) GIT quotientof M and denotedM//G.
+7Bydeﬁnition,a completelyreducible representation ρ : π→ Gisoneforwhich H := ρ(π)isacompletelyreducible
+subgroup ofG, meaning that its Zariski closure is a reductive subgroup. Equivalently, for every parabolic subgroupP
+containing H, there is a Levi factor ofP containing H.
+26
+
+===== PDF PAGE 27 =====
+Inparticular,thereisanaturalsurjectivemap Hom(π, G)/G→X( π, G)whichrestrictstoabijection
+(in fact a homeomorphism) onHomps(π, G)/G.
+The stable locus Homs(π, G) consists of the irreducible representationsρ : π→ G8. When
+π = π1(S,·) is the fundamental group of a closed surface of negative Euler characteristic, all stable
+points ρ are smooth points ofHom(π, G), so that they project to either smooth points or orbifold
+points in the character varietyX(π, G), depending on whether their centralizer inG is equal to the
+center Z(G) < Goraﬁniteextensionofit. Itisadditionallyknownthattherearenoorbifoldpoints
+for G = GLn(C)or G = SLn(C). We refer to [Sik12] for these results and more details.
+4.2 Fricke-Klein spaceF( S) and the character varietyX(π,PSL2(R))
+We now specialize to2-dimensional hyperbolic geometry,i.e. the Klein geometry(X, G) where
+X = H2 is the hyperbolic plane andG = Isom+(H2)≈ PSL2(R)9 is the group of orientation-
+preservingisometriesofthehyperbolicplane. Recallthat Sisasmooth,closed,oriented,connected
+surface of negative Euler characteristic.
+An(X, G)-structure onS is called ahyperbolic structure, and the deformation space
+F( S) =D(X,G)(M) ={hyperbolic structures onM}
+/
+Diﬀ0(M)
+is called theFricke-Klein spaceof S.
+One can show thatF( S) is topologically a cell of dimension6g− 6 where g is the genus ofS,
+and that it has a natural real-analytic structure (see [Pap07] for several diﬀerent proofs).
+Inthissetting, all(X, G)-structuresareautomatically completeandtheholonomy map(6)is an
+embedding onto a connected component of the character variety:
+Theorem 4.4(Goldman [Gol80]). The holonomy maphol :F( S)→X( π,PSL2(R)) is an em-
+bedding. Its image in the character variety is a connected component, consisting precisely of the
+equivalence classes of all discrete and faithful group homomorphismsρ: π→ G10.
+Itisageneralfactthatif G preservesaRiemannianmetricon X (equivalently G actson X with
+compact stabilizers) andM is closed, then all(X, G)-structures are complete. Furthermore, under
+some topological restrictions onM (cf. see Remark 4.2), the holonomy maphol:D(X,G)(M)→
+X(π, G) is an embedding. Goldman showed that in the specialization being discussed here, the
+image ofF( S) in the character variety is the connected component with maximal Euler class, see
+[Gol80] for more details. That component of the character variety is often called the “Teichmüller
+component”, but we prefer to call it the Fricke-Klein component.
+Remark 4.5. The “character variety”X(π,PSL2(R)) does not come with an algebraic structure as
+describedin§4.1.2because PSL2(R)isnotacomplexreductivealgebraicgroup,but X(π,PSL2(R))
+isstillwell-deﬁnedatleastasaHausdorﬀquotient. Thatbeingsaid,thereisofcourseanatural“in-
+clusion”11mapX(π,PSL2(R))→X( π,PSL2(C)),andthecomplexcharactervariety X(π,PSL2(C))
+does come with an algebraic structure, but the image ofX(π,PSL2(R)) inX(π,PSL2(C)) is only a
+real semi-algebraic subset in general. Daniele Alessandrini pointed out to us that it is also a real-
+analytic subvariety in the case whereπ = π1(S,·) is the fundamental group of a closed surface by
+8A representation ρ : π→ G is calledirreducible when ρ(π) is not contained in any parabolic subgroup ofG.
+Technically, irreducible representations are the stable points ofHom(π, G) for the action ofG/Z(G), they are only
+(“properly”) stable for the action ofG when G has ﬁnite center.
+9Some readers might prefer to think of it asG = PSU(1, 1), G = SO0(1, 2), G = PSp(2, R)or G = PGL+(2, R).
+10Tobeaccurate,thediscreteandfaithfulrepresentationsform twoconnectedcomponentsoftherealcharactervariety.
+They correspond to holonomies of hyperbolic structures onS equipped with either of its two possible orientations.
+11This “inclusion” is actually a2 : 1 map, essentially becausePSL2(R) , PGL2(R).
+27
+
+===== PDF PAGE 28 =====
+virtue of thenonabelian Hodge correspondence12 and Hitchin’s parametrization ofSL2(R)-Higgs
+bundles (see [Hit87, section 7]).
+4.3 Teichmüller spaceT( S) and the Weil-Petersson metric
+The Teichmüller spaceof S is the deformation space of complex structures onS (compatible with
+itsorientation). Itisdeﬁnedthesamewayasadeformationspaceof (X, G)-structures(see§4.1.1),
+with the only diﬀerence that the pseudogroup of invertible holomorphic functions between open
+sets of C plays the role of the Lie groupG acting on C. Let us make this more precise in what
+follows.
+A complex structure on S is given by an (equivalence class of / maximal) atlas of charts
+mapping open sets ofS into the complex lineCsuch that the transition functions are holomorphic.
+We typically denote byX the surface S equipped with a complex structure andX is called a
+Riemann surface. In what follows, we always assume that complex structures onS are compatible
+with its given smooth structure and orientation. The group Diﬀ(S) of orientation-preserving
+diﬀeomorphisms of S naturally acts on complex structures onS (by pulling back atlases). The
+Teichmüller space ofS is the space of all complex structures onS up to the action of the subgroup
+Diﬀ0(S)of isotopically trivial diﬀeomorphisms:
+T( S) ={complex structures onS}/Diﬀ0(S) .
+Kodaira-Spencer deformation theory (see [KS58], also [EE69]) shows thatT( S) is a complex
+manifold with holomorphic tangent spaceTXT( S) = ˇH1(X,ΘX), whereΘX is the sheaf of holo-
+morphic vector ﬁelds onX. Via Serre duality, one can identify the holomorphic cotangent space
+as T∗
+XT( S) = H0(X, K2
+X) where KX is the canonical bundle onX, in other wordsT∗
+XT( S) is the
+space ofholomorphic quadratic diﬀerentialson X (tensors on X of the formφ = ϕ(z)dz2 with ϕ
+holomorphic,inacomplexcoordinate z). AquickapplicationoftheRiemann-Rochtheoremshows
+thatT( S)has complex dimension3g− 3, whereg is the genus ofS.
+An immediate consequence of the celebrated Poincaré uniformization theorem (and the fact
+that any hyperbolic structure onS is complete, see § 4.2) is that there is a 1:1 correspondence
+between complex structures onS and hyperbolic structures onS. Concretely, one can associate to
+each complex structureX the hyperbolic structure given by thePoincaré metric, i.e. the unique
+conformal metric onX with constant curvature−1. This correspondence passes to the quotient as
+a real-analytic diﬀeomorphism:
+F :T( S)→F( S) (8)
+whereF( S) is the Fricke-Klein space deﬁned above (see § 4.2). For this reason,F( S) itself is
+sometimesreferredtoas“theTeichmüllerspaceof S”,butwewillmaintainthedistinctionbetween
+T( S)andF( S).
+The Weil-Petersson productof two holomorphic quadratic diﬀerentialsφ and ψ is deﬁned by
+⟨φ, ψ⟩WP =−1
+4
+¹
+X
+φ· σ−1· ψ
+where σ−1 is the dual current of the Poincaré area formσ. This Hermitian inner product on
+T∗
+XT( S) = H0(X, K2
+X)deﬁnesbydualityaHermitianmetric ⟨· ,·⟩WP onthecomplexmanifold T( S),
+12This real-analytic correspondence between the character variety and the moduli space of Higgs bundles is due to
+Hitchin and Donaldson ([Hit87], [Don87]) and to Corlette and Simpson ([Cor88], [Sim91, Sim92]) in the more general
+case whereπ is the fundamental group of a smooth Kähler variety andG is a reductive complex algebraic group.
+28
+
+===== PDF PAGE 29 =====
+which turns out to be Kähler, as was ﬁrst shown by Ahlfors [Ahl61]. It is called theWeil-Petersson
+metriconT( S)and we shall denote it
+hWP = gWP− iωWP
+where gWP and ωWP are the Weil-Petersson Riemannian metric and Kähler form respectively.
+GoodgeneralreferencesforTeichmüllertheoryandtheWeil-Peterssonmetricinclude[Hub06],
+[Pap07], and [Wol10].
+4.4 Deformation space of complex projective structuresCP( S)
+4.4.1 Deformation space and holonomy
+Letusnowconsider“one-dimensionalcomplexprojectivegeometry” (X, G),where X = CP1 isthe
+complexprojectivelineand G = PGL2(C) = PSL2(C)isthegroupofautomorphismsof CP1 acting
+by projective linear transformations. In this situation, an(X, G)-structure onS is called acomplex
+projectivestructure,andthedeformationspace CP( S) :=D(X,G)(S)iscalledthe deformationspace
+of(marked)complexprojectivestructures . Averygoodreferenceforcomplexprojectivestructures
+is Dumas’ survey [Dum09].
+A pleasant feature of the deformation spaceCP( S) is that it is a complex manifold. As in the
+case of Teichmüller spaceT( S), one can use deformation theory to express the tangent space of
+CP( S) in terms of Čech cohomology, but the description of tangent vectors is not quite as explicit
+aswithT( S). Thatbeingsaid,CP( S)hasastrikingparametrizationasaholomorphicaﬃnebundle
+overT( S). We brieﬂy describe this so-calledSchwarzian parametrizationin § 4.4.2.
+It is not hard to show that the holonomy of a complex projective structure onS is always
+irreducible, so that the holonomy map (6)
+hol :CP( S)→X( π,PSL2(C))
+takes values in the smooth (stable) locus of the character varietyX(π,PSL2(C)). Moreover, it is a
+local biholomorphism, as ﬁrst shown by Hejhal [Hej75], Earle [Ear81] and Hubbard [Hub81]. It
+is however not a covering map onto its image ([Hej75]). Gallo, Kapovich, and Marden [GKM00]
+precisely determined the image of the holonomy map: a homomorphismρ : π→ PSL2(C) occurs
+as the holonomy of a complex projective structure if and only ifρ is nonelementary and lifts to
+SL2(C). Here, a representation is calledelementary if its image is bounded or virtually abelian.
+4.4.2 Schwarzian parametrization
+First observe that there is a “forgetful projection”
+p:CP( S)→T( S) . (9)
+This is simply because a complex projective atlas is in particular a holomorphic atlas, so any
+complex projective structure onS deﬁnes an underlying complex structure. The mapp is onto
+T( S), because a right inverse is provided by the Fuchsian sectionσ0 :T( S)→CP( S), see § 4.5
+below. It is also not hard to show thatp is holomorphic. It turns out that for anyX∈T( S), the
+ﬁber p−1(X) can be equipped with the structure of an aﬃne space modeled on the vector space
+H0(X, K2
+X), we explain this in the next paragraph. For now, recall thatH0(X, K2
+X) is the cotangent
+space T∗
+XT( S), so that globallyCP( S) is an aﬃne bundle modeled on the vector bundleT∗T( S).
+Since an aﬃne space is not canonically isomorphic to its underlying vector space unless an origin
+29
+
+===== PDF PAGE 30 =====
+ischosen,CP( S)isnotcanonicallyisomorphicto T∗T( S). However,thechoiceofa“zerosection”
+σ :T( S)→CP( S) does deﬁne an isomorphismτσ :CP( S)→ T∗T( S), characterized as the
+unique isomorphism of aﬃne bundles such thatτσ◦ σ is the zero section ofT∗T( S).
+It remains to explain why, given a pointX ∈ T(S), the ﬁber p−1(X) ⊂ CP(S) enjoys the
+structure of an aﬃne space modeled on the vector spaceH0(X, K2
+X): how can one associate to two
+complex projective structuresZ1, Z2∈ p−1(X) a holomorphic quadratic diﬀerentialφ∈ H0(X, K2
+X)
+representing the aﬃne subtractionZ2− Z1? The Schwarzian derivativeis a diﬀerential operator
+thatholdstheanswertothatquestion. Letussaywhatitisinafewsentencesandreferto[Dum09]
+and[And98]formoredetails. TheSchwarzianderivativeisoriginallydeﬁnedforalocallyinjective
+holomorphic function f : U→ C (where U is some open subset ofC) as
+S f(z) = f′′′(z)
+f′(z) − 3
+2
+( f′′(z)
+f′(z)
+)2
+.
+One should think of the Schwarzian derivative off as the holomorphic quadratic diﬀerential
+S f = S f(z) dz2 rather than a function, given how it transforms under a projective change of
+coordinate onCP1. In a sense that can be made precise, the Schwarzian derivative off measures
+how far f is from being a projective linear transformation13. Now, given a locally injective
+holomorphic map f : Z1→ Z2 where Z1, Z2∈ P(X), one can take the Schwarzian derivative of
+f in local projective coordinates onZ1 and Z2, which yields a holomorphic quadratic diﬀerential
+φ∈ Q(X). This holomorphic quadratic diﬀerential, for f = idX, deﬁnes the aﬃne subtraction
+Z2− Z1∈ H0(X, K2
+X). The fact that it respects the axioms of aﬃne subtraction (Weyl’s axioms) is a
+consequence of the classical properties of the Schwarzian derivative that we will not reiterate here
+(see [Dum09] for details).
+4.5 Fuchsian and quasi-Fuchsian structures
+AKleiniangroup isbydeﬁnitionadiscretesubgroupof PSL2(C)14. Thegroup PSL2(C) = PGL2(C)
+can be regarded alternatively as the group of automorphisms of the complex projective lineCP1
+actingprojectivelylinearly,orthegroupoftheautomorphismstheRiemannsphere ˆC = C∪{∞}≈
+S2actingbyMöbiustransformations,orthegroupoforientation-preservingisometriesofhyperbolic
+3-space H3. These points of view are consistent with each other considering that:
+• Stereographic projection identiﬁes the round2-sphere S2 with the Riemann sphereˆC, which
+can also be identiﬁed to the complex projective lineCP1 (via the “aﬃne patch”z↦→[ z : 1]).
+• S2 is also theideal boundaryof H3 (in other words its Gromov boundary), and an isometry
+of H3 is uniquely determined by its continuous extension on the ideal boundary.
+LetΓ be a Kleinian group. A pointx∈ CP1 is called apoint of discontinuity(or awandering
+point)for Γif x hasaneighborhood U⊂ CP1 suchthat gU∩ U =∅forallbutﬁnitelymany g∈Γ.
+The domain of discontinuityofΓ is the setΩ⊂ CP1 of all points of discontinuity. One can show
+thatΓ acts properly onΩ, andΩ is the largest open set with that property. Thelimit setofΓ is the
+setΛ = CP1−Ω. One can show thatΛ is ﬁnite if and only ifΓ is elementary (virtually abelian).
+13Onecandeﬁnethe osculatingmapto f asthemap Osc( f) : U→ PSL2(C),whosevalueatapoint zistheprojective
+linear transformation that best approximatesf at z. Then the Darboux derivative ofOsc( f) is equal to the Schwarzian
+derivative of f, suitably interpreted. In particular, it is clear that
+f is projective linear⇔ Osc( f)is constant⇔ S f = 0 .
+14A Kleinian group is classically required to have a nonempty domain of discontinuity (e.g. for Thurston [Thu80],
+Maskit [Mas88] or Kapovich [Kap09]), but modern usage tends to allow any discrete group.
+30
+
+===== PDF PAGE 31 =====
+When Γ is not elementary, its limit setΛ can be characterized as the smallestΓ-invariant closed
+subset ofCP1, or the set of accumulation points of the orbit of any pointx∈ H3∪ CP1.
+A Fuchsian groupis a Kleinian group conjugate to a subgroup ofPSL2(R)⊂ PSL2(C). A
+Fuchsian group can be characterized as a Kleinian group whose limit setΛ is contained in some
+round circleC, and which preserves both components ofCP1− C (which are round disks). More
+generally, aquasi-Fuchsian groupis a Kleinian groupΓ whose limit setΛ is contained in some
+topological circle C, and which preserves both components ofCP1− C (which are topological
+disks). A (quasi-)Fuchsian group Γ is called of the ﬁrst kindor of the second kinddepending
+on whetherΛ = C orΛ ⊊ C. If Γ is a ﬁnitely generated torsion-free Kleinian group, thenΓ is
+quasi-Fuchsian of the ﬁrst kind if and only if it satisﬁes the seemingly stronger condition that its
+action on CP1 is topologically conjugate to the action of a Fuchsian group of the ﬁrst kind,i.e.
+thereexistsahomeomorphism f : CP1→ CP1 suchthat fΓ f−1 isFuchsian([Ber70,Theorem4]).
+Moreover, f can be taken (in fact is necessarily) quasiconformal in this situation.
+Let S be a closed oriented surface and letπ denote its fundamental group as in the rest of
+the section. A representation ρ: π→ PSL2(C) is called Fuchsian (resp. quasi-Fuchsian) ifρ is
+injective and its imageΓ = ρ(π)⊂ PSL2(C) is a Fuchsian (resp. quasi-Fuchsian) group of the
+ﬁrst kind. The deformation space of Fuchsian(resp. quasi-Fuchsian) structures denotedF( S)
+(resp.QF( S))isthesubsetofthecharactervariety X(π,PSL2(C))whosepointsaretheequivalence
+classesofFuchsian(resp. quasi-Fuchsian)representations. Itisaremarkablefactthat QF( S)isan
+open subset of the character variety15, moreover it lies in the smooth locus.
+Let ρbeaquasi-Fuchsianrepresentationwithimage Γ⊂ PSL2(C). Thedomainofdiscontinuity
+Ω ofΓ is the disjoint union of two invariant topological disksΩ+ andΩ− on whichΓ acts freely
+properly, therefore the quotientsΩ+/Γ andΩ−/Γ are both closed surfaces diﬀeomorphic toS. For
+notational comfort let us denoteS+ = S the surface S with its given orientation, andS− the same
+surfacewiththeoppositeorientation. Wecanassumethatwecalled Ω± thecomponentof Ωthathas
+the“same”orientationas S± ,inthesensethatthereexistsanorientation-preservinghomeomorphism
+f± : S± →Ω±/Γ whose induced map at the level of fundamental groups is preciselyρ. Note that
+both quotient surfacesΩ±/Γ inherit complex projective structures, being given as a quotient of an
+open set ofCP1 by a discrete subgroup ofPSL2(C) acting freely properly. In fact, the lifted map
+˜f± : ˜S→ Ω± can be seen as a developing map for a complex projective structureZ± on S± with
+holonomy ρ: this is a typical example of an embedded geometric structure (see Remark 4.1.1).
+Suchprojectivestructuresarecalled standardquasi-Fuchsianprojectivestructures 16. Thusthereis
+a well-deﬁned map
+(Z +, Z−) : QF( S)→CP( S+)×CP( S−)
+whichassociatestothequasi-Fuchsianrepresentation ρthepairofstandardquasi-Fuchsianprojec-
+tivestructures(Z +(ρ), Z−(ρ)). Itisnothardtoshowthatthismapisholomorphic,infactnotethat Z±
+is a right inverse of the holonomy maphol± :CP( S±)→X( π,PSL2(C)). Post-composing the map
+(Z +, Z−)withthe“forgetfulprojection”(9)yieldsamap QF( S)→T( S+)×T( S−)whichassociates
+to the quasi-Fuchsian representationρ a pair of Riemann surfaces(X +, X−). Bers’ simultaneous
+15This fact is essentially due to Bers’ simultaneous uniformization theorem discussed in the next paragraph. It is
+moreover true thatQF( S) is the interior of the subsetAH( S)⊂X( π,PSL2(C)) of equivalence classes of discrete and
+faithful representations. This theorem is due to the work of Ahlfors, Bers, Maskit, Kra, Marden, Thurston and Sullivan
+[AB60, Ahl64, Ber87, Kra72, Mar74, Sul85]. Let us refer to [CM04, Chapter 7] for an exposition of their theory, which
+holdsmoregenerallyforgeometricallyﬁniterepresentations. ThepositiveanswertotheBers-Sullivan-Thurston“density
+conjecture” [NS12, Ohs11] shows that furthermore,AH( S)is the closure ofQF( S)in the character variety.
+16There are inﬁnitely many complex projective structures with same quasi-Fuchsian holonomyρ. The standard one
+is the only one that is an embedded projective structure (whose developing map is an embedding), all the others have
+inﬁnite-to-one developing maps. They are calledexotic quasi-Fuchsian structures and Goldman [Gol87] showed that
+any one of them can be obtained from the standard one by grafting along an rational lamination. Shinpei Baba gave a
+generalization of this result for an arbitrary holonomy ﬁberhol−1(ρ)⊂CP( S)[Bab15, Bab13].
+31
+
+===== PDF PAGE 32 =====
+uniformizationtheorem [Ber60a] says that this map is bijective, it is in fact a biholomorphism. Let
+us denote its inverse by
+QF(· ,·) : T( S+)×T( S−)→QF( S) .
+For a ﬁxedX−∈T( S−), the mapQF(· , X−):T( S)→QF( S) is called ahorizontal Bers slice.
+Similarly, forX +∈T( S), the mapQF(X +,·) :T( S−)→QF( S)is called avertical Bers slice. The
+quasi-Fuchsian spaceQF( S) is thus foliated by horizontal Bers slices and by vertical Bers slices,
+andthesetwofoliationsaretransverse. Afterpost-composingwiththemap Z + :QF( S)→CP( S),
+a horizontal Bers slice becomes a mapσX− :T( S) → CP(S) called a Bers section, while a
+vertical Bers slice becomes a mapBX+ :T( S−)→ CP( S). By construction, the Bers section
+σX− is a section to the forgetful projectionp:CP( S)→T( S), while the mapBX+ lands in the
+ﬁber p−1(X +)⊂CP( S). Recall that p−1(X +) is an aﬃne space modeled on the vector space of
+holomorphic quadratic diﬀerentialsH0(X, K2
+X+), as explained in § 4.4.2. One can thus deﬁne the
+Bers embeddingmap bX+ using aﬃne subtraction as follows:
+bX+ :T( S−)→ H0(X +, K2
+X+)
+X−↦→ BX+(X−)− Z0
+(10)
+where Z0 is the standard Fuchsian projective structureZ0 = QF(X +, X +). Bers showed thatbX+
+is a holomorphic embedding of Teichmüller spaceT( S−)≈ T( S) in H0(X, K2
+X+)≈ C3g−3, and
+moreover has bounded image [Ber60b, Ber61].
+Aspecialcaseofthesituationdiscussedaboveiswhen ρhappenstobeaFuchsianrepresentation.
+In that case,Λ is a round circle andΩ+ and Ω− are round disks. In fact, after conjugatingρ,
+we can assume thatΓ ⊂ PSL2(R), Λ = R∪{∞} (extended real line),Ω+ = H (upper half-
+plane)and Ω− = H (lower half-plane). Since H can be identiﬁed to the hyperbolic plane (it is
+Poincaré’s half-plane model) andΓ acts freely properly onH by isometries, the quotient surface
+Z + = H/Γ inherits a hyperbolic structure, in addition to a complex projective structure, andρ is
+the holonomy of both these geometric structures. We have just described an identiﬁcation between
+the Fuchsian deformation space and the Fricke-Klein deformation space ofS, which is the reason
+why we somewhat abusively use the same notationF( S) for both. Clearly, the Fuchsian space
+F( S)⊂QF( S)arises as the image of the map
+X∈T( S)↦→ QF(X, X)∈QF( S)
+called theFuchsian slice. Note that seen as map fromT( S) to the Fricke-Klein spaceF( S), this
+is nothing else than the uniformization map (8). After composing the Fuchsian slice with the map
+Z + :QF( S)→CP( S), one obtains a mapσ0 :T( S)→CP( S) called theFuchsian section. By
+construction, the Fuchsian section is a section to the forgetful projectionp:CP( S)→T( S).
+5 Applications to Teichmüller theory
+Inthissection,wepresentsomeapplicationsofthesymplecticgeometrynotionsthatwedeveloped
+insections1,2,and3toTeichmüllertheory,morespeciﬁcallytothedeformationspacesintroduced
+in section 4.
+Throughoutthissectionagain, Sisaconnected,oriented,smooth,closedsurfaceofgenus g⩾ 2
+and fundamental groupπ.
+32
+
+===== PDF PAGE 33 =====
+5.1 Symplectic structure of deformation spaces
+Deformation spaces associated to a closed surface tend to have a natural symplectic structure.
+Goldman established the main reason for that:
+Theorem5.1 (Goldman,[Gol84]). Let Gbeacomplexsemisimplealgebraicgroup. Thecharacter
+varietyX(π, G)enjoys a natural complex symplectic structureωG.
+Goldman shows that the2-form ωG is an algebraic tensor on the character variety, deﬁning in
+particular a complex symplectic structure on the smooth locus. IfG is merely a real / complex
+semisimple Lie group, ωG is still well-deﬁned as a real / complex symplectic structure on the
+smooth locus. If G is only assumed reductive, the theorem also holds with the trade-oﬀ that the
+symplectic structure is not univocal, its deﬁnition requires a choice. Let us explain in a few words
+howthissymplecticstructureisconstructed. TheZariskitangentspacetothecharactervarietyata
+point[ρ]is given by
+T[ρ]X(π, G) = H1(π,gAd◦ρ)
+whereg is the Lie algebra ofG. The notationgAd◦ρ signiﬁes thatg is aπ-module viaAd◦ρ: π→
+Aut(g), so it is possible to deﬁne the group cohomology ofπ with coeﬃcients ing. Let B denote
+the Killing form ofg, which is nondegenerate becauseg is semisimple. Given two elementsα,
+β∈ H1(π,gAd◦ρ), one can take their cup product withB as coeﬃcient pairing to obtain an element
+α∪B β∈ H2(π, C). Since π = π1(S) and S is a closed oriented surface,H2(π, C) is isomorphic to
+thesingularcohomology H2(S, C)whichisisomorphicto CbyPoincaréduality. Thereforewehave
+describedhowtoassignacomplexnumbertothepair (α, β). Itisclearthatthisassignmentglobally
+deﬁnes an algebraic nondegenerate2-form on the character varietyX(π, G). It is not easy to show
+that ωG is closed as a2-form, but it follows from a beautiful argument of symplectic reduction due
+to Atiyah and Bott [AB83] that Goldman adapted to this setting.
+A consequence of Goldman’s theorem is that any deformation space of(X, G)-structures onS
+also enjoys a natural symplectic structure: just pull back the symplectic structure of the character
+variety by the holonomy map (6). Somewhat abusively, we still denote byωG the symplectic
+structure of the deformation spaceD(X,G)(S).
+In the same paper [Gol84], Goldman shows that in the case of Fricke-Klein spaceF( S), the
+real symplectic structureωG coincides with the Weil-Petersson Kähler formωWP on Teichmüller
+space. More precisely, the uniformization map (8):(T( S), ωWP)→(F( S), ωG) is a real symplec-
+tomorphism.
+In the case of complex projective structures,ωG is a complex symplectic structure inCP( S).
+The symplectic geometry ofCP( S) was carefully studied in [Lou15a, Lou15c]. In particular, it
+is shown in [Lou15a] that the Schwarzian parametrization is a symplectomorphism, improving a
+result of Kawai [Kaw96]. More precisely:
+Theorem 5.2(Loustau [Lou15a]). Let σ be a section to the projectionp :CP( S)→T( S) (9).
+Let τσ :CP( S)→ T∗T( S) denote the isomorphism of aﬃne bundles given by the Schwarzian
+parametrization usingσ as the “zero section” (see § 4.4.2). The following are equivalent:
+(i) σ is Lagrangian:σ∗ωG = 0.
+(ii)(τσ)∗ω =−i ωG, where ω is the canonical complex symplectic structure on the cotangent
+bundle T∗T( S).
+(iii) d(σ− σ0) = i ωWP, whereσ0 :T( S)→CP( S)is the Fuchsian section.
+Moreover,itisknownthatBerssections(see§4.5)andtheirgeneralizationsincludingSchottky
+sections satisfy the conditions of this theorem, it is a consequence of the work of McMullen
+[McM00], Takhtajan and Teo [TT03] and Loustau [Lou15a]. A consequence of this theorem is
+that the projectionp:CP( S)→T( S) is a Lagrangian ﬁbration, a fact that was already known to
+33
+
+===== PDF PAGE 34 =====
+Goldman [Gol04]. Steven Kerckhoﬀ also proved part or all of these facts in unpublished work.
+Let us mention that other recent activity in this subject (proofs and new perspectives on Kawai’s
+theorem) are due to Bertola-Korotkin-Norton [BKN17] and Takhtajan [Tak17].
+5.2 Complex bi-Lagrangian geometry of quasi-Fuchsian space
+Wereferto§4.5forthedeﬁnitionofquasi-Fuchsianspace QF( S). Asanopensubsetinthesmooth
+locus of the character varietyX(S, PSL2(C)), quasi-Fuchsian spaceQF( S) is a complex manifold
+of dimension 3g− 3. MoreoverQF( S) comes with a natural complex symplectic structureωG,
+which is just the restriction of Goldman’s symplectic structure. Let us mention that it was showed
+in[Lou15a]thatthecomplexFenchel-NielsencoordinatesintroducedbyKourouniotis[Kou94]and
+Tan[Tan94],whichareglobalholomorphiccoordinatesin QF( S),areDarbouxcoordinatesforthe
+complex symplectic structureωG.
+It turns out that as a complex symplectic manifold,(QF( S), ωG) is the complexiﬁcation of the
+real-analytic symplectic manifold(T( S), ωWP):
+Proposition 5.3.There is a commutative diagram
+T( S) F( S)
+T( S)×T( S) QF( S).
+∆
+F
+hol
+QF
+where the vertical arrows are complexiﬁcations of real-analytic manifolds, and the horizontal
+arrows are given by (simultaneous) uniformization. Moreover, all maps are (complex) symplecto-
+morphisms.
+Remark 5.4. Given the above proposition, we see thatsimultaneous uniformization is the com-
+plexiﬁcation of uniformization. By the uniqueness of complexiﬁcation, this lemma shows that
+(independent of simultaneous uniformization) there exists a unique biholomorphism between a
+neighborhood of the diagonal inT( S)×T( S)and a neighborhood ofF( S)inQF( S).
+Proof. The commutativity of the diagram is obvious from the discussions in section 4.5. The
+diagonal map∆ :T( S)→T( S)× T( S) is a complexiﬁcation since this is the deﬁnition of the
+canonical complexiﬁcation of the complex manifoldT( S) (cf Proposition 3.5). Moreover, the
+constructionofthecomplexsymplecticstructureon T( S)×T( S)isviaanalyticcontinuationofthe
+Kähler form ofT( S)along the diagonal, therefore∆ is a symplectic embedding by construction.
+By the commutativity of the diagram, and the fact that theFuchsian sliceQF◦∆ :T( S)→
+QF( S)is the composition of a maximal totally real embedding followed by a biholomorphism, the
+map hol :F( S)→QF( S) is a complexiﬁcation. It was proved by Goldman in [Gol84] (as we
+mentioned in § 5.1) that hol is a symplectic embedding.
+Finally, sinceF :T( S)→F( S) is a symplectomorphism, the uniqueness of the complex sym-
+plectic structure in the complexiﬁcation implies thatQF is a symplectomorphism. This completes
+the proof.
+□
+Recall that Teichmüller spaceT( S) equipped with the Weil-Petersson metric is a Kähler man-
+ifold. We can thus use Theorem 3.8 to show thatQF( S), as the complexiﬁcation ofT( S), enjoys
+a natural complex bi-Lagrangian structure. Theorem 3.8 only predicts that this structure exists in
+some neighborhood of the Fuchsian slice, but we show that it is actually well-deﬁned everywhere
+34
+
+===== PDF PAGE 35 =====
+inQF( S). Moreover, it is remarkable that the complex symplectic structure and the two transverse
+Lagrangianfoliationsthatdeﬁnethebi-LagrangianstructurearerespectivelyGoldman’ssymplectic
+structure and the two foliations ofQF( S)by Bers slices:
+Theorem 5.5.There exists a complex bi-Lagrangian structure(ω,F1,F2)in quasi-Fuchsian space
+QF( S)such that:
+(i) The complex symplectic structureω is equal to Goldman’s symplectic structureωG.
+(ii) The complex Lagrangian foliationsF1 andF2 are the horizontal and vertical foliations of
+QF( S)by Bers slices.
+Moreover, this bi-Lagrangian structure coincides with the complex bi-Lagrangian structure pre-
+dicted by Theorem 3.8, whereQF( S) is seen as a complexiﬁcation of Teichmüller spaceT( S) via
+the Fuchsian sliceQF◦∆ = hol◦ F :T( S)→QF( S). (cf Proposition 5.3).
+Proof. We have seen thatQF( S) can be identiﬁed holomorphically toT( S+)×T( S−) i.e.T( S)×
+T( S) via Bers’ simultaneous uniformization theorem. Under this identiﬁcation, the foliations of
+QF( S)byhorizontalandverticalBersslicescorrespondbydeﬁnitiontothehorizontalandvertical
+foliationsoftheproduct T( S)×T( S). Thesetwofoliationsarepreciselywhatwecalledthecanonical
+foliations of the canonical complexiﬁcationT( S)× T( S) (see Deﬁnition 3.6), and we showed in
+Theorem 3.8 that these two foliations are the foliations of the complex bi-Lagrangian structure of
+the complexiﬁcation. The fact that the complex symplectic structure coincides with Goldman’s
+symplecticstructurewasprovedinProposition5.3above. Thefactthatthebi-Lagrangianstructure
+existseverywherein QF( S)isaneasyconsequenceofthefactthatGoldman’ssymplecticstructure,
+as well as the two foliations ofQF( S)by Bers slices, exist everywhere inQF( S). □
+An immediate yet interesting consequence of Theorem 5.5 is the existence of a natural holo-
+morphic metric in quasi-Fuchsian space, namely the complex bi-Lagrangian metric. As far as
+the authors are aware, this holomorphic metric inQF( S) has not been introduced let alone stud-
+ied prior to this paper, and suggests that the most natural "metric" structure onQF( S) is neutral
+pseudo-Riemannian rather than Riemannian.
+Theorem 5.6.There exists a holomorphic metricg deﬁned on quasi-Fuchsian spaceQF( S) such
+that:
+(i) g restricts to−igWP on the Fuchsian sliceF( S), wheregWP is the Weil-Petersson metric on
+Teichmüller spaceT( S), identiﬁed toF( S)via uniformization.
+(ii) The two foliations of quasi-Fuchsian space by Bers slices are isotropic forg, furthermore
+they are totally geodesic and ﬂat for the real and imaginary parts ofg.
+(iii) The Levi-Civita connection ofg parallelizes Goldman’s complex symplectic structureωG.
+(iv) Let u, v be tangent vectors at some point ofQF( S). Then
+g(u, v) = i(⟨qu1, µv2⟩ +⟨qv1, µu2⟩) (11)
+where⟨ ,⟩ is the duality pairing betweenT∗T( S) and TT( S), and the notationsqui, µvi are
+explained right below this theorem.
+BeforewritingtheproofofTheorem5.6,letusintroducethenotationsthatweusein(11). First
+recall that for a tangent vectoru toQF( S), we writeu = u1 + u2, whereu1 (resp. u2) is tangent to
+the vertical (resp. horizontal) Bers foliation. Now observe that:
+• Since u2 is tangent to a horizontal Bers slice which is a copy of Teichmüller space, one can
+identify u2 to a tangent vector to Teichmüller space. We denote itµu2∈ TT( S).
+• Since u1 is tangent to a vertical Bers slice which can be embedded in a ﬁber of the bundle
+p:CP( S)→T( S) (by the mapZ + :QF( S)→CP( S), see § 4.5), one can identifyu1 to a
+tangentvectortothatﬁber. Recallthatﬁbersof pareaﬃnespacesmodeledonvectorspaces
+35
+
+===== PDF PAGE 36 =====
+of holomorphic quadratic diﬀerentials (see § 4.4), so one can identifyu1 to a holomorphic
+quadraticdiﬀerential i.e. acotangentvectortoTeichmüllerspace. Wedenoteit qu1∈ T∗T( S).
+Proof of Theorem 5.6.Since g is the complex bi-Lagrangian metric associated to the complex
+bi-Lagrangian structure of Theorem 5.5, the proof of (i), (ii), and (iii) is a direct application of
+Theorem 2.16, Theorem 2.17, Theorem 3.8 and Theorem 5.5.
+Let us now prove (iv). By deﬁnition of the complex bi-Lagrangian metricg (cf § 2.7),
+g(u, v) = ω(Fu, v)
+= ω(u1− u2, v1 + v2)
+where ω = ωG is Goldman’s symplectic structure. Since both foliations are isotropic forω, the
+expressionabovereducesto g(u, v) = ω(u1, v2)− ω(u2, v1). Theconclusionfollowsfromthegeneral
+fact thatωG(u, v) = i⟨qu, µv⟩ whenever u is vertical andv is horizontal. This fact is a consequence
+of Theorem 5.2, see [Lou15a, Corollary 6.12] for details. □
+5.3 Weil-Petersson metric on Teichmüller space
+In this short subsection, we would like to insist that the Weil-Petersson metric on Teichmüller
+space can be deﬁned purely through symplectic geometry. Indeed, it is suﬃcient to know that
+quasi-Fuchsian space is a complex bi-Lagrangian manifold in order to deﬁne the Weil-Petersson
+metric as−i times the restriction of the complex bi-Lagrangian metric to the Fuchsian slice,
+according to Theorem 5.6. This deﬁnition of the Weil-Petersson metric is arguably simpler than
+theclassicaldeﬁnitionusingthePoincarémetric(see§4.3),whichrequiresthecelebratedbuthard
+uniformization theorem17. Let us recap how one argues that quasi-Fuchsian space is a complex
+bi-Lagrangian manifold:
+• QF( S) is a complex symplectic manifold as an open subset of the smooth locus of the
+character varietyX(π,PSL2(C)), which enjoys a natural complex symplectic structure by
+Goldman’s algebraic construction (see § 5.1).
+• Thefactthatthetwotransversefoliationsof QF( S)byhorizontalandverticalBersslicesare
+LagrangianispartofTheorem5.5,butitcanalsobeseenasaweakerversionofLemma5.7.
+5.4 Aﬃne bundle structure ofCP( S)
+One of the striking features of the deformation space of complex projective structuresCP( S) is
+that the “forgetful projection”p:CP( S)→T( S) is a holomorphic aﬃne bundle, with underlying
+vector bundle T∗T( S) i.e. the holomorphic cotangent bundle to Teichmüller space. The aﬃne
+structure in the ﬁbers ofp−1(X) is not obvious: it is constructed from a diﬀerential operator called
+theSchwarzianderivative. Referto§4.4fordetailsonthesefacts. WeproveinTheorem5.8below
+that this aﬃne structure can instead be deﬁned easily using symplectic geometry: is just the Bott
+aﬃne structure in the leaves of a Lagrangian foliation as in Theorem 1.12.
+Lemma 5.7.The forgetful projectionp:CP( S)→T( S)is a holomorphic Lagrangian ﬁbration.
+17Ontheotherhand,wedeﬁnetheWeil-PeterssonmetricontheFuchsianspace F( S)(ortheFricke-Kleindeformation
+space) rather than on Teichmüller spaceT( S). Of course, uniformization is required if one wishes to identifyT( S)
+toF( S). Let us mention that there also exists a “uniformization-free” deﬁnition of the Weil-Petersson metric onF( S)
+purely in terms of Riemannian geometry, see [Tro92, §2.6].
+36
+
+===== PDF PAGE 37 =====
+This lemma is a direct consequence of Theorem 5.2 (see [Lou15a, Corollary 6.11]) but it was
+formerly known: it is a consequence of Kawai’s rather involved work [Kaw96], it was also proven
+directly by Goldman [Gol04] with a concise algebraic argument, and recovered independently by
+Steven Kerckhoﬀ in unpublished work.
+Theorem 5.8. The complex aﬃne structure in the ﬁbers of the projectionp:CP( S)→ T( S)
+constructedviatheSchwarzianderivativecoincideswiththenaturalcomplexaﬃnestructureinthe
+leaves of a complex Lagrangian foliation.
+TheproofofTheorem5.8isastraightforwardconsequenceofTheorem1.13andTheorem5.2:
+Proof. Choose any holomorphic sectionσ :T( S)→CP( S) to the projectionp :CP( S)→T( S),
+for instance a Bers section, and denote byτσ :CP( S)→ T∗T( S) the associated isomorphism of
+aﬃne bundles overT( S) given by the Schwarzian parametrization usingσ as the “zero section”.
+By deﬁnition, the restriction of τσ to any ﬁber p−1(X) is an isomorphism of complex aﬃne
+spaces τσ
+|p−1(X) : p−1(X)→ T∗
+XT( S). On the other hand, ifσ was chosen among Lagrangian
+sectionse.g. Berssections,thentheisomorphism τσ :CP( S)→ T∗T( S)isadditionallyacomplex
+symplectomorphism by Theorem 5.2. In particular it is an isomorphism of complex Lagrangian
+foliations, so that the mapτσ
+|p−1(X) identiﬁes the complex aﬃne structures ofp−1(X)and T∗
+XT( S)
+given by their respective Bott connections. However, by Theorem 1.13, the Bott aﬃne structure in
+T∗
+XT( S)coincides with its aﬃne structure as a vector space. The conclusion follows. □
+5.5 Aﬃne structures on Teichmüller space
+It is well-known that Teichmüller space is a Stein manifold. In fact, any Bers embedding
+bX :T( S)→ H0(X, K2
+X) (cf § 4.5) is a holomorphic embedding ofT( S) in a complex vector
+space of the same dimension, and its image is a bounded domain of holomorphy [BE64]. In par-
+ticular, Bers embeddings deﬁne a family of (incomplete) complex aﬃne structures onT( S) (in the
+sense of Deﬁnition 1.4), parametrized byX∈T( S). Remarkably, this family of aﬃne structures is
+precisely the one predicted by Corollary 3.9:
+Theorem 5.9.The family of aﬃne structures onT( S) parametrized byX∈T( S) of Corollary 3.9
+is equal to the family of aﬃne structures onT( S)provided by the Bers embeddingsbX, X∈T( S).
+Observe that Corollary 3.9 does apply in this situation because we know that the complex
+symplecticstructure ωc
+WP = ωG existseverywhereinthecanonicalcomplexiﬁcation T( S)×T( S)≈
+QF( S).
+Proof. The map Z + :QF( S)→CP( S) deﬁned in § 4.5 is a complex symplectomorphism which
+sends the vertical foliation ofQF( S) by Bers slices to (an open subset of) the foliation ofCP( S)
+givenbytheﬁbersoftheprojection p:CP( S)→T( S). ItfollowsthattheBottaﬃnestructureinthe
+leavesoftheverticalfoliationof QF( S),i.e. thefamilyofaﬃnestructuresofCorollary3.9,agrees
+with the Bott aﬃne structure in the ﬁbers of the projectionp:CP( S)→T( S). By Theorem 5.8,
+this also coincides with the aﬃne structure in the ﬁbers of the cotangent bundleT∗T( S), which in
+turn is precisely the family of aﬃne structures given by the Bers embeddings. □
+Remark 5.10. Note that any manifold equipped with an aﬃne structure can be locally embedded
+in a vector space of the same dimension in an essentially unique way. Theorem 5.9 could thus be
+used to deﬁne the Bers embeddings themselves, but more work is required to show that they are
+injective–it is not enough to know thatT( S)is simply connected, for instance.
+37
+
+===== PDF PAGE 38 =====
+5.6 Derivative of the Bers embedding at the origin
+Fix a pointX +∈T( S)and consider the Bers embedding (10):
+bX+ :T( S−)→ H0(X +, K2
+X+)
+as deﬁned in § 4.5. The derivative of this map at a pointX−∈T( S−)is a linear map
+dbX+|X− : TX−T( S−)→ H0(X +, K2
+X+) .
+Recallthat X↦→ X yieldsanidentiﬁcation T( S−)≈ T( S),andthat H0(X +, K2
+X+)canbeidentiﬁedas
+thecomplexcotangentspace T∗
+X+T( S). ThusthederivativeoftheBersembedding bX+ at X− = X +
+may be seen as a complex antilinear map
+dbX+|X+ : TX+T( S)→ T∗
+X+T( S) . (12)
+Theorem 5.11. The derivative of the Bers embedding at the origin(12) is equal to -1/2 times the
+musical isomorphism induced by the Weil-Petersson metric:
+dbX+|X+ =−1
+2♭
+where ♭ is the musical isomorphism induced by the Weil-Petersson Hermitian metrichWP:
+♭ : T X+T( S)→ T∗
+X+T( S)
+v↦→ v♭ := hWP(· , v) .
+NotethatTheorem5.11isbynomeansanewresult. ThederivativeoftheBersembeddingatthe
+origin is a standard calculation in Teichmüller theory that relies on the followingself-reproducing
+formula([Ber66], [Gar87, §5.7]). Letϕbe a holomorphic functionon the upper half-planeH⊂ C,
+denote byL⊂ C the lower half-plane and let|σ|= |dw|2
+Im(w)2 denote the area density of the Poincaré
+metric onL. Then
+ϕ(z) = 12
+π
+¹
+L
+ϕ(w)
+(w− z)4|σ|.
+An concise exposition of this calculation can be found in [McM00, proof of Theorem 7.1]. We
+thank Curtis McMullen for pointing this out to us and the fact that a much stronger result is proved
+in [Wol90]. Let us emphasize that we recover the result using symplectic geometry instead of
+complexanalysis,muchinthespiritofthissection. Speciﬁcally,weshallproveTheorem5.11using
+the complex bi-Lagrangian metricg on quasi-Fuchsian space introduced in Theorem 5.6.
+Proof of Theorem 5.11.Let ν be a tangent vector toT( S) at X +, denote byν the corresponding
+tangent vector toT( S−)at X− = X +. We need to show that for everyµ∈ TX+T( S),
+⟨(bX+)∗ν, µ⟩ =−1
+2 hWP(µ, ν) .
+Let ρ = QF(X +, X−)∈F( S)⊂QF( S)and consider the following tangent vectors:
+a =(µ, µ)∈ T(X+,X−)T( S+)×T( S−)
+u =(QF)∗a∈ TρF( S)⊂ TρQF( S)
+b =(ν, ν)∈ T(X+,X−)T( S+)×T( S−)
+v =(QF)∗b∈ TρF( S)⊂ TρQF( S) .
+Using the notations introduced below Theorem 5.6, observe that we have by construction:
+u1 =(QF)∗(0, µ)
+u2 =(QF)∗(µ,0)
+qu1 =(bX+)∗ µ
+µu2 = µ
+v1 =(QF)∗(0, ν)
+v2 =(QF)∗(ν,0)
+qv1 =(bX+)∗ν
+µv2 = ν
+38
+
+===== PDF PAGE 39 =====
+By Theorem 5.6 (iv), one can thus expressg(u, v)as:
+g(u, v) = i(⟨(bX+)∗ µ, ν⟩ +⟨(bX+)∗ν, µ⟩) . (13)
+Ontheotherhand,since uand v arebothtangentto F( S)⊂QF( S)andTheorem5.6(i)guarantees
+that g restricts to−igWP onF( S), we have
+g(u, v) =−igWP(µ, ν) . (14)
+Equating (13) and (14) yields:
+gWP(µ, ν) =−⟨(bX+)∗ µ, ν⟩−⟨( bX+)∗ν, µ⟩ .
+The conclusion follows, recalling thathWP = gWP− iωWP and ωWP(µ, ν) = gWP(i µ, ν). □
+6 Almosthyper-HermitianstructureinthecomplexiﬁcationofaKäh-
+ler manifold
+In this ﬁnal section, we construct a natural almost hyper-Hermitian structure in the complexiﬁca-
+tion of a real-analytic Kähler manifold, relying on the canonical complex bi-Lagrangian structure
+constructed in section 3. This almost hyper-Hermitian structure is unfortunately not integrable in
+general; in particular it is not the same as the Feix-Kaledin hyper-Kähler structure in the cotangent
+bundle of a real-analytic Kähler manifold (which we review in § 6.2).
+6.1 Almost hyper-Hermitian structures
+The algebra ofquaternions H is the unital associative algebra over the real numbers generated by
+three elementsi, j, andk satisfying thequaternionic relations:
+i2 = j2 = k2 =−1
+i j =− ji = k
+H is a 4-dimensional algebra overR: a generic quaternion is writtenq = a + ib + jc + k d with
+(a, b, c, d)∈ R4. We refer to [Lou15b, A.2] for basic notions of quaternionic linear algebra relevant
+for quaternionic diﬀerential geometry.
+Deﬁnition 6.1. Analmost hyper-Hermitianstructure onM is the data of(g, I, J, K)where:
+• g is a Riemannian metric onM.
+• I, J, and K are three almost complex structures onM which are compatible withg (i.e.
+g-orthogonal as endomorphisms ofTM) and satisfy the quaternionic relations:
+I2 = J2 = K2 =−1
+I J =−J I = K .
+If moreover I, J, and K are parallel for the Levi-Civita connection ofg (integrability condition)
+then(g, I, J, K)is called ahyper-Kählerstructure.
+Given an almost hyper-Hermitian manifold(M, g, I, J, K), we denote byωI, ωJ, and ωK the
+three 2-forms onM deﬁned byωI = g(I· ,·) , ωJ = g(J· ,·) , andωK = g(K· ,·) .
+39
+
+===== PDF PAGE 40 =====
+Remark 6.2. Here is a couple of remarks about Deﬁnition 6.1:
+• Bydeﬁnition,analmosthyper-HermitianstructureequipsaRiemannianmanifold (M, g)with
+anisometricactionofthealgebraofquaternions Hinitstangentbundle TM. Inthelanguage
+of G-structures,analmosthyper-Hermitianstructureisequivalenttoa Sp(m)-structure,where
+Sp(m) = U(m, H)is the quaternionic unitary group.
+• Someauthorsuse almosthyper-Kähler insteadof almosthyper-Hermitian,e.g. Joyce[Joy00]
+and Bryant [Bry95]. It seems more consistent to us to callalmost hyper-Kähleran almost
+hyper-Hermitian structure whose three Kähler formsωI, ωJ, and ωK are closed, although
+almost hyper-Kähler structures in this sense are in fact always hyper-Kähler ([Hit87, Lemma
+6.8]).
+6.2 The Feix-Kaledin hyper-Kähler structure
+B.FeixandD.Kaledinindependentlydiscoveredacanonicalhyper-Kählerstructureinaneighbor-
+hood of the zero section of the holomorphic cotangent bundle of a real-analytic Kähler manifold:
+Theorem 6.3(Feix [Fei99, Fei01], Kaledin [VK99, Kal99]). Let(N, g0, I0, ω0) be a real-analytic
+Kähler manifold. There exists a unique18 hyper-Kähler structure(g, I, J, K) in a neighborhood of
+the zero section inT∗N such that:
+(i) g restricts tog0 along the zero section.
+(ii) I is the standard almost complex structure inT∗N extending I0.
+(iii) ωJ + iωK = ω is the canonical complex symplectic form inT∗N (cf Example 1.1)
+(iv) The U(1)-action inT∗N by multiplication in the ﬁbers isg-orthogonal.
+In the case whereN = CPn with the Fubini-Study Kähler structure, the Feix-Kaledin metric
+coincides with the Calabi metric [Cal79], which is a complete hyper-Kähler metric deﬁned every-
+wherein T∗N. TheEguchi-Hansonmetricdescribedin§6.5.1isaspecialcaseoftheCalabimetric
+when n = 1. On the other hand, Feix shows that whenN is a compact Riemann surface of genus
+> 1, the hyper-Kähler metric in a neighborhood of the zero section ofT∗N cannot be extended
+everywhere and is incomplete ([Fei99, Example 5.14]).
+The proofs of Feix and Kaledin are both diﬃcult; they are also very diﬀerent in nature. Let
+us make a couple of heuristic comments about the proof of Feix [Fei99] because it is relevant to
+this paper. Feix does not deﬁne the hyper-Kähler structure onT∗N directly, instead she constructs
+thetwistor spaceof the hyper-Kähler structure, which is a holomorphic object encoding the hyper-
+Kählerdata(see[HKLR87]). Interestingly,sheconstructsthetwistorspaceforthecomplexiﬁcation
+N c rather than the cotangent bundleT∗N 19. The bi-Lagrangian structure ofN c (see section 3) is
+key in the in her construction, especially the Bott aﬃne structure in the leaves of the Lagrangian
+foliations, though she does not use this vocabulary. This initially led us to believe that our
+construction would recover the same hyper-Kähler structure, but we soon realized that was not the
+case (see § 6.5).
+In this paper, we are interested in hyper-Kähler structures in the complexiﬁcationN c of a
+Kähler manifold rather than in the cotangent bundleT∗N. As we mentioned above, Feix deﬁnes a
+hyper-Kähler structure inN c, but no theorem is given to characterize the existence and uniqueness
+of such a structure. There is however at least one proper way to deﬁne a “canonical” hyper-Kähler
+structure in the complexiﬁcationN c:
+18Kaledin [Kal99] states that the hyper-Kähler structure is only unique up to symplectic ﬁber-wise automorphisms of
+T∗N. However, unless we are mistaken, there are no such automorphisms besides the identity map.
+19Feix then recoversT∗N by considering the ﬁber over0instead of the ﬁber over1in the twistor spaceZ→ CP1, we
+refer to [Fei99] for details.
+40
+
+===== PDF PAGE 41 =====
+Theorem6.4. Let(N, g0, I0, ω0)beareal-analyticKählermanifold. Let ( ˜g, ˜I, ˜J, ˜K)denotetheFeix-
+Kaledin hyper-Kähler structure in a neighborhoodV of the zero section of the cotangent bundle
+T∗N. Let f : N→ M be a complexiﬁcation ofN.
+There exists a unique hyper-Kähler structure(g, I, J, K) in a suﬃciently small neighborhoodU of
+f(N)in M such that there exists an embeddingT : U→ V (necessarily unique) such that:
+(i) T is an isomorphism of hyper-Kähler structures:T∗( ˜g, ˜I, ˜J, ˜K) =(g, I, J, K).
+(ii) J is the almost complex structure ofM.
+(iii) T◦ f is the zero sectionN→ T∗N.
+Proof. The zero section of the cotangent bundle is complex Lagrangian for the canonical complex
+symplectic structure ω, a fortioriit is real Lagrangian forω ˜J = Re(ω) (cf Theorem 6.3). Since
+ω ˜J = ˜g( ˜J· ,·) , it follows that ˜J sends the tangent space to the zero section to its˜g-orthogonal
+complement. In particular, T∗N equipped with the complex structure˜J is a complexiﬁcation of
+the zero section. By uniqueness of complexiﬁcation (cf Theorem 3.3), there exists a unique map
+T : U→ V (for U and V suﬃcientlysmall) suchthat T isholomorphic asmap(U, J)→( V, ˜J), and
+T◦ f is the zero sectionN→ T∗N. Now just takeg = T∗ ˜g, I = T∗ ˜I, andK = T∗ ˜K. □
+Deﬁnition 6.5. We shall call(g, I, J, K)theFeix-Kaledin hyper-Kähler structure in the complexiﬁ-
+cation M (deﬁned in a neighborhood ofN ↪→ M).
+We would like to characterize the Feix-Kaledin hyper-Kähler structure in the complexiﬁcation
+as the unique hyper-Kähleradmissible extensionof the Kähler structure in the following sense.
+Deﬁnition 6.6. Let(N, g0, I0, ω0) be a real-analytic Kähler manifold. An almost hyper-Hermitian
+structure(g, I, J, K)inaneighborhoodof Ninacomplexiﬁcation Miscalledan admissibleextension
+of the Kähler metric oﬀN when:
+(i) J is the almost complex structure ofM.
+(ii) g, I, andωI extend g0, I0, andω0 respectively.
+(iii) ωI− iωK is the complexiﬁcationωc
+0 of ω0.
+The following theorem is another straightforward application of analytic continuation (Propo-
+sition 3.4), we omit the proof for brevity.
+Theorem6.7. TheFeix-Kaledinhyper-Kählerstructureinaneighborhoodof N inacomplexiﬁca-
+tion M (cf Deﬁnition 6.5) is an admissible extension of the Kähler structure oﬀN.
+In the next subsection, we construct another almost hyper-Hermitian admissible extension, but
+it is typically not integrable. It is unclear to us whether uniqueness of the admissible extension
+holds amongst hyper-Kähler structures. Note that in the tangent space at points ofN ↪→ N c, it is
+easy to check that uniqueness does indeed hold: it is “just linear algebra” (cf Lemma 6.9).
+Question6.8. IstheFeix-Kaledinhyper-Kählerstructureinasuﬃcientlysmallneighborhoodof N
+in a complexiﬁcationM the unique admissible hyper-Kähler extension of the Kähler structure oﬀ
+N?
+6.3 Construction of the almost hyper-Hermitian structure
+Let(N, g0, I0, ω0) be a real-analytic Kähler manifold. LetM be a complexiﬁcation ofN, we can
+assumewithoutlossofgeneralitythat M = N c = N× N isthecanonicalcomplexiﬁcation(cf§3.2).
+Wearegoingtoconstructanalmosthyper-Hermitianstructureinaneighborhoodof N in N c which
+is admissible in the sense of Deﬁnition 6.6. We start by pointing out that the tensors(g, I, J, K) are
+uniquely deﬁned in the tangent spaces at points ofN inside N c by the following lemma.
+41
+
+===== PDF PAGE 42 =====
+Lemma 6.9.Let(V, g0, I0, ω0)be a real vector space with a linear Hermitian structure. Denote by
+V c := V× V thecomplexiﬁcationof (V, I0),i.e. therealvectorspace V× V equippedwiththelinear
+complex structure(I0,−I0). There exists a unique linear hyper-Hermitian structure(g, I, J, K) in
+V c which is admissible in the sense of Deﬁnition 6.6.
+The deﬁnitions of a linear Hermitian structure and linear hyper-Hermitian structure should be
+obvious so we do not repeat them, but they may be found in e.g. [Lou15b, A.2]. The proof of
+Lemma 6.9 is elementary and spared to the reader.
+Recallthat N c enjoysacanonicalpairoftransversefoliations (F1,F2)(cf§3.2)andacanonical
+complex bi-Lagrangian structure (cf Theorem 3.8). We are now ready to state the main theorem of
+this section.
+Theorem 6.10.There exists a unique almost hyper-Hermitian structure(g, I, J, K)in a suﬃciently
+small neighborhood ofN in N c such that:
+(i)(g, I, J, K)is admissible in the sense of Deﬁnition 6.6.
+(ii)(g, I, J, K) is parallel with respect to the complex bi-Lagrangian connection ofN c (cf Theo-
+rem 3.12) along the foliationF1.
+Moreover,if N issimplyconnectedand ω0 extendsholomorphicallythroughout N c,thenthealmost
+hyper-Hermitian structure(g, I, J, K)exists throughoutN c.
+Theorem 6.10 follows fairly easily Corollary 2.8 and Theorem 2.16:
+Proof. Let U be a neighborhood ofN in N c suﬃciently small so that:
+• The leaves ofF1 are simply connected.
+• The complex symplectic formω = ωc
+0 extending ω0 is well-deﬁned.
+In particular, the canonical complex bi-Lagrangian structure(ω,F1,F2) is well-deﬁned. Since the
+tensorﬁelds g, I, J,and K mustbeparallelwithrespecttothecomplexbi-Lagrangianconnection ∇
+along the vertical foliationF1, they are completely determined by their values at one point that can
+be chosen freely in every leaf: their values everywhere else can be obtained by parallel transport
+along paths contained in the leaves. However the values ofg, I, J, and K are uniquely deﬁned at
+points p∈ N⊂ U byLemma6.9. Thuswehaveshoweduniqueness. Conversely,paralleltransport
+along vertical paths of the tensorsgp, Ip, Jp, and Kp at points p∈ N yields tensor ﬁeldsg, I, J,
+K that are well-deﬁned inU by virtue of Corollary 2.8 and the simple-connectedness of the leaves.
+Of course, the linear algebraic identities veriﬁed bygp, Ip, Jp, and Kp are preserved by parallel
+transport, so that(g, I, J, K) is a almost hyper-Hermitian structure inU. It remains to argue that it
+is admissible in the sense of Deﬁnition 6.6:
+(i) Jisthealmostcomplexstructureof U⊂ N c: thisisbecauseweknowthatthealmostcomplex
+structure ofN c is parallel with respect to the bi-Lagrangian connection by Theorem 2.16.
+(ii) g, I, andωI extend g0, I0, andω0 respectively: this is clearly the case by construction.
+(iii) ωI−iωK isthecomplexiﬁcation ω = ωc
+0 of ω0: thisisbecauseweknowthat ωisparallelwith
+respecttothebi-LagrangianconnectionbyTheorem2.16,thereforetheidentity ω = ωI−iωK
+which holds at pointsp∈ N⊂ U is preserved under parallel transport.
+□
+Remark6.11. The almost hyper-Hermitian structure is typically not integrable (see § 6.5.2 below),
+therefore it is not the same as the Feix-Kaledin hyper-Kähler structure of Deﬁnition 6.5. Note
+howeverthatitis“2/3integrable”inthesensethat ωI and ωK arebothclosed,since ω = ωI− iωK
+is the complex symplectic structure ofN c. Let us recall that the integrability ofωI, ωJ, andωK is
+suﬃcient for the integrability of the almost hyper-Hermitian structure by [Hit87, Lemma 6.8]. We
+hypothesize that the ﬂatness of the Kähler metricg0 is necessary and suﬃcient for the integrability
+of the almost hyper-Hermitian structure, in which case it is equal to the Feix-Kaledin hyper-Kähler
+structure.
+42
+
+===== PDF PAGE 43 =====
+6.4 The biquaternionic structure
+Inthissubsectionweshowthatourconstructionactuallyyieldsmorethananalmosthyper-Hermitian
+structure. Indeed, the almost hyper-Hermitian structure of Theorem 6.10 naturally combines with
+the bicomplex Kähler structure associated to the complex bi-Lagrangian structure (cf § 3.4). The
+resulting “package” is an almostbiquaternionic Hermitian structure, let us explain this in what
+follows.
+The algebra of(ordinary) biquaternions BH is the unital associative algebra over the real
+numbers generated by four elementsh, i, j, k satisfying thebiquaternionic relations:
+h2 = i2 = j2 = k2 =−1
+i j =− ji = k
+hi = ih h j = j h hk = k h .
+(15)
+One quickly sees thatBH is an 8-dimensional algebra overR which can be simply be described
+as H⊗R C by writing a generic biquaternionq = q1 + q2h, where q1 = a1 + ib1 + jc1 + k d1 and
+q2 = a2 + ib2 + jc2 + k d2 are quaternions.
+Let(N, g0, I0, ω0)be a real-analytic Kähler manifold and letM be a complexiﬁcation ofN. We
+denote by(g, I, J, K) the almost hyper-Hermitian structure of Theorem 6.10. On the other hand,
+let H := I c
+0 denote the holomorphic extension ofI0. Recall that the triple(H, J, F := H J) is the
+holomorphic bicomplex structure in (a neighborhood ofN in) M associated to the canonical pair
+of foliations(F1,F2)by Theorem 3.12. Mind that we denote byH instead ofI the almost complex
+structure I c
+0 because I is now a diﬀerent almost complex structure, and the choice of the letterH is
+motivated by the following theorem.
+Theorem6.12. Let(N, g0, I0, ω0)beareal-analyticKählermanifoldandlet Mbeacomplexiﬁcation
+of N. The Riemannian metricg and the quadruple of almost (para-)complex structures(H, I, J, K)
+as above deﬁne analmost biquaternionic Hermitian structurein (a neighborhood ofN in) M in the
+sense that:
+• H, I, J, K satisfy the biquaternionic relations(15).
+• H, I, J, K are compatible withg (i.e. g-orthogonal as endomorphisms ofTM).
+Proof. Letusonlysketchtheproofofthistheoremforbrevity,aswehavepreviouslydetailedsimilar
+arguments. The fact thatH, I, J, K satisfy the biquaternionic relations and are compatible withg
+canbecheckeddirectlyatpointsof N inside M becauseallthesetensorsareexplicitthere–itis“just
+linearalgebra”. Thenwearguethattheselinearidentitiesaresatisﬁedeverywherebecausetheyare
+preserved by parallel transport. Indeed, the tensor ﬁeldsg, H, I, J, K are all invariant by parallel
+transportalongtheverticalfoliation F1 withrespecttothecomplexbi-Lagrangianconnection. For
+g, I, J, K, this is true by Theorem 6.10. ForH, this is because the triple(g, F = H J, ω) is the
+holomorphicbicomplexKählerstructureassociatedtothecanonicalbi-Lagrangianstructure (ω,F1,
+F2)byTheorem3.13,itfollowsthat H isparallelwithrespecttothebi-Lagrangianconnection. □
+Observe that the algebra of biquaternionsBHcontains as subalgebras:
+• The algebra of quaternionsH≈ span{1, i, j, k}.
+• The algebra of bicomplex numbersBC≈ span{1, h, j, f}where f := h j.
+• Thealgebrasof para-quaternions P≈ span{1, i, f , g}where f := h jand g := hk. Thisisthe
+unitalassociativealgebraovertherealnumbersgeneratedbythreeelements i, f, g satisfying
+thepara-quaternionic relations:
+i2 =−1 f 2 = +1 g2 = +1
+i f =− f i = g .
+43
+
+===== PDF PAGE 44 =====
+Para-quaternions are also calledsplit-quaternions, coquaternions, and quaternions of the
+second kindin the context of diﬀerential geometry [Lib52b, Lib55].
+Corresponding to these subalgebras we have an almost hyper-Hermitian structure, an almost
+bicomplex Hermitian structure and analmost para-hyper-Hermitian structureon M. We have
+already established the presence of the ﬁrst two: they are respectively the almost hyper-Hermitian
+structure of Theorem 6.10 and the holomorphic bicomplex Kähler structure of Theorem 3.13. The
+third one also deserves to be noted:
+Corollary 6.13. Let(N, g0, I0, ω0) be a real-analytic Kähler manifold and letM be a complexi-
+ﬁcation of N. The biquaternionic Hermitian structure(g, H, I, J, K) of Theorem 6.12 induces an
+underlyingalmost para-hyper-Hermitian structure(g, I, G, F)where F := H Jand G := HK.
+Para-hyper-Hermitian structures have been studied under a variety of names such aspara-
+hyperhermitian and para-hyperkähler [AMT08, DGMY09, Vl11], hyper-para-Kähler [Nih04,
+Mer12], hypersymplectic–a terminology coined by Hitchin [Hit90] and followed by many authors,
+pseudo-hyperKähler [DW08, GL11], andneutral hyperKähler[Kam99].
+6.5 Example: CP1
+Let us compute the Feix-Kaledin hyper-Kähler structure and the almost hyper-Hermitian structure
+ofTheorem6.10inthecotangentbundleandcomplexiﬁcationof CP1. Wecontinueusingthesame
+notations as in § 3.5.
+6.5.1 Feix-Kaledin hyper-Kähler structure
+TheFeix-Kaledinhyper-Kählerstructureinthetotalspaceofthecotangentbundleof CP1coincides
+withthemetricdiscoveredbyEguchi-Hanson[EH79]andisaspecialcaseof Calabimetric studied
+in [Cal79]. However it is typically not expressed in the standard holomorphic coordinates of the
+cotangent bundle in the mathematics and physics literature. Let us ﬁnd its expression in such
+coordinates,itwillbeinstructivetoseehowtorecoveritonlyusingtheconditionsofTheorem6.3.
+Let z be the usual complex coordinate in the aﬃne patchC = CP−{[ 1 : 0]}. Let(z, u) be the
+corresponding coordinates on the holomorphic cotangent bundleM = T∗CP: a covectorα∈ T∗C
+having coordinates(z, u)means thatα = u dz|z.
+Lemma6.14. TheFeix-Kaledinhyper-Kählerstructure(g, I, J, K)inthecotangentbundle M = T∗N
+of a Riemann surfaceN satisﬁes ω∧ ω = 2ωI∧ ωI, whereω is the canonical complex symplectic
+structure inM = T∗N.
+Proof. InanyKähler(infactHermitian)manifold (M, g, I, ωI)ofcomplexdimension n,theidentity
+ωn
+I = n! volg holds. Thus we have here
+ωI∧ ωI = ωJ∧ ωJ = ωK∧ ωK = 2 volg .
+On the other hand, sinceω = ωJ + iωK (this is a requirement of the Feix-Kaledin hyper-Kähler
+structure), we have:
+ω∧ ω = ωJ∧ ωJ + ωK∧ ωK = 4 volg .
+The conclusion follows. □
+Note that more generally, a similar argument shows that a hyper-Kähler manifold admits a
+holomorphic volume form, and thus isCalabi-Yau(see e.g. [Yau09] for details). Coming back to
+44
+
+===== PDF PAGE 45 =====
+M = T∗CP1, Lemma 6.14 means that aKähler potentialϕ: M→ R (such that i
+2 ∂∂ϕ = ωI) must
+satisfy theMonge-Ampère equation
+ϕz ¯z ϕu ¯u− ϕu ¯z ϕz ¯u = 1 . (16)
+Let r : M→ R be the function given byr(α) =∥α∥2, where∥·∥ 2 is the metric in the cotangent
+bundle induced byg0, explicitly:
+r(z, u) = 4uu(1 + zz)2 .
+SincetheFeix-Kaledinhyper-Kählermetric gisinvariantunderthe U(1)-actionin M = T∗M which
+acts transitively in the level sets ofr, we can look for a Kähler potential of the formϕ(z, u) = y(r),
+where y :[0, +∞)→ R. TheMonge-Ampèreequation(16)yieldstheordinarydiﬀerentialequation
+8r2y′y′′ + 8r(y′)2 = 1 .
+This ODE is easily solved as it is rewritten4(Y 2)′ = 1 where Y = r y′. The general solution up to
+an additive constant is
+y =
+√
+r + a−√a arcoth
+(√
+1 + r
+a
+)
+where aissomeconstantofintegration,whichwechoose a = 1inordertorecovertheFubini-Study
+metric g0 on the zero section at the end of the calculation. We can now proceed to compute the
+Kähler formωI = i
+2 ∂∂ϕ, the metricg =−ωI(I· ,·) , etc.
+Proposition 6.15. The Feix-Kaledin hyper-Kähler structure inT∗CP1 in the coordinates(z, u) is
+given by:
+g = ϕz ¯z dz d¯z + ϕu ¯z du d¯z + ϕz ¯u dz d ¯u + ϕu ¯u du d ¯u
+I = i ∂
+∂z⊗ dz− i ∂
+∂z⊗ d¯z + i ∂
+∂u⊗ du− i ∂
+∂u⊗ d ¯u
+J =
+(
+ϕz ¯u
+∂
+∂z− ϕz ¯z
+∂
+∂u
+)
+⊗ dz +
+(
+ϕu ¯z
+∂
+∂z− ϕz ¯z
+∂
+∂u
+)
+⊗ d¯z
++
+(
+ϕu ¯u
+∂
+∂z− ϕu ¯z
+∂
+∂u
+)
+⊗ du +
+(
+ϕu ¯u
+∂
+∂z− ϕz ¯u
+∂
+∂u
+)
+⊗ d ¯u
+K =−i
+(
+ϕz ¯u
+∂
+∂z− ϕz ¯z
+∂
+∂u
+)
+⊗ dz + i
+(
+ϕu ¯z
+∂
+∂z− ϕz ¯z
+∂
+∂u
+)
+⊗ d¯z
+− i
+(
+ϕu ¯u
+∂
+∂z− ϕu ¯z
+∂
+∂u
+)
+⊗ du + i
+(
+ϕu ¯u
+∂
+∂z− ϕz ¯u
+∂
+∂u
+)
+⊗ d ¯u
+ωI = i
+2(ϕz ¯z dz∧ d¯z + ϕu ¯z du∧ d¯z + ϕz ¯u dz∧ d ¯u + ϕu ¯u du∧ d ¯u)
+ωJ =−1
+2(dz∧ du + d¯z∧ d ¯u)
+ωK = i
+2(dz∧ du− d¯z∧ d ¯u)
+where:
+ϕz ¯z = 1 + r(1 + zz)√
+1 + r(1 + zz)2
+ϕu ¯z = 2uz(1 + zz)√
+1 + r
+ϕz ¯u = 2uz(1 + zz)√
+1 + r
+ϕu ¯u =(1 + zz)2
+√
+1 + r
+45
+
+===== PDF PAGE 46 =====
+It is straightforward to check that this hyper-Kähler structure satisﬁes all the requirements of
+Theorem 6.3 as expected.
+OnewouldliketoproceedtocomputetheFeix-Kaledinhyper-KählerstructureofDeﬁnition6.5
+in the complexiﬁcation ofCP1. This problem seems diﬃcult in general: the natural approach is
+to ﬁnd J-holomorphic coordinates in the cotangent bundle extending real coordinates oﬀ the zero
+section, but such a solution of the Newlander-Nirenberg theorem is not explicit in general. An
+alternativeapproachistolookforextrasymmetriesinthecaseathandandpredictthehyper-Kähler
+isomorphism T : CP1×CP1→ T∗CP1,asThomasHodgedoesinthecaseof H2in[Hod05,Lemma
+3.1.4]. However we were not able to recover an explicit expression ofT by using Hodge’s ansatz,
+though it seems likely that a small adjustment of it could work. In any case, we shall see in § 6.5.2
+belowthatontheotherhandweareabletoexplicitlycomputethealmosthyper-Hermitianstructure
+ofTheorem6.10inthecomplexiﬁcationof CP1,andthatitmustbediﬀerentfromthisFeix-Kaledin
+hyper-Kähler structure.
+6.5.2 Almost hyper-Hermitian structure
+We carry out the explicit computation of the almost hyper-Hermitian structure of Theorem 6.10
+in the complexiﬁcation ofCP1. Most of the work has been done in § 3.5; we resume using the
+notations introduced there.
+Lemma 6.16. Let γ :[0, 1]→ N c be a path contained in a vertical leaf. Denoteγ(0) =(z0, w0)
+and γ(1) =(z0, w1). The parallel transport alongγ is the linear mapPγ : T(z0,w0)N c→ T(z0,w1)N c
+given by
+∂
+∂z↦→ ∂
+∂z
+∂
+∂w↦→
+( 1 + z0w1
+1 + z0w0
+)2 ∂
+∂w .
+NB: In the expression above,Pγ is viewed as a complex linear map between the complexiﬁxed
+tangent spaces.
+Proof. Let u(t) = a(t) ∂
+∂z + b(t) ∂
+∂w be a vector ﬁeld alongγ. Then u(t) is parallel alongγ if and
+only if∇tu(t) = 0, which gives the equations:
+{
+a′(t) = 0
+b′(t)− 2z0w′(t)
+1+z0w(t) b(t) = 0 .
+The second equation is easily solved noting that it is an ODE of the formy′(t)− 2α′(t)
+α(t) y(t) = 0,
+solutions to this are of the formy(t) =
+(
+α(t)
+α(0)
+)2
+y0. The conclusion follows. □
+Note that in particular,Pγ only depends on the endpoints ofγ as expected.
+We are now ready to compute the almost hyper-Hermitian structure by using vertical parallel
+transport along the leaves. We compile the results in the following theorem.
+46
+
+===== PDF PAGE 47 =====
+Theorem 6.17.The almost hyper-Hermitian structure inN c is given by:
+g = 1
+2
+[
+1
+(1 +|z|2)2 dz d¯z +
+(1 +|z|2)2
+|1 + zw|4 dw d ¯w
+]
+I = i
+[
+η d ¯w⊗ ∂
+∂z− η dw⊗ ∂
+∂z− 1
+η d¯z⊗ ∂
+∂w + 1
+η dz⊗ ∂
+∂w
+]
+J = i
+[
+dz⊗ ∂
+∂z− d¯z⊗ ∂
+∂z + dw⊗ ∂
+∂w− d ¯w⊗ ∂
+∂w
+]
+K = η d ¯w⊗ ∂
+∂z + η dw⊗ ∂
+∂z− 1
+η d¯z⊗ ∂
+∂w− 1
+η dz⊗ ∂
+∂w
+ωI = i
+4
+[dz∧ dw
+(1 + zw)2− d¯z∧ d ¯w
+(1 + zw)2
+]
+ωJ = i
+4
+[
+1
+(1 +|z|2)2 dz∧ d¯z +
+(1 +|z|2)2
+|1 + zw|4 dw∧ d ¯w
+]
+ωK =−1
+4
+[dz∧ dw
+(1 + zw)2 + d¯z∧ d ¯w
+(1 + zw)2
+]
+where we have writtenη =
+(
+1+|z|2
+1+zw
+)2
+in the expressions ofI, J, K.
+It is clear from the expressions ofωI, ωJ, and ωK that ωI and ωK are both closed, in fact
+ωc
+0 = i dz∧dw
+2(1+zw)2 = ωI− iωK as expected. One can also check that all the properties of an admissible
+extension in the sense of Deﬁnition 6.6 are indeed satisﬁed.
+Ontheotherhand,weobservethat ωJ isnotclosed,meaningthatthehyper-Hermitianstructure
+is not integrable. Thus the Levi-Civita connection of g does not parallelize J, unlike the bi-
+Lagrangian connection. In particular, the metric g (and hence the hyper-Hermitian structure)
+diﬀers from the Feix-Kaledin hyper-Kähler structure.
+47
+
+===== PDF PAGE 48 =====
+References
+[AB60] LarsAhlforsandLipmanBers. Riemann’smappingtheoremforvariablemetrics. Ann.ofMath.
+(2), 72:385–404, 1960. Cited p. 31.
+[AB83] M. F. Atiyah and R. Bott. The Yang-Mills equations over Riemann surfaces. Philos. Trans.
+Roy. Soc. London Ser. A, 308(1505):523–615, 1983. Cited pp. 6, 33.
+[Ahl61] LarsV.Ahlfors. SomeremarksonTeichmüller’sspaceofRiemannsurfaces. Ann.ofMath.(2) ,
+74:171–191, 1961. Cited pp. 5, 29.
+[Ahl64] Lars V. Ahlfors. Finitely generated Kleinian groups. Amer. J. Math., 86:413–429, 1964. Cited
+p. 31.
+[AMT08] D. V. Alekseevski ˘ı, K. Medori, and A. Tomassini. Homogeneous para-Kählerian Einstein
+manifolds. Preprint: arXiv:0806.2272, 2008. Cited p. 44.
+[And98] CharlesGregoryAnderson. ProjectivestructuresonRiemannsurfacesanddevelopingmapsto
+H(3)andCP(n) . ProQuestLLC,AnnArbor,MI,1998. Thesis(Ph.D.)–UniversityofCalifornia,
+Berkeley. Cited p. 30.
+[Bab13] Shinpei Baba. 2π-grafting and complex projective structures, II, 2013. Cited p. 31.
+[Bab15] Shinpei Baba. 2π-grafting and complex projective structures, I.Geom. Topol., 19(6):3233–
+3287, 2015. Cited p. 31.
+[Bau14] Oliver Baues. The deformation of ﬂat aﬃne structures on the two-torus. In Handbook of
+Teichmüllertheory.Vol.IV ,volume19of IRMALect.Math.Theor.Phys. ,pages461–537.Eur.
+Math. Soc., Zürich, 2014. Cited pp. 24, 25, 26.
+[BE64] LipmanBersandLeonEhrenpreis. HolomorphicconvexityofTeichmüllerspaces. Bull.Amer.
+Math. Soc., 70:761–764, 1964. Cited p. 37.
+[Ber60a] Lipman Bers. Simultaneous uniformization. Bull. Amer. Math. Soc., 66:94–97, 1960. Cited p.
+32.
+[Ber60b] Lipman Bers. Spaces of Riemann surfaces as bounded domains. Bull. Amer. Math. Soc.,
+66:98–103, 1960. Cited p. 32.
+[Ber61] Lipman Bers. Correction to “Spaces of Riemann surfaces as bounded domains”. Bull. Amer.
+Math. Soc., 67:465–466, 1961. Cited p. 32.
+[Ber66] LipmanBers. Anon-standardintegralequationwithapplicationstoquasiconformalmappings.
+Acta Math., 116:113–134, 1966. Cited p. 38.
+[Ber70] Lipman Bers. On boundaries of Teichmüller spaces and on Kleinian groups. I.Ann. of Math.
+(2), 91:570–600, 1970. Cited p. 31.
+[Ber87] LipmanBers.OnSullivan’sproofoftheﬁnitenesstheoremandtheeventualperiodicitytheorem.
+Amer. J. Math., 109(5):833–852, 1987. Cited p. 31.
+[BG05] Oliver Baues and William M. Goldman. Is the deformation space of complete aﬃne structures
+on the 2-torus smooth? InGeometry and dynamics, volume 389 ofContemp. Math., pages
+69–89. Amer. Math. Soc., Providence, RI, 2005. Cited p. 25.
+[BKN17] MarcoBertola,DmitryKorotkin,andChayaNorton. Symplecticgeometryofthemodulispace
+ofprojectivestructuresinhomologicalcoordinates. Invent.Math.,210(3):759–814,2017. Cited
+p. 34.
+[Bry95] Robert L. Bryant. An introduction to Lie groups and symplectic geometry. InGeometry and
+quantumﬁeldtheory(ParkCity,UT,1991) ,volume1of IAS/ParkCityMath.Ser. ,pages5–181.
+Amer. Math. Soc., Providence, RI, 1995. Cited p. 40.
+[BW97] SeanBatesandAlanWeinstein. Lecturesonthegeometryofquantization ,volume8of Berkeley
+MathematicsLectureNotes . AmericanMathematicalSociety, Providence, RI;BerkeleyCenter
+for Pure and Applied Mathematics, Berkeley, CA, 1997. Cited p. 3.
+48
+
+===== PDF PAGE 49 =====
+[BW11] PaulBairdandJohnC.Wood. Harmonicmorphismsandbicomplexmanifolds. J.Geom.Phys. ,
+61(1):46–61, 2011. Cited p. 16.
+[Cal79] E. Calabi. Métriques kählériennes et ﬁbrés holomorphes. Ann. Sci. École Norm. Sup. (4),
+12(2):269–294, 1979. Cited pp. 4, 40, 44.
+[CFG96] V.Cruceanu,P.Fortuny,andP.M.Gadea. Asurveyonparacomplexgeometry. RockyMountain
+J. Math., 26(1):83–115, 1996. Cited pp. 3, 13.
+[CM04] Richard D. Canary and Darryl McCullough. Homotopy equivalences of 3-manifolds and
+deformationtheoryofKleiniangroups. Mem.Amer.Math.Soc. ,172(812):xii+218,2004. Cited
+p. 31.
+[Cor88] Kevin Corlette. Flat G-bundles with canonical metrics.J. Diﬀerential Geom., 28(3):361–382,
+1988. Cited p. 28.
+[Cor10] Vicente Cortés, editor. Handbook of pseudo-Riemannian geometry and supersymmetry, vol-
+ume 16 ofIRMA Lectures in Mathematics and Theoretical Physics. European Mathematical
+Society (EMS), Zürich, 2010. Cited p. 3.
+[DGMY09] JohannDavidov,GueoGrantcharov,OlegMushkarov,andMiroslavYotov.Para-hyperhermitian
+surfaces. Bull. Math. Soc.Sci. Math. Roumanie (N.S.), 52(100)(3):281–289, 2009. Citedp. 44.
+[Don87] S. K. Donaldson. Twisted harmonic maps and the self-duality equations.Proc. London Math.
+Soc. (3), 55(1):127–131, 1987. Cited p. 28.
+[Don03] S. K. Donaldson. Moment maps in diﬀerential geometry. InSurveys in diﬀerential geometry,
+Vol. VIII (Boston, MA, 2002), volume 8 ofSurv. Diﬀer. Geom., pages 171–189. Int. Press,
+Somerville, MA, 2003. Cited p. 6.
+[Dum09] David Dumas. Complex projective structures. In Handbook of Teichmüller theory. Vol. II,
+volume 13 ofIRMA Lect. Math. Theor. Phys., pages 455–508. Eur. Math. Soc., Zürich, 2009.
+Cited pp. 29, 30.
+[DW08] Maciej Dunajski and Simon West. Anti-self-dual conformal structures in neutral signature. In
+Recent developments in pseudo-Riemannian geometry, ESI Lect. Math. Phys., pages 113–148.
+Eur. Math. Soc., Zürich, 2008. Cited p. 44.
+[Ear81] CliﬀordJ.Earle. Onvariationofprojectivestructures. In Riemannsurfacesandrelatedtopics:
+Proceedings of the 1978 Stony Brook Conference (State Univ. New York, Stony Brook, N.Y.,
+1978), volume 97 ofAnn. of Math. Stud., pages 87–99. Princeton Univ. Press, Princeton, N.J.,
+1981. Cited p. 29.
+[EE69] CliﬀordJ.EarleandJamesEells.AﬁbrebundledescriptionofTeichmüllertheory. J.Diﬀerential
+Geometry, 3:19–43, 1969. Cited p. 28.
+[EH79] Tohru Eguchi and Andrew J. Hanson. Self-dual solutions to Euclidean gravity.Ann. Physics,
+120(1):82–106, 1979. Cited pp. 4, 44.
+[EST06] Fernando Etayo, Rafael Santamaría, and Ujué R. Trías. The geometry of a bi-Lagrangian
+manifold. Diﬀerential Geom. Appl., 24(1):33–59, 2006. Cited p. 12.
+[Fei99] Birte Feix. Hyperkähler metrics on Cotangent Bundles. Ph.D. in Mathematics, University of
+Cambridge, 1999. Cited pp. 4, 40.
+[Fei01] Birte Feix. Hyperkähler metrics on cotangent bundles. J. Reine Angew. Math., 532:33–46,
+2001. Cited p. 40.
+[FY13] Michael Forger and Sandra Z. Yepes. Lagrangian distributions and connections in multisym-
+plectic and polysymplectic geometry.Diﬀerential Geom. Appl., 31(6):775–807, 2013. Cited p.
+7.
+[Gar87] Frederick P. Gardiner. Teichmüller theory and quadratic diﬀerentials. Pure and Applied
+Mathematics (New York). John Wiley & Sons, Inc., New York, 1987. A Wiley-Interscience
+Publication. Cited p. 38.
+49
+
+===== PDF PAGE 50 =====
+[GKM00] Daniel Gallo, Michael Kapovich, and Albert Marden. The monodromy groups of Schwarzian
+equations on closed Riemann surfaces.Ann. of Math. (2), 151(2):625–704, 2000. Cited p. 29.
+[GL11] Malin Göteman and Ulf Lindström. Pseudo-hyperkähler geometry and generalized Kähler
+geometry. Lett. Math. Phys., 95(3):211–222, 2011. Cited p. 44.
+[Gol80] William Mark Goldman. DISCONTINUOUS GROUPS AND THE EULER CLASS. ProQuest
+LLC, Ann Arbor, MI, 1980. Thesis (Ph.D.)–University of California, Berkeley. Cited p. 27.
+[Gol84] WilliamM.Goldman. Thesymplecticnatureoffundamentalgroupsofsurfaces. Adv.inMath. ,
+54(2):200–225, 1984. Cited pp. 6, 33, 34.
+[Gol87] William M. Goldman. Projective structures with Fuchsian holonomy. J. Diﬀerential Geom.,
+25(3):297–326, 1987. Cited p. 31.
+[Gol88] William M. Goldman. Geometric structures on manifolds and varieties of representations. In
+Geometry of group representations (Boulder, CO, 1987), volume 74 ofContemp. Math., pages
+169–198. Amer. Math. Soc., Providence, RI, 1988. Cited p. 24.
+[Gol04] WilliamM.Goldman. Thecomplex-symplecticgeometryof SL(2, C)-charactersoversurfaces.
+InAlgebraicgroupsandarithmetic ,pages375–407.TataInst.Fund.Res.,Mumbai,2004. Cited
+pp. 6, 34, 37.
+[Gol10] William M. Goldman. Locally homogeneous geometric manifolds. In Proceedings of the
+InternationalCongressofMathematicians.VolumeII ,pages717–744.HindustanBookAgency,
+New Delhi, 2010. Cited pp. 24, 26.
+[Gro] AlexanderGrothendieck. Techniquesdeconstructionengéométrieanalyique,i–vi. volume13.
+Cited p. 5.
+[Hat16] Allen Hatcher. Homotopically trivial vs isotopically trivial diﬀeomorphisms (answer). Math-
+Overﬂow, 2016. http://mathoverflow.net/q/248447 (version: 2016-08-28). Cited p.
+25.
+[Hej75] Dennis A. Hejhal. Monodromy groups and linearly polymorphic functions. Acta Math.,
+135(1):1–55, 1975. Cited p. 29.
+[Heß80] Harald Heß. Connections on symplectic manifolds and geometric quantization. InDiﬀerential
+geometricalmethodsinmathematicalphysics(Proc.Conf.,Aix-en-Provence/Salamanca,1979) ,
+volume 836 ofLecture Notes in Math., pages 153–166. Springer, Berlin, 1980. Cited p. 3.
+[Heß81] Harald Heß. Symplectic Connections in Geometric Quantization and Factor Orderings. Ph.D.
+in Mathematics, Freie Universität, Berlin, 1981. Cited p. 3.
+[Hit87] N. J. Hitchin. The self-duality equations on a Riemann surface. Proc. London Math. Soc. (3),
+55(1):59–126, 1987. Cited pp. 28, 40, 42.
+[Hit90] Nigel Hitchin. Hypersymplectic quotients. Atti Accad. Sci. Torino cl. Sci. Fis. Mat. Natur.,
+124:169–180, 1990. Cited p. 44.
+[HKLR87] N. J. Hitchin, A. Karlhede, U. Lindström, and M. Roček. Hyper-Kähler metrics and supersym-
+metry. Comm. Math. Phys., 108(4):535–589, 1987. Cited p. 40.
+[Hod05] Thomas W. S. Hodge. Hyperkähler Geometry and Teichmüller Space. Ph.D. in Mathematics,
+Imperial College London, University of London, 2005. Cited pp. 6, 46.
+[Hub81] John H. Hubbard. The monodromy of projective structures. InRiemann surfaces and related
+topics: Proceedings of the 1978 Stony Brook Conference (State Univ. New York, Stony Brook,
+N.Y.,1978),volume97of Ann.ofMath.Stud. ,pages257–275.PrincetonUniv.Press,Princeton,
+N.J., 1981. Cited p. 29.
+[Hub06] JohnHamalHubbard. Teichmüllertheoryandapplicationstogeometry,topology,anddynamics.
+Vol. 1. Matrix Editions, Ithaca, NY, 2006. Teichmüller theory, With contributions by Adrien
+Douady, William Dunbar, Roland Roeder, Sylvain Bonnot, David Brown, Allen Hatcher, Chris
+Hruska and Sudeb Mitra, With forewords by William Thurston and Cliﬀord Earle. Cited p. 29.
+50
+
+===== PDF PAGE 51 =====
+[Joy00] Dominic D. Joyce. Compact manifolds with special holonomy. Oxford Mathematical Mono-
+graphs. Oxford University Press, Oxford, 2000. Cited p. 40.
+[JP13] Lizhen Ji and Athanase Papadopoulos. Historical development of Teichmüller theory. Arch.
+Hist. Exact Sci., 67(2):119–147, 2013. Cited p. 5.
+[Kal99] D. Kaledin. A canonical hyperkähler metric on the total space of a cotangent bundle. In
+Quaternionicstructuresinmathematicsandphysics(Rome,1999) ,pages195–230.Univ.Studi
+Roma “La Sapienza”, Rome, 1999. Cited p. 40.
+[Kam99] Hiroyuki Kamada. Neutral hyper-Kähler structures on primary Kodaira surfaces. Tsukuba J.
+Math., 23(2):321–332, 1999. Cited p. 44.
+[Kap90] M. Kapovich. Deformation spaces of ﬂat conformal structures. In Proceedings of the Second
+Soviet-Japan Joint Symposium of Topology (Khabarovsk, 1989), volume 8, pages 253–264,
+1990. Cited p. 26.
+[Kap09] Michael Kapovich. Hyperbolic manifolds and discrete groups. Modern Birkhäuser Classics.
+Birkhäuser Boston, Inc., Boston, MA, 2009. Reprint of the 2001 edition. Cited p. 30.
+[Kaw96] Shingo Kawai. The symplectic nature of the space of projective connections on Riemann
+surfaces. Math. Ann., 305(1):161–182, 1996. Cited pp. 6, 33, 37.
+[Kli17] Bruno Klingler. Chern’s conjecture for special aﬃne manifolds. Ann. of Math. (2), 186(1):69–
+95, 2017. Cited p. 20.
+[Kou94] Christos Kourouniotis. Complex length coordinates for quasi-Fuchsian groups. Mathematika,
+41(1):173–188, 1994. Cited p. 34.
+[Kra72] IrwinKra. OnspacesofKleiniangroups. Comment.Math.Helv. ,47:53–69,1972. Citedp.31.
+[KS58] K. Kodaira and D. C. Spencer. On deformations of complex analytic structures. I, II.Ann. of
+Math. (2), 67:328–466, 1958. Cited pp. 5, 28.
+[LESSV15] M.ElenaLuna-Elizarrarás,MichaelShapiro,DanieleC.Struppa,andAdrianVajiac. Bicomplex
+holomorphic functions. Frontiers in Mathematics. Birkhäuser/Springer, Cham, 2015. The
+algebra, geometry and analysis of bicomplex numbers. Cited p. 15.
+[Lib52a] PauletteLibermann.Surlesstructurespresqueparacomplexes. C.R.Acad.Sci.Paris ,234:2517–
+2519, 1952. Cited p. 3.
+[Lib52b] Paulette Libermann. Sur les structures presque quaternioniennes de deuxième espèce. C. R.
+Acad. Sci. Paris, 234:1030–1032, 1952. Cited p. 44.
+[Lib54] PauletteLibermann. Surleproblèmed’équivalencedecertainesstructuresinﬁnitésimales. Ann.
+Mat. Pura Appl. (4), 36:27–120, 1954. Cited p. 16.
+[Lib55] Paulette Libermann. Sur les structures presque complexes et autres structures inﬁnitésimales
+régulières. Bull. Soc. Math. France, 83:195–224, 1955. Cited p. 44.
+[Lou15a] BriceLoustau. Thecomplexsymplecticgeometryofthedeformationspaceofcomplexprojec-
+tive structures.Geom. Topol., 19(3):1737–1775, 2015. Cited pp. 6, 33, 34, 36, 37.
+[Lou15b] BriceLoustau. Minimalsurfacesandquasi-Fuchsianstructures. Notespublishedonline, 2015.
+Available at http://www.brice.loustau.eu/ressources/Loustau-Asheville2015.
+pdf. Cited pp. 39, 42.
+[Lou15c] BriceLoustau. Minimalsurfacesandsymplecticstructuresofmodulispaces. Geom.Dedicata,
+175:309–322, 2015. Cited pp. 6, 33.
+[Mar74] AlbertMarden. Thegeometryofﬁnitelygeneratedkleiniangroups. Ann.ofMath.(2) ,99:383–
+462, 1974. Cited p. 31.
+[Mas88] Bernard Maskit. Kleinian groups, volume 287 of Grundlehren der Mathematischen Wis-
+senschaften[FundamentalPrinciplesofMathematicalSciences] .Springer-Verlag,Berlin,1988.
+Cited p. 30.
+51
+
+===== PDF PAGE 52 =====
+[McM00] Curtis T. McMullen. The moduli space of Riemann surfaces is Kähler hyperbolic.Ann. of
+Math. (2), 151(1):327–357, 2000. Cited pp. 33, 38.
+[Mer12] Jochen Merker. On Almost Hyper-Para-Kähler Manifolds. ISRN Geometry, 2012:1–13, 2012.
+Cited p. 44.
+[Nih04] Terumasa Nihonyanagi. Notes on 4-dimensional hyper-para-Kähler manifolds. Arab J. Math.
+Sci., 10(1):43–48, 2004. Cited p. 44.
+[NS12] HosseinNamaziandJuanSouto. Non-realizabilityandendinglaminations: proofofthedensity
+conjecture. Acta Math., 209(2):323–395, 2012. Cited p. 31.
+[Ohs11] Ken’ichi Ohshika. Realising end invariants by limits of minimally parabolic, geometrically
+ﬁnite groups.Geom. Topol., 15(2):827–890, 2011. Cited p. 31.
+[Pap07] Athanase Papadopoulos, editor. Handbook of Teichmüller theory. Vol. I, volume 11 ofIRMA
+Lectures in Mathematics and Theoretical Physics. European Mathematical Society (EMS),
+Zürich, 2007. Cited pp. 4, 27, 29.
+[Pla01] Ioannis D. Platis. Complex symplectic geometry of quasi-Fuchsian space. Geom. Dedicata,
+87(1-3):17–34, 2001. Cited p. 6.
+[Rs48] P. K. Raˇ sevski ˘ı. The scalar ﬁeld in a stratiﬁed space.Trudy Sem. Vektor. Tenzor. Analizu,
+6:225–248, 1948. Cited p. 3.
+[Sik12] AdamS.Sikora. Charactervarieties. Trans.Amer.Math.Soc. ,364(10):5173–5208,2012. Cited
+pp. 26, 27.
+[Sim91] Carlos T. Simpson. Nonabelian Hodge theory. InProceedings of the International Congress of
+Mathematicians,Vol.I,II(Kyoto,1990) ,pages747–756.Math.Soc.Japan,Tokyo,1991. Cited
+p. 28.
+[Sim92] Carlos T. Simpson. Higgs bundles and local systems. Inst. Hautes Études Sci. Publ. Math.,
+(75):5–95, 1992. Cited p. 28.
+[Sul85] Dennis Sullivan. Quasiconformal homeomorphisms and dynamics. II. Structural stability im-
+plies hyperbolicity for Kleinian groups.Acta Math., 155(3-4):243–260, 1985. Cited p. 31.
+[Tak17] LeonTakhtajan.OnKawaitheoremfororbifoldRiemannsurfaces. Preprint: arXiv:1708.09052,
+2017. Cited p. 34.
+[Tan94] Ser Peow Tan. Complex Fenchel-Nielsen coordinates for quasi-Fuchsian structures. Internat.
+J. Math., 5(2):239–251, 1994. Cited p. 34.
+[Thu80] WilliamP.Thurston. Geometryandtopologyof3-manifolds. NotespublishedonlinebyMSRI:
+http://library.msri.org/books/gt3m/, 1980. Cited p. 30.
+[Thu97] WilliamP.Thurston. Three-dimensionalgeometryandtopology.Vol.1 ,volume35of Princeton
+Mathematical Series. Princeton University Press, Princeton, NJ, 1997. Edited by Silvio Levy.
+Cited pp. 24, 25.
+[Tra18] Samuel Trautwein. The Donaldson hyperkähler metric on the almost-Fuchisan moduli space.
+Preprint: arXiv:1809.00869, 2018. Cited p. 6.
+[Tro92] Anthony J. Tromba. Teichmüller theory in Riemannian geometry. Lectures in Mathematics
+ETHZürich.BirkhäuserVerlag,Basel,1992. LecturenotespreparedbyJochenDenzler. Cited
+p. 36.
+[TT03] Leon A. Takhtajan and Lee-Peng Teo. Liouville action and Weil-Petersson metric on deforma-
+tionspaces,globalKleinianreciprocityandholography. Comm.Math.Phys. ,239(1-2):183–240,
+2003. Cited p. 33.
+[Vai89] I. Vaisman. Basics of Lagrangian foliations. Publ. Mat., 33(3):559–575, 1989. Cited p. 7.
+[VK99] Misha Verbitsky and Dmitri Kaledin. Hyperkahler manifolds, volume 12 ofMathematical
+Physics (Somerville). International Press, Somerville, MA, 1999. Cited pp. 4, 40.
+52
+
+===== PDF PAGE 53 =====
+[Vl11] Gabriel Eduard Vî lcu. Para-hyperhermitian structures on tangent bundles. Proc. Est. Acad.
+Sci., 60(3):165–173, 2011. Cited p. 44.
+[Vor09] Theodore Voronov. Diﬀerential geometry, lecture 11. Lecture notes published online, 2009.
+Available athttp://www.maths.manchester.ac.uk/~tv/. Cited p. 14.
+[Wei58] AndréWeil. ModulesdessurfacesdeRiemann. In SéminaireBourbaki;10eannée: 1957/1958.
+Textes des conférences; Exposés 152à 168; 2e éd.corrigée, Exposé 168, page 7. Secrétariat
+mathématique, Paris, 1958. Cited p. 5.
+[Wei71] AlanWeinstein. SymplecticmanifoldsandtheirLagrangiansubmanifolds. AdvancesinMath. ,
+6:329–346 (1971), 1971. Cited pp. 3, 7, 8.
+[Wik17] Wikipedia. Split-complex number — Wikipedia, the free encyclopedia, 2017. Cited p. 12.
+[Wol82] Scott Wolpert. The Fenchel-Nielsen deformation. Ann. of Math. (2), 115(3):501–528, 1982.
+Cited p. 5.
+[Wol83] Scott Wolpert. On the symplectic geometry of deformations of a hyperbolic surface.Ann. of
+Math. (2), 117(2):207–234, 1983. Cited p. 5.
+[Wol85] ScottWolpert. OntheWeil-Peterssongeometryofthemodulispaceofcurves. Amer.J.Math. ,
+107(4):969–997, 1985. Cited p. 5.
+[Wol90] Scott A. Wolpert. The Bers embeddings and the Weil-Petersson metric. Duke Math. J.,
+60(2):497–508, 1990. Cited p. 38.
+[Wol10] Scott A. Wolpert. Families of Riemann surfaces and Weil-Petersson geometry, volume 113 of
+CBMS Regional Conference Series in Mathematics. Published for the Conference Board of the
+Mathematical Sciences, Washington, DC; by the American Mathematical Society, Providence,
+RI, 2010. Cited p. 29.
+[Yau09] S. Yau. Calabi-Yau manifold. Scholarpedia, 4(8):6524, 2009. revision #170091. Cited p. 44.
+53
