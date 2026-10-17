@@ -1,0 +1,33 @@
+{
+  "scope": "Algebra checks only; analytic proofs are in notes 22--25.",
+  "exact_rational_matrix_second_variation_checks": 100,
+  "exact_rational_nonlinear_scalar_second_variation_checks": 100,
+  "exact_rational_symplectic_Jacobian_checks": 100,
+  "exact_rational_affine_plane_pullback_checks": 100,
+  "floating_critical_foliation_invariance_checks": 100,
+  "maximum_floating_invariance_error": 2.8609792490763984e-17,
+  "critical_logarithmic_model_second_difference_ratios": [
+    {
+      "n": 4,
+      "normalized_second_difference": 1.3862943611198908
+    },
+    {
+      "n": 8,
+      "normalized_second_difference": 1.3862943611198908
+    },
+    {
+      "n": 12,
+      "normalized_second_difference": 1.3862943611198872
+    },
+    {
+      "n": 16,
+      "normalized_second_difference": 1.3862943611198872
+    },
+    {
+      "n": 20,
+      "normalized_second_difference": 1.3862943611198872
+    }
+  ],
+  "compact_six_dimensional_resonance_weight": 0,
+  "all_checks_passed": true
+}
