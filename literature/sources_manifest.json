@@ -191,5 +191,28 @@
     ],
     "visual_preview": "previews/Journe_theorem.png",
     "visual_verification_note": "The original theorem on journal p.187 was inspected in the rendered page on 2026-10-17."
+  },
+  {
+    "filename": "16_Zeghib_2004_Lipschitz_regularity.pdf",
+    "title": "Lipschitz Regularity in Some Geometric Problems",
+    "download_url": "https://perso.ens-lyon.fr/zeghib/Lipschitz.regularity.pdf",
+    "landing_url": "https://perso.ens-lyon.fr/zeghib/Lipschitz.regularity.pdf",
+    "publication_note": "Geometriae Dedicata 107 (2004), 57-83; author-hosted journal PDF",
+    "collected_utc": "2026-10-17T13:37:20.047738+00:00",
+    "resolved_url": "https://perso.ens-lyon.fr/zeghib/Lipschitz.regularity.pdf",
+    "download_status": "downloaded",
+    "bytes": 276979,
+    "sha256": "cce4ccd7d2afff503a8870d2b04c14510f7d0ed695a3da53e674984bdbbfe12e",
+    "pages": 27,
+    "first_page": "Lipschitz Regularity in Some Geometric Problems\nABDELGHANI ZEGHIB\nCNRS, UMPA, E´cole Normale Supe´rieure de Lyon, 46, alle´e d’Italie, 69364 Lyon cedex 07,\nFrance. e-mail: Zeghib@umpa.ens-lyon.fr\n(Received: 23 August 2002; accepted in ﬁnal form: 7 April 2003)\nAbstract.The Lipschitz regularity is perhaps the most natural, and surely the most geometri-\ncal among all the types of regularities. For example, the Lipschitz character of an ordinary\ndifferential equation (vector ﬁeld) is the natural classical sufﬁcient condition for the (unique)\nintegrability of this equation. The goal here is to show that, in some sense, the Lipschitz regu-\nlarity is also necessary, if one assumes (geometric) individual conditions on the trajectories. In\nother wor",
+    "visual_verified_pages": [
+      7,
+      21
+    ],
+    "visual_previews": [
+      "previews/Zeghib_higher_codimension.png",
+      "previews/Zeghib_complex_motion.png"
+    ],
+    "visual_verification_note": "Journal pp.63 and 77 inspected in rendered images on 2026-10-17; used only for scope audit, not as a missing Anosov theorem."
   }
 ]

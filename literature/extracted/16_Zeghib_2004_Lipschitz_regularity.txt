@@ -1,0 +1,1126 @@
+
+===== PDF PAGE 1 =====
+Lipschitz Regularity in Some Geometric Problems
+ABDELGHANI ZEGHIB
+CNRS, UMPA, E´cole Normale Supe´rieure de Lyon, 46, alle´e d’Italie, 69364 Lyon cedex 07,
+France. e-mail: Zeghib@umpa.ens-lyon.fr
+(Received: 23 August 2002; accepted in ﬁnal form: 7 April 2003)
+Abstract.The Lipschitz regularity is perhaps the most natural, and surely the most geometri-
+cal among all the types of regularities. For example, the Lipschitz character of an ordinary
+differential equation (vector ﬁeld) is the natural classical sufﬁcient condition for the (unique)
+integrability of this equation. The goal here is to show that, in some sense, the Lipschitz regu-
+larity is also necessary, if one assumes (geometric) individual conditions on the trajectories. In
+other words, we show that tangential rigidity leads to a transversal regularity.
+Mathematics Subject Classiﬁcations (2000).34A26, 53A20, 57R30.
+Key words.Lipschitz, line, parabola, causal, codimension one foliation.
+1. Introduction
+Recall that a mappingfbetween two metric spacesðX;dXÞandðY;dYÞis Lipschitz if
+there exists a constantcsuch thatdYðfðxÞ;fðyÞÞ4cdXðx;yÞ, for anyx;y2X.I ti s
+called locally Lipschitz, if every point ofXadmits a neighborhood where the restric-
+tion offis Lipschitz. Being deﬁned in this broad context, this gives Lipschitz regu-
+larity an advantage in ﬂexibility over the other classicalCk-differentiability. On the
+other hand, Lipschtiz regularity is omnipresent; this is seen, for instance, in piecewise
+linear objects in nature. We are going here to bring out and analyze, in an elementary
+way, a Lipschitz regularity phenomenon whose starting point is the following:
+STARTING FACT 1.1 (Lipschitz regularity of planar partition by line segments).
+Let U be an open subset of the Euclidean planeR2. LetF be a family ofdisjoint
+ðstraightÞline segments which arecompletein U i.e. any element ofF equals the open
+straight line segment joining two points of the boundary of U.ðEquivalently, an element
+ofF is the connected component of an intersection l\U, where l is a lineÞ.
+Then,F is locally Lipschitz, that is, the map u:S!S1, deﬁned in the support S/C26U
+ofF,which associates toalinesegment itsunit tangentvector, is locally Lipschitz.Fur-
+thermore, the Lipschitz constantðwhich is a function on UÞdepends only on Uðnot on
+FÞ.
+Proof.We will focus on the case where the familyF consists of exactly two line
+segments. One might say, there is nothing to prove here: obviously, any partition
+with two elements, which are closed submanifolds of any manifold, is locally
+Geometriae Dedicata107:57–83, 2004. 57
+# 2004Kluwer Academic Publishers. Printed in the Netherlands.
+
+===== PDF PAGE 2 =====
+Lipschitz. The point here is to show this is uniform, that is the involved (local)
+Lipschitz constants do not depend on the partition, but, as stated above, only on the
+geometry ofU. Then, the proof in the two elements case yields a one for partitions
+with three elements, and so and so, in fact, for partitions with any cardinality.
+Therefore, we will restrict ourselves to the case of two elements.
+Because the problem is local, we will assume thatUis convex. Our family consists
+of two line segmentsl
+1 \U andl2\U, wherel1 andl2 are lines in the Euclidean
+planeR2, which by hypothesis intersect outsideU. In order to evaluate the Lipschitz
+distortion of the family, one just evaluate the same for the holonomy mappings
+obtained from any smooth curvesTandT0transversal to the family. They are map-
+pings deﬁned on sets of two points by:T\li!T0\li. In fact, there is no loss to
+generality in assuming thatTandT0are parallel line segments. In notation, letT1
+andT2 be two parallel (compact) line segments contained inU, such thatT1 (resp.
+T2) cutsl1 andl2 ona1 anda2 (resp.b1 andb2) respectively.
+Let cbe the intersection point ofl1 andl2 (the following discussion is trivial if
+l1 \l2 ¼;). The trianglesca1a2 andcb1b2 are similar and hence
+dðb1;b2Þ
+dða1;a2Þ¼dðc;b1Þ
+dðc;a1Þ
+(Thales Theorem). Therefore, we have the following estimate:
+dðb1;b2Þ
+dða1;a2Þ¼dðc;b1Þ
+dðc;a1Þ4 dðc;a1Þþdða1;b1Þ
+dðc;a1Þ 4 1þdða1;b1Þ
+dðc;a1Þ
+4 1þdHausðT1;T2Þ
+dðl1 \l2;T1Þ4 1þdHausðT1;T2Þ
+dð@U;T1Þ
+In this last line,ddenotes the distance between subsets (the inf of distances of their
+points), anddHaus denotes the Hausdorff distance between subsets.
+This shows thatF is uniformly locally Lipschitz when composed with two
+elements, and hence for anyF as explained above. &
+Figure 1.
+58 ABDELGHANI ZEGHIB
+
+===== PDF PAGE 3 =====
+The Fact applies in particular to partitions ofUby closed (inU) line segments, i.e.
+whenF has a total support. It says that such a partition is a Lipschitz foliation.
+Observe that we don’t assume a priori that a foliation is continuous.
+In the opposite case where the support ofF is a proper subsetSofU, the Fact tells
+thatF extends to a Lipschitz lamination on the closure ofS.
+In this text, we will generally focus on foliations instead of partitions with a proper
+support.
+A foliationF ofU may be parameterized by a vector ﬁeldX (our interests
+here are local in nature, and so we don’t mind on global nonorientability
+problems). For us here, the foliationF isLipschitz, if one can choose such aXto
+be Lipschitz (this is equivalent to the fact that the unit tangent vector ﬁeld is
+Lipschitz). The ﬂow of such a vector ﬁeld is Lipschitz, i.e. a one parameter family
+of (local) Lipschitz homeomorphisms. In fact, more generally, any holonomy map,
+partially deﬁned between two transversalst andt0, is Lipschitz. The transversals
+are required to beC1 submanifolds (or merely Lipschitz submanifolds, suitably
+deﬁned). In general, having a Lipschitz holonomy is weaker than being oriented
+by a Lipschitz vector ﬁeld, but the two notions are equivalent in the case of the
+foliations considered here.
+Let’s mention one corollary of Fact 1.1 which shows how non-Lipschitz family of
+lines are ‘conﬂuent’.
+COROLLARY 1.2. LetD be the space of lines ofR2,a n dC/C26D a topological curve.
+Suppose thatCis purely unrectiﬁable, that is no sub-curve of it is rectiﬁableði.e. has
+ﬁnite lengthÞ. ThenC foliates nowhere in the plane. More exactly, letC0be the
+corresponding set in the unit tangent bundle T1R2, then, the projectionC0!R2 is
+injective on no open set ofC0.
+1.1. A GENERALIZATION TO ‘NON-CONNECTED LEAVES’
+Consider a partition as in the starting fact above. In general, the (complete) lines
+determined by the line segments of the partition to intersect, outside ofU. It may
+happen that these extended lines determine an analogous partition in some other
+open subsetU0. In some sense, by following the extended lines, the partition inU
+regenerates somewhere else in the plane. Our proof above applies and yields that
+the holonomy maps fromUtoU0are locally bi-Lipschitz.
+PROPOSITION 1.3. Let U be an open subset of the Euclidean plane, andF a
+partition of a subset N of U, with classes of the form l\U, where l is a lineðdo not take
+the connected component of l\UÞ.
+Then, the ‘global holonomy’ ofF is locally bi-Lipschitz. More exactly, lett1 andt2
+be two1-dimensional C1-submanifolds transverse toF, the partially deﬁned holonomy
+map x2t1 !fðxÞ¼Fx\t2 2t2 is locally bi-Lipschitz.ðt1 andt2 are not necessarily
+in the same connected component of UÞ.
+LIPSCHITZ REGULARITY IN SOME GEOMETRIC PROBLEMS 59
+
+===== PDF PAGE 4 =====
+1.1.1. Topological Caustic¼Differentiable Caustic
+Observe the following amazing fact (see also Section 9.2).
+COROLLARY 1.4. Lettbe a one-dimensional C1-submanifold of the plane. Consider
+the normal exponential map
+p:ðx;tÞ2t/C2R!xþtNðxÞ2R2
+where N is a unit normal ﬁeld ont. If for an open subset V/C26t/C2R,pjV is injective,
+then it is a locally bi-Lipschitz homeomorphism onto its image.
+Iftis C2ðin which casepis C1Þ, a pointðx;tÞis regular, i.e. it admits a neighborhood
+diffeomorphically mapped to its image, iff;ðx;tÞis topologically regular, that is, it
+admits a neighborhood homeomorphically mapped to its image.
+Proof.The proof follows essentially from Proposition 1.3. In theC2 case, apply the
+fact that if aC1 homeomorphism is bi-Lipschitz, then it is a diffeomorphism, that is, its
+derivative is nonsingular (since otherwise, the inverse cannot be Lipschitz).&
+Remark1:5: Recall that the (differential or analytic) caustic oft is the set of
+singular values ofp. This is well deﬁned in the casep isC1, that is, whent isC2.I n
+the case whent isC1, one may deﬁne a topological caustic as the set of topologically
+singular values ofp (which simply means thatp fails to be injective at these values).
+The Corollary states the equality between topological and analytic caustics.
+It follows that ift is everywhere nonC1þLip (i.e.Nis nowhere Lipschitz) thent is
+contained in its caustic!
+Remark1:6: The property of the exponential map stated in the Corollary is remi-
+niscent of properties of holomorphic functions on the complex ﬁeld. There is in fact a well
+developed theory of singularities of ‘optical Lagrangian submanifolds’, which conﬁrms
+analogies but also differences with the holomorphic situation (see for instance [1]).
+The corollary above seems to be generalizable to other situations (see Section 9.2).
+1.2. SHARPNESS
+The following shows that the Lipschitz condition in the previous facts is optimal.
+FACT 1.7. Lett be a compact one-dimensional C1-submanifold in the plane, and
+~nn: t!S1 a unit transversal vector ﬁeld alongtð~nnðxÞis transverse to Txt for any
+x2tÞ. For a positive real T, consider,
+DTðxÞ¼fxþt~nnðxÞ=jtj4Tg
+In order that there exists T> 0 such that the familyfDTðxÞ;x2tgfoliates, i.e.
+x6¼x0¼)DTðxÞ\DTðx0Þ¼;, it is necessary and sufﬁcient that~nn is Lipschitz.
+The necessity part is essentially the content of the Starting Fact. The proof of
+sufﬁciency is similar.
+60 ABDELGHANI ZEGHIB
+
+===== PDF PAGE 5 =====
+1.3.INTERPOLATION OF HOMEOMORPHISMS
+Let B denotes the closed strip in the plane delimited by the lines (parallel to the
+y-axis)f0g/C2R andf1g/C2R. Any increasing homeomorphismf:R!R determines
+a foliationIfby line segments onB. Leaves are obtained by interpolating pairs
+ð0;xÞandð1;fðxÞÞ(by line segments). The increasing condition onfis equivalent
+to the non-intersection inB of these line segments. So, we have a foliation for which
+fis a holonomy map.
+This construction seems to contradict our previous statements because an
+increasing homeomorphismfis not necessarily Lipschitz! The point is that, our
+results apply to foliations of open sets, that is, the unit tangent vector ﬁeld of
+Ifis locally Lipschitz on the interior ofB, but fails to be locally Lipschitz on
+the whole ofB.
+FACT 1.8 (Characterization of locally bi-Lipschitz homeomorphisms). Ifextends
+to a foliation by line segments to a neighborhood ofB iff f is locally bi-Lipschitz.
+Remark1:9. Denote by@/C0B (resp.@þB) the componentf0g/C2R (resp.f1g/C2R)o f
+the boundary ofB. Then,Ifcan be extended to an open set containing@/C0B (resp.
+@þB), iff,f(resp.f/C01) is locally Lipschitz. A (local) Lipschitz defect (that is a kind of
+function measuring the modulus of Lipschitz continuity) offcan be expressed as a
+rate of conﬂuence of elements ofIfnear@/C0B (outside ofB).
+We also have the following more general fact wherefis not assumed to be increa-
+sing, or even homeomorphic. Here, the disjointness condition concerns only a neigh-
+borhood of the source.
+FACT 1.10. Lett
+1 andt2 be two disjoint one-dimensional C1-submanifolds in the
+plane, and f: t1 !t2 a mapðnot necessarily homeomorphicÞ. Consider the family of
+linesfx;fðxÞg ðthis denotes the line joining x and fðxÞÞ, for x2t1. There exists a
+neighborhood U oft1 on which the family of subsetsfx;fðxÞg\U;x2t1, are disjoint,
+iff, f is locally Lipschitz.
+Figure 2.The foliationIfon B.
+LIPSCHITZ REGULARITY IN SOME GEOMETRIC PROBLEMS 61
+
+===== PDF PAGE 6 =====
+1.3.1.Realization of a Homeomorphism as a Holonomy of a Foliation by Rigid
+Curves.
+It is very suggestive to ask whether the facts above extend to foliations by ‘rigid’
+curves.
+In particular, one may ask if, in the construction ofIf, changing straight line
+segments by graphs of polynomials (each graph interpolates two pointsð0;xÞand
+ð1;fðxÞÞ), one may get a foliation deﬁned in a neighborhood ofB (forfnon-
+Lipschitz)?
+One may try the following naive construction. Consider the polynomial of degree
+3 (Lagrange-)interpolatingð/C01;xÞ;ð0;xÞ;ð1;fðxÞÞandð2;fðxÞÞ. One expects that
+the family of cubics obtained forx2R gives rise to a foliation of the strip delimited
+byf/C01g/C2R andf2g/C2R having obviouslyfas a holonomy map.
+However, the non-intersection of cubics (over the interval [/C01, 2]) is not auto-
+matic. The Lagrange interpolation is not monotonic! In fact, it seems that none of
+the interpolation methods can be (monotonic). So, we formulate the question of
+realization offas follows:
+QUESTION 1.11. What is the required regularity for a homeomorphism ofR to be
+a holonomy map of a foliation of an open set of the plane by graphs of polynomials
+with bounded degree (or more weakly by graphs of polynomials with unbounded
+degree, or even by real analytic leaves)?
+1.4. CODIMENSION ONE FOLIATIONS
+All the statements here generalize to codimension 1 foliations. For example, Fact 1.1
+is valid for foliations of open sets of the Euclidean spaceRnby pieces of hyperplanes.
+1.5. CONTENT OF THE ARTICLE
+The objective of this article is to try to understand Fact 1.1 and to see to what extent
+it generalizes to codimension 1 foliations by ‘rigid’ leaves. In particular to answer
+Question 1.11 (Theorem 5.1).
+Our result is that there is a mild regularity for all codimension 1 foliations by rigid
+leaves (Corollary 4.2), that we will callgraph-Lipschitzregularity (Section 4.1.1).
+Our approach to the graph Lipschitz regularity is based on the following construc-
+tion. Locally, the leaves of a codimension 1 foliation may be seen as graphs of
+functions on an open setUof a Euclidean space. The foliation (locally) corresponds
+to a curve in the functional spaceCðU;RÞ. The nonintersection of leaves implies that
+this curve iscausal, i.e. it is directed by the cone ofpositivefunctions onU. The
+graph-Lipschitz regularity follows from this description, in the case of leafwise rigid
+foliations, that is essentially when this causal curve lies in a ﬁnite-dimensional space.
+The article also contains comments on related topics, in particular some special
+generalizations of Lipschitz regularity to the higher codimension case.
+62 ABDELGHANI ZEGHIB
+
+===== PDF PAGE 7 =====
+2. Counter-Examples in Higher Codimension
+The automatic Lipschitz regularity is a codimension 1 phenomenon. For example, in
+R3 there is place for (global) nonmeasurable partition by line segments. Indeed,
+endowR3 with coordinatesðx;y;zÞand consider the unit vector ﬁeld
+Xðx;y;zÞ¼ðcosyðzÞ;sinyðzÞ;0Þ;
+wherey:R!R is any function.
+Forzﬁxed,Xdetermines a (global) foliation ofR2/C2fzgby parallel lines with
+slopeyðzÞ. Therefore,Xdetermines a partition ofR3 by lines, which has the same
+regularity asy. In particular,Xmay be non-Lipschitz, even nonmeasurable, etc.
+Observe that whenXis measurable, its ﬂow
+ft:ðx;y;zÞ!ðx;y;zÞþtXðx;y;zÞ
+preserves the volume. In the case wherey is regular, sayC1, this follows from the
+unipotent form ofD ft. For a nonregulary one uses approximation byC1 ones.
+In particular, such anXis a special solution of the Euler equations of hydro-
+dynamics, which are:
+@X=@t¼ð/C0X:HÞX/C0Hp;
+divX¼0:
+Here,X¼Xðt;x;y;zÞis a nonautonomous vector ﬁeld,pis called the pressure,
+ð/C0X:HÞX¼DX:Xis the (geodesic) curvature of the trajectories (of particles).
+Our example above is stationaryð@X=@t¼0Þand special in the sense thatHp¼0,
+i.e. the pressure is constant.
+Although, our example may be nonregular, it has a simple geometry. One dares
+ask if this is a general fact (or may be not):
+QUESTION 2.1. Find all the (global) foliations (with a ﬁxed regularity, for example
+C o)o fR3 by lines. For example, assuming further that they are volume preserving
+(and hence special solutions of Euler equations).
+3. Another Approach. Lipschitz Curves and Directing Cones
+Here we start by considering another (qualitative) approach to the Lipschitz regu-
+larity. To simplify notations, we restrict ourselves to foliations of the unit (open) disc
+Figure 3.
+LIPSCHITZ REGULARITY IN SOME GEOMETRIC PROBLEMS 63
+
+===== PDF PAGE 8 =====
+of the plane. We identify a foliation by line segments, to its quotient space, viewed as
+a subset, in fact a curve, in the space of line segments of the disc.
+The nonintersection condition translates to that the quotient space is ‘totally ordered’,
+or equivalently that it is a ‘causal’ curve in the sense of the canonical conformal Lorentz
+structure on the space of line segments of the disc. Here follow the details.
+3.0.1.The Space of Line Segments of the Disc
+When a disc is seen (as a convex subset) in the (real) projective plane, there is a polar
+correspondence between the space of line segments of this disc and the interior of its
+complementary set, which is homeomorphic to a Mo¨bius strip.
+Here, to avoid global topological complications, we will describe a partial corre-
+spondence between the space of line segments of the usual discH
+2 (i.e. the unit disc
+in the Euclidean plane) and its exteriordS2 (see below for justiﬁcation of the notation).
+To a line segments/C26H2, associatepðsÞ2dS2, the intersection point of the two
+lines (indS2) which are tangent to the unit circle (the boundary of the disc) at the
+endpoints of the given line segments. This is not deﬁned for segments passing
+through the origin 0 (that is why one needs to consider the projective plane).
+The inverse map will be denotedp2dS2 !sðpÞ/C26H2.
+3.0.2.Cones
+The notationH2 refers to the hyperbolic structure of the disc, which is a Riemannian
+metric compatible with its projective structure. The notationdSreads de Sitter and
+refers to a canonical Lorentz metric ondS2. The associated Lorentz conformal struc-
+ture, i.e. its isotropic cone ﬁeld, is easy to describe.
+In dimension 2, a Lorentz conformal structure consists in giving two transverse
+direction ﬁelds. Forp2dS2, letL1
+pandL2
+pbe the line segments emanating fromp
+and tangent to the boundary@H2. One may chooseL1
+pandL2
+pto be continuous on
+p, by imposing that their tangent (half)-directions (atp) l1
+p andl2
+p determine the
+canonical orientation of the Euclidean plane.
+The isotropic coneatpis the union of the direction ofl1
+pandl2
+p.
+The positiveinﬁnitesimal causality cone atpis:Cþ
+p¼Rþl1
+pþRþl2
+p. In other
+words, it is the union of all the half directions determining (half) line segments which
+meet@H2.
+Figure 4.
+64 ABDELGHANI ZEGHIB
+
+===== PDF PAGE 9 =====
+The geometric causality coneCþ
+p is the part of the plane delimited byL1
+p,L2
+pand
+@H2, i.e. the union of half segments joiningpto points of@H2.
+One deﬁnes analogously the negative conesC/C0
+p andC/C0
+p, and nonoriented cones
+Cp¼Cþ
+p[C/C0
+p andCp¼Cþ
+p[C/C0
+p
+3.0.3.Orders
+In dS2, we have a partial orderp4q()Cþ
+p/C26Cþ
+q()p2Cþ
+q()C/C0
+q/C26C/C0
+p()
+q2C/C0
+p.
+Observe that the set of points comparable withp, i.e. those pointsqsatisfying one
+of the relationsp4q,o rq4p,i sCp.
+To interpret this for line segments ofH2, let us restrict our considerations to the
+setS of line segments contained in the (open) lower half disc (delimited by the
+x-axis).
+There is an order4 on S;s4s0()s0is aboves, i.e.s0separatessfrom the upper
+half disc.
+The subset ofdS2 corresponding toS is the lower half stripP delimited by the
+lines tangent to@H2 and parallel to they-axis.
+Forp;q2P (equivalentlysðpÞ,sðqÞ2S), we havep4q()sðpÞ4sðqÞ.
+3.0.4Foliations
+Observe that fornearbysegmentss;s02S;ifs\s0¼;, then,s and s0are
+comparable. Equivalently:
+FACT 3.1. A point p2P admits a neighborhood Vpsuch that, if p02Vp, and the
+corresponding segments sðpÞand sðp0Þare disjoint, then: p02Cpðequivalently p2Cp0Þ.
+Consider now a foliationF of the lower half disc by segments, and lett be a trans-
+versal. This deﬁnes a mapQ:x2t!pðFxÞ2P. Its image is the quotient space of
+F. Identifyt withR viaI:R!t.
+The curvec¼QoI:R!dS2 is causal, in the sense that,8t;t0;cðt0Þ2CcðtÞ. In fact,
+up to a switch of orientation (ofR) we may assume thatcis order preserving:
+t05t¼)cðt0Þ5cðtÞ, that is,t05t¼)cðt0Þ2Cþ
+cðtÞ
+3.0.5.Causal Versus Lipschitz
+We are now in position to prove a variant of Fact 1.1 by showing that the curvecis
+‘geometrically Lipschitz’, that is it can be parametrized to become Lipschitz.
+This fact is well known in Lorentz geometry (and other ﬁelds). Its proof is very
+natural, being causal is essentially the geometric counterpart of being geometrically
+Lipschitz. We summarize the situation in the following statement.
+FACT 3.2. LetP0be the sub-strip inP of points with y-coordinates4/C02ðthat is,
+P0¼fðx;yÞ2R2;jxj4 1;y4/C02gÞ.
+LIPSCHITZ REGULARITY IN SOME GEOMETRIC PROBLEMS 65
+
+===== PDF PAGE 10 =====
+Let p¼ðxp;ypÞ;q¼ðxq;yqÞ2P0two comparable points, say, p4q. Then:
+dðyp;yqÞ4dðp;qÞ4 1
+cosðp=4Þdðyp;yqÞ
+Here d denotes the Euclidean distance.
+In particular, if A is a totally ordered subset inP0, then theðEuclideanÞprojection
+pr: A!y-axis, is injective, and bi-Lipschitz, with a bi-Lipschitz constant4 1
+cosðp=4Þ.
+In particular, a causal curve lying inP0can be re-parameterized, by projecting it onto
+the y-axisðwhich is also a causal curveÞ,t ob eðuniformlyÞbi-Lipschitz.
+Any causal curve indS2 ðnot necessarily inP0Þcan be parametrized by projecting
+onto a causal line segment, to become locally bi-Lipschitz.
+Proof.The proof of the ﬁrst point follows by observing that the maximal angle
+between the line joiningpandqand they-axis, isp=4. &
+3.1.CURVES DIRECTED BY CONE FIELDS. LINEAR VERSION
+Here, we generalize the previous fact to cone structures not necessarily derived from
+conformal Lorentz structures. However, to simplify, we will only consider a linear
+situation.
+3.1.1.Data
+Let E be a ﬁnite-dimensional vector space andC a cone (usually convex but
+nonclosed), such that the closure of its convex envelope½C/C138is a convexpropercone,
+i.e. it doesn’t contain a half vector space: ifu2½C/C138and/C0u2½C/C138, thenu¼0.
+This determines an order onE ;p5q()p2qþC()p/C0q2C.
+A (vector) lineD is called causal, ifD ¼Ru0, whereu02C.
+Let Fbe a support hyperplane for½C/C138such thatF\½C/C138¼f0g, then, we have a
+decompositionE ¼D /C8F, and a projectionpr: E !F.
+DEFINITION 3.3. We say that a totally ordered subsetB is causallyparameterized
+with respect to a decompositionE ¼D /C8F, if A is the graphfðs;dðsÞÞ;s2Ag,o fa
+mapd:A!F, where A is a subset ofD .
+We say thatB is causally parameterized, if this happens for some decomposition.
+LEMMA 3.4. Given a decomposition E¼D /C8F, then, any totally ordered subset B
+can be causally parameterized with respect to it, in a uniform Lipschitz manner. More
+exactly, the projection pr:B!D is injective and bi-Lipschitz onto its image. The
+bi-Lipschitz constant depends only on C, D and F.
+In particular, identifying D withR, any totally ordered subset B, is the image of an
+order preserving Lipschitz map c:A/C26R!E.
+Proof.The proof is the same as that of the fact above. We assume that E is
+endowed with a Euclidean metric for whichD andFare orthogonal.
+66 ABDELGHANI ZEGHIB
+
+===== PDF PAGE 11 =====
+The bi-Lipschitz constant is 1=cosa, wherea is the maximal angle formed byD
+and half lines contained inC. The anglea is< p=2 by the hypothesis that the closed
+convex envelope ofC is a proper convex cone. &
+3.1.2.Causal Curves
+We say that a mapc:I/C26R!E , whereIis an interval, is acausal curveif it is
+continuous injective and its image is totally ordered (or equivalently,cis continuous
+and order preserving). In a standard way, one proves.
+FACT 3.5. A totally ordered set corresponds to a causal curve, iff, its projection on D
+is connectedðan intervalÞ.
+In particular, a causal curve is aðuniformÞLipschitz graph over D.
+Conversely, an absolutely continuous curve, that is cðsÞ¼
+Rs
+0c0ðxÞdx, and
+c02L1
+Loc ðR;EÞ, is a causal curve, iff, almost everywhere, c0ðsÞ2C.
+Remark3:6: We are not stating here that a continuous order-preserving map
+R!E is Lipschitz, but rather than that it can be (causally) reparameterized (over
+some decomposition) to become Lipschitz (canonically and uniformly). In fact, one
+naturally meets causal but not causally parameterized curves. The notion of causal
+curves is geometric and not parametric.
+3.1.3.Inﬁnite Dimensional Case
+All the previous discussion generalizes to the case whereE is an inﬁnite-dimensional
+Banach space, if the closed envelope½C/C138has acompact section,i.e. its intersection
+with the unit sphere is compact (of course, always assuming that it is proper)
+(actually, the point is to suppose there existE > 0, such that ifv¼vFþvD 2C, then
+kvD k5Ekvk).
+4. Analytic Formulation. Codimension One Foliations by Graphs
+Here, we show that a foliation structure is essentially equivalent to giving a causal
+curve in a suitable functional space. This allows us to derive Lipschitz properties
+for such a foliation, when its associated functional space is ﬁnite-dimensional, and
+conversely, to construct examples of such foliations.
+4.0.4. Order on CðM;RÞ
+Let M be a topological space. ConsiderCðM;RÞits space of continuous numerical
+functions. At this stage, we don’t mind on the choice of a topology on it. This
+functional space has a canonical coneCðM;R/C15
+þÞ, that of (strictly) positive functions.
+This is a convex cone, and its closure for any reasonable topology isCðM;RþÞ, the
+cone of non-negative functions. It is proper.
+LIPSCHITZ REGULARITY IN SOME GEOMETRIC PROBLEMS 67
+
+===== PDF PAGE 12 =====
+The vector spaceD of constant functions is acanonical causalline.
+A support hyperplane forC will be a supplementaryFofD , such that nof2Fhas
+a deﬁnite sign (i.e. f is positive or negative). There is no canonical choice of such a
+support hyperplane.
+4.1. FROM PARTITIONS TO CAUSAL CURVES
+PROPOSITION 4.1. Let M be a connected metric space, andF a partition of a subset
+No fM/C2R such that every classðwe will also call it leafÞis the graph of an element of
+CðM;RÞ. Let BðFÞbe the set of involved functions, i.e. the functions whose graphs are
+the leaves ofF.
+Suppose that the vector subspace E of CðM;RÞgenerated by BðFÞ, together with the
+constant functions, is ﬁnite-dimensional. Also, suppose that the elements of BðFÞðand
+hence EÞare locally Lipschitzðas functions on MÞ.
+Then, BðFÞis totallyorderedand therefore,canbeðcasuallyre-Þparameterizedðover
+the constantsÞby a Lipschitz map: c:A!BðFÞ/C26E, where A is a subset ofR.
+The mappingFc:ðx;sÞ2M/C2A!ðx;cðsÞxÞ2N is a locally LipschitzðglobalÞ
+parameterization ofF, i.e. it sends bijectively the partition M/C2f/C1gðon M/C2AÞtoF.
+BðFÞcorresponds to a causal curve, iff, Nðthe support ofFÞintersects the ﬁbers
+fxg/C2R;x2M, in connected sets. In this case, if furthermore M is a manifold, then,
+Fcis a homeomorphism onto its image.
+Proof.The connectedness ofM is exactly required to ensure that if two functions
+u1 andu2, have nonintersecting graphs, then, one of the possibilitiesu1 < u2,o r
+u2 < u1 holds. ThereforeBðFÞis totally ordered. Lemma 3.4 gives a Lipschitz
+parametrization ofBðFÞas claimed.
+The true meaning ofcbeing Lipschitz is that, for any basisf0;... ;fkofE, we have
+cðsÞ¼Saifi, withai:A!R Lipschitz. It then follows, that, if thefiare locally
+Lipschitz, thenFc:ðx;sÞ!ðx;SaiðsÞfiðxÞÞis locally Lipschitz.
+It is clear thatFcis injective and that its image is the support ofF.
+For any ﬁxedx;s2A!cðsÞxis an injective continuous mapping fromA onto the
+ﬁberN\ðfxg/C2RÞ. If this ﬁber is connected, thenA is a countable disjoint union of
+intervals. One then shows thatA is actually an interval, if all the ﬁbers are connected.
+IfA is an interval, andM is a manifold, thenM/C2A is also a manifold, which
+ensures thatFcis a homeomorphism onto its image. &
+4.1.1. Graph-Lipschitz Regularity of Partitions by Rigid Graphs
+See the Remark below for a justiﬁcation of the word ‘graph-Lipschitz’.
+COROLLARY 4.2. Let M be a manifold. A partition ofM/C2Rby graphs ofelements
+ofLipLoc ðM;RÞ, all belonging to the same ﬁnite-dimensional space E, can be para-
+metrized by a locally Lipschitz homeomorphism.
+68 ABDELGHANI ZEGHIB
+
+===== PDF PAGE 13 =====
+Let’s specialize to the simplest situation whereM is an interval ofR, andM/C2R is
+foliated byC1-graphs.
+FACT 4.3 (A variant of Fact 1.1 for leafwise rigid planar vector fields). Let M
+be an interval ofR,Vðx;yÞ¼ð1;Yðx;yÞÞa vector ﬁeld on M/C2R for which there
+exist f0;... ;fk2C1ðM;RÞ, such that, any trajectory of V is the graph of a linear
+combination of the fi.
+Then, there is a homeomorphismF:M/C2R!M/C2R sending the horizontal
+M/C2f/C1gto the foliation determined by V, and
+ðiÞF is locally Lipschitz, and
+ðiiÞV/C14F is locally Lipschitz
+Proof.TakeF¼Fc, wherecis as above. WritecðsÞ¼Saifi,w i t hai:R!R
+Lipschitz. Then,Fðx;sÞ¼ðx;SaiðsÞfiðxÞÞandV/C14F¼@f=@x¼
+/C0
+1;Sai@f=@x
+/C1
+which
+is therefore locally Lipschitz. &
+Remark4 :4 [Graph-Lipschitz regularity]. One may refer to the propertyV/C14F
+locally Lipschitz, as thatVis graph-Lipschitz. By this we mean that, whenVis seen
+as a section of the tangent bundle, its image (or graph) is a ‘Lipschitz submanifold’
+(see Section 9.1.1 for various deﬁnitions of each objects). We think, the notion of
+graph regularity, e.g. graph-C1, graph-Co ... ; is natural, and may be useful. As
+example, in the one-dimensional case, a mappingf:½a;b/C138!R is graph-Lipschitz,
+iff, it has a bounded variation. Indeed, the curve Graph(f) can be parameterized in a
+Lipschitz way, iff, it is rectiﬁable, i.e. it has a ﬁnite length. Writing this length as a
+limit of sums over subdivisions of½a;b/C138, shows that it is ﬁnite, iff, the analogous sums
+corresponding to the total variation offare ﬁnite.
+4.2. FROM CAUSAL CURVES TO FOLIATIONS
+So far, we have proved Lipschitz regularities by showing that a partition structure
+leads to causality, and then to Lipschitz, properties. The goal now is to construct
+foliations by means of causal curves. To begin with, observe that, if
+c:R!CðM;RÞis a causal curve, then the mapF¼Fc:ðx;sÞ!ðx;cðsÞxÞis injec-
+tive. Therefore,Fc would parameterize a foliation, whenever it is surjective and
+bi-continous.
+More exactly, we have the following Proposition and Fact, whose proofs follow
+from a standard manipulation as in Section 3.1 and Proposition 4.1.
+PROPOSITION 4.5. Let M be an open subset of a Euclidean space and
+c:s2R!ðs;dðsÞÞ2D /C8F¼CðM;RÞa continuous curve, causally parameterized
+over the constants, and with a ﬁnite-dimensional range E. Analytically, suppose that:
+. There exist f1;... ;fk2LipLoc ðM;RÞ, generating a support hyperplane F for the
+positive cone of E, that is, no element of F has a deﬁnite sign.
+LIPSCHITZ REGULARITY IN SOME GEOMETRIC PROBLEMS 69
+
+===== PDF PAGE 14 =====
+. cðsÞ¼sþa1ðsÞf1 þ/C1/C1/C1þakðsÞfk, with aiR!R continuous.
+. c is causal, i.e. s0> s¼) 8x2M;cðs0Þx/C0cðsÞx> 0.
+Then,Fc:ðx;sÞ!ðx;cðsÞxÞ¼ðx;sþa1ðsÞf1ðxÞþ/C1/C1/C1þakðsÞfkðxÞÞis a homeo-
+morphism form M/C2R to an open subset of it, which is locally Lipschitz. In particular
+on the image ofFc, there is a foliationF ðwith leaves the graphs of the cðsÞÞ
+parameterized byFc.
+FACT 4.6. A curve c as in the previous proposition is obtained by causally repara-
+meterizing over the constants, any causal curve c0. The inﬁnitesimal ingredients for
+such a curveði.e. c0Þare:
+. f0;... ;fk a basis of Eðthe ﬁnite-dimensional space generated by the cðsÞ,o r
+equivalently the c0ðsÞÞ.
+. a0;... ;ak2L1
+Loc ðR;RÞ, such that, for almost all s,SaiðsÞfiis aðstrictlyÞpositive
+function on M, i.e.SaiðsÞfiðxÞ> 0;8x2M.
+. c0ðsÞ¼S
+Rs
+0aiðxÞdx
+/C0/C1
+fi.
+4.3. EXAMPLE. CONE STRUCTURES ON POLYNOMIAL SPACES
+Let M be an open subset ofRnand denote byPkðMÞthe space of polynomial func-
+tions, with degree4konRnrestricted toM. The positive polynomials give a cone
+structure onPkðMÞ. Let us describe some examples.
+. M¼/C138/C0a1 þa½,a n dk¼1. A polynomial function of degree 1 has a
+representationf:x!axþb. Such a function has a constant sign on
+M, iff,fð/C0aÞand fðþaÞhave the same sign, that is,ð/C0aaþbÞ
+ðaaþbÞ¼/C0a2a2þb2 > 0. Therefore, the cone structure is equivalent to
+the conformal structure deﬁned by the Lorentz metric/C0a2a2þb2 on the
+ða;bÞ–plane.
+. M¼/C138/C01;þ1½,a n dk¼1. When,a!1, the Lorentz structures degenerate
+to a direction ﬁeld, that of constant functions.
+. M¼R,a n dk¼2. A polynomial of degree 2 is writtenax2þbxþc.I ti s
+positive onR()a> 0 andb2/C04ac< 0. Therefore, we obtain the conformal
+structure of the time oriented Minkowski spacefða;b;cÞgendowed with the
+Lorentz formb2/C04ac.
+5. Anti-Lipschitz Facts
+Despite all the already proved Lipschitz properties, we have the following answer to
+Question 1.11.
+THEOREM 5.1. Any increasing homeomorphism ofR can be realized as a holonomy
+map of a foliation ofR2 by parabolas.
+70 ABDELGHANI ZEGHIB
+
+===== PDF PAGE 15 =====
+More precisely, let f be a increasing homeomorphism ofR. There are functions aðsÞ
+and bðsÞsuch that
+ðiÞthe family of graphs of the parabolasfaðsÞx2þbðsÞxþsgs2R foliatesR2, and
+ðiiÞfðsÞ¼sþaðsÞþbðsÞ, i.e.ð1;fðsÞÞ¼H1ð0;sÞwhere H1 is the holonomy map
+f0g/C2R!f1g/C2R ðAlternatively, H1 is the time1 of the ﬂow of the vector
+ﬁeld V such that V/C14F:ðx;yÞ!ð1;2aðyÞxþbðyÞÞ, whereFðx;yÞ¼ðx;aðyÞ
+x2þbðyÞxþyÞ:Þ
+Proof.For the reader convenience, we will give here a proof essentially
+independent of the previous developments.
+We ﬁrstly treat the case wherefis absolutely continuous, that is,fhas a locally
+integrable derivativef02L1
+Loc ðRÞ, andfðsÞ¼
+Rs
+0f0ðxÞdx.
+In this case the familyfaðsÞx2þbðsÞxþsgs2R of parabolas, will satisfy thataandb
+are absolutely continuous. In fact, we will deﬁne their derivativea0andb0, which we
+verify they are inL1
+Loc ðRÞ, and deﬁneaandbto be the integrals
+R
+a0and
+R
+b0, respec-
+tively.
+Take,
+a0ðsÞ¼f0ðsÞ iff0ðsÞ> 1;
+f0ðsÞþ1i f f0ðsÞ4 1
+/C26
+and
+b0ðsÞ¼/C01i f f0ðsÞ> 1;
+/C02i ff0ðsÞ4 1:
+/C26
+We easily verify thata0;b02L1
+LocðRÞ,a n dðb0Þ2/C04a0< 0, that is, for almost all
+s; a0ðsÞx2þb0ðsÞxþ1 is a positive polynomial. This means that the so- obtained curve
+Figure 5.A foliation by parabolas interpolatingf:
+LIPSCHITZ REGULARITY IN SOME GEOMETRIC PROBLEMS 71
+
+===== PDF PAGE 16 =====
+in the (Minkowki) space of parabolas (4.3) is causal, or in other words, if ParðsÞis the
+graph ofaðsÞx2þbxþs, then ParðsÞis strictly aboveParðs0Þwhenevers> s0.
+For any ﬁxedx, consider the mapping
+gx:s!aðsÞx2þbðsÞxþs
+If gxðsÞ¼y, thenðx;yÞ2ParðsÞ. Therefore, in order to prove that we get a
+foliation of the whole plane, it sufﬁces to show thatgxis surjective for allx.
+We have:
+@gxðsÞ
+@s ¼ f0ðsÞx2/C0xþ1i f f0ðsÞ> 1,
+ðf0ðsÞþ1Þx2/C02xþ1¼f0ðsÞx2þðx/C01Þ2 iff0ðsÞ4 1
+/C26
+and, hence,
+@gxðsÞ
+@s > minðx2/C0xþ1;ðx/C01Þ2Þ
+This shows that for anyx6¼1;gxis uniformly expanding, that is its derivative is
+uniformly bounded from below by a positive constant, and therefore it is surjective
+(since it is continuous).
+Now, forx¼1;g
+xisfitself, which is surjective by hypothesis.
+Finally, by construction,f0¼a0þb0þ1, and thus,fðsÞ¼aðsÞþbðsÞþs(by
+absolute continuity), that is the foliation by parabolas interpolatesfas desired.
+This ﬁnishes the proof in the absolutely continuous case.
+Iffis not absolutely continuous, approximate it by a sequenceðfnÞof absolutely
+continuous (or even if we want Lipschitz) homeomorphisms, in the sense of uniform
+convergence on compact sets.
+For eachn, consider functionsanandbn, foliationsfParnðsÞ;s2Rg, and mappings
+gx
+n.
+We have the following estimates:fnðsÞ4anðsÞ4fnðsÞþjsj, andjbnðsÞj4 2jsj.
+These lead to estimates ofgx
+nby means offn. The same is true forhx
+n¼ðgx
+nÞ/C01.
+In particular for any ﬁxedxand anys0¼0,hx
+nð0Þis bounded. Therefore, because
+of the uniform expanding estimate forgx
+n, the sequencehx
+nsatisﬁes Ascoli Theorem,
+and hence has a convergent subsequence, sayhx
+nitself converges to some mappings
+hx.
+Let us show thathx is injective. If not, there would exista> b, such that
+hxðaÞ¼hxðbÞ¼s.
+It then follows that there exist a decreasing sequencesn, an increasing sequences0
+n
+such thats¼limsn¼lims0
+n,a n da¼limgx
+nðsnÞ> b¼limgnðs0
+nÞ.
+In words, letP¼limParnðsnÞ, andP0¼lim Parnðs0
+nÞ, thenPis strictly aboveP0
+(limits exist after passing to subsequences). But these parabolas have at least two
+common pointsð0;sÞandð1; fðsÞÞ. This is a contradiction: the difference of the
+deﬁning function ofPandP0is positive, and has two different zeros.
+Therefore,hxis injective, and by the above estimates relatinghx
+nandfn,hxis also
+surjective.
+72 ABDELGHANI ZEGHIB
+
+===== PDF PAGE 17 =====
+This implies thatgx
+n converges toðhxÞ/C01. One easily sees how this determines a
+foliation by parabolas as desired. &
+Remark5:2: Although, it seems somehow canonical, the construction above is by
+no means unique. There is a large space of foliations answering the problem. It is
+amazing to see how these foliations degenerate.
+Remark5:3: As we discussed in the introduction, the construction of Theorem 5.1
+may be interpreted as an interpolation of a homeomorphism by parabolas. One may
+generalize this to an interpolation of ﬁnite systemsH1;H2;... ;Hn of increasing
+homeomorphisms ofR. The statement is that there is a foliation ofR2 by graphs of
+polynomials of degree4nþ2, such that, for anys2R, thenþ1 points
+ð0;sÞ;ð1;H1ðsÞÞ;ð2;H2H1ðsÞÞ;... ;ðn1Hn;... ;H1ðsÞÞare in the same leaf.
+6. Explanation
+So far, we have obtained three seemingly conﬂicting results: a (plain) Lipschitz
+regularity for foliations by line segments (Fact 1.1), a graph-Lipschitz regularity
+(i.e. a Lipschitz parameterization) for foliations by rigid curves (Corollary 4.2),
+and ﬁnally, a construction of non-Lipschitz foliations by parabolad (Theorem 5.1).
+The reason of the non-Lipschitz regularity is simply that the Lipschitz
+parameterizations are not necessarilybi-Lipschitz.
+We are interested here in understanding the difference between the cases of line
+segments and the other rigid curves (say, parabolas). In particular, this will give a
+new approach to Fact 1.1, by showing that the Lipschitz parameterizations are
+actually bi-Lipschitz in this case.
+To simplify notation, we restrict ourselves to the case whereM is a bounded open
+interval ofR. Letcbe a causally parameterized curve with a ﬁnite-dimensional linear
+rangeE /C26CðM;RÞ. Again to simplify notation, we suppose thatE is generated by
+f
+0;... ;fk;C1 functions deﬁned on the whole ofR.
+The causally parameterized curvecis bi-Lipschitz, say it satisﬁes an inequality
+0 < a< kc0ðsÞk< b. It is convenient here to take the sup norm onE ;kuk¼
+supx2MjuðxÞj. (This is well deﬁned since the elements ofE are deﬁned onR andM
+is bounded.)
+To begin with, let us suppose thatcisC1, that is essentially,cis everywhere
+differentiable. The general case, will be treated (at the end) by approximation.
+ConsiderFc:ðx;sÞ!ðx;cðsÞxÞ, the parameterization of the foliation determined
+byc. We have:
+D Fc¼ 10
+/C3c0ðsÞx
+/C18/C19
+:
+Ifchas the formcðsÞx¼SaiðsÞfiðxÞ, then, the/C3term isSaiðsÞf0
+iðxÞ.
+It then follows in particular that detD Fc¼c0ðsÞx. Therefore,Fcis singular at
+ðx;sÞ, iff,c0ðsÞx¼0.
+LIPSCHITZ REGULARITY IN SOME GEOMETRIC PROBLEMS 73
+
+===== PDF PAGE 18 =====
+6.0.1.Maximum Principle
+Recall that, for almost alls,c0ðsÞis a positive function onM, but it may happen for
+somesthatc0is (only) nonnegative, that is,c0ðsÞxvanishes somewhere inM.
+We will say thatE satisﬁes themaximumprinciple (more exactly here a minimum
+principle) if foru2E /C0f0g,unonnegative()uis positive. In other words, the
+positive cone onE has 0 alone as an accumulation point.
+In the situation above,c0ðsÞ6¼0 (sincea< kc0ðsÞk) and, hence,
+FACT 6.1. If E satisﬁes the maximum principle, thenFcis nonsingular.
+The following obvious statement expresses one difference between line segments and
+parabolas:
+FACT 6.2. For E¼PkðMÞthe space of polynomial functions on M of degree4k, the
+maximum principle is satisﬁed, iff, k4 1, that is when E consists of afﬁne functions.
+6.0.2.Harnack Principle
+Observe thatðkD Fcðx;sÞkÞ/C01 would be estimated from above, iff, one can do so far
+the termc0ðsÞx. One needs to estimate this last term a qualitative maximum principle.
+We will say thatE satisﬁes aHarnackprinciple, if for any compactK/C26M, there
+exists a constantdK such that, for anyu2E positive,kukK¼supy2KjuðyÞj4
+dKjuðxÞj, for anyx2K.
+As above, we have:
+PROPOSITION 6.3. If E satisﬁes a Harnack principle, thenFcis locally bi-Lipschitz.
+Proof.The proof is already given in the case wherecisC1. But the estimates for
+ðkD FckÞ/C01 are uniform onc, and locally uniform onðx;sÞ, and therefore, these
+estimates extend to the general Lipschitz case, almost everywhere (onx;s)). It
+is classical that almost everywhere boundness of derivatives implies Lipschitz.
+ThereforeFcis bi-Lipschitz. &
+Remark6:4 : SinceE is ﬁnite-dimensional, there is an equivalence between the
+maximum and the Harnack principle.
+6.0.3.A New Proof of Fact1:1
+This reduces to the claim thatP1ðMÞsatisﬁes a Harnack principle.
+Of course, none of thePkðMÞ;k> 1 satisﬁes a Harnack principle, one may
+however show that the foliations constructed in the proof of Theorem 5.1 are ‘almost
+everywhere’ Lipschitz. More exactly:
+THEOREM 6.5. The foliations by parabolas constructed in the proof of Theorem5:1
+are Lipschitzði.e. their tangent direction is LipschitzÞaway fromf0g/C2R andf1g/C2R.
+74 ABDELGHANI ZEGHIB
+
+===== PDF PAGE 19 =====
+In other words there are foliations of the plane by parabolas, which are Lipschitz away
+from two parallel lines, and the holonomy between these lines may be any given
+homeomorphism.
+7. Nonlinear and Inﬁnite-Dimensional Situations
+In the previous sections, we have considered foliations onM/C2R by graphs of
+functions, which generate a linear subspace of ﬁnite dimension inCðM;RÞ. We will
+in the present section relax both the conditions ‘linear’ and ‘ﬁnite’.
+7.0.4. Final Notion of Leafwise Rigid Foliations
+Recall the notation of Proposition 4.1. We have a partitionF of a subset
+N/C26M/C2R, by the graphs of a setBðFÞof functions on M.
+Previously, we assumed that the linear subspace ofCðM;RÞgenerated byBðFÞhas
+ﬁnite dimension. Now, we will say thatF is a partition byrigid leaves(or a leafwise
+rigid partition) ifBðFÞis contained in a ﬁnite dimensionalC1 manifold E.
+The theory works in the same way as in the linear case. OnE, there is a positive
+cone ﬁeld. It is true that this cone ﬁeld is not necessarily continuous but rather
+semi-continuous, but this doesn’t matter.
+One may extend this notion to general foliations, whose leaves are not globally
+graphs. (One can also generalize the notion of leafwise rigidity to higher codimension
+foliations, but only the codimension one case interests us here).
+As in the linear case, one may deﬁne a maximum principle, which will be
+equivalent to a Harnack principle, due to the ﬁniteness of the dimension.
+THEOREM 7.1. A codimension one leafwise rigid foliation can be locally para-
+meterized by Lipschitzhomeomorphisms. The foliation is Lipschitzif its leaves satisfy a
+maximum principle.
+COROLLARY 7.2 [14]. A codimension one geodesic foliation on a manifold endowed
+with a C
+1 connection, is locally Lipschitz.
+Remark7:3: From this, one deduces that the foliations by parabolas con-
+structed in Theorem 5.1 cannot become geodesic for anyC2 metric on the plane.
+Nevertheless, there existC 0 metrics for which such a foliation is geodesic. This is
+the case of any foliation by graphs. Take any metric for which the projection on
+the x-axis is a Riemannian submersion with the tangent space of the foliation as
+a horizontal space.
+Remark7:4 : Another case where rigidity and maximum principle are fulﬁlled, is
+that of codimension one umbilical foliations on Riemannian manifolds.
+LIPSCHITZ REGULARITY IN SOME GEOMETRIC PROBLEMS 75
+
+===== PDF PAGE 20 =====
+7.0.5.Inﬁnite-Dimensional Linear Case
+As was said in Remark 3.6, all the theory extends to the inﬁnite dimensional case,
+with the condition that the nonnegative cone onE is ‘projectively’ compact, that
+is its intersection with the unit sphere is compact.
+This applies to the situation of foliations onM/C2R by graphs of harmonic func-
+tions, with respect to a Riemannian metric onM. It is classic that the restriction to a
+compact subset ofM, of positive harmonic functions onM, is a cone with a compact
+section. Also, maximum principle and Harnack inequalities are valid, they actually
+originated in this situation.
+COROLLARY 7.5. A foliation on M/C2R by graphs of harmonic functions, is locally
+Lipschitz.
+7.0.6.Minimal Foliations
+Minimal hypersurfaces in a Riemannian manifold can be written locally as graphs of
+functions satisfying a ‘special’ second-order elliptic semi-linear equation. There is a
+well developed theory of such equations, leading to that their solutions enjoy most of
+the properties of the linear caseðregularity, compactness of positive cones, maxi-
+mum principle . . .Þ½9/C138. Here, one may mix the nonlinear and the inﬁnite-dimensional
+discussions above to show:
+THEOREM 7.6 (B. Solomon [12]).A codimension1 foliation on a Riemannian
+manifold by minimal leaves, is locally Lipschitz.
+7.0.7.Other Situations
+J. Moser [9] and V. Bangert (see, for instance, [2]) studied foliations (more exactly
+laminations) by graphs of functions, which are solutions of a variational problem.
+They assumed that the associated Euler equation is elliptic of second order, and
+satisﬁes some estimates. Solomon’s Lipschitz regularity result is generalized to this
+situation in [9].
+Surely, there are some technical difﬁculties in adapting our approach to this
+nonlinear inﬁnite-dimensional situation, but we think that it yields at least an
+explanation of this Lipschitz regularity phenomenon.
+8. The Complex Case
+8.0.8.Geodesic Foliations
+By multiplying the examples of Section 2 byR, one gets (global) codimension 2 folia-
+tions ofR4 by 2-planes, which are not Lipschitz (even nonmeasurable). However, if
+R4 is identiﬁed withC2, then any foliation of an open set, with leaves contained in
+complex lines, is Lipschitz. More exactly, Fact 1.1 extends straightforwardly to the
+76 ABDELGHANI ZEGHIB
+
+===== PDF PAGE 21 =====
+complex case. Indeed, its proof is essentially algebraic. It can be rewritten to cover
+the case of all plane geometries (over general ﬁelds), endowed with ‘compatible’
+metrics. In particular, Fact 1.1 extends also to thep-adic case.
+The extension to the complex codimension 1 case is also straightforward.
+8.0.9.Holomorphic Motions
+Let M be a complex manifold with a base pointm0. A holomorphic motion ofX/C26C
+with parameter spaceM, is a partition of a subsetN/C26M/C2C, by graphs of
+holomorphic functions onM, such that the ﬁberN\ðfm0g/C2CÞequalsX.
+Any x2Xdetermines a motionfx:M!C;fxðmÞ¼uxðmÞ, whereuxis the func-
+tion whose graph is the leaf ofðm0;xÞ. The nonintersection condition of graphs
+means that motions of different points ofXdon’t meet, at any (time)m2M.
+Our investigation in this article may be seen as a study of (real) rigid motions. Let
+us however say that our original motivation was not the study of real versions of
+holomorphic motions, but rather, to understand Fact 1.1 and related results.
+There is no (natural) order onC, and thus we can’t speak easily about causal
+structures. For example, the nonintersection of graphs induces of the space of com-
+plex polynomials a ‘weakly complex causal cone’ structure. This structure is some-
+what complicated, and we don’t see how to exploit it, for example to ﬁnd a
+graph-Lipschitz regularity for foliations by graphs of such polynomials. We think
+however, it is worth investigating this structure, at least to give a new approach to
+the following quasi-conformal regularity of holomorphic motions which, in fact,
+does not require rigidity!
+FACT 8.1 (see, for instance, [13] and [4]).Aholomorphicmotionistransversallyquasi-
+conformal, that is, for any m2M, the map x2X!fxðmÞ2C is quasi-conformal.
+Conversely, anyðorientation preservingÞquasi-conformal map ofC is a holonomy of
+a holomorphic motion.
+Remark8:2: It then follows that, for some real homeomorphismsf, the foliation
+by parabolas constructed in Theorem 5.1, cannot be extended by complexiﬁcation,
+to any neighborhood ofR2 inC2, as a holomorphic motion, i.e. for any neighbor-
+hood ofR2, the complexiﬁed parabolas must intersect. Indeed, if this extension were
+possible, then the holonomy would be quasiconformal, and therefore, its restriction
+toR2 would be quasi-symmetric. It sufﬁces to takefnonquasi-symmetric.
+9. Comments on the Higher Codimension Case
+So far, all the obtained regularity results concern codimension 1 situations, which
+was necessary as shown in Section 2. Here, we discuss some special higher codimen-
+sion cases. We will also ask some questions concerning Lipschitz regularity.
+LIPSCHITZ REGULARITY IN SOME GEOMETRIC PROBLEMS 77
+
+===== PDF PAGE 22 =====
+9.1.LIPSCHITZ FOLIATIONS. FROBENIUS THEOREM.
+When working on [16], I met the following problem. We have on a Lorentz manifold
+ðM;h;iÞ, a Lipschitz plane ﬁeldE, which is Lorentzian (that is, the metric on it is of
+Lorentzian type, i.e. with signature/C0þ/C1/C1/C1þ) for which we know that there exists a
+measurable locally bounded sectionnofE?(the orthogonal ofE), such that, for any
+Lipschitz vector ﬁeldsX;Y tangent toE ;ðHXYÞE?
+¼hX;Yin, almost everywhere,
+whereðÞE?means orthogonal projection onE?. We hope to deduce from this that
+E is integrable, with umbilical leaves.
+Observe that since,½X;Y/C138¼HXY/C0HYX, the bracket of any two Lipschitz vector
+ﬁelds tangent toE , is tangent toE (almost everywhere). The integrability question we
+are asking is thus a Lipschitz version of Frobenius Theorem. We then found that this
+was recently proved by S. Simic.
+THEOREM 9.1 ([11]).Assume that a Lipschitz k-plane ﬁeld E is involutive, in the
+sense that for all Lipschitz vector ﬁelds X;Y tangent to E, the bracket½X;Y/C138is almost
+everywhere tangent to E. Then E is integrable, in the sense that through every point
+passes a leaf which is a k-submanifold of class C1þLip, tangent to E.
+9.1.1.An Invariance Problem
+A leafFof ourE has a second fundamental form of the typeIIðX;YÞ¼hX;Yin,
+wherenis a measurable normal vector ﬁeld. This is the classical deﬁnition of umbi-
+lical submanifolds, but usually in a sufﬁciently smooth context, sayC2. Here, sinceF
+is of Lorentz type, we have the following extra-regularity:
+FACT 9.2. Suppose that the Lorentz metric on M is C1, and let F be a C2 umbilical
+Lorentzian submanifold of dimension53. Then F is C1.
+Proof.Observe that this is standard ifFis geodesic. The general umbilical case
+follows from the fact thatFis isotropically geodesic, that is an isotropic geodesic
+tangent to F is locally contained in it. The proof of this goes as follows. Consider a
+solution of the equationHF
+g0ðtÞg0ðtÞ¼0, whereHFis the connection onF, andgðtÞis a
+curve contained inF, with an isotropic initial data. Solutions exist sinceFisC2, and
+hence, the coefﬁcients of the equation areC0. The curvegðtÞwill be everywhere iso-
+tropic, and thusIIðg0ðtÞ;g0ðtÞÞ¼hg0ðtÞ;g0ðtÞin¼0, that isgðtÞis an isotropic geodesic of
+M. Now, to see thatFisC1, observe that it contains manyC1codimension 1 sub-
+manifolds inside it. Indeed, for anyx, let expxbe the exponential map atx,a n dT0
+xFthe
+isotropic cone atx. The previous discussion says that expxðT0
+xFÞis locally contained in
+F. Observe now that expxðT0
+xFÞ/C0fxgis aC1hypersurface contained inF. &
+This kind of regularity seems quite surprizing, since the involved PDE problem is
+of hyperbolic nature (because of the Lorentz condition). Classically, only elliptic
+equations have regularizing effects, but there is here an extra rigidity phenomenon.
+The goal now is to try to generalize the fact to the case whereFisC1þLip.
+78 ABDELGHANI ZEGHIB
+
+===== PDF PAGE 23 =====
+Let ftbe the geodesic ﬂow onTM, andGbe its inﬁnitesimal generator vector
+ﬁeld. Denote byT0M (resp.T0F) the space of isotropic vectors tangent toM (resp.
+F). The geodesic ﬂow preservesT0M. The umbilicity equationII¼h;in, which gives
+IIðu;uÞ¼0 foru2T0F, implies thatGis tangent (almost everywhere) toT0F.I fFis
+C2, thenT0FisC1, and therefore the tangency integrates to a local invariance:T0Fis
+locally invariant byft, which exactly means thatFis isotropically geodesic. This
+gives another proof of the previous fact. IfFis merelyC1þLip, thenFis a ‘Lipschitz
+submanifold’, and we are naturally led to ask.
+QUESTION 9.3. Let G be aC1 nonsingular vector ﬁeld, with a ﬂowfton a
+manifoldVandW a Lipschitz submanifold tangent toG. Is it true thatW is locally
+invariant byft, that is, for anyx2W, there existUa neighborhood ofxinW, and
+E > 0, such thatftðUÞ/C26W, forjtj< E?
+There is some subtlety in deﬁning Lipschitz submanifolds. The strongest notion is
+that, locally, in some bi-Lipschitz chart,W corresponds to a Euclidean subspace. The
+weakest notion is that, locally,W is the image of an injective Lipschitz map deﬁned on
+an open subset of a Euclidean space, with maximal rank almost everywhere.
+The uniqueness of solutions of smooth vector ﬁelds yields an afﬁrmative answer to
+the question in the case dimW¼1, even with a weakest possible deﬁnition, that is,W
+is the image of a Lipschitz (not necessarily injective) curve (not necessarily injective,
+but not reduced to a point, in order to have dimW¼1).
+Remark9:4 : An analogous easier question may be posed for geodesic submanifolds
+of Riemannian manifolds, that is, letFbe aC1þLipsubmanifold in aC1Riemannian
+manifoldM, such that almost everywhere, the second fundamental form vanishes,
+then,Fis geodesic, that is,Fcontains, locally, the geodesics which are somewhere
+tangent to it, and therefore,FisC1. In the case, whereM is the three-dimensional
+Euclidean space andFis a surface, one translates the inﬁnitesimal condition to that the
+Gauss mapF!S2 has rank 0, and is therefore constant, that is,Fis geodesic.
+9.2.NORMALS OF SUBMANIFOLDS
+The Lipschitz regularity extends to vector ﬁelds (more exactly direction ﬁelds) with
+line segment orbits, on open sets of Euclidean spaces of dimension >2, if they satisfy
+additional differential relations, which are automatic in dimension 2. One such a
+condition is that the orthogonal of the direction ﬁeld is integrable. This is essentially
+equivalent to saying that the direction ﬁeld is a gradient. More precisely, I learned
+from A. Fathi, when writing a ﬁrst version of the present paper, the following state-
+ment (which is now published in [5]). LetH be aC
+1 hypersurface in the Euclidean
+spaceRn, then, the family of its normals foliates a neighborhood of it, iff,H is
+C1þLip, i.e. a unit normal vector ﬁeld alongH, is Lipschitz. Another equivalent state-
+ment is that, if the distance functionx!dðx;HÞisC1 nearH, then it is in fact
+C1þLip. With this formulation, Fathi’s result generalizes to a wide class of solutions
+LIPSCHITZ REGULARITY IN SOME GEOMETRIC PROBLEMS 79
+
+===== PDF PAGE 24 =====
+of the Hamilton–Jacobi equation (the distance functions are a special case of them).
+Also, the result on normals of hypersurfaces generalizes to normals of submanifolds
+of any codimension, and in any (smooth) Riemannian manifold. As in Section 1.1.1,
+from this one deduces the equality of analytic and topological caustics ofC2
+submanifolds in Riemannian manifolds.
+9.3.‘ANOSOV’ FOLIATIONS
+The following Lipschitz regularity was crucial in [15] to prove nonexistence of
+1-dimensional continuous geodesic foliations on compact hyperbolic 3-manifolds.
+THEOREM 9.5. Let C and C0be two continuous curves in S2, the unit sphere of the
+Euclidean spaceR3. Suppose that for any x;x02C;y;y02C0withðx;x0Þ6¼ðy;y0Þ,w e
+have/C138x;y½\/C138x0;y0½¼;.ðIn other words, the join of C and C0foliates a subset of the
+open unit ballÞ.
+Then, C and C0areðmore exactly, can be parameterized asÞLipschitz curves.
+9.3.1.Almost example of geodesic foliations on hyperbolic manifolds
+A candidate for a one-dimensional geodesic foliation on a hyperbolic manifold was
+discussed in [15]. The general construction goes as follows. Letf:N!S1 be a closed
+manifold ﬁbering over the circle, with ﬁber typeSand monodromys:S!S, that is
+N¼S/C2½0;1/C138=ðx;1Þ/C24ðsðxÞ;0Þ.
+We have a suspension ﬂowft, that is that generated by the vector ﬁeld@=@ton
+[0, 1], and a dual 1-formo, which vanishes on the factorS, and such that
+oð@=@tÞ¼1.
+Let /C22NNdenote the cyclic covering corresponding too. It is nothing butS/C2R.
+Let’s call a Riemannian metric onNbasic, if@=@thas a constant length and is
+orthogonal to the factorS.
+One can prove that the orbits offtare geodesic for any basic metricg0. Further-
+more, when lifted to/C22NN, they areglobally minimizing.
+Suppose now thatN is endowed with another metricgwhich hasnegative
+curvature.
+Figure 6.Nonintersection of line segments¼)C andC0are Lipschitz.
+80 ABDELGHANI ZEGHIB
+
+===== PDF PAGE 25 =====
+The orbits offtlifted to the universal covering/C22NN are quasi-geodesic (in the
+sense ofg). Indeed, along such an orbit, the intrinsic and extrinsicg-distances are
+comparable with the same constants comparing the Riemannian metricsgandg0.
+There is a continuous straightness homotopyf:N!N, whose lift to/C22NNassociates
+to a~fft-orbit its asymptoticg-geodesic.
+Suppose now thats is a pseudo-Anosov diffeomorphism on a surfaceSof genus
+52. In this case, by a theorem of Thurston [10],N has ahyperbolic(i.e. with
+constant curvature/C01) metric.
+It was proved in [15] that, for such a hyperbolic metricg, the image offcan
+not generate a foliation byg-geodesics, that is, essentially,f:N!N cannot be
+injective.
+On the other hand, it was proved that the boundary map which associates to a~fft-
+orbit its endpoints at inﬁnity, is injective. This implies in particular that the set of
+correspondingg-geodesics determines a topological 3-manifold^NN in the unit
+tangent bundleT1N, which is invariant under the geodesic ﬂow (^NNis homeomorphic
+toN and projects surjectively on it). However,^NN is not Lipschitz. In fact, one
+can prove (for instance by improving technics of [15]), that^NN has a Hausdorff
+dimension > 3.
+QUESTION 9.6. Calculate the Hausdorff dimension of^NN. In particular, is it
+possible to calculate it by means of the (pseudo-Anosov) monodromys?
+Remark9:7: The geodesic ﬂow restricted to^NNis pseudo-Anosov. The Hausdorff
+dimension of^NN equals 1þthe sum of Hausdorff dimensions of the stable and
+unstable leaves. This last sum equals the sum of Hausdorff dimensions of the stable
+and unstable quotient spaces of the stable and unstable foliations. These quotient
+spaces are realized as one-dimensional topological subsets of the sphere at inﬁnity
+@
+1H3. They are images of the stable and unstable ending mapsps;pu:H3!@1H3,
+which associate to a point ofH3, the positive and negative ends of itsft-orbit.
+9.4. MATHER LAMINATIONS
+So far, we have been concerned with various Lipschitz regularities which are local in
+nature. Here we will mention results on Lipschitz regularity due to global reasons.
+(We won’t discuss the proofs here, but the phenomenon is in reality based on a local
+‘crossing Lemma’ [8]). There are many contributors to this theory, we quote for our
+purpose here [2] and [8]. The most synthetic approach seems to be that of Ma/C22nne´[6]. I
+learned a lot from D. Massart’s thesis [7].
+Here follows a brief review of the theory. We are given a compact manifoldN
+endowed with a Riemannian metricgand a closed 1-formo. They induce functions
+on the tangent bundleTN, by the rulesv!gðv;vÞ, andv!oðvÞ.
+To a compactly supported probability measurem on TN, associate its action
+AðmÞ¼
+R
+ðg/C0oÞdm.
+LIPSCHITZ REGULARITY IN SOME GEOMETRIC PROBLEMS 81
+
+===== PDF PAGE 26 =====
+Consider the critical valuecðg;oÞ¼infm AðmÞ. Measures which minimizeA, i.e.
+AðmÞ¼cðg;oÞare called minimizing (forðg;oÞ) and are automatically invariant
+under the geodesic ﬂow ofg.
+The Mather setM ðg;oÞis the closure of the union of the supports of minimizing
+measures. It is a compact subset ofTMinvariant under the geodesic ﬂow ofg.I t
+depends only on the cohomology class ofo (for ﬁxedg). In particular, ifo is a
+coboundary, thenM ðg;oÞis the 0-section. Otherwise,M ðg;oÞdoes not meet the 0-
+section, a vectoruinM ðg;oÞhas no nontrivial multipleluwhich belongs to
+M ðg;oÞ. ThereforeM ðg;oÞcan be identiﬁed with a closed subsetPM ðgoÞof the unit
+tangent bundleT1N, invariant under the geodesic ﬂow.
+GRAPH THEOREM 9.8 (Mather, [8]). The projectionp:TN!N mapsinjectively
+PM ðg;oÞin N, and has a Lipschitz inverse. In particular,pðPM ðg;oÞÞis the support of a
+transversally measured one-dimensional Lipschitz geodesic lamination on N, we denote
+it byLðg;oÞand call it the Mather lamination on N associated toðg;oÞ.
+9.4.1. Geometric-dynamical Description of Mather Geodesic Laminations
+The laminationLðg;oÞhas the following geometric characterization (see [3] and [8]).
+Let /C22NN be the cyclic covering associated too. ConsiderMðg;oÞ/C26T1N, the set of
+vectors which determine a geodesic whose lift to/C22NNis minimizing (i.e. it minimizes
+the distance in/C22NNbetween any two points lying on it). Then,PM ðg;oÞis contained
+inMðg;oÞ.
+PM ðg;oÞis obtained fromMðg;oÞby purifying it from ‘dissipative’ geodesics. More
+exactly,PM ðg;oÞis what is sometimes called the Poincare´recurrence set of the
+geodesic ﬂow onMðg;oÞ, that is the union of supports of invariant probability
+measures onMðg;oÞ(this union is closed since there is a single measure whose support
+equals the union). Manne´introduced weaker geometric puriﬁcations which give rise to
+larger Lipschitz geodesic laminations [6].
+9.4.2.Lipschitz Geodesic Laminations on Hyperbolic3-manifolds
+Keep the notations of Section 9.3.1:N;ftands:S!Sa pseudo-Anosov diffeo-
+morphism of a surface of genus52.
+Ifgis a basic metric onN, thenLðg;oÞis nothing but the orbit foliation of the
+suspension ﬂowft.
+In contrast, ifgis a hyperbolic metric onN, then the support ofLðg;oÞis a proper
+subset ofN, i.e.Lðg;oÞis not a foliation [15]. In fact, one may prove that the support
+ofLðg;oÞis not a rectiﬁable set, unless it is a ﬁnite union of closed geodesics.
+From the previous Section, the description ofLðg;oÞreduces to understand the
+‘nondissipative’ minimizing geodesics in/C22NN¼S/C2R. One may for instance wonder
+ifLðg;oÞis a ‘fragment’ of the suspension ﬂow, when transformed by the straightness
+homotopy (Section 9.3.1), that is, isLðg;oÞthe image by the straightness homotopy of
+a sublamination of the suspension ﬂow?
+82 ABDELGHANI ZEGHIB
+
+===== PDF PAGE 27 =====
+There are only a ﬁnite number of isotopy classes of hyperbolic metrics onN.
+Therefore, we get a canonical ﬁnite collection of critical valuescðg;oÞ, and a ﬁnite
+collection of isotopy classes of laminationsLðg;oÞ, wheregis a hyperbolic metric.
+It fact, it seems thatLðg;oÞis not a foliation ofN, whengis merely a metric of nega-
+tive curvature. This indicates how a basic metric is far from being of negative curva-
+ture. The ﬁbration picture is well known to be destroyed with respect to hyperbolic
+metrics (in the 3-hyperbolic space, the ﬁbres look like to the sheets of a cauliﬂower).
+It is very suggestive to describe the laminationL
+ðg;oÞas a measurement of this distor-
+tion (forghyperbolic). In particular, how are these objects related to the dynamics of
+the pseudo-Anosovs, and can they be described by means ofs only?
+The philosophy behind these questions is to see whether some characteristics of
+the hyperbolic 3-manifold are accessible by means of the pseudo-Anosov mono-
+dromy, and thus what kind of invariants of pseudo-Anosov diffeomorphims are
+so obtained? This possibility would give further evidences to the hyperbolicity
+Theorem. I shared these thoughts with J. P. Otal, some years ago (before he wrote
+his full proof of the hyperbolicity Theorem for ﬁbering 3-manifolds [10]).
+References
+1. Arnold, V., Guse/C21/C16/C16n-Zade, S., and Varchenko, A.:Singularities of Differentiable Maps,
+Vol. I, Monogr. Math. 82, Birkha¨user, Boston, Mass., 1985.
+2. Bangert, V.: On minimal laminations of the torus,Ann. Inst. H. Poincare´Anal. Non
+Line´aire6(2) (1989), 95–138.
+3. Bangert, V.: Minimal geodesics,Ergodic Theory Dynam. Systems10(2) (1990), 263–286.
+4. Douady, A.: Prolongement de mouvements holomorphes (d’apre`s Slodkowski et autres).
+Se´minaire Bourbaki, Vol. 1993/94.Aste´risque227, (1995), Exp. No. 775, 3, 7–20.
+5. Fathi, A.: Regularity odC1 solutions of the Hamilton–Jacobi equation, Preprint.
+6. Ma /C22nne´, R.: Lagrangian ﬂows: the dynamics of globally minimizing orbits,Bol. Soc. Brasil.
+Mat.(N.S.) 28(2) (1997), 141–153.
+7. Massart, D.: Normes stables des surfaces, Thesis, Lyon (1996).
+8. Mather, J.: Action minimizing invariant measures for positive deﬁnite Lagrangian
+systems,Math. Z.207(2) (1991), 169–207.
+9. Moser, J.: Minimal solutions of variational problems on a torus,Ann. Inst. H. Poincare´
+Anal. Non Line´aire3(3) (1986), 229–272.
+10. Otal, J. P.: Le the´ore`me d’hyperbolisation pour les varie´te´s ﬁbre´es de dimension 3,
+Aste´risque235 (1996).
+11. Simic´, S.: Lipschitz distributions and Anosov ﬂows,Proc. Amer. Math. Soc.124(6) (1996),
+1869–1877.
+12. Solomon, B.: On foliations ofRnþ1 by minimal hypersurfaces,Comment. Math. Helv.
+61(1) (1986), 67–83.
+13. Sullivan, D. and Thurston, W.: Extending holomorphic motions,Acta Math.157(3–4)
+(1986), 243–257.
+14. Zeghib, A.: Geodesic foliations in Lorentz 3-manifolds,Comment. Math. Helv.74(1)
+(1999), 1–21.
+15. Zeghib, A.: Sur les feuilletages ge´ode´siques continus des varie´te´s hyperboliques,Invent.
+Math.114(1) (1993), 193–206.
+16. Zeghib, A.: Isometry groups and geodesic foliations of Lorentz manifolds. Part I:
+foundations of Lorentz dynamics,Geom. Funct. Anal.9, 775–822.
+LIPSCHITZ REGULARITY IN SOME GEOMETRIC PROBLEMS 83
