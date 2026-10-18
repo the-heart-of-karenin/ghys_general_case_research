@@ -1,0 +1,121 @@
+[
+  {
+    "filename": "17_Beauville_1983_Decomposition.pdf",
+    "title": "Varietes kahleriennes dont la premiere classe de Chern est nulle",
+    "download_url": "https://math.univ-cotedazur.fr/~beauvill/pubs/jdg.pdf",
+    "landing_url": "https://doi.org/10.4310/jdg/1214438181",
+    "publication_note": "J. Differential Geom. 18 (1983), 755-782; author-hosted journal PDF",
+    "collected_utc": "2026-10-17T15:08:39.551687+00:00",
+    "resolved_url": "https://math.univ-cotedazur.fr/u/beauvill/pubs/jdg.pdf",
+    "download_status": "downloaded",
+    "bytes": 304712,
+    "sha256": "1c1a13973234883702f431446ab5376c1335cb89790cb9950897260d236f09f3",
+    "pages": 28,
+    "extracted_characters": 0,
+    "visually_inspected_pdf_pages": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "reading_scope": "Selected theorem, hypothesis, or formula pages; not full-paper proof audit."
+  },
+  {
+    "filename": "18_Huybrechts_2003_Projectivity_erratum.pdf",
+    "title": "Erratum: Compact hyperkaehler manifolds: basic results",
+    "download_url": "https://arxiv.org/pdf/math/0106014",
+    "landing_url": "https://arxiv.org/abs/math/0106014",
+    "publication_note": "arXiv erratum manuscript; published Invent. Math. 152 (2003), 209-212",
+    "collected_utc": "2026-10-17T15:08:39.552757+00:00",
+    "resolved_url": "https://arxiv.org/pdf/math/0106014",
+    "download_status": "downloaded",
+    "bytes": 83288,
+    "sha256": "d4ae84ef082fcbbb7f01f429cef0987b1eec34676e6572d17d3291447e813830",
+    "pages": 4,
+    "extracted_characters": 9431,
+    "visually_inspected_pdf_pages": [
+      3
+    ],
+    "reading_scope": "Selected theorem, hypothesis, or formula pages; not full-paper proof audit."
+  },
+  {
+    "filename": "19_Oguiso_2009_Dynamical_degrees.pdf",
+    "title": "A remark on dynamical degrees of automorphisms of hyperkahler manifolds",
+    "download_url": "https://arxiv.org/pdf/0901.4827",
+    "landing_url": "https://arxiv.org/abs/0901.4827",
+    "publication_note": "arXiv manuscript; Manuscripta Math. 130 (2009), 101-111",
+    "collected_utc": "2026-10-17T15:08:39.554688+00:00",
+    "resolved_url": "https://arxiv.org/pdf/0901.4827",
+    "download_status": "downloaded",
+    "bytes": 171106,
+    "sha256": "b20d99d4f43f6f498c49e4e046595a1192569f03676c48144352ab6dcf810a5a",
+    "pages": 10,
+    "extracted_characters": 23712,
+    "visually_inspected_pdf_pages": [
+      1
+    ],
+    "reading_scope": "Selected theorem, hypothesis, or formula pages; not full-paper proof audit."
+  },
+  {
+    "filename": "20_Jang_2024_Kummer_rigidity.pdf",
+    "title": "Kummer rigidity for hyperkahler automorphisms",
+    "download_url": "https://par.nsf.gov/servlets/purl/10557291",
+    "landing_url": "https://www.aimsciences.org/article/doi/10.3934/jmd.2024005",
+    "publication_note": "J. Modern Dynamics 20 (2024), 183-213; journal PDF in NSF repository",
+    "collected_utc": "2026-10-17T15:08:41.330834+00:00",
+    "resolved_url": "https://par.nsf.gov/servlets/purl/10557291",
+    "download_status": "downloaded",
+    "bytes": 757714,
+    "sha256": "b7f9c994f0d03c7ed083f0083415d7d5fecfdf0447f9c17db0cd738101d67114",
+    "pages": 31,
+    "extracted_characters": 76840,
+    "visually_inspected_pdf_pages": [
+      2,
+      10,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "reading_scope": "Selected theorem, hypothesis, or formula pages; not full-paper proof audit."
+  },
+  {
+    "filename": "21_OGrady_2022_Modular_sheaves.pdf",
+    "title": "Modular sheaves on hyperkahler varieties",
+    "download_url": "https://content.algebraicgeometry.nl/2022-1/2022-1-001.pdf",
+    "landing_url": "https://doi.org/10.14231/AG-2022-001",
+    "publication_note": "Algebraic Geometry 9 (2022), 1-38; publisher PDF",
+    "collected_utc": "2026-10-17T15:08:41.888218+00:00",
+    "resolved_url": "https://content.algebraicgeometry.nl/2022-1/2022-1-001.pdf",
+    "download_status": "downloaded",
+    "bytes": 589315,
+    "sha256": "e264e65d279f8fb78fa65198d9944a5f5951a8299a6882aa16d0ef5c1ed7dbf4",
+    "pages": 38,
+    "extracted_characters": 107207,
+    "visually_inspected_pdf_pages": [
+      5,
+      6,
+      17
+    ],
+    "reading_scope": "Selected theorem, hypothesis, or formula pages; not full-paper proof audit."
+  },
+  {
+    "filename": "22_OGrady_2024_Kummer_bundles.pdf",
+    "title": "Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type",
+    "download_url": "https://epiga.episciences.org/14895/pdf",
+    "landing_url": "https://doi.org/10.46298/EPIGA.2024.10857",
+    "publication_note": "Epijournal Geom. Algebrique, special volume (2024), article 19; publisher PDF",
+    "collected_utc": "2026-10-17T15:08:44.979504+00:00",
+    "resolved_url": "https://epiga.episciences.org/14895/pdf",
+    "download_status": "downloaded",
+    "bytes": 944719,
+    "sha256": "1dd0c26193cf6efc33ae1be8814314bc110833296ced82cb4f2bb79a0a824381",
+    "pages": 51,
+    "extracted_characters": 135984,
+    "visually_inspected_pdf_pages": [
+      7
+    ],
+    "reading_scope": "Selected theorem, hypothesis, or formula pages; not full-paper proof audit."
+  }
+]

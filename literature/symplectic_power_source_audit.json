@@ -1,0 +1,112 @@
+{
+  "audited_utc": "2026-10-18T04:04:09.520533+00:00",
+  "sources": [
+    {
+      "path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\18_Huybrechts_2003_Projectivity_erratum.pdf",
+      "sha256": "d4ae84ef082fcbbb7f01f429cef0987b1eec34676e6572d17d3291447e813830",
+      "page_count": 4,
+      "visually_inspected": true,
+      "pages": [
+        3
+      ],
+      "findings": [
+        "Theorem 2: corrected projectivity criterion"
+      ],
+      "limitations": [
+        "Use the corrected criterion, not the flawed original proof."
+      ]
+    },
+    {
+      "path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\21_OGrady_2022_Modular_sheaves.pdf",
+      "sha256": "e264e65d279f8fb78fa65198d9944a5f5951a8299a6882aa16d0ef5c1ed7dbf4",
+      "page_count": 38,
+      "visually_inspected": true,
+      "pages": [
+        17
+      ],
+      "findings": [
+        "Equation 5.3.4: integral c2^2=828"
+      ],
+      "limitations": [
+        "Nonzero c1 of an actual Lagrangian tangent splitting; not a new stable K obstruction."
+      ]
+    },
+    {
+      "path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\24_Kapfer_2016_Integral_cohomology.pdf",
+      "sha256": "a550dd86e4958a08ef44d55d9e021f1b321b0aa5b010b2d8676215467a037d6f",
+      "page_count": 20,
+      "visually_inspected": true,
+      "pages": [
+        4,
+        6
+      ],
+      "findings": [
+        "Odd cohomology vanishes",
+        "Remark 2.1: b2=23, b4=276, b6=23"
+      ],
+      "limitations": [
+        "Betti numbers alone do not rule out Anosov; the derivative invariance argument is essential."
+      ]
+    },
+    {
+      "path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\37_Markman_2011_Torelli_monodromy_survey.pdf",
+      "sha256": "55d67f2588729b1aecdb6cf3d5d9eaaba50a336cbfbf918caf9ea58c2eec76a6",
+      "page_count": 46,
+      "visually_inspected": true,
+      "pages": [
+        3,
+        4,
+        32
+      ],
+      "findings": [
+        "Surjective period map",
+        "Theorem 1.3(2): strong Torelli",
+        "Theorem 9.1 and Lemma 9.2: Mon2=O+ for n=2"
+      ],
+      "limitations": [
+        "Torelli gives an actual automorphism only after parallel-transport and Kahler-class hypotheses are verified.",
+        "The source uses pushforward in Theorem 1.3; inversion gives the pullback convention of note 44."
+      ]
+    },
+    {
+      "path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\38_Mongardi_2015_Kahler_Mori_cones.pdf",
+      "sha256": "838a0a6557b6aa7f0478b16f7f82134a3a4316c52bdb3d76103ca242ad0c5609",
+      "page_count": 9,
+      "visually_inspected": true,
+      "pages": [
+        7,
+        8
+      ],
+      "findings": [
+        "Proposition 2.12: walls of K3^[2] type"
+      ],
+      "limitations": [
+        "Use the K3^[2] case, Proposition 2.12 of the saved nine-page author version; not the higher-dimensional wall tables."
+      ]
+    },
+    {
+      "path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\39_Huybrechts_2017_K3_category_cubic_fourfold.pdf",
+      "sha256": "e27bfc7b00b57a958e5d59d9ab1886418423a12a6a646b8e1ed0dd86ee4e3648",
+      "page_count": 40,
+      "visually_inspected": true,
+      "pages": [
+        22
+      ],
+      "findings": [
+        "Proposition 3.11 proof in author version: odd-rank simple Hodge isometries are +/-I"
+      ],
+      "limitations": [
+        "The saved author version has Proposition 3.11; journal numbering is 3.12.",
+        "This is a known Hodge fact; note 43 supplies its independent linear-algebra proof."
+      ]
+    }
+  ],
+  "source_count": 6,
+  "complete_pages_visually_checked": 10,
+  "proof_status": {
+    "43": "complete reduction, removes symplectic and extra projectivity hypotheses of 41",
+    "44": "actual anti-symplectic positive-entropy automorphism realized via Torelli",
+    "45": "complete exclusion of all holomorphic Anosov on rank-two X carrying such an automorphism"
+  },
+  "remaining": "General symplectic K3^[2] Anosov branch, transverse C1, and singular-periodic-surface issues are unresolved; publication novelty is not confirmed."
+}

@@ -1,0 +1,3566 @@
+=== PDF PAGE 1 ===
+Épijournal de Géométrie Algébrique
+epiga.episciences.org
+Special volume in honour of C. V oisin, Article No. 19 (2024)
+Rigid stable rank 4 vector bundles on
+HK fourfolds of Kummer type
+Kieran G. O’Grady
+Dedicato a Claire con ammirazione e amicizia
+Abstract. We partially extend to hyperkähler fourfolds of Kummer type the results on hyperkähler
+(HK) varieties of type K3[2] by the author in a 2022 paper (and later extended to HK varieties of
+type K3[n]). Let (M, h) be a general polarized HK fourfold of Kummer type such that qM (h) ≡ −6
+(mod 16) and div(h) = 2, or qM (h) ≡ −6 (mod 144) and div(h) = 6. We show that there exists a
+unique (up to isomorphism) slope stable vector bundle F on M such that r(F ) = 4, c1(F ) = h,
+∆(F ) = c2(M). Moreover, F is rigid. One of our motivations is the desire to describe explicitly a
+locally complete family of polarized HK fourfolds of Kummer type.
+Keywords. Hyperkähler manifolds, stable vector bundles
+2020 Mathematics Subject Classi ﬁcation. 14J42 (primary); 14J60, 14F08 (secondary)
+Received by the Editors on January 26, 2023, and in ﬁnal form on August 13, 2024.
+Accepted on September 11, 2024.
+Kieran G. O’Grady
+Dipartimento di Matematica, Sapienza Università di Roma, P.le A. Moro 5, 00185 Roma, Italy
+e-mail: ogrady@mat.uniroma1.it
+Partially supported by PRIN 2017YRA3LK
+© by the author(s) This work is licensed under http://creativecommons.org/licenses/by-sa/4.0/
+arXiv:2203.03987v5  [math.AG]  4 Dec 2024
+
+=== PDF PAGE 2 ===
+2 K. G. O’Grady2 K. G. O’Grady
+Contents
+1. Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+2. Preliminaries . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+3. Modular basic sheaves on 4-dimensional generalized Kummers . . . . . . . . . . . 8
+4. Euler characteristic of the endomorphism bundle . . . . . . . . . . . . . . . . . 17
+5. The vector bundle E (L ) via Bridgeland–King–Reid . . . . . . . . . . . . . . . . 21
+6. The case when K2(A) is a Lagrangian ﬁbration. . . . . . . . . . . . . . . . . . 25
+7. Restriction of E (L ) to a general singular Lagrangian ﬁber . . . . . . . . . . . . . 35
+8. Proof of Theorem 1.1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+A. Examples of semi-homogeneous vector bundles . . . . . . . . . . . . . . . . . 47
+B. Properly semistable vector bundles with vanishing discriminant on abelian surfaces . . . 48
+References . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+1. Introduction
+1.1. Background and motivation
+Slope stable rigid vector bundles on polarized K3 surfaces exist in abundance (the single necessary
+condition on the Chern character is the one coming from the equality χ(S, F∨ ⊗ F) = 2, valid for a simple
+rigid vector bundle F on a K3 surface), and they are determined up to isomorphism by their Chern character.
+Recently there has been substantial progress in understanding slope stable rigid vector bundles on polarized
+hyperkähler (HK) varieties of type K3[n]; see [ O’G22b, O’G23]. In the present paper, we deal with the
+analogous problem for HK fourfolds of Kummer type. We prove the existence and uniqueness of slope
+stable vector bundles F with r(F ) = 4 , c1(F ) = h, ∆(F ) = c2(M) on a general polarized HK fourfold
+(M, h) of Kummer type such that qM(h) ≡ −6 (mod 16) and div(h) = 2 , or qM(h) ≡ −6 (mod 144) and
+div(h) = 6, and moreover that such bundles are rigid. Here qM is the Beauville–Bogomolov–Fujiki (BBF for
+short) quadratic form of M, and div(h) is the divisibility of h, i.e., the positive generator of the ideal in Z
+given by qM(h, H2(X; Z))
+The results are limited to rank 4, but one should be able to obtain analogous results for vector bundles
+on HK fourfolds of Kummer type for all ranks of the form r2
+0 /g , where g := gcd{r0, 3}, and also for vector
+bundles on HK varieties of Kummer type of arbitrary dimension. We believe that the rank 4 case is already
+quite interesting; in particular, it might lead to an explicit description of a locally complete family of
+polarized HK fourfolds of Kummer type.
+The link between rigid vector bundles and locally complete families is provided by an analogy with
+“Mukai models”of K3 surfaces. We recall that a general polarized K3 surface of degree at least 10 is not a
+complete intersection in a projective space, but for certain degrees it is a (generalized) complete intersection
+in a Grassmannian (see for example [ Muk88]), and the latter fact provides an explicit description of locally
+complete families of K3 surfaces. The conceptual reason underlying such a description is the existence of a
+
+=== PDF PAGE 3 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 3Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 3
+rigid and unique (up to isomorphism) slope stable vector bundle on a general polarized K3 surface of the
+relevant degree, realized explicitly as the pull-back of the tautological vector bundle of the Grassmannian.
+In higher dimensions, explicit locally complete families of polarized HK varieties are known, for example
+the varieties of lines on a smooth cubic hypersurface in P5, see [ BD85], double EPW sextics, see [ O’G06],
+Debarre–V oisin varieties, see [ DV10], the LLSvS varieties attached to smooth cubic hypersurface in P5,
+see [ LLS+17], the in ﬁnite family of moduli spaces of stable objects in the Kuznetsov category attached to
+smooth cubic hypersurface in P5, see [ BLM+21]. All of the known locally complete polarized families of HK
+varieties parametrize varieties of type K3[n].
+The explicit families given by the varieties of lines on a smooth cubic hypersurface in P5 and the
+Debarre–V oisin varieties are very similar to the Mukai families. In fact, the restrictions of the tautological
+quotient vector bundles are stable (for a general variety of that kind) rank 4 vector bundles which extend to
+all deformations of the polarized (X, L). Actually the projectivization of those vector bundles extends to all
+small deformations of the unpolarized X (this last property distinguishes the tautological quotient bundle
+from the tautological subbundle); i.e., they are projectively hyperholomorphic.
+We expect that a similar construction holds for polarized HK fourfolds (M, h) of Kummer type such
+that qM(h) = 10 and div(h) = 2. In fact, one should get an explicit description of the general such M by
+analyzing the rank 4 slope stable vector bundle whose existence is guaranteed by the main result of the
+present paper. Our paper [ O’G22c] contains other material that should be relevant if one wants to describe
+such a family.
+1.2. Main result
+Before stating our main theorem, we recall a few results on 4-dimensional polarized HK varieties (M, h)
+of Kummer type (the ample class h ∈ NS(M) is primitive). Let e := qM(h) (e is the square of h), and let
+i := div(h). Then one of the following holds:
+(1.1) i = 1, e ≡ 0 (mod 2);
+(1.2) i = 2, e ≡ −6 (mod 8);
+(1.3) i = 3, e ≡ −6 (mod 18);
+(1.4) i = 6, e ≡ −6 (mod 72) .
+Conversely , ife is a positive integer, i ∈ {1, 2, 3, 6} and one of (1.1), (1.2) (1.3) or (1.4) holds, then there exists
+a 4-dimensional polarized HK variety (M, h) of Kummer type such that qM(h) = e and div(h) = i. Let
+Kumi
+e be the (quasi-projective) moduli space of 4-dimensional polarized HK varieties (M, h) of Kummer
+type (note that Kumi
+e is 4-dimensional). The number of irreducible components of Kumi
+e has been computed
+by Onorati in [ Ono22]. In particular, Kum2
+e (we assume that (1.2) holds) and Kum6
+e (here we assume that (1.4)
+holds) are irreducible.
+Theorem 1.1. Let e be a positive integer such that e ≡ −6 (mod 16) or e ≡ −6 (mod 144) . Let [(M, h)] be a
+general point of Kum2
+e if the former holds, and of Kum6
+e if the latter holds. Then there exists one and only one
+slope stable vector bundle F on M (up to isomorphism ) such that
+(1.5) r(F ) = 4, c 1(F ) = h, ∆(F ) := 8c2(F ) − 3c1(F )2 = c2(M).
+(Chern classes are in cohomology. ) Lastly, H 1(M, End 0(F )) = 0.
+Remark 1.2. Let (X, h) be a general polarized HK variety of type K3[n]. In [ O’G22b, O’G23] we have proved
+that, provided certain numerical hypotheses are satis ﬁed, there exists a unique stable vector bundle F on X
+
+=== PDF PAGE 4 ===
+4 K. G. O’Grady4 K. G. O’Grady
+of rank rn
+0 with
+(1.6) ∆(F ) = r2n−2
+0 (r2
+0 − 1)
+12 c2(X).
+(Here ∆(F ) is the discriminant of F ; see (1.8).) The equation in (1.6) for n = 2 and r0 = 2 is the exact
+analogue of the last equation in (1.5).
+Remark 1.3. We recall that if M is a HK manifold, then Aut0(M) is the group of automorphisms of M
+acting trivially on H 2(M). If M is a 2n-dimensional HK manifold of Kummer type ( n ≥ 2), then Aut0(M)
+is not trivial; in fact, it is a semidirect product of Z/(n + 1)4 and Z/(2); see Section 3.8. Let [(M, h)] be
+as in Theorem 1.1. If F is the slope stable vector bundle F on M such that the equalities in (1.5) hold
+and ϕ ∈ Aut0(M), then ϕ∗(F ) is an h slope stable vector bundle on M which has the same rank, c1 and
+discriminant as F because ϕ∗(h) = h and ϕ∗(c2(M)) = c2(M). By Theorem 1.1, it follows that ϕ∗(F ) F .
+Remark 1.4. Let Ui
+e ⊂ Kumi
+e for i ∈ {2, 6} be an open nonempty subset with the property that there exists
+one and only one stable vector bundle F on [(M, h)] ∈ Ui
+e such that the equations in (1.5) hold, and let
+X → Ui
+e be the tautological family of HK (polarized) varieties (here Kumi
+e is to be interpreted as the moduli
+stack). By Theorem 1.1 and [ Muk87, Theorem A.5], there exists a quasi-tautological vector bundle F on
+X , i.e., a vector bundle whose restriction to a ﬁber M of X → Ui
+e is isomorphic to F ⊕d for some d > 0,
+where F is the vector bundle of Theorem 1.1. If [(M, h)] ∈ Ui
+e, then the generalized Franchetta conjecture,
+see [ FL V19], predicts that the restriction to CH2(M)Q of ch2(F) ∈ CH(X )Q is equal to −d r2n−2
+0 (r2
+0 −1)
+12 c2(X).
+In other words, it predicts that the third equality in (1.5) holds at the level of (rational) Chow groups. In
+general, it is not easy to give a rationally de ﬁned algebraic cycle class on a nonempty open subset of the
+moduli stack of polarized HK varieties. Theorem 1.1 produces such a cycle, and hence a good test for the
+generalized Franchetta conjecture.
+1.3. Outline of the proof
+Our ﬁrst task is to construct modular vector bundles on generalized Kummer fourfolds which are slope
+stable. Recall that a torsion-free sheaf F on a HK manifold M of dimension 2n is modular if there exists a
+d(F ) ∈ Q such that for all α ∈ H 2(M)
+(1.7)
+Z
+M
+∆(F )α2n−2 = d(F )(2n − 3)!!qM(α)n−1,
+where the double factorial (2n − 3)!!D (2n − 3)(2n − 5) · . . .· 3 · 1 is the product of natural numbers up to
+2n − 3 and of the same parity as 2n − 3 and
+(1.8) ∆(F ) := 2rc2(F ) − (r − 1)c1(F )2
+is the discriminant of F . V ariation of stability for modular sheaves behaves as if the base were a surface,
+see [ O’G22b], and slope (semi)stability of a modular sheaf on a Lagrangian ﬁbration is related to slope
+(semi)stability of its restriction to a general Lagrangian ﬁber, provided the polarization is close to the
+pull-back of an ample class on the base. In [ O’G22b, O’G23] we constructed stable modular vector bundles
+on S[n], where S is a K3 surface, by associating to a vector bundle E on S a vector bundle E [n]± on S[n].
+The following two key facts hold:
+(1) If E is spherical, then E [n]± is modular by the Bridgeland–King–Reid derived version of the McKay
+correspondence.
+(2) If S is elliptic and hence S[n] has a Lagrangian ﬁbration, then the restriction of E [n]± to a general
+Lagrangian ﬁber is slope stable.
+In the present paper, we proceed as follows. Let f : B → A be an isogeny of abelian surfaces, and let
+ρ : Kn(B)d Kn(A) be the map between generalized Kummers which associates to [Z] ∈ Kn(B) the point
+
+=== PDF PAGE 5 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 5Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 5
+[f (Z)] ∈ Kn(A) (as soon as deg f ≥ 2 and n ≥ 2, the map ρ is not regular). Let eρ : X → Kn(A) be a resolution
+of indeterminacies of ρ. If L is a line bundle on X, let E (L ) := eρ∗(L ). Then E (L ) is a torsion-free
+sheaf on Kn(A) of rank (deg f )n. Section 3 is devoted to the study of E (L ) for n = 2 and deg f = 2. We
+determine exactly under which hypotheses the rank 4 sheaf E (L ) is modular. In particular, we show that
+if L is the pull-back of a line bundle on K2(B), then E (L ) is locally free and ∆(E (L )) = c2(K2(A)); in
+particular, it is modular. These are the vector bundles which are studied in the remainder of this paper.
+The referee realized that the vector bundle E (L ) corresponds to a semi-homogeneous S3-equivariant
+vector bundle on the kernel NA(3) of the summation map A3 → A via the Bridgeland–King–Reid equivalence
+between Db
+S3
+(NA(3)) and Db(K2(A). This gives as bonus the vanishing, under suitable hypotheses, of all
+cohomology of the traceless endomorphism bundle E nd0E (L ). In fact, the referee has given a more general
+construction of vector bundles on Kn(A), which can be proved to be modular without explicit computations
+(of course one does not get a formula for the discriminant). These vector bundle deserve to be studied in
+detail.
+In order to prove Theorem 1.1, we consider A equipped with an elliptic ﬁbration A → E. Thus we have a
+Lagrangian ﬁbration πA : K2(A) → |OE(3(0E))|.
+The main technical results that we need are about the restrictions of E (L ) to the Lagrangian ﬁbers of
+πA. The ﬁrst main result is that the restriction to a Lagrangian ﬁber is simple, except possibly for a ﬁnite
+set of Lagrangian ﬁbers. The second main result deals with slope stability of the restriction of E (L ) to a
+Lagrangian ﬁber (assume that the restriction of det E (L ) is ample, and consider stability with respect to
+the restriction). First the restriction is slope stable if the Lagrangian ﬁber is smooth; in fact, E (L ) has this
+property by construction (thanks to results about semi-homogeneous vector bundles on abelian varieties).
+This is already enough to prove the existence half of Theorem 1.1, but the uniqueness half needs more work.
+We do not know whether the restriction of E (L ) to a general singular Lagrangian ﬁber is slope stable, but
+we prove that the restriction to a general singular Lagrangian ﬁber is not slope destabilized by a subsheaf
+with integer rank (the rank of sheaves on singular Lagrangian ﬁbers is not necessarily an integer because
+such ﬁbers are nonreduced and not irreducible). This implies that the extension of E (L ) to a general
+deformation of (K2(A), det E (L ), πA) restricts to a slope stable vector bundle on Lagrangian ﬁbers (of the
+ﬁbration extending πA), except possibly for a ﬁnite set of Lagrangian ﬁbers. With these results under the
+belt, one can prove the unicity half of Theorem 1.1.
+1.4. Organization of the paper
+In Section 2, we collect preliminary results on modular sheaves and HK manifolds of Kummer type.
+Section 3 contains mainly computations which allow us to determine for which choices of line bundle L
+the rank 4 sheaf E (L ) is modular (and if this is the case, to compute its discriminant) and to show that it is
+locally free in the cases that are examined in the remainder of the paper.
+In Section 4, we compute the Euler characteristic of End (E (L ))0.
+Section 5 contains the construction by the referee of many modular vector bundles on Kn(A) with
+vanishing cohomology of the bundle of traceless endomorphismsm and the identi ﬁcation of E (L ) with one
+of his vector bundles.
+In Section 6, we assume that A is equipped with an elliptic ﬁbration A → E, and hence we have
+a Lagrangian ﬁbration πA : K2(A) → | OE(3(0E))|. We prove that the restriction of E (L ) to a smooth
+Lagrangian ﬁber is slope stable and that the restriction to Lagrangian ﬁbers is simple, except possibly for a
+ﬁnite set of them.
+In Section 7, we prove the results explained above about subsheaves with integer rank of the restrictions
+of E (L ) to general singular Lagrangian ﬁbers.
+The last section, i.e., Section 8, wraps everything up to give the proof of Theorem 1.1.
+The two appendices contain technical results on semi-homogeneous vector bundles on abelian varieties.
+
+=== PDF PAGE 6 ===
+6 K. G. O’Grady6 K. G. O’Grady
+1.5. Conventions
+• Algebraic variety is synonymous with complex quasi-projective scheme, and sheaf is synonymous with
+coherent sheaf on an algebraic variety. Occasionally , we do not di ﬀerentiate between divisor classes,
+line bundles and invertible sheaves on a smooth variety.
+• Chern classes of a sheaf on a smooth complex quasi-projective variety X are elements of the Betti
+cohomology ring H(X; Z) unless we state the contrary. We let H(X) = H(X; C) be the complex
+cohomology of X.
+• Let F be a sheaf of positive rank on a smooth projective variety X. If L is an ample line bundle,
+then µL(F ) is the slope of F with respect to L, and similarly µh(F ) is the slope of F with respect
+to the numerical equivalence class of an ample divisor on X. Hopefully there will be no confusion
+with Donaldson’s map µ discussed in Section 2.2.
+• A polarized variety is a couple (X, h), where X is a projective scheme and h is the numerical equivalence
+class of an ample divisor on X. If X is smooth of positive rank, slope (semi)stability of F refers to
+the slope function de ﬁned by h.
+• “Abelian variety” often means a variety isomorphic to a bona ﬁde abelian variety A, in other words a
+torsor over a bona ﬁde abelian variety.
+1.6. Ackowledgements
+I heartily thank the referee for sharing with me their insights, and for letting me outline their results in
+Section 5.
+2. Preliminaries
+2.1. Modular sheaves
+We start by presenting an equivalent characterization of modular sheaves on a HK manifold M. Let V ⊂
+H(M) be the image of the map Sym H 2(M) → H(M) deﬁned by cup product, and let U := V ⊥ ⊂ H(M) be
+the orthogonal (with respect to the intersection form) of U . We let V d := V ∩ H d(M) and U d := U ∩ H d(M).
+By V erbitsky [V er96], we have a direct sum decomposition H(M) = V ⊕ U ; in particular,
+H 4(M) = V 4 ⊕ U 4.
+We claim that the projection of c2(M) onto V 4 is nonzero. For this, it su ﬃ ces to show that
+R
+M c2(M)ω2n−2, 0,
+where dim M = 2n. Suppose the contrary: Since the tangent bundle ΘM is stable (by Y au’s theorem) and
+c1(M) = 0 , it follows that ΘM is ﬂat; that gives a contradiction. Let us denote the projection of c2(M)
+onto V 4 (following Markman) by c2(M). Then F is modular if and only if the projection of ∆(F ) onto
+Sym2 H 2(M) is a multiple of c2(M).
+2.2. Generalized Kummers
+Let A be an abelian surface. The generalized Kummer Kn(A) is the ﬁber over 0 of the map A[n+1] → A
+given by the composition
+A[n+1] h
+− →A(n+1) σ
+− →A,
+where h[Z] := P
+a∈A ℓ(OZ,a)(a) and σ ((a1) + · · ·+ (an+1)) := a1 + · · ·+ an+1 is the summation map in the
+group A. Here and in the rest of the paper, we denote by (a) the generator of the group of 0-cycles
+on A that corresponds to the point a ∈ A. Hence if k1, . . . , kn+1 are integers and a1, . . . , an+1 ∈ A, then
+k1(a1) + · · ·+ kn+1(an+1) is a 0-cycle while k1a1 + · · ·+ kn+1an+1 is an element of A.
+
+=== PDF PAGE 7 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 7Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 7
+The cohomology group H 2(Kn(A); Z) is described as follows. There is a homomorphism µn,A : H 2(A) →
+H 2(Kn(A)) given by the composition
+H 2(A)
+sn+1
+− − − →H 2
+A(n+1) (h|Kn(A))∗
+− − − − − − − →H 2(Kn(A)),
+where sn+1 is the natural symmetrization map. The map µn,A is injective but not surjective because h|Kn(A)
+contracts the prime divisor (here we assume that n ≥ 2)
+∆n(A) := {[Z] ∈ Kn(A) | Z is not reduced }.
+The cohomology class of ∆n(A) is (uniquely) divisible by 2 in integral cohomology. We let δn(A) ∈
+H 2(A(n+1); Z) be the class such that
+(2.1) 2δn(A) = cl(∆n(A)).
+(Beware of the potential misunderstanding: δn(A) is not the class of ∆n(A).) One has
+(2.2) H 2(Kn(A); Z) = µn,A(H 2(A; Z)) ⊕ Zδn(A),
+where orthogonality is with respect to the BBF quadratic form. Moreover, the BBF quadratic form is given by
+(2.3) q(µn,A(α) + xδn(A)) = (α, α)A − 2(n + 1)x2.
+(Here (α, α)A is the self-intersection of α ∈ H 2(A).) Let β1, . . . , β2n ∈ H 2(Kn(A)). Then
+(2.4)
+Z
+Kn(A)
+β1 · . . .· β2n = (n + 1) ·gX
+q
+
+βi1, βi2
+
+· . . .· q
+
+βi2n−1, βi2n
+
+,
+where eP means that in the summation we avoid repeating addends which are formally equal ( i.e., are equal
+modulo reordering of the factors qX(·, ·) and switching the entries in qX(·, ·)). The last four results are
+“folklore”. We am not aware of a printed proof. Proofs can be found in [ O’G22a]. We also recall that if L is
+a line bundle on a generalized Kummer X of dimension 2n, then
+(2.5) χ(X; L ) = (n + 1)
+ 1
+2 qX(c1(L )) + n
+n
+!
+.
+A proof of the above formula can be found in [BN01, Section 5.2]
+From now on we deal only with 4-dimensional generalized Kummers K2(A). We replace µ2,A, ∆2(A), δ2(A)
+by µA, ∆(A), δ(A), respectively.
+Lastly let M be a HK fourfold of Kummer type, i.e., a deformation of K2(A). If ζ ∈ H 2(M), then (see for
+example [HT13, Equation (6)])
+(2.6)
+Z
+M
+c2(M) · ζ2 = 54qM(ζ).
+Moreover (see [HT13, Proof of Proposition 5.1]), we have
+(2.7)
+Z
+M
+c2(M)2 = 756.
+
+=== PDF PAGE 8 ===
+8 K. G. O’Grady8 K. G. O’Grady
+3. Modular basic sheaves on 4-dimensional generalized Kummers
+3.1. Statement of the main result
+Let f : B → A be a homomorphism of ( bona ﬁde) abelian surfaces of degree 2. Then f deﬁnes a rational
+map
+(3.1) K2(B)
+ρ
+9999K K2(A)
+[Z] 7− → [f (Z)].
+The map ρ is regular away from
+(3.2) V (f ) := {[Z] ∈ K2(B) | ℓ(f (Z)) < ℓ(Z) = 2}.
+The result below is proved in Section 3.3.
+Proposition 3.1. Keep notation and hypotheses as above. Then V (f ) (see (3.2)) is irreducible of codimension 2
+and smooth. Moreover, by blowing up V (f ), one resolves the indeterminacies of ρ.
+Let ν : X → K2(B) be the blow-up of V (f ), and let eρ : X → K2(A) be the regular map lifting the rational
+map ρ. Thus we have the commutative diagram
+(3.3) X
+ν
+||
+eρ
+""
+K2(B)
+ρ // K2(A).
+For a line bundle L on X, we let E (L ) := eρ∗(L ), and if there is no ambiguity regarding L , we denote it by
+E . Since the map eρ has degree 4 and L is torsion-free, E (L ) is a rank 4 torsion-free sheaf on K2(A). We
+prove that for suitable choices of L , the sheaf E (L ) is modular. In order to state our result, we introduce
+some notation. Let D ⊂ X be the exceptional divisor of the blow-up map ν (notice that D is irreducible by
+Proposition 3.1). There exist a ωB ∈ NS(B) and integers x, y such that
+(3.4) c1(L ) = ν∗(µB(ωB) + xδ(B)) + y cl(D).
+Below is the main result of the present section.
+Theorem 3.2. The sheaf E (L ) is modular if and only if y = x or y = x + 1. If this is the case, then
+(3.5) ∆(E (L )) = c2(K2(A)).
+Moreover, if y = x, then E (L ) is locally free.
+Theorem 3.2 is proved in Sections 3.7, 3.9 and 3.10.
+Remark 3.3. Let ξ be the square root of the line bundle OK2(A)(∆). Thus c1(ξ) = δ(A). For t ∈ Z, we have
+eρ∗(L ⊗eρ∗ξ⊗t) = E (L ) ⊗ ξ⊗t,(3.6)
+c1(L ⊗eρ∗ξ⊗t) = ν∗(µB(ωB) + (x + t)δ(B)) + (y + t) cl(D).(3.7)
+This explains why the hypotheses on (x, y) that ensure that E (L ) is modular are invariant under translation
+by multiples of (1, 1).
+
+=== PDF PAGE 9 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 9Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 9
+3.2. From S[2] to S[3] according to Ellingrud and Strømme
+Let S be a smooth surface. We let S[2,3] ⊂ S[2] × S[3] be the nested Hilbert scheme; see Jan Cheah’s Ph.D.
+thesis (Chicago, 1994). As a set, we have
+S[2,3] :=
+n
+[W ], [Z]) ∈ S[2] × S[3] | W ⊂ Z
+o
+.
+Let α : S[2,3] → S[2] × S be the product of the projection S[2,3] → S[2] and the map ([W ], [Z]) 7→
+supp(IW /IZ). Let β : S[2,3] → S[3] be the projection. We have a commutative diagram
+S[2,3]
+α
+zz
+β
+""
+S[2] × S
+ξ // S[3],
+where ξ([W ], p) := [W ⊔ {p}] if p< supp W . Let Zn(S) ⊂ S[n] × S be the universal subscheme.
+Proposition 3.4 (cf. Ellingrud-Strømme [ES98, Propositions 2.1 and 2.2]) . The map α is the blow-up of Z2(S).
+The Stein factorization of β is
+S[2,3] γ
+− →Z3(S) − →S[3],
+where Z3(S) − →S[3] is the projection.
+The map γ is an isomorphism away from the subset {(V (m2
+p), p) | p ∈ S}. Moreover,
+γ −1
+V
+
+m2
+p, p
+i
+= β−1h
+V
+
+m2
+p
+i
+=
+n
+[W ],
+h
+V
+
+m2
+p
+i
+| W ⊂ V
+
+m2
+p
+o
+ P(Θp(S)).
+3.3. The maps ρ and eρ
+Proof of Proposition 3.1. Let ρ : B[3]d A[3] be de ﬁned as ρ, i.e., ρ([Z]) = [f (Z)], and let V [3](f ) ⊂ B[3] be
+the set of [Z] such that ℓ(f (Z)) < ℓ(Z). It su ﬃ ces to prove that V [3](f ) is irreducible of codimension 2 and
+smooth and that blowing it up, we resolve the indeterminacies of ρ. Let ε ∈ B be the nonzero element of
+ker f :
+(3.8) ker f = {0, ε}.
+A simple but useful observation is contained in the following equality:
+(3.9) V [3](f ) =
+n
+[Z] ∈ B[3] | Z = W ⊔ {b}, [W ] ∈ B[2], (b + ε) ∈ supp W
+o
+.
+(Here ⊔ denotes disjoint union.) Let σ : B[2] × B → B[2] × B be deﬁned by σ ([W ], b) := ([W ], b+ ε). Consider
+the maps
+B[2] × B
+σ
+− →B[2] × B
+ξ
+9999K B[3] ρ
+9999K A[3].
+Let [Z] ∈ V [3](f ). Then we have Z = W ⊔ {b} as in (3.9). Since b< supp W , the map ξ is regular at ([W ], b)
+and deﬁnes an isomorphism between a small neighborhood (in the analytic topology) bU of ([W ], b) and a
+small neighborhood (in the analytic topology) U of [Z]. Moreover, σ maps isomorphically bU ∩ Z2(B) to
+U ∩ ξ−1(V [3](f )). Since Z2(B) is isomorphic to the blow-up of B × B along the diagonal, it is irreducible of
+codimension 2 and smooth. It follows that the same holds for V [3](f ).
+Moreover, σ identiﬁes (locally around ([W ], b) and [Z]) the blow-ups of B[2] × B with centers Z2(B) and
+V [3](f ). Since ρ ◦ ξ ◦ σ = ρ ◦ ξ, the blow-up of V [3](f ) resolves the indeterminacies of ρ by Ellingsrud–
+Strømme’s Proposition 3.4. □
+
+=== PDF PAGE 10 ===
+10 K. G. O’Grady10 K. G. O’Grady
+Given b ∈ B[3], let
+(3.10) Rb :=
+n
+[{b} ⊔ W ] | W ∈ B[2], supp W = {b + ε}
+o
+⊂ K2(B).
+Notice that Rb is isomorphic to P1. We have an inclusion
+(3.11) A[3]
+ι
+,− → K2(A)
+a 7− → V (m2
+a).
+In other words, ι(a) is the subscheme supported at a with structure sheaf OA/m2
+a.
+Proposition 3.5. Let X
+eρ2
+− →X
+eρ1
+− →K2(A) be the Stein factorization of eρ.
+(a) The map eρ1 is ﬁnite of degree 4.
+(b) There exists an embedding F : B[3] ,→ X with the following properties. Let b ∈ B[3], and let a := f (b) ∈
+A[3]. There is a curve eRb ⊂ X mapped isomorphically to Rb by ν and contracted by eρ2 to a point
+F(b) ∈ eρ−1
+1 (ι(a)). Moreover, eRb = eρ−1
+2 (F(b)).
+(c) Away from the union of the eRb (for b ∈ B[3]), the map eρ2 is an isomorphism onto its image.
+(d) X has rational singularities.
+Proof. Items (a)–(c) follow easily from the proof of Proposition 3.1 together with Ellingsrud and Strømme’s
+Proposition 3.4. Let us prove item (d). First X is smooth away from F(B[3]). On the other hand, we claim
+that in a neighborhood of F(b) for b ∈ B[3], X is isomorphic to the ﬁber over 0 of the composition
+Z3(A) − →A[3] − →A(3) − →A,
+where the last map is the summation map. In fact, our assertion follows from the proof of Proposition 3.1
+and from Proposition 3.4. Since Z3(A) − →A is a locally (in the classical or étale topology) trivial ﬁbration,
+X has a rational singularity at F(b) if Z3(A) has rational singularities. The last assertion holds by the main
+result of [Son16]. □
+3.4. Chern classes, I
+We follow the notation introduced in Theorem 3.2. We will set E = E (L ).
+Lemma 3.6. For E = E (L ), the following hold:
+ch1(E ) = eρ∗
+"
+c1(L ) + c1(X)
+2
+#
+,
+ch2(E ) = eρ∗
+" c1(L )2
+2 + c1(L ) · c1(X)
+2 + c1(X)2 + c2(X)
+12
+#
+− c2(K2(A))
+3 .
+Proof. By Proposition 3.5, the higher direct images sheaves Rieρ∗L (for i > 0) vanish over (K2(A) \ A[3]).
+Hence the Chern character of E over (K2(A) \ A[3]) is computed by the Grothendieck–Riemann–Roch (GRR)
+theorem. Since A[3] has codimension 4 in K2(A), it follows that the same formula gives chp(E ) on K2(A)
+for p ≤ 3. Writing out the GRR theorem, we get the formulae of the corollary. □
+Proposition 3.7. For E = E (L ) and α ∈ H 2(K2(A)), we have
+(3.12)
+Z
+K2(A)
+ch1(E )2 · α2 = 6
+
+2
+Z
+A
+(f∗ωB)2 − 3(2x + 2y − 1)2
+
+ q(α) + 6q(2µA(f∗ωB) + (2x + 2y − 1)δ(A), α)2.
+Proof. Since X is the blow-up of K2(B) with center V (f ), we have
+(3.13) c1(X) = − cl(D).
+
+=== PDF PAGE 11 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 11Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 11
+Thus Lemma 3.6 gives
+(3.14) ch1(E ) = eρ∗c1(L ) − 1
+2eρ∗ cl(D).
+We claim that
+(3.15) eρ∗ν∗µB(ωB) = 2µA(f∗ωB), eρ∗ν∗∆(B) = 2∆(A), eρ∗D = ∆(A).
+One gets the ﬁrst equality by representing the Poincaré dual of ωB by a C∞ immersed submanifold Σ, and
+the Poincaré dual of µB(ωB) by the immersed submanifold IΣ ⊂ K2(B) parametrizing the points [Z] ∈ K2(B)
+such that Z meets Σ. It follows that the Poincaré dual of eρ∗ν∗µB(ωB) is represented by the immersed
+submanifold If (Σ) ⊂ K2(A) parametrizing the points [Z] ∈ K2(A) such that Z meets f (Σ) (the point being
+that IΣ meets properly V (f ) for a generic choice of Σ), counted with multiplicity 2 because the map
+IΣ → If (Σ) has degree 2.
+In order to prove the second equality in (3.15), notice that ∆(B) intersects properly V (f ), and hence
+eρ∗ν∗∆(B) is represented by the closure of eρ(∆(B) \ V (f )), which is ∆(A), with multiplicity the degree of the
+map (∆(B) \ V (f )) → ∆(A), which is 2.
+The proof of Proposition 3.1 gives the third equality in (3.15).
+Plugging into (3.14) the equations in (3.15), we get that
+(3.16) ch1(E ) = 2µA(f∗ωB) + (2x + 2y − 1)δ(A).
+The proposition follows from (3.16) and the formula in (2.4).
+□
+3.5. Analysis of V (f )
+In order to compute
+R
+K2(A) ch2(E ) · α2 for α ∈ H 2(K2(A)), we must examine more closely V (f ). Let
+h : K2(B) → B(3) be the Hilbert–Chow map. The image of h is equal to
+S := {(b1) + (b2) + (b3) | b1 + b2 + b3 = 0}.
+Let Sϵ ⊂ S be the subset of (b1)+(b2)+(b3) such that bi −bj = ϵ for some i, j ∈ {1, 2, 3}. Then V (f ) = h−1(Sϵ),
+and the restriction of h to V (f ) is a birational map hV (f ) : V (f ) → Sϵ. Let
+(3.17) B
+g
+− → Sϵ
+b 7− → (b) + (b + ϵ) + (−2b + ϵ).
+Then g identiﬁes Sϵ with B/ ker f = A.
+Proposition 3.8. Identifying Sϵ with A via the map g, the map hV (f ) : V (f ) → Sϵ is identiﬁed with the blow-up
+of A[3]. Let R1, . . . , R81 be the exceptional divisors of hV (f ) (notice that they are equal to Rb1, . . . , Rb81, where
+bj ∈ B[3], with notation as in (3.10)). Then
+(3.18) ∆(B)|V (f ) = 2
+81X
+i=1
+Ri.
+Proof. By Proposition 3.1, we know that V (f ) is smooth. Moreover, hV (f ) is an isomorphism over (A \ A[3]),
+and it has ﬁber P1 over each point of A[3]. It follows that hV (f ) is the blow-up of A[3]. The remaining part
+of the proposition is straightforward. □
+Corollary 3.9. Let V (f ) ⊂ K2(B) be as in (3.2), and let ζ ∈ H 2(B). Then
+Z
+V (f )
+(µB(ζ) + tδ(B))2 = 18
+
+
+Z
+B
+ζ2
+
+ − 81t2.
+
+=== PDF PAGE 12 ===
+12 K. G. O’Grady12 K. G. O’Grady
+Proof. We have µB(ζ) = h∗(ζ(3)), where h : K2(B) → B(3) is the Hilbert–Chow map and ζ(3) ∈ H 2(B(3)) is the
+symmetrization of the class ζ. Since g∗(ζ(3)) = 6ζ and g is surjective of degree 2, we get that
+Z
+V (f )
+µB(ζ)2 =
+Z
+W
+ζ(3) · ζ(3) = 1
+2
+Z
+B
+(6ζ)2 = 18
+Z
+B
+ζ2.
+Next we notice that
+(3.19)
+Z
+V (f )
+µB(ζ) · δ(B) =
+Z
+W
+ζ(3) · hV (f ),∗(δ(B)) = 0.
+(The last equality holds because hV (f ),∗(∆(B)) = 0.)
+Lastly , by (3.18), we have
+□(3.20)
+Z
+V (f )
+δ(B)2 = −81.
+Lemma 3.10. The restriction of eρ deﬁnes a map ν∗∆(B) → ∆(A) of degree 2 and a birational map D → ∆(A).
+We have
+(3.21) eρ∗δ(A) = ν∗δ(B) + cl(D).
+Proof. The ﬁrst sentence is immediate. We also see that ρ is unramiﬁed at the generic point of ∆(B), and
+hence
+(3.22) eρ∗∆(A) = ν∗∆(B) + m cl(D).
+Since KX ≡ D, we get m = 2 by the adjunction formula for the map eρ. Dividing by 2 the equality in (3.22),
+we get (3.21). □
+Proposition 3.11. We have
+c1(NV (f )/K 2(B)) =
+81X
+i=1
+cl(Ri) = δ(B)|V (f ),(3.23)
+Z
+V (f )
+c2(NV (f )/K 2(B)) = 3 4,(3.24)
+Z
+V (f )
+c2(K2(B)) = 3 5.(3.25)
+Proof. By Proposition 3.8, we have c1(V (f )) = −P81
+i=1 cl(Ri), and hence (3.23) holds because c1(K2(B)) = 0
+(remember Proposition 3.8).
+In order to prove (3.24), we notice that
+(3.26) 4 · 81 =
+Z
+K2(A)
+δ(A)4 = 1
+4
+Z
+X
+(ν∗δ(B) + cl(D))4 =
+= 1
+4
+Z
+K2(B)
+δ(B)4 +
+Z
+X
+ν∗δ(B)3 · cl(D) + 3
+2
+Z
+X
+ν∗δ(B)2 · cl(D)2+
++
+Z
+X
+ν∗δ(B) · cl(D)3 + 1
+4
+Z
+X
+cl(D)4 = 81 + 3
+2 · 81 + 81 + 1
+4
+Z
+X
+cl(D)4.
+
+=== PDF PAGE 13 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 13Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 13
+(T o compute the third and fourth integrals into the second line, use Corollary 3.9 and (3.23).) It follows that
+(3.27) 2 · 81 =
+Z
+X
+cl(D)4 =
+Z
+V (f )
+c2(NV (f )/K 2(B)) − c1(NV (f )/K 2(B))2.
+By (3.23), we get that (3.24) holds.
+Lastly , (3.25) follows from (3.23), (3.24) and the normal exact sequence for the restriction of ΘX to
+V (f ). □
+3.6. Chern classes, II
+By de ﬁnition, D is P(NV (f )/K 2(B)), where NV (f )/K 2(B) is the normal bundle of V (f ) in K2(B). Let
+νD : D → V (f ) be the structure map ( i.e., the restriction of ν), and let
+(3.28) 0 − →λ − →ν∗
+DNV (f )/K 2(B) − →ξ − →0
+be the tautological exact sequence, where λ = OD(−1) is the normal bundle of D in X. Let i : D ,→ X be
+the inclusion map.
+Lemma 3.12. We have
+(3.29) c2(X) = ν∗c2(K2(B)) + i∗[c1(ξ)].
+Proof. The exact sequence
+(3.30) 0 − →ΘX
+dν
+− →ν∗ΘK2(B) − →i∗ξ − →0
+gives
+(3.31) c(X) = ν∗c(K2(B)) · c(i∗ξ)−1.
+The Chern classes of i∗ξ are expressed via the GRR theorem. One gets that
+(3.32) c1(i∗ξ) = cl(D), c 2(i∗ξ) = i∗[c1(λ) − c1(ξ)].
+Plugging this into (3.31), we get the lemma. □
+Lemma 3.13. For E = E (L ), we have
+(3.33) ch2(E ) = 1
+2eρ∗
+n
+ν∗(µB(ωB) + xδ(B))2 + (2y − 1)ν∗(µB(ωB) + xδ(B)) · cl(D)
+o
++
++ 1
+12eρ∗
+n
+i∗
+h
+c1(ξ) + (6y2 − 6y + 1)c1(λ)
+io
++ 1
+12eρ∗ (ν∗c2(K2(B))) − 1
+3 c2(K2(A)).
+Proof. Plug (3.13) and (3.29) in the second equation of Lemma 3.6. □
+We are now ready to compute
+R
+K2(A) ∆(E ) · α2 for α ∈ H 2(K2(A)).
+Proposition 3.14. For E = E (L ) and γ ∈ H 2(A), we have
+(3.34)
+Z
+K2(A)
+∆(E ) · µA(γ)2 = 18
+
+4(x − y)2 + 4(x − y) + 3
+
+q(µA(γ)).
+Proof. First we notice that
+(3.35)
+Z
+B
+f ∗γ 2 = 2
+Z
+A
+γ 2,
+Z
+A
+(f∗ωB)2 = 2
+Z
+B
+ω2
+B, eρ∗µA(γ) = ν∗µB(f ∗γ).
+
+=== PDF PAGE 14 ===
+14 K. G. O’Grady14 K. G. O’Grady
+The ﬁrst equality holds because deg f = 2. The second equality holds by the following series of equalities:
+(3.36)
+Z
+A
+(f∗ωB)2 =
+Z
+A
+f∗(ωB · f ∗(f∗ωB)) =
+Z
+B
+ωB · (ωB + T ∗
+ϵ ωB) = 2
+Z
+B
+ω2
+B.
+(We let Tϵ : B → B be the translation by ϵ.) The third equality in (3.35) is proved by representing the Poincaré
+dual of µA(γ) and µB(f ∗γ) as in the proof of the ﬁrst equality in (3.15).
+By Proposition 3.7, we have
+(3.37)
+Z
+K2(A)
+ch1(E )2 · α2 =
+
+24
+Z
+B
+ω2
+B − 18(2x + 2y − 1)2
+
+ ·
+
+
+Z
+A
+γ 2
+
+ + 24
+
+
+Z
+A
+f∗ωB · γ
+
+
+2
+.
+On the other hand, Lemma 3.13 and the third equality in (3.35) give that
+(3.38)
+Z
+K2(A)
+ch2(E ) · µA(γ)2 = 1
+2
+Z
+K2(B)
+(µB(ωB) + xδ(B))2 · µB(f ∗γ)2 − 1
+2
+
+y2 − y
+ Z
+V (f )
+µB(f ∗γ)2+
++ 1
+12
+Z
+K2(B)
+c2(K2(B)) · µB(f ∗γ)2 − 1
+3
+Z
+K2(A)
+c2(K2(A)) · µA(γ)2.
+Recalling the results of Section 2.2 and Corollary 3.9, we get that
+(3.39)
+Z
+K2(A)
+ch2(E ) · µA(γ)2 = 3
+
+
+
+
+Z
+B
+ω2
+B
+
+ − 6x2 − 6y2 + 6y − 3
+
+ ·
+
+
+Z
+A
+γ 2
+
+ + 3
+
+
+Z
+B
+ωB · f ∗γ
+
+
+2
+.
+Since E has rank 4, we have ∆(E ) = ch 1(E )2 − 8 ch2(E ). The proposition follows from (3.37) and (3.39)
+(recall that µ : H 2(A) → H 2(K2(A)) is an isometry). □
+Proposition 3.15. For E = E (L ) and γ ∈ H 2(A), we have
+(3.40)
+Z
+K2(A)
+∆(E ) · µA(γ) · δ(A) = 0.
+Proof. By Proposition 3.7, we have
+Z
+K2(A)
+ch2
+1 E ) · µA(γ) · δ(A) = −72(2x + 2y − 1)
+Z
+A
+γ · f∗ωB.
+Lemmas 3.13 and 3.10, Corollary 3.9 and (3.23) give that
+Z
+K2(A)
+ch2 E ) · µA(γ) · δ(A) = 1
+2
+Z
+K2(B)
+(µB(ωB) + xδ(B))2 · µB(f ∗γ) · δ(B) +
++ 1
+2 (2y − 1)ν∗(µB(ωB) + xδ(B)) · µB(f ∗γ) · cl(D)2 =
+= −9(2x + 2y − 1)
+Z
+B
+ωB · f ∗γ.
+Since ∆(E ) = ch1(E )2 − 8 ch2(E ), the proposition follows from the above equalities. □
+Proposition 3.16. Keeping notation as above, we have
+(3.41)
+Z
+K2(A)
+∆(E (L )) · δ(A)2 = 54((x − y)2 + (x − y) + 1)q(δ(A)).
+
+=== PDF PAGE 15 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 15Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 15
+Proof. Let E = E (L ). By Proposition 3.7, we have
+(3.42)
+Z
+K2(A)
+ch1(E )2 · δ(A)2 = 324(2x + 2y − 1)2 − 72
+Z
+A
+(f∗ωB)2.
+By Lemmas 3.13 and 3.10, we have
+(3.43)
+Z
+K2(A)
+ch2(E ) · δ(A)2 = − 1
+3
+Z
+K2(A)
+c2(K2(A)) · δ(A)2+
++ 1
+2
+Z
+K2(B)
+(µB(ωB) + xδ(B))2 · δ(B)2 + 1
+12
+Z
+D
+h
+c1(ξ) + (6y2 − 6y + 1)c1(λ)
+i
+· δ(B)2+
++ 1
+12
+Z
+K2(B)
+c2(K2(B)) · δ(B)2 + (2y − 1)
+Z
+X
+ν∗((µB(ωB) + xδ(B)) · δ(B)) · cl(D)2+
++ 1
+6
+Z
+D
+h
+c1(ξ) ∪ c1(λ) + (6y2 − 6y + 1)c1(λ)2i
+· δ(B) +
++ 1
+2
+Z
+X
+ν∗(µB(ωB) + xδ(B))2 · cl(D)2 + 1
+2 (2y − 1)
+Z
+X
+ν∗(µB(ωB) + xδ(B)) · cl(D)3+
++ 1
+12
+Z
+D
+h
+c1(ξ) · c1(λ)2 + (6y2 − 6y + 1)c1(λ)3i
++ 1
+12
+Z
+X
+ν∗c2(K2(B)) · cl(D)2.
+We have proved all the results needed to compute each integral above. In particular, notice that (3.28) and
+Proposition 3.11 give the following relations in the cohomology ring of D:
+c1(ξ) =
+81X
+i=1
+cl(Ri) − c1(λ), c 1(λ)2 = ν∗
+D
+
+
+81X
+i=1
+cl(Ri)
+
+ · c1(λ) − 81ν∗
+D(ηV (f )),
+where νD : D → V (f ) is the natural map (the restriction of ν to D) and ηV (f ) is the fundamental class of
+V (f ). It follows that
+(3.44)
+Z
+K2(A)
+ch2(E ) · δ(A)2 = = 81
+2
+
+5x2 + 6xy + 5y2 − 3x − 5y + 2
+
+− 18
+Z
+B
+ω2
+B.
+The proposition follows from (3.42) and (3.44) because ∆(E ) = −8 ch2(E ) + ch1(E )2. □
+Notice that the right-hand sides of (3.34), (3.40) and (3.41) are polynomials in (x − y); this is explained by
+Remark 3.3.
+3.7. Modularity
+By Propositions 3.14, 3.15 and 3.16, the sheaf E (L ) is modular if and only if
+(3.45) 18(4(x − y)2 + 4(x − y) + 3) = 18(3(x − y)2 + 3(x − y) + 3).
+The solutions are given by x − y = 0 and x − y = −1. For modular E (L ), one gets that
+(3.46) d(E (L )) = 54
+by plugging the values x − y = 0 and x − y = −1 into the polynomial on the right-hand side of (3.34) or (3.41)
+(we recall that d(E (L )) is deﬁned by the equation in (1.7)).
+
+=== PDF PAGE 16 ===
+16 K. G. O’Grady16 K. G. O’Grady
+3.8. Action of Aut0(K2(A)) on E (L )
+We prove that Aut0(K2(A)) acts trivially on E (L ). First we describe generators of Aut0(K2(A)).
+For τ ∈ A[3], let gτ : K2(A) → K2(A) be the automorphism mapping a subscheme Z to τ(Z). Then
+gτ ∈ Aut0(K2(A)), and the set of such automorphism is a normal subgroup isomorphic to Z/(n + 1)4.
+Let ι : K2(A) → K2(A) be the automorphism mapping a subscheme Z to −1(Z), where −1 : A → A is
+multiplication by −1. Then ι belongs to Aut0(K2(A)), and moreover Aut0(K2(A)) is generated by the
+collection of the gτ and ι; see [BNWS11, Corollary 5].
+Proposition 3.17. Let L be a line bundle on X as in Section 3.1 (no further assumptions on L ). If ϕ ∈
+Aut0(K2(A)), then
+(3.47) ϕ∗(E (L )) E (L ).
+Proof. Let E := E (L ). We must prove that g∗
+τ (E ) E for all τ ∈ A[3] and that ι∗(E ) E . We start by
+noting that the restriction of f to B[3] deﬁnes an isomorphism B[3] → A[3]. Let λ ∈ B[3] be the element
+such that f (λ) = τ. The corresponding automorphism gλ : K2(B) → K2(B) maps V (f ) to itself and hence
+lifts to an automorphism egλ : X → X. Moreover, eg∗
+λ(L ) L because gλ acts trivially on H 2(K2(B)). Since
+eρ ◦egλ = gτ ◦eρ, we get that g∗
+τ (E ) E . The proof that ι∗(E ) E is similar. □
+3.9. The discriminant
+We prove that the equality in (3.5) holds. We assume that E (L ) is modular; i.e., either y = x or y = x + 1.
+As mentioned in Section 2.1, this means that
+(3.48) ∆(E (L )) ∈ Qc2(K2(A)) ⊕ Sym2 H 2(M)⊥
+Q,
+where c2(K2(A)) is the orthogonal projection of c2(K2(A)) in the image of the map Sym2 H 2(K2(A)) →
+H 4(K2(A)). The right-hand side of (3.48) is studied in [ HT13]. In Theorem 4.4 of op. cit. , one ﬁnds
+the de ﬁnition of submanifolds Zτ ⊂ K2(A) for τ ∈ A[3] with the following properties: The cohomology
+classes {cl(Zτ )}τ∈A[3] give a basis of the right-hand side of (3.48), and the action of A[3] on the Zτ is by
+translation of the index. It follows that the subspace of invariants for this action has dimension 1, and since
+c2(K2(A)) is a nonzero class, it generates the space of invariants (in fact, by [ HT13, Proposition 5.1], we have
+c2(K2(A)) = 1
+3
+P
+τ cl(Zτ )). Since (3.47) holds for all ϕ = gτ , where τ ∈ A[3], ∆(E (L )) is invariant and hence
+it is a multiple of c2(K2(A)). By (3.46) and (2.6), it follows that ∆(E (L )) = c2(K2(A)).
+For later use, we record here the following immediate consequence of the equality in (3.5):
+(3.49) ch2(E (L )) = 1
+8
+
+c1(E (L ))2 − c2(K2(A))
+
+.
+3.10. Local structure of modular E
+Proposition 3.18. Let L be a line bundle on X such that
+c1(L ) = ν∗(µB(ωB) + xδ(B)) + x cl(D);
+i.e., x = y in (3.4). Then Rieρ∗L = 0 for i > 0, and E (L ) is locally free.
+Proof. Let X
+eρ2
+− →X
+eρ1
+− →K2(A) be the Stein factorization of eρ; see Proposition 3.5. It su ﬃ ces to prove that
+eρ2,∗L is an invertible sheaf and that
+(3.50) Rieρ2,∗L = 0, i > 0.
+By (3.6) and (3.7), we may assume that x = y = 0 . Let F : B[3] ,→ X be the embedding of item (b) of
+Proposition 3.5. The map eρ2 is an isomorphism over (X \ F(B[3])). Hence away from F(B[3]) the sheaf
+eρ2,∗L is invertible and (3.50) holds.
+
+=== PDF PAGE 17 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 17Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 17
+Let b ∈ B[3]. The ﬁber eRb = eρ−1
+2 (F(b)) is mapped isomorphically to Rb ⊂ K2(B), where Rb is de ﬁned
+in (3.10). Since x = y = 0, the line bundle L is the pull-back of a line bundle on B(3) via the Hilbert–Chow
+map K2(B) → B(3). The curve Rb (a P1) is contracted by the Hilbert–Chow map. It follows that L is
+trivial on an open neighborhood U of eRb. Shrinking U , we may assume that eρ2(U ) is open (because
+eRb = eρ−1
+2 (F(a)), where a = f (b), and eρ2 is projective), and hence eρ2,∗L is invertible in a neighborhood of
+F(b).
+By Proposition 3.5, we know that X has rational singularities. Hence (3.50) holds because in a neighbor-
+hood of eRb we have L  OX. □
+4. Euler characteristic of the endomorphism bundle
+4.1. The result
+The notation introduced in Section 3 is in force throughout the present section. The main result is the
+following.
+Proposition 4.1. Assume that c1(L ) = ν∗(µB(ωB)), where ωB ∈ NS(B). Then
+(4.1) χ(K2(A), End(E (L )) = 3.
+4.2. Preliminary computations
+Recall that i : D ,→ X is the inclusion of the exceptional divisor of the blow-up map ν : X → K2(B). Let
+λ and ξ be the line bundles on D appearing in (3.28).
+Lemma 4.2. Keep notation as above. Then
+(4.2) Td3(X) = − 1
+24 cl(D) · ν∗(c2(K2(B))) − 1
+24 i∗(c1(λ) · c1(ξ)).
+Proof. We compute modulo H 8(X; Q). By the equalities in (3.32), we have
+Td(i∗(ξ)) ≡ 1 + 1
+2 cl(D) + 1
+12
+
+cl(D)2 + i∗(c1(λ) − c1(ξ))
+
++ 1
+24 cl(D) · i∗(c1(λ) − c1(ξ)).
+By the exact sequence in (3.30) and multiplicativity of the T odd class, we get that
+Td(X) = ν∗ Td(K2(B)) · Td(i∗(ξ))−1 ≡
+≡ 1 − 1
+2 cl(D) + 1
+12
+
+ν∗c2(K2(B) + cl(D)2 + i∗(c1(λ) + c1(ξ))
+
+−
+− 1
+24 cl(D) · ν∗c2(K2(B)) − 1
+24 i∗(c1(λ) · c1(ξ). □
+Lemma 4.3. Let eρ : X → K2(A) be the lifting of ρ : K2(B)d K2(A). Then
+(4.3) eρ∗(ch1(E (L )) = 4ν∗(µB(ωB)) − ν∗δ(B) − cl(D).
+Proof. By the equalities in (3.16) and in (3.21), we have
+eρ∗(ch1(E (L )) = eρ∗(2µA(f∗ωB) − δ(A)) = 2eρ∗(µA(f∗ωB)) − ν∗δ(B) − cl(D).
+Arguing as in the proof of the ﬁrst equality in (3.15), we get that eρ∗(µA(f∗ωB)) = 2ν∗(µB(ωB)), and the lemma
+follows. □
+
+=== PDF PAGE 18 ===
+18 K. G. O’Grady18 K. G. O’Grady
+4.3. Chern numbers of E (L )
+Proposition 4.4. Keep hypotheses as in Proposition 4.1, and set ωB · ωB = 2a. Then the following equalities hold:
+(4.4)
+Z
+K2(A)
+ch1(E (L ))4 = 2304a2 − 1728a + 324,
+(4.5)
+Z
+K2(A)
+ch1(E (L ))2 · ch2(E (L )) = 576a2 − 540a + 81,
+(4.6)
+Z
+K2(A)
+ch1(E (L )) · ch3(E (L )) = 24a2 − 45a + 27
+2 ,
+(4.7)
+Z
+K2(A)
+ch2(E (L ))2 = 36a2 − 54a + 27
+and
+(4.8)
+Z
+K2(A)
+ch4(E (L )) = 3
+2 a2 − 9
+2 a + 9
+4 .
+Proof. Let E = E (L ). Let
+(4.9) ωA := f∗(ωB).
+Notice that f ∗(ωA) = 2 ωB because the covering involution of f : B → A acts trivially on cohomology. It
+follows that
+(4.10)
+Z
+A
+ω2
+A = 4a.
+By the equality in (3.16), we have ch1(E ) = 2µA(ωA) − δ(A), and hence
+Z
+K2(A)
+ch1(E )4 =
+Z
+K2(A)
+(2µA(ωA) − δ(A))4 = 2304a2 − 1728a + 324.
+This proves the equality in (4.4).
+By the equality in (3.49), we have
+Z
+K2(A)
+ch1(E )2 · ch2(E ) = 1
+8
+Z
+K2(A)
+(2µA(ωA) − δ(A))4 −
+− 1
+8
+Z
+K2(A)
+(2µA(ωA) − δ(A))2 · c2(K2(A)) = 576a2 − 540a + 81.
+This proves proves the equality in (4.5).
+Let us prove the equality in (4.6). By Proposition 3.18 and the GRR theorem, we have
+(4.11) ch(E ) · Td(K2(A)) = eρ∗
+
+ec1(L ) · Td(X)
+
+.
+Multiplying both sides by ch1(E ) and integrating, we get that
+(4.12)
+Z
+K2(A)
+ch1(E ) · ch3(E ) = − 1
+12
+Z
+K2(A)
+c2(K2(A)) · ch1(E )2+
++
+Z
+X
+
+Td3(X) + Td2(X) · c1(L ) + 1
+2 Td1(X) · c1(L )2 + 1
+6 c1(L )3
+
+·eρ∗ ch1(E ).
+
+=== PDF PAGE 19 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 19Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 19
+Lemmas 4.2 and 4.3, together with the results of Section 3, allow us to evaluate all the integrals appearing
+on the right-hand side of (4.12). In fact, by the equality in (2.6), we have
+(4.13) − 1
+12
+Z
+K2(A)
+c2(K2(A)) · ch1(E )2 = −72a + 27.
+By Lemmas 4.2 and 4.3, we have
+(4.14)
+Z
+X
+Td3(X) ·eρ∗ ch1(E ) = − 1
+6
+Z
+X
+cl(D) · ν∗(c2(K2(B)) · µB(ωB)) +
++ 1
+24
+Z
+X
+cl(D) · ν∗(c2(K2(B)) · δ(B)) + 1
+24
+Z
+X
+cl(D)2 · ν∗(c2(K2(B)) −
+− 1
+6
+Z
+X
+i∗(c1(λ) · c1(ξ)) · ν∗(µB(ωB)) + 1
+24
+Z
+X
+i∗(c1(λ) · c1(ξ)) · ν∗(δ(B)) +
++ 1
+24
+Z
+X
+i∗(c1(λ) · c1(ξ)) · cl(D).
+The ﬁrst two integrals in the right-hand side of the above equality vanish for dimension reasons. The equality
+in (3.25) gives that
+(4.15) 1
+24
+Z
+X
+cl(D)2 · ν∗(c2(K2(B)) = − 35
+24 .
+By the exact sequence in (3.28), we have c1(λ) · c1(ξ) = ν∗
+D(c2(NV (f )/K 2(B))). It follows that the fourth and
+ﬁfth integrals in the right-hand side of (4.14) vanish, and by the equality in (3.24), we also get that
+(4.16) 1
+24
+Z
+X
+i∗(c1(λ) · c1(ξ)) · cl(D) = − 34
+24 .
+Summing up, one gets that
+(4.17)
+Z
+X
+Td3(X) ·eρ∗ ch1(E ) = − 27
+2 .
+Next we claim that
+(4.18)
+Z
+X
+Td2(X) · c1(L ) ·eρ∗ ch1(E ) = 36a.
+In fact, by the equalities in (3.13) and in (3.29), we have
+(4.19) Td2(X) = 1
+12 (ν∗c2(K2(B)) + i∗(c1(λ) + c1(ξ))) .
+By the exact sequence in (3.28) and the equality in (3.23), we may rewrite (4.19) as
+(4.20) Td2(X) = 1
+12
+ ν∗c2(K2(B)) + i∗(ν∗
+Dδ(B)) .
+As is easily checked (use the equality in (2.7)), we have
+(4.21) 1
+12
+Z
+X
+ν∗c2(K2(B)) · c1(L ) ·eρ∗ ch1(E ) = 36a.
+On the other hand, we have
+(4.22) 1
+12
+Z
+X
+i∗(ν∗
+Dδ(B)) · c1(L ) ·eρ∗ ch1(E ) = 0.
+(In order to get (4.22), one needs to know that
+R
+V (f ) µB(ωB) · δ(B) = 0, which follows from Corollary 3.9.)
+The equality in (4.18) follows at once from the equalities in (4.21) and in (4.22). Lastly , one checks easily that
+(4.23) 1
+2
+Z
+X
+Td1(X) · c1(L )2 ·eρ∗ ch1(E ) = −9a
+
+=== PDF PAGE 20 ===
+20 K. G. O’Grady20 K. G. O’Grady
+and
+(4.24) 1
+6
+Z
+X
+c1(L )3 ·eρ∗ ch1(E ) = 24a2.
+The equality in (4.6) follows at once from the equalities in (4.13), (4.17), (4.18), (4.23) and (4.24).
+The equality in (4.7) is proved by invoking the equality in (3.49).
+Lastly we prove the equality in (4.8). We have L  ν∗(L0), where L0 is the line bundle on K2(B) such
+that c1(L0) = µB(ωB). By Proposition 3.18, we have
+(4.25) χ(K2(A), E ) = χ(X, L ) = χ(K2(B), L0).
+The Hirzebruch–Riemann–Roch (HRR) formula for HK manifolds of Kummer type reads
+(4.26) χ(K2(B), L0) = 3 ·
+ q(L0)
+2 + 2
+2
+!
+= 3 ·
+ a + 2
+2
+!
+= 3
+2 a2 + 9
+2 a + 3.
+On the other hand, the HRR formula for E reads
+(4.27) χ(K2(A), E ) = 12 +
+Z
+ch2(E ) · Td2(K2(A)) +
+Z
+ch4(E ).
+(We denote by
+R
+the integral over K2(A).) By the equality in (3.49), we have
+(4.28) 96
+Z
+ch2(E (L )) · Td2(K2(A)) =
+= 12
+Z 
+(2µA(ωA) − δ(A))2 − c2(K2(A))
+
+· Td2(K2(A)) =
+=
+Z 
+(2µA(ωA) − δ(A))2 − c2(K2(A))
+
+· c2(K2(A)) = 24(36a − 45).
+(One must invoke the equalities in (2.6) and (2.7).) The above equality together with the equality in (4.27)
+gives the equality in (4.8). □
+4.4. Proof of Proposition 4.1
+Let E = E (L ), and let η ∈ H 8(K2(A); Z) be the fundamental class of K2(A). By the HRR theorem, we
+have
+χ(K2(A), End(E ) =
+Z
+ch(E∨) · ch(E ) · Td(K2(A)) =
+= 48 + 1
+12
+Z
+(8 ch2(E ) − ch1(E )2) · c2(K2(A) +
+Z
+8 ch4(E ) − 2 ch1(E ) · ch3(E ) + ch2(E )2.
+By the equalities in (3.49) and (2.7), we have
+(4.29) 1
+12
+Z
+(8 ch2(E ) − ch1(E )2) · c2(K2(A) = − 1
+12
+Z
+c2(K2(A) · c2(K2(A) = −63.
+Using the equalities in (4.8), (4.6) and (3.49), one gets that
+(4.30)
+Z
+8 ch4(E ) − 2 ch1(E ) · ch3(E ) + ch2(E )2 = 18.
+Adding up one gets the equality in (4.1)
+
+=== PDF PAGE 21 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 21Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 21
+5. The vector bundle E (L ) via Bridgeland–King–Reid
+5.1. Outline of the section
+The contents of the present section are entirely due to the anonymous referee (if there are incorrect
+statements, I am responsible for them). The notation introduced in Section 3 is in force throughout the
+section. The ﬁrst result is a conceptual proof that if the class ωB ∈ NS(B) satisﬁes a suitable hypothesis, then
+E (L ), for y = x or y = x + 1, is modular, locally free, and moreover all cohomology groups of the vector
+bundle of its traceless endomorphisms vanish. This is proved by showing that, via Krugs’ version of the
+Bridgeland–King–Reid (BKR) equivalence, E (L ) corresponds to a simple semi-homogeneous S3-equivariant
+vector bundle on NA(3) ⊂ A3, the kernel of the summation map A3 → A. Actually the construction gives
+many other modular vector bundles on Kn(A), corresponding to isogenies f : B → A with kernels of arbitrary
+cardinality (satisfying a suitable hypothesis).
+5.2. The main results
+Let Xn+1(A) be the isospectral Hilbert scheme of n + 1 points on A (see [ Hai01, De ﬁnition 3.2.4]). We
+have a commutative diagram
+(5.1) Xn+1(A)
+eη
+
+eτ // An+1
+eπ
+
+A[n+1] eγ // A(n+1),
+where eπ is the quotient map by the action of the symmetric group Sn+1 and eγ is the cycle (or Hilbert-
+to-Chow) map. Note that Sn+1 acts on all the spaces in the above diagram (the action on the spaces
+on the bottom row is trivial) and the maps in the diagram are Sn+1-equivariant. Note that Sn+1 maps
+NA(n + 1) (the kernel of the summation map An+1 → A) to itself. Let X0
+n+1(A)D eτ −1NA(n + 1). We have
+the commutative diagram
+(5.2) X0
+n+1(A)
+η
+
+τ // NA(n + 1)
+π
+
+Kn(A)
+γ // NA(n + 1)/Sn+1.
+Let Db
+Sn+1
+(NA(n+1)) be the bounded derived category of the (abelian) category of Sn+1-equivariant coherent
+sheaves on NA(n + 1). Krugs’ version (see [ Kru18, Proposition 2.8]) of the BKR equivalence is given by the
+functor
+(5.3) ΦA(n + 1)D ηSn+1
+∗ ◦ τ ∗ : Db
+Sn+1
+(NA(n + 1)) − →Db(Kn(A)),
+where ηSn+1
+∗ is the derived functor of the functor Coh(X0
+n+1(A)) → Coh(Kn(A)) mapping F to the Sn+1-
+invariant subsheaf of η∗(F ).
+Now let f : B → A be an isogeny of abelian surfaces (of arbitrary degree). The homomorphism of abelian
+varieties
+(5.4) NB(n + 1)
+F
+− → NA(n + 1)
+(b1) + · · ·+ (bn+1) 7− → (f (b1)) + · · ·+ (f (bn+1))
+is Sn+1-equivariant. Let L be a line bundle on B. Let eL(n + 1) be the line bundle on NB(n + 1) deﬁned by
+(5.5) eL(n + 1)D
+n+1O
+i=1
+pr∗
+i L|NB(n+1).
+
+=== PDF PAGE 22 ===
+22 K. G. O’Grady22 K. G. O’Grady
+The symmetric group Sn+1 acts on eL(n + 1) by permutations; we call this action λ+. T wisting the
+permutation action by the sign representation, we get another action, that we denote by λ−. Thus we get
+two Sn+1-equivariant line bundles (eL(n + 1), λ+) and (eL(n + 1), λ−). Since the homomorphism F in (5.4) is
+Sn+1-equivariant, we have the Sn+1-equivariant vector bundles F∗(eL(n + 1), λ±) on NA(n + 1). Let
+(5.6) E±(L)D ΦA(n + 1)
+
+F∗
+eL(n + 1), λ±
+
+.
+Then E±(L) is a locally free sheaf. In fact, the map η in (5.2) is ﬁnite, and moreover it is ﬂat because X0
+n+1(A)
+is CM by [ Hai01, Theorem 3.1]. The rank of E±(L) is equal to the degree of F, i.e., | ker(f )|n. In order
+to state the ﬁrst main result, we let ϕeL(n+1) : NB(n + 1) → NB(n + 1)∨ be the homomorphism de ﬁned by
+ϕeL(n+1)(x)D [T ∗
+xeL(n + 1) ⊗eL(n + 1)−1], where Tx : NB(n + 1) → NB(n + 1) is translation by x.
+Theorem 5.1. Let F be the homomorphism in (5.4), and suppose that
+(5.7) ker(F) ∩ ker
+
+ϕeL(n+1)
+
+= 0.
+Then
+(5.8) H p
+Kn(A), End0 (E±(L))
+
+= 0
+for all p, where End0(E±(L)) is the sheaf of traceless endomorphisms of E±(L).
+The proof of Theorem 5.1 is in Section 5.3.
+Corollary 5.2. Keep hypotheses as in Theorem 5.1. Then the natural maps
+Def(K2(A), E±(L)) − →Def(K2(A), det E±(L))
+and
+(5.9) Def(K2(A), P(E±(L))) − →Def(K2(A))
+are smooth. Moreover, E±(L) is a modular vector bundle.
+Proof. The ﬁrst statement is an immediate consequence of the vanishing in (5.8) for p = 2 and results in
+deformation theory; see [ O’G23, Proposition 3.6]. By the surjectivity of the map in (5.9), the discriminant
+∆(E±(L)) remains of type (2, 2) for all small deformations of K2(A); see the proof of Corollary 3.7 in op. cit.
+This implies that E±(L) is modular. □
+Next we give the relation between the vector bundles E±(L) and E (L ). Thus we assume that the isogeny
+f : B → A has degree 2, with kernel generated by 0, ϵ ∈ B[2].
+Proposition 5.3. Let L be a line bundle on B, and let ωB = c1(L) ∈ NS(B). Let L+, L− be the line bundles on
+X (notation as in Section 3 ) that one gets by setting x = y = 0 and x = −1, y = 0, respectively, in (3.4). Then
+E (L±) E±(L).
+The proof of Proposition 5.3 is sketched in Section 5.3. Let ϕL : B → B∨ be the homomorphism de ﬁned
+by ϕL(b)D [T ∗
+b L ⊗ L−1].
+Corollary 5.4. Keep notation and hypotheses as in Proposition 5.3. If ϵ< ker ϕL, then
+H p
+Kn(A), End0(E (L±))
+
+= 0
+for all p, E (L±) is a modular vector bundle, and the natural map
+Def(K2(A), E (L±)) − →Def(K2(A), det E (L±))
+is smooth.
+
+=== PDF PAGE 23 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 23Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 23
+Proof. By Proposition 5.3 and Corollary 5.2, it su ﬃ ces to prove that the equality in (5.7) holds. Let
+F : NB(3) → NA(3) be as in (5.4). The nonzero elements of ker F are (ϵ, ϵ,0) and its permutations. By
+symmetry , it suﬃ ces to prove that
+(5.10) T ∗
+(ϵ,ϵ,0)eL(3) ⊗eL(3)−1  ONB(3).
+Let bL(3) be the line bundle on B3 given by bL(3)D
+N3
+i=1 pr∗
+i L. Thus eL(3) = bL(3)|NB(3), and it su ﬃ ces to
+prove that
+(5.11) T ∗
+(ϵ,ϵ,0)bL(3) ⊗bL(3)−1< ker
+
+Pic0(B3) − →Pic0(NB(3))
+
+.
+(Abusing notation, we denote by T(ϵ,ϵ,0) both the translation of NB(3) and that of B3.) The kernel in the
+right-hand side of (5.11) is equal to σ ∗
+3(Pic0(B)), where σ3 : B3 → B is the summation map. One checks (5.11)
+by restricting T ∗
+(ϵ,ϵ,0)
+bL(3) ⊗bL(3)−1 to B × {(0, 0)} and {(0, 0)} × B (both identi ﬁed with B). The ﬁrst restriction
+is isomorphic to T ∗
+b L ⊗ L−1, which is nontrivial by hypothesis, while the second restriction is trivial. This
+shows that the left-hand side of (5.11) does not belong to σ ∗
+3(Pic0(B)). This proves that (5.10) holds. □
+5.3. Proofs of the main results
+Proof of Theorem 5.1. By the equality in (5.7), the vector bundle F∗(eL(n + 1)) is simple semi-homogeneous;
+see [ Muk78, Propositions 5.4 and 5.6]. By Proposition 5.9 in op. cit. , it follows that for all p, we have an
+isomorphism
+(5.12) H p(Tr) : H p
+An+1, End
+
+F∗
+eL(n + 1)
+ ∼− →H p
+An+1, OAn+1
+
+.
+Hence we get a series of isomorphisms
+Extp
+Kn(A)(E+(L), E+(L)) Extp
+Db
+Sn+1 (NA(n+1))
+
+F∗
+eL(n + 1), λ+
+
+, F∗
+eL(n + 1), λ+
+
+
+ Extp
+NA(n+1)
+
+F∗
+eL(n + 1)
+
+, F∗
+eL(n + 1)
+Sn+1
+
+ H p
+NA(n + 1), ONA(n+1)
+Sn+1
+
+
+C if p ∈ {0, 2, 4, . . . ,2n},
+0 otherwise.
+In fact, the ﬁrst isomorphism holds because of the BKR equivalence in (5.3), the second isomorphism holds
+because λ+ is the permutation representation, the third isomorphism holds because of the isomorphism
+in (5.12), and the last isomorphism holds because by the BKR equivalence in (5.3), the left-hand side (of the
+isomorphism) is isomorphic to H p(Kn(A), OKn(A)). This proves the equality in (5.8) for E+(L). T o prove that
+the equality also holds for E−(L), it su ﬃ ces to show that
+(5.13) Extp
+Db
+Sn+1 (NA(n+1))
+
+F∗
+eL(n + 1), λ+
+
+, F∗
+eL(n + 1), λ+
+
+
+ Extp
+Db
+Sn+1 (NA(n+1))
+
+F∗
+eL(n + 1), λ−
+
+, F∗
+eL(n + 1), λ−
+
+.
+Recall that λ− is obtained by tensoring λ+ by the sign representation χ. The isomorphism in (5.13) holds
+because tensorization by χ commutes with the Sn+1-equivariant morphism F∗, and moreover tensorization
+by χ is an autoequivalence of Db
+Sn+1
+(NA(n + 1)). □
+Next we sketch how one proves Proposition 5.3. Let ΦB(n + 1) be the equivalence of categories that one
+gets upon replacing A by B in (5.3). We have the functor
+(5.14) ΞD ΦA(3) ◦ F∗ ◦ ΦB(3)−1 : Db(K2(B)) − →Db(K2(A)).
+The key result is the following.
+Proposition 5.5. The kernel of Ξ is isomorphic to (eρ, ν)∗OX (notation as in (3.3)).
+
+=== PDF PAGE 24 ===
+24 K. G. O’Grady24 K. G. O’Grady
+We show how Proposition 5.3 follows from Proposition 5.5, and after that we indicate the key elements
+that go into the proof of Proposition 5.5.
+Proof of Proposition 5.3 granting Proposition 5.5. We have
+ΦB(n + 1)−1eL(n + 1), λ+
+
+= µB(ωB), ΦB(n + 1)−1eL(n + 1), λ−
+
+= µB(ωB) − δ(B).
+Hence E+(L) = Ξ(µB(ωB)) and E−(L) = Ξ(µB(ωB) − δ(B)). By Proposition 5.5, the former is isomorphic to
+E (L+) and the latter is isomorphic to E (L−). □
+Remark 5.6. In what follows, we identify K2(A) (and K2(B)) with the parameter space for S3-clusters in
+NA(3) (respectively , clusters in NB(3)). If [Z] ∈ K2(A), we let Z ⊂ NA(3) be the corresponding (length 6)
+S3-cluster, and similarly for [W ] ∈ K2(B).
+Lemma 5.7. Let W be an S3-cluster in NB(3), and let λW be the S3-linearization of its structure sheaf. Let Z
+be an S3-cluster in NA(3), let Y D F−1(Z), and let λY be the S3-linearization of its structure sheaf.
+(1) If W is a subscheme of Y , then HomDb
+S3 (NB(3)((OY , λY ), (OW , λW )) C.
+(2) If W is not a subscheme of Y , then Extp
+Db
+S3 (NB(3)((OY , λY ), (OW , λW )) = 0 for all p.
+Proof. If W is a subscheme of Y , then HomDb
+S3 (NB(3)((OY , λY ), (OW , λW )) is nonzero. Suppose that
+h ∈ HomDb
+S3 (NB(3)((OY , λY ), (OW , λW )) is nonzero. Then h(1), 0 because 1 generates the stalk of OY at
+every point (as a module over ONB(3)). Since h(1) ∈ H 0(W ,OW )S3, which is 1-dimensional and generated by
+the constant function 1 (because W is an S3-cluster), we get that h(1) generates the stalk of OW at each
+point in the support of W . It follows that h is surjective and that we may rescale h so that h(1) = 1. But then
+h is a surjective homomorphism of sheaves of ONB(3)-algebrae, and hence W is a subscheme of Y . Since h is
+determined by h(1), we also get that HomDb
+S3 (NB(3)((OY , λY ), (OW , λW )) C. This proves item (1), and it
+proves the case p = 0 of item (2). One proves the rest of item (2) by considering the BKR equivalence ΦB(3)
+which associates to (OW , λW ) and (OY , λY ), respectively ,O[W ], where [W ] ∈ K2(B), and T , where T is a
+length 4 sheaf on K2(B). □
+Before stating the next lemma, we note that the map (ν,eρ) : X → K2(B) × K2(A) deﬁnes an isomorphism
+(5.15) X ∼− →
+n
+([W ], [Z]) ∈ K2(B) × K2(A) | W ⊂ f −1(Z)
+o
+.
+Lemma 5.8. Keeping in mind (5.15) and the identi ﬁcation in Remark 5.6, we have the equality
+(5.16) X =
+n
+([W ], [Z]) ∈ K2(B) × K2(A) | W ⊂ F−1(Z)
+o
+.
+Proof. Let Y be the right-hand side of (5.16). By Lemma 5.7 and the upper semicontinuity of cohomology , Y
+is closed. Let us prove that X ⊂ Y . Since X is irreducible (it is a blow-up of K2(B)), it su ﬃ ces to prove that if
+([W ], [Z]) is a general point of X, then W ⊂ F−1(Z). This is clear because W , Z are reduced and hence W ,
+Z are reduced S3-clusters.
+Let us prove that Y ⊂ X. If V is a zero-dimensional scheme and x is a point of V , we let V(x) be the
+connected component of V containing x. Let ([W ], [Z]) ∈ Y , i.e., W ⊂ F−1(Z). Let b = (b1, b2, b3) ∈ supp W ,
+and let F(b) = a = ( a1, a2, a3). By hypothesis, W(b) ⊂ F−1(Z(a)), and since F is étale, it follows that
+F(W(b)) ⊂ Z(a). Let epi : NB(3) → B be the restriction of the ith projection B3 → B, and de ﬁne similarly
+pi : NA(3) → A. Haiman proved that pi(Z) = Z as schemes (and of course epi(W ) = W ); see the discussion
+preceding Proposition 3.2 in [Kru18]. Hence we get that
+(5.17) f
+
+W(b1)
+
+= f
+
+ep1
+
+W (b)
+
+= p1
+
+F
+
+W (b)
+
+⊂ p1
+
+Z(a)
+
+= Z(a1).
+Since f is étale, it follows that W is a subscheme of f −1(Z), i.e., ([W ], [Z]) ∈ X. This proves that Y ⊂ X. □
+
+=== PDF PAGE 25 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 25Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 25
+Sketch of proof of Proposition 5.5. The Fourier–Mukai kernel of the derived push-forward F∗ : Db
+Sn+1
+(NB(3)) →
+Db
+Sn+1
+(NA(3)) is given by (OΓ (F), γ), where Γ (F) is the graph of F and γ is the obvious S3 linearization.
+The Fourier–Mukai kernel of ΦA(3) is given by (OX0
+3 (A), α), where α is the natural S3 linearization. The
+Fourier–Mukai kernel of the composition ΦA(3) ◦ F∗ is given by
+(F × Id)∗
+OX0
+3 (A), α
+
+∈ Db
+S3
+(NB(3) × K2(A)).
+The Fourier–Mukai kernel of ΦB(3)−1 is given by (OX0
+3 (B), β)∨[4], where (OX0
+3 (B), β)∨ is the derived dual
+of (OX0
+3 (B), β) ∈ Db
+S3
+(NB(3) × K2(B)), where the latter is the analogue of (OX0
+3 (A), α). It follows that the
+Fourier–Mukai kernel of Ξ has pth sheaf cohomology given by
+(5.18) E xtp+4
+p1,3
+
+p∗
+2,3
+
+OX0
+3 (B), β
+
+, p∗
+1,2(F × Id)∗
+OX0
+3 (A), α
+
+ E xtp+4
+p1,3
+
+p∗
+2,3OX0
+3 (B), p∗
+1,2(F × Id)∗OX0
+3 (A)
+S3
+,
+where pi,j is the projection of K2(A) × NB × K2(B) to the product of the ith and jth factors. If W and Y are
+S3-equivariant sheaves on NB, then the dual of Extq
+NB(3)(OW , OY )S3 is identi ﬁed with Ext4−q
+NB(3)(OY , OW )S3.
+Using this, Lemma 5.7, and cohomology and base change, one proves that the sheaf in (5.18) vanishes for
+p, 0 and is isomorphic to OX for p = 0 (see for example [Muk87, Proposition 2.26]). □
+6. The case when K2(A) is a Lagrangian ﬁbration
+6.1. Set-up
+Hypothesis-Deﬁnition 6.1.
+(1) We assume that B is an abelian surface containing a ( bona ﬁde) elliptic curve CB ⊂ B. We denote by
+γB the Poincarè dual of CB.
+(2) Let ωB ∈ NS(B) be a class such that the subgroup (ZωB + ZγB) < NS(B) is saturated. Let
+(6.1) ωB · ωB = 2a, ωB · γB = d.
+Assume that Hypothesis 6.1 holds, and choose a nonzero ϵ ∈ CB[2]. Let
+(6.2) B
+f
+− →A := B/⟨ϵ⟩
+be the quotient map. Thus we are in the set-up of Section 3.1. Let
+(6.3) B
+ϕB
+− →E := B/C B
+be the quotient map. Then ϕB descends to a homomorphism
+(6.4) A
+ϕA
+− →E
+with kernel the quotient CA := CB/⟨ϵ⟩. The homomorphisms ϕB and ϕA induce Lagrangian ﬁbrations
+K2(B)
+πB
+− → | OE(3(0E))|
+[Z] 7− → ϕB(|Z|),
+K2(A)
+πA
+− → | OE(3(0E))|
+[Z] 7− → ϕA(|Z|),
+
+=== PDF PAGE 26 ===
+26 K. G. O’Grady26 K. G. O’Grady
+where |Z| is the cycle associated to the scheme Z. The commutative diagram in (3.3) extends to the following
+commutative diagram:
+(6.5) X
+ν
+xx
+eρ
+&&
+K2(B)
+ρ //
+πB
+%%
+K2(A)
+πAyy
+|OE(3(0E))|.
+We recall the following fact.
+Proposition 6.2. Let D0 ∈ |OE(3(0E))|. Then π−1
+A (D0) is smooth if and only if D0 is reduced.
+In other words, π−1
+A (D0) is a singular Lagrangian if and only if D0 is a point of the sextic curve
+E∨ ⊂ |OE(3(0E))| parametrizing nonreduced divisors, i.e., the dual of the smooth cubic E ⊂ |OE(3(0E))|∨.
+Let L be the line bundle on X such that
+(6.6) c1(L ) = ν∗(µB(mωB)).
+In other words, in (3.4), ωB = mωB and x = y = 0. We state a consequence of the results in Section 5.
+Proposition 6.3. Assume that Hypothesis 6.1 and Equation (6.6) hold and that md is odd (d as in (6.1) and m
+as in (6.6)). Then for all p, we have
+H p
+K2(A), End0(E (L ))
+
+= 0.
+The natural map
+Def(K2(A), E (L )) − →Def(K2(A), det E (L ))
+is smooth.
+Proof. Since md is odd, the hypothesis of Corollary 5.4 is satis ﬁed, and hence Proposition 6.3 follows from
+Corollary 5.4. □
+At the end of the present section, we give another (pedestrian) proof of Proposition 6.3.
+6.2. Main results
+In the present section, we are concerned with the restriction of E (L ) to Lagrangian ﬁbers π−1
+A (D) where
+D ∈ |OE(3(0E))|. The results that we prove will be needed in the proof of Theorem 1.1.
+Let D0 ∈ |OE(3(0E))|. If the schematic ﬁber π−1
+A (D0) is smooth, then the image of the restriction map
+H 2(K2(A); Z) → H 2(π−1
+A (D0); Z) has rank 1, it is contained in NS(π−1
+A (D0)) and its saturation is generated
+by an ample class θ ∈ NS(π−1
+A (D0)) with elementary divisors (1, 3); see [ Wie16]. If F is a sheaf on π−1
+A (D0),
+then slope (semi)stability of F always refers to θ slope (semi)stability. Below is the ﬁrst main result of the
+present section.
+Proposition 6.4. Assume that Hypothesis 6.1 and Equation (6.6) hold and that md is odd (d is as in (6.1) and m
+is as in (6.6)). Then the restriction of E (L ) to a smooth ﬁber of the Lagrangian ﬁbration πA is slope stable.
+Proposition 6.4 is proved in Section 6.3. The second main result of the present section is the following.
+Proposition 6.5. Assume that Hypothesis 6.1 and Equation (6.6) hold and that md is odd (d as in (6.1) and m
+as in (6.6)). Also suppose that D0 ∈ E∨ is not an in ﬂection divisor. Then the restriction of E (L ) to π−1
+A (D0) is a
+simple sheaf.
+Proposition 6.5 is proved in Section 6.7.
+
+=== PDF PAGE 27 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 27Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 27
+6.3. Restriction of E (L ) to a smooth Lagrangian ﬁber
+Before proving Proposition 6.4 we go through a series of preliminary results. Let γA ∈ NS(A) be the
+Poincaré dual of CA. Since the restriction of f to CB deﬁnes the degree 2 quotient map CB → CA, we have
+the equalities
+(6.7) f∗(γB) = 2γA, f ∗(γA) = γB.
+Proposition 6.6. Suppose that Hypothesis 6.1 holds and that d is odd, where d is as in (6.1). Let ωA := f∗(ωB).
+Then ZωA + ZγA is a saturated subgroup of NS(A), and
+(6.8) ωA · γA = d, ωA · ωA = 4a.
+Moreover, ωA has elementary divisors (1, 2a).
+Proof. Suppose that ZωA + ZγA is not a saturated subgroup of NS(A). By hypothesis, ZωB + ZγB is a
+saturated subgroup of NS(B); since f ∗(ωA) = 2ωB and f ∗(γA) = γB, it follows that ZωA + ZγA is of index 2
+in its saturation. This gives a contradiction because the discriminant of the intersection form on ZωA + ZγA
+is equal to −d2, which is odd. The ﬁrst equality in (6.8) follows from
+2
+Z
+B
+ωB · γB =
+Z
+B
+f ∗(ωA) · f ∗(γA) = 2
+Z
+A
+ωA · γA,
+and the second one follows from a similar computation. Lastly , ωA has elementary divisors (1, 2a) because
+it is primitive and ωA · ωA = 4a. □
+In order to analyze the smooth ﬁbers of πA (or πB), we introduce the following notation: If Y is a ( bona
+ﬁde) elliptic curve, we let
+(6.9) Zn(Y ) :=
+n
+(y1, . . . , yn+1) ∈ Y n+1 | y1 + · · ·+ yn+1 = 0
+o
+.
+Let D0 ∈ |OE(3(0E))| be reduced, given by D0 = (x1) + (x2) + (x3). Let CB,i := ϕ−1
+B (xi), CA,i := ϕ−1
+A (xi),
+where ϕB and ϕA are as in Hypothesis 6.1 and (6.4), respectively. For i ∈ {1, 2}, choose b1, b2 ∈ B such that
+Tbi (CB) = CB,i, where Tbi : B → B is the translation by bi. Let ai := f (bi), so that Tai (CA) = CA,i. We have
+isomorphisms
+(6.10) Z2(CB) ∼− → π−1
+B ((x1) + (x2) + (x3))
+(y1) + (y2) + (y3) 7− → (y1 + b1) + (y2 + b2) + (y3 − b1 − b2)
+and
+(6.11) Z2(CA) ∼− → π−1
+A ((x1) + (x2) + (x3))
+(y1) + (y2) + (y3) 7− → (y1 + a1) + (y2 + a2) + (y3 − a1 − a2).
+(Note: Since elements of π−1
+A ((x1) + (x2) + (x3)) are reduced subschemes, we identify them with the
+corresponding 0-cycles.)
+Proposition 6.7. Assume that Hypothesis 6.1 and Equation (6.6) hold and that md is odd (d as in (6.1) and m as
+in (6.6)). Then the restriction of E (L ) to a smooth ﬁber of π is a simple semi-homogeneous vector bundle.
+Proof. Let π−1
+A (D0) be a smooth ﬁber of πA. Then π−1
+A (D0) does not meet ∆(A), and hence the last equation
+in (3.15) gives that eρ−1(π−1
+A (D0)) does not meet the exceptional divisor of ν : X → K2(B). (Watch out: The
+exceptional divisor D ⊂ X and the divisor D0 ∈ |OE(3(0E))| are denoted by similar letters although they are
+unrelated.) It follows that eρ−1(π−1
+A (D0)) is equal to π−1
+B (D0). Moreover, the étale map
+π−1
+B (D0) = eρ−1
+π−1
+A (D0)
+
+− →π−1
+A (D0)
+
+=== PDF PAGE 28 ===
+28 K. G. O’Grady28 K. G. O’Grady
+is identiﬁed, given the isomorphisms in (6.10) and (6.11), with the étale map
+(6.12) Z2(CB)
+ψ2
+− → Z2(CA)
+(z1, . . . , z3) 7− → (f (z1), . . . , f(z3)).
+We claim that the thesis of the proposition follows from Proposition A.2; in fact, deg(ψ2) = 4 and the
+degree d0 of Proposition A.2 is equal to md, which is odd by hypothesis, and hence deg(ψ2) is coprime to
+3 · d0. □
+Proof of Proposition 6.4. Let E := E (L ). Let S be a smooth ﬁber of πA; i.e., S = π−1(D0), where D0 ∈
+|OE(3(0E))| is reduced. Let θ be the (1, 3) polarization of S induced by πA; see the discussion at the
+beginning of Section 6.2. We claim that E|S is θ slope stable because the hypotheses of Corollary B.2 are
+satisﬁed by (S, θ) and E|S. In fact, by Proposition 6.7, the restriction E|S is a simple semi-homogeneous vector
+bundle, and hence it is Gieseker stable with respect to an arbitrary polarization by [ Muk78, Proposition 6.16].
+In particular, E|S is θ slope semistable. Moreover, since E is a modular vector bundle, we have ∆(E|S) = 0
+by [ O’G22b, Lemma 2.5]. Lastly , since r(E ) = 4 , it remains to show that c1(E|S) = 2 b0θ with b0 odd.
+By (3.16), we have c1(E|S) = (2 µA(mωA) − δA)|S. Since S does not intersect ∆(A) (see Proposition 6.2),
+c1(E|S) = 2µA(mωA)|S. We identify S with Z2(CA) via the isomorphism in (6.12), and we let pi : Z2(CA) →
+CA be the ith projection for i ∈ {1, 2, 3}. By the ﬁrst equation in (6.8), we get that
+(6.13) c1(E|S) = 2µA(mωA)|S = 2md
+
+p∗
+1
+
+ηCA
+
++ p∗
+2
+
+ηCA
+
++ p∗
+3
+
+ηCA
+
+,
+where ηCA ∈ H 2(CA; Z) is the fundamental class. Since θ is a polarization of type (1, 3), we get that
+(6.14) c1
+
+E|S
+
+= 2mdθ.
+Since md is odd, this ﬁnishes the proof that the hypotheses of Corollary B.2 are satis ﬁed by (S, θ) and
+E|S. □
+6.4. The general singular Lagrangian ﬁber
+Let E∨ ⊂ |OE(3(0E))| be the sextic curve parametrizing nonreduced divisors, i.e., the dual of the smooth
+cubic E ⊂ |OE(3(0E))|∨. We have πA(∆(A)) = E∨, but there is another irreducible component of π−1
+A (E∨).
+Deﬁnition 6.8. Let V (B) ⊂ K2(B) be the closure of the set parametrizing reduced subschemes Z such that
+πB(Z) has length smaller than 3, and de ﬁne similarly V (A) ⊂ K2(A) (by deﬁnition, V (B), V(A) are reduced
+schemes). Let V(B) ⊂ K2(B) be the subscheme with locally principal ideal such that the associated cycle is
+2V (B), and de ﬁne similarly V(A) ⊂ K2(A).
+Note that we have the equality of closed sets
+(6.15) π−1
+A
+
+E∨
+red = V (A) ∪ ∆(A).
+Proposition 6.9. Keep notation and assumptions as above. Then π−1
+A (E∨) = V(A) ∪ ∆(A).
+Proof. The proof is similar to the proof of [ O’G22b, Proposition 6.8]. It su ﬃ ces to prove that we have the
+equality of Cartier divisors
+(6.16) π∗
+A
+
+E∨
+= 2V (A) + ∆(A).
+By (6.15), there exist positive integers a, b such that π∗
+A(E∨) = aV (A) + b∆(A). Let X3(A) be the isospectral
+Hilbert scheme obtained by blowing up the big diagonal in A3. By [ Hai01, Proposition 3.4.2], there exists a
+regular ﬁnite map X3(A) → A[3], invariant under the natural action of the permutation group S3, which
+is the obvious map on the open dense subset of X3(A) parametrizing 3-tuples of distinct points. Let
+X0
+3 (A) ⊂ X3(A) be the preimage of K2(A) ⊂ A[3], and let α : X0
+3 (A) → K2(A) be the restriction of the map
+X3(A) → A[3]. Restricting to X0
+3 (A) the natural map X3(A) → A3, we get a map X0
+3 (A) → Z2(A), where
+
+=== PDF PAGE 29 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 29Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 29
+Z2(A) ⊂ A3 is the kernel of the summation map A3 → A. Let λA : X0
+3 (A) → Z2(E) be the composition of
+X0
+3 (A) → Z2(A) and the map Z2(A) → Z2(E) deﬁned by ϕA : A → E. Lastly , let β : Z2(E) → |OE(3(0E))|
+be the map sending (x1, x2, x3) to (x1) + (x2) + (x3). We have a commutative square
+(6.17) X0
+3 (A) α //
+λA
+
+K2(A)
+πA
+
+Z2(E)
+β // |OE(3(0E))|.
+As is easily checked, we have λ∗
+A(β∗E∨) = 2V (A)+2∆(A). On the other hand, since π∗
+A(E∨) = aV (A)+b∆(A),
+we have α∗(π∗
+AE∨) = aV (A) + 2b∆(A). Since λ∗
+A ◦ β∗ = α∗ ◦ π∗
+A, we get that a = 2 and b = 1. □
+Deﬁnition 6.10. If D0 ∈ E∨, we let V (B)D0 ⊂ V (B) be the ﬁber over D0 of the map V (B) → E∨ given
+by the restriction of πB, and we de ﬁne similarly V(B)D0 ⊂ V(B), and likewise for V (A)D0 ⊂ V (A) and
+V(A)D0 ⊂ V(A). We let ∆(B)D0 ⊂ ∆(B) be the ﬁber over D0 of the map ∆(B) → E∨ given by the restriction
+of πB, and we de ﬁne similarly ∆(A)D0 ⊂ ∆(A).
+Let D0 ∈ E∨. By Proposition 6.9, we have
+(6.18) π−1
+A (D0) = V(A)D0 ∪ ∆(A)D0.
+In the present section, we are concerned with ﬁbers of πA over a D0 ∈ E∨ which is not an in ﬂection divisor,
+i.e., such that
+(6.19) D0 = 2(x0) + (y0), 2x0 + y0 = 0, x 0, y0 ∈ E.
+Let ξ(A) be the line bundle on K2(A) such that
+(6.20) c1(ξ(A)) = δ(A).
+Proposition 6.11. If D0 ∈ E∨ is not an in ﬂection divisor, then we have an exact sequence
+(6.21) 0 − →OV (A)D0
+⊗
+
+ξ(A)|V (A)D0
+
+− →OV(A)D0
+− →OV (A)D0
+− →0,
+with the right-hand map given by restriction.
+Proof. We must prove that the ideal sheaf of V (A)D0 in V(A)D0 is isomorphic to the restriction of the
+invertible sheaf ξ(A). By the equality in (6.16), we have −2V (A) + π∗
+A(O(6)) ≡ ∆(A) (the degree of E∨ is 6).
+Since K2(A) is simply connected, we get that
+(6.22) −V (A) + π∗
+A(O(3)) ≡ ξ(A).
+Restricting to V(A)D0, we get what we need. □
+6.5. Geometry of V (B)D0 and V (A)D0
+Assume that D0 = (2x0 + y0) ∈ E∨ is not an in ﬂection divisor. Let CB,x0 := ϕ−1
+B (x0) and CB,y0 := ϕ−1
+B (y0),
+where ϕB : B → E is as in (6.3). Choose ex0 ∈ CB,x0, and let ey0 := −2ex0. Notice that ey0 ∈ CB,y0. We have an
+isomorphism
+(6.23) C(2)
+B
+∼− → V (B)D0
+(z1) + (z2) 7− → (z1 +ex0) + (z2 +ex0) + (−z1 − z2 +ey0).
+A word about notation: A subscheme parametrized by a point of V (B)D0 is the disjoint union of a length 2
+subscheme of CB,ex0 and a reduced point, and for this reason, we identify it with the corresponding cycle.
+In other words, if z1 = z2, then (z1) + (z2) is to be understood as the unique length 2 subscheme of CB,ex0
+supported at z1 = z2. Of course, we have an analogous identi ﬁcation between C(2)
+A and V (A)D0.
+
+=== PDF PAGE 30 ===
+30 K. G. O’Grady30 K. G. O’Grady
+Recall that the degree 4 rational map ρ : K2(B)d K2(A) (see (3.1)) has indeterminacy locus V (f ) (see (3.2)).
+The intersection of V (f ) and V (B)D0 is the reduced curve identi ﬁed by the isomorphism in (6.23) with the
+curve
+{(z) + (z + ϵ) | z ∈ CB}.
+(Recall that ϵ ∈ B[2] is the generator of ker f .) Hence the inclusion V (B)D0 ,→ K2(B) lifts to an inclusion
+V (B)D0 ,→ X (recall that ν : X → K2(B) is the blow-up of V (f )). With this understood, we have the
+schematic equality
+(6.24) eρ−1(V (A)D0) = V (B)D0.
+Moreover, once we make the identi ﬁcation in (6.23) and the analogous identi ﬁcation between C(2)
+A and
+V (A)D0, the restriction of eρ to V (B)D0 is identiﬁed with the degree 4 regular map
+(6.25) V (B)D0 = C(2)
+B
+(f|CB)
+(2)
+− − − − − − − →C(2)
+A = V (A)D0
+(z1) + (z2) 7− → (f (z1)) + (f (z2)).
+Restricting the line bundle L to V (B)D0 and pulling it back to C(2)
+B via the isomorphism in (6.23), we get
+a line bundle L on C(2)
+B . By the equality in (6.24), we have the isomorphism (we make the identi ﬁcation
+in (6.23))
+(6.26) E (L )|V (A)D0
+
+
+f|CB
+(2)
+∗ (L).
+In order to analyze the vector bundle in the right-hand side in (6.26), we recall that we have P1 ﬁbrations
+(6.27) P1 // C(2)
+B = V (B)D0
+gB
+
+CB,
+P1 // C(2)
+A = V (A)D0
+gA
+
+CA,
+where gB((z1) + (z2)) = z1 + z2 and gA is de ﬁned similarly. For use later on, we notice that if x ∈ CB, we have
+(6.28) deg(L|g −1
+B (x)) = md.
+The ﬁbrations in (6.27) are the projectivizations of rank 2 vector bundles:
+(6.29) V (B)D0 = C(2)
+B = P(FB), V (A)D0 = C(2)
+A = P(FA)
+(of course, FB is determined only up to tensorization by the pull-back of a line bundle on CB, and similarly
+for FA). Let OC(2)
+B
+(1) = OV (B)D0
+(1) be the corresponding line bundle on C(2)
+B = V (B)D0 and similarly for
+V (A)D0 = C(2)
+A . (We follow the classical de ﬁnition of projectivization of a vector bundle: The space of global
+sections of OC(2)
+B
+(1) is H 0(CB, F ∨
+B ).) The result below is well known (see [Ati57, Section 3, p. 451]).
+Proposition 6.12. Keeping notation as above, the rank 2 vector bundles FB and FA are stable (in particular,
+they have odd degrees ).
+Deﬁnition 6.13. Let Γ ⊂ V (A)D0 be (the class of) a ﬁber of gA, and let
+(6.30) Σ := V (A)D0 ∩ ∆(A)D0 = V (A)D0 ∩ ∆(A) = {2(p) | p ∈ CA}
+(note that the intersection V (A) ∩ ∆(A) is generically transverse, and hence Σ is reduced). (For the sake of
+simplicity , we omit A and D0 in our notation for Γ and Σ.)
+Note that {Γ , Σ} is a basis of NS(V (A)D0)Q. The following result is used later on; the proof is left to the
+reader.
+Proposition 6.14. The ample cone of V (A)D0 is the interior of the convex cone generated by Γ and Σ.
+
+=== PDF PAGE 31 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 31Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 31
+6.6. Restriction of E (L ) to a general singular Lagrangian ﬁber
+Proposition 6.15. Assume that Hypothesis 6.1 and Equation (6.6) hold and that md is odd (d as in (6.1) and m
+as in (6.6)). If D0 ∈ E∨ is not an in ﬂection divisor, then
+(6.31) E (L )|V (A)D0
+ g∗
+A(V ) ⊗ OV (A)D0
+((md − 1)/2),
+where gA : V (A)D0 → CA is the ﬁbration in (6.27) and V is a stable rank 4 vector bundle on CA.
+Proof. Throughout the proof we identify V (A)D0 with C(2)
+A . In order to simplify notation, we let ψ :=
+
+f|CB
+(2)
+.
+Let
+(6.32) L′ := L ⊗ ψ∗OC(2)
+A
+(−(md − 1)/2).
+By the push-pull formula, it su ﬃ ces to prove that there exists a stable rank 4 vector bundle V on CA such
+that
+(6.33) ψ∗ (L′) g∗
+A(V ).
+We factor ψ as the composition of two maps. Let ϵ ∈ CB[2] be the generator of the kernel of f : B → A.
+Then ψ : C(2)
+B → C(2)
+A is the quotient map for the action of Z/(2)2 on C(2)
+B deﬁned by
+(z1) + (z2) 7− →(z1 + k1ϵ) + (z2 + k2ϵ),
+where (k1, k2) ∈ Z/(2)2. Let i be the involution of C(2)
+B deﬁned by i((z1) + (z2)) = ( z1 + ϵ) + (z2 + ϵ), and
+let Y := C(2)
+B /⟨i⟩. We let p : C(2)
+B → Y be the quotient map. Since i commutes with gB, the P1 ﬁbration gB
+induces a P1 ﬁbration gY : Y → CB. The restriction of p to a ﬁber g−1
+B (x) is a map
+(6.34) P1 g−1
+B (x)
+p|g−1
+B (x)
+− − − − − − →g−1
+Y (x) P1
+of degree 2.
+Next, by mapping [(z1) + (z2)] to [(z1 + ϵ) + (z2)], we get a well-de ﬁned involution j : Y → Y such that
+Y /⟨j⟩ is identi ﬁed with C(2)
+A . Let q : Y → Y /⟨j⟩ C(2)
+A be the quotient map. Notice that the ﬁbration
+gY : Y → CB is identi ﬁed with the pull-back of the ﬁbration gA via the double cover CB → CA. In other
+words, we have an identi ﬁcation Y = CB ×CA C(2)
+A . Summing up, we have a factorization ψ = q ◦ p. Hence
+the isomorphism in (6.33) holds if and only if
+(6.35) q∗(p∗(L′)) g∗
+A(V )
+for a stable rank 4 vector bundle V on CA. Let us prove that there exists a line bundle λ on CB such that
+(6.36) p∗(L′) g∗
+Y
+
+F ∨
+B ⊗ λ
+
+,
+where FB is a vector bundle on CB such that the second equality in (6.29) holds. Since the map in (6.34)
+(for x ∈ CB) has degree 2, and since gY : Y → CB is identi ﬁed with the pull-back of gA via the double
+cover CB → CA, we have ψ∗
+
+OC(2)
+A
+(1)
+
+ OC(2)
+B
+(2) ⊗ g∗
+B(ξ) for a suitable line bundle ξ on CB. By the
+equality in (6.28), it follows that the restriction of L′ to any ﬁber g−1
+B (x) has degree 1. As is easily checked,
+if α : P1 → P1 is a degree 2 map, then α∗(OP1(1)) is the trivial rank 2 vector bundle O 2
+P1. Note the
+identiﬁcation
+(6.37) H 0
+P1, OP1(1)
+ ∼− →H 0
+P1, α∗O 2
+P1(1)
+
+= H 0
+P1, O 2
+P1
+
+.
+From this, we get that there exists a vector bundle W on CB such that p∗(L′) g∗
+Y (W ), and moreover we
+get an isomorphism gB,∗(OC(2)
+B
+(1)) ⊗ λ W for a suitable line λ on CB. Since gB,∗(OC(2)
+B
+(1)) F ∨
+B , this
+proves (6.36).
+
+=== PDF PAGE 32 ===
+32 K. G. O’Grady32 K. G. O’Grady
+Let τ : CB → CA be the double cover map. From the isomorphism in (6.36), we get that
+(6.38) q∗ (p∗(L′)) g∗
+A
+
+τ∗
+
+F ∨
+B ⊗ λ
+
+.
+This proves that (6.33) holds with V := τ∗(F ∨
+B ⊗ λ). It remains to prove that V is stable. The Grothendieck–
+Riemann–Roch theorem and a straightforward computation give that deg(V ) = deg(F ∨
+B ⊗ λ). Since F ∨
+B ⊗ λ
+has odd degree (see Proposition 6.12), the rank ( i.e., 4) and the degree of V are coprime. Hence in order
+to prove that V is stable, it su ﬃ ces to show that V is semistable. The vector bundle F ∨
+B ⊗ λ is stable by
+Proposition 6.12; hence it is semi-homogeneous. Since the map Pic0(CA) → Pic0(CB) deﬁned by pull-back
+is surjective, it follows that V is semi-homogeneous as well. By [ Muk78, Proposition 6.13], it follows that V
+is semistable, and we are done. □
+Corollary 6.16. Suppose that Hypothesis 6.1 and Equation (6.6) both hold and that md is odd. If D0 ∈ E∨ is not
+an inﬂection divisor, then the restriction of E (L ) to V (A)D0 is slope stable with respect to any polarization.
+Proof. Let V be the rank 4 stable vector bundle on CA of Proposition 6.15. It su ﬃ ces to prove that g∗
+A(V ) is
+slope stable with respect to any polarization. First we notice that g∗
+A(V ) is slope stable with respect to a
+polarization represented by a section of gA because the restriction of g∗
+A(V ) to a section is identi ﬁed with V
+and hence is slope stable. Because of this (existence of polarizations for which g∗
+A(V ) is slope stable), it
+suﬃ ces to prove that there does not exist a polarization for which g∗
+A(V ) is strictly slope semistable, i.e.,
+slope semistable but not semistable. Since ∆(g∗
+A(V )) = 0 and deg V is coprime to r(V ) = 4 (by the stability
+of V ), this follows from Lemma 6.17 below. □
+Lemma 6.17. Let (S, h) be a polarized smooth irreducible projective surface. Let V be a vector bundle on S such
+that ∆(V ) = 0 and the rank of V is coprime to the maximum integer dividing c1(V ). Then V is not properly slope
+semistable.
+Proof. Suppose that V is properly slope semistable. Then there exists an exact sequence of sheaves
+(6.39) 0 − →U − →V − →W − →0
+such that U is locally free slope semistable of rank 0 < r U < r V (where rU is the rank of U , etc.), W is
+torsion-free slope semistable and
+(6.40) (rV c1(U ) − rU c1(V )) · h = 0.
+A Chern class computation gives the equality
+(6.41) rV (rW ∆(U ) + rU ∆(W )) = rU · rW ∆(V ) + (rV c1(U ) − rU c1(V ))2.
+By hypothesis, ∆(V ) = 0, and moreover ∆(U ) ≥ 0, ∆(W ) ≥ 0 by Bogomolov’s inequality. On the other hand,
+(rV c1(U ) − rU c1(V ))2 ≤ 0 by the equality in (6.40) and the Hodge index theorem. By the equality in (6.41),
+we get that (rV c1(U ) − rU c1(V ))2 = 0 and hence
+rV c1(U ) = rU c1(V ).
+This contradicts the hypothesis that rV is coprime to the maximum integer dividing c1(V ). □
+Proposition 6.18. Assume that Hypothesis 6.1 and Equation (6.6) hold and that md is odd (d is as in (6.1) and
+m as in (6.6)). If D0 ∈ E∨ is not an in ﬂection divisor, then we have an exact sequence
+(6.42) 0 − →E (L ) ⊗ ξ(A)|V (A)D0
+α
+− →E (L )|V(A)D0
+β
+− →E (L )|V (A)D0
+− →0,
+where β is given by restriction. Moreover, the restriction E (L )|V (A)D0
+is slope stable for any polarization of
+V (A)D0.
+Proof. This is a straightforward consequence of Proposition 6.11 and Corollary 6.16. □
+
+=== PDF PAGE 33 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 33Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 33
+Next we analyze the restriction of E (L ) to ∆(A)D0. We recall that ∆(A)D0 is isomorphic to CA × P1.
+Proposition 6.19. Assume that Hypothesis 6.1 and Equation (6.6) hold and that md is odd (d is as in (6.1) and
+m as in (6.6)). If D0 ∈ E∨ is not an in ﬂection divisor, then we have the Harder–Narasimhan ﬁltration (with
+respect to any polarization )
+(6.43) 0 − →OCA(P ) ⊠ OP1(1) − →E (L )|∆(A)D0
+− →
+3M
+k=1
+OCA(Pk) ⊠ OP1 − →0,
+where Pk and P are divisors on CA of degree 3md.
+Proof. In the proof of Lemma 3.10, we showed that
+(6.44) eρ∗∆(A) = ν∗(∆(B)) + 2D.
+Let
+Ξ(A) := eρ(ν−1(∆(B)) ∩ D) = {[Z] ∈ K2(A) | h(Z) = 3(p), p ∈ A[3]}
+(recall that h : K2(A) → A(3) is the Hilbert–Chow map), and let ∆(A)0 := ∆(A) \ Ξ(A). It follows from the
+equality in (6.44) that we have
+(6.45) E (L )|∆(A)0 µ1,∗
+
+L|ν∗(∆(B))
+
+|∆(A)0 ⊕ µ2,∗
+
+L|2D
+
+|∆(A)0 ,
+where µ1 and µ2 are the restrictions of eρ to ν∗(∆(B)) and 2D, respectively. Since ∆(A)D0 ⊂ ∆(A)0, we get
+that
+(6.46) E (L )|∆(A)D0
+ µ1,∗
+
+L|ν∗(∆(B))
+
+|∆(A)D0
+⊕ µ2,∗
+
+L|2D
+
+|∆(A)D0
+.
+The direct summands in the right-hand side of (6.46) are described as follows. First, we have eρ−1(∆(A)D0) =
+ν−1(∆(B)D0). Second, since ∆(B)D0 is disjoint from the center of the blow-up ν : X → K2(B), the map
+ν−1(∆(B)D0) → ∆(B)D0 is an isomorphism; for this reason, we identify ν−1(∆(B)D0) and ∆(B)D0. Third,
+the restriction of µ1 to ∆(B)D0 is the étale double cover CB × P1 → CA × P1 deﬁned by the quotient map
+τ : CB → CA. It follows that, letting σB : CB ,→ ∆(B)D0 = CB × P1 be a section, we have
+(6.47) µ1,∗
+
+L|ν∗(∆(B))
+
+|∆(A)D0
+ τ∗
+ σ ∗
+B(L ) ⊠ OP1.
+A computation(1) gives that deg σ ∗
+B(L ) = 6md. Hence there exists a divisor P1 on CA of degree 3md such
+that τ ∗OCA(P1) σ ∗
+B(L ). It follows that
+(6.48) τ∗
+ σ ∗
+B(L ) OCA(P1) ⊕ OCA(P2),
+where deg P2 = 3md. (In fact, P2 ≡ P1 + η, where η is the divisor class of order 2 determined by the double
+cover τ : CB → CA.)
+Next we notice that the map D → ∆(A) given by the restriction of eρ is an isomorphism away from Ξ(A)
+(see Section 3.5); hence we have an open inclusion ι : ∆(A)0 ,→ D that composed with eρ gives the identity.
+We have an exact sequence
+0 − →ι∗(L ) ⊗ ι∗(OD(−D)) − →µ2,∗
+
+L|2D
+
+|∆(A)0 − →ι∗(L ) − →0.
+Restricting the above exact sequence to ∆(A)D0, we get an exact sequence
+(6.49) 0 − →OCA(P ′) ⊠ OP1(1) − →µ2,∗
+
+L|2D
+
+|∆(A)D0
+− →OCA(P ′) ⊠ OP1 − →0,
+where P ′ is a divisor of degree 3md. Hence we get that E (L )|∆(A)D0
+ﬁts into an exact sequence as in (6.43),
+where P3 = P = P ′. It is clear that the exact sequence is the Harder–Narasimhan ﬁltration. □
+(1)This is the computation ⟨µA(ωA, Σ⟩ = 6d, which also holds with B replacing A, of course.
+
+=== PDF PAGE 34 ===
+34 K. G. O’Grady34 K. G. O’Grady
+6.7. Simplicity of the restriction of E (L ) to a general singular ﬁber
+We prove Propositiopn 6.5. Let E = E (L ), and let ϕ : E → E be an endomorphism. Then ϕ maps
+the kernel of α in (6.42) to itself (because, as subsheaf of E|V(A)D0
+, it is the kernel of multiplication by the
+ideal of V (A)D0 in V(A)D0). Since E|V (A)D0
+is slope stable, the restriction of ϕ to ker(α) is multiplication
+by a certain λ ∈ C. Thus ϕ = λ IdE +ϕ, where ϕ annihilates ker(α). Let us prove that ϕ vanishes. The
+restriction of ϕ to V(A)D0 equals the composition
+(6.50) E|V(A)D0
+− →E|V (A)D0
+ψ
+− →E ⊗ ξ(A)|V (A)D0
+.
+We start by proving that the determinant of ψ vanishes. In fact, by the factorization in (6.50), we get that the
+restriction of ϕ to ∆(A)D0 is a homomorphism
+E|∆(A)D0
+− →E|∆(A)D0
+⊗ O|∆(A)D0
+(−Σ),
+where Σ = V (A)D0 ∩ ∆(A)D0; see De ﬁnition 6.13. By the exact sequence in (6.43), we get that the restriction
+of ϕ to ∆(A)D0 has image contained in the sub-line bundle OCA(P ) ⊠ OP1(1) ⊗ O|∆(A)D0
+(−Σ). In particular,
+the restriction to Σ of such a homomorphism has rank at most 1. It follows that det ψ vanishes on Σ with
+order at least 3. Since det ψ is a section of ξ(A)⊗4
+|V (A)D0
+ OV (A)D0
+(2Σ), we get that the determinant of ψ is
+identically zero.
+By Proposition 6.15, the restriction of E to V (A)D0 is the tensor product of g∗
+A(V ) (notation as in
+Proposition 6.15) and a line bundle. Thus ψ deﬁnes a map
+(6.51) ψ′ : g∗
+A(V ) − →g∗
+A(V ) ⊗ ξ(A)|V (A)D0
+with (generic) rank at most 3.
+We claim that ψ′ = 0 (i.e., ψ = 0). We have c1(Im ψ′) = aΣ+bΓ with a, b rational numbers (see Section 6.5).
+Let H be a polarization of V (A)D0; thus c1(H) = sΣ + tΓ , where s, t are positive rational numbers (see
+Deﬁnition 6.13).
+Assume that the (generic) rank of ψ′ is 1. By Corollary 6.16, the vector bundle g∗
+A(V ) is H slope stable.
+Hence the surjection g∗
+A(V ) ↠ Im ψ′ gives the inequality
+(6.52) s deg V = µH
+
+g∗
+A(V )
+
+< µH (Im ψ′) = 4at + 4bs,
+and the injection Im ψ′ ,→ g∗
+A(V ) ⊗ ξ(A)|V (A)D0
+gives the inequality
+(6.53) 4at + 4bs = µH (Im ψ′) < µH
+
+g∗
+A(V ) ⊗ ξ(A)|V (A)D0
+
+= s deg V + 2t.
+By Proposition 6.14, the coe ﬃ cient t may be arbitrarily small (and s is positive); it follows that deg V ≤
+4b ≤ deg V . Hence deg V = 4b. On the other hand, 2b is an integer because c1(ξ(A)|V (A)D0
+) · c1(Im ψ′) =
+1
+2 Σ · (aΣ + bΓ ) = 2b, and hence we get that V has even degree. This contradicts the stability of V .
+Next we deal with the (hypothetical) cases in which the (generic) rank of ψ′ is r ∈ {2, 3}. Then we have
+inclusions of sheaves on V (A)D0
+Im(ψ′) ⊂ F ⊂ g∗
+A(V ) ⊗ ξ(A)|V (A)D0
+,
+where F is the saturation of Im(ψ′), i.e., a sheaf of rank r and with torsion-free cokernel. The key
+observation is that, since the rank of Im(ψ) on the divisor Σ is at most 1 (this was proved above, when we
+showed that ψ has vanishing determinant), we have c1(F ) = c1(Im(ψ′)) + mΣ + Eff, where m ≥ (r − 1) and
+Effis an e ﬀective divisor. By the stability of g∗
+A(V ), we get the inequality
+s deg V = µH
+
+g∗
+A(V )
+
+< µH (Im ψ′)
+and the inequality
+µH (Im ψ′) + 4(r − 1)t
+r ≤ µH (F ) < µH
+
+g∗
+A(V ) ⊗ ξ(A)|V (A)D0
+
+= s deg V + 2t.
+
+=== PDF PAGE 35 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 35Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 35
+Since r ∈ {2, 3}, the second equality gives that µH (Im ψ′) < s deg V , and this contradicts the ﬁrst inequality.
+This proves that ψ = 0, i.e., that the restriction of ϕ to V(A)D0 vanishes.
+It follows that the restriction of ϕ to ∆(A)D0 is a homomorphism
+E|∆(A)D0
+− →E|∆(A)D0
+⊗ O|∆(A)D0
+(−2Σ).
+Since O|∆(A)D0
+(−2Σ) OCA ⊠ OP1(−2), it follows from Proposition 6.19 that such a homomorphism vanishes.
+This proves that the restriction of ϕ to ∆(A)D0 is zero, and hence ϕ = 0. □
+6.8. Pedestrian proof of Proposition 6.3
+By Proposition 6.4, the restriction of E (L ) to a general Lagrangian ﬁber is simple; consequently ,
+H 0(K2(A), End0(E (L )) = 0. By Serre duality , it follows that H 4(K2(A), End0(E (L )) = 0. Let us prove that
+(6.54) H 1
+K2(A), End0(E (L )
+
+= H 3
+K2(A), End0(E (L )
+
+= 0.
+By Serre duality , it suﬃ ces to prove that H 1(K2(A), End0(E (L )) = 0. The proof is analogous to the proof of
+[O’G22b, Proposition 6.7]. Suppose that D0 ∈ |OC(3(0E))| is not a ﬂex divisor, and let WD0 be the restriction
+of End0 E (L ) to π−1
+A (D0). By Propositions 6.4 and 6.5, there are no nonzero global sections of WD0. Since
+π−1
+A (D0) is a local complete intersection surface with trivial dualizing sheaf, it follows that H 2(π−1
+A (D0), WD0)
+vanishes as well. On the other hand, χ(π−1
+A (D0), WD0) = 0 because WD0 is a semi-homogeneous vector
+bundle if D0 is reduced (see Proposition 6.7), and hence all the cohomology of WD0 vanishes. Since the set
+of ﬂex divisors has codimension 2 in |OC(3(0E))|, it follows that RqπA,∗ End0 E (L ) = 0 for q ∈ {0, 1} (see
+[Muk87, Proposition 2.26]). By the Leray spectral sequence for πA, we get that H 1(K2(A), End0(E (L ))) = 0.
+By Proposition 4.1, we have χ(K2(A), End0(E (L )) = 0. It follows that
+(6.55) H 2
+K2(A), End0(E (L )
+
+= 0.
+This proves the vanishing statement of Proposition 6.3. The statement about the smoothness of the map
+between deformation spaces is a consequence of the vanishing in (6.55). □
+7. Restriction of E (L ) to a general singular Lagrangian ﬁber
+7.1. Main result
+We adopt the notation introduced in Section 6. Suppose that D0 ∈ E∨ is not an in ﬂection divisor. We will
+show that if md > 1 (d as in (6.1), m as in (6.6)), then the restriction of det E (L ) to π−1(D0) is ample; see
+Proposition 7.2.
+Proposition 7.1. Assume that Hypothesis 6.1 and Equation (6.6) hold and that md is an odd number greater than
+8 ( d as in (6.1) and m as in (6.6)). Let D0 ∈ E∨ and suppose that D0 is not an in ﬂection divisor. Let F be a
+subsheaf of E (L )|π−1(D0) such that its rank r(F ) (with respect to the restriction of det E (L ), see (7.12)) satisﬁes
+(7.1) r(F ) ∈ {1, 2, 3}.
+Then
+(7.2) µ(F ) < µ
+
+E (L )|π−1(D0)
+
+.
+(Note that, since π−1(D0) is reducible and nonreduced, the rank of a pure 2-dimensional sheaf on π−1(D0)
+(with respect to the restriction of det E (L )) is a rational number, possibly not an integer.)
+Proposition 7.1 is important because it implies the following result ( i.e., Proposition 8.6): Let (Xt, Lt, πt) be
+a general deformation of (K2(A), det E (L ), π), and let Et be the extension of E (L ) to Xt which exists by
+Proposition 6.3. Then the restriction of Et to π−1
+t (x) is slope stable (with respect to the restriction of det Et)
+
+=== PDF PAGE 36 ===
+36 K. G. O’Grady36 K. G. O’Grady
+for x outside of a ﬁnite subset. In turn, Proposition 8.6 is a key element in the proof of the unicity statement
+of Theorem 1.1.
+7.2. Restriction of det E (L ) to a general singular Lagrangian ﬁber
+Let E := E (L ). We have
+(7.3) c1(E ) = 2mµA(ωA) − δ(A)
+by (3.16). Let D0 ∈ E∨, and suppose that D0 is not an in ﬂection divisor. In order to simplify notation, we let
+(7.4) Y := π−1(D0), Y 1 := V(A)D0, Y 2 := ∆(A)D0.
+The ﬁber Y = π−1(D0) is the schematic union of Y1 and Y2. The schematic intersection
+(7.5) Y12 := Y1 ∩ Y2
+is a Cartier divisor both on Y1 and on Y2, and it is supported on the curve Σ of De ﬁnition 6.13. Since
+Σ is the branch divisor of the double cover map C2
+A → C(2)
+A = V (A)D0 and the rami ﬁcation divisor is the
+diagonal, which has trivial normal bundle, the normal bundle of Σ in V (A)D0 is trivial. It follows that we
+have an exact sequence
+(7.6) 0 − →OΣ − →OY12 − →OΣ − →0.
+Let Σ, Γ ∈ NS(V (A)D0) be as in De ﬁnition 6.13 (we recall that V (A)D0 is the reduced scheme associated to
+V(A)D0 = X1). Then {Σ, Γ } is a basis of NS(V (A)D0)Q, and
+(7.7) (Σ · Σ)V (A)D0
+= (Γ · Γ )V (A)D0
+= 0, (Σ · Γ )V (A)D0
+= 4.
+Straightforward computations give that
+(7.8) µA(ωA)|V (A)D0
+= d
+4 Σ + 3d
+2 Γ , δ (A)|V (A)D0
+= 1
+2 Σ,
+and hence (by (7.3)) we have
+(7.9) c1(E )|V (A)D0
+= md − 1
+2 Σ + 3mdΓ .
+Recall that ∆(A)D0 CA ×P1. Let Λ := {pt}× P1. Then {Σ, Λ} is a basis of NS(∆(A)D0). By Proposition 6.19,
+we have
+(7.10) c1(E )|∆(A)D0
+= Σ + 12mdΛ.
+Proposition 7.2. Keep notation and assumptions as in Proposition 7.1. (Here there is no need to assume that md
+is odd, and moreover it su ﬃ ces that md > 1.) Then the restriction of det E (L ) to Y = π−1(D0) is ample.
+Proof. By the equality in (7.9), the restriction of det E (L ) to V (A)D0 is ample (recall Proposition 6.14). Since
+the restriction of det E (L ) ⊗ ξ(A) to V (A)D0 is also ample (it equals (md/ 2)Σ + 3mdΓ ), it follows that the
+restriction of det E (L ) to V(A)D0 is ample (see Proposition 6.11). By (7.10), the restriction of det E (L ) to
+∆(A)D0 is ample as well. The proposition follows. □
+7.3. Simpson (semi)stability of sheaves on projective schemes
+We recall the de ﬁnition of Simpson (semi)stability of a coherent sheaf G of pure dimension d on a complex
+projective scheme Z polarized by OZ(1) (see [Sim94]). Write the Hilbert polynomial of G as
+(7.11) χ(Z, G (n)) =
+dX
+i=0
+αi(G ) ni
+i! .
+
+=== PDF PAGE 37 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 37Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 37
+The rank of G (relative to OZ(1)) is
+(7.12) r(G ) := αd(G )
+αd(OZ) .
+If Z is integral, then r(G ) does not depend on the polarization and equals the classical rank, i.e., the
+dimension (as vector space over the ﬁeld of rational functions on Z) of the ﬁber of G at the generic point
+of Z. The reduced Hilbert polynomial of G is given by
+(7.13) PG := 1
+r(G )
+dX
+i=0
+αi(G ) ni
+i! ∈ Q[m].
+The sheaf G is semistable if for every proper subsheaf 0, F ⊊ G we have PF (n) ≤ PG (n) for large n, and it
+is stable if strict inequality holds (for large n). By de ﬁnition, αd(F )/r (F ) = αd(G )/r (G ) = αd(OZ); hence
+the leading coe ﬃ cients of PF and PG are equal. The sheaf G is slope semistable if
+(7.14) αd−1(F )
+r(F ) ≤ αd−1(G )
+r(G )
+for every nonzero subsheaf 0, F ⊂ G , and it is slope stable if strict inequality holds whenever F has
+strictly smaller rank. A slope (semi)stable sheaf is (semi)stable. If Z is a smooth integral variety , slope
+(semi)stability coincides with the classical notion.
+7.4. Pure sheaves on π−1(D0) for general D0 ∈ E∨
+We describe pure sheaves of dimension 2 on Y = π−1(D0) for general D0 ∈ E∨ following [NS97, Ina02].
+In what follows, Y1, Y2 and Y12 are as in (7.4) and (7.5). For i ∈ {1, 2}, let Fi be a pure sheaf of dimension 2
+on Yi (i.e., torsion-free), and let
+(7.15) G : F1 − →(F2)|Y12
+be a morphism of sheaves. Let ρFi
+i : Fi → (Fi)|Y12 be the restriction morphism. The sheaf F on Y ﬁtting
+into the exact sequence of sheaves
+(7.16) 0 − →F − →F1 ⊕ F2
+G−ρ
+F2
+2
+− − − − − − →(F2)|Y12 − →0
+is pure of dimension 2. Conversely , every pure sheaf of dimension 2 on Y is isomorphic to one such F ;
+see [NS97, Remark 2.5] and [ Ina02, Proposition 1.5]. The description of E|Y according to the above procedure
+is the following. Let Ei := E|Yi for i ∈ {1, 2} (in general, Fi need not be F|Yi ), and let E12 := E|Y12. Then we
+have the exact sequence
+(7.17) 0 − →E|Y − →E1 ⊕ E2
+ρ
+E1
+1 −ρ
+E2
+2
+− − − − − − − − →E12 − →0.
+Let F be a pure sheaf of dimension 2 on Y ﬁtting into the exact sequence in (7.16). An injection of sheaves
+F ,→ (E|Y ) is described as follows. Let φi : Fi ,→ Ei be injections of sheaves for i ∈ {1, 2} such that
+(7.18) (φ2|Y12) ◦ G = ρE1
+1 ◦ φ1.
+Then there is a well-de ﬁned injection φ : F ,→ E|Y ﬁtting into the morphism of complexes
+(7.19) 0 // F // _
+φ
+
+F1 ⊕ F2
+G−ρ
+F2
+2 // _
+(φ1,φ2)
+
+(F2)|Y12
+//
+φ2|Y12
+
+0
+0 // E|Y // E1 ⊕ E2
+ρ
+E1
+1 −ρ
+E2
+2 // E12 // 0.
+
+=== PDF PAGE 38 ===
+38 K. G. O’Grady38 K. G. O’Grady
+Conversely , every injection φ : F ,→ E|Y is described as above for suitable injections φi such that the
+equality in (7.18) holds; see [NS97, Remark 2.10].
+For (F1, F2, G) as above, let
+(7.20) F ′
+1 := F1|V (A)D0
+, F ′′
+1 := ker(F1 → F ′
+1)
+and
+(7.21) r′
+1 := r(F ′
+1), r ′′
+1 := r(F ′′
+1 ), r 2 := r(F2).
+Remark 7.3. The sheaf F ′′
+1 is annihilated by the ideal of V (A)D0 in V(A)D0; hence it is the push-forward of
+a sheaf on V (A)D0. Suppose that F is a subsheaf of EY . Then the multiplication morphism
+(7.22) IV (A)D0 /V(A)D0
+⊗ F ′
+1 − →F ′′
+1
+is generically an injection, and hence r′
+1 ≤ r′′
+1 .
+Proposition 7.4. Keeping notation as above, suppose that md > 8 and that F is a subsheaf of E|Y . Then the
+rank of F (with respect to the restriction of c1(E )) is an integer if and only if r′
+1 + r′′
+1 = 2r2. If this is the case,
+then r(F ) = r2.
+Proof. Let n be an integer. We have the exact sequence of sheaves on Y1
+(7.23) 0 − →F ′′
+1 (n) − →F1(n) − →F ′
+1(n) − →0,
+and hence α2(F1) = α2(F ′
+1) + α2(F ′′
+1 ). T ensoring the exact sequence in (7.16) by OY (n), we get that
+α2(F ) = α2(F ′
+1) + α2(F ′′
+1 ) + α2(F2) = (r′
+1 + r′′
+1 ) degV (A)D0 + r2 deg ∆(A)D0,
+where degrees are with respect to c1(E ). Hence we have
+(7.24) r(F ) = (r′
+1 + r′′
+1 ) degV (A)D0 + r2 deg ∆(A)D0
+2 degV (A)D0 + deg∆(A)D0
+.
+From this, the “if” direction follows at once (no need to suppose that md > 8 or that F is a subsheaf of E|Y ).
+In order to prove the “only if” direction, we suppose that r′
+1 + r′′
+1 , 2r2. By (7.9) and (7.10), we have
+(7.25) deg V (A)D0 = 12md(md − 1), deg ∆(A)D0 = 24md,
+and hence (7.24) gives that
+(7.26) r(F ) = r′
+1 + r′′
+1
+2 − r′
+1 + r′′
+1 − 2r2
+2md .
+Now r′
+1, r′′
+1 , r2 are at most equal to 4 because F is a subsheaf of E|Y . Since r′
+1 + r′′
+1 , 2r2 and md > 8,
+it follows that 0 < |(r′
+1 + r′′
+1 − 2r2)/2md| < 1/2. This proves that the right-hand side in (7.26) is not an
+integer. □
+7.5. Slope of subsheaves of E (L )|π−1(D0) for general D0 ∈ E∨
+Proposition 7.5. With notation as above, suppose that md > 8 and that F is a subsheaf of E|Y with integer
+rank. Then
+(7.27) α1(F )
+r(F ) = α1(F ′
+1)
+r2
++ α1(F ′′
+1 )
+r2
++ α1(F2)
+r2
+− 2 degΣ.
+Proof. T ensoring the exact sequence of sheaves in (7.17) by OY (n) and recalling the exact sequences in (7.23),
+we get that
+(7.28) α1(F ) = α1(F ′
+1) + α1(F ′′
+1 ) + α1(F2) − α1((F2)|Y12).
+The exact sequence in (7.6) and Riemann–Roch for Σ give that
+(7.29) α1((F2)|Y12) = 2r2 deg Σ,
+
+=== PDF PAGE 39 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 39Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 39
+where
+(7.30) deg Σ =
+Z
+Σ
+c1(E ) = 12md.
+By Proposition 7.4, we have r(F ) = r2 because F has integer rank. Dividing the equality in (7.28) by r(F ),
+one gets the proposition. □
+Corollary 7.6. With notation as above, suppose that md > 8 and that F is a subsheaf of E|Y with integer rank
+r(F ) ∈ {1, 2, 3} such that µ(F ) ≥ µ(E|Y ). Then F2 is slope desemistabilizing for the sheaf E2 on Y2 (with respect
+to the restriction of c1(E )).
+Proof. Since E ′′
+1  E ′
+1 ⊗ ξ(A) (see Proposition 6.18), we have
+(7.31) α1(E ′′
+1 ) = α1(E ′
+1) + 2 degΣ.
+By Proposition 7.5, for F = E|Y , it follows that
+(7.32) α1(E|Y )
+4 = α1(E ′
+1)
+2 + α1(E2)
+4 − 3
+2 deg Σ.
+The morphism G : F1 → (F2)|Y12 (see (7.15)) maps F ′′
+1 to (F ′′
+2 )|Y12. By the equality in (7.18), we get that
+the restriction of φ1 to F ′′
+1 drops rank along Σ at least by r′′
+1 − r2. (Note that (r′′
+1 − r2) ≥ 0 by Remark 7.3
+and Proposition 7.4 because the rank of F is integral). Thus there exist a subsheaf F ′′
+1 ⊂ E ′′
+1 and an exact
+sequence
+(7.33) 0 − →F ′′
+1 − →F ′′
+1 − →Q − →0,
+where Q is supported on Σ and
+(7.34) α1(Q) ≥ (r′′
+1 − r2) degΣ.
+By Proposition 6.18, the vector bundle E ′′
+1 is slope stable, and hence 4α1(F ′′
+1 ) < r ′′
+1 α1(E ′′
+1 ). Thus
+(7.35) α1(F ′′
+1 ) = α1(F ′′
+1 ) − c deg Σ ≤ α1(F ′′
+1 ) − (r′′
+1 − r2) degΣ <
+< r′′
+1
+4 α1(E ′′
+1 ) − (r′′
+1 − r2) degΣ = r′′
+1
+4 α1(E ′
+1) + 2r2 − r′′
+1
+2 deg Σ.
+(The last equality follows from (7.31).) By Proposition 7.5 and the slope stability of E ′
+1, we get that
+(7.36) α1(F )
+r(F ) < α1(F ′
+1)
+r2
++ r′′
+1
+4r2
+α1(E ′
+1) + α1(F2)
+r2
+− 3
+2 deg Σ − r′′
+1 − r2
+2r2
+deg Σ =
+= α1(E ′
+1)
+2 + α1(F2)
+r2
+− 3
+2 deg Σ − r′′
+1 − r2
+2r2
+deg Σ ≤
+≤ α1(E ′
+1)
+2 + α1(F2)
+r2
+− 3
+2 deg Σ.
+By (7.32), it follows that 4α1(F2) > r2α1(E2). □
+7.6. Elementary modi ﬁcations of E1
+The main result of the present subsection is motivated by Corollary 7.6. Let H2 ⊂ E2 be a nonzero
+subsheaf such that µ(H2) > µ(E2) (here the slope is as sheaves on Y2, with respect to the restriction of c1(E ))
+and the quotient E2/H2 is torsion-free. By Proposition 6.19, the quotient E2/H2 is actually locally free. Let
+(7.37) R(H2) := (E2/H2)|Y12.
+
+=== PDF PAGE 40 ===
+40 K. G. O’Grady40 K. G. O’Grady
+Let R(H2)′ be the restriction of R(H2) to Σ = (Y12)red. By the exact sequence in (7.6), we have an exact
+sequence
+(7.38) 0 − →R′(H2) − →R(H2) − →R′(H2) − →0.
+Let G1(H2) be the sheaf on Y1 ﬁtting into the exact sequence
+(7.39) 0 − →G1(H2) − →E1
+γ
+− →R(H2) − →0,
+where γ is the composition of the restriction morphism E1 → (E1)|Y12, the natural isomorphism (E1)|Y12
+∼→
+(E2)|Y12 and the quotient map (E2)|Y12 → R(H2).
+Let G ′
+1(H2) be the restriction of G1(H2) to V (A)D0 = ( Y1)red, and let G ′′
+1 (H2) be the kernel of the
+restriction morphism G1(H2) → G ′
+1(H2). Thus we have a commutative diagram with exact rows and
+columns
+(7.40) 0
+
+0
+
+0
+
+0 // G ′′
+1 (H2) //
+
+G1(H2) //
+
+G ′
+1(H2) //
+
+0
+0 // E ′′
+1 //
+
+E1 //
+
+E ′
+1 //
+
+0
+0 // R′(H2) //
+
+R(H2) //
+
+R′(H2) //
+
+0
+0 0 0 .
+For later use, we record the slopes of G ′
+1(H2) and G ′′
+1 (H2). By Proposition 6.19, we have α1(R′(H2)) =
+(12 − 3r2)md. By the left and right vertical exact sequences in (7.40), it follows that
+(7.41) α1(G ′
+1(H2)) = α1(E ′
+1) − (4 − r2) degΣ = α1(E ′
+1) − 12(4 − r2)md
+and
+(7.42) α1(G ′′
+1 (H2)) = α1(E ′′
+1 ) − (4 − r2) degΣ = α1(E ′
+1) − 12(4 − r2)md.
+Proposition 7.7. Keep notation and hypotheses as above. Then the sheaves G ′
+1(H2) and G ′′
+1 (H2) are slope
+semistable with respect to any ample line bundle.
+Proof. We give the proof for G ′
+1(H2). (The proof for G ′′
+1 (H2) is similar.) Let h be the class of an ample line
+bundle on V (A)D0, and suppose that G ′
+1(H2) is not h slope semistable, i.e., there exists an exact sequence of
+sheaves
+(7.43) 0 − →U − →G ′
+1(H2) − →W − →0
+such that U is nonzero of rank rU < 4 and
+(7.44) (4c1(U ) − rU c1(G ′
+1(H2))) · h > 0.
+We claim that
+(7.45) (4c1(U ) − rU c1(G ′
+1(H2))) · cl(Σ) ≤ 0.
+In fact, the restriction of c1(G ′
+1(H2)) to Σ is (strictly) slope semistable because the exact sequence de ﬁning
+G ′
+1(H2) (the right-hand side short exact column in (7.40)) gives that we have an exact sequence
+(7.46) 0 − →R′(H2) − →G ′
+1(H2)|Σ − →(H2)|Σ − →0
+
+=== PDF PAGE 41 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 41Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 41
+and µ(R′(H2)) = 3md = µ((H2)|Σ). Since cl(Σ) is on the boundary of the ample cone of V (A)D0, we get
+that there exists an ample class h1 in the convex cone spanned by h and cl(Σ) such that
+(7.47) (4c1(U ) − rU c1(G ′
+1(H2))) · h1 = 0.
+Arguing as in the proof of the wall-and-chamber decomposition for slope stability of sheaves on (smooth
+projective) surfaces, one gets that there exists an ample class h0 (in the convex cone spanned by h and cl(Σ))
+such that G ′
+1(H2) is strictly h0 slope semistable, i.e., h0 slope semistable but not slope stable. We claim
+that the hypotheses of Lemma 6.17 are satis ﬁed by the vector bundle G ′
+1(H2), and hence by Lemma 6.17,
+G ′
+1(H2) is not strictly h0 slope semistable, giving a contradiction. First a straightforward computation gives
+that ∆(G ′
+1(H2)) = 0. It remains to show that c1(G ′
+1(H2)) is not divisible by 2. The exact sequence de ﬁning
+G ′
+1(H2) gives the equality
+c1(G ′
+1(H2)) = c1(E ′
+1) − (4 − rr) cl(Σ) = (deg V )Γ + 2(md − 1)c1(O(1)) − (4 − rr) cl(Σ),
+where V is the stable rank 4 vector bundle on CA of Proposition 6.15 and O(1) is the line bundle on V (A)D0
+considered in Section 6.5. Choose p0 ∈ CA, and let Π ⊂ V (A)D0  C(2)
+A be the section of the P1 bundle
+gA : C(2)
+A → CA given by
+(7.48) Π := {(p) + (p0) | p ∈ CA}.
+Then Π · Σ = 2, and hence
+(7.49)
+Z
+Π
+c1(G ′
+1(H2)) ≡ deg V (mod 2) .
+Since V is a stable vector bundle of rank 4 on the elliptic curve CA, it has odd degree. This proves that
+c1(G ′
+1(H2)) is not divisible by 2. □
+7.7. Proof of Proposition 7.1
+Suppose that µ(F ) ≥ µ(E|Y ). By Corollary 7.6, it follows that µ(F2) > µ(E2), where the slope is as sheaves
+on Y2, with respect to the restriction of c1(E ). Hence there exists a chain of subsheaves F2 ⊂ H2 ⊂ E2 such
+that H2/F2 is torsion and E2/H2 is torsion-free. By the key relation in (7.18), the morphism φ1 deﬁnes a
+morphism φ1 : F1 → G1(H2) and hence morphisms
+(7.50) F ′
+1
+φ
+′
+1
+− − →G ′
+1(H2), F ′′
+1
+φ
+′′
+1
+− − →G ′′
+1 (H2).
+By Proposition 7.7 and the equalities in (7.41) and (7.42), it follows that
+α1(F ′
+1) ≤ r′
+1
+4 α1(G ′
+1(H2) = r′
+1
+4 α1(E ′
+1) − 3r′
+1(4 − r2)md,(7.51)
+α1(F ′′
+1 ) ≤ r′
+1
+4 α1(G ′′
+1 (H2) = r′′
+1
+4 α1(E ′′
+1 ) − 3r′′
+1 (4 − r2)md.(7.52)
+We compare the expressions for α1(F )/r (F ) and α1(E )/4 which appear in Proposition 7.5 and (7.32). First
+we have
+(7.53) α1(F2)
+r2
+≤ α1(H2)
+r2
+= α1(E2)
+4 + 12 − 3r2
+r2
+md.
+By the inequalities in (7.51) and (7.52) and the equality in (7.31), we get that
+(7.54) α1(F )
+r(F ) ≤ α1(E ′
+1)
+2 + α1(E2)
+4 − 3
+2 deg Σ −
+ 
+33 − 6r2 − 12 + 6r′′
+1
+r2
+!
+md.
+One checks easily that the right-hand side is strictly smaller than the right-hand side in (7.32). This gives a
+contradiction. □
+
+=== PDF PAGE 42 ===
+42 K. G. O’Grady42 K. G. O’Grady
+8. Proof of Theorem 1.1
+8.1. Ampleness of det E (L )
+Below is the main result of the present subsection.
+Proposition 8.1. Let a be a positive integer. If d ≫ 0 (the lower bound depends on a), the following holds. Let A
+be an abelian surface such that NS(A) = ZωA ⊕ ZγA, where ωA is ample, γA is the Poincarè dual of a (bona
+ﬁde) elliptic curve CA and
+(8.1) ωA · ωA = 4a, ωA · γA = d.
+Then for any positive integer m, the class 2mµA(ωA) − δ(A) is ample on K2(A).
+In order to prove Proposition 8.1, we make explicit the general results of [ Y os16] and [ KLCM19] in the case
+of Kum2(A).
+If M is a HK manifold, let C (M) ⊂ H 1,1
+R (M) be the cone of x ∈ H 1,1
+R (M) such that qM(x) > 0, and
+let C +(M) the connected component of C (M) containing Kähler classes. We recall that the Kähler cone
+K (M) ⊂ C +(M) is a connected component (open chamber) of the complement of the wall divisors, given
+by w⊥ ∩ C +(M) for certain classes w ∈ NS(M) of negative square.
+Proposition 8.2. Suppose that w ∈ NS(K2(A)) is primitive and w⊥ ∩ C +(K2(A)) is a wall divisor. Then
+q(w) = −6 and div(w) ∈ {2, 3, 6}.
+Proof. First we recall that the Mukai pairing ⟨, ⟩ on H 2∗(A; Z) is de ﬁned by
+⟨(r, ℓ, s), (r′, ℓ′, s′)⟩ := −rs ′ − r′s +
+Z
+S
+ℓ ∪ ℓ′.
+If v2 ≥ 6, then the cohomology of the Albanese ﬁber of a moduli space of stable sheaves on A with assigned
+primitive Mukai vector v ∈ H 2∗(A; Z)) is identi ﬁed with the orthogonal v⊥ ⊂ H 2∗(A; Z). In our case, i.e.,
+K2(A), the Mukai vector is v := (1, 0, −3).
+According to [ KLCM19, Theorem 2.9] a class w ∈ v⊥ deﬁnes a wall divisor ( i.e., w⊥ ∩ C +(K2(A)) is a wall
+divisor) if and only if ⟨w, w⟩ is negative and the saturated sublattice of H 2∗(A; Z) generated by v and w
+contains an s ∈ H 2∗(A; Z) such that
+(8.2) 0 ≤ ⟨s, s⟩ < ⟨s, v⟩ ≤ 1
+2 (⟨v, v⟩ + ⟨s, s⟩) = 3 + 1
+2 ⟨s, s⟩.
+Note that we may assume that s is primitive. Clearly
+(8.3) w = 1
+n (⟨s, v⟩v − 6s)
+for a certain integer n which is a multiple of gcd(⟨v, s⟩, 6). Thus we get that
+(8.4) ⟨w, w⟩ = − 6
+n2
+
+⟨s, v⟩2 − 6⟨s, s⟩
+
+, 6
+n divides div(w).
+The inequalities in (8.2) give that ⟨s, s⟩ < 6, and hence ⟨s, s⟩ ∈ {0, 2, 4} because the Mukai pairing is even, and
+also give that ⟨s, v⟩ belongs to a ﬁnite list. Explicitly , either ⟨s, s⟩ = 0 and ⟨s, v⟩ ∈ {1, 2, 3}, or ⟨s, s⟩ = 2 and
+⟨s, v⟩ ∈ {3, 4}, or ⟨s, s⟩ = 4 and ⟨s, v⟩ = 5. A case-by-case analysis gives that n = gcd(⟨v, s⟩, 6) in all cases,
+and the proposition follows (recall that div(x) is a divisor of 6 for every x ∈ H 2(K2(A); Z)). □
+We will use the following elementary result.
+
+=== PDF PAGE 43 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 43Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 43
+Lemma 8.3 (cf. [O’G22b, Lemma 4.3]) . Let (Λ, q) be a nondegenerate rank 2 lattice which represents 0, and
+hence disc(Λ) = −d2
+0 , where d0 is a strictly positive integer. Let α ∈ Λ be primitive isotropic, and complete it to a
+basis {α, β} such that q(β) ≥ 0. If γ ∈ Λ has strictly negative square (i.e., q(γ) < 0), then
+(8.5) q(γ) ≤ − 2d0
+1 + q(β) .
+Proof of Proposition 8.2. Recall that by (3.16), we have
+c1(E (L )) = 2µA(mωA) − δ(A).
+Since ωA is ample, the class µA(ωA) is in the closure of the ample cone. Suppose that 2mµA(ωA) − δ(A) is
+not ample. By Proposition 8.2, there exist β ∈ NS(A), x ∈ Z such that
+(8.6) q(β2 − xδ(A)) = −6 ≤ β2 − 6x2 < 0
+and either
+(8.7) q(µA(β) − xδ(A), µA(ωA)) = q(µA(β) − xδ(A), 2mµA(ωA) − δ(A)) = 0
+or
+(8.8) q(µA(β) − xδ(A), µA(ωA)) > 0, q (µA(β) − xδ(A), 2mµA(ωA) − δ(A)) ≤ 0.
+In other words, either both 2mµA(ωA) and 2mµA(ωA) − δ(A) lie on a wall, or there exists a wall separating
+2mµA(ωA) from 2mµA(ωA) − δ(A).
+Assume that (8.7) holds. Then (β, ωA) = 0 , and hence β2 ≤ 0 by the Hodge index theorem. The last
+inequality is strict because if it were an equality , then we would have β = 0 and hence also x = 0. By (8.6),
+we get that −6 ≤ β2 < 0. By Lemma 8.3, this is impossible if d > 12a + 3.
+Next assume that (8.8) holds. We rewrite (8.6) as
+(8.9) β2 < 6x2 ≤ β2 + 6.
+By (8.8), we have
+(8.10) 0 < m(β, ωA) ≤ 3x.
+In particular, x is positive. Since by the Hodge index theorem, we have (ω2
+A) · (β2) ≤ (β, ωA)2, it follows that
+(8.11) m2 · 4aβ2 ≤ m2 · (β, ωA)2 ≤ 9x2 ≤ 3
+2 β2 + 9.
+It follows that β2 ≤ 18/5. Feeding this into the second inequality in (8.9), we get that x = 1. This together
+with (8.10) gives that (β, ωA) ∈ {1, 2, 3}. (Notice that if m > 3, we are done.) The class (4aβ − (β, ωA)ωA) is
+orthogonal to ωA; hence
+(8.12) −12a ≤ (4aβ − (β, ωA)ωA)2 ≤ 0,
+where the ﬁrst inequality follows from 0 ≤ β2 (see (8.9)) and (β, ωA) ∈ {1, 2, 3}. By Lemma 8.3, if d > 24a2+6a,
+this forces the square to vanish and hence β to be a multiple of ωA. This is absurd by (8.10). □
+Remark 8.4. Arguing geometrically , one can give a lower bound on d in Proposition 8.1 which is much
+stronger than the bound one gets by following the proof, at least if a, 2. In fact, one can show that if a = 1,
+then d ≥ 2 suﬃ ces for ampleness of 2mµA(ωA) − δ(A), and that if a ≥ 3, then d ≥ 4 suﬃ ces. We sketch
+the proof. Let L be a line bundle on A such that c1(L) = 2mωA. Then L is ample on A, and it is globally
+generated. We claim that the map A → |L|∨ P8am2−1 is an embedding and that the image is cut out by
+quadrics. If a = 1, this follows from the results in [ Bar87], and if a ≥ 3, the statement holds because L
+satisﬁes property (N1) by the main result in [ KL19] or [ Ito18]. Thus we have A ⊂ |L|∨ P8am2−1. Since A is
+
+=== PDF PAGE 44 ===
+44 K. G. O’Grady44 K. G. O’Grady
+cut out by quadrics and it contains no lines, every length 3 subscheme of A spans a plane in P8am2−1, and
+hence we have a regular map
+(8.13) A[3] ϕ
+− → Gr(3, C8am2
+)
+[Z] 7− → ⟨ Z⟩.
+Next, one proves that ϕ has ﬁnite ﬁbers, and hence the pull-back ϕ∗(P) of the Plücker (ample) line bundle
+on Gr(3, C8am2
+) is ample on A[3]. At this point, we are done because the restriction of ϕ∗(P) to K2(A) is
+2µA(mωA) − δ(A).
+8.2. Existence
+If e ≡ −6 (mod 16) , we write e = 16a − 6, and if e ≡ −6 (mod 144) , we write e = 144a − 6 (note that in
+both cases, a is a positive integer). Let B be an abelian surface such that Hypothesis 6.1 holds. We adopt the
+notation introduced in Proposition 8.1. In particular, A = B/⟨ϵ⟩, and we have the ample class ωA on A with
+ω2
+A = 4a. We assume throughout that the positive integer d = ωA · γA (see (6.1) and (6.8)) is odd and large
+(the lower bound on d depends only on a). Now we choose the line bundle L on X:
+(1) If e ≡ −6 (mod 16) , we let c1(L ) = ν∗(µB(ωB)),
+(2) if e ≡ −6 (mod 144) , we let c1(L ) = ν∗(µB(3ωB)).
+Set E0 := E (L ) and h0 := c1(E0). By (3.16), we have
+(1) h0 = 2µA(ωA) − δ(A) if e ≡ −6 (mod 16) and
+(2) h0 = 6µA(ωA) − δ(A) if e ≡ −6 (mod 144) .
+Hence q(h0) = e in both cases, and div(h0) = 2 in the ﬁrst case, while div(h0) = 6 in the second case.
+Moreover. h0 is ample by Proposition 8.1 (recall that d ≫ 0; this is where we need d to be large). This proves
+that h0 is a polarization of the type appearing in Theorem 1.1.
+Let M → T be a (su ﬃ ciently small) representative of Def(K2(A), h0). By Proposition 6.3, the vector
+bundle E0 has an extension to a vector bundle Et on Mt for every t ∈ T (the extension is unique by loc. cit.).
+Proposition 8.5. Keeping notation as above, the vector bundle Et is ht slope stable for general t ∈ T , where ht is
+the polarization (deformation of h0) on Mt.
+Proof. Let Nd ⊂ T be the Noether–Lefschetz divisor parametrizing Mt such that µA(γA) remains of type
+(1, 1). If t ∈ Nd, then we have a Lagrangian ﬁbration πt : Mt → P2 extending the Lagrangian ﬁbration
+πA : K2(A) → |OE(3(0))|. By Proposition 6.4 and the openness of stability , the restriction of Et to a general
+ﬁber of πt is slope stable. Now assume in addition that t is very general in Nd, so that the Néron–Severi
+group of Mt has rank 2 and hence is obtained via parallel transport from the subgroup of NS(K2(A))
+generated by (2µA(ωA) − δ(A)), µA(γA) in case (1), respectively 6µA(ωA) − δ(A), µA(γA) in case (2). Applying
+Lemma 8.3, we get that there is a single 72-chamber in NS(Mt), and hence ht is 72-suitable. It follows that,
+with the notation introduced in [O’G22b, De ﬁnition 3.3], we have
+(8.14) a(Et) := r(Et)2d(Et)
+4cMt
+= 72.
+(Here cMt is the normalized Fujiki constant of Mt, i.e., 3, and d(Et) = 54 by (3.46).) Hence Et is ht slope
+stable by [O’G22b, Proposition 3.6]. □
+Since Kum2
+e and Kum6
+e are irreducible, the existence of a slope stable vector bundle F on M such that
+the equalities in (1.5) hold, for a general point [(M, h)] ∈ Kum2
+e (respectively ,[(M, h)] ∈ Kum6
+e ), follows at
+once from Proposition 8.5.
+
+=== PDF PAGE 45 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 45Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 45
+8.3. Stability of the restriction of Et to Lagrangian ﬁbers
+Keep notation as in Section 8.2. In particular, Nd ⊂ T is the Noether–Lefschetz divisor appearing in the
+proof of Proposition 8.5. Let t ∈ Nd be a general point, let (Mt, ht) be the corresponding deformation of
+(K2(A), h0), and let πt : Mt → P2 be the Lagrangian ﬁbration which is a deformation of π0 = πA : K2(A) →
+|OE(3(0))|. Lastly , let Et be the extension to Mt of the vector bundle E0 = E (L ) on K2(A). The main result
+of the present subsection is the following.
+Proposition 8.6. Keep notation as above, and suppose that md is odd and greater than 8. Let t ∈ Nd be a general
+point. There exists a ﬁnite subset Bd(t) ⊂ P2 such that for x ∈ (P2 \ Bd(t)), the restriction of Et to the Lagrangian
+ﬁber π−1
+t (x) is slope stable with respect to the restriction of ht.
+First we deal with smooth Lagrangian ﬁbers and then with singular ﬁbers.
+Proposition 8.7. With notation and hypotheses as above, let t ∈ Nd be a general point. The restriction of Et to a
+smooth Lagrangian ﬁber π−1
+t (x) is slope stable with respect to the restriction of ht, except possibly for a ﬁnite set of
+x ∈ P2.
+Proof. By Proposition 6.4 and the openness of slope stability , the restriction of Et to a general smooth
+Lagrangian ﬁber is slope stable with respect to the restriction of ht. By Propositions 6.4 and 6.5, the
+restriction of E0 to a Lagrangian ﬁber π−1
+0 (x) is simple, except possibly for a ﬁnite set of x ∈ P2. By the
+openness of simpleness, it follows that the restriction of Et to a Lagrangian ﬁber π−1
+t (x) is simple except
+possibly for a ﬁnite set of x ∈ P2. By the argument given in the proof of [ O’G23, Proposition 5.14], it follows
+that the restriction of Et to a smooth Lagrangian ﬁber is simple semi-homogeneous, except possibly for
+a ﬁnite set of x ∈ P2. By [ Muk78, Proposition 6.13], it follows that the restriction of Et to any smooth
+Lagrangian ﬁber is slope semistable with respect to the restriction of ht, and hence it is slope stable by
+Corollary B.2 (see the proof of Proposition 6.4). □
+Proposition 8.8. With notation and hypotheses as above, let t ∈ Nd be a general point. Then, except possibly for
+a ﬁnite set of x ∈ P2, the Lagrangian ﬁber π−1
+t (x) is integral.
+Proof. For t ∈ Nd, let Disc(πt) ⊂ P2 be the discriminant curve of πt : Mt → P2. If x ∈ (P2 \ Disc(πt)), then
+π−1
+t (x) is integral by the de ﬁnition of a Lagrangian ﬁbration. It remains to deal with π−1
+t (x) for x ∈ Disc(πt).
+If t ∈ Nd is general, then Disc(πt) is irreducible. In fact, by [ Wie18, Theorem 2], there is single deformation
+class of Lagrangian ﬁbrations of HK fourfolds of Kummer type, and among such Lagrangian ﬁbrations,
+there are the Beauville–Mukai systems. The discriminant curve of a general Beauville–Mukai system is the
+Severi variety (a curve in the present case) parametrizing singular divisors in the complete linear system of a
+(general) polarization with elementary divisors (1, 3) on an abelian surface. Such a Severi variety is a plane
+irreducible curve of degree 18 by [LS02, Proposition 5.3].
+We also claim that π−1
+t (Disc(πt)) is irreducible. It su ﬃ ces to prove the claim for very general t ∈ ND.
+Hence we may assume that the Picard number ρ(Mt) equals 2. It follows that every irreducible component
+of π−1
+t (Disc(πt)) has cohomology class a (rational) multiple of π∗
+tc1(OP2(1)) and that every curve contained
+in a Lagrangian ﬁber has zero intersection number with π∗
+tc1(OP2(1)). Since every Lagrangian ﬁber is
+connected (because a general Lagrangian ﬁber is integral), it follows that π−1
+t (Disc(πt)) is irreducible.
+For general x ∈ Disc(πt), let
+(8.15) [π−1
+t (x)] =
+ℓX
+i=1
+ciSi
+be the cycle associated to the ﬁber π−1
+t (x). Since π−1
+t (Disc(πt)) is irreducible, we have ci = cj and
+deg Si = deg Sj for any i, j ∈ {1, . . . , ℓ}. Now let t → 0, so that the Lagrangian HK variety Mt specializes
+to M0 = K2(A) and πt specializes to π0 = πA. Then the cycle [π−1
+t (x)] specializes to 2V (A)D0 + ∆(A)D0,
+
+=== PDF PAGE 46 ===
+46 K. G. O’Grady46 K. G. O’Grady
+where D0 ∈ E∨ is any nonin ﬂectionary divisor; see Proposition 6.9. It follows that if π−1
+t (x) is not integral,
+then either deg V (A)D0 = deg ∆(A)D0 = deg Si or 2 degV (A)D0 = deg ∆(A)D0 = deg Si. Neither of the two
+equalities holds (the degrees of V (A)D0, ∆(A)D0 are given in (7.25)), and hence π−1
+t (Disc(πt)) is integral. □
+Corollary 8.9. With notation as above, suppose that md is odd and that md > 8. Let t ∈ Nd be a general point.
+Then for a general x ∈ Disc(πt), the restriction of Et to π−1
+t (x) is slope stable with respect to the restriction of ht.
+Proof. Suppose the contrary. By Proposition 8.8, π−1
+t (x) is integral, and hence there exists a slope
+destabilizing subsheaf Ft ⊂ Et with r(Ft) ∈ {1, 2, 3}. T ake the limit for t → 0, so that Mt specializes to
+M0 = K2(A) and πt specializes to π0 = πA. Then we get that for all x ∈ Disc(πA), the sheaf E0 = E (L ) has
+a slope destabilizing subsheaf F0 ⊂ E0 with r(F0) ∈ {1, 2, 3}. This contradicts Proposition 7.1.
+□
+8.4. A monodromy computation
+Keep notation as in Section 8.3.
+Proposition 8.10. Let t ∈ Nd be a general point. Let x0 ∈ P2 be a regular value of πt, and let S := π−1
+t (x0).
+Then 0 is the only element of S∨[2] invariant under the monodromy action of π1(P2 \ Disc(πt), x0).
+Proof. Let x0 = (y1) + (y2) + (y3) (we follow the notation in (6.11)). Then
+(8.16) S∨[2] Z2(CA)∨[2] C∨
+A[2] ⊕ C∨
+A[2].
+The monodromy action is generated by the following two involutions:
+(8.17) (a, b) 7− →(b, a), (a, b) 7− →(a, −a − b).
+The proposition follows easily from this. □
+Corollary 8.11. Let t ∈ Nd be a general point. Let x0 ∈ P2 be a regular value of πt, and let S := π−1
+t (x0). Then
+the only coset of the subgroup S∨[2] < S ∨[4] invariant under the monodromy action of π1(P2 \ Disc(πt), x0) is
+S∨[2] itself.
+Proof. The homomorphism S∨[4] → S∨[2] deﬁned by multiplication by 2 identiﬁes the quotient S∨[4]/S ∨[2]
+with S∨[2]; hence the corollary follows from Proposition 8.10.
+□
+8.5. Unicity
+We ﬁnish the proof of Theorem 1.1 by showing that if [(M, h)] ∈ Kum2
+e or [(M, h)] ∈ Kum6
+e are general,
+then there exists a unique (up to isomorphism) slope stable vector bundle F on M such that the equalities
+in (1.5) hold. The key steps of the proof are those of the proofs of the analogous results in [ O’G22b, O’G23].
+Let Zi
+e → P i
+e (for i ∈ { 2, 6}) be a complete family of polarized HK fourfolds of Kummer type with
+polarization of square e and divisibility i. Since Kum2
+e and Kum6
+e are irreducible, we may assume that P i
+e is
+irreducible. By results of Gieseker and Maruyama, there exists a relative moduli space
+(8.18) ρi
+e : M i
+e − →P i
+e
+with ﬁber over a point corresponding to (M, h) isomorphic to the moduli space of slope stable vector
+bundles F on M such that the equalities in (1.5) hold. Moreover, the morphism ρi
+e is of ﬁnite type by
+Maruyama [Mar81].
+For d ≫ 0, let Nd(P i
+e)0 be a Noether–Lefschetz divisor containing the divisor Nd deﬁned in the proof
+of Proposition 8.5 (we do not know whether the Noether–Lefschetz divisors de ﬁned by imposing that the
+Néron–Severi lattice contains the rank 2 lattice in the proof of Proposition 8.5 are irreducible). Since the
+union of the Nd(P i
+e)0 is Zariski dense in P i
+e, it su ﬃ ces to prove that if M is HK corresponding to a general
+
+=== PDF PAGE 47 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 47Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 47
+point of Nd(P i
+e)0, then, up to isomorphism, there is a unique slope stable vector bundle F on M such
+that the equalities in (1.5) hold. In turn, to prove the latter statement, it su ﬃ ces to prove unicity for the HK
+varieties corresponding to a very general t ∈ Nd.
+Let t ∈ Nd be a general point. Let Et be the vector bundle on Mt obtained by deformation of E (L ) on
+K2(A) as in Section 8.2, and let Ft be a slope stable vector bundle on Mt such that the equalities in (1.5)
+hold. We must prove that Ft Et.
+Claim 8.12. The restrictions of Ft and Et to a general Lagrangian ﬁber are isomorphic.
+Proof. As was noticed in the proof of Proposition 8.5, there is a single 72-chamber in NS(Mt), and hence
+ht is 72-suitable. Since a(Et) = 72, it follows that the restriction of Ft to a generic Lagrangian ﬁber of πt
+is slope semistable (with respect to the restriction of ht) by [ O’G22b, Proposition 3.6]. By Proposition B.1,
+it follows that the restriction of Ft to a generic Lagrangian ﬁber of πt is slope stable (see the equation
+in (6.14)). Now let Sx = π−1
+t (x) be a general Lagrangian ﬁber of πt. The restrictions of Ft and Et to Sx are
+slope stable vector bundles with the same rank and ﬁrst Chern class. Moreover, we have
+(8.19)
+Z
+Sx
+∆
+
+Ft|Sx
+
+=
+Z
+Sx
+∆
+
+Et|Sx
+
+=
+Z
+Mt
+∆
+
+Ft|Sx
+
+· π∗
+t(c1(OP2(1))2) = 54qMt (c1(OP2(1))2) = 0.
+It follows that the restrictions of Ft and Et to Sx are (simple) semi-homogenous (see [ O’G22b, Proposi-
+tion A.2]). By [Muk78, Theorem 7.11, Corollary 7.12], (see the equation in (6.14)), we get that
+Vx :=
+n
+[ξ] ∈ S∨
+x | Ft|Sx (Et|Sx ) ⊗ ξ
+o
+is not empty , and it is a coset of S∨
+x [2] in S∨
+x [4]. By Corollary 8.11, we get that Vx = S∨
+x [2], and hence
+Ft|Sx Et|Sx . □
+Let Cd(t) ⊂ P2 be the union of the subset Bd(t) ⊂ P2 of Proposition 8.6 and the set of x ∈ P2 such that
+Sx := π−1
+t (x) is not integral. Then Cd(t) is ﬁnite by Propositions 8.6 and 8.8. Let x0 ∈ (P2 \ Cd(t)), and let
+Γ ⊂ (P2 \ Cd(t)) be a general smooth curve containing x0. Then Y := π−1
+t (Γ ) is a projective threefold, and
+the restriction of πt to Y deﬁnes a surjection Y → Γ whose ﬁbers are integral.
+Since Γ is general, the restrictions Ft|Sx and Et|Sx are isomorphic for general x ∈ Γ by Claim 8.12.
+Moreover, Et|Sx is slope stable for all x ∈ Γ . By [ O’G22b, Lemma 7.5], it follows that for all x ∈ Γ the
+restrictions Ft|Sx and Et|Sx are isomorphic. (2) This shows that for all x0 ∈ (P2 \ Cd(t)) the restrictions Ft|Sx0
+and Et|Sx0
+are isomorphic. Since Et|Sx is simple for all x ∈ (P2 \ Cd(t)) and det F  det E , it follows that F
+and E are isomorphic away from Cd(t). By Hartogs’ theorem, we get that F and E are isomorphic. □
+A. Examples of semi-homogeneous vector bundles
+A.1. Basics
+In the present section, “abelian variety means abelian variety”, and similarly for “elliptic curve”. Let A be
+an abelian variety. For a ∈ A, we let Ta : A → A be the translation by a. If L is a line bundle on A, we let
+(A.1) A
+ϕL
+− → A∨
+a 7− → [T ∗
+a (L ) ⊗ L −1].
+We recall that a vector bundle F on A is semi-homogeneous if, for every a ∈ A, there exists a line bundle La
+such that T ∗
+a F  F ⊗ La. We recall the following result of Oda ([ Oda71, Theorem 1.2]) and Mukai ([ Muk78,
+Theorem 5.8]) .
+(2)Among the hypotheses of [ O’G22b, Lemma 7.5], there is the requirement that Y be smooth, but it is not necessary. In fact,
+one replaces the cup product in item (i) of the statement of Lemma 7.5 by the degrees of the corresponding intersection products.
+The latter products make sense because one is intersecting Cartier divisors and Chern classes of vector bundles.
+
+=== PDF PAGE 48 ===
+48 K. G. O’Grady48 K. G. O’Grady
+Theorem A.1 (Oda, Mukai) . A vector bundle E on an abelian variety A is simple and semi-homogeneous if
+and only if it is isomorphic to f∗L , where f : eA → A is an isogeny and L is a line bundle on eA such that
+ker(f ) ∩ ker(ϕL ) = {0}.
+A.2. Semi-homogeneous vector bundles on powers of elliptic curves
+Let C be an elliptic curve, let eC be an elliptic curve, and let f : eC → C be an isogeny. For i ∈ {1, . . . , n+ 1},
+let Li be a line bundle on eC of degree d0 (independent of i). Let Zn(C) ⊂ Cn+1, Zn(eC) ⊂ eCn+1 be as in (6.9),
+and for i ∈ {1, . . . , n+ 1}, let epi : Zn(eC) → eC be the ith projection. Lastly , let
+Zn(eC)
+ψn
+− → Zn(C)
+(z1, . . . , zn+1) 7− → (f (z1), . . . , f(zn+1)).
+Proposition A.2. Keeping notation as above, suppose that deg f is coprime to (n + 1) · d0. Then G :=
+ψn
+∗
+Nn+1
+i=1 ep∗
+i Li
+
+is a simple semi-homogeneous vector bundle on Zn(C) of rank (deg f )n.
+Proof. The sheaf G is locally free of rank equal to deg(ψn) because ψn is ﬁnite. Since ker(ψn) (ker f )n, it
+follows that G has rank (deg f )n. In order to simplify notation, we let
+ξ :=
+n+1O
+i=1
+ep∗
+i Li.
+Let us prove that
+(A.2)
+Z
+Zn(eC)
+c1(ξ)n = (n + 1) · dn
+0 .
+In fact, let {α, β} be a Z-basis of H 1(eC; Z), and for i ∈ {1, . . . , n} (we stop at n), let
+xi := ep∗
+i (α)|Zn(eC), y i := ep∗
+i (β)|Zn(eC).
+Then {x1, . . . , xn, y1, . . . , yn} is a basis of H 1(Zn(eC); Z), and we have
+(A.3) c1(ξ) = d0 ·
+nX
+i=1
+xi ∧ (y1 + · · ·+ yi−1 + 2yi + yi+1 + · · ·+ yn).
+Equation (A.2) follows from the above formula and a straightforward computation. By (A.2), the order of
+ker(ϕξ) is equal to (n + 1)2 · d2n
+0 and hence is coprime to (deg f )n by our hypothesis. Since the order of
+ker(ψn) is (deg f )n, it follows that
+(A.4) ker(ψn) ∩ ker(ϕξ) = {0}.
+(Here ϕξ is as in (A.1).) Hence G is simple semi-homogeneous by Theorem A.1. □
+B. Properly semistable vector bundles with vanishing discriminant on
+abelian surfaces
+In the present section, we extend Proposition 4.4 and Corollary 4.5 of [ O’G22b] to arbitrary polarized
+abelian surfaces.
+Proposition B.1. Let (A, θ) be a (1, e) polarized abelian surface. Let F be a slope semistable vector bundle on A
+such that ∆(F ) = 0 and c1(F ) = aθ. Then there exist coprime integers r0, b0, with r0 positive, and a positive
+integer m such that
+(B.1) r(F ) = m r2
+0
+g , a = m r0
+g b0,
+
+=== PDF PAGE 49 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 49Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 49
+where g := gcd{r0, e}. If F is slope strictly semistable, i.e., slope semistable but not slope stable, then m ≥ 2.
+Proof. First suppose that F is slope stable. Then F is semi-homogeneous because ∆(F ) = 0; see [ O’G22b,
+Proposition A.2]. Since it is also simple, the thesis holds by [O’G22b, Proposition A.3].
+Now suppose that F is strictly slope semistable. Then there exist an integer m ≥ 2 and a (slope stability)
+Jordan–Hölder ﬁltration of F
+(B.2) 0 = G0 ⊊ G1 ⊊ · · ·⊊ Gm = F
+such that for each i ∈ {1, . . . , m}, the sheaf Gi/Gi−1 is locally free, c1(Gi/Gi−1) = aiθ and ∆(Gi/Gi−1) = 0; see
+the proof of Proposition 4.4 in [ O’G22b]. Arguing as above we get that Gi/Gi−1 is a simple semi-homogeneous
+vector bundle. Let i ∈ {1, . . . , m}. By [ O’G22b, Proposition A.3], there exist coprime integers ri, bi, with ri
+positive, such that
+r(Gi/Gi−1) = r2
+i
+gi
+, a i = ri
+gi
+bi,
+where gi := gcd{ri, e}. Hence the slope of Gi/Gi−1 is equal to (bi/r i)θ2. Since the ﬁltration in (B.2) is the
+(slope stability) Jordan–Hölder ﬁltration of F , it follows that (b1/r 1) = · · ·= (bm/r m). Since ri, bi are coprime,
+we get that r1 = · · ·= rm and b1 = · · ·= bm. Hence there exist coprime integers r0, b0, with r0 positive, such
+that
+r(Gi/Gi−1) = r2
+0
+g0
+, c 1(Gi/Gi−1) = r0
+g0
+b0,
+where g0 := gcd{r0, e}. This proves the thesis because m ≥ 2. □
+Corollary B.2. Let (A, θ) be a (1, e) polarized abelian surface. Let F be a slope semistable vector bundle on A
+such that ∆(F ) = 0. Suppose that there exist coprime integers s0, c0, with s0 positive, such that gcd{s0, e} = 1 and
+(B.3) r(F ) = s2
+0, c 1(F ) = s0c0θ.
+Then F is slope stable.
+Proof. By Proposition B.1, there exist coprime integers r0, b0, with r0 positive, and a positive integer m such
+that
+(B.4) s2
+0 = m r2
+0
+g , s 0c0 = m r0
+g b0,
+where g := gcd{r0, e}. It follows that r0c0 = s0b0. Since r0, b0 are coprime and s0, c0 also are, it follows that
+r0 = s0 and b0 = c0. This gives that m = g. Since r0 = s0 and by hypothesis s0 is coprime to e, we have
+g = 1, and thus m = 1. By Proposition B.1, it follows that F is slope stable. □
+References
+[Ati57] M. F. Atiyah, V ector bundles over an elliptic curve , Proc. London Math. Soc. (3) 7 (1957), 414–452.
+[Bar87] W. Barth, Abelian surfaces with (1, 2)-polarization, in: Algebraic geometry (Sendai, 1985), pp. 41–84,
+Adv. Stud. Pure Math., vol. 10, North-Holland Publishing Co., Amsterdam, 1987.
+[BLM+21] A. Bayer, M. Lahoz, E. Macrì, H. Nuer, A. Perry and P. Stellari, Stability conditions in families ,
+Publ. Math. Inst. Hautes Études Sci. 133 (2021), 157–325.
+[BD85] A. Beauville and R. Donagi, La variété des droites d’une hypersurface cubique de dimension 4, C. R.
+Acad. Sci. Paris Sér. I Math. 301 (1985), no. 14, 703–706.
+[BNWS11] S. Boissière, M. Nieper-Wißkirchen and A. Sarti, Higher dimensional Enriques varieties and
+automorphisms of generalized Kummer varieties , J. Math. Pures Appl. (9) 95 (2011), no. 5, 553–563.
+
+=== PDF PAGE 50 ===
+50 K. G. O’Grady50 K. G. O’Grady
+[BN01] M. Britze and M. A. Nieper, Hirzebruch-Riemann-Roch Formulae on Irreducible Symplectic Kähler
+Manifolds, preprint arXiv:math/0101062 (2001).
+[DV10] O. Debarre and C. V oisin, Hyper-Kähler fourfolds and Grassmann geometry , J. reine angew. Math.
+649 (2010), 63–87.
+[ES98] G. Ellingsrud and S. A. Strømme, An intersection number for the punctual Hilbert scheme of a
+surface, T rans. Amer. Math. Soc. 350 (1998), no. 6, 2547–2552.
+[FL V19] L. Fu, R. Laterveer and C. Vial, The generalized Franchetta conjecture for some hyper-Kähler varieties
+(with an appendix by the authors and M. Shen), J. Math. Pures Appl. (9) 130 (2019), 1–35.
+[Hai01] M. Haiman, Hilbert schemes, polygraphs and the Macdonald positivity conjecture , J. Amer. Math. Soc.
+14 (2001), no. 4, 941–1006.
+[HT13] B. Hassett and Y. T schinkel, Hodge theory and Lagrangian planes on generalized Kummer fourfolds ,
+Mosc. Math. J. 13 (2013), no. 1, 33–56, 189.
+[Ina02] M.-A. Inaba, On the moduli of stable sheaves on a reducible projective scheme and examples on a
+reducible quadric surface , Nagoya Math. J. 166 (2002), 135–181.
+[Ito18] A. Ito, A remark on higher syzygies on abelian surfaces , Comm. Algebra 46 (2018), no. 12, 5342–5347.
+[KLCM19] A. L. Knutsen, M. Lelli-Chiesa and G. Mongardi, Wall divisors and algebraically coisotropic
+subvarieties of irreducible holomorphic symplectic manifolds , T rans. Amer. Math. Soc. 371 (2019),
+no. 2, 1403–1438.
+[Kru18] A. Krug, Remarks on the derived McKay correspondence for Hilbert schemes of points and tautological
+bundles, Math. Ann. 371 (2018), no. 1-2, 461–486.
+[KL19] A. Küronya and V . Lozovanu, A Reider-type theorem for higher syzygies on abelian surfaces , Algebr.
+Geom. 6 (2019), no. 5, 548–570.
+[LS02] H. Lange and E. Sernesi, Severi varieties and branch curves of abelian surfaces of type (1, 3),
+Internat. J. Math. 13 (2002), no. 3, 227–244.
+[LLS+17] C. Lehn, M. Lehn, C. Sorger and D. van Straten, T wisted cubics on cubic fourfolds, J. reine angew.
+Math. 731 (2017), 87–128.
+[Mar81] M. Maruyama, On boundedness of families of torsion free sheaves , J. Math. Kyoto Univ. 21 (1981),
+no. 4, 673–701.
+[Muk78] S. Mukai, Semi-homogeneous vector bundles on an Abelian variety , J. Math. Kyoto Univ. 18 (1978),
+no. 2, 239–272.
+[Muk87] , On the moduli space of bundles on K3 surfaces. I , in: V ector bundles on algebraic varieties
+(Bombay , 1984), pp. 341–413, T ata Inst. Fund. Res. Stud. Math., vol. 11, T ata Inst. Fund. Res.,
+Bombay , 1987.
+[Muk88] , Curves, K3 surfaces and fano 3-folds of genus ≤ 10, in: Algebraic geometry and commutative
+algebra, Vol. 1, pp. 357–377, Kinokuniya Company Ltd., T okyo, 1988.
+[NS97] D. S. Nagaraj and C. S. Seshadri, Degenerations of the moduli spaces of vector bundles on curves. I ,
+Proc. Indian Acad. Sci. Math. Sci. 107 (1997), no. 2, 101–137.
+[Oda71] T. Oda, V ector bundles on an elliptic curve , Nagoya Math. J. 43 (1971), 41–72.
+[O’G06] K. G. O’Grady ,Irreducible symplectic 4-folds and Eisenbud-Popescu-Walter sextics , Duke Math. J.
+134 (2006), no. 1, 99–137.
+
+=== PDF PAGE 51 ===
+Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 51Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type 51
+[O’G22a] , Lectures on Hyperkähler varieties , available from https://www.mat.uniroma1.it/
+didattica/materiale-didattico (2022).
+[O’G22b] , Modular sheaves on hyperkähler varieties , Algebr. Geom. 9 (2022), no. 1, 1–38.
+[O’G22c] , Theta groups and projective models of hyperkähler varieties , preprint arXiv:2204.09582v1
+(2022), to appear in Perspectives on Four Decades of Algebraic Geometry, Volume 2: In Memory of
+Alberto Collino , Progr. Math., vol. 352, Birkhäuser Cham.
+[O’G23] , Rigid stable vector bundles on hyperkähler varieties of type K3[n], J. Inst. Math. Jussieu 23
+(2024), no. 5, 2051–2080.
+[Ono22] C. Onorati, Connected components of moduli spaces of irreducible holomorphic symplectic manifolds of
+Kummer type, Rend. Mat. Appl. (7) 43 (2022), no. 4, 251–266.
+[Sim94] C. T. Simpson, Moduli of representations of the fundamental group of a smooth projective variety. I ,
+Inst. Hautes Études Sci. Publ. Math. (1994), no. 79, 47–129.
+[Son16] L. Song, On the universal family of Hilbert schemes of points on a surface , J. Algebra 456 (2016),
+348–354.
+[V er96] M. V erbitsky ,Cohomology of compact hyper-Kähler manifolds and its applications , Geom. Funct.
+Anal. 6 (1996), no. 4, 601–611.
+[Wie16] B. Wieneck, On polarization types of Lagrangian ﬁbrations, Manuscripta Math. 151 (2016), no. 3-4,
+305–327.
+[Wie18] , Monodromy invariants and polarization types of generalized Kummer ﬁbrations, Math. Z.
+290 (2018), no. 1-2, 347–378.
+[Y os16] K. Y oshioka,Bridgeland’s stability and the positive cone of the moduli spaces of stable objects on an
+abelian surface, in: Development of moduli theory—Kyoto 2013 , pp. 473–537, Adv. Stud. Pure Math.,
+vol. 69, Math. Soc. Japan, [T okyo], 2016.

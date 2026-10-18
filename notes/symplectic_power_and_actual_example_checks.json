@@ -1,0 +1,58 @@
+{
+  "all_checks_passed": true,
+  "picard_gram": [
+    [
+      58,
+      0
+    ],
+    [
+      0,
+      -116
+    ]
+  ],
+  "picard_action": [
+    [
+      3363,
+      4756
+    ],
+    [
+      2378,
+      3363
+    ]
+  ],
+  "integral_action_on_two_hyperbolic_planes": [
+    [
+      1681,
+      58,
+      2378,
+      -41
+    ],
+    [
+      48778,
+      1681,
+      68962,
+      -1189
+    ],
+    [
+      1189,
+      41,
+      1681,
+      -29
+    ],
+    [
+      -68962,
+      -2378,
+      -97556,
+      1681
+    ]
+  ],
+  "action_on_orthogonal_complement": "-I",
+  "determinant_A_minus_I_on_four_directions": "-26896",
+  "full_H2_fixed_space_is_zero": true,
+  "positive_entropy_eigenvalue": "3363 + 2378 sqrt(2)",
+  "euler_K3_square": 324,
+  "c2_squared": 828,
+  "Chern_contradiction_gap": 468,
+  "antisymplectic_torus_model": "passed",
+  "limitation": "Exact arithmetic checks only. Actual realization uses the period map, wall criterion, monodromy and strong Torelli; the Anosov exclusion uses the derivative argument in note 45."
+}

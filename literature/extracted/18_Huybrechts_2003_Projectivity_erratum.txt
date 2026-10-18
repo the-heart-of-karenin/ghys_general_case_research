@@ -1,0 +1,156 @@
+=== PDF PAGE 1 ===
+arXiv:math/0106014v1  [math.AG]  3 Jun 2001
+Erratum: Compact hyperk¨ ahler manifolds: basic results
+Daniel Huybrechts
+It was pointed out by D. Kaledin that the proof of Prop. 3.8 is w rong. Actually, the
+proposition itself cannot be true as we shall explain below. It was used to prove Cor. 3.10
+and Thm. 3.11. The latter is the so called projectivity crite rion for hyperk¨ ahler manifolds.
+Here we will give a correct proof of these two results. The mai n input is a recent theorem of
+J.-P. Demailly and M. Paun [2]. All the other results of the pa per remain unaﬀected.
+The projectivity criterion for hyperk¨ ahler manifolds
+as a consequence of the Demailly-Paun theorem
+1. Let X be a compact hyperk¨ ahler manifold of complex dimension 2 n and let X → Def(X)
+be the universal deformation of X. For any cohomology class β ∈ H 4p(X, R) let Sβ ⊂ Def(X)
+be the set of those t ∈ Def(X) for which β is a cohomology class of type (2 p, 2p) on Xt. Then
+Sβ is a closed analytic subset of Def( X). Let A ⊂ H ∗(X, Z) be the set of all integral classes
+β ∈ H 4p(X, Z), p = 1, . . . , n such that Sβ is a proper subset of Def( X). A point t ∈ Def(X)
+is called very general if t is in the complement of ⋃
+β∈A Sβ and if Xt does not admit any
+analytic subsets of odd dimension.
+The set of very general points in Def(X) is dense. If t ∈ Def(X) is a very general point
+and β ∈ H 2p,2p(Xt, Z) is an integral class of type (2p, 2p) on Xt, then β is of type (2p, 2p) on
+any small deformation of Xt.
+Here we use Fujiki’s result [4, Prop. 5.11] and the fact that ⋃
+β∈A Sβ is a countable union
+of proper closed analytic subsets. The latter says that for a ny hyperk¨ ahler metric onX the
+general complex structure compatible with it does not admit any odd-dimensional analytic
+subset.
+For classes β which are of pure type (2 p, 2p) on any small deformation of X the form of
+degree 2 n − 2p on H 2(X, C) deﬁned by α ↦→
+∫
+X βα2(n−p) can be expressed in terms of the
+Beauville-Bogomolov quadratic form qX on H 2(X, C). More precisely we have:
+If β ∈ H 4p(X, C) is of type (2p, 2p) on all small deformations of X, then there exists a con-
+stant cβ depending on β such that for all α ∈ H 2(X, C) one has
+∫
+X βα2(n−p) = cβqX(α)n−p.
+This is Thm. 5.12 in [6], which is a generalization of a result of Fujiki and whose proof uses
+arguments of Bogomolov (cf. [5, 1.11]).
+1
+
+=== PDF PAGE 2 ===
+2. We call the compact hyperk¨ ahler manifold X itself very general if the point 0 ∈ Def(X)
+corresponding to it is a very general point. As a consequence of the above one obtains:
+If X is a very general compact hyperk¨ ahler manifold and Y ⊂ X is an irreducible analytic
+subset then its codimension is even, say 2p, and the cohomology class [Y ] ∈ H 2p,2p(X, Z) is
+of type (2p, 2p) on all small deformations of X. In particular, there exists a constant c[Y ]
+such that
+∫
+Y α2(n−p) = c[Y ]qX(α)n−p for all α ∈ H 2(X, C).
+We next quote the result of Demailly and Paun:
+Theorem 1 [2]— Let X be a compact K¨ ahler manifold. Then the K¨ ahler cone KX of X is
+a connected component of the set PX of all classes α ∈ H 1,1(X, R) such that
+∫
+Y αd > 0 for
+any irreducible analytic subset Y ⊂ X of dimension d.
+Combining this with the above one obtains a description of th e K¨ ahler cone of a very
+general hyperk¨ ahler manifold. Recall that thepositive cone CX ⊂ H 1,1(X, R) is the connected
+component of the open subset {α ∈ H 1,1(X, R) | qX(α) > 0} that contains the K¨ ahler cone
+KX.
+Corollary 1 — Let X be a very general compact hyperk¨ ahler manifold. Then KX = CX.
+Moreover, the interior of the cone of pseudo-eﬀective class es coincides with KX = CX.
+Proof. One ﬁrst shows that CX ⊂ P X . Since KX ⊂ P X and CX is connected, it suﬃces
+to show that for any α ∈ C X and any irreducible analytic subset Y ⊂ X of codimension 2 p
+one has
+∫
+Y α2(n−p) ̸= 0. Since
+∫
+Y α2(n−p) = c[Y ]qX(α)n−p and qX(α) > 0, this follows from
+c[Y ] ̸= 0. The latter can be obtained from the same equation applied to a K¨ ahler class. Thus,
+CX ⊂ P X. Since CX is connected and contains KX , the Demailly-Paun theorem shows that
+CX = KX .
+Clearly, every class in KX = CX is in the interior of the cone of pseudo-eﬀective classes,
+which consists of the cone of classes that can be represented by closed positive (1 , 1)-currents
+bounded from below by a K¨ ahler form. Conversely, ifα can be represented by a closed strictly
+positive (1, 1)-current then qX(α, ω) = c
+∫
+(σ¯σ)n−1αω > 0 for any K¨ ahler classω ∈ K X = CX .
+Here, c is a certain positive scalar and σ is a non-degenerate holomorphic two-form. Hence,
+α ∈ C X. ✷
+3. Since the set of very general t ∈ Def(X) is dense, any class α ∈ C X ⊂ H 2(X, R) can be
+approximated by a sequence αti ∈ H 2(X, R) such that ti is a sequence of very general points
+converging to 0 ∈ Def(X) and αti is a K¨ ahler class on Xti. This is enough to conclude:
+Proposition 1 — Let X be a compact hyperk¨ ahler manifold and letα ∈ C X Then α is in the
+interior of the cone of pseudo-eﬀective classes, i.e. α can be represented by a closed positive
+(1, 1)-current which can be bounded from below by a (small) K¨ ahler form.
+2
+
+=== PDF PAGE 3 ===
+Proof. Here one can copy the argument of Demailly [3, Prop. 6.1] tha t shows that the cone
+of pseudo-eﬀective classes is closed. Fix K¨ ahler classes ωt on Xt depending continously on
+t ∈ Def(X). Then the mass of αti, which is
+∫
+X ω2n−1
+ti αti, converges to
+∫
+X ω2n−1
+0 α. Hence
+the sequence of forms ( αti) is weakly bounded and thus weakly compact. In particular, i t
+contains a weakly convergent subsequence. As the αti are closed positive (1 , 1)-forms on Xti,
+the limit current is closed and positive of bidegree (1 , 1) on X. As CX is open, the class α
+must be in the interior of the cone of all pseudo-eﬀective clas ses. ✷
+As a consequence we obtain the projectivity criterion for co mpact hyperk¨ ahler manifolds
+which was stated as Thm. 3.11 in [5], but the proof of which was seriously ﬂawed as it used
+the wrong Prop. 3.8.
+Theorem 2 — Let X be a compact hyperk¨ ahler manifold. Then X is projective if and only
+if there exists a line bundle L on X with qX(c1(L)) > 0.
+Proof. If X is projective, then there exists an ample line bundle L. As c1(L) is then a
+K¨ ahler class andKX ⊂ C X , this yields qX(c1(L)) > 0. Conversely, let us assume that there
+exists a line bundle L with qX(c1(L)) > 0. This is equivalent to the existence of a line bundle
+L with c1(L) ∈ C X. By the previous proposition c1(L) is in the interior of the cone of pseudo-
+eﬀective classes. Thus c1(L) can be represented by a closed positive (1 , 1)-current which is
+bounded from below by a K¨ ahler form. Applying results of Bon avero [1] and Ji-Shiﬀman [8]
+one obtains that X is Moishezon and hence projective. ✷
+4. Let me indicate why Prop. 3.8 has to be false. One way to see thi s is to use the fact that
+from dimension four on, the birational K¨ ahler cone can real ly be diﬀerent from the K¨ ahler
+cone itself (something that does not happen for K3 surfaces) . In this case one just picks
+a class that is positive on the K¨ ahler cone, but not on the ent ire birational K¨ ahler cone.
+If the original Prop. 3.8 were true, this class would be repre sentable by a closed positive
+current. But considered on any other birational compact hyp erk¨ ahler manifold it would also
+be representable by a closed positive current, which is in co ntradiction with the fact that
+there is at least on birational compact hyperk¨ ahler manifo ld where the class is not positive
+on the K¨ ahler cone. In this argument we use that the quadrati c form qX is compatible with
+birational correspondences.
+5. Some of the results of the paper have been strengthened in the meantime. In [7] we prove
+Thm. 4.6. without assuming the projectivity of the varietie s. A better description of the
+closure of the K¨ ahler cone than the one given in Thm. 7.1 has a lso been found: A class is in
+the closure of the K¨ ahler cone if and only if it is non-negati ve on all rational curves (Prop.
+3.1 in [7]).
+Acknowledgement: First of all I wish to thank D. Kaledin for pointing out the blu nder in
+the proof of Prop. 3.8 and for believing in the projectivity c riterion and its consequences all
+3
+
+=== PDF PAGE 4 ===
+the time. He was always very patient to check various argumen ts over the last two years. I am
+certainly most grateful to J.-P. Demailly and M. Paun for the ir beautiful theorem. Thanks
+to J.-P. Demailly for comments on the new proof.
+References
+[1] Bonavero, L. In´ egalit´ es de Morse holomorphes singuli` eres.C. R. Acad. Sci. Paris 317 (1993), 1163-1166.
+[2] Demailly, J.-P., Paun, M. Numerical characterization of the K¨ ahler cone of a compact K¨ ahler manifold.
+math.AG/0105176, (2001).
+[3] Demailly, J.-P. Regularization of closed positive currents and intersecti on theory. J. Alg. Geom. 1 (1992),
+361-409
+[4] Fujiki, A. On the de Rham Cohomology Group of a Compact K¨ ahler Symplect ic Manifold. Adv. Stud.
+Pure Math. 10 (1987), 105-165.
+[5] Huybrechts, D. Compact Hyperk¨ ahler Manifolds: Basic Results. Invent. math. 135 (1999), 63-113.
+[6] Huybrechts, D. Compact hyperk¨ ahler manifolds.Habilitation (1997). http://www.mi.uni-koeln.de/
+˜huybrech/artikel.htm/HKhabmod.ps
+[7] Huybrechts, D. The K¨ ahler cone of a compact hyperk¨ ahler manifold.math.AG/9909109
+[8] Ji, S., Shiﬀman, B. Properties of compact complex manifolds carrying closed po sitive currents. J. Geom.
+Anal. 3 (1993), 37-61.
+Mathematisches Institut
+Universit¨ at zu K¨ oln
+Weyertal 86-90
+50931 K¨ oln, Germany
+huybrech@mi.uni-koeln.de
+4

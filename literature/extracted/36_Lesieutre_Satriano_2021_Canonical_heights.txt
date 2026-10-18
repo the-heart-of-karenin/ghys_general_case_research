@@ -1,0 +1,1467 @@
+=== PDF PAGE 1 ===
+J. Lesieutre and M. Satriano (2019) “Canonical Heights on Hyper-Kähler Varieties and the Kawaguchi–
+Silverman Conjecture,”
+International Mathematics Research Notices, Vol. 00, No. 0, pp. 1–38
+doi:10.1093/imrn/rnz067
+Canonical Heights on Hyper-Kähler Varieties and the
+Kawaguchi–Silverman Conjecture
+John Lesieutre1 and Matthew Satriano 2,∗
+1Penn State University Mathematics Department, 204 McAllister
+Building University Park, State College, PA 16802, USA and 2Department
+of Pure Mathematics, University of Waterloo, Waterloo, ON N2L 3G1,
+Canada
+∗Correspondence to be sent to: e-mail: msatrian@uwaterloo.ca
+The Kawaguchi–Silverman conjecture predicts that iff : X /axisshort/axisshort/arrowaxisrightX is a dominant rational-
+self map of a projective variety overQ,a n dP is aQ-point of X with a Zariski dense orbit,
+then the dynamical and arithmetic degrees of f coincide: λ1(f) = αf (P). We prove this
+conjecture in several higher-dimensional settings, including all endomorphisms of non-
+uniruled smooth projective threefolds with degree larger than 1, and all endomorphisms
+of hyper-Kähler manifolds in any dimension. In the latter case, we construct a canonical
+height function associated with any automorphism f : X → X of a hyper-Kähler
+manifold defined over
+Q. We additionally obtain results on the periodic subvarieties
+of automorphisms for which the dynamical degrees are as large as possible subject to
+log concavity.
+1 Introduction
+Let f : X /axisshort/axisshort/arrowaxisrightX be a dominant rational self-map of a smooth projective varietyX defined
+over Q. There are two natural degree functions, one can associate with the dynamical
+system (X, f). The 1st measures the growth rate of the degrees of the iterates f n.I ti s
+Communicated by Prof. Umberto Zannier
+Received July 13, 2018; Revised December 7, 2018; Accepted March 6, 2019
+© The Author(s) 2019. Published by Oxford University Press. All rights reserved. For permissions,
+please e-mail: journals.permission@oup.com.
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 2 ===
+2 J. Lesieutre and M. Satriano
+known as the 1st dynamical degree and is defined as
+λ1( f) = limn→∞
+(
+( f n)∗H · Hdim X−1
+) 1/n
+,
+where H is a choice of ample divisor onX; a result of Dinh and Sibony [15] says that this
+limit exists and is independent of the choice of ample divisor H.
+The 2nd notion is the arithmetic degree, which depends on a choice of Q-point
+P, and reflects the growth rate of the heights of the pointsf n(P). Given an ample divisor
+H on X, one can construct a corresponding logarithmic Weil height h H : X(Q) → R
+that measures the arithmetic complexity of the point P. For example, if X = Pn,
+H = OPn (1),a n d P = [a0 : ... : an]i sa Q-point with the ai coprime integers, then
+hH(P) = log(max
+{⏐⏐ai
+⏐⏐}
+). We refer to Proposition 2.25 for further properties of heights.
+Letting hH denote a logarithmic Weil height associated with an ample divisor
+H on X,a n d h+
+H = max(hH ,1), if the forward orbit of P is defined (i.e., if no f n(P) is
+contained in the indeterminacy locus), then we set
+αf (P) = lim infn→∞ h+
+H( f n(P))1/n, αf (P) = lim sup
+n→∞
+h+
+H( f n(P))1/n.
+Both of these quantities are again independent of the choice of ample divisor H [26,
+Proposition 12] and it is conjectured that they always coincide. When they do, αf (P) is
+defined to be the common value. Whether or notαf (P) and αf (P) are equal remains open
+in general, but it is known when f is a morphism [25, Theorem 3], which will always be
+the case in this paper. The Kawaguchi–Silverman conjecture is then as follows.
+Conjecture 1.1 (Kawaguchi–Silverman [26]). Let X be a smooth projective variety and
+let f : X /axisshort/axisshort/arrowaxisrightX be a dominant rational map defined over Q. Suppose that P is a Q-point
+of X. If the forward orbit of P under f is Zariski dense, then αf (P) exists and is equal
+to λ1( f).
+The conjecture is known in many cases; see [37, Remark 1.8] for a comprehensive
+list including abelian varieties [ 25, 48], automorphisms of smooth projective surfaces
+[23, 24], as well as certain product varieties [45]. Recently the conjecture was proved for
+all regular endomorphisms of smooth projective surfaces [ 37]; the proof in the case of
+surfaces relies heavily on the birational classification.
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 3 ===
+Kawaguchi–Silverman for Hyper-Kählers 3
+Our aim in this paper is to prove the conjecture in several higher-dimensional
+settings. A basic difficulty is that the classification of n-folds (for n ≥ 3) is much more
+difficult and less complete than the classification of surfaces: there is no neat analog
+of the Enriques–Kodaira classification, and one must instead attempt to understand
+the interplay between the geometry of endomorphisms and the classification theory of
+higher-dimensional varieties.
+We break up our analysis according to Kodaira dimension κ(X).W en o t et h a tb y
+[40, Theorem A], if κ(X)> 0, then an iterate of f preserves the Iitaka fibration and so
+there is no
+Q-point P on X with a Zariski dense orbit; as a result Conjecture1.1 vacuously
+holds. Thus, the only remaining cases to consider are those of Kodaira dimension 0
+and −∞ .
+Let us now discuss in detail our main results as well as several consequences.
+We say a smooth projective variety X is Calabi–Yau if dim X ≥ 3, O
+X(KX) is trivial and
+h0(/Omega1p
+X) = 0f o r0 < p < n.W es a y X is hyper-Kähler if its complex analytification is
+simply connected and H0(X, /Omega12
+X) is spanned by a symplectic form.
+Theorem 1.2. Conjecture 1.1 is true for automorphisms of hyper-Kähler manifolds.
+Remark 1.3. In fact, we prove the following more general result in Theorem 2.28:
+Conjecture 1.1 holds for any automorphism of a normal projective variety X for which
+h1(X,OX) = 0a n d ν+ + ν− is big for some good eigenvector pair (ν+, ν− ), as defined
+in Definition 2.8. We also note that Theorem 1.2 applies to surjective endomorphisms
+since every surjective endomorphism of a hyper-Kähler manifold is an automorphism,
+see Lemma 2.6.
+The key to proving Theorem 1.2 is to construct a canonical height function
+associated with f , following a strategy developed by Silverman [47] and Kawaguchi [23]
+in dimension 2. Along the way, we obtain various results on the periodic subvarieties of
+automorphisms for which the dynamical degrees are as large as possible (subject to log
+concavity). For instance,
+Corollary 1.4.
+1. Suppose f : X → X is an automorphism satisfying Condition (B) of
+Definition 2.10 and for which λ
+1(f) = λ1( f−1), for example, f is any
+automorphism of a hyper-Kähler manifold. Then the union of the odd-
+dimensional f -periodic subvarieties of X is not Zariski dense.
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 4 ===
+4 J. Lesieutre and M. Satriano
+2. Suppose that f : X → X is an automorphism of a threefold satisfying either
+λ1( f) = λ2( f)2 or λ2( f) = λ1( f)2.T h e nf admits only finitely many positive-
+dimensional periodic subvarieties. This situation can arise, for example, for
+automorphisms of abelian threefolds [33, Example 4.8.6].
+As a consequence of Theorem 1.2, combined with the work of Sano [ 45], we are
+able to show that the conjecture holds for automorphisms of all varieties with KX ≡ 0
+as long as it holds for automorphisms of Calabi–Yau varieties.
+Corollary 1.5. Let n be a positive integer. Then Conjecture 1.1 is true for all
+automorphisms of smooth projective varieties X with dimension at most n and KX
+numerically trivial if and only if Conjecture1.1 is true for all automorphisms of smooth
+Calabi–Yau varieties with dimension at most n.
+Remark 1.6. The abundance conjecture implies that every smooth projective minimal
+variety X of Kodaira dimension 0 has KX numerically trivial. Therefore, assuming the
+abundance conjecture in dimension at most n, Corollary 1.5 reduces Conjecture 1.1 for
+automorphisms of smooth projective minimal varieties of Kodaira dimension 0 to the
+special case of smooth Calabi–Yau varieties.
+In the case of dimension 3, we obtain more detailed results for endomorphisms
+as well as automorphisms. Using results of Fujimoto [19], we show the following.
+Proposition 1.7. Conjecture 1.1 holds for all surjective endomorphisms f : X → X of
+degree deg(f)> 1 on smooth projective threefolds X of Kodaira dimension 0.
+Since the abundance conjecture is known in dimension 3 [ 28], by Corollary 1.5
+and Remark 1.6, to prove the conjecture for automorphisms of smooth minimal three-
+folds of Kodaira dimension 0, it is enough to handle the case of automorphisms of
+smooth Calabi–Yau threefolds. As such, we turn to the case of Calabi–Yau threefolds
+and prove the following technical result.
+Theorem 1.8. Let f be an automorphism of a smooth Calabi–Yau threefoldX. Suppose
+that either
+1. c
+2(X) is strictly positive on Nef(X),o r
+2. there is a nonzero semi-ample class D ∈ Nef(X)∩N1(X) such that c2(X)·D = 0.
+Then Conjecture 1.1 holds for (X, f).
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 5 ===
+Kawaguchi–Silverman for Hyper-Kählers 5
+Remark 1.9 (Understanding the hypotheses of Theorem 1.8). The essential point here
+is that Theorem 1.8 applies to all Calabi–Yau threefolds with sufficiently large Picard
+number, assuming [42, Question-Conjecture 2.6] and the semi-ampleness conjecture [32,
+Conjecture 2.1]. In particular, by Remark 1.6, this would resolve Conjecture 1.1 for all
+automorphisms of smooth minimal threefolds of Kodaira dimension 0 and sufficiently
+large Picard number.
+Let us explain why this is the case. A theorem of Miyaoka [38] shows that either
+hypothesis (1) of Theorem 1.8 holds or F := c
+2(X)⊥ ∩ Nef(X) is a nonzero face of the nef
+cone of X.I n[ 42, Question-Conjecture 2.6], Oguiso asks if F must always be rational
+when the Picard number ρ(X) is sufficiently large. Provided this is true, there would be
+a nonzero rational class D ∈ F, and then the semi-ampleness conjecture [32, Conjecture
+2.1] would tell us that after scaling D by a positive integer, we can assume it is semi-
+ample, that is, hypothesis (2)h o l d s .
+Finally, we turn to the case of Kodaira dimension −∞ . Here the closest analog
+of a minimal variety is one which has the structure of a Mori fiber space; this includes,
+for example, all rational normal scrolls. We prove Conjecture 1.1 in two special cases.
+Theorem 1.10. Conjecture 1.1 holds for the following cases:
+1. all automorphisms of threefolds that have the structure of a Mori fiber space.
+2. all surjective endomorphisms of n-fold rational normal scrolls.
+Remark 1.11. In the process of showing Theorem 1.10(2), we in fact prove a stronger
+result: if C is a smooth curve, then Conjecture1.1 holds for all surjective endomorphisms
+of all projective bundles P
+C(E) if and only if it holds in the case, where E is semistable
+of degree 0. See Corollary 6.8.
+It is worth mentioning that in Section 3, we prove general results concerning
+the following set-up: π : X → Y is a surjective morphism of normal projective varieties
+over Q, f is a surjective endomorphism of X, g is a surjective endomorphism of Y,a n d
+π ◦f = g ◦π. We give several criteria by which one can reduce the conjecture for (X, f)
+to that of (Y, g), see Theorem 3.4.
+2 Canonical Heights for Hyper-Kähler Automorphisms: Theorem 1.2
+In this section, we treat Conjecture 1.1 for hyper-Kähler manifolds. There are many
+remarkable automorphisms and birational automorphisms of such varieties, see for
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 6 ===
+6 J. Lesieutre and M. Satriano
+example, [ 1]a n d[ 43]. In fact, we prove the conjecture for a wider class of varieties,
+namely those with trivial Albanese satisfying Condition (B) of Definition 2.10.
+We begin by recalling the main definitions. We work throughout over Q,a n d
+where not otherwise stipulated, a variety is assumed to be defined over Q.G i v e na
+projective variety X,w ew r i t eNj(X) for the numerical group of codimension-j cycles and
+N1(X)R = N1(X) ⊗ R for the corresponding finite-dimensional R-vector space. We use ∼
+for the relation of linear equivalence of Cartier divisors, ∼R for R-linear equivalence,
+and ≡ for numerical equivalence. Rational maps are denoted by “ /axisshort/axisshort/arrowaxisright” and morphisms
+by “→ ”.
+Suppose that f : X /axisshort/axisshort/arrowaxisrightX is a dominant rational map of a smooth projective
+variety, and fix an ample divisor H on X.T h ejth dynamical degree of f is the limit
+λj( f) = limn→∞
+(
+(( f n)∗H)j · Hdim X−j
+) 1/n
+.
+As noted in the introduction, the 1st dynamical degree is obtained when j = 1, and this
+case occupies a place of particular importance in this note. In general, these limits are
+difficult to compute, since ( f
+n)∗ does not necessarily coincide with ( f∗)n for rational
+maps. However, iff : X → X is a morphism, then ( f n)∗ = ( f∗)n and
+λj( f) = SpecRad
+(
+f∗ : Nj(X)R → Nj(X)R
+)
+is simply the spectral radius of f∗, on the numerical group of codimension- j cycles,
+that is, the absolute value of the largest eigenvalue of f∗ acting on Nj(X)R.W h e nf is a
+morphism, we may also drop the smoothness hypothesis onX, and it suffices to assume
+that X is normal: there is no difficulty in pulling back Cartier divisors.
+It will also be convenient to write J( f , j) for the dimension of the largest λj( f)-
+Jordan block of f∗ : Nj(X) → Nj(X) and ˜J( f , j) = J( f , j) − 1. Then (( f n)∗H)j · Hdim X−j is
+bounded above and below by positive multiples ofn˜J(f ,j)λj(f)n.
+Invariant fibrations play an important role in the study of rational maps in
+higher dimension, and the product formula of Dinh et al. [13] is useful in dealing with
+their dynamical degrees. Suppose that there exists a surjective morphismπ : X → Y and
+a dominant rational map g : Y /axisshort/axisshort/arrowaxisrightY with g ◦π = π ◦f .L e tH′ be an ample divisor on Y.
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 7 ===
+Kawaguchi–Silverman for Hyper-Kählers 7
+Definition 2.1. The 1st dynamical degree of f relative to π is the limit
+λ1(π|f ) = limn→∞
+(
+( f n)∗H · π∗(H′ dim Y) · Hdim X−dim Y−1
+) 1/n
+.
+The definition of relative dynamical degrees can be extended to higher codimen-
+sion and to the setting in which π itself is only a dominant rational map; we require
+only this simple case. The basic properties of dynamical degrees and their relative
+counterparts are worked out in [ 12–15]; a more algebro-geometric perspective (which,
+importantly, works on normal varieties) can be found in [ 10, 49]. The next theorem
+singles out some properties of the dynamical degrees that we will require throughout
+the paper.
+Theorem 2.2.
+1. Suppose that f : X /axisshort/axisshort/arrowaxisrightX is birational. Then λ
+1( f−1) = λdim X−1( f).
+Furthermore, if λ1( f)> 1, then λ1( f−1)> 1.
+2. If f : X /axisshort/axisshort/arrowaxisrightX admits an invariant fibration π : X → Y as above, then
+λ0( f|π) = 1a n dλ1( f) = max{λ1(g), λ1( f|π)}.
+3. If dim Y = dim X − 1a n df is birational, then g : Y /axisshort/axisshort/arrowaxisrightY is birational and
+λ1( f|π) = 1.
+4. Let f (resp. g) be a surjective endomorphism ofX (resp. Y) and assume that X
+and Y are normal projective varieties. If π : X → Y is a birational morphism
+such that π ◦f = g ◦π,t h e nλ1( f) = λ1(g).
+Proof. To prove these claims requires using the properties of higher dynamical degrees
+λp( f); since we do not otherwise make use of these degrees, we refer to the above
+references for the definitions.
+The 1st fact follows from the log-concavity of dynamical degrees, which states
+that λp−1( f)λp+1( f) ≤ λp( f)2 for each 1 ≤ p ≤ dim X − 1. Since λp( f) ≥ 1 for any p,
+the hypothesis that λ1( f)> 1i m p l i e st h a tλp( f)> 1 for each 1 ≤ p < dim X.I f f is
+birational, then λ1( f−1) = λdim X−1( f)> 1.
+The claim in ( 2)t h a tλ0( f|π) = 1 follows directly from the definition, while
+λ1( f) = max{λ1(g)λ0( f|π), λ0(g)λ1( f|π)}= max{λ1(g), λ1( f|π)} is a case of the product
+formula of Dinh–Nguyên–Truong.
+For ( 3), another application of the product formula yields λdim X( f) =
+λdim X−1(g)λ1( f|π).S i n c ef is birational, λdim X( f) = 1, and so both terms on the right
+must be 1 as well.
+Finally, (4) follows from [10, Theorem 1.(2)] and the discussion that follows. ■
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 8 ===
+8 J. Lesieutre and M. Satriano
+In contrast to the dynamical degrees, the properties of the arithmetic degrees
+αf (P), αf (P),a n dαf (P) are at present largely conjectural in general. There is nevertheless
+a close relationship between the arithmetic and dynamical degrees: it was shown in [37,
+Corollary 9.3] that if f : X → X is a surjective endomorphism with λ1(f)> 1, then there
+exist points P with αf (P) = λ1(f); however, it remains open whether this equality holds
+for every point P with a dense orbit.
+Remark 2.3. It was proved by Kawaguchi–Silverman [26, Theorem 4] and Matsuzawa
+[36, Theorem 1.4] thatαf (P) ≤ λ1( f) in general. As a result, the limit definingαf (P) exists
+and is equal to λ1( f) if and only if λ1( f) ≤ αf (P); indeed, if this inequality holds, then
+λ1( f) ≤ αf (P) ≤ αf (P) ≤ λ1( f).
+Furthermore, since we always have 1 ≤ αf (P),i f λ1( f) = 1, then λ1( f) ≤ αf (P),
+and so the conjecture holds. Hence, we can always restrict our attention to maps with
+λ
+1( f)> 1.
+Having recalled the main definitions, we collect some facts that will be useful
+in our study of hyper-Kähler manifolds.
+Proposition 2.4 (The Beauville–Bogomolov–Fujiki form, see, e.g., [ 21, §23], [ 21,
+Prop. 25.14]). Suppose that X is a hyper-Kähler manifold of dimension 2 m. There
+exists a quadratic form q(X) on H2(X,R) and a constant cX such that for any divisor D,
+we have the following:
+D2m = cX qX(D)m.
+The form qX(−) has signature (1,ρ(X) − 1) on N1(X)R.I f φ : X → X is an automorphism,
+then the pullback φ∗ preserves the form q(−).
+Example 2.5 ([3, §6], [ 43]). A basic example of a hyper-Kähler manifold is the Hilbert
+scheme of configurations of n points on a K3 surface S, which we denote by Hilb n(S).
+If f : S → S is an automorphism, then the induced automorphism f [n] : Hilb n(S) →
+Hilbn(S) of the Hilbert scheme satisfies λ1( f [n]) = λ1( f).
+To begin, we first note that any surjective endomorphism of a hyper-Kähler
+manifold is actually an automorphism.
+Lemma 2.6. Every surjective endomorphism of a hyper-Kähler manifold over Q is an
+automorphism.
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 9 ===
+Kawaguchi–Silverman for Hyper-Kählers 9
+Proof. By faithfully flat and quasi-compact descent, it is enough to check this after
+base change toC.N o wi fX is hyper-Kähler manifold overC,w eh a v eχ(OX) = 1+ 1
+2 dim X
+[5, Lemma 14.21]. Next, let f be a surjective endomorphism of X.B y[ 19, Lemma 2.3], f
+is a finite étale cover and so χ(OX) = deg( f)χ(OX).S i n c eχ(OX) ̸= 0, we must have
+deg(f) = 1, that is, f is an automorphism. ■
+Having now reduced to the case of automorphisms, we roughly follow the
+strategy of Kawaguchi’s proof of the conjecture in the case of surfaces. The following
+version of the Perron–Frobenius theorem plays an important role.
+Lemma 2.7 ([7]). Suppose that V is a finite-dimensional real vector space and that
+K ⊂ V is a closed, pointed, and convex cone. If T : V → V is a linear map for which
+T(K) ⊆ K, and the spectral radius of T is λ> 1, then there exists a λ-eigenvector for T,
+which is contained in K.
+In fact, such an eigenvector can be found by choosingH a general element of the
+interior of K and taking a limit lim
+n→∞
+1
+n˜J(f ,1)λn ( f∗)n(H); the normalizing factor ensures
+that this limit converges to a nonzero eigenvector.
+Definition 2.8. We will say that a class ν+ in N1(X)R is a leading eigenvector for f if
+it is a nef class that is a λ1( f)-eigenvector for f∗.W es a yt h a tν+ is a good eigenvector
+if there exists an ample class H so that lim n→∞
+1
+n˜J(f ,1)λ1(f)n ( f∗)n(H) = ν+ (recall that
+we write ˜J( f ,1) for one less than the dimension of the λ1( f)-Jordan block of f∗). In
+particular, if ν+ lies in the relative interior of the intersection of Nef(X) with the λ1( f)-
+eigenspace of f∗,t h e nν+ is a good eigenvector [2].
+We say that (ν+, ν− ) is an eigenvector pair for f if ν+ is a leading eigenvector
+for f and ν− is a leading eigenvector for f−1, and that it is a good eigenvector pair
+if there exists an ample divisor H for which lim n→∞
+1
+n˜J(f ,1)λ1(f)n ( f∗)n(H) = ν+ and
+limn→∞
+1
+n˜J(f−1,1)λ1( f−1)n ( f∗)−n(H) = ν− .
+We say that(D+, D− ) is an eigendivisor pair for f if D+ and D− areR-divisors for
+which f∗(D+) ∼R λ1( f)D+ and ( f−1)∗(D− ) ∼R λ1( f−1)D− .I f (D+, D− ) is an eigendivisor
+pair, then the corresponding pair of numerical classes (ν+, ν− ) is an eigenvector pair,
+and we say that (D+, D− ) is good if (ν+, ν− ) is. When h1(X,OX) = 0, each numerical class
+has a unique lift to a linear equivalence class and these two notions coincide.
+Corollary 2.9. If f is an automorphism of a normal projective variety X that satisfies
+λ1( f)> 1, then a good eigenvector pair (ν+, ν− ) exists for f . If moreover h1(X,OX) = 0,
+then a good eigendivisor pair (D+, D− ) exists for f .
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 10 ===
+10 J. Lesieutre and M. Satriano
+Proof. Recall that λ1( f−1) = λdim X−1( f)> 1 by Theorem 2.2(1). We obtain the
+result by applying Lemma 2.7 to the case, where V = N1(X)R, K = Nef(X),a n d T
+is the pullback f∗ : N1(X)R → N1(X)R or the pullback ( f−1)∗. In fact, the invariant
+class is constructed as the limit lim n→∞
+1
+n˜J(f ,1)λ1(f)n ( f n)∗(H) for a general ample H,
+and so is a good eigenvector. Note in particular that ν+ and ν− belong to the cone
+Nef(X).
+If h1(X,OX) = 0, then the map Pic (X)R → N1(X)R is an isomorphism, and we
+may take D± to be the unique lift of ν± to a linear equivalence class. ■
+We next single out two special properties of hyper-Kähler manifolds and their
+automorphisms. We will prove Conjecture 1.1 for any automorphisms satisfying these
+properties, which includes some non-hyper-Kähler examples as well.
+Definition 2.10. Suppose that f : X → X is an automorphism of a normal projective
+variety X.W es a yt h a tf has property
+(A) if h1(X,OX) = 0;
+(B) if ν= ν+ + ν− is big for some good eigenvector pair (ν+, ν− ).
+Recall that by Remark 2.3, the conjecture is known wheneverλ1( f) = 1. So there
+is never any harm in assuming λ1( f)> 1. We next observe some easy cases in which
+Condition (B) holds; a more general criterion is presented in Theorem 2.21.
+Lemma 2.11. Let f : X → X be an automorphism of a normal projective variety X and
+assume that λ1(f)> 1. Then Condition (B) holds in all of the following cases:
+1. the dimension of X is equal to 2;
+2. the Picard rank of X is equal to 2;
+3. X is a hyper-Kähler manifold.
+Proof. In dimension 2, Condition (B) is a well-known consequence of the Hodge index
+theorem (see, e.g., [23, Proposition 2.5]).
+Suppose instead that ρ(X) = 2. Then ν+ and ν− lie on the two boundary rays of
+Nef(X), and their sum is ample, which yields Condition (B).
+We come at last to the hyper-Kähler case; the argument is the same as that
+in the 2D setting, but with the Beauville–Bogomolov form standing in for the usual
+intersection product. Let dim X = 2m and (ν
++, ν− ) be an eigenvector pair for f , whose
+existence is guaranteed by Corollary 2.9;d e f i n eν = ν+ + ν− .S i n c eν is nef, its volume
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 11 ===
+Kawaguchi–Silverman for Hyper-Kählers 11
+can be computed as the top self-intersection ν2k,a n dν is big if and only if this number
+is positive. We have
+q(ν+) = q( f∗ν+) = λ1( f)2q(ν+),
+and so q(ν+) = 0s i n c eλ1( f)> 1. The same argument shows that q(ν− ) = 0. Since the
+form qX(−) has signature (1,ρ(X) − 1) on Pic(X), the maximal dimension of an isotropic
+subspace is 1, and so qX(ν) ̸= 0. Since ν is nef, Vol(ν) = ν2m = cX qX(ν)m > 0, and we
+conclude that ν is big. ■
+Remark 2.12. Notice that if a variety X has Picard rank 2 and an automorphism
+f with λ1( f)> 1, then necessarily KX ≡ 0. Otherwise, KX would provide a nonzero
+1-eigenvector, and since f∗ is invertible and preserves the integral lattice N1(X) ⊂
+N1(X)R, this would imply that both eigenvalues of f∗ are equal to 1. However, there
+are many interesting examples in this case [44, 54].
+We now turn to the proof of the Kawaguchi–Silverman conjecture in this setting.
+We do by constructing a canonical height function for the automorphism f .
+Definition 2.13. Suppose that D is a Q-divisor on a normal projective variety X.T h e
+stable base locus of D is the Zariski-closed subset of X defined by
+B(D) =
+⋂
+m≥1
+mD Cartier
+Bs(mD).
+It is not hard to show that there exists an integerm0 such that Bs(dm0D) = B(D)
+for all sufficiently large integers d [31, Proposition 2.1.21]. It follows that B(D + D′) ⊂
+B(D) ∪ B(D′).
+Suppose that D is anR-divisor on a normal projective varietyX.T h eaugmented
+base locus B+(D) is the Zariski-closed subset
+B+(D) =
+⋂
+A ample
+D − A Q-divisor
+B(D − A).
+We refer to [16] for a detailed treatment of the properties of the invariantB+(D),
+but single out the following.
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 12 ===
+12 J. Lesieutre and M. Satriano
+Lemma 2.14 ([16, Prop. 1.4, Examples 1.7–1.9, Prop. 1.5]).
+1. B+(D) depends only on the numerical class of D.
+2. B+(D) is a proper subset of X if and only if D is big.
+3. For any R-divisor D and any real λ> 0, we have B+(D) = B+(λD).
+4. For any R-divisors D1 and D2,w eh a v eB+(D1 + D2) ⊆ B+(D1) ∪ B+(D2).
+5. Fix a norm ∥·∥ on N1(X)R. For anyR-divisor D, there exists a constant ϵ such
+that for any ample R-divisor A for which ∥A∥ <ϵ and D − A is a Q-divisor,
+we have B+(D) = B(D − A).
+In view of ( 1), we sometimes write B+(ν), where ν is any class in N1(X)R;t h i s
+denotes B+(D) for any D with numerical class ν.
+Lemma 2.15. Suppose that D1 is an R-divisor and D2 is a nef R-divisor. Then
+B+(D1 + D2) ⊆ B+(D1).
+Proof. First, choose an ampleR-divisor A1 so that D1 − A1 is a Q-divisor and
+B+(D1) = B(D1 − A1).
+Now, choose another ampleR-divisor A2 for which D1 + D2 − A2 is a Q-divisor, A1 − A2
+is ample, and
+B+(D1 + D2) = B(D1 + D2 − A2).
+It again follows from Lemma 2.14(5)t h a tA2 may be taken to be any sufficiently
+small ample divisor for which D1 + D2 − A2 is a Q-divisor. Note that the divisor D2 +
+(A1 − A2) = (D1 + D2 − A2) − (D1 − A1) is again a Q-divisor, and we may then compute
+the following:
+B+(D1 + D2) = B(D1 + D2 − A2) = B
+(
+(D1 − A1) + (D2 + (A1 − A2))
+)
+⊆ B(D1 − A1) ∪ B(D2 + (A1 − A2))
+= B+(D1) ∪ B(D2 + (A1 − A2)) = B+(D1),
+where B(D2 + (A1 − A2)) is empty since D2 is nef and A1 − A2 is ample. ■
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 13 ===
+Kawaguchi–Silverman for Hyper-Kählers 13
+Lemma 2.16. Suppose that D1 and D2 are nef R-divisors. Then for any a1, a2 > 0, the
+locus B+(a1D1 + a2D2) is independent of a1 and a2.
+Proof. We show that for any a1, a2 > 0, we have B+(a1D1 + a2D2) = B+(D1 + D2).
+Suppose first that a1 ≥ a2. Recalling that B+(D) = B+(λD) according to Lemma 2.14(3),
+it follows from Lemma 2.15 that
+B+(a1D1 + a2D2) = B+(a2(D1 + D2) + (a1 − a2)D1)
+⊆ B+(a2(D1 + D2)) = B+(D1 + D2),
+B+(D1 + D2) = B+(a1(D1 + D2)) = B+((a1D1 + a2D2) + (a1 − a2)D2)
+⊆ B+(a1D1 + a2D2).
+The case when a1 < a2 follows from the same argument, reversing the roles of D1
+and D2. ■
+Corollary 2.17. Suppose that f : X → X is an automorphism of a normal projective
+variety with λ1(f)> 1, and let (ν+, ν− ) be an eigenvector pair. Then B+(ν+ + ν− ) is
+invariant under f . Furthermore, if f satisfies Condition (B) and P is a Q-point of X with
+a Zariski dense orbit under f ,t h e nP is not contained in B+(ν+ + ν− ).
+Proof. We have
+f
+(
+B+(ν+ + ν− )
+)
+= B+
+(
+( f−1)∗(ν+ + ν− )
+)
+= B+
+(
+λ1( f)−1ν+ + λ1(f−1)ν−
+)
+= B+(ν+ + ν− ),
+where the final equality follows from Lemma 2.16.
+If f satisfies Condition (B), then ν = ν+ + ν− is big, and so B+(ν) is a proper
+Zariski-closed subset of X, invariant under f . It follows that a point with a dense orbit
+cannot lie in B+(ν). ■
+In fact, it is possible to give a more explicit description of the locus B+(ν) in
+terms of the dynamics of the map f . This relies on the following difficult result.
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 14 ===
+14 J. Lesieutre and M. Satriano
+Theorem 2.18 (Nakamaye’s theorem [ 17, Corollary 5.6]). Suppose that D i san e f R-
+divisor. Then
+B+(D) = Null(D) =
+⋃
+V⊂X
+D|V is not big
+V,
+where the union runs over all positive dimensional subvarieties V ⊂ X.
+Lemma 2.19. Suppose that f : X → X is an automorphism satisfying λ1( f)> 1a n dl e t
+(ν+, ν− ) be a good eigenvector pair withν= ν+ + ν− .I f V ⊆ X is an f -periodic subvariety
+of dimension at least 1, then V is not contained in B+(ν) if and only if there exists
+0 < a < dim V such that we simultaneously have
+λa( f|V)2 = λ1( f)a λ1( f−1)dim V−a,
+and
+˜J( f|V , a) = a˜J( f ,1) + (dim V − a)˜J( f−1,1).
+Proof. Let i: V → X be the inclusion map. According to Nakamaye’s theorem, V is not
+contained in B+(ν) if and only if i∗ν is big, which is equivalent to (ν+ + ν− )dim V · V > 0.
+We may assume that V is f -invariant, since the statement is unaffected when replacing
+f by an iterate. Since (ν+, ν− ) is a good eigenvector pair, we pick a suitable ample class
+H and compute the following:
+(ν+ + ν− )dim V · V
+= limn→∞
+(
+1
+n˜J( f ,1)λ1( f)n
+( f∗)nH + 1
+n˜J(f−1,1)λ1( f−1)n
+( f∗)−nH
+) dim V
+· V
+= limn→∞
+dim V∑
+a=0
+( dim V
+a
+) 1
+na˜J( f ,1)+(dim V−a)˜J( f−1,1)λ1( f)naλ1( f−1)n(dim V−a)
+(
+( f∗)nH)a · (( f∗)−nH)dim V−a
+)
+· V
+= limn→∞
+dim V∑
+a=0
+( dim V
+a
+) 1
+na˜J( f ,1)+(dim V−a)˜J( f−1,1)λ1( f)naλ1( f−1)n(dim V−a)
+(
+(( f∗)2nH)a · Hn(dim V−a) · V
+)
+.
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 15 ===
+Kawaguchi–Silverman for Hyper-Kählers 15
+Fig. 1. The function h.
+The quantity ((f∗)2nH)a · Hdim V−a · V is bounded both below and above by positive
+multiples of n˜J(f 2|V ,a)λa(f 2|V)n = n˜J(f|V ,a) (
+λa(f|V)2)n, and so the final expression is
+greater than 0 if and only if there is a value of a for which
+λa(f|V)2 = λ1(f)a λ1(f−1)dim V−a
+˜J(f|V, a) = a˜J(f ,1) + (dim V − a)˜J(f−1,1).
+■
+Used in combination with the log concavity of dynamical degrees, this provides
+a useful criterion for computing B+(ν), based on the following easy observation.
+Lemma 2.20. Suppose that h : {0,... , n} → R≥0 is a concave function with h(0) = 0
+and h(n) = 0. Let h(1) = a > 0a n dh(n − 1) = b > 0. Then for any m ∈ {0,... , n},w eh a v e
+h(m) ≤ am and h(m) ≤ b(n − m),s ot h a t2h(m) ≤ am + b(n − m).
+Equality is possible only if m0 =
+(
+b
+a+b
+)
+n is an integer and h(m) = am for
+0 ≤ m ≤ m0 and h(m) = b(n− m) for m0 ≤ m ≤ n. In this case, 2h(m0) = am0+b(n− m0).
+Theorem 2.21. Suppose that f : X → X is an automorphism with λ1(f)> 1 and good
+eigenvector pair (ν+, ν− ),a n dl e tν= ν+ + ν− . Then we have the following:
+1. ν is big if and only if
+a =
+( logλ1(f−1)
+log λ1(f) + logλ1(f−1)
+)
+(dim X)
+is an integer, λj(f) = λ1(f)j for 1 ≤ j ≤ a,a n d λj(f) = λ1(f−1)dim X−j for
+a ≤ j ≤ dim X.
+2. Suppose that λ1(f) = λ1(f−1).T h e nνis big if and only if dimX = 2m is even,
+λj(f) = λ1(f)j for 0 ≤ j ≤ m,a n dλj(f) = λ1(f)2m−j for m ≤ j ≤ 2m.
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 16 ===
+16 J. Lesieutre and M. Satriano
+3. Suppose that ν is big and V ⊂ X is f -periodic with dim V ≥ 1. Then V is not
+contained in B+(ν) if and only if there exists an integer a such that 0 < a <
+dim V and all of the following hold:
+1. λ1(f|V)> 1a n da =
+(
+log λ1(f|−1
+V )
+logλ1(f|V)+log λ1(f|−1
+V )
+)
+(dim V);
+2. λj(f|V) = λ1(f|V)j for 1 ≤ j ≤ a,a n dλj(f|V) = λ1(f|−1
+V )dim X−j for a ≤ j ≤
+dim X;
+3. λ1(f|V) = λ1(f) and λ1(f−1|V) = λ1(f−1);
+4. ˜J(f|V, a) = a˜J(f ,1) + (dim V − a)˜J(f−1,1).
+Proof. Lemma 2.20 with h(m) = log λm(f) shows that λa(f)2 ≤ λ1(f)aλ1(f−1)dim X−a for
+any a.S i n c eν is not big if and only if X = B+(ν), parts (1) and (2) follow immediately
+from Lemma 2.19 and the condition for equality in Lemma 2.20.
+We now turn to the proof of (3). We know from Lemma 2.19 that V is not
+contained in B+(ν) if and only if there exists 0 < a < dim V such that (d) and
+λa(f|V)2 = λ1(f)a λ1(f−1)dim V−a both hold. Observe that
+λa(f|V)2 ≤ λ1(f|V)aλ1(f|−1
+V )dim V−a ≤ λ1(f)aλ1(f−1)dim V−a,
+where the 1st inequality is an equality if and only if (a) and (b) hold, while the 2nd is an
+equality if and only if (c) holds. ■
+Remark 2.22. In the case dim X = 2, it follows from [ 23, Proposition 3.1(2)] that ν is
+big and the locus B+(ν) is precisely the union of the f -invariant curves. If dim X = 3,
+then ν is big if and only if either λ1(f) = λ2(f)2 or λ1(f)2 = λ2(f).I f ρ(X) = 2, then ν is
+necessarily ample and so B+(ν) is empty.
+Corollary 2.23.
+1. Suppose that f : X → X is an automorphism satisfying Condition (B) and
+for which λ1(f) = λ1(f−1) (e.g., f is an automorphism of a hyper-Kähler
+manifold). Then the union of the odd-dimensional f -periodic subvarieties of
+X is not Zariski dense.
+2. Suppose that f : X → X is an automorphism of a threefold satisfying either
+λ1(f) = λ2(f)2 or λ2(f) = λ1(f)2.T h e nf admits only finitely many positive-
+dimensional periodic subvarieties.
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 17 ===
+Kawaguchi–Silverman for Hyper-Kählers 17
+Proof. The 1st claim is immediate from Theorem 2.21(3), since Condition (3a) cannot
+hold for an odd-dimensional subvariety. In particular any such subvariety is contained
+in the Zariski closed subset B+(ν)⊂ X.
+For the 2nd, note that the condition on the dynamical degrees implies that f
+satisfies Condition (B). The ratio in part (3a) of Theorem 2.21 is a = 1
+3 or a = 2
+3
+depending on which of the hypotheses holds. Either way, we conclude that any
+f -periodic subvariety is contained in B+(ν). In particular, there are only finitely many
+f -periodic surfaces inX.A n f -periodic curve is either a component ofB+(ν)or contained
+in one of these surfaces. Since a surface automorphism with λ1(f)> 1 has only finitely
+many periodic curves, we conclude that the number of periodic curves of either type is
+finite, completing the proof. ■
+Example 2.24 ([34, Example 5.2]). Suppose that f : S → S is an automorphism of a
+K3 surface with λ
+1(f)> 1. Let X = Hilbn(S) be the corresponding Hilbert scheme of
+n points on S. There is an induced automorphism f [n] : X → X,a n dλ1(f [n]) = λ1(f).
+The f -periodic points p on S are Zariski dense [ 8], giving rise to f -periodic
+subvarieties V on X of any even codimension, as the images ofp×···× p×S×···× S in X.
+These f [n]-periodic subvarieties are Zariski dense, but they satisfy all four conditions of
+(3) of Theorem 2.21 and so are not contained in B+(ν). In particular, these subvarieties
+have even dimension.
+If f : S → S has an invariant curve C, then the image E ⊂ Hilbn(S) of the divisor
+S × S ×···× S × C is contained in B+(ν): Conditions (a) and (b) of Theorem 2.21(3) both
+fail. Note that λ1(f|E) = λ1(f) here, but there is a smaller subvariety V ⊂ E given as the
+image of C ×···× C for which λ1(f [n]|V) = 1.
+Proposition 2.25 (The Weil height machine, e.g., [ 22, Theorem B.3.6]). Let X be a
+projective variety defined overQ. There exists a unique map
+Pic(X)R →
+{
+functions X(Q) → R
+}
+{
+bounded functions X(Q) → R
+}
+with the following properties:
+1. Normalization: if D is very ample, φD : X → Pn is the associated embedding,
+and h is the absolute logarithmic height [ 22,§ B . 2 ] ,t h e nhD(P) = h(φD(P)) +
+O(1).
+2. Functoriality: if π : X → Y is a morphism, then hX,π∗D(P) = hY,D(π(P))+ O(1).
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 18 ===
+18 J. Lesieutre and M. Satriano
+3. Additivity: hX,D1+D2 (P) = hX,D1 (P) + hX,D2 (P) + O(1)
+4. Positivity: If D is effective, then hX,D(P) ≥ O(1) for P outside the base locus
+of D.
+By a height function for anR-divisor class D, we mean a functionhD : X(Q) → R
+belonging to the class of height functions for D.
+The augmented base locus is well suited to working with height functions
+associated with big R-divisors. The next two lemmas give extensions of the positivity
+property and Northcott’s lemma to this setting.
+Lemma 2.26. Let X be a normal, projective variety overQ.
+1. Suppose that D is a Q-divisor. Then hX,D(P) ≥ O(1) for P outside B(D).
+2. Suppose that D is a R-divisor. Then hX,D(P) ≥ O(1) for P outside B+(D).
+3. Suppose that D i sab i gR-divisor on X. Then for any M and N, there are only
+finitely many points P of X(Q)∖ B+(D) with [Q(P) : Q] < M and hD(P)< N.
+Proof. Fix an integer m with Bs(mD) = B(D);t h e nhX,mD = mh X,D + O(1) according to
+the additivity property, and (1) follows.
+For (2), according to Lemma 2.14(5) there exists an ample R-divisor A so that
+D − A is a Q-divisor and B+(D) = B(D − A). According to ( 1), we have hD−A(P) ≥ O(1)
+for P outside B(D − A) = B+(D).S i n c ehD = hD−A + hA + O(1), and since hA ≥ O(1),t h i s
+proves (2).
+At last we prove ( 3); let D and A be as before. There is a constant C1 such that
+hA(P) ≤ hD(P) − hD−A(P) + C1 for all points P of X(Q).B y( 1), there is a constant C2 so
+that hD−A(P) ≥ C2 for any P in X(Q) ∖ B(D − A) = X(Q) ∖ B+(D).N o w ,i fP is a point of
+X(Q)∖ B+(D) with hD(P)< N,w eh a v e
+hA(P) ≤ hD(P) − hD−A(P) + C1 ≤ hD(P) + C1 − C2 ≤ N + C1 − C2.
+It then follows from the Northcott theorem for the ample divisor A that there
+are only finitely many such P with [Q(P) : Q] < M and hD(P)< N, see Theorem B.3.2(g)
+and Remark B.3.2.1(i) of [22]. ■
+With these results in place, we now construct a canonical height function for an
+automorphism satisfying Condition (B) and that admits an eigendivisor pair. Suppose
+that f : X → X is an automorphism of a normal projective variety satisfying these
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 19 ===
+Kawaguchi–Silverman for Hyper-Kählers 19
+conditions, with (D+, D− ) an eigendivisor pair for f . Define functions ˆhD+ : X(Q) → R
+and ˆhD− : X(Q) → R by
+ˆhD+ (P) = limn→∞
+1
+λ1(f)n hD+ (f n(P))
+ˆhD− (P) = limn→∞
+1
+λ1(f−1)n hD− (f−n(P)).
+The functoriality of the height function yields hD± (P) − λ1(f±1)−1hD± (f(P)) = O(1);i t
+follows from an argument of Tate (cf. [ 47, §3]) that both of these limits exist and that
+ˆhD± is a height function for D±. These functions furthermore satisfy the relations
+ˆhD+ (f(P)) = λ1(f)ˆhD+ (P), ˆhD− (f(P)) = λ1(f−1)−1ˆhD− (P),
+with no O(1) term. Consider the function ˆh(P) : X(Q) → R given by
+ˆh(P) = ˆhD+ (P) +ˆhD− (P).
+We next develop the properties of ˆh(P), closely following arguments of Kawaguchi [ 23,
+Theorem 5.2 and Proposition 5.5].
+Theorem 2.27. Let X be a normal projective variety overQ.L e tf be an automorphism
+of X with λ1(f)> 1 and satisfying Condition (B), and suppose that f admits an
+eigendivisor pair(D+, D− ).I f P ∈ X(Q), then the functionˆh has the following properties:
+1. ˆh is a height function for the big and nef divisor D = D+ + D− ;
+2. if P ∈ X(Q)∖ B+(D),t h e nˆh(P) ≥ 0, ˆhD+ (P) ≥ 0, and ˆhD− (P) ≥ 0;
+3. ˆh satisfies the Northcott property on X(Q)∖ B+(D);
+4. If P ∈ X(Q) ∖ B+(D),t h e nˆhD+ (P) = 0i fa n do n l yi fˆhD− (P) = 0i fa n do n l yi f
+ˆh(P) = 0i fa n do n l yi fP is f -periodic.
+Proof. Part (1) is immediate from the fact thatˆhD+ and ˆhD− are height functions for D+
+and D− .S i n c eD is big, it follows from Lemma2.26(2) that there is a constantC such that
+ˆh(P)> C for any P not contained in B+(D).S i n c eB+(D) is f -invariant by Corollary 2.17,
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 20 ===
+20 J. Lesieutre and M. Satriano
+if P is not contained in B+(D) then neither is f n(P) for any integer n.T h e n
+ˆh(f n(P)) +ˆh(f−n(P)) = ˆhD+ (f n(P)) +ˆhD− (f n(P)) +ˆhD+ (f−n(P)) +ˆhD− (f−n(P))
+= λ1(f)nˆhD+ (P) + λ1(f−1)−nˆhD− (P) + λ1(f)−nˆhD+ (P) + λ1(f−1)nˆhD− (P)
+=
+(
+λ1(f)n + λ1(f)−n) ˆhD+ (P) +
+(
+λ1(f−1)n + λ1(f−1)−n
+)
+ˆhD− (P).
+The left side is bounded below by 2C, and so we obtain
+2C ≤
+(
+λ1(f)n + λ1(f)−n) ˆhD+ (P) +
+(
+λ1(f−1)n + λ1(f−1)−n
+)
+ˆhD− (P)
+and dividing by λ1(f)n + λ1(f)−n yields
+2C
+λ1(f)n + λ1(f)−n ≤ ˆhD+ (P) +
+( λ1(f−1)n + λ1(f−1)−n
+λ1(f)n + λ1(f)−n
+)
+ˆhD− (P) ∗
+The analysis now depends on the relative sizes of λ1(f) and λ1(f−1). Suppose
+first that λ1(f)>λ 1(f−1); since the lemma is symmetric in f and f−1, the case with the
+inequality reversed follows from the same argument. Taking the limit of equation (∗)a s
+n tends to infinity, we obtainˆhD+ (P) ≥ 0. We have
+ˆh(f−n(P)) = λ1(f)−nˆhD+ (P) + λ1(f−1)nˆhD− (P).
+The left side is again bounded below by C,a n ds o
+(
+λ1(f)−nλ1(f−1)−n
+)
+ˆhD+ (P) +ˆhD− (P) ≥ Cλ1(f−1)−n.
+Again taking the limit asn goes to infinity, we obtainˆhD− (P) ≥ 0, and soˆh(P) = ˆhD+ (P)+
+ˆhD− (P) ≥ 0.
+Suppose instead that λ = λ1(f) = λ1(f−1). Taking the limit in equation ( ∗)t h e n
+yields 0 ≤ ˆhD+ (P) +ˆhD− (P) = ˆh(P). It follows that ˆhD+ (P) ≥− ˆhD− (P),a n ds o
+ˆhD+ (P) = λ−nˆhD+ (f n(P)) ≥− λ−nˆhD− (f n(P)) =− λ−2nˆhD− (P).
+The non-negativity of ˆhD+ (P) follows by taking the limit as n tends to infinity; non-
+negativity of ˆhD− (P) follows from a similar argument. This handles (2).
+Lemma 2.26(3) combined with property (1) immediately implies (3).
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 21 ===
+Kawaguchi–Silverman for Hyper-Kählers 21
+We now turn to ( 4). First, if P is f -periodic, then f n(P) = P for some n,w h i c h
+implies directly from the definitions that ˆhD+ (P) and ˆhD− (P) both vanish, and hence
+ˆh(P) = 0. On the other hand, suppose that ˆh(P) = 0 for some P in X(Q)∖ B+(D).B y( 2), it
+must be that ˆhD+ (P) = 0a n dˆhD− (P) = 0. Then ˆhD+ (f n(P)) = 0a n dˆhD− (f n(P)) = 0 for any
+integer n as well, so that ˆh(f n(P)) = 0. By Corollary 2.17, the locus B+(D) is f -invariant,
+so {f n(P) | n ∈ Z} is contained in X(Q) ∖ B+(D).S i n c et h ef n(P) are of bounded degree
+overQ and all have height 0, the Northcott property (3) tells us the set of f n(P) is finite,
+and so P is f -periodic.
+To finish the proof of ( 4), it remains to show that if P ∈ X(Q) ∖ B+(D) and
+ˆhD+ (P) = 0, then P is f -periodic; the assertion that ˆhD− (P) = 0 implies P is f -periodic
+will follow similarly. If ˆhD+ (P) = 0a n d n > 0 then, letting λ = λ1(f),w eh a v e
+ˆh(f n(P)) = ˆhD+ (f n(P)) +ˆhD− (f n(P)) = λnˆhD+ (P) + λ−nˆhD− (P) = λ−nˆhD− (P) ≤ ˆhD− (P).S i n c e
+we have fixed our point P, we can view ˆhD− (P) as a constant and we have bounded
+ˆh(f n(P)) for all n. Again, since the set {f n(P)} has a bounded degree and is contained in
+X(Q)∖ B+(D), it follows from (3)t h a t{f n(P)} is finite, and so P is f -periodic. ■
+Theorem 2.28. Suppose that f : X → X is an automorphism of a normal projective
+variety satisfying Conditions (A) and (B). Then the Kawaguchi–Silverman conjecture
+holds for f .
+Proof. Recall that we can always assumeλ
+1(f)> 1. Then by Corollary 2.9, there exists
+an eigendivisor pair (D+, D− ),w i t hD = D+ + D− big. Let P ∈ X(Q) have a dense orbit
+under f . By Corollary 2.17,w ek n o wP does not lie in B+(D).S i n c eP is not f -periodic,
+we know from Theorem 2.27(2)a n d(4)t h a tˆhD+ (P) and ˆhD− (P) are both strictly positive.
+Then
+αf (P) ≥ lim infn→∞ h+
+D(f n(P))1/n = lim infn→∞ (λ1(f)nˆhD+ (P) + λ1(f)−nˆhD− (P))1/n = λ1(f),
+where the inequality follows from [37, Remark 2.2] and the next equality from Theorem
+2.27(1), which tells us that hD = ˆh + O(1). ■
+Remark 2.29. In fact, the proof of Theorem 2.28 shows that αf (P) = λ1(f) for any P in
+X(Q)∖ B+(D); it is not necessary to assume that P has a dense orbit.
+It follows from Lemma 2.11 and Theorem 2.28 that the Kawaguchi–Silverman
+conjecture holds for automorphisms of hyper-Kähler manifolds; note that Condition (A)
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 22 ===
+22 J. Lesieutre and M. Satriano
+holds since a hyper-Kähler manifold is geometrically simply connected. The next lemma
+shows that it also holds for automorphisms of smooth varieties of Picard rank 2, slightly
+extending [46, Theorem 4.2(ii)].
+Theorem 2.30. Suppose that X is a smooth projective variety,ρ(X) = 2, and f : X → X
+is an automorphism. Then the Kawaguchi–Silverman conjecture holds for f .
+Proof. The mapφ induces an automorphismg :A l b(X) → Alb(X) such that the diagram
+commutes. The proof of Lemma 2.11 shows that neither eigenvalue of f∗ : N1(X)R →
+N1(X)R is equal to 1, and so it must be that KX ≡ 0. A form of abundance due to
+Nakayama [39] implies that KX is torsion in Pic (X),s ot h a tκ(X) = 0. Since κ(X) = 0,
+a result of Kawamata (independent of the conjectures of the minimal model program
+(MMP)) implies that a is surjective with connected fibers [27].
+If dim Alb(X) = 0, then h1(X,OX) = 0, so that Condition (A) is satisfied. In
+this case, Conjecture 1.1 follows from Theorem 2.28.I fd i m A l b(X) = dim X,t h e na is
+generically finite, and it must be birational since a has connected fibers. Then X is
+birational to an abelian variety, f descends to an automorphism of the abelian variety,
+and the conjecture holds by [48].
+Suppose at last that a is not finite and that dim Alb (X)> 0. It must be that
+ρ(X) ≥ ρ(Alb(X)) + 1, since for any divisor D on Y, π∗D has intersection 0 with a curve
+in the fiber of a.S i n c eρ(X) = 2, we have ρ(Alb(X)) = 1. Taking H to be a generator of
+Pic(Alb(X)), it must be that a∗H is a 1-eigenvector for φ∗, but neither eigenvalue of φ∗ is
+equal to 1, so this case is impossible. ■
+Notice that if ρ(X) = 2a n d h1(X,OX) = 0, we have proved something even
+stronger; since D = D+ + D− is ample, B+(D) = ∅,a n ds o αf (P) = λ1(f) for every non-
+periodic Q-point P, without assuming the orbit is Zariski-dense.
+Lemma 2.31. Let f : X → X be an automorphism of a normal projective variety
+satisfying Condition (B), and let (ν+, ν− ) be an eigenvector pair. If i : V → X is the
+inclusion of an f -periodic subvariety with dimV ≥ 1a n dλ1(f|V)<λ 1(f),t h e ni∗ν+ = 0.
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 23 ===
+Kawaguchi–Silverman for Hyper-Kählers 23
+Proof. The pair (ν+, ν− ) is also an eigenvector pair forf n, so without loss of generality
+we can assume that n = 1, that is, V is fixed by f .L e ti : V → X be the inclusion. Then
+(f|V)∗(i∗ν+) = i∗f∗ν+ = i∗(λ1(f)ν+) = λ1(f)(i∗ν+),s ot h a ti∗ν+ is a λ1(f)-eigenvector for
+(f|V)∗. Since the spectral radius of (f|V)∗ is λ1(f|V)<λ 1(f), this is impossible unless
+i∗ν+ = 0. ■
+Definition 2.32. Suppose that f : X → X is an automorphism of a normal projective
+variety. Then E(f) is the subset of X defined by
+E(f) =
+⋃ {
+V :d i mV ≥ 1, V is f -periodic, λ1(f|V)<λ 1(f),a n dλ1(f−1|V)<λ 1(f−1)
+}
+.
+Theorem 2.33. Suppose that X is a normal projective variety and that f : X → X is an
+automorphism satisfying Condition (B). Then E(f) is not Zariski dense in X.
+Proof. It follows from Theorem 2.21(3c) that E(f) ⊂ B+(ν), where ν = ν+ + ν− for any
+good eigenvector pair. Since ν is big, B+(ν) is a proper Zariski-closed subset of X,a n d
+the claim follows. ■
+Example 2.34. Let g : S → S be an automorphism of a K3 surface satisfying λ1(g)> 1,
+and let f = g×id : S×P1 → S×P1, which satisfiesλ1(f) = λ1(g).I f p is any periodic point
+of g,t h e nV = p ×P1 is f -periodic, and satisfies λ1(f|V) = 1, so that V ⊂ E(f).S i n c et h e
+g-periodic points are dense in S (e.g., by [52, Theorem 1.2]), the set E(f) is Zariski dense.
+However,f does not satisfy Condition (B), so Theorem 2.33 is not applicable.
+The next result (which applies in particular in the hyper-Kähler case) is a higher-
+dimensional analog of a result of Cantat and Kawaguchi [ 9, Proposition 4.1], the latter
+having been shown for surfaces.
+Proposition 2.35. Suppose that X has Kawamata log terminal (klt) singularities
+(e.g., that X is smooth), that KX ≡ 0, and that f : X → X is an automorphism satisfying
+λ1(f)> 1 and Condition (B). Then there exists a birational morphismπ : X → Y such that
+f descends to an automorphism g : Y → Y,a n dπ contracts every connected component
+of E(f) t oap o i n t .
+Proof. Since f satisfies Condition (B), there is an eigenvector pair (ν+, ν− ) with
+ν = ν+ + ν− big. When ν is represented by a Q-divisor D, the claim follows quickly
+from Kawamata’s basepoint-free theorem; D is semi-ample, and we take π to be
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 24 ===
+24 J. Lesieutre and M. Satriano
+the corresponding contraction. However, since ν does not typically have a Q-divisor
+representative, we must resort to other methods, and we realize Y as the log canonical
+m o d e lo fak l tp a i r(X, /Delta1)with /Delta1≡ ϵν.
+Since ν is big, we may find ϵ> 0 and an effective R-divisor /Delta1≡ ϵν such that
+(X, /Delta1)is klt [ 30, Corollary 2.35]. Note that KX + /Delta1= /Delta1is nef. It follows from [ 6]t h a t
+there exists a log canonical model π : X /axisshort/axisshort/arrowaxisrightY for the pair (X, /Delta1), which means that
+1. π is a birational contraction (i.e., π is birational and π−1 does not contract
+any divisors);
+2. π is (KX + /Delta1)-negative (in the sense of [ 6]);
+3. taking /Gamma1= π∗/Delta1,w eh a v eKY + /Gamma1ample.
+We argue now that if KX + /Delta1is big and nef, the map π is in fact a morphism (a
+standard fact, for which we do not know a convenient reference). Take a resolution of
+the rational map π:
+Since π is (KX +/Delta1)-negative, we havep∗(KX +/Delta1)= q∗(KY +/Gamma1)+E,w i t hE ≥ 0. It follows
+from [39]t h a t
+E = Nσ(q∗(KY + /Gamma1)+ E) = Nσ(p∗(KX + /Delta1))= 0,
+and so p∗(KX + /Delta1)= q∗(KY + /Gamma1). It then follows from [ 6, 3.6.6(2)] that π is a morphism,
+and that KX + /Delta1= π∗A, where A is ample. Since KX ≡ 0 by assumption, this means that
+ϵν ≡ π∗A.
+Suppose that V is an irreducible component of E(f). Letting i: V → X be the
+inclusion map, Lemma 2.31 applied to f and f−1 shows that i∗ν+ = i∗ν− = 0, and so
+i∗ν = 0. Since D = π∗A, it follows that all such subvarieties V are contracted to points
+by π.
+It remains to check that f induces an automorphism g : Y → Y. We claim first
+that every subvariety contracted to a point byπ is also contracted byπ ◦f . The varieties
+contracted by π are precisely those V for which i∗ν= 0, where i: V → X is the inclusion
+map. Since ν+ and ν− are nef, this is possible only if i∗ν+ = i∗ν− = 0. The varieties
+contracted by f ◦π are those on which (f−1)∗(ν)= λ1(f)−1ν+ +λ1(f−1)−1ν− restricts to 0,
+which is the same set of varieties.
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 25 ===
+Kawaguchi–Silverman for Hyper-Kählers 25
+The map π : X → Y is birational with Y normal and so satisfies π∗OX = OY by
+Zariski’s main theorem, and since f ◦π contracts every fiber of π, it follows from the
+rigidity lemma [11, Lemma 1.15(b)] that it factors throughπ. This yields a mapg : S → S
+with f ◦π = π ◦g. An inverse to g is obtained by applying the same argument to f−1. ■
+As a consequence of Theorem 1.2, we reduce Conjecture 1.1 for automorphisms
+of smooth varieties X with KX ≡ 0 to the case of Calabi–Yau varieties. This is done in
+Corollary 1.5.
+Proof of Corollary 1.5 Let X be a smooth projectiveQ-variety with numerically trivial
+canonical class, and f : X → X an automorphism. By [ 4, Proposition 3.1], there is an
+abelian variety A, Calabi–Yau varieties Yi, and hyper-Kähler manifolds Zj all defined
+overQ, and there is a finite étale cover π : ˜X → X, where ˜X = A × ∏
+i Yi × ∏
+j Zj. Applying
+Condition (3) of [4, Proposition 3.1] to f ◦π yields a map ˜f making the diagram
+commute. Since π is finite étale, by degree considerations, we see˜f is an automorphism.
+By [37, Lemma 3.2], the conjecture forf follows from that of˜f , so we may assumeX itself
+i sap r o d u c tA × ∏
+i Yi × ∏
+j Zj as above.
+Recall that Conjecture 1.1 holds for f if and only if it holds for an iterate of f .
+Since the Yi and Zj are simply connected, their 1st Betti numbers are trivial, so after
+possibly replacing f by an iterate, we may assume by Theorem 4.6 and Lemma 5.1 of
+[45]t h a tf = f0 × ∏
+i gi × ∏
+j hj with f0 an endomorphism of A, gi an endomorphism of
+Yi,a n dhj an endomorphism of Zj. Applying the same argument to f−1, we may assume
+f−1 = f′
+0 ×∏
+i g′
+i ×∏
+j h′
+j. Since id = ff−1 = f0f′
+0 ×∏
+i gig′
+i ×∏
+j hjh′
+j, it follows that f−1
+0 = f′
+0,
+g−1
+i = g′
+i,a n dh−1
+j = h′
+j; so, f0, gi,a n dhj are all automorphisms.
+By [45, Lemma 3.2], the conjecture for f then follows from the conjecture for
+f0, gi,a n d hj. Conjecture 1.1 is known for abelian varieties by [ 48], and we proved in
+Theorem 1.2 that the conjecture holds for hyper-Kähler manifolds. Thus, Conjecture 1.1
+for f is reduced to that of each gi, that is, automorphisms of Calabi–Yau varieties of
+dimension at most n. ■
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 26 ===
+26 J. Lesieutre and M. Satriano
+3 Interplay Between Conjecture 1.1, Fibrations, and Birational Maps
+In this section, we collect some results that will be used throughout the rest of the
+paper. We consider the following general situation: suppose thatf : X → X is surjective,
+and there are morphisms π : X → Y and g : Y → Y with π ◦ f = g ◦ π. Under
+these circumstances, we are in some cases able to reduce Conjecture 1.1 for f to the
+conjecture for g. There are a number of natural fibrationsπ : X /axisshort/axisshort/arrowaxisrightY to which one might
+hope to apply these results on a given variety X, for example, the canonical model, the
+albanese map, Mori fiber spaces, and the maximal rationally connected (mrc) quotient.
+Such canonically defined fibrations play a fundamental role in the study of self-maps
+of higher-dimensional varieties [ 53]. Recall, as stated in the introduction, that for a
+regular morphism f and a point P with a dense orbit, the limit defining α
+f (P) exists,
+that is, αf (P) = αf (P).
+Lemma 3.1. Assume that X and Y are normal projective varieties over Q and let f
+(resp. g) be a surjective endomorphism of X (resp. Y). If π : X → Y is a surjection such
+that π◦f = g◦π and P ∈ X(Q) has a dense orbit underf ,t h e nαf (P) ≥ αg(π(P)). Moreover,
+if π is birational and X and Y are Q-factorial, then αf (P) = αg(π(P)).
+Proof. We first show αf (P) ≥ αg(π(P)).L e tH be an ample Cartier divisor on Y.S i n c e
+P has a dense orbit under f , it follows that π(P) has a dense orbit under g. So, the limit
+defining αg(π(P)) exists and we have
+αg(π(P)) = limn→∞ h+
+H(gn(π(P)))1/n = limn→∞ h+
+π∗H(f n(P))1/n.
+By [37, Remark 2.2] (cf. the proof of [26, Proposition 12]), we obtain
+αf (P) = αf (P) ≥ lim sup
+n→∞
+h+
+π∗H(f n(P))1/n = αg(π(P)).
+The cited references are formulated under the hypothesis that X is smooth, so that
+a dominant rational map induces a pullback map φ∗ on N1(X). However, since we
+assume that f and g are regular morphisms, there are no difficulties associated with
+repeatedly pulling back Cartier divisors, and the same arguments go through on any
+normal projective variety (see [26, Remarks 8 and 20]).
+It remains to handle the case where π is birational. This follows from the
+proofs of Lemma 3.3 and Theorem 3.4(ii) in [ 37]. The statement is again formulated
+under a smoothness hypothesis, but it suffices to assume that X and Y are normal and
+Q-factorial. The negativity lemma holds as long as X and Y are normal, and the Weil
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 27 ===
+Kawaguchi–Silverman for Hyper-Kählers 27
+height machine (see [ 22, Theorem B.3.2] or Proposition 2.25) remains valid for Cartier
+divisors on singular varieties by [22, Remark B.3.2.1]. The Q-factoriality assumption is
+needed so that the definition of the divisor E in [37, Proof of Lemma 3.3] makes sense;
+to form p∗p∗q∗HY , we must be able to pull back a Weil divisor. ■
+Corollary 3.2. Assume that X and Y are normal,Q-factorial projective varieties overQ,
+and let f (resp. g) be a surjective endomorphism ofX (resp. Y). If π : X → Y is a birational
+morphism such that π ◦f = g ◦π, then Conjecture 1.1 holds for (X, f) if and only if it
+holds for (Y, g).
+Proof. Let P ∈ X(Q).T h e nP has a dense orbit under f if and only if π(P) has a dense
+orbit under g. Indeed, since π is surjective, it is clear that density of the f -orbit of P
+implies density of the g-orbit of π(P). Conversely, suppose the g-orbit of π(P) is dense
+and let U ⊂ X be a dense open subset where π|U is an isomorphism. Given any open
+V ⊂ X, we see V ∩ U ̸= ∅and so π(V ∩ U) contains some gn(π(P)). Thus, V ∩ U contains
+f n(P), proving density of the f -orbit of P.
+To finish the proof, note that Lemma 3.1 and Theorem 2.2(4)t e l lu s αf (P) =
+αg(π(P)) and λ1(f) = λ1(g). So, αf (P) = λ1(f) if and only if αg(π(P)) = λ1(g). ■
+Combining Corollary 3.2 with [24, Theorem 10] yields the following result.
+Corollary 3.3. Let X be a normal, Q-factorial projective surface over Q.I f f is an
+automorphism of X, then Conjecture 1.1 holds for (X, f).
+Proof. Let π : ˜X → X be the minimal resolution. By [35, Theorem 4-6-2(i)], there exists
+an automorphism ˜f of ˜X such that η◦˜f = f ◦η.B y[ 24, Theorem 2(c)], Conjecture 1.1 is
+known for (˜X,˜f) and hence also known for (X, f) by Corollary 3.2. ■
+Theorem 3.4. Let π : X → Y be a surjective morphism of normal projective varieties
+overQ. Suppose f (resp. g) is a surjective endomorphism of X (resp. Y) such that g ◦π =
+π ◦ f .I f λ1(f|π) ≤ λ1(g) and Conjecture 1.1 holds for (Y, g), then Conjecture 1.1 also
+holds for (X, f). The condition λ1(f|π) ≤ λ1(g) holds in particular if f is birational and
+dim Y = dim X − 1.
+Proof. We begin by showing thatλ1(g) = λ1(f). By Theorem 2.2(2), we have
+λ1(f) = max{λ1(g), λ1(f|π)}= λ1(g).
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 28 ===
+28 J. Lesieutre and M. Satriano
+Next, let P ∈ X(Q) have a dense orbit under f ,s ot h a tπ(P) has a dense orbit
+under g. Then by Lemma 3.1,w eo b t a i n
+αf (P) ≥ αg(π(P)) = λ1(g) = λ1(f),
+where αg(π(P)) = λ1(g) because the conjecture holds for (Y, g). By Remark 2.3,w et h e n
+know that αf (P) = λ1(f). Therefore, the conjecture holds for (X, f).
+Theorem 2.2(3) tells us that λ1(f|π) = 1 whenever f is birational and dim Y =
+dim X − 1. Since λ1(g) ≥ 1, the inequality follows. ■
+The following consequence of Theorem 3.4 is applied in the proofs of
+Theorem 1.8(2) and Theorem 1.10(1).
+Corollary 3.5. Let π : X → Y be a surjective morphism of normal projective varieties
+over Q with X a threefold and Y a Q-factorial surface. Suppose f (resp. g)i sa n
+automorphism of X (resp. Y) such that g ◦ π = π ◦ f . Then Conjecture 1.1 holds
+for (X, f).
+Proof. By Corollary 3.3, we know Conjecture 1.1 holds for (Y, g).S i n c ef is birational
+and dim Y = dim X − 1, Conjecture 1.1 for (X, f) follows from Theorem 3.4. ■
+4 Endomorphisms of Kodaira Dimension 0 Threefolds: Proposition 1.7
+The goal of this brief section is to prove Conjecture 1.1 for all smooth threefolds X of
+Kodaira dimension 0 and surjective endomorphisms f with deg(f)> 1. The crux of the
+argument is a theorem of Fujimoto that it is possible to run the minimal model program
+on X while only contracting f -periodic rays.
+Proof of Proposition 1.7 By [19, Lemma 2.3], f is a finite étale cover and so χ(O
+X) =
+deg(f)χ(OX).T h e nχ(OX) = 0s i n c ed e g(f)> 1. By [19, Corollary 4.4] and its proof, we
+know that all extremal contractions ofX are of type (E1) (the inverse of the blowup along
+a smooth curve), so the minimal model of X is smooth, and f descends to a surjective
+endomorphism of a minimal model of X. The argument of [ 19] is based on a run of the
+MMP and holds over any algebraically closed field of characteristic 0, so the minimal
+model of X is defined over
+Q. By Theorem 2.2(4), the Kawaguchi–Silverman conjecture
+holds for f if and only if it holds for the induced endomorphism of the minimal model
+of X. We may therefore assume X itself is minimal.
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 29 ===
+Kawaguchi–Silverman for Hyper-Kählers 29
+The abundance conjecture is known in dimension 3 by [ 28], so KX ≡ 0. By [ 4,
+Proposition 3.1], there is a finite étale cover π : ˜X → X with ˜X = A × ∏
+i Yi × ∏
+j Zj, where
+A is an abelian variety, Yi are Calabi–Yau varieties, and Zj are hyper-Kähler manifolds
+all defined over Q. Applying Condition (3) of [4, Proposition 3.1] to f ◦π yields a map ˜f
+making the diagram
+commute. We see˜f is finite étale with deg(˜f) = deg(f). From [19, Main Theorem A] Case
+3, we know that ˜X is an abelian threefold or E × Z with E and elliptic curve and Z a
+K3 surface; the reason ˜X cannot be a Calabi–Yau threefold is that π1(X) is infinite, see
+[19,C l a i m ,p g .6 6 ] .B y[45, Theorem 1.3], Conjecture 1.1 is known for products of abelian
+varieties and K3 surfaces, so it is known for ˜f .B y[ 37, Lemma 3.2], the conjecture for f
+follows. ■
+5 Automorphisms of Calabi–Yau Threefolds: Theorem 1.8
+Proof of Theorem 1.8 We first handle case ( 1). By [ 4, Lemma 7.1] we know that
+{D ∈ Nef(X) | c2(X) · D ≤ M} is compact for all M ≥ 0. So the function D ↦→ c2(X) · D
+achieves a minimum positive value onN1(X)∩Amp(X) and this value is achieved by only
+finitely many Di. Taking the sum of these finitely many Di, we obtain an ample class
+A that is fixed by f∗. It follows that some iterate f n lies in the connected component
+of the identity Aut 0(X) ⊆ Aut(X).S i n c eX is a Calabi–Yau threefold, dim Aut 0(X) =
+dim H0(X, TX) = 0, and we conclude that f has finite order, so the conjecture holds
+vacuously.
+We now turn to case (2). Let π : X → Y be the contraction map associated withD;
+since D · c2(X) = 0, this is referred to as a c2-contraction. Oguiso shows in [42, Theorem
+4.3] that there are only finitely many c2-contractions, and so after replacing f by a
+further iterate, we can assume f∗[D] = [D]. By [ 4, Proposition 6.1(a)], we know that f
+descends to an automorphism g of Y.S i n c eD ̸= 0, we see dim Y > 0.
+Let us first suppose that dim Y = 1. By hypothesis, there is a rational point
+P ∈ X(Q) with a Zariski dense orbit under f ,s o π(P) ∈ Y has a Zariski dense orbit under
+g. As a result, Y must be rational or an elliptic curve; since X has trivial Albanese, we
+see Y ≃ P1.L e t Z ⊆ P1 be the locus of points t, where the fiber Xt is singular. Then
+g(Z) = Z.S i n c eZ is a finite set, after replacing f by a further iterate, we can assume g
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 30 ===
+30 J. Lesieutre and M. Satriano
+fixes Z point-wise. By [50, Theorem 0.2], we know that Z contains at least three points.
+It follows that g is the identity since it fixes at least three points of P1. In other words,
+there exists a rational function on X that is invariant under some iterate of f ,w h i c h
+contradicts the fact that X has a point with a dense orbit.
+The case in which dim Y = 2 is an immediate consequence of Corollary 3.5;t h a t
+Y is normal and Q-factorial is proved in [41, pg. 18].
+Finally, we handle the case, where dimY = 3, that is, D is big. Since contractions
+have connected fibers, π is birational. Then D = π∗H for some ample divisor H on
+Y.T h e nπ∗(g∗H) = f∗(π∗H) = f∗D = D = π∗H, which shows that g∗H = H,a n ds o
+λ1(g) = 1. Theorem 2.2 (4)s h o w st h a tλ1(f) = λ1(g) = 1, and the conjecture holds forf by
+Remark 2.3.
+6 Mori Fiber Spaces
+6.1 Automorphisms of threefold Mori fiber spaces: Theorem 1.10(1)
+We prove Theorem 1.10(1) after a preliminary lemma.
+Definition 6.1. A Mori fiber space is a projective morphism π : X → S such that X is
+terminal and Q-factorial, −KX is π-ample, and ρ(X/S) = 1.
+Lemma 6.2. Let π : X → S be a Mori fiber space. If f is a surjective endomorphism
+of X, then after replacing f by a suitable iterate f m, we may assume that there is an
+endomorphism g : S → S such that g ◦π = π ◦f .I f f is an automorphism then g is also
+an automorphism.
+Proof. We claim first that some iterate off maps fibers to fibers. This is a consequence
+of an observation of Wi´sniewski [51, Theorem 2.2] (see also [ 29, Exercise III.1.19]); on a
+given variety, there are only finitely manyKX -negative extremal rays on the closed cone
+of curves NE(X) yielding Mori fiber space structures.
+The existence of the map g is a consequence of the rigidity lemma [ 11, Lemma
+1.15(b)], as in the proof of Proposition2.35, since a Mori fiber space necessarily satisfies
+π∗OX = OS. ■
+Theorem 6.3. Suppose that π : X → Y is a Mori fiber space. Suppose that f : X → X
+and g : Y → Y are automorphisms with π ◦f = g ◦π. If Conjecture 1.1 holds for g,t h e n
+it holds for f .
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 31 ===
+Kawaguchi–Silverman for Hyper-Kählers 31
+Proof. Recall that the 1st relative dynamical degree is defined by
+λ1(π|f ) = limn→∞
+(
+(f n)∗H · π∗(H′ dim Y) · Hdim X−dim Y−1
+) 1/n
+.
+Here π∗(H′ dim Y) is the class of a fiber of π,a n dπ∗(H′ dim Y) · Hdim X−dim Y−1 is the class
+of some curve in the fiber. Since π is a Mori fiber space, all curves contained in fibers
+are proportional in N1(X), and since f is an automorphism defined over π, this class
+must be invariant under f . It follows that λ1(π|f ) = 1. The claim is then a consequence
+of Theorem 3.4. ■
+Proof of Theorem 1.10 (1) Let X be a threefold, f an automorphism of X,a n dπ : X → S
+a Mori fiber space structure. After replacing f by an iterate, by Lemma 6.2 we may
+assume that there is an automorphism g : S → S such that π ◦f = g ◦π.S i n c ed i mS ≤ 2
+and g is an automorphism, Conjecture 1.1 is known for (S, g), and the conjecture for
+(X, f) follows from Theorem 6.3. ■
+6.2 Endomorphisms of rational normal scrolls: Theorem 1.10 (2)
+Let C be a smooth projective curve over Q, E a vector bundle on C of rank n,a n d
+X = PC(E).B y[ 18, Theorem 9.6], the Chow group of X is given by
+A∗(X) = A∗(C)[D]/(Dn + c1(E)Dn−1 + c2(E)Dn−2 +···+ cn(E))
+= A∗(C)[D]/(Dn + c1(E)Dn−1F),
+where F is the class of a fiber. So A∗(X) is generated by the divisor classes F and D
+and we have the relations F2 = 0, FDn−1 = 1, and Dn =− c1(E)Dn−1F =− c1(E);t h e
+2nd relation holds because DF = D|F is the class of a hyperplane on F = Pn−1 and so
+FDn−1 = (D|F)n−1 = 1.
+The nef cone ofX is given by the following, which generalizes a result of Miyaoka
+[38, Theorem 3.1]. Recall that the slopeμ(E) is defined to bec1(E)/rank(E).W el e tμmin(E)
+and μmax(E) denote the minimum, resp. maximum, slope of the graded pieces appearing
+in the Harder–Narasimhan filtration of E.
+Lemma 6.4. Nef(X) is the cone generated by F and D − μmin(E)F.
+Proof. See, for example, [39, Lemma 4.4.1] or [20, Lemma 2.1]. ■
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 32 ===
+32 J. Lesieutre and M. Satriano
+Given a surjective endomorphismf of X = PC(E), in order to verify Conjecture1.1
+we may replace f by an iterate. Since the structure map π : X → C is a Mori fiber space,
+by Lemma 6.2 we can replace f by an iterate and assume that there is an endomorphism
+g of C such that π ◦ f = g ◦π. We assume we are in this situation throughout this
+section. Let
+δ:= deg(f)
+deg(g).
+Lemma 6.5. The action of f∗ on N1(X) is given by
+f∗(F) = deg(g) F, f∗(D) = (deg(g) − δ1/(n−1))μmin(E) F + δ1/(n−1) D
+and has eigenvalues λ1(g) = deg(g) and δ1/(n−1). Moreover,
+λ1(f) = max(λ1(g), δ1/(n−1)).
+Proof. It is clear that F is an eigenvector with eigenvalue deg(g) = λ1(g):s i n c eF is a
+f i b e ri ti so ft h ef o r mπ−1(P0) for a point P0 ∈ C and we have
+f∗F = f∗π∗P0 = π∗g∗P0 = π∗(deg(g)P0) = deg(g)F.
+Next, let f∗D = cF + dD. Notice that with respect to the basis F, D for N1(X),t h em a t r i x
+for f∗ is upper triangular with diagonal entries deg (g) and d. So, the eigenvalues for
+(f p)∗ are given by deg(g)p and dp.S i n c eλ1(f) = limp→∞ SpecRad((f p)∗)1/p, we seeλ1(f) =
+SpecRad(f∗) = max(deg(g), d). So, we need only show d = δ1/(n−1), that is, that deg(f) =
+dn−1 deg(g).N o t i c et h a t
+deg(f) = deg(f)Dn−1F = f∗f∗(FDn−1) = f∗(f∗F · (f∗D)n−1)
+= deg(g)f∗(F · (cF + dD)n−1) = deg(g)f∗(dn−1FDn−1) = dn−1 deg(g).
+So, we have now shown that the eigenvalues of f∗ are λ1(g) = deg(g) and δ1/(n−1),a n d
+that λ1(f) = max(λ1(g), δ1/(n−1)).
+Lastly, we must calculate c. To do so, we use Lemma 6.4. Notice that the
+determinant of the action of f∗ on N1(X) is deg(f)> 0 so the action is orientation-
+preserving. Since f is finite, for allD′ we know D′ is ample if and only iff∗D′ is ample. As
+a result, the boundary rays of Nef(X) are each sent to themselves. Thus, the eigenvectors
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 33 ===
+Kawaguchi–Silverman for Hyper-Kählers 33
+for f∗ are given byF and D− μmin(E)F. In particular,d(D− μmin(E)F) = f∗(D− μmin(E)F) =
+cF + dD − deg(g)μmin(E)F,a n ds o
+c = (deg(g) − d)μmin(E),
+proving the lemma. ■
+Proposition 6.6. One of the following holds: λ1(f) = λ1(g) or μmin(E) =− μ(E).
+Proof. From Lemma 6.5,w ek n o wf∗D = cF + dD, where c = (deg(g) − d)μmin(E) and
+d = δ1/(n−1). Recalling that Dn =− c1(E),w eh a v e
+− deg(f)c1(E) = f∗f∗(Dn) = f∗(cF + dD)n = ncdn−1 − dnc1(E).
+Substituting for c,w eh a v e
+− deg(f)c1(E) = n(deg(g) − d)μmin(E)dn−1 − dnc1(E) = n(deg(f) − dn)μmin(E) − dnc1(E)
+and so
+dn(c1(E) + nμmin(E)) = deg(f)(c1(E) + nμmin(E)).
+Thus, μmin(E) =− c1(E)/n =: −μ(E) or dn = deg(f). This latter equality is equivalent to
+d = deg(g) = λ1(g), which by Lemma 6.5, implies λ1(f) = λ1(g). ■
+We next need the following basic result concerning the Harder–Narasimhan
+filtration.
+Lemma 6.7. If E is a vector bundle that is not semistable, then μmax(E)>μ ( E)>
+μmin(E).
+Proof. Let
+0 = E0 ⊊ E1 ⊊ ··· ⊊ Eℓ−1 ⊊ Eℓ = E
+be the Harder–Narasimhan filtration of E,s ot h a t μmax(E) = μ(E1) and μmin(E) =
+μ(E/Eℓ−1). By construction, E1 is the maximal destabilizing subbundle of E,t h a ti s ,
+for all subbundles 0 ̸= F ⊆ E we have (1) μ(E1) ≥ μ(F) and (2) if μ(E1) = μ(F),t h e n
+F ⊆ E1. So, we see μ(E1) ≥ μ(E) and we cannot have equality since then we would have
+E = E1 that is not possible as E1 is semistable and E is not. We have therefore shown
+μmax(E)>μ (E).
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 34 ===
+34 J. Lesieutre and M. Satriano
+To show μ(E)>μ min(E), we induct on ℓ. We first recall the general result that
+follows immediately from the definition of slope: if
+0 → F′ → F → F′′ → 0
+is a short exact sequence of nontrivial vector bundles, then μ(F′)>μ ( F) if and only if
+μ(F)>μ (F′′).
+Since E is not semistable, we have ℓ ≥ 2. When ℓ = 2 we have a short exact
+sequence
+0 → E1 → E → E2/E1 → 0
+and since we have already shownμ(E1)>μ (E),w ek n o wμ(E)>μ (E2/E1) = μmin(E).
+Next suppose ℓ ≥ 3. Then
+0 ̸= E2/E1 ⊊ ··· ⊊ Eℓ−1/E1 ⊊ E/E1
+is the Harder–Narasimhan filtration of E/E1;i th a sl e n g t hℓ − 1 ≥ 2a n ds oE/E1 is not
+semistable. Then by induction, μ(E/E1)>μ min(E/E1) = μ(E/Eℓ−1) = μmin(E).S i n c ew e
+have shown μ(E1)>μ ( E),w ek n o wμ(E)>μ (E/E1) and so μ(E)>μ min(E). ■
+Corollary 6.8. Let C be a smooth curve. Then the following are equivalent:
+1. Conjecture 1.1 holds for all surjective endomorphisms of varieties of the
+form PC(E)
+2. Conjecture 1.1 holds for all surjective endomorphisms of varieties of the form
+PC(E) with E semistable of degree 0.
+Proof. By Proposition 6.6,w ek n o wλ1(f) = λ1(g) or μmin(E) =− μ(E). Suppose λ1(f) =
+λ1(g) and P ∈ X(Q) has a dense orbit under f .T h e nπ(P) has a dense orbit under g,
+so αg(π(P)) = λ1(g) since the conjecture is known for curves. Then Lemma 3.1 shows
+αf (P) ≥ αg(π(P)) = λ1(g) = λ1(f), and hence αf (P) = λ1(f) by Remark 2.3.
+We next turn to the case where μmin(E) =− μ(E).S i n c eX = P(E ⊗ L) for any
+line bundle L, choosing L with sufficiently negative degree, we can assume μ(E)< 0.
+If E is not semistable, then by Lemma 6.7 we have μ(E)>μ min(E) =− μ(E) that is
+a contradiction. So, E must be semistable, in which case μ(E) = μmin(E) =− μ(E),s o
+μ(E) = 0, that is, degE = 0. ■
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 35 ===
+Kawaguchi–Silverman for Hyper-Kählers 35
+We are now ready to prove Conjecture 1.1 in the case where C = P1,t h a ti s ,t h e
+case of rational normal scrolls.
+Proof of Theorem 1.10 (2) By Corollary 6.8, we need only prove the conjecture
+for semistable degree 0 vector bundles on P1. Such vector bundles are all trivial,
+so X = P1 ×Pn−1 in which case the conjecture holds by [45, Theorem 1.3]. ■
+Funding
+This work was supported by the National Science Foundation [DMS-1700898, DMS-1246844 to
+J.L.]; and the Natural Sciences and Engineering Research Council of Canada [Discovery grant
+RGPIN-2015-05631 to M.S.].
+Acknowledgments
+We thank Fei Hu for a number of helpful comments, including a method to weaken the hypotheses
+of Theorem 2.27. We are also grateful to Lawrence Ein and Mihai Fulger for useful remarks. We
+also thank the anonymous referees for their thorough reading of the paper and many helpful
+suggestions.
+References
+[1] Amerik, E. and M. Verbitsky. “Construction of automorphisms of hyperkähler manifolds.”
+Compos. Math. 153, no. 8 (2017): 1610–21.
+[2] Bayraktar, T. “Green currents for meromorphic maps of compact Kähler manifolds.” J. Geom.
+Anal. 23, no. 2 (2013): 970–98.
+[3] Beauville, A. “Variétés Kähleriennes dont la première classe de Chern est nulle.” J. Differ.
+Geom. 18, no. 4 (1983): 755–82.
+[4] Bell, J., D. Ghioca, Z. Reichstein, and M. Satriano. “On the Medvedev–Scanlon conjecture
+for minimal threefolds of non-negative Kodaira dimension.” New York J. Math. 23 (2017):
+1185–203.
+[5] Besse, A. L. “Einstein manifolds.” Classics in Mathematics. Berlin: Springer, 2008. Reprint of
+the 1987 edition. MR 2371700.
+[6] Birkar, C., P. Cascini, C. D. Hacon, and J. McKernan. “Existence of minimal models for
+varieties of log general type.” J. Amer. Math. Soc. 23, no. 2 (2010): 405–68.
+[7] Birkhoff, G. “Linear transformations with invariant cones.” Amer. Math. Monthly 74 (1967):
+274–6.
+[8] Cantat, S. “Dynamique des automorphismes des surfaces K3.” Acta Math. 187, no. 1 (2001):
+1–57.
+[9] Cantat, S. “Dynamics of automorphisms of compact complex surfaces.” Frontiers in Complex
+Dynamics , 463–514. Princeton Math. Ser. 51. Princeton, NJ: Princeton University Press,
+2014.
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 36 ===
+36 J. Lesieutre and M. Satriano
+[10] Dang, N.-B. “ Degrees of iterates of rational maps on normal projective varieties .” (2017):
+preprinthttps://arxiv.org/abs/1701.07760, 2017.
+[11] Debarre, O. Higher-dimensional Algebraic Geometry. New York: Universitext, Springer, 2001.
+[12] Dinh, T.-C. and V.-A. Nguyên. “Comparison of dynamical degrees for semi-conjugate mero-
+morphic maps.” Comment. Math. Helv. 86, no. 4 (2011): 817–40.
+[13] Dinh, T.-C., V.-A. Nguyên, and T. T. Truong. “On the dynamical degrees of meromorphic maps
+preserving a fibration.” Commun. Contemp. Math. 14, no. 6 (2012): 1250042.
+[14] Dinh, T.-C. and N. Sibony. “Green currents for holomorphic automorphisms of compact
+Kähler manifolds.” J. Amer. Math. Soc. 18, no. 2 (2005): 291–312.
+[15] Dinh, T.-C. and N. Sibony. “Une borne supérieure pour l’entropie topologique d’une applica-
+tion rationnelle.” Ann. of Math. (2) 161, no. 3 (2005): 1637–44.
+[16] Ein, L., R. Lazarsfeld, M. Musta¸ t ˘a, M. Nakamaye, and M. Popa. “Asymptotic invariants of
+base loci.” Ann. Inst. Fourier (Grenoble) 56, no. 6 (2006): 1701–34.
+[17] Ein, L., R. Lazarsfeld, M. Musta¸ t ˘a, M. Nakamaye, and M. Popa. “Restricted volumes and base
+loci of linear series.” Amer. J. Math. 131, no. 3 (2009): 607–51.
+[18] Eisenbud, D. and J. Harris. 3264 and All That—A Second Course in Algebraic Geometry .
+Cambridge: Cambridge University Press, 2016. MR 3617981.
+[19] Fujimoto, Y. “Endomorphisms of smooth projective 3-folds with non-negative Kodaira
+dimension.” Publ. Res. Inst. Math. Sci. 38, no. 1 (2002): 33–92.
+[20] Fulger, M. “The cones of effective cycles on projective bundles over curves.” Math. Z. 269,
+nos. 1–2 (2011): 449–59.
+[21] Gross, M., D. Huybrechts, and D. Joyce. Calabi–Yau Manifolds and Related Geometries .
+Berlin: Universitext, Springer, 2003. Lectures from the Summer School held in Nordfjordeid,
+June 2001.
+[22] Hindry, M. and J. H. Silverman. “Diophantine geometry.” Graduate Texts in Mathematics
+201. New York: Springer,2000. MR 1745599.
+[23] Kawaguchi, S. “Projective surface automorphisms of positive topological entropy from an
+arithmetic viewpoint.” Amer. J. Math. 130, no. 1 (2008): 159–86.
+[24] Kawaguchi, S. and J. H. Silverman. “Examples of dynamical degree equals arithmetic degree.”
+Michigan Math. J. 63, no. 1 (2014): 41–63.
+[25] Kawaguchi, S. and J. H. Silverman. “Dynamical canonical heights for Jordan blocks,
+arithmetic degrees of orbits, and nef canonical heights on abelian varieties.” Trans. Amer.
+Math. Soc. 368, no. 7 (2016): 5009–35.
+[26] Kawaguchi, S. and J. H. Silverman. “On the dynamical and arithmetic degrees of rational
+self-maps of algebraic varieties.” J. Reine Angew. Math. 713 (2016): 21–48.
+[27] Kawamata, Y. “Characterization of abelian varieties.” Compos. Math. 43, no. 2 (1981): 253–76.
+[28] Kawamata, Y. “Abundance theorem for minimal threefolds.” Invent. Math. 108, no. 2 (1992):
+229–46.
+[29] Kollár, J. “Rational curves on algebraic varieties.” Ergeb. Math. Grenzgeb. (3) Folge. AS e r i e s
+of Modern Surveys in Mathematics Results in Mathematics and Related Areas. 3rd Series .
+A Series of Modern Surveys in Mathematics 32. Berlin: Springer, 1996.
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 37 ===
+Kawaguchi–Silverman for Hyper-Kählers 37
+[30] Kollár, J. and S. Mori. Birational Geometry of Algebraic Varieties. Cambridge Tracts in Math.
+134. Cambridge: Cambridge Univ. Press, 1998. With the collaboration of C. H. Clemens and
+A. Corti. Translated from the 1998 Japanese original.
+[31] Lazarsfeld, R. Positivity in algebraic geometry. I. Berlin: Springer, 2004.
+[32] Lazic, V., K. Oguiso, and T. Peternell. “Nef line bundles on Calabi–Yau threefolds, I.” Int.
+Math. Res. Not. IMRN (2018). https://doi.org/10.1093/imrn/rny191.
+[33] Lo Bianco, F. “ On the cohomological action of automorphisms of compact Kähler three-
+folds.” (2017): preprint https://arxiv.org/abs/1712.08453.
+[34] Lo Bianco, F. “On the primitivity of birational transformations of irreducible holomorphic
+symplectic manifolds.” Int. Math. Res. Not. IMRN 2019, no. 1 (2019): 1–32.
+[35] Matsuki, K. Introduction to the Mori Program. New York: Universitext, Springer, 2002.
+[36] Matsuzawa, Y. “ On upper bounds of arithmetic degrees.” (2017): preprint https://arxiv.org/
+abs/1606.00598.
+[37] Matsuzawa, Y., K. Sano, and T. Shibata. “Arithmetic degrees and dynamical degrees of
+endomorphisms on surfaces.”Algebra Number Theory12, no. 7 (2018): 1635–57. MR 3871505.
+[38] Miyaoka, Y. “The Chern classes and Kodaira dimension of a minimal variety.” Algebraic
+Geometry, Sendai, 1985, pp. 449–476. Adv. Stud. Pure Math. 10. North-Holland, Amsterdam,
+1987. MR 946247.
+[39] Nakayama, N. Zariski-decomposition and Abundance. MSJ Mem. 14. Tokyo: Mathematical
+Society of Japan, 2004.
+[40] Nakayama, N. and D.-Q. Zhang. “Building blocks of étale endomorphisms of complex
+projective manifolds.” Proc. Lond. Math. Soc. (3) 99, no. 3 (2009): 725–56.
+[41] Oguiso, K. “On algebraic fiber space structures on a Calabi–Yau 3-fold.” Int. J. Math. 4, no. 3
+(1993): 439–65. With an appendix by Noboru Nakayama.
+[42] Oguiso, K. “On the finiteness of fiber-space structures on a Calabi–Yau 3-fold.” J. Math. Sci.
+( N.Y.) 106, no. 5 (2001): 3320–3335. Algebraic geometry, 11.
+[43] Oguiso, K. “A remark on dynamical degrees of automorphisms of hyperkähler manifolds.”
+Manuscripta Math. 130, no. 1 (2009): 101–11.
+[44] Oguiso, K. “Automorphism groups of Calabi–Yau manifolds of Picard number 2.” J. Algebraic
+Geom. 23, no. 4 (2014): 775–95.
+[45] Sano, K. “ Dynamical degree and arithmetic degree of endomorphisms on product varieties.”
+(2016): preprint https://arxiv.org/pdf/1604.04174.pdf.
+[46] Shibata, T. “Ample canonical heights for endomorphisms on projective varieties.” (2017):
+preprint https://arxiv.org/abs/1710.05278.
+[47] Silverman, J. H. “Rational points on K3 surfaces: a new canonical height.”Invent. Math. 105,
+no. 2 (1991): 347–73.
+[48] .Silverman, J. H. “Arithmetic and dynamical degrees on abelian varieties.” J. Théor. Nombres
+Bordeaux 29, no. 1 (2017): 151–67.
+[49] Truong, T. “ (Relative) dynamical degrees of rational maps over an algebraic closed field .”
+(2015): preprint https://arxiv.org/abs/1501.01523.
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019
+
+
+=== PDF PAGE 38 ===
+38 J. Lesieutre and M. Satriano
+[50] Viehweg, E. and K. Zuo. “On the isotriviality of families of projective manifolds over curves.”
+J. Algebraic Geom. 10, no. 4 (2001): 781–99.
+[51] Wi ´sniewski, J. “On contractions of extremal rays of Fano manifolds.”J. Reine Angew. Math.
+no. 417 (1991): 141–58.
+[52] Junyi, X. “Periodic points of birational transformations on projective surfaces.” Duke Math.
+J. 164, no. 5 (2015): 903–32.
+[53] Zhang, D.-Q. “Dynamics of automorphisms on projective complex manifolds.” J. Differ. Geom.
+82, no. 3 (2009): 691–722.
+[54] Zhang, D.-Q. “Birational automorphism groups of projective varieties of Picard number two.”
+Automorphisms in Birational and Affine Geometry , 231–8. Springer Proc. Math. Stat. 79.
+Cham: Springer, 2014.
+Downloaded from https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnz067/5424982 by University of Waterloo Porter Library, Matthew Satriano on 18 April 2019

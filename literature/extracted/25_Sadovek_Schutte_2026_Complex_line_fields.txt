@@ -1,0 +1,3108 @@
+=== PDF PAGE 1 ===
+Mathematische Annalen (2026) 395:46
+https://doi.org/10.1007/s00208-026-03440-6 Mathematische Annalen
+Complex line ﬁelds on almost-complex manifolds
+Nikola Sadovek 1 · Baylee Schutte 2
+Received: 31 January 2025 / Revised: 20 January 2026 / Accepted: 9 March 2026 /
+Published online: 30 April 2026
+© The Author(s) 2026
+Abstract
+We study linearly independent complex line ﬁelds on almost-complex manifolds,
+which is a topic of long-standing interest in differential topology and complex geome-
+try. A necessary condition for the existence of such ﬁelds is the vanishing of appropriate
+virtual Chern classes. We prove that this condition is also sufﬁcient for the existence
+of one, two, or three linearly independent complex line ﬁelds over certain manifolds.
+More generally, our results hold for a wider class of complex bundles over CW com-
+plexes.
+Mathematics Subject Classiﬁcation Primary 55S40 · 32Q60; Secondary 55S35 ·
+57R20 · 55S45
+Contents
+1 Introduction ............................................. 2
+History and related work ....................................... 3
+Organization ............................................. 5
+2 Application .............................................. 6
+3 Main theorems ............................................ 7
+3.1 Splitting off a single complex line bundle ........................... 8
+3.2 Splitting off two complex line bundles ............................. 8
+3.3 Splitting off three complex line bundles ............................ 1 0
+4 Preliminaries ............................................. 1 1
+4.1 Some essentials of Moore–Postnikov theory .......................... 1 2
+4.2 A lemma about homotopy ﬁbers ................................ 1 4
+4.3 Cohomology of certain Eilenberg–MacLane spaces ...................... 1 4
+4.4 Some homotopy groups of complex Stiefel manifolds ..................... 1 7
+4.5 Relevant cohomology rings ................................... 1 8
+B Nikola Sadovek
+sadovek@mpi-cbg.de
+Baylee Schutte
+bschutte@zedat.fu-berlin.de; bayleeschutte.math@gmail.com
+1 Max Planck Institute of Molecular Cell Biology and Genetics, Center for Systems Biology
+Dresden, Faculty of Mathematics, Technische Universität Dresden, Dresden, Germany
+2 Institute of Mathematics, Freie Universität Berlin, Berlin, Germany
+123
+
+=== PDF PAGE 2 ===
+46 Page 2 of 67 N. Sadovek, B. Schutte
+5 The lifting problem and the primary obstruction .......................... 2 0
+6 Two complex line bundles: m odd .................................. 2 6
+6.1 The primary obstruction ..................................... 2 6
+6.2 The generalized secondary obstruction ............................. 2 6
+7 Two complex line bundles: m even ................................. 3 3
+7.1 The primary obstruction ..................................... 3 4
+7.2 The generalized secondary obstruction ............................. 3 4
+7.3 The generalized tertiary obstruction .............................. 3 7
+8 Three complex line bundles: m even ................................. 4 0
+8.1 The primary obstruction ..................................... 4 1
+8.2 The generalized secondary obstruction ............................. 4 1
+8.3 The generalized tertiary obstruction .............................. 4 2
+8.4 The generalized quaternary obstruction ............................. 5 0
+9 Three complex line bundles: m odd ................................. 5 4
+9.1 The primary obstruction ..................................... 5 5
+9.2 The generalized secondary obstruction ............................. 5 6
+9.3 The generalized tertiary obstruction .............................. 5 6
+9.4 The generalized quaternary obstruction ............................. 5 6
+9.5 The generalized quinary obstruction .............................. 6 3
+References ................................................ 6 6
+1 Introduction
+Let ξbe a complex vector bundle of rank m ≥ 1 over a 2m-dimensional CW complex
+X . For an integer 1 ≤ r ≤ m and line bundles ℓ1,...,ℓ r over X , the Whitney
+sum formula for Chern classes provides a necessary cohomological condition for the
+existence of an embedding of ℓ1 ⊕···⊕ ℓr into ξ. By way of elaboration, such an
+embedding is equivalent to the existence of an isomorphism ξ ∼= ℓ1 ⊕···⊕ ℓr ⊕
+η, for some rank m − r bundle η. Hence the total Chern class factors as c(ξ) =
+c(ℓ1)··· c(ℓr )c(η)∈ H∗(X; Z), and we deduce that
+ℓ1 ⊕···⊕ ℓr ⊆ ξ /equal1⇒c(ξ)= c(ℓ1)··· c(ℓr )x ∈ H∗(X; Z), for some x ∈ H≤2(m−r)(X; Z). (1)
+A priori, it is unclear if the right hand side of ( 1) is also a sufﬁcient condition, which
+leads to the following fundamental question:
+Question 1.1 Is there an algebraic condition that ensures the existence of an embedding
+of ℓ1 ⊕···⊕ ℓr into ξ? Speciﬁcally, does the inverse implication of (1) hold, possibly
+under certain assumptions on X ?
+As the main result of this paper, we use Moore–Postnikov theory to positively
+answer Question 1.1,f o r r ≤ 3, with the proviso that we make certain assumptions
+about the base space X . Namely, for certain X , we prove that the implication in ( 1)i s
+an equivalence. Thus, in some sense, we obtain an equivalence between the geometric
+world (i.e. the existence of line bundle embeddings) and the algebraic world (i.e.
+Chern classes). We summarize our main result below, but we state our results in full
+generality (that is, under milder conditions on the base space) in Sect. 3.
+Theorem 1.2 (Main theorem) Let M be a smooth closed connected 2m-manifold and
+ξ a complex m-plane bundle over M.
+123
+
+=== PDF PAGE 3 ===
+Complex line ﬁelds on almost-complex manifolds Page 3 of 67 46
+(I) Suppose that m ≥ 1.I f ℓ is a complex line bundle over M, then
+ℓ ⊆ ξ ⇐⇒ c(ξ)= c(ℓ) ∪ x ∈ H∗(M; Z), for some x ∈ H≤2(m− 1)(M; Z).
+(II) Suppose that m ≥ 3. If m is even, assume that w2(M) ̸= 0. Then
+ℓ1 ⊕ ℓ2 ⊆ ξ ⇐⇒ c(ξ)= c(ℓ1) ∪ c(ℓ2) ∪ x ∈ H∗(M; Z),
+for some x ∈ H≤2(m− 2)(M; Z).
+(III) Suppose that m ≥ 5, π1(M) = 0, and H2(M; Z) has no 2-torsion. If m is
+odd, assume that H2m− 2(M; Z/2) = Sq 2 H2m− 4(M; Z/2) and H3(M; Z) = 0.
+Then
+ℓ1 ⊕ ℓ2 ⊕ ℓ3 ⊆ ξ ⇐⇒ c(ξ)= c(ℓ1) ∪ c(ℓ2) ∪ c(ℓ3) ∪ x ∈ H∗(M; Z),
+for some x ∈ H≤2(m− 3)(M; Z).
+It is readily seen that the assumptions on the base space in Theorem 1.2 are satis-
+ﬁed for e.g., complex projective spaces of appropriate dimension. Therefore, complex
+projective spaces represent a ﬁrst family of examples for which our results hold. More-
+over, coupled with the Schwarzenberger condition [39, Theorem A]—which provides
+a description of the total Chern class of complex m-plane bundles over CPm —our
+work reﬁnes the understanding of the extent to which complex vector bundles over
+CPm with certain line bundle splitting properties are described by their Chern classes.
+For a precise statement, see Theorem 2.1.
+History and related work
+When the ℓi are all trivial line bundles ε1 : C → C× X → X , Question 1.1 has been
+extensively studied. Hopf’s theorem for almost-complex manifolds is a ﬁrst example
+where purely algebraic data (e.g., cohomological invariants) completely characterizes
+some geometric property (e.g., non-vanishing vector ﬁelds). Recall that a smooth
+2m-manifold is almost-complex if the tangent bundle TM of M is isomorphic to the
+underlying real bundle ω
+R of some complex m-plane bundle ω over M.L e t X = M
+be an almost-complex 2 m-manifold and ξ = TM the corresponding tangent bundle.
+Recalling that the top Chern class of an almost-complex manifold is equal to the Euler
+class, Hopf’s theorem states that the Euler characteristic χ(M) of M determines the
+existence of a nonvanishing complex vector ﬁeld on M,s e e[14]. For example, notice
+that the almost-complex spheres Si ,f o r i = 2, 6, and complex projective spaces
+CPn ,f o r n ≥ 0, have zero complex span by virtue of their non-vanishing Euler
+characteristics.
+More generally, the search for cohomological conditions guaranteeing the existence
+of linearly independent sections of real vector bundles has a rich history, as surveyed
+for example in [ 17, 30, 38]. In this case, for 1 ≤ r ≤ m, the implication ( 1) takes the
+123
+
+=== PDF PAGE 4 ===
+46 Page 4 of 67 N. Sadovek, B. Schutte
+following form:
+εr ⊆ ξ /equal1⇒cm(ξ)=···= cm+1−r (ξ)= 0. (2)
+Hence the Chern classes of ξobstruct the existence of r linearly independent sections
+of ξ. The above leads to the study of a numerical invariant of ξ call the (complex)
+span, deﬁned as
+spanC(ξ):= max{r ∈ Z≥0 | εr ⊆ ξ}.
+In the complex case, when m ≥ 3 is odd, Thomas [ 36, Corollary 3.6] proved that
+spanC(M) ≥ 2 if and only if cm(M) = cm− 1(M) = 0. In the case that m ≥ 3 is even,
+he proved in [ 37, Theorem 1.5] that cm(ξ) = cm− 1(ξ) = cm− 2(ξ) = 0 is a sufﬁcient
+condition for span C(M) ≥ 2. Additionally, Thomas [ 34, Corollary 1.6] obtained a
+slightly weaker version of a result by Gilmore [ 10, Theorem 1], who proved that
+spanC(M) ≥ 3 ⇐⇒ cm− 2(M) = cm− 1(M) = cm(M) = 0,
+where m ≥ 6 is an even integer, M is simply connected, and H 2(M; Z) has no 2-
+torsion. Furthermore, Gilmore [ 10, Theorems 2 & 3] identiﬁed situations in which
+there exist necessary and sufﬁcient conditions for span C(M) ≥ 4 or 5. As noted in
+Sect. 3, the main results of this paper not only specialize to recover several of these
+classically known facts, but also yield a new result about the complex span of non-spin
+almost-complex manifolds, see Corollary 3.7.
+We also mention recent work of Nguyen [ 27], who deﬁned certain cobordism
+obstructions whose vanishing dictates whether or not a given almost-complex manifold
+is “complex section cobordant” to an almost-complex manifold with complex span at
+least r > 0.
+Chieﬂy, this paper furthers the examination of the “projectivization” of span ini-
+tiated by Grant and the second author in [ 12]. Indeed, we study another numerical
+invariant of ξ called the (complex) projective span, deﬁned as
+pspanC(ξ):= max
+⎧
+⎨
+⎩ r ∈ Z≥0 | there exists complex line bundles {ℓi }r
+i=1 such that
+r⨁
+i=1
+ℓi ⊆ ξ
+⎫
+⎬
+⎭ .
+In the language of sections, since a line subbundle of ξ: Cm → E → X can be
+identiﬁed with a section of the projectivization P(ξ): CPm− 1 → P(E) → X of ξ,
+we surmise that the value of pspan C(ξ) represents the maximal number of linearly
+independent sections of P(ξ). Of particular interest in this paper is the case when
+X = M is a smooth 2 m-dimensional almost-complex manifold and ξ = TM its
+tangent bundle. In this case, a complex line subbundle ℓ ⊆ TM , or equivalently a
+smooth section of the projectivized tangent bundle PTM , is called a complex line ﬁeld
+on M.
+For example, it follows from a theorem of Glover–Homer–Stong [ 11, Theorem
+1.1(ii)] that
+pspanC(T CP2k) = 0 and pspan C(T CP2k+1) = 1,
+123
+
+=== PDF PAGE 5 ===
+Complex line ﬁelds on almost-complex manifolds Page 5 of 67 46
+for CPn equipped with its standard almost-complex structure. Note however that
+complex projective spaces are stably line element parallelizable. That is,
+pspanC(T CPn ⊕ ε1) = n,
+for all n,s e e[ 24, p. 170].
+We brieﬂy discuss key research related to real projective span. For more information,
+we suggest the introduction of [ 12], where Grant and the second author compute the
+real projective span of all the Wall manifolds. It is a classical result due to Markus
+[22] and Samelson [ 29] that the real projective span of a smooth manifold is strictly
+greater than zero if and only if the Euler characteristic vanishes. In agreeable situations,
+necessary and sufﬁcient conditions for the existence of monomorphisms α↪−→ β of
+vector bundles over a real (non)orientable smooth manifold were identiﬁed by Mello
+[5], for rank (α) = 2, and Mello–da Silva [ 23], for rank (α) = 3. The former inquiry
+utilizes obstruction theory while the latter appeals to Koschorke’s [18] normal bordism
+and singularity theory; principally, however, one may extract information about real
+projective span from these results. Further work on decompositions of real vector
+bundles using obstruction theory was carried out by Leslie–Y ue [ 21]. When it comes
+to complex projective span, we can mention the work of Iberkleid [ 16, Theorem
+3.4], who proved that an almost-complex 2 m-manifold M is unoriented cobordant to
+an almost-complex 2 m-manifold N with pspan
+C(N) = m if and only if the Euler
+characteristic χ(M) is even.
+Notice that if ξis a complex m-plane bundle with spanC(ξ)≥ r , then spanR(ξR) ≥
+2r because the underlying real bundle of a trivial complex line bundle is itself trivial.
+However, if pspanC(ξ) ≥ r, it is not generally true that pspan R(ξR) ≥ 2r since the
+underlying real bundle of a nontrivial complex line bundle may not split into two
+real line bundles (take for example the Hopf line bundle over complex projective
+space). Moreover, Koschorke [19] studies the relationship between the existence and
+homotopy classiﬁcation theories of embeddings ζ↪ −→ C η of complex bundles and
+embeddings ζR ↪−→ R ηR of the underlying real bundles—see in particular [ 19,§ 4
+Complex line ﬁelds vs. real plane ﬁelds]. Especially of note, he gives examples of
+complex line bundles α over S1 × S1 × S2n , where n > 2, for which there exist
+inﬁnitely many real embeddings αR ↪−→ R βR not homotopic to complex embeddings
+α↪−→ C β, for certain β [19, Example 4.10].
+To conclude, since a one-dimensional complex subbundle of the tangent bundle of
+a compact connected complex manifold is tangent to a holomorphic one-dimensional
+foliation, our results may interact with Kähler geometry. More speciﬁcally, suppose
+that M is a compact connected Kähler manifold with pspan
+C(M) ≥ r ,f o rs o m er > 0.
+Then [3] relates the splitting of the tangent bundle of M with splitting properties of
+the universal cover of M.
+Organization
+The remainder of the paper is organized as follows. In Sect. 2 we provide the ﬁrst
+example of Theorem 1.2 in the case of complex projective spaces. Then we state our
+123
+
+=== PDF PAGE 6 ===
+46 Page 6 of 67 N. Sadovek, B. Schutte
+main results in complete detail in Sect.3. Next, we recall in Sect.4 some basic elements
+of Moore–Postnikov theory as well as various classical results needed throughout the
+paper. We formulate the appropriate lifting problem in Sect. 5, where we compute the
+primary obstruction to splitting off r -line bundles. Finally, Sects. 6–7 and 8–9 contain
+the largest parts of our proofs, which make use of Moore–Postnikov theory. Due to
+considerable technical differences, we treat the cases of splitting off two and three line
+bundles separately.
+2 Application
+In this section, we apply our main result, Theorem 1.2, to the case of complex m-plane
+bundles ξover the complex projective space CPm . For integers c1,..., cm and a class
+c := 1+c1u+c2u2 +···+ cm um ∈ H∗(CPm; Z) ∼= Z[u]/(um+1), where |u|= 2,
+(3)
+the Schwarzenberger condition [ 39, Theorem A] detects whether c is the total Chern
+class of a complex m-bundle over CPm . More speciﬁcally, the class c factors as
+c = (1 + z1u)··· (1 + zm u) ∈ C[u], for some z1,··· , zm ∈ C.
+The Schwarzenberger condition says that c is the total Chern class of a complex vector
+bundle over CPm if and only if
+( z1
+k
+)
++···+
+( zm
+k
+)
+∈ Z, for all k = 2,..., m. (4)
+Here
+( z
+k
+)
+= z(z − 1)...( z − k + 1)/k!∈ C,f o rz ∈ C. Using this notation, we provide
+a complete description of the cohomology classes in H ∗(CPm; Z) which are the total
+Chern classes of complex m-bundles over CPm admitting a sum of at most three line
+bundles as a subbundle.
+Theorem 2.1 Let m ≥ 1 and r ≤ 3 be integers. Further let ℓ1,...,ℓ r be given line
+bundles over CPm with total Chern classes c (ℓi) = 1 + zi u ∈ H∗(CPm; Z), where
+zi ∈ Z.F o rm > 2r − 1, the class
+c := (1 + z1u)··· (1 + zr u)(1 + zr+1u)··· (1 + zm u) ∈ C[u],
+for some z r+1,..., zm ∈ C,
+is the total Chern class of a complex m-plane bundle ξover CPm for which ℓ1 ⊕···⊕
+ℓr ⊆ ξ if and only if
+( zr+1
+k
+)
++···+
+( zm
+k
+)
+∈ Z, for all k = 2,..., m.
+123
+
+=== PDF PAGE 7 ===
+Complex line ﬁelds on almost-complex manifolds Page 7 of 67 46
+Proof The claim follows by applying the Schwarzenberger condition (4) and Theorem
+1.2. To be able to apply the theorem, we verify the conditions.
+If m is even, we havec(CPm) = (1+u)m+1 ∈ H∗(CPm; Z),s o c1(CPm) = m+1.
+Thus, the mod 2 reduction ofc1(CPm) is non-zero in H2(CPm; Z/2), so the condition
+in Theorem 1.2 (II) is satisﬁed.
+Next, CPm is simply connected and H 2(CPm; Z) ∼= Z does not have 2-torsion.
+Moreover, if m is odd, Steenrod square acts on the mod 2 reduction of the generator
+um− 2 ∈ H2m− 4(CPm; Z) by the rule
+Sq 2(um− 2) = (m − 2)um− 1 ̸= 0 ∈ H2m− 2(CPm; Z/2).
+We conclude that the conditions in Theorem 1.2 (III) are also satisﬁed, which ﬁnishes
+the proof. ⊓⊔
+3 Main theorems
+In this section, we state the most comprehensive form of our main results. Due to
+technical differences, we split the statements according to the parity of the complex
+rank.
+Let X be a ﬁnite 2m-dimensional CW complex. For a rank m complex bundleξand
+line bundlesℓ1,...,ℓ r over X , the total Chern class of the stable bundleξ−ℓ1⊕···⊕ ℓr
+is given by
+c(ξ− ℓ1 ⊕···⊕ ℓr ) = c(ξ)· c(ℓ1)− 1 · ... · c(ℓr )− 1 ∈ H∗(X; Z).
+Notice that c(ℓi) = 1 + c1(ℓi) is indeed invertible with c(ℓi)− 1 = ∑
+j≥0(− c1(ℓi)) j
+since c1(ℓi) is nilpotent. In other words, we can write the the n-th virtual Chern class
+as
+cn(ξ− ℓ1 ⊕···⊕ ℓr ) =
+n∑
+j=0
+cn− j(ξ)h j(− c1(ℓ1), . . . ,− c1(ℓr )), for n ≥ 0,
+where h j denotes the complete homogeneous symmetric polynomial of degree j.
+That is, there is always a factorization c(ξ) = c(ℓ1)··· c(ℓr )x ∈ H∗(X; Z), where
+x = c(ξ− ℓ1 ⊕···⊕ ℓr ). Moreover, in view of ( 1) and Question 1.1,i fw ea r eg i v e n
+such a factorization of c(ξ), then x ∈ H≤2(m−r)(X; Z) if and only if
+cm−r+1(ξ− ℓ1 ⊕···⊕ ℓr ) =···= cm(ξ− ℓ1 ⊕···⊕ ℓr ) = 0 ∈ H∗(X; Z).
+In the rest of the section, we will formulate our main results for splitting off up to
+three line bundles in terms of the vanishing of the aforementioned top virtual Chern
+classes.
+123
+
+=== PDF PAGE 8 ===
+46 Page 8 of 67 N. Sadovek, B. Schutte
+3.1 Splitting off a single complex line bundle
+We state a generalization of the complex analogue of Hopf’s theorem, which states
+that the Euler characteristic χ(M) of a manifold M determines the existence of a
+non-vanishing vector ﬁeld on M. Our result also provides a necessary and sufﬁcient
+condition for pspan C(ξ)≥ 1.
+Proposition 3.1 Let ξbe a rank m complex vector bundle over a 2m-dimensional CW
+complex X , where m ≥ 1. If ℓ is a complex line bundle over M, then
+ℓ embeds in ξ if and only if c m(ξ− ℓ) = 0.
+In particular , if X is an almost-complex manifold M, then spanC(M) ≥ 1 if and only
+if the Euler characteristic χ(M) of M vanishes.
+3.2 Splitting off two complex line bundles
+In this section we state necessary and sufﬁcient conditions for splitting off two complex
+line bundles from a complex vector bundle, thus providing (under certain restrictions)
+necessary and sufﬁcient conditions for pspan C(ξ)≥ 2. In what follows,
+ρk : H∗(X; Z) → H∗(X; Z/k)
+will denote the map induced by reduction mod k (see also Sect. 4); also, we write δ
+for the Bockstein associated to the coefﬁcient sequence 0 → Z → Z → Z/2 → 0,
+c.f., Notation 4.6(ii).
+We ﬁrst consider the case when the complex rank of the bundle is odd.
+Theorem 3.2 Let X be a CW complex of dimension2m, where m ≥ 3 is an odd integer .
+Let ξbe a complex m-plane bundle over X and let ℓ1,ℓ 2 be complex line bundles over
+X.
+(i) Suppose that H2m(X; Z) = δSq 2ρ2 H2m− 3(X; Z). Then
+ℓ1 ⊕ ℓ2 embeds in ξ if and only if c m− 1(ξ− ℓ1 ⊕ ℓ2) = 0.
+(ii) Suppose that H2m(X; Z) has no 2-torsion. Then
+ℓ1 ⊕ ℓ2 embeds in ξ if and only if c m+1− i(ξ− ℓ1 ⊕ ℓ2) = 0, for i = 1, 2.
+In the case of a manifold, the following is a direct application of Theorem 3.2(ii).
+Corollary 3.3 Let M be a smooth closed connected manifold of dimension 2m with
+an almost-complex structure, where m ≥ 3 is an odd integer . Let T M be the tangent
+bundle of M and let ℓ1,ℓ 2 be complex line bundles over M . Then
+ℓ1 ⊕ ℓ2 embeds in T M if and only if c m+1− i(TM − ℓ1 ⊕ ℓ2) = 0, for i = 1, 2.
+123
+
+=== PDF PAGE 9 ===
+Complex line ﬁelds on almost-complex manifolds Page 9 of 67 46
+Moreover, taking ℓ1 and ℓ2 to be trivial complex line bundles, Theorem 3.2 spe-
+cializes to a result about complex span of manifolds, recovering [ 36, Corollary 3.6, p.
+192].
+Corollary 3.4 Let M be a smooth closed connected manifold of dimension 2m with an
+almost-complex structure, where m ≥ 3 is an odd integer . Then
+spanC(M) ≥ 2 if and only if c m+1− i(M) = 0, for i = 1, 2.
+We now state our results in the case when the complex rank of the bundle is even.
+Theorem 3.5 Let X be a CW complex of dimension 2m, where m ≥ 3 is an even
+integer . Letξ be a complex m-plane bundle over X and let ℓ1,ℓ 2 be complex line
+bundles over X . Suppose that
+• H2m− 1(X; Z/2) = Sq 2ρ2 H2m− 3(X; Z);
+• H2m(X; Z/2) = Sq 2 H2m− 2(X; Z/2); and
+• H2m(X; Z) has no 2-torsion.
+Then
+ℓ1 ⊕ ℓ2 embeds in ξ if and only if c m+1− i(ξ− ℓ1 ⊕ ℓ2) = 0, for i = 1, 2.
+In the case of a manifold, we have the following simpler statement.
+Corollary 3.6 Let M be a smooth closed simply-connected manifold of dimension 2m
+with an almost-complex structure, where m ≥ 3 is an even integer . Fix line bundles
+ℓ1,ℓ 2 over M. If w2(M) ̸= 0, then
+ℓ1 ⊕ ℓ2 embeds in T M if and only if c m+1− i(TM − ℓ1 ⊕ ℓ2) = 0, for i = 1, 2.
+Proof Poincaré duality and the connectivity assumption yield H 2m− 1(M; Z/2) ∼=
+H1(M; Z/2) ∼= 0, so the ﬁrst condition in Theorem 3.5 holds. We have that Sq 2 x =
+v2(M)x for all x ∈ H2m− 2(M; Z/2), where v2(M) ∈ H2(M; Z/2) is the second
+Wu class of M. But M is orientable by assumption, so v2(M) = w2(M). Hence by
+Theorem 3.5, we require that
+Sq 2 H2m− 2(M; Z/2) = w2(M) H2m− 2(M; Z/2)
+is isomorphic to H 2m(M; Z/2) ∼= Z/2; but this happens precisely when w2(M) ̸= 0.
+Lastly, since H2m(M; Z) is torsion free, the corollary follows. ⊓⊔
+Moreover, takingℓ1 and ℓ2 to be trivial complex line bundles, Theorem 3.5 special-
+izes to a (seemingly new) result about the complex span of non-spin almost-complex
+manifolds.
+Corollary 3.7 Let M be a smooth closed simply-connected manifold of dimension 2m
+with an almost-complex structure, where m ≥ 3 is an even integer . If w2(M) ̸= 0,
+then
+spanC(M) ≥ 2 if and only if c m+1− i(M) = 0, for i = 1, 2.
+123
+
+=== PDF PAGE 10 ===
+46 Page 10 of 67 N. Sadovek, B. Schutte
+3.3 Splitting off three complex line bundles
+In this section we state necessary and sufﬁcient conditions for splitting off three com-
+plex line bundles from a complex vector bundle. We ﬁrst consider the case of bundles
+with even complex rank.
+In what follows, we will denote by π2m− 2 the (2m − 2)-th homotopy group of the
+Stiefel manifold W(m, 3). By Table ( 7), the group π2m− 2 is ﬁnite abelian with order
+dividing 12, so 12/|π2m− 2|∈ Z.
+Theorem 3.8 Let X be a CW complex of dimension 2m, where m ≥ 5 is an even
+integer . Letξ be a complex m-plane bundle over X and let ℓ1,ℓ 2,ℓ 3 be complex line
+bundles over X .
+(I) Suppose that the following conditions (i)–(iii) hold.
+(i) H 2m− 2(X; Z) = δSq 2ρ2 H2m− 5(X; Z);
+(ii) One of the following conditions (a)–(d) holds:
+(a) m ≡ 0m o d8 and H2m− 1(X; Z/4) = 0;o r
+(b) m ≡ 2m o d8 ;o r
+(c) m ≡ 4m o d8 and H2m− 1(X; Z/2) = 0;o r
+(d) m ≡ 6m o d8 .
+(iii) H 2m(X; Z) has no n-torsion for n = 12/|π2m− 2|∈ Z.
+Then
+ℓ1 ⊕ ℓ2 ⊕ ℓ3 embeds in ξ if and only if c m+1− i(ξ− ℓ1 ⊕ ℓ2 ⊕ ℓ3) = 0,
+for i = 1, 3.
+(II) Suppose that the following conditions (i)–(iii) hold.
+(i) H 2m− 2(X; Z) has no 2-torsion;
+(ii) One of the following conditions (a)–(d) holds:
+(a) m ≡ 0m o d8 and H2m− 1(X; Z/4) = 0;o r
+(b) m ≡ 2m o d8 ;o r
+(c) m ≡ 4m o d8 and H2m− 1(X; Z/2) = 0;o r
+(d) m ≡ 6m o d8 .
+(iii) H 2m(X; Z) has no n-torsion for n = 12/|π2m− 2|∈ Z.
+Then
+ℓ1 ⊕ ℓ2 ⊕ ℓ3 embeds in ξ if and only if c m+1− i(ξ− ℓ1 ⊕ ℓ2 ⊕ ℓ3) = 0,
+for i = 1, 2, 3.
+We note that Theorem 3.8(II) specializes to recover a result about the complex span
+of manifolds in [ 10, Theorem 1 & Corollary, p. 633].
+Corollary 3.9 Let M be a smooth closed manifold of dimension 2m with an almost-
+complex structure, where m ≥ 5 is even. Further let ℓ1,ℓ 2,ℓ 3 be complex line bundles
+over M.
+123
+
+=== PDF PAGE 11 ===
+Complex line ﬁelds on almost-complex manifolds Page 11 of 67 46
+(i) Suppose that m ≡ 2m o d4 .I f H2(X; Z) has no 2-torsion, then
+ℓ1 ⊕ ℓ2 ⊕ ℓ3 embeds in T M if and only if c m+1− i(TM − ℓ1 ⊕ ℓ2 ⊕ ℓ3) = 0,
+for i = 1, 2, 3.
+(ii) Suppose that m ≡ 0m o d4 . Assume that M is simply-connected and that
+H2(X; Z) has no 2-torsion. Then
+ℓ1 ⊕ ℓ2 ⊕ ℓ3 embeds in T M if and only if c m+1− i(TM − ℓ1 ⊕ ℓ2 ⊕ ℓ3) = 0,
+for i = 1, 2, 3.
+In particular , if M is simply connected and H2(M; Z) has no 2-torsion, then
+spanC(M) ≥ 3 if and only if c m+1− i(M) = 0, for i = 1, 2, 3.
+In the case when the complex rank of the bundle is odd, we prove the following.
+Theorem 3.10 Let X be a CW complex of dimension 2m, where m ≥ 5 is an odd
+integer . Letξ be a complex m-plane bundle over X , and let ℓ1,ℓ 2,ℓ 3 be complex line
+bundles over X . Further suppose that
+(i) H 2m− 3(X; Z/2) = Sq 2ρ2 H2m− 5(X; Z);
+(ii) H 2m− 2(X; Z/2) = Sq 2 H2m− 4(X; Z/2)
+(iii) H 2m− 2(X; Z) has no 2-torsion;
+(iv) H 2m− 1(X; Z) is ﬁnite abelian with no 2-torsion; and
+(v) H 2m(X; Z) is torsion free.
+Then
+ℓ1⊕ ℓ2⊕ ℓ3 embeds in ξ if and only if c m+1− i(ξ− ℓ1⊕ ℓ2⊕ ℓ3) = 0, for i = 1, 2, 3.
+Together, Theorems 3.8 and 3.10 recover a result of Thomas [ 37, Corollary
+1.6] and Gilmore [ 10, Theorem 1] about complex non-vanishing vector ﬁelds on
+almost-complex manifolds. Namely, orientability of the manifold and the connectiv-
+ity assumption yield the following result.
+Corollary 3.11 Let M be a 2m-dimensional, 3-connected almost-complex manifold,
+where m ≥ 5. Then span
+C(M) ≥ 3 if and only if c m− 2(M) = χ(M) = 0.
+4 Preliminaries
+In this section we introduce some notation and develop notions used throughout the
+text.
+123
+
+=== PDF PAGE 12 ===
+46 Page 12 of 67 N. Sadovek, B. Schutte
+4.1 Some essentials of Moore–Postnikov theory
+For a classical reference, we refer the reader to [ 33]. Consider the lifting problem
+E
+XB
+q0
+f
+(5)
+subject to the following assumptions:
+(i) The space X is a CW complex.
+(ii) The map q0 : E → B is a (Hurewicz) ﬁbration with simply connected ﬁber F
+and simply connected base B.
+Writeπi := πni (F) for the nonzero homotopy groups ofF, where(ni )i∈N is a sequence
+of integers such that n1 > 1 and ni < ni+1 for all i ∈ N.
+To solve the lifting problem ( 5), we construct a Moore–Postnikov tower for
+q0 : E → B, which is a homotopy commutative diagram
+..
+.
+E[2] K(π
+3, n3 + 1)
+E[1] K(π2, n2 + 1)
+FE B K (π1, n1 + 1)
+X
+q0
+k1
+k2
+p1
+p2
+q1
+q2
+k3
+f
+(6)
+where
+• each ki is the characteristic class of the ﬁbration q i− 1—i.e., each ki is the trans-
+gression of the fundamental class in the ﬁbration qi− 1;
+• each E[i] is the homotopy ﬁber of ki ; and
+• each qi : E → E[i] is an ni+1-equivalence.
+The following proposition illustrates the upshot of such a factorization ( 6).
+Proposition 4.1 Let q0 : E → B and f : X → Bb ea si n (5). Let (6) be a Moore–
+Postnikov factorization of q0, and assume that X is a CW complex with dim(X) ≤ nr .
+Then f : X → B lifts to E in (5) if and only if f lifts to E [r] in (6).
+Proof Suppose that g: X → E i sas o l u t i o nt o(5). Then qr ◦g: X → E[r] is a lift
+of f to E[r]. Conversely suppose that g: X → E[r] is a map such that
+p1 ◦ p2 ◦···◦ pr− 1 ◦ pr ◦g ≃ f .
+123
+
+=== PDF PAGE 13 ===
+Complex line ﬁelds on almost-complex manifolds Page 13 of 67 46
+Then it follows from [ 32, Corollary 7.6.23] that the induced map
+qr ◦−:[ X, E]→[ X, E[r]]
+is bijective (and in particular surjective) since dim (X)< nr+1 and qr is an (nr+1)-
+equivalence. ⊓⊔
+We now set notation to describe the various obstructions to lifting f to E[r − 1].
+Notation 4.2 Let f : X → B and q0 : E → B be given as in (5). Given a factorization
+(6)f o rq0, we write
+On1+1( f , q0, k1) ={ f ∗k1}⊆ Hn1+1(X;π1)
+for the primary obstruction to lifting f . Assuming that On1+1( f , q0, k1) ={ 0}, there
+exists a map g: X → E[1] such that p1 ◦g ≃ f . We write
+On2+1( f , q0, k2) :=
+⋃
+g: X→ E[1]
+g∗(k2) ⊆ Hn2+1(X;π2)
+for the generalized secondary obstruction to lifting f . Inductively, we denote by
+Oni +1( f , q0, ki) :=
+⋃
+g: X→ E[i− 1]
+g∗(ki) ⊆ Hni +1(X;πi)
+the generalized i -th obstruction to lifting f , assuming that 0 ∈ On j +1( f , q0, k j) for
+all j = 1,..., i − 1.
+Of course, computing higher obstructions is subtle, difﬁcult, and even impossible
+most of the time. Nonetheless, some hope remains in the form of the proceeding
+proposition. Essentially, since the vertical ﬁbrations pi in ( 6) are actually principal
+ﬁbrations, any two (homotopy) lifts f1 : X → E[i] and g1 : X → E[i] of f differ
+by an action of /Omega1K(πi, ni + 1). More precisely, we can understand the difference
+between lifts of f to E[i] using the following result, c.f., [ 33, Chapter II] or [ 28,
+Proposition, p. 218].
+Proposition 4.3 Let f 1, g1 : X → E[i] be two lifts of f such that
+p1 ◦ p2 ◦···◦ pi ◦ f1 ≃ f ≃ p1 ◦ p2 ◦···◦ pi ◦g1.
+Then there exists a map α: X → /Omega1K(πi, ni + 1) ∼= K(πi, ni) such that the compo-
+sition
+X
+/Delta1
+−→ X × X
+f1×α
+−→ E[i]× K(πi, ni)
+μ
+−→ E[i]
+is homotopic to g 1. Here, we denote by /Delta1the diagonal map and by μ the principal
+action map associated to the total space of the principal ﬁbration K (πi, ni) −→
+E[i]
+pi
+−→ E[i − 1].
+123
+
+=== PDF PAGE 14 ===
+46 Page 14 of 67 N. Sadovek, B. Schutte
+Finally, we will freely make use of the following information without further men-
+tion, as it is often useful for computing the second k-invariant.
+Remark 4.4 Let F ↪−→ E
+q0
+→ B be as in ( 6). Consider the ﬁbration p1 : E[1]→ B
+with ﬁber K = K(π1, n1) in the Moore–Postnikov factorization ( 6)o f q0. Write
+i1 : K ↪−→ E[1] for the ﬁber inclusion. Then the Moore–Postnikov invariant k2 is
+characterized by the following properties, see [ 36, (3.2), p. 190] and [ 13, Theorem
+4.1].
+(i) q∗
+1 (k2) = 0; and
+(ii) i∗
+1(k2) ∈ Hn2+1(K;π2) coincides with the bottom Postnikov invariant in the Post-
+nikov tower of the space F.
+4.2 A lemma about homotopy fibers
+We will frequently make use of the following fact, see [ 35, Lemma 6.1].
+Lemma 4.5 (Thomas diagram) Consider the following commutative diagram of
+pointed spaces.
+AB
+CD
+u1
+v0 v1
+u0
+(7)
+Denote by hoﬁb(x) the standard homotopy ﬁber of x ∈{ u0, u1,v 0,v 1}. Then there
+are canonical continuous functions u : hoﬁb(v0) → hoﬁb(v1) and v: hoﬁb(u1) →
+hoﬁb(u0) between the homotopy ﬁbers, as well as a natural homeomorphism
+hoﬁb(u) ≈ hoﬁb(v). Thus there is a homotopy commmutative diagram
+F hoﬁb(v0) hoﬁb(v1)
+hoﬁb(u1) AB
+hoﬁb(u0) CD
+u
+v
+u1
+v0 v1
+u0
+(8)
+where F denotes the homotopy ﬁber of u and v.
+Henceforth, we will refer to the diagram ( 8)a st h eThomas diagram associated to (7).
+4.3 Cohomology of certain Eilenberg–MacLane spaces
+In order to carry out the obstruction theory in subsequent sections, we will require
+(co)homological information about certain Eilenberg–MacLane spaces with various
+coefﬁcients. We collect the essential results in this section and set notation.
+Notation 4.6 We set the following notation.
+123
+
+=== PDF PAGE 15 ===
+Complex line ﬁelds on almost-complex manifolds Page 15 of 67 46
+(i) The mapping ρk : H∗(X; Z) → H∗(X; Z/k) is induced by reduction mod k. For
+ﬁxed k ≥ 2, we will write only ρ instead of ρk.
+(ii) Let k ≥ 2. We write δk for the Bockstein homomorphism associated with the
+short exact sequence
+0 −→ Z
+·k
+−→ Z
+ρk
+−→ Z/k −→ 0.
+For ﬁxed k ≥ 2, we will write only δinstead of δk.
+Additionally, given also ℓ ≥ 2, we write δℓ
+k for the composition ρ2ℓ ◦
+δk : H∗(·; Z/k) → H∗+1(·; Z/2ℓ).
+(iii) The mapping θk
+2 : H∗(·; Z/2) → H∗(·; Z/2k) is induced from the inclusion
+Z/2 → Z/2k .
+(iv) For all i ≥ 0, we write
+Sq i : H∗(·; Z/2) → H∗+i(·; Z/2)
+for the Steenrod squares.
+(v) Let p > 2 be prime. For all i ≥ 0, we write
+Pi
+p : H∗(·; Z/ p) → H∗+2i( p− 1)(·; Z/ p)
+for the reduced p-th power operations.
+(vi) Let p ≥ 2 be prime. We will write ˜βp for the Bockstein homomorphism associ-
+ated to the short exact sequence
+0 −→ Z/ p −→ Z/ p2 −→ Z/ p −→ 0.
+Moreover, we denote by βp the operation given by βp(x) = (− 1)dim(x)˜βp(x).
+(vii) We set the following notation for the fundamental classes (see e.g., [ 26]) of
+Eilenberg–MacLane spaces to be used throughout the paper.
+• Write ιq ∈ Hq(K(Z, q); Z) for the integral fundamental class.
+• Let ιk
+q := ρkιq ∈ Hq(K(Z, q); Z/k) be the mod k reduction of ιq . When the
+context is clear, we omit the subscript (emphasizing the dimension) and/or
+the superscript (emphasizing the coefﬁcients).
+• Furthermore, denote by κq ∈ Hq(K(Z/k, q); Z/k) the mod k fundamental
+class.
+Proposition 4.7 Let G be any abelian group. The ﬁrst six nonzero integral homology
+and cohomology groups of K (G, q) satisfy Table 1. Here, p G denotes the subgroup
+of G consisting of all elements of order p.
+Corollary 4.8 The ﬁrst seven nonzero integral homology and cohomology groups of
+K(Z, q) satisfy Table 2.
+123
+
+=== PDF PAGE 16 ===
+46 Page 16 of 67 N. Sadovek, B. Schutte
+Table 1 The integral (co)homology of K(G, q)
+i Hi (K(G, q); Z) Hi (K(G, q); Z) q
+i = qG [7, Theorem 20.4] Hom Z(G, Z) q > 0
+i = q + 10 [ 7, Theorem 20.5] Ext 1
+Z(G, Z) q > 1
+i = q + 2 G/2G [7, Theorem 23.1] 0 q > 2
+i = q + 3 2 G [7, Theorem 24.1] Ext 1
+Z(G/2G, Z) q > 3
+i = q + 4 G/2G ⊕ G/3G [7, Theorem 25.1] Ext 1
+Z(2 G, Z) q > 4
+i = q + 5 2 G ⊕ 3G [7, Theorem 25.3] Ext 1
+Z(G/2G ⊕ G/3G, Z) q > 5
+Table 2 The integral (co)homology of K(Z, q)
+i Hi (K(Z, q); Z) Hi (K(Z, q); Z) q
+q ZZ ⟨ιq⟩ q > 0
+q + 10 0 q > 1
+q + 2 Z/20 q > 2
+q + 30 Z/2⟨δ2 Sq 2ι2q⟩ q ≥ 3
+q + 4 Z/2 ⊕ Z/30 q > 4
+q + 50 Z/2⟨δ2 Sq 4ι2q⟩⊕ Z/3⟨δ3 P1
+3 ι3q⟩ q ≥ 5
+q + 6 Z/2 ⊕ Z/20 q > 6
+Proof The ﬁrst, second, third, and ﬁfth rows of Table 2 follow from immediately from
+Proposition 4.7. The fourth (resp. sixth) row follows from Proposition 4.7 together
+with [7, Theorem 27.1] (resp. [ 7, Theorem 27.5]. One obtains the last row from [ 6,p .
+662]. ⊓⊔
+We will also need partial information about the mod k cohomology of K(Z, q).B y
+the universal coefﬁcient theorem and Corollary 4.8 we make the following computa-
+tions.
+Proposition 4.9 F or q sufﬁciently large (as in Proposition 4.7), the ﬁrst six nonzero
+cohomology groups Hi(K(Z, q); Z/k) satisfy Table 3,f o rk ∈{ 2, 3, 4, 8}
+We remark that thek = 2 column of Table3 was classically computed by Serre, see
+e.g., [26, Theorem 3, p. 90]; moreover, the k = 3 column was computed by Cartan,
+see e.g., [ 9, p. 414].
+Finally, we will need partial information about the integral cohomology of
+K(Z/k, q). We compute the following groups using Proposition 4.7 and the universal
+coefﬁcient theorem.
+Proposition 4.10 Let G = Z/kf o rk ∈{ 2, 3, 4, 8}. F or q sufﬁciently large (as in
+Proposition 4.7), the ﬁrst three integral (co)homology groups of K(G, q) satisfy Table
+4.
+123
+
+=== PDF PAGE 17 ===
+Complex line ﬁelds on almost-complex manifolds Page 17 of 67 46
+Table 3 The cohomology groups H i (K(Z, q); Z/k) for k ∈{ 2, 3, 4, 8}
+ik = 2 k = 3 k = 4 k = 8 q
+q Z/2⟨ι2q⟩ Z/3⟨ι3q⟩ Z/4⟨ι4q⟩ Z/8⟨ι8q⟩ q > 0
+q + 10 0 0 0 q > 1
+q + 2 Z/2⟨Sq 2ι2q⟩ 0 Z/2⟨θ2
+2 Sq 2ι2q⟩ Z/2⟨θ3
+2 Sq 2ι2q⟩ q > 2
+q + 3 Z/2⟨Sq 3ι2q⟩ 0 Z/2⟨δ2
+2 Sq 2ι2q⟩ Z/2⟨δ3
+2 Sq 2ι2q⟩ q ≥ 3
+q + 4 Z/2⟨Sq 4ι2q⟩ Z/3⟨P1
+3 ι3q⟩ Z/2⟨θ2
+2 Sq 4ι2q⟩ Z/2⟨θ3
+2 Sq 4ι2q⟩ q > 4
+q + 5 Z/2⟨Sq 5ι2q⟩ Z/3⟨β3 P3
+1 ι3q⟩ Z/2⟨δ2
+2 Sq 4ι2q⟩ Z/2⟨δ3
+2 Sq 4ι2q⟩ q ≥ 5
+Table 4 The integral (co)homology groups of K(Z/k, q),f o r k ∈{ 2, 3, 4, 8}
+Hi (K(G, q); Z) G = Z/2 G = Z/3 G = Z/4 G = Z/8
+i = q Z/2 Z/3 Z/4 Z/8
+i = q + 10 0 0 0
+i = q + 2 Z/20 Z/2 Z/2
+Hi (K(G, q); Z) G = Z/2 G = Z/3 G = Z/4 G = Z/8
+i = q 0000
+i = q + 1 Z/2⟨δ2κq⟩ Z/3⟨δ3κq⟩ Z/4⟨δ4κq⟩ Z/8⟨δ8κq⟩
+i = q + 20 0 0 0
+4.4 Some homotopy groups of complex Stiefel manifolds
+For m ≥ r ,l e t W(m, r) denote the complex Stiefel manifold of r -frames in Cm.
+Recalling that W(m, r) is 2(m − r)-connected, we collect relevant homotopy groups
+of W(m, r).
+Proposition 4.11 Set π2m− 2 := π2m− 2(W(m, 3)).
+(i) Fo r r = 2, 3, the homotopy groups π2(m−r)+ir (W(m, r)) satisfy Table 5 and
+Table 6, where ir = 1, 2,..., 2r − 1.
+(ii) Additionally, the homotopy group π2m− 2 satisﬁes Table 7,f o rm > 4.
+Proof Proposition 4.11(i) follows from [10] and we demonstrate Proposition 4.11(ii).
+To this end, the p-primary part of π2m− 2 has been computed by [ 10] for prime p. By
+[8, Example 2.40, p. 71] the minimal model of the complex Stiefel manifold W(m, 3)
+is given by the exterior algebra
+/Lambda1Q(e2m− 5, e2m− 3, e2m− 1),
+over the rationals. Hence it follows from [8, Theorem 2.50, p. 75] thatπ2m− 2(W(m, 3))
+has no Z-summand. ⊓⊔
+123
+
+=== PDF PAGE 18 ===
+46 Page 18 of 67 N. Sadovek, B. Schutte
+Table 5 Some homotopy groups
+of W(m, 2),f o r m > 2 π2(m− 2)+i2 (W(m, 2)) m > 2 odd m > 2e v e n
+i2 = 1 ZZ
+i2 = 20 Z/2
+i2 = 3 ZZ ⊕ Z/2
+Table 6 Some homotopy groups of W(m, 3),f o r m > 4
+π2(m− 3)+i3 (W(m, 3)) m > 2 odd m > 4e v e n
+i3 = 1 ZZ
+i3 = 2 Z/20
+i3 = 3 Z ⊕ Z/2 Z
+i3 = 4 π2m− 2 π2m− 2
+i3 = 5 Z ⊕
+{
+Z/2 m = 5,
+0 otherwise Z
+Table 7 The homotopy group
+π2m− 2(W(m, 3)),f o r m > 4 m mod 3 m mod 8 π2m− 2
+̸= 02 o r 6 0
+̸= 01 , 4o r5 Z/2
+̸= 00 o r 7 Z/4
+̸= 03 Z/8
+02 o r 6 Z/3
+01 , 4o r5 Z/3 ⊕ Z/2
+00 o r 7 Z/3 ⊕ Z/4
+03 Z/3 ⊕ Z/8
+4.5 Relevant cohomology rings
+In this section, we establish notation for the rest of the paper, and, due to frequent
+use throughout the paper, we collate various information about relevant cohomology
+rings.
+Notation 4.12 Let m ≥ r . We set the following notation.
+(i) As before, we write W(m, r) for the complex Stiefel manifold ofr -frames in C
+m.
+Recall that W(m, r) may be viewed as the homogeneous spaceU(m)/U(m− r).
+(ii) We denote by
+F(m − r, 1r ) := U(m)/(U(m − r) × U(1)r ),
+the ﬂag manifold, where U(m − r) × U(1)r ⊆ U(m) is the diagonal inclusion.
+(iii) We write B(m, 1r ) for the product space BU(m) × BU(1)r .
+123
+
+=== PDF PAGE 19 ===
+Complex line ﬁelds on almost-complex manifolds Page 19 of 67 46
+(iv) Let γm be the universal bundle over BU(m), and write ci := ci(γm) for the
+universal Chern classes.
+(v) We will denote by
+ai = ci(γm × 1r − 1 × γ×r
+1 ) ∈ H2i(B(m, 1r ); Z)
+the Chern classes of the stable bundle
+γm × 1r − 1 × γ×r
+1 : B(m, 1r ) −→ BU.
+Finally, we will write b( p)
+i := ρpai , for the mod p reductions, where p > 1i s
+an integer. When the value of p is understood, we will omit the superscript ( p)
+from the notation.
+The content of the following proposition can be found in [ 15].
+Proposition 4.13 Let m ≥ r > 0 be positive integers.
+(i) The integral cohomology of BU (m) satisﬁes
+H∗(BU(m); Z) ∼= Z[c1,..., cm],
+where |ci|= 2i and the colimit U := ⋃
+m≥0 U(m) satisﬁes
+H∗(BU; Z) ∼= Z[c1, c2,... ].
+(ii) Let p be a positive integer . Then
+H∗(BU(m); Z/ p) ∼= Z/ p[ρpc1,...,ρ pcm].
+In particular , if p = 2, then ρ2ci = w2i(γR
+m ), where γR
+m denotes the underlying
+real bundle of the universal bundle γm.
+(iii) Let p be a positive integer and R a ﬁnitely generated abelian group. Then
+H∗(B(m, 1r ); R) is a polynomial algebra. Additionally, if i is odd, then
+Hi(B(m, 1r ); R) = 0.
+(iv) The integral cohomology of the complex Stiefel manifold W (m, r) satisﬁes
+H∗(W(m, r); Z) ∼= /Lambda1Z[e2(m−r+1)− 1, e2(m−r+2)− 1,..., e2m− 1];
+where |ei|= i.
+(v) Moreover ,
+H∗(W(m, r); Z/2) ∼= /Lambda1Z/2[ f2(m−r+1)− 1, f2(m−r+2)− 1,..., f2m− 1];
+where f i := ρ2ei . Furthermore,
+Sq 2 j( f2i+1) =
+( i
+j
+)
+f2i+2 j+1 mod 2, for j ≤ i, i + j ≤ m − 1, (9)
+123
+
+=== PDF PAGE 20 ===
+46 Page 20 of 67 N. Sadovek, B. Schutte
+and is zero otherwise.
+(vi) Finally, given m ≥ r ≥ 1, the Wu formula holds for the mod 2 characteristic
+classes bi . That is, Sq 2i− 1(b j) = 0 and
+Sq 2i(b j) =
+i∑
+t=0
+( j + t − i − 1
+t
+)
+bi− t b j+t,
+for i ≤ j.
+5 The lifting problem and the primary obstruction
+Towards a proof of the theorems in Sect. 3, we now formulate the relevant lifting
+problem and begin the construction of the associated Moore–Postnikov tower. Chieﬂy,
+we compute the primary obstruction to the lifting problem, consequently proving
+Proposition 3.1.
+For integers m ≥ r ≥ 1, let us denote by
+dm,r : U(m − r) × U(1)r U(m)
+the diagonal inclusion. Then, the inclusion of topological groups
+(dm,r , idU(1)r ): U(m − r) × U(1)r U(m) × U(1)r
+induces a map of classifying spaces
+qm,r := B(dm,r , idU(1)r ): B(m − r, 1r ) −→ B(m, 1r ). (10)
+Then qm,r satisﬁes
+q∗
+m,r (γm × 1×r ) = γm−r × γ×r
+1 and q∗
+m,r (1 × γ×r
+1 ) = 1 × γ×r
+1 .
+Let us identify the ﬁber of the homotopy ﬁbration qm,r .
+Proposition 5.1 F or integers m≥ r ≥ 1,t h em a p
+qm,r : B(m − r, 1r ) −→ B(m, 1r )
+deﬁned in (10) is homotopy equivalent to a ﬁbration with ﬁber W (m, r).
+Proof The inclusion(dm,r , idU(1)r ) of topological groups induces a homotopy ﬁbration
+on classifying spaces
+(U(m) × U(1)r )/(U(m − r) × U(1)r ) −→ B(m − r, 1r )
+qm,r
+−−−→ B(m, 1r ).
+123
+
+=== PDF PAGE 21 ===
+Complex line ﬁelds on almost-complex manifolds Page 21 of 67 46
+Next, one can check that the inclusion (id, 1): U(m) → U(m) × U(1)r induces a
+continuous map on the quotients
+U(m)/U(m − r) −→ (U(m) × U(1)r )/(U(m − r) × U(1)r),
+which is a bijection of compact spaces and hence a homeomorphism. ⊓⊔
+To aid calculations in the sequel, we now compute the map in cohomology induced
+by qm,r , where m ≥ r ≥ 1.
+Proposition 5.2 Let m ≥ r ≥ 1. Write cohomologies with integer coefﬁcients as
+• H∗(B(m, 1r )) ∼= Z[c1,..., cm, y1,..., yr ], where |ci|= 2i and |yi|= 2,f o r
+each i = 1,..., r ; and
+• H∗(B(m − r, 1r )) ∼= Z[c′
+1,..., c′
+m−r , x1,..., xr ], where |ci|= 2i and |xi|= 2,
+for each i = 1,..., r.
+Let the map
+qm,r : B(m − r, 1r ) −→ B(m, 1r )
+be as deﬁned in (10).
+(i) Then the induced map in integral cohomology
+q∗
+m,r : H∗(B(m, 1r )) −→ H∗(B(m − r, 1r )),
+satisﬁes the following:
+q∗
+m,r (yi) = xi; (11)
+and
+q∗
+m,r (ck) =
+min(k,r)∑
+i=max(0,k−(m−r))
+c′
+k− iσi(x1,..., xr ), (12)
+where c′
+0 = 1 and σi(x1,..., xr ) is the i -th elementary symmetric polynomial in
+the variables x 1,..., xr ,.
+(ii) Moreover , q∗
+m,r is surjective in all degrees.
+Proof The proof of part (i) is a straightforward computation using the properties of
+Chern classes.
+We proceed with the proof of part (ii). Clearly the xi are in the image of q∗
+m,r by
+(11). Let us prove by induction that each c′
+k is in the image of q∗
+m,r .
+For k = 1, it follows from ( 11) and ( 12) that
+q∗
+m,r (c1) = c′
+1 + x1 +···+ xr = c′
+1 + q∗
+m,r (y1 +···+ yr ) ∈ im(q∗
+m,r ).
+For the induction hypothesis, suppose for some 1 < k ≤ m − r that
+c′
+1,..., c′
+k− 1 ∈ im(q∗
+m,r ).
+123
+
+=== PDF PAGE 22 ===
+46 Page 22 of 67 N. Sadovek, B. Schutte
+Then by ( 12), we obtain
+q∗
+m,r (ck) =
+min(k,r)∑
+i=0
+c′
+k− iσi(x1,..., xr ) = c′
+k +
+min(k,r)∑
+i=1
+c′
+k− iσi(x1,..., xr ). (13)
+But ∑min(k,r)
+i=1 c′
+k− iσi(x1,..., xr ) ∈ im(q∗
+m,r ) by the induction hypothesis. Hence rear-
+ranging ( 13) gives a description of c′
+k in terms of elements of im (q∗
+m,r ), as desired.
+This concludes the proof. ⊓⊔
+Henceforth ﬁx a complex m-plane bundle ξ: X → BU(m) and complex line
+bundles ℓ1,...,ℓ r over X . This gives rise to a classifying map
+f = (ξ, ℓ1,...,ℓ r ): X −→ B(m, 1r ) (14)
+deﬁned by
+f ∗(1 × γ×r
+1 ) = ℓ1 ⊕···⊕ ℓr and f ∗(γm × 1×r ) = ξ.
+With this notation, we may formulate the next lemma (c.f., [ 5]).
+Lemma 5.3 F or a complex rank m bundle ξ and line bundles ℓ1,...,ℓ r over X , we
+have that ξ admits ℓ1 ⊕···⊕ ℓr as a subbundle if and only if there exists a map
+g: X → B(m − r, 1r ) such that qm,r ◦g ≃ f.
+Proof Given a splitting ξ ∼= η⊕ ℓ1 ⊕···⊕ ℓr ,f o rs o m e(m − r)-bundle η,l e t g
+be the the classifying map (η, ℓ1,...,ℓ r ): X → B(m − r, 1r ). Then, qm,r ◦g ≃ f
+follows by uniqueness of the classifying map up to homotopy [ 24, Thm. 14.6]. On
+the other hand, given such a map g, we may deﬁne η= g∗γm−r and ℓi = g∗γ(i)
+1 ,f o r
+i = 1,..., r , where γ(i)
+1 denotes the canonical line bundle corresponding to the i-th
+factor of BU(1) in B(m − r, 1r ). This induces the bundle splitting
+ξ∼= f ∗(γm) ∼= g∗(γm−r × γ1
+1 ×···× γr
+1 ) ∼= η⊕ ℓ1 ⊕···⊕ ℓr ,
+as claimed. ⊓⊔
+Subsequently, we seek obstructions to the existence of a mapg: X → B(m− r, 1r)
+making the following diagram homotopy commutative.
+B(m − r, 1r )
+XB (m, 1r )
+qm,r
+(ξ,ℓ1,...,ℓr )
+(15)
+As the main result of this section, we will use Proposition 5.1 to compute the ﬁrst
+Moore–Postnikov invariant in the Moore–Postnikov tower associated to the lifting
+123
+
+=== PDF PAGE 23 ===
+Complex line ﬁelds on almost-complex manifolds Page 23 of 67 46
+problem (15). Diagrammatically, we have
+W(m, r) B(m − r, 1r ) B(m, 1r ) K(Z, 2(m − r + 1))
+X
+qm,r k1
+f =(ξ,ℓ1,...,ℓr ) (16)
+where we have used the fact that π2(m−r)+1(W(m, r)) ∼= Z,f o r m > 0, is the ﬁrst
+non-zero homotopy group of W(m, r),s e e[ 10].
+Proposition 5.4 (Primary obstruction) Let m ≥ 1 be an integer . Let f =
+(ξ, ℓ1,...,ℓ r ): X → B(m, 1r ) be as in (14), and let
+k1 ∈ H2(m−r+1)(B(m, 1r ); Z)
+be the characteristic class in the ﬁbration q m,r . Then the primary obstruction to the
+lifting problem (15) is the singleton set
+O2(m−r+1)( f , qm,r , k2) ={ cm−r+1(ξ− ℓ1 ⊕···⊕ ℓr )}⊆ H2(m−r+1)(X; Z).
+The proof of Proposition 5.4 is a straightforward consequence of the following
+lemma, whose proof is a modiﬁcation of [ 5, pp. 269–270].
+Lemma 5.5 Consider the ﬁbration
+W(m, r) −→ B(m − r, 1r )
+qm,r
+−−−−→ B(m, 1r ).
+deﬁned as in (10) and let (E∗,∗
+∗ , d∗) denote the associated Leray–Serre spectral
+sequence. Then, the differential
+d := d2m− 2i+2 : E0,2m− 2i+1
+2m− 2i+2 −→ E2m− 2i+2,0
+2m− 2i+2
+satisﬁes
+d(e2m− 2i+1) = am− i+1 = cm− i+1(γm × 1×r − 1 ×γ×r
+1 ), for i = 1,..., r.
+Proof Let U := ⋃∞
+j=1 U( j) be the inﬁnite unitary group and consider a commutative
+diagram of topological groups
+U(m − r) × U(1)r U(m) × U(1)r
+U(m − r) U,
+(dm,r ,idU(1)r )
+proj
+123
+
+=== PDF PAGE 24 ===
+46 Page 24 of 67 N. Sadovek, B. Schutte
+where the right vertical map is given by
+(A, a1,..., ar ) ↦−→
+⎛
+⎜⎜
+⎜⎝
+A 00 0
+01 0 0
+00 1 0
+00 0 ...
+⎞
+⎟⎟
+⎟⎠ ·
+⎛
+⎜⎜
+⎜⎜⎜
+⎜
+⎜⎜⎜⎝
+I
+m−r 00 0 0 0
+0 a− 1
+1 00 0 0
+00 ... 00 0
+00 0 a− 1r 00
+00 0 0 1 0
+00 0 0 0 ...
+⎞
+⎟⎟
+⎟⎟⎟
+⎟
+⎟⎟⎟⎠
+.
+Passing to classifying spaces, the square induces a map of homotopy ﬁbrations (c.f. [5])
+W(m, r) B(m − r, 1r ) B(m, 1r )
+W(m − r) BU(m − r) BU
+j
+qm,r
+proj h
+q
+(17)
+where W(m − r) := U/U(m − r). Moreover, q is the classifying map of the stable
+bundle γm−r , and h is the classifying map of the stable bundle γm × 1×r − 1 × γ×r
+1 .
+Finally, the map j : W(m, r) → W(m− r) is induced by the inclusion ofU(m)↪−→ U .
+We claim that j is (2m − 1)-connected, whence
+j∗: H∗(W(m − r); Z) −→ H∗(W(m, r); Z)
+is an isomorphism for ∗= 1,..., 2m − 2 and a surjection for ∗= 2m − 1. To see
+this, consider the following commutative diagram of topological groups:
+U(m − r) U(m)
+U(m − r) U.
+Passing to classifying spaces, there is the Thomas diagram associated to (▲):
+/Omega1(U/U(m)) ∗ U/U(m)
+W(m, r) BU(m − r) BU(m)
+W(m − r) BU(m − r) BU
+j (▲)
+q
+We point out that the map j between the ﬁbers is the same as the one in (17), since it is
+again induced by the inclusion U(m− r)↪→ U . The homotopy ﬁber of∗→ U/U(m)
+is /Omega1(U/U(m)). Furthermore, by Lemma 4.5, the homotopy ﬁber of j is /Omega1(U/U(m)),
+which is (2m − 1)-connected. The claim follows.
+123
+
+=== PDF PAGE 25 ===
+Complex line ﬁelds on almost-complex manifolds Page 25 of 67 46
+Fig. 1 An illustration of the morphism of Leray–Serre spectral sequences between q and qm,r induced by
+(17). Dashed differentials appear on later pages
+Since the map j∗ is surjective, particularly in degrees 1, 3,..., 2m − 1, we can lift
+the odd dimensional generators of H∗(W(m, r); Z), described in Proposition 4.13(iv),
+to obtain elements
+e2m− 2i+1 ∈ H2m− 2i+1(W(m − r); Z),
+for i = 1, 2,..., 2m − 1. Recall that the transgression of
+e2m− 2i+1 ∈ H2m− 2i+1(W(m − r); Z)
+in the Leray–Serre spectral sequence of the ﬁbration q is classically known to be the
+Chern class
+cm− i+1 ∈ H∗(BU; Z) ∼= Z[c1, c2,... ],
+where |cn|= 2n. This fact is a straightforward extension of [ 25, Theorem 5.5(5), p.
+343]. Finally, the claim follows by naturality of the transgression via the morphism
+induced by ( 17), as illustrated in Fig. 1, and the fact that h∗(cm− i+1) = am− i+1 ∈
+H∗(B(m, 1r ); Z). ⊓⊔
+We obtain the following result immediately from Lemma 5.5 and the Serre coho-
+mological exact sequence.
+Corollary 5.6 Fo r m≥ r ≥ 1, let the homotopy ﬁbration
+W(m, r) −→ B(m − r, 1r )
+qm,r
+−−−−→ B(m, 1r )
+be as deﬁned in (10). Then
+ker(q∗
+m,r ) ∩ H≤2m(B(m, 1r ); Z) = (am− i+1 : i = 1,..., r) ∩ H≤2m(B(m, 1r ); Z),
+where the am− i+1 are deﬁned as in Lemma 5.5.
+To conclude this section, Proposition 3.1 follows immediately from Proposition 5.4.
+123
+
+=== PDF PAGE 26 ===
+46 Page 26 of 67 N. Sadovek, B. Schutte
+6 Two complex line bundles: m odd
+In this section, we prove Theorem 3.2. Namely, let X b ea2 m-dimensional CW
+complex with m ≥ 3 odd. Given complex vector bundles
+ξ: X −→ BU(m) and ℓ1,ℓ 2 : X −→ BU(1),
+we wish to solve the lifting problem ( 15)f o r r = 2. Using Proposition 4.11,w e
+construct the following Moore–Postnikov tower of qm,2 on top of ( 16), namely
+E[2]
+E[1] K(Z, 2m)
+W(m, 2) B(m − 2, 12) B(m, 12) K(Z, 2m − 2)
+X
+p2
+k2
+p1q1
+qm,2 k1
+(ξ,ℓ1,ℓ2)
+(18)
+where ki is the characteristic class in the ﬁbration qi− 1 (with q0 := qm,2), and each
+E[i] is constructed as the homotopy ﬁber of ki .
+6.1 The primary obstruction
+Restating Proposition 5.4 in this context, we have the following.
+Lemma 6.1 Let all spaces and maps be as in (18). Then the primary obstruction
+O2m− 2((ξ, ℓ1,ℓ 2), qm,2, k1) ⊆ H2m− 2(X; Z)
+to lifting (ξ, ℓ1,ℓ 2) along qm,2 is the singleton set {cm− 1(ξ− ℓ1 ⊕ ℓ2)}.
+6.2 The generalized secondary obstruction
+Finally, Theorem 3.2 is an immediate consequence of the following.
+Theorem 6.2 Let all spaces and maps be as in (18). Suppose that (ξ, ℓ1,ℓ 2): X →
+B(m, 12) satisﬁes cm− 1(ξ− ℓ1 ⊕ ℓ2) = 0.
+(i) Suppose that H2m(X; Z) = δSq 2ρ2 H2m− 3(X; Z). Then zero is an element of
+the generalized secondary obstruction
+O2m((ξ, ℓ1,ℓ 2), qm,2, k2) ⊆ H2m(X; Z)
+to lifting (ξ, ℓ1,ℓ 2) along qm,2.
+123
+
+=== PDF PAGE 27 ===
+Complex line ﬁelds on almost-complex manifolds Page 27 of 67 46
+(ii) Suppose that H2m(X; Z) has no 2-torsion. Then the generalized secondary
+obstruction
+O2m((ξ, ℓ1,ℓ 2), qm,2, k2) ⊆ H2m(X; Z)
+to lifting (ξ, ℓ1,ℓ 2) along qm,2 is the singleton set {cm(ξ− ℓ1 ⊕ ℓ2)}.
+The rest of this section is dedicated to proving Theorem 6.2. We remark that the
+proof is both more detailed and a generalization of the proof of [ 36, Theorem 3.5].
+Suppose that the classifying map (ξ, ℓ1,ℓ 2): X −→ B(m, 12) satisﬁes cm− 1(ξ−
+ℓ1⊕ℓ2) = 0. Then by Lemma6.1 there is a lift making the following diagram commute
+B(m − 2, 12)
+XB (m, 12)
+qm,2
+(ξ,ℓ1,ℓ2)
+if and only if
+g∗(k2) = 0 ∈ H2m(X; Z)/Indet,
+where g: X → E[1] is some lift of (ξ, ℓ1,ℓ 2) to E[1], and Indet denotes the indeter-
+minancy of such lifts.
+We ﬁrst establish the following auxiliary fact which uses the results of Lemma 6.7.
+Lemma 6.3 Map q1 : B(m − 2, 12) → E[1] induces an isomorphism
+q∗
+1 : Hi(E[1]; Z)
+∼=−−→ Hi(B(m − 2, 12); Z), for 0 ≤ i ≤ 2m − 1,
+and a split exact sequence
+0 −→ Z⟨k2⟩− → H2m(E[1]; Z)
+q∗
+1
+−−→ H2m(B(m − 2, 12); Z) −→ 0. (19)
+Moreover , for K := K(Z, 2m − 3),t h em a p
+id ×q1 : K × B(m − 2, 12) −→ K × E[1]
+induces the map in degree 2m cohomology
+(id ×q1)∗ = id ⊕ q∗
+1 : H2m(K; Z) ⊕ H2m(E[1]; Z) → H2m(K; Z)
+⊕ H2m(B(m − 2, 12); Z).
+Proof Throughout the proof, all cohomology is considered with integer coefﬁcients.
+Let (E∗.∗
+∗ , d∗) denote the Leray-Serre spectral sequence of
+F[1]− → B(m − 2, 12)
+q1
+−−→ E[1].
+By Lemma 6.7, F[1] has trivial cohomology in degrees up to 2 m, except
+H2m− 1(F[1]) ∼= Z⟨e2m− 1/2⟩. Thus, q∗
+1 is an isomorphism in cohomological degrees
+123
+
+=== PDF PAGE 28 ===
+46 Page 28 of 67 N. Sadovek, B. Schutte
+Fig. 2 Spectral sequence of q1
+up to 2m − 1. Moreover, since H2m− 1(B(m − 2, 12)) ∼= 0, the only non-trivial differ-
+ential emanating from any of the ﬁrst 2 m diagonals is
+d2m : E0,2m− 1
+2m ∼= Z⟨e2m− 1/2⟩− → H2m(E[1]) ∼= E2m,0
+2m , e2m− 1/2 ↦−→ k2
+and it is a monomorphism. See Fig. 2 for illustration. After passing to the (2m + 1)-th
+page, we observe that E2m,0
+2m+1 ∼= H2m(E[1])/Z⟨k2⟩ is the only non-trivial slot on the
+2m-th diagonal, hence we have a short exact sequence ( 19). Since the cokernel is a
+free Z-module, we conclude that it splits.
+As for the second part of the proof, the claim follows from similar reasoning and
+Künneth’s formula for cohomology, which is natural in this case. ⊓⊔
+Lemma 6.4 Let k2 ∈ H2m(E[1]; Z) be as in (18). Further let
+μ: K(Z, 2m − 3) × E[1]− → E[1]
+be the principal action map associated to the principal ﬁber space E [1]. Then
+μ∗(k2) = δSq 2ρ2ι2
+2m− 3 ⊕ k2 ∈ H2m(K(Z, 2m − 3) × E[1]; Z)
+∼= H2m(K(Z, 2m − 3); Z) ⊕ H2m(E[1]; Z).
+Proof Throughout the proof, all cohomology coefﬁcients will be assumed to be integer.
+By the Künneth formula for cohomology, Lemma6.3, and properties of H∗(K(Z, 2m−
+3)) from Table 2,w eh a v e
+H2m(K(Z, 2m − 3) × E[1]) ∼= H2m(K(Z, 2m − 3)) ⊕ H2m(E[1]).
+123
+
+=== PDF PAGE 29 ===
+Complex line ﬁelds on almost-complex manifolds Page 29 of 67 46
+We have by [33, Lemma 4, p. 17] the following homotopy commutative diagram:
+K(Z, 2m − 3) K(Z, 2m − 3)
+K(Z, 2m − 3) × B(m − 2, 12) K(Z, 2m − 3) × E[1] E[1]
+B(m − 2, 12) B(m, 12)
+1×q1
+ν
+proj2
+μ
+p1s
+qm,2
+(20)
+Here ν = μ ◦(id × q1) and ¯s is the canonical section of the projection proj 2.B y
+Proposition 5.2(ii), we have that q∗
+m,2 i ss u r j e c t i v ei nd e g r e e2m. Moreover, using
+Corollary 5.6, it is straightforward to check that
+ker(q∗
+m,2) ∩ H2m(B(m, 12)) ⊆ ker( p∗
+1) ∩ H2m(B(m, 12)).
+Indeed, q∗
+m,2 = q∗
+1 ◦ p∗
+1 , and by Lemma 6.3, q∗
+1 in degree 2 m is injective modulo the
+free Z-summand generated by k2.
+Combining the above together with the fact that ( 20) is a pullback diagram, we are
+justiﬁed in applying [ 33, Property 5] to obtain following exact sequence
+... −→ H2m(E[1])
+ν∗
+−−→ H2m(K(Z, 2m − 3) × B(m − 2, 12))
+τ1
+−−→ H2m+1(B(m, 12)) −→ ...,
+where τ1 is the relative transgression (see [ 33, page 16]). By Künneth’s formula,
+H2m+1(B(m, 12)) ∼= 0,
+so the fact that ν◦s ≃ q1 gives rise to an exact sequence
+ker(q∗
+1 )∩ H2m(E[1])
+ν∗|kerq∗
+1
+−−−−−→ ker(s)∗∩ H2m(K(Z, 2m − 3)× B(m − 2, 12))
+τ1
+−−→ 0,
+(21)
+where ker(q∗
+1 )∩H2m(E[1]) ∼= Z⟨k2⟩ by Lemma6.3. Künneth theorem for cohomology
+together with Table 2 yield
+H2m(K(Z, 2m − 3) × B(m − 2, 12)) ∼= H2m(K(Z, 2m − 3)) ⊕ H2m(B(m − 2, 12))
+and the intersection with ker(s∗) is isomorphic to the ﬁrst direct summand. Therefore,
+by (21) and Table 2,w eh a v e
+ν∗(k2) = δSq 2ρ2ι2
+2m− 3 ⊕ 0 ∈ H2m(K(Z, 2m − 3)) ⊕ H2m(B(m − 2, 12)).
+Furthermore, by Lemma 6.3, we have that
+μ∗(k2) = δSq 2ι2
+2m− 3 ⊕ nk2 ∈ H2m(K(Z, 2m − 3)) ⊕ H2m(E[1]),
+123
+
+=== PDF PAGE 30 ===
+46 Page 30 of 67 N. Sadovek, B. Schutte
+for some integer n. The principal action map μ has a right homotopy inverse
+T : E[1]→ K(Z, 2m − 3) × E[1]
+which is a section of the trivial ﬁber bundle K(Z, 2m − 3) × E[1]→ E[1] (see [28,
+33]). Using Lemma 6.3 for the description of H 2m(K(Z, 2m − 3) × E[1]), these two
+facts about T imply the ﬁrst and the last equality:
+2k2 = (μ ◦T)∗(2k2) = T∗(μ∗(2k2)) = T∗(0 ⊕ 2nk2) = 2nk2 ∈ H2m(E[1]),
+so we conclude that n = 1, thus ﬁnishing the proof. ⊓⊔
+Now, we calculate the indeterminancy of lifts.
+Corollary 6.5 Let all maps and spaces be deﬁned as in(18). Suppose that the classifying
+map
+(ξ, ℓ1,ℓ 2): X −→ B(m, 12)
+satisﬁes c m− 1(ξ− ℓ1 ⊕ ℓ2) = 0. Then the elements g ∗(k2), as g runs over lifts of
+(ξ, ℓ1,ℓ 2) to E [1], live in a single coset in H2m(X; Z) of the subgroup
+Indet := δSq 2ρ2 H2m− 3(X; Z). (22)
+Proof Let g1, g2 : X → E[1] be arbitrary lifts of (ξ, ℓ1,ℓ 2): X → B(m, 12). Then
+there exists a cohomology class α: X → K(Z, 2m − 3) such that the composition
+XX × XK (Z, 2m − 3) × E[1] E[1]/Delta1 α×g1 μ
+is homotopic to g2,s e e[ 28, 33]. By Lemma 6.4, we see that g∗
+2(k2) − g∗
+1(k2) =
+δSq 2ρ2α, for this α in H2m− 3(X; Z), which ﬁnishes the proof. ⊓⊔
+Now part (i) of Theorem 6.2 follows directly from the discussion at the beginning
+of this section and Corollary 6.5.
+To conclude, we now ﬁnish the proof of Theorem6.2(ii). By assumption, H2m(X; Z)
+has no 2-torsion, whence
+Indet = δSq 2ρ2 H2m− 3(X; Z) = 0.
+In this case, there is a unique secondary obstruction to lifting (ξ, ℓ1,ℓ 2) along qm,2,
+which is identiﬁed in the proceeding lemma. In the statement and proof of the result,
+we use Notation 4.12(v). Moreover, we will denote by F[1] the ﬁber of q1 in (18) and
+by s1 : F[1]→ W(m, 2) the map between the ﬁbers of qm,2 and q1 induced by p1.
+Lemma 6.6 Let k2 ∈ H2m(E[1]; Z) be the characteristic class in the ﬁbration
+F[1]− → B(m − 2, 12)
+q1
+−−→ E[1]
+as deﬁned in (18).I f H2m(X; Z) has no 2-torsion, then, given any lift g : X → E[1]
+of (ξ, ℓ1,ℓ 2) in (18),g ∗(k2) vanishes if and only if c m(ξ− ℓ1 ⊕ ℓ2) vanishes.
+123
+
+=== PDF PAGE 31 ===
+Complex line ﬁelds on almost-complex manifolds Page 31 of 67 46
+Proof Throughout the proof, we will consider only cohomology with integral coefﬁ-
+cients. Consider the following map of ﬁbrations
+F[1] B(m − 2, 12) E[1]
+W(m, 2) B(m − 2, 12) B(m, 12),
+s1
+q1
+p1
+qm,2
+which is induced by (18). The diagram above induces a morphism of Leray-Serre spec-
+tral sequences of q1 and qm,2. Applying the Lemma 6.7 from below, the differentials
+(i.e., transgressions) on the 2 m-th page ﬁt into the following commutative diagram:
+H2m− 1(W(m, 2)) H2m− 1(F[1]) e2m− 1 e2m− 1 = 2 · 1
+2 e2m− 1
+H2m(B(m, 12)) H2m(E[1]) am p∗
+1(am) = 2k2.
+s∗
+1
+τqm,2 τq1
+p∗
+1
+Here, τh stands for the cohomological transgression in the ﬁbrationh. Therefore, every
+homotopy lift
+E[1]
+XB (m, 12),
+p1g
+f
+of the classifying map f = (ξ, ℓ1,ℓ 2) over p1 satisﬁes
+2g∗(k2) = ( p1 ◦g)∗(am) = f ∗(am) = cm(ξ− ℓ1 ⊕ ℓ2) ∈ H2m(X).
+Thus, the claim follows since H 2m(X) has no 2-torsion by assumption. ⊓⊔
+For the above proof, we made use of the following lemma. For an inﬁnite cyclic
+group Z⟨e⟩, we will denote by Z⟨e/ p⟩ the non-trivial extension of Z/ p by Z⟨e⟩,f o r
+an integer p ≥ 2.
+Lemma 6.7 Let m ≥ 3 be odd and s 1 : F[1]→ W(m, 2) be the map induced by
+p1 between the ﬁbers of q m,2 and q1 in (18). Then F [1] is (2m − 2)–connected, has
+H2m(F[1]; Z) ∼= 0, and s 1 induces the inclusion
+s∗
+1 : Z⟨e2m− 1⟩ ∼= H2m− 1(W(m, 2)) −→ H2m− 1(F[1])
+∼= Z⟨e2m− 1/2⟩, e2m− 1 ↦−→ e2m− 1.
+Here e2m− 1 is as introduced in Proposition 4.13.
+123
+
+=== PDF PAGE 32 ===
+46 Page 32 of 67 N. Sadovek, B. Schutte
+Proof By Lemma 4.5 we have that s1 ﬁts into the following homotopy commutative
+Thomas diagram associated to (†).
+K(Z, 2m − 4) ∗ K(Z, 2m − 3)
+F[1] B(m − 2, 12) E[1]
+W(m, 2) B(m − 2, 12) B(m, 12)
+ev1
+i1
+s1
+q1
+id (†) p1
+qm,2
+(23)
+Here ev1 denotes the path-loop ﬁbration overK(Z, 2m− 3) and qm,2 and q1 are deﬁned
+as in ( 18).
+As before, all cohomology groups have integral coefﬁcients. We consider the Leray–
+Serre spectral sequence (E∗,∗
+∗ , d∗) of the homotopy ﬁbration
+K(Z, 2m − 4) −→ F[1]
+s1
+−→ W(m, 2), (24)
+which is the leftmost column in ( 23). Now F[1] is (2m − 2)-connected and since m
+is odd (see Table 5), we have that
+π2m− 1(F[1]) ∼= π2m− 1(W(m, 2)) ∼= Z.
+Hence H2m− 1(F[1]) ∼= Z by the universal coefﬁcient theorem. Therefore, the differ-
+ential on the (2m − 3)-th page
+d2m− 3 : E0,2m− 4
+2m− 3 ∼= Z⟨ι2m− 4⟩− → Z⟨e2m− 3⟩ ∼= E2m− 3,0
+2m− 3
+is an isomorphism.
+For m > 3, according to Table 2, the only non-zero terms on the (2m − 1)-th
+diagonal are
+E0,2m− 1
+2 ∼= Z/2⟨δSq 2ι2
+2m− 4⟩ and E2m− 1,0
+2 ∼= Z⟨e2m− 1⟩,
+and the differentials coming both into and from the diagonal are trivial. See Fig. 3A
+for illustration. Therefore, H 2m− 1(F[1]) ∼= Z is the non-trivial extension
+0 −→ Z⟨e2m− 1⟩
+s∗
+1
+−−→ H2m− 1(F[1]) −→ Z/2⟨δSq 2ι2
+2m− 4⟩− → 0,
+as claimed. Moreover, since m > 3 and by Table 2 we also have that there are no
+non-zero terms on the (2m)-th diagonal, hence H 2m(F[1]) ∼= 0.
+Finally, for m = 3, we have that CP∞ is a model for K(Z, 2), so the ﬁbration ( 24)
+becomes
+CP∞ −→ F[1]
+s1
+−→ W(3, 2).
+123
+
+=== PDF PAGE 33 ===
+Complex line ﬁelds on almost-complex manifolds Page 33 of 67 46
+Fig. 3 A portion of the Leray–Serre spectral sequence with Z coefﬁcients of s1 from ( 24)f o r A m > 3,
+and B m = 3
+Let H∗(CP∞ ; Z) ∼= Z[u], where|u|= 2 (so thatι2 becomes u). As already explained,
+we have that
+d3 : E0,2
+3 ∼= Z⟨u⟩
+∼=−−→ Z⟨e3⟩ ∼= E3,0
+3 , u ↦−→ e3,
+is an isomorphism. Moreover, since the differential d3 is a derivation, we obtain
+d3 : E0,4
+3 ∼= Z⟨u2⟩
+∼=−−→ Z⟨u ⊗ e3⟩ ∼= E3,2
+3 , u2 ↦−→ 2u ⊗ e3,
+as well as
+d3 : E0,6
+3 ∼= Z⟨u3⟩
+∼=−−→ Z⟨u2 ⊗ e3⟩ ∼= E4,2
+3 , u3 ↦−→ 3u2 ⊗ e3.
+After passing to the E4-page of the spectral sequence, we observe that the fourth and
+sixth diagonals are trivial, while the non-trivial slots on the ﬁfth diagonal
+E3,2
+4 ∼= Z/2⟨u ⊗ e3⟩ and E5,0
+4 ∼= Z⟨e5⟩
+have only zero differentials emanating to or from them at any later page. See Fig. 3B
+for illustration. Therefore, we conclude that the ﬁfth row remains unchanged until the
+E∞ -page and that H 5(F[1]) ∼= Z is the non-trivial extension
+0 −→ Z⟨e5⟩
+s∗
+1
+−−−→ H5(F[1]) −→ Z/2⟨u ⊗ e3⟩− → 0.
+Therefore, the claim follows in this case as well. ⊓⊔
+This completes the proof of Theorem 6.2.
+7 Two complex line bundles: m even
+In this section we prove Theorem 3.5.
+123
+
+=== PDF PAGE 34 ===
+46 Page 34 of 67 N. Sadovek, B. Schutte
+Similarly as in Sect. 6,l e t X be a 2m-dimensional CW complex with m > 3 even.
+Given complex vector bundles
+ξ: X −→ BU(m) and ℓ1,ℓ 2 : X −→ BU(1),
+we wish to lift the classifying map (ξ, ℓ1,ℓ 2): X → B(m, 12) of ( 14) along the
+ﬁbration
+W(m, 2) −→ B(m − 2, 12)
+qm,2
+−→ B(m, 12)
+deﬁned in (10). To this end, we use Proposition4.11 to construct the following Moore–
+Postnikov tower of qm,2,
+E[3]
+E[2] K(Z ⊕ Z/2, 2m)
+E[1] K(Z/2, 2m − 1)
+W(m, 2) B(m − 2, 12) B(m, 12) K(Z, 2m − 2)
+X
+p3
+k3
+p2
+k2
+p1
+q2
+q1
+qm,2 k1
+(ξ,ℓ1,ℓ2)
+(25)
+where each ki is the characteristic class in the ﬁbration qi− 1 (with q0 = qm,2), and
+each E[i] is constructed as the homotopy ﬁber of ki .
+7.1 The primary obstruction
+By Proposition 5.4, we obtain the following result.
+Lemma 7.1 Let all spaces and map be as in (25). Then the primary obstruction
+O2m− 2((ξ, ℓ1,ℓ 2), qm,2, k1) ⊆ H2m− 2(X; Z)
+to lifting (ξ, ℓ1,ℓ 2) along qm,2 is the singleton set {cm− 1(ξ− ℓ1 ⊕ ℓ2)}.
+7.2 The generalized secondary obstruction
+Throughout this section we will make use of Notation4.12(v) and Proposition4.13(vi).
+Lemma 7.2 Let all spaces and maps be as in (25). Suppose that the classifying map
+(ξ, ℓ1,ℓ 2): X → B(m, 12)
+123
+
+=== PDF PAGE 35 ===
+Complex line ﬁelds on almost-complex manifolds Page 35 of 67 46
+satisﬁes cm− 1(ξ− ℓ1 ⊕ ℓ2) = 0. If H2m− 1(X; Z/2) = Sq 2ρ2 H2m− 3(X; Z), then the
+generalized secondary obstruction
+O2m− 1((ξ, ℓ1,ℓ 2), qm,2, k2) ⊆ H2m− 1(X; Z/2)
+to lifting (ξ, ℓ1,ℓ 2) along qm,2 contains 0.
+Proof Throughout the proof, all cohomology will be assumed to be with Z/2 coefﬁ-
+cients. Let the class k2 ∈ H2m− 1(E[1]) be as in ( 25).
+First, we will compute H2m− 1(E[1]) using the mod 2 Leray–Serre spectral sequence
+(E∗,∗
+∗ , d∗) of the ﬁbration
+K(Z, 2m − 3) −→ E[1]
+p1
+−→ B(m, 12). (26)
+By construction, we get that
+d
+2m− 2 : Z/2⟨ι2
+2m− 3⟩ ∼= E0,2m− 3
+2m− 2 −→ E2m− 2,0
+2m− 2 ∼= H2m− 2(B(m, 12)), ι2
+2m− 3 ↦−→ bm− 1
+Moreover, since the differentials are derivations, we observe that d2m− 2 : E2,2m− 3
+2m− 2 →
+E2m− 2,0
+2m− 2 satisﬁes
+d2m− 2(ι2
+2m− 3 ⊗ u) = d2m− 2(ι2
+2m− 3)u = bm− 1u ̸= 0 ∈ E2m,0
+2m− 2 ∼= H2m(B(m, 12)),
+(27)
+for all u ∈ H2(B(m, 12)), see Fig. 4A for an illustration. In particular, we get
+E2,2m− 3
+∞ = 0.
+Next, by Kudo’s transgression theorem [ 20] and the Wu formula (see also Propo-
+sition 4.13(vi)), we calculate that d2m : E0,2m− 1
+2m → E2m,0
+2m satisﬁes
+d2m(Sq 2ι2
+2m− 3) = Sq 2bm− 1 = b1bm− 1 + (m − 2)bm = 0 ∈ E2m,0
+2m
+∼= H2m(B(m, 12))/(bm− 1), (28)
+due to m being even. Thus
+Z/2⟨Sq 2ι2
+2m− 3⟩ ∼= E0,2m− 1
+2m = E0,2m− 1
+∞
+is the only non-zero term on the (2m − 1)-th diagonal, hence H 2m− 1(E[1]) ∼=
+Z/2⟨Sq 2ι2
+2m− 3⟩. Moreover, from ( 28) it also follows that d2m : E2,2m− 1
+2m → E2m+2,0
+2m
+satisﬁes
+d2m(Sq 2ι2
+2m− 3 ⊗ u) = d2m(Sq 2ι2
+2m− 3)u = 0 ∈ E2m+2,0
+2m ,
+for any u ∈ H2(B(m, 12)). This means that the only non-trivial slots on the(2m+1)-th
+diagonal on the (2m + 1)-th page are
+E0,2m+1
+2m+1 ∼= E0,2m+1
+2 and E2,2m− 1
+2m+1 ∼= E2,2m− 1
+2 .
+123
+
+=== PDF PAGE 36 ===
+46 Page 36 of 67 N. Sadovek, B. Schutte
+Passing to the next page, we can analogously show (since m is even and thus
+(2m− 5
+2
+)
+is odd) that
+d2m+2 : E0,2m+1
+2m+2 −→ E2m+2,0
+2m+2 ∼=
+(
+H∗(B(m, 12))/(bm− 1)
+) (2m+2)
+,
+satisﬁes
+d2m+2(Sq 4ι2
+2m− 3) = Sq 4bm− 1
+= b2bm− 1 +
+( 2m − 5
+2
+)
+b1bm +
+( 2m − 3
+4
+)
+bm+1 ̸= 0 ∈ E2m+2,0
+2m+2 .
+Therefore, E2,2m− 1
+2m+3 = E2,2m− 1
+∞ remains the only non-trivial slot on the (2m + 1)-th
+diagonal (see again Fig. 4A), so
+H2m+1(E[1]) ∼= Z/2⟨Sq 2ι2
+2m− 3⟩⊗ H2(B(m, 12)). (29)
+Now, to show thatk2 is the generator, we observe that the transgression homomorphism
+in the mod 2 Leray–Serre spectral sequence of the homotopy ﬁbration
+F[1]− → B(m − 2, 12)
+q1
+−→ E[1]
+must be surjective since H 2m− 1(B(m − 2, 12)) ∼= 0. Consequently,
+k2 = Sq 2ι2
+2m− 3 ∈ H2m− 1(E[1]), (30)
+as claimed.
+It remains to compute the indeterminacy of lifts to E[2]. The proceeding arguments
+are similar to those in the proof of Theorem 6.2; accordingly, we will be less detailed
+in our arguments. To begin, consider the following homotopy commutative diagram:
+K(Z, 2m − 3) K(Z, 2m − 3)
+K(Z, 2m − 3) × B(m − 2, 12) K(Z, 2m − 3) × E[1] E[1]
+B(m − 2, 12) B(m, 12)
+1×q1
+ν
+proj2
+μ
+p1¯s
+qm,2
+We also have an exact sequence
+... −→ ker(q∗
+1 ) ∩ H2m− 1(E[1])
+ν∗
+−→ ker(¯s∗) ∩ H2m− 1(K(Z, 2m − 3)
+×B(m − 2, 12))
+τ1
+−→ H2m(B(m, 12)) −→ ....
+123
+
+=== PDF PAGE 37 ===
+Complex line ﬁelds on almost-complex manifolds Page 37 of 67 46
+Fig. 4 A portion of the mod 2 Leray–Serre spectral sequence of A p1 from (26), and B p2 from (33), where
+dashed arrows represent zero differentials
+Brieﬂy, we wish to compute μ∗(k2) = 1 ⊗ k2 + ν∗(k2), where
+ν∗(k2) ∈ ker(¯s) ∩ ker(τ1) ∩ H2m− 1(K(Z, 2m − 3) × B(m − 2, 12)).
+By direct calculation, we see that ker (¯s) ∩ H2m− 1(K(Z, 2m − 3) × B(m − 2, 12))
+is generated by ι2
+2m− 3 ⊗ u, for all u ∈ H2(B(m − 1, 12)), and Sq 2ι2m− 3 ⊗ 1.
+To compute the action of the relative transgression on these elements, we use our
+recently acquired knowledge of the mod 2 Leray–Serre spectral sequence (E∗,∗
+∗ , d∗)
+of p1 : E[1]→ B(m, 12) together with properties [ 33, Property 1 & 2, p. 14] of the
+relative transgression τ1. Namely, combining (27) and ( 28), we conclude that
+ker(¯s) ∩ ker(τ1) ∩ H2m− 1(K(Z, 2m − 3) × B(m − 2, 12)) ∼= Z/2⟨Sq 2ι2m− 3 ⊗ 1⟩.
+Finally, as in the proof of Corollary 6.5, we get Indet = Sq 2ρ2 H2m− 3(X; Z). The
+result follows. ⊓⊔
+7.3 The generalized tertiary obstruction
+Now Theorem 3.5 is an immediate consequence of the following theorem.
+Theorem 7.3 Let all spaces and maps be as in (25). Suppose that the classifying map
+(ξ, ℓ1,ℓ 2): X −→ B(m, 12)
+satisﬁes cm− 1(ξ− ℓ1 ⊕ ℓ2) = 0. Further suppose that all of the following conditions
+hold.
+• H2m− 1(X; Z/2) = Sq 2ρ2 H2m− 3(X; Z);
+• H2m(X; Z/2) = Sq 2 H2m− 2(X; Z/2); and
+• H2m(X; Z) has no 2-torsion.
+123
+
+=== PDF PAGE 38 ===
+46 Page 38 of 67 N. Sadovek, B. Schutte
+Then the generalized tertiary obstruction
+O2m((ξ, ℓ1,ℓ 2), qm,2, k3) ⊆ H2m(X; Z ⊕ Z/2)
+to lifting (ξ, ℓ1,ℓ 2) along qm,2 is the singleton set {(cm(ξ− ℓ1 ⊕ ℓ2), 0)}.
+The rest of the section is dedicated to proving Theorem 7.3.
+By Lemmata 7.1 and 7.2, there is a lift making the following diagram commute
+B(m − 2, 12)
+XB (m, 12)
+qm,2
+(ξ,ℓ1,ℓ2)
+if and only if
+g∗(k3) = 0 ∈ H2m(X; Z)/IndetZ ⊕ H2m(X; Z/2)/IndetZ/2,
+where g: X → E[2] is any lift of (ξ, ℓ1,ℓ 2) to E[2], and Indet R denotes the inde-
+terminacy of such lifts with respect to the coefﬁcient ring R ∈{ Z, Z/2}. Towards a
+proof of Theorem 7.3, we compute these indeterminacy subgroups. Consider the usual
+homotopy commutative diagram:
+K(Z/2, 2m − 2) K(Z/2, 2m − 2)
+K(Z/2, 2m − 2) × B(m − 2, 12) K(Z/2, 2m − 2) × E[2] E[2]
+B(m − 2, 12) E[1]
+1×q2
+ν
+proj2
+μ
+p2¯s
+q2
+(31)
+In this section, we henceforth write K := K(Z/2, 2m − 2) and B := B(m − 2, 12).
+We have an exact sequence,
+... −→ ker(q∗
+2 )∩H2m(E[2])
+ν∗
+−→ ker(¯s∗)∩H2m(K×B)
+τ1
+−→ H2m+1(E[1]) −→ ...,
+(32)
+where all cohomology groups have Z ⊕ Z/2 coefﬁcients. By standard arguments,
+ν∗(k) ∈ ker(¯s∗) ∩ ker(τ1) ∩ H2m(K × B; Z ⊕ Z/2).
+Thereupon, we wish to compute this intersection. As a ﬁrst step, using the cohomolog-
+ical Künneth formula together with Proposition4.10 and Serre’s classical computation
+of H∗(K(Z/2, 2m − 2); Z/2) [26, Theorem 3, p. 90], we obtain the following propo-
+sition.
+Proposition 7.4 The cohomology of K × B satisﬁes the following.
+(i) The group H2m(K × B; Z) is isomorphic to H0(K; Z) ⊗ H2m(B; Z).
+123
+
+=== PDF PAGE 39 ===
+Complex line ﬁelds on almost-complex manifolds Page 39 of 67 46
+(ii) The group H2m(K × B; Z/2) is isomorphic to
+H0(K; Z/2) ⊗ H2m(B; Z/2) ⊕ H2m− 2(K; Z/2) ⊗ H2(B; Z/2) ⊕ H2m(K; Z/2) ⊗ H0(B; Z/2).
+Combining the above, we procure the following lemma. Below, κ2m− 2 ∈
+H2m− 2(K(Z/2, 2m − 2); Z/2) denotes the mod 2 fundamental class (see Notation
+4.6(vii)).
+Lemma 7.5 Let s be the canonical section of the projection proj2 : K × B → Ba s
+deﬁned in (31). Further let τ1 be the relative transgression of (32). Then
+ker(¯s)∗ ∩ ker(τ1) ∩ H2m(K × B; Z ⊕ Z/2)
+is generated by (0, Sq 2κ2m− 2 ⊗ 1).
+Proof It is straightforward to see that ker (¯s∗) ∩ H2m(K × B; Z ⊕ Z/2) is generated
+by the elements
+• (0, Sq 2κ2m− 2 ⊗ 1), and
+• (0,κ2m− 2 ⊗ u), for all u ∈ H2(B(m − 2, 12); Z/2).
+To compute the action of the relative transgression on these elements, consider the
+mod 2 Leray–Serre spectral sequence (E∗,∗
+∗ , d∗) of the homotopy ﬁbration
+K(Z/2, 2m − 2) −→ E[2]
+p2
+−→ E[1]. (33)
+Using [33, Property 1 & 2], we compute the following, which is illustrated in Fig. 4B.
+Namely, by construction, we have
+d2m− 1 : E0,2m− 2
+2m− 1 −→ E2m− 1,0
+2m− 1 ,κ 2m− 2 ↦−→ k2.
+From ( 30) and the properties of that spectral sequence it follows that
+d2m− 1 : E2,2m− 2
+2m− 1 → E2m+1,0
+2m− 1 satisﬁes
+d2m− 1(κ2m− 2 ⊗ u) = k2u = (Sq 2ι2
+2m− 3)u ̸= 0 ∈ H2m+1(E[1]; Z/2),
+for all u ∈ H2(B(m − 2, 12); Z/2). The element (Sq 2ι2
+2m− 3)u is indeed non-zero due
+to (29) (see also Fig. 4A). Finally, by Kudo’s transgression formula, we see that for
+d2m+1 : E0,2m
+2m+1 → E2m+1,0
+2m+1 we get
+d2m+1(Sq 2κ2m− 2) = Sq 2 Sq 2ι2
+2m− 2 = 0 ∈ E∗,0
+2m+1,
+since Sq 2 Sq 2ι2
+2m− 2 = Sq 3 Sq 1ι2
+2m− 2 = 0. Thus τ1(Sq 2κ2m− 2 ⊗ 1) = 0. The result
+follows. ⊓⊔
+Using Lemma 7.5, we compute the image of k3 under the principal action map.
+123
+
+=== PDF PAGE 40 ===
+46 Page 40 of 67 N. Sadovek, B. Schutte
+Corollary 7.6 Let μ: K(Z/2, 2m − 2) × E[2]→ E[2] be the principal action map
+associated to the principal ﬁber space E [2]. Let k3 ∈ H2m(E[2]; Z⊕ Z/2) as in (25).
+Then
+μ∗(k3) = 1 ⊗ k3 + (0, Sq 2κ2m− 2 ⊗ 1).
+Finally, Theorem 7.3 follows immediately from the proceeding lemma.
+Lemma 7.7 Let all maps and spaces be as deﬁned in (25). Suppose that the classifying
+map (ξ, ℓ1,ℓ 2): X → B(m − 2, 12) satisﬁes cm− 1(ξ− ℓ1 ⊕ ℓ2) = 0. Then, as g runs
+over lifts of (ξ, ℓ1,ℓ 2) to E [2], the integral part of all the pullbacks g ∗(k3) are the
+same element in H2m(X; Z) with zero indeterminacy. Moreover , the mod 2 part of the
+pullbacks g∗(k3) is contained in a single coset in H2m(X; Z/2) of the subgroup
+IndetZ/2 = Sq 2 H2m− 2(X; Z/2).
+Proof Let g1, g2 : X → E[2] be two lifts of (ξ, ℓ1,ℓ 2) to E[2]. Then there exists an
+element α ∈ H2m− 2(X; Z/2) such that the difference
+g∗
+2(k3) − g∗
+1(k3) ∈ H2m(X; Z ⊕ Z2) ∼= H2m(X; Z) ⊕ H2m(X; Z/2)
+is (0, Sq 2α). The result follows. ⊓⊔
+Since IndetZ = 0, there is a unique integral tertiary obstruction to lifting (ξ, ℓ1,ℓ 2)
+along qm,2 which is identiﬁed in the proceeding lemma. To state the result, we use
+Notation 4.12(v).
+Lemma 7.8 Let k3 ∈ H2m(E[2]; Z ⊕ Z/2) be the characteristic class in the ﬁbration
+q2 : B(m − 2, 12) → E[2]
+as deﬁned in (25). Suppose that H2m(X; Z) has no 2-torsion and that H2m(X; Z/2) ∼=
+Sq 2 H2m− 2(X; Z/2). Then, given any lift g : X → E[2] of (ξ, ℓ1,ℓ 2) in (25),g ∗(k3)
+vanishes if and only if c m(ξ− ℓ1 ⊕ ℓ2) vanishes.
+The proof of Lemma 7.8 is similar to the proof of Lemma 6.6, hence we omit the
+details for brevity. This completes the proof of Theorem 7.3, which in turn completess
+the proof of Theorem 3.5.
+8 Three complex line bundles: m even
+In this section we prove Theorem 3.8.
+Let X be a 2m-dimensional CW complex with m > 5 even. Given complex vector
+bundles
+ξ: X → BU(m) and ℓ1,ℓ 2,ℓ 3 : X → BU(1),
+we wish to lift the classifying map (ξ, ℓ1,ℓ 2,ℓ 3): X → B(m, 13) of (14) along the
+ﬁbration
+W(m, 3) −→ B(m − 3, 13)
+qm,3
+−→ B(m, 13)
+123
+
+=== PDF PAGE 41 ===
+Complex line ﬁelds on almost-complex manifolds Page 41 of 67 46
+deﬁned in (10). Using Proposition 4.11, we construct the following Moore–Postnikov
+factorization of qm,3,
+E[4]
+E[3] K(Z, 2m)
+E[2] K(π2m− 2, 2m − 1)
+E[1] K(Z, 2m − 2)
+W(m, 3) B(m − 3, 13) B(m, 13) K(Z, 2m − 4)
+X
+p4
+k4
+p3
+k3
+p2
+k2
+p1
+q3
+q2
+q1
+qm,3 k1
+(ξ,ℓ1,ℓ2,ℓ3)
+(34)
+where each ki is the characteristic class in the ﬁbration qi− 1 (for q0 = qm,3); and each
+E[i] is the homotopy ﬁber of ki . Lastly, recall thatπ2m− 2 = π2m− 2(W(m, 3)) satisﬁes
+Table 7.
+8.1 The primary obstruction
+Applying Proposition 5.4, we procure the following result.
+Lemma 8.1 Let all spaces and maps be as in (34). Then the primary obstruction
+O2m− 4((ξ, ℓ1,ℓ 2,ℓ 3), qm,3, k1) ⊆ H2m− 4(X; Z)
+to lifting (ξ, ℓ1,ℓ 2,ℓ 3) along qm,3 is the singleton set {cm− 2(ξ− ℓ1 ⊕ ℓ2 ⊕ ℓ3)}.
+8.2 The generalized secondary obstruction
+By similar arguments to the proof of Theorem 3.2, mutatis mutandis, we achieve the
+following result.
+Lemma 8.2 Let all spaces and maps be as in (34). Suppose that the classifying map
+(ξ, ℓ1,ℓ 2,ℓ 3): X −→ B(m, 13)
+satisﬁes cm− 2(ξ− ℓ1 ⊕ ℓ2 ⊕ ℓ3) = 0.
+123
+
+=== PDF PAGE 42 ===
+46 Page 42 of 67 N. Sadovek, B. Schutte
+(i) Further suppose that H2m− 2(X; Z) = δSq 2ρ2 H2m− 5(X; Z). Then zero is an
+element of the generalized secondary obstruction
+O2m− 2((ξ, ℓ1,ℓ 2,ℓ 3), qm,3, k2) ⊆ H2m− 2(X; Z)
+to lifting (ξ, ℓ1,ℓ 2,ℓ 3) along qm,3.
+(ii) Further suppose that H2m− 2(X; Z) has no 2-torsion. Then the generalized sec-
+ondary obstruction
+O2m− 2((ξ, ℓ1,ℓ 2,ℓ 3), qm,3, k2) ⊆ H2m− 2(X; Z)
+to lifting (ξ, ℓ1,ℓ 2,ℓ 3) along qm,3 is the singleton set {cm− 1(ξ− ℓ1 ⊕ ℓ2 ⊕ ℓ3)}.
+8.3 The generalized tertiary obstruction
+Next, assuming that zero is an element of both
+O2m− 4((ξ, ℓ1,ℓ 2,ℓ 3), qm,3, k1) and O2m− 2((ξ, ℓ1,ℓ 2,ℓ 3), qm,3, k2),
+we will determine the generalized tertiary obstruction to lifting.
+Lemma 8.3 Let m > 5 be an even integer and let all spaces and maps be as in (34).
+Suppose that cm− 2(ξ− ℓ1 ⊕ ℓ2 ⊕ ℓ3) = 0 and that condition Lemma 8.2(i) or Lemma
+8.2(ii) is satisﬁed. If any one of the following conditions (i)–(iv) hold, then zero is an
+element of the generalized tertiary obstruction
+O2m− 1((ξ, ℓ1,ℓ 2,ℓ 3), qm,3, k3) ⊆ H2m− 1(X;π2m− 2).
+(i) m ≡ 0m o d8 and H2m− 1(X; Z/4) = 0;
+(ii) m ≡ 2m o d8 ;
+(iii) m ≡ 4m o d8 and H2m− 1(X; Z/2) = 0;o r
+(iv) m ≡ 6m o d8 .
+The rest of this section is dedicated to proving Lemma 8.3.
+Determining the Moore–Postnikov invariant. Towards a proof of Lemma 8.3,w e
+compute the degree (2m − 1) Moore–Postnikov invariant k3 ∈ H2m− 1(E[2];π2m− 2)
+as follows.
+Proposition 8.4 Let k3 ∈ H2m− 1(E[2];π2m− 2) be as in (34). Then the mod p part of
+k3 is equal to ⎧
+⎪⎪
+⎨
+⎪⎪
+⎩
+Sq
+4ι2
+2m− 5 p = 2 and m = 4m o d8
+θ2
+2 Sq 4ι2
+2m− 5 p = 4 and m = 0m o d8
+b(3)
+m− 1 ⊗ ι3
+2m− 3 p = 3 and m = 0m o d3.
+123
+
+=== PDF PAGE 43 ===
+Complex line ﬁelds on almost-complex manifolds Page 43 of 67 46
+Proof We study the Leray–Serre spectral sequence (E∗,∗
+∗ , d∗) with Z/ p coefﬁcients
+of the homotopy ﬁbration
+F[2]− → B(m − 3, 13)
+q2
+−−→ E[2].
+Recall that the ﬁber F[2] is (2m − 3)-connected. The differential
+d2m− 1 : H2m− 2(F[2]; Z/ p) ∼= E0,2m− 2
+2m− 1 −→ E2m− 1,0
+2m− 1 ∼= H2m− 1(E[2]; Z/ p)
+on the(2m− 1)-th page of E∗
+∗,∗ has to be surjective, since H2m− 1(B(m− 3, 13); Z/ p) =
+0. Thus, the mod p part of k3 is the generator of H 2m− 1(E[2]; Z/ p) and the claim
+follows from Lemma 8.5. ⊓⊔
+Lemma 8.5 Let E [2] be as in (34). Then
+H2m− 1(E[2]; Z/ p) =
+⎧
+⎪⎨
+⎪⎩
+Z/2⟨Sq 4ι2
+2m− 5⟩ p = 2 and m = 4m o d8
+Z/2⟨θ2
+2 Sq 4ι2
+2m− 5⟩ p = 4 and m = 0m o d8
+Z/3⟨b(3)
+1 ⊗ ι3
+2m− 3⟩. p = 3 and m = 0m o d3,
+where θ2
+2 is the coefﬁcient homomorphism induced by the inclusion Z/2 ↪−→ Z/4 as
+in Notation 4.6.
+The ﬁrst in the proof of Lemma 8.5 are the following technical claims regarding
+the structure of cohomology of E[1]. We recall the ﬁbration
+K(Z, 2m − 5)
+h
+−→ E[1]
+p1
+−→ B(m, 13), (35)
+as deﬁned in ( 34).
+Lemma 8.6 Let E [1] be as in (34). Its cohomology satisﬁes the following.
+(i) Let p = 2 and m = 4m o d8 . We have
+H2m− 2(E[1]; Z/2) ∼= Z/2⟨Sq 3ι2
+2m− 5⟩
+⊕
+(
+H∗(B(m, 13); Z/2)/(bm− 2, bm− 1)
+) (2m− 2)
+and the inclusion h of the ﬁber in (35) induces the projection on the direct
+summand
+h∗: H2m− 2(E[1]; Z/2) −→ H2m− 2(K(Z, 2m − 5); Z/2) ∼= Z/2⟨Sq 3ι2
+2m− 5⟩.
+(36)
+Moreover ,H2m− 1(E[1]; Z/2) ∼= Z/2⟨Sq 4ι2
+2m− 5⟩ and (Sq 3ι2
+2m− 5 ⊕ 0)x ̸= 0 ∈
+H2m(E[1]; Z/2), for any x ∈ H2(E[1]; Z/2) ∼= H2(B(m, 13); Z/2).
+123
+
+=== PDF PAGE 44 ===
+46 Page 44 of 67 N. Sadovek, B. Schutte
+(ii) Let p = 4 and m = 0m o d8 . Then, analogously to part (i), we have that the
+element
+δ2
+2 Sq 2ι2
+2m− 5 ̸= 0 ∈ H2m− 2(E[1]; Z/4)
+as well as its multiple by any element from H2(E[1]; Z/4) is nonzero in
+H2m(E[1]; Z/4). Moreover , we haveH2m− 1(E[1]; Z/4) = Z/2⟨θ2
+2 Sq 4ι2
+2m− 5⟩.
+(iii) Let p = 3 and m = 0m o d3 . Then H2m− 1(E[1]; Z/3) = 0. Moreover , b(3)
+m− 1 ̸=
+0 ∈ H2m− 2(E[1]; Z/3),b u tb(3)
+1 b(3)
+m− 1 = 0 ∈ H2m(E[1]; Z/3).H e r eb(3)
+i is the
+mod 3 Chern class
+ai = ci(γm × 1r − 1 × γr
+1 ) ∈ H2i(B(m, 13); Z)
+(see Notation 4.12).
+Proof Let us split the proof with respect to p. In each case, m will be assumed to
+be of the corresponding divisibility. In all of the cases, we will consider the ﬁbration
+(35). Using Corollary 4.8, we study the Leray–Serre spectral sequence (E
+∗,∗
+∗ , d∗) of
+p1 with mod p coefﬁcients. Speciﬁcally, we will look at the (2m − 1)-th diagonal of
+the E∞ -page.
+(i) Let ﬁrst p = 2. Then the differential on the (2m − 4)-th page satisﬁes
+d2m− 4(ι2
+2m− 5) = bm− 2 ∈ E2m− 4,0
+2m− 4 ∼= H2m− 4(B(m, 13); Z/2).
+Since d2m− 4 is a morphism of H ∗(B(m, 13); Z/2)-modules, we obtain
+d2m− 4(ι2
+2m− 5 ⊗ x) = bm− 2 x ̸= 0 ∈ E2m,0
+2m− 4 ∼= H2m(B(m, 13); Z/2),
+for any nonzero x ∈ H4(B(m, 13); Z/2). Therefore, E4,2m− 5
+∞ = E4,2m− 5
+2m− 3 = 0
+and
+E∗,0
+2m− 3 ∼= E∗,0
+2m− 2 ∼= H∗(B(m, 13); Z/2)/(bm− 2).
+Additionally, by Kudo’s transgression theorem, the differential on the(2m− 2)-th
+page, satisﬁes
+d2m− 2(Sq 2ι2
+2m− 5) = Sq 2bm− 2 =
+( m − 4
+0
+)
+b1bm− 2 +
+( m − 3
+1
+)
+b0bm− 1
+= b1bm− 2 + bm− 1, (37)
+which is non-zero in E∗,0
+2m− 2 because b1,..., bm are algebraically independent.
+It also follows that E2,2m− 3
+∞ = E2,2m− 3
+2m− 1 = 0 and
+E∗,0
+2m− 1 ∼= H∗(B(m, 13); Z/2)/(bm− 2, bm− 1).
+Now the differential on the (2m − 1)-th page is trivial, because, similarly as
+before, we have d2m− 1(Sq 3ι2
+2m− 5) = Sq 3bm− 2 = 0. As for the differential
+123
+
+=== PDF PAGE 45 ===
+Complex line ﬁelds on almost-complex manifolds Page 45 of 67 46
+Fig. 5 A portion of the Leray–Serre spectral sequence of homotopy ﬁbration p1 from (35) with A Z/2, and
+B Z/3 coefﬁcients
+on (2m)-th page, we use Wu’s formula and the fact that m is divisible by 4 to
+compute
+d2m(Sq 4ι2
+2m− 5) = Sq 4bm− 2
+=
+( m − 5
+0
+)
+b2bm− 2 +
+( m − 4
+1
+)
+b1bm− 1
++
+( m − 3
+2
+)
+b0bm = b2bm− 2.
+However, this is zero in E∗,0
+2m ,s o
+E0,2m− 1
+2m = E0,2m− 1
+∞ = Z/2⟨Sq 4ι2
+2m− 4⟩.
+Finally, since the only non-trivial term on the (2m − 1)-th diagonal is E0,2m− 1
+∞ ,
+we glean the conclusion of the lemma in this case, see Fig. 5A for an illustration.
+(ii) Observe that θ: H∗(−; Z/2) → H∗(−; Z/4) satisﬁes the following formula:
+For any x ∈ H∗(−; Z/2) and y ∈ H∗(−; Z),
+we have that θ(x ⌣ρ 2 y) = θ(x)⌣ρ 4(y).
+Using this formula, the case that p = 4 follows from similar arguments to the
+case that p = 2. We omit the details for brevity.
+(iii) Let p = 3. Analogous to the above, we study the mod 3 spectral sequence of the
+same ﬁbration, see Table 3. Namely, the differential
+d2m− 4 : H2m− 5(K(Z, 2m − 5); Z/3) = E0,2m− 5
+2m− 5 −→ E2m− 4,0
+2m− 4
+= H2m− 4(B(m, 13); Z/3)
+123
+
+=== PDF PAGE 46 ===
+46 Page 46 of 67 N. Sadovek, B. Schutte
+is deﬁned by d(ι3
+2m− 5) = bm− 2. Therefore, E2m− 5,4
+∞ = E2m− 5,4
+2m− 3 = 0 and
+E∗,0
+2m− 3 =···= E∗,0
+2m ∼= H∗(B(m, 13); Z/3)/(bm− 2).
+By [ 2, Thm. 11.3 & Ex. on page 429] and Kudo’s transgression formula for
+Steenrod powers, we get
+d2m(P1
+3 (ι3
+2m− 5)) = P1
+3 (bm− 2)
+= b2
+1bm− 2 − 2b2bm− 2 − b1bm− 1 + mbm ̸= 0 ∈ E∗,0
+2m ,
+because b1bm− 1 + mbm = b1bm− 1 /∈ (bm− 2) due to algebraic independence of
+bi ’s (and the fact that m is divisible by 3). Therefore, since all of the slots on
+the (2m − 1)-th diagonal on the E∞ -page are zero, we procure the claim in this
+case. See Fig. 5B for an illustration.
+⊓⊔
+Using the above lemma, we may now prove the claimed result:
+Proof of Lemma 8.5 Let us look at the mod p Leray–Serre spectral sequence(E∗,∗
+∗ , d∗)
+of the ﬁbration
+K(Z, 2m − 3)
+j
+−→ E[2]
+p2
+−−→ E[1]. (38)
+Since H2m− 2(K(Z, 2m − 3); Z/ p) = 0 (see Table 3), we observe that the slot
+E2m− 1,0
+∗ ∼= H2m− 1(E[1]; Z/ p)
+is never hit by a differential—see Fig. 6A for illustration.
+Next we consider the ideal in H ∗(E[1]; Z/ p) generated by the image of the differ-
+ential on the (2m − 2)-th page. Namely, we claim that
+d2m− 2 : H2m− 3(K(Z, 2m− 3); Z/ p) ∼= E0,2m− 3
+2m− 2 −→ E2m− 2,0
+2m− 2 ∼= H2m− 2(E[1]; Z/ p)
+satisﬁes the following rule:
+d2m− 2(ι2m− 3) =
+⎧
+⎪⎪
+⎨
+⎪⎪
+⎩
+Sq
+3ι2
+2m− 5, for p = 2,
+δ2
+2 Sq 2ι2
+2m− 5, for p = 4,
+b(3)
+m− 1, for p = 3.
+(39)
+Let us complete the proof of the lemma assuming ( 39) holds. By Lemma 8.6(i)-(iii)
+these values are all nonzero. In the case that p = 3, by Lemma 8.6(iii), we obtain that
+E2,2m− 3
+∞ ∼= Z/3⟨b(3)
+1 ⊗ ι3
+2m− 3⟩,
+which is the only non-trivial term on the (2m − 1)-th diagonal. This completes the
+proof of the lemma for p = 3. On the other hand, for p = 2, 4 we have that d2m− 2(x ⊗
+123
+
+=== PDF PAGE 47 ===
+Complex line ﬁelds on almost-complex manifolds Page 47 of 67 46
+Fig. 6 A portion of the mod 2 Leray–Serre spectral sequence of A p2 from (38), and B s1 from (41), where
+dashed arrows represent zero differentials
+ι2m− 3) ̸= 0, for any x ∈ H2(E[1]; Z/ p), which implies that E2,2m− 3
+∞ ∼= 0. Thus, for
+p = 2, 4, the only terms on the (2m − 1)-th diagonal are (2m − 1, 0) and (0, 2m − 1).
+First, let p = 2. By Kudo’s transgression theorem, we have that the differential
+d2m : E0,2m− 1
+2m → E2m,0
+2m maps
+d2m : H2m− 1(K(Z, 2m − 3); Z/2) −→ H2m(E[1]; Z/2), Sq 2ι2
+2m− 3
+↦−→ Sq 2(Sq 3ι2
+2m− 5 ⊕ 0). (40)
+The Adem relation Sq 2 Sq 3 = Sq 5 + Sq 4 Sq 1 and Lemma 8.6(i) imply
+h∗(Sq 2(Sq 3ι2
+2m− 5 ⊕ 0)) = Sq 2h∗(Sq 3ι2
+2m− 5 ⊕ 0)
+= Sq 5ι2
+2m− 5 ̸= 0 ∈ H2m− 1(K(Z, 2m − 3); Z/2),
+so the differential ( 40) is non-zero, implying that E2m− 1,0
+∞ ∼= H2m− 1(E[1]; Z/2) is
+the only term on the (2m − 1)-th diagonal. Thus, the lemma holds for p = 2.
+Similarly, for p = 4w eh a v ed2m(θ2
+2 Sq 2ι2
+2m− 3
+) = θ2
+2 Sq 5ι2
+2m− 5 ̸= 0, for p = 4, so
+the lemma holds in this case as well.
+We now prove the claim (39). Let p = 2 and consider the mod 2 Leray–Serre spectral
+sequence (F∗,∗
+∗ , d∗) of the ﬁbration
+K(Z, 2m − 6) −→ F[1]
+s1
+−→ W(m, 3), (41)
+see Fig. 6B for an illustration. It is straightforward to see that
+d2m− 5 : Z/2⟨ι2
+2m− 6⟩ ∼= F0,2m− 6
+2m− 5 −→ F2m− 5
+2m− 5 ∼= Z/2⟨ f2m− 5⟩,ι2
+2m− 6 ↦−→ f2m− 5.
+Thus, by Kudo’s transgression theorem and the action of the Steenrod squares detailed
+in Proposition 4.13(v), we deduce that d2m− 3 : F0,2m− 4
+2m− 3 → F2m− 3,0
+2m− 3 satisﬁes
+d2m− 3(Sq 2ι2
+2m− 6) = Sq 2 f2m− 5 = f2m− 3 ∈ F2m− 3,0
+2m− 3 ∼= Z/2⟨ f2m− 3⟩,
+123
+
+=== PDF PAGE 48 ===
+46 Page 48 of 67 N. Sadovek, B. Schutte
+thus F2m− 3,0
+∞ = 0. Passing to the next page, since m > 4, the only non-zero term
+on the (2m − 3)-rd diagonal is F0,2m− 3
+2m− 2 ∼= F0,2m− 3
+2 However, all the differentials
+emanating from it land in trivial groups, so this slot remains until the F∞ -page. Hence
+H2m− 3(F[1]; Z/2) ∼= Z/2⟨Sq 3ι2
+2m− 6⟩.
+Lastly, it follows from the spectral sequence associated to
+F[1]− → B(m − 3, 13)
+q1
+−→ E[1],
+that the generator Sq 3ι2
+2m− 6 ∈ H2m− 3(F[1]; Z/2) transgresses to the nontrivial ele-
+ment
+Sq 3ι2m− 5 ⊕ 0 ∈ H2m− 2(E[1]; Z/2).
+This is because Sq 3ι2m− 5 ⊕ 0 ∈ ker(q∗
+1 ) ∩ H2m− 2(E[1]; Z/2) and H 2m− 3(B(m −
+3, 13); Z/2) = 0.
+Combining the above yields the claim when p = 2. Furthermore, the inclusion
+θ2
+2 : Z/2 → Z/4 induces a map of spectral sequences by which the claim follows for
+p = 4. Similar arguments yield the claim when p = 3, which we omit. This ﬁnishes
+the proof of the claim ( 39). ⊓⊔
+Computing the indeterminacy of lifts. Let π2m− 2 be as in Proposition 4.11. Further
+let the assumptions of Lemma 8.3 be satisﬁed. Then there is a lift of (ξ, ℓ1,ℓ 2,ℓ 3) to
+E[3] if and only if g∗(k3) = 0i nH 2m− 1(X;π2m− 2)/Indet where g: X → E[2] is
+any lift of (ξ, ℓ1,ℓ 2,ℓ 3) to E[2] and
+Indet ⊆ H2m− 1(X;π2m− 2)
+denotes the indeterminacy of such lifts. In this section, we calculate this indeterminacy.
+Note that π2m− 2 = Z/ p(m) ⊕ Z/q(m) for some numbers p(m), q(m) that depend
+on the value of m mod 24. We write Indet Z/k for the Z/k part of the indeterminacy
+subgroup.
+Lemma 8.7 Let all spaces and maps be as in (34). The indeterminacy Indet of lifts of
+(ξ, ℓ1,ℓ 2,ℓ 3) to E [2] satisﬁes the following.
+(i) Let m ̸≡ 0m o d3 and m ≡ 2, 6m o d8. Then Indet = 0.
+(ii) Let m ≡ 0m o d3 . Then IndetZ/3 = 0.
+(iii) Let m ≡ 4m o d8 . Then IndetZ/2 = 0.
+(iv) Let m ≡ 0m o d8 . Then IndetZ/4 = 0.
+Proof Point (i) follows immediately from Proposition 4.11 since π2m− 2 = 0i nt h i s
+case. Point (ii) follows immediately from Lemma 8.5. It remains to check points (iii)
+123
+
+=== PDF PAGE 49 ===
+Complex line ﬁelds on almost-complex manifolds Page 49 of 67 46
+and (iv). To this end, we have the following homotopy commutative diagram
+K(Z, 2m − 3) K(Z, 2m − 3)
+K(Z, 2m − 3) × B(m − 3, 13) K(Z, 2m − 3) × E[2] E[2]
+B(m − 1, 13) E[1]
+1×q2
+ν
+proj1
+μ
+p1
+¯s
+q1
+and an exact sequence
+... −→ ker(q∗
+2 ) ∩ H2m− 1(E[2])
+ν∗
+−→ ker(¯s∗) ∩ H2m− 1(K(Z, 2m − 3)
+×B(m − 3, 13))
+τ1
+−→ H2m(E[1]) −→ ...,
+where all cohomology groups have π2m− 2 coefﬁcients. By abuse of notation (as pre-
+viously explained), μ∗(k3) = 1 ⊗ k3 + ν∗(k3), where
+ν∗(k3) ∈ ker(¯s) ∩ ker(τ1) ∩ H2m− 1(K(Z, 2m − 3) × B(m − 3, 13)).
+(iii) Let m ≡ 4 mod 8. By direct calculation, one sees that ker(¯s)∩ H2m− 1(K(Z, 2m−
+3) × B(m − 3, 13; Z/2) is generated by elements of the form
+• ι2
+2m− 3 ⊗ u, for all u ∈ H2(B(m − 3, 13); Z/2); and
+• Sq 2ι2
+2m− 3 ⊗ 1.
+To calculate the action of the relative transgression on these elements, consider the
+mod 2 Leray–Serre spectral sequence (E∗,∗
+∗ , d∗) associated to the homotopy ﬁbration
+K(Z, 2m − 3) −→ E[2]
+p2
+−→ E[1].
+Then by ( 39)w eh a v e
+d(0,2m− 3),(2m− 2,0)
+2m− 2 (ι2
+2m− 3) = Sq 3ι2
+2m− 5.
+Using the fact that the differentials are derivations, we see that
+ker(τ1) ∩ H2m(K(Z, 2m − 3) × B(m − 3, 13))
+contains no linear combination of elementsι2
+2m− 3 ⊗ u,f o ru ∈ H2(B(m− 3, 13); Z/2).
+Moreover, by Kudo’s transgression theorem and Wu’s formula, we compute
+d(0,2m− 1),(2m,0)
+2m (Sq 2ι2m− 3) = Sq 2 Sq 3ι2
+2m− 5 = Sq 5ι2
+2m− 5 ̸= 0 ∈ E2m,0
+2m .
+Hence, Sq 2ι2
+2m− 3⊗ 1 is not an element of ker(τ1)∩H2m(K(Z, 2m− 3)× B(m− 3, 13)).
+Subsequently, μ∗(k3) = 1 ⊗ k3, from which Indet Z/2 = 0.
+123
+
+=== PDF PAGE 50 ===
+46 Page 50 of 67 N. Sadovek, B. Schutte
+(iv) Let m ≡ 0m o d8. Similar arguments yield that Indet Z/4 = 0.
+(ii) Finally, let m ≡ 0 mod 3. Straightforward calculations similar to the above yield
+that IndetZ/3 = 0. We omit these for readability. ⊓⊔
+8.4 The generalized quaternary obstruction
+Finally, the proof of Theorem 3.8 follows immediately from the proceeding theorem.
+Theorem 8.8 Let m > 5 be an even integer and let all spaces and maps be as in (34).
+Suppose that the conditions ofLemma 8.3 are satisﬁed. Furthermore, ifH2m(X; Z) has
+no n-torsion, for n = 12/|π2m− 2|∈ Z (see Table 7), then the generalized quaternary
+obstruction
+O2m((ξ, ℓ1,ℓ 2,ℓ 3), qm,3, k4) ⊆ H2m(X; Z)
+is the singleton set {cm(ξ− ℓ1 ⊕ ℓ2 ⊕ ℓ3)}.
+The rest of the section is dedicated to proving Theorem 8.8.
+Computing the indeterminacy of lifts. Let the assumptions of Theorem 8.8 be satis-
+ﬁed. By Lemma 8.3, we know that there is a lift of(ξ, ℓ1,ℓ 2,ℓ 3) along qm,3 if and only
+if g∗(k4) = 0i nH 2m(X; Z)/Indet, where g: X → E[3] is any lift of (ξ, ℓ1,ℓ 2,ℓ 3)
+to E[3] and Indet denotes the indeterminacy of such lifts. We ﬁrst demonstrate that
+Indet = 0.
+Write K := K(π2m− 2, 2m − 2), where the group π2m− 2 := π2m− 2(W(m, 3))
+satisﬁes Proposition4.11. Then we have the following homotopy commutative diagram
+KK
+K × B(m − 3, 13) K × E[3] E[3]
+B(m − 3, 13) E[2]
+1×q3
+ν
+π
+μ
+p3
+¯s
+q2
+and an exact sequence
+... −→ ker(q∗
+3 ) ∩ H2m(E[3])
+ν∗
+−→ ker(¯s∗) ∩ H2m(K × B(m − 3, 13))
+τ1
+−→ H2m+1(E[2]) −→ ...,
+where all cohomology groups have integer coefﬁcients. By standard arguments,
+μ∗(k4) = 1 ⊗ k4 + ν∗(k4) (by abuse of notation), where
+ν∗(k4) ∈ ker(¯s) ∩ ker(τ1) ∩ H2m(K × E[3]).
+But it follows from Proposition 4.10 that H2m− 2(K; Z) = H2m(K; Z) = 0, whence
+ker(¯s) ∩ H2m(K × E[3]) ∼= 0.
+123
+
+=== PDF PAGE 51 ===
+Complex line ﬁelds on almost-complex manifolds Page 51 of 67 46
+Subsequently, ν∗(k4) = 0 and
+μ∗(k4) = 1 ⊗ k4. (42)
+Now let g1, g2 : X → E[3] be two lifts of (ξ, ℓ1,ℓ 2,ℓ 3): X → B(m, 13) in (34).
+Then there exists a cohomology class α: X → K such that the composition
+X
+/Delta1
+−→ X × X
+α×g1
+−→ K × E[3]
+μ
+−→ E[3]
+is homotopic to g2.F r o m(42) we see that g∗
+2(k4) − g∗
+1(k4) = 0, whence Indet = 0,
+as required.
+Accordingly, there is a unique quaternary obstruction to lifting (ξ, ℓ1,ℓ 2,ℓ 3) along
+qm,3. It remains to identify this unique obstruction. To this end, recall that k4 ∈
+H2m(E[3]; Z) is the characteristic element in the ﬁbration
+F[3]− → B(m − 3, 13)
+q3
+−−→ E[3].
+Further recall that the ﬁber F[3] is (2m − 2)-connected and π2m− 1(F[3]) ∼=
+π2m− 1(W(m, 3)) ∼= Z. Thus, by universal coefﬁcient theorem, we have
+H2m− 1(F[3]; Z) ∼= Z.
+For each i = 1, 2, 3, let us denote by si : F[i]− → F[i − 1] the induced map between
+homotopy ﬁbers of maps pi : E[i]− → E[i − 1], where F[0]= W(m, 3), E[0]=
+B(m, 13) and q0 = qm,3, c.f., Lemma 4.5. Set s := s1 ◦s2 ◦s3 and p := p1 ◦ p2 ◦ p3.
+We also recall
+H∗(W(m, 3); Z) ∼= /Lambda1Z[e2m− 5, e2m− 3, e2m− 1],
+with |ei|= i, see Proposition 4.13.
+Lemma 8.9 Let e := e2m− 1 be the generator of H2m− 1(W(m, 3)). Then, the map
+s : F[3]− → W(m, 3) induces an inclusion
+s∗: H2m− 1(W(m, 3); Z) ∼= Z⟨e⟩ −→ Z⟨e/n⟩ ∼= H2m− 1(F[3]; Z), e ↦−→ e,
+for an integer n which satisﬁes |n|= 12/|π2m− 2|.
+Proof All cohomology groups throughout the proof have integer coefﬁcients. By
+Lemma 4.5, we have the following homotopy commutative Thomas diagram asso-
+123
+
+=== PDF PAGE 52 ===
+46 Page 52 of 67 N. Sadovek, B. Schutte
+ciated to (‡).
+K(Z, 2m − 6) ∗ K(Z, 2m − 5)
+F[1] B(m − 3, 13) E[1]
+W(m, 3) B(m − 3, 13) B(m, 13)
+ev1
+s1
+q1
+id (‡) p1
+qm,3
+Let us consider the Leray–Serre spectral sequence for the homotopy ﬁbration s1
+converging to H ∗(F[1]). Since m > 4 even, there are no nontrivial terms on the
+(2m − 4)-th, (2m − 2)-th and 2 m-th diagonals. Therefore, H 2m(F[1]) = 0, and the
+only two non-trivial terms on the(2m− 1)-th diagonal ﬁt into the short exact sequence
+0 −→ Z⟨e⟩
+s∗
+1
+−−→ H2m− 1(F[1]) −→ Z/6 −→ 0.
+For a prime number p,w eh a v et h a tZ⟨e⟩⊕ Z/ p and
+0 −→ Z⟨e⟩− → Z⟨e/ p⟩
+e/ p↦→ i
+−−−−→ Z/ p −→ 0, for i = 1,..., p − 1,
+are all possible extensions of Z/ p by Z. Therefore, since Ext-functor is additive on
+the ﬁrst entry, Ext1
+Z(Z/6, Z) ∼= Ext1
+Z(Z/2, Z)×Ext1
+Z(Z/3, Z), we obtain
+H2m− 1(F[1]) ∈ {Z⟨e/6⟩ , Z⟨e/3⟩ ⊕ Z/2, Z⟨e/2⟩ ⊕ Z/3, Z⟨e⟩⊕ Z/6} . (43)
+Moreover, in each case, s∗
+1 is the standard inclusion from Z⟨e⟩.
+Again by Lemma 4.5, we have the Thomas diagram associated to (‡‡).
+K(Z, 2m − 4) ∗ K(Z, 2m − 3)
+F[2] B(m − 3, 13) E[2]
+F[1] B(m − 3, 13) E[1]
+ev1
+s2
+q2
+id (‡‡) p2
+q1
+We may now consider the Leray–Serre spectral sequence ofs2. Here also, the(2m− 2)-
+th and 2 m-th diagonals are trivial, so H 2m(F[2]) = 0. Additionally, the only two
+non-zero terms on the (2m − 1)-th diagonal ﬁt into a short exact sequence
+0 −→ H2m− 1(F[1])
+s∗
+2
+−−→ H2m− 1(F[2]) −→ Z/2 −→ 0.
+Checking all H 2m− 1(F[1]) as enumerated in ( 43) and using the fact that functor
+Ext1
+Z(Z/2,·) respects products, we have the following possibilities:
+123
+
+=== PDF PAGE 53 ===
+Complex line ﬁelds on almost-complex manifolds Page 53 of 67 46
+• if H2m− 1(F[1]) = Z⟨e/6⟩, then
+H2m− 1(F[2]) ∈ {Z⟨e/6⟩ ⊕ Z/2, Z⟨e/12⟩} ;
+• if H2m− 1(F[1]) = Z⟨e/3⟩ ⊕ Z/2, then
+H2m− 1(F[2]) ∈
+{
+Z⟨e/3⟩ ⊕ Z/2⊕ 2, Z⟨e/6⟩ ⊕ Z/2, Z⟨e/3⟩ ⊕ Z/4
+}
+;
+• if H2m− 1(F[1]) = Z⟨e/2⟩ ⊕ Z/3, then
+H2m− 1(F[2]) ∈ {Z⟨e/2⟩ ⊕ Z/6, Z⟨e/4⟩ ⊕ Z/3} ;
+• if H2m− 1(F[1]) = Z⟨e⟩⊕ Z/6, then
+H2m− 1(F[2]) ∈ {Z⟨e/2⟩ ⊕ Z/6, Z⟨e⟩⊕ Z/12} .
+We may abstract the following general form for H 2m− 1(F[2]). Namely, we have
+H2m− 1(F[2]) ∼= Z⟨e/n⟩ ⊕ π, (44)
+where π ∈{ 0, Z/2, Z/2⊕ 2, Z/3, Z/4, Z/6, Z/12} and n := 12/|π|. We note that the
+free part of H 2m− 1(F[1]) includes in the standard way via s∗
+2 into Z⟨e/n⟩.
+Next consider the Thomas diagram associated to (‡ ‡ ‡).
+K(π2m− 2, 2m − 3) ∗ K(π2m− 2, 2m − 2)
+F[3] B(m − 3, 13) E[3]
+F[2] B(m − 3, 13) E[2]
+ev1
+s3
+q3
+id (‡‡‡) p3
+q2
+We may consider the Leray–Serre spectral sequence (E∗,∗
+∗ , d∗) of s3. Recall that, due
+to Table 1,w eh a v e
+E0,2m− 2
+2m− 1 ∼= H2m− 2(K(π2m− 2, 2m − 3)) ∼= Ext1
+Z(π2m− 2, Z) ∼= π2m− 2,
+since π2m− 2 is a ﬁnite torsion group described in Proposition 4.11. The only differen-
+tials mapping into the (2m − 1)-th diagonal are
+d2m− 1 : π2m− 2 ∼= E0,2m− 2
+2m− 1 −→ E0,2m− 1
+2m− 1 ∼= H2m− 1(F[2])
+on (2m − 1)-th page, while there are no non-trivial differentials mapping out from the
+(2m − 1)-th diagonal. Recall that F[3] is (2m − 2)-connected and
+π2m− 1(F[3]) ∼= π2m− 1(W(m, 3)) ∼= Z,
+123
+
+=== PDF PAGE 54 ===
+46 Page 54 of 67 N. Sadovek, B. Schutte
+so the universal coefﬁcients theorem gives that H2m− 1(F[3]) ∼= Z. Therefore, d2m− 1 is
+a monomorphism and since there is no extension problem on the(2m− 1)-th diagonal,
+we conclude that
+s∗
+3 : H2m− 1(F[2]) −→ H2m− 1(F[3]) ∼= H2m− 1(F[2])/π2m− 2
+is the quotient map. However, Ext1
+Z(Z,·) = 0 implies that H2m− 1(F[2]) ∼= Z⊕ π2m− 2.
+Finally, it follows from ( 44) that
+H2m− 1(F[3]) ∼= Z⟨e/n⟩ ,
+where again n = 12/|π2m− 2|. This ﬁnishes the proof. ⊓⊔
+Next consider the map between homotopy ﬁbrations
+F[3] B(m − 3, 13) E[3]
+W(m, 3) B(m − 3, 13) B(m, 13)
+s
+q3
+p
+qm,3
+and the induced map between Leray–Serre spectral sequences. Expressly, by
+Lemma 5.5 (see also the notation therein), we have the following commutative diagram
+of the corresponding transgressions,
+H2m− 1(W(m, 3)) H2m− 1(F[3]) e2m− 1 e2m− 1 = n · 1
+n e2m− 1
+H2m(B(m, 13)) H2m(E[3]) am p∗(am) = nk3.
+s∗
+τqm,3 τq3
+p∗
+Therefore, every homotopy lift
+E[3]
+XB (m, 13),
+pg
+f
+of the classifying map f = (ξ, ℓ1,ℓ 2,ℓ 3) over p satisﬁes
+ng∗(k3) = ( p ◦g)∗(am) = f ∗(am) = cm(ξ− ℓ1 ⊕ ℓ2 ⊕ ℓ3) ∈ H2m(X).
+This completes the proof of Theorem 8.8.
+9 Three complex line bundles: m odd
+In this section we prove Theorem 3.10.
+123
+
+=== PDF PAGE 55 ===
+Complex line ﬁelds on almost-complex manifolds Page 55 of 67 46
+Let X b ea2 m-dimensional CW complex with m ≥ 5 odd. Fix complex vector
+bundles ξ: X → BU(m) and ℓ1,ℓ 2,ℓ 3 : X → BU(1). We wish to lift the classi-
+fying map (ξ, ℓ1,ℓ 2,ℓ 3): X → B(m, 13) of ( 10) along the ﬁbration W(m, 3) −→
+B(m − 3, 13)
+qm,3
+−→ B(m, 13) deﬁned in (14). We use Proposition 4.11 to construct the
+following Moore–Postnikov factorization of qm,3.
+E[5]
+E[4] K(π2m− 1, 2m)
+E[3] K(π2m− 2, 2m − 1)
+E[2] K(Z ⊕ Z/2, 2m − 2)
+E[1] K(Z/2, 2m − 3)
+W(m, 3) B(m − 3, 13) B(m, 13) K(Z, 2m − 4)
+X
+p5
+k5
+p4
+k4
+p3
+k3
+p2
+k2
+p1
+q4
+q3
+q2
+q1
+qm,3 k1
+(ξ,ℓ1,ℓ2,ℓ3)
+(45)
+Here each ki is the characteristic class in the ﬁbration qi− 1 (with q0 = qm,3); and
+each E[i] is the homotopy ﬁber of ki . Lastly, recall that π2m− 2 = π2m− 2(W(m, 3))
+satisﬁes Table 7 and
+π2m− 1 = π2m− 1(W(m, 3)) ∼=
+{
+Z ⊕ Z/2 m = 5,
+Z otherwise.
+Remark 9.1 In spectral sequence calculations throughout this section, we will use that
+m > 5. Minor modiﬁcations to the arguments yield the same statements when m = 5,
+but we omit these details for readability.
+9.1 The primary obstruction
+By Proposition 5.4, we obtain the following result.
+Lemma 9.2 Let all spaces and maps be as in (45). Then the primary obstruction
+O2m− 4((ξ, ℓ1,ℓ 2,ℓ 3), qm,3, k1) ⊆ H2m− 4(X; Z)
+to lifting (ξ, ℓ1,ℓ 2,ℓ 3) along qm,3 is the singleton set {cm− 2(ξ− ℓ1 ⊕ ℓ2 ⊕ ℓ3)}.
+123
+
+=== PDF PAGE 56 ===
+46 Page 56 of 67 N. Sadovek, B. Schutte
+9.2 The generalized secondary obstruction
+By similar arguments to the proof of Lemma 7.2, one demonstrates the following.
+Lemma 9.3 Let all spaces and maps be as in (45). Suppose that H2m− 3(X; Z/2) =
+Sq 2ρ2 H2m− 5(X; Z). Then zero is an element of the generalized secondary obstruction
+O2m− 3((ξ, ℓ1,ℓ 2,ℓ 3), qm,3, k2) ⊆ H2m− 3(X; Z/2)
+to lifting (ξ, ℓ1,ℓ 2,ℓ 3) along qm,3.
+9.3 The generalized tertiary obstruction
+Appropriate modiﬁcations to the proof of Theorem 7.3 yield the following result.
+Lemma 9.4 Let all spaces and maps be as in (45). Suppose that the classifying map
+(ξ, ℓ1,ℓ 2,ℓ 3): X −→ B(m, 13)
+satisﬁes cm− 2(ξ− ℓ1 ⊕ ℓ2 ⊕ ℓ3) = 0. Further suppose that
+• H2m− 3(X; Z/2) = Sq 2ρ2 H2m− 5(X; Z);
+• H2m− 2(X; Z/2) = Sq 2 H2m− 2(X; Z/2), and
+• H2m− 2(X; Z) has no 2-torsion.
+Then the generalized tertiary obstruction
+O2m− 2((ξ, ℓ1,ℓ 2,ℓ 3), qm,3, k3) ⊆ H2m− 2(X; Z ⊕ Z/2)
+to lifting (ξ, ℓ1,ℓ 2,ℓ 3) along qm,3 vanishes if and only if cm− 1(ξ− ℓ1 ⊕ ℓ2 ⊕ ℓ3) = 0.
+9.4 The generalized quaternary obstruction
+Theorem 9.5 Let m ≥ 5 be an odd integer and let all spaces and maps be as in (45)
+Suppose that the conditions of Lemma 9.4 are satisﬁed and that c m− 1(ξ− ℓ1 ⊕ ℓ2 ⊕
+ℓ3) = 0. Further suppose that
+• H2m− 1(X; Z) is ﬁnite abelian with no 2-torsion; and
+• H2m(X; Z) is torsion free.
+Then the generalized quaternary obstruction
+O2m− 1((ξ, ℓ1,ℓ 2,ℓ 3), qm,3, k4) ⊆ H2m− 1(X;π2m− 2)
+is the singleton set {0}, where π2m− 2 = π2m− 2(W(m, 3)) satisﬁes Proposition 4.11.
+In the rest of the section, we provide the details to the proof of Theorem 9.5.
+Determining the Moore–Postnikov invariants. We compute the degree (2 m − 1)
+Moore–Postnikov invariant k4 ∈ H2m− 1(E[3];π2m− 2) as follows.
+123
+
+=== PDF PAGE 57 ===
+Complex line ﬁelds on almost-complex manifolds Page 57 of 67 46
+Lemma 9.6 Let k4 ∈ H2m− 1(E[3];π2m− 2) be as in (45). Then the mod p part of k 4 is
+equal to ⎧
+⎪⎪
+⎪
+⎪
+⎪
+⎨
+⎪⎪
+⎪
+⎪
+⎪
+⎩
+Sq
+2ι2
+2m− 3 p = 2 and m ≡ 1, 5m o d8;
+θ2
+2 Sq 2ι2
+2m− 3
+p = 4 and m ≡ 7m o d8;
+θ3
+2 Sq 2ι2
+2m− 3
+p = 8 and m ≡ 3m o d8;
+0 p = 3 and m ≡ 0m o d3;
+where ι2
+2m− 3 ∈ H2m− 3(K(Z, 2m − 3); Z/2) is the fundamental class and θk
+2 is the
+homomorphism induced by the inclusion Z/2 ↪−→ Z/2k ,s e e Notation 4.6.
+We divide the proof with respect top, where we assume thatm has the corresponding
+value mod 8. In fact, we will only prove Lemma 9.6 for p = 2 and p = 3. We omit
+the details of the proof in the case that p = 4, 8 and leave the proofs to the reader.
+Moreover, for a spectral sequence (E∗,∗
+∗ , d∗,∗
+∗ ), we will denote by
+d( p,q),( p+r,q−r+1)
+r : E p,q
+r −→ E p+r,q−r+1
+r
+the differential in order to emphasize both its domain and the codomain.
+Proof of Lemma 9.6 for p = 2 Let all maps and spaces be as in ( 45). Further let p = 2
+and m ≡ 1 mod 4. In this section all cohomology groups have mod 2 coefﬁcients.
+Lemma 9.7 Let m ≥ 5 be an odd integer , and let the ﬁbration
+F[1]− → B(m − 3, 13)
+q1
+−→ E[1]
+be as deﬁned in (45). In the mod 2 Leray–Serre spectral sequence of q 1, the images of
+the ﬁrst four last-chance differentials satisfy the following:
+(i) Im (d(0,2m− 4),(2m− 3,0)
+2m− 3 ) = Z/2⟨Sq 2ι2
+2m− 5⟩; and
+(ii) Im (d(0,2m− 3),(2m− 2,0)
+2m− 2 ) = Z/2⟨bm− 1⟩⊕ Z/2⟨Sq 3ι2
+2m− 6⟩;
+(iii) Im (d(0,2m− 2),(2m− 1,0)
+2m− 1 ) = 0; and
+(iv) Im (d(0,2m− 1),(2m,0)
+2m ) = Z/2⟨Sq 5ι2
+2m− 5⟩.
+Proof Throughout, all cohomology groups have mod 2 coefﬁcients. To begin, we
+compute the relevant portion of H∗(F[1]; Z/2). To this end, consider the mod 2 Leray–
+Serre spectral sequence (E∗,∗
+∗ , d∗) associated to the ﬁbration
+K(Z, 2m − 6) −→ F[1]
+s1
+−→ W(m, 3). (46)
+By construction, the differential
+d(0,2m− 6),(2m− 5,0)
+2m− 5 : H2m− 6(K(Z, 2m − 6)) ∼= Z/2⟨ι2
+2m− 6⟩→ Z/2⟨ f2m− 5⟩
+∼= H2m− 5(W(m, 3))
+123
+
+=== PDF PAGE 58 ===
+46 Page 58 of 67 N. Sadovek, B. Schutte
+Fig. 7 A portion of the
+Leray–Serre spectral sequence
+of the ﬁbration
+K(Z, 2m − 6) → F[1]→
+W(m, 3) with mod 2 coefﬁcients
+is an isomorphism deﬁned by d2m− 5(ι2
+2m− 6) = f2m− 5. Moreover, using Kudo’s trans-
+gression theorem and Proposition 4.13(v), we compute
+• d(0,2m− 4),(2m− 3,0)
+2m− 3 (Sq 2ι2
+2m− 6) = Sq 2 f2m− 5 = 0 and
+• d(0,2m− 2),(2m− 1,0)
+2m− 1 (Sq 4ι2
+2m− 6) = Sq 4 f2m− 5 = f2m− 1, since m ≡ 1m o d4.
+See Fig. 7 for illustration. Consequently, since m > 5, we compute the following
+groups.
+(a) H 2m− 4(F[1]) ∼= Z/2⟨Sq 2ι2
+2m− 6⟩;
+(b) H 2m− 3(F[1]) ∼= Z/2⟨ f2m− 3⟩⊕ Z/2⟨Sq 3ι2
+2m− 6⟩;
+(c) H 2m− 2(F[1]) ∼= 0;
+(d) H 2m− 1(F[1]) ∼= Z/2⟨Sq 5ι2
+2m− 6⟩.
+By similar arguments to the ones in the proof of Lemma8.6, we compute the following.
+(e) H 2m− 3(E[1]) ∼= Z/2⟨Sq 2ι2
+2m− 5⟩;
+(f) H 2m− 2(E[1]) ∼= Z/2⟨Sq 3ι2
+2m− 5⟩⊕ (H∗(B(m, 13))/(bm− 2))(2m− 2);
+(g) H 2m− 1(E[1]) ∼= Z/2⟨Sq 2ι2
+2m− 5⟩⊗ H2(B(m, 13));
+(h) H 2m(E[1]) ∼= Z/2⟨Sq 5ι2
+2m− 5⟩⊕ (H∗(B(m, 13))/(bm− 2, bm− 1b1 + bm))(2m)
+By considering the Thomas diagram associated to (⋆),
+K(Z, 2m − 6) ∗ K(Z, 2m − 5)
+F[1] B(m − 3, 13) E[1]
+W(m, 3) B(m − 3, 13) B(m, 13)
+q1
+(⋆) p1
+qm,3
+the claim follows by naturality of spectral sequences. ⊓⊔
+As before, κ2m− 4 ∈ H2m− 4(K(Z/2, 2m − 4); Z/2) denotes the mod 2 fundamental
+class (see also Notation 4.6(vii)).
+123
+
+=== PDF PAGE 59 ===
+Complex line ﬁelds on almost-complex manifolds Page 59 of 67 46
+Lemma 9.8 Let m ≥ 5 be an odd integer , and let the ﬁbration
+F[2]− → B(m − 3, 13)
+q2
+−→ E[2]
+be as deﬁned in (45). Then the images of the ﬁrst three last-chance differentials satisfy
+the following.
+(i) Im (d(0,2m− 3),(2m− 2,0)
+2m− 2 ) = Z/2⟨bm− 1⟩⊕ Z/2⟨Sq 2κ2m− 4⟩;
+(ii) Im (d(0,2m− 2),(2m− 1,0)
+2m− 1 ) = Z/2⟨Sq 3κ2m− 4⟩;
+(iii) Im (d(0,2m− 1),(2m,0)
+2m ) = Z/2⟨Sq 4κ2m− 4, Sq 3 Sq 1κ2m− 4⟩.
+Proof First, we compute the relevant portion of H∗(F[2]). Consider the mod 2 spectral
+sequence (E∗,∗
+∗ , d∗) associated to the ﬁbration
+K(Z/2, 2m − 5) −→ F[2]− → F[1]. (47)
+By construction, the differential
+d(0,2m− 5),(2m− 4,0)
+2m− 4 : H2m− 5(K(Z/2, 2m − 5)) −→ H2m− 4(F[1])
+is an isomorphism deﬁned by d2m− 4(κ2m− 5) = Sq 2ι2
+2m− 6, whence
+E0,2m− 5
+2m− 3 = E0,2m− 5
+∞ = 0.
+Moreover, Sq 2(Sq 2ι2
+2m− 6) necessarily vanishes since H 2m− 2(F[1]) = 0. So Kudo’s
+transgression theorem yields that
+Z/2⟨Sq 2κ2m− 5⟩= E0,2m− 3
+2m− 2 = E0,2m− 3
+∞ .
+Furthermore,
+d(0,2m− 4),(2m− 3,0)
+2m− 3 (Sq 1κ2m− 5) = Sq 1 Sq 2ι2
+2m− 6 = Sq 3ι2
+2m− 6,
+so that E0,2m− 5
+2m− 2 = E0,2m− 5
+∞ = 0.
+Noting the Adem relations
+• Sq 3 Sq 2 = 0; and
+• Sq 2 Sq 1 Sq 2 = Sq 5 + Sq 4 Sq 1,
+we compute
+• d(0,2m− 2),(2m− 1,0)
+2m− 1 (Sq 3κ2m− 5) = 0, and
+• d(0,2m− 2),(2m− 1,0)
+2m− 1 (Sq 2 Sq 1κ2m− 5) = Sq 5ι2
+2m− 6.
+123
+
+=== PDF PAGE 60 ===
+46 Page 60 of 67 N. Sadovek, B. Schutte
+Lastly, since Sq 4 Sq 2 is admissible and Sq 3 Sq 1 Sq 2 = Sq 3 Sq 3 = Sq 5 Sq 1, we com-
+pute the differential
+d(0,2m− 1),(2m,0)
+2m : H2m− 1(K(Z/2, 2m − 5)) −→ H2m(F[1])
+as follows:
+• Sq 4κ2m− 5 ↦→ Sq 4 Sq 2ι2
+2m− 6; and
+• Sq 3 Sq 1κ2m− 5 ↦→ 0.
+Thusly, we obtain the following.
+(a) H 2m− 3(F[2]) ∼= Z/2⟨ f2m− 3⟩⊕ Z/2⟨Sq 2κ2m− 5⟩;
+(b) H 2m− 2(F[2]) ∼= Z/2⟨Sq 3κ2m− 5⟩; and
+(c) H 2m− 1(F[2]) ∼= Z/2⟨Sq 3 Sq 1κ2m− 5⟩.
+Second, by similar arguments applied to the Leray–Serre spectral sequence of the
+ﬁbration p2 : E[2]→ E[1], one calculates that
+(d) H 2m− 2(E[2]) ∼= H2m− 2(B(m, 13))/(bm− 2) ⊕ Z/2⟨Sq 2κ2m− 4⟩;
+(e) H 2m− 1(E[2]) ∼= Z/2⟨Sq 3κ2m− 4⟩; and
+(f) H 2m(E[2]) ∼= H2m(E[1])/(Sq 2ι2
+2m− 5) ⊕ Z/2⟨Sq 3 Sq 1κ2m− 4⟩.
+Finally, using Lemma 9.7, we study the map of spectral sequences induced by the
+Thomas diagram associated to (⋆⋆).
+K(Z/2, 2m − 5) ∗ K(Z/2, 2m − 4)
+F[2] B(m − 3, 13) E[2]
+F[1] B(m − 3, 13) E[1]
+q2
+(⋆⋆) p2
+q1
+The claim follows by the naturality of spectral sequences. ⊓⊔
+Lemma 9.9 Let m ≥ 5 be an odd integer , and let the ﬁbration q 3 : B(m − 3, 13) →
+E[3] with ﬁber F [3] be as deﬁned in (45). Then Sq 2κ2m− 3 is the characteristic class
+of q3.
+Proof To begin, consider the mod 2 Leray–Serre spectral sequence (E∗,∗
+∗ , d∗) of the
+ﬁbration
+K(Z ⊕ Z/2, 2m − 4) −→ F[3]− → F[2].
+Then the differential
+d(0,2m− 4),(2m− 3,0)
+2m− 3 : H2m− 4(K(Z ⊕ Z/2, 2m − 4)) ∼= Z/2⟨ι2
+2m− 4⟩⊕ Z/2⟨κ2m− 4⟩
+−→ H2m− 3(F[2]),
+123
+
+=== PDF PAGE 61 ===
+Complex line ﬁelds on almost-complex manifolds Page 61 of 67 46
+is an isomorphism deﬁned by
+d2m− 3(ι2
+2m− 4,κ2m− 4) = ( f2m− 3, Sq 2κ2m− 5).
+Hence E0,2m− 4
+2m− 2 = E0,2m− 4
+∞ = 0.
+Moreover, it follows from Kudo’s transgression theorem and the Adem relations
+• Sq 1 Sq 2 = Sq 3; and
+• Sq 2 Sq 2 = Sq 3 Sq 1;
+that the differential d(0,2m− 3),(2m− 2,0)
+2m− 2 is nontrivial and
+d(0,2m− 2),(2m− 1,0)
+2m− 1 (Sq 2ι2
+2m− 4, Sq 2κ2m− 4) = (0, Sq 3 Sq 1κ2m− 5).
+Hence E0,2m− 3
+∞ = 0 and E0,2m− 2
+∞ = Z/2⟨Sq 2ι2
+2m− 4⟩. Moreover, since E0,2m− 2
+∞ is the
+only nontrivial term on the (2m − 2)-th diagonal on the E∞ -page, it follows that
+H2m− 2(F[3]) ∼= Z/2⟨Sq 2ι2
+2m− 4⟩.
+Similar arguments applied to the ﬁbration
+K(Z ⊕ Z/2, 2m − 3) −→ E[3]− → E[2]
+demonstrate that Z/2⟨Sq 2ι2
+2m− 3⟩⊆ H2m− 1(E[3]). To conclude, we study the map of
+spectral sequences induced by the Thomas diagram associated to (⋆⋆⋆)
+K(Z ⊕ Z/2, 2m − 4) ∗ K(Z ⊕ Z/2, 2m − 3)
+F[3] B(m − 3, 13) E[3]
+F[2] B(m − 3, 13) E[2]
+q3
+(⋆⋆⋆) p3
+q2
+from which the result follows. ⊓⊔
+Proof of Lemma 9.6 for p = 3 Let all maps and spaces be as in ( 45). Further let p = 3
+and m ≡ 0 mod 3. In this section, all cohomology groups have mod 3 coefﬁcients.
+By similar arguments to Case III of Lemma 8.6, we see that H 2m− 1(E[1]) ∼= 0.
+Moreover, it follows from the mod 3 Leray–Serre spectral sequence of the homotopy
+ﬁbration K(Z/2, 2m − 4) → E[2]→ E[1] that H
+2m− 1(E[2]) ∼= H2m− 2(E[1]).
+Indeed Hi(K(Z/2, 2m − 3)) ∼= 0, for i = 2m − 4, 2m − 3, 2m − 1, so there are no
+non-trivial terms on the (2m − 1)-th diagonal on the E∞ -page.
+Finally, consider the mod 3 Leray–Serre spectral sequence of the homotopy ﬁbration
+K(Z ⊕ Z/2, 2m − 3) → E[3]→ E[2].
+123
+
+=== PDF PAGE 62 ===
+46 Page 62 of 67 N. Sadovek, B. Schutte
+Now H2m− 3(K(Z⊕ Z/2, 2m − 3)) ∼= Z/3⟨ι2m− 3⟩ and it is straightforward to see that
+ι2m− 3 transgresses to
+bm− 1 ∈ H2m− 2(E[2]) ∼= H2m− 2(B(m, 13))/(bm− 2).
+Furthermore H2m− 1(K(Z ⊕ Z/2, 2m − 3) ∼= 0, whence there are no nontrivial terms
+on the (2m − 1)-th diagonal on the E∞ -page. In conclusion, H 2m− 1(E[3]) ∼= 0 and
+the result follows.
+Computing the indeterminancy of lifts. Recall that the group π2m− 2 :=
+π2m− 2(W(m, 3)) satisﬁes Proposition 4.11. Let all the assumptions of Theorem 9.5
+be satisﬁed. Then there is a lift of (ξ, ℓ1,ℓ 2,ℓ 3) to E[4] if and only if g∗(k4) = 0i n
+H2m− 1(X;π2m− 2)/Indet, where g: X → E[3] is any lift of(ξ, ℓ1,ℓ 2,ℓ 3) to E[3] and
+Indet ⊆ H2m− 1(X;π2m− 2) denotes the indeterminacy of such lifts. We will brieﬂy
+sketch the reason that Indet = 0.
+Write K := K(Z ⊕ Z/2, 2m − 3). We have the following homotopy commutative
+diagram
+KK
+K × B(m − 3, 13) K × E[3] E[3]
+B(m − 3, 13) E[2]
+1×q3
+ν
+π
+μ
+p3
+¯s
+q2
+and an exact sequence
+... −→ ker(q∗
+3 ) ∩ H2m− 1(E[3])
+ν∗
+−→ ker(¯s∗) ∩ H2m− 1(K × B(m − 3, 13))
+τ1
+−→ H2m(E[2]) −→ ...,
+where all cohomology groups have π2m− 2 coefﬁcients. As usual, we write μ∗(k4) =
+1 ⊗ k4 + ν∗(k4), where
+ν∗(k4) ∈ ker(¯s) ∩ ker(τ1) ∩ H2m− 1(K × B(m − 3, 13)).
+But by direct calculation using the proof of Lemma 9.9, one sees that the group
+ker(¯s) ∩ ker(τ1) ∩ H2m− 1(K × B(m − 3, 13))
+is trivial because the generator of H 2m− 3(K) transgresses to bm− 1. Whence ν∗(k4) =
+0. Thus μ∗(k4) = 1 ⊗ k4, from which it follows that Indet = 0, as required.
+123
+
+=== PDF PAGE 63 ===
+Complex line ﬁelds on almost-complex manifolds Page 63 of 67 46
+Conditions for the vanishing of the generalized quaternary obstruction. Finally,
+we ﬁnish the proof of Theorem 9.5.
+Supposing that the conditions of Lemma 9.4 are satisﬁed, we can consider a lift
+g: X → E[3] of(ξ, ℓ1,ℓ 2,ℓ 3). The triviality of the indeterminacy subgroup computed
+in Sect. 9.4 yields that the obstruction set
+O2m− 1((ξ, ℓ1,ℓ 2,ℓ 3), qm,3, k4) ⊆ H2m− 1(X;π2m− 2)
+is the singleton {g∗k4}. Moreover, by Lemma 9.6,a n yZ/3 part of k4 is zero. Thus, we
+require g∗k4 ∈ H2m− 1(X; Z/ p) to be trivial, for p = 2, 4, 8. From the description of
+k4 in Lemma 9.6, there is no simple way to relateg∗k4 with characteristic classes of the
+bundle (ξ, ℓ1,ℓ 2,ℓ 3). Instead, we impose that H 2m− 1(X; Z/ p) ∼= 0, for p = 2, 4, 8.
+Theorem 9.5 now follows from the universal coefﬁcient theorem for cohomology [31,
+Theorem 10, p. 246].
+9.5 The generalized quinary obstruction
+Theorem 9.10 Let m ≥ 5 be an odd integer and let all spaces and maps be as in
+(45). Suppose that the conditions of Theorem 9.5 are satisﬁed. Then the generalized
+quinary obstruction
+O2m((ξ, ℓ1,ℓ 2,ℓ 3), qm,3, k5) ⊆ H2m(X; Z)
+is the singleton set consisting of a nonzero rational multiple of c m(ξ− ℓ1 ⊕ ℓ2 ⊕ ℓ3).
+Hence O2m((ξ, ℓ1,ℓ 2,ℓ 3), qm,3, k5) ={ 0} if and only if c m(ξ− ℓ1 ⊕ ℓ2 ⊕ ℓ3) = 0.
+The rest of the section is dedicated to the proof of Theorem 9.10.
+Let all maps and spaces be as deﬁned in (45). Further let the assumptions of Theorem
+9.5 be satisﬁed. Then there is a lift of (ξ, ℓ1,ℓ 2,ℓ 3) along qm,3 if and only if there
+exists a liftg: X → E[4] of(ξ, ℓ1,ℓ 2,ℓ 3) such that g∗k4 = 0i nH 2m(X; Z)/Indet. By
+virtually identical arguments to the proof of Theorem 8.8, one checks that Indet = 0.
+We omit the details for brevity.
+Now since Indet = 0, there is a unique quinary obstruction to lifting (ξ, ℓ1,ℓ 2,ℓ 3).
+It is possible that methods analogous to those in Sect. 8.4 may apply here; however,
+since H2m(X; Z) is torsion free by assumption, we may ignore torsion and use basic
+tools of rational homotopy theory to determine this obstruction. Henceforth, all coho-
+mology groups have rational coefﬁcients unless otherwise indicated.
+Recall that since the rationalization functor (−)0 is a Q-localization, it is exact [ 1,
+Proposition 3.3] and preserves pullbacks [4, Exercise 4.10]. Applying the functor(−)0
+to the Moore–Postnikov tower (45) for the ﬁbration qm,3 : B(m − 3, 13) → B(m, 13)
+yields the following Moore–Postnikov tower of the rationalization of qm,3:
+123
+
+=== PDF PAGE 64 ===
+46 Page 64 of 67 N. Sadovek, B. Schutte
+E[5]0
+E[4]0 K(Q, 2m)
+E[3]0 0
+E[2]0 K(Q, 2m − 2)
+E[1]0 0
+W(m, 3)0 B(m − 3, 13)0 B(m, 13)0 K(Q, 2m − 4)
+X0
+( p5)0
+k5⊗ Q
+( p4)0
+k4⊗ Q
+( p3)0
+k3⊗ Q
+( p2)0
+k2⊗ Q
+( p1)0
+(q4)0
+(q3)0
+(q2)0
+(q1)0
+(qm,3)0 k1⊗ Q
+(ξ,ℓ1,ℓ2,ℓ3)0
+(48)
+Now k5 ∈ H2m(E[4]; Z) is the characteristic element in the ﬁbration
+F[4]− → B(m − 3, 13)
+q4
+−→ E[4].
+Moreover, F[4] is (2m − 2)-connected with H 2m− 1(F[4]) ∼= Q. As in Sect. 8.4,
+for each i = 1, 2, 3, 4, let us denote by si : F[i]→ F[i − 1] the induced maps
+between homotopy ﬁbers of the maps pi : E[i]→ E[i − 1], where F[0]= W(m, 3),
+E[0]= B(m, 13), and q0 = qm,3, c.f., Lemma 4.5. Set s := s1 ◦ s2 ◦ s3 ◦ s4 and
+p := p1 ◦ p2 ◦ p3 ◦ p4. We also recall that
+H∗(W(m, 3)) ∼= /Lambda1Q[e2m− 5, e2m− 3, e2m− 1],
+with |ei|= i, and
+H∗(BU(n)) ∼= Q[c1,..., cn],
+with |c j|= 2 j.
+Then it is straightforward to establish the following lemma.
+Lemma 9.11 The map s 0 : F[4]0 −→ W(m, 3)0 induces an isomorphism
+s∗
+0 : H2m− 1(W(m, 3))
+∼=−→ H2m− 1(F[4]),
+in rational cohomology.
+Finally, consider the map between homotopy ﬁbrations
+123
+
+=== PDF PAGE 65 ===
+Complex line ﬁelds on almost-complex manifolds Page 65 of 67 46
+F[4]0 B(m − 3, 13)0 E[4]0
+W(m, 3)0 B(m − 3, 13)0 B(m, 13)0
+s0
+(q4)0
+p0
+(qm,3)0
+and the induced map between rational Leray–Serre spectral sequences. The image of
+the transgression in the bottom homotopy ﬁbration on the 2 m-th page
+d2m : Q⟨e2m− 1⟩ ∼= E0,2m− 1
+2m −→ E2m,0
+2m ∼= H2m(B(m, 13))
+is generated by e2m− 1 ↦−→ am := cm(γm × 1×3 − 1 × γ×3
+1 ). By the naturality of
+spectral sequences and Lemma9.11, we conclude that on the 2m-th page of the spectral
+sequence of q4 the element
+s∗
+0(e2m− 1) ∈ H2m− 1(F[4])
+transgresses to
+p∗
+0(am) = k4 ⊗ Q ∈ H2m(E[4]).
+Finally, due to the homotopy commutativity of lifts
+E[4]
+XB (m, 13)
+pg
+(ξ,ℓ1,ℓ2,ℓ3)
+it follows that
+cm(ξ− ℓ1 ⊕ ℓ2 ⊕ ℓ3) = ( p ◦g)∗(am) = g∗(k4 ⊗ Q) ∈ H2m(X; Q).
+In conclusion, for any lift g: X → E[4] of (ξ, ℓ1,ℓ 2,ℓ 3), the virtual Chern class
+cm(ξ − ℓ1 ⊕ ℓ2 ⊕ ℓ3) is an integer multiple of the quinary obstruction g∗(k4) ∈
+H2m(X; Z). But since H2m(X; Z) is torsion free, g∗k4 = 0 if and only if cm(ξ− ℓ1 ⊕
+ℓ2 ⊕ ℓ3) = 0. This completes the proof of Theorem 9.10.
+Remark 9.12 We thank the anonymous referee for pointing out that the rational meth-
+ods used in this section can be pushed further. That is, one can ask about rational line
+bundle decompositions of complex vector bundles. More speciﬁcally, consider a com-
+plex m-bundle ξ and r complex line bundles ℓ1,...,ℓ r over a 2 m-dimensional CW
+complex X . Towards constructing a rational Moore—Postnikov tower of the ﬁbration
+qm,r , one computes the rational homotopy groups of the complex Stiefel manifold
+W(m, r) as follows:
+πi(W(m, r)) ⊗ Q =
+{
+01 ≤ i ≤ 2(m − r) and i ≥ 2m
+Q 2(m − r) + 1 ≤ i ≤ 2m − 1 (49)
+Ultimately, since all the Moore—Postnikov truncations in the rational tower are prod-
+ucts of rational Eilenberg—Maclane spaces, one deduces that the vanishing of the
+123
+
+=== PDF PAGE 66 ===
+46 Page 66 of 67 N. Sadovek, B. Schutte
+rational virtual Chern classes
+ci(ξ− ℓ1 ⊕···⊕ ℓr ) ⊗ Q ∈ H2i(X; Q),
+for i > m − r , is a necessary and sufﬁcient condition for the existence of a map
+g: X → B(m − r, 1r ) making the following diagram commute
+H∗(BU(m − r, 1r ); Q)
+H∗(X; Q) H∗(BU(m, 1r ); Q)
+g∗⊗ Q q∗
+m,r ⊗ Q
+(ξ,ℓ1,...,ℓr )∗⊗ Q
+in rational cohomology.
+Acknowledgements The authors thank the anonymous referee for a careful reading of the manuscript
+and several helpful suggestions that improved the exposition. The second author earnestly thanks Mark
+Grant for countless discussions about the contents of this paper, the invaluable suggestion to utilize rational
+homotopy theory in the proofs of Proposition 4.11 and Theorem 9.10, and for a careful reading of the paper.
+The second author also thanks the following people for useful discussions: Markus Upmeier, Jarek Ke ˛dra,
+Cihan Bahran, Ran Levi, and John Oprea. Lastly, both authors extend their gratitude to Pavle Blagojevi´ c.
+Funding Open Access funding enabled and organized by Projekt DEAL. The research of N. Sadovek
+is funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Ger-
+many’s Excellence Strategy—the Berlin Mathematics Research Center MA TH+ (EXC-2046/1, project ID
+390685689, BMS Stipend). B. Schutte received no funding to assist with the preparation of this manuscript.
+Data availability This research did not utilize nor generate any data, as it contains purely theoretical math-
+ematics.
+Declarations
+Conﬂict of interest The authors have no competing interests to declare that are relevant to the content of
+this article.
+Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which
+permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give
+appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence,
+and indicate if changes were made. The images or other third party material in this article are included
+in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If
+material is not included in the article’s Creative Commons licence and your intended use is not permitted
+by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the
+copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/ .
+References
+1. Atiyah, M.: Introduction to Commutative Algebra. CRC Press, Boca Raton (2018)
+2. Borel, A.: Groupes de Lie et puissances réduites de Steenrod. Am. J. Math. 75(3), 409–448 (1953).
+(French)
+3. Brunella, M., Vitório Pereira, J., Touzet, F.: Kähler manifolds with split tangent bundle. Bull. Soc.
+Math. Fr. 134(2), 241–252 (2006)
+4. Cornea, O., Lupton, G., Oprea, J., Tanré, D.: Lusternik–Schnirelmann Category. American Mathemat-
+ical Society, Providence (2003)
+123
+
+=== PDF PAGE 67 ===
+Complex line ﬁelds on almost-complex manifolds Page 67 of 67 46
+5. de Paula Leite Mello, M.H.: Two-plane sub-bundles of nonorientable real vector-bundles. Manuscr.
+Math. 57(3), 263–280 (1987)
+6. Eilenberg, S., MacLane, S.: Cohomology theory of abelian groups and homotopy theory. II. Proc. Natl.
+Acad. Sci. U.S.A. 36, 657–663 (1950)
+7. Eilenberg, S., MacLane, S.: On the groups H(/Pi1,n), II: methods of computation. Ann. Math. 60(1),
+49–139 (1954)
+8. Félix, Y ., Oprea, J., Tanré, D.: Algebraic Models in Geometry. Oxford University Press, Oxford (2008)
+9. Fomenko, A.T., Fuks, D.B.: Homotopical Topology, vol. 273. Springer, Berlin (2016)
+10. Gilmore, M.E.: Complex Stiefel manifolds: some homotopy groups and vector ﬁelds. Bull. Am. Math.
+Soc. 73(5), 630–633 (1967)
+11. Glover, H.H., Homer, W.D., Stong, R.: Splitting the tangent bundle of projective space. Indiana Univ.
+Math. J. 31, 161–166 (1982)
+12. Grant, M., Schutte, B.: Projective span of Wall manifolds. Bol. Soc. Mat. Mex. 30(3), 75 (2024)
+13. Hermann, R.: Secondary obstructions for ﬁbre spaces. Bull. Am. Math. Soc. 65, 5–8 (1959)
+14. Hopf, H.: V ectorfelder in n-dimensionalen Mannigfaltigkeiten. Math. Ann. 96, 225–260 (1927).
+(German)
+15. Hsiang, W.-Y ., Tomter, P .: Transformation groups on complex Stiefel manifolds. Acta Math. 152,
+107–126 (1984)
+16. Iberkleid, W.: Splitting the tangent bundle. Trans. Am. Math. Soc. 191, 53–59 (1974)
+17. Korbaš, J., Zvengrowski, P .: The vector ﬁeld problem: a survey with emphasis on speciﬁc manifolds.
+Expo. Math. 12(1), 3–30 (1994)
+18. Koschorke, U.: V ector Fields and Other V ector Bundle Morphisms—A Singularity Approach, Lecture
+Notes in Mathematics, vol. 847. Springer, Cham (1981)
+19. Koschorke, U.: Complex and real vector bundle monomorphisms. Topol. Appl. 91(3), 259–271 (1999)
+20. Kudo, T.: A transgression theorem. Mem. Fac. Sci. Kyushu Univ. Ser. A Math. 9(2), 79–81 (1956)
+21. Leslie, J.A., Y ue, Q.: The vector bundle decomposition. Pac. J. Math. 211(2), 315–341 (2003)
+22. Markus, L.: Line element ﬁelds and Lorentz structures on differentiable manifolds. Ann. Math. (2) 62,
+411–417 (1955)
+23. Mello, M.H.D.P .L., da Silva, M.O.M.: A note on nonstable monomorphisms of vector bundles.
+Manuscr. Math. 1012, 191–198 (2000)
+24. Milnor, J.W., Stasheff, J.D.: Characteristic Classes, vol. 32. Hindustan Book Agency, New Delhi (2005)
+25. Mimura, M., Toda, H.: Topology of Lie Groups, I and II. Translated from the Japanese by Mamoru
+Mimura and Hirosi Toda, Translations of Mathematical Monographs, vol. 91. American Mathematical
+Society, Providence (1991). (English)
+26. Mosher, R.E., Tangora, M.C.: Cohomology Operations and Applications in Homotopy Theory. Courier
+Corporation, London (2008)
+27. Nguyen, D.: Cobordism obstructions to complex sections. Preprint arXiv:2310.18613 (2024)
+28. Pollina, B.J.: Tangent 2-ﬁelds on even-dimensional nonorientable manifolds. Trans. Am. Math. Soc.
+271(1), 215–224 (1982)
+29. Samelson, H.: A theorem on differentiable manifolds. Port. Math. 10, 129–133 (1951)
+30. Sankaran, P .: The vector ﬁeld problem for homogeneous spaces. In: Singh, M., Song, Y ., Wu, J. (eds.)
+Algebraic Topology and Related Topics. Trends in Mathematics. Birkhäuser, Singapore (2019).https://
+doi.org/10.1007/978-981-13-5742-8_13
+31. Spanier, E.H.: Algebraic Topology. Springer Science & Business Media, Berlin (1989)
+32. Spanier, E.H.: Algebraic Topology. Springer, Berlin (1995)
+33. Thomas, E.: Seminar on Fiber Spaces: Lectures Delivered in 1964 in Berkeley and 1965 in Zürich,
+vol. 13. Springer, Berlin (1964)
+34. Thomas, E.: Seminar on ﬁber spaces: lectures delivered in 1964 in Berkeley and 1965 in Zürich, vol.
+13. Springer, Berlin (1964)
+35. Thomas, E.: Fields of tangent k-planes on manifolds. Invent. Math. 3
+(4), 334–347 (1967)
+36. Thomas, E.: Postnikov invariants and higher order cohomology operations. Ann. Math. 85(2), 184–217
+(1967)
+37. Thomas, E.: Real and complex vector ﬁelds on manifolds. J. Math. Mech. 16(11), 1183–1205 (1967)
+38. Thomas, E.: V ector ﬁelds on manifolds. Bull. Am. Math. Soc. 75, 643–683 (1969)
+39. Thomas, A.: Almost complex structures on complex projective spaces. Trans. Am. Math. Soc. 123–132
+(1974)
+Publisher’s Note Springer Nature remains neutral with regard to jurisdictional claims in published maps
+and institutional afﬁliations.
+123

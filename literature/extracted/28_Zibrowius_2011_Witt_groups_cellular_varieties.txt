@@ -1,0 +1,2503 @@
+=== PDF PAGE 1 ===
+Documenta Math. 465
+Witt Groups of Complex Cellular V arieties
+Marcus Zibrowius
+Received: December 30, 2010
+Revised: May 10, 2011
+Communicated by Max Karoubi
+Abstract. We show that the Grothendieck-Witt and Witt groups
+of smooth complex cellular varieties can be identiﬁed with their topo-
+logical KO-groups. As an application, we deduce the values of the
+Witt groups of all irreducible hermitian symmetric spaces, including
+smooth complex quadrics, spinor varieties and symplectic Grassman -
+nians.
+2010 Mathematics Subject Classiﬁcation: Primary 11E81; Seconda ry
+19G99, 19L99, 32M15
+Keywords and Phrases: Witt groups, KO-theory, projective hom oge-
+neous varieties, hermitian symmetric spaces
+Contents
+Introduction 466
+1 Preliminaries 467
+1.1 Witt groups and hermitian K-theory . . . . . . . . . . . . . . . 467
+1.2 KO-theory . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 470
+1.3 Comparison . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 474
+1.4 A1-homotopy theory . . . . . . . . . . . . . . . . . . . . . . . . 475
+1.5 Representing algebraic and hermitian K-theory . . . . . . . . . 476
+2 The comparison maps 479
+2.1 Twisting by line bundles . . . . . . . . . . . . . . . . . . . . . . 481
+2.2 The comparison for cellular varieties . . . . . . . . . . . . . . . 483
+3 The Atiyah-Hirzebruch spectral sequence 488
+3.1 The Atiyah-Hirzebruch spectral sequence for cellular varieties . 489
+3.2 The Atiyah-Hirzebruch spectral sequence for Thom spaces . . . 491
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 2 ===
+466 Marcus Zibrowius
+4 Examples 493
+4.1 Notation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 495
+4.2 Projective spaces . . . . . . . . . . . . . . . . . . . . . . . . . . 495
+4.3 Grassmannians . . . . . . . . . . . . . . . . . . . . . . . . . . . 496
+4.4 Maximal symplectic Grassmannians . . . . . . . . . . . . . . . 499
+4.5 Quadrics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 502
+4.6 Spinor varieties . . . . . . . . . . . . . . . . . . . . . . . . . . . 505
+4.7 Exceptional hermitian symmetric spaces . . . . . . . . . . . . . 507
+Introduction
+The purpose of this paper is to demonstrate that the Grothendiec k-Witt and
+Witt groups of complex projective homogeneous varieties can be co mputed in
+a purely topological way. That is, we show in Theorem
+2.5 how to identify
+them with the topological KO-groups of these varieties, and we illust rate this
+with a series of known and new examples.
+Our theorem holds more generally for any smooth complex cellular var iety. By
+this we mean a smooth complex variety X with a ﬁltration by closed subvari-
+eties ∅ = Z0 ⊂ Z1 ⊂ Z2 · · · ⊂ ZN = X such that the complement of Zk in Zk+1
+is an open “cell” isomorphic to Ank for some nk. Let us put our result into
+perspective. It is well-known that for such cellular X we have an isomorphism
+K0(X)
+∼=− → K0(X(C))
+between the algebraic K-group of X and the complex K-group of the underlying
+topological space X(C). In fact, both sides are easy to compute: they decom-
+pose as direct sums of the K-groups of the cells, each of which is isom orphic
+to Z. Such decompositions are characteristic of oriented cohomology t heories.
+Witt groups, however, are strictly non-oriented, and this makes c omputations
+much harder. It is true that the Witt groups of complex varieties de compose
+into copies of Z/ 2, the Witt group of C, but even in the cellular case there is
+no general understanding of how many copies to expect.
+Nonetheless, we can prove our theorem by an induction over the nu mber of cells
+of X. The main issue is to deﬁne the map from Witt groups to the relevant
+KO-groups in such a way that it respects various exact sequences . The basic
+idea is clear: the Witt group W 0(X) classiﬁes vector bundles equipped with
+non-degenerate symmetric forms, and in topology symmetric comp lex vector
+bundles are in one-to-one correspondence with real vector bund les, classiﬁed
+by KO 0(X). More precisely, we have two natural maps:
+GW0(X) → KO0(X(C))
+W0(X) → KO0(X(C))
+K0(X(C))
+Here, GW 0(X) is the Grothendieck-Witt group of X, and in the second line
+K0(X) is mapped to KO 0(X) by sending a complex vector bundle to the un-
+derlying real bundle. It is possible to extend these maps to shifted g roups and
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 3 ===
+Witt Groups of Complex Cellular V arieties 467
+groups with support in a concrete and “elementary” way, as was do ne in [Zib09].
+The method advocated here is to rely instead on a result in A1-homotopy the-
+ory: the representability of hermitian K-theory by a spectrum who se complex
+realization is the usual topological KO-spectrum. Currently, our o nly reference
+is a draft paper of Morel [ Mor06], but the result is well-known to the experts
+and a full published account will undoubtedly become available in due co urse.
+In the unstable homotopy category at least, the statement is imme diate from
+Schlichting and Tripathi’s recent description of a geometric represe nting space
+for hermitian K-theory (see Section 1.5).
+The structure of the paper is as follows: In the ﬁrst section we ass emble the
+basic deﬁnitions, reviewing some representability results along the w ay before
+ﬁnally stating in 1.9 the results in A1-homotopy theory that we ultimately take
+as our starting point. Our main result, Theorem 2.5, is stated and proved
+in the second section. Section 3 reviews mostly well-known facts about the
+Atiyah-Hirzebruch spectral sequence, on which the computation s of examples
+in the ﬁnal section rely.
+1 Preliminaries
+1.1 Witt groups and hermitian K-theory
+From a modern point of view, the theory of Witt groups represents a K-
+theoretic approach to the study of quadratic forms. We brieﬂy ru n through
+some of the basic deﬁnitions.
+Recall that the algebraic K-group K 0(X) of a scheme X can be deﬁned as the
+free abelian group on isomorphism classes of vector bundles over X modulo the
+following relation: for any short exact sequence of vector bundles
+0 → E → F → G → 0
+over X we have [ F ] = [ E] + [ G] in K 0(X). In particular, as far as K 0(X) is
+concerned, we may pretend that all exact sequences of vector b undles over X
+split.
+Now let ( E, ǫ) be a symmetric vector bundle, by which we mean a vector bundle
+E equipped with a non-degenerate symmetric bilinear form ǫ. We may view ǫ as
+an isomorphism from E to its dual bundle E∨ , in which case its symmetry may
+be expressed by saying that ǫ and ǫ∨ agree under the canonical identiﬁcation of
+the double-dual ( E∨ )∨ with E. Two symmetric vector bundles ( E, ǫ) and ( F , φ)
+are isometric if there is an isomorphism of vector bundles i : E → F compatible
+with the symmetries, i. e. such that i∨ φi = ǫ. The orthogonal sum of two
+symmetric bundles has the obvious deﬁnition ( E, ǫ) ⊥ (F , φ) := ( E ⊕ F , ǫ⊕ φ).
+Any vector bundle E gives rise to a symmetric bundle H(E) := ( E ⊕ E∨ , ( 0 1
+1 0 )),
+the hyperbolic bundle associated with E. These hyperbolic bundles are the
+simplest members of a wider class of so-called metabolic bundles: symm etric
+bundles ( M, µ) which contain a subbundle j : L → M of half their own rank
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 4 ===
+468 Marcus Zibrowius
+on which µ vanishes. In other words, ( M, µ) is metabolic if it ﬁts into a short
+exact sequence of the form
+0 → L
+j
+− → M
+j∨ µ
+− → L ∨ → 0
+The subbundle L is then called a Lagrangian of M. If the sequence splits,
+(M, µ) is isometric to H(L), at least in any characteristic other than two. This
+motivates the deﬁnition of the Grothendieck-Witt group.
+Definition 1.1 ([
+Wal03a,Sch10a]). The Grothendieck-Witt group GW 0(X) of
+a scheme X is the free abelian group on isometry classes of symmetric vector
+bundles over X modulo the following two relations:
+• [(E, ǫ) ⊥ (G, γ)] = [( E, ǫ)] + [(G, γ)]
+• [(M, µ)] = [ H(L)] for any metabolic bundle ( M, µ) with Lagrangian L
+The Witt group W 0(X) is deﬁned similarly, except that the second relation
+reads [( M, µ)] = 0. Equivalently, we may deﬁne W 0(X) by the exact sequence
+K0(X)
+H
+− → GW0(X) − → W0(X) → 0
+Shifted Witt groups. The groups above can be deﬁned more generally in
+the context of exact or triangulated categories with dualities. The previous
+deﬁnitions are then recovered by considering the category of vec tor bundles
+over X or its bounded derived category. However, the abstract point of view
+allows for greater ﬂexibility. In particular, a number of useful varia nts of Witt
+groups can be introduced by passing to related categories or dualit ies. For
+example, if we take a line bundle L over X and replace the usual duality
+E∨ := Hom(E, OX ) on vector bundles by Hom(− , L) we obtain “twisted” Witt
+groups W 0(X; L). On the bounded derived category, we can consider dualities
+that involve shifting complexes, leading to the deﬁnition of “shifted” Witt
+groups W i(X). This approach, pioneered by Paul Balmer in [ Bal00, Bal01a],
+elevates the theory of Witt groups into the realm of cohomology the ories. We
+illustrate the meaning and signiﬁcance of these remarks with a few of the key
+properties of the theory, concentrating on the case when X is a smooth scheme
+over a ﬁeld of characteristic not equal to two. The interested but unacquainted
+reader may prefer to consult [ Bal01b] or [ Bal05].
+• For any line bundle L over X and any integer i, we have a Witt group
+Wi(X; L)
+This is the ith Witt group of X “with coeﬃcients in L”, or “twisted by
+L”. When L is trivial it is frequently dropped from the notation.
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 5 ===
+Witt Groups of Complex Cellular V arieties 469
+• The Witt groups are four-periodic in i and “two-periodic in L” in the
+sense that, for any i and any line bundles L and M over X, we have
+canonical isomorphisms
+Wi(X; L) ∼
+= Wi+4(X; L)
+Wi(X; L) ∼
+= Wi(X; L ⊗ M⊗ 2)
+• More generally, for any closed subset Z of X we have Witt groups “with
+support on Z”, written W i
+Z (X; L). For Z = X these agree with W i(X; L).
+• We have long exact “localization sequences” relating the Witt groups of X
+and X − Z, which can be arranged as 12-term exact loops by periodicity.
+Balmer’s approach already works on the level of Grothendieck-Witt groups, as
+shown in [
+Wal03a]. In this context, the localization sequences take the form
+GWi
+Z(X) → GWi(X) → GWi(X − Z) →
+Wi+1
+Z (X) → Wi+1(X) → Wi+1(X − Z) → Wi+2
+Z (X) → · · ·
+(1)
+continuing to the right with shifted Witt groups of X, and similarly for ar-
+bitrary twists L [
+Wal03a, Theorem 2.4]. However, if one wishes to continue
+the sequences to the left, one has to revert to the methods of hig her algebraic
+K-theory.
+Hermitian K-theory. Recall that the higher algebraic K-groups of a
+scheme X can be deﬁned as the homotopy groups of a topological space K( X)
+associated with X. If one replaces K( X) by an appropriate spectrum one can
+similarly deﬁne groups K n(X) in all degrees n ∈ Z. On a smooth scheme X,
+however, the groups in negative degrees vanish.
+An analogous construction of hermitian K-theory is developed in [
+Sch10b].
+Given a scheme X and a line bundle L over X, Schlichting constructs a family
+of spectra GWi(X; L) from which hermitian K-groups can be deﬁned as
+GWi
+n(X; L) := πn(GWi(X; L))
+In degree n = 0, one recovers Balmer and Walter’s Grothendieck-Witt groups,
+and the Witt groups appear as hermitian K-groups in negative degre es. To be
+precise, for any smooth scheme X over a ﬁeld of characteristic not equal to two
+one has the following natural identiﬁcations:
+GWi
+0(X; L) ∼
+= GWi(X; L) (2)
+GWi
+n(X; L) ∼
+= Wi− n(X; L) for n < 0 (3)
+For aﬃne varieties, the identiﬁcations of Witt groups may be found in [
+Hor05]:
+see Proposition A.4 and Corollary A.5. For a general smooth scheme X, we can
+pass to a vector bundle torsor T over X such that T is aﬃne [Jou73, Lemma 1.5;
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 6 ===
+470 Marcus Zibrowius
+Hor05, Lemma 2.1]. 1 Both Balmer’s Witt groups and Schlichting’s hermi-
+tian K-groups are homotopy invariant in the sense that the groups of T may
+naturally be identiﬁed with those of X. This is proved for Witt groups in
+[Gil03, Corollary 4.2] and may be deduced for hermitian K-theory from the
+Mayer-Vietoris sequences established in [ Sch10b, Theorem 1]. The identiﬁca-
+tions also hold more generally for hermitian K-groups with support GW i
+n,Z(X)
+[
+Sch]. They will be used implicitly throughout.
+For completeness, we mention how the 4-periodic notation used her e translates
+into the traditional notation in terms of KO- and U-theory, as used for example
+in [ Hor05]. Namely, we have
+GWi
+n(X) =
+
+
+
+
+
+
+
+
+
+KOn(X) for i ≡ 0 mod 4
+Un(X) for i ≡ − 1
+− KOn(X) for i ≡ − 2
+− Un(X) for i ≡ − 3
+(This notation will not be used elsewhere in this paper.)
+1.2 KO-theory
+We now turn to the corresponding theories in topology. To ensure t hat the
+deﬁnitions given here are consistent with the literature, we restric t our attention
+to ﬁnite-dimensional CW complexes. 2 Since we are ultimately only interested
+in topological spaces that arise as complex varieties, this is not a pro blem.
+The deﬁnitions of K 0 and GW 0 given above applied to complex vector bundles
+over a ﬁnite-dimensional CW complex X yield its complex and real topological
+K-groups K 0(X) and KO 0(X). Since short exact sequences of vector bundles
+over X always split, the deﬁnitions may even be simpliﬁed:
+Definition 1.2. For a ﬁnite-dimensional CW complex X, the complex K-
+group K0(X) is the free abelian group on isomorphism classes of complex vector
+bundles over X modulo the relation [ E ⊕ G ] = [ E] + [G]. Likewise, the KO-group
+KO0(X) is the free abelian group on isometry classes of symmetric complex
+vector bundles over X modulo the relation [( E, ǫ) ⊥ (G, γ)] = [( E, ǫ)] + [(G, γ)].
+There is a more common description of KO 0(X) as the K-group of real vector
+bundles. The equivalence with the deﬁnition given here can be traced back
+to the fact that the orthogonal group O( n) is a maximal compact subgroup
+of both GL n(R) and O n(C), but also seen very concretely along the following
+lines. We say that a complex bilinear form ǫ on a real vector bundle F is real
+if ǫ: F ⊗ F → C factors through R.
+1This step is known as Jouanolou’s trick.
+2The key property we need is that any vector bundle over a ﬁnite -dimensional CW complex
+has a stable inverse. See the proof of Theorem 1.5.
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 7 ===
+Witt Groups of Complex Cellular V arieties 471
+Lemma 1.3. Let (E, ǫ) be a symmetric complex vector bundle. There exists a
+unique real subbundle ℜ (E, ǫ) ⊂ E such that ℜ (E, ǫ) ⊗ R C = E and such that the
+restriction of ǫ to ℜ (E, ǫ) is real and positive deﬁnite. Concretely, a ﬁbre of
+ℜ (E, ǫ) is given by the real span of any orthonormal basis of the corre sponding
+ﬁbre of E.
+Corollary 1.4. For any CW complex X, the monoid of isomorphism classes
+of real vector bundles over X is isomorphic to the monoid of isometry classes
+of symmetric complex vector bundles over X (with respect to the operations ⊕
+and ⊥ , respectively).
+Proof of Lemma 1.3. In the case of a vector bundle over a point we may assume
+without loss of generality that
+(E, ǫ) =
+(
+Cr,
+( 1 0. . .
+0 1
+) )
+Clearly, the subspace Rr ⊂ Cr has the required properties. Uniqueness follows
+from elementary linear algebra. If ( E, ǫ) is an arbitrary symmetric complex
+vector bundle over a space X, then any point of X has some neighbourhood
+over which ( E, ǫ) can be trivialized in the form above. We know how to deﬁne
+ℜ (E, ǫ) over each such neighbourhood, and by uniqueness these local bu ndles
+can be glued together.
+Proof of Corollary 1.4. A map in one direction is given by sending a symmetric
+complex vector bundle ( E, ǫ) to ℜ (E, ǫ). Conversely, with any real vector bundle
+E over X we may associate a symmetric complex vector bundle ( E ⊗ R C, σC),
+where σC is the C-linear extension of some inner product σ on E. Since σ is
+deﬁned uniquely up to isometry, so is ( E ⊗ R C, σC). See [ MH73, Chapter V,
+§ 2] for a proof that avoids the uniqueness part of the preceding lem ma.
+Representing topological K-groups. A standard construction of the
+cohomology theories associated with K 0 and KO0 is based on the fact that these
+functors are representable in the homotopy category H of topological spaces.
+The starting point is the homotopy classiﬁcation of vector bundles: Let us write
+Grr,n for the Grassmannian Gr( r, Cr+n) of complex r-bundles in Cr+n, and let
+Grr be the union of Gr r,n ⊂ Grr,n+1 ⊂ · · · under the obvious inclusions. Denote
+by Ur,n and Ur the universal r-bundles over these spaces. For any connected
+paracompact Hausdorﬀ space X we have a one-to-one correspondence between
+the set Vect r(X) of isomorphism classes of rank r complex vector bundles
+over X and homotopy classes of maps from X to Gr r: a homotopy class [ f ]
+in H(X, Grr) corresponds to the pullback of Ur along f [Hus94, Chapter 3,
+Theorem 7.2].
+To describe K 0(X), we need to pass to Gr, the union of the Gr r under the
+embeddings Gr r֒→Grr+1 that send a complex r-plane W to C ⊕ W .
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 8 ===
+472 Marcus Zibrowius
+Theorem 1.5. For ﬁnite-dimensional CW complexes X we have natural iso-
+morphisms
+K0(X) ∼
+= H(X, Z × Gr) (4)
+such that, for X = Gr r,n, the class [Ur,n] + (d − r)[C] in K0(Grr,n) corresponds
+to the inclusion Grr,n֒{ d} × Grr,n֒→Z × Gr.
+Proof. The theorem is of course well-known, see for example [
+Ada95, page 204].
+To deduce it from the homotopy classiﬁcation of vector bundles, we note ﬁrst
+that any CW complex is paracompact and Hausdorﬀ [ Hat09, Proposition 1.20].
+Moreover, we may assume that X is connected. The product Z × Gr can be
+viewed as the colimit of the inductive system
+∐
+d≥ 0
+{d} × Grd֒→
+∐
+d≥− 1
+{d} × Grd+1֒→
+∐
+d≥− 2
+{d} × Grd+2֒· · · ⊂ Z × Gr
+Any continuous map from X to Z × Gr factors though one of the components
+colimn({d} × Grn). By cellular approximation, it is in fact homotopic to a map
+that factors through {d} × Grn for some n. Thus,
+H(X, Z × Gr) ∼
+=
+∐
+d∈ Z
+colimn Vectn(X)
+where the colimit is taken over the maps Vect n(X) → Vectn+1(X) sending a
+vector bundle E to C ⊕ E . We deﬁne a map from the coproduct to K 0(X) by
+sending a vector bundle E in the dth component to the class [ E]+( d− rank E)[C]
+in K 0(X). To see that this is a bijection, we use the fact that every vector
+bundle E over a ﬁnite-dimensional CW complex has a stable inverse: a vector
+bundle E⊥ over X such that E ⊕ E ⊥ is a trivial bundle [
+Hus94, Chapter 3,
+Proposition 5.8].
+If we replace the complex Grassmannians by real Grassmannians RGrr,n, we
+obtain the analogous statement that KO 0 can be represented by Z × RGr.
+Equivalently, but more in the spirit of Deﬁnition 1.2, we could work with the
+following spaces:
+Definition 1.6. Let ( V, ν) be a symmetric complex vector space, and let
+Gr(r, V ) be the Grassmannian of complex k-planes in V . The “non-degenerate
+Grassmannian”
+Grnd(r, (V, ν))
+is the open subspace of Gr( r, V ) given by r-planes T for which the restriction
+ν|T is non-degenerate.
+Complexiﬁcation induces an inclusion of RGr(k, ℜ (V, ν)) into Gr nd(r, (V, ν)),
+which, by Lemma
+1.7 below, is a homotopy equivalence. So let Gr nd
+r,n abbre-
+viate Gr nd(r, Hr+n), where H is the hyperbolic plane ( C2, ( 0 1
+1 0 )), and let U nd
+r,n
+denote the restriction of the universal bundle over Gr( r, C2r+2n) to Gr nd
+r,n. Then
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 9 ===
+Witt Groups of Complex Cellular V arieties 473
+colimits Gr nd
+r and Gr nd can be deﬁned in the same way as for the usual Grass-
+mannians, and, for ﬁnite-dimensional CW complexes X, we obtain natural
+isomorphisms
+KO0(X) ∼
+= H(X, Z × Grnd) (5)
+Here, for even (d− r), the inclusion Gr nd
+r,n֒{ d}× Grnd
+r,n֒→Z× Grnd corresponds
+to the class of [ U nd
+r,n] + d− r
+2 [H] in GW 0(Grnd
+r,n).
+Lemma 1.7. For any symmetric complex vector space (V, ν), the following in-
+clusion is a homotopy equivalence:
+RGr(k, ℜ (V, ν))
+j
+֒→Grnd(k, (V, ν))
+U ↦→ U ⊗ R C
+Proof. Consider the projection π : V = ℜ (V, ν) ⊕ iℜ (V, ν) ։ ℜ (V, ν). We de-
+ﬁne a retract r of j by sending a complex k-plane T ∈ Grnd(k, (V, ν)) to
+π (ℜ (T, ν |T )) ⊂ ℜ (V, ν). This is indeed a linear subspace of real dimension
+k: since ν is positive deﬁnite on ℜ (T, ν |T ) but negative deﬁnite on iℜ (V, ν),
+the intersection ℜ (T, ν |T ) ∩ iℜ (V, ν) is trivial.
+More generally, we can deﬁne a family of endomorphisms of V parametrized
+by t ∈ [0, 1] by
+πt : ℜ (V, ν) ⊕ iℜ (V, ν) ։ ℜ (V, ν) ⊕ iℜ (V, ν)
+(x, y) ↦→ (x, ty)
+This family interpolates between the identity π1 and the projection π0, which
+we can identify with π . We claim that
+πt(ℜ (T, ν |T )) ⊂ V
+is a real linear subspace of dimension k on which ν is real and positive deﬁnite.
+The claim concerning the dimension has already been veriﬁed in the cas e t = 0
+and follows for non-zero t from the fact that πt is an isomorphism. Now take
+a non-zero vector v ∈ πt(ℜ (T, ν |T )) and write it as v = x + tiy, where x, y ∈
+ℜ (V, ν) and x + iy ∈ ℜ (T, ν |T ). Since ν(x, x), ν(y, y) and ν(x + iy, x + iy)
+are all real we deduce that ν(x, y) = 0; it follows that ν(v, v) is real as well.
+Moreover, since ν(x + iy, x + iy) is positive we have ν(x, x) > ν (y, y), so that
+ν(v, v) > (1 − t2)ν(y, y). In particular, ν(v, v) > 0 for all t ∈ [0, 1], as claimed.
+It follows that T ↦→ πt(ℜ (T, ν |T )) ⊗ R C deﬁnes a homotopy from j ◦ r to the
+identity on Gr nd(k, (V, ν)).
+K-spectra and cohomology theories. The inﬁnite Grassmannian Gr
+can be identiﬁed with the classifying space BU of the inﬁnite unitary gr oup.
+Consequently, K 0 can be represented by Z × BU, which by Bott periodicity
+is equivalent to its own two-fold loopspace Ω 2(Z × BU). This can be used to
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 10 ===
+474 Marcus Zibrowius
+construct a 2-periodic Ω-spectrum Ktop in the stable homotopy category SH
+whose even terms are all given by Z × BU. Similarly, RGr is equivalent to the
+classifying space BO of the inﬁnite orthogonal group, and Bott per iodicity in
+this case says that Z × BO is equivalent to Ω 8(Z × BO). Thus, one obtains
+a spectrum KOtop in SH which is 8-periodic. The associated cohomology
+theories are given by
+Ki(X) := SH(Σ∞ (X+), Si ∧ Ktop)
+KOi(X) := SH(Σ∞ (X+), Si ∧ KOtop)
+where X+ denotes the union of X and a disjoint base point, and Σ ∞ is the
+functor assigning to a pointed space its suspension spectrum. We r efer the
+reader to [ Ada95, III.2] for background and details.
+For convenience and later reference, we include here the values of the theories
+on a point. Since we are in fact dealing with multiplicative theories, thes e can
+be summarized in the form of coeﬃcient rings:
+K∗ (point) = Z
+[
+g, g− 1]
+(6)
+KO∗ (point) = Z
+[
+η, α, λ, λ− 1] /
+(2η, η 3, ηα, α 2 − 4λ) (7)
+where g is of degree − 2 and η, α and λ have degrees − 1, − 4 and − 8, respectively
+[Bot69, pages 66–74 3].
+1.3 Comparison
+Now suppose X is a smooth complex variety. We write X(C) for the set of
+complex points of X equipped with the analytic topology. If E is a vector
+bundle over X then E(C) has the structure of a complex vector bundle over
+X(C), so that we obtain natural maps
+K0(X) → K0(X(C)) (8)
+GW0(X) → KO0(X(C)) (9)
+and an induced map
+W0(X) → KO0(X(C))
+K0(X(C)) (10)
+We now wish to extend these maps to be deﬁned on GW i(X) and W i(X)
+for arbitrary i, and also on groups with support and twisted groups. Let us
+comment on some “elementary” constructions that are possible be fore outlining
+the approach that we will ultimately follow here.
+3The multiplicative relations among the generators are give n on page 74, but unfortunately
+the relation ηα = 0 is missing. This omission seems to have pervaded much of th e literature,
+and I am indebted to Ian Grojnowski for pointing out the same m istake in an earlier version
+of this paper. Of course, the relation follows from the fact t hat KO − 5(point) = 0.
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 11 ===
+Witt Groups of Complex Cellular V arieties 475
+Firstly, one way to extend the maps to the groups GW i(X) and W i(X) is to
+use the multiplicative structure of the theories together with Walte r’s results on
+projective bundles [ Wal03b]. Namely, for any variety X one has isomorphisms
+GWi(X × P1) ∼
+= GWi(X) ⊕ GWi− 1(X)
+KO2i(X(C) × S2) ∼
+= KO2i(X(C)) ⊕ KO2i− 2(X(C))
+This allows an inductive deﬁnition of comparison maps, at least for all n eg-
+ative i. Basic properties of these maps, for example compatibility with the
+periodicities of Grothendieck-Witt and KO-groups, can be checked by direct
+calculations.
+It is less clear how to obtain maps on Witt groups with restricted supp orts.
+One possibility, pursued in [
+Zib09], is to work on the level of complexes of vector
+bundles and adapt a construction of classes in relative K-groups de scribed in
+[Seg68] to the case of KO-theory. However, it remains unclear to the aut hor
+how to see in this approach that the resulting maps are compatible wit h the
+boundary morphisms in localization sequences.
+Theorem
+2.5 below could in fact be proved without knowing that the compari-
+son maps respect the boundary morphisms in localization sequences in general.
+However, A1-homotopy theory provides an alternative construction of a com-
+parison map for which this property immediately follows from the cons truction,
+and which in any case is so compellingly elegant that it would be diﬃcult to
+argue in favour of any other approach.
+1.4 A1-homotopy theory
+Theorem
+1.5 describing K 0 in terms of homotopy classes of maps to Grassman-
+nians has an analogue in algebraic geometry, in the context of A1-homotopy
+theory. Developed mainly by Morel and Voevodsky, the theory pro vides a gen-
+eral framework for a homotopy theory of schemes emulating the s ituation for
+topological spaces. The authoritative reference is [ MV99]; closely related texts
+by the same authors are [ Voe98], [ Mor99] and [ Mor04]. See [ DLØ+07] for a
+textbook introduction and [ Dug01] for an enlightening perspective on one of
+the main ideas.
+We summarize the main points relevant for us in just a few sentences . The
+category Sm k of smooth schemes over a ﬁeld k can be embedded into some
+larger category of “spaces” Spc k which is closed under small limits and colimits,
+and which can be equipped with a model structure. The A1-homotopy category
+H(k) over k is the homotopy category associated with this model category.
+In fact, there are several possible choices for Spc k and many possible model
+structures yielding the same homotopy category H(k). One possibility is to
+consider the category of simplicial presheaves over Sm k, or the category of
+simplicial sheaves with respect to the Nisnevich topology. Both cate gories
+contain Sm k as full subcategories via the Yoneda embedding, and they also
+contain simplicial sets viewed as constant (pre)sheaves. One may t hus apply
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 12 ===
+476 Marcus Zibrowius
+a general recipe for equipping the category of simplicial (pre)shea ves over a
+site with a model structure (see [ Jar87]). In a crucial last step, one forces the
+aﬃne line A1 to become contractible by localizing with respect to the set of all
+projections A1 × X ։ X.
+As in topology, we also have a pointed version H• (k) of H(k). Remarkably,
+these categories contain several distinct “circles”: the simplicial c ircle S1, the
+“Tate circle” Gm = A1 − 0 (pointed at 1) and the projective line P1 (pointed
+at ∞ ). These are related by the intriguing formula P1 = S1 ∧ Gm. A common
+notational convention which we will follow is to deﬁne
+Sp,q := (S1)∧ (p− q) ∧ G∧ q
+m
+for any p ≥ q. In particular, we then have S1 = S1,0, Gm = S1,1 and P1 = S2,1.
+One can take the theory one step further by passing to the stable homotopy cat-
+egory SH(k), a triangulated category in which the suspension functors Sp,q ∧ −
+become invertible. This category is usually constructed using P1-spectra. The
+triangulated shift functor is given by suspension with the simplicial sp here S1,0.
+Finally and crucially, the analogy with topology can be made precise: wh en
+we take our ground ﬁeld k to be the complex numbers, or more general any
+subﬁeld of C, we have a complex realization functor
+H(k) → H (11)
+that sends a smooth scheme X to its set of complex points X(C) equipped
+with the analytic topology. There is also a pointed realization functor and,
+moreover, a triangulated functor of the stable homotopy catego ries
+SH(k) → SH (12)
+which takes Σ∞ (X+) to Σ∞ (X(C)+) for any smooth scheme X [Rio06, Th´ eo-
+r` eme I.123; Rio07a, Th´ eor` eme 5.26].
+1.5 Representing algebraic and hermitian K-theory
+Grassmannians of r-planes in kn+r can be constructed as smooth projective
+varieties over any ﬁeld k. Viewing them as objects in Spc k, we can form
+their colimits Gr r and Gr in the same way as in topology. The following
+analogue of Theorem
+1.5 is established in [ MV99, § 4]; see Th´ eor` eme III.3 and
+Assertion III.4 in [ Rio06].
+Theorem 1.8. For smooth schemes X over k we have natural isomorphisms
+K0(X) ∼
+= H(k)(X, Z × Gr) (13)
+such that the inclusion of Grr,n֒{ d} × Grr,n֒→Z × Gr corresponds to the
+class [Ur,n] + (d − r)[O] in K0(Grr,n).
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 13 ===
+Witt Groups of Complex Cellular V arieties 477
+An analogous result for hermitian K-theory has recently been obta ined by
+Schlichting and Tripathi 4: Let Gr nd
+r,n denote the “non-degenerate Grassman-
+nians” deﬁned as open subvarieties of Gr r,r+2n as above, and let Gr nd
+r and
+Grnd be the respective colimits. Then for smooth schemes over k we have
+natural isomorphisms
+GW0(X) ∼
+= H(k)(X, Z × Grnd) (14)
+It follows from the construction that, when ( d − r) is even, the inclusion of
+Grnd
+r,n֒{ d} × Grnd
+r,n֒→Z × Grnd corresponds to the class of [ U nd
+r,n] + d− r
+2 [H] in
+GW0(Grnd
+r,n), where U nd
+r,n is the universal symmetric bundle over Gr nd
+r,n.
+The fact that hermitian K-theory is representable in H(k) has been known for
+longer, see [
+Hor05]. One of the advantages of having a geometric description
+of a representing space, however, is that one can easily see what it s complex
+realization is. In particular, this gives us an alternative way to deﬁne the
+comparison maps. For any smooth complex scheme X we have the following
+commutative squares, in which the left vertical arrows are the com parison maps
+(8) and ( 9), the right vertical arrows are induced by the complex realization
+functor ( 11).
+K0(X) ∼
+=
+↓↓
+H(C)(X, Z × Gr)
+↓↓
+K0(X(C))∼
+= H(X(C), Z × Gr)
+GW0(X) ∼
+=
+↓↓
+H(C)(X, Z × Grnd)
+↓↓
+KO0(X(C))∼= H(X(C), Z × Grnd)
+Some of the results quoted here are in fact known in a much greater generality.
+Firstly, higher algebraic and hermitian K-groups of X are obtained by passing
+to suspensions of X in ( 13) and ( 14). Even better, algebraic and hermitian
+K-theory are representable in the stable A1-homotopy category SH(k). Let
+us make the statement a little more precise by ﬁxing some notation. G iven a
+spectrum E in SH(k), we obtain a bigraded reduced cohomology theory ˜E∗,∗
+on H• (k) and a corresponding unreduced theory E∗,∗ on H(k) by setting
+˜Ep,q(X ) := SH(k)(Σ∞ X , Sp,q ∧ E) for X ∈ H • (k)
+Ep,q(X) := ˜Ep,q(X+) for X ∈ H (k)
+A spectrum K representing algebraic K-theory was ﬁrst constructed in [ Voe98,
+§ 6.2]; see [ Rio06] or [ Rio07b] for some further discussion. It is (2,1)-periodic,
+meaning that in SH(k) we have an isomorphism
+S2,1 ∧ K
+∼
+=→ K4Talk “Geometric representation of hermitian K-theory in A1-homotopy theory” at the
+W orkshop “Geometric Aspects of Motivic Homotopy Theory”, 6 .–10. September 2010 at the
+Hausdorﬀ Center for Mathematics, Bonn
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 14 ===
+478 Marcus Zibrowius
+Thus, the bigrading of the corresponding cohomology theory K p,q is slightly
+artiﬁcial. The identiﬁcation with the usual notation for algebraic K-t heory is
+given by
+Kp,q(X) = K 2q− p(X) (15)
+For hermitian K-theory we have an (8,4)-periodic spectrum KO, and the cor-
+responding cohomology groups KO p,q are honestly bigraded. The translation
+into the notation used for hermitian K-groups in Section 1.1 is given by
+KOp,q(X) = GW q
+2q− p(X) (16)
+We will refer to the number 2 q − p as the degree of the group KO p,q(X).
+The relation with Balmer’s Witt groups obtained by combining (
+16) and ( 2) is
+illustrated by the following table:
+KOp,q p = 0 1 2 3 4 5 6 7
+q = 0 GW0 W1 W2 W3 W0 W1 W2 W3
+q = 1 GW1
+2 GW1
+1 GW1 W2 W3 W0 W1 W2
+q = 2
+GW2
+4 GW2
+3 GW2
+2 GW2
+1 GW2 W3 W0 W1
+q = 3
+GW3
+6 GW3
+5 GW3
+4 GW3
+3 GW3
+2 GW3
+1 GW3 W0
+As for the representing spaces in the unstable homotopy categor y, it is known
+that the complex realizations of KO and K represent real and complex topo-
+logical K-theory. This is well-documented in the latter case, see for example
+[Rio06, Proposition VI.12]. For KO, our references are slightly thin. Since the
+emphasis in this article is on showing how such a result in A1-homotopy theory
+can be used for some concrete computations, we will at this point su ccumb to
+an “axiomatic” approach — the key statements we will be using are as follows:
+Standing assumptions 1.9. There exist spectra K and KO in SH(C) repre-
+senting algebraic K-theory and hermitian K-theory in the se nse described above,
+such that:
+(a) The complex realization functor (12) takes K to Ktop and KO to KOtop.
+(b) We have an exact triangle in SH(C) of the form
+KO ∧ S1,1 η
+→ KO → K → S1,0 ∧ . . . (17)
+which corresponds to the usual triangle in SH.
+These results are announced in [ Mor06]. Independent constructions of spec-
+tra representing hermitian K-theory can be found in [ Hor05] and in a recent
+preprint of Panin and Walter [ PW10].
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 15 ===
+Witt Groups of Complex Cellular V arieties 479
+2 The comparison maps
+It follows immediately from
+1.9 that complex realization induces comparison
+maps
+˜
+kp,q : ˜Kp,q(X ) → ˜Kp(X (C))
+˜
+kp,q
+h : ˜KOp,q(X ) → ˜KOp(X (C))
+and hence comparison maps kp,q and kp,q
+h on K- and hermitian K-groups. In
+particular, in degrees 0 and − 1 we have maps
+k0,0 : K 0(X) → K0(X(C))
+gwq := k2q,q
+h : GW q(X) → KO2q(X(C))
+wq := k2q− 1,q− 1
+h : W q(X) → KO2q− 1(X(C))
+for any smooth complex scheme X. Some good properties of these maps follow
+directly from the construction:
+• They commute with pullbacks along morphisms of smooth schemes.
+• They are compatible with suspension isomorphisms.
+• They are compatible with the periodicity isomorphisms, so we can ident ify
+kp,q
+h with kp+8,q+4
+h (and hence w q with w q+4 and gw q with gw q+4).
+It is also clear that they are compatible with long exact sequences ar ising from
+exact triangles in SH(C). This will be particularly useful in the following two
+cases.
+Localization sequences. Given a smooth closed subscheme Z of a smooth
+scheme X, we have an exact triangle
+Σ∞ (X − Z)+ → Σ∞ X+ → Σ∞
+(
+X
+X− Z
+)
+→ S1,0 ∧ . . .
+in SH(C). It induces long exact “localization sequences” for cohomology th e-
+ories. For example, for hermitian K-theory we obtain sequences of the form
+· · · → ˜KOp,q
+(
+X
+X− Z
+)
+→ KOp,q(X) → KOp,q(X − Z) → ˜KOp+1,q
+(
+X
+X− Z
+)
+→ . . .
+(18)
+The comparison maps commute with all maps appearing in this sequenc e and
+the corresponding sequence of topological KO-groups.
+The space X/ (X − Z) depends only on the normal bundle N of Z in X. To
+make this precise, we introduce the Thom space of a vector bundle E over
+an arbitrary smooth scheme Z, deﬁned as the homotopy quotient of E by the
+complement of the zero section:
+ThomZ (E) := E
+/
+(E − Z)
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 16 ===
+480 Marcus Zibrowius
+Using a geometric construction known as deformation to the norma l bun-
+dle, Morel and Voevodsky show in Theorem 2.23 of [ MV99, Chapter 3] that
+X/ (X − Z) is canonically isomorphic to Thom Z (N ) in the unstable pointed
+A1-homotopy category. Thus, sequence ( 18) can be rewritten in the following
+form:
+. . . → ˜KOp,q(ThomZ N ) → KOp,q(X) → KOp,q(X − Z) →
+˜KOp+1,q(ThomZ N ) → KOp+1,q(X) → KOp+1,q(X − Z) → . . .
+Karoubi/Bott sequences. The KO- and K-groups of a topological space
+X ﬁt into a long exact sequence known as the Bott sequence [ Bot69, pages 75
+and 112 5; BG10, 4.I.B]. It has the form
+. . . → KO2i− 1X → KO2i− 2X → K0X → KO2iX → KO2i− 1X → K1X
+→ KO2i+1X → KO2iX → K0X → KO2i+2X → KO2i+1X → . . .
+(19)
+The maps from KO- to K-groups are essentially given by complexiﬁcat ion (or,
+depending on our choice of description of KO-groups, by forgettin g the sym-
+metric structure of a complex symmetric bundle), and the maps fro m K- to
+KO-groups are given by sending a complex vector bundle to its under lying real
+bundle (or to the associated hyperbolic bundle). The maps between KO-groups
+are given by multiplication with the generator η of KO− 1(point) (see ( 7)).
+This long exact sequence is induced by the triangle described in 1.9. The se-
+quence arising from the corresponding triangle ( 17) in the stable A1-homotopy
+category is known as the Karoubi sequence. The comparison maps induce a
+commutative ladder diagram that allows us to compare the two. Near degree
+zero, this takes the following form:
+. . . →→ KO2i− 1,iX →→
+↓↓
+GWi− 1X →→
+↓↓
+K0X →→
+↓↓
+GWiX →→
+↓↓
+WiX →→
+↓↓
+0 →→
+↓↓
+. . .
+. . . →→ KO2i− 1X →→ KO2i− 2X →→ K0X →→ KO2iX →→ KO2i− 1X →→ K1X →→ . . .
+(20)
+As a consequence, the comparison maps w i factor as
+Wi(X) → KO2i(X)
+K0(X) → KO2i− 1(X)
+For cellular varieties, or more generally for spaces for which the odd topological
+K-groups vanish, the second map in this factorization is an isomorph ism.
+5Unfortunately, there are misprints on both pages. In partic ular, the central group in the
+diagram on page 112 should be K 0.
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 17 ===
+Witt Groups of Complex Cellular V arieties 481
+Groups with restricted support. Comparing the localization sequences
+(1) and ( 18), we see that the groups ˜KOp,q( X
+X− Z ) play the role of hermitian
+K-groups of X supported on Z. This should be viewed as part of any repre-
+sentability statement, see for example [ PW10, Theorem 6.5]. Alternatively, a
+formal identiﬁcation of the groups in degrees zero and below using o nly the
+minimal assumptions we have stated could be achieved as follows:
+Lemma 2.1. Let Z be a smooth closed subvariety of a smooth quasi-projective
+variety X. We have the following isomorphisms:
+˜KO2q,q( X
+X− Z ) ∼
+= GWq
+Z (X)
+˜KOp,q( X
+X− Z ) ∼
+= Wp− q
+Z (X) for 2q − p < 0
+Proof. Consider Z = Z × { 0} as a subvariety of X × A1. Its open complement
+(X × A1) − Z contains X = X × { 1} as a retract. Thus, the projection from
+X × A1 onto X induces a splitting of the localization sequences associated with
+(X × A1 − Z)֒→X × A1, and we have
+GWi+1
+Z (X × A1) ∼
+= coker
+(
+GWi+1
+1 (X × A1)֒→GWi+1
+1 (X × A1 − Z)
+)
+˜KO2i+2,i+1( X× A1
+X× A1− Z ) ∼
+= coker
+(
+KO2i+1,i+1(X × A1)֒→KO2i+1,i+1(X × A1 − Z)
+)
+By (
+16), we can identify the groups appearing on the right, so we obtain an
+induced isomorphism of the cokernels. The quotient X × A1/ (X × A1 − Z)
+can be identiﬁed with the suspension of X/ (X − Z) by S2,1, so we have an
+isomorphism
+˜KO2i+2,i+1( X× A1
+X× A1− Z ) ∼
+= ˜KO2i,i( X
+X− Z )
+On the other hand, we have analogous isomorphisms
+GWi+1
+Z (X × A1) ∼
+= GWi
+Z(X)
+for Grothendieck-Witt and Witt groups. For Witt groups, this is a sp ecial case
+of Theorem 2.5 in [
+Nen07], the case when Z = X being Theorem 8.2 in [ BG05].
+The corresponding isomorphisms of Grothendieck-Witt groups may be deduced
+via Karoubi induction. The proof in lower degrees is analogous.
+2.1 Twisting by line bundles
+As described in Section
+1.1, there is a natural notion of Witt groups twisted by
+line bundles. In the homotopy theoretic approach, such a twist can be encoded
+by passing to the Thom space of the bundle.
+Definition 2.2. For a vector bundle E of constant rank r over a smooth scheme
+X, we deﬁne the hermitian K-groups of X with coeﬃcients in E by
+KOp,q(X; E) := ˜KOp+2r,q+r(Thom E)
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 18 ===
+482 Marcus Zibrowius
+Likewise, for any complex vector bundle of rank r over a topological space X,
+we deﬁne
+KOp(X; E) := ˜KOp+2r(Thom E)
+When E is a trivial bundle, its Thom space is just a suspension of X, so that
+KOp,q(X; E) and KO p,q(X) agree.
+Lemma 2.3. For any vector bundle E over a smooth quasi-projective variety
+X, we have isomorphisms
+KO2q,q (X; E) ∼
+= GWq(X; det E)
+KOp,q(X; E) ∼
+= Wp− q(X; det E) for 2q − p < 0
+Proof. This follows from Lemma
+2.1 and Nenashev’s Thom isomorphisms for
+Witt groups: for any vector bundle E of rank r there is a canonical Thom
+class in W r
+X (E) which induces an isomorphism W i(X; det E) ∼
+= Wi+r
+X (E) by
+multiplication [
+Nen07, Theorem 2.5]. This Thom class actually comes from a
+class in GW r
+X (E), and, as in the proof of Lemma
+2.1, we can deduce that it
+induces an analogous isomorphism on Grothendieck-Witt groups via K aroubi
+induction.
+Remark. The isomorphisms of Lemmas 2.1 and 2.3 are constructed here in a
+rather ad hoc fashion, and we have taken little care in recording the ir precise
+form. Whenever we give an argument concerning the comparison ma ps on
+“twisted groups” in the following, we do all constructions on the leve l of rep-
+resentable groups of Thom spaces. The identiﬁcations with the usu al twisted
+groups are only needed to identify the ﬁnal output of concrete ca lculations as
+in Section 4.
+It follows similarly from Thom isomorphisms in topology that the groups
+KO(X; E) only depend on the determinant line bundle of E:
+Lemma 2.4. For complex vector bundles E and F on a topological space X
+with identical ﬁrst Chern class modulo 2, we have
+KOp(X; E) ∼
+= KOp(X; F )
+Proof. A complex vector bundle E whose ﬁrst Chern class vanishes modulo
+2 has a spin structure and is therefore oriented with respect to KO -theory
+[
+ABS64, § 12]. That is, we have a Thom isomorphism
+KOp X
+∼
+=− → ˜KOp+2r(Thom E)
+Now suppose c1(E) ≡ c1(F ) mod 2. We may view E ⊕ E ⊕ F both as a vector
+bundle over E and as a vector bundle over F , and by assumption it is oriented
+with respect to KO-theory in both cases. Thus, both groups in the lemma can
+be identiﬁed with KO p(X; E ⊕ E ⊕ F ).
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 19 ===
+Witt Groups of Complex Cellular V arieties 483
+Remark 2.1. In general the identiﬁcations of Lemma 2.4 are non-canonical.
+Given a spin structure on a real vector bundle, the constructions in [ABS64] do
+yield a canonical Thom class, but there may be several diﬀerent spin structures
+on the same bundle. Still, canonical identiﬁcations exist in many cases . For
+example, there is a canonical spin structure on the square of any c omplex line
+bundle, yielding canonical identiﬁcations
+KOp(X; L) ∼
+= KOp(X; L ⊗ M⊗ 2)
+for any two complex line bundles L and M over X. Moreover, as diﬀerent spin
+structures on a spin bundle over X are classiﬁed by the singular cohomology
+group H 1(X; Z/ 2), all spin structures arising in the context of complex cellular
+varieties below will be unique.
+2.2 The comparison for cellular varieties
+Theorem 2.5. For a smooth cellular complex variety X, the following com-
+parison maps are isomorphisms:
+K0(X)
+∼=− → K0(X(C))
+gwq : GW q(X)
+∼=− → KO2q(X(C))
+wq : W q(X)
+∼=− → KO2q− 1(X(C))
+This remains true for twisted groups (see Section
+2.1).
+As indicated in the introduction, the ﬁrst isomorphism is well-known an d al-
+most self-evident, given that both K 0(X) and K 0(X(C)) are free abelian of
+rank equal to the number of cells of X. In particular, both the algebraic group
+K0(C) and the topological K-group K 0(point) are isomorphic to the integers,
+generated by the trivial line bundle, and the comparison map is the ob vious
+isomorphism.
+Let us begin the proof of the theorem by also considering the other two maps
+ﬁrst in the case when X is just a point Spec( C). We can easily see that the
+corresponding groups are isomorphic by direct comparison:
+KOp,q(C) p = 0 1 2 3 4 5 6 7
+q = 0 ZZZ 0 0 0 Z/ 2 0 0 0
+q = 1 . . . . . . 0 0 0 Z/ 2 0 0
+q = 2 . . . . . . . . . . . . ZZZ 0 Z/ 2 0
+q = 3 . . . . . . . . . . . . . . . . . . ZZZ/2 ZZZ/2
+KOp(point) ZZZ 0 0 0 ZZZ 0 ZZZ/2 ZZZ/2
+Table 1: (Grothendieck-)Witt and KO-groups of a point.
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 20 ===
+484 Marcus Zibrowius
+To see that the isomorphisms are given by our comparison maps, we c an use
+the comparison of the Karoubi and Bott sequences. First, settin g i = 0 in Dia-
+gram ( 20), we see that gw 0 and w 0 are isomorphisms on a point. As W 0(C) is
+the only non-trivial Witt group of a point, it follows that w q is an isomorphism
+on a point in general, so that we have
+. . . →→ GWq− 1 →→
+gwq− 1
+↓↓
+K0 →→
+∼=
+↓↓
+GWq →→
+gwq
+↓↓
+Wq →→
+∼
+=
+↓↓
+0 →→
+↓↓
+. . .
+. . . →→ KO2q− 2 →→ K0 →→ KO2q →→ KO2q− 1 →→ 0 →→ . . .
+Given the periodicity of the Grothendieck-Witt groups, repeated a pplications
+of the Five Lemma now show that gw q is an isomorphism on a point for all
+values of q. (This strategy of proof is known as “Karoubi induction”.)
+We now treat the hermitian case in general. The case of algebraic/co mplex K-
+theory could be dealt with similarly, or deduced from the hermitian cas e using
+triangle ( 17). It will be helpful to consider not only the maps gw q = k2q,q
+h and
+wq+1 = k2q+1,q
+h in degrees 0 and − 1, respectively, but also the maps k2q− 1,q
+h
+in degree 1 and the maps k2q+2,q
+h in degree − 2. We will prove the following
+extended statement:
+Theorem 2.6. For a smooth cellular variety X, the hermitian comparison
+maps in degrees 1, 0, − 1 and − 2 have the properties indicated:
+KO2q− 1,q(X) ։ KO2q− 1(X(C))
+KO2q,q (X)
+∼=→ KO2q(X(C))
+KO2q+1,q(X)
+∼=→ KO2q+1(X(C))
+KO2q+2,q(X) ֌ KO2q+2(X(C))
+The analogous statements for twisted groups are also true.
+Remark 2.2. The map in degree 1 is not an isomorphism even when X is a point.
+For example, it is known that KO − 1,0(C) = Z/ 2 (see [
+Kar05, Example 18]),
+from which we may deduce via the Karoubi sequence that KO 1,1(C) ∼
+= C∗ . In
+particular, KO 1,1(C) cannot be isomorphic to KO 1(point) = 0.
+The map in degree − 2 can be identiﬁed with the inclusion of the 2-torsion
+subgroup of KO 2q+2(X(C)) into KO 2q+2(X(C)) for any cellular variety X.
+This follows from the theorem and the description of the KO-groups of cellular
+varieties given in Lemma
+3.1.
+In degrees less than − 2, the comparison map is necessarily zero. The problem is
+that while η : W p− q(X) → Wp− q(X) is an isomorphism in all negative degrees,
+the topological η is nilpotent ( η3 = 0).
+The proof of Theorem 2.6 will proceed by induction over the number of cells of
+X and occupy the remainder of this section. To begin the induction, we need
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 21 ===
+Witt Groups of Complex Cellular V arieties 485
+to consider the case of only one cell, which immediately reduces to the case of
+a point by homotopy invariance. In this case, degrees 0 and − 1 have already
+been dealt with above. In degrees 1 and − 2, on the other hand, most of the
+statements are trivial, and we only need to look at a few particular ca ses, which
+we postpone to the end of the proof.
+Spheres. Assuming the theorem to be true for a point, the compatibility of
+the comparison maps with suspensions immediately shows that the th eorem
+is also true for the reduced cohomology of the spheres ( P1)∧ d = S2d,d. To be
+precise, the following maps in degrees 1, 0, − 1 and − 2 have the properties
+indicated:
+˜KO2q− 1,q(S2d,d) ։ ˜KO2q− 1(S2d)
+˜KO2q,q (S2d,d)
+∼
+=→ ˜KO2q(S2d)
+˜KO2q+1,q(S2d,d)
+∼
+=→ ˜KO2q+1(S2d)
+˜KO2q+2,q(S2d,d) ֌ ˜KO2q+2(S2d)
+Cellular varieties. Now let X be a smooth cellular variety. By deﬁni-
+tion, X has a ﬁltration by closed subvarieties ∅ = Z0 ⊂ Z1 ⊂ Z2 · · · ⊂ ZN = X
+such that the open complement of Zk in Zk+1 is isomorphic to Ank for some
+nk. In general, the subvarieties Zk will not be smooth. Their complements
+Uk := X − Zk in X, however, are always smooth as they are open in X. So
+we obtain an alternative ﬁltration X = U0 ⊃ U1 ⊃ U2 · · · ⊃ UN = ∅ of X by
+smooth open subvarieties Uk. Each Uk contains a closed cell Ck ∼
+= Ank with
+open complement Uk+1.
+Our inductive hypothesis is that we have already proved the theore m for Uk+1,
+and we now want to prove it for Uk. We can use the following exact triangle
+in SH(C):
+Σ∞ (Uk+1)+ → Σ∞ (Uk)+ → Σ∞ Thom(NCk\ Uk ) → S1,0 ∧ . . .
+As Ck is a cell, the Quillen-Suslin theorem tells us that the normal bundle
+NCk\ Uk of Ck in Uk has to be trivial. Thus, Thom( NCk\ Uk ) is A1-weakly
+equivalent to S2d,d, where d is the codimension of Ck in Uk. Figure
+1 displays
+the comparison between the long exact cohomology sequences indu ced by this
+triangle. The inductive step is completed by applying the Five Lemma to each
+dotted map in the diagram.
+The twisted case. To obtain the theorem in the case of coeﬃcients in a
+vector bundle E over X, we replace the exact triangle above by the triangle
+Σ∞ Thom(E|Uk+1 ) → Σ∞ Thom(E|Uk ) → Σ∞ Thom(E|Ck ⊕ N Ck\Uk ) → S1,0 ∧ . . .
+The existence of this exact triangle is shown in the next lemma. The Th om
+space on the right is again just a sphere, so we can proceed as in the untwisted
+case.
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 22 ===
+486 Marcus Zibrowius
+↓↓
+···
+↓↓
+˜KO2q− 1,q(S2d,d)
+↓↓
+→→ →→ ˜KO2q− 1(S2d)
+↓↓
+KO2q− 1,q(Uk)
+↓↓
+k2q− 1,q
+h →→↖ ↖ ↖ ↖KO2q− 1(Uk)
+↓↓
+KO2q− 1,q(Uk+1)
+↓↓
+→→ →→ KO2q− 1(Uk+1)
+↓↓
+˜KO2q,q (S2d,d)
+↓↓
+∼= →→ ˜KO2q(S2d)
+↓↓
+KO2q,q (Uk)
+↓↓
+k2q,q
+h →→↖ ↖ ↖ ↖ ↖KO2q(Uk)
+↓↓
+KO2q,q (Uk+1)
+↓↓
+∼
+= →→
+KO2q(Uk+1)
+↓↓
+˜KO2q+1,q(S2d,d)
+↓↓
+∼= →→ ˜KO2q+1(S2d)
+↓↓
+KO2q+1,q(Uk)
+↓↓
+k2q+1,q
+h →→↖ ↖ ↖ ↖KO2q+1(Uk)
+↓↓
+KO2q+1,q(Uk+1)
+↓↓
+∼
+= →→
+KO2q+1(Uk+1)
+↓↓
+˜KO2q+2,q(S2d,d)
+↓↓
+→→ →→ ˜KO2q+2(S2d)
+↓↓
+KO2q+2,q(Uk)
+↓↓
+k2q+2,q
+h →→↖ ↖ ↖ ↖KO2q+2(Uk)
+↓↓
+KO2q+2,q(Uk+1)
+↓↓
+→→ →→ KO2q+2(Uk+1)
+↓↓···
+Figure 1: The inductive step.
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 23 ===
+Witt Groups of Complex Cellular V arieties 487
+Lemma 2.7. Given a smooth subvariety Z of a smooth variety X with comple-
+ment U , and given any vector bundle E over X, we have an exact triangle
+Σ∞ Thom(E|U ) → Σ∞ Thom E → Σ∞ Thom(E|Z ⊕ N Z\ X ) → S1,0 ∧ . . .
+Proof. From the Thom isomorphism theorem we know that the Thom space of
+a vector bundle over a smooth base is A1-weakly equivalent to the quotient of
+the vector bundle by the complement of the zero section. Consider the closed
+embeddings֒→( E − Z),֒E and֒E . Computing the normal bundles,
+we obtain
+(E − Z)/ (E − X) ∼
+= ThomU (E|U )
+E/ (E − X) ∼
+= ThomX E
+E/ (E − Z) ∼
+= ThomZ(E|Z ⊕ N Z\ X )
+The claim follows by passing to the stable homotopy category and app lying the
+octahedral axiom to the composition of the embeddings ( E − X) ⊆ (E − Z) ⊆ E .
+Remaining details concerning a point. To ﬁnish the proof of Theo-
+rem 2.6, we now return to the maps of degrees 1 and − 2 in the case of a point,
+which we skipped above. First, let us deal with degree 1. The odd KO- groups
+of a point are all trivial except for KO − 1, so k2q− 1,q
+h is trivially a surjection un-
+less q ≡ 0 mod 4. In that case, surjectivity of k− 1,0
+h is clear from the following
+diagram:
+. . . →→ KO− 1,0 →→
+k− 1,0
+h
+↓↓
+GW− 1 →→
+∼
+=
+↓↓
+K0 →→
+∼=
+↓↓
+. . .
+. . . →→ KO− 1 →→
+=
+KO− 2 →→ K0 →→ . . .
+. . . →→ KO− 1,0 →→ →→
+k− 1,0
+h
+↓↓
+Z/ 2 0 →→
+∼
+=
+↓↓
+Z →→
+∼=
+↓↓
+. . .
+. . . →→ Z/ 2
+∼= →→ Z/ 2 0 →→ Z →→ . . .
+Lastly, we consider what happens in degree − 2. Again, three out of four cases
+are trivial as KO 2q+2,q = W q+2 is zero unless q ≡ 2 mod 4. For the non-trivial
+case, consider the map η appearing in triangle ( 17). As the negative algebraic
+K-groups of C are zero, η yields automorphisms of W p− q in negative degrees. In
+topology, the corresponding maps are given by multiplication with a ge nerator
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 24 ===
+488 Marcus Zibrowius
+η of KO− 1, and η2 generates KO− 2. So the commutative square
+W0 ∼= →→
+∼
+=
+↓↓
+W0
+k0,− 2
+h
+↓↓
+KO− 1 η
+∼=
+→→ KO− 2
+shows that k0,− 2
+h is an injection (in fact, an isomorphism), as claimed. This
+completes the proof of Theorem 2.6.
+Remark 2.3. We indicate brieﬂy how Theorem 2.5 can alternatively be obtained
+by working only with the maps in degrees 0 and − 1 that can be deﬁned by
+more elementary means. The basic strategy — comparing the localiza tion
+sequences arising from the inclusion of a closed cell Ck into the union of “higher”
+cells Uk — still works. But we cannot deduce that the comparison maps are
+isomorphisms on Uk from the fact that they are isomorphisms on Uk+1 because
+the parts of the sequences that we can actually compare are now t oo short.
+We can, however, still deduce that the maps in degree 0 with domains the
+Grothendieck-Witt groups of Uk are surjective, and that the maps in degree
+− 1 with domains the Witt groups of Uk are injective. The inductive step can
+then be completed with the help of the Bott/Karoubi sequences. T his argument
+works even without assuming that the comparison maps are compat ible with
+the boundary maps in localization sequences in general: in the relevan t cases
+the cohomology groups involved are so simple that this property can be checked
+by hand.
+3 The Atiyah-Hirzebruch spectral sequence
+We now aim to prepare the ground for the discussion of the KO-theo ry of some
+examples in the next section. The main computational tool will be the Atiyah-
+Hirzebruch spectral sequence, which in topology exists for any ge neralized co-
+homology theory and any ﬁnite-dimensional CW complex X [
+Ada95, III.7;
+Koc96, Theorem 4.2.7]. For KO-theory, it has the form
+Ep,q
+2 = H p(X; KOq(point)) ⇒ KOp+q(X)
+with diﬀerential dr of bidegree ( r, − r + 1). The E2-page is thus concentrated
+in the half-plane p ≥ 0 and 8-periodic in q: we have the integral cohomology
+of X in rows q ≡ 0 and q ≡ − 4 mod 8, its cohomology with Z/ 2-coeﬃcients
+in rows q ≡ − 1 and q ≡ − 2, and all other rows are zero. The diﬀerential d2 is
+given by Sq 2 ◦π2 and Sq 2 on rows q ≡ 0 and q ≡ − 1, respectively, where
+Sq2 : H∗ (X; Z/ 2) → H∗+2(X; Z/ 2)
+is the second Steenrod square and π2 is mod-2 reduction [ Fuj67, 1.3].
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 25 ===
+Witt Groups of Complex Cellular V arieties 489
+The spectral sequence is multiplicative [ Koc96, Proposition 4.2.9]. That is, the
+multiplication on the E2-page induced by the cup product on singular cohomol-
+ogy and the ring structure of KO ∗ (point) (see ( 7)) descends to a multiplication
+on all subsequent pages, such that the multiplication on the E∞ -page is com-
+patible with the multiplication on KO∗ (X). In particular, each page is a module
+over KO∗ (point). The diﬀerentials of the spectral sequence are derivation s, i. e.
+they satisfy a Leibniz rule.
+3.1 The Atiyah-Hirzebruch spectral sequence for cellular v ari-
+eties
+For cellular varieties, or more generally for CW complexes with only eve n-
+dimensional cells, the spectral sequence becomes simple enough to make some
+general deductions. We summarize some lemmas of Hoggar and Kono and
+Hara.
+Lemma 3.1. [
+Hog69, 2.1 and 2.2] Let X be a CW complex with only even-
+dimensional cells. Then:
+• The ranks of the free parts of KO0X and KO4X are equal to the number
+t0 of cells of X of dimension a multiple of 4.
+• The ranks of the free parts of KO2X and KO6X are equal to the number
+t1 of cells of X of dimension 2 modulo 4.
+• The groups of odd degrees are two-torsion, i. e. KO2i− 1X = ( Z/ 2)si for
+some si.
+• KO2iX is isomorphic to the direct sum of its free part and KO2i+1X.
+Table 3 in Section 4.1 summarizes these statements.
+Proof. The cohomology of X is free on generators given by the cells and con-
+centrated in even degrees. The ﬁrst two statements thus follow e asily from the
+Atiyah-Hirzebruch spectral sequence for KO-theory (e. g. aft er tensoring with
+Q). On the other hand, we see from the Atiyah-Hirzebruch spectra l sequence
+for complex K-theory that K 0(X) is a free abelian group on the cells while
+K1(X) is zero. The last two statements thus become consequences of t he Bott
+sequence ( 19).
+The free part of KO ∗ is thus very simple. In good cases, the spectral se-
+quence also provides a nice description of the 2-torsion. To see this , note that
+Sq2 Sq2 = Sq 3 Sq1 must vanish when the cohomology of X with Z/ 2-coeﬃcients
+is concentrated in even degrees. So we can view ( H∗ (X; Z/ 2), Sq2) as a diﬀer-
+ential graded algebra over Z/ 2. To lighten the notation, we will write
+H∗ (X, Sq2) := H∗ (H∗ (X; Z/ 2), Sq2)
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 26 ===
+490 Marcus Zibrowius
+for the cohomology of this algebra. We keep the same grading as bef ore, so
+that it is concentrated in even degrees. The row q ≡ − 1 on the E3-page is
+given by H∗ (X, Sq2) · η, where η is the generator of KO − 1(point). Since it is
+the only row that contributes to KO ∗ in odd degrees, we arrive at the following
+lemma, which will be central to our computations.
+Lemma 3.2. Let X be as above. If the Atiyah-Hirzebruch spectral sequence of
+KO∗ (X) degenerates on the E3-page, then
+KO2i− 1(X) ∼
+=
+⨁
+k
+H 2i+8k(X, Sq2)
+In all the examples we consider below, the spectral sequence does indeed degen-
+erate at this stage. However, showing that it does can be tricky. O ne step in the
+right direction is the following observation of Kono and Hara [
+KH91, Proposi-
+tion 1].
+Lemma 3.3. Let X be as above. If the diﬀerentials d3, d4, . . . , dr− 1 are trivial
+and dr is non-trivial, then r ≡ 2 mod 8 . In other words, the ﬁrst non-trivial
+diﬀerential after d2 can only appear on a page Er with page number r ≡ 2
+mod 8 .
+Such a diﬀerential is non-zero only on rows q ≡ 0 and q ≡ − 1 mod 8. If it
+is non-zero on some x in row q ≡ 0, then it is also non-zero on ηx in row
+q ≡ − 1. Conversely, if it is non-zero on some y in row q ≡ − 1, there exists
+some x in row q ≡ 0 such that y = xη and dr is non-zero on x.
+Proof. We see from the spectral sequence of a point that drη = 0 for all dif-
+ferentials. Thus, multiplication by η gives a map of bidegree (0 , − 1) on the
+spectral sequence that commutes with the diﬀerentials. On the E2-page this
+map is mod-2 reduction from row q ≡ 0 to row q ≡ − 1 and the identity between
+rows q ≡ − 1 and q ≡ − 2. It follows that on the E3-page multiplication by η
+induces a surjection from row q ≡ 0 to row q ≡ − 1 and an injection of row
+q ≡ − 1 into row q ≡ − 2. This implies all statements above.
+We derive a corollary that we will use to deduce that the spectral se quence
+collapses for certain Thom spaces:
+Corollary 3.4. Suppose we have a continuous map p : X → T of CW com-
+plexes with only even-dimensional cells. Suppose further t hat the Atiyah-
+Hirzebruch spectral sequence for KO∗ (X) collapses on the E3-page, and that
+p∗ induces an injection in row q ≡ − 1:
+p∗ : H∗ (T, Sq2)֒→H∗ (X, Sq2)
+Then the spectral sequence for KO∗ (T ) also collapses at this stage.
+Proof. Write dr for the ﬁrst non-trivial higher diﬀerential, so r ≡ 2 mod 8.
+Then, for any element x in row q ≡ 0, we have p∗ (drx) = drp∗ (x) = 0 since the
+spectral sequence for X collapses. From our assumption on p∗ we can deduce
+that drx = 0. By the preceding lemma, this is all we need to show.
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 27 ===
+Witt Groups of Complex Cellular V arieties 491
+3.2 The Atiyah-Hirzebruch spectral sequence for Thom space s
+In order to compute twisted KO-groups, we need to apply the Atiya h-
+Hirzebruch spectral sequence of KO-theory to Thom spaces. So let X be a
+ﬁnite-dimensional CW complex, and let π : E → X be a vector bundle of con-
+stant rank over X. Though we will be mainly interested in the case when E
+is complex, we may more generally assume here that E is any real vector bun-
+dle which is oriented. Then the Thom isomorphism for singular cohomolo gy
+tells us that the reduced cohomology of the Thom space Thom E is additively
+isomorphic to the cohomology of X itself, apart from a shift in degrees by
+r := rank R E. The isomorphism is given by multiplication with a Thom class θ
+in ˜H r(Thom E; Z):
+H∗ (X; Z)
+∼
+=− → ˜H∗+r(Thom E; Z)
+x ↦→ π∗ (x) · θ
+Similarly, the reduction of θ modulo two induces an isomorphism of the re-
+spective singular cohomology groups with Z/ 2-coeﬃcients. Thus, apart from
+a shift of columns, the entries on the E2-page of the spectral sequence for
+˜KO∗ (Thom E) are identical to those on the E2-page for KO∗ (X). However, the
+diﬀerentials may diﬀer.
+Lemma 3.5. Let E
+π
+→ X be a complex vector bundle of constant rank over a
+topological space X, with Thom class θ as above. The second Steenrod square
+on ˜H∗ (Thom E; Z/ 2) is given by “ Sq2 + c1(E)”, where c1(E) is the ﬁrst Chern
+class of E modulo two. That is,
+Sq2(π∗ x · θ) = π∗ (
+Sq2(x) + c1(E)x
+)
+· θ
+for any x ∈ H∗ (X; Z/ 2). More generally, if E is a real oriented vector bundle,
+the second Steenrod square on the cohomology of its Thom spac e is given by
+“ Sq2 + w2(E)”, where w2 is the second Stiefel-Whitney class of E.
+Proof. This is a special case of an identity of Thom, which he in fact used to
+deﬁne Stiefel-Whitney classes:
+Sqi(π∗ x · θ) = π∗ (
+Sqi(x) + wi(E)x
+)
+· θ
+See [
+MS74, page 91].
+When X is a CW complex with cells only in even dimensions, the operation
+Sq2+c1 can be viewed as a diﬀerential on H∗ (X; Z/ 2) for any c1 in H 2(X; Z/ 2).
+Extending our previous notation, we denote the cohomology with re spect to
+this diﬀerential by
+H∗(X, Sq2 + c1) := H∗ (H∗ (X; Z/ 2), Sq2 + c1) (21)
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 28 ===
+492 Marcus Zibrowius
+Corollary 3.6 (of Lemmas 3.2 and 3.5). If the Atiyah-Hirzebruch spectral
+sequence of ˜KO∗ (Thom E) degenerates on the E3-page, then
+KO2i− 1(X; E) ∼
+=
+⨁
+k
+H 2i+8k(X, Sq2 + c1E)
+It is true more generally that the diﬀerentials in the spectral seque nce for
+˜KO∗ (Thom E) depend only on the second Stiefel-Whitney class of E. This
+follows from the observation that the Atiyah-Hirzebruch spectra l sequence is
+compatible with Thom isomorphisms, as is made more precise by the nex t
+lemma:
+Fix a vector bundle E of constant rank r over a ﬁnite-dimensional CW complex
+X. Suppose E is oriented with respect to ordinary cohomology and let θ ∈
+˜H∗ (Thom E; Z) be a Thom class.
+Lemma 3.7. If E is oriented with respect to KO∗ , then θ survives to the E∞ -
+page of the Atiyah-Hirzebruch spectral sequence computing ˜KO∗ (Thom E), and
+the Thom isomorphism for H∗ extends to an isomorphism of spectral sequences.
+That is, for each page right multiplication with the class of θ in ˜Er,0
+s (Thom E)
+gives an isomorphism of E∗,∗
+s (X)-modules
+E∗,∗
+s (X)
+·θ
+− →∼=
+˜E∗+r,∗
+s (Thom E)
+Moreover, any lift of θ ∈ ˜Er,0
+∞ (Thom E) to ˜KOr(Thom E) deﬁnes a Thom class
+of E with respect to KO∗ . The isomorphism of the E∞ -pages of the spectral
+sequences is induced by the Thom isomorphism given by multip lication with any
+such class.
+Proof. We may assume without loss of generality that X is connected. Fix
+a point x on X. The inclusion of the ﬁbre over x into E induces a map
+ix : Sr֒→Thom E. By assumption, the pullback i∗
+x on ordinary cohomology
+maps θ to a generator of ˜H r(Sr), and the pullback on ˜KO∗ gives a surjection
+˜KO∗ (Thom E)
+i∗
+x
+։ ˜KOr(Sr)
+Consider the pullback along ix on the E∞ -pages of the spectral sequences
+for Sr and Thom E. Since we can identify ˜Er,0
+∞ (Thom E) with a quotient of
+˜KOr(Thom E) and ˜Er,0
+∞ (Sr) with ˜KOr(Sr), we must have a surjection
+i∗
+x : ˜Er,0
+∞ (Thom E) ։ ˜Er,0
+∞ (Sr)
+On the other hand, the behaviour of i∗
+x on ˜Er,0
+∞ is determined by its behaviour
+on ˜H r, whence we can only have such a surjection if θ survives to the ˜E∞ -
+page of Thom E. Thus, all diﬀerentials vanish on θ, and if multiplication by θ
+induces an isomorphism from E∗,∗
+s (X) to ˜E∗+r,∗
+s on page s, it also induces an
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 29 ===
+Witt Groups of Complex Cellular V arieties 493
+isomorphism on the next page. Lastly, consider any lift of θ to an element Θ
+of ˜KOr(Thom E). It is clear by construction that right multiplication with Θ
+gives an isomorphism from E∞ (X) to ˜E∞ (Thom E), and thus it also gives an
+isomorphism from KO∗ (X) to ˜KO∗ (Thom E). Thus, Θ is a Thom class for E
+with respect to KO ∗ .
+Lemma 3.7 allows the following strengthening of Lemma 2.4:
+Corollary 3.8. For complex vector bundles E and F over X with identical
+ﬁrst Chern class modulo 2, the spectral sequences computing ˜KO∗ (Thom E) and
+˜KO∗ (Thom F ) can be identiﬁed up to a possible shift of columns when E and
+F have diﬀerent ranks.
+4 Examples
+We now turn to the study of projective homogeneous varieties, th at is, varieties
+of the form G/P for some complex simple linear algebraic group G with a
+parabolic subgroup P . Any such variety has a cell decomposition [
+BGG73,
+Proposition 5.1], so that our comparison theorem applies. As far as w e are
+only interested in the topology of G/P , we may alternatively view it as a
+homogeneous space for the compact real Lie group Gc corresponding to G:
+Proposition 4.1. Let P be a parabolic subgroup of a simple complex algebraic
+group G. Then we have a diﬀeomorphism
+G
+/
+P ∼
+= Gc/
+K
+where K is a compact subgroup of maximal rank in a maximal compact sub group
+Gc of G. More precisely, K is a maximal compact subgroup of a Levi subgroup
+of P .
+Proof. The Iwasawa decomposition for G viewed as a real Lie group implies
+that we have a diﬀeomorphism G ∼
+= Gc · P [
+GOV94, Ch. 6, Prop. 1.7], inducing
+a diﬀeomorphism of quotients as claimed for K = Gc ∩ P . Since Gc֒→G is a
+homotopy equivalence, so is the inclusion Gc ∩֒→P . On the other hand, if
+L is a Levi subgroup of P then P = U ⋊ L, where U is unipotent and hence
+contractible. So the inclusion֒→P is also a homotopy equivalence. It follows
+that any maximal compact subgroup Lc of L is also maximal compact in P ,
+and conversely that any maximal compact subgroup of P will be contained as
+a maximal compact subgroup in some Levi subgroup of P . We may therefore
+assume that K ⊂ Lc ⊂ L ⊂ P and conclude that֒→Lc is a homotopy
+equivalence. Since both groups are compact, it follows that in fact K ∼
+= Lc.
+The KO-theory of homogeneous varieties has been studied intensiv ely. In par-
+ticular, the papers [ KH91] and [ KH92] of Kono and Hara provide complete
+computations of the (untwisted) KO-theory of all compact irredu cible hermi-
+tian symmetric spaces, which we list in Table 2. For the convenience of the
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 30 ===
+494 Marcus Zibrowius
+G
+/
+P G Diagram of P Gc/
+K
+Grassmannians
+(AIII) Grm,n
+SLm+n ◦ · · · ◦ • ◦ · · · ◦
+1 n n+m–1
+U(m + n)
+U(m) × U(n)
+Maximal
+symplectic
+Grassmannians
+(CI)
+Xn
+Sp2n ◦ ◦ · · · ◦ ◦ < • Sp(n)
+/
+U(n)
+Projective
+quadrics of
+dimension
+n ≥ 3 (BDI)
+Qn
+SOn+2 • ◦ · · · ◦ > ◦ (n odd)
+◦
+• ◦ · · · ◦ ↙↙↗↗ (n even)
+◦
+SO(n + 2)
+SO(n) × SO(2)
+Spinor
+varieties (DIII) Sn
+SO2n
+◦
+◦ ◦ · · · ◦ ↙↙↗↗
+•
+SO(2n)
+/
+U(n)
+Exceptional
+hermitian
+symmetric
+spaces:
+EIII
+E6 ◦
+◦ ◦ ◦ ◦ •
+Ec
+6
+Spin(10) · S1
+(Spin(10)∩ S1=Z/4)
+EVII E7 ◦
+◦ ◦ ◦ ◦ ◦ •
+Ec
+7
+Ec
+6 · S1
+(Ec
+6∩ S1=Z/3)
+Table 2: List of irreducible compact hermitian symmetric spaces. The symbols
+AIII, CI, . . . refer to E. Cartan’s classiﬁcation. In the descriptio n of Gr m,n we
+use U( m + n) instead of Gc = SU(m + n).
+reader, we indicate how each of these arises as a quotient of a simple complex
+algebraic group G by a parabolic subgroup P , describing the latter in terms
+of marked nodes on the Dynkin diagram of G as in [ FH91, § 23.3]. The last
+column gives an alternative description of each space as a quotient o f a compact
+real Lie group.
+On the following pages, we will run through this list of examples and, in e ach
+case, extend Kono and Hara’s computations to include KO-groups t wisted by
+a line bundle. Since each of these spaces is a “Grassmannian” in the se nse that
+the parabolic subgroup P in G is maximal, its Picard group is free abelian on
+a single generator. Thus, there is exactly one non-trivial twist tha t we need to
+consider. In most cases, we — reassuringly — recover results for W itt groups
+that are already known. In a few other cases, we consider our res ults new.
+The untwisted KO-theory of complete ﬂag varieties is also known in all three
+classical cases thanks to Kishimoto, Kono and Ohsita. We do not rep roduce
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 31 ===
+Witt Groups of Complex Cellular V arieties 495
+their result here but instead refer the reader directly to [ KKO04]. By a recent
+result of Calm` es and Fasel, all Witt groups with non-trivial twists va nish for
+these varieties [ CF11].
+4.1 Notation
+Topologically, a cellular variety is a CW complex with cells only in even (real)
+dimensions. For such a CW complex X the KO-groups can be written in the
+form displayed in Table
+3 below. This was shown in Section 3.1 in the case
+when the twist L is trivial, and the general case follows: if X is a CW complex
+with only even-dimensional cells, so is the Thom space of any complex v ector
+bundle over X [MS74, Lemma 18.1].
+In the following examples, results on KO∗ will be displayed by listing the values
+of the ti and si. Since the ti are just given by counting cells, and since the
+numbers of odd- and even-dimensional cells of a Thom space Thom X E only
+depend on X and the rank of E, the ti are in fact independent of L. The si,
+on the other hand, certainly will depend on the twist, and we will some times
+acknowledge this by writing si(L).
+KO6(X; L) = Zt1 ⊕ (Z/ 2)s0 = GW 3(X; L)
+KO7(X; L) = ( Z/ 2)s0 = W 0(X; L)
+KO0(X; L) = Zt0 ⊕ (Z/ 2)s1 = GW 0(X; L)
+KO1(X; L) = ( Z/ 2)s1 = W 1(X; L)
+KO2(X; L) = Zt1 ⊕ (Z/ 2)s2 = GW 1(X; L)
+KO3(X; L) = ( Z/ 2)s2 = W 2(X; L)
+KO4(X; L) = Zt0 ⊕ (Z/ 2)s3 = GW 2(X; L)
+KO5(X; L) = ( Z/ 2)s3 = W 3(X; L)
+Table 3: Notational conventions in the examples. Only the si depend on L.
+4.2 Projective spaces
+Complex projective spaces are perhaps the simplest examples for w hich Theo-
+rem
+2.5 asserts something non-trivial, so we describe the results here sep arately
+before turning to complex Grassmannians in general. The computat ions of the
+Witt groups of projective spaces were certainly landmark events in the history
+of the theory. In 1980, Arason was able to show that the Witt grou p W 0(Pn)
+of Pn over a ﬁeld k agrees with the Witt group of k [Ara80]. The shifted Witt
+groups of projective spaces, and more generally of arbitrary pro jective bundles,
+were ﬁrst computed by Walter in [ Wal03b]. Quite recently, Nenashev deduced
+the same results via diﬀerent methods [ Nen09].
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 32 ===
+496 Marcus Zibrowius
+In the topological world, complete computations of KO i(CPn) were ﬁrst pub-
+lished in a 1967 paper by Fujii [ Fuj67]. It is not diﬃcult to deduce the
+values of the twisted groups KO i(CPn; O(1)) from these: the Thom space
+Thom(OCPn (1)) can be identiﬁed with CPn+1, so
+KOi(CPn; O(1)) = ˜KOi+2(Thom(O(1)))
+= ˜KOi+2(CPn+1)
+Alternatively, we could do all required computations directly following the
+methods outlined in Section 3. The result, in any case, is displayed in Ta-
+ble 4, coinciding with the known results for the (Grothendieck-)Witt gro ups.
+KO∗ (CPn; L) L ≡ O L ≡ O (1)
+t0 t1 s0 s1 s2 s3 s0 s1 s2 s3
+n ≡ 0 mod 4 (n/ 2) + 1 n/ 2 1 0 0 0 1 0 0 0
+n ≡ 1 (n + 1)/ 2 ( n + 1)/ 2 1 1 0 0 0 0 0 0
+n ≡ 2 (n/ 2) + 1 n/ 2 1 0 0 0 0 0 1 0
+n ≡ 3 (n + 1)/ 2 ( n + 1)/ 2 1 0 0 1 0 0 0 0
+Table 4: KO-groups of projective spaces
+4.3 Grassmannians
+We now consider the Grassmannians Gr m,n of complex m-planes in Cm+n.
+Again both the Witt groups and the untwisted KO-groups are alread y known:
+the latter by Kono and Hara [
+KH91], the former by the work of Balmer and
+Calm` es [BC08]. A detailed comparison of the two sets of results in the untwisted
+case has been carried out by Yagita [ Yag09]. We provide here an alternative
+topological computation of the twisted groups.
+Balmer and Calm` es state their result by describing an additive basis o f the
+total Witt group of Gr m,n in terms of certain “even Young diagrams”. This is
+probably the most elegant approach, but needs some space to exp lain. We will
+stick instead to the tabular exposition used in the other examples. L et O(1)
+be a generator of Pic(Gr m,n), say the dual of the determinant line bundle of
+the universal m-bundle over Gr m,n. The result is displayed in Table
+5.
+Our computation is based on the following geometric observation. Le t Um,n
+and U⊥
+m,n be the universal m-bundle and the orthogonal n-bundle on Gr m,n,
+so that U ⊕ U ⊥ = O⊕ (m+n). We have various natural inclusions between the
+Grassmannians of diﬀerent dimensions, of which we ﬁx two:
+Grm,n− 1֒→Grm,n via the inclusion of the ﬁrst m + n − 1 coordinates into
+Cm+n
+Grm− 1,n֒→Grm,n by sending an ( m − 1)-plane Λ to the m-plane Λ ⊕ ⟨ em+n⟩,
+where e1, e2, . . . , e m+n are the canonical basis vectors of Cm+n
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 33 ===
+Witt Groups of Complex Cellular V arieties 497
+KO∗ (Grm,n; L) L ≡ O L ≡ O (1)
+t0 t1 s0 s1 s2 s3 s0 s1 s2 s3
+m and n odd s.t.
+m ≡ n
+a
+2
+a
+2 b b 0 0 0 0 0 0
+m and n odd s.t.
+m ̸≡ n
+a
+2
+a
+2 b 0 0 b 0 0 0 0
+
+
+
+
+
+m ≡ n ≡ 0
+m ≡ 0 and n odd
+n ≡ 0 and m odd
+a + b
+2
+a − b
+2 b 0 0 0 b 0 0 0
+
+
+
+
+
+m ≡ n ≡ 2
+m ≡ 2 and n odd
+n ≡ 2 and m odd
+a + b
+2
+a − b
+2 b 0 0 0 0 0 b 0
+m ≡ 0 and n ≡ 2
+a + b
+2
+a − b
+2 b 0 0 0 b1 0 b2 0
+m ≡ 2 and n ≡ 0
+a + b
+2
+a − b
+2 b 0 0 0 b2 0 b1 0
+All equivalences ( ≡ ) are modulo 4. For the values of a and b = b1 + b2, put
+k := ⌊m/ 2⌋ and l := ⌊n/ 2⌋. Then
+a :=
+( m+n
+m
+)
+b :=
+( k+l
+k
+)
+b1 :=
+( k+l− 1
+k
+)
+b2 :=
+( k+l− 1
+k− 1
+)
+Table 5: KO-groups of Grassmannians
+Lemma 4.2. The normal bundle of Grm,n− 1 in Grm,n is the dual U∨
+m,n− 1 of
+the universal m-bundle. Similarly, the normal bundle of Grm− 1,n in Grm,n
+is given by U⊥
+m− 1,n. In both cases, the embeddings of the subspaces extend
+to embeddings of their normal bundles, such that one subspac e is the closed
+complement of the normal bundle of the other.
+This gives us two coﬁbration sequences of pointed spaces:
+Grm− 1,n+
+i
+֒→Grm,n+
+p
+։ Thom(U∨
+m,n− 1) (22)
+Grm,n− 1+
+i
+֒→Grm,n+
+p
+։ Thom(U⊥
+m− 1,n) (23)
+These sequences are the key to relating the untwisted KO-groups to the twisted
+ones. Following the notation in [
+KH91], we write Am,n for the cohomology of
+Grm,n with Z/ 2-coeﬃcients, denoting by ai and bi the Chern classes of U and
+U⊥ , respectively, and by a and b the total Chern classes 1 + a1 + · · · + am and
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 34 ===
+498 Marcus Zibrowius
+1 + b1 + · · · + bn:
+Am,n = Z/ 2 [a1, a2, . . . , a m, b1, b2, . . . b n]
+a · b = 1
+We write d for the diﬀerential given by the second Steenrod square Sq 2, and
+d′ for Sq 2 + a1. To describe the cohomology of Am,n with respect to these
+diﬀerentials, it is convenient to introduce the algebra
+Bk,l = Z/ 2
+[
+a2
+2, a2
+4, . . . , a 2
+2k, b2
+2, b2
+4, . . . , b 2
+2l
+]
+(1 + a2
+2 + · · · + a2
+2k)(1 + b2
+2 + · · · + b2
+2l) = 1
+Note that this subquotient of A2k,2l is isomorphic to Ak,l up to a “dilatation”
+in grading. Proposition 2 in [
+KH91] tells us that
+H∗ (Am,n, d) =
+
+
+
+Bk,l if ( m, n) = (2 k, 2l), (2 k + 1, 2l) or
+(2k, 2l + 1)
+Bk,l ⊕ Bk,l · ambn− 1 if ( m, n) = (2 k + 1, 2l + 1)
+Here, the algebra structure in the case where both m and n are odd is deter-
+mined by ( ambn− 1)2 = 0.
+Lemma 4.3. The cohomology of Am,n with respect to the twisted diﬀerential
+d′ is as follows:
+H∗ (Am,n, d′) =
+
+
+
+
+
+
+
+
+
+Bk,l− 1 · am ⊕ Bk− 1,l · bn if (m, n) = (2 k, 2l)
+Bk,l · am if (m, n) = (2 k, 2l + 1)
+Bk,l · bn if (m, n) = (2 k + 1, 2l)
+0 if (m, n) = (2 k + 1, 2l + 1)
+Proof. Let us shift the dimensions in the coﬁbration sequences (
+22) and ( 23)
+in such a way that we have the Thom spaces of U∨
+m,n and U⊥
+m,n on the right.
+Since the cohomologies of the spaces involved are concentrated in e ven degrees,
+the associated long exact sequence of cohomology groups falls apa rt into short
+exact sequences. Reassembling these, we obtain two short exact sequences of
+diﬀerential ( Am,n+1, d)- and ( Am+1,n, d)-modules, respectively:
+0 → (Am,n, d′) · θ∨ p∗
+− → (Am,n+1, d)
+i∗
+− → (Am− 1,n+1, d) → 0 (24)
+0 → (Am,n, d′) · θ⊥ p∗
+− → (Am+1,n, d)
+i∗
+− → (Am+1,n− 1, d) → 0 (25)
+Here, θ∨ and θ⊥ are the respective Thom classes of U∨
+m,n and U⊥
+m,n. The map
+i∗ in the ﬁrst row is the obvious quotient map annihilating am. Its kernel, the
+image of Am,n under multiplication by am, is generated as an Am,n+1-module
+by its unique element in degree 2 m, and thus we must have p∗ (θ∨ ) = am.
+Likewise, in the second row we have p∗ (θ⊥ ) = bn.
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 35 ===
+Witt Groups of Complex Cellular V arieties 499
+The lemma can be deduced from here case by case. For example, whe n both
+m and n are even, i∗ maps H∗ (Am,n+1, d) = Bk,l to the ﬁrst summand of
+H∗ (Am− 1,n+1, d) = Bk− 1,l ⊕ Bk− 1,l · am− 1bn by annihilating a2
+m. We know by
+comparison with the short exact sequences for the Am,n that the kernel of this
+map is Bk,l− 1 mapping to Bk,l under multiplication by a2
+m. Thus, we obtain a
+short exact sequence
+0 → Bk− 1,l · am− 1bn
+∂
+− → H∗(Am,n, d′) · θ∨ p∗
+− → Bk,l− 1 · a2
+m → 0 (26)
+For the Steenrod square Sq 2 of the top Chern class am of U, we have Sq 2(am) =
+a1am. This can be checked, for example, by expressing am as the product of
+the Chern roots of U. Consequently, d′(am) = 0. Together with the fact
+that H∗(Am,n, d′) is a module over H∗ (Am,n+1, d), this shows that we can
+deﬁne a splitting of p∗ by sending a2
+m to amθ∨ . Thus, H∗ (Am,n, d′) contains
+Bk,l− 1 · am as a direct summand. If instead of working with sequence (
+24)
+we work with sequence ( 25), we see that H∗ (Am,n, d′) also contains a direct
+summand Bk− 1,l · bn. These two summands intersect trivially, and a dimension
+count shows that together they encompass all of H∗ (Am,n, d′). Alternatively,
+one may check explicitly that the boundary map ∂ above sends am− 1bn to bnθ.
+The other cases are simpler.
+Lemma 4.4. The Atiyah-Hirzebruch spectral sequence for ˜KO∗ (Thom U∨
+m,n) col-
+lapses at the E3-page.
+Proof. By Proposition 4 of [ KH91] we know that the spectral sequence for
+KO∗ (Grm,n) collapses as this stage, for any m and n. Now, if both m and n
+are even, we have
+(Bk,l− 1 · am ⊕ Bk− 1,l · bn) · θ
+in the ( − 1)st row of the E3-pages of the spectral sequences for Thom U∨ and
+Thom U⊥ , where θ = θ∨ or θ⊥ , respectively. In the case of U∨ we see from ( 26)
+that p∗ maps the second summand injectively to the E3-page of the spectral
+sequence for KO∗ (Grm,n+1). Similarly, in the case of U⊥ , the ﬁrst summand
+is mapped injectively to the E3-page of KO ∗ (Grm+1,n). Since the spectral
+sequences for Thom U∨ and Thom U⊥ can be identiﬁed via Corollary 3.8, we
+can argue as in Corollary 3.4 to see that they must collapse at this stage. Again,
+the cases when at least one of m, n is odd are similar but simpler.
+We may now apply Corollary 3.6. The entries of Table 5 that do not appear in
+[KH91], i. e. those of the last four columns, follow from Lemma 4.3 by noting
+that Bk,l is concentrated in degrees 8 i and of dimension dim Bk,l = dim Ak,l =(k+l
+k
+)
+.
+4.4 Maximal symplectic Grassmannians
+The Grassmannian of isotropic n-planes in C2n with respect to a non-
+degenerate skew-symmetric bilinear form is given by Xn = Sp( n)/U (n). The
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 36 ===
+500 Marcus Zibrowius
+universal bundle U on the usual Grassmannian Gr( n, 2n) restricts to the univer-
+sal bundle on Xn, and so does the orthogonal complement bundle U⊥ . We will
+continue to denote these restrictions by the same letters. Thus, U ⊕ U ⊥ ∼
+= C2n
+on Xn, and the ﬁbres of U are orthogonal to those of U⊥ with respect to the
+standard hermitian metric on C2n. The determinant line bundles of U and U⊥
+give dual generators O(1) and O(− 1) of the Picard group of Xn.
+Theorem 4.5. The additive structure of KO∗ (Xn; L) is as follows:t0 t1 si(O) si(O(1))
+n even 2n− 1 2n− 1 ρ( n
+2 , i) ρ( n
+2 , i − n)
+n odd 2n− 1 2n− 1 ρ( n+1
+2 , i) 0
+Here, for any i ∈ Z/ 4 we write ρ(n, i) for the dimension of the i-graded piece
+of a Z/ 4-graded exterior algebra ΛZ/ 2(g1, g2, . . . , g n) on n homogeneous gener-
+ators g1, g2, . . . , gn of degree 1, i. e.
+ρ(n, i) =
+∑
+d≡ i
+mod 4
+(n
+d
+)
+A table of the values of ρ(n, i) can be found in [KH92, Proposition 4.1] .
+It turns out to be convenient to work with the vector bundle U⊥ ⊕ O for the
+computation of the twisted groups KO ∗ (Xn; O(1)). Namely, we have the fol-
+lowing analogue of Lemma 4.2.
+Lemma 4.6. There is an open embedding of the bundle U⊥ ⊕ O over the sym-
+plectic Grassmannian Xn into the symplectic Grassmannian Xn+1 whose closed
+complement is again isomorphic to Xn.
+Proof. To ﬁx notation, let e1, e2 be the ﬁrst two canonical basis vectors of
+C2n+2, and embed C2n into C2n+2 via the remaining coordinates. Assuming
+Xn is deﬁned in terms of a skew-symmetric form Q2n, deﬁne Xn+1 with respect
+to the form
+Q2n+2 :=
+
+
+0 1 0
+− 1 0 0
+0 0 Q2n
+
+
+Then we have embeddings i1 and i2 of Xn into Xn+1 sending an n-plane Λ ⊂
+C2n to e1 ⊕ Λ or e2 ⊕ Λ in C2n+2, respectively.
+We extend i1 to an embedding of U⊥ ⊕ O by sending an n-plane Λ ∈ Xn
+together with a vector v in Λ⊥ ⊂ C2n and a complex scalar z to the graph
+ΓΛ,v,z ⊂ C2n+2 of the linear map
+(z Q 2n(− , v)
+v 0
+)
+: ⟨e1⟩ ⊕ Λ → ⟨ e2⟩ ⊕ Λ⊥
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 37 ===
+Witt Groups of Complex Cellular V arieties 501
+To avoid confusion, we emphasize that v is orthogonal to Λ with respect to a
+hermitian metric on C2n. The value of Q2n(− , v), on the other hand, may well
+be non-zero on Λ. Consider the above embedding of U⊥ ⊕ O together with the
+embedding i2:
+U⊥ ⊕ O֒−−→ Xn+1 Xn←−−֓
+i2
+(Λ, v, z) ↦→ ΓΛ,v,z
+⟨e2⟩ ⊕ Λ Λ← /mapsfromchar
+To see that the two embeddings are complementary, take an arbitr ary ( n + 1)-
+plane W in Xn+1. If e2 ∈ W then we can consider a basis
+e2,
+(a1
+0
+v1
+)
+, . . . ,
+(an
+0
+vn
+)
+of W , and the fact that Q2n+2 vanishes on W implies that all ai are zero. Thus
+W can be identiﬁed with i2(⟨v1, . . . , v n⟩).
+If, on the other hand, e2 is not contained in W then we must have a vector of
+the form t(1, z′, v′) in W , for some z′ ∈ C and v′ ∈ C2n. Extend this vector to
+a basis of W of the form ( 1
+z′
+v′
+)
+,
+( 0
+b1
+v1
+)
+, . . . ,
+( 0
+bn
+vn
+)
+and let Λ := ⟨v1, . . . , v n⟩. The condition that Q2n+2 vanishes on W implies
+that Q vanishes on Λ and that bi = Q2n(vi, v′) for each i. In particular, Λ is n-
+dimensional. Moreover, we can replace the ﬁrst vector of our basis by a vector
+t(1, z, v) with v ∈ Λ⊥ , by subtracting appropriate multiples of the remaining
+basis vectors. Since Q vanishes on Λ we have Q2n(vi, v′) = Q2n(vi, v) and our
+new basis has the form (1
+z
+v
+)
+,
+( 0
+Q(v1,v)
+v1
+)
+, . . . ,
+( 0
+Q(vn,v)
+vn
+)
+This shows that W = Γ Λ,v,z .
+Corollary 4.7. We have a coﬁbration sequence
+Xn+
+i
+֒→Xn+1+
+p
+։ ThomXn (U⊥ ⊕ O )
+The associated long exact cohomology sequence splits into a short e xact se-
+quence of H∗ (Xn+1)-modules since all cohomology here is concentrated in even
+degrees:
+0 → ˜H∗ (ThomXn (U⊥ ⊕ O ))
+p∗
+→ H∗ (Xn+1)
+i∗
+→ H∗ (Xn) → 0 (27)
+Lemma 4.8. Let ci denote the ith Chern classes of U over Xn. We have
+H∗ (Xn, Sq2) =
+{
+Λ(a1, a5, a9, . . . , a 4m− 3) if n = 2m
+Λ(a1, a5, a9, . . . , a 4m− 3, a4m+1) if n = 2m + 1
+H∗ (Xn, Sq2 + c1) =
+{
+Λ(a1, a5, . . . , a 4m− 3) · c2m if n = 2m
+0 if n is odd
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 38 ===
+502 Marcus Zibrowius
+for certain generators ai of degree 2i.
+Proof. Consider the short exact sequence ( 27). The mod-2 cohomology of Xn
+is an exterior algebra on the Chern classes ci of U,
+H∗ (Xn; Z/ 2) = Λ( c1, c2, . . . , c n)
+and i∗ is given by sending cn+1 to zero. Thus, p∗ is the unique morphism of
+H∗ (Xn+1; Z/ 2)-modules that sends the Thom class θ of U⊥ ⊕ O to cn+1.
+This short exact sequence induces a long exact sequence of cohom ology groups
+with respect to the Steenrod square Sq 2. The algebra H∗ (Xn, Sq2) was com-
+puted in [ KH92, 2–2], with the result displayed above, so we already know
+two thirds of this sequence. Explicitly, we have a4i+1 = c2ic2i+1,6 so i∗ is the
+obvious surjection sending ai to ai (or to zero). Thus, the long exact sequence
+once again splits.
+If n = 2m we obtain a short exact sequence
+0 → H∗ (X2m, Sq2 + c1) · θ
+p∗
+→ Λ(a1, . . . , a 4m− 3, a4m+1)
+i∗
+→ Λ(a1, . . . , a 4m− 3) → 0
+We see that H∗ (X2m, Sq2 + c1) · θ is isomorphic to Λ( a1, . . . , a 4m− 3) · a4m+1
+as a Λ( a1, . . . , a 4m+1)-module. It is thus generated by a single element, which
+is the unique element of degree 8 m + 2. Since p∗ (c2mθ) = a4m+1, the class of
+c2mθ is the element we are looking for, and the result displayed above follow s.
+If, on the other hand, n is odd, then i∗ is an isomorphism and H∗ (Xn, Sq2 + c1)
+must be trivial.
+We see from the proof that p∗ induces an injection of H∗ (Xn, Sq2 + c1) · θ
+into H∗ (Xn, Sq2). Since we already know from [ KH92, Theorem 2.1] that
+the Atiyah-Hirzebruch spectral sequence for KO ∗ (Xn) collapses, we can apply
+Corollary 3.4 to deduce that the spectral sequence for ˜KO∗ (ThomXn (U⊥ ⊕ O ))
+collapses at the E3-page as well. This completes the proof of Theorem 4.5.
+4.5 Quadrics
+We next consider smooth complex quadrics Qn in Pn+1. As far as we are aware,
+the ﬁrst complete results on (shifted) Witt groups of split quadrics were due
+to Walter: they are mentioned together with the results for proje ctive bundles
+in [
+Wal03a] as the main applications of that paper. Unfortunately, they seem
+to have remained unpublished. Partial results are also included in Yag ita’s
+preprint [ Yag04], see Corollary 8.3. More recently, Nenashev obtained almost
+complete results by considering the localization sequences arising fr om the in-
+clusion of a linear subspace of maximal dimension [ Nen09]. Calm` es informs me
+that the geometric description of the boundary map given in [ BC09] can be
+used to show that these localization sequences split in general, yieldin g a com-
+plete computation. The calculation described here is completely indep endent
+of these results.
+6In [ KH92] the generators are written as c2ic′
+2i+1 with c′
+2i+1 = c2i+1 + c1c2i.
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 39 ===
+Witt Groups of Complex Cellular V arieties 503
+KO∗ (Qn; L) L ≡ O L ≡ O (1)
+t0 t1 s0 s1 s2 s3 s0 s1 s2 s3
+n ≡ 0 mod 8 (n/ 2) + 2 n/ 2 2 0 0 0 2 0 0 0
+n ≡ 1 (n + 1)/ 2 ( n + 1)/ 2 1 1 0 0 1 1 0 0
+n ≡ 2 (n/ 2) + 1 ( n/ 2) + 1 1 2 1 0 0 0 0 0
+n ≡ 3 (n + 1)/ 2 ( n + 1)/ 2 1 1 0 0 0 0 1 1
+n ≡ 4 (n/ 2) + 2 n/ 2 2 0 0 0 0 0 2 0
+n ≡ 5 (n + 1)/ 2 ( n + 1)/ 2 1 0 0 1 0 1 1 0
+n ≡ 6 (n/ 2) + 1 ( n/ 2) + 1 1 0 1 2 0 0 0 0
+n ≡ 7 (n + 1)/ 2 ( n + 1)/ 2 1 0 0 1 1 0 0 1
+Table 6: KO-groups of projective quadrics ( n ≥ 3)
+For n ≥ 3 the Picard group of Qn is free abelian on a single generator given
+by the restriction of the universal line bundle O(1) over Pn+1. We will use the
+same notation O(1) for this restriction.
+Theorem 4.9. The KO-theory of a smooth complex quadric Qn of dimension
+n ≥ 3 is as described in Table 6.
+Untwisted KO-groups. Before turning to KO ∗ (Qn; O(1)) we review the
+initial steps in the computation of the untwisted KO-groups. The int egral
+cohomology of Qn is well-known:
+If n is even, write n = 2m. We have a class x in H 2(Qn) given by a hyperplane
+section, and two classes a and b in H n(Qn) represented by linear subspaces of
+Q of maximal dimension. These three classes generate the cohomolog y multi-
+plicatively, modulo the relations
+xm = a + b x m+1 = 2ax
+ab =
+{
+0 if n ≡ 0
+axm if n ≡ 2 a2 = b2 =
+{
+axm if n ≡ 0 mod 4
+0 if n ≡ 2 mod 4
+Additive generators can thus be given as follows:
+d 0 2 4 . . . n − 2 n n + 2 n + 4 . . . 2n
+H d(Qn) 1 x x 2 . . . x m− 1 a, b ax ax 2 . . . ax m
+If n is odd, write n = 2 m + 1. Then similarly multiplicative generators are
+given by the class of a hyperplane section x in H 2(Qn) and the class of a linear
+subspace a in H n+1(Qn) modulo the relations xm+1 = 2a and a2 = 0.
+d 0 2 4 . . . n − 1 n + 1 n + 3 n + 5 . . . 2n
+H d(Qn) 1 x x 2 . . . x m a ax ax 2 . . . ax m
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 40 ===
+504 Marcus Zibrowius
+The action of the Steenrod square on H∗ (Qn; Z/ 2) is also well-known; see for
+example [ Ish92, Theorem 1.4 and Corollary 1.5] or [ EKM08, § 78]:
+Sq2(x) = x2
+Sq2(a) =
+{
+ax if n ≡ 0 or 3 mod 4
+0 if n ≡ 1 or 2
+Sq2(b) = Sq 2(a) (for even n)
+As before, we write H∗ (Qn, Sq2) for the cohomology of H∗ (Qn; Z/ 2) with re-
+spect to the diﬀerential Sq 2.
+Lemma 4.10. Write n = 2m or n = 2m + 1 as above. The following table gives
+a complete list of the additive generators of H∗(Qn, Sq2).
+d 0 . . . n − 1 n n + 1 . . . 2n
+H d(Qn, Sq2) 1 axm if n ≡ 0 mod 4
+1 a if n ≡ 1
+1 a, b ab if n ≡ 2
+1 xm if n ≡ 3
+The results of Kono and Hara on KO ∗ (Q) follow from here provided there are
+no non-trivial higher diﬀerentials in the Atiyah-Hirzebruch spectra l sequence.
+This is fairly clear in all cases except for the case n ≡ 2 mod 4. In that case,
+the class a + b = xm can be pulled back from Qn+1, and therefore all higher
+diﬀerentials must vanish on a + b. But one has to work harder to see that all
+higher diﬀerentials vanish on a (or b). Kono and Hara proceed by relating the
+KO-theory of Qn to that of the spinor variety S n
+2 +1 discussed in Section 4.6.
+Twisted KO-groups. We now compute KO∗ (Qn; O(1)).
+Let θ ∈ H 2(ThomQn O(1)) be the Thom class of O(1), so that multiplication
+by θ maps the cohomology of Qn isomorphically to the reduced cohomology of
+ThomQn O(1). The Steenrod square on ˜H∗ (ThomQn O(1); Z/ 2) is determined
+by Lemma 3.5: for any y ∈ H∗ (Qn; Z/ 2) we have Sq 2(y · θ) = (Sq 2 y + xy) · θ.
+We thus arrive at
+Lemma 4.11. The following table gives a complete list of the additive gen erators
+of ˜H∗ (ThomQn O(1), Sq2).
+d
+. . . n + 1 n + 2 n + 3 . . . 2n + 2
+˜H d(. . . ) aθ, bθ if n ≡ 0 mod 4
+xmθ ax mθ if n ≡ 1
+if n ≡ 2
+aθ ax mθ if n ≡ 3
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 41 ===
+Witt Groups of Complex Cellular V arieties 505
+We claim that all higher diﬀerentials in the Atiyah-Hirzebruch spectral sequence
+for ˜KO∗ (ThomQn O(1)) vanish. For even n this is clear. But for n = 8 k + 1
+the diﬀerential d8k+2 might a priori take xmθ to axmθ, and for n = 8k + 3 the
+diﬀerential d8k+2 might take aθ to axmθ.
+We therefore need some geometric considerations. Namely, the Th om space
+ThomQn O(1) can be identiﬁed with the projective cone over Qn embedded in
+Pn+2. This projective cone can be realized as the intersection of a smoot h
+quadric Qn+2 ⊂ Pn+3 with its projective tangent space at the vertex of the
+cone [ Har92, p. 283]. Thus, we can consider the following inclusions:
+Qn j
+֒→ThomQn O(1)
+i
+֒→Qn+2
+The composition is the inclusion of the intersection of Qn+2 with two transver-
+sal hyperplanes.
+Lemma 4.12. All higher diﬀerentials ( dk with k > 2) in the Atiyah-Hirzebruch
+spectral sequence for KO∗ (ThomQn O(1)) vanish.
+Proof. We need only consider the cases when n is odd. Write n = 2m + 1.
+When n ≡ 1 mod 4 we claim that i∗ maps xm+1 in H n+1(Qn+2, Sq2) to
+xmθ in H n+1(ThomQn O(1), Sq2). Indeed, j∗ i∗ maps the class of the hy-
+perplane section x in H 2(Qn+2) to the class of the hyperplane section x in
+H 2(Qn). So i∗ x in H 2(ThomQn O(1)) must be non-zero, hence equal to θ mod-
+ulo 2. It follows that i∗ (xm+1) = θm+1. Since θ2 = Sq 2(θ) = xθ, we have
+θm+1 = xmθ, proving the claim. As we already know that all higher diﬀeren-
+tials vanish on H∗ (Qn+2, Sq2), we may now deduce that they also vanish on
+H∗ (ThomQn O(1), Sq2).
+When n ≡ 3 mod 4 we claim that i∗ maps a in H n+3(Qn+2, Sq2) to aθ in
+H n+3(ThomQn O(1), Sq2). Indeed, a represents a linear subspace of codimen-
+sion m + 2 in Qn+2 and is thus mapped to the class of a linear subspace of
+the same codimension in Qn: j∗ i∗(a) = ax in H n+3(Qn). Thus, i∗ (a) is non-
+zero in H n+3(ThomQn O(1)), equal to aθ modulo 2. Again, this implies that
+all higher diﬀerentials vanish on H∗ (ThomQn O(1), Sq2) since they vanish on
+H∗ (Qn+2, Sq2).
+The additive structure of KO ∗ (Qn; O(1)) thus follows directly from the re-
+sult for H d(Qn, Sq2 + x) = ˜H d+2(ThomQn O(1)) displayed in Lemma 4.11 via
+Corollary 3.6.
+4.6 Spinor varieties
+Let Gr SO(n, N) be the Grassmannian of n-planes in CN isotropic with respect
+to a ﬁxed non-degenerate symmetric bilinear form, or, equivalently , the Fano
+variety of projective ( n − 1)-planes contained in the quadric QN− 2. For each
+N > 2n, this is an irreducible homogeneous variety. In particular, for N = 2n+
+1 we obtain the spinor variety Sn+1 = Gr SO(n, 2n+1). The variety Gr SO(n, 2n)
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 42 ===
+506 Marcus Zibrowius
+falls apart into two connected components, both of which are isomo rphic to
+Sn. This is reﬂected by the fact that we can equivalently identify Sn with
+SO(2n − 1)/U (n − 1) or SO(2 n)/U (n).
+As for all Grassmannians, the Picard group of Sn is isomorphic to Z; we ﬁx a
+line bundle S which generates it. The KO-theory twisted by S vanishes:
+Theorem 4.13. For all n ≥ 2 the additive structure of KO∗ (Sn; L) is as
+follows:
+t0 t1 si(O) si(S)
+n ≡ 2 mod 4 2n− 2 2n− 2 ρ( n
+2 , 1 − i) 0
+otherwise 2n− 2 2n− 2 ρ(⌊n
+2 ⌋, − i) 0
+Here, the values ρ(n, i) are deﬁned as in Theorem 4.5.
+Proof. The cohomology of Sn with Z/ 2-coeﬃcients has simple generators e2,
+e4, . . . , e2n− 2, i. e. it is additively generated by products of distinct elements of
+this list. Its multiplicative structure is determined by the rule e2
+2i = e4i, and the
+second Steenrod square is given by Sq 2(e2i) = ie2i+2 [
+Ish92, Proposition 1.1].
+In both formulae it is of course understood that e2j = 0 for j ≥ n. What we
+need to show is that for all n ≥ 2 we have
+H∗ (Sn, Sq2 + e2) = 0
+Let us abbreviate H∗ (Sn, Sq2 + e2) to ( Hn, d′). We claim that we have the
+following short exact sequence of diﬀerential Z/ 2-modules:
+0 → (Hn, d′)
+·e2n
+→ (Hn+1, d′) → (Hn, d′) → 0 (28)
+This can be checked by a direct calculation. Alternatively, it can be de duced
+from the geometric considerations below. Namely, it follows from the coﬁ-
+bration sequence of Corollary 4.15 that we have such an exact sequence of
+Z/ 2-modules with maps respecting the diﬀerentials given by Sq 2 on all three
+modules. Since they also commute with multiplication by e2, they likewise
+respect the diﬀerential d′ = Sq 2 + e2.
+The long exact cohomology sequence associated with ( 28) allows us to argue
+by induction: if H∗ (Hn, d′) = 0 then also H∗ (Hn+1, d′) = 0. Since we can see
+by hand that H∗ (H2, d′) = 0, this completes the proof.
+We close with a geometric interpretation of the exact sequence ( 28), via an
+analogue of Lemmas 4.2 and 4.6. Let us write U for the universal bundle over
+Sn, i. e. for the restriction of the universal bundle over Gr( n − 1, 2n − 1) to
+Sn, and U⊥ for the restriction of the orthogonal complement bundle, so that
+U ⊕ U ⊥ is the trivial (2 n − 1)-bundle over Sn. As in Section 4.4, we emphasize
+that under these conventions the ﬁbres of U and U⊥ are perpendicular with
+respect to a hermitian metric on C2n− 1 — they are not orthogonal with respect
+to the chosen symmetric form.
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 43 ===
+Witt Groups of Complex Cellular V arieties 507
+Lemma 4.14. The spinor variety Sn embeds into the spinor variety Sn+1 with
+normal bundle U⊥ such that the embedding extends to an embedding of this
+bundle. The closed complement of U⊥ in Sn+1 is again isomorphic to Sn.
+Corollary 4.15. We have a coﬁbration sequence
+Sn+
+i
+֒→Sn+1+
+p
+։ ThomSn U⊥
+Note however that, unlike in the symplectic case, the ﬁrst Chern cla sses of U
+and U⊥ pull back to twice a generator of the Picard group of Sn. For example,
+the embedding of S2 into Gr(1 , 3) can be identiﬁed with the embedding of the
+one-dimensional smooth quadric into the projective plane, of degr ee 2, and the
+higher dimensional cases can be reduced to this example. Thus, c1(U) and
+c1(U⊥ ) are trivial in Pic( Sn)/ 2.
+proof of Lemma 4.14. The proof is similar to the proof of Lemma 4.6. Let e1, e2
+be the ﬁrst two canonical basis vectors of C2n+1, and let C2n− 1 be embedded
+into C2n+1 via the remaining coordinates. Let Sn be deﬁned in terms of a
+symmetric form Q on C2n− 1, and deﬁne Sn+1 in terms of
+Q2n+1 :=
+
+
+0 1 0
+1 0 0
+0 0 Q
+
+
+Let i1 and i2 be the embeddings of Sn into Sn+1 sending an ( n − 1)-plane
+Λ ⊂ C2n− 1 to e1 ⊕ Λ or e2 ⊕ Λ in C2n+1, respectively. Given an ( n − 1)-plane
+Λ ∈ Sn together with a vector v in Λ⊥ ⊂ C2n− 1, consider the linear map
+(
+− 1
+2 Q(v, v) − Q(− , v)
+v 0
+)
+: ⟨e1⟩ ⊕ Λ → ⟨ e2⟩ ⊕ Λ⊥
+Sending (Λ , v) to the graph of this function deﬁnes an open embedding of U⊥
+whose closed complement is the image of i2.
+4.7 Exceptional hermitian symmetric spaces
+Lastly, we turn to the exceptional hermitian symmetric spaces EII I and EVII.
+We write O(1) for a generator of the Picard group in both cases.
+Theorem 4.16. The KO-groups of the exceptional hermitian symmetric space s
+EIII and EVII are as follows:
+L ≡ O L ≡ O (1)
+t0 t1 s0 s1 s2 s3 s0 s1 s2 s3
+KO∗ (EIII; L) 15 12 3 0 0 0 3 0 0 0
+KO∗ (EVII; L) 28 28 1 3 3 1 0 0 0 0
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 44 ===
+508 Marcus Zibrowius
+Proof. The untwisted KO-groups have been computed in [ KH92], the main
+diﬃculty as always being to prove that the Atiyah-Hirzebruch spect ral sequence
+collapses. For the twisted groups, however, there are no problem s. We quote
+from § 3 of said paper that the cohomologies of the spaces in question can b e
+written as
+H∗ (EIII; Z/ 2) = Z/ 2
+[
+t, u
+] /
+(u2t, u 3 + t12)
+H∗ (EVII; Z/ 2) = Z/ 2
+[
+t, v, w
+] /
+(t14, v 2, w 2)
+with t of degree 2 in both cases, and u, v and w of degrees 8 , 10 and 18,
+respectively. The Steenrod squares are determined by Sq 2 u = ut and Sq 2 v =
+Sq2 w = 0. Thus, we ﬁnd
+H∗ (EIII, Sq2 + t) = Z/ 2 · u ⊕ Z/ 2 · u2 ⊕ Z/ 2 · u3
+H∗ (EVII, Sq2 + t) = 0
+By Lemma 3.3 the Atiyah-Hirzebruch spectral sequence for EIII must collapse .
+This gives the result displayed above.
+Acknowledgements
+The present paper is based on research carried out in the context of the au-
+thor’s PhD studies, which have been generously funded by the Engin eering and
+Physical Sciences Research Council (EPSRC). I wish to thank my su pervisor
+Burt Totaro for his commitment, time and patience, for directing me towards
+the problems and ideas discussed here, and for his continuing suppo rt. Special
+thanks are moreover due to Baptiste Calm` es and Marco Schlichting for highly
+helpful conversations and explanations of their respective work. Finally, I am
+grateful to Jens Hornbostel for constructive comments on an e arlier version of
+this paper, and to the anonymous referee for careful proofrea ding.
+References
+[Ada95] Frank Adams, Stable homotopy and generalised homology , Chicago Lectures in
+Mathematics, University of Chicago Press, Chicago, IL, 199 5. Reprint of the 1974
+original.
+[Ara80] J´ on Kristinn Arason, Der Wittring projektiver R¨ aume, Math. Ann. 253 (1980),
+no. 3, 205–212.
+[ABS64] Michael Atiyah, Raoul Bott, and Arnold Shapiro, Cliﬀord modules, Topology 3
+(1964), no. suppl. 1, 3–38.
+[Bal00] Paul Balmer, Triangular Witt groups. I. The 12-term localization exact s equence,
+K-Theory 19 (2000), no. 4, 311–363.
+[Bal01a]
+, Triangular Witt groups. II. From usual to derived , Math. Z. 236 (2001),
+no. 2, 351–382.
+[Bal01b] , Witt cohomology, Mayer-Vietoris, homotopy invariance and the Gersten
+conjecture, K-Theory 23 (2001), no. 1, 15–30.
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 45 ===
+Witt Groups of Complex Cellular V arieties 509
+[Bal05] , Witt groups , Handbook of K-theory. Vol. 1, 2, Springer, Berlin, 2005,
+pp. 539–576.
+[BC09] Paul Balmer and Baptiste Calm` es, Geometric description of the connecting ho-
+momorphism for Witt groups , Doc. Math. 14 (2009), 525–550.
+[BC08] , Witt groups of Grassmann varieties (2008), available at
+www.math.uiuc.edu/K-theory/0903/. Preprint.
+[BG05] Paul Balmer and Stefan Gille, Koszul complexes and symmetric forms over the
+punctured aﬃne space , Proc. London Math. Soc. (3) 91 (2005), no. 2, 273–299.
+[BGG73] Joseph Bernstein, Israel Gelfand, and Sergei Gelfa nd, Schubert cells, and the
+cohomology of the spaces G/P , Uspehi Mat. Nauk 28 (1973), no. 3(171), 3–26
+(Russian); English transl., Russian Math. Surveys 28 (1973), no. 3, 1–26.
+[Bot69] Raoul Bott, Lectures on K(X), Mathematics Lecture Note Series, W. A. Ben-
+jamin, Inc., New York-Amsterdam, 1969.
+[BG10] Robert Bruner and John Greenlees, Connective real K-theory of ﬁnite groups ,
+Mathematical Surveys and Monographs, vol. 169, American Ma thematical Soci-
+ety, Providence, RI, 2010.
+[CF11] Baptiste Calm` es and Jean Fasel, Trivial Witt groups of ﬂag varieties (2011),
+available at arxiv.org/abs/1103.4412. Preprint.
+[Dug01] Daniel Dugger, Universal homotopy theories , Adv. Math. 164 (2001), no. 1, 144–
+176.
+[DLØ+07] Bjørn Ian Dundas, Marc Levine, Paul Arne Østvær, Oliver R ¨ ondigs, and Vladimir
+Voevodsky, Motivic homotopy theory , Universitext, Springer-Verlag, Berlin, 2007.
+Lectures from the Summer School held in Nordfjordeid, Augus t 2002.
+[EKM08] Richard Elman, Nikita Karpenko, and Alexander Merk urjev, The algebraic and
+geometric theory of quadratic forms , American Mathematical Society Colloquium
+Publications, vol. 56, American Mathematical Society, Pro vidence, RI, 2008.
+[Fuj67] Michikazu Fujii, K0-groups of projective spaces , Osaka J. Math. 4 (1967), 141–
+149.
+[FH91] William Fulton and Joe Harris, Representation theory, Graduate Texts in Math-
+ematics, vol. 129, Springer-Verlag, New York, 1991.
+[Gil03] Stefan Gille, Homotopy invariance of coherent Witt groups , Math. Z. 244 (2003),
+no. 2, 211–233.
+[Har92] Joe Harris, Algebraic geometry , Graduate Texts in Mathematics, vol. 133,
+Springer-Verlag, New York, 1992. A ﬁrst course.
+[Hat09] Allen Hatcher, Vector bundles and K-theory , 2009. Version 2.1, available at
+www.math.cornell.edu/~hatcher/VBKT/VBpage.html.
+[Hog69] Stuart Hoggar, On KO theory of Grassmannians , Quart. J. Math. Oxford Ser.
+(2) 20 (1969), 447–463.
+[Hor05] Jens Hornbostel, A1-representability of Hermitian K-theory and Witt groups ,
+Topology 44 (2005), no. 3, 661–687.
+[Hus94] Dale Husemoller, Fibre bundles , 3rd ed., Graduate Texts in Mathematics, vol. 20,
+Springer-Verlag, New York, 1994.
+[Ish92] Kiminao Ishitoya, Squaring operations in the Hermitian symmetric spaces , J.
+Math. Kyoto Univ. 32 (1992), no. 1, 235–244.
+[Jar87] John Frederick Jardine, Simplicial presheaves, J. Pure Appl. Algebra 47 (1987),
+no. 1, 35–87.
+[Jou73] Jean-Pierre Jouanolou, Une suite exacte de Mayer-Vietoris en K-th´ eorie
+alg´ ebrique, Algebraic K-theory, I: Higher K-theories (Proc. Conf., Battelle Memo-
+rial Inst., Seattle, W ash., 1972), Springer, Berlin, 1973, pp. 293–316. Lecture Notes
+in Math., Vol. 341.
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 46 ===
+510 Marcus Zibrowius
+[Kar05] Max Karoubi, Bott periodicity in topological, algebraic and Hermitian K-theory,
+Handbook of K-theory. Vol. 1, 2, Springer, Berlin, 2005, pp. 111–137.
+[KKO04] Daisuke Kishimoto, Akira Kono, and Akihiro Ohsita, KO-theory of ﬂag manifolds ,
+J. Math. Kyoto Univ. 44 (2004), no. 1, 217–227.
+[Koc96] Stanley Kochman, Bordism, stable homotopy and Adams spectral sequences ,
+Fields Institute Monographs, vol. 7, American Mathematica l Society, Providence,
+RI, 1996.
+[KH91] Akira Kono and Shin-ichiro Hara, KO-theory of complex Grassmannians , J.
+Math. Kyoto Univ. 31 (1991), no. 3, 827–833.
+[KH92] , KO-theory of Hermitian symmetric spaces , Hokkaido Math. J. 21 (1992),
+no. 1, 103–116.
+[MH73] John Milnor and Dale Husemoller, Symmetric bilinear forms , Springer-Verlag,
+New York, 1973. Ergebnisse der Mathematik und ihrer Grenzge biete, Band 73.
+[MS74] John Milnor and James Stasheﬀ, Characteristic classes , Princeton University
+Press, Princeton, N. J., 1974. Annals of Mathematics Studie s, No. 76.
+[Mor99] Fabien Morel, Th´ eorie homotopique des sch´ emas, Ast´ erisque256 (1999).
+[MV99] Fabien Morel and Vladimir Voevodsky, A1-homotopy theory of schemes , Inst.
+Hautes ´Etudes Sci. Publ. Math. 90 (1999), 45–143 (2001).
+[Mor04] Fabien Morel, An introduction to A1-homotopy theory , Contemporary develop-
+ments in algebraic K-theory, ICTP Lect. Notes, XV, Abdus Sal am Int. Cent.
+Theoret. Phys., Trieste, 2004, pp. 357–441.
+[Mor06] , Rational stable splitting of Grassmanians and
+rational motivic sphere spectrum (2006), available at
+www.mathematik.uni-muenchen.de/~morel/preprint.html. Draft.
+[Nen07] Alexander Nenashev, Gysin maps in Balmer-Witt theory , J. Pure Appl. Algebra
+211 (2007), no. 1, 203–221.
+[Nen09] , On the Witt groups of projective bundles and split quadrics: geometric
+reasoning, J. K-Theory 3 (2009), no. 3, 533–546.
+[GOV94] Vladimir Gorbatsevich, Arkadi ˘ ı Onishchik, and `Ernest Vinberg, Lie Groups and
+Lie Algebras III: Structure of Lie Groups and Lie Algebras , Encyclopaedia of
+Mathematical Sciences, vol. 41, Springer-Verlag, Berlin, 1994.
+[PW10] Ivan Panin and Charles W alter, On the motivic commutative ring spectrum BO
+(2010), available at www.math.uiuc.edu/K-theory/0978/. Preprint.
+[Rio06] Jo¨ el Riou, Op´ erations sur la K-th´ eorie alg´ ebrique et r´ egulateursvia la th´ eorie
+homotopique des sch´ emas, Ph. D. Thesis, l’Universit´ e Paris 7 – Denis Diderot,
+2006, www.math.u-psud.fr/~riou/these/these.pdf.
+[Rio07a] , Cat´ egorie homotopique stable d’un site suspendu avec inte rvalle, Bull.
+Soc. Math. France 135 (2007), no. 4, 495–547.
+[Rio07b] , Op´ erations sur la K-th´ eorie alg´ ebrique et r´ egulateursvia la th´ eorie ho-
+motopique des sch´ emas, C. R. Math. Acad. Sci. Paris 344 (2007), no. 1, 27–32.
+[Sch10a] Marco Schlichting, Hermitian K-theory of exact categories , J. K-Theory 5 (2010),
+no. 1, 105–165.
+[Sch10b] , The Mayer-Vietoris principle for Grothendieck-Witt group s of schemes ,
+Invent. Math. 179 (2010), no. 2, 349–433.
+[Sch] , Hermitian K-theory, derived equivalences and Karoubi’s fu ndamental
+theorem. In preparation.
+[Seg68] Graeme Segal, Equivariant K-theory, Inst. Hautes ´Etudes Sci. Publ. Math. 34
+(1968), 129–151.
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 47 ===
+Witt Groups of Complex Cellular V arieties 511
+[Voe98] Vladimir Voevodsky, A1-homotopy theory , Proceedings of the International
+Congress of Mathematicians, Vol. I (Berlin, 1998), 1998, pp . 579–604.
+[W al03a] Charles W alter, Grothendieck-Witt groups of triangulated categories (2003), avail-
+able at www.math.uiuc.edu/K-theory/0643/. Preprint.
+[W al03b] , Grothendieck-Witt groups of projective bundles (2003), available at
+www.math.uiuc.edu/K-theory/0644/. Preprint.
+[Yag04] Nobuaki Yagita, Coniveau spectral sequence and motivic cohomology of quadr ics
+and classifying spaces (2004), available at www.math.uiuc.edu/K-theory/0709/.
+Preprint.
+[Yag09] , Note on Witt group and KO-theory of complex Grassmannians (2009),
+available at www.math.uni-bielefeld.de/LAG/man/325.html. Preprint.
+[Zib09] Marcus Zibrowius, Comparing Grothendieck-Witt groups of a com-
+plex variety to its real topological K-groups (2009), available at
+www.dspace.cam.ac.uk/handle/1810/236624. Smith-Knight/Rayleigh-Knight
+Essay.
+Marcus Zibrowius
+Department of Pure Mathematics
+and Mathematical Statistics
+University of Cambridge
+Wilberforce Road
+Cambridge
+CB3 0WB
+United Kingdom
+Documenta Mathematica 16 (2011) 465–511
+
+=== PDF PAGE 48 ===
+512
+Documenta Mathematica 16 (2011)

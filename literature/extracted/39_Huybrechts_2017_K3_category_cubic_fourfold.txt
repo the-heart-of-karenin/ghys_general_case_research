@@ -1,0 +1,1869 @@
+=== PDF PAGE 1 ===
+THE K3 CATEGORY OF A CUBIC FOURFOLD
+DANIEL HUYBRECHTS
+Abstract. Smooth cubic hypersurfacesXĂ P5 (over C) are linked to K3 surfaces via their
+Hodge structures, due to work of Hassett, and via Kuznetsov’s K3 categoryAXĂ DbpXq. The
+relation between these two viewpoints has recently been explained by Addington and Thomas.
+In this paper, both aspects are studied further and extended to twisted K3 surfaces. In
+particular, we determine the group of autoequivalences ofAX of the general cubic fourfold,
+prove ﬁniteness results for cubics with equivalent K3 categories and study periods of cubics in
+terms of generalized K3 surfaces.
+1. Introduction
+As shown by Kuznetsov [33, 36], the bounded derived categoryDbpXq of coherent sheaves
+on a smooth cubic hypersurfaceXĂ P5 contains, as the semi-orthogonal complement of three
+line bundles, a full triangulated subcategory
+AX :“x O, Op1q, Op2qyKĂ DbpXq
+that behaves in many respects like the bounded derived categoryDbpSq of coherent sheaves
+on a K3 surface S. In fact, for certain special cubics AX is equivalent to DbpSq or, more
+generally, to the derived categoryDbpS, αq of α-twisted sheaves on a K3 surfaceS. Kuznetsov
+also conjectured thatAX is of the formDbpSq if and only ifX is rational. Neither of the two
+implications has been veriﬁed until now, although Addington and Thomas recently have shown
+in [1] that the conjecture is (generically) equivalent to a conjecture attributed to Hassett [17]
+describing rational cubics in terms of their periods.
+1.1. This paper is not concerned with the rationality of cubic fourfolds, but with basic results
+on AX. Ideally, one would like to have a theory forAX that parallels the theory forDbpSq
+and DbpS, αq. In particular, one would like to have analogues of the following results and
+conjectures:
+– For a given twisted K3 surfacepS, αq there exist only ﬁnitely many isomorphism classes of
+twisted K3 surfacespS1, α1q with DbpS, αq» DbpS1, α1q.
+This work was supported by the SFB/TR 45 ‘Periods, Moduli Spaces and Arithmetic of Algebraic Varieties’
+of the DFG (German Research Foundation).
+1
+
+=== PDF PAGE 2 ===
+2 D. HUYBRECHTS
+– Two twisted K3 surfacespS, αq,pS1, α1q are derived equivalent, i.e. there exists aC-linear
+exact equivalence DbpS, αq »DbpS1, α1q, if and only if there exists an orientation preserving
+Hodge isometry rHpS, α, Zq» rHpS1, α1, Zq.
+– The group of linear exact autoequivalences of DbpS, αq admits a natural representation
+ρ: AutpDbpS, αqq →→ AutprHpS, α, Zqq, which is surjective up to index two and such that its
+kernel is at least conjecturally described as a fundamental group of a certain Deligne–Mumford
+stack.
+Most of the theory for untwisted K3 surfaces is due to Mukai [45] and Orlov [50], whereas
+the basic theory of twisted K3 surfaces was developed in [21, 22]. See also [25, 23] for surveys
+and further references. Originally, the generalization to twisted K3 surfaces was motivated by
+the existence of non-ﬁne moduli spaces [11]. However, more recently it has become clear that
+allowing twists has quite unexpected applications, e.g. to the Tate conjecture [14, 41]. Crucial
+for the purpose of this article is the observation proved in [24] thatKerpρq “Zr2s for many
+twisted K3 surfacespS, αq. Note that for untwisted projective K3 surfaces the kernel is always
+highly non-trivial and, moreover, the conjectural description ofKerpρq has in this case only
+been achieved in the case of Picard rank one [4].
+1.2. As a direct attack on AX is diﬃcult, we follow Addington and Thomas [1] and reduce
+the study ofAX via deformation to the case of (twisted) K3 surfaces. Central to our discussion
+is the Hodge structurerHpAX , Zq associated with AX introduced in [1] as the analogue of the
+Mukai–Hodge structure rHpS, Zq of weight two on the full cohomologyH˚pS, Zq of a K3 surface
+S or of the twisted version rHpS, α, Zq introduced in [21]. For example, any FM-equivalence
+AX» AX1 induces a Hodge isometryrHpAX , Zq» rHpAX1, Zq, cf. Proposition 3.4. This suﬃces
+to prove:
+Theorem 1.1.For any given smooth cubicXĂ P5 there are only ﬁnitely many cubicsX1Ă P5
+up to isomorphism together with a FM-equivalenceAX» AX1. See Corollary 3.5.
+Recall that due to a result of Bondal and Orlov a smooth cubicXĂ P5 itself does not admit
+any non-isomorphic Fourier–Mukai partners. This is no longer true ifDbpXq is replaced by its
+K3 category AX. In particular, there exist FM-equivalencesAX » AX1 that do not extend to
+equivalences DbpXq »DbpX1q. However, we will also see that general cubicsX and X1, i.e.
+those for whichrk H2,2pX, Zq“ 1, admit a FM-equivalenceAX » AX1 if and only ifX » X1,
+see Theorem 1.5 or Corollary 3.6.
+The following can be seen as an easy analogue of the result of Bayer and Bridgeland [4]
+describing AutpDbpSqq for general K3 surfaceS (namely those withρpSq“ 1) or rather of [26]
+describing this group for general non-projective K3 surfaces or twisted projective K3 surfaces
+pS, αq withoutp´2q-classes (see Section 6.1).
+
+=== PDF PAGE 3 ===
+THE K3 CATEGORY OF A CUBIC FOURFOLD 3
+Theorem 1.2. For the general1 smooth cubic XĂ P5 the group AutspAXq of symplectic FM-
+autoequivalences is inﬁnite cyclic with
+AutspAXq{Z¨r 2s» Z{3Z.
+Moreover, the induced action onrHpAX , Zq of any FM-autoequivalenceΦ: AX
+„ →→ AX of a non-
+special cubic preserves the natural orientation.
+In fact, for every smooth cubicAutspAXq contains Z¨r 2sĂ Z as above, see Corollary 3.12.
+Thetheoryof twistedK3 surfaces iscrucialforthe theorem, aseventually theproblemis reduced
+to [24] which deals with general twisted K3 surfaces. The groupAutspAXq of an arbitrary cubic
+is described by an analogue of Brigdeland’s conjecture, see Conjecture 3.14.
+1.3. In [17] Hassett showed that in the moduli space of cubicsC the set of those cubicsX for
+which there exists a primitive positive planeKdĂ H2,2pX, Zq of discriminant d containing the
+class c1pOp1qq2 is an irreducible divisorCdĂ C. Moreover, Cd is not empty if and only if
+(˚) d” 0, 2p6q and dą 6.
+Hassett also introduced the numerical condition
+(˚˚) d” 0, 2p6q and d not divisible by4, 9 or any prime2‰ p” 2p3q
+and proved that (˚˚) is equivalent to the orthogonal complement of the corresponding latticeKd
+in H4pX, Zq being (up to sign) Hodge isometric to the primitive Hodge structureH2pS, Zqprim
+of a polarized K3 surface. In [1] the condition was shown to be equivalent to the existence of
+a Hodge isometryrHpAX , Zq» rHpS, Zq for some K3 surfaceS. We prove the following twisted
+version of it (cf. Proposition 2.11):
+Theorem 1.3. For a smooth cubicXĂ P5 the Hodge structurerHpAX , Zq is Hodge isometric
+to the Hodge structurerHpS, α, Zq of a twisted K3 surfacepS, αq if and only ifXP Cd with
+(˚˚1) d” 0, 2p6q and ni” 0p2q for all primes pi” 2p3q in 2d“ ś pni
+i .
+Obviously, ifd satisﬁes (˚˚), then k2d satisﬁes (˚˚1) for all integersk, and vice versa.
+As the main result of [1], Addington and Thomas proved that at least generically (˚˚) is
+equivalent to AX » DbpSq for some K3 surfaceS. The following twisted version of it will be
+proved in Section 6.2.
+Theorem 1.4. i) If AX » DbpS, αq for some twisted K3 surfacepS, αq, then X P Cd with d
+satisfying (˚˚1).
+1A property holds for thegeneral cubic if it holds for cubics in the complement of countably many proper
+closed subsets of the space of cubics under consideration. It holds for thegeneric cubic if it holds for a Zariski
+open, dense subset.
+
+=== PDF PAGE 4 ===
+4 D. HUYBRECHTS
+ii) Conversely, ifd satisﬁes (˚˚1), then there exists a Zariski open setH‰ UĂ Cd such that
+for all XP Cd there exists a twisted K3 surfacepS, αq and an equivalenceAX» DbpS, αq.
+Non-special cubics are determined by their associated K3 categoryAX and for general special
+cubics AX is determined by its Hodge structure (see Corollary 3.6 and Section 6.3):
+Theorem 1.5. Let X and X1 be two smooth cubics.
+i) Assume X is not special, i.e. not contained in anyCd Ă C. Then there exists a FM-
+equivalence AX» AX1 if and only ifX» X1.
+ii) For a Zariski dense open set of cubicsX P Cd with d satisfying (˚˚1), there exists a FM-
+equivalence AX» AX1 if and only if there exists a Hodge isometryrHpAX , Zq» rHpAX1, Zq.
+iii) For arbitraryd and general XP Cd there exists a FM-equivalenceAX» AX1 if and only
+if there exists a Hodge isometryrHpAX , Zq» rHpAX1, Zq.
+We will also see that arguments of Addington [2] can be adapted to show that (˚˚1) is in
+fact equivalent to the Fano variety of lines onX being birational to a moduli space of twisted
+sheaves on some K3 surface, see Proposition 4.1.
+1.4. There are a few fundamental issues concerningAX that we do not know how to address
+and that prevent us from developing the theory in full. Firstly, this paper only deals with FM-
+equivalences AX» AX1, i.e. those for which the compositionDbpXq →→ AX
+„ →→ AX1
+↘ ↙ →→ DbpX1q
+is a Fourier–Mukai transform. One would expect this to be the case for all equivalences, but the
+classical result of Orlov [49] and its generalization by Canonaco and Stellari [13] do not apply
+to this situation. Secondly, it is not known whetherAX always admits bounded t-structures or
+stability conditions. This is problematic when one wants to study FM-partners ofAX as moduli
+spaces of (stable) objects inAX. As in [1], the lack of stability is also the crucial stumbling
+block to use deformation theory to prove statements as in Theorem 1.4 for all cubics and not
+only for generic or general ones.
+1.5. The plan of the paper is as follows. Section 2 deals with all issues related to the lattice
+theory and the abstract Hodge theory. In particular, natural (countable unions of) codimension
+one subsetsDK3Ă DK31 of the period domainDĂ PpAK
+2b Cq are studied in great length. They
+parametrize periods that induce Hodge structures that are Hodge isometric torHpS, Zq resp.
+rHpS, α, Zq and which are described in terms of the numerical conditions (˚˚) resp. (˚˚1). In
+particular, Theorem 1.3 is proved. We also provide a geometric description of all periodsxP D
+in terms of generalized K3 surfaces, see Proposition 2.17.
+In Section 3 we extend results in [1] from equivalencesAX» DbpSq to the twisted case and
+prove the ﬁniteness of FM-partners forAX, see Theorem 1.1. Moreover, we produce an action
+of the universal cover ofSOpA2q on AX for all cubics (Remark 3.13) and formulate an analogue
+of Bridgeland’s conjecture (Conjecture 3.14).
+
+=== PDF PAGE 5 ===
+THE K3 CATEGORY OF A CUBIC FOURFOLD 5
+The short Section 4 shows that (˚˚1) is equivalent toFpXq being birational to a moduli space
+of stable sheaves on a K3 surface. In Section 5 we adapt the deformation theory of [1] to the
+twisted case. Finally, in Section 6 we conclude the proofs of Theorems 1.2, 1.4, and 1.5.
+1.6. Acknowledgements. I would like to thank Nick Addington and Sasha Kuznetsov for
+very helpful discussions during the preparation of the paper. I am also grateful to Ben Bakker,
+Jørgen Rennemo, Paolo Stellari, Andrey Soldatenkov, and Richard Thomas for comments and
+suggestions. Thanks to Pawel Sosna for a long list of comments on the ﬁrst version.
+2. Lattice theory and period domains
+We start by discussing the relevant lattice theory. To make the reading self-contained, we
+will on the way also recall results due to Hassett resp. Addington and Thomas.
+There are two kinds of lattices, those related to K3 surfaces,Λ, rΛ, etc., and those attached
+to cubic fourfolds,I21,2, Kd, etc.. The two types are linked by a latticeAK
+2 of signaturep2, 20q
+and two embeddings
+I2,21 AK
+2
+↘ ↙ →→↗ ↖←← rΛ.
+The induced maps between the associated period domains allows one to relate periods of cubic
+fourfolds to periods of (generalized) K3 surfaces.
+2.1. By U we shall denote the hyperbolic plane, i.e.Z2 with the intersection form
+˜0 1
+1 0
+¸
+.
+Furthermore, we let
+Λ :“ E8p´1q‘2‘ U‘3
+be the K3 lattice, i.e. the unique even, unimodular lattice of signaturep3, 19q. The extended
+K3 lattice is then deﬁned as
+rΛ :“ Λ‘ U,
+which is the unique even, unimodular lattice of signaturep4, 20q.
+Next, A2 denotes the standard root lattice of rank two, i.e. there exists a basisλ1, λ2 with
+respect to which the intersection matrix is given by
+˜ 2 ´1
+´1 2
+¸
+. The lattice A2 is even and of
+signaturep2, 0q. Moreover, its discriminant group isAA2 :“ A˚
+2{A2» Z{3Z and, in particular,
+A2 is not unimodular.
+Due to [47, Thm. 1.14.4] there exist embeddings
+A2
+↘ ↙ →→ Λ and A2
+↘ ↙ →→rΛ,
+which are both unique up to the action ofOpΛq resp. OprΛq. Note that all such embeddings
+are automatically primitive. In the following we will ﬁx once and for all one such embedding
+A2
+↘ ↙ →→ Λ ↘ ↙ →→rΛandconsidertheorthogonalcomplementof A2Ă rΛasaﬁxedprimitivesublattice
+AK
+2 Ă rΛ
+
+=== PDF PAGE 6 ===
+6 D. HUYBRECHTS
+of signaturep2, 20q. Its isomorphism type does not depend on the chosen embedding ofA2
+and can be described explicitly by observing that the orthogonal complement of the embedding
+A2
+↘ ↙ →→rΛ given by
+(2.1) A2
+↘ ↙ →→ U‘ U ↘ ↙ →→rΛ, λ 1
+ →→ e1` f1, λ 2
+ →→ e` f´ e1,
+where e, f and e1, f1 denote the standard bases of the two copies of the hyperbolic plane, is
+isomorphic to
+(2.2) AK
+2 » E8p´1q‘2‘ U‘2‘ A2p´1q.2
+Remark 2.1. For later use we recall that the group of isometriesOpA2q of the lattice A2 is
+isomorphic toS3ˆ Z{2Z. Here, the Weyl groupS3 permutes the three positive roots andZ{2Z
+acts by´id. In fact, S3Ă OpA2q is the kernel of the naturalOpA2q →→ OpAA2q» Z{2Z (use
+the aforementionedAA2» Z{3Z). The signS3 →→ Z{2Z can be identiﬁed with the determinant
+OpA2q →→t˘1u. Thus, the group of orientation preserving isometries ofA2 acting trivially on
+AA2 is justA3» Z{3Z, where the generator can be chosen to act byλ1
+ →→´ λ1´ λ2, λ2
+ →→ λ1.
+2.2. Next, consider the unique odd, unimodular lattice
+I2,21 :“ Z‘2‘ Zp´1q‘21» E8p´1q‘2‘ U‘2‘ Zp´1q‘3
+of signaturep2, 21q and an elementhP I2,21 withphq2“´ 3, e.g. h“p 1, 1, 1qP Zp´1q‘3. Then
+the primitive sublatticehKĂ I2,21 is of signaturep2, 20q and using (2.2) one ﬁnds
+hK» AK
+2 .
+In the following, we will always considerAK
+2 with two ﬁxed embeddings as above:
+I2,21 AK
+2
+↘ ↙ →→↗ ↖←← rΛ.
+Following Hassett [17], we now consider all primitive, negative deﬁnite sublattices
+KdĂ I2,21
+of rank two containingh. Here, the index d“ disc Kd denotes the discriminant ofKd, which
+is necessarily positive. Using [47, Sec. 1.5] one ﬁnds that up to the action of the subgroup of
+OpI2,21q ﬁxing h the lattice KdĂ I2,21 is uniquely determined byd.
+Moreover, Hassett shows thatd” 0, 2p6q and that for a generator (unique up to sign)vP AK
+2
+of KdX AK
+2 the following holds
+(2.3) ´p vq2“
+$
+&
+%
+d{3 if d” 0p6q
+3d if d” 2p6q.
+2In [17] the last summand is instead described as a lattice with intersection matrix
+˜´2 ´1
+´1 ´2
+¸
+, which is of
+course isomorphic toA2p´1q.
+
+=== PDF PAGE 7 ===
+THE K3 CATEGORY OF A CUBIC FOURFOLD 7
+Viewing vP AK
+2 Ă rΛ as an element ofrΛ leads to a lattice
+A2‘ Z¨ vĂ rΛ
+of rank three and signaturep2, 1q. As it turns out, this is a primitive sublattice ford” 0p6q and
+it is of index three in its saturation ford” 2p6q. This follows from [17, Prop. 3.2.2] asserting
+thatpv.AK
+2q“ Z resp. 3¨ Z in the two cases.
+In our discussion, the latticesKd will occupy a place in the back, as it will be more natural
+to work with the generatorvP AK
+2 X Kd directly.
+2.3. We shall be interested in the period domains, deﬁned by the two conditionspx.xq“ 0 and
+px.¯xqą 0, associated with the two latticesAK
+2 and rΛ. They will be denoted by
+DĂ PpAK
+2 b Cq resp. QĂ PprΛb Cq.
+In particular, dim D“ 20 and dim Q“ 22. Also note thatD has two connected components,
+whereas Q is connected.
+Points xP D correspond to Hodge structures of weight two on the latticeAK
+2. However, often
+we will think ofxP D at the same time as deﬁning a Hodge structure onrΛ with A2 contained
+in itsp1, 1q-part. In fact, for general pointsxP D the integralp1, 1q-part of the corresponding
+Hodge structure is the latticeA2.
+We shall refer toD as the period domain of cubic fourfolds, although only an open subset
+really corresponds to smooth cubics. More concretely, for a smooth cubicX Ă P5 and any
+marking, i.e. an isometry,ϕ: hK „ →→ AK
+2, one deﬁnes the associated period as the imagex :“
+rϕCpH3,1pXqqsP D. A description of the image of the period map, allowing cubics with ADE-
+singularities, has been given by Laza [39] and Looijenga in [42]. Points inQ are thought of as
+periods of generalized K3 surfaces, cf. Section 2.7.
+Fixing embeddings A2
+↘ ↙ →→rΛ and the inducedAK
+2
+↘ ↙ →→rΛ as before leads to the diagram
+D ↘ ↙ →→↙ ↖
+↓↓
+Q↙ ↖
+↓↓
+PpAK
+2 b Cq ↘ ↙ →→ PprΛb Cq,
+which is central for the discussion. In particular,D“ PpAK
+2 b CqX Q.
+For later use we state the following technical observation.
+Lemma 2.2.The Hodge structure onrΛ deﬁned by an arbitraryxP D admits a Hodge isometry
+that reverses the orientation of the four positive directions.
+Proof. Consider a transposition g :“p 12qP S3 Ă OpA2q. Then g acts trivially on the discri-
+minant AA2 (see Remark 2.1) and can, therefore, be extended to˜gP OprΛq acting trivially on
+AK
+2. In particular, the Hodge isometry˜g preserves the orientation of the two positive directions
+
+=== PDF PAGE 8 ===
+8 D. HUYBRECHTS
+given by thep2, 0q andp0, 2q-parts. On the other hand, it reverses the orientation of the two
+positive directions inA2. l
+Remark 2.3. This result is the analogue of the fact that any Hodge structure onrΛ with a
+hyperbolic plane U contained in itsp1, 1q-part admits an orientation reversing Hodge isometry.
+This statement in particular applies to the Hodge structurerHpS, Zq. Note that it is unknown
+whether rHpS, α, Zq always admits an orientation reversing Hodge isometry which prevents us
+from determining the image of AutpDbpS, αqq →→ AutprHpS, α, Zqq completely, analogously to
+[26]. See [51] for partial results in this direction.
+2.4. Let us now turn to the geometric interpretation of certain periods in Q. Recall that
+for a K3 surfaceS the extended K3 (or Mukai) latticerHpS, Zq is abstractly isomorphic torΛ.
+Moreover, rHpS, Zq comes with a natural Hodge structure of weight two deﬁned by
+rH2,0pSq :“ H2,0pSq and rH1,1pSq :“ H1,1pSq‘p H0‘ H4qpS, Cq.
+For a Brauer class α P BrpSq »H2pS, Gmq »H2pS, O˚
+Sqtors we have introduced in [20] the
+weight-two Hodge structurerHpS, α, Zq. As a lattice this is still isomorphic torΛ and its Hodge
+structure is determined by
+rH2,0pS, αq :“ C¨p σ` B^ σq and rH1,1pS, α, Zq :“ exppBq¨ rH1,1pSq.
+Here, 0‰ σP H2,0pSq and BP H2pS, Qq maps to α under the exponential map
+H2pS, Qq →→ H2pS, OSq
+exp →→ H2pS, O˚
+Sq.
+The isomorphism type of the Hodge structure is independent of the choice ofB.
+Deﬁnition 2.4.A periodxP Q is ofK3 type(resp. twisted K3 type) if there exists a K3 surface
+S (resp. a twisted K3 surfacepS, αP BrpSqq) such that the Hodge structure onrΛ deﬁned by x
+is Hodge isometric torHpS, Zq (resp. rHpS, α, Zq).
+The sets of periods of K3 type and twisted K3 type will be denoted
+QK3Ă QK31Ă Q.
+There is also a geometric interpretation for points outsideQK31 in terms of symplectic struc-
+tures [20], but those are a priori inaccessible by algebro-geometric techniques, see however
+Section 2.7.
+For the following recall that the twisted hyperbolic planeUpnq is the rank two lattice with
+intersection matrix
+˜0 n
+n 0
+¸
+. The standard isotropic generators will be denoteden, fn or simply
+e, f. Part i) of the next lemma is well known.
+
+=== PDF PAGE 9 ===
+THE K3 CATEGORY OF A CUBIC FOURFOLD 9
+Lemma 2.5. Consider a period pointxP Q. Then:
+i) xP QK3 if and only if there exists an embeddingU ↘ ↙ →→rΛ such that its image is contained in
+thep1, 1q-part of the Hodge structure deﬁned byx.
+ii) xP QK31 if and only if there exists a (not necessarily primitive) embeddingUpnq ↘ ↙ →→rΛ for
+some n‰ 0 such that its image is contained in thep1, 1q-part of the Hodge structure deﬁned by
+x.
+Proof. We prove the second assertion, the ﬁrst one is even easier. Start with a twisted K3
+surface pS, αq and pick a lift B P H2pS, Qq of α. Then the algebraic part rH1,1pS, α, Zq “
+exppBq¨ rH1,1pS, QqX rHpS, Zq contains the latticepZ¨p1, B, B2{2qX rHpS, Zqq‘ H4pS, Zq, which
+is isomorphic toUpnq for n minimal with np1, B, B2{2qP rHpS, Zq.
+Conversely, assume Upnq ĂrΛ is of typep1, 1q with respect to x. Choosing n minimal, we
+can assume that the standard isotropic generatoren“ e is primitive inrΛ. But then eP Upnq
+can be completed to a sublattice ofrΛ isomorphic to the hyperbolic planeU “ xe, fy, which
+therefore induces an orthogonal decomposition
+(2.4) rΛ» Λ‘ U
+(usually diﬀerent from the one deﬁningrΛ).
+With respect to (2.4) the second basis vectorfnP Upnq can be written asfn“ γ` nf` ke
+with γP Λ. Similarly, a generator of thep2, 0q-part of the Hodge structure determined byx is
+orthogonal to e and hence of the formσ` λe for some σP Λb C and λP C. However, it is also
+orthogonal to fn and sopγ.σq` nλ“ 0. Now set B :“´p 1{nqγ. Then σ` λe“ σ` B^ σ,
+where B^ σ stands forpB.σqe.
+Eventually, the surjectivity of the period map implies thatσP Λb C can be realized as the
+period of some K3 surface S, i.e. there exists an isometryH2pS, Zq »Λ identifying H2,0pSq
+with C¨ σĂ Λb C. Here one usespσ.σq“p σ` λe.σ` λeq“ 0 andpσ.¯σq“p σ` λe.¯σ` ¯λeqą 0.
+Mapping H4pS, Zq to Z¨ eĂ U Ă Λ‘ U in (2.4) and deﬁningαP BrpSq as the Brauer class
+induced by B under Λb Q» H2pS, Qq →→ H2pS, Gmq yields a Hodge isometry ofrHpS, α, Zq
+with the one deﬁned byx on rΛ. l
+Corollary 2.6. The sets QK3 Ă QK31 Ă Q can be described as the intersections ofQ with
+countably many linear subspaces of codimension two:
+QK3“ QX
+ď
+UKĂ QK31“ QX
+ď
+UpnqKĂ Q.
+Here, the unions are over all embeddingsU ↘ ↙ →→rΛ resp. Upnq ↘ ↙ →→rΛ with arbitrary n‰ 0. l
+2.5. However, it will turn out that the further intersection withD yields countable unions of
+codimension one subsets. These intersections are denoted by
+DK3 :“ DX QK3Ă DK31 :“ DX QK31Ă D
+
+=== PDF PAGE 10 ===
+10 D. HUYBRECHTS
+and will be viewed as the sets of cubic periods that deﬁne generalized K3 periods of K3 type
+resp. of twisted K3 type.
+We will ﬁrst explain thatDK31 is a countable union of hyperplane sections. A second proof
+for the same assertion that also works forDK3 is provided in Section 2.6.
+Lemma 2.7.Any sublattice of the formA2`UpnqĂ rΛ contains a sublatticeUpmqĂ A2`Upnq
+such that A2` Upmq is of rank three.
+Proof. If A2` Upnq is already of rank three, then there is nothing to show. So, assumerkpA2`
+Upnqq“ 4, which is the generic case. For greater clarity we consider two cases, although only
+the second will be realized later.
+i) Assume A2 and Upnq are orthogonal. Then deﬁne e1 :“ nλ1`p e´ nfq and f1 :“ nλ2´
+pe´ nfq. Then pe1q2 “ pf1q2 “ 0, and pe1.f1q “ n2 “: m, i.e. e1 and f1 span a sublattice
+UpmqĂ A2` Z¨p e´ nfqĂ A2` Upnq.
+ii) If A2 and Upnq are not orthogonal, then we may assume that there exists anxP A2 with
+px.eq‰ 0. Then f1 :“p x.eqx´pp xq2{2qe satisﬁes pf1q2 “ 0 andpf1.eq“p x.eq2 “: m. Hence,
+e, f1 span UpmqĂ Z¨ x` Z¨ eĂ A2` Upnq. l
+Now, for x P DK31 there exists a sublattice Upnq ĂrΛ contained in thep1, 1q-part of the
+Hodge structure corresponding tox, i.e. xP DX UpnqK. However, due to the lemma there is
+another sublattice UpmqĂ rΛ with xP UpmqK and rkpA2` Upmqq“ 3. Hence, the intersection
+DX UpnqKĂ DK31 of codimension two is subsumed by the codimension one setDX UpmqKĂ
+DK31.3 A better way to phrase this is as follows:
+Corollary 2.8.The set of twisted K3 periods inD can also be described as the countable union
+of hyperplane sections:
+DK31“ DX
+ď
+eK.
+Here, the union runs over all0‰ eP rΛ withpeq2“ 0.
+Proof. One inclusion follows from the fact that anyUpnq contains an isotropic vector. For the
+converse, recall that any primitive isotropic0 ‰ e P rΛ can be realized as the standard basis
+vector of a hyperbolic planeU Ă rΛ. If eP AK
+2, then DX eK “ H. So we may assume that
+e is not orthogonal toA2 and apply the arguments in part ii) of the above proof toA2` U.
+This yields a sublattice A2` Upmq ĂA2` U of rank three that containse. However, then
+AK
+2 X UpmqK“ AK
+2 X eK, which provesDX eKĂ DX UpmqKĂ DK31. l
+3It would be interesting to come up with a similar argument proving that alsoDK3 is of codimension one.
+Instead one has to pass via the description ofDK3 in terms of divisorsDd and then use the more involved [1,
+Thm. 3.1]. See Proposition 2.11.
+
+=== PDF PAGE 11 ===
+THE K3 CATEGORY OF A CUBIC FOURFOLD 11
+Remark 2.9.Any 0‰ eP rΛ withpeq2“ 0 can be decomposed ase“ e1` e2Pp A2‘ AK
+2qb Q.
+Since A2 is positive deﬁnite, we must havee2 ‰ 0. However, it can happen thate1 “ 0, but
+then DX eK“H , as AK
+2 has signaturep2, 20q and so eK
+2 Ă AK
+2 does not contain any positive
+plane. So classes eP rΛ with e1“ 0 are of no interest to us and we can safely ignore them.
+There is yet another class of hyperplane sections ofD that is of importance to us. We let
+Dsph :“ DX
+ď
+δK,
+where the union is over allδ P rΛ withpδq2 “´ 2. We call it the set ofperiods with spherical
+classes. Indeed, xP D is contained inDsph if and only if the Hodge structure onrΛ deﬁned by
+x admits an integralp1, 1q-class δ withpδq2“´ 2 and those classes typically appear as Mukai
+vectors of spherical objects, see Example 3.10.
+Note that there are natural inclusions
+DK3Ă DsphĂ D,
+for every hyperbolic plane U contains ap´2q-class. However, DK31 is not contained in Dsph
+and, more precisely, the inclusions
+DK3 ⊊ DK31X Dsph ⊊ DK31, Dsph
+are all proper, see Example 2.14 and Proposition 2.15.
+2.6. It is instructive to study the sets DK3 Ă DK31 and DK3 Ă Dsph from a more cubic
+perspective, i.e. in terms of the latticesKd.
+For anyhP KdĂ I2,21 as in Section 2.2 one introduces the hyperplane section
+DX KK
+d Ă PpAK
+2 b Cq
+of all cubic periods orthogonal toKdX AK
+2. In other words,DX KK
+d is the set of cubic periods
+for which the generatorv of KdX AK
+2 is of typep1, 1q, i.e. DX KK
+d “ DX vK. Then one deﬁnes
+Dd :“ DX
+ď
+KK
+d ,
+where the union runs over all h P Kd Ă I2,21 as above. So, for each positive d ” 0, 2p6q
+the set Dd is a countable union of hyperplane sections ofD. Dividing Dd by the subgroup
+˜OphKq“ OpI2,21, hqĂ OpI2,21q of elements ﬁxingh yields Hassett’s irreducible divisor
+Cd :“ Dd{ ˜OphKq.
+Consider the following conditions for an even integerdą 6:
+(˚) d” 0, 2p6q.
+(˚˚) The integerd is not divisible by4, 9, or any prime2‰ p” 2p3q.
+(˚˚1) ni” 0p2q for any primepi” 2p3q in the prime factor decomposition2d“ ś pni
+i .
+
+=== PDF PAGE 12 ===
+12 D. HUYBRECHTS
+Obviously, (˚˚) implies (˚˚1). More precisely, ifd satisﬁes (˚˚) then (˚˚1) holds for allk2d, and
+vice versa.
+Remark 2.10.Conditions (˚) and (˚˚) have ﬁrst been introduced and studied by Hassett [17].
+He shows thatDd is not empty if and only if (˚) is satisﬁed. Moreover, d satisﬁes (˚˚) if and
+only if for all cubicsX with period x contained inDd there exists a polarized K3 surfacepS, Hq
+such that its primitive cohomologyH2pS, Zqpr is Hodge isometric to the Hodge structure on
+KK
+d deﬁned by x. To get polarized K3 surfaces and not only quasi-polarized ones, one has to
+use a result of Voisin [57, Sec. 4, Prop. 1] saying thatH2,2pX, Zqpr does not contain any class
+of square 2.
+Proposition 2.11. With the above notations one has
+DK3“
+ď
+p˚˚q
+Dd and DK31“
+ď
+p˚˚1q
+Dd,
+where d runs through alld satisfying (˚˚) resp. (˚˚1).
+Proof. The ﬁrst equality is due to Addington–Thomas [1, Thm. 3.1]. Indeed, they show that
+xP Dd with d satisfying (˚˚) if and only if there exists hyperbolic planeUĂ rΛ which is of type
+p1, 1q with respect tox. The latter is in turn equivalent toxP DK3, see Lemma 2.5.4
+Maybe surprisingly, the second assertion is easier to prove. We include the elementary argu-
+ment. Due to Corollary 2.8 we knowDK31 “ DXŤ eK with 0‰ eP rΛ isotropic. So for one
+inclusion one has to show that eachDX eK is of the formDd with d satisfying (˚˚1). Decompose
+e“ e1` e2Pp A2‘ AK
+2qb Q as in Remark 2.9. Let thenvP AK
+2 such that Q¨ e2X AK
+2 “ Z¨ v
+and deﬁne KdĂ I2,21 as the sublattice spanned byvP AK
+2 Ă I2,21 and h. We have to show that
+the discriminant d of Kd satisﬁes (˚˚1).
+Assume ﬁrst that A2‘ Z¨ vĂ rΛ is primitive. Then d” 0p6q and d“´ 3pvq2, see Section
+2.2. As eP A2‘ Z¨ v in this case, the quadratic equation2px2
+1` x2
+2´ x1x2q`p vq2x2“ 0 admits
+an integral solution. However, it is a classical result that
+(2.5) 2n“p wq2
+4The ‘only if’ direction is a consequence of Hassett’s original result saying thatx P Dd with d satisfying
+(˚˚) if and only if there exists a polarized K3 surfacepS,Hq such thatH 2pS, Zqprim is Hodge isometric to the
+Hodge structure onKK
+d given byx. As the orthogonal complement ofH 2pS, Zqprim Ă rHpS, Zq» rΛ contains a
+hyperbolic plane, by [47, Thm. 1.14.4] this Hodge isometry extends to a Hodge isometry ofrHpS, Zq with the
+one on rΛ given byx. For the other direction one has to show that any Hodge isometry betweenrHpS, Zq and
+the one onrΛ given byx can be used to get a Hodge isometry between the Hodge structure onKK
+d XAK
+2 Ă rΛ
+and H 2pS, Zqprim for some polarization onS.
+
+=== PDF PAGE 13 ===
+THE K3 CATEGORY OF A CUBIC FOURFOLD 13
+for some wP A2 if and only ifn“ ś pni
+i with ni” 0p2q for all pi” 2p3q, see [32].5 But clearly
+this holds forn“´p vq2{2 if and only ifd“ 6n satisﬁes (˚˚1).
+Next assume that A2‘ Z¨ v Ă rΛ has index three in its saturation. Hence,d ” 2p6q and
+3d“´p vq2. Then argue as before, but now with the isotropic vector3eP A2‘ Z¨ v and with
+n“´p vq2{2“ 3d{2.
+Going the argument backwards proves the inverse inclusion. l
+So in particular, althoughQK3Ă QK31Ă Q are countable unions of codimension two subsets,
+their restrictions DK3Ă DK31Ă D to D are countable unions of codimension one subsets. For
+DK31 we have observed this already in Section 2.5.
+Remark 2.12. As mentioned in [1, 2] and explained to me by Addington, condition (˚˚) is in
+fact equivalent to the existence of a primitivewP A2 with d“p wq2. And, as has become clear
+in the above proof, condition (˚˚1) is equivalent to the existence of a (not necessarily primitive)
+wP A2 with d“p wq2.
+The ﬁrst values ofdą 6 that satisfy the various conditions are
+(˚) 8 12 14 18 20 24 26 30 32 36 38 42 44 48
+(˚˚) 14 26 38 42
+(˚˚1) 8 14 18 24 26 32 38 42
+Example 2.13. For certain d the condition that the periodxP D of a cubic X is contained
+in Dd has a geometric interpretation, see [17, Sec. 4]. For example,x P D8 if and only ifX
+contains a planeP2Ă X or if X is a Pfaﬃan cubic, thenxP D14.
+Example 2.14.i) Consider d“ 24 which obviously satisﬁes (˚˚1) but not (˚˚), i.e. DdĂ DK31
+but DdĆ DK3. Also, DdĂ Dsph. Indeed, if v generates AK
+2 X Kd, thenpvq2“´ 8 and hence
+there exists δP A2‘ Z¨ v withpδq2“´ 2, e.g. 2λ1` λ2` v. So, as mentioned before, one has
+a proper inclusion
+DK3 ⊊ DK31X Dsph.
+ii) It is also easy to see thatDsphĆ DK31. Indeed, consider the standard embeddingA2Ă
+U‘ U Ă rΛ (see Section 2.1) and lete, f be the standard basis of another copy ofU inside rΛ
+orthogonal toA2. Then δ :“ λ1`e´2f is ap´2q-class. However, A2`Z¨δ does not contain any
+isotropic vector (use again (2.5)) and hencepA2` Z¨ δqK cannot be of the formpA2` UpmqqK
+as A2` Upmq always contains isotropic vectors.
+5E.g. a primep can be written asx2` 3y2 if and only ifp“ 3 orp” 1p3q, see [16]. Since4px2`xy`y2q“
+p2x`yq2` 3y2 andpx2
+1` 3y2
+1q¨p x2
+2` 3y2
+2q“p x1x2´ 3y1y2q2` 3px1y2`x2y1q2, this proves one direction. The
+other one uses a computation with Hilbert symbols to determine when´nx2
+1`x2
+2` 3x2
+3 “ 0 has a rational
+solution.
+
+=== PDF PAGE 14 ===
+14 D. HUYBRECHTS
+It would be interesting to ﬁnd a numerical condition (:) such that Dsph “ Ť Dd with the
+union over alld satisfying (:). The best we have to oﬀer at this time is the following
+Proposition 2.15. Assume DdĂ DK31 and 9|d. Then DdĆ Dsph.
+Proof. Consider a ﬁxed Kd and the corresponding generator v of KdX AK
+2. As 9|d, clearly
+d” 0p6q and so A2‘ Z¨ vĂ rΛ is primitive. If there were ap´2q-class δP rΛ with DX KK
+d “
+DX vKĂ DX δK, then δP A2` Z¨ v and so δ“ w` kv for some wP A2 and kP Z. But then
+´2“p wq2´ k2d{3. However, if9|d, then k2d{3” 0p3q and hencepwq2“ 2m with m” 2p3q,
+which contradicts (2.5). l
+The following immediate consequence is crucial for the proof of Theorem 1.2, see Section 6.1.
+Corollary 2.16. The locus of twisted K3 periods DK31 contains inﬁnitely many hyperplane
+sections Dd with DdĆ Dsph. l
+2.7. In [20] we have shown that points inQ can be understood as periods of generalized K3
+surfaces. It is useful to distinguish three types:6
+i) Periods of ordinary K3 surfaces are parametrized by QK3. Up to the action of OprΛq,
+the set of these periods is the intersection of Q with the linear codimension two subspace
+PpΛb CqĂ PprΛb Cq.
+ii) More generally, one can consider periods of the formσ` B^ σ, where σP Λb C is an
+ordinary period and B P Λb C (but not necessarily B P Λb Q). Up to the action ofOprΛq,
+these periods are parametrized by the intersection ofQ with the linear subspace of codimension
+one PppΛ‘ Z¨ fqb CqĂ PprΛb Cq. Here, f is viewed as the generator ofH4. Note that by
+deﬁnition QK31 is the subset of periods for whichB can be chosen inΛb Q.
+iii) Periods of the formexppB` iωq“ 1`p B` iωq`pp B2´ ω2q{2`p B.ωqiq are geometrically
+interpreted as periods associated with complexiﬁed symplectic forms. Here, the ﬁrst and third
+summand are considered inU » H0‘ H4. Periods of this type are parametrized by an open
+dense subset ofQ.
+In particular, all cubic periods parametrized by D Ă Q should have an interpretation in
+terms of these three types. This has been discussed above for type i) and has led to consider
+the intersection DK3“ DX QK3. For type ii) withB rational the intersection with the cubic
+period domain gives DK31. It is now natural to ask whether the remaining periods, so the
+periods in DzDK31, are of type ii) with B not rational or rather of type iii), i.e. related to
+complexiﬁed symplectic forms. It is the latter, as shown by the following
+6The discussion has been prompted by a question of Ben Bakker.
+
+=== PDF PAGE 15 ===
+THE K3 CATEGORY OF A CUBIC FOURFOLD 15
+Proposition 2.17. The Hodge structure of a cubic periodx P D is Hodge isometric to the
+Hodge structure of a twisted projective K3 surfacepS, αq, i.e.xP DK31, or to the Hodge structure
+associated withexppB` iωq.
+Furthermore, if the Hodge structure ofx is Hodge isometric to a Hodge structure of the type
+σ` B^ σ, then B can be chosen rational.
+Proof. One ﬁrst observes that, analogously to Lemma 2.5, ii), a periodx P Q is of the type
+ii) if and only if the integralp1, 1q-part of the Hodge structure associated withx contains an
+isotropic direction. Indeed, if x is of type ii), i.e. of the formσ` B^ σ, then H4 provides
+an isotropic direction of typep1, 1q. For the converse use that any isotropic direction can be
+completed to a hyperbolic planeU as a direct summand ofrΛ. Now regardU as H0‘ H4 with
+H4 as the given isotropic direction, which is of typep1, 1q. Hence x is indeed of type ii).
+Now let xP DX Q be of type ii). It is enough to show that thenxP DK31. The integral
+p1, 1q-part of the Hodge structure associated withx contains A2 and an isotropic direction, say
+Z¨ f. Moreover, A2 and Z¨ f cannot be orthogonal, as otherwise the orthogonal complement
+pA2‘ Z¨ fqK in rΛ has only one positive direction and could, therefore, not accommodate for
+x. But then the arguments of part ii) of the proof of Lemma 2.7 show thatA2‘ Z¨ f contains
+some Upnq and hence xP QK31 by Lemma 2.5, ii). l
+Note that both,
+DĂ Q and QK3Ă Q,
+are of codimension two and that they both parametrize periods that can be interpreted in
+complex geometric terms (in contrast to the ‘symplectic periods’ of the formexppB` iωq).
+In fact, periods in D are even algebro-geometric in the sense that essentially all of them are
+associated with cubic fourfoldsXĂ P5, whereas most K3 surfaces are of course not projective.
+It would be interesting to exhibit other subsets (of codimension two) of periods inQ with
+complex geometric interpretations.
+In categorical language one would want to interpret the inclusionD Ă Q for points in the
+complement ofDK31 as saying that the cubic K3 categoryAX associated with the cubic fourfold
+XĂ P5 corresponding toxP DzDK31 is equivalent to the derived Fukaya categoryDFukpB`iωq
+associated with a complexiﬁed symplectic formB` iω. Deciding which symplectic structures
+occur here is in principle possible, but establishing an equivalence
+AX» DFukpB` iωq
+will be diﬃcult even in special cases.
+The categorical interpretation ofDK3Ă Q is the content of [1], where it is proved that at least
+for a Zariski open dense set of periodsxP DK3 the cubic K3 categoryAX really is equivalent
+to DbpSq of the K3 surfaceS realizing the Hodge structure associated withx. This paper deals
+with the categorical interpretation ofDK31Ă Q.
+
+=== PDF PAGE 16 ===
+16 D. HUYBRECHTS
+Remark 2.18.The period domainQĂ PprΛbCq contains DĂ Q as a codimension two subset,
+but it also contains natural codimension one subspaces. E.g. for a K3 surfaceS and the Mukai
+vector v“p 1, 0, 1´ nqP rH1,1pS, Zq the hyperplane section QX vK can be seen as the period
+domain for deformations of the Hilbert schemeSrns. However, from a categorical point of view
+the situation is less satisfactory as deformations of the categoryDbpSq along QX vK are at best
+understood to ﬁnite order thickenings of the periodrσsP QX vK.
+3. The cubic K3 category
+Let X Ă P5 be a smooth cubic hypersurface. Thecubic K3 categoryassociated with X is
+the category
+AX :“x OX , OXp1q, OXp2qyK :“t EP DbpXq| HompOXpiq, Er˚sq“ 0 for i“ 0, 1, 2u.
+The category has ﬁrst been studied by Kuznetsov in [33, 37]. It behaves in many respects like
+the derived categoryDbpSq of a K3 surfaceS. In particular, the double shiftE  →→ Er2s deﬁnes
+a Serre functor ofAX (see [34, 35, Cor. 4.3] and [38, Rem. 4.2]) and the dimension of Hochschild
+homology of AX and of DbpSq coincide due to [35].
+Example 3.1. Due to the work of Kuznetsov [33, 37], certain cubic K3 categoriesAX are
+known to be equivalent to bounded derived categoriesDbpS, αq of twisted K3 surfacespS, αq.
+For example, if the periodx P D of a cubic X is contained in D8, then X contains a plane
+and for generic choices there exists a twisted K3 surfacepS, αq with AX» DbpS, αq. Similarly,
+if X is a Pfaﬃan cubic and hencexP D14, then AX » DbpSq for the K3 surfaceS naturally
+associated with the PfaﬃanX.
+Remark 3.2. Despite the almost perfect analogy between the cubic K3 categoryAX and the
+derived categoryDbpSq of K3 surfaces, certain fundamental issues are more diﬃcult forAX. For
+example, to the best of my knowledge noAX, which is not equivalent to the derived category
+DbpS, αq of some twisted K3 surfacepS, αq, has yet been endowed with a bounded t-structure,
+let alone a stability condition. See [54, 55] for a discussion of special stability conditions on
+certain AX of the formDbpS, αq.
+The semi-orthogonal decompositionDbpXq“x AX ,KAXy with KAX “x OX , OXp1q, OXp2qy
+comes with the full embeddingi˚ : AX
+↘ ↙ →→ DbpXq (which is often suppressed in the notation)
+and the left resp. right adjoint functorsi˚, i! : DbpXq →→ AX, see [34, Sec. 3] for a survey. In
+particular, for allEP DbpXq there are exact triangles
+E1 →→ E →→ i˚i˚E and i˚i!E →→ E →→ E2
+with E1PKAX and E2P AK
+X. The adjoint functors are related by functorial isomorphisms
+i˚E» i!pEb ωXqr2s.
+
+=== PDF PAGE 17 ===
+THE K3 CATEGORY OF A CUBIC FOURFOLD 17
+Moreover, according to [36], the compositions
+i˚˝ i˚, i˚˝ i! : DbpXq →→ AX
+↘ ↙ →→ DbpXq
+are of Fourier–Mukai type. More precisely, DbpXq “ xAX ,KAXy induces a certain semi-
+orthogonal decompositionDbpXˆXq“x DbpXq⊠AX , DbpXq⊠KAXyand theDbpXq⊠AX-part
+of O∆, say P P DbpXq ⊠ AX, is the Fourier–Mukai kernel fori˚˝ i˚, i.e. there exists an exact
+triangle Q →→ O∆ →→ P with QP DbpXˆ Xq contained in the category generated by objects of
+the form F ⊠ OXpiq, with F P DbpXq and i“ 0, 1, 2.
+3.1. For a K3 surface S the Mukai lattice rHpS, Zq is endowed with the Hodge structure de-
+termined by rH2,0pSq“ H2,0pSq and by requiringrH2,0K rH1,1. Using the natural isomorphism
+KtoppSq» H˚pS, Zq this Hodge structure can also be regarded as a Hodge structure onKtoppSq.
+In [1] Addington and Thomas introduce a similar Hodge structure associated with the cate-
+gory AX, deﬁnedon KtoppAXqanddenotedby rHpAX , Zq. Here, KtoppAXqĂ KtoppXqistheor-
+thogonal complement oftrOs,rOp1qs,rOp2qsu with respect to the pairingχpα, βq“x vpαq, vpβqy
+deﬁned in terms of the Mukai vector v : KtoppXq →→ H˚pX, Qq and the Mukai pairing on
+H˚pX, Qq. It is not diﬃcult to see that one has in fact an orthogonal direct sum decomposition
+KtoppXq“ KtoppAXq‘xr OXs,rOXp1qs,rOXp2qsy.
+As H˚pX, Zq is torsion free,KtoppXq and
+rHpAX , Zq :“ KtoppAXq
+are as well. The Hodge structure is then deﬁned by rH2,0pAXq :“ v´1pH3,1pXqq and the
+condition rH2,0 K rH1,1. Furthermore, NpAXq and the transcendental lattice TpAXq of AX
+are introduced in terms of this Hodge structure asrH1,1pAX , Zq resp. its orthogonal comple-
+ment rH1,1pAX , ZqK. As a lattice rHpAX , Zq is independent of X and by [1] any equivalence
+AX » DbpSq (see Example 3.1) induces a Hodge isometryrHpAX , Zq» rHpS, Zq (cf. Proposi-
+tion 3.3). In particular,rHpAX , Zq for all smooth cubics is abstractly isomorphic torΛ.
+As explained in [1, Prop. 2.3], the classesλj :“r i˚OℓpjqsP rH1,1pAX , Zq, for a lineℓĂ X and
+j “ 1, 2, can be viewed as the standard generators of a latticeA2 Ă rH1,1pAX , Zq. Moreover,
+the Mukai vectorv : rHpAX , Zq →→ H˚pX, Qq induces an isometry
+xλ1, λ2yK „ →→ hK“ H4pX, Zqprim.
+In particular, any markingϕ: hK „ →→ AK
+2 induces a markingxλ1, λ2y‘x λ1, λ2yK „ →→ A2‘ AK
+2 and
+further a marking
+(3.1) rHpAX , Zq
+„ →→rΛ.
+
+=== PDF PAGE 18 ===
+18 D. HUYBRECHTS
+Conversely, any marking (3.1) inducing the standard identiﬁcationxλ1, λ2y
+„ →→ A2 yields a
+marking H4pX, Zqprim
+„ →→ AK
+2. In this sense, (an open set of) pointsxP D will be considered
+as periods of cubic K3 categoriesAX via their Hodge structuresrHpAX , Zq.
+Note that the positive directions ofrHpAX , Zq come with a natural orientation, given by real
+and imaginary part ofrH2,0pAXq and the oriented baseλ1, λ2 of A2Ă rH1,1pAX , Zq.
+3.2. As we are also interested in equivalencesDbpS, αq
+„ →→ AX, we collect a few relevant facts
+dealing with the topological K-theory of twisted K3 surfacespS, αq. As it turns out, the topo-
+logical setting does not require any new arguments. In order to speak of twisted sheaves or bun-
+dles, let us ﬁx a classBP H2pS, Qq which under the exponential mapH2pS, Qq →→ H2pS, O˚
+Sq is
+mapped to α. Next choose a Čech representativetBijku of BP H2pS, Qq and consider the asso-
+ciated Čech representativetαijk :“ exppBijkqu of α. This allows one to speak oftαijku-twisted
+sheaves and bundles, in the holomorphic as well as in the topological setting.
+As explained in [21, Prop. 1.2], anytαijku-twisted bundleE can be untwisted to a bundleEB
+by changing the transition functionsϕij of E to exppaijq¨ ϕij, where the continuous functions
+aij satisfy´aij` aik´ ajk“ Bijk. The process can be reversed and so the categories oftαijku-
+twisted topological bundles is equivalent to the category of untwisted topological bundles. In
+particular,
+KtoppS, αq» KtoppSq
+which composed with the Mukai vector yields an isomorphismKtoppS, αq » rHpS, α, Zq that
+identiﬁes the image ofKpS, αq →→ KtoppS, αq with H1,1pS, α, Zq.
+The next result is the twisted version of the observation by Addington and Thomas mentioned
+earlier.
+Proposition 3.3. Any linear, exact equivalenceAX» DbpS, αq induces a Hodge isometry
+rHpAX , Zq» rHpS, α, Zq.
+Proof. By results due to Orlov in the untwisted case and due to Canonaco and Stellari [13] in
+the twisted case, any fully faithful functorΦ: D bpS, αq →→ DbpXq is of Fourier–Mukai type,
+i.e. Φ » ΦE for some E P DbpS ˆ X, α´1 ⊠ 1q. Therefore, Φ induces a homomorphism
+ΦK
+E : KtoppS, αq →→ KtoppXq, see [18, Rem. 3.4].
+If Φ is induced by an equivalenceDbpS, αq
+„ →→ AX, then ΦK
+E : KtoppS, αq
+„ →→ KtoppAXq is an
+isomorphism and in fact a Hodge isometryrHpS, α, Zq
+„ →→ rHpAX , Zq. The compatibility with
+the Hodge structure follows from the twisted Chern characterch´α⊠1pEq of the Mukai kernel
+being of Hodge type. See [21, Sec. 1] for the notion of twisted Chern characters. That the
+quadratic form is respected as well is proved by mimicking the argument for FM-equivalences,
+see e.g. [23, Sec. 5.2].
+
+=== PDF PAGE 19 ===
+THE K3 CATEGORY OF A CUBIC FOURFOLD 19
+(We are suppressing a number of technical details here. As explained before, the actual
+realization of the Hodge structurerHpS, α, Zq depends on the choice of aB P H2pS, Qq lifting
+α. Similarly, the Chern characterch´α⊠1pEq also actually depends onB.) l
+3.3. The above result generalizes toFM-equivalences AX
+„ →→ AX1, i.e. to equivalences for which
+the composition DbpXq →→ AX
+„ →→ AX1 →→ DbpX1q admits a Fourier–Mukai kernel. It has been
+conjectured that in fact any linear exact equivalence is a FM-equivalence, but the existing
+results do not cover our case.
+Proposition 3.4. Any FM-equivalenceAX
+„ →→ AX1 induces a Hodge isometry
+rHpAX , Zq
+„ →→ rHpAX1, Zq.
+Proof. The argument is a modiﬁcation of the above. l
+The following improves upon a result in [6] where it is shown that for a cubicX containing
+a plane there exist at most ﬁnitely many (up to isomorphisms) cubicsX1, . . . , Xn containing a
+plane with AX» AX1» . . .» AXn.
+Corollary 3.5.For any given smooth cubicXĂ P5 there exist only ﬁnitely many smooth cubics
+X1Ă P5 up to isomorphism such that there exists a FM-equivalenceAX
+„ →→ AX1.
+Proof. The proof follows the argument for the analogous statement for K3 surfaces [8] closely,
+but needs a modiﬁcation at one point that shall be explained.
+Due to the proposition, it suﬃces to prove that up to isomorphism there exist only ﬁnitely
+many cubicsX1 such that there exists a Hodge isometryϕ: rHpAX , Zq
+„ →→ rHpAX1, Zq. Any such
+Hodge isometry induces a Hodge isometryϕT : TpAXq
+„ →→ TpAX1q and an isometry of lattices
+NpAXq
+„ →→ NpAX1q. We may assume
+TpAXqĂ AK
+2 Ă rHpAX , Zq and A2Ă NpAXq
+and similarly for X1. Note however that these inclusions need not be respected byϕ. The
+orthogonal complement of TpAXqK Ă AK
+2 is just NpAXqX AK
+2 and the two inclusions ofAK
+2
+induce two Hodge structures onAK
+2. Note that if the Hodge isometryϕT can be extended to
+a Hodge isometry AK
+2
+„ →→ AK
+2, which can be interpreted as a Hodge isometryH4pX, Zqprim »
+H4pX1, Zqprim, then the Global Torelli theorem [57] implies thatX» X1.
+A purely lattice theoretic argument, which is slightly more involved than the original one
+in [8], shows that the set of isomorphism classes of lattices Γ appearing as NpAX1qX AK
+2
+is ﬁnite. Once this has been achieved one can assume that Γ is ﬁxed. However, for two
+Fourier–Mukai partners realizing a ﬁxed Γ, any Hodge isometry TpAX1q » TpAX2q can be
+extended to a Hodge isometry TpAX1q‘ Γ » TpAX2q‘ Γ. As the ﬁnite index overlattices
+TpAXiq‘ ΓĂ H4pXi, Zqprim are all contained inpTpAXiq‘ Γq˚, there are only ﬁnitely many
+
+=== PDF PAGE 20 ===
+20 D. HUYBRECHTS
+choices for them, which allows one to reduce to the case that the Hodge isometry extends to a
+Hodge isometry H4pX1, Zqprim» H4pX2, Zqprim.
+For the lattice theory, ﬁx even latticesΛ1 and Λ. In our situation,Λ1“ TpAXq and Λ“ AK
+2.
+One proves that up to isomorphisms there exist only ﬁnitely many latticesΛ2 occurring as
+the orthogonal complement of some primitive embeddingΛ1
+↘ ↙ →→ Λ. For unimodular Λ this is
+standard, buttheproofcanbetweakedtocoverthemoregeneralstatement. Ofcourse, itsuﬃces
+to show that only ﬁnitely many discriminant formspAΛ2, qΛ2q can occur. NowG :“ Λ{pΛ1‘Λ2q
+is naturally a ﬁnite subgroup ofΛ˚{pΛ1‘ Λ2q of index d“| discpΛq|. The ﬁrst projection from
+GĂ Λ˚{pΛ1‘ Λ2qĂ AΛ1‘ AΛ2 deﬁnes an isomorphism ofG with a ﬁnite subgroup ofAΛ1.
+This leaves only ﬁnitely many possibilities for the ﬁnite groupsG and Λ˚{pΛ1‘ Λ2q. Note that
+Λ{pΛ1‘ Λ2qĂ AΛ1‘ AΛ2 is isotropic but not necessarily the biggerΛ˚{pΛ1‘ Λ2qĂ AΛ1‘ AΛ2.
+However, the restriction of the quadratic form toΛ˚{pΛ1‘Λ2q takes values only inp2{d2qZ{2Z.
+For ﬁxed GĂ AΛ1 the restriction of qΛ1 to G can be extended in at most ﬁnitely many ways
+to a quadratic form onΛ˚{pΛ1‘ Λ2q with values inp2{d2qZ{2Z. Now use the other projection
+Λ˚{pΛ1‘ Λ2q →→ →→ AΛ2 to see that there are only ﬁnitely many possibility for the groupAΛ2 and
+also for the quadratic formqΛ1. l
+Two general cubics have FM-equivalent K3 categories only if they are isomorphic:
+Corollary 3.6. Let X be smooth cubic withrk H2,2pX, Zq“ 1. For a smooth cubicX1 there
+exists a FM-equivalenceAX» AX1 if and only ifX» X1.
+Proof. The assumption implies thatNpAXq» A2. As any FM-equivalenceAX» AX1 induces a
+Hodgeisometry rHpAX , Zq» rHpAX1, Zq, alsoNpAX1q» A2. Moreover, thenaturalinclusionsof
+thetranscendentallattices TpAXqĂ AK
+2 and TpAX1qĂ AK
+2 areinfactequalitiesandtheinduced
+Hodge isometry TpAXq» TpAX1q can therefore be read as a Hodge isometryH4pX, Zqprim»
+H4pX1, Zqprim, which by the Global Torelli theorem [57] implies thatX» X1. l
+Note that in contrast general K3 surfaces S, i.e. such that ρpSq “ 1, usually have non-
+isomorphic FM-partners, see [48, 52]. The result may also be compared to the main result
+of [6] showing that for all cubic threefoldY Ă P4 the full subcategoryxO, Op1qyK Ă DbpYq
+determines Y.
+Corollary 3.7. Assume X, X1 Ă P5 are two smooth cubics such that there exists a FM-
+equivalence AX» AX1. If rk H2,2pX, Zqą 13, then X» X1.
+Proof. This follows more or less the standard argument. Any FM-equivalence AX » AX1
+induces a Hodge isometry rHpAX , Zq » rHpAX1, Zq and hence a Hodge isometry TpAXq »
+TpAX1q. The latter extends to a Hodge isometryTpAXq‘ Zp´3q» TpAX1q‘ Zp´3q by id on
+Zp´3q which is declared to be of typep1, 1q. Now use that there exists a primitive embedding of
+Hodge structures TpAXq‘ Zp´3q ↘ ↙ →→ H4pX, Zqp´1q, that sendsZp´3q to the line spanned by
+
+=== PDF PAGE 21 ===
+THE K3 CATEGORY OF A CUBIC FOURFOLD 21
+c1pOp1qq2, and similarly forX1. By Nikulin’s [47, Thm. 1.14.4] the underlying lattice embedding
+is unique under our assumption, which leads to a Hodge isometry H4pX, Zq » H4pX1, Zq
+respecting the squares of the hyperplane classes. Hence, by the Global Torelli theoremX »
+X1. l
+Remark 3.8.In principle it should be possible to count FM-partners ofAX for general special
+cubics XP Cd (i.e. rk H2,2pX, Zq“ 2). On the level of Hodge theory, this amounts to count the
+number of Hodge structures onrΛ parametrized by D which are Hodge isometric torHpAX , Zq
+up to those that are Hodge isometric onAK
+2. The arguments should follow [19, Thm. 1.4], see
+also [52], with the additional problem thatAK
+2 is not unimodular.
+However, as the period map for cubics is not surjective, this would only provide an upper
+bound for the number of isomorphism classes of cubics X1 for which there exists a Hodge
+isometry rHpAX1, Zq» rHpAX , Zq. Note that due to Theorem 1.5 this would yield control over
+the number of isomorphism classes ofX1 with AX1» AX, at least for generalXP Cd.
+3.4. We are interested in the group AutpAXq of isomorphism classes of FM-equivalences
+Φ: AX
+„ →→ AX. As any FM-equivalenceΦ induces a Hodge isometry
+ΦH : rHpAX , Zq
+„ →→ rHpAX , Zq,
+there is a natural homomorphism
+(3.2) ρ: AutpAXq →→ AutprHpAX , Zqq, Φ  →→ ΦH .
+Here, AutprHpAX , Zqq denotes the group of Hodge isometries. We say thatΦ is symplectic if
+the induced action on rH2,0pAXq, or equivalently onTpAXq, is the identity. The subgroup of
+symplectic autoequivalences shall be denoted byAutspAXq and (3.2) induces
+ρ: AutspAXq →→ AutprH1,1pAX , Zqq.
+Remark 3.9. By Aut`prHpAX , Zqq one denotes the subgroup of Hodge isometries preserving
+a given orientation of the four positive directions. We expect thatImpρq“ Aut`prHpAX , Zqq.
+This is known ifAX» DbpSq, see [26], and one inclusion can be proved for non-special cubics,
+see Theorem 1.2.
+Example3.10. ThemostimportantautoequivalencesofK3categories, responsibleforthecom-
+plexity of the groupsAutpDbpSqq and AutpAXq in particular, are spherical twists. Associated
+with any spherical objectAP AX, i.e. Ext˚pA, Aq» H˚pS2q, there exists a FM-equivalence
+TA : AX
+„ →→ AX
+that sends EP AX to the coneTApEq of the evaluation mapRHompA, Eqb A →→ E. This is
+indeed a FM-equivalence – its kernel can be described as the cone of the compositionA_ ⊠A tr →→
+O∆ →→pid, iq˚pO∆q, wherepid, iq˚ is the natural projectionDbpXˆ Xq →→ DbpXq ⊠ AX.
+
+=== PDF PAGE 22 ===
+22 D. HUYBRECHTS
+The action of the spherical twist TA : AX
+„ →→ AX on rHpAX , Zq is given by the reﬂection
+sδ : v  →→ v`x v, δy¨ δ, where δP rH1,1pAX , Zq is the Mukai vector ofA.
+In [35] Kuznetsov considers the functor
+Ψ: AX →→ AX , E  →→ i˚pi˚Eb OXp1qq,
+which turns out to be an equivalence satisfyingΨ3 » r´1s. Clearly, by construction Ψ is a
+FM-equivalence. In fact, for the proof thatAX is a K3 category this functor is crucial. Deﬁne
+Φ0 :“ Ψr1s,
+which satisﬁes Φ3
+0»r 2s.
+Proposition 3.11. The autoequivalenceΦ0 : AX
+„ →→ AX is symplectic and the induced action
+ΦH
+0 : rHpAX , Zq
+„ →→ rHpAX , Zq corresponds to the element inOpA2q that is given by the cyclic
+permutation of the positive roots.
+Proof. As the action on cohomology is independent of the speciﬁc cubicXĂ P5, we can assume
+that the transcendental latticeTpAXqĂ rHpAX , Zq is of odd rank. However,˘id are the only
+Hodge isometries of an irreducible Hodge structure of weight two of K3 type of odd rank, cf.
+[29, Cor. 3.3.5], and, asΦ3
+0»r 2s acts trivially onrHpAX , Zq, we must haveΦH
+0 “ id on TpAXq,
+i.e. Φ0 is symplectic.
+If X is a cubic withA2» rH1,1pAX , Zq, thenΦH
+0 corresponds to an element inOpA2q. As Φ0
+is symplectic, ΦH
+0 “ id on AK
+2 and hence ΦH
+0 “ id on the discriminant groupAA2. Therefore,
+ΦH
+0 P S3, see Remark 2.1. For a cubicX such that AX » DbpSq, we know thatΦH
+0 must be
+orientation preserving by [26] and thusΦH
+0 P A3» Z{3Z in general.
+It remains to show that ΦH
+0 ‰ id. One way to see this relies on a direct computation.
+Another possibility is to use the recent result of Bayer and Brigeland [4] conﬁrming Bridgeland’s
+conjecture in [7] in the case of a K3 surfaceS of Picard rank one. More precisely, due to [4, Thm.
+1.4] for a K3 surfaceS with ρpSq“ 1 the subgroup ofAutpDbpSqq of autoequivalences acting
+trivially on rHpS, Zq is the product ofZr2s and the free group generated by squares of spherical
+twists T 2
+E associated with spherical vector bundlesE on S. (That this is a reformulation of
+Bridgeland’s original conjecture forρpSq“ 1 had also been observed by Kawatani [30].) Hence,
+if ΦH
+0 “ id, thenΦ0“p ˚iT 2
+Eiq˝r 2ks, but then clearlyΦ3
+0 could not be isomorphic to the double
+shiftr2s. l
+Corollary 3.12. For every smooth cubicXĂ P5 the group of symplectic FM-autoequivalences
+AutspAXq contains an inﬁnite cyclic groupZĂ AutspAXq generated byΦ0 such that
+Z¨r 2sĂ Z
+
+=== PDF PAGE 23 ===
+THE K3 CATEGORY OF A CUBIC FOURFOLD 23
+is a subgroup of index three and such that the natural mapρ: Aut spAXq →→ AutprHpAX , Zqq
+deﬁnes an isomorphism of Z{Zr2s with the subgroup S3 Ă OpA2q ĂOprHpAX , Zqq of cyclic
+permutations of the positive roots ofA2. l
+Remark 3.13. The subgroup SOpA2q ĂOpA2q of orientation preserving isometries ofA2 is
+A3ˆ Z{2Z» Z{3Zˆ Z{2Z, see Remark 2.1. Its action can be ‘lifted’ to an action onAX via
+the natural extension
+0 →→ Z¨r 2sˆp Z¨ Φ0ˆ Z¨r 1sq{pΦ3
+0´r 2sq →→ SOpA2q →→ 0,
+which an be seen as induced by the universal cover ofSOpA2b Rq.
+Inspired by Bridgeland’s conjecture for K3 surfaces in [7], we state the following (see [28]
+explaining this reformulation):
+Conjecture 3.14. There exists an isomorphism
+AutspAXq» πst
+1rP0{Os.
+Here, P Ă PprH1,1pAX , ZqbCqistheperioddomaindeﬁnedanalogouslyto D and QinSection
+2.3 and P0 :“ PzŤ δK, with the union over allp´2q-classes δP rH1,1pAX , Zq. Moreover, OĂ
+OprH1,1pAX , Zqq the subgroup of all isometries acting trivially on the discriminant. However,
+contrary to the case of untwisted K3 surfaces we do not even have a natural map between these
+two groups at the moment.
+3.5. The cubic K3 category AX can also be described as a category of graded matrix factor-
+izations, see [49]. More precisely, there exists an exact linear equivalence
+AX» MFpW, Zq.
+Here, W P R :“ krx0, . . . , x5s is a cubic polynomial deﬁningX. The objects of MFpW, Zq are
+pairspK α →→ L, L β →→ Kp3qq, where K and L are ﬁnitely generated, free, gradedR-modules
+and α, β are graded R-module homomorphisms withβ˝ α“ W¨ id“ α˝ β. Recall that Kpnq
+for a gradedR-module K“ À Ki is the graded module withKpnqi“ Kn`i. Homomorphisms
+in MFpW, Zq are the obvious ones modulo those that are homotopic to zero (everythingZ{2Z-
+periodic).
+The shift functor that makesMFpW, Zq a triangulated category is given by
+pK α →→ L, L β →→ Kp3qqr1s“p L ´β →→ Kp3q, Kp3q ´α →→ Lp3qq.
+Thus, the double shift is
+pK α →→ L, L β →→ Kp3qqr2s»p Kp3q α →→ Lp3q, Lp3q β →→ Kp6qq.
+
+=== PDF PAGE 24 ===
+24 D. HUYBRECHTS
+Viewing AX as the category of graded matrix factorizations allows one to describeΦ0 in
+Proposition 3.11 alternatively as follows. Consider the grade shift functor, i.e. the equivalence
+described by
+Φ0 : MFpW, Zq
+„ →→ MFpW, Zq
+pK α →→ L, L β →→ Kp3qq  →→ pKp1q α →→ Lp1q, Lp1q β →→ Kp4qq.
+Then, obviously,
+Φ3
+0»r 2s.
+To actually show that theΦ0 constructed in this way coincides with the one of Proposition 3.11,
+one would need to carry out a computation as in [3, Sec. 5] or [31, Sec. 5]. However, for abstract
+reasons Φ0 with this description is certainly also of Fourier–Mukai type, i.e.Φ0P AutpAXq. To
+see this, note ﬁrst thatΦ0 obviously has an enhancement, i.e. it lifts to the dg-enhancement of
+MFpW, Zq provided by the categoryMFdgpW, Zq (which has the same objects and its morphisms
+are Z{2Z-periodic morphisms of complexes of arbitrary degree). Asi˚ and i˚ are of Fourier–
+Mukai type and thus admit dg-enhancements, also the compositioni˚˝ Φ0˝ i˚ does. By [56]
+this implies thati˚˝ Φ˝ i˚ is a Fourier–Mukai functor and henceΦ0 is of Fourier–Mukai type.
+4. The F ano v ariety
+For the sake of completeness, let us also mention the recent results of Addington [2] build-
+ing upon an observation of Hassett [17], see also [43]. For this consider the Fano variety of
+lines FpXq, which, due to work of Beauville and Donagi [5], is a four-dimensional irreducible
+holomorphic symplectic variety deformation equivalent toHilb2pK3q.
+‚ For a smooth cubicX and its periodxP D the following two conditions are equivalent:
+i) xP Dd such that d satisﬁes (˚˚);
+ii) FpXq is birational to a moduli space of stable sheavesMpvq on some K3 surfaceS.
+‚ For a smooth cubicX and its periodxP D the following two conditions are equivalent:
+iii) xP Dd such that d divides 2pn2` n` 1q for some n;
+iv) FpXq is birational to the Hilbert schemeHilb2pSq of some K3 surfaceS.
+Obviously, iv) implies ii) or, equivalently and after a moments thought, iii) implies i).
+Proposition 4.1. For the periodx of a smooth cubicX the following two conditions are equi-
+valent:
+i) xP Dd with d satisfying (˚˚1);
+ii) FpXq is birational to a moduli space of stable twisted sheaves.
+Proof. The argument is an adaptation of Addington’s proof [2]. Note however that in the
+twisted case the transcendental lattice cannot play the same role as in the untwisted case. This
+
+=== PDF PAGE 25 ===
+THE K3 CATEGORY OF A CUBIC FOURFOLD 25
+was observed in [21], where it was shown that twisted K3 surfacespS, αq,pS1, α1q with Hodge
+isometric transcendental lattices,TpS, αq» TpS1, α1q, need not be derived equivalent.
+Following Markman [46] for every hyperkähler manifoldY deformation equivalent toHilb2pSq
+of a K3 surfaceS there exists a distinguished primitive embeddingH2pY, ZqĂ rΛ orthogonal to
+a vector vP rΛ withpv.vq“ 2. The Hodge structure ofH2pY, Zq extends to a Hodge structure
+on rΛ such thatv is of typep1, 1q. Moreover, Y and Y1 are birational if and only if there exists a
+Hodge isometry H2pY, Zq» H2pY1, Zq that extends to a Hodge isometryrΛ» rΛ. For a moduli
+space Mpvq of α-twisted stable sheaves on a K3 surfaceS with primitivevP rH1,1pS, α, Zq such
+thatpv.vq“ 2 the universal family induces the distinguished embedding (see [59, Thm. 3.19])
+H2pMpvq, Zq» vK ↘ ↙ →→ rHpS, α, Zq.
+Similarly, and this is the other crucial input, Addington shows in [2, Cor. 8] that for the Fano
+variety of lines the universal family of lines induces this distinguished embedding
+H2pFpXq, Zq ↘ ↙ →→ rHpAX , Zq» rΛ.
+Hence, FpXq and Mpvq are birational if and only if there exists a Hodge isometry
+(4.1) rHpAX , Zq» rHpS, α, Zq
+for some twisted K3 surfacepS, αq that restricts to H2pFpXq, Zq » H2pMpvq, Zq. Due to
+Proposition2.11, theexistenceofaHodgeisometry(4.1)isequivalentto xP Dd with dsatisfying
+(˚˚1). This proves that ii) implies i).
+Conversely, for a Hodge isometry (4.1) consider a primitive vectorv P rH1,1pS, α, Zq in the
+orthogonal complement of H2pFpXq, Zq ↘ ↙ →→ rHpAX , Zq» rH2pS, α, Zq and the induced moduli
+space Mpvq of stable α-twisted sheaves. Write v “ pr, ℓ, sq. If r ‰ 0, then for v or ´v the
+moduli space Mpvq is indeed non-empty. Forr“ 0 observe thatpvq2ą 0 and hencepℓq2ą 0.
+Again by passing to´v if necessary, one can assume thatpℓ.Hq ą0 for the polarization H.
+That the moduli space is non-empty in this case was shown in [60, Cor. 3.5]. (Note that for
+r“ 0 twisted sheaves can also be considered as untwisted ones.) In [2] the caser“ 0 is dealt
+with by a reﬂection associated withO, which does not work in the twisted situation.
+To conclude, compose the Hodge isometryH2pFpXq, Zq» vK, given by the choice ofv, with
+H2pMpvq, Zq» vK, induced by the universal family as above. By construction, it extends to a
+Hodge isometryrΛ» rΛ and, therefore, FpXq and Mpvq are birational. l
+5. Deformation theory
+This section contains two results on the deformation theory of equivalencesDbpS, αq» AX
+resp. AX1 » AX that are crucial for the main results of the paper. The techniques have been
+developed by Toda [53], Huybrechts–Macrì–Stellari [26], Huybrechts–Thomas [27], and in the
+
+=== PDF PAGE 26 ===
+26 D. HUYBRECHTS
+present setting by Addington–Thomas [1]. We follow [1] quite closely and often only indicate
+the additional diﬃculties and how to deal with them.
+5.1. We ﬁrst consider FM-equivalences AX1» AX between the K3 categories of two cubicsX
+and X1 and study under which condition they deform sideways withX and X1.
+Theorem 5.1. Consider two families of smooth cubics X , X1 →→ T with distinguished ﬁbres
+X :“ X0 resp. X1 :“ X1
+0. Assume Φ: AX1
+„ →→ AX is a FM-equivalence inducing a Hodge isometry
+ϕ: rHpAX1, Zq
+„ →→ rHpAX , Zq that remains a Hodge isometryϕt : rHpAX1
+t , Zq
+„ →→ rHpAXt, Zq under
+parallel transport for alltP T.
+Then Φ deforms sideways to FM-equivalences Φt : AX1
+t
+„ →→ AXt for all t in a Zariski open
+neighbourhood 0P UĂ T.
+Proof. Theargumentisavariantofthedeformationtheoryin[1]. Weonlyindicatethenecessary
+modiﬁcations.
+As by assumptionΦ is a FM-equivalence, the composition
+ΦP : DbpX1q →→ AX1
+„
+Φ
+→→ AX
+↘ ↙ →→ DbpXq
+is a FM-functor with some kernel P P DbpX1ˆ Xq. It suﬃces to show that P deforms to
+Pt P DbpX1
+t ˆ Xtq for t in some open neighbourhood 0 P U Ă T, because the conditions for
+ΦPt to factorize via a functorΦt : AX1
+t
+→→ AXt and for this functorΦt to deﬁne an equivalence
+are both Zariski open. Indeed, Φt takes values in AXt if and only if its composition with
+the projection DbpXtq →→KAXt “ xOXt, OXtp1q, OXtp2qy is trivial. The composition, however,
+is again of FM-type and the vanishing of a FM-kernel is a Zariski open condition. Similarly,
+whether Φt is an equivalence can be detected by composing it with its adjoints and then checking
+whether the natural map to the kernel of the identity is an isomorphism, again a Zariski open
+condition.
+The crucial part is to understand the ﬁrst order deformations, the higher order obstructions
+are dealt with by theT 1-lifting property, see [1, Sec. 7.2] and [26, Sec. 3.2]. First note that by
+results of Kuznetsov [34] one has
+HH˚pAX1q» Ext˚
+X1ˆXpP, Pq» HH˚pAXq.
+This allows one to compare the ﬁrst order deformations
+κX1P H1pTX1qĂ HH2pX1q and κXP H1pTXqĂ HH2pXq
+corresponding to some tangent vectorvP T0 of T at 0. Due to a result of Toda [53] (cf. [1, Thm.
+7.1])itsuﬃcestoshowthatunder HH2pX1q →→ Ext2
+X1ˆXpP, Pqresp. HH2pXq →→ Ext2
+X1ˆXpP, Pq
+
+=== PDF PAGE 27 ===
+THE K3 CATEGORY OF A CUBIC FOURFOLD 27
+the classes κX1 and κX are mapped to the same class. For this consider the following diagram
+(cf. [1, Prop. 6.2])
+HH2pX1q
+p1qκX1
+↓↓
+„ →→ HH2pAX1q
+p2qα
+↓↓
+ΦHH˚
+„ →→ HH2pAXq
+¯κX
+↓↓
+„ →→
+p3q
+HH2pXq
+κX
+↓↓
+HH0pX1q
+p4q
+↓↓
+→→ →→ HH0pAX1q
+ΦHH˚
+„ →→ HH0pAXq ↘ ↙ →→ HH0pXq
+↓↓
+H˚pX1q
+↘↘
+ΦH
+P
+→→ H˚pXq
+rH˚pAX1q
+„
+ϕ
+→→ rH˚pAXq
+↗↗
+By H˚pXq» HH˚pXq we denote the HKR-isomorphism (see [12]) post-composed with
+?
+td^pq
+and, so in particular,HH2pXq» H1pΩ3
+Xq with chosen generatorσX. Similarly forX1, where we
+choose the generatorσX1 P H1pΩ3
+X1q» HH2pX1q such that its image yieldsσX. Furthermore,
+¯κX denotes the image of κX under the projection HH2pXq →→ HH2pAXq, see [34], and α :“
+ΦH H˚
+p¯κXq.
+We aim at showing that (1) is commutative. For this note ﬁrst that (4) is induced by the
+FM-transform ΦP : DbpX1q →→ DbpXq and hence commutative due to [44]. The commutativity
+of (2) is obvious, as Hochschild (co)homology is respected by equivalences, and commutativity
+of (3) is the analogue of [1, Prop. 6.1]. (Recall thatΦP does not necessarily induce a map
+ΦH H˚
+P , as it is not fully faithful.)
+The ﬁrst order version of the assumption on the Hodge isometryϕ is the statement that the
+diagram
+H1pTX1q↙ ↖
+σX1
+↓↓
+T0 →→←← H1pTXq↙ ↖
+σX
+↓↓
+H2,2pX1q↙ ↖
+↓↓
+H2,2pXq↙ ↖
+↓↓
+rH1,1pAX1q ϕ
+„ →→ rH1,1pAXq
+is commutative. (Note thatϕ might not mapH2,2pX1q into H2,2pXq, i.e. it is in general diﬀerent
+from ΦH
+P.) Using the ring-module isomorphismpHH˚, HH˚q » pH˚pŹ˚ Tq, H˚pΩ˚qq for X1,
+this implies that the image inH˚pX1q of σX1P HH2pX1q under contraction withκX1 is mapped
+to the image ofσX under contraction withκX. As HH2pX1q is one-dimensional, this shows that
+also (1) is commutative.
+
+=== PDF PAGE 28 ===
+28 D. HUYBRECHTS
+Therefore, in the diagram
+HH2pX1q →→
+σX1
+↓↓
+HH2pAX1q↙ ↖
+σAX1
+↓↓
+„ →→
+⟲
+HH2pAXq↙ ↖
+σAX
+↓↓
+HH0pX1q →→ HH0pAX1q
+„ →→ HH0pAXq
+the image ofκX1P HH2pX1q under the two compositionsHH2pX1q →→ HH0pAX1q» HH0pAXq
+coincide. As the contractionHH2pAq ↘ ↙ →→ HH0pAq is injective (as for K3 surfaces), this implies
+that the image ofκX1 under HH2pX1q →→ HH2pAXq is indeed ¯κX as claimed.
+As in [1], the deformation ofP to ﬁrst and then, byT 1-lifting property, to higher order is
+unique, for Ext1
+X1ˆXpP, Pq» HH1pAXq“ 0 by [34]. l
+5.2. We now come to the more involved situation of equivalencesDbpS, αq »AX and their
+deformations.
+Theorem 5.2. Consider two families X , S →→ T of smooth cubics resp. K3 surfaces with dis-
+tinguished ﬁbres X :“ X0 resp. S :“ S0 and let αt P BrpStq be a deformation of a Brauer
+class α :“ α0 on S. Assume Φ: D bpS, αq
+„ →→ AX is an equivalence inducing a Hodge isome-
+try ϕ: rHpS, α, Zq
+„ →→ rHpAX , Zq that remains a Hodge isometryϕt : rHpSt, αt, Zq
+„ →→ rHpAXt, Zq
+under parallel transport for alltP T.
+Then Φ deforms sideways to equivalencesΦt : DbpSt, αtq
+„ →→ AXt for all t in a Zariski open
+neighbourhood 0P UĂ T.
+Proof. Let us ﬁx representatives αt “ tαt,ijku for the Brauer classes on St and a family Et
+of locally free tαt,ijku-twisted sheaves on the ﬁbres St in a Zariski open neighbourhood of
+0P UĂ T.
+The proof now consists of copying [1, Sec. 6, 7]. However, the techniques have to be adapted
+to the twisted case, which sometimes causes additional problems as certain fundamental issues
+related to Hochschild (co)homology have not been addressed in the twisted setting. For certain
+parts we choose ad hoc arguments to reduce to the untwisted case, for others we rely on Reinecke
+[51].
+Section 6 in [1] deals with Hochschild (co)homology. For a twisted varietypZ, αq one deﬁnes
+HHnpZ, αq :“ Extn
+pZ,α´1qˆpZ,αqpO∆, O∆q. Here, pZ, α´1qˆp Z, αq denotes the twisted variety
+pZˆ Z, α´1 ⊠ αq. Note that O∆ is indeed anpα´1 ⊠ αq-twisted sheaf. Similarly, one deﬁnes
+HHnpZ, αq :“ Extd´n
+pZ,α´1qˆpZ,αqp∆˚ω´1
+Z , O∆q, whered“ dimpZq. Composition makesHH˚pZ, αq
+a right HH˚pZ, αq-module. Moreover, there are natural isomorphisms
+HHnpZ, αq“ Extn
+pZ,α´1qˆpZ,αqpO∆, O∆q » Extn
+Zp∆˚O∆, OZq
+» Extn
+ZˆZpO∆, O∆q“ HHnpZq
+
+=== PDF PAGE 29 ===
+THE K3 CATEGORY OF A CUBIC FOURFOLD 29
+and
+HHnpZ, αq“ Extd´n
+pZ,α´1qˆpZ,αqp∆˚ω´1
+Z , O∆q » Extd´n
+Z pOZ, ∆˚O∆q
+» Extd´n
+ZˆZp∆˚ω´1
+Z , O∆q“ HHnpZq.
+In particular, the HKR-isomorphisms post-composed with td´1{2{p qresp. td1{2^p q yield
+isomorphisms
+I : HHnpZ, αq
+„ →→ à
+i`j“n
+H ipΛjTZq and I : HHnpZ, αq
+„ →→ à
+j´i“n
+H ipΩj
+Zq.
+Note that these isomorphisms are again compatible with the ring and module structures on
+both sides, which follows from the fact that the isomorphisms HH˚pZ, αq » HH˚pZq and
+HH˚pZ, αq» HH˚pZq are. The latter is a consequence of the functoriality properties of∆!, ∆˚
+and ∆˚.
+For a twisted K3 surfacepS, αq one has HH2pS, αq »H0pωSq “C¨ σS and the following
+diagram commutes
+HH2pS, αq
+σS
+↓↓
+I
+„ →→ H0pŹ2 TSq‘ H1pTSq‘ H2pOSq
+{σS
+↓↓
+HH0pS, αq
+I
+„ →→ H0,0‘ H1,1pSq‘ H2,2pSq.
+Let us now consider the fully faithful functorΦP : DbpS, αq
+„ →→ AX
+↘ ↙ →→ DbpXq between the
+twisted K3 surfacepS, αq and the smooth cubicX, where P P DbppS, α´1qˆ Xq. Then as in [1,
+Sec. 6.1] one obtains natural maps
+ΦH H˚
+P : HH˚pXq →→ HH˚pS, αq and ΦH H˚
+P : HH˚pS, αq →→ HH˚pXq
+compatible with the module structures, i.e. ΦH H˚
+P paq˝ c “ ΦH H˚
+P pa˝ ΦH H˚
+P pcqq for all a P
+HH˚pS, αq and cP HH˚pXq. This has been checked by Reinecke in [51, Sec. 4].
+The remaining input in the proof of [1, Prop. 6.2] is the commutativity of the untwisted
+version of the following diagram:
+(5.1) HH0pS, αq
+IB ≀
+↓↓
+ΦHH˚
+P →→ HH0pXq
+I≀
+↓↓À H p,ppSq
+ΦH,B
+P →→ À H p,ppXq
+Note that deﬁning the induced action on cohomology requires the lift of α to a class B P
+H2pS, Qq, see [20, 21]. Moreover, the usual HKR isomorphismI post-composed with td1{2^pq
+needs to be twisted further toI B :“ exppBq˝ I.
+
+=== PDF PAGE 30 ===
+30 D. HUYBRECHTS
+In principle, one could try to prove the commutativity of (5.1) by rewriting the existing
+untwisted theory, in particular [12, 44], for the twisted situation. Instead, we follow Yoshioka
+[59] and reduce everything to the untwisted case by pulling back to a Brauer–Severi variety. We
+brieﬂy review his approach and explain how to apply it to our situation.
+Following [59] we pick a locally freeα “ tαijku-twisted sheaf E “ tEi, ϕiju on a twisted
+varietypZ, αq and associate to it the projective bundleπ : Y :“ PpEq →→ Z, which naturally
+comes with a π˚α´1-twisted line bundle L :“ Oπp1q. The pull-back of any α-twisted sheaf
+F “ tFi, ψiju tensored with L then naturally leads to the untwisted sheaf ˜F :“ π˚F b L.
+Analogously, any α´1-twisted sheaf F can be turned into the untwisted sheafπ˚Fb L˚. The
+constructionyieldsafunctor DbpZ, αq →→ DbpYqwhichinfactdeﬁnesanequivalenceof DbpZ, αq
+with a full subcategory
+˜pq : DbpZ, αq
+„ →→ DbpY{ZqĂ DbpYq.
+The construction applied toE itself yields the sheafG :“ ˜E that corresponds to the unique
+non-trivial extension class in Ext1
+YpTπ, OYq and DbpY{Zq ĂDbpYq can alternatively be de-
+scribed as the full subcategory of all objects H for which the adjunction map π˚π˚pG˚b
+Hq →→ G˚b H is an isomorphism. Analogously, DbpZ, α´1q is equivalent to the full subcate-
+gory of objectsH for which π˚π˚pGb Hq
+„ →→ Gb H.
+We apply this construction to the twisted K3 surfacepS, αq and consider Y “ PpEq →→ S
+as above. Assume α is of order r and choose a lift B “ p1{rqB0 with B0 P H2pS, Zq of it.
+The FM-kernel of our given equivalenceΦP : DbpS, αq
+„ →→ AX Ă DbpXq, which is an object in
+DbppS, α´1qˆ Xq, is turned into the untwisted sheaf˜P :“ π˚P bp L˚ ⊠ Oq on Y ˆ X. This
+leads to the commutative diagram
+DbpS, αq
+˜p q
+↓↓
+π˚
+1 →→ DbppS, αqˆ Xq
+˜p q
+↓↓
+bP →→ DbpSˆ Xq
+π˚
+↓↓
+π2˚ →→ DbpXq
+“
+↓↓
+DbpY{Sq
+π˚
+1 →→ DbppY ˆ Xq{pSˆ Xqq
+b ˜P →→ DbppY ˆ Xq{pSˆ Xqq
+π2˚ →→ DbpXq.
+Therefore, the FM-functor ΦP : DbpS, αq
+„ →→ AX Ă DbpXq can be written as the composition
+ΦP “ Φ ˜P ˝ ΦQ of a twisted FM-functorΦQ :“ ˜pq , with Q“p OS ⊠ Lq|Γπ, and an untwisted
+FM-functor Φ ˜P:
+(5.2) ΦP : DbpS, αq
+ΦQ
+→→ DbpYq
+Φ ˜P →→ DbpXq.
+
+=== PDF PAGE 31 ===
+THE K3 CATEGORY OF A CUBIC FOURFOLD 31
+This allows one to decompose the diagram (5.1) as
+(5.3) HH0pS, αq
+IB ≀
+↓↓
+ΦHH˚
+Q
+→→ HH0pYq
+ΦHH˚
+˜P →→
+≀
+↓↓
+HH0pXq
+≀
+↓↓À H p,ppSq
+ΦH,B
+Q
+→→ À H p,ppYq
+ΦH
+˜P →→ À H p,ppXq.
+The right hand square is induced by the usual untwisted FM-functorΦ ˜P and its commutativity
+therefore follows from the result of Macrì and Stellari [44, Thm. 1.2]. Hence, it suﬃces to prove
+the commutativity of the left hand square (which does not involve the cubicX anymore). For
+greater clarity we split this further by decomposingΦQ as
+ΦQ : DbpS, αq
+π˚
+→→ DbpY, π˚αq
+Lb →→ DbpYq.
+Let us ﬁrst considerπ˚ : DbpS, αq →→ DbpY, π˚αq and the induced diagram
+HH0pS, αq
+IB
+↘↘
+≀
+↓↓
+→→ HH0pY, π˚αq
+Iπ˚B
+↙↙
+≀
+↓↓
+HH0pSq
+I
+↓↓
+→→ HH0pYq
+I
+↓↓
+H˚pSq
+exppBq
+↓↓
+π˚
+→→ H˚pYq
+exppπ˚Bq
+↓↓
+H˚pSq
+π˚
+→→ H˚pYq.
+Note that the usualπ˚ on the bottom is indeed the map on cohomology induced by the functor
+π˚ : DbpS, αq →→ DbpY, π˚αq which a priori depends on the choice of the lifts ofα and π˚α to
+classes inH2pS, Qq resp. H2pY, Qq for which we chooseB resp. π˚B. The commutativity of the
+upper and the lower squares is trivial. The commutativity of the middle square is an easy case
+
+=== PDF PAGE 32 ===
+32 D. HUYBRECHTS
+of [44, Thm. 1.2]. Next considerΨ :“ Lbpq : DbpY, αq →→ DbpYq and the induced diagram
+HH0pY, π˚αq
+⟲≀
+↓↓
+ΨHH˚
+→→ HH0pYq
+“
+↓↓
+HH0pYq
+I
+↓↓
+ψ →→ HH0pYq
+I
+↓↓
+H˚pYq
+exppπ˚Bq
+↓↓
+H˚pYq
+ΨH,π˚B
+→→ H˚pYq.
+By deﬁnition, ΨH,π˚B is given by multiplication withchπ˚p´BqpLq“ expp´π˚Bq¨ exppc1pLqq.
+Here, use that Lr is an untwisted line bundle and deﬁnec1pLq :“ p1{rqc1pLrq PH1,1pY, Qq.
+See [21, Sec. 1] for the conventions concerning twisted Chern classes. In particular,ΨH,π˚B˝
+exppπ˚Bq“ exppc1pLqq and, therefore, it suﬃces to prove the commutativity of the diagram
+(5.4) HH0pYq
+I
+↓↓
+ψ →→ HH0pYq
+I
+↓↓
+H˚pYq
+exppc1pLqq →→ H˚pYq,
+which no longer depends onB and is a special case of Lemma 5.3 below.
+This concludes the proof of the commutativity of the diagram (5.1) and hence of [1, Prop.
+6.2] in our twisted setting. More precisely, if a ﬁrst order deformation ofX in Dd given by a
+class κX P H1pTXq corresponds via the interpretation ofDd as period domain forX and S to
+a ﬁrst order deformationκSP H1pTSq, then ΦH H2
+: HH2pXq →→ HH2pS, αq sends κX to κS.
+To conclude the proof one has to prove that the kernel P P DbppS, α´1qˆ Xq deforms
+sideways, for which we again apply Yoshioka’s untwisting technique. Instead of attempting to
+deform the twistedP sideways withpS, αqˆ X we deform the untwisted˜P. As the condition
+describing the full subcategory DbppS, α´1qˆ Xq »DbppY ˆ Xq{pSˆ Xqq ĂDbpY ˆ Xq is
+open, any deformation of˜P will automatically induce a deformation ofP.7 The decomposition
+7This is conﬁrmed by the observation that under the natural isomorphisms
+Ext2
+pS,α´1qˆXpP,Pq» Ext2
+pY,π ˚α´1qˆXpπ˚P,π˚Pq» Ext2
+YˆXp ˜P, ˜Pq
+the obstructionopPqP Ext2
+pS,α´1qˆXpP,Pq to deformP sideways to ﬁrst order is ﬁrst mapped toopπ˚Pq and
+then toop ˜Pq´ idπ˚P bopOπp´1qq. The latter, however, equals the obstructionop ˜Pq PExt2
+YˆXp ˜P, ˜Pq for ˜P,
+because Oπp´1q clearly deforms sideways.
+
+=== PDF PAGE 33 ===
+THE K3 CATEGORY OF A CUBIC FOURFOLD 33
+(5.2) leads to a diagram
+HH2pXq“ Ext2
+XˆXpO∆X , O∆Xq →→ Ext2
+YˆXp ˜P , ˜Pq
+„ →→ Ext2
+pS,α´1qˆXpP, Pq
+Ext2
+YˆYpO∆Y , O∆Yq
+↑↑
+→→ Ext2
+pS,α´1qˆpS,αqpO∆S , O∆Sq
+≀
+↑↑
+HH2pYq →→ HH2pS, αq.
+Recall thatΦH H˚
+R is deﬁned for any FM-functorΦR, whereas in order to deﬁneΦH H˚
+R one needs
+ΦR to be fully faithful, which is the case forΦP and ΦQ“ ˜pq . So, both maps in
+HH2pXq →→ HH2pS, αq ←← HH2pYq
+κX
+ →→ κS
+←← κY
+are well deﬁned, where as above κX P H1pTXq Ă HH2pXq corresponds to κS P H1pTSq Ă
+HH2pS, αq (via their periods or, equivalently, via ΦH H2
+) and κY is determined by our pre-
+chosen deformation Et of E.
+Now by [27] the obstructionop ˜Pq can be expressed as
+op ˜Pq“p κY , κXq˝ Atp ˜Pq.
+(Unfortunately, an analogous formula in the twisted case is not available.) The crucial [1, Thm.
+7.1], which goes back to Toda [53], proves that in the untwisted caseopPq“ 0if κX is mapped to
+κS under HH2pXq →→ HH2pSq. However, in the twisted situation one has to face the additional
+problem that there is no natural mapHH2pXq →→ HH2pYq. Nevertheless, the argument in [1]
+goes through essentially unchanged as follows. Using the same notation, one writes
+op ˜Pq“ π˚
+1 κY ˝ AtYp ˜Pq` π˚
+2 κX˝ AtXp ˜PqP Ext2p ˜P , ˜Pq.
+The ﬁrst term is the image ofπ˚
+1 κY˝At1pO∆YqP Ext2pO∆Y , O∆Yq“ HH2pYq which is justκY,
+whereasthesecondoneistheimageof ´π˚
+1 κX˝At2pO∆XqP Ext2pO∆X , O∆Xq“ HH2pXqwhich
+is just´κX. Hence, to compareκX and κY we do not need a mapHH2pXq →→ HH2pYq (which
+simply does not exist naturally), as we only need to compare their images inExt2p ˜P , ˜Pq »
+HH2pS, αq. Therefore it suﬃces to ensure that underHH2pXq →→ HH2pS, αq the class κX is
+mapped to κS, which was veriﬁed above.
+This concludes the argument proving that the FM-kernelP deforms to ﬁrst oder withpS, αqˆ
+X. The arguments in [1, Sec. 7.2] proving the existence of deformations ofP to all orders apply
+verbatim. Note that at the very end of the argument one needs to apply a result of Lieblich
+saying that the space of objects with no negative self-Exts in the derived category is an Artin
+stack of locally ﬁnite presentation. Again, the result as such does not seem to be in the literature
+
+=== PDF PAGE 34 ===
+34 D. HUYBRECHTS
+for the twisted situation, but once again it can be deduced from the untwisted case by Yoshioka’s
+trick. l
+It remains to check the commutativity of (5.4) which is a general fact. Consider a smooth
+variety Z and αijk :“ βij¨ βjk¨ βki with βijP O˚
+Uij. The associated Brauer classαP H2pZ, O˚
+Zq
+is of course trivial and henceDbpZ,tαijkuq and DbpZq are equivalent categories and an explicit
+equivalence can be given by ‘untwisting bytβiju’, i.e. byE“t Ei, ϕiju  →→tEi, ϕij¨ β´1
+ij u. Note
+that changing βij by a cocycletδiju, which would correspond to an untwisted line bundle say
+M, the equivalence would be modiﬁed byM˚bpq .
+Assume furthermore thatαr
+ijk “ 1. Thentβr
+iju is a cocycle deﬁning a line bundleH and we
+deﬁne c1pβq :“p 1{rqc1pHqP H1,1pZq. Explicitly, c1pβq“t d log βiju.
+Lemma 5.3. The ‘untwisting bytβiju’, i.e. the equivalence
+Φ: D bpZ,tαijkuq
+„ →→ DbpZq, E “t Ei, ϕiju  →→tEi, ϕij¨ β´1
+ij u,
+induces a commutative diagram
+HH˚pZ,tαijkuq
+ΦHH˚
+→→
+HKR
+↓↓
+HH˚pZq
+HKR
+↓↓
+H˚pZq
+exppc1pβqq
+→→ H˚pZq
+The commutativity of (5.4) then follows from the observation thatLbpq can be written as
+the composition of the ‘untwisting bytβiju’ as above with the equivalenceLbpq . Here, L is
+the untwisted line bundle given bytψij¨ βiju, where L itself is thetα´1
+ijku-twisted line bundle
+given bytψiju.
+Indeed, for Ψ :“ Lbpq : DbpZq
+„ →→ DbpZq the commutativity of
+HH˚pZq
+ΨHH˚
+→→
+HKR
+↓↓
+HH˚pZq
+HKR
+↓↓
+H˚pZq
+exppc1pLqq
+→→ H˚pZq
+is an easy special case of [44, Thm. 1.2]8, which can be proved by a direct calculation. The
+proof of the lemma is a variant of this computation.
+Proof. Consider the universal Atiyah classAt: O∆ →→ ∆˚ΩZr1s. Twisted with a line bundle of
+the form M ⊠ M˚ it yields a map AtM : O∆ →→ ∆˚ΩZr1s. The usual formula c1pEb Mq “
+c1pEq` rk E¨ c1pMq corresponds to the universal formulaAtM “ α` ∆˚c1pMq, which can
+8Note that td1{2^ can be dropped here and in the lemma, as it commutes withexppc1pLqq.
+
+=== PDF PAGE 35 ===
+THE K3 CATEGORY OF A CUBIC FOURFOLD 35
+be checked by using arguments of [9, 10] or a direct cocycle computation. Here, c1pMq is
+viewed as a map OZ →→ ΩZr1s which can be pushed forward via∆. Similarly, the exponen-
+tial exppAtq: O∆ →→ À ∆˚Ωi
+Zris (see [12]) twisted with M ⊠ M˚ is given by exppAtqM “
+∆˚ exppc1pMqq˝ exppAtq.
+Let now f P HHjpZq“ Extj
+ZˆZp∆!OZ, ∆˚OZq and denote byF P Extj
+ZpOZ, ∆˚∆˚OZq its
+image under Extj
+ZˆZp∆!OZ, ∆˚OZq »Extj
+ZpOZ, ∆˚∆˚OZq. So if η :p∆!∆˚q∆˚OZ →→ ∆˚OZ
+denotes adjunction, then f “ η˝ ∆!F. Due to [12, Prop. 4.4], the latter is under the HKR
+isomorphism given byexppAtq, so
+η :p∆!∆˚q∆˚OZ» À ∆˚pΩirisb ω´1
+Z r´dsqq» À ∆˚pΩd´i
+Z q˚ri´ ds
+exppAtq →→ ∆˚OZ.
+The image of f under Lbp q is given by tensoring with L ⊠ L˚. The push-forward ∆!F
+remains unchanged by tensoring withL ⊠ L˚ and by the aboveη changes by composing with
+∆˚ exppc1pLqq.
+Literally the same argument applies to the untwisting bytβiju for which one has to observe
+that the universal Atiyah classAt: O∆ →→ ∆˚ΩZr1sonpZ,tα´1
+ijkuqˆpZ,tαijkuqunder untwisting
+bytβiju becomes At` ∆˚c1pβq: O∆ →→ ∆˚ΩZr1s on Zˆ Z. l
+6. Proofs
+6.1. Proof of Theorem 1.2.According to Corollary 3.12, for every smooth cubicX Ă P5
+there exists a distinguished FM-autoequivalenceΦ0 : AX
+„ →→ AX of inﬁnite order which acts as
+the identity onTpAXq, so it is symplectic, and such thatΦ3
+0 is the double shiftE  →→ Er2s. We
+have to show that for the general cubic every symplectic FM-equivalenceΦ is a power ofΦ0.
+As rH1,1pAX , Zq» A2 for general X and ΦH“ id on TpAXq“ AK
+2, the induced actionΦH is
+contained inOpA2q. Clearly, any Hodge isometry ofrHpAX , Zq that is the identity onAK
+2 stays
+a Hodge isometry for all deformations ofX. Therefore, applying Theorem 5.1, Φ deforms to
+FM-autoequivalences Φt : AXt » AXt for cubics Xt in a Zariski open neighbourhoodU Ă C of
+X inside the moduli space of smooth cubics.
+Then for all but ﬁnitely manyd satisfying (˚˚) the intersection UX Cd is non-empty (and
+open) and, therefore, by [1, Thm. 1.1] there existstP U such that AXt » DbpSq for some K3
+surface S. Due to [26, Thm. 2], autoequivalences ofDbpSq are orientation preserving and hence
+ΦHP A3» Z{3Z, cf. Remark 2.1. Thus, by composing with some power ofΦ0, we may assume
+that ΦH“ id.
+Now apply Corollary 2.16 and Theorem 1.4 to be proved below to conclude that there exists
+tP U such that AXt » DbpS, αq for a twisted K3 surfacepS, αq not admitting anyp´2q-class.
+Indeed,
+pCK31X UqzCsph‰H ,
+
+=== PDF PAGE 36 ===
+36 D. HUYBRECHTS
+where CK31 :“ Ť
+p˚˚q CdĂ C and CsphĂ C is the image ofDsph. By [24, Thm. 2], we know that
+then Φt is isomorphic to an even shiftE  →→ Er2ks. It is easy to see thatk is independent oft.
+The locus of pointsU0Ă U such that Φt»r 2ks for tP U0 is Zariski open and by the above
+non-empty. Therefore, for every X P C in the intersection of allU0 Ă C the assertion holds.
+But this intersection is certainly countable, as FM-kernels are parametrized by countably many
+products of Quot-schemes.
+Now consider a non-special cubicX, i.e. X P CzŤ Cd, and an arbitraryΦP AutpAXq. By
+composing with the shift functorr1s if necessary, we may assume thatΦH acts trivially on
+the discriminant group AA2 » AAK
+2
+. But then the induced Hodge isometry ofTpAXq »AK
+2
+extends to a Hodge isometry of H4pX, Zq that respects h. By the Global Torelli theorem
+[57, 42, 15] it is therefore induced by an automorphismfP AutpXq, which clearly acts trivially
+on the orthogonal complement ofhKĂ H˚pX, Zq and hence as the identity onA2Ă rHpAX , Zq.
+Moreover, since f respects H3,1pXq, the action off in rHpAX , Zq preserves the orientation.
+So, composing, if necessary,Φ with the shift functor and an automorphism, we reduce to the
+case ΦP AutspAXq. As X is non-special, i.e.A2» rH1,1pAX , Zq, we can deformΦ sideways as
+above until it can be interpreted as an autoequivalence of a category of the formDbpSq, which
+implies that it is orientation preserving. This eventually proves that for every non-special cubic
+the image of ρ: AutpAXq →→ AutprHpAX , Zqq is the subgroup of orientation preserving Hodge
+isometries. l
+Remark 6.1.We expect the ﬁrst assertion in Theorem 1.2 to hold for every non-special cubic,
+i.e. for all X P CzŤ Cd, but this would require to show that ifΦ P AutpAXq deforms to the
+identity functor and rH1,1pAX , Zq» A2, then Φ» id. The techniques of [24] should be useful
+here, but they require the existence of stability conditions.
+Furthermore, one would also expect that anyΦP AutpAXq of any cubic preserves the natural
+orientation.
+6.2. Proof of Theorem 1.4.Assertion i) follows from Theorem 1.3 and Proposition 3.3. For
+the converse, ﬁx d satisfying (˚˚1). Then for any smooth cubic X P Cd there exists a Hodge
+isometry
+(6.1) ϕ: rHpS, α, Zq
+„ →→ rHpAX , Zq
+for some twisted K3 surfacepS, αq. In fact, this Hodge isometry can be chosen globally over
+the period domainDd (or some appropriately constructed covering˜Cd of Cd, see [1]). The aim
+is to show that generically this Hodge isometry is induced by an equivalenceAX » DbpS, αq
+(up to changing the orientation).
+The starting point for the argument is [1, Thm. 4.1], which is based on Kuznetsov’s work
+[33] and on the description of the image of the period map for cubic fourfolds due to Laza [39]
+
+=== PDF PAGE 37 ===
+THE K3 CATEGORY OF A CUBIC FOURFOLD 37
+and Looijenga [42]. Combined, these results show that for everyd satisfying (˚˚1) (but in fact
+(˚) is enough) there exists a smooth cubicXP C8X Cd, a K3 surfaceS0 and an equivalence
+Φ0 : AX
+„ →→ DbpS0q.
+By [1] or Proposition 3.3, any suchΦ0 induces a Hodge isometryΦH
+0 : rHpAX , Zq
+„ →→ rHpS0, Zq
+(usually completely unrelated to (6.1)). Consider now the composition
+ψ :“ ΦH
+0 ˝ ϕ: rHpS, α, Zq
+„ →→ rHpAX , Zq
+„ →→ rHpS0, Zq.
+By modifying ϕ (globally over Dd) if necessary (use Lemma 2.2.), we may assume that ψ
+preserves the orientation and then [22] applies and shows that there exists an equivalence
+Ψ: D bpS, αq
+„ →→ DbpS0q with ΨH“ ψ. Then the equivalence
+Φ :“ Φ´1
+0 ˝ Ψ: D bpS, αq
+„ →→ DbpS0q
+„ →→ AX
+satisﬁes ΦH“ ϕ.
+We can now forget aboutS0 and only keepX and S and the equivalenceΦ“ ΦP with P P
+DbppS, α´1qˆ Xq. Then consider the two familiesXt andpSt, αtq over Dd (or rather ˜Cd in order
+to use the Zariski topology) of cubics resp. twisted K3 surfaces withX“ X0, S“ S0, for which
+ϕ deﬁnes Hodge isometries rHpSt, αt, Zq
+„ →→ rHpAXt, Zq for all t. As Φ: D bpS, αq
+„ →→ AX induces
+ϕ, Theorem5.2appliesandshowsthat Φcanbedeformedtoequivalences Φt : DbpSt, αtq
+„ →→ AXt
+for all t in a Zariski open neighbourhood of0P ˜Cd. l
+6.3. Proof of Theorem 1.5.The ﬁrst assertion of the theorem has been proved already as
+Corollary 3.6. For ii) and iii) recall that any FM-equivalence AX » AX1 induces a Hodge
+isometry rHpAX , Zq» rHpAX1, Zq, cf. Proposition 3.4. So it remains to prove the converse for
+generic X P Cd with d satisfying (˚˚1) resp. general X P Cd for arbitrary d. The ﬁrst case is
+easy, as then, by Theorem 1.4,AX » DbpS, αq and AX1 » DbpS1, α1q for twisted K3 surfaces
+pS, αq resp.pS1, α1q. The assertion then follows from [22] and Lemma 2.2.
+For the second case consider the correspondence
+Z :“tp X, X1, ϕq| XP Cd and ϕ: rHpAX , Zq
+„ →→ rHpAX1, Zqu
+of smooth cubicsX, X1 with XP Cd and a Hodge isometryϕ. (Note that withX also X1P Cd.)
+This correspondence consists of countably many componentsZ0 Ă Z and for the image of a
+component Z0Ă Z under the ﬁrst projectionπ : Z →→ Cd one either hasπpZ0qĂ CdXŤ
+d1‰d Cd1
+or πpZ0qĂ Cd is dense (a priori it could happen that one of the two cubics becomes singular
+without the other one).
+Suppose we are in the latter case. Then by [1, Thm. 1.1], cf. Section 6.1, one ﬁnds a
+pX, X1, ϕqP Z0 for which there exist K3 surfacesS and S1 and FM-equivalences
+(6.2) Ψ: AX
+„ →→ DbpSq and Ψ1 : AX1
+„ →→ DbpS1q.
+
+=== PDF PAGE 38 ===
+38 D. HUYBRECHTS
+By Proposition 3.3,Ψ and Ψ1 induce Hodge isometriesΨH resp. Ψ1H, which composed withϕ
+yield a Hodge isometry
+ϕ0 : rHpS, Zq
+„
+pΨ´1qH
+→→ rHpAX , Zq
+„
+ϕ
+→→ rHpAX1, Zq
+„
+Ψ1H
+→→ rHpS1, Zq.
+We may assume that ϕ0 is orientation preserving and, thus, induced by a FM-equivalence
+Φ0 : DbpSq
+„ →→ DbpS1q. Composingthelatterwiththe equivalences(6.2) yields aFM-equivalence
+Φ: AX » AX1 inducing ϕ. Now use Theorem 5.1 to deformΦ sideways to FM-equivalences
+Φt : AXt
+„ →→ AX1
+t for all pointspXt, X1
+t, ϕt” ϕq in a Zariski dense open subsetU0Ă Z0.
+Hence, for all X P Ş πpUiq, with the intersection over all componentsZ0Ă Z (dominating
+Cd), the existence of a Hodge isometryrHpAX , Zq» rHpAX1, Zq implies the existence of a FM-
+equivalence AX» AX1. l
+References
+[1] N. Addington, R. ThomasHodge theory and derived categories of cubic fourfolds.Duke Math. J. 163 (2014),
+1885–1927.
+[2] N. Addington On two rationality conjectures for cubic fourfolds. to appear in Math. Res. Lett.
+arXiv:1405.4902.
+[3] M. Ballard, D. Favero, L. KatzarkovOrlov spectra: bounds and gaps.Invent. Math. 189 (2012), 359–430.
+[4] A. Bayer, T. BridgelandDerived automorphism groups of K3 surfaces of Picard rank1. arXiv:1310.8266.
+[5] A. Beauville, R. DonagiLa variété des droites d’une hypersurface cubique de dimension 4.C. R. Acad. Sci.
+Paris Sér. I Math., 301(14) (1985), 703–706.
+[6] M. Bernardara, E. Macrì, S. Mehrotra, P. StellariA categorical invariant for cubic threefolds.Adv. Math.
+229 (2012), 770–803.
+[7] T. BridgelandStability conditions on K3 surfaces.Duke Math. J. 141 (2008), 241–291.
+[8] T. Bridgeland, A. MaciociaComplex surfaces with equivalent derived categories.Math. Z. 236 (2001), 677–
+697.
+[9] R.-O. Buchweitz, H. FlennerThe global decomposition theorem for Hochschild (co-)homology of singular
+spaces via the Atiyah–Chern character.Adv. Math. 217 (2008), 243–281.
+[10] R.-O. Buchweitz, H. FlennerA semiregularity map for modules and applications to deformations.Compos.
+Math. 137 (2993), 135–210.
+[11] A. CăldăraruDerived categories of twisted sheaves on Calabi–Yau manifolds.Ph.D. Thesis Cornell (2000).
+[12] A. Căldăraru The Mukai paring II. The Hochschild–Kostant–Rosenberg isomorphism. Adv. Math. 194
+(2005), 34–66.
+[13] A. Canonaco, P. StellariTwisted Fourier–Mukai functors.Adv. Math. 212 (2007), 484–503.
+[14] F. CharlesBirational boundedness for holomorphic symplectic varieties, Zarhin’s trick forK3 surfaces, and
+the Tate conjecture.arXiv:1407.0592.
+[15] F. CharlesA remark on the Torelli theorem for cubic fourfolds, preprint.arXiv:1209.4509.
+[16] D. CoxPrimes of the formx2`ny2. Fermat, class ﬁeld theory and complex multiplication.John Wiley &
+Sons, (1989).
+[17] B. HassettSpecial cubic fourfolds.Compos. Math. 120 (2000), 1–23.
+
+=== PDF PAGE 39 ===
+THE K3 CATEGORY OF A CUBIC FOURFOLD 39
+[18] L. Hille, M. van den BerghFourier–Mukai transforms. In ‘Handbook of Tilting Theory’, LMS LNS 332
+(2007), 147–177.
+[19] S. Hosono, B. Lian, K. Oguiso, S.-T. YauFourier–Mukai number of a K3 surface.CRM Proc. and Lect.
+Notes 38 (2004), 177–192.
+[20] D. HuybrechtsGeneralized Calabi–Yau structures, K3 surfaces, andB-ﬁelds. Int. J. Math. 19 (2005), 13–36.
+[21] D. Huybrechts, P. StellariEquivalences of twisted K3 surfaces.Math. Ann. 332 (2005), 901–936.
+[22] D. Huybrechts, P. StellariProof of Căldăraru’s conjecture.in Moduli spaces and arithmetic geometry, Adv.
+Stud. Pure Math. 45 (2006), 31–42.
+[23] D. HuybrechtsFourier–Mukai transforms in algebraic geometry.Oxford Mathematical Monographs (2006).
+[24] D. Huybrechts, E. Macrì, P. StellariStability conditions for generic K3 categories.Compos. Math. 144
+(2008), 134–162.
+[25] D. HuybrechtsThe global Torelli theorem: classical, derived, twisted.in Algebraic geometry–Seattle 2005.
+Part 1, Proc. Sympos. Pure Math. 80 (2009), 235–258.
+[26] D. Huybrechts, E. Macrì, P. StellariDerived equivalences of K3 surfaces and orientation.Duke Math. J.
+149 (2009), 461–507.
+[27] D. Huybrechts, R. ThomasDeformation-obstruction theory for complexes via Atiyah and Kodaira–Spencer
+classes. Math. Ann. 346 (2010), 545–569.
+[28] D. HuybrechtsIntroduction to stability conditions.in ’Moduli Spaces’. LMS LNS 411 (2014), 179–229.
+[29] D. HuybrechtsLectures on K3 surfaces.http://www.math.uni-bonn.de/people/huybrech/K3.html
+[30] K. KawataniA hyperbolic metric and stability conditions on K3 surfaces withρ“ 1. arXiv:1204.1128.
+[31] B. Keller, D. Murfet, M. Van den BerghOn two examples by Iyama and Yoshino.Compos. Math. 147
+(2011), 591–612.
+[32] M. KneserQuadratische Formen.Springer (2002).
+[33] A. KuznetsovDerived categories of cubic fourfolds.Cohomological and geometric approaches to rationality
+problems, Progr. Math. 282 (2010), 219–243.
+[34] A. KuznetsovHochschild homology and semiorthogonal decompositions.arXiv:0904.4330.
+[35] A. Kuznetsov Derived categories of cubic andV14 threefolds. Proc. Steklov Inst. Math. 3 (246) (2004),
+171–194. arXiv:math/0303037.
+[36] A. KuznetsovBase change for semiorthogonal decompositions.Compos. Math. 147 (2011), 852–876.
+[37] A. KuznetsovHomological projective duality for Grassmannians of lines.math.AG/0610957.
+[38] A. Kuznetsov, D. MarkushevichSymplectic structures on moduli spaces of sheaves via the Atiyah class.J.
+Geom. Phys. 59 (2009), 843–860.
+[39] R. LazaThe moduli space of cubic fourfolds via the period map.Ann. Math. 172 (2010), 673–711.
+[40] M. LieblichModuli of twisted orbifold sheaves.Adv. Math. 226 (2011), 4145–4182.
+[41] M. Lieblich, D. Maulik, A. SnowdenFiniteness of K3 surfaces and the Tate conjecture.Ann. Sci. Éc. Norm.
+Supér. 47 (2014), 285–308.
+[42] E. LooijengaThe period map for cubic fourfolds.Invent. Math. 177 (2009), 213–233.
+[43] E. Macrì, P. StellariFano varieties of cubic fourfolds containing a plane.Math. Ann. 354 (2012), 1147–1176.
+[44] E. Macrì, P. StellariInﬁnitesimal derived Torelli theorem for K3 surfaces, (Appendix by S. Mehrotra).Int.
+Math. Res. Not. IMRN (2009), 3190–3220.
+[45] S. MukaiOn the moduli space of bundles on K3 surfaces. I.Vector bundles on algebraic varieties (Bombay,
+1984), Tata Inst. Fund. Res. Stud. Math. 11 (1987), 341–413.
+[46] E. MarkmanA survey of Torelli and monodromy results for holomorphic-symplectic varieties.In Complex
+and diﬀerential geometry, Springer Proc. Math. 8 (2011), 257–322.
+
+=== PDF PAGE 40 ===
+40 D. HUYBRECHTS
+[47] V. Nikulin Integer symmetric bilinear forms and some of their geometric applications.Izv. Akad. Nauk
+SSSR Ser. Mat. 43, (1979), 111–177.
+[48] K. OguisoK3 surfaces via almost-primes.Math. Research Letters 9 (2002), 47–63.
+[49] D. OrlovDerived categories of coherent sheaves and triangulated categories of singularities.Algebra, arith-
+metic, and geometry: in honor of Yu. I. Manin. Vol. II, Progr. Math. 270 (2009), 503–531.
+[50] D. OrlovEquivalences of derived categories and K3 surfaces.J. Math. Sci. 84 (1997), 1361–1381.
+[51] E. ReineckeAutoequivalences of twisted K3 surfaces.Master thesis, Bonn (2014).
+[52] P.Stellari Some remarks about the FM-partners of K3 surfaces with Picard numbers 1 and 2.Geom.Dedicata
+108 (2004), 1–13 .
+[53] Y. TodaDeformations and Fourier–Mukai transforms.J. Diﬀ. Geom. 81 (2009), 197–224.
+[54] Y. TodaGepner type stability conditions on graded matrix factorizations.Algebr. Geom. 1 (2014), 613–665.
+[55] Y. TodaGepner type stability condition via Orlov/Kuznetsov equivalence.arXiv:1308.3791.
+[56] B. ToënThe homotopy theory of dg-categories and derived Morita theory.Invent. Math. 167 (2007), 615–667.
+[57] C. VoisinThéorème de Torelli pour les cubiques deP5. Invent. Math. 6 (1986), 577–601.
+[58] C. VoisinCorrection à : ‘Théorème de Torelli pour les cubiques deP5’. Invent. Math. 172 (2008), 455–458.
+[59] K. YoshiokaModuli spaces of twisted sheaves on a projective variety.in Moduli spaces and arithmetic geo-
+metry, Adv. Stud. Pure Math. 45 (2006), 1–30.
+[60] K. YoshiokaStability and the Fourier–Mukai transform. II.Compos. Math. 145 (2009), 112–142.
+Mathematisches Institut, Universität Bonn, Beringstr. 1, 53115 Bonn, Germany
+E-mail address: huybrech@math.uni-bonn.de

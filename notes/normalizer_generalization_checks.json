@@ -1,0 +1,132 @@
+{
+  "all_checks_passed": true,
+  "exceptional_model": {
+    "gram": [
+      [
+        2,
+        16,
+        16
+      ],
+      [
+        16,
+        2,
+        16
+      ],
+      [
+        16,
+        16,
+        2
+      ]
+    ],
+    "basis_v1": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "basis_v2": [
+      1,
+      15,
+      1,
+      -14,
+      0,
+      15,
+      0
+    ],
+    "basis_v3": [
+      0,
+      14,
+      1,
+      -14,
+      2,
+      8,
+      1
+    ],
+    "stable_candidate": [
+      0,
+      0,
+      0,
+      0,
+      2,
+      -6,
+      1
+    ],
+    "square": -26,
+    "full_lattice_divisibility": 2,
+    "action_on_NS": [
+      [
+        3585,
+        3824,
+        240
+      ],
+      [
+        -240,
+        -255,
+        -16
+      ],
+      [
+        16,
+        16,
+        1
+      ]
+    ],
+    "trace": 3331,
+    "fixed_H2_dimension": 1,
+    "entropy_eigenvalue": "1665+112*sqrt(221)",
+    "common_chamber_mod8_cases": 64
+  },
+  "excluded_rho3_model": {
+    "gram": [
+      [
+        58,
+        0,
+        0
+      ],
+      [
+        0,
+        -116,
+        0
+      ],
+      [
+        0,
+        0,
+        -58
+      ]
+    ],
+    "fixed_H2_dimension": 0
+  },
+  "Todd_sixfold_formula": "(31*b^3-c^2)/30240 when c1(E)=0",
+  "necessary_Euler_residue": 29,
+  "sixfold_Euler_residues": {
+    "K3^[3]": 7,
+    "Kummer_6": 14,
+    "OG6": 29
+  },
+  "sharp_growth_torus": {
+    "B": [
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "S": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "limitation": "Exponent 2 log(lambda) verified analytically by spectral projections in note 46, not by this script."
+  },
+  "limitation": "Exact arithmetic/polynomial checks only. Common chamber, actual Torelli realization and derivative implications require the proofs in notes 46--48. No invariant splitting or Anosov system is constructed on the IHS models."
+}

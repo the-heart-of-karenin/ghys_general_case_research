@@ -1,0 +1,44 @@
+[
+  {
+    "filename": "23_Cadek_Crabb_Vanzura_2008_Obstruction.pdf",
+    "title": "Obstruction theory on 8-manifolds",
+    "download_url": "https://www.math.muni.cz/~cadek/papers/8_manifolds.pdf",
+    "landing_url": "https://doi.org/10.1007/s00229-008-0203-x",
+    "publication_note": "Author manuscript corrected 8 July 2008; Manuscripta Math. 127 (2008), 167-186",
+    "collected_utc": "2026-10-17T16:38:14.155441+00:00",
+    "resolved_url": "https://www.math.muni.cz/~cadek/papers/8_manifolds.pdf",
+    "download_status": "downloaded",
+    "bytes": 229130,
+    "sha256": "7a9dbfd28463d2c12221d019a866f638e8e2f6c28d88f54eea8682ff40b017a5",
+    "pages": 19,
+    "extracted_characters": 46578,
+    "visually_inspected_pdf_pages": [
+      4,
+      5,
+      6,
+      10,
+      13,
+      17
+    ],
+    "reading_scope": "Only the cited theorem, premise and formula pages; not a whole-paper proof audit."
+  },
+  {
+    "filename": "24_Kapfer_2016_Integral_cohomology.pdf",
+    "title": "Computing cup products in integral cohomology of Hilbert schemes of points on K3 surfaces",
+    "download_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/DAF03A697F193564320B645D5634EA92/S1461157016000012a.pdf/computing_cup_products_in_integral_cohomology_of_hilbert_schemes_of_points_on_k3_surfaces.pdf",
+    "landing_url": "https://doi.org/10.1112/S1461157016000012",
+    "publication_note": "Publisher PDF; LMS J. Comput. Math. 19 (2016), 78-97",
+    "collected_utc": "2026-10-17T16:38:14.157444+00:00",
+    "resolved_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/DAF03A697F193564320B645D5634EA92/S1461157016000012a.pdf/computing_cup_products_in_integral_cohomology_of_hilbert_schemes_of_points_on_k3_surfaces.pdf",
+    "download_status": "downloaded",
+    "bytes": 663607,
+    "sha256": "a550dd86e4958a08ef44d55d9e021f1b321b0aa5b010b2d8676215467a037d6f",
+    "pages": 20,
+    "extracted_characters": 53354,
+    "visually_inspected_pdf_pages": [
+      3,
+      4
+    ],
+    "reading_scope": "Only the cited theorem, premise and formula pages; not a whole-paper proof audit."
+  }
+]

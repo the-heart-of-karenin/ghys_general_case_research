@@ -1,0 +1,102 @@
+{
+  "chern_top_cell_checks": [
+    {
+      "family": "K3_square",
+      "q_a": 6,
+      "b_squared": 324,
+      "J": -234
+    },
+    {
+      "family": "K3_square",
+      "q_a": -26,
+      "b_squared": 324,
+      "J": -474
+    },
+    {
+      "family": "Kummer_fourfold",
+      "q_a": -6,
+      "b_squared": 108,
+      "J": -54
+    }
+  ],
+  "odd_Steenrod_block_matrices_checked": 1024,
+  "line_obstruction_completed_squares": true,
+  "KSp_total_zero_terms": [
+    [
+      0,
+      0,
+      "Z"
+    ],
+    [
+      4,
+      -4,
+      "Z"
+    ],
+    [
+      5,
+      -5,
+      "Z2"
+    ],
+    [
+      6,
+      -6,
+      "Z2"
+    ],
+    [
+      8,
+      -8,
+      "Z"
+    ]
+  ],
+  "exact_shadowing_models": [
+    {
+      "m": 1,
+      "normalized_error": "2"
+    },
+    {
+      "m": 2,
+      "normalized_error": "4"
+    },
+    {
+      "m": 3,
+      "normalized_error": "8"
+    },
+    {
+      "m": 4,
+      "normalized_error": "16"
+    },
+    {
+      "m": 5,
+      "normalized_error": "32"
+    },
+    {
+      "m": 6,
+      "normalized_error": "64"
+    },
+    {
+      "m": 7,
+      "normalized_error": "128"
+    },
+    {
+      "m": 8,
+      "normalized_error": "256"
+    },
+    {
+      "m": 9,
+      "normalized_error": "512"
+    },
+    {
+      "m": 10,
+      "normalized_error": "1024"
+    },
+    {
+      "m": 11,
+      "normalized_error": "2048"
+    },
+    {
+      "m": 12,
+      "normalized_error": "4096"
+    }
+  ],
+  "scope": "Checks formulas only. Existence, Thom-Gysin identification, and AHSS arguments are proved in notes 36-38, not by this script."
+}

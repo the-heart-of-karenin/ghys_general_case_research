@@ -1,0 +1,1018 @@
+=== PDF PAGE 1 ===
+QUATERNIONIC STRUCTURES
+MARTIN ˇCADEK, MICHAEL CRABB, JI ˇR´I V ANˇZURA
+Abstract. Any oriented 4-dimensional real vector bundle is naturally a line bund le
+over a bundle of quaternion algebras. In this paper we give an accou nt of modules
+over bundles of quaternion algebras, discussing Morita equivalence , characteristic
+classes and K-theory. The results have been used to describe obstructions fo r the
+existence of almost quaternionic structures on 8-dimensional Spin c manifolds in [6]
+and may be of some interest, also, in quaternionic and algebraic geom etry.
+1. Introduction
+In this paper we will consider real and complex vector bundles which a re modules
+over bundles of quaternion algebras. Our interest in such bundles b egan when we were
+working on the account [6] of obstruction theory on 8-manifolds. I n the last sections
+of that paper we examined necessary and suﬃcient conditions for a n 8-dimensional
+real vector bundle over an 8-manifold to have an almost quaternion ic structure (which
+means that its structure group admits a reduction to Sp(1) × Z2 Sp(2)). For this we
+needed some facts concerning bundles of quaternion algebras and K-theory of their
+modules. In the present paper we establish not only these facts an d their general-
+izations (Theorems 3.1 and 5.8, Proposition 5.3), but we make a syste matic study of
+algebraic and topological properties of modules over quaternion bu ndles.
+Following classical ring theory we study Morita equivalence of bundles of quaternion
+algebras. For a given bundle of quaternion algebras we compute the Grothendieck
+group of left modules as a classical KO-group. For modules over a bundle of quaternion
+algebras we deﬁne characteristic classes and show that they beha ve as well as the Chern
+classes for complex vector bundles. We also characterize those co mplex vector bundles
+which are bundles over quaternion algebras. In the ﬁnal section we examine bundles
+of complexiﬁed quaternion algebras and their Morita equivalence.
+Topologically, our results extend the results obtained by Atiyah and Rees in [2]
+on complex quaternionic vector bundles and their K-theory and by Marchiafava and
+Romani ([15, 16, 17]) concerning characteristic classes. Geometr ically, there are close
+connections to quaternionic geometry. The tangent bundles of Ka ehler and almost
+hyper-Kaehler manifolds are modules over bundles of quaternion alg ebras (see Remark
+1.6). The characteristic classes have been used in [20] to compute, in particular, the
+Date: September 17, 2010.
+2000 Mathematics Subject Classiﬁcation. 55R25; 55R50; 55R40; 53C26.
+Key words and phrases. Bundles of quaternionic algebras; almost quaternionic manifolds; ve ctor
+bundles; characteristic classes; K-theory; Morita equivalence.
+This work was supported by the the Czech Ministry of Education [MSM 0021622409]; the Academy
+of Sciences of the Czech Republic [A VOZ10190503]; and the Grant Ag ency of the Czech Republic
+[201/05/2117].
+1
+
+=== PDF PAGE 2 ===
+2 M. ˇCADEK, M. C. CRABB AND J. V AN ˇZURA
+index of Salamon’s elliptic complex of a quaternionic manifold. A possible a pplication
+in algebraic geometry is outlined in Remark 6.9.
+All bundles will be considered over a compact Hausdorﬀ space X. Since the structure
+group of a bundle of quaternion algebras has to be Aut( H) = SO(3), every such bundle
+of quaternion algebras over X is of the form R ⊕ α where R is a trivial real line bundle
+and α is an oriented 3-dimensional orthogonal vector bundle over X.
+Deﬁnition 1.1. Let α be an oriented 3-dimensional vector bundle over X with a
+positive-deﬁnite inner product. We write Hα for the bundle of quaternion algebras
+R1 ⊕ α with the multiplication given in terms of the inner product ⟨−, −⟩ and vector
+product × by
+(s,u ) · (t,v ) = (st − ⟨u,v ⟩,sv +tu +u × v).
+Alternatively, thinking of the group of automorphisms Aut( H) of H = R1⊕ Ri⊕ Rj⊕ Rk
+as the special orthogonal group SO(3) of R3 = im H, we have
+Hα =P × Aut(H) H and α =P × SO(3) R3,
+where P → X is the principal SO(3) = Aut( H)-bundle given by α .
+It is clear that diﬀerent inner products on α deﬁne isomorphic bundles of quaternion
+algebras. Conjugation − : H → H gives an isomorphism from H to the opposite
+algebra Ho compatible with the action of Aut( H). Hence Hα and Ho
+α are isomorphic
+as bundles of algebras. Notice that − :α → α (that is, − 1) is an orientation-reversing
+isomorphism.
+Deﬁnition 1.2. Letξ be a real vector bundle over X. We say that ξ is an Hα-bundle
+if it has a left Hα-module structure, that is, a bundle map Hα ⊗ Rξ → ξ that restricts
+to a module structure in each ﬁbre.
+Remark 1.3. An Hα-bundle ξ has a canonical orientation. To orient the ﬁbre ξx
+at x ∈ X we choose a basis e1,...,e n as Hαx-vector space and choose an oriented
+orthonormal basis i , j, k of α x. Then e1, ie1, je1, ke1,..., e n, ien, jen, ken orients ξx.
+In particular, the orientation of Hα is determined by the orientation of α .
+Remark 1.4. If ξ has an Hα-structure, we may (using a partition of unity to glue
+together local metrics) choose a positive-deﬁnite real inner prod uct on ξ such that the
+structure homomorphism
+ρ : Hα → EndR(ξ)
+is a ∗-homomorphism, that is, ρ(r)∗ =ρ(
+r) for r ∈ Hα.
+Given a 4 n-dimensional real inner product space V with a left H-module struc-
+ture compatible, as above, with the inner product, we write O( V ) and Sp(V ) for the
+orthogonal and symplectic groups of V and deﬁne
+TSp(V ) = {g ∈ O(V ) |g(rv) = κ(r)g(v) for some κ ∈ Aut(H) and all v ∈ V , r ∈ H}.
+(The ‘T’ is intended to indicate ‘twisted’.) It is evidently a subgroup of t he special
+orthogonal group SO(V ) and we have an extension
+1 → Sp(V ) → TSp(V ) → Aut(H) → 1.
+
+=== PDF PAGE 3 ===
+QUATERNIONIC STRUCTURES 3
+Since automorphisms of H are inner, we may equivalently describe TSp( V ) as the
+subgroup Sp(1) · Sp(V ) = (Sp(1) × Sp(V ))/ {± (1, 1)} of orthogonal maps of the form
+v ↦→ a ·g(v), where a ∈ Sp(1) ⊆ H and g ∈ Sp(V ). The group TSp( V ) acts (orthogo-
+nally) on H and on V .
+Lemma 1.5. Letξ be a 4n-dimensional orthogonal real vector bundle. Then ξ admits
+an Hα-structure for some α if and only if the structure group of ξ reduces from O(Hn)
+to TSp(Hn).
+Proof. If the structure group of ξ reduces from O( Hn) to TSp( Hn), there is a principal
+TSp(Hn)-bundle P → X such that ξ = P × TSp(Hn) Hn. Then we have an oriented
+orthogonal 3-dimensional vector bundle α = P × TSp(Hn) im H, with an associated
+quaternion algebra Hα = P × TSp(Hn) H having an obvious left action on ξ. The real
+vector space Hn has a canonical orientation as a left H-module. Then the choice of
+a TSp( Hn)-principal bundle gives orientations to the bundles ξ and α such that the
+orientation of ξ is canonical with respect to Hα-structure.
+If ξ admits an Hα-structure for some α , then the bundle of frames
+Fr(ξ) = {f ∈ Hom(Hn,ξ ) |f is a real isometry, f (rv) = ρ(r)f (v)
+for some ρ ∈ Iso(H, Hα) and all v ∈ Hn, r ∈ H}.
+is a principal TSp(Hn)-bundle. As above, ξ = Fr(ξ)× TSp(Hn)Hn and Hα = Fr(ξ)× TSp(Hn)
+H. Hence the structure group of ξ reduces from O( Hn) to TSp( Hn). □
+Remark 1.6. In quaternionic geometry ([18, 19]) a smooth 4 n-manifold M is said to
+be almost quaternionic if its tangent bundle is associated to a principa l GL(n, H)·Sp(1)-
+bundle. After a choice of compatible metric this principal bundle redu ces to a principal
+TSp(n)-bundle P . The sphere bundle S(α ) of the vector bundle α = P × TSp(n) im H
+is called the twistor space of M.
+Considering H as a 2-dimensional complex vector space with multiplication by com-
+plex numbers from the right and with the standard left action of Sp( 1), denote by
+S2
+CH the second symmetric power with the induced action of Sp(1). One c an show
+that α ⊗ C is isomorphic to the complex vector bundle S2H = P × TSp(n)S2H. The
+isomorphism is induced by the Sp(1)-invariant homomorphism of real representations
+ϕ : im H → S2H, ϕ (u) = j ⊗ u − 1 ⊗ uj. Formally, S2H is the second symmetric
+power of a vector bundle H. Such a bundle H exists globally if w2(α ) = 0. Then α is
+associated to a principal Spin(3) = SU(2)-bundle Q, H =Q × SU(2) H, and the twistor
+space is the complex projective bundle CP (H) ([18]).
+As a speciﬁc example we have the quaternionic projective space HP (Hn+1) where α
+is the Lie algebra bundle.
+For any Hα-vector bundle ξ one can form the associated projective bundle, which
+we denote by HαP (ξ).
+2. Quaternionic line bundles and Morita equivalence
+Since TSp(H) = SO(4), every oriented 4-dimensional real vector bundle µ has an Hα-
+structure for someα . In this section we describe all such structures and their propert ies
+and deﬁne the notion of Morita equivalence of bundles of quaternion algebras.
+
+=== PDF PAGE 4 ===
+4 M. ˇCADEK, M. C. CRABB AND J. V AN ˇZURA
+Recall the double covers
+Sp(1) × Sp(1) → SO(4) = SO( H)
+(ρ+ ,ρ− )
+− − − − − →SO(3) × SO(3)
+given by mapping ( a,b ) ∈ Sp(1) × Sp(1) to the map g : v ↦→ avb in SO( H) and g
+to (ρ+(g),ρ − (g)) = ( ρ(a),ρ (b)), where ρ : Sp(1) → SO(3) maps a to v ↦→ ava (the
+adjoint representation).
+This leads to a complete description of the twisted quaternionic line bu ndles.
+Proposition 2.1. Let µ be an oriented 4-dimensional orthogonal vector bundle over
+X. Write α =ρ+(µ) andβ =ρ− (µ). Then µ is an Hα-line bundle and a right Hβ-line
+bundle, and there is a canonical isomorphism (of bundles of a lgebras)
+Hα ⊗ R Ho
+β = End R(µ).
+Conversely, if α is an oriented orthogonal 3-dimensional vector bundle and µ is
+an orthogonal Hα-line bundle, then µ acquires an orientation under which ρ+(µ) is
+identiﬁed with α and β = ρ− (µ) is characterized by an isomorphism (of bundles of
+algebras)
+Ho
+β = End Hα(µ).
+Moreover, we have
+w2(α ) = w2(β ) = w2(µ).
+Proof. Let µ be an oriented 4-dimensional orthogonal vector bundle. There is a prin-
+cipal SO( H) = TSp(1)-bundle P such that µ = P × SO(H) H. From the deﬁnition,
+Hα =P × ρ+ H and Hβ =P × ρ− H, where ρ+ andρ− determine the respective actions
+of TSp(1) on H. Then µ is a left Hα-line and a right Hβ-line. Next
+EndR(µ) = P × SO(H) EndR(H),
+where the action of SO( H) on End R(H) is (a,b ) ·f :v ↦→ af (
+avb)b. Similarly,
+Hα ⊗ R Ho
+β =P × ρ+⊗ ρ− (H ⊗ R Ho),
+whereρ+ ⊗ ρ− acts on H⊗ Ho by (a,b ) · (h1 ⊗ h2) = ah1
+a⊗ bh2b. Since the isomorphism
+of algebras H ⊗ R Ho → EndR(H) given by h1 ⊗ h2 ↦→ (v ↦→ h1vh2) is invariant under
+the actions of SO( H) described above, we get Hα ⊗ Ho
+β = End R(µ).
+Conversely, suppose that µ is an orthogonal Hα-line. On µ consider the canonical
+orientation given by the Hα-structure. As in the proof of Lemma 1.5 we can construct
+a principal TSp(1)-bundle P such that µ = P × TSp(1) H and Hα = P × ρ+ H. (This
+givesµ the canonical orientation with respect to Hα.) Hence α =ρ+(µ).
+Further, we have the monomorphism of algebras Ho
+β֒→Hα ⊗ R Ho
+β = End R(µ). Its
+image is End Hα(µ). Consequently, Ho
+β = End Hα(µ).
+Without loss of generality we can assume that X is a ﬁnite CW-complex. Every
+4-dimensional real vector bundle µ over the 3-skeleton ofX has a section. If it is an Hα-
+line and a right Hβ-line, then over the 3-skeleton µ = Hα = R⊕ α andµ = Ho
+β = R⊕ β .
+Consequently,w2(µ) = w2(α ) = w2(β ). □
+
+=== PDF PAGE 5 ===
+QUATERNIONIC STRUCTURES 5
+Lemma 2.2. The vector bundles α and β deﬁned in the previous proposition are iso-
+morphic to the bundles of eigenspaces of the Hodge star opera tor on Λ2µ corresponding
+to the eigenvalues 1 and − 1, respectively, and consequently
+α ⊕ β = Λ 2µ.
+Proof. On H consider the real inner product ⟨u,v ⟩ = Re(uv). The inner product
+enables us to deﬁne the isomorphism of real vector spaces H⊗ H ∼= EndR(H) : h1⊗h2 ↦→
+(v ↦→ ⟨ h1,v ⟩h2). Under this isomorphism the space Λ 2H maps onto the subspace
+of all skew-symmetric endomorphisms on H. Since the left multiplication Lh and
+the right multiplication Rh by a pure imaginary quaternion h are skew-symmetric
+endomorphisms of H, we get two inclusions Λ + : im H → Λ2H and Λ − : im H → Λ2H
+which are isometries (up to a multiple). It is easy to show that
+Λ+(h) = 1 ∧ h + i ∧ hi + j ∧ hj + k ∧ hk, Λ− (h) = 1 ∧ h + i ∧ ih + j ∧ jh + k ∧ kh.
+Put ω = 1 ∧ i ∧ j ∧ k. Then one can check that
+Λ+(h1)∧ Λ+(h2) = 8 ⟨h1,h 2⟩ω, Λ− (h1)∧ Λ− (h2) = − 8⟨h1,h 2⟩ω, Λ+(h1)∧ Λ− (h2) = 0,
+which means that Λ+(im H) and Λ− (im H) correspond to the perpendicular eigenspaces
+for eigenvalues 1 and − 1, respectively, of the Hodge star operator. Hence we get an
+isomorphism Λ +(im H) ⊕ Λ− (im H) = Λ 2H.
+We have associated vector bundles Λ 2µ =P × SO(H) Λ2H, α =ρ+(µ) = P × ρ+ im H,
+β = ρ− (µ) = P × ρ− im H. Since the inclusions Λ +, Λ − are invariant with respect to
+actions of SO( H) given on im H byρ+ and ρ− , respectively, we may deﬁne Λ + :α →
+Λ2µ, Λ − :β → Λ2µ. The considerations above imply that Λ +(α ) ⊕ Λ− (β ) = Λ 2µ. □
+Corollary 2.3. Every 4-dimensional oriented orthogonal vector bundle µ is a (left)
+module over just two (up to orientation preserving isomorph ism) quaternion algebras,
+namely Hα and Hβ whereα =ρ+(µ) andβ =ρ− (µ). The orientation of µ is canonical
+with respect to the Hα-structure and is not canonical with respect to the Hβ-structure.
+If −µ is the same vector bundle with opposite orientation then
+ρ+(−µ) = ρ− (µ), ρ − (−µ) = ρ+(µ).
+Proof. An orientation of µ is determined by the choice of the SO( H)-principal bundle
+P such that µ = P × SO(H) H and by the standard orientation of H. The standard
+orientation of im H gives an orientation to α = P × ρ+ im H and β = P × ρ− im H.
+Hence µ has the canonical orientation as an Hα-module which coincides with the
+canonical orientation of µ as a right Hβ-module (given by the multiplication by i, j, k
+from the right). Using the previous proposition there are no other (up to orientation
+preserving isomorphisms) left and right quaternion structures on µ with compatible
+orientations. Since the left action of Hβ is given by the right action of Hβ and by the
+orientation reversing conjugation − : Hβ → Hβ, the orientation of µ is not canonical
+with respect to the left Hβ-structure. This implies the formulas. □
+Lemma 2.4. The ﬁrst Pontryagin classes of α and β are
+p1(α ) = p1(µ) + 2e(µ), p 1(β ) = p1(µ) − 2e(µ).
+
+=== PDF PAGE 6 ===
+6 M. ˇCADEK, M. C. CRABB AND J. V AN ˇZURA
+Proof. Let H be the Hopf Hα-line bundle over the quaternionic projective bundle
+HαP (H∞
+α ). Since any Hα-line bundle µ is a summand of a trivial Hα-bundle over X,
+there is a section s :X → HαP (H∞
+α ) such that µ =s∗(H). So it is enough to check the
+formulas for the bundle H. By the Leray-Hirsch Theorem, H ∗(HαP (H∞
+α )) = H ∗(X)[e],
+wheree is the Euler class of H. Further, the pullback of H to the sphere bundle S(H∞
+α )
+is Hα. So we have p1(H) = p1(Hα) +ae, where a ∈ Z. Restricting H to a point in X
+we get Hopf bundle over HP ∞ and determine that a = − 2. □
+Deﬁnition 2.5. Two bundles Hα and Hβ are said to be Morita equivalent if there is
+a 4-dimensional real vector bundle µ and an isomorphism of bundles of algebras
+Hα ⊗ R Ho
+β ∼= EndR(µ).
+Such an isomorphism deﬁnes a morphism in the following category M(X). The objects
+of M(X) are the oriented 3-dimensional vector bundles over X. A morphism β → α
+is represented by an isomorphism Hα ⊗ R Ho
+β → EndR(µ), two such isomorphisms
+Hα ⊗ Ho
+β → EndR(µ) and Hα ⊗ Ho
+β → EndR(µ′) being regarded as the same if µ and
+µ′ are isomorphic as Hα ⊗ Ho
+β-modules. The identity α → α is given by µ = Hα.
+Composition is the tensor product: Hα ⊗ Ho
+β → EndR(µ) and Hβ ⊗ Ho
+γ → EndR(ν)
+compose to Hα ⊗ Ho
+γ → EndR(µ ⊗ Hβ ν). The category M(X) is a groupoid with
+the inverse of Hα ⊗ Ho
+β → EndR(µ) given by the dual Hβ ⊗ Ho
+α → EndR(µ∗) (or by
+Hβ ⊗ Ho
+α → EndR(µ), using the isomorphisms Hα → Ho
+α and Hβ → Ho
+β and the inner
+product on µ).
+Morita equivalence is usually deﬁned as an equivalence of categories o f left modules.
+In our case both deﬁnitions are equivalent (in Proposition 2.6 we prov e one direction)
+and we have chosen the one which is more suited to our purposes.
+Proposition 2.6. An isomorphism Hα ⊗ Ho
+β ∼= EndR(µ) determines an equivalence
+from the category of Hβ-modules to the category of Hα-modules given by η ↦→ µ ⊗ Hβη.
+Proof. This is a consequence of the fact that M(X) is a groupoid. □
+There is a topological criterion for Morita equivalence:
+Theorem 2.7. Two bundles Hα and Hβ are Morita equivalent if and only if w2(α ) =
+w2(β ).
+Proof. The commutative diagram
+SO(4)
+(ρ+,ρ− )
+↓↓
+→→
+Λ2
+→→↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ SU(4)
+∼
+= →→
+↘↘↑↑↑↑↑↑↑↑↑ Spin(6)
+↓↓
+SO(3) × SO(3) →→ SO(6)
+implies that the double cover Spin(6) → SO(6) pulls back, under the inclusion of
+SO(3) × SO(3) in SO(6), to ( ρ+,ρ − ) : SO(4) → SO(3) × SO(3). Hence the obstruction
+to lifting from SO(3)× SO(3) to SO(4) is given by the sum of the second Stiefel-Whitney
+classes. □
+
+=== PDF PAGE 7 ===
+QUATERNIONIC STRUCTURES 7
+Remark 2.8. In [10] the orthogonal Brauer group of a space X was deﬁned as the
+quotient of the monoid of all bundles of simple central R-algebras over X (with a
+multiplication induced by the tensor product) by the submonoid of all bundles of
+the form End R(µ) where µ is a real vector bundle over X. The inverse is given by
+the opposite algebra. Two bundles Hα and Hβ are Morita equivalent if and only if
+they determine the same element of the Brauer group BrO( X). There is a group
+isomorphism
+BrO(X) → H 0(X; Z/ 2) ⊕ H 2(X; Z/ 2),
+in which Hα corresponds to (1,w 2(α )).
+Ifα andβ are Morita equivalent, we can describe all the morphisms from α toβ in
+M(X) from the knowledge of one of them.
+Proposition 2.9. Given an isomorphism Hα ⊗ Ho
+β ∼= EndR(µ) and a real line bundle δ
+we use the isomorphism EndR(µ) → EndR(δ⊗ µ) deﬁned by the tensor product with the
+identity on δ to get Hα ⊗ Ho
+β ∼= EndR(δ ⊗ µ). This deﬁnes a bijection from H 1(X; Z/ 2)
+to HomM(X)(β,α ). In particular, the automorphism group AutM(X)(α ) is isomorphic
+to H 1(X; Z/ 2).
+Proof. Isomorphisms Hα ⊗ Ho
+β ∼= EndR(µ) and Hα ⊗ Ho
+β ∼= EndR(µ′) determine an
+isomorphism f : End R(µ) → EndR(µ′). Since every automorphism of End R(R4) is
+inner, we can deﬁne δ as the line bundle with the ﬁbre at x generated by an isomor-
+phism g : µx → µ′
+x such that fx(a) = gag − 1. Then the map g ⊗ v ↦→ g(v) gives an
+isomorphism δ ⊗ µ → µ′. □
+Corollary 2.10. For a given 4-dimensional oriented orthogonal vector bundle µ the
+bundles α =ρ+(µ) andβ =ρ− (µ) are isomorphic if and only if µ has a 1-dimensional
+(not necessarily trivial) summand.
+With respect to the canonical orientations of α and β given by µ, this isomor-
+phism can only be orientation reversing. The existence of a 1-dimens ional summand
+is equivalent to the existence of an orientation reversing involution o f µ.
+Proof. If Hα ⊗ Ho
+α ∼= EndR(µ), then by the previous proposition µ ∼=δ ⊗ Hα for some
+δ which is thus a subbundle of µ. Conversely, if an Hα-bundle µ has a subbundle δ,
+then the multiplication gives an isomorphism µ → δ ⊗ Hα which means that ρ+(µ) =
+ρ+(Hα) = ρ− (Hα) = ρ− (µ). □
+In Section 4 we will need
+Lemma 2.11. Let α , β , γ be oriented 3-dimensonal vector bundles. Suppose that
+Hα ⊗ Ho
+β ∼= End(µ), Hβ ⊗ Ho
+γ ∼= End(ν) so that Hα ⊗ Ho
+γ ∼= End(µ ⊗ Hβ ν). Give µ, ν
+and µ ⊗ Hβ ν the canonical orientations. Then the Euler class of µ ⊗ Hβ ν is
+e(µ ⊗ Hβ ν) = e(µ) +e(ν).
+In other words, the Euler class gives a functor from M(X) to the group H 4(X; Z).
+Proof. As in the proof of Lemma 2.4 we use ﬁbrewise classifying spaces. Let P Hβ(H∞
+β )
+be the right quaternion projective bundle with the Hopf bundle H1 (a right Hβ-line
+bundle) and let HβP (H∞
+β ) be the left quaternion projective bundle with the left Hopf
+
+=== PDF PAGE 8 ===
+8 M. ˇCADEK, M. C. CRABB AND J. V AN ˇZURA
+bundle H2. Then there are sections s1 : X → P Hβ(H∞
+β ) and s2 : X → HβP (H∞
+β )
+such that µ = s∗
+1(H1) and ν = s∗
+2(H2). So it is enough to look at the ﬁbre product
+P Hβ(H∞
+β ) × X HβP (H∞
+β ) and to show that e(H1 ⊗ Hβ H2) = e(H1) +e(H2).
+Now H ∗(P Hβ(H∞
+β ) × X HβP (H∞
+β )) = H ∗(X)[e1,e 2], where ei =e(Hi). But e(H1 ⊗
+H2) = ae1 + be2 with a,b ∈ Z: it does not involve any element of H ∗(X) since
+the restriction of H1 ⊗ Hβ H2 to X is Hβ with the Euler class equal to zero. So one
+can calculate by restricting to the two factors P Hβ(H∞
+β ) and HβP (H∞
+β ) (using the
+inclusion of X as P Hβ(H1
+β) or HβP (H1
+β)). The class restricts to e1 and to e2. Hence
+a =b = 1. □
+3. K-theory
+We deﬁne KSp0
+α(X) to be the Grothendieck group of (left) Hα-bundles over the
+compact Hausdorﬀ space X. The aim of this section is to compute KSp0
+α(X) as a
+classical KO-group. Let X α stand for the Thom space of α .
+Theorem 3.1. There is an isomorphism
+KSp0
+α(X) → KO0(Hα) = ˜KO− 1(X α)
+given by mapping the class [ξ] to the element represented in KO-theory with compact
+supports by the linear map
+x ↦→ vx :π ∗ξ → π ∗ξ
+over v ∈ Hα, where π : Hα → X is the projection.
+Remark 3.2. TheK-groups give a functorα ↦→ KSp0
+α(X) from M(X) to the category
+of abelian groups arising from the functor µ⊗ Hβ described in Proposition 2.6. So a
+Morita equivalence Hα ⊗ Ho
+β → EndR(µ) determines an isomorphism KSp0
+β(X) →
+KSp0
+α(X), which translates into the Bott isomorphism
+KO0(Hβ) → KO0(Hα)
+given by an associated spin structure for the virtual real vector bundle Hα− Hβ =α −β .
+We shall derive Theorem 3.1 from the following two propositions. The ﬁ rst is the
+Karoubi-Segal periodicity theorem as given in [7], Theorem 6.1. See als o [1], Theorem
+3.3 and [14], pages 193–194. In the statement L is the representation R of Z/ 2 with
+the action of the generator as multiplication by − 1.
+Proposition 3.3. Letζ be a real vector bundle over X. Then there is an isomorphism
+from the Grothendieck group KOC(ζ)(X) of graded C(ζ)-modules, over the Cliﬀord
+algebra C(ζ) of a positive-deﬁnite inner product on ζ, to the Z/ 2-equivariant KO-
+group of the total space of the Z/ 2-equivariant vector bundle L ⊗ ζ:
+KOC(ζ)(X) → KO0
+Z/2(L ⊗ ζ),
+given by mapping the class of a graded (left) C(ζ)-moduleµ =µ0 ⊕ µ1 to the element
+represented by the linear map
+x ↦→ vx :π ∗µ0 → L ⊗ π ∗µ1
+over v ∈ L ⊗ ζ, where π :ζ → X is the projection.
+
+=== PDF PAGE 9 ===
+QUATERNIONIC STRUCTURES 9
+Suppose that an orthogonal vector bundle ζ has dimension 4k and is oriented. Then
+we may deﬁne a central involution ω x ∈ C0(ζx) by ω x = e1 · · ·e4k, where e1,...,e 4k
+is any positively oriented orthonormal basis of the ﬁbre ζx at x ∈ X. Then any
+graded C(ζ)-module µ = µ0 ⊕ µ1 splits as a direct sum of two graded submodules
+µ+ = µ+
+0 ⊕ µ+
+1 and µ− = µ−
+0 ⊕ µ−
+1 such that ω x acts as identity in the ﬁbres of µ+
+0
+andµ−
+1 , and as multiplication by − 1 in the ﬁbres of µ−
+0 andµ+
+1 . We will say that µ is
+positive if µ = µ+, and negative, if µ = µ− . Then the Grothendieck group of graded
+C(ζ)-modules splits as a sum of the Grothendieck groups of positive and negative
+modules KO+
+C(ζ)(X) ⊕ KO−
+C(ζ)(X). The periodicity theorem ([7], Proposition 6.3 or
+[8], Proposition 3.1) gives an isomorphism between KO0
+Z/2(L⊗ ζ) andKO0
+Z/2(ζ). This,
+combined with the Karoubi-Segal theorem, establishes
+Proposition 3.4. Let ζ be an oriented real vector bundle over X with dimension a
+multiple of 4. Then there is an isomorphism from the Grothendieck group of positive
+C(ζ)-modules to the KO-theory of the total space of ζ
+KO+
+C(ζ)(X) → KO0(ζ),
+given by mapping the positive C(ζ)-moduleµ to the linear map
+x ↦→ vx :π ∗µ0 → π ∗µ1
+over v ∈ ζ.
+Proof of Theorem 3.1. We apply the previous proposition with ζ = R ⊕ α . It will be
+convenient to name the generator of the ﬁrst summand and write ζ = Re ⊕ α . We
+show that positive graded C(ζ)-modules correspond to (ungraded) Hα-modules.
+Indeed, let µ =µ0 ⊕ µ1 be a positive graded C(Re ⊕ α )-module. Put ξ =µ0. The
+inclusion of Hα = R1 ⊕ α in C0(Re ⊕ α ) as R1 ⊕ eωα gives ξ an Hα-structure. Now
+C0(Re ⊕ α ) = Hα ⊕ Hαω , which, as a ring, is the product Hα × Hα (with the factors
+corresponding to the idempotents (1 ± ω )/ 2). In the opposite direction, given an Hα-
+bundleξ, put µ0 =ξ. The inclusion Hα ⊆ C0(Re ⊕ α ) described above and the action
+of ω as the identity give µ0 the structure of a C0(ζ)-module, which extends uniquely
+to a positive graded C(ζ)-module µ. □
+4. Characteristic classes
+In this section we introduce characteristic classes for Hα-bundles, then describe their
+properties and relation to the Stiefel-Whitney, Euler and Pontryag in characteristic
+classes.
+Given an Hα-moduleξ of dimensionn overX, we have an associated projective bun-
+dle HαP (ξ) over X and a Hopf Hα-line bundle H (which we endow with the canonical
+orientation). The following proposition constructs characteristic classes dα
+i (ξ).
+Theorem 4.1. For every Hα-bundle ξ of dimension n there are uniquely determined
+classesdα
+i (ξ) ∈ H 4i(X; Z), 1 ≤ i ≤ n such that the integral cohomology ring of HαP (ξ)
+is given by
+H ∗(HαP (ξ); Z) = H ∗(X)[t]/ (tn − dα
+1 (ξ)tn− 1 + · · · + (− 1)ndα
+n(ξ)),
+wheret =e(H) ∈ H 4(HαP (ξ); Z) is the Euler class of the Hopf bundle H.
+
+=== PDF PAGE 10 ===
+10 M. ˇCADEK, M. C. CRABB AND J. V AN ˇZURA
+Proof. This follows at once from the Leray-Hirsch Theorem, because the c ohomology
+is freely generated as an H ∗(X; Z)-module by 1, t, ..., t n− 1. □
+To derive the properties of the characteristic classes dα
+i we will use a splitting prin-
+ciple for Hα-bundles, which follows from Proposition 4.1 by induction, see [15].
+Proposition 4.2. For each Hα-bundle ξ overX letp :F (ξ) → X be the bundle whose
+ﬁbre at x is the ﬂag manifold of orthogonal splittings of ξx as a sum L1 ⊕ L2 ⊕ · · · ⊕ Ln
+of Hαx-lines. Then p∗(ξ) splits as a direct sum of Hα-line bundles and p∗ :H ∗(X; Z) →
+H ∗(F (ξ); Z) is injective.
+To shorten our notation put dα(ξ) = 1 + dα
+1 (ξ) +dα
+2 (ξ) + · · · +dα
+n(ξ). We also write
+dα
+0 (ξ) = 1. The classes dα(ξ) have the properties that one would expect and determine
+the other characteristic classes of ξ as a real vector bundle.
+Theorem 4.3. (a) The classes dα are multiplicative, i.e. dα(ξ ⊕ ξ′) = dα(ξ)dα(ξ′) for
+Hα-vector bundles ξ and ξ′.
+(b) If ξ is an Hα-bundle of dimension n with the canonical orientation, then its Euler
+class is e(ξ) = dα
+n(ξ).
+(c) The Stiefel-Whitney classes of ξ are
+1 +w1(ξ) +w2(ξ) + · · · +w4n(ξ) =
+n∑
+i=0
+((1 +w2(α ) +w3(α ))n− i dα
+i (ξ).
+In particular, w2(ξ) = nw2(α ).
+(d) The Chern classes of the complexiﬁcation of ξ (and so the Pontryagin classes
+pi(ξ) = ( − 1)ic2i(C ⊗ ξ)) are given by
+4n∑
+k=0
+ck(C ⊗ ξ) =
+n∑
+i, j=0
+qn− i,n− j(α )dα
+i (ξ)dα
+j (ξ),
+where the classes qi,j(α ) are determined by the generating function
+∑
+i, j≥ 0
+qi,j(α )sitj = (1 − s)(1 − t) + (e(α )2 − p1(α ))st
+((1 − s)2 + (e(α )2 − p1(α ))s2)((1 − t)2 + (e(α )2 − p1(α ))t2).
+Proof. (a) The proof is the same as in the case of the Stiefel-Whitney and Ch ern
+classes.
+(b) Ifµ is an Hα-line, thendα
+1 (µ) = e(µ) by deﬁnition. Now using the multiplicativity
+and the splitting principle, we get dα
+n(ξ) = e(ξ).
+(c) There is a quotient map π : RP (ξ) → HαP (ξ) from the real projective bundle to
+the Hα-projective bundle. The Hopf Hα-bundleH lifts to the tensor product Hα ⊗ HR
+with the real Hopf bundle HR. So
+π ∗(t) = x4 +x2w2(α ) +xw3(α ),
+where x =w1(HR). Comparing our deﬁnition of dα with the corresponding deﬁnition
+of the Stiefel-Whitney classes (or using the splitting principle), we ge t our formula.
+(d) For an Hα-line bundle µ we have
+c1(C ⊗ µ) = 0, c 2(C ⊗ µ) = 2e(µ) − p1(α ), c 3(C ⊗ µ) = e(α )2, c 4(C ⊗ µ) = e(µ)2.
+
+=== PDF PAGE 11 ===
+QUATERNIONIC STRUCTURES 11
+From the splitting principle and multiplicativity, we can express the tot al Chern class
+of C ⊗ ξ as
+n∏
+j=1
+(
+y2
+j + 2ayj +b
+)
+,
+where dα
+i (ξ) is the i-th elementary symmetric polynomial in y1, y2, ..., y n, a = 1 and
+b = 1 +e(α )2 − p1(α ). The stated formula is obtained by computing in the polynomial
+ring Z[a,b ][y1,u 2,...,y n] on formal variables a,b,yj by embedding Z[a,b ] as a subring
+of the polynomial ring Q[r,s ], where a =r +s and b =rs. □
+Corollary 4.4. If n is even and ξ admits an Hα-structure for some α , then ξ is spin.
+If n is odd and ξ admits an Hα-structure, then w2(ξ) = w2(α ). □
+Now we examine the relation between the characteristic classes and Morita equiva-
+lence.
+Proposition 4.5. Let Hα ⊗ Ho
+β
+∼= EndR(µ) and let η be an Hβ-bundle. Then the
+characteristic classes of the Hα-bundle ξ =µ ⊗ Hβ η are
+n∑
+i=0
+dα
+i (ξ) =
+n∑
+i=0
+(1 +e(µ))n− idβ
+i (η).
+Proof. For an Hβ-line bundle η this is Lemma 2.11. Applying multiplicativity (or by
+using the equivalence between HαP (ξ) and HαP (η) under which the Hopf bundles
+correspond by tensoring with µ), we get the formula. □
+Using the Gysin exact sequence as in [4] or in [5] one can describe the c ohomology
+rings of BTSp(n). Denote by ρ2 the reduction mod 2 and by ∆ the corresponding
+Bockstein homomorphism. Let α and ξ be the associated vector bundles with ﬁbres
+im H and Hn, respectively, to the classifying TSp( n)-principal bundle ETSp(n) over
+BTSp(n). Put w2 =w2(α ), p1 =p1(α ) and di =dα
+i (ξ).
+Theorem 4.6. The cohomology rings of BTSp(n) are given by
+H ∗(BTSp(n); Z/ 2) = Z/ 2[w2,Sq 1w2,ρ 2d1,ρ 2d2,...,ρ 2dn],
+H ∗(BTSp(n); Z) = Z[∆w2,p 1,d 1,d 2,...,d n]/ (2∆w2).
+The cohomology ring with Z/ 2 coeﬃcients was described in [16] and [17].
+5. Complex quaternionic bundles
+In this section we will deal with bundles of quaternion algebras which a dmit as a
+subbundle a bundle of ﬁelds of complex numbers. Modules over them a re complex
+vector bundles where the complex structure extends to a quater nionic structure. We
+will characterize bundles of quaternion algebras which are Morita eq uivalent to such
+bundles of algebras (Theorem 5.8). At the end we will derive a relation between the
+Chern classes and the classes dα
+i introduced above (Theorem 5.10).
+We start with the description of bundles of ﬁelds of complex numbers . See [9].
+
+=== PDF PAGE 12 ===
+12 M. ˇCADEK, M. C. CRABB AND J. V AN ˇZURA
+Deﬁnition 5.1. A principal Aut( C) = O(1)-bundle over X determines an orthogonal
+real line bundle δ and a bundle of complex algebras Cδ = R ⊕ δ. An element of the
+ﬁbre δx with length 1 is a square-root of − 1. We say that a real vector bundle ξ over
+X is a Cδ-bundle if it has a Cδ-module structure.
+Ifξ has a Cδ-structure, then as in Remark 1.4 there is a real inner product g onξ such
+that the structure map Cδ → End(ξ) is a ∗-homomorphism, i. e. g(au,v ) = g(u,av).
+Let i be an element of δx of the length 1 and put f (u,v ) = − ig(iu,v ). The real bilinear
+form f : ξ × ξ → δ is non-singular skew-symmetric and ⟨u,v ⟩ = g(u,v ) +f (u,v ) is
+a Cδ-inner product which is Cδ-linear in the ﬁrst variable and Cδ-conjugate-linear in
+the second.
+Conversely, if a 2n-dimensional real vector bundle ξ is equipped with a non-singular
+skew-symmetric real bilinear form ξ× ξ → δ, one can prove that there is a Cδ-structure
+on ξ. (See [9], Remark 5.5, or the proof of the similar Proposition 5.3 below.)
+Given a 2n-dimensional vector space V with a complex structure, we can choose a
+compatible real inner product on it. It enables us to introduce a sub group
+TU(V ) = {g ∈ O(V ) |g(rv) = κ(r)g(v) for some κ ∈ Aut(C) and all v ∈ V }
+of O(V ). Thus, TU( V ) consists of the C-linear and the conjugate-linear isometries.
+As in the case of quaternionic structures, a 2 n-dimensional orthogonal real vector
+bundleξ admits a Cδ-structure for some δ if and only if its structure group O( Cn) can
+be reduced to TU( Cn).
+Any 2-dimensional real vector bundleλ has a canonical structure as a Cδ-line bundle,
+where δ = detλ. Moreover, Cδ-line bundles over X are classiﬁed by their Euler class
+in the cohomology group H 2(X; Z(δ)) with integral coeﬃcients twisted by δ. This
+also follows from the fact that TU( C) = O(2).
+An n-dimensional Cδ-bundle has twisted Chern classes cδ
+j(ξ) ∈ H 2j(X; Z(δ⊗ j)) de-
+ﬁned in the same way as the classes dα
+j for an Hα-bundle. And these determine the
+Stiefel-Whitney classes of ξ: in particular, w1(ξ) = nw1(δ) and e(ξ) = cδ
+n(ξ).
+As in Section 3 one can show that the Grothendieck group K 0
+δ (X) of Cδ-vector
+bundles is isomorphic to KOC(R⊕ δ)(X) and, hence, to KO0
+Z/2(L ⊗ Cδ), and then deﬁne
+KOi
+δ(X) = KOi
+Z/2(L ⊗ Cδ) for i ∈ Z. See [9].
+We now consider the situation in which a bundle of quaternions Hα admits a bundle
+of ﬁelds Cδ as a subalgebra.
+Proposition 5.2. Let α be an SO(3)-bundle. Then Hα admits a subbundle of the
+form Cδ if and only if α = δ ⊕ λ, where λ is a 2-dimensional orthogonal real vector
+bundle and δ = Λ 2λ (or, in other words, if the structure group of α can be reduced to
+the subgroup O(2) ⊂ SO(3)).
+Proof. On Hα consider a real inner product in which the multiplication by a given
+element from Hα is a ∗-homomorphism. If Hα admits a Cδ as a sub-algebra then the
+bundle λ perpendicular to Cδ is a Cδ-line bundle. Hence δ = Λ 2λ and α =δ ⊕ λ. □
+We will denote the bundle of quaternions HΛ2λ⊕ λ determined by an O(2)-bundle λ
+by simply Hλ. The following propositions give two necessary and suﬃcient conditio ns
+for a vector bundle to have Hλ-structure.
+
+=== PDF PAGE 13 ===
+QUATERNIONIC STRUCTURES 13
+Proposition 5.3. Fix a Cδ-line bundle λ. Let ξ be a Cδ-vector bundle. Then there is a
+natural correspondence, up to homotopy, between Hλ-structures on ξ and non-singular
+skew-symmetric Cδ-bilinear forms ξ ⊗ Cδ ξ → λ.
+Proof. We will carry out all the constructions in ﬁbres at a given point x ∈ X. Sup-
+pose that ξ has an Hλ-structure. Then ξ can be equipped with a real inner product
+from Remark 1.4 which is the ﬁrst component of a Cδ-inner product as shown below
+Deﬁnition 5.1. For every a ∈ λ x the multiplication ϕ a(v) = a ·v deﬁnes a Cδ-conjugate
+linear map ξ → ξ such that ϕ 2
+a(v) = −|a|2v, where |a| is the norm given by the real
+inner product on Hλ. For the adjoint we get ϕ ∗
+a = −ϕ a. In the ﬁrst place ∗ means the
+adjoint with respect to the real inner product, but this translate s into the adjoint for
+the Cδ-inner product. (For a conjugate-linear map ϕ , the adjoint is deﬁned so that
+⟨ϕ (u),v ⟩ = ⟨ϕ ∗(v),u ⟩ =
+⟨u,ϕ ∗(v)⟩.) So we can deﬁne a skew-symmetric bilinear form
+f :ξ ⊗ Cδ ξ → λ by
+⟨f (u,v ),a ⟩ = ⟨u,ϕ a(v)⟩
+using the Cδ-inner product. f is non-singular since ϕ a is non-singular for a ̸= 0.
+Conversely, givenf , we deﬁne a Cδ-conjugate linear mapψ a :ξx → ξx by ⟨u,ψ a(v)⟩ =
+⟨f (u,v ),a ⟩. Then ψ ∗
+a = −ψ a and ψ a ◦ψ ∗
+a is Cδ-linear and positive deﬁnite for a ̸= 0.
+So we can deﬁne
+ϕ a = |a|(ψ aψ ∗
+a)− 1/2ψ a
+with ϕ 2
+a = −|a|2 and ϕ ∗
+a = −ϕ a.
+These two constructions deﬁne maps from Hλ-structures to non-singular skew-
+symmetric bilinear forms and back. Composing in one direction we get t he identity on
+Hλ-structures. In the other direction we get a homotopic form, thr ough the homotopy
+(|a|(ψ aψ ∗
+a)− 1/2)t, 0 ≤ t ≤ 1. □
+Proposition 5.4. Let ξ be a 4n-dimensional orthogonal real vector bundle. Then ξ
+admits an Hλ-structure for some complex line bundle λ if and only if the structure
+group of ξ can be reduced from SO(Hn) to TSp(Hn) ∩ U(Hn), and an Hλ-structure
+for some Cδ-line bundle λ and some δ if and only if the structure group reduces to
+TSp(Hn) ∩ TU(Hn).
+Proof. Use Lemma 1.5 and the analogous statement for Cδ-structures. □
+It is advantageous to express the intersections of the groups as quotients of products.
+Lemma 5.5. For any 4n-dimensional real vector space V with a left H-module struc-
+ture
+TSp(V ) ∩ U(V ) = U(1) · Sp(V ) = (U(1) × Sp(V )))/ (Z/ 2),
+TSp(V ) ∩ TU(V ) = TU(1) · Sp(V ) = (TU(1) × Sp(V )))/ (Z/ 2).
+Proof. Let us prove only the second formula. Consider an element of TSp( V ) given
+by an isomorphism v ↦→ ag(v) where a ∈ Sp(1) and g ∈ Sp(V ). This element lies in
+TU(V ) if and only if it is a C-linear or conjugate linear isometry. Since g is C-linear,
+this means that for all z ∈ C either az = za or az =
+za. Hence a ∈ U(1) ∪ jU(1) =
+TU(1) ⊂ Sp(1). □
+
+=== PDF PAGE 14 ===
+14 M. ˇCADEK, M. C. CRABB AND J. V AN ˇZURA
+Now we return to the construction from the beginning of Section 2. A 2-dimensional
+complex bundle µ or, more generally, a 2-dimensional Cδ-vector bundle has a natural
+orientation as a 4-dimensional real vector bundle. The double cove r SO( H)
+(ρ+, ρ− )
+− − − − →
+SO(3) × SO(3) considered in Proposition 2.1 restricts to maps
+U(2) = U( H) → SO(3) × SO(3), TU(2) = TU( H) → SO(3) × SO(3).
+Since TSp( H) = SO( H), we can apply Lemma 5.5 to get
+U(2) ∼= U(1) · Sp(1) = Spin c(3), TU(2) ∼= TU(1) · Sp(1).
+Lemma 5.6. Letµ be a 2-dimensional Cδ-vector bundle. Then µ is an Hλ-line bundle,
+whereλ = Λ 2
+Cδµ, and also an EndHλ(µ)-line bundle.
+Proof. It follows from Proposition 5.3 that µ has an Hλ-structure. Then Ho
+ρ− (µ) =
+EndHλ(µ) by Proposition 2.1 and ρ− (µ) is the bundle of skew-Hermitian endomor-
+phisms of µ. □
+The homomorphism ρ− restricted to TU(2) ∼= TU(1) · Sp(1) is the projection onto
+SO(3). We prove that the structure group SO(3) of an oriented 3 -dimensional real
+vector bundle β can be lifted to TU(2) if and only if there are a real line bundle δ and
+an element l ∈ H 2(X; Z(δ)) such that w2(β ) = ρ2l +w2
+1(δ).
+The condition is necessary. According to Lemma 5.6 for a 2-dimension al Cδ-vector
+bundle µ with ρ− (µ) = β we have ρ+(µ) = δ ⊕ λ and Proposition 2.1 implies that
+w2(β ) = w2(ρ+(µ)) = ρ2e(λ) +w2
+1(δ).
+To show that the condition is suﬃcient take the Cδ-line bundleλ with the Euler class
+l. Then by Proposition 2.7 the quaternion bundles Hλ and Hβ are Morita equivalent
+and the vector bundle µ from the deﬁnition of the equivalence has the structure group
+TU(2). So we obtain
+Lemma 5.7. Letβ be an oriented 3-dimensional vector bundle with w2(β ) = ρ2(l) +
+w2
+1(δ) for an element l ∈ H 2(X; Z(δ)) and a real line bundle δ. Then there is a
+2-dimensional Cδ-vector bundle µ such that detCδµ =λ, where e(λ) = l, and
+Hβ = End Hλ(µ)o.
+For δ trivial, if β is a 3-dimensional Spin c real vector bundle, then Hβ is Morita
+equivalent to an Hλ for some complex line bundle λ.
+Applying Proposition 2.6 we obtain:
+Theorem 5.8. Letη be a 4n-dimensional real vector bundle. Then η admits an Hβ-
+structure with w2(β ) = ρ2(l) +w2
+1(δ) for an l ∈ H 2(X; Z(δ)) and a real line bundle δ
+if and only if for the Cδ-line bundle λ with e(λ) = l there exists an Hλ-line bundle µ
+and an n-dimensional Hλ-vector bundle ξ such that
+η ∼=µ∗ ⊗ Hλξ = Hom Hλ(µ,ξ ).
+The twisted quaternionic Hβ-structure is given by the action of the bundle EndHλ(µ)o.
+The following statement is a complement to Proposition 2.1.
+
+=== PDF PAGE 15 ===
+QUATERNIONIC STRUCTURES 15
+Lemma 5.9. Suppose that the oriented orthogonal 4-dimensional bundle µ is an or-
+thogonal direct sum µ0 ⊕ µ1 of two 2-dimensional subbundles. Write δ = det µ0 =
+detµ1, so that µ0 and µ1 become Cδ-bundles. Then ρ+(µ) = δ ⊕ (µ0 ⊗ Cδ µ1) and
+ρ− (µ) = δ ⊕ (µ0 ⊗ Cδ µ1), where the conjugate is given by conjugation on Cδ.
+Proof. The vector bundle µ =µ0 ⊕ µ1 has the structure group O(2) ·O(2) = TU (1) ·
+TU (1) ⊂ TU (2). So it follows from Lemma 5.6 that ρ+(µ) is given by the projection
+onto the ﬁrst factor TU (1) and is equal to δ ⊕ Λ2
+Cδ(µ0 ⊕ µ1) = δ ⊕ (µ0 ⊗ Cδ µ1).
+Since the orientation of µ0 ⊕
+µ1 is opposite to that of µ,
+ρ− (µ) = ρ+(µ0 ⊕ µ1) = δ ⊕ (µ0 ⊗ Cδ µ1).
+□
+In the case that λ is a Cδ-line bundle, and α = δ ⊕ λ we can express the Chern
+classes cδ
+i in terms of the classes dα
+j .
+Theorem 5.10. Let α =δ ⊕ λ, where λ is a Cδ-line bundle. Let ξ be an Hα-bundle
+of dimension n. Then
+1 +cδ
+1(ξ) + · · · +cδ
+2n(ξ) =
+n∑
+i=0
+(1 +cδ
+1(λ))n− idα
+i (ξ).
+In particular, cδ
+1(ξ) = ncδ
+1(λ).
+Proof. We use the splitting principle for Hα-vector bundles and multiplicativity of the
+Chern classescδ = 1+cδ
+1 +cδ
+2+... and the characteristic classes dα. Thus it is suﬃcient
+to carry out the proof only for n = 1. Let µ be an Hλ-line, where λ is a Cδ-line. Then
+cδ
+1(µ) = cδ
+1(λ), since we may assume that X is a 3-dimensional CW-complex, over
+whichµ = Cδ ⊕ λ. Further, cδ
+2(µ) = e(µ) = dα
+1 (µ). Consequently,
+1 +cδ
+1(µ) +cδ
+2(µ) = 1 + cδ
+1(λ) +dα
+1 (µ).
+□
+Remark 5.11. Consider an SO(3)-bundle α and an Hα-bundle ξ over X. We can
+lift to the sphere bundle of α by π : S(α ) → X. Over S(α ) we have a complex line
+bundle λ such that π ∗α = R ⊕ λ. So π ∗ξ is an Hλ-bundle. In particular, π ∗ξ is
+complex and has Chern classes in H ∗(S(α )). Since the Euler class of α is 2-torsion, we
+have a rational splitting: H 2i(S(α ); Q) = H 2i(X; Q) ⊕ H 2(i− 1)(X; Q). More precisely,
+H ∗(S(α ); Q) is an H ∗(X; Q)-module with a generator s ∈ H 2(S(α ); Q) subject to a
+relations2+as+b = 0 for some elements a ∈ H 2(X; Q) andb ∈ H 4(X; Q). If e(α ) = 0,
+this is true also over Z.
+Now using Theorem 5.10 and naturality of the classes di, the Chern classes of π ∗ξ
+are
+1 +c1(π ∗ξ) + · · · +c2n(π ∗ξ) =
+n∑
+i=0
+(1 +c1(λ))n− 1π∗dα
+i (ξ).
+IfX is an almost quaternionic smooth manifold as in Remark 1.6, then the ta ngent
+bundle of S(α ) being isomorphic to λ ⊕ π ∗τX has a complex structure, i.e. the twistor
+space S(α ) is almost complex, which is well known in quaternionic geometry.
+
+=== PDF PAGE 16 ===
+16 M. ˇCADEK, M. C. CRABB AND J. V AN ˇZURA
+6. Complexified quaternionic bundles
+Given a real line bundle δ and an oriented 3-dimensional vector bundle α (with inner
+product) we may consider the bundle of algebras Hα ⊗ Cδ. It depends only on the
+3-dimensional vector bundle δ ⊗ α . Indeed, it may be identiﬁed with the (ungraded)
+Cliﬀord algebra bundle C(α ⊗ δ) with the positive-deﬁnite quadratic form. Locally, if
+e1, e2, e3 is an orthonormal basis of α ⊗ δ then the corresponding ﬁbre of C(α ⊗ δ)
+is generated by e1, e2, e3 with e2
+i = 1 and eiej = −ejei for i ̸= j, the ﬁbre of Cδ is
+R1 ⊕ R(e1e2e3), and the ﬁbre of Hα is R1 ⊕ R(e1e2,e 2e3,e 1e3). The centre (formed in
+each ﬁbre) is Cδ.
+There is an R-algebra isomorphism H ⊗ C → EndC(H), that is M2(C), under which
+the group of automorphisms Aut R(H) × AutR(C) maps to the retract SU(2) / {± 1} ⋊
+AutR(C) of the full automorphism group GL(2) / C∗ ⋊ AutR(C) of M2(C).
+Consequently, we can describe bundles of algebras Hα ⊗ Cδ as just those R-algebra
+bundles with ﬁbres of type H⊗ C which have the structure group Aut R(H)× AutR(C) =
+SO(3) × O(1) = O(3).
+Consider a 4-dimensional Cδ-vector bundle µ which is a left Hα ⊗ Cδ-bundle. This
+means that the ﬁbre is isomorphic to the complex vector space H ⊗ C with the obvious
+action of the algebra H ⊗ C. On µ we can choose a real inner product such that the
+action Hα ⊗ Cδ → EndCδ(µ) is a ∗-homomorphism. We will show that µ is associated
+to a principal bundle with the structure group TSp( H) · TU(C) = SO( H) · TU(C) ⊂
+TU(H ⊗ C). In traditional terminology this is the group (SO(4) × TU(1))/ {(± 1} =
+SO(4) · TU(1) ⊂ TU(4). Put
+Fr(µ) = {f ∈ HomR(H ⊗ C,µ ) |f preserves the inner product, f (rv) = κ(r)f (v)
+for some κ ∈ Iso(H, Hα) × Iso(C, Cδ) and all v ∈ H ⊗ C, r ∈ H ⊗ C}.
+Then P = Fr(µ) is a principal bundle with the structure group TSp( H) · TU(C)
+such that µ = P × TSp(H)·TU(C) (H ⊗ C) and Hα ⊗ Cδ = P × p (H ⊗ C), where p :
+TSp(H) · TU(C) → AutR(H) × AutR(C) is the projection. This proves
+Proposition 6.1. A 4-dimensional Cδ-vector bundle has an Hα ⊗ Cδ-module structure
+if and only if its structure group TU(4) can be reduced to SO(4) · TU(1).
+Now we can proceed as in Section 2. In many of the arguments SO(4) · TU(1) plays
+the role taken there by SO(4).
+Since TU(1) is a semidirect product of groups U(1) and Z/ 2, its elements can be
+described by pairs ( c,s ) ∈ U(1) × Z/ 2 having the action on C given by (c, 1)z = cz
+and (c, − 1)z =c
+z. Consider the covers
+Sp(1) × Sp(1) × TU(1) → SO(4) · TU(1)
+(ρ+, ρ− , ρ0)
+− − − − − − →SO(3) × SO(3) × TU(1)
+given by mapping ( a,b, (c,s )) ∈ Sp(1) × Sp(1) × TU(1) to the map g : H ⊗ C →
+H ⊗ C : v ⊗ z ↦→ avb ⊗ (c,s )z andg to (ρ+(g),ρ − (g),ρ 0(g)) = (ρ(a),ρ (b),z ↦→ (c2,s )z).
+Further, let τ : SO(4) · TU(1) → Aut(C) = Z/ 2 be the map τ(g) = s.
+Proposition 6.2. Let µ be a 4-dimensional Cδ-vector bundle over X the structure
+group of which can be reduced to SO(4) · TU(1). Put α =ρ+(µ),β =ρ− (µ),σ =ρ0(µ).
+
+=== PDF PAGE 17 ===
+QUATERNIONIC STRUCTURES 17
+Then Cδ = τ(µ), the vector bundle µ is a left Hα ⊗ Cδ-module and a right Hβ ⊗ Cδ-
+module, σ is a Cδ-line bundle and there is a canonical isomorphism of bundles of
+Cδ-algebras
+(Hα ⊗ Cδ) ⊗ Cδ (Hβ ⊗ Cδ)o = (Hα ⊗ Ho
+β) ⊗ Cδ ∼= EndCδ(µ).
+Moreover, there are canonical isomorphisms of vector bundl es
+(α ⊕ β ) ⊗ σ ∼= Λ2
+Cδµ and
+σ ⊗ 2 ⊗ Cδ Λ4µ ∼= Cδ
+whereσ is the conjugate vector bundle to σ.
+Conversely, if α is an oriented orthogonal 3-dimensional vector bundle and µ is an
+Hα ⊗ Cδ- bundle of dimension 4 over Cδ, then the real form of σ ⊗ 2 ⊗ Cδ Λ4µ acquires
+an orientation under which ρ+(µ) is identiﬁed with α , τ(µ) is identiﬁed with Cδ and
+β =ρ− (µ) is characterized by an isomorphism (of bundles of algebras)
+(Hβ ⊗ Cδ)o = End Hα⊗ Cδ (µ).
+Proof. The 4-dimensional C-vector space H ⊗ C is the complexiﬁcation of the real
+vector space H. Now we can carry out the proof by complexifying all the vector spa ces
+im H, End R(H), H ⊗ Ho, Λ 2H, Λ 4H and the homomorphisms used in the proof of
+Proposion 2.1 and Lemma 2.2, by checking that these complexiﬁed hom omorphisms
+are invariant with respect to appropriate actions of SO(4) · TU(1) and by writing α ,β ,
+Cδ,σ, Λ 2
+Cδµ and Λ 4
+Cδ as vector bundles associated to a SO(4) · TU(1)-principal bundle
+determined by µ. Details are left to the reader. □
+Remark 6.3. The isomorphism Λ 4
+Cδµ ∼
+= σ ⊗ 2 implies that cδ
+1(µ) = 2 cδ
+1(σ), and from
+the isomorphism (α ⊕ β ) ⊗ σ ∼= Λ2
+Cδµ we get 2cδ
+2(µ) = −p1(α ) − p1(β ) + 3(cδ
+1(σ))2.
+Proposition 6.4. Given 3-dimensional oriented vector bundles α , β and a Cδ-vector
+bundle σ, there is a 4-dimensional vector bundle µ such that ρ+(µ) = α , ρ− (µ) = β
+and ρ0(µ) = σ if and only if w2(σ) = w2(α ) +w2(β ).
+Proof. The commutative diagram
+SO(4) · TU(1)
+(ρ+, ρ− , ρ0)
+↓↓
+→→
+→→↖↖↖↖↖↖↖↖↖↖↖↖↖↖↖↖↖↖↖↖↖↖↖↖↖↖↖↖↖↖↖↖ SU(4) · TU(1)
+∼
+= →→Λ2
+C
+→→↑↑↑↑↑↑↑↑↑↑↑↑↑ Spin(6) · TU(1)
+↓↓
+SO(3) × SO(3) × TU(1) →→ SO(6) · TU(1)
+implies that the double cover Spin(6) · TU(1) → SO(6) · TU(1) pulls back, under the
+homomorphism (a,b,c ) ↦→ (a +b) ⊗ c, to (ρ+,ρ −,ρ 0). Hence the obstruction to lifting
+from SO(3) × SO(3) × TU(1) to SO(4) · TU(1) is given by w2(σ) = w2(α ) +w2(β ). □
+Deﬁnition 6.5. For each δ we deﬁne a Morita category Mδ(X) with objects the
+oriented 3-dimensional orthogonal vector bundles α , β and morphisms β → α given
+by a Cδ-isomorphism of algebras
+(Hα ⊗ Cδ) ⊗ Cδ (Hβ ⊗ Cδ)o = (Hα ⊗ Ho
+β) ⊗ Cδ → EndCδ(µ),
+where µ is a 4-dimensional Cδ-vector bundle, up to isomorphisms of µ.
+
+=== PDF PAGE 18 ===
+18 M. ˇCADEK, M. C. CRABB AND J. V AN ˇZURA
+Given any Cδ-line bundle λ, we use the isomorphism End Cδ(µ) = End Cδ(λ ⊗ Cδµ) to
+get an action of the Piccard group Pic δ(X) = H 2(X; Z(δ)) on Hom Mδ(X)(β,α ), and
+then, as in Proposition 2.9 we have Aut Mδ(X)(α ) = Pic δ(X).
+Proposition 6.4 implies immediately
+Theorem 6.6. There is a morphism from β to α in Mδ(X) if and only if e(α ⊗ δ) =
+e(β ⊗ δ).
+Proof. Denote the Bockstein homomorphism corresponding to the exact s equence 0 →
+Z(δ) → Z(δ) → Z/ 2 → 0 by ∆ δ. A Cδ-line bundle σ such that w2(σ) = w2(α ) +w2(β )
+exists if and only if ∆ δw2(α ) = ∆ δw2(β ) and this is equivalent to our condition, since
+e(α ⊗ δ) = ∆ δ(w2(α ) +w2
+1(δ)). □
+Proposition 6.7. Any isomorphism Hα ⊗ Ho
+β ⊗ Cδ ∼= EndCδ (µ) determines an equiv-
+alence from the category of Hβ ⊗ Cδ-modules to the category of Hα ⊗ Cδ-modules given
+by
+η ↦→ µ ⊗ Hβ⊗ Cδ η.
+As a consequence we get
+Corollary 6.8. Lete(α ⊗ δ) = 0 . Then there is an Hα ⊗ Cδ-bundle ω of Cδ-dimension
+2 such that any Hα ⊗ Cδ-bundle of Cδ-dimension 2n is of the form ω ⊗ Cδ ζ for a
+Cδ-bundle ζ of dimension n.
+Proof. Just as H ⊗ C = End C(H), we have HCδ ⊗ Cδ = End Cδ (HCδ). Every HCδ ⊗ Cδ-
+bundle η is therefore of the form HCδ ⊗ Cδ ζ, where ζ = Hom HCδ ⊗ Cδ (HCδ,η ).
+Since e((δ ⊕ Cδ) ⊗ δ) = 0 = e(α ⊗ δ), there is an isomorphism from δ ⊕ Cδ to α in
+Mδ(X) represented by a 4-dimensional vector bundle µ. Now any Hα ⊗ Cδ-bundle is
+of the form
+µ ⊗ HCδ ⊗ Cδ (HCδ ⊗ Cδ ζ) = (µ ⊗ HCδ ⊗ Cδ HCδ) ⊗ Cδ ζ.
+Putting ω =µ ⊗ HCδ ⊗ Cδ HCδ , we get the assertion. □
+Remark 6.9. Consider a compact Hausdorﬀ space Y with an involution. Let E
+be a complex vector bundle over Y and let J : ξ → ξ be a conjugate-linear map
+lifting the involution on Y such that J 2 = − 1. The pair ( E,J ) is variously called
+a quaternionic or symplectic bundle over Y , [12, 21, 11]. We relate this notion to
+complexiﬁed quaternionic bundles in our sence.
+Let CP (H) be the complex projective space modelled on the 2-dimensional com plex
+vector space H with the involution given by multiplication by j. Deﬁne X to be the
+quotient ofY × CP (H) by the free involution. Let δ be the real line bundle over X given
+by the double covering p :Y × CP (H) → X. We associate with E a vector bundle η
+such that the ﬁbre over x ∈ X isηx =Ey ⊕ Ey′ wherep− 1(x) = {y,y ′}. This bundle has
+an H ⊗ Cδ-structure. The multiplication by j ∈ H is given by j( u,v ) = (Jv,Ju ). The
+Cδ-structure is deﬁned as follows. Let t be the involution ( − 1, 1) : Ey ⊕ Ey′ =ηx → ηx,
+and t′ = −t. Then ti = i t and tj = − jt. So (i t)i = i(i t) and (i t)j = j(i t), and
+(it)2 = − 1. So we can use i t = − it′ to deﬁne the Cδ-structure commuting with the
+H-multiplication.
+In the same way the complex Hopf bundle H over CP (H) determines an H ⊗ Cδ-
+vector bundleω overX of complex dimension 2 (where ω x =Hy ⊕Hy′). As in Corollary
+
+=== PDF PAGE 19 ===
+QUATERNIONIC STRUCTURES 19
+6.8 there is a Cδ-bundle ζ = Hom H⊗ Cδ(ω,η ) over X such that η =ω ⊗ Cδ ζ. Its lift to
+Y × CP (H) is E ⊗ CH.
+Remark 6.10. One can deﬁne a Brauer group BrU δ(X) of central simple Cδ-algebras
+and show that it is isomorphic to Tor H 3(X; Z(δ)). The class of Hα ⊗ Cδ =C(α ⊗ δ)
+is e(α ⊗ δ).
+There is a complex K-theory of Hα ⊗ Cδ-vector bundles modelled on the real K-
+theory of Section 3.
+Proposition 6.11. There is an isomorphism from the Grothendieck group of Hα⊗ Cδ-
+modules over X to K 0
+δ (Hα), the Kδ-theory with compact supports, given by mapping
+the class [ξ] to the element represented by the linear map
+x ↦→ vx :π ∗ξ → π ∗ξ
+over x ∈ Hα, where π : Hα → X is the projection.
+References
+[1] M. Atiyah and J. Dupont, Vector ﬁelds with ﬁnite singularities , Acta Math. 128 (1972), 1–40.
+[2] M.F. Atiyah and E. Rees, Vector bundles on projective 3-space, Inventiones math. 35 (1976),
+131–153.
+[3] A. Borel, F. Hirzebruch, Characteristic classes and homogeneous spaces I , Amer. J. Math. 80
+(1958), 458-538.
+[4] E. H. Brown, jr., The cohomology of BSO n and BOn with integer coeﬃcients, Proc. Amer. Math.
+Soc. 85 (1982), 283-288.
+[5] M. ˇCadek, The cohomology of BO(n) with twisted integer coeﬃcients , J. Math. Kyoto Univ. 39
+(1999), 277-286.
+[6] M. ˇCadek, M.C. Crabb, J. Vanˇ zura,Obstruction theory on 8-manifolds , manuscripta math. 127
+(2008), 167-186.
+[7] M.C. Crabb, Z/2-Homotopy theory, Cambridge University Press, Cambridge, 198 0.
+[8] M.C. Crabb, On the KO Z/2-Euler class, I , Proc. Roy. Soc. Edinburgh 117A (1991), 115–137.
+[9] M.C. Crabb, M. Spreaﬁco and W.A. Sutherland, Enumerating projectively equivalent bundles ,
+Math. Proc. Camb. Phil. Soc. 125 (1999), 223–242.
+[10] P. Donovan and M. Karoubi, Graded Brauer Groups and K-theory with local coeﬃcients ,
+Publ. Math. IHES 38 (1970), 5–25.
+[11] P. dos Santos and P. Lima-Filho, Quaternionic algebraic cycles and reality , Trans. Amer. Math.
+Soc. 356 (2004), 4701-4736.
+[12] J.L. Dupont, Symplectic bundles and KR-theory, Math. Scand. 24 (1969), 27-30.
+[13] A. Grothendieck, Le groupe de Brauer , S´ eminaire Bourbaki290 (1965), 199–219.
+[14] M. Karoubi, Sur la K-th´ eorie equivariante, in S´ eminaire Heidelberg-Saarbr¨ ucken-Strasbourg sur
+la K-th´ eorie, LNM136, Springer, 1970, 187–253.
+[15] S. Marchiafava, G. Romani, Sui ﬁbrati con struttura quaternionale generalizzata , Ann. Mat. Pura
+Appl. 107 (1975), 131-157.
+[16] S. Marchiafava, G. Romani, Sul classiﬁcante del gruppo Sp(n) · Sp(1), Ann. Mat. Pura Appl.
+110 (1976), 259-319.
+[17] S. Marchiafava, G. Romani, Ancora sulle classi di Stiefel-Whitney dei ﬁbrati quaterni onali gen-
+eralizzati, Atti Accad. Naz. Lincei Rend. Cl. Sci. Fis. Mat. Natur 61 (1976), 438-447.
+[18] S.M. Salamon, Quaternionic K¨ ahler manifolds, Invent. Math. 67 (1982), 143–171.
+[19] S.M. Salamon, Diﬀerential geometry of quaternionic manifolds , Ann. Sc. Ec. Norm. Sup. 19
+(1986), 31–55.
+[20] O. Sp´ aˇ cil,Indices of quaternionic complexes , Diﬀerential Geom. Appl. 28 (2010), 395–405.
+
+=== PDF PAGE 20 ===
+20 M. ˇCADEK, M. C. CRABB AND J. V AN ˇZURA
+[21] R.M. Seymour, The real K-theory of Lie groups and homogeneous spaces , Quart. J. Math. Oxford
+24 (1973), 7–30.
+Department of Mathematics, Masaryk University, Kotl ´aˇrsk´a 2, 611 37 Brno, Czech
+Republic
+E-mail address : cadek@math.muni.cz
+Department of Mathematical Sciences, University of Aberde en, Aberdeen AB24 3UE,
+U.K.
+E-mail address : m.crabb@maths.abdn.ac.uk
+Academy of Sciences of the Czech Republic, Institute of Math ematics, ˇZiˇzkova 22,
+616 62 Brno, Czech Republic
+E-mail address : vanzura@ipm.cz

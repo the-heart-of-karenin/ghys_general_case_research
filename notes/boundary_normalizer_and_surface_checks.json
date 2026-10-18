@@ -1,0 +1,139 @@
+{
+  "all_checks_passed": true,
+  "normalizer": {
+    "NS_generator_R": [
+      [
+        16,
+        16,
+        1
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "formal_reverser_S": [
+      [
+        1,
+        16,
+        16
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "Smith_invariants": [
+      2,
+      14,
+      238
+    ],
+    "index_H_plus_a": 13,
+    "complete_mod13_gluing_cases": 52,
+    "discriminant_R_at_7": [
+      [
+        0,
+        1
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "discriminant_S_at_7": [
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "R_at_17": -1,
+    "order_table": [
+      {
+        "k_mod_6": 0,
+        "order_at_7": 1,
+        "order_at_17": 1,
+        "compatible": true,
+        "forced_order": 1
+      },
+      {
+        "k_mod_6": 1,
+        "order_at_7": 6,
+        "order_at_17": 2,
+        "compatible": false,
+        "forced_order": null
+      },
+      {
+        "k_mod_6": 2,
+        "order_at_7": 3,
+        "order_at_17": 1,
+        "compatible": false,
+        "forced_order": null
+      },
+      {
+        "k_mod_6": 3,
+        "order_at_7": 2,
+        "order_at_17": 2,
+        "compatible": true,
+        "forced_order": 2
+      },
+      {
+        "k_mod_6": 4,
+        "order_at_7": 3,
+        "order_at_17": 1,
+        "compatible": false,
+        "forced_order": null
+      },
+      {
+        "k_mod_6": 5,
+        "order_at_7": 6,
+        "order_at_17": 2,
+        "compatible": false,
+        "forced_order": null
+      }
+    ],
+    "scope": "Arithmetic verified. Pell-unit exhaustion, simple-Hodge cyclotomic purity, equivariant gluing and H2 faithfulness are mathematical inputs/proofs, not established by finite checks."
+  },
+  "geometry": {
+    "ample_axis_class": [
+      14,
+      -1,
+      1
+    ],
+    "BBF_square": 364,
+    "Lagrangian_completed_square": "e - 1100*c^2/3 = 12*(p+22*c/3)^2",
+    "symplectic_K3_conic": "U^2+30*V^2=5",
+    "complete_mod9_solutions": 27,
+    "fixed_point_intersection_totals": [
+      {
+        "n": 1,
+        "L": "11032444"
+      },
+      {
+        "n": 2,
+        "L": "122963913899332"
+      },
+      {
+        "n": 3,
+        "L": "1363531470115507081084"
+      }
+    ],
+    "scope": "No periodic multipliers or Anosov property were computed. Fixed-point totals include local intersection multiplicities."
+  },
+  "limitation": "Exact auxiliary matrix and polynomial checks only; complete proofs and the very-general restriction for the non-Lagrangian surface exclusion are in notes 49--50."
+}

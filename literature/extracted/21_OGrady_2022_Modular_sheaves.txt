@@ -1,0 +1,2906 @@
+=== PDF PAGE 1 ===
+Algebraic Geometry 9 (1) (2022) 1–38
+doi:10.14231/AG-2022-001
+Modular sheaves on hyperk¨ ahler varieties
+Kieran G. O’Grady
+Dedicato a Titti
+Abstract
+A torsion-free sheaf on a hyperk¨ ahler manifoldX is modular if its discriminant satisﬁes
+a certain condition; for example, this is the case if it is a multiple ofc2pXq. The deﬁnition
+is tailor-made for torsion-free sheaves on a polarized hyperk¨ ahler varietypX,hq which
+deform to all small deformations of pX,hq. For hyperk¨ ahler varieties of typeK3r2s, we
+prove an existence and uniqueness result for slope-stable vector bundles with certain
+ranks, c1 and c2. As a consequence, we get the uniqueness up to isomorphism of the
+tautological quotient rank 4 vector bundle on the variety of lines on a generic cubic 4-
+dimensional hypersurface, and on the Debarre–Voisin variety associated with a generic
+element of Ź3 C10. The last result implies that the period map from the moduli space
+of Debarre–Voisin varieties to the relevant period space is birational.
+1. Introduction
+1.1. Background and motivation. The beautiful properties of vector bundles onK3 surfaces
+play a prominent role in algebraic geometry. SinceK3 surfaces are the 2-dimensional hyperk¨ ahler
+(HK) compact manifolds, one is tempted to explore the world of vector bundles on higher-
+dimensional HK manifolds. In the present paper, we give way to this temptation. Our proposal
+is to focus attention on vector bundles, or more generally (coherent) torsion-free sheaves, whose
+Chern character satisﬁes a certain condition; see Deﬁnition 1.1. We call such sheaves modular.
+The deﬁnition is tailor-made for torsion-free sheaves on a polarized HK manifold pX,hq which
+deform to all small deformations of pX,hq. With this hypothesis, we may deform pX,hq to a
+Lagrangian pX0,h 0,πq, where π : X0 Ñ Pn is a Lagrangian ﬁbration, study stable sheaves F
+onX0 by studying the restriction of F to a generic ﬁber of π (an abelian variety of dimensionn)
+and then deduce properties of the initial moduli space of sheaves on pX,hq. This strategy has
+been implemented in the case of K3 surfaces; see [O’G97]. A successful implementation in higher
+dimensions requires an extension of the known results regarding the variation of h slope-stability
+of a sheaf. More precisely, one needs to know that, given a class χ P HpX; Qq, there exists a
+decomposition of the ample cone into open chambers such that, given a sheaf F with chpFq“ χ
+and an open chamber C , the sheaf F is h slope-stable either for all h P C or for no such h.
+Modular sheaves on HK manifolds are exactly the sheaves for which one can prove that such a
+Received 20 September 2020, accepted in ﬁnal form 21 April 2021.
+2020 Mathematics Subject Classiﬁcation 14J42, 14J60.
+Keywords: hyperk¨ ahler varieties, stable sheaves.
+This journal is © Foundation Compositio Mathematica 2022. This article is distributed with Open Access under
+the terms of the Creative Commons Attribution Non-Commercial License, which permits non-commercial reuse,
+distribution, and reproduction in any medium, provided that the original work is properly cited. For commercial
+re-use, please contact the Foundation Compositio Mathematica.
+The author was partially supported by PRIN 2015.
+
+=== PDF PAGE 2 ===
+K. G. O’Grady
+decomposition of the ample cone exists. Another remarkable consequence of our deﬁnition is the
+following. Letπ : XÑ Pn be a Lagrangian ﬁbration, and let F be a modular vector bundle onX
+whose restriction to a generic ﬁber of π is slope-stable; then the restriction of F to a generic
+ﬁber is a semi-homogeneous vector bundle (according to Mukai’s deﬁnition; see [Muk78]), and
+hence it has no inﬁnitesimal deformations ﬁxing the determinant. This shows that, in the case of
+modular sheaves, the strategy outlined above in higher dimensions resembles that which has been
+implemented in the case of K3 surfaces (notice that a slope-stable vector bundle on an elliptic
+curve has by default no inﬁnitesimal deformations ﬁxing the determinant, while this certainly
+does not hold for vector bundles on abelian surfaces—it holds exactly for semi-homogeneous
+ones).
+1.2. Modular sheaves. Let F be a rankr torsion-free sheaf on a manifoldX. The discriminant
+∆pFqP H2,2
+Z pXq is deﬁned to be
+∆pFq :“ 2rc2pFq´p r´ 1qc1pFq2“´ 2r ch2pFq` ch1pFq2. (1.2.1)
+Below is our key deﬁnition.
+Definition 1.1. Let X be a HK manifold of dimension 2 n, and let qX be its Beauville–
+Bogomolov–Fujiki (BBF) bilinear symmetric form. A torsion-free sheaf F on X is modular
+if there exists a dpFqP Q such that
+ż
+X
+∆pFq !α2n´2“dpFq¨p2n´ 3q!!¨qXpαqn´1 (1.2.2)
+for all αPH2pXq.
+Remark 1.2. LetX be a HK variety of dimension 2n. LetDpXqĂ HpXq be the image of the map
+SymH2pXq ÑHpXq deﬁned by the cup product. Let DipXq :“ DpXqX HipXq. The pairing
+DipXqˆ D4n´ipXqÑ C deﬁned by the intersection product is nondegenerate [Ver96a, Bog96,
+Bea07], hence there is a splitting HpXq“ DpXq‘ DpXqK, where orthogonality is with respect
+to the intersection pairing. Now let F be a torsion-free sheaf on X. Then F is modular if and
+only if the orthogonal projection of ∆ pFq ontoD4pXq is a multiple of the class q_
+X dual to qX.
+Moreover, if ∆pFq is a multiple of c2pXq, then F is modular by Fujiki’s formula; see [Fuj87,
+Remark 4.12].
+Remark 1.3. Let X be a HK manifold of type K3r2s. Then HpXq “DpXq (notation as in
+Remark 1.2). It follows that a vector bundle F on X is modular if and only if ∆ pFq is a
+multiple of c2pXq. It follows [Ver96b] that if F is a modular vector bundle, slope-stable for
+a polarization h, then End 0pFq is hyperholomorphic on pX,hq, where End 0pFq is the vector
+bundle of traceless endomorphisms of E . More generally, on an arbitrary HK polarized variety
+pX,hq, there should be a relation between the property of being modular and that of being
+hyperholomorphic.
+1.3. Main results. Let E be a modular torsion-free sheaf on a HK manifold X of type K3r2s.
+A simple argument, see Proposition 2.3, shows that rpEq divides the square of a generator of
+the ideal
+␣
+qXpc1pEq,αq |α P H2pX; Zq
+(
+. We give an existence and uniqueness statement for
+slope-stable vector bundles E such thatrpEq equals the square of a generator of the ideal deﬁned
+above, and moreover
+∆pEq“ rpEqprpEq´ 1q
+12 c2pXq.
+2
+
+=== PDF PAGE 3 ===
+Modular sheaves on hyperk ¨ahler varieties
+Before formulating our results, we recall the description of the irreducible components of the
+moduli space of polarized HK manifolds of type K3r2s. Let pX,hq be one such polarized HK
+manifold (we emphasize that the ample class hPH1,1
+Z pXq is primitive). Then either
+q
+`
+h,H 2pX; Zq
+˘
+“ Z, q phq“ eą 0, e ” 0 pmod 2q, (1.3.1)
+or
+q
+`
+h,H 2pX; Zq
+˘
+“ 2Z, q phq“ eą 0, e ” 6 pmod 8q. (1.3.2)
+Conversely, ife is a positive integer which is even (respectively, congruent to 6 modulo 8), there
+exists an pX,hq such that (1.3.1) (respectively, (1.3.2)) holds. Let K 1
+e be the moduli space of
+polarized HK manifolds pX,hq of type K3r2s such that (1.3.1) holds, and let K 2
+e be the moduli
+space of polarized HK manifolds pX,hq of type K3r2s such that (1.3.2) holds.
+Theorem 1.4. LetiPt 1, 2u, and let r0 ande be positive integers such that r0”i pmod 2q and
+e”
+$
+’’’’&
+’’’’%
+4r0´ 10 pmod 8r0q if r0” 0 pmod 4q,
+1
+2pr0´ 5q p mod 2r0q if r0” 1 pmod 4q,
+´10 pmod 8r0q if r0” 2 pmod 4q,
+´ 1
+2pr0` 5q p mod 2r0q if r0” 3 pmod 4q.
+(1.3.3)
+Suppose that rpX,hqsP K i
+e is a generic point. Then, up to isomorphism, there exists one and
+only one h slope-stable vector bundle E on X such that
+rpEq“ r2
+0, c 1pEq“ r0
+i h, ∆pEq“ rpEqprpEq´ 1q
+12 c2pXq. (1.3.4)
+Moreover,Hp`
+X, End0pEq
+˘
+“ 0 for all p.
+Remark 1.5. LetrpX,hqsP K 2
+6 be generic. ThenpX,hq is isomorphic to the variety of linesFpYq
+on a generic cubic hypersurface Y Ă P5 polarized by the Pl¨ ucker embedding, and the vector
+bundle E of Theorem 1.4 with r0“ 2 is isomorphic to the restriction of the tautological quotient
+vector bundle on Gr
+`
+2, C6˘
+. Similarly, letrpX,hqsP K 2
+22 be generic. ThenpX,hq is isomorphic to
+the Debarre–Voisin variety associated with a generic σP Ź3V_
+10, where V10 is a 10-dimensional
+complex vector space, and
+Xσ :“trWsP Grp6,V 10q| σ|W “ 0u. (1.3.5)
+The vector bundle E of Theorem 1.4 with r0 “ 2 is isomorphic to the restriction to Xσ of the
+tautological quotient vector bundle on Grp6,V 10q. These results are proved in Section 8.
+Remark 1.6. We would like the congruence relations in (1.3.3) to be forced upon us by adding
+to the hypotheses on rpEq, c1pEq, ∆pEq the extra hypothesis that χ
+`
+X, End0pEq
+˘
+“ 0. Our
+computations give this for some values of r0, but we do not have complete results.
+The result below replaces the genericity hypothesis in Theorem 1.4 with a cohomological one.
+Corollary 1.7. Let iPt 1, 2u, and let r0 and e be positive integers such that r0” i pmod 2q
+and (1.3.3) holds. Let rpX,hqsP K i
+e . Suppose that E is an h slope-stable vector bundle on X
+such that (1.3.4) holds and H2`
+X, End0pEq
+˘
+“ 0. If G is an h slope-stable vector bundle on X
+and chkpGq“ chkpEq for kPt 0, 1, 2u, then G is isomorphic to E .
+There is an interesting consequence of Theorem 1.4 involving Debarre–Voisin (DV) varieties.
+There is a geometric invariant theory moduli space MDV :“ P
+`Ź3V_
+10
+˘
+{{SLpV10q of DV varieties;
+3
+
+=== PDF PAGE 4 ===
+K. G. O’Grady
+see [DHOV20]. In [DV10] it was proved that the moduli map MDV99K K 2
+22 has ﬁnite nonzero
+degree.
+Theorem 1.8. The moduli map MDV99K K 2
+22 is birational.
+Theorem 1.4 is also relevant to the study of degenerate DV varieties which was carried out
+in [DHOV20]. We say a few words about this in Subsection 8.3.
+1.4. Outline of the paper. In Section 2, we give a few examples of modular sheaves, and
+we make the connection with semi-homogeneous vector bundles. In particular, we give strong
+restrictions on the possible ranks of modular sheaves, under some hypotheses.
+Section 3 contains the results that extend to modular sheaves the known results on the
+variation of slope-stability for sheaves on surfaces. In particular, we show that one can extend
+the results that hold for sheaves on surfaces which are ﬁbered over a curve to HK manifolds with
+a Lagrangian ﬁbration.
+In Section 4, we prove properties of slope-stable modular vector bundles on HK manifolds X
+of typeK3r2s with a Lagrangian ﬁbrationXÑ P2. We make certain hypotheses; in particular, we
+assume thatrpEq equals the square of a generator of the ideal
+␣
+qXpc1pEq,αq| αPH2pX; Zq
+(
+. We
+show that the restriction of a slope-stable modular vector bundle on X to a generic Lagrangian
+ﬁber is slope-stable and that if F is another such vector bundle, then the restrictions of E and F
+to a generic Lagrangian ﬁber are isomorphic.
+Section 5 discusses a construction which associates with a vector bundle F on a K3 sur-
+face S two torsion-free sheaves Frns˘ on Srns whose ﬁbers over a reduced scheme tx1,...,x nu
+are the tensor product Fpx1qb¨¨¨b Fpxnq of the ﬁbers of F at the points x1,...,x n—
+this is a generalization of a construction which was given in [DHOV20]. We prove that if
+χpS, F_b Fq “2, then Fr2s˘ is a modular vector bundle, and we compute its Chern char-
+acter. As proved in Section 7, this construction gives (by deformation) the existence result of
+Theorem 1.4.
+In Section 6, we letSÑ P1 be an elliptic K3 surface with Picard number 2. ThenSr2s has an
+associated Lagrangian ﬁbrationπ : Sr2sÑ
+`
+P1˘p2q– P2. We prove that ifF is a slope-stable rigid
+vector bundle on S, then the vector bundle Fr2s˘ onSr2s has good properties. In particular, we
+show that it extends to any small deformation of Sr2s which keeps c1
+`
+Fr2s˘˘
+of type p1, 1q and
+that the restriction to any ﬁber of the Lagrangian ﬁbration π is simple.
+Section 7 contains the proof of Theorem 1.4 (and of Corollary 1.7). The basic idea is as follows.
+Let X ÑTi
+e be a complete family of polarized HK manifolds of type K3r2s whose moduli belong
+to K i
+e . By results of Gieseker and Maruyama, there is a relative moduli scheme f : Mepr0qÑ Ti
+e
+whose ﬁber over tP Ti
+e is the moduli space of slope-stable vector bundles on pXt,htq with the
+given rank, c1 and c2. The map f : Mepr0qÑ Ti
+e is of ﬁnite type by a result of Maruyama. Let
+M˚
+epr0q ĂMepr0q be the (open) subset parametrizing vector bundles whose ch 0, ch1, ch2 are
+given by the formulae in Theorem 1.4. Because of the good properties of the vector bundles
+Fr2s˘, the image fpM˚
+epr0qq contains a dense open (in the Zariski topology) subset of Ti
+e. On
+the other hand, the results of Sections 4 and 6 allow us to prove that, up to isomorphism, there
+is a unique slope-stable vector bundle with the relevant ch 0, ch1, ch2 on a generic HK manifold
+parametrized by a Lagrangian Noether–Lefschetz locus with large discriminant. By the density
+of the union of Noether–Lefschetz divisors (with large discriminant), we conclude that f has
+degree 1.
+4
+
+=== PDF PAGE 5 ===
+Modular sheaves on hyperk ¨ahler varieties
+In Section 8, we prove Theorem 1.8. Once we have Theorem 1.4, the main point is to show
+that the tautological quotient vector bundle on a generic DV variety is slope-stable.
+In the appendix, we discuss properties of semi-homogeneous vector bundles on abelian vari-
+eties and of Lagrangian Noether–Lefschetz divisors on moduli spaces of polarized HK manifolds
+of type K3r2s.
+1.5 Conventions
+‚ Algebraic variety is synonymous with complex quasi-projective (not necessarily irreducible)
+variety.
+‚ LetX be a smooth complex quasi-projective variety and F a coherent sheaf onX. We only
+consider topological Chern classes cipFqP H2ipXpCq; Zq.
+‚ Let X be a HK manifold of dimension 2 n. We let qX, or simply q, be the BBF symmetric
+bilinear form of X, and we denote qXpα,αq by qXpαq. We let cX be the normalized Fujiki
+constant of X, that is, the positive rational number such that for all αPH2pXq, we have
+ż
+X
+α2n“cX¨p2n´ 1q!!¨qXpαqn. (1.5.1)
+A hyperk¨ ahler (HK)variety is a projective compact HK manifold.
+‚ Let F be a torsion-free sheaf on a polarized projective variety pX,hq. A subsheaf E Ă F
+is slope-destabilizing if 0 ă rpEq ărpFq and µhpEq ěµhpFq, where rpEq and rpFq are
+the ranks of E and F, respectively, and µhpEq and µhpFq are the h-slopes of E and F,
+respectively. If µhpEq ąµhpFq, then E Ă F is slope-desemistabilizing. We use similar
+terminology for exact sequences 0 Ñ E Ñ F Ñ G Ñ 0.
+‚ A torsion-free sheaf on pX,hq is strictly h slope-semistable if it is h slope-semistable but
+not h slope-stable.
+‚ Abusing notation, we say that a smooth projective variety X is an abelian variety if it is
+isomorphic to the variety underlying an abelian variety A. In other words, X is a torsor
+of A.
+2. Modular sheaves
+2.1. First examples. Remark 1.2 leads to the following examples of modular vector bundles:
+(1) The tangent bundle Θ X is modular.
+(2) Let V6 be a 6-dimensional complex vector space, and let X Ă Grp2,V 6q be the variety of
+lines contained in a smooth cubic hypersurface in PpV6q. Let hP H1,1
+Z pXq be the Pl¨ ucker
+polarization. Then X is a HK variety of type K3r2s; see [BD85]. Let Q be the restriction to
+X of the tautological rank 4 quotient vector bundle on Gr p2,V 6q. We claim that
+ch0pQq“ 4, ch1pQq“ h, ch2pQq“ 1
+8
+`
+h2´c2pXq
+˘
+. (2.1.1)
+The ﬁrst two equations are obvious; the last equation can be obtained as follows. Let U be
+the restriction toX of the tautological subbundle on Grp2,V 6q. The normal bundle sequence
+0ÝÑΘXÝÑΘGrp2,V6q|XÝÑSym3 U_ÝÑ0
+gives that ch2pUq“´
+`
+h2´c2pXq
+˘
+{8. Since chpQq“ 6´chpUq, this gives the last equation
+in (2.1.1). Thus ∆pQq“ c2pXq, and hence Q is modular.
+5
+
+=== PDF PAGE 6 ===
+K. G. O’Grady
+(3) Let XĂ Grp6,V 10q be a smooth DV variety, and lethPH1,1
+Z pXq be the Pl¨ ucker polarization;
+see [DV10]. Then X is a HK variety of type K3r2s. Let Q be the restriction to X of the
+tautological rank 4 quotient vector bundle on Grp6,V 10q. Then
+ch0pQq“ 4, ch1pQq“ h, ch2pQq“ 1
+8
+`
+h2´c2pXq
+˘
+. (2.1.2)
+The above equations follow from the computations in [DV10, Proof of Lemma 4.5, p. 83];
+see Lemma 8.1. Thus ∆pQq“ c2pXq, and hence Q is modular.
+Remark 2.1. Let X be a HK variety, and let E and F be modular sheaves on X. Then E ‘ F
+is not modular in general. On the other hand, Eb F is modular, at least if E and F are locally
+free.
+Remark 2.2. Let X be a HK manifold of dimension 2 n, and let F be a torsion-free modular
+sheaf on X. Thenż
+X
+∆pFq !α1 !¨¨¨!α2n´2“dpFq¨Ăÿ
+qXpαi1,αi2q¨... ¨qXpαi2n´3,αi2n´2q (2.1.3)
+for all α1,...,α 2nPH2pXq, where rř means that in the summation we avoid repeating addends
+which are formally equal (that is, are equal modulo reordering of the factorsqXp¨,¨qand switching
+the entries in qXp¨,¨q).
+2.2. Restrictions on the rank. Below is the result that was mentioned in Section 1.3.
+Proposition 2.3. LetX be a HK fourfold of type K3r2s or Kum2. Let F be a modular torsion-
+free sheaf on X. Let m be a generator of the ideal
+␣
+qXpc1pFq,αq| αPH2pX; Zq
+(
+.
+Then rpFq divides m2 if X is of type K3r2s, and it divides 3m2 if X is of type Kum2.
+Proof. As is easily checked, there exists an α P H2pX; Zq such that qXpc1pFq,αq “m and
+qXpαq“ 0. Let r :“rpFq. Since qXpαq“ 0, equation (1.2.2) gives that
+2r
+ż
+X
+c2pFq !α2“pr´ 1q
+ż
+X
+c1pFq2 !α2
+“ 2pr´ 1qcX¨qXpc1pFq,αq2“ 2pr´ 1qcX¨m2. (2.2.1)
+The result follows because cX“ 1 if X is of type K3r2s and cX“ 3 if X is of type Kum 2.
+2.3. Modular sheaves on Lagrangian ﬁbrations. We recall that a Lagrangian ﬁbration
+π : X Ñ Pn on a HK manifold X of dimension 2n is a surjective map with connected ﬁbers
+whose smooth ﬁbers are abelian varieties.
+Remark 2.4. FortP Pn, we let Xt :“π´1ptq be the schematic ﬁber over t. If Xt is smooth, the
+image of the restriction map H2pX; ZqÑ H2pXt; Zq has rank 1 and is generated by an ample
+class θt P H1,1
+Z pXtq; see [Wie16]. If F is a sheaf on Xt, slope-(semi)stability of F will always
+mean θt slope-(semi)stability.
+If π : XÑ Pn is a Lagrangian ﬁbration, we let
+f :“c1pπ˚OPnp1qqP H1,1
+Z pXq. (2.3.1)
+As is well known, qXpfq“ 0.
+6
+
+=== PDF PAGE 7 ===
+Modular sheaves on hyperk ¨ahler varieties
+Lemma 2.5. Let π : X Ñ Pn be a Lagrangian ﬁbration of a HK manifold of dimension 2n.
+Suppose that F is a modular torsion-free sheaf on X. Let t P Pn be a general point, and let
+Ft :“ F|Xt be the restriction of F to Xt. Then
+ż
+Xt
+∆pFtq !θn´2
+t “ 0. (2.3.2)
+Proof. There exists an ω P H2pX; Zq such that θt “ ω|Xt. Since t P Pn is a generic point, we
+have ∆pFtq“ ∆pFq|Xt. Moreover, fn is the Poincar´ e dual ofXt. Hence
+ż
+Xt
+∆pFtq !θn´2
+t “
+ż
+X
+∆pFq !ωn´2 !fn. (2.3.3)
+The integral on the right vanishes by Remark 2.2 and the equality qXpfq“ 0.
+Example 2.6. Let S be a K3 surface, and let V be a vector bundle on S. Let Z ĂSˆSrns be
+the tautological subscheme, and let p: Z Ñ S and q : Z Ñ Srns be the projection maps. The
+locally free sheaf q˚pp˚Vq is known as a tautological sheaf on Srns. In general, such a sheaf is
+not modular. In fact, suppose that S is elliptic, with elliptic ﬁbration SÑ P1. The composition
+Srns Ñ Spnq Ñ
+`
+P1˘pnq – Pn is a Lagrangian ﬁbration with generic ﬁber Xt “ C1ˆ¨¨¨ˆCn,
+whereC1,...,C n are distinct generic ﬁbers of the elliptic ﬁbrationSÑ P1. If the restriction ofV
+to the ﬁbers ofSÑ P1 has nonzero degree, then equality (2.3.2) does not hold for F :“q˚pp˚Vq,
+and hence q˚pp˚Vq is not modular.
+Proposition 2.7. Letπ : XÑ Pn be a Lagrangian ﬁbration of a HK manifold of dimension 2n.
+Let F be a modular torsion-free sheaf onX. Suppose thattP Pn is a regular value ofπ, that F is
+locally free in a neighborhood of Xt and that Ft is slope-stable. Then Ft is a semi-homogeneous
+vector bundle.
+Proof. This follows from Lemma 2.5 and Proposition A.2.
+The result below shows that, under suitable hypotheses, a much stronger version of Proposi-
+tion 2.3 holds.
+Corollary 2.8. Let X be a HK variety of type K3rns, Kumn or OG6. Let F be a modular
+torsion-free sheaf on X. Suppose that tP Pn is a regular value of π, that F is locally free in a
+neighborhood of Xt and that Ft is slope-stable. Then there exist positive integers r0, d, with d
+dividing cX, such that rpFq“ rn
+0{d.
+Proof. If X is of type K3rns, then cX“ 1 and θt is (up to multiplication by a nonzero scalar) a
+principal polarization; see [Wie16]. If X is of type Kumn or OG6, then cX“n` 1 and θt is (up
+to multiplication by a nonzero scalar) a polarization with elementary divisors p1,..., 1,d 1,d 2q,
+whered1¨d2 divides n` 1; see [Wie18] for Kumn and [MR21] for OG6. Hence the result follows
+from Propositions 2.7 and A.3.
+3. Variation of stability for modular sheaves
+3.1. Main results. Let X be an irreducible smooth projective variety. If the ample cone
+AmppXq has rank greater than 1 (and hence dim X ě 2), the slope-stability of a sheaf F
+depends on the choice of an ample ray. If X is a surface, there is a locally ﬁnite decomposition
+AmppXqR into chambers deﬁned by rational walls such that slope-stability is the same for ample
+7
+
+=== PDF PAGE 8 ===
+K. G. O’Grady
+classes belonging to the same open chamber. One important feature is that the walls depend
+only on the Chern character of F.
+If dimXě 3, the picture is more intricate in general; see, for example, [GRT19].
+In the present section, we show that if X is a HK variety and F is a modular sheaf, then
+there is a decomposition of AmppXqR as if X were a surface.
+Definition 3.1. Let a be a positive real number. An a-wall of AmppXqR is the intersection
+λKX AmppXqR, where λP H1,1
+Z pXq,´aď qXpλqă 0 and orthogonality is with respect to the
+BBF quadratic form qX.
+As is well known, the set of a-walls is locally ﬁnite; in particular, the union of all the a-walls
+is closed in AmppXqR.
+Definition 3.2. An opena-chamber is a connected component of the complement (in AmppXqR)
+of the union of all the a-walls.
+Definition 3.3. Let X be a HK manifold, and let F be a modular torsion-free sheaf on X.
+Then
+apFq :“ rpFq2¨dpFq
+4cX
+, (3.1.1)
+where dpFq is as in Deﬁnition 1.1.
+Below is the ﬁrst main result.
+Proposition 3.4. LetX be a HK variety of dimension 2n, and let F be a torsion-free modular
+sheaf on X. Then the following hold:
+(i) Suppose that h is an ample divisor class on X which belongs to an open apFq-chamber.
+If F is strictly h slope-semistable, there exists an exact sequence of torsion-free nonzero
+sheaves
+0ÝÑ E ÝÑ F ÝÑ G ÝÑ0 (3.1.2)
+such that rpFqc1pEq´ rpEqc1pFq“ 0.
+(ii) Suppose that h0 and h1 are ample divisor classes on X belonging to the same open apFq-
+chamber. Then F is h0 slope-stable if and only if it is h1 slope-stable.
+Proposition 3.4 is proved in Subsection 3.3.
+The next result is about slope-stable sheaves on HK varieties which carry a Lagrangian
+ﬁbration.
+Definition 3.5. LetX be a HK variety equipped with a Lagrangian ﬁbration π : XÑ Pn, and
+let f :“π˚c1pOPnp1qq. Let a be a positive integer. An ample divisor class h onX isa-suitable if
+the following holds. Let λPH1,1
+Z pXq be a class such that ´aďqXpλqă 0; then either qXpλ,hq
+and qXpλ,fq have the same sign, or they are both zero.
+Notice that the notion of a-suitable depends on the chosen Lagrangian ﬁbration.
+Proposition 3.6. Let π : X Ñ Pn be a Lagrangian ﬁbration of a HK variety of dimension 2n.
+Let F be a torsion-free modular sheaf on X such that sing F does not dominate Pn. Let h be
+an ample divisor class on X which is apFq-suitable. Then the following hold:
+(i) If the restriction of F to a generic ﬁber of π is slope-stable, then F is h slope-stable.
+(ii) If F ish slope-stable, then the restriction of F to the generic ﬁber of π is slope-semistable.
+Proposition 3.6 is proved in Section 3.5.
+8
+
+=== PDF PAGE 9 ===
+Modular sheaves on hyperk ¨ahler varieties
+3.2. Change of slope-stability and strictly semistable sheaves. Suppose that E and F
+are sheaves on an irreducible smooth variety X. We let
+λE,F :“prpFqc1pEq´ rpEqc1pFqqP H2pX; Zq. (3.2.1)
+Lemma 3.7. Let pX,hq be a polarized HK variety, and let E and F be nonzero torsion-free
+sheaves on X. Then
+(i) µhpEqą µhpFq if and only if qXpλE,F,hqą 0;
+(ii) µhpEq“ µhpFq if and only if qXpλE,F,hq“ 0.
+Proof. Let 2n be the dimension ofX. We haveµhpEqą µhpFq if and only if
+ş
+XλE,F !h2n´1ą
+0, and by Fujiki’s formula, this holds if and only if
+cX¨p2n´ 1q!!¨qXpλE,F,hq¨qXphqn´1ą 0.
+Item (i) follows because cXą 0 and qXphqą 0.
+We have µhpEq “µhpFq if and only if
+ş
+XλE,F ! h2n´1 “ 0, and hence item (ii) follows
+again by Fujiki’s formula.
+Proposition 3.8. Let X be a HK variety, and let h0 and h1 be ample divisor classes on X.
+Suppose that F is a torsion-free sheaf on X which is h0 slope-stable and not h1 slope-stable.
+Then there exists an hPp Q`h0` Q`h1q such that F is strictly h slope-semistable, that is, F
+is h slope-semistable but not h slope-stable.
+Proof. Lemma 3.7 allows us to reproduce the proof of the analogous statement valid for surfaces
+(see [HL10]). Let SĂpr 0, 1sX Qq be the set of s for which there exists a subsheaf E Ă F with
+0ărpEqă rpFq such that
+qXpλE,F,p1´sqh0`sh1q“ 0. (3.2.2)
+Then S is nonempty and ﬁnite. In fact, by hypothesis, there exists an h1 destabilizing subsheaf
+E Ă F. Thus 0 ă rpEqă rpFq, and qXpλE,F,h 1qě 0 by Lemma 3.7. On the other hand, by
+the same lemma, qXpλE,F,h 0qă 0 because F is h0 slope-stable. It follows that there exists an
+sPr 0, 1sX Q such that (3.2.2) holds; that is, S is not empty.
+In order to prove that S is ﬁnite, assume that (3.2.2) holds. Since F is h0 slope-stable,
+qXpλE,F,h 0qă 0. By the linearity of qXpλE,F,¨q, we get that qXpλE,F,h 1qě 0. By Lemma 3.7,
+it follows that
+µh1pEqě µh1pFq. (3.2.3)
+The set of subsheaves E Ă F such that (3.2.3) holds is bounded (see [HL10, Lemma 1.7.9]); that
+is, up to isomorphism, each such sheaf belongs to a ﬁnite set of families, each parametrized by an
+irreducible quasi-projective variety. It follows that S is ﬁnite because the values of qXpλE,F,hiq
+for iPt 0, 1u are constant for sheaves E parametrized by an irreducible variety.
+Since S is ﬁnite, there is a minimum s, call it smin, such that (3.2.2) holds for some subsheaf
+E Ă F with 0ărpEqă rpFq. Clearly F is strictly ph0`sminh1q slope-semistable.
+3.3 Strictly semistable modular sheaves
+Lemma 3.9. Let
+0ÝÑ E ÝÑ F ÝÑ G ÝÑ0 (3.3.1)
+be an exact sequence of sheaves on a smooth variety. Then
+rpFq¨rpGq∆pEq` rpFq¨rpEq∆pGq“ rpEq¨rpGq∆pFq` λ2
+E,F. (3.3.2)
+9
+
+=== PDF PAGE 10 ===
+K. G. O’Grady
+Proof. This follows from the additivity of the Chern character and the second equality in (1.2.1).
+Proposition 3.10. LetpX,hq be a polarized HK variety of dimension2n. Let F be a torsion-free
+modular strictly h slope-semistable sheaf on X, and let
+0ÝÑ E ÝÑ F ÝÑ G ÝÑ0 (3.3.3)
+be an exact sequence of nonzero torsion-free sheaves which is h slope-destabilizing; that is,
+µhpEq“ µhpFq. Then
+´apFqď qXpλE,Fqď 0. (3.3.4)
+Moreover,qXpλE,Fq“ 0 only if λE,F “ 0.
+Proof. Since the exact sequence in (3.3.3) is destabilizing, qXpλE,F,hq“ 0 by Lemma 3.7. Since
+the BBF form on NSpXq has signaturep1,ρpXq´ 1q, it follows that qXpλE,Fqď 0 with equality
+only if λE,F “ 0. (Recall that qXphqą 0 because h is ample.)
+We are left with proving the second inequality in (3.3.4). Hence we assume thatqXpλE,Fqă 0.
+Cupping both sides of the equality in (3.3.2) by h2n´2 and integrating, we get (here we use the
+hypothesis that F is modular)
+ż
+X
+rpFq¨rpGq∆pEq !h2n´2`
+ż
+X
+rpFq¨rpEq∆pGq !h2n´2
+“rpEq¨rpGq¨dpFq¨p2n´ 3q!!qXphqn´1`cX¨qXpλE,Fq¨p2n´ 3q!!qXphqn´1. (3.3.5)
+By hypothesis, µhpEq“ µhpFq“ µhpGq. Since F ish slope-semistable, it follows that E and G
+are h slope-semistable torsion-free sheaves. Thus
+ż
+X
+∆pEq !h2n´2ě 0,
+ż
+X
+∆pGq !h2n´2ě 0
+by Bogomolov’s inequality, and hence (3.3.5) gives
+´rpEq¨rpGq¨dpFqď cX¨qXpλE,Fq. (3.3.6)
+Dividing by cX (which is strictly positive), we see that the second inequality in (3.3.4) follows
+from (3.3.6) and the inequality rpEq¨rpGqď rpFq2{4.
+3.4 Proof of Proposition 3.4. Item (i) follows from Proposition 3.10. We prove item (ii). By
+symmetry, it suﬃces to show that if F ish0 slope-stable, then it is h1 slope-stable. Suppose that
+F is not h1 slope-stable. By Proposition 3.8, there exists an hPp Q`h0` Q`h1q such that F is
+strictly h slope-semistable. Hence there exists an h destabilizing exact sequence
+0ÝÑ E ÝÑ F ÝÑ G ÝÑ0
+of nonzero torsion-free sheaves. Since h0 and h1 belong to the same open apFq-chamber,h also
+belongs to the same open apFq-chamber. Thus, by Proposition 3.10, we get that λE,F “ 0. It
+follows that F is not h0 slope-stable, and that gives a contradiction.
+3.5 Stability of modular sheaves on a Lagrangian HK variety
+Lemma 3.11. Let X be a HK variety of dimension 2n equipped with a Lagrangian ﬁbration
+π : XÑ Pn, and let f :“c1pπ˚OPnp1qq. Let F be a torsion-free sheaf on X, and let E Ă F be
+a subsheaf with 0ărpEqă rpFq. Then the following hold:
+10
+
+=== PDF PAGE 11 ===
+Modular sheaves on hyperk ¨ahler varieties
+(i) If, for generic tP Pn, the restriction Ft :“ F|Xt
+is slope-stable, then
+qXpλE,F,fqă 0. (3.5.1)
+(ii) If, for generic tP Pn, the subsheaf Et :“ E|Xt
+Ă Ft is slope-desemistabilizing, then
+qXpλE,F,fqą 0. (3.5.2)
+Proof. Let ht :“h|Xt. We have
+ż
+Xt
+λEt,Ft !hn´1
+t “
+ż
+X
+λE,F !hn´1 !fn
+“n!cX¨qXph,fqn´1¨qXpλE,F,fq. (3.5.3)
+In fact, the ﬁrst equality holds because fn is the Poincar´ e dual ofXt, and the second equality
+holds by Fujiki’s formula and the fact that qXpfq“ 0. Items (i) and (ii) follow because cX and
+qXpOXphq,fq are strictly positive.
+Proof of Proposition 3.6. We prove item (i). Suppose that F is not h slope-stable. Let S Ă
+pr0, 1sX Qq be the set of s for which there exists a subsheaf E Ă F with 0ărpEqă rpFq such
+that
+qXpλE,F,p1´sqh`sfq“ 0. (3.5.4)
+Let us show that S is nonempty and ﬁnite. Since F is not h slope-stable, by Lemma 3.7 there
+exists a subsheaf E Ă F with 0ărpEqă rpFq such that qXpλE,F,hqě 0. On the other hand,
+by Lemma 3.11, the inequality in (3.5.1) holds. It follows that S is not empty. The argument in
+the proof of Proposition 3.8 showing that the analogous S is ﬁnite also applies in the present
+case, and hence S is ﬁnite.
+Let smin be the minimum element of S. Clearly F is strictly h`sminf slope-semistable.
+Let E Ă F be a subsheaf with 0 ă rpEq ărpFq which is h`sminf destabilizing, that is,
+qXpλE,F,h `sminfq “ 0. Then ´apFq ďqXpλE,Fq ď 0 by Proposition 3.10. On the other
+hand,qXpλE,F,fqă 0 by Lemma 3.11, and hence qXpλE,F,hqă 0 by our hypothesis on h. This
+contradicts the equality qXpλE,F,h `sminfq“ 0.
+Next, we prove item (ii). Suppose that the restriction F|Xt is ht slope-unstable for generic
+tP Pn. As before, let SĂpr 0, 1sX Qq be the subset of s such that there exists a subsheaf E Ă F
+with rank 0 ă rpEqă rpFq for which (3.5.4) holds. We claim that S is not empty and that it
+has a minimum (NB: it does not have a maximum).
+In fact, since F|Xt is ht slope-unstable for generic t P Pn, there exists a subsheaf E Ă F
+with 0 ă rpEq ărpFq such that Et Ă Ft is ht slope-desemistabilizing for generic t P Pn. By
+Lemma 3.11, we have qXpλE,F,fq ą0. On the other hand, qXpλE,F,hq ă0 because F is h
+slope-stable. It follows that S is not empty.
+It remains to show that S has a minimum. Suppose that (3.5.4) holds. Since qXpλE,F,hqă 0
+(because F is h slope-stable), we get that qXpλE,F,fq ą0. Hence the sheaves E Ă F with
+0 ă rpEq ărpFq such that (3.5.4) holds for some s P r0, 1sX Q are exactly those such that
+E|Xt
+Ă F|Xt
+is an ht slope-desemistabilizing sheaf of F|Xt
+for the generic tP Pn.
+Let rX :“XˆPn CpPnq be the abelian variety over CpPnq obtained from X by base change.
+We let rh be the ample divisor on rX determined by h. A subsheaf E Ă F on X determines
+a subsheaf rE Ă ĂF on rX.
+Then µrh
+`rE
+˘
+ąµrh
+`ĂF
+˘
+, that is, rE is rh desemistabilizing for ĂF, if and only if E|Xt
+Ă F|Xt
+is
+an ht slope-desemistabilizing sheaf of F|Xt
+for the generic tP Pn. The set of rh desemistabilizing
+11
+
+=== PDF PAGE 12 ===
+K. G. O’Grady
+subsheaves A Ă ĂF is bounded. Given such a subsheaf, there exists a unique maximal subsheaf
+E Ă F such that rE “ A . The set S0 ofsPpr 0, 1sX Qq such that (3.5.4) holds for such a maximal
+subsheaf is ﬁnite (and nonempty) by boundedness. Hence there is a minimum elements0
+min of S0.
+All other subsheaves E Ă F (with 0ărpEqă rpFq) such that rE Ă ĂF is an rh desemistabilizing
+subsheaf are contained in a maximal subsheaf E , and the quotient E{E is supported on vertical
+divisors (that is, divisors whose image under π is a proper subset of Pn). It follows that s0
+min is
+also the minimum element of S.
+The sheaf F is strictlypp1´sminqh`sminfq slope-semistable by the minimality of smin. Let
+E Ă F be a subsheaf with 0 ă rpEq ărpFq such that qXpλE,F,p1´sminqh`sminfq “0.
+By Proposition 3.10, either ´apFq ďqXpλE,Fq ă0, or λE,F “ 0. The latter does not hold
+because qXpλE,F,hqă 0 (since F is h slope-stable). Hence ´apFqď qXpλE,Fqă 0, and thus
+qXpλE,F,fqă 0 by our hypothesis on h. This contradicts the equality qXpλE,F,p1´sminqh`
+sminfq“ 0.
+4. Stable vector bundles on Lagrangian HK varieties
+4.1. Main result. Before stating the main result, we recall that K i
+e is the moduli space of
+polarized HK varietiespX,hq of typeK3r2s such thatqphq“ e andh has divisibilityi (see (1.3.1)
+and (1.3.2)). Recall that i“ 1 if eı 6 pmod 8q and iPt 1, 2u if e” 6 pmod 8q.
+The Noether–Lefschetz divisor N i
+dpeqĂ K i
+e parametrizes the pX,hq such that there exists
+a saturated rank 2 sublattice xh,fyĂ H1,1
+Z pXq, where f is isotropic and qph,fq“ d; see Deﬁni-
+tion B.1. Assume that dą 10pe` 1q, that eﬄ 2d and that d is even if i“ 2. By Proposition B.2,
+the divisor N i
+dpeq is of pure codimension 1 (in particular, nonempty), and there exists an open
+dense subset N i
+dpeq0Ă N i
+dpeq such that the following holds for rpX,hqsP N i
+dpeq0: there exists
+one and only one Lagrangian ﬁbration π : X Ñ P2 (modulo automorphisms of P2) such that,
+letting f :“π˚c1pOP2p1qq, the lattice xh,fy is as above. Below is the main result of the present
+section.
+Proposition 4.1. Leta0 andd be positive integers, and let iPt 1, 2u. Suppose that eﬄ 2d, that
+d is even if i“ 2 and that
+dą max
+␣ 1
+2a0pe` 1q, 10pe` 1q
+(
+. (4.1.1)
+IfrpX,hqsP N i
+epdq0 is generic, the following hold:
+(i) Let E be an h slope-stable vector bundle on X such that
+(a) apEqď a0, where apEq is as in Deﬁnition 3.3;
+(b) there exists an integer m such that rpEq“p miq2, c1pEq“ mh and gcdtmi,d{iu“ 1.
+Then the restriction of E to a generic ﬁber of the associated Lagrangian ﬁbrationπ : XÑ P2
+is slope-stable.
+(ii) If F and G are h slope-stable vector bundles on X such that items (a) and (b) hold for
+E “ F and E “ G , then for generic z P P2, the restrictions of F and G to π´1pzq are
+isomorphic.
+Remark 4.2. Regarding item (b) of Proposition 4.1: according to Proposition 2.3, we always have
+rpEq‌p miq2, hence the equality is an extremal case.
+12
+
+=== PDF PAGE 13 ===
+Modular sheaves on hyperk ¨ahler varieties
+4.2 Preliminary results
+Lemma 4.3. LetpΛ,qq be a nondegenerate rank2 lattice which represents0; hence discpΛq“´ d2,
+whered is a strictly positive integer. Let αP Λ be primitive isotropic, and complete it to a basis
+tα,βu such that qpβqě 0. If γP Λ has strictly negative square pthat is, qpγqă 0q, then
+qpγqď´ 2d
+1`qpβq. (4.2.1)
+Proof. There exist integers x and y such that γ“xα`yβ. Since discpΛq“´ qpα,βq2, we have
+qpα,βq“ d. Thus qpγq“ yp2dx`qpβqyq. Since qpγqă 0 and since x andy are integers, we have
+0ă|x|, 0ă|y|ď| qpγq|, 0ă| 2dx`qpβqy|ď| qpγq|.
+It follows that
+2d|x|´ qpβq|y|ď| 2dx`qpβqy|ď| qpγq|
+because d and qpβq are nonnegative. Hence
+2dď 2d|x|ď qpβq|y|`| 2dx`qpβqy|ď qpβq|qpγq|`| qpγq|“p 1`qpβqq|qpγq|.
+Since qpγqă 0, this inequality is equivalent to (4.2.1).
+Proposition 4.4. Let pA,θq be a principally polarized abelian surface. Let F be a θ slope-
+semistable vector bundle on A such that c1pFq is a multiple of θ and ∆pFq“ 0. Then we can
+write
+rpFq“ r2
+0m, c 1pFq“ r0b0mθ, (4.2.2)
+where r0, m, b0 are integers, the ﬁrst two of which are positive, and gcdtr0,b 0u “1. If F is
+strictlyθ slope-semistable, that is, not slope-stable, then there exists such a decomposition with
+mą 1.
+Proof. If F is slope-stable, then it is simple semi-homogeneous by Proposition A.2, and hence
+we may write (4.2.2) with x“ 1 by Proposition A.3.
+Suppose that F is strictlyθ slope-semistable. Then there exists a destabilizing exact sequence
+of torsion-free sheaves
+0ÝÑ G ÝÑ F ÝÑ H ÝÑ0 (4.2.3)
+with G slope-stable. Notice that G is locally free because H is torsion-free.
+Let us prove that G is simple semi-homogeneous. Since (4.2.3) is slope-destabilizing,
+0ărpGqă rpFq and
+ş
+AλG,F ! θ “ 0, where λG,F P H2pA; Zq is deﬁned in (3.2.1). Since
+F is slope-semistable, H is slope-semistable. Thus ∆pGqě 0 and ∆pHqě 0 by Bogomolov’s
+inequality. Now look at equation (3.3.2): since
+ş
+Aλ2
+G,F ď 0 by the Hodge index theorem, we
+get that ∆pGq“ ∆pHq“ 0 and
+ş
+Aλ2
+G,F “ 0. In particular, G is simple semi-homogeneous by
+Proposition A.2 and H is locally free (if it is not locally free, then H_ is a slope-semistable
+vector bundle with ∆ pH_q ă∆pHq “0, but this contradicts Bogomolov’s inequality). The
+equality
+ş
+Aλ2
+G,F “ 0 gives thatλG,F “ 0 (by the Hodge index theorem). Thusc1pGq is a multiple
+of θ, and so is c1pHq.
+Since the vector bundle H is slope-semistable, c1pHq is a multiple of θ and ∆pHq“ 0, we
+can iterate this argument to get the following result. Let
+0“ G0Ĺ G1Ĺ¨¨¨ĹGm“ F
+be a Jordan–H¨ older ﬁltration (for slope-semistability) ofF. Then foriPt 1,...,m u, the quotient
+Gi{Gi´1 is a simple semi-homogeneous vector bundle and c1pGi{Gi´1q is a multiple of θ. Let
+13
+
+=== PDF PAGE 14 ===
+K. G. O’Grady
+iPt 1,...,m u; by Proposition A.3, we may write
+rpGi{Gi´1q“ r2
+i , c 1pGi{Gi´1q“ ribiθ,
+where ri andbi are integers, rią 0 and gcdtri,biu“ 1. Let i,j Pt 1,...,m u; equating the slopes
+of Gi{Gi´1 and Gj{Gj´1, we get that
+bi
+ri
+“ bj
+rj
+. (4.2.4)
+Since gcdtri,biu “gcdtrj,bju “1, it follows that ri “ rj and bi “ bj. Thus rpFq “mr2
+0 and
+c1pFq“ mr0b0θ, where r0“ri and b0“bi for all iPt 1,...,m u.
+Corollary 4.5. Let pA,θq be a principally polarized abelian surface. Let F be a θ slope-
+semistable vector bundle on A such that ∆pFq“ 0. If rpFq“ r2
+0 and c1pFq“ r0b0θ, where r0
+and b0 are coprime integers, then F is θ slope-stable.
+Proof. The proof is by contradiction. Suppose that F is not θ slope-stable. By Proposition 4.4,
+we may write rpFq“ s2
+0m and c1pFq“ s0c0mθ, where s0, m, c0 are integers (with s0,m ą 0),
+s0 and c0 are coprime and m ą 1. It follows that s0b0 “ c0r0. Since gcd tr0,b 0u “ 1 and
+gcdts0,c 0u“ 1, we get that r0“s0 and hence m“ 1. This gives a contradiction.
+4.3 Proof of item (i) of Proposition 4.1. First we prove that h is a0-suitable (see Deﬁni-
+tion 3.5). First suppose that ρpXq “2, that is, H1,1
+Z pXq “ xh,fy, where f :“ π˚c1pOP2p1qq.
+Apply Lemma 4.3 to Λ : “ H1,1
+Z pXq, α “ f and β “ h: by (4.1.1) we get that there are no
+ξPH1,1
+Z pXq such that´a0ďqpξqă 0. Hence every ample divisor on X is a0-suitable.
+Once we know that h on X is a0-suitable if ρpXq “2, it follows that the set of rpX,hqs P
+N i
+epdq0 such that h is not a0-suitable belongs to the intersection of N i
+epdq0 with a ﬁnite union
+of Noether–Lefschetz divisors in K i
+e . In fact, suppose that h is not a0-suitable onX. Then there
+exists a γPH1,1
+Z pXq such that
+´a0ďqpγqă 0, q pγ,hqą 0, q pγ,fqă 0. (4.3.1)
+Let B be the (ﬁnite) index of xh,fy‘px h,fyKXH1,1
+Z pXqq in H1,1
+Z pXq. Then
+γ“ γ1
+B ` γ2
+B , γ 1Pxh,fy, γ 2Pxh,fyK. (4.3.2)
+By the last two inequalities in (4.3.1), we haveqpγ1qă 0. Hence by the ﬁrst inequality in (4.3.1),
+it follows that there exists a positive M independent of pX,hq such that ´M ď qpγ2q ă 0.
+Hence the moduli point of pX,hq belongs to the intersection of N i
+epdq0 with a ﬁnite union of
+Noether–Lefschetz divisors in K i
+e , as claimed.
+We have proved that if pX,hq represents a generic point of N i
+epdq0, then h is a0-suitable,
+and hence apEq-suitable because apEqď a0. Let A be a generic (smooth) ﬁber of π. By Propo-
+sition 3.6, the restriction of E to A is slope-semistable with respect to the restriction of h.
+We claim that the hypotheses of Corollary 4.5 are satisﬁed by F :“ E|A. In fact, ∆pFq“ 0
+because E is modular; see Lemma 2.5. Moreover, the restriction of h to A is a multiple of
+a principal polarization θ, by [Wie16, Theorem 1.1]. From the formula
+ş
+Ah2 “
+ş
+Xh2 ! f 2 “
+2qph,fq2“ 2d2, it follows that h|A“dθ. Hence rpFq“p miq2 andc1pFq“ m¨dθ“pmiqd{i. It
+follows that the hypotheses of Corollary 4.5 are satisﬁed and hence F is slope-stable.
+4.4 Proof of item (ii) of Proposition 4.1. Forz P P2, we let Az :“ π´1pzq, Fz :“ F|Az
+and Gz :“ G|Az. By item (i) of Proposition 4.1, there exists an open dense U Ă P2 such that for
+14
+
+=== PDF PAGE 15 ===
+Modular sheaves on hyperk ¨ahler varieties
+z P U, the vector bundles Fz and Gz are both slope-stable. We claim that if z P U, then Fz
+and Gz are simple semi-homogeneous vector bundles. In fact, they are simple because they are
+slope-stable, and they are semi-homogeneous by Lemma 2.5 and Proposition A.2. Let zPU. By
+[Muk78, Theorem 7.11], the set
+Vz :“trξsP A_
+z | Fz– Gzbξu
+is not empty, and hence it has cardinality rpGq2 by Proposition 7.1 in op. cit. Clearly Vz is
+invariant under the monodromy action of π1pU,zq. Now notice that Vz Ă Azrpmiq2s because
+Fz and Gz have rank pmiq2 and isomorphic determinants. Hence by Corollary B.5, we have
+Vz“Armis. Thus 0PVz, and therefore Fz– Gz.
+5. Basic modular sheaves on Hilbert squares of K3 surfaces
+5.1. Main results. Let S be a smooth projective surface. Let XnpSqÑ Sn be the blow-up of
+the big diagonal, that is, the nth isospectral Hilbert scheme of S; see [Hai01, Deﬁnition 3.2.4
+and Proposition 3.4.2]. The complement of the big diagonal in Sn is identiﬁed with a dense
+open subset UnpSq of XnpSq, and the natural map UnpSq ÑSrns extends to a regular map
+p: XnpSqÑ Srns (this follows from [Hai01, Proposition 3.4.2]). Let τ : XnpSqÑ Sn be the blow-
+up map. We let qi : XnpSqÑ S be the composition of τ and the ith projection SnÑS. Given a
+locally free sheaf F on S, let
+XnpFq :“q˚
+1pFqb¨¨¨bq˚
+npFq.
+The action of the symmetric group Sn onSn by permutation of the factors maps the big diagonal
+to itself and hence lifts to an action ρn : SnÑ AutpXnpSqq. The latter action lifts to a natural
+action ρ`
+n on XnpFq. There is also a twisted action ρ´
+n “ ρ`
+n ¨χ, where χ: Sn Ñ t˘1u is the
+sign character. Since ρn maps to itself any ﬁber of p: XnpSqÑ Srns, the action ρ˘
+n descends to
+an action ρ˘
+n : SnÑ Autpp˚XnpFqq.
+Definition 5.1. Let F˘rnsĂ p˚XnpFq be the sheaf of Sn-invariants forρ˘
+n .
+Below is the ﬁrst main result of the present section.
+Proposition 5.2. LetS be a projective K3 surface, and let F be a locally free sheaf on S such
+that χpS, EndpFqq“ 2. Then Fr2s˘ is a locally free modular sheaf of rank rpFq2, with
+∆
+`
+Fr2s˘˘
+“ rpFr2s˘qprpFr2s˘q´ 1q
+12 c2
+`
+Sr2s˘
+, (5.1.1)
+d
+`
+Fr2s˘˘
+“ 5¨
+ˆrpFr2s˘q
+2
+˙
+, (5.1.2)
+a
+`
+Fr2s˘˘
+“ 5
+8rpFq6`
+rpFq2´ 1
+˘
+. (5.1.3)
+pRecall that dpEq is deﬁned by the equality in (1.2.2).q
+The proof of Proposition 5.2 is given in Subsection 5.4.
+Remark 5.3. IfS is aK3 surface and F is a locally free sheaf on S such thatχpS, EndpFqq­“2,
+then Fr2s˘ is not modular.
+The second main result of the section is the following.
+15
+
+=== PDF PAGE 16 ===
+K. G. O’Grady
+Proposition 5.4. Let S be a projective K3 surface. Let F be a locally free sheaf on S which
+is spherical, that is, such that hp`
+S, End0pFq
+˘
+“ 0 for all p, where End0pFqĂ EndpFq is the
+subsheaf of traceless endomorphisms. Then for all p, we have
+hp`
+Sr2s, End0 `
+Fr2s˘˘˘
+“ 0. (5.1.4)
+The proof of Proposition 5.4 is in Subsection 5.5.
+Below is a remarkable consequence of Proposition 5.4.
+Corollary 5.5. Let S be a projective K3 surface, and let F be a locally free sheaf on S
+which is spherical. Then the natural map between deformation spaces Def
+`
+Sr2s, Fr2s˘˘
+ÝÑ
+Def
+`
+Sr2s, det Fr2s˘˘
+is smooth.
+Proof. This follows from Proposition 5.4 and the main result of [IM19].
+5.2. Another description of Fr2s˘. A diﬀerent deﬁnition of the sheaf Fr2s´ was given
+in [DHOV20]. Here we recall that construction, and we give the analogous construction ofFr2s`.
+The isospectral Hilbert scheme X2pSq is the the blow-up of the diagonal in SˆS; we will
+denote it by ČSˆS. Let E be the exceptional divisor of the blow-up map τ : ČSˆS Ñ S2, and
+let e P H2`ČSˆS
+˘
+be its Poincar´ e dual. We letτE : E Ñ S be the restriction of τ to E. Let
+ιP Aut
+`ČSˆS
+˘
+be the involution lifting the involution ofS2 exchanging the factors. ThenSr2s is
+the quotient of ČSˆS by the groupxιy, and p: ČSˆSÑSr2s is the quotient map. We recall that
+the map qi : ČSˆSÑS for iPt 1, 2u is the composition of τ and the ith projection SˆSÑS.
+The natural mapf˘ : p˚`
+Fr2s˘˘
+Ñq˚
+1 Fbq˚
+2 F is an isomorphism away fromE; in particular,
+it is injective because p˚`
+Fr2s˘˘
+is torsion-free. In order to write out the cokernel, we notice
+that there are surjective morphisms
+q˚
+1 Fbq˚
+2 F ev`
+ÝÑτ˚
+E Sym2F, q ˚
+1 Fbq˚
+2 F ev´
+ÝÑτ˚
+E
+Ź2F (5.2.1)
+obtained by evaluating along E and then projecting onto the symmetric/antisymmetric part of
+pq˚
+1 Fbq˚
+2 Fq|E“τ˚
+EpFb Fq. Let ι: E ãÑ ČSˆS be the inclusion.
+Proposition 5.6 ([DHOV20, Lemma 4.2]) . The sheaves Fr2s˘ are locally free of rank rpFq2,
+and the following are exact sequences:
+0ÝÑp˚`
+Fr2s`˘ f`
+ÝÑq˚
+1 Fbq˚
+2 F ev´
+ÝÑι˚τ˚
+E
+`Ź2F
+˘
+ÝÑ0, (5.2.2)
+0ÝÑp˚`
+Fr2s´˘ f´
+ÝÑq˚
+1 Fbq˚
+2 F ev`
+ÝÑι˚τ˚
+E Sym2F ÝÑ0. (5.2.3)
+Proof. Away from E, the sheaves ι˚τ˚
+E
+`Ź2F
+˘
+and ι˚τ˚
+E Sym2F are zero and the maps f˘ are
+isomorphisms. Hence (5.2.2) and (5.2.3) are exact away from E. In particular, Fr2s˘ is locally
+free of rank rpFq2 away fromE.
+Let xP E; then the subscheme y :“ ppxqĂ S is nonreduced, and hence it is supported at
+a single pointyred. LethP O ĆSˆS,x be a local generator of the ideal of E. Let Fpyredq be the ﬁber
+of F at yred. The ˘1 eigenspaces for the action of ρ`
+2 on p˚pq˚
+1 Fbq˚
+2 Fqy are, respectively,
+`
+Sym2 Fpyredqb OSr2s,y
+˘
+‘
+˜ 2ľ
+Fpyredqb OSr2s,y¨h
+¸
+16
+
+=== PDF PAGE 17 ===
+Modular sheaves on hyperk ¨ahler varieties
+and ˜ 2ľ
+Fpyredqb OSr2s,y
+¸
+‘
+`
+Sym2 Fpyredqb OSr2s,y¨h
+˘
+.
+Thus Fr2s`
+x is free of rank rpFq2, and we get that (5.2.2) is exact at x. Since the ˘ eigenvalues
+of the action of ρ´
+2 are the ¯ eigenvalues of the action of ρ`
+2 , we also get that Fr2s´
+x is free of
+rank rpFq2 and that (5.2.3) is exact at x.
+5.3. Preliminaries on K3rns. Let µn : H2pSqÑ H2`
+Srns˘
+be the composition of the natural
+symmetrization mapH2pSqÑ H2`
+Spnq˘
+and the pull-backH2`
+Spnq˘
+ÑH2`
+Srns˘
+deﬁned by the
+Hilbert–Chow map SrnsÑSpnq. Let ∆rnsĂSrns be the prime divisor parametrizing nonreduced
+subschemes. The class cl
+`
+∆rns˘
+is divisible by 2 in the integral cohomology of Srns; let δn P
+H1,1
+Z
+`
+Srns˘
+be the unique class such that 2 δn“ cl
+`
+∆rns˘
+. We have an orthogonal decomposition
+for the BBF quadratic form
+H2`
+Srns; Z
+˘
+“µn
+`
+H2pS; Zq
+˘
+‘ Zδn.
+Let q be the BBF form of Srns. Then for αPH2pSq, we have
+qpµnpαqq“
+ż
+S
+α2, q pµnpαq,δnq“ 0, q pδnq“´ 2pn´ 1q. (5.3.1)
+We will deal with Sr2s. In order to simplify notation, we will drop the subscripts of δ2 and µ2.
+We go through a few formulas that will be needed in the proof that Fr2s˘ is a modular sheaf.
+Let ηPH4pS; Zq be the orientation class. We claim that
+p˚pxµpc1pFqq´ yδq“ xpq˚
+1c1pFq` q˚
+2c1pFqq´ ye, (5.3.2)
+p˚c2pSr2sq“ 24pq˚
+1η`q˚
+2ηq´ 3e2. (5.3.3)
+In fact (5.3.2) follows directly from the deﬁnitions, and (5.3.3) is the last equation in [DV10,
+Proof of Lemma 4.5, p. 84]. Equation (5.3.3) gives
+ż
+Sr2s
+c2
+`
+Sr2s˘2“ 828,
+ż
+Sr2s
+c2
+`
+Sr2s˘
+!α2“ 30qpαq, α PH2`
+Sr2s˘
+. (5.3.4)
+Lemma 5.7. Let S be a K3 surface. Let αPH2pSq, and let α2“ 2m0η. Then
+2pq˚
+1η !q˚
+2α`q˚
+1α !q˚
+2ηq`p q˚
+1α`q˚
+2αq !e2“ 0. (5.3.5)
+Proof. Since the cohomology of ČSˆS has no torsion, it suﬃces to check that the cup product
+on the left-hand side of (5.3.5) with any class in H2`ČSˆS
+˘
+vanishes. Thus we must take the
+cup product with q˚
+iβ, where iPt 1, 2u and βPH2pSq, and with e. The easy computations are
+left to the reader.
+5.4 Chern classes of Fr2s˘
+Proposition 5.8. LetS be a K3 surface, and let F be a locally free sheaf of rank r0 onS such
+that χpS, EndpFqq“ 2. Let h˘PH1,1
+Q
+`
+Sr2s˘
+be deﬁned by
+h˘ :“µpc1pFqq´ r0¯ 1
+2 δ. (5.4.1)
+17
+
+=== PDF PAGE 18 ===
+K. G. O’Grady
+Then
+ch0
+`
+Fr2s˘˘
+“r2
+0, (5.4.2)
+ch1
+`
+Fr2s˘˘
+“r0h˘, (5.4.3)
+ch2
+`
+Fr2s˘˘
+“ 1
+2ph˘q2´ r2
+0´ 1
+24 c2
+`
+Sr2s˘
+. (5.4.4)
+Proof. Of course (5.4.2) needs no proof. Let ch 1pFq2 “ 2m0η, where η P H4pS; Zq is the ori-
+entation class. Since χpS, EndpFqq “2, the Hirzebruch–Riemann–Roch (HRR) theorem gives
+that
+2r0 ch2pFq“ ch1pFq2´ 2
+`
+r2
+0´ 1
+˘
+η“
+`
+2m0´ 2
+`
+r2
+0´ 1
+˘˘
+η. (5.4.5)
+A straightforward computation shows that
+2m0“q
+`
+h˘˘
+`pr0¯ 1q2
+2 . (5.4.6)
+Since the pull-back p˚ : H
+`
+Sr2s; Z
+˘
+Ñ H2`ČSˆS; Z
+˘
+is injective, we work on ČSˆS. By (5.2.2)
+and the Grothendieck–Riemann-Roch (GRR) theorem, we have
+p˚ chpFr2s`q
+“ q˚
+1 chpFq¨q˚
+2 chpFq
+´ι˚
+ˆ
+τ˚
+E
+ˆ ˆr0
+2
+˙
+`pr0´ 1q ch1pFq`p r0´ 2q ch2pFq` 1
+2 ch1pFq2
+˙ ˙
+¨
+ˆ
+1´ 1
+2e` 1
+6e2´ 1
+24e3
+˙
+“ q˚
+1pr0` ch1pFq` ch2pFqq¨q˚
+2pr0` ch1pFq` ch2pFqq
+´
+ˆ ˆr0
+2
+˙
+` r0´ 1
+2
+2ÿ
+i“1
+q˚
+i ch1pFq` 1
+4
+2ÿ
+i“1
+´
+q˚
+i
+`
+p2r0´ 4q ch2pFq` ch1pFq2˘¯˙
+¨
+¨
+ˆ
+e´ 1
+2e2` 1
+6e3´ 1
+24e4
+˙
+. (5.4.7)
+(The cup product is denoted by ¨in order to save space.) Equation (5.4.3) for Fr2s` follows at
+once. Using (5.4.5), we get that
+p˚ ch2
+`
+Fr2s`˘
+“ ´
+`
+r2
+0´ 1
+˘
+pq˚
+1η`q˚
+2ηq` 1
+2
+`
+q˚
+1 ch1pFq2`q˚
+2 ch1pFq2˘
+`q˚
+1 ch1pFq¨q˚
+2 ch1pFq´ r0´ 1
+2 e¨pq˚
+1 ch1pFq` q˚
+2 ch1pFqq` 1
+2
+ˆr0
+2
+˙
+e2.
+By (5.3.2) and (5.3.3), we get that (5.4.4) holds for Fr2s`.
+The computations for Fr2s´ are similar.
+Now we prove Proposition 5.2. The sheaf Fr2s˘ is locally free of rank rpFq2 by Propo-
+sition 5.6. Equation (5.1.1) holds by Proposition 5.8. It follows that Fr2s˘ is modular (see
+Remark 1.2). Equations (5.1.2) and (5.1.3) follow from (5.1.1) and the second equality in (5.3.4).
+5.5 Cohomology groups via the MacKay correspondence. We keep the notation in-
+troduced in Subsection 5.2. In particular, τ : ČSˆS Ñ S2 is the blow-up of the diagonal and
+p: ČSˆS Ñ Sr2s is the quotient map for the action of Z{p2q on ČSˆS which lifts the permu-
+tation action on S2. Let Db
+Z{p2q
+`
+S2˘
+be the bounded derived category of the (abelian) category
+of Z{p2q-equivariant coherent sheaves onS2. By the MacKay correspondence proved by Haiman
+18
+
+=== PDF PAGE 19 ===
+Modular sheaves on hyperk ¨ahler varieties
+and Bridgeland–King–Reid, the functor
+pZ{p2q
+˚ ˝τ˚ : Db
+Z{p2q
+`
+S2˘
+ÝÑDb`
+Sr2s˘
+(5.5.1)
+is an equivalence; see [Kru18, Proposition 2.8]. (Here pZ{p2q
+˚ is the derived functor of the functor
+Coh
+`ČSˆS
+˘
+Ñ Coh
+`
+Sr2s˘
+mapping F to the Z{p2q-invariant subsheaf of p˚pFq.) We have
+pZ{p2q
+˚ ˝τ˚`
+F b2˘
+“ F`, p Z{p2q
+˚ ˝τ˚`
+F b2b a
+˘
+“ F´, (5.5.2)
+where a is the sign representation of Z{p2q. It follows by the K¨ unneth formula that
+Ext˚`
+F˘, F˘˘
+– Ext˚`
+F b2, F b2˘Z{p2q– Sym2pExt˚pF, Fqq. (5.5.3)
+We now prove Proposition 5.4. Since HppS, EndpFqq “Hp`
+S, End0pFq
+˘
+‘HppS, OSq and S
+is a K3 surface, the cohomology space Ext ppF, Fq is 1-dimensional if pP t0, 2u and vanishes
+otherwise. Hence
+Sym2pExt˚pF, Fqq“ Sym2pCr0s‘ Cr´2sq“ Cr0s‘ Cr´2s‘ Cr´4s. (5.5.4)
+By (5.5.3), we get that Hp`
+Sr2s, EndpFq
+˘
+is 1-dimensional ifpPt 0, 2, 4u and vanishes otherwise.
+Proposition 5.4 follows because hp`
+Sr2s, OSr2s
+˘
+“ 1 for p P t0, 2, 4u and Hp`
+Sr2s, EndpF˘q
+˘
+“
+Hp`
+Sr2s, End0pF˘q
+˘
+‘Hp`
+Sr2s, Or2s
+˘
+.
+6. Basic modular sheaves on the Hilbert square of an elliptic K3 surface
+6.1. Contents of the section. We will study the vector bundle Fr2s` for a spherical vector
+bundle F on an elliptic K3 surface S with Picard number 2 (analogous results hold for Fr2s´).
+Given positive integerse,r0,i satisfying the hypotheses of Theorem 1.4, one can choose suitableS
+and F such that the equations in (1.3.4) hold for E :“ Fr2s`—see Subsection 6.3. Next, notice
+that there is a Lagrangian ﬁbration π : Sr2sÑ P2 associated with the elliptic ﬁbration SÑ P1.
+In Subsection 6.4, we analyze the restriction of Fr2s˘ to (scheme-theoretic) ﬁbers of π. The key
+result is Proposition 6.7, which states that the restriction to every Lagrangian ﬁber is simple.
+Along the way, we make another key observation: the restriction to a generic Lagrangian ﬁber is
+slope-stable; see Proposition 6.11.
+6.2. Elliptic K3 surfaces and stable rigid vector bundles. We recall the notions of Mukai
+vector and Mukai pairing for a K3 surface S. If F is a sheaf over S, the Mukai vector of F is
+vpFq :“ chpFq TdpSq1{2. Moreover, the bilinear symmetric Mukai pairing x¨,¨yonHpSq has the
+following property: if F and E are sheaves on S, then
+xvpFq,vpEqy“´ χpF, Eq :“´
+2ÿ
+i“0
+p´1qi dim ExtipF, Eq. (6.2.1)
+Let S be a K3 surface with an elliptic ﬁbration S Ñ P1; we let C be a ﬁber of the elliptic
+ﬁbration. The claim below follows from the surjectivity of the period map for K3 surfaces.
+Claim 6.1. Let m0 and d0 be positive natural numbers. There exist K3 surfaces S with an
+elliptic ﬁbration SÑ P1 such that
+H1,1
+Z pSq“ ZrDs‘ ZrCs, D ¨D“ 2m0, D ¨C“d0. (6.2.2)
+The result below provides us with stable vector bundles F on elliptic K3 surfaces such that
+Fr2s˘ has good properties; see Proposition 6.7.
+19
+
+=== PDF PAGE 20 ===
+K. G. O’Grady
+Proposition 6.2. Let m0, r0, s0 be positive integers such that m0` 1“r0s0. Suppose that d0
+is an integer coprime to r0 and that
+d0ąp2m0` 1qr2
+0
+`
+r2
+0´ 1
+˘
+4 . (6.2.3)
+Let S be an elliptic K3 surface as in Claim 6.1. Then there exists a vector bundle F on S such
+that the following hold:
+(i) vpFq“p r0,D,s 0q.
+(ii) χpS, EndpFqq“ 2.
+(iii) The vector bundle F is L slope-stable for any polarization L of S.
+(iv) The restriction of F to every ﬁber of the elliptic ﬁbration SÑ P1 is slope-stable.
+pNotice that every ﬁber is irreducible by our assumptions on NSpSq, hence the slope-stability of
+a sheaf on a ﬁber is well deﬁned, that is, independent of the choice of a polarization. q
+Proof. (i) The Mukai vector v “ pr0,D,s 0q PHpSq has square ´2. Let L0 be a polarization
+of S. By [Kul90, Theorem 2.1], there exists an L0 slope-semistable vector bundle F on S with
+vpFq“p r0,D,s 0q.
+(ii) We have that χpS, EndpFqq“ 2 because vpFq2“´ 2.
+(iii) We claim that F is actuallyL0 slope-stable and that it isL slope-stable for any polariza-
+tion L ofS. This follows from the well-known results on the stability chamber decomposition of
+AmppSq, which have been extended to arbitrary HK varieties in Section 3. In fact, vpFq2“´ 2
+and (1.2.1) give that ∆ pFq “ 2
+`
+r2
+0´ 1
+˘
+. It follows that apFq “ 1
+2r2
+0pr2
+0´ 1q, and hence by
+Lemma 4.3 and (6.2.3), there is no apFq-wall. Thus there is a single apFq-chamber.
+(iv) By Proposition 3.6, the restriction of F to a generic ﬁber C of the elliptic ﬁbration
+is slope-semistable (because there is a single apFq-chamber). Since d0, which is the degree of
+F|C, is coprime to r0, which is the rank of F|C, it follows that the restriction of F to a generic
+ﬁber C is slope-stable. Suppose that there exists a ﬁber C0 such that F|C0 is not slope-stable.
+Then F|C0 is slope-unstable because d0 is coprime to r0. Let F|C0↠ B be a desemistabilizing
+quotient, that is, 0 ărpBqă r and µpBq´ µpF|C0qă 0. Let E be the elementary modiﬁcation
+of F associated with the quotient B, that is, the (torsion-free) sheaf on S ﬁtting into the exact
+sequence
+0ÝÑ E ÝÑ F ÝÑi0,˚BÝÑ0, (6.2.4)
+where i0 : C0 ãÑS is the inclusion map. Then
+vpEq2“vpFq2` 2r0¨rpBq¨
+`
+µpBq´ µpF|C0q
+˘
+ăvpFq2“´ 2. (6.2.5)
+By (6.2.1), it follows thatχpE, Eqą 2. On the other hand, since E is isomorphic to F outsideC0,
+the restriction of E to a generic elliptic ﬁber is slope-stable, and this implies that Hom pE, Eq“
+C IdE . By Serre duality, it follows that dim Ext 2pE, Eq “1. The last two facts contradict the
+inequalityχpE, Eqą 2.
+6.3. Dictionary. We show that, given positive integers i, e, r0 satisfying the hypotheses of
+Theorem 1.4, we get a vector bundle E on the Hilbert square of a suitable K3 surface such that
+the equations in (1.3.4) hold. First, we need the result below. The elementary proof is left to the
+reader.
+20
+
+=== PDF PAGE 21 ===
+Modular sheaves on hyperk ¨ahler varieties
+Lemma 6.3. Let iPt 1, 2u. Let e and r0 be positive natural numbers such that r0”i pmod 2q
+and (1.3.3) holds. Let
+m0 :“
+$
+’&
+’%
+e
+2`pr0´ 1q2
+4 if r0 is odd,
+e
+8`pr0´ 1q2
+4 if r0 is even
+(6.3.1)
+pm0 is an integer by (1.3.3).q There exists an integer s0 such that m0` 1“r0s0.
+Let i, e, r0, m0 be as in Lemma 6.3. Suppose that d0 is an integer coprime to r0 such
+that (6.2.3) holds. Let S be an elliptic K3 surface as in Claim 6.1, and let F be a vector bundle
+onS as in Proposition 6.2 (it exists by Lemma 6.3). Let E :“ Fr2s`, and leth` be as in (5.4.1).
+Lastly, let
+h :“ih`. (6.3.2)
+Proposition 6.4. Keeping the notation and hypotheses as above, the following hold:
+(i) The cohomology class h is primitive, qphq“ e, and q
+`
+h,H 2pX; Zq
+˘
+“piq,
+(ii) The values of rpEq, c1pEq and ∆pEq are given by (1.3.4).
+Proof. Item (i) holds because clpDq is primitive and by equation (5.4.6). Item (ii) follows from
+equations (5.4.2)–(5.4.4) and straightforward computations.
+Remark 6.5. In Proposition 6.4, we have set E :“ Fr2s`. One gets an analogous result letting
+E “ Fr2s´ (one needs to replace 1
+4pr0´ 1q2 with 1
+4pr0` 1q2 in (6.3.1)).
+6.4 Restriction of Fr2s˘ to Lagrangian ﬁbers
+Definition 6.6. IfSÑ P1 is an elliptically ﬁbered K3 surface, the associated Lagrangian ﬁbra-
+tion is the composition
+Sr2sÝÑSp2qÝÑ
+`
+P1˘p2q– P2. (6.4.1)
+In the present subsection, we prove the following result.
+Proposition 6.7. LetS be a K3 surface with an elliptic ﬁbration SÑ P1 as in Claim 6.1, and
+let π : Sr2s Ñ P2 be the associated Lagrangian ﬁbration. Let F be a vector bundle on S as in
+Proposition 6.2. Then the restriction of Fr2s˘ to everypscheme-theoreticq ﬁber of π is simple.
+The proof is given at the end of the subsection.
+Let S and π : Sr2sÑ P2 be as in Proposition 6.7. We describe the ﬁbers of π.
+ForxP P1, we let Cx be the ﬁber over x of the elliptic ﬁbration S Ñ P1. The set-theoretic
+ﬁbers of π are as follows:
+π´1px1`x2q“
+#
+Cx1ˆCx2 if x1­“x2,
+Cp2q
+x Y PpΘS|Cxq if x1“x2“x.
+(6.4.2)
+As is easily checked, the ﬁber is reduced if x1­“x2. On the other hand, the ﬁber over 2 x is not
+reduced. In order to prove this, we introduce some notation. Let Vr2sĂSr2s be the prime divisor
+parametrizing vertical subschemes Z (that is, such that the scheme-theoretic image fpZq is a
+reduced point), let ∆r2sĂSr2s be the prime divisor parametrizing nonreduced subschemes, and
+let Dp2qĂ
+`
+P1˘p2q be the prime divisor parametrizing multiple 0-cycles 2 x.
+21
+
+=== PDF PAGE 22 ===
+K. G. O’Grady
+Proposition 6.8. LetS be aK3 surface with an elliptic ﬁbrationSÑ P1 as in Claim 6.1. With
+notation as above, we have the equality of pCartierq divisors π˚`
+Dp2q˘
+“ 2Vr2s` ∆r2s.
+Proof. By the set-theoretic equalityπ´1`
+Dp2q˘
+“Vr2sY∆r2s, there exist positive integersa andb
+such that π˚`
+Dp2q˘
+“aVr2s`b∆r2s. We have a commutative square
+ČSˆS
+p →→
+rπ
+↓↓
+Sr2s
+π
+↓↓
+P1ˆ P1 p →→ P2 .
+(6.4.3)
+Let rVr2s :“p´1`
+Vr2s˘
+, and let Diag P1 be the diagonal of P1ˆ P1. The proposition follows from
+the equalities
+a rVr2s` 2bE“p˚`
+π˚`
+Dp2q˘˘
+“ rπ˚`
+p˚`
+Dp2q˘˘
+“ rπ˚p2DiagP1q“ 2 rVr2s` 2E.
+Corollary 6.9. Keep the hypotheses and notation as in Proposition 6.8. Let L be the line
+bundle on Sr2s such that c1pLq“ δ. Let xP P1, and let Zx “ π´1p2xq be the schematic ﬁber
+of π over 2x. Then
+IZredx {Zx|Cp2q
+x
+– OCp2q
+x
+p´Ξxqb
+`
+L|Cp2q
+x
+˘
+, (6.4.4)
+where Ξx :“t 2p|pPCxuĂ Cp2q
+x . In particular, the restriction homomorphism OZxÑ OZredx ﬁts
+into the exact sequence
+0ÝÑ OCp2q
+x
+p´Ξxqb
+`
+L|Cp2q
+x
+˘
+ÝÑ OZxÝÑ OZredx ÝÑ0. (6.4.5)
+Proof. It suﬃces to prove that (6.4.4) holds because the kernel of the surjection OZxÑ OZredx is
+equal to the left-hand side in (6.4.4). By Proposition 6.8, we have
+IZredx {Zx|Cp2q
+x
+– OSr2s
+`
+´Vr2s´ ∆r2s˘
+|Cp2q
+x
+. (6.4.6)
+We have
+OSr2s
+`
+´∆r2s˘
+|Cp2q
+x
+– OCp2q
+x
+p´Ξxq. (6.4.7)
+On the other hand, Proposition 6.8 gives that
+OSr2s
+`
+2Vr2s˘
+– OSr2s
+`
+π˚Dp2q´ ∆r2s˘
+–π˚pOP2p2qqb L´2.
+Since H1pSr2s; Zq“ 0, it follows that OSr2s
+`
+Vr2s˘
+– π˚pOP2p1qqb L´1. Since the restriction of
+µpc1pOP2p1qqq to Cp2q
+x is trivial, we get that
+OSr2s
+`
+´Vr2s˘
+|Cp2q
+x
+– L|Cp2q
+x
+. (6.4.8)
+Hence (6.4.4) follows from (6.4.6), (6.4.7) and (6.4.8).
+ForxP P1, let Fx :“ F|Cx. If x1 ­“x2 P P1, then the restriction of F to π´1px1`x2q is
+equal to Fx1 b Fx2. Thus we need the following result.
+Proposition 6.10. LetCi, for iPt 1, 2u, be polarized irreducible curves, and let D be an ample
+divisor on Y :“C1ˆC2 such that
+c1pOYpDqq“ m1ρ˚
+1OY1pp1q` m2ρ˚
+2c1pOY2pp2qq, (6.4.9)
+whereρi : Y ÑCi is the projection and piPCi. Let Vi be a slope-stable vector bundle on Ci for
+iPt 1, 2u. Then V1 b V2 is D slope-stable.
+22
+
+=== PDF PAGE 23 ===
+Modular sheaves on hyperk ¨ahler varieties
+Proof. The proof is by contradiction. Suppose the contrary. Then there exists an injectionα: E Ñ
+V1 b V2 with torsion-free cokernel such that 0 ărpEqă rpV1 b V2q and
+µDpEqě µDpV1 b V2q. (6.4.10)
+Let pi P Ci be generic; the restrictions of α to tp1uˆ C2 and C1ˆtp2u are injective maps of
+vector bundles (that is, injective on ﬁbers). We have
+µDpEq“ m2µpE|C1ˆtp2uq` m1µpE|tp1uˆC2q. (6.4.11)
+On the other hand,
+µDpV1 b V2q“ m2µpV1q` m1µpV2q. (6.4.12)
+Since the restrictions of V1 bV2 toC1ˆtp2u andtp1uˆC2 are isomorphic to the polystable vector
+bundles V1bC CrpV2q and V1bC CrpV1q, respectively, it follows from (6.4.10), (6.4.11) and (6.4.12)
+that µpE|C1ˆtp2uq “µpV1q and µpE|tp1uˆC2q “µpV2q. In turn, these equalities give that there
+exist vector subspaces 0 ­“AĂ CrpV2q and 0 ­“B Ă CrpV1q such that E|C1ˆtp2u “ V1bCA and
+E|tp1uˆC2“BbC V2. It follows that Im α“ V1 b V2. This gives a contradiction.
+Proposition 6.11. Let S be a K3 surface with an elliptic ﬁbration S Ñ P1 as in Claim 6.1,
+and let F be a vector bundle on S as in Proposition 6.2. If x1 ­“x2, the restriction of Fr2s˘
+to π´1px1`x2q “Cx1ˆCx2 is slope-stable for any product polarization, and it is a simple
+semi-homogeneous vector bundle.
+Proof. We have
+Fr2s˘
+|π˚px1`x2q– Fx1 b Fx2. (6.4.13)
+By Proposition 6.2, both Fx1 and Fx2 are slope-stable. Hence the statement about slope-stability
+follows from Proposition 6.10. Of course, this implies that the restriction of Fr2s˘ to π´1px1`
+x2q“ Cx1ˆCx2 is simple. Moreover, it is semi-homogeneous because every stable vector bundle
+on an elliptic curve is semi-homogeneous. (One could argue that the discriminant vanishes by
+Lemma 2.5 and conclude by Proposition A.2.)
+ForxP P1, let ∆r2s
+x :“ PpΘS|CxqĂ ∆r2s, and let O∆r2s
+x
+p1q be the dual of the tautological line
+subbundle ∆r2s
+x . Let τx : ∆r2s
+x ÑCx be the restriction of the Hilbert–Chow map.
+Lemma 6.12. Let S be a K3 surface with an elliptic ﬁbration S Ñ P1, and let F be a vector
+bundle on S as in Proposition 6.2. Let x be a regular value of the elliptic ﬁbration. Then
+Fr2s`
+|∆r2s
+x
+–
+ˆ
+O∆r2s
+x
+p1qb τ˚
+x
+2ľ
+Fx
+˙
+‘τ˚
+x
+`
+Sym2 Fx
+˘
+, (6.4.14)
+Fr2s´
+|∆r2s
+x
+–
+`
+O∆r2s
+x
+p1qb τ˚
+x Sym2 Fx
+˘
+‘τ˚
+x
+ˆ 2ľ
+Fx
+˙
+, (6.4.15)
+and the space of traceless endomorphisms of Fr2s˘
+|∆r2s
+x
+has dimension 1.
+Proof. The proofs for Fr2s˘ are similar. We provide the proof forFr2s`. Restricting the deﬁning
+exact sequence (5.2.2) to E, we get the exact sequence
+0ÝÑτ˚
+E
+ˆ 2ľ
+F
+˙
+b OEp´EqÝÑ Fr2s`
+|EÝÑτ˚
+E
+`
+Sym2 F
+˘
+ÝÑ0. (6.4.16)
+23
+
+=== PDF PAGE 24 ===
+K. G. O’Grady
+Restricting the exact sequence in (6.4.16) to ∆ r2s
+x , we get the exact sequence
+0ÝÑτ˚
+x
+ˆ 2ľ
+Fx
+˙
+b O∆r2s
+x
+p1qÝÑ Fr2s`
+|∆r2s
+x
+β
+ÝÑτ˚
+x
+`
+Sym2 Fx
+˘
+ÝÑ0. (6.4.17)
+We claim that this exact sequence splits. The extension class belongs to
+H1
+ˆ
+∆r2s
+x ,τ˚
+x
+ˆ
+Sym2 F_
+x b
+2ľ
+Fx
+˙
+b O∆r2s
+x
+p1q
+˙
+. (6.4.18)
+We compute this cohomology group via the Leray spectral sequence of τx. Since
+`
+Sym2 F_
+x
+b Ź2 Fx
+˘
+bR1τx,˚O∆r2s
+x
+p1q“ 0, it suﬃces to show that
+H1
+ˆ
+Cx,
+ˆ
+Sym2 F_
+x b
+2ľ
+Fx
+˙
+bτx,˚O∆r2s
+x
+p1q
+˙
+“H1
+ˆ
+Cx,
+ˆ
+Sym2 F_
+x b
+2ľ
+Fx
+˙
+b Θ_
+S|Cx
+˙
+“ 0. (6.4.19)
+SinceCx is smooth, the sheaf Θ_
+S|Cx has a ﬁltration with associated graded the direct sum of two
+copies of OCx. Hence the vector bundle appearing in (6.4.19) has a ﬁltration whose associated
+graded is the direct sum of two copies of Sym 2 F_
+x b Ź2 Fx. The latter vector bundle has no
+nonzero section because it is slope-stable of slope 0. By the HRR theorem, it follows that
+H0
+ˆ
+Cx,
+ˆ
+Sym2 F_
+x b
+2ľ
+Fx
+˙
+b Θ_
+S|Cx
+˙
+“H1
+ˆ
+Cx,
+ˆ
+Sym2 F_
+x b
+2ľ
+Fx
+˙
+b Θ_
+S|Cx
+˙
+“ 0.
+Hence the extension group in (6.4.18) vanishes.
+The result about traceless endomorphisms of Fr2s˘
+|∆r2s
+x
+follows from the direct sum decom-
+position in (6.4.14) and the vanishing in (6.4.19).
+Lemma 6.13. LetS be a K3 surface with an elliptic ﬁbration SÑ P1 as in Claim 6.1, and let F
+be a vector bundle onS as in Proposition 6.2. Letx be a regular value of the elliptic ﬁbration. Let
+px : C2
+xÑSr2s be the composition of the quotient map C2
+xÑCp2q
+x and the inclusionCp2q
+x ãÑSr2s.
+Then p˚
+xFr2s˘ is simple, and hence the restriction of Fr2s˘ to Cp2q
+x is simple.
+Proof. The proofs for Fr2s˘ are similar. We give the proof for Fr2s`.
+Let qx,rx : C2
+x Ñ Cx be the two projections, and let Diag x Ă C2
+x be the diagonal. By the
+exact sequence in (5.2.3), we have the exact sequence
+0ÝÑp˚
+xFr2s`ÝÑq˚
+xFxbr˚
+xFx
+ev´
+x
+ÝÑ
+2ľ
+Fx| DiagxÝÑ0. (6.4.20)
+It follows that we have the exact sequence
+0ÝÑq˚
+xFxbr˚
+xFxb OC2xp´ Diagxq λÝÑp˚
+xFr2s` ev`
+x
+ÝÑSym2 Fx| DiagxÝÑ0. (6.4.21)
+Notice that the restriction of λ to Diagx is identiﬁed with the natural map ev ´
+x : Fxb Fx ÑŹ2 Fx (notice that the normal bundle of Diag x in C2
+x is trivial because Cx is an elliptic curve);
+in particular, its image is Ź2 Fx (we identify Diagx andCx). Equivalently, the restriction of the
+exact sequence in (6.4.21) to Diag x gives rise to the exact sequence
+0ÝÑ
+2ľ
+FxÝÑp˚
+xFr2s`
+| Diagx
+ev`
+x
+ÝÑSym2 FxÝÑ0, (6.4.22)
+24
+
+=== PDF PAGE 25 ===
+Modular sheaves on hyperk ¨ahler varieties
+which is split by Lemma 6.12. Now let ϕ be an endomorphism of p˚
+xFr2s`. The restriction of
+ϕ to Diagx preserves the exact sequence in (6.4.22) because the vector bundles Sym 2 Fx andŹ2 Fx are slope-stable of equal slopes. It follows that ϕ induces an endomorphism of the kernel
+of ev`
+x , that is, of q˚
+xFxbr˚
+xFxb OC2xp´ Diagxq. Since Fx is simple, the latter is a simple sheaf.
+It follows that ϕ is a scalar.
+Proposition 6.14. Let S be a K3 surface with an elliptic ﬁbration S Ñ P1 as in Claim 6.1,
+and let F be a vector bundle on S as in Proposition 6.2. Let x be a regular value of the elliptic
+ﬁbration. Then the restriction of Fr2s˘ to the scheme-theoretic ﬁber π´1p2xq is a simple sheaf.
+Proof. Let Zx :“ π´1p2xq be the scheme-theoretic ﬁber. By Corollary 6.9, we have an exact
+sequence
+0ÝÑEnd0pFq|Cp2q
+x
+bOCp2q
+x
+p´Ξxqb
+`
+L|Cp2q
+x
+˘
+ÝÑEnd0pFq|ZxÝÑEnd0pFq|Zredx ÝÑ0. (6.4.23)
+Taking global sections, we get an isomorphism
+H0`
+Cp2q
+x , End0pFq|Cp2q
+x
+b OCp2q
+x
+p´Ξxqb
+`
+L|Cp2q
+x
+˘˘ „ÝÝÑH0`
+Cp2q
+x , End0pFq|Zx
+˘
+, (6.4.24)
+because of Lemmas 6.12 and 6.13. On the other hand, since
+p˚
+x
+`
+OCp2q
+x
+p´Ξxqb
+`
+L|Cp2q
+x
+˘˘
+– OC2xp´ Diagxq,
+we have an embedding
+H0`
+Cp2q
+x , End0pFq|Cp2q
+x
+b OCp2q
+x
+p´Ξxqb
+`
+L|Cp2q
+x
+˘˘
+ãÝÑH0`
+C2
+x, End0pp˚
+xFxqp´ Diagxq
+˘
+, (6.4.25)
+and the latter vanishes by Lemma 6.13.
+Proof of Proposition 6.7. Let BĂ P2 be the (ﬁnite) set parametrizing 2 xP
+`
+P1˘p2q, where x is
+a critical value of the elliptic ﬁbration SÑ P1. Let us prove that if px1`x2qP
+`
+P2zB
+˘
+, then
+hp`
+π´1px1`x2q, End0 Fr2s˘
+|π´1px1`x2q
+˘
+“ 0 @p. (6.4.26)
+To see this, ﬁrst notice that since π´1px1`x2q is a local complete intersection with trivial
+dualizing sheaf and χ
+`
+π´1px1`x2q, End0 Fr2s˘
+0|π´1px1`x2q
+˘
+“ 0, it suﬃces to check that (6.4.26)
+holds for p“ 0.
+If x1 ­“x2, then (6.4.26) holds for p “ 0 by Proposition 6.11. If x1 “ x2 “ x and x is
+a regular value of the elliptic ﬁbration, then (6.4.26) holds for p“ 0 by Proposition 6.14. This
+proves that (6.4.26) holds for all px1`x2qP
+`
+P2zB
+˘
+. Since B is a ﬁnite set, we get that
+Rpπ˚ End0 Fr2s˘“ 0, p Pt 0, 1u. (6.4.27)
+(See [Muk87, Proposition 2.26].) Now suppose that there exist x1` x2 P P2 such that the
+restriction of Fr2s˘ toπ´1px1`x2q is not simple. As shown above, such points are contained in
+the ﬁnite set B, and hence it follows (since the ﬁbers of π are surfaces) that R2π˚ End0 `
+Fr2s˘˘
+is a nonzero Artinian sheaf. By the Leray spectral sequence for π and the vanishing in (6.4.27),
+it follows that H2`
+Sr2s, End0 `
+Fr2s˘˘˘
+­“0. This contradicts Proposition 5.4.
+7. Proof of Theorem 1.4 and Corollary 1.7
+7.1. Summary. In Subsection 7.2, we prove that ifd" 0, there exists an irreducible component
+N i
+epdqgood Ă N i
+epdq, where N i
+epdq ĂK i
+e is the Lagrangian Noether–Lefschetz divisor deﬁned
+in Deﬁnition B.1, with the following property: if rpX,hqs PN i
+epdqgood is generic, there exists
+25
+
+=== PDF PAGE 26 ===
+K. G. O’Grady
+an h slope-stable vector bundle E on X with ch 0pEq, ch 1pEq, ch 2pEq given by (1.3.4) whose
+restriction to Lagrangian ﬁbers is slope-stable with the possible exception of a ﬁnite set of ﬁbers.
+We also prove that there exists one component of the relative moduli space of slope-stable vector
+bundles on polarized HK varieties parametrized by K i
+e with ch0, ch1, ch2 given by (1.3.4) which
+dominates the moduli space K i
+e .
+In Subsection 7.3, we prove that if rpX,hqs P N i
+epdqgood is as above, there is a single h
+slope-stable vector bundle with the relevant Chern character.
+In Subsection 7.4, we prove Theorem 1.4 and Corollary 1.7.
+7.2. Good vector bundles over Lagrangian HK varieties. Below is the ﬁrst main result
+of the present subsection.
+Proposition 7.1. LetiPt 1, 2u, and letr0ě 2 be such thati”r0 pmod 2q. Suppose that (1.3.3)
+holds, that eﬄ 2d and that
+dą 5
+16r6
+0
+`
+r2
+0´ 1
+˘
+pe` 1q. (7.2.1)
+There exists an irreducible component N i
+epdqgood Ă N i
+epdq, where N i
+epdq ĂK i
+e is as in Def-
+inition B.1, such that the following holds. Let rpX,hqs P N i
+epdqgood be generic. pNotice that
+the hypotheses of Proposition B.2 hold, and hence there is an associated Lagrangian ﬁbration
+π : XÑ P2.q Then
+(i) there exists an h slope-stable vector bundle E on X such that (1.3.4) holds, and
+(ii) except possibly for a ﬁnite set of z P P2, the restriction of E to π´1pzq is slope-stable for
+the restricted polarization.
+The proof of Proposition 7.1 is given at the end of the subsection.
+Let S be an elliptic K3 surface as in Subsection 6.3, and let us adopt the notation of that
+subsection. Let X0 “ Sr2s, and let E0 :“ Fr2s` be the vector bundle on X0 of loc. cit. Let
+h0 :“ h, where h is given by (6.3.2). Let C Ă S be a ﬁber of the elliptic ﬁbration, and let
+f0 :“µpclpCqq. Lastly, let d0 be as in (6.2.2), and set
+d :“id0. (7.2.2)
+Then the sublattice xf0,h 0yĂ H1,1
+Z pX0q is saturated, and
+qpf0q“ 0, q ph0,f 0q“ d, q ph0q“ e. (7.2.3)
+Let π0 : X0 Ñ P2 be the Lagrangian ﬁbration associated with the elliptic ﬁbration of S; see
+Deﬁnition 6.6. Notice that f0“c1pπ˚
+0 OP2p1qq.
+Letϕ: X ÑB be an analytic representative of the deformations space of pX,xh0,f 0yq, that
+is, deformations of X0 that keep h0 and f0 of Hodge type. We assume that B is contractible.
+Let 0 P B be the base point; in particular, X0 is isomorphic to ϕ´1p0q. For b P B, we let
+Xb :“ ϕ´1pbq. If B is small enough, then by Proposition 6.7 and Corollary 5.5, the vector
+bundle E0 on X0 deforms to a vector bundle Eb on Xb (unique up to isomorphism because
+H1`
+X0, End0pE0q
+˘
+“ 0). Notice that xh0,f 0y deforms by Gauss–Manin parallel transport to a
+saturated sublattice
+Λb :“xhb,fbyĂ H1,1
+Z pXbq. (7.2.4)
+Possibly after shrinking B around 0, there exists a map π : X Ñ P2 which restricts to a La-
+grangian ﬁbration on every Xb and is equal to π0 onX0. We letπb be the restriction of π toXb.
+26
+
+=== PDF PAGE 27 ===
+Modular sheaves on hyperk ¨ahler varieties
+Notice that the ﬁber of ϕˆπ : X ÑBˆ P2 overpb,zq is the Lagrangian ﬁber of XbÑ P2 overz;
+we denote it by Xb,z. Of course fb“c1pπ˚
+b OP2p1qq.
+Proposition 7.2. With the hypotheses of Proposition 7.1, the following holds. ForbPB outside
+a proper analytic subset, hb is ample and hence rpXb,hbqs P N i
+epdq, where i ” r0 pmod 2q.
+Moreover, Eb is hb slope-stable, and items (i) and (ii) of Proposition 7.1 hold for E “ Eb.
+Proof. Since r0 ě 2, inequality (7.2.1) implies that d ą 10pe` 1q. Hence the hypotheses of
+Proposition B.2 hold. In the proof of that proposition, we show that hb is ample for b outside a
+proper analytic subset of B.
+Next we prove that hb is apEbq-suitable; see Deﬁnition 3.5. We claim that the hypotheses of
+Proposition 4.1 hold with a0“apEbq. This is clear for all the hypotheses, except perhaps for the
+inequality in (4.1.1). By Proposition 5.2, we have apEbq“ 5
+8r6
+0
+`
+r2
+0´ 1
+˘
+, and hence the inequality
+in (4.1.1) follows from (7.2.1).
+Sincehb isapEbq-suitable, in order to prove that Eb ishb slope-stable, it suﬃces to show that
+the restriction to a generic ﬁber of the Lagrangian ﬁbration is slope-stable; see Proposition 3.6.
+This is true for E0 by Proposition 6.11. By the openness of slope-stability, it follows that it is
+also true for bPB outside a proper analytic subset.
+Next we prove that items (i) and (ii) of Proposition 7.1 hold for E “ Eb.
+Item (i) holds by Proposition 6.4.
+Let us prove that item (ii) holds. First we notice that forbPB outside a proper closed analytic
+subset, the restriction of Eb to every Lagrangian ﬁber is simple. In fact, this holds for b“ 0 by
+Proposition 6.7, and hence the assertion we made holds by the openness of “simpleness.”Let us
+prove that for bP B outside a proper closed analytic subset, the restriction of Eb to a smooth
+Lagrangian ﬁber is slope-stable. By Proposition 6.11, the restriction of E0 to a generic Lagrangian
+ﬁber is slope-stable, and hence the restriction of Eb (forbPB outside . . . ) to a generic Lagrangian
+ﬁber is slope-stable by the openness of slope-stability. By Proposition A.2, we get that the
+restriction of Eb (forbPB outside . . . ) to a generic smooth Lagrangian ﬁber is semi-homogeneous.
+It follows that the restriction to any smooth Lagrangian ﬁber is simple semi-homogeneous (note:
+the fact that the restriction is simple is crucial). By [Muk78, Proposition 6.16], the restriction
+of Eb to any smooth Lagrangian ﬁber is Gieseker–Maruyama stable and hence slope-semistable.
+By Corollary 4.5, it follows that it is actually slope-stable.
+Next we claim that the restriction ofEb (forbPB outside . . . ) to a generic singular Lagrangian
+ﬁber is slope-stable, except possibly for a ﬁnite set of ﬁbers. The singular Lagrangian ﬁbers of Xb
+are parametrized by the discriminant curve ofπb, which, forbPB outside a proper closed analytic
+subset, is the dual curve of a generic sextic plane curve; see Proposition B.4. On the other hand,
+the discriminant curve ofπ0 is the union of 24 lines (each corresponding to a critical value of the
+elliptic ﬁbration) and a conic (the “diagonal”). The restriction of E0 to the Lagrangian surface
+parametrized by a generic point of one of the lines is slope-stable by Proposition 6.11. By the
+openness of slope-stability, it follows that the locus of singular Lagrangian ﬁbers on which Eb
+restricts to a slope-stable vector bundle is nonempty (for bP B outside . . . ). Since (for bP B
+outside . . . ) the discriminant curve is irreducible, this proves that, with the possible exception
+of a ﬁnite set of singular ﬁbers, the restriction of Eb (for bPB outside . . . ) to a generic singular
+Lagrangian ﬁber is slope-stable.
+Proof of Proposition 7.1. Let X Ñ T 1
+e and X Ñ T 2
+e be complete families of polarized HK
+varieties of typeK3r2s such that (1.3.1) and (1.3.2), respectively, hold—for example, the families
+27
+
+=== PDF PAGE 28 ===
+K. G. O’Grady
+parametrized by the relevant open subsets of suitable Hilbert schemes. We may, and will, assume
+that Ti
+e is irreducible. For tP Ti
+e, we let pXt,htq be the corresponding polarized HK variety of
+type K3r2s. Let m: Ti
+eÑ K i
+e be the moduli map, which sends t torpXt,htqs.
+By fundamental results of Gieseker and Maruyama, there exists a map of schemes
+f : Mepr0qÝÑ Ti
+e (7.2.5)
+such that for everytPTi
+e, the (scheme-theoretic) ﬁberf´1ptq is isomorphic to the (coarse) moduli
+space ofht slope-stable vector bundles E onXt such that (1.3.4) holds. Moreover,f : Mepr0qÑ Ti
+e
+is of ﬁnite type by Maruyama [Mar81], and hence fpMepr0qq is a constructible subset of Ti
+e.
+By Proposition 7.2, the image off : Mepr0qÑ Ti
+e contains a nonempty subset ofm´1`
+N i
+epdq
+˘
+which is open in the classical topology. Since the image of f is a constructible set, it follows that
+it contains a Zariski-open dense subset of an irreducible component of m´1`
+N i
+epdq
+˘
+. Since the
+image of f is the inverse image of a subset of the moduli map m, it follows that there exists
+an irreducible component N i
+epdqgoodĂ N i
+epdq such that the image of f contains a Zariski-open
+dense subset of m´1`
+N i
+epdqgood˘
+.
+Next we state the second main result of the present subsection. Let us agree that a map of
+quasi-projective varieties is dominant if the image is Zariski-dense in the codomain (usually, the
+attribute dominant is reserved to maps between irreducible varieties).
+Proposition 7.3. With notation as above, the map f : Mepr0qÑ Ti
+e is dominant.
+Proof. This follows at once from Corollary 5.5.
+7.3. Unicity of stable vector bundles on Lagrangian HK varieties. We will prove the
+result below.
+Proposition 7.4. Let iPt 1, 2u. Suppose that r0ě 2, that r0”i pmod 2q, that (1.3.3) holds,
+that eﬄ 2d and that
+dą 5
+16r6
+0
+`
+r2
+0´ 1
+˘
+pe` 1q. (7.3.1)
+Let rpX,Hqs P N i
+epdqgood be generic, where N i
+epdqgood is as in Proposition 7.1. Then, up to
+isomorphism, there exists one and only oneh slope-stable vector bundle E onX such that (1.3.4)
+holds.
+We ﬁrst prove the following auxiliary result.
+Lemma 7.5. LetpY,hq be a polarized irreducible smooth projective variety, and letρ: Y ÑT be
+a dominant map to a smooth curve with integral ﬁbers of dimensionn. FortPT , setYt :“ρ´1ptq
+and ht :“h|Yt. Let F and G be locally free sheaves on Y such that the following hold:
+(i) ∆pFq !hn´1“ ∆pGq !hn´1.
+(ii) The restriction Ft :“ F|Yt is ht slope-stable for all tPT .
+(iii) The restrictions Ft and Gt :“ G|Yt are isomorphic for generic tPT .
+Then Ft and Gt are isomorphic for all tPT .
+Proof. The sheaf L :“ HomρpG, Fq is torsion-free because G and F are locally free, and its
+ﬁber over a generic point of T is 1-dimensional by items (ii) and (iii). Since T is a smooth curve,
+28
+
+=== PDF PAGE 29 ===
+Modular sheaves on hyperk ¨ahler varieties
+it follows that L :“ HomρpG, Fq is an invertible sheaf. The tautological map G bρ˚pLqÑ F
+gives rise to an exact sequence
+0ÝÑ G b L αÝÑ F ÝÑ QÝÑ0. (7.3.2)
+It suﬃces to show that Q“ 0. Suppose that Q­“0; we claim thatż
+Y
+∆pG bρ˚pLqq !hn´1ą
+ż
+Y
+∆pFq !hn´1. (7.3.3)
+In order to prove this, we notice that the (set-theoretic) support of Q is a disjoint union of ﬁbers
+of ρ, say Yt1,...,Y td, and that αt : GtÑ Ft is not an isomorphism if and only if tPtt1,...,t du.
+Thus we have Q“‘ d
+i“1Qi, where the set-theoretic support of Qi isYti. Letr“ rkpFq“ rkpGq.
+We have
+∆pG bρ˚pLqq“ ∆pFq` 2
+dÿ
+i“1
+`
+r ch2pQiq´ c1pFq !c1pQiq
+˘
+. (7.3.4)
+Let ϵiP OT,t i be a local parameter at ti. There exist mią 0 such that ϵmi
+i Qi“ 0. For each ti,
+we have a ﬁltration QĄϵi¨QĄ¨¨¨Ąϵmi
+i ¨Q“ 0 and
+r ch2pQiq´ c1pFq !c1pQiq
+“
+miÿ
+ℓ“1
+`
+r ch2
+`
+ϵℓ
+i¨Qi{ϵℓ`1
+i ¨Qi
+˘
+´c1pFq !c1
+`
+ϵℓ
+i¨Qi{ϵℓ`1
+i ¨Qi
+˘˘
+. (7.3.5)
+The sheaf ϵℓ
+i¨Qi{ϵℓ`1
+i ¨Qi is annihilated by ϵi, hence it is the pushforward of a sheaf on Yti:
+ϵℓ
+i¨Qi{ϵℓ`1
+i ¨Qi“iYti,˚
+`
+Qi,ℓ
+˘
+.
+By the GRR theorem, we get that
+ch2
+`
+iYti,˚
+`
+Qi,ℓ
+˘˘
+“iYti,˚
+`
+c1
+`
+Qi,ℓ
+˘˘
+, c 1pFq !c1
+`
+Qi,ℓ
+˘
+“iYti,˚
+`
+rk
+`
+Qi,ℓ
+˘
+i˚
+Yti
+c1pFq
+˘
+.
+Hence ż
+Y
+`
+r ch2
+`
+ϵℓ
+i¨Qi{ϵℓ`1
+i ¨Qi
+˘
+´c1pFq !c1
+`
+ϵℓ
+i¨Qi{ϵℓ`1
+i ¨Qi
+˘˘
+!hn´1
+“
+ż
+Yti
+`
+rc1
+`
+Qi,ℓ
+˘
+´ rk
+`
+Qi,ℓ
+˘
+c1pFtiq
+˘
+!hn´1
+ti . (7.3.6)
+We have surjections
+F{ϵi¨F
+φi,ℓ
+Ý↠ ϵℓ
+i¨Qi{ϵℓ`1
+i ¨Qi,
+s ÞÝÑ ϵℓ
+i¨s.
+(7.3.7)
+Notice that we may view φi,ℓ as a map of sheaves on Yti, namely as φi,ℓ : FtiÑ Qi,ℓ. By the hti
+slope-stability of Fti it follows that if
+0ă rk
+`
+Qi,ℓ
+˘
+ăr“ rkpFq“ rkpGq, (7.3.8)
+the integral in (7.3.6) is strictly positive.
+Let us prove that (7.3.8) holds ifℓ“ 0. The mapαti : GtiÑ Fti is nonzero by hypothesis, and
+Qi,0“ cokerpαtiq. If rkYti
+`
+Qi,0
+˘
+“r, then αti vanishes at the generic point of Yti, and hence it
+vanishes at all points ofYti, which gives a contradiction. Now suppose that rkYti
+`
+Qi,0
+˘
+“ 0, that
+is, that αti is an isomorphism at the generic point. By item (iii), we have c1pGtiq“ c1pFtiq, and
+it follows that αti is an isomorphism, which gives a contradiction. We have proved that (7.3.8)
+holds if ℓ“ 0.
+29
+
+=== PDF PAGE 30 ===
+K. G. O’Grady
+If rk
+`
+Qi,0
+˘
+“ 0, thenc1
+`
+Qi,ℓ
+˘
+is eﬀective, and hence the integral in (7.3.6) is positive or zero,
+and if rk
+`
+Qi,0
+˘
+“r, then Fti– Qi,0, and hence the integral in (7.3.6) vanishes.
+By (7.3.4) and (7.3.5), we get that (7.3.3) holds.
+Since ∆pG bρ˚pLqq“ ∆pGq, the inequality in (7.3.3) contradicts item (i).
+Proof of Proposition 7.4. The existence has been proved in Proposition 7.1. Let E be the vector
+bundle of that proposition. Then rEsP Mepr0q.
+Now let A be any h slope-stable vector such that
+chipAq“ chipEq @iPt 0, 1, 2u. (7.3.9)
+We must prove that A is isomorphic to E .
+Let π : XÑ P2 be the associated Lagrangian ﬁbration of rpX,hqs. SincerpX,hqs is a generic
+point of N i
+epdqgood, the discriminant divisor of π is the dual of a smooth plane sextic curve
+(see Proposition B.4), and hence it is smooth away from a ﬁnite set B0 Ă P2. By item (ii) of
+Proposition 7.1, there is a ﬁnite (possibly empty) set B1Ă P2 ofz such that the restriction of E
+to π´1pzq is not slope-stable.
+Let z0 P
+`
+P2zpB0YB1q
+˘
+. We claim that A|π´1pz0q is isomorphic to E|π´1pz0q. In fact, let
+T Ă P2 be a smooth curve containing z0 and intersecting transversely the discriminant divisor
+of π. Thus Y :“π´1pTq is a smooth threefold, and the restriction of π to Y deﬁnes a dominant
+map ρ: Y Ñ T . We apply Lemma 7.5 to F :“ E|Y and G :“ A|Y (the polarization of T is
+the restriction of the polarization of X). Let us check that the hypotheses of that lemma are
+satisﬁed: item (i) holds by (7.3.9), item (ii) holds by item (ii) of Proposition 7.1, and item (iii)
+holds by Proposition 4.1. In fact, by that proposition, the set of zP P2 such that E|π´1pzq is not
+isomorphic to A|π´1pzq is contained in a proper closed subset Z Ă P2, and hence it suﬃces to
+choose T so that it is not contained in Z. This shows that the hypotheses of Lemma 7.5 hold,
+and hence we get that the restrictions of E and A to any ﬁber of Y Ñ T are isomorphic. In
+particular, E|π´1pz0q is isomorphic to A|π´1pz0q.
+Let z P
+`
+P2zpB0YB1q
+˘
+. We have proved that A|π´1pzq is isomorphic to E|π´1pzq, and hence
+in particular A|π´1pzq and E|π´1pzq are slope-stable. Since c1pEq “c1pAq, it follows that the
+restrictions of E and A to π´1`
+P2zpB0YB1q
+˘
+are isomorphic; see the proof of Lemma 7.5. By
+Hartogs’ theorem, it follows that E is isomorphic to A .
+7.4 Proofs of Theorem 1.4 and Corollary 1.7
+Proof of Theorem 1.4. If r0“ 1, the result is trivially true, hence we may assume that r0ě 2.
+Let X Ñ T 1
+e and X Ñ T 2
+e be complete families of polarized HK varieties of type K3r2s such
+that (1.3.1) and (1.3.2), respectively, hold—for example, the families parametrized by the relevant
+open subsets of suitable Hilbert schemes. Since K i
+e is irreducible, we may, and will, assume that
+Ti
+e is irreducible. By passing to normalization if necessary, we may assume that Ti
+e is normal.
+For t P Ti
+e, we let pXt,htq be the corresponding polarized HK variety of type K3r2s. We let
+m: Ti
+eÑ K i
+e be the moduli map, sending t torpXt,htqs.
+Let f : Mepr0qÑ Ti
+e be the relative moduli space that we have introduced; see (7.2.5).
+By Proposition 7.4, for t in a dense subset of Ť
+d"0m´1`
+N i
+epdqgood˘
+, the preimage f´1ptq
+is a singleton. Since Ť
+d"0m´1`
+N i
+epdqgood˘
+is Zariski-dense in Ti
+e (it is the union of an inﬁnite
+collection of pairwise distinct divisors), and since fpMepr0qq is a constructible subset of Ti
+e, it
+follows that for generic tPTi
+e, the ﬁber f´1ptq is a singleton.
+30
+
+=== PDF PAGE 31 ===
+Modular sheaves on hyperk ¨ahler varieties
+LetrEs be the unique point of f´1ptq fort a generic point of m´1`
+N i
+epdqgood˘
+, where d" 0.
+Then Hp`
+Xt, End0pEq
+˘
+“ 0 by Proposition 6.7. Hence the last sentence of Theorem 1.4 follows
+from upper semicontinuity of cohomology.
+Proof of Corollary 1.7. SinceTi
+e is normal, it follows by Theorem 1.4 and Zariski’s main theorem
+that every ﬁber of f is either empty or connected.
+Now let t P Ti
+e be such that pXt,htq is isomorphic to pX,hq; we identify Xt with X. Let
+x P f´1ptq be the point representing the vector bundle E . Since h2`
+X, End0pEq
+˘
+“ 0, every
+irreducible component of Mepr0q containing x dominates Ti
+e. By Theorem 1.4, there is a single
+such component. Hence
+χ
+`
+X, End0pEq
+˘
+“χ
+`
+Xs, End0pGq
+˘
+, (7.4.1)
+where sP Ti
+e is generic and G is the unique (up to isomorphism) hs slope-stable vector bundle
+on Xs such that (1.3.4) holds (with G replacing E ).
+By (7.4.1) and Theorem 1.4, we get thatχ
+`
+X, End0pEq
+˘
+“ 0. Nowh0`
+X, End0pEq
+˘
+“ 0 by sta-
+bility, henceh4`
+X, End0pEq
+˘
+“ 0 by Serre duality, andh2`
+X, End0pEq
+˘
+“ 0 by hypothesis. It fol-
+lows that H1`
+X, End0pEq
+˘
+“ 0 (notice that H1`
+X, End0pEq
+˘
+is Serre dual to H3`
+X, End0pEq
+˘
+),
+and hencetxu is a component of f´1ptq. Since f´1ptq is not empty, it is connected, and hence it
+equalstxu. This proves Corollary 1.7.
+8. Moduli of DV varieties
+8.1. Debarre–Voisin vector bundles. Let XĂ Grp6,V 10q be a DV variety, and let
+0ÝÑ S ÝÑ OXbV10ÝÑ QÝÑ0 (8.1.1)
+be the restriction to X of the tautological exact sequence of vector bundles on Gr p6,V 10q. Thus
+rpSq“ 6 and rpQq“ 4.
+Lemma 8.1. Let X be a DV variety, and let hPH1,1
+Z pXq be the Pl¨ ucker polarization. Then
+ch0pQq“ 4, (8.1.2)
+ch1pQq“ h, (8.1.3)
+ch2pQq“ 1
+8
+`
+h2´c2pXq
+˘
+, (8.1.4)
+where ηXPH8pX; Zq is the fundamental class.
+Proof. The ﬁrst two equations are obvious, and equation (8.1.4) follows from [DV10, Proof of
+Lemma 4.5, second displayed equation after (12), p. 83] (beware that ci“cipS_q).
+Remark 8.2. LetpX,hq be a smooth DV variety. Then qphq“ 22, and the divisibility of h is 2,
+that is, rpX,hqs P K 2
+22. If one sets r0 “ 2, i “ 2 and e “ 22, then for the vector bundle E ,
+the equations in (1.3.4) give the same rank, ch 1 and ch 2 as for the quotient vector bundle Q
+described above.
+Remark 8.3. Let X be the variety of lines in a smooth cubic fourfold in PpV6q. Let
+0ÝÑ S ÝÑ OXbV6ÝÑ QÝÑ0 (8.1.5)
+be the restriction to X of the tautological exact sequence of vector bundles on Gr p2,V 6q. Hence
+the rank of Q is 4. Let h P H1,1
+Z pXq be the Pl¨ ucker polarization. Then (see the equations
+31
+
+=== PDF PAGE 32 ===
+K. G. O’Grady
+in (2.1.1)) we have
+ch0pQq“ 4, ch1pQq“ h, ch2pQq“ 1
+8
+`
+h2´c2pXq
+˘
+.
+Next notice that qphq“ 6 and the divisibility of h is 2, that is, rpX,hqsP K 2
+6 . The equations
+above show that the Chern character of Q is identiﬁed with the Chern character appearing in
+Theorem 1.4 for r0“ 2, i“ 2 and e“ 6.
+Proposition 8.4. If X is a smooth DV variety with cyclic Picard group, both Q and S
+psee (8.1.1)q are slope-stable vector bundles.
+Proof. Let h P H1,1
+Z pXq be the Pl¨ ucker polarization. Let us prove that Q is h slope-stable.
+Suppose that 0 Ñ A Ñ QÑ BÑ 0 is a desemistabilizing sequence. Thus 0 ărpAqă 4,
+c1pAq¨h3
+rpAq “µpAqě µpQq :“ h4
+4 “ 363, (8.1.6)
+and we may assume that B is torsion-free. By hypothesis, c1pAq “xh for some x P Z, and
+hence x ě 1. It follows that c1pBq “ p1´xqh. Since Q is globally generated, so is B. Thus
+x“ 1, that is, c1pBq“ 0, and B is trivial because it is globally generated. Hence c4pQq“ 0.
+This gives a contradiction. In fact, following the notation in [DV10, Proof of Lemma 4.5, p. 83],
+we let ci“cipS_q. Then (using the formulae in equation (11) of loc. cit.)
+c4pQq“ c4
+1´ 3c2
+1c2`c2
+2` 2c1c3´c4“ 9ηX.
+An analogous proof gives the slope-stability of S .
+By the openness of slope-stability, we also get the following result.
+Corollary 8.5. If X is a generic DV variety, both Q and S are slope-stable vector bundles
+pfor the Pl¨ ucker polarizationq.
+Remark 8.6. Let X be the variety of lines in a smooth cubic fourfold in PpV6q, and let Q be
+the quotient vector bundle appearing in (8.1.5). If Pic pXq is cyclic, one can prove that Q is
+slope-stable by proceeding as in the proof of Proposition 8.4, except that in the end one does not
+conclude by a Chern class computation (we have c4pQq “0). Rather, one shows directly that
+there is no trivial quotient Q↠ OX. In fact, assume that there is such a quotient; then there
+is a nonzero section of Q_, and one gets that the latter is false by considering the dual of the
+exact sequence in (8.1.5).
+Proposition 8.7. IfX is a generic DV variety, then the mapV10ÑH0pX, Qq induced by (8.1.1)
+is an isomorphism.
+Proof. The vector bundle S has no global sections because it is slope-stable (by Corollary 8.5)
+with negative slope. Hence it suﬃces to prove that h0pX, Qq “10. We do this by considering
+a K3 surface S as in Claim 6.1 with m0 “ 3 and large odd d0. The vector bundle F on S of
+Proposition 6.2 has Mukai vector vpFq“p 2,D, 2q. We claim that
+h0pS, Fq“ 4, h 1pS, Fq“ 0, h 2pS, Fq“ 0 (8.1.7)
+at least for d" 0 and “most” S. In fact, let pS1,D1q be a generic polarized K3 surface with D1
+of square 6. Then there exists a unique D1 slope-stable vector bundle F1 on S1 with Mukai
+vectorp2,D1, 2q. As is easily checked, h0pS1, F1q“ 4. Since moduli of elliptic K3 surfaces that
+we are considering are dense in the moduli space of polarized K3 surfaces of degree 6, we get
+32
+
+=== PDF PAGE 33 ===
+Modular sheaves on hyperk ¨ahler varieties
+thath0pS, Fq“ 4 for “most” S. By the stability of F, we haveh2pS, Fq“ 0. Hence the middle
+equality in (8.1.7) also holds because χpS, Fq“ 4.
+Let E0 :“ Fr2s`. By deﬁnition, there is a canonical isomorphism
+H0`
+Sr2s, E0
+˘
+– Sym2H0pS, Fq,
+and henceh0`
+Sr2s, E0
+˘
+“ 10. From the second equality in (8.1.7), we also get thath1`
+Sr2s, E0
+˘
+“ 0.
+Now let X0 :“Sr2s, and let h0 :“h, where h is given by (6.3.2). Notice that qph0q“ 22 and the
+divisibility of h0 is 2.
+Let X Ñ T be an analytic representative of the deformations space of pX0,h 0q. Let tP T ;
+by Proposition 6.7 and Corollary 5.5, there is one and only one vector bundle Et on Xt which
+is a deformation of E0. By Proposition 7.2, the cohomology class ht is a polarization on Xt for
+t generic in T , and Et is ht slope-stable. But for tP T generic, pXt,htq is isomorphic to a DV
+variety parametrized by an analytic open subset of P
+`Ź3V_
+10
+˘
+. Hence Et is isomorphic to the
+corresponding quotient DV vector bundle Qt on Xt by Theorem 1.4 and Corollary 8.5. Hence
+h0pXt, Etq“ h0pX0, E0q“ 10 because h1pX0, E0q“ 0.
+8.2 Proof of Theorem 1.8
+Proof. Let d be the degree of the moduli map
+MDV99K K 2
+22. (8.2.1)
+We havedě 1 because the moduli map is dominant. We need to prove that d“ 1. LetrpX,hqsP
+K 2
+22 be a generic point. Then there exist rσ1s,..., rσdsP P
+`Ź3V_
+10
+˘
+such that the corresponding
+polarized DV varieties pX1,h 1q..., pXd,hdq are smooth and all isomorphic to pX,hq, but the
+PGLpV10q-orbits ofrσ1s,..., rσds are pairwise distinct. Let Qi be the DV quotient vector bundle
+onX determined byσi. By Corollary 8.5, each Qi ish slope-stable, and hence by Theorem 1.4, all
+the Qi are isomorphic to a single vector bundle E . By Proposition 8.7, the surjection OXibV10↠
+Qi is identiﬁed with the canonical map OXbH0pX, EqÑ E . It follows that d“ 1.
+Remark 8.8. Let |OP5p3q|{{PGLp6q99K K 2
+6 be the moduli map one gets by associating with
+a smooth cubic 4-fold the variety of its lines. This map is birational by Voisin’s global Torelli
+theorem for cubics. Charles [Cha12] inverted the argument: he proved independently that the
+moduli map |OP5p3q|{{PGLp6q99K K 2
+6 is birational and obtained global Torelli for cubic 4-folds
+from global Torelli for HK varieties.
+Here we notice that Charles’ result can also be obtained arguing as in the proof of Theo-
+rem 1.8.
+8.3 Relation with degenerate DV varieties. In short, one may approach the subject of
+[DHOV20] from the “opposite” direction. That means starting from pX,h, Eq, where X is of
+type K3r2s (either Sr2s for a suitable K3 surface, or a HK variety birational to Sr2s), h is a big
+and nef class such thatqphq“ 22 andq
+`
+h,H 2pX; Zq
+˘
+“p 2q, and E is a slope-stable vector bundle
+(or more generally a GM stable torsion-free sheaf) such that (1.3.4) holds with r0 “ 2. Then
+pX,hq should correspond to a degenerateσP Ź3V_
+10 (“degenerate” means that the corresponding
+Debarre–Voisin variety is not smooth of dimension 4) if E is not as good as possible, for example
+h0pX, Eq ą10, or h0pX, Eq “10 but E is not globally generated, or E is globally generated
+but the corresponding map X Ñ Gr
+`
+6,H 0pEq
+˘
+is not an embedding, or E is not locally free
+(one should also take into account the possibility of getting a degenerate σ because h is not
+ample). An example: in the proof of Proposition 8.7, we discussed a case in which h0pX, Eq“ 10
+33
+
+=== PDF PAGE 34 ===
+K. G. O’Grady
+and E is globally generated but the corresponding map XÑ Gr
+`
+6,H 0pEq
+˘
+is not an embedding.
+The “inverse” approach should allow us to complete the discussion of the family appearing in
+[DHOV20, Section 8].
+Appendix A. Homogeneous and semi-homogeneous vector bundles
+on abelian varieties
+A.1 Basics. LetA be an abelian variety, and letA_ :“ Pic0pAq be its dual abelian variety. For
+aPA, let Ta : AÑA be the translation by a. For an invertible sheaf ξ on A, we let rξsP A_ be
+its isomorphism class.
+Definition A.1. A vector bundle F on A is homogeneous if T˚
+a F – F for every aP A. It is
+semi-homogeneous if, for every aPA, there exists a rξsP Pic0pAq such that T˚
+a F – Fbξ.
+Proposition A.2. LetpA,θq be a polarized abelian variety of dimension n, and let F be a θ
+slope-stable vector bundle on A. If
+ż
+A
+∆pFq !θn´2“ 0 (A.1.1)
+pthe condition is to be understood to be empty if n“ 1q, then F is simple semi-homogeneous.
+Moreover, ∆pFq“ 0.
+Proof. Of course F is simple because it is slope-stable.
+If n“ 1, then F is semi-homogeneous by Atiyah’s classiﬁcation of simple vector bundles on
+elliptic curves.
+Suppose that n ě 2. By the Kobayashi–Hitchin correspondence, F has a θ Hermitian-
+Einstein metric, and hence so does the vector bundle EndpFq. Equation (A.1.1) is equivalent toş
+Ac2pEndpFqq !θn´2“ 0. Sincec1pEndpFqq“ 0, the Hermite–Einstein connection on EndpFq
+is ﬂat; see [Kob82, Section 4]. Hence EndpFq is homogeneous, and thus F is semi-homogeneous
+by [Muk78, Theorem 5.8].
+Since EndpFq is homogeneous, it is a direct sum of vector bundles which have ﬁltrations whose
+associated graded bundles are direct sums of a topologically trivial line bundles; see [Muk78,
+Theorem 4.17]. Thus ∆pFq“ c2pEndpFqq“ 0.
+A.2 Rank of semi-homogeneous vector bundles. The rank of a simple semi-homogeneous
+vector bundle with assigned ﬁrst Chern class is not arbitrary. Below we extend a result of Mukai,
+see [Muk78, Theorem 7.11 and Remark 7.13], so that we cover all the canonical polarizations
+that occur on Lagrangian ﬁbrations in the known deformation classes of HK varieties with the
+exception of OG10.
+Proposition A.3 (Mukai [Muk78]) . Let pA,θq be a polarized abelian variety of dimension n.
+Suppose that the elementary divisors of θ are p1,..., 1,d 1,d 2q, where d1 divides d2. Let F be
+a simple semi-homogeneous vector bundle onA such thatc1pFq“ aθ. Then there exists a positive
+integerr0 such that, letting gi :“ gcdtr0,diu, we have
+gcdtrpFq,au“ rn´1
+0
+g1¨g2
+, r pFq“ rn
+0
+g1¨g2
+. (A.2.1)
+Proof. Let r :“ rpFq, and let c :“ gcdtr,au. We let r0 :“ r{c and a0 :“ a{c. Let us prove
+that (A.2.1) holds. Let L be a line bundle on A such thatc1pLq“ a0θ, and letϕL : AÑA_ be
+34
+
+=== PDF PAGE 35 ===
+Modular sheaves on hyperk ¨ahler varieties
+the homomorphism deﬁned by ϕLpaq :“T˚
+apLqb L´1. Let KpLq be the kernel of ϕL . Lastly,
+following Mukai, we let
+ΣpFq :“
+␣
+rξsP A_|D „ÝÝÑFbξ
+(
+. (A.2.2)
+(Since we are in characteristic 0, the above set-theoretic deﬁnition coincides with the schematic
+one; see [Muk78, Proposition 5.9].) By [Muk78, Corollary 7.8], we have an exact sequence of
+groups
+0ÝÑArr0sX KpLqÝÑ Arr0s
+ϕL
+ÝÑΣpFqÝÑ 0. (A.2.3)
+Because of our hypothesis on the elementary divisors of θ, we have
+KpLq–p Z{pa0qq2‘¨¨¨‘pZ{pa0d1qq2‘p Z{pa0d2qq2. (A.2.4)
+Since a0 and r0 are coprime, it follows that Arr0sX KpLq – pZ{pg1qq2 ‘p Z{pg2qq2. Thus
+|ΣpFq| “r2n
+0 {pg2
+1¨g2
+2q. On the other hand, the cardinality of Σ pFq is equal to r2 by [Muk78,
+Proposition 7.1]. Thus we get that r“ rn
+0{pg1¨g2q. Since c :“ r{r0, it follows that gcdtr,au“
+c“rn´1
+0 {pg1¨g2q.
+Appendix B. Polarized Lagrangian HK varieties of type K3r2s
+B.1 Lagrangian Noether–Lefschetz loci. We recall that K i
+e is the moduli space of polarized
+HK varieties of type K3r2s with polarization of BBF square e and divisibility given by i (which
+is either 1 or 2); see Subsection 1.3.
+Definition B.1. Ford a strictly positive integer, let N i
+epdqĂ K i
+e be the closure of the locus
+parametrizing polarized HK varieties pX,hq such that H1,1
+Z pXq contains a saturated rank 2
+sublattice generated by h and f, where
+qpfq“ 0, q ph,fq“ d. (B.1.1)
+Proposition B.2. Keeping the notation as above, suppose in addition that d is even if i“ 2
+and that
+dą 5pe` 1q, e ﬄ 2d. (B.1.2)
+Then N i
+epdq is closed of pure codimension 1pin particular, nonemptyq, and if rpX,hqsP N i
+epdq
+is generic, there is one and only one Lagrangian ﬁbration π : X Ñ P2 pmodulo automorphisms
+of P2q such that, letting f :“ c1pπ˚OP2p1qq, the equalities in (B.1.1) hold and the sublattice
+xh,fyĂ H1,1
+Z pXq is saturated.
+Proof. Before starting the proof, we emphasize that N i
+epdq might have several irreducible com-
+ponents and that “generic point” of N i
+epdq means point belonging to an open dense subset of
+N i
+epdq. By the surjectivity of the period map, there exists a HK variety X of type K3r2s such
+that H1,1
+Z pXq“x h,fy, where
+qphq“ e,
+␣
+qph,αq| αPH2pX; Zq
+(
+“piq, (B.1.3)
+and the equalities in (B.1.1) hold. There are no ξPH1,1
+Z pXq with´10ďqpξqă 0 by Lemma 4.3
+and the inequality in (B.1.2). It follows that the ample cone of X is equal to the intersection
+of H1,1
+Z pXq and the positive cone. Hence either h or ´h is ample. If the former holds, then
+rpX,hqsP N i
+epdq; if the latter holds, we may replace h andf with´h and´f, respectively, and
+again we get that rpX,hqsP N i
+epdq. Moreover, N i
+epdq is closed of pure codimension 1 because it
+is a Noether–Lefschetz divisor.
+35
+
+=== PDF PAGE 36 ===
+K. G. O’Grady
+A straightforward computation shows that there are exactly two primitive nef isotropic
+classes, namelyf andα :“p 1{gcdtd,euqp2dh´efq. By our “nondivisibility” hypothesis in (B.1.2),
+we get thatqpα,hq“ de{gcdtd,eu is not equal to d. Hencef is the unique primitive nef isotropic
+class such that qph,fq“ d.
+By [Mar14, Theorem 1.3] (see also [Mar14, Remark 1.8]), there exists a Lagrangian ﬁbration
+π : X Ñ P2 such that f :“ c1pπ˚OP2p1qq. By [Mat17, Theorem 1.2], it follows that there exists
+a Zariski-open neighborhood U of rpX,hqs in N i
+epdq such that each representative pX1,h1q of
+a point in U has a Lagrangian ﬁbration as required. Since the set of points of N i
+epdq representing
+pX,hq such that ρpXq “2 is dense, this proves the result about the existence of the required
+Lagrangian ﬁbration.
+It remains to prove that ifrpX,hqsP N i
+epdq is generic, then there is a unique isotropic class f
+such thatqph,fq“ d. We checked that this is the case if ρpXq“ 2. It follows that the statement
+holds for the generic point of N i
+epdq; the argument is similar to that given to show that h is
+apEq-suitable in the proof of Proposition 4.1.
+Definition B.3. Suppose that (B.1.2) holds. We let N i
+epdq0Ă N i
+epdq be an open dense subset
+such that the thesis of Proposition B.2 holds for any rpX,hqsP N i
+epdq0. ForrpX,hqsP N i
+epdq0,
+the associated Lagrangian ﬁbration π : X Ñ P2 is the unique ﬁbration (modulo automorphisms
+of P2) of Proposition B.2.
+B.2 Tate–Shafarevich twists. A basic example of Lagrangian ﬁbration is constructed as fol-
+lows. LetSÑ P2 be the double cover ramiﬁed over a smooth sextic curve B, that is, a polarized
+K3 surface of degree 2. Let JpSq be the moduli space of rank 0 pure OSp1q semistable sheaves
+ξ with χpξq “ ´1. The generic point of JpSq is represented by i˚L , where i: C ãÑ S is the
+inclusion of a smooth CP OSp1q and L is a line bundle of degree 0. Then for generic B, every
+semistable sheaf is stable (the precise condition is that B have no tritangents), and hence JpSq
+is smooth. In fact, it is a HK variety of type K3r2s, and the support map JpSqÑ
+`
+P2˘_ is a
+Lagrangian ﬁbration.
+A Lagrangian ﬁbration parametrized by a generic point ofN i
+epdq is related to a generic JpSq
+via a Tate–Shafarevich twist. In order to be more precise, we recall a result of Markman. Let
+pX,hq be a representative of a generic point of N i
+epdq. Then there is an associated polarized K3
+surfacepS,Dq of degree 2, and moreover pS,Dq is generic; see [Mar14, Subsection 4.1].
+Proposition B.4. Keep the hypotheses of Proposition B.2. Let rpX,hqs be a generic point
+of N i
+epdq. Let π : X Ñ P2 and S be the associated Lagrangian ﬁbration and K3 surface of
+degree 2, respectively. Then X is isomorphic to a Tate–Shafarevich twist of JpSqÑ
+`
+P2˘_ via
+an identiﬁcation P2 „Ñ
+`
+P2˘_.
+Proof. First suppose that ρpXq“ 2. Then, as shown in the proof of Proposition B.2, the ample
+cone of X is equal to the positive cone (because of the inequality in (B.1.2)), and hence every
+bimeromorphic map X99KX1, where X1 is a HK variety, is actually an isomorphism. It follows
+that X is isomorphic to a Tate–Shafarevich twist of JpSqÑ
+`
+P2˘_ by [Mar14, Theorem 7.13].
+The result follows from this because the locus in N i
+epdq parametrizing the pX,hq such that
+ρpXq“ 2 is dense.
+Let X Ñ P2 be as in Proposition B.4, and let Pic 0 `
+X{P2˘
+be the relative Picard scheme
+(notice that all ﬁbers of XÑ P2 are irreducible by Proposition B.4). If UĂ P2 is the open dense
+set of regular values of X Ñ P2 and zP U, the ﬁber of Pic 0 `
+X{P2˘
+Ñ P2 overz is an abelian
+36
+
+=== PDF PAGE 37 ===
+Modular sheaves on hyperk ¨ahler varieties
+surface Az and the fundamental group π1pU,zq acts by monodromy on the subgroup Az,tors of
+torsion points.
+Corollary B.5. Keep the hypotheses as above, and suppose that V Ă Az
+“
+r2
+0
+‰
+is a coset pof
+a subgroupq of cardinality r4
+0 invariant under the action of monodromy. Then V “Azrr0s.
+Proof. LetS be the polarized K3 surface of degree 2 associated with X following Markman, and
+letSÑ P2 be the double cover ramiﬁed over a sextic curve B. Let JpSq0Ă JpSq be the open
+dense subset of smooth points (that is, smooth points of JpSq with surjective diﬀerential) of
+the map JpSqÑ
+`
+P2˘_. By Proposition B.4, the relative Picard scheme Pic 0 `
+X{P2˘
+Ñ P2 is
+isomorphic to JpSq0Ñ
+`
+P2˘_ for a certain identiﬁcation P2 „Ý Ñ
+`
+P2˘_. Under this identiﬁcation,
+zP P2 corresponds to a line RP
+`
+P2˘_ transverse to B, and the corresponding Lagrangian ﬁber
+Az is the Jacobian of the curve C which is the double cover of R ramiﬁed overRXB. Hence we
+have a natural isomorphism
+H1pC; Qq{H1pC; Zq „ÝÝÑAz,tors, (B.2.1)
+and the identiﬁcation is compatible with the monodromy actions.
+First we prove the result under the assumption thatV is a subgroupG. By the structure theo-
+rem for ﬁnite abelian groups,G– Z{pd1q‘¨¨¨‘Z{pdrq, whererď 4
+`
+becauseAz
+“
+r2
+0
+‰
+– Z{
+`
+r2
+0
+˘‘4˘
+and di|r2
+0 for all i. Since the monodromy action on H1pC; Zq is transitive on nonzero elements,
+it follows from the isomorphism in (B.2.1) that r “ 4 and d1 “¨¨¨“dr. Thus di “ r0 for all
+iPt 1,..., 4u because|G|“ r4
+0. This proves the result under the assumption thatV is a subgroup.
+Now let V be a translate of a group G. Then G “ ta´b | a,b P Vu, and hence G is also
+invariant for the monodromy action. Thus G“ Azrr0s, and hence the coset V gives a point of
+the quotient Az
+“
+r2
+0
+‰
+{Azrr0s which is invariant for the monodromy action. By the isomorphism
+in (B.2.1), it follows that 0 is the unique invariant element, and hence V “Azrr0s.
+Acknowledgements
+Many thanks go to the (anonymous) referee for their numerous suggestions. In particular, I owe
+to the referee the proof of Proposition 5.4 via the MacKay correspondence (the original proof
+was done by brute force).
+References
+BD85 A. Beauville and R. Donagi, La vari´ et´ e des droites d’une hypersurface cubique de dimension4,
+C. R. Acad. Sci. Paris S´ er. I Math.301 (1985), no. 14, 703–706.
+Bea07 A. Beauville, Riemannian holonomy and algebraic geometry, Enseign. Math. 53 (2007), no. 1–2,
+97–126.
+Bog95 F. A. Bogomolov, Stable vector bundles on projective surfaces , Sb. Math. 81 (1995), no. 2,
+397–419; doi:10.1070/SM1995v081n02ABEH003544.
+Bog96 , On the cohomology ring of a simple hyper-K¨ ahler manifold (on the results of Verbitsky),
+Geom. Funct. Anal. 6 (1996), no. 4, 612–618; doi:10.1007/BF02247113.
+Cha12 F. Charles, A remark on the Torelli theorem for cubic fourfolds , 2012, arXiv:1209.4509.
+DHOV20 O. Debarre, F. Han, K. O’Grady and C. Voisin, Hilbert squares of K3 surfaces and Debarre–
+Voisin varieties, J. ´Ec. polytech. Math. 7 (2020), 653–710; doi:10.5802/jep.125.
+DV10 O. Debarre and C. Voisin, Hyper-K¨ ahler fourfolds and Grassmann geometry, J. reine angew.
+Math. 649 (2010), 63–87; doi:10.1515/CRELLE.2010.089.
+37
+
+=== PDF PAGE 38 ===
+K. G. O’Grady
+Fuj87 A. Fujiki, On the de Rham cohomology group of a compact K¨ ahler symplectic manifold , Alge-
+braic Geometry (Sendai, 1985), Adv. Stud. Pure Math., vol. 10 (North-Holland, Amsterdam,
+1987), 105–165; doi:10.2969/aspm/01010105.
+GRT19 D. Greb, J. Ross and M. Toma, A master space for moduli spaces of Gieseker-stable sheaves ,
+Transform. Groups 24 (2019), no. 2, 379–401; doi:10.1007/s00031-018-9477-6 .
+Hai01 M. Haiman, Hilbert schemes, polygraphs and the Macdonald positivity conjecture , J. Amer.
+Math. Soc. 14 (2001), no. 4, 941–1006; doi:10.1090/S0894-0347-01-00373-3 .
+HL10 D. Huybrechts and M. Lehn, The geometry of moduli spaces of sheaves , 2nd edn, Cambridge
+Math. Lib. (Cambridge Univ. Press, Cambridge, 2010); doi:10.1017/CBO9780511711985.
+IM19 D. Iacono and M. Manetti, On deformations of pairs (manifold, coherent sheaf) , Canad. J.
+Math. 71 (2019), no. 5, 1209–1241; doi:10.4153/cjm-2018-027-8 .
+Kob82 S. Kobayashi, Curvature and stability of vector bundles , Proc. Japan Acad. Ser. A Math. Sci.
+58 (1982), no. 4, 158–162; doi:10.3792/pjaa.58.158.
+Kru18 A. Krug, Remarks on the derived McKay correspondence for Hilbert schemes of points and
+tautological bundles , Math. Ann. 371 (2018), no. 1–2, 461–486; doi:10.1007/s00208-018-
+1660-5.
+Kul90 S.A. Kuleshov, Exceptional bundles on K3 surfaces, in Helices and Vector Bundles , London
+Math. Soc. Lecture Note Ser., vol. 148 (Cambridge Univ. Press, Cambridge, 1990), 105–114;
+doi:10.1017/CBO9780511721526.010.
+Mar14 E. Markman, Lagrangian ﬁbrations of holomorphic-symplectic varieties of K3rns-type, in Al-
+gebraic and Complex Geometry , Springer Proc. Math. Stat., vol. 71 (Springer, Cham, 2014),
+241–283; doi:10.1007/978-3-319-05404-9_10 .
+Mar78 M. Maruyama, Moduli of stable sheaves. II , J. Math. Kyoto Univ. 18 (1978), no. 3, 557–614;
+doi:10.1215/kjm/1250522511.
+Mar81 , On boundedness of families of torsion free sheaves , J. Math. Kyoto Univ. 21 (1981),
+no. 4, 673–701; doi:10.1215/kjm/1250521908.
+Mat17 D. Matsushita, On isotropic divisors on irreducible symplectic manifolds, in Higher Dimensional
+Algebraic geometry – in Honour of Professor Yujiro Kawamata’s Sixtieth Birthday , Adv. Stud.
+Pure Math., vol. 74 (Math. Soc. Japan, Tokyo, 2017), 291–312; doi:10.2969/aspm/07410291.
+MR21 G. Mongardi and A. Rapagnetta, Monodromy and birational geometry of O’Grady’s sixfolds ,
+J. Math. Pures Appl. 146 (2021), 31–68; doi:10.1016/j.matpur.2020.12.006.
+Muk78 S. Mukai, Semi-homogeneous vector bundles on an Abelian variety , J. Math. Kyoto Univ. 18
+(1978), no. 2, 239–272; doi:10.1215/kjm/1250522574.
+Muk87 , On the moduli space of bundles on K3 surfaces. I, Vector Bundles on Algebraic Va-
+rieties (Bombay, 1984), Tata Inst. Fund. Res. Stud. Math., vol. 11 (Tata Inst. Fund. Res.,
+Bombay, 1987), 341–413.
+O’G97 K. G. O’Grady, The weight-two Hodge structure of moduli spaces of sheaves on a K3 surface,
+J. Algebraic Geom. 6 (1997), no. 4, 599–644.
+Ver96a M. Verbitsky, Cohomology of compact hyper-K¨ ahler manifolds and its applications , Geom.
+Funct. Anal. 6 (1996), no. 4, 601–611; doi:10.1007/BF02247112.
+Ver96b , Hyperholomorphic bundles over a hyper-K¨ ahler manifold, J. Algebraic Geom. 5 (1996),
+no. 4, 633–669.
+Wie16 B. Wieneck, On polarization types of Lagrangian ﬁbrations , Manuscripta Math. 151 (2016),
+no. 3-4, 305–327; doi:10.1007/s00229-016-0845-z .
+Wie18 , Monodromy invariants and polarization types of generalized Kummer ﬁbrations ,
+Math. Z. 290 (2018), no. 1-2, 347–378; doi:10.1007/s00209-017-2020-y .
+Kieran G. O’Grady ogrady@mat.uniroma1.it
+Dipartimento di Matematica, Sapienza Universit` a di Roma, P.le A. Moro 5, 00185 Roma, Italy
+38

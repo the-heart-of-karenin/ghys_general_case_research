@@ -1,0 +1,1190 @@
+=== PDF PAGE 1 ===
+LMS J. Comput. Math. 19 (1) (2016) 78–97 C⃝ 2016 Author
+doi:10.1112/S1461157016000012
+Computing cup products in integral cohomology of
+Hilbert schemes of points on K3 surfaces
+Simon Kapfer
+Abstract
+We study cup products in the integral cohomology of the Hilbert scheme of n points on a
+K3 surface and present a computer program for this purpose. In particular, we deal with the
+question of which classes can be represented by products of lower degrees.
+Supplementary materials are available with this article.
+Introduction
+The Hilbert schemes of n points on a complex surface parametrise all zero-dimensional
+subschemes of length n. Studying their rational cohomology, Nakajima [ 10] was able to give
+an explicit description of the vector space structure in terms of the action of a Heisenberg
+algebra. The Hilbert schemes of points on a K3 surface are one of the few known classes
+of irreducible holomorphic symplectic manifolds. Lehn and Sorger [ 6] developed an algebraic
+model to describe the cohomological ring structure. On the other hand, Qin and Wang [ 11]
+found a base for integral cohomology in the projective case. By combining these results, we
+are able to compute all cup products in the cohomology rings of Hilbert schemes of n points
+on a projective K3 surface with integral coeﬃcients. For n = 2, this was done by Boissi` ereet
+al. [1], who applied their results to automorphism groups of prime order. When n is increasing,
+the ranks of the cohomology rings become very large, so we need the help of a computer. The
+source code is available from https://github.com/s--kapfer/HilbK3 and is also available as
+online supplementary material from the publisher’s website.
+Our goal here is to give some properties for low degrees. Denote by S[3] the Hilbert scheme
+of three points on a projective K3 surface (or a deformation equivalent space). We identify
+Symk H 2(S[n], Z) with its image in H 2k(S[n], Z) under the cup product mapping.
+Theorem 0.1. The cup product mappings for the Hilbert scheme of three points on a
+projective K3 surface have cokernels
+H 4(S[3], Z)
+Sym2 H 2(S[3], Z)
+∼= Z
+3Z⊕ Z⊕23, (1)
+H 6(S[3], Z)
+H 2(S[3], Z) ⌣ H 4(S[3], Z)
+∼=
+( Z
+3Z
+)⊕23
+. (2)
+Although the case n = 3 is the most interesting for us, our computer program allows
+computations for arbitrary n. We give some numerical results in § 2.
+Received 25 February 2015; revised 6 October 2015.
+2010 Mathematics Subject Classiﬁcation 14J10, 14Q15 (primary), 05A17, 55N32 (secondary).
+https://doi.org/10.1112/S1461157016000012 Published online by Cambridge University Press
+
+=== PDF PAGE 2 ===
+products in H ∗(Hilbn(K3), Z) 79
+1. Preliminaries
+Definition 1.1. Let n be a natural number. A partition of n is a decreasing sequence
+λ = (λ1, . . . , λk), λ1 ⩾ . . . ⩾ λk > 0 of natural numbers such that ∑
+i λi = n. Sometimes it
+is convenient to write λ = ( . . . ,2m2 , 1m1) with multiplicities in the exponent. No confusion
+should be possible since numerical exponentiation is never meant in this context. We deﬁne the
+weight∥λ∥ :=∑mii = n and the length|λ| :=∑
+i mi = k. We also deﬁne zλ :=∏
+i imi mi!.
+Definition 1.2. Let Λn := Q[x1, . . . , xn]Sn be the graded ring of symmetric polynomials.
+There are canonical projections : Λn+1→ Λn which send xn+1 to zero. The graded projective
+limit Λ := lim
+←
+Λn is called the ring of symmetric functions. Letmλ and pλ denote the monomial
+and the power sum symmetric functions, respectively. They are deﬁned as follows. For a
+monomial xλ1
+i1 xλ2
+i2 . . . xλk
+ik of total degree n, the (ordered) sequence of exponents ( λ1, . . . , λk)
+deﬁnes a partition λ of n, which is called the shape of the monomial. Then we deﬁne mλ as
+the sum of all monomials of shape λ. For the power sums, ﬁrst deﬁne pn := xn
+1 + xn
+2 + . . ..
+Then pλ := pλ1 pλ2 . . . pλk.
+The families ( mλ)λ and (pλ)λ form two Q-bases of Λ, so they are linearly related by pλ =∑
+µ ψλµmµ. It turns out that the base change matrix (ψλµ) has integral entries, but its inverse
+(ψ−1
+µλ ) has not. A method to determine the ( ψλµ) is given by Lascoux [ 5,§ 3.7].
+Definition 1.3. A lattice L is a free Z-module of ﬁnite rank, equipped with a non-
+degenerate symmetric integral bilinear form B. The lattice L is called odd if there exists
+a v∈ L such that B(v, v) is odd; otherwise it is called even. If the map v↦→ B(v, v) takes both
+negative and positive values on L, the lattice is called indeﬁnite. Choosing a base {ei}i of our
+lattice, we can write B as a symmetric matrix. L is called unimodular, if the matrix B has
+determinant±1. The diﬀerence between the number of positive eigenvalues and the number
+of negative eigenvalues of B (regarded as a matrix over R) is called the signature.
+There is the following classiﬁcation theorem (see [ 9, Chapter II]).
+Theorem 1.4. Two indeﬁnite unimodular lattices L, L′ are isometric if and only if they
+have the same rank, signature and parity. Evenness implies that the signature is divisible by
+eight. In particular, if L is odd, then L possesses an orthogonal basis and is hence isometric to
+⟨1⟩⊕k⊕⟨− 1⟩⊕l for some k, l ⩾ 0. If L is even, then L is isometric to U ⊕k⊕ (±E8)⊕l for some
+k, l ⩾ 0.
+Definition 1.5. Let S be a projective K3 surface. We ﬁx integral bases 1 of H 0(S, Z), x
+of H 4(S, Z) and α1, . . . , α22 of H 2(S, Z). The cup product induces a symmetric bilinear form
+BH 2 on H 2(S, Z) and thus the structure of a unimodular lattice. We may extend BH 2 to a
+symmetric non-degenerate bilinear form B on H ∗(S, Z) by setting B(1, 1) = 0 , B (1, αi) =
+0, B (1, x) = 1, B (x, x) = 0.
+By the Hirzebruch index theorem, we know that H 2(S, Z) has signature −16 and, by the
+classiﬁcation theorem for indeﬁnite unimodular lattices, is isomorphic to U ⊕3⊕ (−E8)⊕2.
+Definition 1.6. B induces a form B⊗ B on Sym2 H ∗(S, Z). So the cup product
+µ : Sym2 H ∗(S, Z)−→ H ∗(S, Z)
+induces an adjoint comultiplication ∆ that is coassociative, given by
+∆ : H ∗(S, Z)−→Sym2 H ∗(S, Z), ∆ =−(B⊗ B)−1µT B,
+https://doi.org/10.1112/S1461157016000012 Published online by Cambridge University Press
+
+=== PDF PAGE 3 ===
+80 s. kapfer
+with the property ( B⊗ B)(∆(a), b⊗ c) = −B(a, b ⌣ c ). Note that this does not deﬁne a
+bialgebra structure. The image of 1 under the composite map µ◦ ∆, denoted by e = 24x is
+called the Euler Class.
+More generally, every linear map f : A⊗k→ A⊗m induces an adjoint map g in the other
+direction that satisﬁes (−1)mB⊗m(f(x), y) = (−1)kB⊗k(x, g(y)).
+We denote by S[n] the Hilbert scheme of n points on S: that is, the classifying space of all
+zero-dimensional closed subschemes of length n. S[0] consists of a single point and S[1] = S.
+Fogarty [4, Theorem 2.4] proved that the Hilbert scheme is a smooth variety. A theorem by
+Nakajima [ 10] gives an explicit description of the vector space structure of H ∗(S[n], Q) in
+terms of creation operators
+ql(β) : H ∗(S[n], Q)−→ H ∗+k+2(l−1)(S[n+l], Q),
+where β∈ Hk(S, Q), acting on the direct sum H :=⨁
+n H ∗(S[n], Q). The operators ql(β) are
+linear and commute with each other. The vacuum vector |0⟩ is deﬁned as the generator of
+H 0(S[0], Q)∼= Q. The images of |0⟩ under the polynomial algebra generated by the creation
+operators span H as a vector space. Following [ 11], we abbreviate ql1(β) . . . qlk(β) =: qλ(β),
+where the partition λ is composed by the li.
+An integral basis for H ∗(S[n], Z) in terms of Nakajima’s operators was given by Qin–Wang.
+Theorem 1.7 [ 11, Theorem 5.4] . Let mν,α := ∑
+ρ ψ−1
+νρ qρ(α), with coeﬃcients ψ−1
+νρ , as in
+Deﬁnition 1.2. The classes
+1
+zλ
+qλ(1)qµ(x)mν1,α1 . . . mν22,α22|0⟩, ∥λ∥ +∥µ∥ +
+22∑
+i=1
+∥νi∥ = n
+form an integral basis for H ∗(S[n], Z). Here, λ, µ, νi are partitions.
+Notation 1.8. To enumerate the basis of H ∗(S[n], Z), we introduce the abbreviation
+αλ := 1λ0
+αλ1
+1 . . . αλ22
+22 xλ23
+:= 1
+z˜λ0
+q˜λ0(1)qλ23(x)mλ1,α1 . . . mλ22,α22|0⟩,
+where the partition ˜λ0 is built from λ0 by appending a suﬃcient number of ones such that
+∥˜λ0∥ +∑
+i⩾1∥λi∥ = n. If ∑
+i⩾0∥λi∥ > n, we put αλ = 0. Thus we can interpret αλ as an
+element of H ∗(S[n], Z) for arbitrary n. We say that the symbol αλ is reduced, if λ0 contains
+no ones. We also deﬁne∥λ∥ :=∑
+i⩾0∥λi∥.
+Lemma 1.9. Let αλ represent a class of cohomological degree 2k. If αλ is reduced, then
+k/2 ⩽∥λ∥ ⩽ 2k.
+Proof. This is a simple combinatorial observation. We give the two extremal cases. The
+lowest ratio between∥λ∥ and deg αλ is achieved by the classes x(1m), where the degree is 4 m
+and the weight of λ is m. The highest ratio is achieved by the classes 1(2m), where both degree
+and weight equal 2 m. So 1 /4 ⩽∥λ∥/(deg αλ) ⩽ 1.
+The ring structure of H ∗(S[n], Q) has been studied by Lehn and Sorger in [ 6], where an
+explicit algebraic model is constructed. We recall it brieﬂy here.
+Definition 1.10 [6,§ 2]. Let π be a permutation of n letters, written as a product of disjoint
+cycles. To each cycle we may associate an element ofA := H ∗(S, Q). This deﬁnes an element in
+A⊗m, m being the number of cycles. For example, a term such as (1 2 3)α1(4 5)α2 may describe
+https://doi.org/10.1112/S1461157016000012 Published online by Cambridge University Press
+
+=== PDF PAGE 4 ===
+products in H ∗(Hilbn(K3), Z) 81
+a permutation consisting of two cycles with associated classes α1, α2∈ A. We interpret the
+cycles as the orbits of the subgroup ⟨π⟩⊂ Sn generated by π. We denote the set of orbits by
+⟨π⟩\[n]. Thus we construct a vector space A{Sn} :=⨁
+π∈Sn A⊗⟨π⟩\[n].
+To deﬁne a ring structure, take two permutations π, τ ∈ Sn and the subgroup ⟨π, τ⟩
+generated by them. The natural map of orbit spaces pπ : ⟨π⟩\[n] → ⟨π, τ⟩\[n] induces a
+map fπ,⟨π,τ ⟩ : A⊗⟨π⟩\[n]→ A⊗⟨π,τ ⟩\[n], which multiplies the factors of an elementary tensor if
+the corresponding orbits are glued together. Denote by f⟨π,τ ⟩,π the adjoint to this map in the
+sense of Deﬁnition 1.6. Then the map
+mπ,τ : A⊗⟨π⟩\[n]⊗ A⊗⟨τ ⟩\[n]−→ A⊗⟨πτ ⟩\[n],
+a⊗ b↦−→ f⟨π,τ ⟩,πτ (fπ,⟨π,τ ⟩(a)· fτ,⟨π,τ ⟩(b)· eg(π,τ ))
+deﬁnes a multiplication on A{Sn}. Here the dot means the cup product on each tensor factor
+and eg(π,τ )∈ A⊗⟨π,τ ⟩\[n] is an elementary tensor that is composed of powers of the Euler class
+e: for each orbit B∈⊗⟨ π, τ⟩\[n] the exponent g(π, τ)(B) (so-called ‘graph defect’; see [6, 2.6])
+is given by
+g(π, τ)(B) = 1
+2(|B| + 2−| p−1
+π ({B})|−| p−1
+τ ({B})|−| p−1
+πτ ({B})|).
+The symmetric group Sn acts on A{Sn} by conjugation, permuting the direct summands:
+conjugation by σ ∈ Sn maps A⊗⟨π⟩\[n] to A⊗⟨σπσ −1⟩\[n]. This action preserves the ring
+structure. Therefore the space of invariants A[n] := (A{Sn})Sn becomes a subring. The main
+theorem of [ 6] can now be stated.
+Theorem 1.11 [ 6, Theorem 3.2]. The following map is an isomorphism of rings:
+H ∗(S[n], Q)−→A[n],
+qn1(β1) . . . qnk(βk)|0⟩↦−→
+∑
+σ∈Sn
+σaσ −1,
+with∑
+i ni = n and a = (1 2. . . n1)β1(n1 + 1 . . . n1 + n2)β2 . . .(n− nk . . . n)βk∈ A{Sn}.
+Since H odd(S[n], Z) = 0 and H even(S[n], Z) is torsion-free by [7], we can apply these results to
+H ∗(S[n], Z) to determine the multiplicative structure of cohomology with integer coeﬃcients.
+It turns out that it is somehow independent ofn. More precisely, we have the following stability
+theorem, by Li, Qin and Wang.
+Theorem 1.12 (Derived from [ 11, Theorem 2.1]) . Let Q1, . . . , Qs be products of creation
+operators: that is Qi = ∏
+j qλi,j(βi,j) for some partitions λi,j and classes βi,j ∈ H ∗(S, Z).
+Set ni := ∑
+j∥λi,j∥. Then the cup product ∏s
+i=1((1/(n− ni)!)q1n−ni (1)Qi|0⟩) is equal to
+a ﬁnite linear combination of classes of the form (1/(n− m)!)q1n−m(1)∏
+j qµj(γj)|0⟩, with
+γ ∈ H ∗(S, Z), m = ∑
+j∥µj∥, whose coeﬃcients are independent of n. We have the
+upper bound m ⩽ ∑
+i ni. Moreover, m = ∑
+i ni if and only if the corresponding class is
+(1/(n− m)!)q1n−m(1)Q1Q2 . . . Qs|0⟩ with coeﬃcient one.
+Corollary 1.13. Let αλ, αµ, αν be reduced. Assume n ⩾∥λ∥,∥µ∥. Then the coeﬃcients
+cλµ
+ν of the cup product in H ∗(S[n], Z)
+αλ ⌣ αµ =
+∑
+ν
+cλµ
+ν αν
+are polynomials in n of degree at most ∥λ∥ +∥µ∥−∥ ν∥.
+https://doi.org/10.1112/S1461157016000012 Published online by Cambridge University Press
+
+=== PDF PAGE 5 ===
+82 s. kapfer
+Proof. Set Qλ := qλ0(1)qλ23(x)∏
+1⩽j⩽22 qλj(αj) and nλ := ∥λ∥. Then αλ =
+(1/((n− nλ)! zλ0))q1n−nλ (1)Qλ|0⟩ and αµ = (1 /((n− nµ)! zµ0))q1n−nµ (1)Qµ|0⟩. Thus the
+coeﬃcient cλµ
+ν in the product expansion is a constant, which depends on ∥λ∥,∥µ∥,∥ν∥, but
+not on n, multiplied by ( n− nν)!/(n− m)! for a certain m ⩽ nλ + nµ. This is a polynomial
+of degree m− nν ⩽ nλ + nµ− nν =∥λ∥ +∥µ∥−∥ ν∥.
+Remark 1.14. If n < ∥λ∥ or n < ∥µ∥, one has αλ = 0 (respectively, αµ = 0). But it is
+still possible that αν̸= 0 in H ∗(S[n]). It seems that, in this case, the polynomial cλµ
+ν always
+becomes zero when evaluated at n. So the cλµ
+ν seem to be universal in the sense that the above
+corollary holds true even without the condition n ⩾∥λ∥,∥µ∥.
+Example 1.15. Here are some explicit examples for illustration. See A.1 for how to compute
+them.
+(1) 1 (2,2) ⌣ α (2)
+i =−2· 1(2)α(1)
+i x(1) + 1(2,2)α(2)
+i + 2· 1(2)α(3)
+i + α(4)
+i for i∈{ 1..22}.
+(2) Let i, j∈{ 1 . . .22}. If i̸= j, then α(2)
+i ⌣ α (1)
+j = α(2)
+i α(1)
+j + 2B(αi, αj)· x(1). Otherwise,
+α(2)
+i ⌣ α (1)
+i = α(3)
+i + α(2,1)
+i + 2B(αi, αi)· x(1).
+(3) Set αλ = 1(2) and αν = x(1). Then cλλ
+ν =−(n− 1).
+(4) Set αλ = 1(2,2) and αν = x(1,1). Then cλλ
+ν = (n− 3)(n− 2)/2.
+Example 1.16. Let i, j be indices, such that B(αi, αj) = 1, B (αi, αi) = 0 = B(αj, αj) and
+let k ⩾ 0. Set αλ = α(1)
+i α(1)
+j x(1k) and αν = x(12k+2). Then cλλ
+ν = 1.
+Proof. It is not hard to see, from the deﬁnition, that, for βj, γj∈ H ∗(S),
+q1(β1) . . . q1(βn)|0⟩ ⌣ q1(γ1) . . . q1(γn)|0⟩ =
+∑
+σ∈Sn
+q1(β1· γσ(1)) . . . q1(βn· γσ(n))|0⟩.
+A combinatorial investigation yields
+(q1(αi)q1(αj)q1(x)kq1(1)k+m|0⟩)2 = (k + m)!2
+m! q1(x)2k+2q1(1)m|0⟩ + other terms.
+Looking at 1.8, the result follows.
+Theorem 1.17. The quotient
+H 2k(S[n], Z)
+Symk H 2(S[n], Z)
+is a free Z-module for n ⩾ k + 2.
+Proof. The idea of the proof is to modify the basis of H 2k(S[n], Z), given in Theorem 1.7,
+in such a way that Symk H 2(S[n], Z) splits as a direct summand.
+Given a free Z-module M with basis (bi)i=1,...,m and a vector v = a1b1 + . . .+ ambm, there is
+another basis of M which contains v if and only if gcd{a1, . . . , am} = 1. More generally, given
+a set of vectors (vi)i=1,...,r, vi = ai1b1 + . . .+ aimbm, we can complete it to a basis of M if and
+only if the r× r-minors of the matrix ( aij)ij share no common divisor. We want to show that
+the canonical basis of Symk H 2(S[n], Z) is such a set.
+A basis of H 2(S[n], Z) is given by the classes α(1)
+i = (1 /(n− 1)!)q1n−1(1)q1(αi)|0⟩, i =
+1, . . . ,22 and 1 (2) = (1/(2(n− 2)!))q(2,1n−2)(1)|0⟩. A power of α(1)
+i looks like (Theorem 1.12)
+(α(1)
+i )k = 1
+(n− k)! q1n−k(1)q1k(αi)|0⟩ + other terms containing qλ(x).
+https://doi.org/10.1112/S1461157016000012 Published online by Cambridge University Press
+
+=== PDF PAGE 6 ===
+products in H ∗(Hilbn(K3), Z) 83
+Now, by the deﬁnition of ψλµ, q1k(αi) = m(k),αi + . . . + k!· m(1k),αi, so
+(α(1)
+i )k = α(k)
+i + other terms. (3)
+Next, we determine the coeﬃcients of 1(k+1) and 1(k,2) in the expansion of (1(2))k. Considering
+Deﬁnition 1.10, we observe that here the graph defect is zero and the adjoint map is trivial, so
+the problem reduces to combinatorics of the symmetric group: the coeﬃcient of 1 (k+1) is the
+number of ways of writing a (k+1)-cycle as a product of k transpositions. A result of D´ enes [2]
+states that this is (k+1)k−1. For the 1(k,2)-coeﬃcient, we have to choose one transposition and
+write a k-cyle as a product of the remaining k− 1 transpositions. The number of possibilities
+is therefore k· kk−2 = kk−1. So
+(1(2))k = (k + 1)k−1· 1(k+1) + kk−1· 1(k,2) + other terms. (4)
+Note that these two coeﬃcients are coprime. Putting the two cases together, one gets, for a
+general element of Symk H 2(S[n], Z), k = k0 + . . . + k22
+(1(2))k0
+22∏
+i=1
+(α(1)
+i )ki = (k0 + 1)k0−1· 1(k0+1)α(k1)
+1 . . . α(k22)
+22
++ kk0−1
+0 · 1(k0,2)α(k1)
+1 . . . α(k22)
+22 + other terms.
+One checks, that this is the only element of Sym k H 2(S[n], Z) having a non-zero coeﬃcient
+at 1 (k0+1)α(k1)
+1 . . . α (k22)
+22 and 1 (k0,2)α(k1)
+1 . . . α (k22)
+22 . Now it is easy to show the existence of a
+complementary basis.
+2. Computational results
+We now give some results in low degrees, obtained by computing multiplication matrices with
+respect to the integral basis of H ∗(S[n], Z). To get their cokernels, one has to reduce them to
+Smith normal form. Both results have been obtained using a computer.
+Remark 2.1. Denote the rank of Hk(S[n], Z) by hk(S[n]).
+• h2(S[n]) = 23 for n ⩾ 2.
+• h4(S[n]) = 276, 299, 300 for n = 2, 3, ⩾ 4, respectively.
+• h6(S[n]) = 23, 2554, 2852, 2875, 2876 for n = 2, 3, 4, 5, ⩾ 6, respectively.
+The algebra generated by classes of degree two is an interesting object to study. For
+cohomology with complex coeﬃcients, Verbitsky has proved, in [ 12], that the cup product
+mapping from Symk H 2(S[n], C) to H 2k(S[n], C) is injective for k ⩽ n. Since there is no torsion,
+one concludes that this also holds for integral coeﬃcients.
+Proposition 2.2. We identify Sym2 H 2(S[n], Z) with its image in H 4(S[n], Z) under the
+cup product mapping. Then
+H 4(S[2], Z)
+Sym2 H 2(S[2], Z)
+∼=
+( Z
+2Z
+)⊕23
+⊕ Z
+5Z , (5)
+H 4(S[3], Z)
+Sym2 H 2(S[3], Z)
+∼= Z
+3Z⊕ Z⊕23, (6)
+H 4(S[n], Z)
+Sym2 H 2(S[n], Z)
+∼= Z⊕24, for n ⩾ 4. (7)
+The 3-torsion part in (6) is generated by the integral class 1(3).
+https://doi.org/10.1112/S1461157016000012 Published online by Cambridge University Press
+
+=== PDF PAGE 7 ===
+84 s. kapfer
+Remark 2.3. The torsion in the case n = 2 was also computed by Boissi` ere et al. [1,
+Proposition 3] using similar techniques. To the best knowledge of the author, the result forn =
+3 is new. The freeness result forn ⩾ 4 has been proved already by Markman, [8, Theorem 1.10],
+using a completely diﬀerent method.
+Proposition 2.4. For triple products of H 2(S[n], Z),
+H 6(S[2], Z)
+Sym3 H 2(S[2], Z)
+∼= Z
+2Z .
+The quotient is generated by the integral class x(2). Moreover,
+H 6(S[3], Z)
+Sym3 H 2(S[3], Z)
+∼=
+( Z
+2Z
+)⊕230
+⊕
+( Z
+36Z
+)⊕22
+⊕ Z
+72Z⊕ Z⊕254,
+H 6(S[4], Z)
+Sym3 H 2(S[4], Z)
+∼= Z
+2Z⊕ Z⊕552.
+For n ⩾ 5, the quotient is free, by Theorem 1.17.
+We study now cup products between classes of degree two and four. The case of S[3] is of
+particular interest.
+Proposition 2.5. The cup product mapping : H 2(S[n], Z)⊗ H 4(S[n], Z)→ H 6(S[n], Z) is
+neither injective (unless n = 0) nor surjective (unless n ⩽ 2).
+H 6(S[3], Z)
+H 2(S[3], Z) ⌣ H 4(S[3], Z)
+∼=
+( Z
+3Z
+)⊕22
+⊕ Z
+3Z , (8)
+H 6(S[4], Z)
+H 2(S[4], Z) ⌣ H 4(S[4], Z)
+∼=
+( Z
+6Z
+)⊕22
+⊕ Z
+108Z⊕ Z
+2Z , (9)
+H 6(S[5], Z)
+H 2(S[5], Z) ⌣ H 4(S[5], Z)
+∼= Z⊕22⊕ Z, (10)
+H 6(S[n], Z)
+H 2(S[n], Z) ⌣ H 4(S[n], Z)
+∼= Z⊕22⊕ Z⊕ Z, n ⩾ 6. (11)
+In each case, the ﬁrst 22 factors of the quotient are generated by the integral classes
+α(1,1,1)
+i − 3· α(2,1)
+i + 3· α(3)
+i + 3· 1(2)α(1,1)
+i − 6· 1(2)α(2)
+i + 6· 1(2,2)α(1)
+i − 3· 1(3)α(1)
+i ,
+for i = 1, . . . ,22. Now deﬁne an integral class
+K :=
+∑
+i̸=j
+B(αi, αj)
+[
+α(1,1)
+i α(1)
+j − 2· α(2)
+i α(1)
+j + 3
+2· 1(2)α(1)
+i α(1)
+j
+]
++
+∑
+i
+B(αi, αi)
+[
+α(1,1,1)
+i − 2· α(2,1)
+i + 3
+2· 1(2)α(1,1)
+i
+]
++ x(2)− 1(2)x(1).
+In the case n = 3, the last factor of the quotient is generated by K.
+In the case n = 4, the class 1(4) generates the 2-torsion factor and K− 38· 1(4) generates
+the 108-torsion factor.
+In the case n = 5, the last factor of the quotient is generated by K− 16· 1(4) + 21· 1(3,2).
+https://doi.org/10.1112/S1461157016000012 Published online by Cambridge University Press
+
+=== PDF PAGE 8 ===
+products in H ∗(Hilbn(K3), Z) 85
+If n ⩾ 6, the last two factors of the quotient are generated over the rationals by K +
+(4/3)(45− n)1(2,2,2)− (48− n)1(3,2) and K + (1/2)(40− n)1(2,2,2)− (1/4)(48− n)1(4). Over
+Z, one has to take appropriate multiples depending on n, such that the coeﬃcients become
+integral numbers.
+Proof. The last assertion for arbitrary n follows from Corollary 1.13. First observe that
+for αλ∈ H 2, αµ∈ H 4, αν ∈ H 6, we have ∥λ∥ ⩽ 2,∥µ∥ ⩽ 4 and ∥ν∥ ⩾ 2, according to
+Lemma 1.9. The coeﬃcients of the cup product matrix are thus polynomials of degree at most
+2+4−2 = 4 and it suﬃces to compute only a ﬁnite number of instances for n. It turns out that
+the maximal degree is one and the cokernel of the multiplication map is given as stated.
+In what follows, we compare some well-known facts about Hilbert schemes of points on K3
+surfaces with our numerical calculations. This means that we have some tests that may justify
+the correctness of our computer program. We now state computational results for the middle
+cohomology group. Since S[n] is a projective variety of complex dimension 2n, Poincar´ e duality
+gives H 2n(S[n], Z) the structure of a unimodular lattice.
+Proposition 2.6. Let L denote the unimodular lattice H 2n(S[n], Z).
+(1) For n = 2, L is an odd lattice of rank 276 and signature 156.
+(2) For n = 3, L is an even lattice of rank 2554 and signature−1152.
+(3) For n = 4, L is an odd lattice of rank 19 298 and signature 7082.
+For n even, L is always odd.
+Proof. The numerical results come from an explicit calculation. For n even, we always have
+the norm-one vector given by Example 1.16, so L is odd. To obtain the signature, we could,
+equivalently, use Hirzebruch’s signature theorem and compute the L-genus of S[n]. For the
+signature, we need nothing but the Pontryagin numbers, which can be derived from the Chern
+numbers of S[n]. These, in turn, are known by Ellingsrud et al. [3, Remark 5.5].
+Another test is to compute the lattice structure of H 2(S[2], Z), with bilinear form given by
+(a, b)↦−→
+∫
+(a ⌣ b ⌣ 1(2) ⌣ 1(2)). The signature of this lattice is 17, as shown by Boissi` ere
+et al. [1, Lemma 6.9].
+Appendix A. Source code
+We give the source code for our computer program. It is available online from https:
+//github.com/s--kapfer/HilbK3 and is also available as online supplementary material from
+the publisher’s website. We used the language Haskell, compiled with the GHC software,
+version 7.6.3. We make use of two external packages: permutation and MemoTrie. The
+project is divided into four modules.
+A.1. How to use the code
+The main module is in the ﬁle HilbK3.hs, which can be opened by GHCI for interactive use.
+It provides an implementation of the ring structure of A[n] = H ∗(S[n], Q), for all n∈ N. It
+computes cup products in a reasonable time up to n = 8. A product of Nakajima operators is
+represented by a pair consisting of a partition of length k and a list of the same length, ﬁlled
+with indices for the basis elements of H ∗(S). For example, the class
+q3(α6)q3(α7)q2(x)q1(α2)q1(1)2|0⟩
+in H 20(S[11]) is written as
+*HilbK3> (PartLambda [3,3,2,1,1,1], [6,7,23,2,0,0]) :: AnBase
+https://doi.org/10.1112/S1461157016000012 Published online by Cambridge University Press
+
+=== PDF PAGE 9 ===
+86 s. kapfer
+Note that the classes 1 ∈ H 0(S) and x∈ H 4(S) have indices 0 and 23 in the code. The
+multiplication in A[n] is implemented by the method multAn.
+The classes from Theorem 1.7 are represented in the same format, as shown in the following
+example. The multiplication in H ∗(S[n], Z) of such classes is implemented by the method
+cupInt.
+Example A.1. We want to compute the results from Example 1.15. We only do one
+particular instance for every example, since the others are similar. By Corollary 1.13, it suﬃces
+to know the values for a ﬁnite number of n to deduce the general case.
+(1) We do the case n = 6, i = 1.
+*HilbK3> let i = 1 :: Int
+*HilbK3> let x = (PartLambda [2,2,1,1], [0,0,0,0]) :: AnBase
+*HilbK3> let y = (PartLambda [2,1,1,1,1], [i,0,0,0,0]) :: AnBase
+*HilbK3> cupInt x y
+[(([2-1-1-1-1],[0,23,1,0,0]),-2),(([2-2-2],[1,0,0]),1),
+(([3-2-1],[1,0,0]),2),(([4-1-1],[1,0,0]),1)]
+(2) We do the case n = 4, i = j = 1.
+*HilbK3> let i = 1 :: Int; let j = 1 :: Int
+*HilbK3> let x = (PartLambda [2,1,1], [i,0,0]) :: AnBase
+*HilbK3> let y = (PartLambda [1,1,1,1], [j,0,0,0]) :: AnBase
+*HilbK3> cupInt x y
+[(([2-1-1],[1,1,0]),1),(([3-1],[1,0]),1)]
+(3) We do the case n = 4.
+*HilbK3> let d = (PartLambda [2,1,1], [0,0,0]) :: AnBase
+*HilbK3> let y = (PartLambda [1,1,1,1], [23,0,0,0]) :: AnBase
+*HilbK3> [ t | t <- cupInt d d, fst t == y]
+[(([1-1-1-1],[23,0,0,0]),-3)]
+(4) We do the case n = 5.
+*HilbK3> let x = (PartLambda [2,2,1], [0,0,0]) :: AnBase
+*HilbK3> let y = (PartLambda [1,1,1,1,1], [23,23,0,0,0]) :: AnBase
+*HilbK3> [ t | t <- cupInt x x, fst t == y]
+[(([1-1-1-1-1],[23,23,0,0,0]),3)]
+A.2. What the code does
+The goal is to multiply two elements inH ∗(S[n], Z). To do this, one has to execute the following
+steps.
+(1) Compute the base change matrices ψρν and ψ−1
+νρ between monomial and power sum
+symmetric functions.
+(2) Provide a basis and the ring structure of A = H ∗(S, Z).
+(3) Create a data structure for elements in A[n] and A{Sn}.
+(4) Implement the multiplication in A{Sn}: that is, the map mπ,τ from Deﬁnition 1.10.
+(5) Implement the symmetrisation A[n] = A{Sn}Sn.
+(6) Use the isomorphism from Theorem 1.11 to get the ring structure of A[n].
+(7) Write an element in H ∗(S[n], Z) as a linear combination of products of creation operators
+acting on the vacuum, using Theorem 1.7.
+We now describe where to ﬁnd these steps in the code.
+(1) The ψρν are computed by the function monomialPower in the module
+SymmetricFunctions.hs, using the theory from [ 5, § 3.7]. The idea is to use the scalar
+product on the space of symmetric functions, so that the power sums become orthogonal:
+https://doi.org/10.1112/S1461157016000012 Published online by Cambridge University Press
+
+=== PDF PAGE 10 ===
+products in H ∗(Hilbn(K3), Z) 87
+(pλ, pµ) = zλδλµ. The values for ( pλ, mµ) are given by [ 5, Lemma 3.7.1], so we know how to
+get the matrix ψ−1
+νρ . Since it is triangular with respect to some ordering of partitions, matrix
+inversion is easy.
+(2) The ring structure of H ∗(S, Z) is stored in the module K3.hs. The only non-trivial
+multiplications are the products of two elements in H 2(S, Z), where the intersection matrix
+is composed by the matrices for the hyperbolic and the E8 lattice. The cup product and the
+adjoint comultiplication, from Deﬁnition 1.6, are implemented by the methods cup and cupAd.
+(3) The data structures for basis elements of A[n] and A{Sn} are given by AnBase and SnBase
+in the module HilbK3.hs. Linear combinations of basis elements are always stored as lists of
+pairs, each pair consisting of a basis element and a scalar factor.
+(4) The function mπ,τ , from Deﬁnition 1.10, is computed by the method multSn. It contains
+the following substeps. First, the orbits of ⟨π, τ⟩ are computed recursively by glueing together
+the orbits of π with an orbit of τ if they have non-empty intersection. Second, the composition
+πτ is computed using a method from the external library Data.Permute. Third, the functions
+fπ,⟨π,τ ⟩ and f⟨π,τ ⟩,πτ are computed using the (co-)products from K3.hs.
+(5) The symmetrisation morphism is implemented by toSn. We do not know a better way
+to do this other than the naive approach which is summation over all elements in Sn.
+(6) The multiplication in A[n] is carried out by the method multAn.
+(7) The base change matrices between the canonical base of A[n] and the base of H ∗(S[n], Z)
+are given by creaInt and intCrea. By composing multAn with these matrices, one gets the
+desired multiplication in H ∗(S[n], Z), called cupInt.
+A.3. Module for cup product structure of K3 surfaces
+Here the hyperbolic and the E8 lattice and the bilinear form on the cohomology of a K3 surface
+are deﬁned. Furthermore, cup products and their adjoints are implemented.
+−− a module for the integer cohomology structure of a K3 surface
+moduleK3 (
+K3Domain,
+degK3,
+rangeK3 ,
+oneK3, xK3,
+cupLSparse ,
+cupAdLSparse
+) where
+import Data. Array
+import Data. List
+import Data.MemoTrie
+−− type for indexing the cohomology base
+type K3Domain = Int
+rangeK3 = [ 0 . . 2 3 ] : : [K3Domain]
+oneK3 = 0 : : K3Domain
+xK3 = 23 : : K3Domain
+rangeK3Deg : : Int−> [K3Domain]
+rangeK3Deg 0 = [ 0 ]
+rangeK3Deg 2 = [ 1 . . 2 2 ]
+rangeK3Deg 4 = [23]
+rangeK3Deg = [ ]
+delta i j = i f i= =jthen 1 else 0
+−− degree of the element of Hˆ ∗(S) , indexed by i
+https://doi.org/10.1112/S1461157016000012 Published online by Cambridge University Press
+
+=== PDF PAGE 11 ===
+88 s. kapfer
+degK3 : : ( N u md) => K3Domain−> d
+degK3 0 = 0
+degK3 23 = 4
+degK3 i = i f i >0 & & i < 23 then 2 else error ”Not a K3 index”
+−− the negative e8 i n t e r s e c t i o n matrix
+e8 = array ((1 ,1) ,(8 ,8)) $
+zip [( i , j ) | i <− [ 1 . . 8 ] , j <−[1..8]] [
+−2, 1 , 0 , 0 , 0 , 0 , 0 , 0 ,
+1 ,−2, 1 , 0 , 0 , 0 , 0 , 0 ,
+0 , 1 , −2, 1 , 0 , 0 , 0 , 0 ,
+0 , 0 , 1 , −2, 1 , 0 , 0 , 0 ,
+0 , 0 , 0 , 1 , −2, 1 , 1 , 0 ,
+0 , 0 , 0 , 0 , 1 , −2, 0 , 1 ,
+0 , 0 , 0 , 0 , 1 , 0 , −2, 0 ,
+0 , 0 , 0 , 0 , 0 , 1 , 0 , −2 : : Int ]
+−− the inverse matrix of e8
+inve8 = array ((1 ,1) ,(8 ,8)) $
+zip [( i , j ) | i <− [ 1 . . 8 ] , j <−[1..8]] [
+−2, −3, −4, −5, −6, −4, −3, −2,
+−3, −6, −8,−10,−12, −8, −6, −4,
+−4, −8,−12,−15,−18,−12, −9, −6,
+−5,−10,−15,−20,−24,−16,−12, −8,
+−6,−12,−18,−24,−30,−20,−15,−10,
+−4, −8,−12,−16,−20,−14,−10, −7,
+−3, −6, −9,−12,−15,−10, −8, −5,
+−2, −4, −6, −8,−10, −7, −5,−4 : : Int ]
+−− hyperbolic l a t t i c e
+u 1 2 = 1
+u 2 1 = 1
+u 1 1 = 0
+u 2 2 = 0
+u i j = undefined
+−− cup product pairing for K3 cohomology
+bilK3 : : K3Domain −> K3Domain−> Int
+bilK3 i i j j = let
+( i , j ) = ( min i i jj , m a xi i j j )
+in
+i f ( i < 0) || ( j > 23) then undefined else
+i f ( i = = 0) then delta j 23 else
+i f ( i >= 1) & & ( j <= 2) then u i j else
+i f ( i >= 3) & & ( j <= 4) then u ( i−2) ( j−2) else
+i f ( i >= 5) & & ( j <= 6) then u ( i−4) ( j−4) else
+i f ( i >= 7) & & ( j <= 14) then e8 ! (( i −6), ( j−6)) else
+i f ( i >= 15) & & ( j<= 22) then e8 ! (( i −14), ( j −14)) else
+0
+−− inverse matrix to cup product pairing
+bilK3inv : : K3Domain −> K3Domain−> Int
+bilK3inv i i j j = let
+( i , j ) = ( min i i jj , m a xi i j j )
+in
+i f ( i < 0) || ( j > 23) then undefined else
+i f ( i = = 0) then delta j 23 else
+i f ( i >= 1) & & ( j <= 2) then u i j else
+i f ( i >= 3) & & ( j <= 4) then u ( i−2) ( j−2) else
+i f ( i >= 5) & & ( j <= 6) then u ( i−4) ( j−4) else
+i f ( i >= 7) & & ( j <= 14) then inve8 ! (( i −6), ( j−6)) else
+i f ( i >= 15) & & ( j<= 22) then inve8 ! (( i −14), ( j −14)) else
+0
+https://doi.org/10.1112/S1461157016000012 Published online by Cambridge University Press
+
+=== PDF PAGE 12 ===
+products in H ∗(Hilbn(K3), Z) 89
+−− cup product with two f a c t o r s
+−− a i ∗ a j = sum [ cup k ( i , j ) ∗ a k | k<− rangeK3 ]
+cup : : K3Domain −> (K3Domain,K3Domain)−> Int
+cup = memo2 r where
+r k (0 , i ) = delta k i
+r k ( i ,0) = delta k i
+r ( i ,23) = 0
+r (23 , i ) = 0
+r 23 ( i , j ) = bilK3 i j
+r = 0
+−− indices where the cup product does not vanish
+cupNonZeros : : [ (K3Domain,(K3Domain,K3Domain)) ]
+cupNonZeros = [ (k,( i , j )) | i<−rangeK3 , j <−rangeK3 , k <−rangeK3 , cup k ( i , j ) /= 0]
+−− cup product of a l i s t of f a c t o r s
+cupLSparse : : [K3Domain] −> [(K3Domain,Int )]
+cupLSparse = cu . f i l t e r (/=oneK3) where
+cu [ ] = [(oneK3, 1 ) ] ; cu [ i ] = [( i , 1 ) ]
+cu [ i , j ] = [(k, z) | k<−rangeK3 , let z = cup k ( i , j ) , z/=0]
+cu = [ ]
+−− comultiplication , adjoint to the cup product
+−− Del a k = sum [cupAd ( i , j ) k ∗ a i ‘ tensor ‘ a k | i<−rangeK3 , j <−rangeK3 ]
+cupAd : : (K3Domain,K3Domain)−> K3Domain−> Int
+cupAd = memo2 ad where
+ad ( i , j ) k = negate $ s u m[ bilK3inv i i i ∗ bilK3inv j j j
+∗ cup kk ( ii , j j ) ∗ bilK3 kk k |(kk ,( ii , j j )) <− cupNonZeros ]
+−− n−f o l d comultiplication
+cupAdLSparse : : Int−> K3Domain−> [ ( [K3Domain] ,Int )]
+cupAdLSparse = memo2 cals where
+cals 0 k = i f k = = xK3then [ ( [ ] , 1 ) ]else [ ]
+cals 1 k = [ ( [ k] , 1)]
+cals 2 k = [ ( [ i , j ] , ca) | i<−rangeK3 , j <−rangeK3 , let ca = cupAd ( i , j ) k, ca /=0]
+cals n k = clean [( i : r ,v ∗w) | ( [ i , j ] ,w )<−cupAdLSparse 2 k, (r ,v) <−cupAdLSparse(n−1) j ]
+clean = m a p(\g−> ( fst$head g , sum$( m a p sndg ) ) ) .groupBycg .sortBy cs
+cs = (. fst ). compare. fst ; cg = (. fst ).(==). fst
+A.4. Module for handling partitions
+This module deﬁnes the data structures and elementary methods to handle partitions. We
+write both partitions as descending sequences of integers ( λ-notation) and as sequences of
+multiplicities (α-notation).
+{−# L A N G U A G E TypeOperators , TypeFamilies #−}
+−− implements data structure and basic functions for p a r t i t i o n s
+module Partitions where
+import Data.Permute
+import Data. M a y b e
+import qualified Data. List
+import Data.MemoTrie
+class (E q a , HasTrie a) => Partition a where
+−− length of a p a r t i t i o n
+partLength : : Integral i => a−> i
+−− weight of a p a r t i t i o n
+partWeight : : Integral i => a−> i
+https://doi.org/10.1112/S1461157016000012 Published online by Cambridge University Press
+
+=== PDF PAGE 13 ===
+90 s. kapfer
+−− degree of a p a r t i t i o n = weight − length
+partDegree : : Integral i => a−> i
+partDegree p = partWeight p − partLength p
+−− the z , occuring in a l l papers
+partZ : : Integral i => a−> i
+partZ = partZ . partAsAlpha
+−− conjugated p a r t i t i o n
+partConj : : a −> a
+partConj = res . partAsAlpha where
+make l (m: r ) = l : make ( l −m) r
+make [ ] = [ ]
+res (PartAlpha r ) = partFromLambda $ PartLambda $ make ( s u mr ) r
+−− empty p a r t i t i o n
+partEmpty : : a
+−− transformation to alpha −notation
+partAsAlpha : : a −> PartitionAlpha
+−− transformation from alpha −notation
+partFromAlpha : : PartitionAlpha −> a
+−− transformation to lambda −notation
+partAsLambda : : a −> PartitionLambda Int
+−− transformation from lambda −notation
+partFromLambda : : ( Integral i , HasTrie i ) => PartitionLambda i −> a
+−− a l l permutationens of a certain cycle type
+partAllPerms : : a −> [Permute]
+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−
+−− data type for p a r t i t i o n e s in alpha −notation
+−− ( l i s t of m u l t i p l i c i t i e s )
+newtypePartitionAlpha = PartAlpha { alphList : : [ Int ] }
+−− reimplementation of the zipWith function
+zipAlpha op (PartAlpha a) (PartAlpha b) = PartAlpha $ z a b where
+z (x: a) (y:b) = op x y : z a b
+z [ ] (y:b) = op 0 y : z [ ] b
+z (x: a) [ ] = op x 0 : z a [ ]
+z [ ] [ ] = [ ]
+−− reimplementation of the ( : ) operator
+alphaPrepend 0 (PartAlpha [ ] ) = partEmpty
+alphaPrepend i (PartAlpha r ) = PartAlpha ( i : r )
+−− a l l p a r t i t i o n s of a given weight
+partOfWeight : : Int−> [ PartitionAlpha ]
+partOfWeight = let
+build n 1 acc = [ alphaPrepend n acc ]
+build n c acc = concat [ build (n −i∗c) (c −1) (alphaPrepend i acc) | i <−[0.. div n c ] ]
+a 0 = [ PartAlpha [ ] ]
+a w = i f w<0 then [ ] else build w w partEmpty
+in memo a
+−− a l l p a r t i t i o n s of given weight and length
+partOfWeightLength = let
+build 0 0 = [partEmpty]
+build w 0 = [ ]
+build w l c = i f l > w || c>w then [ ] else
+concat [ m a p(alphaPrepend i ) $ build (w −i∗c) ( l−i ) (c+1)
+| i <− [ 0 . .min l $ div w c ] ]
+a w l = i f w<0 || l <0 then [ ] else build w l 1
+https://doi.org/10.1112/S1461157016000012 Published online by Cambridge University Press
+
+=== PDF PAGE 14 ===
+products in H ∗(Hilbn(K3), Z) 91
+in memo2 a
+−− determines the cycle type of a permutation
+cycleType : : Permute −> PartitionAlpha
+cycleType p = let
+lengths = Data. List . sort $ m a pData. List . length $ cycles p
+count i 0 [ ] = partEmpty
+count i m [ ] = PartAlpha [m]
+count i m (x: r ) = i f x = =ithen count i (m +1) r
+else alphaPrepend m (count ( i+1) 0 (x: r ))
+in count 1 0 lengths
+−− constructs a permutation from a p a r t i t i o n
+partPermute : : Partition a => a−> Permute
+partPermute = let
+make l n acc (PartAlpha x) = f x where
+f [ ] = cyclesPermute n acc
+f (0: r ) = make ( l+1) n acc $ PartAlpha r
+f ( i : r ) = make l (n +l ) ([n . . n +l −1]:acc) $ PartAlpha (( i −1):r )
+in make 1 0 [ ] . partAsAlpha
+instance Partition PartitionAlpha where
+partWeight (PartAlpha r ) = fromIntegral $ s u m$ zipWith (∗) r [ 1 . . ]
+partLength (PartAlpha r ) = fromIntegral $ s u mr
+partEmpty = PartAlpha [ ]
+partZ (PartAlpha l ) = foldr (∗) 1 $
+zipWith (\a i−> factorial a ∗ i ˆa) ( m a p fromIntegral l ) [ 1 . . ] where
+factorial n = i f n==0then 1 else n∗factorial (n −1)
+partAsAlpha = id
+partFromAlpha = id
+partAsLambda (PartAlpha l ) = PartLambda $ reverse $ f 1 l where
+f i [ ] = [ ]
+f i (0: r ) = f ( i+1) r
+f i (m: r ) = i : f i ((m −1):r )
+partFromLambda = lambdaToAlpha
+partAllPerms = partAllPerms . partAsLambda
+instance E q PartitionAlpha where
+PartAlpha p = = PartAlpha q = findEq p q where
+findEq [ ] [ ] = True
+findEq (a :p) (b:q) = (a = = b) & & findEq p q
+findEq [ ] q = isZero q
+findEq p [ ] = isZero p
+isZero = a l l (==0)
+instance O r d PartitionAlpha where
+comparea1 a2 = compare(partAsLambda a1) (partAsLambda a2)
+instance S h o wPartitionAlpha where
+show p = let
+leftBracket = ” ( | ”
+rightBracket = ” |) ”
+rest [ ] = rightBracket
+rest [ i ] = show i + + rightBracket
+rest ( i :q) = show i + + ” ,” + + rest q
+in leftBracket + + rest ( alphList p)
+instance HasTrie PartitionAlpha where
+newtypePartitionAlpha : −>: a = TrieType { unTrieType : : [ Int ] :−>: a }
+trie f = TrieType $ trie $ f . PartAlpha
+untrie f = untrie (unTrieType f ) . alphList
+enumerate f = m a p(\(a ,b) −> (PartAlpha a ,b)) $ enumerate (unTrieType f )
+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−
+https://doi.org/10.1112/S1461157016000012 Published online by Cambridge University Press
+
+=== PDF PAGE 15 ===
+92 s. kapfer
+−− data type for p a r t i t i o n s in lambda −notation
+−− ( descending l i s t of p o s i t i v e numbers)
+newtypePartitionLambda i = PartLambda { lamList : : [ i ] }
+lambdaToAlpha : : Integral i => PartitionLambda i −> PartitionAlpha
+lambdaToAlpha (PartLambda [ ] ) = PartAlpha [ ]
+lambdaToAlpha (PartLambda ( s :p)) = lta 1 s p [ ] where
+lta 0 a = PartAlpha a
+lta m c [ ] a = lta 0 (c −1) [ ] (m: a)
+lta m c ( s :p) a = i f c= =sthen lta (m +1) c p a else
+lta 0 (c −1) ( s :p) (m: a)
+instance ( Integral i , HasTrie i ) => Partition (PartitionLambda i ) where
+partWeight (PartLambda r ) = fromIntegral $ s u mr
+partLength (PartLambda r ) = fromIntegral $ length r
+partEmpty = PartLambda [ ]
+partAsAlpha = lambdaToAlpha
+partAsLambda (PartLambda r ) = PartLambda $ m a p fromIntegral r
+partFromAlpha (PartAlpha l ) = PartLambda $ reverse $ f 1 l where
+f i [ ] = [ ]
+f i (0: r ) = f ( i+1) r
+f i (m: r ) = i : f i ((m −1):r )
+partFromLambda (PartLambda r ) = PartLambda $ m a p fromIntegral r
+partAllPerms (PartLambda l ) = it $ Just $ permute $ partWeight $ PartLambda l where
+it ( Just p) = i f Data. List . sort (m a p length$ cycles p) = = r
+then p : it ( next p) else it ( next p)
+it Nothing= [ ]
+r = m a p fromIntegral$ reverse l
+instance (E q i , N u mi ) => E q (PartitionLambda i ) where
+PartLambda p = = PartLambda q = findEq p q where
+findEq [ ] [ ] = True
+findEq (a :p) (b:q) = (a = = b) & & findEq p q
+findEq [ ] q = isZero q
+findEq p [ ] = isZero p
+isZero = a l l (==0)
+instance (O r di , N u mi ) => O r d(PartitionLambda i ) where
+comparep1 p2 = i f weighteq = = E Q then comparel1 l2 else weighteq where
+(PartLambda l1 , PartLambda l2 ) = (p1, p2)
+weighteq = compare(s u ml1 ) ( s u ml2 )
+instance (S h o wi ) => S h o w(PartitionLambda i ) where
+show (PartLambda p) = ” [ ” + + s + + ” ] ”where
+s = concat $ Data. List . intersperse ”−” $ m a p showp
+instance HasTrie i => HasTrie (PartitionLambda i ) where
+newtype (PartitionLambda i ) : −>: a = TrieTypeL { unTrieTypeL : : [ i ] : −>: a }
+trie f = TrieTypeL $ trie $ f . PartLambda
+untrie f = untrie (unTrieTypeL f ) . lamList
+enumerate f = m a p(\(a ,b) −> (PartLambda a ,b)) $ enumerate (unTrieTypeL f )
+A.5. Module for coeﬃcients on symmetric functions
+This module provides only the base change matrices ψλµ and ψ−1
+µλ , from Deﬁnition 1.2.
+−− A module implementing base change matrices for symmetric functions
+module SymmetricFunctions(
+monomialPower,
+powerMonomial,
+factorial
+https://doi.org/10.1112/S1461157016000012 Published online by Cambridge University Press
+
+=== PDF PAGE 16 ===
+products in H ∗(Hilbn(K3), Z) 93
+) where
+import Data. List
+import Data.MemoTrie
+import Data. Ratio
+import Partitions
+−− binomial c o e f f i c i e n t s
+choose n k = ch1 n k where
+ch1 = memo2 ch
+ch 0 0 = 1
+ch n k = i f n<0 || k<0 then 0 else i f k> div n 2 + 1 then ch1 n (n −k) else
+ch1(n−1) k + ch1 (n −1) (k−1)
+−− multinomial c o e f f i c i e n t s
+multinomial 0 [ ] = 1
+multinomial n [ ] = 0
+multinomial n (k: r ) = choose n k ∗ multinomial (n −k) r
+−− f a c t o r i a l function
+factorial 0 = 1
+factorial n = n ∗factorial (n −1)
+−− http ://w w w.mat. univie . ac . at/˜ s l c /wpapers/s68vortrag/ALCoursSf2 . pdf , p . 48
+−− scalar product between monomial symmetric functions and power sums
+monomialScalarPower moI poI = ( s ∗ partZ poI) ‘ div ‘ quo where
+mI = partAsAlpha moI
+s = s u m[ a∗ moebius b | (a ,b)<−finerPart mI (partAsLambda poI )]
+quo = product[ factorial i | let PartAlpha l = mI, i <−l ]
+nUnder 0 [ ] = [ [ ] ]
+nUnder n [ ] = [ ]
+nUnder n ( r : profile ) = concat[m a p( i :) $ nUnder (n −i ) profile | i <−[0..min n r ] ]
+finerPart (PartAlpha a) (PartLambda l ) = nub [( a ‘div ‘ sym sb , sb)
+| (a ,b)<−fp 1 a l , let sb = sort b] where
+sym = s 0 [ ]
+s n acc [ ] = factorial n
+s n acc (a : o) = i f a = =accthen s (n+1) acc o else factorial n ∗ s 1 a o
+fp i [ ] l = i f a l l (==0) l then [ ( 1 , [ [ ]| x<−l ] ) ] else [ ]
+fp i (0: ar) l = fp ( i+1) ar l
+fp i (m: ar) l = [( v ∗multinomial m p, addprof p op)
+| p <− nUnder m ( m a p( f l i p div i ) l ) ,
+(v,op) <− fp ( i+1) ar ( zipWith (\ j m m−> j−m m∗ i ) l p)] where
+addprof = zipWith (\m m l−> replicate m m i + + l )
+moebius l = product [(−1)ˆc ∗ factorial c | m<−l , let c = length m− 1]
+−− base change matrix from monomials to power sums
+−− no integer c o e f f i c i e n t s
+−− m j = sum [ p i ∗ powerMonomial i j | i<−p a r t i t i o n s ]
+powerMonomial : : ( Partition a , Partition b) => a−>b−>Ratio Int
+powerMonomial poI moI = monomialScalarPower moI poI % partZ poI
+−− base change matrix from power sums to monomials
+−− p j = sum [ m i ∗ monomialPower i j | i<−p a r t i t i o n s ]
+monomialPower : : ( Partition a , Partition b, N u mi ) => a−>b−>i
+monomialPower lambda mu = fromIntegral $ numerator$
+memoizedMonomialPower (partAsLambda lambda) (partAsLambda mu)
+memoizedMonomialPower = memo2 mmp1where
+mmp1 l m = i f partWeight l = = partWeight m then mmp2 (partWeight m) l m else 0
+mmp2 w l m = invertLowerDiag ( m a ppartAsLambda $ partOfWeight w) powerMonomial l m
+−− inversion of lower triangular matrix
+invertLowerDiag vs a = ild where
+ild = memo2 inv
+delta i j = i f i= =jthen 1 else 0
+https://doi.org/10.1112/S1461157016000012 Published online by Cambridge University Press
+
+=== PDF PAGE 17 ===
+94 s. kapfer
+inv i j | i<j = 0
+| otherwise = ( delta i j − s u m[ a i k ∗ ild k j | k<−vs , i >k , k >= j ]) / a i i
+A.6. Module implementing cup products for Hilbert schemes
+This is our main module. We implement the algebraic model developed by Lehn and Sorger
+and the change of base due to Qin and Wang. The cup product on the Hilbert scheme is
+computed by the function cupInt.
+−− implements the cup product according to Lehn −Sorger and Qin −Wang
+moduleHilbK3 where
+import Data. Array
+import Data.MemoTrie
+import Data.Permute hiding ( sort , sortBy)
+import Data. List
+import qualified Data.IntMap as IntMap
+import qualified Data. Set as Set
+import Data. Ratio
+import K3
+import Partitions
+import SymmetricFunctions
+−− elements in Aˆ[n ] are indexed by partitions , with attached elements of the base K3
+−− i s also used for indexing Hˆ ∗( Hilb , Z)
+type AnBase = (PartitionLambda Int , [K3Domain])
+−− elements in A {S n} are indexed by permutations , in cycle notation ,
+−− where to each cycle an element of the base K3 i s attached , see L −S (2.5)
+type SnBase = [ ( [ Int ] ,K3Domain)]
+−− an equivalent to partZ with painted p a r t i t i o n s
+−− counts m u l t i p l i c i t e s that occur , when the symmetrization operator i s applied
+anZ : : AnBase −> Int
+anZ (PartLambda l , k) = comp 1 (0 , undefined) 0 $ zip l k where
+comp acc old m (e@(x, ): r ) | e= =old = comp (acc∗x) old (m +1) r
+| otherwise = comp (acc ∗x∗factorial m) e 1 r
+comp acc m [ ] = factorial m ∗ acc
+−− i n j e c t i o n of Aˆ[n ] in A {S n} , see L −S 2.8
+−− returns a symmetrized vector of A {S n}
+toSn : : AnBase −> ([ SnBase] , Int)
+toSn = makeSn where
+allPerms = memo p where
+p n = m a p(array (0 ,n−1). zip [ 0 . . ] ) (permutations [ 0 . . n −1])
+shape l = ( m a p( forth IntMap . ! ) l , IntMap. fromList $ zip [ 1 . . ] sl ) where
+sl = m a phead$ group $ sort l ;
+forth = IntMap. fromList$ zip sl [ 1 . . ]
+symmetrize : : AnBase −> ( [ [ ( [Int ] ,K3Domain) ] ] ,Int)
+symmetrize (part , l ) = (perms , toInt $ factorial n % length perms) where
+perms = nub [ sortSn$ zipWith (\c cb −>(ordCycle $ m a p(p!) c , cb) ) cyc l
+| p <− allPerms n]
+cyc = sortBy ( ( .length ). f l i p compare. length) $ cycles $ partPermute part
+n = partWeight part
+ordCycle cyc = take l $ drop p $ cycle cyc where
+(m,p, l ) = foldl findMax (−1,−1,0) cyc
+findMax (m,p, l ) ce = i f m<ce then (ce , l , l+1) else (m,p, l+1)
+sortSn = sortBy compareSn where
+compareSn (cyc1 , class1 ) (cyc2 , class2 ) = let
+cL = compare l2 $ length cyc1 ; l2 = length cyc2
+cC = compare class2 class1
+in i f cL /= E Q then cL else
+https://doi.org/10.1112/S1461157016000012 Published online by Cambridge University Press
+
+=== PDF PAGE 18 ===
+products in H ∗(Hilbn(K3), Z) 95
+i f cC /= E Q thencC else compare cyc2 cyc1
+mSym = memo symmetrize
+makeSn (part , l ) = ([ [( z ,im IntMap . ! k) | (z ,k) <− op ] | op <− res ] ,m) where
+( repl ,im) = shape l
+( res ,m) = mSym (part , repl )
+−− m u l t i p l i c a t i o n in A{S n}k , see L −S, Prop 2.13
+multSn : : SnBase −> SnBase−> [( SnBase, Int )]
+multSn l1 l2 = tensor $ m a pm cmno where
+−− determines the o r b i t s of the group generated by pi , tau
+commonOrbits : : Permute −> Permute−> [ [Int ] ]
+commonOrbits pi tau = Data. List . sortBy ( ( .length ). compare. length) orl where
+orl = foldr (uni [ ] [ ] ) ( cycles pi) ( cycles tau)
+uni i ni c [ ] = i : ni
+uni i ni c (k: o) = i f Data. List . intersect c k = = [ ]
+then uni i (k: ni ) c o else uni ( i+ + k) ni c o
+pi1 = cyclesPermute n $ cy1 ; cy1 = m a p fst l1 ; n = s u m$ m a p lengthcy1
+pi2 = cyclesPermute n $ m a p fst l2
+set1 = m a p(\(a ,b)−>(Set . fromList a ,b)) l1 ;
+set2 = m a p(\(a ,b)−>(Set . fromList a ,b)) l2
+compose s t = swapsPermute ( m a x( size s ) ( size t )) (swaps s + + swaps t )
+tau = compose pi1 pi2
+cyt = cycles tau ;
+cmno = m a pSet . fromList $ commonOrbits pi1 pi2 ;
+m or = fdown where
+sset12 = [xv | xv <−set1+ +set2 , Set . isSubsetOf ( fst xv) or]
+−− fup and fdown correspond to the images of the maps described in L −S (2.8)
+fup = cupLSparse $ m a p sndsset12 + + replicate def xK3
+t = [ c | c<−cyt , Set . isSubsetOf (Set . fromList c) or]
+fdown = [( zip t l ,v ∗w∗24ˆdef )| (r ,v) <− fup , ( l ,w )<−cupAdLSparse( length t ) r ]
+def = toInt (( Set . size or + 2 − length sset12 − length t)%2)
+−− tensor product for a l i s t of arguments
+tensor : : N u ma => [ [ ( [ b] , a ) ] ]−> [ ( [ b] , a )]
+tensor [ ] = [ ( [ ] , 1 ) ]
+tensor ( t : r ) = [( y + + x,w∗v) |(x,v) <−tensor r , (y,w) <− t ]
+−− m u l t i p l i c a t i o n in Aˆ[n ]
+multAn : : AnBase −> AnBase−> [(AnBase, Int )]
+multAn a = multb where
+( asl ,m) = toSn a
+toAn sn =(PartLambda l , k) where
+( l ,k)= unzip$ sortBy ( f l i p compare)$ m a p(\(c ,k)−>(length c ,k)) sn
+multb (pb, lb ) = m a pungroup$ groupBy( ( .fst ).(==). fst ) $sort elems where
+ungroup g@((an, ): ) = (an, m ∗(s u m$ m a p sndg) )
+bs = zip (sortBy ( ( .length ). f l i p compare. length) $cycles $ partPermute pb) lb
+elems = [(toAn cs ,v) | as <− asl , (cs ,v) <− multSn as bs ]
+−− integer base to ordinary base , see Q −W , T h m 1.1
+intCrea : : AnBase −> [(AnBase, Ratio Int )]
+intCrea = m a pmakeAn. tensor . construct where
+memopM = memo p M
+p M pa = [( pl ,v) | p@(PartLambda pl)<−m a ppartAsLambda$ partOfWeight (partWeight pa) ,
+let v = powerMonomial p pa, v/=0]
+construct pl = onePart pl : xPart pl :
+[ [( zip l $ repeat a ,v )| ( l ,v)<− memopM (subpart pl a )] |a<−[1..22]]
+onePart pl = [( zip l$ repeat oneK3, 1%partZ p)] where
+p@(PartLambda l ) = subpart pl oneK3
+xPart pl = [( zip l$ repeat xK3, 1)] where
+(PartLambda l ) = subpart pl xK3
+makeAn ( list ,v) = ((PartLambda x,y) ,v) where
+(x,y) = unzip$ sortBy ( f l i p compare) l i s t
+−− ordinary base to integer base , see Q −W , T h m 1.1
+https://doi.org/10.1112/S1461157016000012 Published online by Cambridge University Press
+
+=== PDF PAGE 19 ===
+96 s. kapfer
+creaInt : : AnBase −> [(AnBase, Int )]
+creaInt = m a pmakeAn. tensor . construct where
+m e m o m P = memo m P
+m P pa = [( pl ,v) | p@(PartLambda pl)<−m a ppartAsLambda$ partOfWeight (partWeight pa) ,
+let v = monomialPower p pa, v/=0]
+construct pl = onePart pl : xPart pl :
+[ [( zip l $ repeat a ,v )| ( l ,v)<− m e m o m P (subpart pl a )]|a<−[1..22]]
+onePart pl = [( zip l$ repeat oneK3, partZ p)] where
+p@(PartLambda l ) = subpart pl oneK3
+xPart pl = [( zip l$ repeat xK3, 1)] where
+(PartLambda l ) = subpart pl xK3
+makeAn ( list ,v) = ((PartLambda x,y) ,v) where
+(x,y) = unzip$ sortBy ( f l i p compare) l i s t
+−− cup product for i n t e g r a l c l a s s e s
+cupInt : : AnBase −> AnBase−> [(AnBase, Int )]
+cupInt a b = [( s , toInt z )| (s , z) <− y] where
+ia = intCrea a ; ib = intCrea b
+x = sparseNub [( e ,v ∗w∗fromIntegral z) | (p,v) <− ia ,
+let m = multAn p, (q,w) <− ib , (e , z) <− m q]
+y = sparseNub [( s ,v ∗fromIntegral w) | (e ,v) <− x, (s ,w) <− creaInt e ]
+−− helper function , adds duplicates in a sparse vector
+sparseNub : : ( N u ma) => [(AnBase, a )] −> [(AnBase, a )]
+sparseNub = m a p(\g−>(fst$head g , s u m$map snd g ) ) .groupBy( ( .fst ).(==). fst ).
+sortBy ( ( .fst ). compare. fst )
+−− cup product for i n t e g r a l c l a s s e s from a l i s t of f a c t o r s
+cupIntList : : [AnBase] −> [(AnBase, Int )]
+cupIntList = makeInt . ci . cL where
+cL [b] = intCrea b
+cL (b: r ) = x where
+ib = intCrea b
+x = sparseNub [( e ,v ∗w∗fromIntegral z) |
+(p,v) <− cL r , let m = multAn p, (q,w) <− ib , (e , z) <−m q]
+makeInt l = [( e , toInt z) | (e , z) <− l ]
+ci l = sparseNub [( s ,v ∗fromIntegral w) | (e ,v) <− l , (s ,w) <− creaInt e ]
+−− degree of a base element of cohomology
+degHilbK3 : : AnBase −> Int
+degHilbK3 (lam, a) = 2 ∗partDegree lam + s u m[degK3 i | i<− a ]
+−− base elements in Hilbˆn(K3) of degree d
+hilbBase : : Int−> Int−> [AnBase]
+hilbBase = memo2 hb where
+hb n d = sort $map ((\(a ,b)−>(PartLambda a ,b) ) .unzip) $ hilbOperators n d
+−− a l l p o s s i b l e combinations of creation operators of weight n and degree d
+hilbOperators : : Int−> Int−> [ [ ( Int ,K3Domain) ] ]
+hilbOperators = memo2 hb where
+hb 0 0 = [ [ ] ] −− empty product of operators
+hb n d = i f n<0 || odd d || d<0 then [ ] else
+nub $ m a p(Data. List . sortBy ( f l i p compare)) $ f n d
+f n d = [(nn,oneK3):x | nn <−[1..n] , x <−hilbOperators (n −nn)(d−2∗nn+2)] + +
+[(nn, a ):x | nn<−[1..n] , a <−[1..22], x <−hilbOperators (n −nn)(d−2∗nn)] + +
+[(nn,xK3):x | nn <−[1..n] , x <−hilbOperators (n −nn)(d−2∗nn−2)]
+−− helper function
+subpart : : AnBase −> K3Domain−> PartitionLambda Int
+subpart (PartLambda pl , l ) a = PartLambda $ sb pl l where
+sb [ ] = [ ]
+sb pl [ ] = sb pl [ 0 , 0 . . ]
+sb (e : pl ) ( la : l ) = i f la = = a then e : sb pl l else sb pl l
+https://doi.org/10.1112/S1461157016000012 Published online by Cambridge University Press
+
+=== PDF PAGE 20 ===
+products in H ∗(Hilbn(K3), Z) 97
+−− converts from Rational to Int
+toInt : : Ratio Int −> Int
+toInt q = i f n ==1 then z else error ”not integral” where
+(z ,n) =( numeratorq, denominatorq)
+Acknowledgements. The author thanks Samuel Boissi` ere and Marc Nieper-Wißkirchen for
+their supervision and many helpful comments. He also thanks Gr´ egoire Menet for stimulating
+proposals and the Laboratoire de Math´ ematiques et Applications of the university of Poitiers
+for its hospitality. This work was partially supported by a DAAD grant.
+References
+1. S. Boissi`ere, M. Nieper-Wißkirchen and A. Sarti, ‘Smith theory and irreducible holomorphic symplectic
+manifolds’, J. Topol. 6 (2013) no. 2, 361–390.
+2. J. D´enes, ‘The representation of a permutation as the product of a minimal number of transpositions,
+and its connection with the theory of graphs’, Publ. Math. Inst. Hung. Acad. Sci. 4 (1959) 63–71.
+3. G. Ellingsrud, L. G¨ottsche and M. Lehn, ‘On the Cobordism class of the Hilbert scheme of a surface’,
+J. Algebra. Geom. 10 (2001) 81–100.
+4. J. Fogarty, ‘Algebraic families on an algebraic surface’, Amer. J. Math. 10 (1968) 511–521.
+5. A. Lascoux, Symmetric functions, Notes of the course given at Nankai University (2001),
+http://www.mat.univie.ac.at/∼slc/wpapers/s68vortrag/ALCoursSf2.pdf.
+6. M. Lehn and C. Sorger, ‘The cup product of Hilbert schemes for K3 surfaces’, Invent. Math. 152 (2003)
+no. 2, 305–329.
+7. E. Markman , ‘Integral generators for the cohomology ring of moduli spaces of sheaves over Poisson
+surfaces’, Adv. Math. 208 (2007) no. 2, 622–646.
+8. E. Markman, ‘Integral constraints on the monodromy group of the hyperK¨ ahler resolution of a symmetric
+product of a K3 surface’, Internat. J. Math. 21 (2010) no. 2, 169–223.
+9. J. Milnor and D. Husem ¨oller, Symmetric bilinear forms , Ergebnisse der Mathematik und ihrer
+Grenzgebiete 73 (Springer, Berlin, 1973).
+10. H. Nakajima, ‘Heisenberg algebra and Hilbert schemes of points on projective surfaces’, Ann. of Math.
+(2) 145 (1997) no. 2, 379–388.
+11. Z. Qin and W. Wang, ‘Integral operators and integral cohomology classes of Hilbert schemes’, Math. Ann.
+331 (2005) no. 3, 669–692.
+12. M. Verbitsky, ‘Cohomology of compact hyperk¨ ahler manifolds and its applications’,Geom. Funct. Anal.
+6 (1996) no. 4, 601–611.
+Simon Kapfer
+Laboratoire de Math´ ematiques et
+Applications
+UMR CNRS 6086
+Universit´ e de Poitiers
+T´ el´ eport 2
+Boulevard Marie et Pierre Curie
+F-86962 Futuroscope Chasseneuil
+France
+simon.kapfer@math.univ-poitiers.fr
+https://doi.org/10.1112/S1461157016000012 Published online by Cambridge University Press

@@ -1,0 +1,2080 @@
+=== PDF PAGE 1 ===
+Aeta Math., 187 (2001), 1-57 
+(~ 2001 by Institut Mittag-Leffler. All rights reserved 
+Dynamique des automorphismes des surfaces K3 
+par 
+SERGE CANTAT 
+Universitd de Rennes I 
+Rennes, France 
+Introduction 
+Soit X une vari4t5 complexe compacte, par exemple une vari~t~ projective, et Aut(X) son 
+groupe d'automorphismes, c'est-~-dire le groupe de ses diff~omorphismes holomorphes. 
+I1 s'agit d'un groupe de Lie complexe de dimension finie dont l'~tude s'av~re extr~mement 
+int4ressante. 
+Lorsque X est une courbe, Aut(X) n'a qu'un hombre fini de composantes connexes et 
+la dynamique des automorphismes est trhs pauvre car chacun d'entre eux admet un it~r~ 
+qui est l'identit~, une translation (si X est une courbe elliptique) ou une homographie 
+(si X est la sphere de Riemann). Ces propri~t~s sont propres aux courbes et tombent 
+simultandment en ddfaut d~s la dimension 2; il existe en effet sur certaines surfaces 
+complexes compactes des automorphismes dont aucun itdr~ n'est isotope s l'identitd et 
+dont la dynamique est tr~s riche. 
+La figure 1 repr4sente quelques orbites d'un automorphisme de ce type. Dans cet 
+exemple, la surface est une vari~t~ projective donn~e par une dquation s coefficients rdels 
+et l'automorphisme est lui-m~me d~fini sur le corps des hombres rdels : c'est ce qui permet 
+d'obtenir une figure dans R 3. 
+Le but de cet article est d'dtudier de mani~re syst~matique la dynamique des auto- 
+morphismes des surfaces complexes compactes. En fait, nous nous contenterons d'~tudier 
+les automorphismes des surfaces K3, c'est-s des surfaces simplement connexes qui 
+sont munies d'une 2-forme holomorphe partout non nulle. Ce choix ldg~rement restrictif 
+est justifi~ par les remarques suivantes. 
+Tout d'abord, lorsque la surface X n'est pas ks l'entropie topologique de 
+tout automorphisme est nulle [7]. A priori, la dynamique dgvelopp~e par ces automor- 
+phismes est donc pauvre et, conjecturalement, ce que nous allons expliquer pour les 
+surfaces ks devrait encore s'appliquer. Nous supposerons donc ddsormais que 
+la surface ambiante X est une surface complexe compacte kdhldrienne. 
+
+
+=== PDF PAGE 2 ===
+2 S. CANTAT 
+Orbites d'un automorphisme 
+.'./ x x 
+Vue de dessus : zone elliptique 
+Fig. 1. -- Dynamique sur une surface K3 r~elle. 
+Lorsque l'entropie topologique d'un automorphisme r X--~X est nulle, seuls deux 
+cas peuvent se produire (voir [6] et le w Dans le premier, Fun des it~r@s de r est 
+holomorphiquement isotope ~ l'identit~, autrement dit, il existe un entier k>~l tel que 
+Ck soit le temps 1 du riot d'un champ de vecteurs holomorphe. La dynamique est alors 
+simple et parfaitement comprise (voir [14] et [11]). Dans le second cas, Fun des it@r@s 
+de r preserve une fibration elliptique en agissant par translation le long des fibres. La 
+dynamique est donc, 1/~ encore, particuli~rement simple. 
+Tout ceci montre qu'il suffit d'@tudier les automorphismes des surfaces ks 
+dont l'entropie topologique est strictement positive. L'existence d'une telle transforma- 
+tion impose des conditions drastiques ~ la surface X, mais il existe tout de m@rne de 
+nombreux exemples : 
+Sur les tores. -- Certains tores poss~dent des automorphismes dont l'entropie est 
+strictement positive. C'est toutefois un exemple relativement peu int~ressant car les au- 
+tomorphismes sont tous induits par des transformations affines de C 2 et leur dynamique 
+est corapl~tement comprise [23]. 
+Sur les surfaces K3. -- Certaines surfaces K3 admettent @galement des automor- 
+phismes dont l'entropie topologique est non nulle : c'est le cas le plus int~ressant et la 
+figure 1 provient d'un exemple de ce type. 
+Sur les quotients des surfaces K3. -- Lorsqu'une surface K3 est munie simultan@ment 
+d'une involution holomorphe ~r et d'automorphismes qui commutent avec a, on obtient 
+
+
+=== PDF PAGE 3 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 
+des automorphismes sur la vari~t5 quotient. Lorsque a est sans point fixe, le quotient 
+est ce qu'on appelle une surface d'Enriques. Sinon, il s'agit d'une surface rationnelle. 
+La surface de Coble, obtenue en ~clatant p2 aux points doubles d'une sextique qui en 
+poss~de 10, est un exemple de ce type. 
+Soit r Y--+Y un automorphisme d'une surface complexe compacte dont l'entropie 
+est strictement positive et soit X la surface obtenue h partir de Y en contractant les 
+courbes exceptionnelles de premiere esp~ce qui out une orbite finie sous Faction de ~. 
+Deux cas se prSsentent alors [7]: ou bien X est minimale et le couple (X, r appartient 
+~t la liste d'exemples que l'on vient d'Stablir, ou bien X est une surface rationnelle non 
+minimale. Dans ce deuxi~me cas, nous n'avons aucun th~or~me g~n~ral, mais les seuls 
+exemples connus actuellement font ~galement partie de eette liste. Les r~sultats que nous 
+allons obtenir pour les surfaces K3 s'appliqueront done in extenso d tousles ezemples 
+d'automorphismes connus actuellement sur les surfaces complexes compactes. 
+La majeure partie de ee texte (parties 2 ~ 6) est consaer~e aux propri~t6s ergodiques 
+de la dynamique. Nous verrons que le couple form~ par le diff~omorphisme ~b: X-+X et 
+la structure complexe r dStermine (( naturellement ~ une mesure de probabilit~ 
+r #. Nous montrerons ensuite que eette mesure coincide avec l'unique mesure 
+d'entropie maximale et qu'elle v~rifie done les propri~t6s 6nonc~es dans le th~or~me sui- 
+vant : 
+THI~OREME 0.1.- Soit ~ un automorphisme d'une surface K3 projective dont 
+l'entropie topologique est strictement positive. I1 existe alors une unique mesure de pro- 
+babilitd # qui est r et d'entropie maximale. I1 se trouve en outre que les points 
+pdriodiques de r sont dquir@artis pour cette mesure et que le syst~me ergodique (X, tt, r 
+est mesurablement conjugud dun ddcalage de Bernoulli. 
+En d'autres termes, la dynamique de r est semblable it un jeu de p~le ou face si on 
+l'observe ~ l'aide de la mesure qui lui est naturellement associ~e. 
+Remarque 0.1. -- (1) L'hypoth~se de projectivit~ fake sur X est une hypothbse tech- 
+nique qui nous semble hors sujet. Nous l'utilisons malheureusement ~ plusieurs reprises. 
+(2) La strategic de d~monstration est la m~me que pour les automorphismes poly- 
+nomiaux du plan affine comple En fait, le cceur de ce texte montre que les techniques 
+dSvelopp~es dans [3] et [37] pour 5tudier les propri~t~s ergodiques de l'application de 
+H~non sont toutes valables sur les surfaces K3. Mieux, certaines constructions cruciales 
+sont en fair valables pour n'importe quel automorphisme d'une vari~t~ projective. 
+Les techniques d'hyperbolicit~ uniforme s'av~rent insuffisantes pour ~tablir le thSo- 
+r~me prSc~dent. I1 nous a donc fallu utiliser la th~orie de Pesin dans toute sa force. 
+
+
+=== PDF PAGE 4 ===
+4 S. CANTAT 
+Le second leitmotiv de ce texte est d'ailleurs de montrer que la dynamique ne satisfait 
+aucune propridtd classique d'hyperbolicit~. Nous verrons ainsi qu'aucun automorphisme 
+d'une surface K3 n'est un diffdomorphisme axiome A (voir [15] et le w L'exemple 
+suivant p%sente toutefois des caract~ristiques tr~s proches du cas Anosov et jouera un 
+r61e central tout au long du texte. 
+Exemple 0.1.- Soit A=C2/F un tore de dimension 2, eta l'involution (x,y)~-~ 
+(-x, -y). Les points fixes de a sont exactement les 16 points d'ordre 2 du groupe A. Soit 
+A ~ l'~clat~ de A en ces 16 points. L'involution a s'y ~tend en une involution (/ qui est 
+l'identitd en restriction ~ chacun des diviseurs exceptionnels, n'a pas d'autre point fixe, 
+et agit comme z~-+-z transversalement h ces diviseurs. Le quotient XA =AI/(/est donc 
+une vari~t~ compacte et lisse qui, par d~finition, est la surface de Kummer associ~e h A. 
+C'est une surface K3. 
+Supposons que A est le produit de deux courbes elliptiques identiques, 
+A = C/A x C/A. 
+Puisque le groupe SL(2, Z) agit lin~airement sur C 2 en pr~servant le %seau A xA, il 
+se plonge dans Aut(A). Chacun des automorphismes ainsi obtenus commute avec a et 
+d~termine donc un automorphisme de la surface XA. Par exemple, en partant de la 
+matrice 
+on munit XA d'un automorphisme ~b dont l'entropie est strictement positive et dont Ia 
+dynamique est de type (~ pseudo-Anosov )~ : les deux feuilletages holomorphes de A qui sont 
+pr~serv6s par l'automorphisme lin~aire d~terminent sur XA des feuilletages/~ singularit~s 
+isol~es qui sont dilates et contract,s par 4. 
+Au w nous ~tendrons la notion de diff~omorphisme pseudo-Anosov au cas des 
+automorphismes des surfaces complexes et classifierons compl~tement les automorphismes 
+de ce type, g6n~ralisant ainsi un th~or~me ant~rieur de Ghys [15]. Au passage, nous 
+~tablirons le %sultat de rigidit~ suivant : 
+THI~ORI~ME 0.2.- Soit ~: X--+X un automorphisme d'ordre infini sur une sur- 
+face K3. Si 0 prgserve deux feuilletages holomorphes, la surface est une surface de 
+Kummer et l'automorphisme est induit par une transformation lindaire du tore associd. 
+La partie 7 est quasiment ind~pendante des parties 2 h 6, et peut donc ~tre lue dans 
+la continuit~ de la premiere partie. Le lecteur in%ress~ par le thdor~me 0.2 peut donc se 
+contenter de lire la premiere et la derni~re partie. 
+
+
+=== PDF PAGE 5 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 
+Remerciements.- Je remercie t~tienne Ghys pour m'avoir sugg@r~ cette @tude et 
+pour avoir encadr5 avec enthousiasme rues travaux. Mes remerciements vont 5galement 
+Laurent Bonavero, Jean-Pierre Demailly, Richard Kenyon, Bruno Sevennec et Jean- 
+Christophe Yoccoz pour les discussions fructueuses que nous avons eues, et au referee 
+pour ses suggestions avis~es. Ce texte a @t~ r@dig~ lors de mort s@jour ~ l'universit@ 
+de Bochum : merci ~ Alan Huckleberry, Gerhard Knieper, Norbert Peyerimhoff et Karl 
+Friedrich Siburg pour leur accueil chaleureux. 
+1. Automorphismes des surfaces K3 
+Dans cette premiere partie, nous r@sumons les propri6t6s essentielles des surfaces K3 
+et les appliquons ~ la description du groupe d'automorphismes. Les d@monstrations des 
+r4sultats ~nonc4s ici se trouvent darts [1], [36] et [33]. 
+1.1. Surfaces K3 
+Ddfinition 1.1. -- Une surface K3 est une surface complexe compacte dont le premier 
+hombre de Betti est nul et dont le fibr5 canonique est trivial. 
+La trivialit~ du fibr@ canonique signifie qu'il existe sur X une 2-forme holomorphe 
+partout non nulle. Sifl est une telle forme, normalis@e par la condition 
+xaA~=l, (1) 
+la forme volume wx=f~A~ est alors uniquement d6termin@e par la structure complexe 
+de X. Supposons en effet que f~ est une autre 2-forme holomorphe v@rifiant la condi- 
+tion (1). Puisque ~t ne s'annule pas, f~t est 6gale au produit de ~ par une fonction f qui 
+est holomorphe, doric constante. La normalisation (1) entraine f f= 1 et doric fl%~'=wx. 
+Etant canoniquement associd ~ la structure complexe de X, ce volume wx est invariant 
+par le groupe d'automorphismes. 
+Le deuxi~me groupe de cohomologie H2(X, Z) d'une surface K3 est de rang 22, et 
+sa forme d'intersection, qx, est de signature (3, 18). La d@composition de Hodge 
+H C) = H (X, C) eH (X, C) C) 
+est qx-orthogonale, et, puisque Kx est trivial, les espaces de cohomologie de type (2, 0) 
+et (0, 2) sont de dimension 1 ; sur HI'I(X, R), qx est donc une forme quadratique lorentz- 
+ienne, c'est-~-dire qu'elle est non d@g6n6r@e et de signature (1, 19). 
+
+
+=== PDF PAGE 6 ===
+6 s. CANTAT 
+Soit Sx le sous-groupe de H2(X, Z) d~termin5 par les classes de Chern des fibr6s 
+en droites holomorphes de X. Puisque le premier nombre de Betti d'une surface K3 est 
+nul, un fibr5 en droites holomorphe est uniquement d~termin6 par sa elasse de Chem. Le 
+groupe Sx s'identifie done au groupe de Picard de la surface, c'est-/~-dire au groupe des 
+fibres en droites hoJomorphes muni de l'op~ration produit tensoriel. 
+D'apr~s le thfior~me de Lefschetz, Sx coincide avee le r~seau H2(X, Z)nHI,I(X, R) ; 
+d'apr~s celui de Hodge, la restriction de qx i~ Sx reste de signature (+, -, ...,-) lorsque 
+X est projective. Si t'on se d@lace dans l'espaee des modules des surfaces K3, le Z- 
+module quadratique (Sx, qx) varie. Nous noterons nx son rang: c'est un entier compris 
+entre 0 et 20. 
+Notations. -- Si [c]est une classe de cohomologie et [hi une classe d'homologie, nous 
+noterons ([h][[c]> le produit entre ces deux classes (dualit~ de Poincar~). L'auto-inter- 
+section de [hi sera notre [hi 2 ou encore qx ([hi). Ceci dtant, nous identifierons bien souvent 
+l'homologie et la cohomologie de X. 
+1.2. Le c6ne de K~ihler 
+Toute surface K3 est ks Le cbne form6 des classes de cohomologie des formes 
+kS~hl~riennes est done une partie non vide de H ~'1 (X, R). Nous le noterons CK(X) tandis 
+que C~(X) dSsignera son intersection avee Sx. L'ensemble des classes d'homologie des 
+courants positifs ferm6s d~termine de la m~me fa~on un cSne C+(X) de trace C.~(X) sur 
+l'homologie enti~re. Le cSne C+(X) est ferm~ et CK(X) est ouvert. 
+La formule du genre montre que toute courbe d'auto-intersection n6gative sur X est 
+une courbe rationnelle lisse d'auto-intersection -2. Une telle courbe s'appelle une courbe 
+nodale et leur ensemble sera not~ Nod(X). Pour qu'une classe de cohomologie (ou son 
+opposS) appartienne 5 CK(X) il faut et il suffit que son auto-intersection soit strictement 
+positive et qu'elle coupe ehaque ~l~ment de Nod(X) strictement positivement [25]. 
+L'ensemble C+(X) est ~gal/~ l'adh~rence des combinaisons convexes d'61ements de 
+C~:(X) et Nod(X) [25]. Une classed' homologie appartient done/~ C+ (X) si et seulement 
+si elle coupe ehaque point de CK (X) positivement. 
+Exemple 1.1.- Reprenons l'exemple 0.1 concernant la surface de Kummer as- 
+soci6e au produit de deux courbes elliptiques identiques A~-C/A x C/A. Cette surface est 
+done munie d'un automorphisme ~b explicite qui est d'ordre infini. La courbe {0} x C/A 
+d~termine une courbe nodale sur XA dont l'orbite par q5 est infinie. Une surface K3 peut 
+donc supporter une infinit6 de courbes nodales. 
+
+
+=== PDF PAGE 7 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 
+1.3. Le th6or~me de Torelli 
+Tout automorphisme ~b de X agit sur la cohomologie de rang 2 en pr6servant la structure 
+enti~re, la forme d'intersection, la d~composition de Hodge et le cSne de Ks On 
+obtient ansi deux representations de Aut(X), l'une dans le groupe des isom6tries de 
+(H 1,1(X, R), qx), l'autre dans celui du Z-module quadratique (Sx, qx). 
+THI~OR~ME 1.1 (dit <<de Torelli>>).- Soit X une surface K3, alors: 
+(i) La reprdsentation de Aut(X) dans Isom(HLl(X,R),qx) est un isomorphisme 
+sur son image ; celle-ci coincide avec l'ensemble des isomdtries d coefficients entiers qui 
+prdservent le cdne de Kiihler. 
+(ii) Lorsque X est algdbrique la reprdsentation dans Isom(Sx, qx ) a un noyau fini et 
+son image est d'indice fini dans le groupe des isomdtries enti~res qui prdservent C~(X). 
+1.4. Classification homologique des automorphismes 
+Seule l'une des deux nappes de l'ensemble {[c]eHl'l(X,R):qx([c])=l} peut contenir 
+des classes de formes de K~hler, ce qui d6termine une nappe Hx de cet hyperbolo'ide 
+qui est prSservSe par tout automorphisme. La restriction de qx ~ Hx munit celle-ci 
+d'une m~trique ~ courbure n~gative constante : on est donc en presence d'un module de 
+l'espace hyperbolique H 19. Tout automorphisme de X y agit par isomStrie, ce qui permet 
+de distinguer trois cas suivant que l'isom~trie est elliptique, parabolique ou hyperbolique : 
+-- Dans le premier cas, ~b*: H 1,1 (X, R)--+H 1'1 (X, R) pr6serve une droite int6rieure 
+au c6ne off qx est positive et agit comme une rotation autour de cet axe. Puisque r 
+permute les points entiers de H 2 (X, R), cette rotation est p6riodique. 
+-- Dans le cas parabolique, r admet une seule droite propre dans le c6ne positif, 
+et cette droite, notre D ~ est contenue dans le c6ne de lumibre de qx. La valeur propre 
+qui lui est associ6e est 6gale ~ 1, et routes les valeurs propres de r sont de module 1. 
+-- Dans le dernier cas, il existe un nombre r6el A> 1 tel que {A, l/A} soit l'ensemble 
+des valeurs propres de ~b* de module different de 1. L'espace propre associ~ s A sera 
+not6 D+: c'est une droite contenue dans H 1,1 (X, R) et dans le c6ne de lumibre de qx. 
+La droite propre associ~e ~ 1/A sera notre D-. 
+Ddfinition 1.2. -- Un automorphisme r est dit de type p6riodique, parabolique ou 
+hyperbolique suivant que ~b* est p6riodique, parabolique ou hyperbolique. 
+Remarque 1.1. -- Lorsque r est de type parabolique, la droite D o qui lui est associ6e 
+est d~finie sur Q et contient donc des points de H2(X, Z). Par contre, les droites D + et 
+D- associ~es s un automorphisme de type hyperbolique ne sont jamais d6finies sur Q. Si 
+le 2-plan qu'elles engendrent l'est, le th~or~me de plongement de Kodaira entraine que 
+
+
+=== PDF PAGE 8 ===
+8 S. CANTAT 
+la surface est projective; r~ciproquement, lorsque X est alg@brique, l'invariance de Sx 
+par r montre que les droites D + et D- sont contenues dans Sx| 
+Les deux lemmes qui suivent sont @l@mentaires et r@sultent sans difficult@ de l'in- 
+variance des cSnes CK(X) et C+(X) par r Les preuves sont donc ici laiss@es au lecteur 
+(voir aussi [6]). 
+LEMME 1.2. -- Lcs directions propres D + et D- (resp. D ~ d'un automorphisme de 
+type hyperbolique ( resp. parabolique ) intersectent l ' adhdrence de C K ( X ) . 
+LEMME 1.3. -- Les directions propres D + et D- d'un automorphisme hyperbolique 
+sont extr~males dans le cSne C+(X) et dans l'adhdrence de CK(X). 
+L'ext%malit@ signifie qu'aucun @l@ment de D + (resp. D-) n'est combinaison convexe 
+d'@l~ments de C+(X) ou de l'adh@rence de CK(X) n'appartenant pas & D + (resp. D-). 
+On dira qu'un automorphisme d'une surface K3 est un twist de Dehn si l'une de ses 
+puissances est une translation d'ordre infini le long d'une fibration elliptique. 
+PROPOSITION 1.4. -- Soit X une surface K3, alors : 
+(i) Les automorphismes de type elliptique sont d'ordre fini. 
+(ii) Les automorphismes de type parabolique sont les twists de Dehn. 
+Remarque 1.2. -- Cette proposition reste valable sur n'importe quelle surface com- 
+plexe compacte ks ~ condition de remplacer (i) par (( les automorphismes de 
+type elliptique admettent un it@r~ qui est holomorphiquement isotope ~t l'identit@ ~>. Pour 
+les surfaces non ks le seul cas qui reste ~ traiter est celui des surfaces VIIo. 
+Ddmonstration.- Le premier point est une cons@quence directe du th@or@me de 
+Torelli. Pour le second, il suffit de remarquer que la droite /90 contient un point entier 
+de longueur minimale (remarque 1.1), d'auto-intersection nulle et adh@rent au c6ne de 
+Ks (lemme 1.2). Le paragraphe 3 de [35] montre alors que le fibr@ en droites associ@ 
+& cette classe de cohomologie admet un unique pinceau de sections dont les z@ros for- 
+ment une fibration elliptique ~: X---~P1 ; cette fibration est n~cessairement invariante par 
+l'automorphisme. 
+I1 est facile de montrer qu'une fibration elliptique d'une surface K3 admet au moins 
+trois fibres singuli~res [8]. Puisque l'action induite sur p1 par l'automorphisme doit per- 
+muter les valeurs critiques de ~, elle est donc p@riodique. L'un des it@r@s de l'automor- 
+phisme fixe donc chacune des fibres et, en it@rant encore, on peut supposer que l'action 
+sur chaque fibre est une translation. [] 
+Tout ceci montre que les seuls automorphismes qui peuvent @tre int~ressants d'un 
+point de vue dynamique sont ceux de type hyperbolique. 
+
+
+=== PDF PAGE 9 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 
+[x] 
+Fig. 2. -- Pavage par triangles ideaux. 
+1.5. L'exemple fondamental 
+L'exemple le plus simple de surface K3 avec de nombreux automorphismes, s part la 
+surface de Kummer d~crite dans l'exemple 0.1, est celui propos5 dans [30] par Mazur. I1 
+s'agit des surfaces K3 plong@es dans le produit de trois droites projectives. 
+Soit X une telle surface et (x, y, z) les coordonn~es de la partie affne C  C  C de 
+p1  p1  p1. Dans ces coordonnSes, X co'/ncide n~cessairement avec le lieu des z~ros d'un 
+polyn6me P(x, y, z) dont le degr@ par rapport ~ chaque variable est ~gal ~ 2. Autrement 
+dit, la projection de X sur (x, y) (resp. (y, z) ou (z, x)) est un rev@tement double ramifi~ 
+de p1 x p1. L'involution qui permute les deux feuillets de ce revStement sera notre az 
+(resp. crx ou (%) et le groupe engendr~ par les trois involutions ainsi d@finies sera not~ G. 
+Comme l'a remarqu@ L. Wang [41], G est un sous-groupe de Aut(X) qui est isomorphe 
+au produit libre de trois groupes d'ordre 2. 
+Cette propriSt@ peut @tre 5tablie de la mani~re suivante. Soit [x] (resp. [y] et [z]) 
+la classe d'homologie de la courbe x=c ste (resp. y=c ste et z=c ste) ; c'est un 51@ment de 
+Sx situ@ sur le c6ne de lumi~re de qx. L'involution ax agit sur l'espace Sx en fixant 
+les classes [y] et [z] mais en perturbant Ix], car la fibration x=c ste n'est pas invariante 
+par crx. Plus pr~cis@ment, on ~tablit sans peine la formule 
+- + 2 [y] + 2 [z], 
+ce qui montre au passage que les classes [x], [y] et [z] engendrent un sous-groupe N 
+de Sx qui est invariant par l'action de G. L'espace Hx intersecte N sur un disque 
+de Poincar@ et les classes de Chern [x], [y] et [z] des trois fibrations y d~terminent les 
+sommets d'un triangle id@al (voir la figure 2). Puisqu'aucune des trois transformations 
+
+
+=== PDF PAGE 10 ===
+10 S. CANTAT 
+Exposant positif = 0.31 environ 
+0.315 
+0.310- 
+0.305 
+3000 4000 5000 
+Exposant positif = 0.22 environ 
+0.23 
+0.22 
+3000 4000 5000 
+Fig. 3. -- Exposants de Lyapunov pour la surface de B. Mazur. 
+(ax)., (ay). et (az). n'est l'identit6, le groupe G coincide avec le groupe de sym6trie du 
+pavage associ6 ~t ce triangle. I1 en r6sulte sans difficult6 que G--Z/2 * Z/2 * Z/2. 
+Les trois automorphismes obtenus en composant deux des involutions sont des twists 
+de Dehn ; par exemple, axOr pr6serve la fibration z=c ste. L'automorphisme r 
+est de type hyperbolique et sa valeur propre de module sup6rieur ~ 1 vaut A=9+4V~. 
+Nous verrons d~s le paragraphe suivant que ceci entraine la formule hto p (r log(A)-~ 2.88, 
+o~1 htop(r est l'entropie topologique de r 
+Nous avons d6j~ pr6sent6 quelques orbites de r dans l'introduction lorsque X cor- 
+respond s l'6quation polynomiale 
+x2Y 2z2+~-ff61 (x2y2+y2z2+z2x2)+x2+y2+z2+xy+z_y=6. 
+Ces figures montrent que la dynamique est chaotique sans 8tre uniform~ment hyper- 
+bolique. Par exemple, il existe des points fixes elliptiques autour desquels se d~veloppent 
+des r~gions invariantes de type Kolmogorov-Arnold-Moser. En particulier, la restric- 
+tion de la dynamique ~ la partie r~elle de la surface n'est pas topologiquement transi- 
+tive. Signalons cependant que les simulation num~riques que nous avons effectu~es (non 
+prdsent~es ici) semblent indiquer que le volume canonique wx est ergodique. 
+I1 est ~galement possible de calculer num~riquement les exposants de Lyapunov de r 
+Les deux graphiques de la figure 3 sont des ~valuations num~riques de l'exposant positif 
+de deux points distincts. En abscisse est indiqud le nombre d'it~rations (entre 2500 et 
+5000) et en ordonn~e la valeur approximative obtenue. Les fluctuations au cours des 2500 
+derni~res itdrations sont inf~rieures d'un ordre de grandeur ~ la valeur approximative de 
+l'exposant. Un point ((pris au hasard )) a donc un exposant de Lyapunov strictement 
+positif. 
+
+
+=== PDF PAGE 11 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 11 
+Remarque 1.3. -- Les chutes rapides de la valeur de l'exposant positif durant certains 
+intervalles d'it@rations correspondent h des s@jours prolong@s de l'orbite dans le voisinage 
+d'un point fixe elliptique. 
+2. Entropie et courants dilat@s 
+Dans cette partie, r X-+X d@signe un automorphisme d'une surface K3 qui, d~s le w 
+sera de type hyperbolique. 
+2.1. Entropie et homologie 
+Lorsque r est une transformation C ~ d'une vari@td compacte, le th@or~me de Yomdin [43] 
+affirme que son entropie est minor@e par le logarithme du rayon spectral de 
+r H,(X,R) -+ H,(X, R) 
+(action sur toute l'homologie). Dans notre cadre, on peut combiner le th~or~me de Yomdin 
+et celui de Gromov concernant l'entropie topologique des transformations holomorphes 
+des vari@tSs k~hl@riennes compactes [19], ce qui fournit sans peine la formule suivante : 
+THt~ORI~ME 2.1 (Gromov, Yomdin). -- Soit r un automorphisme d'une surface K3 
+et )~ le rayon spectral de r L'entropie topologique de r vaut 
+alors htop(r =log(A). 
+Cette formule s'av~re en fait valable sur n'importe quelle surface complexe com- 
+pacte [7]. Elle montre que l'entropie topologique est invariante par d@formation du couple 
+(X, r et que les automorphismes minimisent l'entropie au sein de leur classe d'isotopie. 
+COROLLAIRE 2.2.- Tout automorphisme r d'une surface K3 vgrifie une et une 
+seule des trois propridtds suivantes : 
+(i) r est pdriodique. 
+(ii) r est d'ordre infini et prdserve une fibration elliptique ( singuli~re). 
+(iii) L'entropie topologique de r est strictement positive. 
+Ddmonstration. -- I1 sufiit de juxtaposer le th@or~me 2.1 ~ la proposition 1.4. [] 
+Remarque 2.1.- Ce r@sultat reste valable sur route surface complexe compacte 
+ks en rempla~ant (i) par ((l'un des it@r@s de r est le temps 1 du riot d'un champ 
+de vecteurs holomorphe )). 
+
+
+=== PDF PAGE 12 ===
+12 s. CANTAT 
+2.2. Courants dilates et contractds 
+Soit r X-+X un automorphisme d'une surface K3 dont l'entropie topologique est stricte- 
+ment positive, c'est-h-dire, avec la terminologie du w un automorphisme de type hy- 
+perbolique. I1 existe alors une unique droite D + contenue dans H2(X, R) qui est dilat~e 
+par r Cette droite est d'ailleurs contenue dans HI.I(X, R) et le facteur de dilatation, 
+not5 A, v~rifie : 
+htop(r = log(/~). 
+Cette formule sugg~re que l'entropie provient enti~rement de l'existence de la droite 
+propre D +. A partir de maintenant et jusqu'~ la pattie 6, le but est de donner un sens 
+pr6cis s cette id6e en 6tudiant Faction de r sur l'espace des courants positifs ferm6s de X. 
+Courants positifs fermds. -- L'ensemble des (1, 1)-formes continues sur X sera muni 
+de la topologie de la convergence uniforme. Par d6finition, un courant est une forme 
+lin6aire continue sur cet espace: il s'agit donc ici de courant d'ordre 0 et de bidegr6 
+(1, 1). Un tel courant est ferm6 s'il est nul sur les formes exactes et est positif s'il prend 
+des valeurs positives sur les formes a qui satisfont : 
+VvETX, a(v, vC-lv)>~O. 
+Si Test un courant et a une forme, nous noterons (T I a>, ou encore T(a), l'6valuation 
+de T sur a. Lorsque Test fermi, sa classe d'homologie sera notde [T] ; si a est 6galement 
+ferm6e on a donc (Tla}=([T]l[a]>. 
+Aires, volumes et normes seront 6valu6s ~ l'aide d'une m6trique hermitienne h fix6e 
+une fois pour toutes. Six d6signe la forme fondamentale de h, la norme (ou <<masse>>) 
+de tout courant positif T se trouve ~tre 6gale ~t <T Ix>; en particulier, lorsque h est 
+k~ihl6rienne, ce que nous supposerons d~sormais, la norme d'un courant positif fermd ne 
+dgpend que de sa classe d'homologie. 
+toute classe d'homologie [t]EHI,I(X,R), nous associerons l'ensemble Fit] des 
+courants ferm6s dont la classe d'homologie coi'ncide avec [t], et noterons F~t ] le sous- 
+ensemble convexe de F[t ] dont les 616ments sont des courants positifs. Puisque h est 
+k~hl6riemm, tousles ~l~ments de F~t ] ont la m~me norme, ~ savoir <It]l Ix]> ; s'il est non 
++ est donc compact pour la topologie faible. vide, F[t ] 
+Soit Tun courant ferm~ et J un ~l~ment de F[T ] . Puisque le premier nombre de 
+Betti de X est nul, on pent 5crire 
+J = T+ ~ 00D, (2) 7r 
+off fj est mesurable, intdgrable mais n'est bien d6finie qu'~ une constante additive pr~s. 
+Si wx d6signe le volume canonique de X (cf. w fg peut ~tre normalis6e en imposant 
+
+
+=== PDF PAGE 13 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 13 
+la relation 
+x fj = O, tO X 
+ce qui d~termine une unique solution de l'dquation (2). 
+LEMME 2.3. -- Avee cettc normalisation, l'application L: g~+ f x [f al wX est convexe 
+et born& sur F + IT]" 
+Ddmonstration.- La seule ditiicult4 est de borner L. Si J appartient g F~T], sa 
+norme est ~gale g celle de T car J et T sont deux courants positifs fermSs ayant la m~me 
+classe d'homologie. En particulier, 
+IIJ-Tll ~< 2[[TII. 
+Pour conclure, il suffit alors de remarquer que la norme de fj dans l'espace Ll(wx) 
+est major~e par IIJ-Tll, ~ une constante multiplicative pros qui ne d~pend que du cou- 
+ple (X, h) [18]. [] 
+Action de r sur les courants. -- L'automorphisme r agit lindairement sur l'espace 
+des courants en pr4servant le c6ne des courants positifs fermds. Nous dirons qu'il dilate 
+(resp, preserve ou contracte) le courant T s'il existe un scalaire s tel que Is[>l (resp. 
+I,l=l ou Isl<l) et 
+r = sT. 
+D'apr~s [38], tout automorphisme d'une vari4t4 complexe compacte preserve, dilate ou 
+contracte au moins un (1, 1)-courant positif ferm4. Le thdor~me suivant est donc avant 
+tout un rdsultat d'unicit4 : 
+THI~OR~ME 2.4. -- Soit X une surface K3 munie d'une mdtrique hermitienne h et 
+d'un automorphisme r dont l'entropie topologique htop(0)=log(A) est strictcment posi- 
+tive. I1 existe alors un unique courant positif fermd de masse 1 qui est dilatd par r Le 
+facteur de dilatation vaut ~ et ce courant, notd T +, vdrifie les trois propridtds suivantes : 
+(i) Tout courant positif fermd dont la classe d'homologie coincide avec celle de T + 
+est dgal ~ T +. 
+(ii) T + est extrdmal parmi les courants positifs ferrnds. 
+(iii) Si J est un courant fermd dilatd par r alors Jest un multiple de T +. 
+Remarque 2.2. -- (1) En remplaqant r par son inverse, ce rdsultat assure ~galement 
+l'existence et l'unicitd d'un courant positif ferm4 contract~. Nous le noterons T-. 
+(2) Les courants T + et T- ne d4pendent de h que par un facteur multiplicatif. Quitte 
+changer h, on peut donc supposer que T + et T- sont tous dettx de masse 1 et que leur 
+intersection, [T+]. IT-I, est ~gale g 1. C'est ce que nous ferons. 
+
+
+=== PDF PAGE 14 ===
+14 s. CANTAT 
+Ddmonstration du thdor~me 2.4. La classe d'homologie de tout courant positif 
+ferm~ dilat~ appartient nScessairement ~ D +, et le facteur de dilatation est donc ~gal & A. 
+Puisque D + est adh~rente au c6ne de K~hler de X, il existe au moins un courant positif 
+ferm5 C dont la classe d'homologie appartient ~ D + \{0}. La suite de courants positifs 
+ferm@s 
+ln-1 
+k----0 
+v6rifie alors [Cn]=[C] quelque soit n; leur norme est donc constante et l'on peut en 
+extraire une sous-suite convergente dont la limite, not6e T +, satisfait 
+r + = AT +. 
+Quitte b~ multiplier ce courant par une constante strictement positive, on peut supposer 
+que sa norme est 6gale ~ 1. L'existence du courant T + est donc 6tablie. 
+I1 reste s obtenir les r6sultats d'unicit@ et d'extr@malit~ 6nonc@s. La propri@t6 (i) 
+entra~ne 6videmment l'unicit~ de T + mais @galement (ii) car la classe d'homologie de T + 
+est extr6male parmi celles des courants positifs ferm~s (lemme 1.3). I1 suffit done d'@tablir 
+(i) et (iii). 
+Commen~ons par (i). Tout 61@ment J de F~T+] s'@crit de manibre unique sous la 
+forme 
+J = T + + vf~ OOfg, 
+7r 
+avee fg de moyenne nulle pour la mesure wx. La fonetion L qui ~ J assoeie fx [fJ]wz 
+est done bien d~finie, convexe et born6e sur F~T+] (cf. lemme 2.3). La transformation 
+lin~aire (1/A)r pr6serve T +, et la forme volume wx est r done 
+1 
+f(1/;~)r J ---- -~fJ~162 
+En utilisant h nouveau que r preserve a;x on obtient alors 
+(J), 
+ce qui signifie que la fonction L est contract@e par la bijection (1/~)r Puisque L est 
+bornde, elle est done identiquement nulle, ce qui montre que F[T+I+ est r@duit au singleton 
+{T +} et ach~ve la preuve de (i). 
+Pour la troisi@me propri@t@, on utilise un argument analogue. Si r et H >1, 
+alors s-~ ou [J]=0. Dans les deux cas, [J] est proportionnel h [T+]. I1 existe donc un 
+scalaire/3 et une fonction fa de moyenne nulle telle que 
+J :/3T+§ Y/~ OOfj. 7r 
+
+
+=== PDF PAGE 15 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 15 
+Mais alors fjoqS=Afj et (1-lsl)llfjIILl(~-~x):0 , ce qui montre que fj est nulle et que J 
+coincide avec ~2T +. [] 
+Remarque 2.3.- Si f: A--+A est un automorphisme d'Anosov d'un tore, il existe 
+6galement un courant T + dilat6 par fet satisfaisant les propri6t6s ~nonc6es dans le 
+th6or~me pr@6dent. Ce courant T + coincide bien stir avec le courant d'int6gration sur le 
+feuilletage instable de f: si <(x, y)=0 est l'6quation de ce feuilletage, T + est proportion- 
+nel au eourant 
+En particulier, T + est un courant positif ferm6 extr6mal et lisse. C'est, je crois, le premier 
+exemple de eourant extrdmal lisse (voir [91, [29]). 
+2.3. Deux constructions du courant T + 
+Construction par image direete. -- Pour construire T + de mani6re explicite, il suffit de 
+prendre un courant positif ferm~ C tel que : 
+3 >0, 9[T+]. 
+Le th6or6me 2.4 montre alors que route sous-suite de (1/(/91n))4)~.~(C) qui converge tend 
+vers T +. On peut, par exemple, consid~rer les courants d'int6gration sur les courbes 
+alg6briques qui ne sont fix6es par aucun itdr6 de r ou alors les courants du type 
+fx Ax, o/1 x est une forme de K/ihler. Ces courants associ~s aux formes de Ks de X seront 
+utilisfis ~ plusieurs reprises. Nous les noterons toujours Tx. 
+Construction par varidtd instable. Nous allons maintenant construire T + /~ l'aide 
+des vari6t~s instables de l'automorphisme r Rappelons tout d'abord que le principe varia- 
+tionnel pour l'entropie assure l'existence d'une mesure de probabilit6 u qui est invariante, 
+ergodique et d'entropie strictement positive. Puisque r est holomorphe, les espaces sta- 
+bles et instables de @ sont invariants par multiplication par v/L-1. L'in6galit6 de Ruelle 
+montre done que u admet exaetement deux exposants de Lyapunov, Fun strictement 
+positif, l'autre strictement n6gatif, tous deux de multiplieit~ r~elle 6gale ~ 2. Ceei signifie 
+que la mesure u est hyperbolique au sens de Katok et permet d'exhiber une infinit6 de 
+points @-p~riodiques hyperboliques [22], [23]. 
+Soit x0 Fun de ees points p~riodiques et k sa p6riode. Puisque les espaces instables 
+sont invariants par multiplication par vZL-1, la vari~t6 instable de Xo est une surface 
+
+
+=== PDF PAGE 16 ===
+16 s. CANTAT 
+de Riemann. Par construction, cette surface est hom6omorphe ~ R 2 et, puisqu'elle est 
+dilat~e par l'automorphisme ck, elle est n6cessairement biholomorphe ~ C. Soit f: C-+X 
+un param6trage de cette vari~t6 v~rifiant f(0)--x0. I1 existe alors un nombre complexe 
+Xx0 de module strictement plus grand que 1, tel que f-loCkof: C-+C soit l'homoth~tie 
+de rapport Xxo. En particulier, ck dilate uniform6ment la vari6t~ instable dans les coor- 
+donn6es fournies par le param~trage f. 
+Notons A(r, f) l'aire de f(D~) pour la m~trique h fix6e sur X, et T(r, f) l'int6grale 
+logarithmique de A, ~ savoir 
+~0 ~ dt T(r, f) = A(t, f) T" 
+La suite des courants de Nevanlinna de f est alors d6finie par la formule 
+N(r,f):~-+ 1 jf0~(D~)C~ dt 
+T(r,f) ~" 
+Le but du reste de cette partie est de montrer qu'il existe des sous-suites N(r~, f) qui 
+convergent vers T +. Pour cela, nous allons commencer par rappeler quelques propri6t6s 
+~16mentaires de ce type de courants qui sont ind6pendantes de toute dynamique. 
+Le premier lemme, dfi pour l'essentiel ~ Ahlfors et pour lequel on renvoie s [6] et [5], 
+montre que les courants N(r, f) ont des valeurs d'adh6rence ferm6es : 
+LEMME 2.5 (Ahlfors). -- Soit f: C-+X une courbe enti~re tracde sur une surface 
+eomplexe eompacte. I1 existe alors des suites de rayons ri tendant vers l'infini teUes que 
+N(ri, f) tende vers un courant positif fermd. 
+On peut en outre appliquer la formule de Jensen aux courants N(r, f), ce qui permet 
+de montrer le lemme suivant : 
+LEMME 2.6. -- Sif n'est eontenue dans aucune courbe compacte de X, tout courant 
+fermd C adhdrent d la suite N(r, f) vdrifie [C]2~>0. 
+Ddmonstration. -- Soit E une courbe compacte qui ne contient pas f, C un courant 
+ferm~ adh6rent h N(r, f), et g une m~trique hermitienne quelconque sur O(E) dont la 
+courbure sera not6e Og. La formule de Jensen entraine alors (ClOg) >10 (cf. [10, p. 12]). 
+Lorsque C est ferm6, cette in6galit6 est valable au niveau des classes d'homologie : 
+[C].[E] ~>0 pour toute courbe. Le crit~re de Nakai-Moishezon [25] entraine alors [C] 2 ~>0, 
+ce qui ach~ve la preuve. [] 
+Remarque 2.4. -- Gardons les hypotheses du lemme 2.6, supposons que la surface 
+X contienne une courbe exceptionnelle de premiere esp~ce E, et notons E: X-+X I la 
+contraction de cette courbe. Si C est un courant adherent ~ N(r, f), il existe alors au 
+
+
+=== PDF PAGE 17 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 17 
+moins une forme positive c~ sur X' v~rifiant (Cllr*(~) >0. Dans le cas contraire, C serait 
+en effet ~gal au produit du courant d'int6gration sur E par une fonction positive ; puisque 
+E est d'auto-intersection strictement n~gative, la contradiction cherch~e provient alors 
+de l'existence d'une m~trique g sur le fibr~ en droites O(E) dont la courbure est n~gative 
+en restriction ~ E: on aurait alors (ClOg)<0, ce qui est impossible. 
+LEMME 2.7. -- Soit r un automorphisme de type hyperbolique d'une surface K3. Il 
+existe alors au moins un point r hyperbolique dont la feuille instable n'est pas 
+contenue dans une courbe compacte. 
+Ddmonstration. Si x0 est un point p~riodique de p~riode k dont la vari~t~ in- 
+stable est contenue dans une courbe compacte irr~ductible E, alors Ck(E)=E. La classe 
+d'homologie de E est done contenue dans l'orthogonal de D+| - . En particulier, [E] 2 <0 
+et E est done une courbe nodale de X, d'auto-intersection -2. l~tant d'auto-intersection 
+n~gative, ces courbes sont d~termin~es par leur classe d'homologie. Puisque l'hyperboloide 
+{qx =-2} ne peut couper l'orthogonal de D+@D - que sur un hombre fini de points en- 
+tiers, ces courbes invariantes sont en nombre fini. Comme r admet une infinit~ de points 
+p~riodiques hyperboliques, et comme chacune de ces courbes contient au plus deux points 
+r hyperboliques, le lemme est d~montr~. [] 
+PROPOSITION 2.8. -- Soit xo un point pdriodique hyperbolique dont la feuiUe instable 
+fxo: C-+X n'est pas contenue clans une courbe compacte. Tout courant fermd adhdrent it 
+la suite des eourants de Nevanlinna de fxo coincide alors avec le courant T +. 
+Ddmonstration. Soit k la p~riode de x0 et C un courant ferm~ adherent ~i la suite 
+N(r, fxo). D'apr~s le lemme 2.6, [C] 2 ~>0. 
+Puisque Ck dilate la vari~t~ instable, r (C)~> C quelque soit n. Appliqu~e ~i la forme 
+positive A-knr cette in~galit~ fournit : 
+1 r >~ i 
+Le membre de gauche est ~gal au quotient de (C Ix ) par ,~kn et tend done vers 0. Soit 
+Ix]* la classe d'homologie duale de [x]. La suite *) converge vers [T+], done 
+le membre de droite de l'in~galit~ pr~c~dente converge vers [C]. [T+]. En corollaire, nous 
+obtenons [C]. [T +] ~<0. 
+Comme [C]2~>0 on en d6duit que [C] est proportionnel g [T+], et la proposition 
+r~sulte des propri~t~s d'extr~malit~ v~rifi~es par T +. [] 
+En conclusion, on peut affirmer qu'il existe au moins une vari~t~ instable de r qui 
+est parametric par une courbe enti~re injective f: C--+X pour laquelle au moins une 
+sous-suite de N(r, f) converge vers T +. 
+
+
+=== PDF PAGE 18 ===
+18 s. CANTAT 
+3. Potentiels continus pour T + et T- 
+Dans la partie pr6c6dente, nous avons montr6 qu'il existe un courant positif ferm6 T + 
+de masse 1 v@ifiant r +, que ce courant est unique et qu'il s'obtient ~ l'aide de 
+vari~t6s instables. Le but de cette partie est de montrer que T + admet des potentiels 
+iocaux continus : 
+THI~ORi~ME 3.1. -- Soit X une surface K3 projective et r un automorphisme de X 
+dont l'entropie est strictement positive. Pour tout point x de X, il existe alors un voisi- 
+nage U de x et une fonction continue u+:/4--+R telle que 
+T+lu = ~/=7 05u+ 7( 
+Pour obtenir ces potentiels, nous allons adapter la construction de Hubbard et Pa- 
+padopol concernant les endomorphismes de pn [20], [37]. Rappelons en tout d'abord les 
+6tapes principales. 
+Soit ~: C n+l \{0}-+P~ la projection canonique et f: pn_+p~ un endomorphisme de 
+degr6 d. I1 existe alors une application holomorphe F: C~+a-+ C "+1 qui est homog~ne de 
+degr6 d et v6rifie 7roF=f. Puisque f n'a aucun point d'ind6termination, F ne s'annule pas 
+sur la sphere unitd de C "+1 et l'homog6n~it6 de F entraine l'existence d'une constante 
+~>0 pour laquelle : 
+VxeC "+1, cllxlld ~< IIF(x)ll ~< !llxll ~. C 
+On en d~duit sans peine que la suite de fonctions C,~ (x)= O/d) n log(ll Fn (x)II) converge 
+vers une fonction plurisousharmonique continue G § Le courant positif ferm6 (i/Tr) OOG + 
+peut ensuite 6tre projet6 sur pn de la manihre suivante : si x est un point de P~, et 
+s: Lt--+C ~+1 une section locale de 1r au voisinage de x, on pose 
+~+1~ = --C--1 o0(G+~ 7r 
+Cette formule ne d6pend pas de set permet donc de d6finir #+ sur tout P'~. C'est un 
+courant positif ferm~ dilat~ par f qui joue un r61e analogue ~ celui que jouera T + pour 
+les automorphismes des surfaces K3. 
+Adaptons maintenant cette strat6gie au cas des automorphismes des surfaces K3. 
+Ici, nous savons d~jB construire T + et nous cherchons l'analogue de G +. 
+3.1. Extension de la dynamique h un fibr6 principal 
+Choisissons nx fibr6s en droites L1,..., Lnx dont les classes de Chern Cl,..., Cnx forment 
+une base de Sx. La matrice de r dans cette base sera not6e A~ = [aij]. A chaque fibr6 Li 
+
+
+=== PDF PAGE 19 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 19 
+est associ~ un C*-fibr~ principal dont l'espace total peut ~tre identifi~ au compl6mentaire 
+de la section nulle dans Li. En faisant le produit de ces nx fibr6s principaux, on obtient 
+un (C*)nx-fibr~ principal not6 E. La projection de E sur X sera notre ~rE et les fibres 
+7tEl{X} seront not6es Ex. 
+PROPOSITION 3.2. -- Il existe un diffdomorphisme holomorphe ~E sur l'espace total 
+du fibrd E vdrifiant : 
+(i) 7rEO(I)t~=r (on dira que ~E est << au-dessus)) de r 
+(ii) en restriction aux fibres, ~ est un automorphisme algdbrique de (C*) n 
+Remarque 3.1. -- Dans le cas de pn le groupe de N~ron-Severi est de rang un et le 
+fibr6 tautologique est un g~n~rateur. L'espace total de E s'identifie alors avec Cn+l\{0} 
+et l'on retrouve la premiere 6tape de la construction de Hubbard et Papadopol, i.e. la 
+construction de F. 
+Ddmonstration.- Notons r l'image r~ciproque de E par ~b et r r 
+l'application associ4e. Si~: E-+r est une 6quivalence de fibr6s, l'application (I)E= 
+r v6rifie (i) et (ii). I1 sni~it donc de montrer que les fibres principaux E et r sont 
+6quivalents. Puisque bl(X) est nul, la suite exacte longue de l'exponentielle montre que 
+tout (C*)nx-fibr6 principal est d6termin~ par sa classe de Chern. On va donc montrer 
+que les classes de Chern de E et r sont les classes de Chern de deux fibres principaux 
+5quivalents. 
+Par d6finition, la classe de E est un 616ment de H2(X, ZnX)=H2(X, Z)| ~X, et 
+celle de ~b*(E) s'en d6duit par l'action de r sur le membre de gauche de ce produit 
+tensoriel, 50 savoir H2(X, Z). Identifions Sx 50 Z n:( en identifiant la base (c{) de Sx 50 la 
+nX base canonique (e{) de Z nX. La classe de Chern de E vaut alors c(E):~{=~ e{| et 
+celle de r est donc 
+~'~X ?~X 
+c(r : E E aijej| (3) 
+i=1 j=l 
+Changer le fibr~ principal E en un fibrd ~quivalent, c'est changer l'action de (C*) ~x 
+sur les fibres de E en la tordant 50 la source par un automorphisme de (C*) nx . Tout 
+automorphisme du groupe (C*) nx s'obtient 50 partir d'une matrice [b~j]eSL(nx, Z) en 
+faisant le changement de coordonn~es (h)~-+(Xi) off: 
+nx 
+r j=l 
+Si l'on change l'action de (C*) nx 50 l'aide d'un tel automorphisme, la classe de Chern 
+du fibr6 obtenu se d6duit de celle de E par l'action de [bij] sur le membre de droite 
+
+
+=== PDF PAGE 20 ===
+20 S. CANTAT 
+de H2(X, Z)Qz Z nx. D'apr~s la formule (3), il suffit donc de tordre Faction de (C*) nx 
+sur E par l'automorphisme associ@ ~t la matrice tAr = [aji] pour obtenir un fibr~ qui est 
+@quivalent & E et qui a m@me classe de Chern que r Les deux fibr@s E et r 
+sont donc ~quivalents et la preuve est termin@e. [] 
+Remarque 3.2. -- (1) Soient x un point de X et U (resp. U p) un voisinage de x (resp. 
+de r au-dessus duquel E est trivial. On peut alors exprimer OE en coordonn~es locales 
+et l'on obtient #PE(Y, (Si))=(r (Ui)) avec 
+nx 
+aij 
+= f (y) 1-I sj , 
+j=l 
+les fonctions fi d@pendant du choix des coordonn@es locales et ne s'annulant pas. 
+(2) Le r6sultat pr@c@dent s'applique ~ tout automorphisme d'une vari@t@ projective 
+dont le premier nombre de Betti est nul. Lorsque ce nombre est strictement positif, il 
+faut d'abord factoriser l'automorphisme ~t l'aide de l'application d'Albanese. 
+3.2. Construction du potentiel 
+I1 s'agit maintenant de construire l'analogue des fonction Gn de Hubbard et Papadopol, 
+puis de montrer que cette suite converge uniform@ment. Avant de pr@senter la construc- 
+tion, rappelons que la droite D + associ@e ~ l'automorphisme r est contenue dans Sx | 
+lorsque X est projective, ce que nous supposons d@sormais (cf. remarque 1.1). 
+Nous munirons chaque fibr@ Li d'une m@trique hermitienne hi et noterons (ti) les 
+coordonn6es de [T +] dans la base Poincar~-duale de (ci). Si (x, s) est un point de la 
+fibre Ex, nous noterons (si) les coordonn~es de s dans les nx fibrSs Li. On d@finit alors 
+une fonction continue F: E-+R par la formule 
+puis l'on pose 
+nX 
+F(x, s) = Z ti log(hi(x, si)2), 
+i=1 
+PROPOSITION 3.3. -- La suite de fonctions (Gn) converge uniformdment sur tout 
+compact vers une fonction continue G~ : E-+ R. 
+Ddmonstration.- Soit L/l, ...,/act un recouvrement fini de X par des ouverts au- 
+dessus desquels E est trivial. Pour chacun des L/i, fixons une trivialisation de E. Dans 
+les cartes correspondantes, chaque m@trique hi est du type hi (x, si) 2 =gi (x) lsil 2 ofa gi est 
+Gn = ~-~-~ Fo~. 
+
+
+=== PDF PAGE 21 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 21 
+une fonction lisse ne s'annulant pas. Puisque nous n'utilisons qu'un nombre fini de cartes, 
+les fonctions gi sont en nombre fini et les fonctions log(gi(x)) sont done uniform~ment 
+born6es ; en particulier, nx 
+F(x, ~) = ~ t~ log(Is~12) + O(1). 
+i=1 
+La fonetion Fore s'exprime de mani~re analogue 5, l'aide des notations de la remar- 
+que 3.2 : 
+nx nx 2 nx 
+ro~(x,s)=Zt~log [I C j +~t~log(g~(x)L~(x), 2) i=1 'j=I ' i=1 
+=log s ti~j +O(1). 
+Comme les ti sont les eoordonn6es de [T +] dans la base duale de (ci), tAr et 
+done nx 
+ro~ = ~ Z tj log Lsjl 2+ O(1) = ~F+ O(1) 
+j=l 
+I1 existe done deux constantes m0 et/14o telles que 
+mo+AF ~< Fo(I)E ~< Mo+AF. 
+On en d6duit alors que la s6rie ~ (Gn+l-Gn) converge uniform6ment, ce qui termine la 
+preuve de la proposition. [] 
+Montrons maintenant que la fonction G~ permet de construire des potentiels eonti- 
+nus pour T +. Tout d'abord, remarquons que, si si: b/--+Li est une section locale de Line 
+s'annulant pas, alors 
+Oh,~ -- V/L--[ O01og(h~osi) ~r 
+ne d~pend pas de si : e'est la courbure de Li pour la m~trique hi. En partieulier, le courant 
+To=(i/Tr)OOF se projette sur X en un eourant d'ordre 0 dont la classe d'homologie 
+coincide avec celle de T +. La suite de eourants (1/A)nr converge vers le courant 
+T=(i/~)OSG; (projet~ sur X) et, puisque 
+a;o~ = ha;, 
+on a r Le eourant Test done un eourant ferm6 qui v6rifie [T]=[T +] (car [To]= 
+IT+I) et r Le th~or~me 2.4 montre alors que T coincide avee T +. En particulier, 
+T + admet des potentiels loeaux continus, ee qui aeh~ve la preuve du th6or~me 3.1. 
+
+
+=== PDF PAGE 22 ===
+22 s. CANTAT 
+3.3. D~finition de la mesure tt 
+Puisque les courants T + et T- admettent des potentiels locaux continus, nous pouvons 
+les multiplier (cf. w ce qui d~termine une mesure de probabilit~ 
+#=T+AT - 
+qui est ~videmment r Les propri~t~s d'unicit~ de T + et T- montrent que 
+cette mesure # est (( natureUement )~ associ~e ~ la dynamique du diffdomorphisme r et 
+la structure complexe invariante. Les propri~tds ergodiques de # seront analys~es dans la 
+partie 6. 
+Exemple 3.1. -- Dans l'exemple 0.1, la mesure p associ~e ~ l'automorphisme r coin- 
+cide bien-sfir avec la mesure canonique wx de la surface. 
+3.4. Precision technique 
+Nous allons ici ~tablir un r~sultat technique qui precise la convergence de la suite de 
+fonctions (Gn). Nous n'utiliserons ce r~sultat qu'au w 
+PROPOSITION 3.4. -- Il existe une constante M, un recouvrement fini de X par des 
+ouverts, et une forme de Kiihler x sur X tels que : 
+(1) la suite de courants (1/)~n)r Tx converge vers T+; 
+1 ~ nT (2) les courants ( /)~ )r x sont donnds, sur chaque ouvert 14i du recouvrement, 
+par un potentiel continu Ui,n de valeur absolue uniformdment majorde par M. 
+(3) Quitte 5 extraire une sous-suite de (Ui,n)n, on obtient une suite de fonctions 
+continues qui converge simplement au-dessus de Lli vers le potentiel de T +. 
+Ddmonstration. -- (1) La premiere assertion a d~j~t dt~ obtenue pour n'importe quel 
+choix de  au w 
+(2) On reprend la construction des w167 3.1 et 3.2 avec des fibrds en droites tr~s amples 
+Li que l'on ~quipe de m~triques hermitiennes hi. On note F la somme des logarithmes de 
+F r ces m~triques, ---)-~i=l log(h/), ce qui d~finit une fonction continue sur l'espace total E 
+(attention, ce n'est pas la m~me que prdcddemment). L'amplitude des fibres Li permet 
+de supposer que (i/~)00F se projette sur X en une forme de K~hler x. 
+Recouvrons X par un nombre fini d'ouverts L/i au-dessus desquels le fibr~ E est trivial 
+et fixons une section holomorphe ai: Ui--+E du fibr~ E au-dessus de chacun des b/i; la 
+fonction Foai est alors un potentiel pour le courant Tx: o~-+fx xA~. De m~me, au-dessus 
+de l'ouvert Ui, (1/An)FoO~oa iest un potentiel pour le courant (1/A~)(r Nous 
+allons montrer que ces potentiels sont born~s ind~pendamment de n. 
+
+
+=== PDF PAGE 23 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 23 
+On commence par remarquer que les modules des coordonn6es des a / sont encadr~s 
+par deux constantes strictement positives met M ind6pendantes du point et de i : 
+Vi, VxEL/i, VjE{1,...,r}, m~lai(x)l~M. 
+Ensuite, on utilise l'expression de (])E obtenue ~ la remarque 3.2: si DE(X, sl, ..., st)= 
+(r uz) alors 
+rI Ska,k, (4) 
+k=l 
+off ftij est holomorphe, ne s'annule pas et ne d6pend que du choix de la trivialisation 
+la source (sur b/i) et au but (sur b/j, qui contient r En particulier, 
+r 
+log(luzl) = log(If[j(x) l)+ E azk 1og(Iskl), 
+k=l 
+off Ar [azk] est la matrice de r dans la base de Sx | donn6e par les classes de Chern 
+des Li. Cette derni6re formule d6crit l'6volution du module des eoordonn6es, lues dans 
+les cartes choisies, lorsqu'on applique la transformation DE; ceci diff6re de la norme 
+calcul6e avec hi par une fonction multiplicative (additive par passage au log) que l'on 
+peut toujours incorporer dans les f[j, ce que nous ferons. 
+Ce que l'on veut contrSler, c'est l'6volution de (1/An)FOO~EOa i quand n croit. Pour 
+n=l, on vient de faire le calcul. Pour n=2, il faut prendre l'image de (r ul) par (I)E. 
+Soient (02(x), vi) les coordonn6es de 4PE(r ui). Si west un vecteur, nous noterons wj 
+ou encore [w]j sa je coordonn6e. Avec ces notations on obtient 
+l~ I) = [Ar176162176 [))]l + [A,(log(] f k I))]t + l~ 
+oh g est l'une des f~ et d6pend uniquement des choix de coordonn6es autour de r 
+et r L'6volution de F par it6ration est donc r6gie par le processus suivant. On 
+dispose d'une collection de vecteurs h coordonn6es born6es qui sont les logarithmes des 
+cr~(x) et les logarithmes des f~(x). On part de l'un de ces vecteurs [v]=[log(ai(x))], 
+on lui applique Ar et on additionne un autre vecteur [v']=[log(f~j(x))], ce qui donne 
+un vecteur [ul]. On lui applique alors Ar et on additionne un autre vecteur de notre 
+collection, et ainsi de suite : 
+[v] ~ [Ar (v)] + [v'] ~ [A~ o A~ (v)] + [de (v')] + [v"] ~ .... 
+Autrement dit, on it~re une infinit~ de transformations aliines ~ partie lin~aire constante, 
+~gale ~t A,, et ~ translation al~atoire mais de norme born~e. Ensuite, on divise le n e it~r~ 
+par A ~. Puisque Ar est semblable ~ la matrice 
+(i~ 1/)~ 
+0 
+
+
+=== PDF PAGE 24 ===
+24 s. CANTAT 
+off B est de taille (r- 2)  (r- 2) et pr@serve une m@trique d@finie positive, l'orbite de tout 
+point par cette dynamique est born@e. On en d@duit imm@diatement que les fonctions 
+Ui,n := (1/A n) F o (I)~ o a i sont uniform@ment encadr@es par deux constantes, ce qui montre 
+le deuxi~me point du lemme. 
+(3) Puisque les fonctions ui,n sont plurisousharmoniques et minor@es-major@es, on 
+peut extraire une sous-suite convergente : la limite est un potentiel pour le courant limite. 
+D'apr~s (1), ce courant coincide avec T + : on a donc, h la limite, un potentiel pour T +, 
+qui est forc@ment continu. [] 
+4. Laminarit@ des courants de Nevanlinna 
+Le courant T + (resp. T-) est un courant d'int@gration sur une vari@t@ instable (resp. 
+stable) de l'automorphisme r ; c'est donc un courant d'int@gration sur une courbe enti~re 
+injective. Nous allons maintenant utiliser cette propri@t@ pour montrer que T + (resp. T- 
+est un courant fortement laminaire. 
+Dans un premier temps, nous introduirons plusieurs notions distinctes de laminarit@ 
+puis, suivant [3], nous montrerons que tout courant d'int@gration sur une courbe enti~re 
+v@rifie certaines propri@t@s de ce type. Ce n'est qu's la partie suivante que l'on en d@duira 
+la laminarit@ de T +. 
+Dans toute cette partie, X est donc une surface complexe compacte quelconque. 
+4.1. Diverses notions de laminarit@ 
+Laminaritd uniforme. -- Commen~ons par la notion la plus simple et la plus contrai- 
+gnante de laminarit@, la laminarit@ uniforme. Dans toute la suite, D 2 d@signe le bidisque 
+((x, y) cC2: Ixl < 1, lYl < 1~. Si f: D-+D est une application holomorphe, son graphe est 
+un sons-ensemble de D 2 not@ F/. 
+Ddfinition 4.1. -- Une famille pond@r@e de graphes disjoints (dans D 2) est la donn@e 
+(`4, #, (fa}) d'un espace mesur@ (`4, 7-, p) et, pour chaque point a de `4, d'une fonction 
+holomorphe fa: D-+D tels que : 
+(i) si a~b, alors F/o et F/b sont disjoints, 
+(ii) l'application (,4, 7-)-+ (D, Bor@liens), a~-~ f~ (0), est bimesurable sur son image. 
+La deuxi~me condition permet de r@aliser ,4 comme une partie mesurable de la 
+transversale (0}  D, et # comme une mesure sur {0}  D de support contenu dans ,4. En 
+utilisant le A-lemme de Man@, Sad et Sullivan [12] on peut compl@ter la famille de graphes 
+en sorte que ,4 soit un ferm@ de {0}  D. On obtient ainsi une lamination compacte de D 2 
+
+
+=== PDF PAGE 25 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 25 
+par des disques holomorphes. Si l'on change de transversale, par exemple en rempla~ant 
+{0} x D par {s} x D, l'holonomie est automatiquement continue [12]. 
+Dgfinition 4.2. -- Un courant Test uniform@ment laminaire au voisinage de x s'il 
+existe un ouvert///contenant x et biholomorphe k D 2 et une famille pond6r@e de graphes 
+disjoints (A, #, {fa}) sur/A telle que : 
+Vc~EAI'I(LI), (5) 
+fa 
+Un courant est uniform@ment laminaire s'il l'est au voisinage de tout point. 
+Un courant uniform@ment laminaire est n~cessairement de type (1, 1), positif et 
+ferm@. Si l'on peut exprimer T ~ l'aide de la formule (5) dans l'ouvert b/on dit alors que 
+3/est un ouvert distingu@ et que T y est @l~mentaire. 
+La notion de courant uniform@merit laminaire cd/ncide en fair avec celle de lamination 
+par surface de Riemann plong@e dans X et munie d'un cycle feuillet@ (voir [16] et [6]). 
+Pour s'en convaincre, il suffit de recouvrir X par des ouverts distingu@s, de compl@ter 
+chaque famille pond~r6e de graphes en une lamination continue, puis de remarquer que les 
+recollements sont des fonctions qui sont continues transversalement ~ la lamination (A- 
+lemme). En particulier, le th@or~me de Hurder et Mitsumatsu [21] montre qu'un courant 
+laminaire pour lequel les mesures transverses sont sans atome a une auto-intersection 
+nulle. Par exemple, le plan projectif ne supporte aucun courant uniform@merit laminaire 
+de ce type. 
+Laminaritd et laminaritd faible. -- Passons maintenant ~t la d~finition de la lami- 
+narit@ ((usuelle ~. I1 s'agit d'une notion plus faible et plus souple que la pr@c@dente qui a 
+@t6 introduite initialement dans [3]. 
+Soit b/un ouvert de X. Une famille pond~r@e de disques disjoints dans L/est la donn@e 
+d'un espace mesur@ (A, T, it) et d'une collection d'applications holomorphes injectives 
+fa: D--+/~, aEA, d'images deux-~o-deux disjointes, telle que (a, Z)~-+fa(Z) soit mesurable. 
+La diff@rence essentielle avec la notion de famille de graphes disjoints est qu'on ne suppose 
+pas l'existence d'une transversale globale dans///. Dans toute la suite, un disque trac@ dans 
+Lt est, par d@finition, l'image de D par une application holomorphe injective f: D--+b/. 
+Ddfinition 4.3. -- Un courant T est laminaire au voisinage de x s'il existe un ouvert 
+L/contenant x et une famille pond@r@e de disques disjoints dans bt tels que : 
+Vc~ E A'" ("), T(~)=/A(/Df*c~)dit(a). 
+Un courant est laminaire s'il l'est au voisinage de tout point. 
+
+
+=== PDF PAGE 26 ===
+26 s. CANTAT 
+Un courant uniform6ment laminaire est dvidemment laminaire. Pour la laminaritd 
+faible, on prend la m6me d6finition mais on suppose seulement que fa(D)Nfb(D), ~ d~faut 
+d'Stre vide, est un ouvert dans chacun des deux disques. 
+Exemple 4.1. -- Soit # une mesure sur p1, par exemple la mesure de Lebesgue, et 
+go un pinceau de droites dans p2 muni d'un param&rage par p1 : on note go, la droite 
+correspondant au point x de p1, et p le point base du pinceau. Le courant 
+T:c~-+ f, lfv adp(x), 
+est alors un courant laminaire car on peut recouvrir chaque go, (~ un ensemble n6gligeable 
+pros) par des ouverts deux-~-deux disjoints ne contenant pas p. La structure laminaire 
+de ce courant prdsente cependant une singularit6 6vidente au point p. Nous allons donc 
+d~s maintenant affiner la ddfinition 4.3. 
+Laminaritd forte. 
+Ddfinition 4.4. -- Deux disques Aa et Ab tracds dans un ouvert U sont dits compa- 
+tibles si, pour tout ouvert PC U et tout ensemble analytique C de V qui est irrdductible 
+et contient A a (resp. AD), on a l'alternative : ou bien C ne rencontre pas Ab (resp. Aa) 
+ou bien C contient AbN1; (resp. A~N1;). 
+Pour cette d6finition, on ne demande pas que C soit d6fini sur tout/.4 mais seulement 
+sur un ouvert 1; de/4. Par exemple, si 5 r est un feuilletage de C 2 pr6sentant une singularit6 
+isol6e en (0, 0), et si Lest une feuille de ~- qui n'est pas une s6paratrice, deux disques dans 
+cette feuille sont compatibles, mais il n'existe que tr~s rarement un ensemble analytique 
+C dans un voisinage de (0, 0) qui contienne Fun de ces disques. La compatibilit6 est une 
+relation d'6quivalence sur les disques trac6s dans/4. Essentiellement, deux disques sont 
+compatibles quand leurs prolongements analytiques se raccordent ou ne se rencontrent 
+pas. 
+Ddfinition 4.5.- Un courant Test dit fortement laminaire s'il s'6crit localement 
+comme un courant laminaire associ~ g une famille pond6r6e de disques deux-g-deux dis- 
+joints et compatibles. 
+4.2. Structure des courants laminaires 
+De nombreux r~sultats concernant les courants laminaires se trouvent dans [3]. Nous 
+utiliserons principalement les deux suivants : 
+-- Le premier correspond au lemme 6.2 de [3] et permet d'approcher localement 
+les courants laminaires par des courants uniform6ment laminaires. En voici diff~rentes 
+formulations. 
+
+
+=== PDF PAGE 27 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 27 
+Soit Tun courant faiblement laminaire et 1X un ouvert de X. Pour tout hombre c 
+strictement positif, il existe une collection finie de bidisques/4i dans/4 et, sur chaque b/i, 
+un courant uniform6ment laminaire 616mentaire Ti, tels que: 
+(i) les Ti sont 5, supports disjoints, 
+(ii) Masse[T[u -Ei Ti] <e. 
+Lorsque Test laminaire, on peut trouver une collection d6nombrable de tels courants 
+uniform6ment laminaires Ti s supports disjoints pour lesquels Tlu =~i Ti. Plus pr6cis6- 
+ment, si T est un courant laminaire qui, dans l'ouvert distingu6 /4, est donn6 par une 
+famille pond6r6e de disque (A,T,#), il existe alors une collection d6nombrable de bi- 
+disques Hi dans/4 tels que : 
+(i) Pour tout i, l'ensemble A~CA des disques qui coupent/4i sur des graphes est un 
+ensemble mesurable de p-mesure strictement positive. 
+(ii) L'aire totale des portions de disques qui n'apparaissent comme un graphe dans 
+aucun des/4i est nulle. 
+-- Le deuxi6me r6sultat que nous utiliserons fr6quemment permet d'exprimer un 
+courant faiblement laminaire sous une forme plus agr6able ~ manier : si T est faiblement 
+laminaire et six est un point de X, il existe alors un voisinage IX de x, une famille 
+pond6r6e de disques disjoints (A, p, {f~}) dans /4 etune famille de fonctions positives 
+r D--+R + tels que : 
+Vc~c~2(/4), T(a)= /A (/D ~af*(a))d#(a). (6) 
+Les fonctions r peuvent 6tre choisies semi-continues infdrieurement et d6terminent une 
+fonction (I) sur/4 qui est mesurable. 
+PROPOSITION 4.1. -- Un courant faiblement laminaire et fermd sur une surface 
+complexe compacte X est automatiquement laminaire. 
+Dgmonstrution. -- Soit Tun courant faiblement laminaire ferm6 et/4 un ouvert de 
+X dans lequel Test repr6sent6 par la formule (6). I1 existe alors une collection d6nom- 
+brable de bidisques/4i contenus dans/4 et v6rifiant les propri6t6s suivantes. Pour chaque i, 
+l'ensemble des disques fa(D) constituant T et coupant/gi sur un graphe est un ensemble 
+de #-mesure strictement positive ; l'union Ai des graphes ainsi construits d6termine une 
+famille de graphes deux-h-deux disjoints dans/4,~, et le courant 
+j (/o .,) ~fi: OL ~--} Caf~ ((~ d#(a) 
+i 
+est contenu dans TIu ~ ; enfin, la somme des T~ est 6gale h T. 
+
+
+=== PDF PAGE 28 ===
+28 s. CANTAT 
+Pour montrer la proposition il suffit de montrer que les fonctions r qui apparaissent 
+dans cette formule sont constantes pour #-presque tout point a de -4i et pour tout indice i. 
+Fixons un tel indice et compl~tons la famille (.4i, fa) de telle sorte que 
+K= H fa(D) 
+aEA~ 
+soit une lamination compacte de L/i, ce qui est possible grace au A-lemme. Nous noterons 
+Tile courant obtenu en restreignant Ti ~ cette lamination; s l'aide du param@trage 
+(a, z)~-~ fa (Z) on peut penser :~i comme un courant sur la lamination verticale de Ai  D. 
+Puisque Ti coincide avec la restriction de T ~ la lamination, Ti est ferm@. En d'autres 
+termes, si a=al (a, z)dz + a2 (a, z)d2 est une forme diff@rentielle sur la lamination .Ai  D 
+qui est continue et diff@rentiable le long des feuilles, alors Ti(da)=0, la diff@rentiation 
+ayant lieu le long des feuilles. Cette formule peut @tre r@~crite sous la forme 
+off Ca=r Pour montrer que r est constante pour #-presque tout a, il suffit de 
+montrer que les r le sont. Quitte s convoler Ti par un noyau r@gularisant le long des 
+feuilles, ce qui ne change pas le fait que :Fi est ferm@, on peut supposer dans un premier 
+temps que les Ca sont lisses. Une int@gration par partie montre alors que 
+~eA~/D dCa(z) A(~ d#(a) -~ O 
+pour toute 1-forme a qui est continue et lisse le long de la lamination. La d@riv~e de 
+Ca est donc presque tout le temps identiquement nulle. Ceci signifie que les (~a sont 
+constantes d~s qu'on les r@gularise. Les r sont donc elles-m@mes constantes et la preuve 
+est termin@e. [] 
+PROPOSITION 4.2. -- Soit Tun courant laminaire et T1 un eourant positif contenu 
+dans T, c'est-it-dire que (T1 ]~) est majord par (TI~ } pour route forme positive t3. Alors 
+T1 est faiblement laminaire. 
+D@monstration. -- I1 suffit de montrer le r@sultat lorsque Test uniform@ment lami- 
+naire, le cas g@n@ral s'y ramenant par les arguments de la preuve pr@c@dente. Lorsque 
+Test un courant uniform@ment laminaire @l@mentaire sur le bidisque L/ il d@termine 
+un champ de (1,1)-bivecteurs scind~s t A t = (fa)* (Oz A C~z). C'est un champ continu sur le 
+support de T. Soit w une forme volume sur L/compatible avec l'orientation donn@e par la 
+structure complexe. La (1, 1)-forme ~= ZtA~ W (produit int@rieur) est positive et continue 
+le long du support de T, donc 
+0 ~< T~(3) ~< T(fl), 
+
+
+=== PDF PAGE 29 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 29 
+et, puisque T(~) est nul, on obtient TI(~)=0. On en d@duit sans peine que T1 peut 8tre 
+repr@sent@ dans 5/par la formule : 
+rl(a) = fu c~(tAf) a~ 
+oh u est une mesure positive sur 5/. En d@sint@grant u le long des graphes constituant T 
+on voit que T1 est faiblement laminaire (avec les m~mes disques que T). [] 
+PROPOSITION 4.3. -- Soit Tun courant laminaire fermd admettant un potentiel 
+continu au voisinage de tout point. Si la classe d'homologie de T vdrifie IT]2=0 alors T 
+est fortement Iaminaire. 
+Plus pr@cis~ment, pour toute reprSsentation de T ~ l'aide d'une famille pond~r~e de 
+disques (.4, #, {fa}), on peut retirer ~ .4 un ensemble de #-mesure nulle sur le compl6men- 
+taire duquel la famille est constitu@e de disques compatibles. 
+Nous utiliserons la multiplication des courants ~ potentiels continus (cf. w Si Ti 
+et Tj sont deux courants de ce type, TiATj est donc une mesure positive. 
+Ddmonstration.- Soit 5/un ouvert de X et (.4, #, {fa}) une reprSsentation de T 
+dans 5/. Deux disques fa(D) et fb(D) compatibles et qui admettent des prolongements 
+analytiques dans b/qui se rencontrent sur un ouvert commun seront dits ((dans la re@me 
+feuille ~. l~tre dans la m@me feuille d@termine une relation d'@quivalence mesurable sur ,4 
+qui contient au plus un hombre d@nombrable de points dans chaque classe. Puisque T a 
+un potentiel continu, # est sans atome et la mesure de chaque classe est donc nulle. Par 
+ailleurs, puisque le courant est fermi, le prolongement analytique locM de presque tout 
+disque de Test r6union de disques de T (s un ensemble n@gligeable pros). La notion de 
+feuille est donc vraiment analogue ~ celle employ@e dans le cas des laminations. 
+Si T n'est pas fortement laminaire il existe un ensemble 2t41C`4x`4 de mesure 
+positive tel que tout couple (a, a/) appartenant ~t ,~/1 corresponde ~ une paire de disques 
+non compatibles. Quitte ~t changer le d~coupage des feuilles correspondantes, on peut 
+donc supposer qu'il existe A4 C.4  `4, de mesure positive, tel que : 
+V(a, a')e A/I, f~(D)Nf~,(D) r O. 
+Utilisons maintenant la repr@sentation de T /~ l'aide d'une somme de courants uni- 
+form~ment laminaires T~ d~finis dans des bidisques 5/~ de 5/. Pour chacun de ces courants 
+il existe `4~ C`4 tel que 
+T~(a)= fA, fSo(D)nuadtt(a)' 
+et, comme #  on peut supposer qu'il existe deux tels conrants T~ et Tj avee 
+~ I-t(A~  .4j N.M)>0. Ces deux courants admettent des potentiels continus car ils sont 
+
+
+=== PDF PAGE 30 ===
+30 s. CANTAT 
+contenus dans T et T admet de tels potentiels (cf. lemme 8.2 de [3]). lls sont en outre 
+uniform6ment laminaires. On peut donc calculer leur intersection en comptant le nombre 
+moyen de points d'intersection entre leurs disques constitutifs [3, w 
+Ti A Tj =/A, x.% ~{f~ (D)Nfb(D)} d# x d#(a, b) > O. 
+L'auto-intersection de T 6tant minor6e par cette quantit6, on obtient une contradiction, 
+et la proposition est d6montr6e. [] 
+4.3. Laminarit6 des courants de Nevanlinna 
+Ce paragraphe est consacr6 ~ la d6monstration du r6sultat suivant. 
+THEOREM 4.4. -- Soit f: C-+ X une courbe enti~re injective tracde sur une surface 
+projective complexe. Tout courant ferrnd qui est adhdrent 5 la suite N(r, f) est alors un 
+courant laminaire. 
+Ce th6or6me s'inspire du w de [3] mais se situe cependant dans un cadre a priori 
+d6muni de dynamique. Par exemple, X peut 6tre le plan projectif ou une surface de type 
+g6n6ral. 
+Un eas particulier. -- Nous allons commencer par d6montrer ce r6sultat dans le cas 
+oh X admet des fibrations singuli6res 7ri: X-+P 1, i=1, ..., 1, satisfaisant : 
+(i) La fibre g6n6rique de 7ri est connexe et de genre sup6rieur ou 6gal ~ 2. 
+1 
+(ii) Si w d6signe la forme de Fubini Study sur p1 alors x=~i=l 7r~w est une forme 
+de Kghler sur X. 
+En outre, nous 6tudierons d'abord les eourants ferm6s adh6rents ~ la suite 
+G(r,f):~ A(r,f) (D~) 
+off A(r, f) est l'aire de f(D~) pour la m6trique associ6e s x. Cette premi6re 6tape aura 
+l'avantage de souligner plus facilement les liens entre les deux pages qui suivent et le w 
+de [3]. 
+Soit ri une suite de rayons tendant vers l'infini pour laquelle G(ri, f) converge vers 
+un courant positif fermd not6 C. Nous allons montrer que C est faiblement laminaire, ce 
+qui d'apr6s la proposition 4.1 est suffisant pour 6tablir que C est laminaire. 
+Soit 7r l'une des l fibrations 7ci. D6coupons p1 en quatre domaines disjoints A~, 
+i=1, ..., 4, qui sont hom6omorphes ~t des disques, qui 6vitent les points critiques de 7r, 
+dont les adh6rences recouvrent tout p1, et dont les aires sont 6gales (pour la mdtrique 
+
+
+=== PDF PAGE 31 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 31 
+de Fubini-Study sur pl). Soit A l'un quelconque de ces quatre domaines. Puisque le 
+genre des fibres de 7r est sup~rieur 5` 2, l'ensemble Ir-l(A) est hyperbolique au sens de 
+Kobayashi. En particulier, la famille des applications holomorphes s: A--+Tr-I(A) qui sont 
+des sections de 7r est une famille normale au sens de Montel [26]. 
+La composition 7to f: C--+P 1 est une application m~romorphe enti~re 5` laquelle nous 
+allons appliquer la th~orie d'Ahlfors Nevanlinna [31]. Nous dirons donc qu'une com- 
+posante connexe de DrO(Trof)-l(A) est une bonne ~le si son image par f est le graphe 
+d'une section de 7r. Ainsi, 5` chaque rayon ri est associ~ un nombre fini de sections 
+8: /~---+'/r-l(/k) dont les graphes s(A) sont contenus dans f(Dr~)Nzc-l(A). Soit z un point 
+de A, et .4~ le sous-ensemble de 7r-l{z} constitu6 des s(z), s d6crivant l'ensemble fini 
+des sections ainsi construites. Puisque f est injective, chaque point a de .4~, correspond 
+5. une unique section Sa ; nous noterons Fa le graphe sa(A) correspondant. 
+Soit #~ la mesure 
+1 
+#~'- A(r, f) ~ 5~. aEA~ 
+C'est une mesure finie de masse major~e par IIdTrll/aire(A), oh la norme de d~r et l'aire de 
+A sont mesur~s 5` l'aide de x et w. Nous pouvons donc extraire une sous-suite convergente 
+de (#r~)i dont la limite est notre #A. Pour chaque point b du support de #A il existe 
+une suite de points ajCA~j tendant vers b, et, puisque les graphes Faj forment une 
+famille normale, on peut choisir un graphe limite I'b passant par b. D'apr~s le thSor~me 
+d'Hurwitz, les graphes ainsi construits sont disjoints et forment donc une lamination 
+compacte de 7r-l(A) qui est transverse aux fibres de 7r. Le courant CA d~fini par 
+CA:a~-+ /~_l{zi fr c~d#A(a) 
+est un courant laminaire sur 7r-l(A). 
+La somme des quatre courants ainsi construits au-dessus des quatres domaines A~ 
+est un courant laminaire Co contenu dans C; il approxime C d'autant mieux qu'il y a 
+peu de mauvaises ~les au-dessus des A~..~ ce stade, cette construction un peu naive peut 
+mener au courant nul et il faut la raffiner afin d'etre stir que les courants laminaires que 
+l'on construit approchent convenablement C. 
+On d~coupe donc 5` nouveau l'ensemble A en quatre domaines d'aires ~gales 
+A{, ..., A 4. Sur chacun des A~ on peut appliquer la construction pr~c~dente ce qui donne 
+un courant CA[. Ce courant est sup~rieur 5` la restriction de C~ 5` 7r-l(A1 k) car une 
+portion de f(D~) peut ~tre un graphe au-dessus de A1 k sans l'~tre au-dessus de tout A. 
+La mesure It/, peut ~tre pouss6e par holonomie sur une fibre de Alk, ce qui permet de 
+la comparer 5` It/,1 k : on obtient une mesure absolument continue par rapport 5` It/,~ de 
+
+
+=== PDF PAGE 32 ===
+32 s. CANTAT 
+support 6ventuellement plus petit et de d6riv6e parfois petite en certains points. On re- 
+tranche alors Ca k chacun des Ca~ pour obtenir un courant laminaire r6siduel Ca~ sur 
+chaque 7r-l(A~). La somme de Ca et de ces quatre courants r6siduels est major6e par la 
+restriction de C s 7r-l(A) et l'approche mieux que CA puisqu'on a jet6 moins de mau- 
+vaises iles. Ce courant n'est cependant plus laminaire car des graphes du courant r6siduel 
+contenues dans des graphes de Ca peuvent subsister l~ off/~a est petite devant ~a~. 
+En it6rant cette construction et en appliquant la th6orie d'Ahlfors-Nevanlinna 
+comme dans [3] on obtient ~ la limite un courant faiblement laminaire Co~ sur X qui est 
+contenu dans le courant C et v6rifie 
+Cette formule signifie en effet que la proportion des points off la d@rivde de 7rof s'annule 
+(ceux qui sont contenus dans les mauvaises hes de tousles domaines A j) est n6gligeable : 
+c'est exactement ce que dit l'in6galit6 d'Ahlfors-Nevanlinna, le terme d'erreur de cette 
+in6galit6 6tant n6gligeable exactement torsque C est ferm6, c'est-~-dire lorsque le p6ri- 
+m6tre de f(DT~) devient n6gligeable par rapport ~ son aire. 
+Lorsque l'on utilise successivement les l fibrations lr, on construit bien stir le m@me 
+courant C~, ind6pendamment de I. Ce courant v6rifie donc en fait 
+= (c I x), 
+ce qui montre que Co~ coi'ncide avec C. En particulier, C est faiblement laminaire. 
+Application d N(r, f). -- Revenons maintenant s l'6tude des courants de Nevan- 
+linna N(r, f). Supposons que la sous-suite N(rj, f) converge faiblement vers un courant 
+ferm6 T, c'est-s que Test donn6 par la formule 
+T:a~-~ lim 1 f~'f dt 
+j-++~ T(rj,f) Jl J/(D~j) t 
+On peut alors reprendre la construction pr6c6dente point par point en introduisant les 
+courants 
+TA:O:I--~ f f paOLd~(a), (7) J*fl*rj J Fa 
+off la fonction Pa est d6finie sur chaque graphe Fa, c'est-s sur chaque bonne ile, et 
+correspond dans Pile & la fonction 1/t. La mesure p~, est d6finie de mani~re analogue 
+la mesure #m, mais en normalisant par le facteur T(r, f). 
+La formule (7) montre que TA est un courant faiblement laminaire obtenu ~ partir 
+de CA en multipliant les disques qui le constituent par des fonctions proportionnelles 
+
+
+=== PDF PAGE 33 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 33 
+aux Pa. Cette propri6t~ subsiste 6videmment A la limite. On obtient ainsi directement la 
+d6composition de T qui correspond/t la formule (6). En conclusion, les courants T qui 
+sont ferm6s et adh6rents k N(r, f) sont faiblement laminaires et donc laminaires (propo- 
+sition 4.1). I1 reste ~ voir comment se d6barasser de l'hypoth6se relative aux fibrations 
+de la surface X. 
+Sur une surface projective quelconque. -- Puisque X est projective, elle poss~de un 
+pinceau ~ de courbes de genre au moins 2. Soient Pl, ..., Pk les points-base de ce pinceau. 
+En ~clatant la surface X au-dessus de chacun de ces points on dispose d'une projection 
+c: )(--+X et d'une fibration 7r~: )~_+p1 Lorsqu'une courbe f est trac~e sur X on peut 
+la relever ~ X, ce qui fournit une courbe enti~re 9/: C-->)~ dominant f, i.e. co]=f. On 
+peut faire la m~me construction en partant de plusieurs pinceaux de telle sorte que )~ 
+admette un nombre fini de fibration ~1,..., 7rl globalement transverses entre elles (i.e. en 
+tout point x de )( il existe au moins deux des fibrations qui sont transverses, i.e. la 
+somme des images r~ciproques de la forme de Fubini-Study par ces fibrations est une 
+m~trique k~hl~rienne). I1 suffit alors de montrer que l'~tude des courants de Nevanlinna 
+associ~s ~ f est suffisante. 
+Soit ri une suite de rayons pour laquelle la suite N(ri, f) converge vers un courant 
+positif ferm~ T (on a fix~ une m~trique hermitienne sur X de forme fondamentale x et 
+l'on mesure les aires grace ~. cette forme). Fixons une m~trique hermitienne de forme ~" 
+sur X ; on dispose alors de deu familles de courants sur X, d'une part la suite des cou- 
+rants de Nevanlinna de j~ mesur~e ~ l'aide de la m~trique ~', d'autre part la famille de 
+courants : 
+-- OlT, /V(r, f): (~ ~-+ T(r,f) (D~) 
+oh T(r, f) est calcul~ sur X, par rapport s x, de sorte que l'image directe de _N(r, f) par 
+est ~gale h N(r, f). Si le rapport 
+T~(ri, ]) 
+T(r{, f) 
+n'est pas born6 c'est qu'il existe une sous-suite de N(ri, ]) convergeant vers un courant 
+positif de S, non ferm6 a priori, de masse unit~ pour ~- et valant 0 en ~valuation sur c*x. 
+Cette derni6re propri6t6 signifie que le courant est /~ support dans les diviseurs excep- 
+tionnels de l'6clatement. D'apr6s la remarque 2.4, ce ph~nom~ne est impossible. On peut 
+donc extraire une suite convergente de la famille N(r{, ]) dont la limite Test un courant 
+sur X qui est ferm6 et se projette sur un multiple non nul de T. La laminarit~ de 
+montre que Test laminaire en dehors des points de l'~clatement. Puisque ceux-ci sont 
+arbitraires, Test partout laminaire. 
+
+
+=== PDF PAGE 34 ===
+34 S. CANTAT 
+Le th6or~me 4.4 est donc maintenant compl~tement d~montr6, et nous allons pouvoir 
+l'appliquer s l'~tude des courants T + et T-. 
+5. Feuilles instables et courant T + 
+Comme pr~c~demment, r est un automorphisme d'une surface K3 projective dent Fen- 
+tropic est strictement positive. Les rdsultats obtenus jusqu'ici permettent de donner une 
+description satisfaisante de la structure locale et globale des courants dilates par r Ce 
+sent des courants d'intSgration sur les vari~tds stables ou instables des points p~riodiques 
+hyperboliques, l~tant ferm~s, ce sent donc des courants laminaires fermds. Ils admettent 
+localement des potentiels continus et sent d'auto-intersection nulle. I1 s'agit donc de 
+courants fortement laminaires. Ils sent en outre extrdmaux parmi les courants positifs 
+ferm6s et uniquement d6termin6s par la donn6e de l'automorphisme qui les dilate. 
+Nous allons maintenant appliquer ces propri~t~s pour fournir deux proc~d~s de con- 
+struction du eourant T + qui g~n~ralisent ceux pr~sent~s au w 
+5.1. Vari~t~s instables 
+Soit u une mesure de probabilitd r qui est ergodique et dent l'entropie est 
+strictement positive. Nous avons d~jh expliqu~ au w que ~ est hyperbolique au sens 
+de Katok : elle admet un unique exposant de Lyapunov strictement positif et un unique 
+exposant strictement n~gatif, chacun d'entre-eux ~tant de multiplicit~ r~elle ~gale ~ 2. 
+Les vari~t~s stables et instables sent des surfaces de Riemann et presque toutes sent 
+param~tr~es par des courbes enti~res injectives [42J, [3]. Certaines de ces feuilles instables 
+peuvent 8tre contenues dans des courbes alg~briques ; c'est le cas pour l'exemple 0.1 : 
+chacune des 16 courbes nodales provenant de la d~singularisation de la surface de Kum- 
+mer contient une vari~t~ instable de l'automorphisme. Ce ph~nom~ne est cependant tr~s 
+rare : 
+LEMME 5.1.- Soit r automorphisme d'une surface K3 dent l'entropie est 
+strictement positive. Il n'existe alors qu'un nombre fini de points hyperboliques ( au sens 
+de Pesin) dent la varidtd instable est contenue dans une courbe algdbrique. 
+D~monstration.- Supposons que E soit une courbe alg~brique irr~ductible con- 
+tenant une vari~t~ instable. Puisque T + est s potentiels continus et s'obtient par inte- 
+gration sur une autre vari~td instable, nScessairement disjointe de celle contenue dans E, 
+[T+].[E]=O. En particulier, E est une courbe rationnelle lisse, i.e. une courbe nodale, 
+donc [E]2=-2. 
+
+
+=== PDF PAGE 35 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 35 
+Soit W le sons-espace de HI,I(X; R) engendr~ par les points k coordonn~es enti~res 
+situ~s dans l'orthogonal de IT+]. Puisque [T +] est ~t coordonn~es irrationnelles, la forme 
+d'intersection est d~finie n~gative sur W. Si E1 et E2 sont deux courbes nodales ortho- 
+gonales ~t T +, alors ([Ell+[E2]) 2 est n6gatif et [E112=[E212=-2, done [E1].[E2]~2. 
+I1 s'ensuit facilement que les classes d'homologie des courbes nodales orthogonales 
+T + sont en nombre fini. 
+Chacune de ces courbes 5rant d~termin~e par sa classe d'homologie, elles sont en 
+nombre fini et, quitte ~ remplacer r par l'une de ses puissances, on peut supposer qu'elles 
+sont chacunes ~b-invariantes. Si E est l'une de ces courbes et si E contient une variSt~ 
+instable, alors r est une homographie hyperbolique de la courbe rationnelle E. En parti- 
+culier, E ne contient que 2 points r6guliers hyperboliques : les deux points fixes de ~blE. 
+En effet, pour tousles autres points de E, la vari~t~ stable coincide avec la vari~t~ in- 
+stable, i.e. avec la courbe E etle-m~me ; ce ne sont done pas des points de Pesin. [] 
+Puisque la mesure u est sans atome, ces points sont done n6gligeables et nous les 
+n6gligerons. L'ensemble des points restant sera not5 A.. L'union A des A., lorsque u 
+d6erit toutes les mesures de ee type, sera appel~ ((ensemble des points rSguliers hyper- 
+boliques)). Pour tout point x de A, la vari6t~ instable de x est done paramfitr6e par C et 
+n'est contenue dans aucune courbe alg~brique. 
+THt~OPd~ME 5.2.- Soit c) un automorphisme d'une surface K3 projective dont 
+l'entropie n'est pas nulle. Soit x un point de A et f: C--+X un paramdtrage de sa feuille 
+instable. Si C est un courant fermd adhdrent it la suite 
+N(r, f): -- 
+alors C coincide avee T +. 
+Ol -- 
+T(r,f) (Dd t ' 
+Ddmonstration. -- Le courant C est un courant positif ferm~ laminaire. I1 coupe en 
+outre toute courbe alg~brique positivement (lemme 2.6), ce qui permet d'affirmer que sa 
+classe d'homologie est dans l'adh~rence du c6ne de Ks (w 
+Les disques constituant le courant C ne coupent jamais transversMement ceux consti- 
+tuant T +, car deux feuilles instables distinctes sont disjointes. Comme T + est ~t potentiel 
+continu, on en d~duit ([3, 58]) que 
+x T+ A Ci = 0 
+pour tout courant uniform6ment laminaire C~ contenu dans C. Ceci entraine [T+]. [C]=0. 
+Puisque [C] est adh6rent au c6ne de Ks [C] est done proportionnel ~ [T+], et l'on 
+conclut grace au th6or~me 2.4. [] 
+
+
+=== PDF PAGE 36 ===
+36 s. CANTAT 
+5.2. Image directe de courants positifs 
+Avant de continuer rappelons la construction du produit de deux courants positifs ~t 
+potentiels continus. Le but du jeu est de ddmontrer le th~or~me 5.3, th~or6me qui est 
+analogue au r~sultat principal de [4] mais dont la preuve n~cessite des arguments distincts. 
+Soit b/un ouvert de X, C un courant positif ferm~ dans b/, et Tun courant positif 
+ferm~ donn~ par un potentiel continu u dans L/. On d~finit alors le produit de T et 
+C par la formule TAC=(i/7~)OO(uC), ce qui d~termine une mesure positive sur /g. Si 
+~:/g- +R+ est une fonction lisse ~ support compact on posera : 
+WTAC=TAr162 
+C'est ~videmment une mesure positive. 
+Lorsque C est un courant positif (non fermi) et @ une fonction positive lisse 
+support compact v~rifiant Support(C) Support(0C)= o, il existe un ouvert U contenant 
+le support de @ sur lequel C est fermi. Ceci permet de d~finir le produit TAr comme 
+ci-dessus. Bien entendu, cette construction ne d~pend pas du choix de/g. 
+Lorsqu'on veut faire le produit de T avec un courant dSfini sur tout X, il suffit 
+ensuite d'utiliser des partitions de l'unit~. 
+THI~ORI~ME 5.3.- Soit r un automorphisme d'une surface K3 projective dont 
+l'entropie topologique est strictement positive. Soient C et ~ comme ci-dessus et c la 
+masse totale de la mesure positive T-A ~C. Soit ( Cn) la suite de eourants positifs ddfinie 
+par : 
+1 
+cn = V 
+La suite (C~) tend ators faiblement vers cT +. 
+Exemple 5.I.- (1) On pent choisir initialement un courant C ferm6 et r Si 
+C=T- on obtient c=0 et C~--~0. Si C est le courant associ~ ~ une forme de K/ihler, 
+alors e>0. 
+(2) Si C est un disque d'une feuille instable contenant un point r~gulier hyperbolique 
+on obtient c>0 : c'est ce qu'affirme le corollaire 5.4. 
+Ddmonstration.- La preuve de ce th~or~me est relativement ~l~mentaire. Tout 
+d'abord, on montre que C,~ est une suite de courants de masse born~e, puis que toute 
+valeur d'adh~rence est ferrule. EnsuRe, il faut voir que les valeurs d'adh~rence c6incident 
+avec T +. Pour cela, le th~or~me 2.4 permet de travailler directement en homologie. 
+Montrons que la suite de courants C~ est une suite de courants de masse born6e. Soit 
+F la fonction continue, x la m~trique k~hl~rienne et E le fibr~ principal qui sont con- 
+struits s la proposition 3.4. I1 faut ~valuer M[Cn]=(C,~Ix>=(r (1/An)(r Pour 
+
+
+=== PDF PAGE 37 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 37 
+cela, on fixe un courant C d5fini sur l'espace total du fibr6 principal E et se projetant 
+sur C. I1 sutfit alors de montrer que la suite 
+est major6e. Mais C est ferm5 sur le support de r done 
+La conclusion r~sulte de la proposition 3.4 affirmant que la suite de fonctions (1/A n) Fo~: 
+est uniform~ment major~e. 
+Montrons maintenant que route valeur d'adhdrence de la suite C,, est ferm~e. La 
+preuve est facile et se trouve d~ja dans [4, lemme 1.2] et [37, appendice]. Soit r une 
+1-forme lisse et r une fonetion lisse, positive, ~gale & 1 au voisinage du support de r 
+et nulle au voisinage du support de 0C. Puisque C est ferm~ au voisinage du support de 
+on peut 5crire : 
+](Cnldl3)] = 1]<CIdCA(r = ~---~l<r162 
+1 <" V (r176162176 (r 
+1 ~ff (~oC,dCAd~))l/2M[ l (dpn).~oc]l/2,,/3A~,, 1/2. 
+Puisque M[(1/An)(r162 est bornSe (utiliser le m6me argument que pour la suite 
+de courants Cn), on obtient (C~ld/~ } =0. 
+Soit (Cn,) une sous-suite de (Cn) eonvergeant vers un eourant Coo. D'apr~s l'~tape 
+pr6e~dente, Coo est fermi, ee qui permet de eonsid6rer sa classe d'homologie [Coo]. La 
+suite de mesures (1/An~)T:~A(r162 converge vers la mesure T done 
+[Coo]'[T+]= lim (f 1 + n ) (/x 1 ) n~+ookdx -'~T A(r ).(~bC) = n~-++oolim ~ (r . 
+Les propri6t6s de contraction et dilatation v6rifi6e par T + et T- entrainent alors les 
+relations [Cool. IT+I=0 et [C].[T-]=c. Ainsi, l'ensemble Coo des valeurs d'adh6rence de 
+la suite (Cn) est un compact dont la projection dans N2(X,R) v6rifie les propri6t6s 
+suivantes : [Coo].[T+]=0, [Coo].[T-]=c et (1/A)r 
+Soit A l'espace affine des 616ments [hl de H2 (X, R) v6rifiant les 6quations [hi. [T+I = 0 
+et [hl.[T-]=c. Sans A, (1/A)r est une contraction de centre cT +, done tout compact 
+(1/A)r est r6duit au singleton {cT+}. Ceci s'applique ~ [Coo] et aeh6ve la 
+preuve du th6or6me ear T + est d6termin~ par sa classe d'homologie. [] 
+
+
+=== PDF PAGE 38 ===
+38 s. CANTAT 
+COROLLAIRE 5.4. -- Soit ~ une mesure de probabilitd r qui est ergodique 
+et dont l'entropie est strictement positive ; y-presque tout point x vdrifie alors la propridtd 
+suivante. 
+Soit A un ouvert de la feuille instable de x contenant x dans son intdrieur. Si ~b 
+est une fonetion positive lisse dont le support est un voisinage de x qui ne rencontre pas 
+le bord de A, alors la suite de eourant 
+converge vers un multiple non nul de T +. 
+Remarque 5.1. -- Soit A un disque holomorphe de X : on sait d~finir, pour toute 
+fonction lisse positive r h support disjoint de vOA, une mesure positive T-A(r Si ~1 
+est major~e par 02, alors 
+T-A(~PlA) ~ T-A(02 A) 
+au sens des mesures positives. Le supremum de ces mesures pour ~p d~crivant l'ensemble 
+des fonctions positives lisses major~es par un et ~ support ne rencontrant pas 0A est 
+donc une mesure positive que nous noterons T-AA. 
+Ddmonstration. -- D'apr~s le th~or~me 5.3, il faut seulement 6tablir le fait suivant : 
+FAIT. -- II existe un ensemble u-ndgligeable en dehors duquel la propridtd suivante 
+est vraie : tout point hyperbolique admet une feuille instable paramdtrde par C, et tout 
+voisinage A de ce point dans cette feuille vdr~i.fie 
+xT-AA>O. 
+Soit B l'ensemble des points x de X hyperboliques pour r (au sens de Pesin) et dont 
+la feuille instable contient un ouvert Ax centr~ en x et v~rifiant : 
+xT-AAx=O. (8) 
+Puisque Best invariant et r dilate les variSt~s instables, presque tout point de  contient 
+dans sa feuille instable un disque arbitrairement grand satisfaisant l'Squation (8). 
+Soit G l'ensemble des points dont la feuille instable permet de construire T +. Cet 
+ensemble est ~galement invariant et le th~or~me 5.2 montre que ~(G)=I pour toute 
+mesure hyperbolique invariante. Comme [T+].[T-]>0 on en d~duit que 6 et B ne se 
+rencontrent que sur un ensemble n~gligeable. En corollaire u(/~)= 0, et le r~sultat annoncd 
+est d~montr~. [] 
+
+
+=== PDF PAGE 39 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 39 
+6. Applications h la dynamique 
+Dans cette partie, r d6signe toujours un automorphisme d'une surface K3 dont l'entropie 
+est strictement positive. Le but est d'appliquer les techniques d~velopp~es dans les parties 
+pr~c~dentes pour dScrire la dynamique de r de mani~re probabiliste: quelles sont les 
+mesures invariantes d'entropie maximale, comment se r~partissent les points p~riodiques 
+et les points p~riodiques hyperboliques, peut on calculer les exposants de Lyapunov ? La 
+mesure p d6finie au w va jouer un r61e central dans la rSponse/~ ces questions. 
+6.1. La mesure # est m~langeante 
+THI~ORI~,ME 6.1. -- Soit r un automorphisme d'une surface K3 projective dont l'entropie 
+est strictement positive. La mesure p associde it r est alors mdlangeante ; c'est donc une 
+mesure ergodique pour r 
+Soient f et g deux fonctions #-int~grables. La propri~t5 de m~lange signifie que : 
+Ix f (r ) g(x) d#(x) n--,..4-oc--+ /xf dP /x g d#" 
+Pour l'~tablir, il suffit bien stir de se restreindre aux fonctions lisses ~t support com- 
+pact arbitrairement petit. Le cas g~nSral s'obtient ensure par continuit5 et lin~arit~ de 
+l'op~rateur f~-+ for 
+Ddmonstration(cf. [37, p. 146]). Soient f et g deux fonctions lisses. Comme 
+p=T+AT -, on peut ~crire : 
+x(fOOn)g d# = (T+AT - I(foCn)g) = ((gT+)AT I foCn), 
+et, puisque T- est contract6 par l'automorphisine r il vient 
+Cn(gT+)AT- f 9 
+On peut supposer que les supports de f et g sont suffisamment petits pour qu'il existe 
+deux ouverts les contenant sur lesquels T + et T- sont donn6s par des potentiels continus 
+u + et u-. La d6finition du produit de deux courants 5~ potentiel continu fournit alors 
+l'~galit~ : 
+/x(fOr { ~-~r u-i Oof ). 
+D'apr~s le th~or~me 5.3 la suite de courants (1/A n) r +) converge vers (fx g d#)T +. 
+En passant ~t la limite on obtient donc le r~sultat annonc6 : 
+/x(f ~162 g d#--+ /xg dP /xf dP. [] 
+
+
+=== PDF PAGE 40 ===
+40 s CANTAT 
+Nous allons maintenant d~crire les propri~tSs dynamiques satisfaites par cette me- 
+sure. Nous verrons successivement que p est d'entropie maximale, que c'est la seule 
+mesure ergodique d'entropie maximale, qu'elle admet une structure produit locale, et, 
+finalement, que c'est une mesure de Bernoulli pour laquelle les points p6riodiques sont 
+~quidistribu~s. 
+Rappelons que toutes ces propri~t~s sont satisfaites par la mesure construite de 
+mani~re analogue pour les automorphismes polynomiaux du plan affine complexe et que 
+c'est j ustement pour obtenir ces r6sultats que nous avons g~n~ralis~ les techniques utilis~es 
+pour l'~tude des automorphismes du plan. 
+Les mSthodes qui sont employees dans la suite de cette partie sont standards et ne 
+surprendront pas les sp~cialistes de syst~mes dynamiques. 
+6.2. Entropie de la mesure tt 
+THI~ORI~ME 6.2. -- Soit r un automorphisme d'une surface K3 projective dont l'entropie 
+topologique est strictement positive. La mesure p associde it r est alors l'unique mesure 
+de probabilitd r d'entropie maximale. 
+Ce th~or~me correspond au th~or~me 3.1 de [3] ; la preuve que nous allons presenter 
+est d'ailleurs la m~me: utilis~e h plusieurs reprises, c'est maintenant un (( classique )) en 
+syst~mes dynamiques (cf. [13, w et [28]). 
+Remarque 6.1. -- D'apr~s le th~or~me de Newhouse [32], tout diffSomorphisme d'une 
+vari~t~ compacte admet au moins une mesure d'entropie maximale. Le r~sultat precedent 
+est donc un th~or~me d'nnicit~. II montre au passage que # a une entropie strietement 
+positive, ce qui ~tait attendu. 
+Rappels de thdorie ergodique. -- Avant de commencer la preuve du th~or~me 6.2, 
+raisons quelques rappels concernant l'entropie m~trique. 
+Soit y une mesure r hyperbolique, par exemple une mesnre ergodique 
+d'entropie maximale. Par d~finition, une partition de X est une famille d'ensembles 
+mesurables deux-k-deux disjoints dont l'union est de mesure totale pour u. Par exemple, 
+les varifies instables de r forment une partition de X, appel~e (( partition instable )). Si 
+est une partition et x est un point de X, nous noterons ~(x) l'~l~ment de ~ contenant x. 
+Pour la partition instable, ~(x) est la vari~t~ instable wins(x) contenant x. 
+Une partition est dite mesurable lorsque ses ~l~ments sont les lignes de niveau d'une 
+application mesurable m: X-+R. La partition instable n'est en g~n~ral pas mesurable ; 
+pour s'en convaincre, il suffit de consid~rer le cas d'un automorphisme Anosov lin~aire 
+sur un tore. 
+
+
+=== PDF PAGE 41 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 41 
+Une partition ~1 est dite plus fine qu'une partition ~2 si ~l(X) est contenu dans ~2(x) 
+pour presque tout x ; on dit encore que ~1 est subordonn~e b~ ~2- On dit que r dilate une 
+partition ~ si la partition r constitute des r est plus fine que ~. Ceci signifie 
+que r contient ~(r pour presque tout x. 
+PROPOSITION 6.3 (Pesin, Ledrappier-Young). -- Il existe une partition mesurable 
+~ins qui est dilatde par r subordonnge it la partition instable et vgrifie : 
+(1) La partition la moins fine subordonnde it toutes les (r est la partition 
+discrete. 
+(2) Pour u-presque tout point x, ~ins(x) est un voisinage de x dans wins(x) et 
+U 05n(~ins(r 9 
+n>~O 
+Une teUe partition s'appeUe une ~ partition de Pesin dilatde ~ adaptde it ~. 
+Une partition mesurable ~ subordonn6e ~ la partition instable 6tant fix~e, on peut 
+d~sint6grer ~ par rapport ~ ~, ce qui fournit pour chaque plaque ~(x) une mesure de pro- 
+babilit5 conditionnelle U~(x). Une d6rivation de Radon-Nikodym permet alors de d~finir 
+le facteur de dilatation de r le long de ~ : 
+Jae nS(r x) -- 
+Puisque ~ est r ce nombre est constant le long de chacune des classes de r 
+et vaut 
+Jac~ ns (r x) = /2~(x) (~(x)) 1 = 
+THI~OREME 6.4 (Rohlin-Parry). -- Avec les notations prdcddentes, l'entropie de la 
+partition ~ vaut : 
+h~(r ,) =/~ log(Jac~'~s(r x)) d,(x). 
+En particulier, lorsque ~ est dilatde et d'entropie maximale, on obtient l'entropie mdtrique 
+de r en moyennant les Jacobiens Jac~nS(05, x). 
+Remarque 6.2. -- La donn6e d'une partition mesurable ~ et des mesures condition- 
+nelles v~(~) suffit pour reconstruire v lorsque celle-ci est ergodique. Pour s'en convaincre, 
+il suffit d'appliquer le th6or~me ergodique. D'apr~s ce th6or~me, on sait en effet que la 
+suite de mesures (l/n) n-1 Y~.k=O ($r tend faiblement vers ~ pour presque tout point x; 
+en moyennant par rapport ~ ~(~), le thdor~me de convergence dominde permet donc de 
+conclure : n--1 
+lim 05. z*~(~) = ~. n--+a~ k=0 
+
+
+=== PDF PAGE 42 ===
+42 S. CANTAT 
+Pour ~tudier une mesure invariante, il suffit ainsi de comprendre ses conditionnelles le 
+long d'une partition mesurable: cette remarque est particuli~rement utile et vanous 
+servir d~s maintenant pour 5tablir le thdor~me 6.2. 
+Prdliminaires d la preuve du thdor~me 6.2. Soit vune mesure d'entropie maximale 
+pour l'automorphisme r et ~ins une partition de Pesin dilat~e qui lui est adapt~e ; il se 
+trouve alors que T- intersecte p-presque route plaque ~ins (x) strictement positivement : 
+c'est le contenu du corollaire 5.4. D~signons par {~S(x)} le courant d'intdgration sur 
+~i'~(x), et notons Q(x) la masse totale de la mesure positive T-A{~in~(x)}. Puisque 0(x) 
+est strictement positif, on peut d~finir une mesure de probabilit5 ~pn~(x) en posant 
+----~_1 Z-A{~ins(x)}" 
+~n~(x)- o(x) 
+Le point important, c'est que l'on peut retrouver # ~ partir de v-presque toutes les ~ns(~) 
+en extrayant une sous-suite convergente de la suite (r Ce r~sultat, ~vident si 
+l'on se contente d'un calcul formel 
+= T-A ~ {0~(~) } -~ o(x)~, (r 
+est justifi~ par le w 
+Ddmonstration du thdor~me 6.2 [3]. -- D'apr~s le th~or~me de Newhouse il existe 
+au moins une mesure ergodique d'entropie maximale ~. Nous allons montrer qu'une 
+telle mesure coincide automatiquement avec #. I1 suffit d'~tablir ~r ) pour 
+~-presque tout point, car dans ce cas la remarque 6.2 et les pr6liminaires entrMnent 
+lim r - = #. //, = n---~oolim 0. ~ns(x) = n-+oo * rl~in~(x) 
+Dilatation des mesures fl~-~.S(x ). -- Chaque mesure ~?~.s(~) est une mesure de pro- 
+babilit~ support~e par la plaque ~ins(z), et, puisque ~in~ est dilat~e, on peut d~finir les 
+jacobiens 
+1 ins Ja%_ (r x) = q(x), 
+off q(x)=~i.s(x)(r162 Ce hombre est reli6 aux intersections 0(x) de T- avec 
+{~in~(x)} de la mani~re suivante : 
+/r 1 T_A{~ins(x)} 1 ~ r ) 
+1 I 0(r _ 1 1 T-A{o(~ins(x))}- O(x) A ~(x) ), 'n~(r 
+
+
+=== PDF PAGE 43 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 43 
+car r contient ~ins(~b(x)). Finalement : 
+log (Jaci, i~ (r x)) = log(A) + log(0(x)) - log(Q(~b(x)), 
+ce qui signifie par d~finition que log(Jack_ ~ (r x)) est cohomologue ~ la fonction constante 
+log(A). Puisque les jacobiens qui entrent en jeu sont tous minor6s par 1, on peut appliquer 
+le lemme 3.5 de [28], ce qui donne: 
+x- log(q) dv = log(A). (9) 
+Jusqu'ici, nous n'avons pas utilis6 que u est d'entropie maximale: seules l'invariance 
+et l'hyperbolicit6 out 6t~ employ6es, ee qui est normal puisque les fonctions q(x) et 
+Jack2 (~b, x) ne d6pendent pas de u. 
+Application de la formule de Rohlin-Parry. -- Puisque l'entropie de u est maximale, 
+elle est 6gale h log(A), et la formule de Rohlin-Parry s'~crit : 
+fx - log(p(x) ) = log(A) (i0) 
+o~ p(x) est l'inverse du jacobien eonditionnel Jaein~(qS, x) et vaut donc: 
+p(x) = ~,os(x)(r162 
+Des formules (9) et (10) oll tire d~j~ fx Iog(q/p) du--0. Montrons que ceci force l'~galit~ 
+q(x) =p(x) en ~-presque tout point x. Pour cela, on commence par remarquer que pet q 
+sont constantes sur les classes de la partition r ; en restreignant l'~tude k une plaque 
+~inS(x) et en choisissant un point zi dans chacune des classes de r eontenues dans 
+~inS(x) On obtient ainsi : 
+En intdgrant par rapport k u et en utilisant la d~finition des mesures conditionnelles 
+on obtient donc fx(q/P) du=l. Puisque fx log(q/p) du=0, la concavit~ du logarithme 
+entra~ne q(x)=p(x) pour u-presque tout point x. 
+Conclusion. -- L'~tape pr~c~dente montre que ~.o(~) et ~?~.~(~) affectent la m~me 
+masse aux plaques de la partition r En reprenant tout avec cn k la place de r cette 
+m~thode montre que vr et ~.~(x) co'/ncident sur les partitions (r : comme 
+ces partitions sont de plus en plus fines et engendrent la partition discrete (cf. w on 
+obtient l'~galit~ entre u~.,(~:) et ~/~,~(~.). Ceci termine la preuve du th~or~me. [] 
+
+
+=== PDF PAGE 44 ===
+44 s. CANTAT 
+6.3. Structure produit dans les boites de Pesin; applications 
+D'apr6s le paragraphe pr6c6dent, l'entropie m6trique h(O,#) de O par rapport ~ # est 
+maximale, donc strictement positive. I1 existe ainsi une partition de Pesin dilat~e de 
+mesure totale pour #. Nous allons maintenant d6crire les conditionnelles de # le long 
+d'une telle partition en utilisant les techniques du paragraphe precedent. 
+Boites de Pesin. -- Six est un point O-hyperbolique, nous noterons wins(z) sa 
+varidtd instable ; si U est un ouvert de X, la composante connexe de WinS(x)U conte- 
+nant x sera notre W~lS(x) et appel~e (< vari6t~ instable locale de z >). Les notations seront 
+similaires pour la vari~td stable W st (x). 
+Si U est un bidisque, i.e. si/4 est biholomorphe ~ D x D, nous dirons que W~nS(x) 
+est un graphe horizontal si c'est le graphe d'une application holomorphe f: D-+D. De 
+m6me, W~t(x) est un graphe vertical si c'est l'image d'un graphe par permutation des 
+coordonn6es de D x D. 
+Une boite de Pesin est la donnde d'un bidisque/4 plongd dans X et d'un compact 
+K contenu dans/4 v6rifiant : 
+-- Vx E K, W~ ~s (x) et W~ t (x) sont respectivement un graphe horizontal et un graphe 
+vertical, 
+-- Vx, ycK, w~ns(x)NW~t(y) est un singleton qui est contenu dans K. 
+Les vari6t6s stables et instables des points de K d~terminent donc chacune une 
+lamination de/4 ; nous les noterons respectivement K ins et K st. 
+Par d6finition, la mesure d'une boite de Pesin est la mesure #(K) du compact K. 
+D'apr6s les travaux de Pesin (voir aussi [42] et [2]), il existe une famille ddnombrable de 
+boites de Pesin (/4i, Ki) qui ont toutes une mesure strictement positive et dont l'union 
+des Ki est de mesure totale pour #. 
+Structure produit. -- Si (/4, K) est une boite de Pesin, et six est un point de K, 
+nous noterons T~:ns(x) le sous-ensemble compact de W~nS(x) constitu~ des points 
+W~S(x)NW~t(y), y d~crivant /4. Si l'on d~finit T~(x) similairement, le compact K est 
+alors hom~omorphe au produit T~S(z)x T~(x). 
+Soit T+IK~,~ la restriction de T + ~ la lamination K ins, et T-IK~ celle de T- ~ K st. 
+Ces deux courants sont des cycles feuillet~s pour les laminations instables et stables de K, 
+autrement dit, il existe une mesure #~: transverse ~ la lamination instable K ins telle que : 
+f fw~ ~ dp~: (z). we = 
+Cette mesure s'identifie, via holonomie, A n'importe laquelle des (T+A{w~t(x)})IK. Elle 
+peut 6tre obtenue ~ partir d'une feuille instable f: C-~X de la mani6re suivante. On 
+
+
+=== PDF PAGE 45 ===
+DYNAMIQUE DES AUTOMORFHISMES DES SURFACES K3 45 
+commence par choisir un rayon R >> 1, puis l'on somme les mesures de Dirac (~z aux points 
+z de I(DR)AW~t(x). EnsuRe on divise la mesure obtenue ~ ~ par l'aire de/(DR). s la 
+limite, quand R tend vers l'infini, on obtient une mesure dont la restriction ~ T~(x) 
+coincide avec #~: (cf. partie 4). 
+Si la mesure de la bo~te (b/, K) est strictement positive, la restriction PK de # g K 
+est une mesure non nulle donn6e par la formule 
+= (T § IK,oo AT-IK, )lK- 
+Puisque, dans K, chaque vari@t@ stable locale WSt(y) coupe chaque vari@t@ instable 
+WinS(x) en un unique point, la mesure #K est une mesure produit dans les bores de 
+Pesin : 
+,K 
+Ce que nous avons appel6 bores de Pesin correspond dans [34] ~ la notion de bloc 
+hyperbolique; en utilisant les r@sultats pr@sent~s aux pages 86 et 87 de cet article on 
+obtient donc la propri6t@ suivante : 
+THt~ORI~ME 6.5. Soit r un automorphisme d'une surface K3 projective dont 
+l'entropie est strictement positive. La mesure d'entropie maximale # est alors une mesure 
+de probabilitd r qui est Bernoulli. 
+Pour ce qui est des automorphismes des surfaces K3, nous avons donc r6pondu par 
+l'affirmative ~t la conjecture fare par Ornstein et Weiss : la dynamique est Bernoulli pour 
+la mesure naturelle qui lui est associ@e (cf. [34, p. 22]). 
+Points pgriodiques et exposants de Lyapunov. -- La mesure # jouit des trois pro- 
+pri@t@s fondamentales suivantes : 
+-- # est m61angeante, 
+-- l'entropie de # est maximale, 
+-- # est un produit dans les bores de Pesin. 
+.~ cela, on peut ajouter une propri@t@ qui r@sulte de la formule des points fixes de 
+Lefschetz : 
+-- ~ Fixe(r n)< C exp(h(r #)n) off Fixe(r n) d@signe l'ensemble des points fixes de 
+r et C est une constante. 
+Ces quatre propri6t6s sont suffisantes pour obtenir l'@quidistribution des points 
+p@riodiques de r vis-s de la mesure #. L'hypoth@se d'holomorphie n'est d'ailleurs plus 
+n@cessaire, les m@thodes @rant maintenant valables pour n'importe quel diff@omorphisme 
+C 1+~ d'une vari~t@ compacte (avec # hyperbolique, ce qui ici est un corollaire des deux 
+premi@res propri@t@s). 
+
+
+=== PDF PAGE 46 ===
+46 s. CANTAT 
+TH]~OREME 6.6. -- Soit Per(C,n) l'ensemble des points pdriodiques de pdriode n 
+exactement, HPer(r le sous-ensemble de ceux qui sont hyperboliques et Fixe(r 
+l'ensemble des points fixes de Cn. Alors 
+lim ~'1 ~ av~= # 
+.-+~c [ ~n pePn J 
+d~s que P,, est l'un quelconque de ces trois ensembles. 
+THI~OR~ME 6.7. -- Si X+(p) ddsigne l'exposant de Lyapunov du point pdriodique 
+hyperbolique pet X + l'exposant de Lyapunov de la mesure #, alors : 
+9 1 ~§ X+" 2m {v Z . = pE HPer((p,n) 
+Autrement dit, pour calculer X + il suJfit de regarder aux points pdriodiques. 
+Nous ne montrerons pax ees deux th~or~mes car maintenant les preuves sont en tout 
+point identiques s celles de [2]. Contentons nous de quelques commentaires. L'argument 
+essentiel pour mener h bien les d~monstrations s'appelle le ((shadowing lemma)). Dans 
+la version n~cessaire all cadre de ce texte, il a ~t~ d~montr~ par A. Katok au debut des 
+ann~es quatre-vingts (el. [22] et [23]). Ce lemme permet de construire des points fixes en 
+utilisant la r4currenee des boites de Pesin. Pour obtenir les th4or~mes, il faut suivre la 
+construction avee un point de rue quantitatif: c'est ee que permet la structure produit. 
+7. Complexit6 de la dynamique 
+Nous allons maintenant montrer que les automorphismes des surfaces K3 ne v6rifient 
+aucune hypoth~se d'hyperbolicit~ uniforme classique. Au passage, nous ~tablirons le 
+th6or~me 0.2. 
+7.1. Dynamique Anosov et axiome A 
+Les automorphismes des surfaces complexes compactes dont la dynamique est de type 
+Anosov ont 5td classifids par Ghys [15]. Le th~or~me principal concernant cette question 
+est le suivant : 
+THI~OR~ME 7.1 (Ghys).- Soit X une surface complexe compacte et r X-+ X un 
+automorphisme. Sir est un diffdomorphisme d'Anosov alors X est un tore et r est donc 
+une transformation aJfine. 
+Bien stir, ceci ne classifie pas compl~tement les automorphismes d'Anosov : il faut 
+ensuite faire la liste des r~seaux de C 2 dont le tore associ5 admet un tel automorphisme 
+
+
+=== PDF PAGE 47 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 47 
+et la liste des automorphismes d'Anosov d'un tel tore. Ce travail a @td effectu~ par Ghys 
+et Verjovsky [17]. 
+COROLLAIRE 7.2. La dynamique d'un automorphisme d'une surface K3 n'est 
+jamais de type axiome A. 
+Ddmonstration. Un diff5omorphisme axiome A qui pr@serve une forme volume est 
+un diffSomorphisme d'Anosov. Puisque les automorphismes des surfaces K3 prSservent 
+tous une forme volume et qu'aucune surface K3 n'est un tore, le th~or~me 7.1 termine la 
+preuve. [] 
+On dispose cependant d'exemples sur les surfaces de Kummer pour lesquels la dy- 
+namique est presque Anosov. Rappelons en la construction. On part d'un tore complexe 
+A muni d'un automorphisme lin@aire ap dont la dynamique est Anosov. Puisque cet 
+automorphisme est lin@aire, il commute avec l'involution a: (x,y)~--~(-x,-y) et induit 
+donc un automorphisme r de la surface de Kummer XA. L'automorphisme 9 preserve 
+deux feuilletages holomorphes partout transverses entre eux: le feuilletage stable 5CA et 
+le feuilletage instable GA. Lorsque l'on d@singularise le quotient de A par cr pour con- 
+struire XA, les deux feuilletages deviennent tangents le long des diviseurs exceptionnels 
+de la rSsolution et y admettent chacun une singularitY. L'automorphisme r pr@serve ainsi 
+deux feuilletages holomorphes 5 c et G qui ont des singularit@s isol~es et sont tangents le 
+long d'un diviseur. La dynamique est donc semblable h celle des automorphismes pseudo- 
+Anosov de Thurston pour les surfaces r~elles compactes. 
+7.2. Automorphismes pseudo-Anosov 
+Ddfinition de Thurston. Soit S une surface rSelle, compacte, orientable et connexe. 
+Un diffSomorphisme pseudo-Anosov est un homSomorphisme r de S qui est lisse en 
+dehors d'un nombre fini de points Pl, ...~Pk et v@rifie les propriStSs suivantes. Sur le 
+compl~mentaire des Pi, il existe deux feuilletages 5C et G lisses, transverses entre eux et 
+invariants par r Ces feuilletages sont munis d'une mesure transverse @quivalente s la 
+mesure de Lebesgue et il existe ~ > 1 tel que 
+1 r r = X~, 
+off #f (resp. #9) est la mesure associSe h 5C (resp. G). En outre, la topologie des feuil- 
+letages et la dynamique de r sont impos@es au voisinage des singularitSs :/~ chaque p~ est 
+associ5 un entier positif n~ et un voisinage/~/,~ diff~omorphe au disque D sur lequel 5C est 
+donn@ par les lignes de niveau de Im(z ~/2+1) et G par celles de Re(z n~/2+1) (1); dans la 
+(1) Im(z) et Re(z) d@signent respectivement la partie imaginaire et la partie r~elle de z. 
+
+
+=== PDF PAGE 48 ===
+48 S. CANTAT 
+coordonn@e multivalu@e zED, r est une transformation R-lin@aire dilatant l'horizontale 
+et contractant la verticale. 
+Remarque 7.1. -- En prenant ni =-1 on tombe sur une configuration semblable au 
+cas ni~>0 mais ~vit@e par cette dSfinition. Un exemple de ce type apparait lorsqu'on 
+construit l'analogue r@el des surfaces de Kummer. Plus pr@cis@ment, le diff@omorphisme 
+de R2/Z 2 associ~/~ la matrice 
+de SL(2, Z) commute/~ l'involution (x, y)~ (-x, -y), et en passant au quotient on obtient 
+une dynamique de type pseudo.Anosov sur la sphere, avec ni =-1 aux quatre points de 
+ramification. 
+Remarque 7.2. -- On peut reformuler la d~finition pr@c~dente des diff@omorphismes 
+pseudo-Anosov en disant qu'il existe une m@trique plate/~ singularit@s coniques aux points 
+Pi pour laquelle ~- et G sont deux feuilletages g@od@siques qui sont respectivement dilat@ 
+par Aet contract~ par 1/A sous l'action de r [40]. 
+Dynamique des pseudo-Anosov. -- Les diff@omorphismes pseudo.Anosov jouissent 
+de propri6t@s dynamiques tout ~t fait remarquables. Ils minimisent l'entropie topologique 
+dans leur classe d'isotopie et admettent une unique mesure d'entropie maximale #= 
+#7| Ceci n'est pas sans rappeler certaines des propri@t@s des automorphismes des 
+surfaces complexes et l'on peut m@me obtenir un petit dictionnaire. 
+pseudo-Anosov automorphismes 
+9 feuilletages mesur@s (~, #7), (6, #~) 
+9 entropie minimale log(A) dans la classe 
+d'isotopie du diff@omorphisme 
+9 l'entropie s'evalue sur le 7h 
+9 # : #J:| 
+9 h(m r = log(A) 
+9 points p@riodiques #-6qui%partis 
+9 courants positifs T +, T- 
+9 entropie minimale log(A) dans la classe 
+d'isotopie de r 
+9 l'entropie se calcule sur H2 (X, R) 
+9 #:T+AT - 
+9 h(~, r : log(A) 
+9 points p@riodiques #-6quir@partis 
+Jusqu'ofi peut-on pousser cette analogie ? On pourrait penser par exemple que T + 
+et T- sont toujours des courants d'int6gration le long de feuilletages stables et instables. 
+C'est ce qui se produit dans le cas des surfaces de Kummer qui admettent des auto- 
+morphismes provenant du tore. Dans ce cas, ~ et G sont deux feuilletages holomorphes 
+tangents sur un diviseur. 
+
+
+=== PDF PAGE 49 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 49 
+Automorphismes pseudo-Anosov. -- Pour poursuivre cette analogie, introduisons 
+maintenant une notion d'automorphisme pseudo-Anosov. 
+Ddfinition 7.1. -- Soit r X-+X un automorphisme d'une surface K3 dont l'entropie 
+topologique est strictement positive. On dit que r est un automorphisme pseudo-Anosov 
+s'il existe deux feuilletages continus ~ singularit~s isol~es ~ et G tels que : 
+(i) 5 ~ et G sont transverses en dehors d'un diviseur D de X. 
+(ii) ~ et G sont uniform~ment dilates et contract,s en dehors de D. 
+Remarque 7.3. -- Le feuilletage ~ est donc le feuilletage instable de r En particu- 
+lier, les feuilles de jc sont des courbes holomorphes et dim(JC)=dim(G)=2. 
+Cette d~finition mSrite quelques commentaires. Puisque l'entropie de r est stricte- 
+ment positive, et puisque D est r la forme d'intersection est dSfinie n~gative 
+en restriction au sous-espace de Sx | engendr~ par les composantes irr~ductibles de D. 
+On peut donc contracter chaque composante connexe de D, ce qui d~termine une surface 
+singuli~re Y. La propri~t6 (ii) signifie par d~finition que, en dehors de ses singularit~s, 
+Y est munie d'une mStrique riemannienne v~rifiant : 
+(a) La topologie d~finie par cette m6trique coincide avec celle de Y. 
+(b) Pour cette m~trique, $- est uniform~ment dilat~ et G est uniform6ment contract6 
+par r 
+On a donc simplement plagi~ la d~finition des diffSomorphismes pseudo-Anosov 
+l'aide des m5triques s singularit~s coniques (remarque 7.2). 
+L'hypoth~se (i) peut sembler moins naturelle. Cependant, il faut k la lois admettre 
+deux feuilletages 9 c et G qui puissent ~tre tangents entre eux, car sinon on se priverait 
+de l'exemple des surfaces de Kummer, et supposer que le lieu de tangence D n'est pas 
+trop sauvage. On doit donc tout d'abord supposer que D est invariant par F et G, c'est- 
+k-dire que D contient route feuille qui le coupe, car sinon D serait transverse k une 
+feuille de )c c'est-k-dire ~ une vari6t~ instable de r et s'accumulerait sur l'ensemble c~- 
+limite de tous les points de cette feuille. D'apr~s la remarque 7.3, l'ensemble D est donc 
+constitu~ de courbes holomorphes qui, si elle n'~taient pas compactes, s'accumuleraient 
+non trivialement. Nous les avons donc suppos~es compactes, ce qui revient/~ dire que D 
+est un diviseur. 
+Remarque 7.4.- (1) Soit Di une composante connexe du diviseur des tangences, 
+alors Di est un diviseur connexe d'une surface K3 sur lequel la forme d'intersection 
+est dSfinie n6gative. Chacune de ses composantes irr~ductibles est donc une courbe 
+nodale, i.e. une courbe rationnelle lisse d'auto-intersection -2. En corollaire, la singularit~ 
+obtenue en contractant Di est une singularit~ de Klein dont le diagramme de Dynkin est 
+de type An, D~, E6, E7 ou E8 [1, pp. 12 k 16]. I1 existe ainsi un voisinage de la singularit~ 
+
+
+=== PDF PAGE 50 ===
+50 S. CANTAT 
+qui est isomorphe au quotient d'un voisinage de l'origine dans C 2 par un sous-groupe 
+fini Gi de SL(2, C). L'automorphisme ~b se relive ~ ce voisinage et prdsente un point fixe 
+hyperbolique en l'origine. 
+(2) La notion d'automorphisme pseudo-Anosov s'av~re diffdrente de celle intro- 
+duite par Thurston pour les diffdomorphismes des surfaces. Dans le cas pseudo-Anosov 
+classique, le module local au niveau des singularit~s est un quotient de ce qui a lieu 
+sur la surface. Ici, c'est le contraire, on quotiente localement C 2 par un groupe fini 
+pour obtenir ce qui a lieu sur la surface. Une autre diffdrence provient du ph~nom~ne 
+d'Hartogs : un diff~omorphisme qui est holomorphe en dehors d'un nombre fini de points 
+est partout holomorphe. A l'inverse, les diffdomorphismes pseudo-Anosov ne sont jamais 
+diff6rentiables aux singularitds. 
+Holomorphie des feuilletages stables et instables. -- Dans le th6or~me 7.1, les feuil- 
+letages stable et instable de ~b ne sont pas supposes holomorphes ; on sait seulement, 
+a priori, que ces deux feuilletages sont transversalement continus avec des feuilles lisses 
+diff6omorphes ~ R 2. La premihre ~tape consiste en fait g montrer que ces feuilletages 
+sont holomorphes. Ici, le m~me phdnom~ne se produit : 
+PROPOSITION 7.3 (Ghys). -- Les feuilletages stable G et instable ~ d'un automor- 
+phisme pseudo-Anosov sont des feuilletages holomorphes iz singularitds isol&s. 
+Ddmonstration.- Soient x et y deux points d'une m~me feuille stable, et soit 
+h." ins ins U~ -+U~ l'holonomie entre deux petits ouverts transverses contenus dans les varidt6s 
+instables (i.e. dans les feuilles de Y). Si U~ d6signe 0kU ins et U~ d6signe 0aU~ ns, alors 
+la distance de Hausdorff entre U~ et U~ tend vers zdro quand k tend vers l'infini. La 
+varidt6 Y est en effet recouverte par un nombre fini d'ouverts dans lesquels les feuil- 
+letages stables et instables G et ~- sont donn6s par y=e ste et x=e ste (modulo un groupe 
+fini Gic SL(2, C)), et ~b contracte uniformdment l'axe des y. En travaillant dans chaque 
+carte on conclut facilement. 
+La preuve fournit par Ghys dans [15] s'applique donc mot pour mot. [] 
+Pour ~tudier les automorphismes pseudo-Anosov on peut donc d5sormais supposer 
+que ~- et G sont holomorphes. On est alors en p%sence d'un automorphisme d'entropie 
+strictement positive fixant deux feuilletages holomorphes. 
+7.3. Classification des automorphismes pseudo-Anosov 
+Nous allons maintenant dtablir le th6or~me suivant, dont l'6nonc6 ne contient plus aucune 
+hypoth~se dynamique. 
+
+
+=== PDF PAGE 51 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 51 
+THI~ORI~ME 7.4.- Si O:X-+X est un automorphisme d'une surface K3 qui est 
+d'ordre infini et prdserve deux feuilletages holomorphes distincts, alors X est une surface 
+de Kummer et r provient d'une transformation affine de C 2. 
+Remarque 7.5. -- (1) Les automorphismes des surfaces de Kummer ne sont pas tous 
+induits par des automorphismes du tore associ5 [24]. Ce th~or~me comporte donc deux 
+~noncSs en un : il d~erit la surface mais aussi l'automorphisme. 
+(2) En fait, l'entropie topologique de r doit 5tre strictement positive car un twist 
+de Dehn ne preserve qu'un seul feuilletage, ~ savoir la fibration elliptique qui lui est 
+associ~e [8]. 
+COROLLAIRE 7.5. -- Si r X-+ X est un automorphisme pseudo-Anosov d'une sur- 
+face K3, alors X est une surface de Kummer et r provient d'une transformation affine 
+de C 2 . 
+Ddmonstration du thdor~me. -- La preuve d6taill6e est assez longue et nous allons 
+procSder par 6tapes. 
+Le lieu de tangence. -- Soient F et G les deux feuilletages invariants, et Dle diviseur 
+des tangences. On peut supposer, quitte h remplacer 0 par l'une de ses puissances, que 
+chaque composante irr~ductible de D est r Nous noterons D1,..., Dk les com- 
+posantes connexes de D, et E~,..., E~j les composantes irrSductibles de Dj. Le diviseur 
+~i E~ sera not~ Djet appel5 support de D 5. Nous avons d~jb. signal5 ~ la remarque 7.4 
+que les diviseurs Dj sont tous obtenus par rSsolution minimale d'une singularit5 de Klein 
+(C 2, 0)/Gj, oh Gj est un sous-groupe fini de SL(2, C). Autrement dit, si l'on contracte Dj, 
+il existe un voisinage de la singularit~ qui est isomorphe ~ la singularit~ (C 2, 0)/Gj, et si 
+l'on dSsingularise ce point avec le minimum d'~clatements, on construit Dj [27]. 
+Au voisinage de D j, les feuilletages 9 ~ et G sont deux feuilletages holomorphes partout 
+transverses sauf le long de Dj. Contraetons Dj puis rapatrions 5 ~ et G sur un voisinage 
+de l'origine dans C 2 ; les feuilletages obtenus sont partout transverses sauf peut ~tre en 
+l'origine : ils sont donc lisses et partout transverses. Par un changement de coordonnSes 
+holomorphe, on peut donc supposer que F est y=c ste et G est x=c ste. 
+Dans ces nouvelles coordonn~es, Gj devient un groupe fini de biholomorphismes a 
+priori non lin~aires qui pr~servent 5 ~, ~ et l'origine. On peut en fair linSariser Gj dans 
+un voisinage de l'origine sans perturber les ~quations de $- et G. Pour cela, suivant 
+Bochner-Cartan, il suffit d'utiliser l'application linSarisante : 
+1 
+h(x,y)-IGjD dg  0)og(x,y) gCGj 
+
+
+=== PDF PAGE 52 ===
+52 s. CANTAT 
+Cette transformation preserve 9 c et G, et redresse Gj en un groupe lin~aire fini qui 
+preserve simultan~ment les feuilletages x=c ste et y=c ste. C'est donc un groupe cyclique 
+car les autres groupes de Klein permutent ces deux feuilletages. 
+La mdtrique mdromorphe d'Avez. -- Sur une surface K3 il existe une 2-forme holo- 
+morphe partout non nulle ~2 qui est quasiment invariante par r r off ~ est un 
+complexe de module 1 (cf. w 
+l'aide de ft et du couple de feuilletages (~-,G) on peut construire une forme 
+quadratique m~romorphe Q quasiment invariante. Cette construction est dfie i~ Avez: 
+si v est un vecteur tangent s X on d~compose v=vT+v 6 en deux vecteurs tangents 
+respectivement s .fet G ; par d~finition, la valeur de Q sur vest alors l'aire ft(v~-, v6) 
+du parall~logramme (vT, v6). Ceci d~termine un champ de formes quadratiques Q qui 
+est m~romorphe le long du diviseur des tangences D et est non dSg~n~r6 partout ailleurs. 
+Puisque, r sa courbure RQ est une fonction m~romorphe quasiment invariante ; si 
+cette fonction n'est pas constante, le pinceau de ses lignes de niveau est r ce qui 
+est impossible car l'entropie topologique de r est strictement positive (cf. remarque 7.5). 
+La courbure est donc une constante et l'on peut la normaliser : 
+RQ----0 ou 1. 
+Lorsque la courbure est nulle, il existe des coordonn~es locales au voisinage de chaque 
+point de X\D dans lesquels Q s'identifie ~ la forme quadratique dx.dy sur C 2 (m~trique 
+plate). Lorsque la courbure est ~gale h 1, le module local est CPlxCpI\Diag, et le 
+champ de formes quadratiques est 
+dx.dy 
+(x-y)2" 
+La courbure est nuUe. -- Consid6rons la surface Y obtenue en contractant le sup- 
+port de D: c'est une surface singuli~re, avec k singularitSs isol~es, qui, en dehors des 
+singularit~s, est munie d'un champ de formes quadratiques holomorphe non d~g~n~r~ et 
+/~ courbure constante. Autour de chaque singularitY, Y est le quotient d'un voisinage de 
+l'origine dans (3 2 par un sous-groupe fini cyclique de SL(2, C). 
+Supposons par l'absurde que la courbure est ~gale/~ 1. Soit pj Fun des points sin- 
+guliers de Y, et Gj le sous-groupe cyclique de SL(2, C) associ~. On peut relever Q 
+un voisinage de l'origine dans C ~ et l'~tendre jusqu'~ l'origine en un champ de formes 
+quadratiques Gj-invariant et de courbure constante 6gale/~ 1 (extension de Hartogs). I1 
+existe alors des coordonn~es locales identifiant cet ouvert s un ouvert de CP 1 x CP 1 \Diag 
+dans lesquelles Q correspond ~ la forme dx.dy/(x-y) 2. Le groupe Gj agit sur cet ouvert 
+en pr~servant la forme quadratique, en ayant un point fixe et en envoyant verticale sur 
+
+
+=== PDF PAGE 53 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 53 
+verticale (F sur F) et horizontale sur horizontale (G sur G). On en d6duit sans peine 
+que Gj est trivial. 
+La surface Y n'a done en fait aucune singularit6, ce qui signifie que les diviseurs Dj 
+sont vides. Les feuilletages 9 c et G sont done partout transverses entre eux. En particulier, 
+F n'a pas de singularit6, ce qui est impossible ear les feuilletages holomorphes des surfaces 
+K3 sont tous singuliers (appliquer les formules de Baum-Bott en remarquant que la 
+caract6ristique d'Euler est 6gale g 24). Nous avons done obtenu une contradiction qui 
+montre que la eourbure RQ est nulle. 
+L'orbifold Yet l'application ddveloppante. -- La surface Y peut ~tre pens6e eomme 
+une orbifold munie d'un champ de formes quadratiques Q dont la courbure est partout 
+nulle. 
+D'apr~s le chapitre 5 des notes de Thurston [39], il existe donc une variSt~ complexe 
+simplement connexe Yet une application holomorphe 7r: Y--+Y qui est un rev~tement en 
+dehors des singularit~s de Yet qui satisfait k la propri~t~ suivante : si yEY se projette 
+sur une singularit~ pj, il existe alors un voisinage ouvert /4 de y tel que la projection 
+7r: L/-+Tr(L/) s'identifie au quotient de L/par un groupe fini cyclique isomorphe ~ Gj. Ce 
+groupe fini coincide avec le groupe fondamental de 1r(/4)\{pj}. 
+En rapatriant F, Get Q b~ l'aide de ~r, on munit donc simultanSment la surface 
+d'une forme quadratique holomorphe ~) non d~g~n~rSe et ~t courbure identiquement nulle 
+et de deux feuilletages ~ et ~ lisses, partout transverses entre eux et tangents aux c6nes 
+isotropes de (~. N 
+Enfin, il existe ce qui s'appelle une application d~veloppante 79: (Y, Q)--+ (C 2, dx. dy) : 
+cette application est holomorphe et c'est une isometric locale qui envoie 2~ sur les horizon- 
+tales et ~ sur les verticales du modhle. Elle s'accompagne d'une representation du groupe 
+fondamental de Y dans le groupe d'isom~tries de M pour laquelle 79 est ~quivariante. 
+Y est rev~tue par un tore. -- Montrons que le groupe fondamental F de Y admet un 
+sous-groupe d'indice fini Fo qui agit sans point fixe sur Y. 
+Pour parvenir ~t ee rSsultat, nous allons 5tudier la representation d'holonomie du 
+groupe F. Cette representation est ~ valeurs dans le groupe des d~placements de C 2 
+pour la m~trique holomorphe dx. dy ; puisque chacune de ces isomgtries doit preserver le 
+feuilletage vertical (i.e. 5 ~) et le feuilletage horizontal (i.e. ~), la partie lin~aire de tous 
+ces d6plaeements est une matrice diagonale de SL(2, C). Les parties lin~aires sont done 
+des matrices du type 
+21/ avec A~C*, et l'on obtient ainsi un morphisme de F dans C*. L'image de ee morphisme 
+est un sous-groupe de type fini du groupe ab~lien C* et contient done un sous-groupe 
+
+
+=== PDF PAGE 54 ===
+54 s. CANTAT 
+d'indice fini sans torsion dont l'image r6ciproque est un sous-groupe d'indice fini Fo de F. 
+Les sous-groupes finis de C* ~tant cycliqnes, le quotient F/Fo est un groupe cyclique. 
+Montrons par l'absurde que Fo convient, c'est-h-dire qu'il agit sans point fixe sur Y. 
+Si tel n'~tait pas le cas, il existerait un 61~ment ~, de Fo different de l'identit~ et ayant 
+un point fixe yEY. L'application d6veloppante 7? fournirait nne carte locale autour de 
+y dans laquelle 7 serait une transformation lin~aire diagonale de C 2 dont tes valeurs 
+propres, ~ et l/A, ne seraient pas des racines de l'unit~ car 7 est d'ordre infini. Ceci est 
+impossible car le quotient de la verticale par 7 ne serait pas une vari~t~ et ne pourrait 
+~tre une feuille instable de ~b. 
+Le quotient A de Y par Fo est une surface complexe compacte (car Fo est d'indice 
+fini dans F) avec deux fenilletages holomorphes lisses partout transverses et un automor- 
+phisme ~5 d'entropie positive. Les formules de Baum-Bott montrent que A n'est ni une 
+surface d'Enriques, ni une surface K3, ni une surface rationnelle. Cette surface est donc 
+nn tore (cf. l'introduction). 
+X est une surface de Kurnrner. -- Pour conclure, il faut juste montrer que la surface 
+X est bien une surface de Kummer. La situation est la suivante : le tore A est muni d'un 
+automorphisme d'Anosov lin~aire r et la surface Y est le quotient de A par un groupe 
+fini cyclique lin~aire qui est normalis6 par ~5. I1 suffit donc d'appliquer le lemme suivant 
+pour conclure. [] 
+LEMME 7.6. -- Soit Gun groupe fini cyclique agissant holornorphiquernent sur un 
+tore cornpleze de dimension 2 notg A. Supposons que G a un point fize et qu'il prdserve 
+une 2-forme holornorphe non nulle sur A. Alors G est d'ordre 1, 2, 3, 4 ou 6. Si 9 est 
+un autornorphisrne de A de type Anosov qui commute avec l'action de G, alors G n'a 
+que deuz dldrnents. 
+Ddrnonstration. -- Au lien de penser ~ A comme au quotient de C 2 par un r~seau, 
+on peut y penser comme h la donn6e d'une structure complexe sur R 4, quotient~ par le 
+r~seau canonique Z 4. Un tel groupe G est donc form~ de matrices de GL(4, Z) pr~servant 
+une structure complexe sur R 4. Dans cette structure complexe, tout g6n~rateur rn de 
+G correspond /~ une matrice d'ordre fini de SL(2, C) qui peut ~tre diagonalis~e sous la 
+forme 
+0 
+o/1 ~ est une racine de l'unit~. Cette racine ~ apparait parmi les racines du polyn6me 
+caraet~ristique de la matrice m~GL(4, Z), ainsi que ~-1, mais ce sont ~videmment les 
+seules racines de ce polynSme. Le polyngme earact6ristique de rn est done une puissance 
+du polyn6me minimal de ~ et est de degr~ 4. On en d~duit que ( est d'ordre 6, 4, 3 ou 2, 
+sauf si G est trivial. 
+
+
+=== PDF PAGE 55 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 55 
+Supposons maintenant que G est d'ordre 3, 4 ou 6, ce qui correspond exactement au 
+cas off le g6n~rateur rn n'est pas une homoth6tie et ne preserve que deux directions. Si (I) 
+est un automorphisme d'Anosov de A qui commute k Faction de G, ses directions stables 
+et instables doivent co'incider avec les directions invariantes par m. Elles s'expriment 
+doric avec des coordonn6es 5 valeurs dans Q[~]. La valeur propre dilatante aussi: c'est 
+doric un hombre r~el irrationnel de Q[~], mais il n'existe pas de tels nombres lorsque 
+est d'ordre 3, 4 ou 6. [] 
+Bibliographie 
+[1] BARTH, W., PETERS, C. ~z VAN DE VEN, A., Compact Complex Surfaces. Ergeb. Math. 
+Grenzgeb. (3), 4. Springer-Verlag, Berlin-NewYork, 1984. 
+[2] BEDFORD, E., LYUBICH, M. ~ SMILLIE, J., Distribution of periodic points of polynomial 
+diffeomorphisms of C 2. Invent. Math., 114 (1993), 277-288. 
+[3] -- Polynomial diffeomorphisms of C 2, IV. The measure of maximal entropy and laminar 
+currents. Invent. Math., 112 (1993), 77 125. 
+[4] BEDFORD~ E. (~; SMILLIE, J., Polynomial diffeomorphisms of C 2, III. Ergodicity, exponents 
+and entropy of the equilibrium measure. Math. Ann., 294 (1992), 395-420. 
+[5] BRUNELLA, M., Courbes enti~res et feuilletages holomorphes. Enseign. Math. (2), 45 (1999), 
+195-216. 
+[6] CANTAT, S., Dynamique des automorphismes des surfaces complexes compactes. Th~se de 
+doctorat de l'l~.N.S.-Lyon, 1999. 
+[7] -- Dynamique des automorphismes des surfaces projectives complexes. C. R. Acad. Sci. 
+Paris Sdr. I Math., 328 (1999), 901-906. 
+[8] -- Sur la dynamique du groupe d'automorphismes des surfaces K3. A paraitre dans Trans- 
+form. Groups, 2001. 
+[9] DEMAILLY, J.-P., Courants positifs extr~maux et conjecture de Hodge. Invent. Math., 69 
+(1982), 347-374. 
+[10] -- Vari~t~s hyperboliques et ~quations diff~rentielles alg~briques. Gaz. Math., 73 (1997), 
+3-23. 
+[11] DLOUSSKY, G., OELJEKLAUS, K. ~ TOMA, M., Surfaces de la classe VII0 avec champs de 
+vecteurs. C. R. Acad. Sci. Paris Sdr. I Math., 329 (1999), 409 412. 
+[12] DOUADY, A., Prolongement de mouvements holomorphes (d'apr~s Stodkowski et autres), 
+dans Sdminaire Bourbaki, vol. 1993/94, exp. n ~ 775. Astdrisque, 227 (1995), 7-20. 
+[13] ERi~MENKO, t. l~. ~ LYUBICH, M. YU., The dynamics of analytic transformations. Algebra 
+i Analiz, 1:3 (1989), 1-70 (Russian); English translation in Leningrad Math. J., 1 (1990), 
+563-634. 
+[14] FUJIKI, A., On automorphism groups of compact Kiihler manifolds. Invent. Math., 44 
+(1978), 225-258. 
+[15] GHYS, 1~,., Holomorphic Anosov systems. Invent. Math., 119 (1995), 585-614. 
+[16] -- Laminations par surfaces de Riemann, dans Dynamique et gdomdtrie complexes (Lyon, 
+1997), pp. 49-95. Panor. Syntheses, 8. Soc. Math. France, Paris, 1999. 
+[17] GuYs, E. ~ VERJOVSKY, A., Locally free holomorphic actions of the complex affine group, 
+in Geometric Study of Foliations (Tokyo, 1993), pp. 201-217. World Sci. Publishing, 
+River Edge, N J, 1994. 
+
+
+=== PDF PAGE 56 ===
+56 s. CANTAT 
+[18] GRIFFITHS, P. ~c HARRIS, J., Principles of Algebraic Geometry (reprint of the 1978 origi- 
+nal). Wiley Classics Library, John Wiley & Sons, New York, 1994. 
+[19] GROMOV, M., On the entropy of holomorphic map. Manuscrit, 1980. 
+[20] HUBBARD, J.H. & PAPADOPOL, P., Superattractive fixed points in (jn. Indiana Univ. 
+Math. J., 43 (1994), 321-365. 
+[21] HURDER, S. & MITSUMATSU, Y., Transverse Euler classes of foliations on nonatomic fo- 
+Iiation cycles, in Differential Topology, Foliations, and Group Actions (Rio de Janeiro, 
+1992), pp. 29-39. Contemp. Math., 161. Amer. Math. Sou., Providence, RI, 1994. 
+[22] KATOK, A., Lyapunov exponents, entropy and periodic orbits for diffeomorphisms. Inst. 
+Hautes Etudes Sci. Publ. Math., 51 (1980), 137-173. 
+[23] KATOK, A. ~; HASSELBLATT, B., Introduction to the Modern Theory of Dynamical Systems. 
+With a supplement by Anatole Katok and Leonardo Mendoza. Encyclopedia Math. 
+Appl., 54. Cambridge Univ. Press, Cambridge, 1995. 
+[24] KEUM, J.H., Every algebraic Kummer surface is the K3-cover of an Enriques surface. 
+Nagoya Math. J., 118 (1990), 99-110. 
+[25] LAMARI, A., Le cSne k~ihl~rien d'une surface. J. Math. Pures Appl. (9), 78 (1999), 249-263. 
+[26] LANG, S., Introduction to Complex Hyperbolic Spaces. Springer-Verlag, NewYork, 1987. 
+[27] LAUFER, H. B., Normal Two-Dimensional Singularities. Ann. of Math. Stud., 71. Princeton 
+Univ. Press, Princeton, N J, 1971. 
+[28] LEDRAPPIER, F., Some properties of absolutely continuous invariant measures on an inter- 
+val. Ergodic Theory Dynamical Systems, 1 (1981), 77-93. 
+[29] LELONG, P., t~l~ments extr~maux sur le c6ue des courants positifs ferm~s, dans Sdminaire 
+Pierre Lelong (Analyse), Annde 1971-1972, pp. 112-131. Lecture Notes in Math., 332. 
+Springer*Verlag, Berlin, 1973. 
+[30] MAZUR, B., The topology of rational points. Experiment. Math., 1 (1992), 35-45. 
+[31] NEVANLINNA, R., Analytic Functions. Grundlehren Math. Wiss., 162. Springer-Verlag, 
+New York-Berlin, 1970. 
+[32] NEWHOUSE, S.E., Entropy in smooth dynamical systems, in Proceedings of the Interna- 
+tional Congress of Mathematicians, Vol. II (Kyoto, 1990), pp. 1285-1294. Math. Soc. 
+Japan, Tokyo, 1991. 
+[33] NIKULIN, V.V., Quotient-groups of groups of automorphisms of hyperbolic forms by sub- 
+groups generated by 2-reflections. Algebro-geometric applications, in Current Problems 
+in Mathematics, Vol. 18, pp. 3-114. Akad. Nauk SSSR, Vsesoyuz. Inst. Nauchn. i Tekhn. 
+Informatsii, Moscow, 1981. 
+[34] ORNSTEIN, D. S. ~:; WEISS, B., Statistical properties of chaotic systems. Bull. Amer. Math. 
+Soc. (N.S.), 24 (1991), 11-116. 
+[35] PJATECKII-SAPIRO, I.I. ~z: SAFAREVIC, I.R., Torelli's theorem for algebraic surfaces of 
+type K3. Izv. Akad. Nauk SSSR Set. Mat., 35 (1971), 530-572 (Russian). 
+[36] SEMINAIRE PALAISEAU 1981/1982, Gdomdtrie des surfaces K3: modules et pdriodes. Ast~- 
+risque, 126. Soc. Math. Prance, Paris, 1985. 
+[37] SIBONY, N., Dynamique des applications rationnelles de pk, dans Dynamique et gdomdtrie 
+complexes (Lyon, 1997), pp. 97-185. Panor. Synth/~ses, 8. Soc. Math. France, Paris, 
+1999. 
+[38] SULLIVAN, D., Cycles for the dynamical study of foliated manifolds and complex manifolds. 
+Invent. Math., 36 (1976), 225-255. 
+[39] THURSTON, W., The Geometry and Topology of 3-Manifolds. Princeton Univ. Lecture 
+Notes, Princeton, N J, 1977. 
+[40] TROYANOV, M., Les surfaces euclidiennes s singularit~s coniques. Enseign. Math. (2), 32 
+(1986), 79-94. 
+
+
+=== PDF PAGE 57 ===
+DYNAMIQUE DES AUTOMORPHISMES DES SURFACES K3 57 
+[41] WANG, L., Rational points and canonical heights on K3-surfaces in pl pl p1, in Recent 
+Developments in the Inverse Galois Problem (Seattle, WA, 1993), pp. 273-289. Con- 
+temp. Math., 186. Amer. Math. Soc., Providence, RI, 1995. 
+[42] Wu, H., Complex stable manifolds of holomorphic diffeomorphisms. Indiana Univ. Math. J., 
+42 (1993), 1349-1358. 
+[43] YOMDIN, Y., Volume growth and entropy. Israel J. Math., 57 (1987), 285-300. 
+SERGE C ANTAT 
+IRMAR, UMR 6625 du CNRS 
+Universit~ de Rennes I 
+Campus de Beaulieu 
+Bhtiments 22-23 
+FR-35042 Rennes Cedex 
+France 
+cantat@maths.univ-rennesl.fr 
+Re~u le 28 fdvrier 2000 

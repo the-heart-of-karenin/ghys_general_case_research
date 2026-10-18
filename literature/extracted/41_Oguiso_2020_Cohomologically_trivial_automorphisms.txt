@@ -1,0 +1,569 @@
+=== PDF PAGE 1 ===
+Nagoya Math. J., 239 (2020), 110–122
+DOI 10.1017/nmj.2018.29
+NO COHOMOLOGICALLY TRIVIAL NONTRIVIAL
+AUTOMORPHISM OF GENERALIZED
+KUMMER MANIFOLDS
+KEIJI OGUISO
+Dedicated to Professor Tomohide Terasoma on the occasion of
+his sixtieth birthday
+Abstract. For a hyper-K¨ ahler manifold deformation equivalent to a general-
+ized Kummer manifold, we prove that the action of the automorphism group
+on the total Betti cohomology group is faithful. This is a sort of generalization
+of a work of Beauville and a more recent work of Boissi` ere, Nieper-Wisskirchen,
+and Sarti, concerning the action of the automorphism group of a generalized
+Kummer manifold on the second cohomology group.
+§1. Introduction
+Throughout this note, we work over C. Our main result is Theorem 1.3.
+The global Torelli theorem for K3 surfaces ([PS71, BR75], see also
+[BHPV04]) says that the contravariant action
+ρ2 : Aut(S) → GL(H2(S, Z)); g ↦→g∗|H 2(S,Z)
+is faithful for any K3 surface S. On the other hand, Dolgachev [Do84, 4.4]
+and Mukai and Namikawa [MN84, Mu10] show that there are Enriques
+surfacesE such that the actionρ2 : Aut(E) → GL(H2(E, Z)) is not faithful.
+Here and hereafter, we denote
+GL(L) := Autgroup(L)
+for a ﬁnitely generated abelian group L, possibly with nontrivial torsion.
+Throughout this note, by a hyper-K¨ ahler manifold, we mean a simply con-
+nected compact K¨ ahler manifoldM admitting an everywhere nondegenerate
+global holomorphic 2-form ωM such that H0(M, Ω2
+M) = CωM. Standard
+Received January 10, 2018. Revised August 4, 2018. Accepted August 4, 2018.
+2010 Mathematics subject classiﬁcation. 14J50, 14J40.
+The author is supported by JSPS Grant-in-Aid (S) No 25220701, JSPS Grant-in-Aid
+(S) 15H05738, JSPS Grant-in-Aid (B) 15H03611, and by KIAS Scholar Program.
+c⃝ 2018 Foundation Nagoya Mathematical Journal
+https://doi.org/10.1017/nmj.2018.29 Published online by Cambridge University Press
+
+=== PDF PAGE 2 ===
+GENERALIZED KUMMER MANIFOLDS 111
+examples of hyper-K¨ ahler manifolds are the Hilbert scheme Hilbn(S) of 0-
+dimensional closed subschemes of lengthn on a K3 surfaceS, the generalized
+Kummer manifold Kn−1 (A), of dimension 2(n − 1) ⩾ 4, associated to a 2-
+dimensional complex torus A, and their deformations ([Be83, Sections 6, 7],
+see also Section 2).
+Beauville [Be83-2, Propositions 9, 10] considered a similar question for
+hyper-K¨ ahler manifolds and found the following.
+Theorem 1.1.
+(1) The action ρ2 : Aut(Hilbn(S)) → GL(H2(Hilbn(S), Z)) is faithful.
+(2) The action ρ2 : Aut(Kn−1(A)) → GL(H2(Kn−1(A), Z)) is not faithful.
+More precisely,T (n) ⊂ Kerρ2.
+HereT (n) ≃ (Z/n)⊕4 is the group of automorphisms induced by the group
+of n-torsion points T [n] := {a ∈A|na = 0} of A = Aut0(A).
+It is natural and interesting to determine Ker ρ2 in Theorem 1.1(2). In
+this direction, Boissi` ere, Nieper-Wisskirchen, and Sarti [BNS11, Theorem 3,
+Corollary 5(2)] found the following complete answer.
+Theorem 1.2. Ker(ρ2 : Aut(Kn−1(A)) → GL(H2(Kn−1(A), Z))) =
+T (n) ◁ ⟨ι⟩.
+Hereι is the automorphism induced by the inversion −1 ofA andT (n) ◁
+⟨ι⟩ is the semidirect product of T (n) and ⟨ι⟩, in which T (n) is normal.
+It is also natural and interesting to ask if the action of Aut( Kn−1(A)) on
+the total cohomology groupH∗(Kn−1(A), Z) := ⨁4(n−1)
+k=0 H k(Kn−1(A), Z) is
+faithful or not.
+Our aim is to answer this question in a slightly more generalized form.
+Theorem 1.3. The action ρ : Aut(Y ) → GL(H∗(Y, Z)) is faithful for
+any hyper-K¨ ahler manifoldY deformation equivalent to Kn−1(A).
+First we prove Theorem 1.3 for Kn−1(A). By Theorem 1.2, it suﬃces
+to show that g∗|H ∗(Kn−1(A),C) ̸= id for each g ∈ (T (n) ◁ ⟨ι⟩) \ {id}. This is
+checked in Section 3. We then prove Theorem 1.3 for any Y in Section 4,
+by using the density result due to Markman and Mehrotra [MM17]. In
+Section 5, among other things, we remark a similar result for deformation
+of the Hilbert scheme of a K3 surface (Theorem 5.1).
+After posting this note on ArXiv (on 2012), Professor Y. Tschinkel kindly
+informed me that the action T (n) ◁ ⟨ι⟩ on Kn−1(A) extends to a faithful
+https://doi.org/10.1017/nmj.2018.29 Published online by Cambridge University Press
+
+=== PDF PAGE 3 ===
+112 K. OGUISO
+action on any deformation Y of Kn−1(A), in such a way that the extended
+action is trivial on H2(Y, Z) [HT13, Theorem 2.1, Proposition 3.1]. In
+particular, this shows that the action
+ρ2 : Aut(Y ) → GL(H2(Y, Z))
+is not faithful even if Y is generic.
+I should also mention that Theorem 1.3 is much motivated by the
+following question asked by Professor D. McDuﬀ to me at the conference in
+Banﬀ (July 2012), while the question itself is still completely open.
+Question 1.4. Is there an example of a compact K¨ ahler manifold
+M such that the biholomorphic automorphism group is discrete, that is,
+Aut0(M) = {idM }, but with a biholomorphic automorphism g ̸= idM being
+homotopic to id M in the group of diﬀeomorphisms?
+§2. Preliminaries
+In this section, we mainly ﬁx notations we shall use. We follow [Be83]
+and [Be83-2]. So, Kn(A) in [BNS11] is Kn−1(A) in this note.
+We refer to [Be83, Section 7] and [GHJ03, Part III] for more details
+on generalized Kummer manifolds and basic properties on hyper-K¨ ahler
+manifolds.
+Let A be a 2-dimensional complex torus and let n be an integer such
+that n ⩾ 3. Let Hilb n(A) be the Hilbert scheme of 0-dimensional closed
+subschemes of A of length n. Then Hilb n(A) is a smooth K¨ ahler manifold
+of dimension 2n. Let
+ν =νA : Hilbn(A) → Symn(A) =An/Sn
+be the Hilbert–Chow morphism. We denote the sum as 0-cycles by ⊕ and
+the sum in A by +. Then each element of Sym n(A) is of the form
+k⨁
+i=1
+x⊕mi
+i .
+Here, xi are distinct points on A and mi are positive integers such that∑k
+i=1mi =n. We have the following surjective morphism
+s :=sA : Symn(A) →A;
+k⨁
+i=1
+x⊕mi
+i ↦→
+k∑
+i=1
+mixi.
+https://doi.org/10.1017/nmj.2018.29 Published online by Cambridge University Press
+
+=== PDF PAGE 4 ===
+GENERALIZED KUMMER MANIFOLDS 113
+The generalized Kummer manifold Kn−1(A) is deﬁned by
+Kn−1(A) := (s ◦ν)−1(0).
+Note that the morphism
+s ◦ν =sA ◦νA : Hilbn(A) →A
+is a smooth surjective morphism such that all ﬁbers are isomorphic [Be83,
+Section 7]. So, Kn−1(A) is isomorphic to any ﬁber of sA ◦νA. One can also
+describe Kn−1(A) in a slightly diﬀerent way, as follows. Let
+A(n − 1) :=
+{
+(P1,P 2,...,P n) ∈An
+⏐⏐⏐⏐
+n∑
+i=1
+Pi = 0
+}
+.
+Then A(n − 1) is a closed submanifold of An and A(n − 1) ≃An−1. More-
+over,A(n − 1) is stable under the action of Sn on An and
+Symn(A) ⊃A(n−1) :=s−1(0) =A(n − 1)/Sn.
+From this, we deduce that
+Kn−1(A) =ν−1(A(n−1)) = Hilbn(A) ×Symn(A)A(n−1).
+Recall that dim Def(A) = 4, while dim Def(Kn−1(A)) = 5 forn ⩾ 3 and any
+local deformation of a hyper-K¨ ahler manifold is a hyper-K¨ ahler manifold
+[Be83, Section 7]. So, there are hyper-K¨ ahler manifolds which are defor-
+mation equivalent to Kn−1(A) but are not isomorphic to any generalized
+Kummer manifold.
+From now until the end of this note, we denote byX :=Kn−1(A) (n ⩾ 3)
+the generalized Kummer manifold, of dimension 2( n − 1), associated to
+a 2-dimensional complex torus A and by K :=T (n) ◁ ⟨ι⟩ the subgroup
+of Aut(Kn−1(A)) deﬁned in the Introduction. We also use the notations
+introduced in this section freely in the remaining sections.
+§3. Proof of Theorem 1.3 for Kn−1(A)
+In this section, we prove Theorem 1.3 for Kn−1(A).
+First we prove the following.
+Proposition 3.1. Letg ∈K \T (n). Then g∗|H 3(X,C) ̸= id.
+https://doi.org/10.1017/nmj.2018.29 Published online by Cambridge University Press
+
+=== PDF PAGE 5 ===
+114 K. OGUISO
+Proof. Let (z1
+i,z 2
+i ) (1 ⩽i ⩽n) be the standard global coordinates of the
+universal cover C2
+i of the ith factor Ai =A ofAn. Then the universal cover
+C2(n−1) of A(n − 1) ≃An−1 is a closed submanifold of C2n deﬁned by
+(3.1) z1
+1 +z1
+2 + · · · +z1
+n−1 +z1
+n = 0, z 2
+1 +z2
+2 + · · · +z2
+n−1 +z2
+n = 0.
+In particular, ( z1
+i,z 2
+i ) (1 ⩽i ⩽n − 1) give the global coordinates of the
+universal cover C2(n−1) of A(n − 1). Note that 1-forms dz1
+i and dz2
+i (1 ⩽
+i ⩽n) can be regarded as global 1-forms on A(n − 1). They satisfy
+(3.2)
+dz1
+1 +dz1
+2 + · · · +dz1
+n−1 +dz1
+n = 0, dz 2
+1 +dz2
+2 + · · · +dz2
+n−1 +dz2
+n = 0,
+and {dz1
+i,dz 2
+i (1 ⩽i ⩽n − 1)} forms a basis of the space of global holomor-
+phic 1-forms on A(n − 1) ≃An−1. Consider the following global (2, 1)-form
+˜τ on A(n − 1):
+˜τ =dz1
+1 ∧dz2
+1 ∧dz2
+1 + · · · +dz1
+n−1 ∧dz2
+n−1 ∧dz2
+n−1 +dz1
+n ∧dz2
+n ∧dz2
+n.
+Lemma 3.2. ˜τ descends to a nonzero element τ of H2,1(X).
+Proof. Recall that, for compact K¨ ahler orbifolds, the Hodge decomposi-
+tion is pure and the Hodge theory works in the same way as smooth compact
+manifolds [St77].
+Since ˜τ is Sn-invariant, it descends to a global (2, 1)-form, say τ, on the
+compact K¨ ahler orbifoldA(n−1). Then τ = (ν|X)∗τ ∈H2,1(X) under ν|X :
+X →A(n−1). It remains to show that τ ̸= 0. Since ( ν|X)∗ is injective, it
+suﬃces to show that τ ̸= 0 in H2,1(A(n−1)). For this, it suﬃces to show
+that ˜τ ̸= 0 in H2,1(A(n − 1)), as q∗ is also injective for the quotient map
+q :A(n − 1) →A(n−1). By Equation (3.2), we have
+˜τ =dz1
+1 ∧dz2
+1 ∧dz2
+1 + · · · +dz1
+n−1 ∧dz2
+n−1 ∧dz2
+n−1
+−
+(n−1∑
+k=1
+dz1
+k
+)
+∧
+(n−1∑
+k=1
+dz2
+k
+)
+∧
+(n−1∑
+k=1
+dz2
+k
+)
+.
+This is the expression of ˜τ in terms of the standard basis of H2,1(A(n − 1)).
+As n − 1 ⩾ 2, the term
+dz1
+1 ∧dz2
+2 ∧dz2
+2
+appears with coeﬃcient −1 in this expression. Hence ˜ τ ̸= 0 in
+H2,1(A(n − 1)). This proves Lemma 3.2.
+https://doi.org/10.1017/nmj.2018.29 Published online by Cambridge University Press
+
+=== PDF PAGE 6 ===
+GENERALIZED KUMMER MANIFOLDS 115
+Lemma 3.3. Let g ∈K \T (n) and τ ∈H2,1(X) be as in Lemma 3.2.
+Then g∗τ = −τ. In particular, g∗|H 3(X,C) ̸= id.
+Proof. The automorphism g acts equivariantly on A(n − 1) →
+A(n−1) ←X. Forι, hence for g ∈K \T (n), we have
+ι∗dzq
+i = −dzq
+i, g ∗dzq
+i = −dzq
+i (1 ⩽i ⩽n,q = 1, 2).
+Henceg∗˜τ = −˜τ by the shape of ˜τ. Thusg∗τ = −τ. By Lemma 3.2, τ ̸= 0 in
+H2,1(X). Hence g∗|H 3(X,C) ̸= id as claimed.
+Lemma 3.3 completes the proof of Proposition 3.1.
+Next we prove the following.
+Proposition 3.4. Leta ∈T (n) \ {id}. Then a∗|H ∗(X,C) ̸= id.
+Proof. Let a ∈T (n) ≃ (Z/nZ)⊕4 be an element of order p ̸= 1 (p is not
+necessarily a prime number). Set d =n/p. Then d is a positive integer such
+that d<n . We freely regard a also as a torsion element of order p in A
+and automorphisms of various spaces which are naturally and equivariantly
+induced by the translation automorphism x ↦→x +a of A.
+We will show ﬁrst Lemma 3.5, Theorem 3.6 and Lemma 3.7, and then we
+will conclude the proof of Proposition 3.4.
+Lemma 3.5. The ﬁxed locus X a consists of p3 connected components
+Fi (1 ⩽i ⩽p3). Moreover, eachFi is isomorphic to the generalized Kummer
+manifoldKd−1(A/⟨a⟩) associated to the 2-dimensional complex torusA/⟨a⟩.
+Proof. Let S ⊂A be a 0-dimensional closed subscheme of length n. As
+⟨a⟩ acts freely on A, the quotient map π :A →A/⟨a⟩ is ´ etale of degreep. It
+follows thata∗S = S if and only if there is a 0-dimensional closed subscheme
+T ⊂ A/⟨a⟩ of length d =n/p such that S =π∗T . This T is clearly unique
+and we obtain an isomorphism
+(3.3) Hilb d(A/⟨a⟩) ≃ (Hilbn(A))a; T ↦→ π∗T.
+Let S ∈ (Hilbn(A))a. Then ν(S) ∈ (Symn(A))a as well, and ν(S) is then of
+the form
+ν(S) =
+k⨁
+i=1
+p−1⨁
+j=0
+(xi +ja)⊕mi
+https://doi.org/10.1017/nmj.2018.29 Published online by Cambridge University Press
+
+=== PDF PAGE 7 ===
+116 K. OGUISO
+(and vice versa ). Here ∑k
+i=1mi =d and all points xi +ja are distinct.
+Observe also that
+Kn−1(A)a = (Hilbn(A))a ∩Kn−1(A).
+As S ∈ (Hilbn(A))a by our choice of S, it follows from the equality above
+that S ∈Kn−1(A)a if and only if S ∈Kn−1(A), that is, S ∈ (Hilbn(A))a
+satisﬁes (by the deﬁnition of Kn−1(A) and by the shape of ν(S)) that
+(3.4) p(m1x1 +m2x2 + · · · +mkxk +α) = 0
+in A. Here n(p − 1)/2 ∈ Z and α ∈A is an element such that
+pα = (n(p − 1)/2)a
+in A. We choose and ﬁx such α.
+Let A[p] be the group of p-torsion points of A. Then, Equation (3.4) is
+equivalent to
+(3.5) m1x1 +m2x2 + · · · +mkxk +α ∈A[p].
+Since a is also a p-torsion point, Equation (3.5) is also equivalent to
+(3.6) m1π(x1) +m2π(x2) + · · · +mkπ(xk) +π(α) ∈π(A[p]) =A[p]/⟨a⟩.
+Write S =π∗T . Then, Equation (3.6) holds if and only if T is in the ﬁbers
+of
+sA/⟨a⟩ ◦νA/⟨a⟩ : Hilbd(A/⟨a⟩) →A/⟨a⟩
+over π(A[p]). We have |π(A[p])| =p3, as a is also p-torsion. Hence, by the
+isomorphism (3.3), the ﬁxed locus Kn−1(A)a is isomorphic to the union of
+p3 ﬁbers of sA/⟨a⟩ ◦νA/⟨a⟩ and each ﬁber is isomorphic to Kd−1(A/⟨a⟩) as
+remarked in Section 2. This completes the proof of Lemma 3.5.
+Set
+σ(n) =
+∑
+1⩽b|n
+b,
+the sum of all positive divisors of a positive integer n. The following
+fundamental result due to G¨ ottche and Soergel ([GS93, Corollary 1], see
+also [Go94, De10]) is crucial in our proof.
+Theorem 3.6. The topological Euler numberχtop(Kn−1(A)) ofKn−1(A)
+is n3σ(n). (This is also valid for n = 1, 2.)
+https://doi.org/10.1017/nmj.2018.29 Published online by Cambridge University Press
+
+=== PDF PAGE 8 ===
+GENERALIZED KUMMER MANIFOLDS 117
+Now we consider the Lefschetz number of h ∈ Aut(X):
+L(h) :=
+4(n−1)∑
+k=0
+(−1)k trh∗|H k(X,C).
+Lemma 3.7.
+(1) If h ∈ Aut(X) is cohomologically trivial, then L(h) =n3σ(n).
+(2) L(a) =n3σ(d) for any element a of orderp inT (n) \ {id} withd =n/p.
+Proof. If h is cohomologically trivial, then tr h∗|H k(X,C) =bk(X). This
+implies (1). By the topological Lefschetz ﬁxed point formula, Lemma 3.5
+and Theorem 3.6, we obtain
+L(a) =χtop(X a) =p3χtop(Kd−1(A/⟨a⟩)) =p3 ·d3σ(d) =n3σ(d).
+This is nothing but the assertion (2). This proves Lemma 3.7.
+Since d|n and d ̸=n, it follows that
+σ(d) ⩽σ(n) −n<σ (n).
+Hence a ∈T (n) \ {id} is not cohomologically trivial by Lemma 3.7. This
+proves Proposition 3.4.
+Theorem 1.3 forKn−1(A) now follows from Theorem 1.2, Propositions 3.1
+and 3.4. This completes the proof of Theorem 1.3 for Kn−1(A).
+§4. Proof of Theorem 1.3
+In this section, we shall prove Theorem 1.3 for any Y .
+Let Λ = (Λ , (∗, ∗∗)) be a ﬁxed abstract lattice isometric to
+(H2(Kn−1(A), Z),b ). Here b is the Beauville–Bogomolov form of Kn−1(A)
+(see e.g. [GHJ03, Example 23.20]).
+LetY be a hyper-K¨ ahler manifold deformation equivalent to a generalized
+Kummer manifold X =Kn−1(A). Let g ∈ Aut(Y ) such that g∗|H ∗(Y,Z) = id.
+We are going to show that g = idY .
+Let M0 be the connected component of the marked moduli space of
+MΛ, containing ( Y,η ). Here η :H2(Y, Z) → Λ is a marking. Huybrechts
+constructed the marked moduli space MΛ [Hu99, 1.18] by patching Kuran-
+ishi spaces via local Torelli theorem for hyper-K¨ ahler manifolds ([Be83,
+Theorem 5], [GHJ03, 25.2]). By construction, MΛ is smooth, but highly
+https://doi.org/10.1017/nmj.2018.29 Published online by Cambridge University Press
+
+=== PDF PAGE 9 ===
+118 K. OGUISO
+non-Hausdorﬀ. He also showed that the period map
+p : M0 → D = {[ω] ∈ P(Λ ⊗ C)|(ω,ω ) = 0, (ω,ω)> 0}
+is a surjective holomorphic map of degree 1 ([Hu99, Theorem 8.1], see
+also [Ve13, Hu12] for degree and further development). Let [ ω] ∈ D. If
+p−1([ω]) (⊂ M0) is not a single point, thenp−1([ω]) consists of points, being
+mutually inseparable, corresponding to birational hyper-K¨ ahler manifolds
+[Hu99, Theorem 8.1].
+By using the Hodge theoretic Torelli type theorem [Ma11], Markman
+and Mehrotra [MM17, Theorem 4.1] proved that the marked generalized
+Kummer manifolds are dense in M0. Actually they proved the following
+stronger density result:
+Theorem 4.1. There is a dense subset D′ ⊂ D such that if [ω] ∈ D′,
+then any point of p−1([ω]) corresponds to a marked generalized Kummer
+manifold.
+Consider the Kuranishi family u : U → K of Y . Here and hereafter we
+freely shrink K around 0 = [Y ]. Since the Kuranishi family is universal,
+g ∈ Aut(Y ) induces automorphisms ˜g ∈ Aut(U) and g ∈ Aut(K) such that
+u ◦ ˜g =g ◦u and ˜g|Y =g. Since K is locally isomorphic to D by the local
+Torelli theorem, the locus
+K′ ⊂ K,
+consisting of the pointt such thatu−1(t) is a generalized Kummer manifold,
+is dense in K. This is a direct consequence of Theorem 4.1 and the
+construction of M0 explained above. Here we also emphasize that the density
+in M0 is not suﬃcient to conclude this.
+From now, we follow Beauville’s argument [Be83-2, proof of Proposi-
+tion 10].
+Let TY be the tangent bundle of Y . Then, one can take K as a small
+polydisk in H1(Y,T Y ) with center 0. As ωY is everywhere nondegenerate,
+we have an isomorphism
+H1(Y,T Y ) ≃H1(X, Ω1
+Y )
+induced by the isomorphism
+TY ≃ Ω1
+Y =T∗
+Y :v ↦→ωY (v, ∗).
+https://doi.org/10.1017/nmj.2018.29 Published online by Cambridge University Press
+
+=== PDF PAGE 10 ===
+GENERALIZED KUMMER MANIFOLDS 119
+As g is cohomologically trivial and H2,0(Y ) =H0(Y, Ω2
+Y ) = CωY , we have
+g∗ωY =ωY and g∗|H 1(Y,Ω1
+Y ) = id. Hence by the isomorphism above, we
+obtain g∗|H 1(Y,TY ) = id, and therefore, g = idK.
+Lett ∈ K be any point of K. Then, by g = idK, the morphism ˜g preserves
+the ﬁber Yt =u−1(t), that is,
+˜g|Yt ∈ Aut(Yt).
+Putgt := ˜g|Yt. Then gt is also cohomologically trivial, because g∗
+t |H ∗(Yt,Z) is
+derived from the action of ˜g on the constant system ⨁4(n−1)
+k=0 Rku∗Z. Then
+gt = idYt for all t ∈ K′, as we already proved Theorem 1.3 for Kn−1(A) in
+Section 3. Since U is Hausdorﬀ and ˜g is continuous, it follows that ˜g = idU.
+Hence g =g0 = idY as well. This completes the proof of Theorem 1.3.
+§5. A few concluding remarks
+In this section, we remark a few relevant facts, which should be known
+to some experts.
+Our ﬁrst remark is about an analogue of Theorem 1.3 for a hyper-K¨ ahler
+manifold deformation equivalent to the Hilbert scheme Hilb n(S) of a K3
+surface S.
+Markman and Mehrotra [MM17, Theorem 1.1] also proved the strong
+density result for Hilb n(S) of K3 surfaces S. So, the same argument as
+in Section 4 together with Beauville’s result (Theorem 1.1(1)) implies the
+following result due to Mongardi [Mo13, Lemma 1.2]:
+Theorem 5.1. LetW be a hyper-K¨ ahler manifold deformation equiva-
+lent to Hilbn(S). Then, the action ρ2 : Aut(W ) → GL(H2(W, Z)) is faithful.
+Our second remark is about the ﬁxed locus of symplectic automorphism
+of ﬁnite order.
+In Lemma 3.5, we described the ﬁxed locus X a. Our description shows
+thatX a is a disjoint union of smooth hyper-K¨ ahler manifolds. However, this
+is not accidental:
+Proposition 5.2. Let (M,ω M) be a holomorphic symplectic manifold
+of dimension 2d, that is, M is a compact K¨ ahler manifold and ωM is an
+everywhere nondegenerate holomorphic2-form onM (not necessarily unique
+up to C×). Leth ∈ Aut(M) such thath∗ωM =ωM andh is of ﬁnite orderm.
+LetF be a connected component of the ﬁxed locusM h = {P ∈M |h(P ) =P }.
+Then (F,ω M |F ) is a holomorphic symplectic manifold (possibly a point).
+https://doi.org/10.1017/nmj.2018.29 Published online by Cambridge University Press
+
+=== PDF PAGE 11 ===
+120 K. OGUISO
+Proof. F is isomorphic to the intersection of the graph of h and the
+diagonal ∆ in M ×M. So it is compact and K¨ ahler, possibly singular. Let
+P ∈F . Since h is of ﬁnite order, h is locally linearizable at P (see the proof
+of [Ka84, Lemma 1.3]). That is, there are local coordinates (y1,y 2,...,y 2d)
+at P such that
+(5.1) h∗yi =yi (1 ⩽ ∀i ⩽r), h ∗yj =cjyj (r + 1 ⩽ ∀j ⩽ 2d).
+Herecj ̸= 1 and satisﬁescm
+j = 1. ThenF is locally deﬁned byyj = 0 (r + 1 ⩽
+j ⩽ 2d) in M. Hence F is smooth. Consider the linear diﬀerential map
+dhP :TM,P →TM,P
+of the tangent space TM,P of M at P . By Equation (5.1), we have the
+decomposition
+(5.2) TM,P =TF,P ⊕N.
+Here, N = ⨁2d
+j=r+1 Cvj for some vj (r + 1 ⩽j ⩽ 2d) such that dhP (vj) =
+c−1
+j vj and the tangent spaceTF,P ofF atP is exactly the invariant subspace
+(TM,P )dhP . Using h∗ωM =ωM, we deduce that
+ωM,P (v,v j) =ωM,P (dhP (v),dh P (vj)) =ωM,P (v,c−1
+j vj) =c−1
+j ωM,P (v,v j),
+for any v ∈TF,P and vj (r + 1 ⩽j ⩽ 2d). As cj ̸= 1, it follows that
+ωM,P (v,v j) = 0
+for allv ∈TF,P andvj withr + 1 ⩽j ⩽ 2d. Hence, the decomposition (5.2) is
+orthogonal with respect to ωM,P . As ωM,P is nondegenerate, it follows from
+the orthogonality of the decomposition thatωM,P |TF,P is also nondegenerate
+on TF,P (possibly {0}). Hence ( F,ω |F ) is a smooth symplectic manifold
+(possibly a point) as well. This completes the proof of Proposition 5.2.
+Remark 5.3. Proposition 5.2 is a formal generalization of a result of
+Camere [Ca12, Proposition 3] for a symplectic involution.
+Acknowledgments. I would like to express my thanks to Professor
+D. McDuﬀ for her inspiring question, to Professor N. Sibony for invitation
+to the conference at Banﬀ (July 2012), and Professor Y. Tschinkel for
+his interest in this work and valuable information about a paper [HT13].
+https://doi.org/10.1017/nmj.2018.29 Published online by Cambridge University Press
+
+=== PDF PAGE 12 ===
+GENERALIZED KUMMER MANIFOLDS 121
+I would also like to express my thanks to Professor I. Dolgachev for valuable
+comments in the ﬁrst version (in 2012) and for reminding me of this paper
+in his opening talk at the international conference celebrating Professor
+S. Kond¯ o’s sixtieth birthday held at Nagoya on December 2017. I would
+also like to express my thanks to the referee for his/her careful reading.
+References
+[BHPV04] W. P. Barth, K. Hulek, C. A. M. Peters and A. Van de Ven, Compact complex
+surfaces, 2nd ed., Ergebnisse der Mathematik und ihrer Grenzgebiete. 3.
+Folge. A Series of Modern Surveys in Mathematics 4, Springer, Berlin, 2004,
+xii+436 pp.
+[Be83] A. Beauville, Vari´ et´ es K¨ ahleriennes dont la premi´ ere classe de Chern est nulle,
+J. Diﬀerential Geom. 18 (1983), 755–782.
+[Be83-2] A. Beauville, “ Some remarks on K¨ ahler manifolds with c1 = 0”, in Classiﬁ-
+cation of Algebraic and Analytic Manifolds (Katata, 1982) , Progr. Math. 39,
+Birkh¨ auser Boston, Boston, MA, 1983, 1–26.
+[BNS11] S. Boissi` ere, M. Nieper-Wisskirchen and A. Sarti,Higher dimensional Enriques
+varieties and automorphisms of generalized Kummer varieties , J. Math. Pure
+Appl. 95 (2011), 553–563.
+[BR75] D. Burns Jr. and M. Rapoport, On the Torelli problem for k¨ ahlerian K-3
+surfaces, Ann. Sci. ´Ec. Norm. Sup´ er.8 (1975), 235–273.
+[Ca12] C. Camere, Symplectic involutions of holomorphic symplectic four-folds , Bull.
+Lond. Math. Soc. 44 (2012), 687–702.
+[De10] O. Debarre, On the Euler characteristic of generalized Kummer varieties ,
+Amer. J. Math. 121 (1999), 577–586.
+[Do84] I. Dolgachev, On automorphisms of Enriques surfaces , Invent. Math. 76
+(1984), 163–177.
+[Go94] L. G¨ ottsche, Hilbert Schemes of Zero-Dimensional Subschemes of Smooth
+Varieties, Lecture Notes in Mathematics 1572, Springer, Berlin, 1994,
+x+196 pp.
+[GS93] L. G¨ ottsche and W. Soergel, Perverse sheaves and the cohomology of Hilbert
+schemes of smooth algebraic surfaces , Math. Ann. 296 (1993), 235–245.
+[GHJ03] M. Gross, D. Huybrechts and D. Joyce, Calabi–Yau Manifolds and Related
+Geometries. Lectures from the Summer School held in Nordfjordeid, June 2001,
+Universitext, Springer, Berlin, 2003.
+[Hu99] D. Huybrechts, Compact hyper-K¨ ahler manifolds: basic results, Invent. Math.
+135 (1999), 63–113; Erratum: “Compact hyper-K¨ ahler manifolds: basic
+results”, Invent. Math. 152 (2003), 209–212.
+[HT13] B. Hassett and Y. Tschinkel, Hodge theory and Lagrangian planes on gener-
+alized Kummer fourfolds , Mosc. Math. J. 13 (2013), 33–56.
+[Hu12] D. Huybrechts, A global Torelli theorem for hyperkaehler manifolds (after Ver-
+bitsky), S´ eminaire Bourbaki: Vol. 2010/2011. Expos´ es 1027–1042, Ast´ erisque
+348 (2012), 375–403.
+[Ka84] T. Katsura, The unirationality of certain elliptic surfaces in characteristic p,
+Tohoku Math. J. (2) 36(2) (1984), 217–231.
+[Ma11] E. Markman, “ A survey of Torelli and monodromy results for holomorphic-
+symplectic varieties ”, in Complex and Diﬀerential Geometry , Springer Proc.
+Math. 8, Springer, Heidelberg, 2011, 257–322.
+https://doi.org/10.1017/nmj.2018.29 Published online by Cambridge University Press
+
+=== PDF PAGE 13 ===
+122 K. OGUISO
+[MM17] E. Markman and S. Mehrotra, Hilbert schemes of K3 surfaces are dense in
+moduli, Math. Nachr. 290 (2017), 876–884.
+[Mo13] G. Mongardi, On natural deformations of symplectic automorphisms of mani-
+folds of K3[n] type, C. R. Math. Acad. Sci. Paris 351(13–14) (2013), 561–564.
+[Mu10] S. Mukai, Numerically trivial involutions of Kummer type of an Enriques
+surface, Kyoto J. Math. 50 (2010), 889–902.
+[MN84] S. Mukai and Y. Namikawa, Automorphisms of Enriques surfaces which act
+trivially on the cohomology groups , Invent. Math. 77 (1984), 383–397.
+[PS71] I. I. Pjateckii-Shapiro and I. R. Shafarevich, Torelli’s theorem for algebraic
+surfaces of type K3 , Izv. Akad. Nauk SSSR Ser. Mat. 35 (1971), 530–572.
+[St77] J. H. M. Steenbrink, Mixed Hodge Structure on the Vanishing Cohomology ,
+Real and Complex Singularities (Proc. Ninth Nordic Summer School/NAVF
+Sympos. Math., Oslo, 1976), Sijthoﬀ and Noordhoﬀ, Alphen aan den Rijn,
+1977, 525–563.
+[Ve13] M. Verbitsky, Mapping class group and a global Torelli theorem for hyperk¨ ahler
+manifolds, Duke Math. J. 162 (2013), 2929–2986.
+Mathematical Sciences
+the University of Tokyo
+Meguro Komaba 3-8-1
+Tokyo
+Japan
+oguiso@ms.u-tokyo.ac.jp
+and
+Korea Institute for Advanced Study
+Hoegiro 87
+Seoul
+133-722
+Korea
+https://doi.org/10.1017/nmj.2018.29 Published online by Cambridge University Press

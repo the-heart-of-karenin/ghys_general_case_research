@@ -214,5 +214,450 @@
       "previews/Zeghib_complex_motion.png"
     ],
     "visual_verification_note": "Journal pp.63 and 77 inspected in rendered images on 2026-10-17; used only for scope audit, not as a missing Anosov theorem."
+  },
+  {
+    "filename": "17_Beauville_1983_Decomposition.pdf",
+    "title": "Varietes kahleriennes dont la premiere classe de Chern est nulle",
+    "download_url": "https://math.univ-cotedazur.fr/~beauvill/pubs/jdg.pdf",
+    "landing_url": "https://doi.org/10.4310/jdg/1214438181",
+    "publication_note": "J. Differential Geom. 18 (1983), 755-782; author-hosted journal PDF",
+    "collected_utc": "2026-10-17T15:08:39.551687+00:00",
+    "resolved_url": "https://math.univ-cotedazur.fr/u/beauvill/pubs/jdg.pdf",
+    "download_status": "downloaded",
+    "bytes": 304712,
+    "sha256": "1c1a13973234883702f431446ab5376c1335cb89790cb9950897260d236f09f3",
+    "pages": 28,
+    "extracted_characters": 0,
+    "visually_inspected_pdf_pages": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "reading_scope": "Selected theorem, hypothesis, or formula pages; not full-paper proof audit."
+  },
+  {
+    "filename": "18_Huybrechts_2003_Projectivity_erratum.pdf",
+    "title": "Erratum: Compact hyperkaehler manifolds: basic results",
+    "download_url": "https://arxiv.org/pdf/math/0106014",
+    "landing_url": "https://arxiv.org/abs/math/0106014",
+    "publication_note": "arXiv erratum manuscript; published Invent. Math. 152 (2003), 209-212",
+    "collected_utc": "2026-10-17T15:08:39.552757+00:00",
+    "resolved_url": "https://arxiv.org/pdf/math/0106014",
+    "download_status": "downloaded",
+    "bytes": 83288,
+    "sha256": "d4ae84ef082fcbbb7f01f429cef0987b1eec34676e6572d17d3291447e813830",
+    "pages": 4,
+    "extracted_characters": 9431,
+    "visually_inspected_pdf_pages": [
+      3
+    ],
+    "reading_scope": "Selected theorem, hypothesis, or formula pages; not full-paper proof audit.",
+    "symplectic_power_visual_pages": [
+      3
+    ]
+  },
+  {
+    "filename": "19_Oguiso_2009_Dynamical_degrees.pdf",
+    "title": "A remark on dynamical degrees of automorphisms of hyperkahler manifolds",
+    "download_url": "https://arxiv.org/pdf/0901.4827",
+    "landing_url": "https://arxiv.org/abs/0901.4827",
+    "publication_note": "arXiv manuscript; Manuscripta Math. 130 (2009), 101-111",
+    "collected_utc": "2026-10-17T15:08:39.554688+00:00",
+    "resolved_url": "https://arxiv.org/pdf/0901.4827",
+    "download_status": "downloaded",
+    "bytes": 171106,
+    "sha256": "b20d99d4f43f6f498c49e4e046595a1192569f03676c48144352ab6dcf810a5a",
+    "pages": 10,
+    "extracted_characters": 23712,
+    "visually_inspected_pdf_pages": [
+      1
+    ],
+    "reading_scope": "Selected theorem, hypothesis, or formula pages; not full-paper proof audit."
+  },
+  {
+    "filename": "20_Jang_2024_Kummer_rigidity.pdf",
+    "title": "Kummer rigidity for hyperkahler automorphisms",
+    "download_url": "https://par.nsf.gov/servlets/purl/10557291",
+    "landing_url": "https://www.aimsciences.org/article/doi/10.3934/jmd.2024005",
+    "publication_note": "J. Modern Dynamics 20 (2024), 183-213; journal PDF in NSF repository",
+    "collected_utc": "2026-10-17T15:08:41.330834+00:00",
+    "resolved_url": "https://par.nsf.gov/servlets/purl/10557291",
+    "download_status": "downloaded",
+    "bytes": 757714,
+    "sha256": "b7f9c994f0d03c7ed083f0083415d7d5fecfdf0447f9c17db0cd738101d67114",
+    "pages": 31,
+    "extracted_characters": 76840,
+    "visually_inspected_pdf_pages": [
+      2,
+      10,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "reading_scope": "Selected theorem, hypothesis, or formula pages; not full-paper proof audit."
+  },
+  {
+    "filename": "21_OGrady_2022_Modular_sheaves.pdf",
+    "title": "Modular sheaves on hyperkahler varieties",
+    "download_url": "https://content.algebraicgeometry.nl/2022-1/2022-1-001.pdf",
+    "landing_url": "https://doi.org/10.14231/AG-2022-001",
+    "publication_note": "Algebraic Geometry 9 (2022), 1-38; publisher PDF",
+    "collected_utc": "2026-10-17T15:08:41.888218+00:00",
+    "resolved_url": "https://content.algebraicgeometry.nl/2022-1/2022-1-001.pdf",
+    "download_status": "downloaded",
+    "bytes": 589315,
+    "sha256": "e264e65d279f8fb78fa65198d9944a5f5951a8299a6882aa16d0ef5c1ed7dbf4",
+    "pages": 38,
+    "extracted_characters": 107207,
+    "visually_inspected_pdf_pages": [
+      5,
+      6,
+      17
+    ],
+    "reading_scope": "Selected theorem, hypothesis, or formula pages; not full-paper proof audit.",
+    "K3_square_surface_visual_pages": [
+      5,
+      6,
+      17
+    ],
+    "symplectic_power_visual_pages": [
+      17
+    ]
+  },
+  {
+    "filename": "22_OGrady_2024_Kummer_bundles.pdf",
+    "title": "Rigid stable rank 4 vector bundles on HK fourfolds of Kummer type",
+    "download_url": "https://epiga.episciences.org/14895/pdf",
+    "landing_url": "https://doi.org/10.46298/EPIGA.2024.10857",
+    "publication_note": "Epijournal Geom. Algebrique, special volume (2024), article 19; publisher PDF",
+    "collected_utc": "2026-10-17T15:08:44.979504+00:00",
+    "resolved_url": "https://epiga.episciences.org/14895/pdf",
+    "download_status": "downloaded",
+    "bytes": 944719,
+    "sha256": "1dd0c26193cf6efc33ae1be8814314bc110833296ced82cb4f2bb79a0a824381",
+    "pages": 51,
+    "extracted_characters": 135984,
+    "visually_inspected_pdf_pages": [
+      7
+    ],
+    "reading_scope": "Selected theorem, hypothesis, or formula pages; not full-paper proof audit."
+  },
+  {
+    "filename": "23_Cadek_Crabb_Vanzura_2008_Obstruction.pdf",
+    "title": "Obstruction theory on 8-manifolds",
+    "download_url": "https://www.math.muni.cz/~cadek/papers/8_manifolds.pdf",
+    "landing_url": "https://doi.org/10.1007/s00229-008-0203-x",
+    "publication_note": "Author manuscript corrected 8 July 2008; Manuscripta Math. 127 (2008), 167-186",
+    "collected_utc": "2026-10-17T16:38:14.155441+00:00",
+    "resolved_url": "https://www.math.muni.cz/~cadek/papers/8_manifolds.pdf",
+    "download_status": "downloaded",
+    "bytes": 229130,
+    "sha256": "7a9dbfd28463d2c12221d019a866f638e8e2f6c28d88f54eea8682ff40b017a5",
+    "pages": 19,
+    "extracted_characters": 46578,
+    "visually_inspected_pdf_pages": [
+      4,
+      5,
+      6,
+      10,
+      13,
+      17
+    ],
+    "reading_scope": "Only the cited theorem, premise and formula pages; not a whole-paper proof audit.",
+    "actual_reduction_visual_pages": [
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "filename": "24_Kapfer_2016_Integral_cohomology.pdf",
+    "title": "Computing cup products in integral cohomology of Hilbert schemes of points on K3 surfaces",
+    "download_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/DAF03A697F193564320B645D5634EA92/S1461157016000012a.pdf/computing_cup_products_in_integral_cohomology_of_hilbert_schemes_of_points_on_k3_surfaces.pdf",
+    "landing_url": "https://doi.org/10.1112/S1461157016000012",
+    "publication_note": "Publisher PDF; LMS J. Comput. Math. 19 (2016), 78-97",
+    "collected_utc": "2026-10-17T16:38:14.157444+00:00",
+    "resolved_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/DAF03A697F193564320B645D5634EA92/S1461157016000012a.pdf/computing_cup_products_in_integral_cohomology_of_hilbert_schemes_of_points_on_k3_surfaces.pdf",
+    "download_status": "downloaded",
+    "bytes": 663607,
+    "sha256": "a550dd86e4958a08ef44d55d9e021f1b321b0aa5b010b2d8676215467a037d6f",
+    "pages": 20,
+    "extracted_characters": 53354,
+    "visually_inspected_pdf_pages": [
+      3,
+      4
+    ],
+    "reading_scope": "Only the cited theorem, premise and formula pages; not a whole-paper proof audit.",
+    "actual_reduction_visual_pages": [
+      2,
+      3,
+      4
+    ],
+    "K3_square_surface_visual_pages": [
+      4,
+      6
+    ],
+    "symplectic_power_visual_pages": [
+      4,
+      6
+    ]
+  },
+  {
+    "filename": "25_Sadovek_Schutte_2026_Complex_line_fields.pdf",
+    "title": "Complex line fields on almost-complex manifolds",
+    "download_url": "https://link.springer.com/content/pdf/10.1007/s00208-026-03440-6.pdf",
+    "landing_url": "https://doi.org/10.1007/s00208-026-03440-6",
+    "publication_note": "Mathematische Annalen 395, article 46 (2026); published 30 April 2026",
+    "collected_utc": "2026-10-18T01:54:49.122768+00:00",
+    "resolved_url": "https://link.springer.com/content/pdf/10.1007/s00208-026-03440-6.pdf?error=cookies_not_supported&code=33ce0423-f945-4ae5-b8e7-b252e88c5475",
+    "bytes": 958143,
+    "sha256": "3bd9cb09db4865f45653b92eb11354ec0bb8e8a4398c9b52749d8acd8ac791b2",
+    "pages": 67
+  },
+  {
+    "filename": "26_Cadek_Crabb_Vanzura_2010_Quaternionic_structures.pdf",
+    "title": "Quaternionic structures",
+    "download_url": "https://www.math.muni.cz/~cadek/papers/qst_rev.pdf",
+    "landing_url": "https://doi.org/10.1016/j.topol.2010.09.005",
+    "publication_note": "Author manuscript dated 17 September 2010; Topology and its Applications 157 (2010)",
+    "collected_utc": "2026-10-18T01:54:49.124742+00:00",
+    "resolved_url": "https://www.math.muni.cz/~cadek/papers/qst_rev.pdf",
+    "bytes": 256319,
+    "sha256": "37637296e91fdfa75d548dacf461d2aa3807db3d5ea64f58e9681a65692371a9",
+    "pages": 20
+  },
+  {
+    "filename": "27_Klein_Williams_2007_Homotopical_intersection.pdf",
+    "title": "Homotopical intersection theory, I",
+    "download_url": "https://msp.org/gt/2007/11-2/gt-v11-n2-p08-p.pdf",
+    "landing_url": "https://doi.org/10.2140/gt.2007.11.939",
+    "publication_note": "Geometry & Topology 11 (2007), 939-977",
+    "collected_utc": "2026-10-18T01:59:36.515449+00:00",
+    "resolved_url": "https://msp.org/gt/2007/11-2/gt-v11-n2-p08-p.pdf",
+    "bytes": 324928,
+    "sha256": "cc0268531f8bebd2902ea6a37ceeb5a3bec6dac2b2cf9ea874c431b05514b349",
+    "pages": 40,
+    "actual_reduction_visual_pages": [
+      8,
+      10,
+      14
+    ]
+  },
+  {
+    "filename": "28_Zibrowius_2011_Witt_groups_cellular_varieties.pdf",
+    "title": "Witt groups of complex cellular varieties",
+    "download_url": "https://ems.press/content/serial-article-files/26119?nt=1",
+    "landing_url": "https://doi.org/10.4171/DM/339",
+    "publication_note": "Documenta Mathematica 16 (2011), 465-511",
+    "collected_utc": "2026-10-18T01:59:36.516178+00:00",
+    "resolved_url": "https://ems.press/content/serial-article-files/26119?nt=1",
+    "bytes": 509056,
+    "sha256": "792082abded6cf93f4cbb1b93283e90148fca5f6eb2c573f170e8dc1d2cc3aae",
+    "pages": 48,
+    "actual_reduction_visual_pages": [
+      24,
+      27
+    ]
+  },
+  {
+    "filename": "29_Kapfer_Menet_2018_Kummer_integral_cohomology.pdf",
+    "title": "Integral cohomology of the generalized Kummer fourfold",
+    "download_url": "https://content.algebraicgeometry.nl/2018-5/2018-5-014.pdf",
+    "landing_url": "https://doi.org/10.14231/AG-2018-014",
+    "publication_note": "Algebraic Geometry 5 (2018), 523-567; use with 2020 corrigendum",
+    "collected_utc": "2026-10-18T02:03:16.982083+00:00",
+    "resolved_url": "https://content.algebraicgeometry.nl/2018-5/2018-5-014.pdf",
+    "bytes": 645431,
+    "sha256": "0fe5f51417da2fc9f220fa7f6e75cd9d1499ce2a708047371ecf6d5fa3daf83e",
+    "pages": 45,
+    "actual_reduction_visual_pages": [
+      16,
+      17,
+      21,
+      23,
+      25,
+      34
+    ]
+  },
+  {
+    "filename": "30_Kapfer_Menet_2020_Kummer_corrigendum.pdf",
+    "title": "Corrigendum: Integral cohomology of the generalized Kummer fourfold",
+    "download_url": "https://arxiv.org/pdf/1907.07031",
+    "landing_url": "https://doi.org/10.14231/AG-2020-014",
+    "publication_note": "Algebraic Geometry 7 (2020), 482-485; author preprint",
+    "collected_utc": "2026-10-18T02:03:16.982083+00:00",
+    "resolved_url": "https://arxiv.org/pdf/1907.07031",
+    "bytes": 122959,
+    "sha256": "8a4ba9764b5f84126161a96d6f2729612e75646ea95c45be266ad289a93ee081",
+    "pages": 5,
+    "actual_reduction_visual_pages": [
+      1
+    ]
+  },
+  {
+    "filename": "31_Meachan_2015_Derived_autoequivalences_Kummer.pdf",
+    "title": "Derived autoequivalences of generalised Kummer varieties",
+    "download_url": "https://archive.intlpress.com/site/pub/files/_fulltext/journals/mrl/2015/0022/0004/MRL-2015-0022-0004-a012.pdf",
+    "landing_url": "https://doi.org/10.4310/MRL.2015.v22.n4.a12",
+    "publication_note": "Mathematical Research Letters 22 (2015), 1193-1221; Ciaran Meachan",
+    "collected_utc": "2026-10-18T02:10:02.527467+00:00",
+    "resolved_url": "https://archive.intlpress.com/site/pub/files/_fulltext/journals/mrl/2015/0022/0004/MRL-2015-0022-0004-a012.pdf",
+    "bytes": 267196,
+    "sha256": "ae54892cf7c2bcbf2c5a7b7bcc93ea4f995dbcb99d78981383576b62b9f6eb05",
+    "pages": 30,
+    "actual_reduction_visual_pages": [
+      5,
+      6
+    ]
+  },
+  {
+    "filename": "32_Hassett_Tschinkel_2013_Hodge_Kummer_planes.pdf",
+    "title": "Hodge theory and Lagrangian planes on generalized Kummer fourfolds",
+    "download_url": "https://www.math.brown.edu/bhassett/papers/hodge/hodge13.pdf",
+    "landing_url": "https://doi.org/10.17323/1609-4514-2013-13-1-33-56",
+    "publication_note": "Moscow Mathematical Journal 13 (2013), no. 1, 33-56; author manuscript dated 11 June 2012",
+    "collected_utc": "2026-10-18T02:51:47.473239+00:00",
+    "resolved_url": "https://www.math.brown.edu/bhassett/papers/hodge/hodge13.pdf",
+    "bytes": 269487,
+    "sha256": "2e54b00074a99e9c9b26e65cf0fc13313c52dd84ca2cf25ba6b499b1e6df8966",
+    "pages": 27
+  },
+  {
+    "filename": "33_Mongardi_2012_Symplectic_involutions_K3_square.pdf",
+    "title": "Symplectic involutions on deformations of K3^[2]",
+    "download_url": "https://arxiv.org/pdf/1107.2854",
+    "landing_url": "https://doi.org/10.2478/s11533-012-0073-z",
+    "publication_note": "Central European Journal of Mathematics 10 (2012), 1472-1485; arXiv v3 margin dated 9 May 2012, downloaded manuscript title date 8 March 2021; 17 pages, not the journal pagination",
+    "bytes": 238141,
+    "sha256": "7294c327229fabfb84a41d32f65d86a1ddf137070f0d8ab5ccfc3d0ccfb12bff",
+    "pages": 17,
+    "collected_utc": "2026-10-18T03:33:39.234058+00:00",
+    "K3_square_surface_visual_pages": [
+      1,
+      8,
+      10,
+      13
+    ]
+  },
+  {
+    "filename": "34_Amerik_Verbitsky_2017_Construction_automorphisms.pdf",
+    "title": "Construction of automorphisms of hyperkahler manifolds",
+    "download_url": "https://www.imo.universite-paris-saclay.fr/~amerik/articles/sublattices.pdf",
+    "landing_url": "https://doi.org/10.1112/S0010437X17007138",
+    "publication_note": "Compositio Mathematica 153 (2017), 1610-1621; author manuscript dated April 2016",
+    "bytes": 351090,
+    "sha256": "5cfd9b2b74c1e8d345c38e999dc58c9595c74a580d95622945bb192edb2d9691",
+    "pages": 16,
+    "collected_utc": "2026-10-18T03:33:39.145594+00:00",
+    "K3_square_surface_visual_pages": [
+      3,
+      10,
+      11
+    ]
+  },
+  {
+    "filename": "35_Cantat_2001_Dynamics_K3_surfaces.pdf",
+    "title": "Dynamique des automorphismes des surfaces K3",
+    "download_url": "https://archive.ymsc.tsinghua.edu.cn/pacm_download/117/6611-11511_2006_Article_BF02392831.pdf",
+    "landing_url": "https://doi.org/10.1007/BF02392831",
+    "publication_note": "Acta Mathematica 187 (2001), 1-57; original journal PDF",
+    "bytes": 3069085,
+    "sha256": "fd7b7c3afeaeec0fad0ebd8c720792416a3b68a81ce92b5d3a074b1e8be946d5",
+    "pages": 57,
+    "collected_utc": "2026-10-18T03:33:40.076006+00:00",
+    "K3_square_surface_visual_pages": [
+      2,
+      3
+    ]
+  },
+  {
+    "filename": "36_Lesieutre_Satriano_2021_Canonical_heights.pdf",
+    "title": "Canonical Heights on Hyper-Kahler Varieties and the Kawaguchi-Silverman Conjecture",
+    "download_url": "https://www.math.uwaterloo.ca/~msatrian/papers/Canonical-heights-hyperkahler.pdf",
+    "landing_url": "https://doi.org/10.1093/imrn/rnz067",
+    "publication_note": "International Mathematics Research Notices 2021, no. 10; advance journal PDF published online in 2019, 38 pages; used for comparison with periodic-subvariety results, not as a proof input for note 41",
+    "resolved_url": "https://www.math.uwaterloo.ca/~msatrian/papers/Canonical-heights-hyperkahler.pdf",
+    "bytes": 830167,
+    "sha256": "6a82bc962c499dcc6494ae36d5bff539cdbec572f8103aaa64b99b31c5a888e2",
+    "pages": 38,
+    "collected_utc": "2026-10-18T03:33:45.181285+00:00",
+    "K3_square_surface_visual_pages": [
+      15,
+      16,
+      17
+    ]
+  },
+  {
+    "filename": "37_Markman_2011_Torelli_monodromy_survey.pdf",
+    "title": "A survey of Torelli and monodromy results for holomorphic-symplectic varieties",
+    "download_url": "https://arxiv.org/pdf/1101.4606",
+    "landing_url": "https://doi.org/10.1007/978-3-642-20300-8_15",
+    "publication_note": "Complex and Differential Geometry, Springer Proceedings in Mathematics 8 (2011), 257-322; arXiv v3, 18 December 2011, 46-page author manuscript",
+    "bytes": 630009,
+    "sha256": "55d67f2588729b1aecdb6cf3d5d9eaaba50a336cbfbf918caf9ea58c2eec76a6",
+    "pages": 46,
+    "collected_utc": "2026-10-18T03:56:36.400178+00:00",
+    "symplectic_power_visual_pages": [
+      3,
+      4,
+      32
+    ]
+  },
+  {
+    "filename": "38_Mongardi_2015_Kahler_Mori_cones.pdf",
+    "title": "A note on the Kahler and Mori cones of hyperkahler manifolds",
+    "download_url": "https://arxiv.org/pdf/1307.0393",
+    "landing_url": "https://doi.org/10.4310/AJM.2015.v19.n4.a1",
+    "publication_note": "Asian Journal of Mathematics 19 (2015), 583-592; arXiv v3, 25 March 2014, 9 pages; Proposition 2.12 is the K3^[2] wall criterion",
+    "bytes": 164029,
+    "sha256": "838a0a6557b6aa7f0478b16f7f82134a3a4316c52bdb3d76103ca242ad0c5609",
+    "pages": 9,
+    "collected_utc": "2026-10-18T03:56:34.309842+00:00",
+    "symplectic_power_visual_pages": [
+      7,
+      8
+    ]
+  },
+  {
+    "filename": "39_Huybrechts_2017_K3_category_cubic_fourfold.pdf",
+    "title": "The K3 category of a cubic fourfold",
+    "download_url": "https://www.math.uni-bonn.de/people/huybrech/CubicPaper.pdf",
+    "landing_url": "https://doi.org/10.1112/S0010437X16008137",
+    "publication_note": "Compositio Mathematica 153 (2017); 40-page author manuscript. Odd-rank Hodge-isometry fact in Proposition 3.11 proof, PDF p.22; journal numbering 3.12.",
+    "bytes": 634341,
+    "sha256": "e27bfc7b00b57a958e5d59d9ab1886418423a12a6a646b8e1ed0dd86ee4e3648",
+    "pages": 40,
+    "collected_utc": "2026-10-18T03:56:35.863812+00:00",
+    "symplectic_power_visual_pages": [
+      22
+    ]
+  },
+  {
+    "filename": "40_Oberdieck_Song_Voisin_2022_Cobordism_HK.pdf",
+    "title": "Hilbert schemes of K3 surfaces, generalized Kummer, and cobordism classes of hyper-Kahler manifolds",
+    "download_url": "https://webusers.imj-prg.fr/~claire.voisin/Articlesweb/cobordismHKsoumis.pdf",
+    "landing_url": "https://doi.org/10.4310/PAMQ.2022.v18.n4.a13",
+    "publication_note": "Pure and Applied Mathematics Quarterly 18 (2022), 1723-1748; 17-page author manuscript; sixfold Chern-number matrix on PDF p.12 is used only for the Euler values and boundary check",
+    "resolved_url": "https://webusers.imj-prg.fr/~claire.voisin/Articlesweb/cobordismHKsoumis.pdf",
+    "bytes": 409295,
+    "pages": 17,
+    "sha256": "e6c3d894bd405764f62c09092b42966fb407775f4c578373d4f7a38f01228b0e",
+    "collected_utc": "2026-10-18T04:30:44.204919+00:00"
+  },
+  {
+    "filename": "41_Oguiso_2020_Cohomologically_trivial_automorphisms.pdf",
+    "title": "No cohomologically trivial nontrivial automorphism of generalized Kummer manifolds",
+    "author": "Keiji Oguiso",
+    "download_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S0027763018000296",
+    "landing_url": "https://doi.org/10.1017/nmj.2018.29",
+    "publication_note": "Nagoya Mathematical Journal 239 (2020), 110-122; first published online 2018. Theorem 5.1 concerns faithfulness on H2 for K3^[n]-type deformations.",
+    "resolved_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S0027763018000296",
+    "bytes": 524787,
+    "pages": 13,
+    "sha256": "9472ad14b3eb652fb24d19ee994241a795f9ff1ff3dd5751a3a44e7617794f91",
+    "collected_utc": "2026-10-18T07:44:26.625254+00:00"
   }
 ]

@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-18",
+  "all_checks_passed": true,
+  "distinct_sources": 7,
+  "complete_pages_inspected": 11,
+  "sources": [
+    {
+      "filename": "32_Hassett_Tschinkel_2013_Hodge_Kummer_planes.pdf",
+      "sha256": "2e54b00074a99e9c9b26e65cf0fc13313c52dd84ca2cf25ba6b499b1e6df8966",
+      "pages": 27,
+      "complete_pages_visually_inspected": [
+        3
+      ]
+    },
+    {
+      "filename": "19_Oguiso_2009_Dynamical_degrees.pdf",
+      "sha256": "b20d99d4f43f6f498c49e4e046595a1192569f03676c48144352ab6dcf810a5a",
+      "pages": 10,
+      "complete_pages_visually_inspected": [
+        1
+      ]
+    },
+    {
+      "filename": "21_OGrady_2022_Modular_sheaves.pdf",
+      "sha256": "e264e65d279f8fb78fa65198d9944a5f5951a8299a6882aa16d0ef5c1ed7dbf4",
+      "pages": 38,
+      "complete_pages_visually_inspected": [
+        17
+      ]
+    },
+    {
+      "filename": "24_Kapfer_2016_Integral_cohomology.pdf",
+      "sha256": "a550dd86e4958a08ef44d55d9e021f1b321b0aa5b010b2d8676215467a037d6f",
+      "pages": 20,
+      "complete_pages_visually_inspected": [
+        6
+      ]
+    },
+    {
+      "filename": "37_Markman_2011_Torelli_monodromy_survey.pdf",
+      "sha256": "55d67f2588729b1aecdb6cf3d5d9eaaba50a336cbfbf918caf9ea58c2eec76a6",
+      "pages": 46,
+      "complete_pages_visually_inspected": [
+        3,
+        4,
+        5,
+        32
+      ]
+    },
+    {
+      "filename": "38_Mongardi_2015_Kahler_Mori_cones.pdf",
+      "sha256": "838a0a6557b6aa7f0478b16f7f82134a3a4316c52bdb3d76103ca242ad0c5609",
+      "pages": 9,
+      "complete_pages_visually_inspected": [
+        7,
+        8
+      ]
+    },
+    {
+      "filename": "40_Oberdieck_Song_Voisin_2022_Cobordism_HK.pdf",
+      "sha256": "e6c3d894bd405764f62c09092b42966fb407775f4c578373d4f7a38f01228b0e",
+      "pages": 17,
+      "complete_pages_visually_inspected": [
+        12
+      ]
+    }
+  ],
+  "clarification": "Source 32 Theorem 2.1 states deformation invariance, not the general finiteness claim; the latter is proved independently in note 46. Source 40 p12 formula (13) is correct when the internal c4/3 is retained.",
+  "limitation": "This audit checks source identity and records visual reading; mathematical correctness and novelty are not established by hash checks."
+}

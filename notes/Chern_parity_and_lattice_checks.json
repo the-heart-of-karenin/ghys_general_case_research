@@ -1,0 +1,78 @@
+{
+  "scope": "Algebra, lattice and numerical obstruction checks only; no rank-two bundle or Anosov existence claim.",
+  "twisted_index_identity": true,
+  "rank_five_characteristic_identities": true,
+  "index_and_Wu_parity_cases": 1323,
+  "lattice_isometry": true,
+  "lattice_char_poly_descending": [
+    1,
+    -36,
+    70,
+    -36,
+    1
+  ],
+  "lattice_congruent_to_identity_mod_2": true,
+  "candidates": [
+    {
+      "name": "K3_positive",
+      "q": 6,
+      "divisibility": 2,
+      "coordinates_on_U_plus_delta": [
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "name": "K3_negative",
+      "q": -26,
+      "divisibility": 2,
+      "coordinates_on_U_plus_delta": [
+        2,
+        -6,
+        1
+      ]
+    },
+    {
+      "name": "Kummer_delta",
+      "q": -6,
+      "divisibility": 6,
+      "coordinates_on_U_plus_delta": [
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "K3_rank_four_extension_obstruction_J": {
+    "6": -234,
+    "-26": -474
+  },
+  "compact_holomorphic_cocycle": {
+    "base_matrix": [
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "Hermitian_matrix": [
+      [
+        -4,
+        2
+      ],
+      [
+        2,
+        4
+      ]
+    ],
+    "base_invariance_checked": true,
+    "trivial_semicharacter_compatible": true,
+    "stable_c1_square_on_twofold_factor": -40,
+    "fiber_symplectic_map_checked": true,
+    "is_tangent_derivative": false
+  }
+}

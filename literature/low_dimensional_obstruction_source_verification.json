@@ -1,0 +1,26 @@
+[
+  {
+    "filename": "27_Klein_Williams_2007_Homotopical_intersection.pdf",
+    "title": "Homotopical intersection theory, I",
+    "download_url": "https://msp.org/gt/2007/11-2/gt-v11-n2-p08-p.pdf",
+    "landing_url": "https://doi.org/10.2140/gt.2007.11.939",
+    "publication_note": "Geometry & Topology 11 (2007), 939-977",
+    "collected_utc": "2026-10-18T01:59:36.515449+00:00",
+    "resolved_url": "https://msp.org/gt/2007/11-2/gt-v11-n2-p08-p.pdf",
+    "bytes": 324928,
+    "sha256": "cc0268531f8bebd2902ea6a37ceeb5a3bec6dac2b2cf9ea874c431b05514b349",
+    "pages": 40
+  },
+  {
+    "filename": "28_Zibrowius_2011_Witt_groups_cellular_varieties.pdf",
+    "title": "Witt groups of complex cellular varieties",
+    "download_url": "https://ems.press/content/serial-article-files/26119?nt=1",
+    "landing_url": "https://doi.org/10.4171/DM/339",
+    "publication_note": "Documenta Mathematica 16 (2011), 465-511",
+    "collected_utc": "2026-10-18T01:59:36.516178+00:00",
+    "resolved_url": "https://ems.press/content/serial-article-files/26119?nt=1",
+    "bytes": 509056,
+    "sha256": "792082abded6cf93f4cbb1b93283e90148fca5f6eb2c573f170e8dc1d2cc3aae",
+    "pages": 48
+  }
+]

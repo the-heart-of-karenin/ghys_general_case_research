@@ -1,0 +1,607 @@
+=== PDF PAGE 1 ===
+E. Amerik, M. Verbitsky Construction of automorphisms of hyperk¨ ahler manifolds
+Construction of automorphisms of
+hyperk¨ ahler manifolds
+Ekaterina Amerik1, Misha Verbitsky2
+Abstract
+Let M be an irreducible holomorphic symplectic (hy-
+perk¨ ahler) manifold. Ifb2(M) ⩾ 5, we construct a defor-
+mationM ′ ofM which admits a symplectic automorphism
+of inﬁnite order. This automorphism is hyperbolic, that is,
+its action on the space of real (1, 1)-classes is hyperbolic. If
+b2(M) ⩾ 14, similarly, we construct a deformation which
+admits a parabolic automorphism.
+Contents
+1 Introduction 1
+1.1 Sublattices and automorphisms . . . . . . . . . . . . . . . . . 1
+2 Hyperk¨ ahler manifolds: basic results 4
+2.1 Hyperk¨ ahler manifolds . . . . . . . . . . . . . . . . . . . . . . 4
+2.2 MBM classes . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+2.3 Morrison-Kawamata cone conjecture, MBM bound and auto-
+morphisms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+3 Sublattices and automorphisms 9
+3.1 Classiﬁcation of automorphisms of a hyperbolic space . . . . 9
+3.2 Rank-two sublattices and existence of hyperbolic automor-
+phisms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+3.3 Sublattices of large rank and existence of parabolic automor-
+phisms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+1 Introduction
+1.1 Sublattices and automorphisms
+Since early 2000’s, K3 surfaces were one of the prime subjects of holomorphic
+dynamics ([C], [McM]). By now, the dynamics of automorphism group act-
+1Partially supported by RSCF grant 14-21-00053 within AG Laboratory NRU-HSE.
+2Partially supported by RSCF grant 14-21-00053 within AG Laboratory NRU-HSE.
+Keywords: hyperk¨ ahler manifold, K¨ ahler cone, hyperbolic geometry, cusp points
+2010 Mathematics Subject Classiﬁcation: 53C26, 32G13
+– 1 – version 1.0, Apr 08, 2016
+
+=== PDF PAGE 2 ===
+E. Amerik, M. Verbitsky Construction of automorphisms of hyperk¨ ahler manifolds
+ing on K3 surfaces is pretty much understood ([CD]). Some of these results
+are already generalized to irreducible holomorphic symplectic manifolds of
+K¨ ahler type (simple hyperk¨ ahler manifolds) in any dimension ([O]).
+The purpose of the present paper is to construct suﬃciently many inter-
+esting automorphisms on a deformation of an arbitrary hyperk¨ ahler manifold
+(see Section 2 for basic deﬁnitions and properties of hyperk¨ ahler manifolds).
+For known examples of hyperk¨ ahler manifolds, associated with a K3 sur-
+face or an abelian surface, it is not hard to ﬁnd a deformation which admits
+a large automorphism group. Indeed, we can lift an automorphism of a K3
+or a torus, or use some other explicit construction. However, the classiﬁca-
+tion problem for hyperk¨ ahler manifolds still looks out of reach, and ﬁnding
+deformations with interesting automorphism groups without referring to the
+explicit geometry is much less obvious.
+Even more complicated problem is to ﬁndn to 1 rational correspondences
+(“rational isogenies”) from a manifold to itself or to some other hyperk¨ ahler
+manifold. Such constructions are of considerable importance, but the visible
+ways to approach this problem look rather diﬃcult at the moment.
+What makes possible the study of automorphisms, rather than isogenies,
+is that the group of automorphisms of a hyperk¨ ahler manifold can be un-
+derstood in terms of its period lattice (that is, the Hodge structure on the
+second cohomology and the BBF form, see Subsection 2.1) and the K¨ ahler
+cone. The later is described in terms of certain cohomology classes called
+MBM classes (Deﬁnition 2.8, Deﬁnition 2.9), which are, roughly speaking,
+cohomology classes of negative BBF-square whose duals are represented by
+minimal rational curves on a deformation of M.
+This description is most easy to explain for a K3 surface. In this case,
+MBM classes are integral classes of self-intersection −2, commonly called
+(−2)-classes.
+Let M be a projective K3 surface, and Pos( M)⊂ H1,1(M) the posi-
+tive cone, that is, the one of two connected components of the set {v ∈
+H1,1(M, R) | (v,v )> 0} which contains the K¨ ahler classes. Denote byR
+the set of all ( −2)-classes on M, and let R⊥ be the union of all orthogo-
+nal hyperplanes to all v∈ R. Then the K¨ ahler cone Kah(M) is one of the
+connected components of Pos(M)\R⊥, and
+Aut(M) ={g∈SO+(H2(M, Z)) | g(Kah(M)) = Kah(M)}.
+This gives an explicit description of the automorphism group, which becomes
+quite simple when Kah( M) = Pos(M), and this happens when M has no
+(−2)-classes of Hodge type (1 , 1). When Kah( M) = Pos( M), the group
+– 2 – version 1.0, Apr 08, 2016
+
+=== PDF PAGE 3 ===
+E. Amerik, M. Verbitsky Construction of automorphisms of hyperk¨ ahler manifolds
+Aut(M) is identiﬁed with the subgroup Γ M⊂SO+(H2(M, Z)),
+ΓM ={g∈SO+(H2(M, Z)) | g(H1,1(M))⊂g(H1,1(M))
+(“the group of Hodge isometries of H2(M, Z)”). It is not hard to see that
+ΓM is mapped onto a ﬁnite index subgroup of the group of isometries of
+the Picard lattice Pic( M) = H1,1(M, Z), hence it is inﬁnite whenever this
+lattice has inﬁnite automorphism group. Now Pic( M) has signature (1,k )
+by Hodge index theorem. It is well-known (see e.g. [Di]) that Γ M is inﬁnite
+when k >1 and also when k = 1 and the Picard lattice does not represent
+zero (that is, there is no nonzero v∈ Pic(M) with v2 = 0).
+Therefore, to produce K3 surfaces with inﬁnite automorphism group, it
+would suﬃce to ﬁnd a primitive sublattice of rank⩾ 3, signature (1,k ),k ⩾ 2
+and without (−2)-vectors in H2(M, Z). This can be done using the work of
+V. Nikulin, [N], which implies that any lattice of signature (1 ,k ), k <10,
+admits a primitive embedding to the K3 lattice (that is, an even unimodular
+lattice of signature (3, 19); such a lattice is unique up to isomorphism and
+isomorphic to H2(M, Z)).
+The argument above produces symplectic automorphisms , that is,
+automorphisms which preserve the holomorphic symplectic structure.
+This approach is generalized in the present paper. In [AV3] it is shown
+that for each hyperk¨ ahler manifoldM there exists N > 0, depending only
+on the deformation class of M, such that for all MBM classes v one has
+−N <q(v,v )< 0. In the present paper, we prove that the lattice H2(M, Z)
+of a hyperk¨ ahler manifold M satisfying b2(M) ⩾ 5 (this is believed to
+hold always, but no proof exists today) contains a primitive sublattice
+Λ ⊂ H2(M, Z) which does not represent numbers smaller than N (that
+is, for any nonzero v∈ Λ, one has|q(v,v )| ⩾N). . Using the global Torelli
+theorem, we ﬁnd a deformation M1 of M with Pic(M1) = Λ. In this case,
+the Picard lattice ofM1 contains no MBM classes, the K¨ ahler cone coincides
+with the positive cone, and the symplectic automorphism group is mapped
+onto a ﬁnite index subgroup of the isometry group O(Λ) (Corollary 2.12).
+This allows us to prove the following theorem.
+Theorem 1.1: Let M be a hyperk¨ ahler manifold withb2(M) ⩾ 5. Then
+M admits a projective deformation M′ with inﬁnite group of symplectic
+automorphisms and Picard rank 2.
+Proof: Corollary 3.7
+The automorphisms obtained in Theorem 1.1 are hyperbolic: they act
+on H1,1(M) with one real eigenvalue α >1, another α−1, and the rest of
+– 3 – version 1.0, Apr 08, 2016
+
+=== PDF PAGE 4 ===
+E. Amerik, M. Verbitsky Construction of automorphisms of hyperk¨ ahler manifolds
+eigenvalues have absolute value 1. In fact, the symplectic automorphisms of
+hyperk¨ ahler manifolds can be classiﬁed in the same way as automorphism
+of the hyperbolic plane (see Theorem 3.4). There are hyperbolic, or, more
+precisely, loxodromic automorphisms (ones which act on H1,1(M) with two
+real eigenvalues of absolute value̸= 1), elliptic ones (automorphisms of ﬁnite
+order) and parabolic (quasiunipotent with a non-trivial rank 3 Jordan cell).
+If we want to produce a parabolic automorphism of a deformation of
+a given hyperk¨ ahler manifold, more work is necessary. We need to ﬁnd a
+primitive sublattice Λ ⊂ H2(M, Z) of signature (1 ,k ), k ⩾ 2, such that
+q(v,v )̸∈]−N, 0[ for v∈ Λ, and Λ admits a parabolic isometry. In order
+to produce such a sublattice we rely on the classiﬁcation of rational vector
+spaces with a quadratic form by the signature, discriminant and the collec-
+tion of p-adic invariants, and on Nikulin’s work on lattice embeddings. Our
+method works under a stronger restriction on b2.
+The main problem (and the main reason for the strong restriction on b2)
+is that the second cohomology lattice H2(M, Z) of a hyperk¨ ahler manifold
+M is not necessarily unimodular. In this case, one cannot apply Nikulin’s
+theorem directly. To construct the sublattice we need, we ﬁrst embed our
+latticeH2(M, Z) intoHQ :=H⊗Z Q, whereH is a unimodular lattice. Then
+we apply Nikulin’s theorem to H, obtaining a primitive sublattice Λ ⊂ H,
+and take the intersection of Λ with the image ofH2(M, Z)⊂HQ. This is no
+longer primitive inH2(M, Z), but we have a good control over the extent to
+which it is not, suﬃcient to assure that the “primitivization” does not have
+vectors of small nonzero square.
+Theorem 1.2: Let M be a hyperk¨ ahler manifold withb2(M) ⩾ 14. Then
+M has a deformation with rk Pic(M) ⩾ 3, such that its group of symplectic
+automorphisms contains a parabolic element.
+Proof: Corollary 3.12.
+Remark 1.3: Using the main result of [V2], one sees that under the condi-
+tions of each of the two theorems, the points corresponding to hyperk¨ ahler
+manifolds with a hyperbolic resp. parabolic automorphism are dense in the
+Teichm¨ uller space.
+2 Hyperk¨ ahler manifolds: basic results
+In this section, we recall the deﬁnitions and basic properties of hyperk¨ ahler
+manifolds and MBM classes.
+– 4 – version 1.0, Apr 08, 2016
+
+=== PDF PAGE 5 ===
+E. Amerik, M. Verbitsky Construction of automorphisms of hyperk¨ ahler manifolds
+2.1 Hyperk¨ ahler manifolds
+Deﬁnition 2.1: A hyperk¨ ahler manifoldM, that is, a compact K¨ ahler
+holomorphically symplectic manifold, is called simple, or maximal holon-
+omy hyperk¨ ahler manifold (alternatively,irreducible holomorphically
+symplectic (IHS)), if π1(M) = 0 and H2,0(M) = C.
+This deﬁnition is motivated by the following theorem of Bogomolov.
+Theorem 2.2: ([Bo1]) Any hyperk¨ ahler manifold admits a ﬁnite covering
+which is a product of a torus and several simple hyperk¨ ahler manifolds.
+Remark 2.3: Further on, we shall tacitly assume that the hyperk¨ ahler
+manifolds we consider are of maximal holonomy (simple, IHS).
+The second cohomology H2(M, Z) of a simple hyperk¨ ahler manifold
+M carries a primitive integral quadratic form q, called the Bogomolov-
+Beauville-Fujiki form. It generalizes the intersection product on a K3
+surface: its signature is (3,b 2− 3) on H2(M, R) and (1,b 2− 3) on H1,1
+R (M).
+It was ﬁrst deﬁned in [Bo2] and [Bea], but it is easiest to describe it using
+the Fujiki theorem, proved in [F] and stressing the topological nature of the
+form.
+Theorem 2.4: (Fujiki) Let M be a simple hyperk¨ ahler manifold, η ∈
+H2(M), and n = 1
+2 dimM. Then
+∫
+Mη2n = cq(η,η )n, where q is a prim-
+itive integral nondegenerate quadratic form on H2(M, Z), and c > 0 is a
+rational number depending only on M.
+Consider M as a diﬀerentiable manifold and denote by I our complex
+structure on M (we shall use notations like Pic( M,I ), H1,1(M,I ) etc., to
+stress that we are working with this particular complex structure). We
+call the Teichm¨ uller spaceTeich the quotient Comp(M)/ Diﬀ0(M), where
+Comp(M) denotes the space of all complex structures of K¨ ahler type onM
+and Diﬀ0(M) is the group of isotopies. It follows from a result of Huybrechts
+(see [H]) that for an IHSM M, Teich has only ﬁnitely many connected com-
+ponents. Let TeichI denote the one containing our given complex structure
+I. Consider the subgroup of the mapping class group Diﬀ(M)/ Diﬀ0(M)
+ﬁxing TeichI.
+Deﬁnition 2.5: The monodromy group Mon(M) is the image of this
+– 5 – version 1.0, Apr 08, 2016
+
+=== PDF PAGE 6 ===
+E. Amerik, M. Verbitsky Construction of automorphisms of hyperk¨ ahler manifolds
+subgroup in O(H2(M, Z),q ). The Hodge monodromy group MonI(M)
+is the subgroup of Mon(M) preserving the Hodge decomposition.
+Theorem 2.6: ([V1], Theorem 3.5) The monodromy group is a ﬁnite index
+subgroup in O(H2(M, Z),q ).
+The image of the Hodge monodromy is therefore an arithmetic subgroup
+of the orthogonal group of the Picard lattice Pic( M,I ). Notice that the
+action of MonI(M) on the Picard lattice can have a kernel; when ( M,I ) is
+projective, it is easy to see that the kernel is a ﬁnite group (just use the fact
+that it ﬁxes a K¨ ahler class and therefore consists of isometries), but it can
+be inﬁnite in general ([McM]). By a slight abuse of notation, we sometimes
+also call the Hodge monodromy this arithmetic subgroup itself; one way to
+avoid such an abuse is to introduce the symplectic Hodge monodromy
+group MonI,Ω(M) which is a subgroup of MonI(M) ﬁxing the symplectic
+form Ω. Its representation on the Picard lattice is faithful and the image
+is the same as that of MonI(M), so that MonI,Ω(M) is identiﬁed to an
+arithmetic subgroup of O(Pic(M,I ),q ).
+Theorem 2.7: (Markman’s Hodge-theoretic Torelli theorem, [Ma]) The
+image of Aut(M,I ) acting onH2(M) is the subgroup ofMonI(M) preserving
+the K¨ ahler cone Kah(M,I ).
+In this paper, we construct hyperk¨ ahler manifolds with the K¨ ahler cone
+equal to the positive cone, and use this construction to ﬁnd manifolds ad-
+mitting interesting automorphisms of inﬁnite order.
+2.2 MBM classes
+We call a cohomology class η ∈ H2(M, R) positive if q(η,η ) > 0, and
+negative if q(η,η ) < 0. The positive cone Pos(M,I )∈ H1,1
+R (M,I ) is
+the connected component of the set of positive classes on M which contains
+the K¨ ahler classes. The K¨ ahler cone is cut out inside the positive cone by
+a certain, possibly inﬁnite, number of rational hyperplanes (by a result of
+Huybrechts, we may take for these the orthogonals to the classes of rational
+curves).
+In [AV1], we have introduced the following notion.
+– 6 – version 1.0, Apr 08, 2016
+
+=== PDF PAGE 7 ===
+E. Amerik, M. Verbitsky Construction of automorphisms of hyperk¨ ahler manifolds
+Deﬁnition 2.8: An integral (1, 1)-class z on (M,I ) is called monodromy
+birationally minimal (MBM) , if for some γ ∈ MonI(M), the hyper-
+plane γ(z)⊥ supports a (maximal-dimensional) face of the K¨ ahler cone of a
+birational model of (M,I ).
+We have shown in [AV1] the invariance of the MBM property under all
+deformations of complex structure which leavez of type (1, 1). Moreover we
+have observed that a negative classz generating the Picard group Pic(M,I )
+is MBM if and only if a rational multiple of z is represented by a curve (in
+fact automatically rational; when we speak about curves representing (1, 1)-
+classes in cohomology, it means that we identify the integral classes of curves
+to certain rational (1, 1)-classes by the obvious isomorphism provided by the
+BBF form). This leads to a simple extension of the notion to the classes in
+the whole H2(M, Z) rather than the Picard lattice. By writing M rather
+than (M,I ), we let a complex structure I vary in its deformation class; this
+class is not uniquely determined by the topology, but there are ﬁnitely many
+of them by the already-mentioned ﬁniteness result of Huybrechts ([H]).
+Deﬁnition 2.9: A negative classz∈H2(M, Z) on a hyperk¨ ahler manifold is
+called an MBM class if there exist a deformation of M with Pic(M) =⟨z⟩
+such that λz is represented by a curve, for some λ̸= 0.
+Theorem 2.10: ([AV1], Section 6) Let (M,I ) be a hyperk¨ ahler manifold,
+and S the set of all its MBM classes of type (1 , 1). The K¨ ahler cone of
+(M,I ) is a connected component of Pos(M,I )\∪ z∈Sz⊥.
+Remark 2.11: As follows from an observation by Markman, the other con-
+nected components (“the K¨ ahler chambers”) are the monodromy transforms
+of the K¨ ahler cones of birational models of (M,I ). The Hodge monodromy
+group permutes the K¨ ahler chambers.
+From Theorem 2.10 and Hodge-theoretic Torelli we easily deduce the
+following
+Corollary 2.12: Let (M,I ) be a hyperk¨ ahler manifold which has no MBM
+classes of type (1,1). Then any element ofMonI(M) lifts to an automorphism
+of (M,I ).
+Proof: Indeed, for such manifolds Kah(M,I ) = Pos(M,I ) and therefore
+the whole group MonI(M) preserves the K¨ ahler cone.
+– 7 – version 1.0, Apr 08, 2016
+
+=== PDF PAGE 8 ===
+E. Amerik, M. Verbitsky Construction of automorphisms of hyperk¨ ahler manifolds
+2.3 Morrison-Kawamata cone conjecture, MBM bound and
+automorphisms
+The following theorem has been proved in [AV2].
+Theorem 2.13: ([AV2]) Suppose that (M,I ) is projective and the Picard
+number ρ(M,I ) > 3. Then the Hodge monodromy group has only ﬁnitely
+many orbits on the set of MBM classes of type (1 , 1) on M.
+This result is a version of Morrison-Kawamata cone conjecture for hy-
+perk¨ ahler manifolds. Its proof is based on ideas of homogeneous dynamics
+(Ratner theory, Dani-Margulis, Mozes-Shah theorems).
+Since the Hodge monodromy group acts by isometries, it follows that
+the primitive MBM classes in H1,1(M) have bounded square. Using de-
+formations, one actually obtains the boundedness without the projectivity
+assumption and with the condition ρ(M,I ) > 3 replaced by b2(M) > 5.
+One of the main tools of this paper is a subsequent generalization of this
+statement.
+Theorem 2.14: ([AV3]) Let M be a hyperk¨ ahler manifold with b2 ⩾ 5.
+Then there exists a number N > 0, called the MBM bound , such that
+any MBM class z satisﬁes|q(z,z )|<N .
+Let us explain how this theorem permits one to construct hyperk¨ ahler
+manifolds with large automorphism groups.
+Deﬁnition 2.15: A lattice, or a quadratic lattice, is a free abelian group
+Λ∼= Zn equipped with an integer-valued quadratic form q. When we speak
+of an embedding of lattices, we always assume that it is compatible with
+their quadratic forms.
+Deﬁnition 2.16: A sublattice Λ′⊂ Λ is called primitive if Λ/Λ′ is torsion-
+free. A number a is represented by a lattice (Λ,q ) if a =q(x,x ) for some
+nonzero x∈ Λ.
+Now let M be a hyperk¨ ahler manifold. Consider the lattice H2(M, Z)
+equipped with the BBF form q. By Torelli theorem, for any primitive sub-
+lattice Λ ⊂ H2(M, Z) of signature (1 ,k ), there exists a complex structure
+I such that Λ = Pic(M,I ) is the Picard lattice of ( M,I ). The key remark
+– 8 – version 1.0, Apr 08, 2016
+
+=== PDF PAGE 9 ===
+E. Amerik, M. Verbitsky Construction of automorphisms of hyperk¨ ahler manifolds
+is that as soon as we succeed in ﬁnding such a primitive sublattice which
+does not represent small nonzero numbers, the corresponding hyperk¨ ahler
+manifold has fairly large automorphism group.
+Theorem 2.17: Let M be a hyperk¨ ahler manifold, and Λ⊂ H2(M, Z) a
+primitive sublattice of signature (1,k ) which does not represent any number
+a, 0 ⩽|a| ⩽N, where N is the MBM bound (we sometimes say in this case
+that Λ “satisﬁes the MBM bound”). Let (M,I ) be a deformation of M such
+that Λ = Pic(M,I ). Then the K¨ ahler cone of (M,I ) is equal to the positive
+cone and the group of holomorphic symplectic automorphisms Aut( M, Ω)
+is projected with ﬁnite kernel to MonI,Ω(M), which is a subgroup of ﬁnite
+index in O(Λ).
+Proof: For the ﬁniteness of the kernel of the natural map from Aut(M, Ω)
+to MonI,Ω(M)⊂GL(H2(M)) see e. g. [V1]. Since Λ = H1,1
+I (M, Z) satisﬁes
+the MBM bound, it contains no MBM classes, so the K¨ ahler cone is equal
+to the positive cone. By Corollary 2.12, Aut( M, Ω) maps onto MonI,Ω(M).
+Now, MonI,Ω(M) is a ﬁnite index subgroup in O(Λ), as follows from Theo-
+rem 2.6.
+3 Sublattices and automorphisms
+3.1 Classiﬁcation of automorphisms of a hyperbolic space
+Remark 3.1: The group O(m,n ),m,n > 0 has 4 connected components.
+We denote the connected component of 1 by SO+(m,n ). We call a vector
+v positive if its square is positive.
+Deﬁnition 3.2: LetV be a vector space with a quadratic formq of signature
+(1,n ), Pos(V ) ={x∈ V | q(x,x ) > 0} its positive cone, and P+V the
+projectivization of Pos(V ). Denote by g any SO(V )-invariant Riemannian
+structure on P+V . Then ( P+V,g ) is called hyperbolic space , and the
+group SO+(V ) the group of oriented hyperbolic isometries .
+Remark 3.3: Since the isotropy group (the stabilizer of a pointx∈ P+V for
+SO+(V )-action on P+V ) is SO(n) acting on TxP+V = x⊥, the hyperbolic
+metric on P+V is unique up to a constant.
+Theorem 3.4: (Classiﬁcation of isometries of P+V )
+Let n >0, and α∈ SO+(1,n ) is an isometry acting on V . Then one and
+– 9 – version 1.0, Apr 08, 2016
+
+=== PDF PAGE 10 ===
+E. Amerik, M. Verbitsky Construction of automorphisms of hyperk¨ ahler manifolds
+only one of these three cases occurs
+(i) α has an eigenvector x with q(x,x )> 0 (α is “an elliptic isometry”)
+(ii) α has an eigenvectorx withq(x,x ) = 0 and real eigenvalueλx satisfying
+|λx|> 1 (α is “hyperbolic isometry”).
+(iii) α has a unique eigenvector x with q(x,x ) = 0 and eigenvalue 1, and
+no ﬁxed points on P+V (α is “parabolic isometry”).
+Proof: This is a standard textbook result; see, for instance, [Ka].
+Deﬁnition 3.5: Recall that the BBF form has signature (1 ,b 2− 3) on
+H1,1(M). An automorphism of a hyperk¨ ahler manifold (M,I ) is called el-
+liptic (parabolic, hyperbolic) if it is elliptic (parabolic, hyperbolic) on
+H1,1
+I (M, R).
+3.2 Rank-two sublattices and existence of hyperbolic auto-
+morphisms
+In this Section, we prove the following theorem.
+Theorem 3.6: Let L be a non-degenerate indeﬁnite lattice of rank ⩾ 5,
+and N a natural number. Then L contains a primitive rank 2 sublattice Λ
+of signature (1, 1) which does not represent numbers of absolute value less
+than N.
+This theorem immediately gives examples of hyperk¨ ahler manifolds with
+hyperbolic automorphisms.
+Corollary 3.7: Let M be a hyperk¨ ahler manifold withb2(M) ⩾ 5. Then
+M has a deformation admitting a hyperbolic automorphism.
+Proof: Consider the lattice L = H2(M, Z) and let N be the MBM
+bound for deformations of M. Take a sublattice Λ as in Theorem 3.6 and a
+deformation of M such that Λ =H1,1
+I (M, Z). Up to a ﬁnite index (meaning
+that the natural maps between these groups have ﬁnite kernel and image of
+ﬁnite index), Aut(M) = MonI(M) =O(Λ). But Λ does not represent zero,
+and then it is well-known that O(Λ) has a hyperbolic element (one way to
+view this is to interpret Λ, up to a ﬁnite index, as a ring of integers in a real
+– 10 – version 1.0, Apr 08, 2016
+
+=== PDF PAGE 11 ===
+E. Amerik, M. Verbitsky Construction of automorphisms of hyperk¨ ahler manifolds
+quadratic extension of Q, and notice that the units provide automorphisms;
+so there is an automorphism of inﬁnite order, and it must automatically be
+hyperbolic as it cannot be parabolic or elliptic).
+To prove Theorem 3.6, we need the following proposition.
+Proposition 3.8: Let Λ be a diagonal rank 2 lattice with diagonal entries
+α1,α 2 divisible by an odd power of p, αi = βip2ni+1, and such that the
+numbersβi are not divisible by p and the equation β1x2 +β2y2 = 0 has no
+solutions modulo p. Let v∈ Λ⊗ Q be such that the value of the quadratic
+form on v is an integer. Then this integer is divisible by p.
+Proof: A direct computation, which is especially straightforward when
+one works in Qp instead of Q.
+Proof of Theorem 3.6
+By Meyer’s Theorem [Me], L has an isotropic vector (that is, a vector v
+with q(v) = 0). The isotropic quadric{v∈L | q(v) = 0} has inﬁnitely
+many points if it has one, and not all of them are proportional. Take two
+of such non-proportional points v and v′, and let v1 := av +bv′. Then
+q(v1) = 2abq(v,v′). We may chose 2ab to be of any sign and such that it has
+arbitrary large prime divisors in odd powers. Concretely, consider the lattice
+M =⟨v,v′⟩⊥ of signature (r−1,s−1) (here (r,s ) denotes the signature ofL).
+It is always possible to ﬁnd a vector w∈⟨v,v′⟩⊥ such that q(w) is divisible
+by an odd power of a suitable suﬃciently large prime number p, but not
+by an even one (for instance consider a rank-two sublattice where the form
+q is equivalent to x2−dy2 over Q and pick a large p such that d is not a
+square modulo p; then one can choose a suitable w in such a sublattice).
+Now choose the multipliers a,b in such a way that the lattice Λ := ⟨v1,w⟩
+satisﬁes assumptions of Proposition 3.8 with this p and has signature (1, 1).
+3.3 Sublattices of large rank and existence of parabolic au-
+tomorphisms
+The purpose of this section is to construct, in H2(M, Z), primitive sublat-
+tices of larger rank not representing small numbers (except possibly zero).
+We use Nikulin’s theorem on primitive embeddings into unimodular lattices.
+As H2(M, Z) is not always unimodular, we have to provide a trick which
+– 11 – version 1.0, Apr 08, 2016
+
+=== PDF PAGE 12 ===
+E. Amerik, M. Verbitsky Construction of automorphisms of hyperk¨ ahler manifolds
+allows a reduction to the unimodular case. The trick consists in remarking
+that we can embed H2(M, Z) into a lattice of rank b2(M) + 3 which over Q
+is equivalent to a “standard” lattice Lst = ∑±z2
+i (Theorem 3.9). Then we
+take a suitable Λ not representing numbers of absolute value less than N
+(except possibly zero) and embed it intoLst using Nikulin’s results from [N].
+The intersection Λ∩H2(M, Z) is not necessarily primitive in H2(M, Z), but
+we can control the extent to which it is not primitive in terms depending
+only on the embedding of H2(M, Z) into Lst, and not on N; so, increasing
+N if necessary, we eventually get a primitive sublattice satisfying the MBM
+bound.
+For a lattice Λ, we sometimes denote Λ ⊗Z Q by Λ Q. Recall that the
+Hilbert symbol (a,b )p of twop-adic numbers is equal to 1 if the equation
+ax2 +by2 =z2 has nonzero solutions in Qp and -1 otherwise. If a and b are
+nonzero rational numbers, one has (a,b )p = 1 for all p except ﬁnitely many,
+and ∏
+p(a,b )p = 1 ([Se] chapter III, theorem 3).
+Theorem 3.9: For any non-degenerate lattice (H,q ) there is an embedding
+of rational vector spaces with a quadratic form ( H⊗Z Q,q )⊂ (LQ,q st),
+whereqst = ∑±z2
+i , the rank of LQ is equal to rk(H) + 3, and the signature
+ofLQ can be taken arbitrary among the possible ones (r+3,s ); (r+2,s +1);
+(r + 1,s + 2); (r,s + 3), where (r,s ) is the signature of H.
+Proof: The form q diagonalizes over the rationals; let a1,...,a n, n =
+r +s, be its diagonal entries and d = a1...a n. It is well-known that a
+rational quadratic form is determined by its signature, its discriminant d
+as an element of Q∗/(Q∗)2 and its collection of p-adic signatures εp(q) =
+Πi<j(ai,a j)p for all primes p, where ( ai,a j)p is the Hilbert symbol ([Se],
+Chapter IV.2, Theorem 9, Theorem 7). Let t be the number of desired
+negative diagonal entries for (LQ,q st). We wish to add three dimensions to
+H to make the quadratic form equivalent to qst, that is, we are looking for
+three extra diagonal entries b0, b1, b2 = (−1)tdb0b1 such that for all primes
+p,
+εp(qst) =εp(q)(d,b 0b1b2)p(b0,b 1b2)p(b1,b 2)p.
+Using obvious identities like (x,−x)p = 1 and (x,y 2z)p = (x,z )p, we see
+that this amounts to asking that the quantities (b0, (−1)t−1d)p(b1, (−1)t−1db0)p
+have prescribed signs for all p, and ﬁnally that (( −1)t−1db0, (−1)t−1db1)p
+have prescribed signs for every p. The prescribed signs must satisfy the
+usual identities for Hilbert symbols: only ﬁnitely many are equal to −1 and
+– 12 – version 1.0, Apr 08, 2016
+
+=== PDF PAGE 13 ===
+E. Amerik, M. Verbitsky Construction of automorphisms of hyperk¨ ahler manifolds
+the product is equal to one.
+In other words, to prove the theorem, it is suﬃcient to produce two
+rational numbers x,y with arbitrarily deﬁned signs such that for any p,
+(x,y )p are equal to prescribed δp (satisfying the usual identities). To do
+this, we use the following claim:
+Claim 3.10: ([Se], Chapter III, Theorem 4) Let x∈ Q. To ﬁnd an y∈ Q
+with (x,y )p = δp for all p, it suﬃces to ﬁnd for each p, an yp∈ Qp with
+(x,y p) =δp.
+Now take x which is not a square modulo all p such that δp =−1, then
+it is easy to ﬁnd yp using the explicit formulae for the Hilbert symbol ([Se],
+Chapter III, Theorem 1).
+Let now H be H2(M, Z) of signature (3,b 2− 3), LQ as in Theorem 3.9,
+say, of signature (3 ,b 2), and let L be the standard integral lattice in LQ.
+This is an odd unimodular lattice. By the work of Nikulin, a lattice Λ of
+signature (1,s ) and the discriminant group Λ ∨/Λ without 2-torsion has a
+primitive embedding intoL as soon as s ⩽b2 and 2(1+s) = 2 rk Λ< rkL =
+b2 + 3 (in fact Nikulin only gives an embedding result for even lattices,
+but the crucial place in the argument is the construction of a lattice Λ ′
+with appropriate signature and the discriminant form opposite to that of Λ;
+then the direct sum Λ ⊕ Λ′ has a unimodular overlattice corresponding to
+a maximal isotropic subgroup in the direct sum of the discriminant groups.
+This construction is done by Nikulin also in the odd case ([N], section 1.16),
+and yields a unimodular overlattice of Λ ⊕ Λ′ exactly in the same way).
+In particular we can primitively embed into L a lattice Λ of signature
+(1, [b2/2]), without 2-torsion in the discriminant and not representing num-
+bers of small absolute value other than zero (this is achieved for instance by
+multiplying a unimodular lattice by a large prime). We are actually looking
+for a primitive sublattice in H, whereas the intersection Λ∩H, of signature
+(1, [b2/2]− 3), is not necessarily primitive in H. But its non-primitivity can
+be controlled in terms of the embedding of H into LQ and thus does not
+depend on Λ. In this way we obtain the following
+Theorem 3.11: LetM be a hyperk¨ ahler manifold andN a natural number.
+ThenH :=H2(M, Z) contains a primitive sublattice of signature (1, [b2/2]−
+3) which does not represent non-zero numbers of absolute value smaller than
+N. In particular, there is a deformation of M of Picard rank [b2/2]−2 which
+does not have any MBM classes.
+– 13 – version 1.0, Apr 08, 2016
+
+=== PDF PAGE 14 ===
+E. Amerik, M. Verbitsky Construction of automorphisms of hyperk¨ ahler manifolds
+Proof: Consider the embedding from H into LQ of dimension b2 + 3
+and signature (3 ,b 2) as in Theorem 3.9. Set d =|H/H∩L|. Then for
+any primitive sublattice Λ of L, the group (H∩ ΛQ)/(H∩L∩ ΛQ) = (H∩
+Λ)Q)/(H∩ Λ) embeds into H/H∩L and so has cardinality at most d. By
+Nikulin’s results, if we take a lattice Λ of signature (1 , [b2/2]), without two-
+torsion in the discriminant and not representing any non-zero number of
+absolute value less than d2N, it admits a primitive embedding to L. Then
+the “primitivization” of Λ∩H (that is,H∩ΛQ⊂H), is a lattice of signature
+(1, [b2/2]−3) not representing nonzero numbers of absolute value less thanN.
+Taking asN the MBM bound for our manifold M, we obtain deformations
+with relatively large Picard number and no MBM classes.
+Corollary 3.12: LetM be a hyperk¨ ahler manifold withb2(M) ⩾ 14. Then
+M has a deformation admitting a parabolic automorphism.
+Proof. Step 1: Let Λ = H1,1
+I (M, Z) be a primitive lattice of corank 2
+and signature (1,n ) inH2(M, Z) satisfying the MBM bound. Then Aut(M, Ω)
+has ﬁnite index in O(Λ). It suﬃces to show that the Lie group O(Λ⊗Z R)
+contains a rational unipotent subgroup U. Then U∩ Aut(M, Ω) is Zariski
+dense in U by another application of Borel and Harish-Chandra, and all its
+elements are parabolic.
+Step 2: Suppose that there exists a rational vector v with q(v,v ) = 0,
+and letP⊂O(Λ⊗ZR) be the stabilizer ofv. This subgroup is clearly rational
+and parabolic; its unipotent radical is the group U which we require.
+Step 3: Such a rational vector exists for any indeﬁnite lattice of rank
+⩾ 5 by Meyer’s theorem [Me], therefore as soon as [b2(M)/2]− 2 ⩾ 5, Λ has
+parabolic elements in its orthogonal group.
+Acknowledgements: We are grateful to Noam Elkies, David Speyer
+and other participants of the Mathoverﬂow discussion [M] for their interest
+and advice, to Marat Rovinsky for his help with Hilbert symbols, to Slava
+Nikulin for patiently explaining certain points of his work and to Dmitri
+Panov for his help on hyperbolic geometry.
+– 14 – version 1.0, Apr 08, 2016
+
+=== PDF PAGE 15 ===
+E. Amerik, M. Verbitsky Construction of automorphisms of hyperk¨ ahler manifolds
+References
+[AV1] Amerik, E., Verbitsky, M. Rational curves on hyperk¨ ahler manifolds ,
+arXiv:1401.0479, to appear at Int. Math. Res. Notices
+[AV2] Amerik, E., Verbitsky, M. Morrison-Kawamata cone conjecture for hy-
+perk¨ ahler manifolds, arXiv:1408.3892.
+[AV3] Amerik, E., Verbitsky, M. Collections of parabolic orbits in homogeneous
+spaces, homogeneous dynamics and hyperk¨ ahler geometry , to appear (in
+april 2016 on arXiv).
+[Bea] Beauville, A. Varietes K¨ ahleriennes dont la premi` ere classe de Chern est
+nulle. J. Diﬀ. Geom. 18, pp. 755-782 (1983).
+[Bo1] Bogomolov, F. A., On the decomposition of K¨ ahler manifolds with trivial
+canonical class, Math. USSR-Sb. 22 (1974), 580-583.
+[Bo2] Bogomolov, F. A., Hamiltonian K¨ ahler manifolds, Sov. Math. Dokl. 19
+(1978), 1462–1465.
+[C] Cantat, Serge, Dynamique des automorphismes des surfaces K3, Acta
+Math. 187 (2001), no. 1, 1-57.
+[CD] Serge Cantat, Christophe Dupont, Automorphisms of surfaces: Kummer
+rigidity and measure of maximal entropy , arXiv:1410.1202, 57 pages.
+[Di] Dickson, L. E., Introduction to the theory of numbers, Dover Publ. Inc.,
+New York (1954).
+[F] Fujiki, A. On the de Rham Cohomology Group of a Compact K¨ ahler Sym-
+plectic Manifold, Adv. Stud. Pure Math. 10 (1987), 105-165.
+[H] Huybrechts, D., Finiteness results for hyperk¨ ahler manifolds , J. Reine
+Angew. Math. 558 (2003), 15–22, arXiv:math/0109024.
+[Ka] M. Kapovich, Kleinian groups in higher dimensions. In ”Geometry and
+Dynamics of Groups and Spaces. In memory of Alexander Reznikov”,
+M.Kapranov et al (eds). Birkhauser, Progress in Mathematics, Vol.
+265, 2007, p. 485-562, available at http://www.math.ucdavis.edu/
+%7Ekapovich/EPR/klein.pdf.
+[M] Participants of Matheoverﬂow, 2-dimensional sublattices with all vectors
+having very big square (in absolute value) , 01.09.2015, http://mathoverflow.net/
+questions/215636/2-dimensional-sublattices-with-all-vectors-having-very-big-square-in-absolute-v/ .
+[Ma] Markman, E. A survey of Torelli and monodromy results for holomorphic-
+symplectic varieties , Proceedings of the conference ”Complex and Diﬀer-
+ential Geometry”, Springer Proceedings in Mathematics, 2011, Volume 8,
+257–322, arXiv:math/0601304.
+– 15 – version 1.0, Apr 08, 2016
+
+=== PDF PAGE 16 ===
+E. Amerik, M. Verbitsky Construction of automorphisms of hyperk¨ ahler manifolds
+[McM] McMullen, C. T., Dynamics on K3 surfaces: Salem numbers and Siegel
+disks, Journal f¨ ur die Reine und Angewandte Mathematik 2002 (545), 201
+– 233.
+[Me] A. Meyer, Mathematische Mittheilungen , Vierteljahrschrift der Natur-
+forschenden Gesellschaft in Z¨ urich 29 (1884), 209-22.
+[N] V. Nikulin, Integral Symmetric Bilinear Forms and Some of Their Appli-
+cations, Math. USSR Izvestiya, Volume 14, Issue 1, 103 – 167 (1980).
+[O] Oguiso, K., Some aspects of explicit birational geometry inspired by complex
+dynamics, Proceedings of the International Congress of Mathematicians,
+Seoul 2014 Vol.II 695–721.
+[Se] J.-P. Serre, A Course in Arithmetic, Graduate Texts in Mathematics 7.
+Springer-Verlag, 1973
+[V1] Verbitsky, M., A global Torelli theorem for hyperk¨ ahler manifolds, Duke
+Math. J. Volume 162, Number 15 (2013), 2929-2986.
+[V2] Verbitsky, M., Ergodic complex structures on hyperkahler manifolds , Acta
+Mathematica, Sept. 2015, Volume 215, Issue 1, pp 161-182.
+Ekaterina Amerik
+Laboratory of Algebraic Geometry,
+National Research University HSE,
+Department of Mathematics, 7 Vavilova Str. Moscow, Russia,
+Ekaterina.Amerik@gmail.com, also:
+Universit´e Paris-11,
+Laboratoire de Math´ematiques,
+Campus d’Orsay, Bˆatiment 425, 91405 Orsay, France
+Misha Verbitsky
+Laboratory of Algebraic Geometry,
+National Research University HSE,
+Department of Mathematics, 7 Vavilova Str. Moscow, Russia,
+verbit@mccme.ru, also:
+Universit´e Libre de Bruxelles, CP 218,
+Bd du Triomphe, 1050 Brussels, Belgium
+– 16 – version 1.0, Apr 08, 2016

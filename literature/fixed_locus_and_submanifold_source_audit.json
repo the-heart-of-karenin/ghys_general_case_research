@@ -1,0 +1,64 @@
+{
+  "audited_utc": "2026-10-18T03:02:01.787625+00:00",
+  "sources": [
+    {
+      "path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\32_Hassett_Tschinkel_2013_Hodge_Kummer_planes.pdf",
+      "sha256": "2e54b00074a99e9c9b26e65cf0fc13313c52dd84ca2cf25ba6b499b1e6df8966",
+      "page_count": 27,
+      "visually_inspected": true,
+      "pages": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "results": [
+        "Theorem 2.1",
+        "Proposition 3.1"
+      ],
+      "limitations": [
+        "Do not use the isolated fixed point count in author manuscript Theorem 4.4(1)."
+      ]
+    },
+    {
+      "path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\29_Kapfer_Menet_2018_Kummer_integral_cohomology.pdf",
+      "sha256": "0fe5f51417da2fc9f220fa7f6e75cd9d1499ce2a708047371ecf6d5fa3daf83e",
+      "page_count": 45,
+      "visually_inspected": true,
+      "pages": [
+        27,
+        28,
+        29,
+        30
+      ],
+      "results": [
+        "Corollary 7.1",
+        "Theorem 7.5(iii)",
+        "Remark 7.7(2)"
+      ],
+      "limitations": [
+        "Page 27 explanatory sentence prints exponent 3; use the formal A[3] statement, with A[3]=(Z/3)^4."
+      ]
+    },
+    {
+      "path": "D:\\Users\\Desktop\\work\\2\\historical_literature\\01_Ghys_1995_Holomorphic_Anosov_systems.pdf",
+      "sha256": "b30c190cc95c94c8fb2a32d4c97fddb44df822cb8ca86b7a662b644c152709e6",
+      "page_count": 30,
+      "visually_inspected": true,
+      "pages": [
+        1
+      ],
+      "results": [
+        "Theorem A"
+      ],
+      "limitations": []
+    }
+  ],
+  "source_count": 3,
+  "complete_pages_visually_checked": 9,
+  "notes": [
+    "39 proof uses actual tangent projections and finite conjugation orbits.",
+    "40 supplies a direct invariant-subbundle proof; it does not rely on a quasi-Anosov classification theorem.",
+    "No automated proof or first-publication priority is claimed."
+  ]
+}

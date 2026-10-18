@@ -1,0 +1,33 @@
+{
+  "scope": "exact polynomial identities and characteristic-number arithmetic only",
+  "todd_degree_four_checked": true,
+  "whitney_E_plus_dual_checked": true,
+  "torsion_case_euler_forced": "2160/11",
+  "torsion_case_euler_is_integer": false,
+  "types": {
+    "K3^[2]": {
+      "euler": 324,
+      "polynomial_descending": [
+        3,
+        60,
+        -468
+      ],
+      "necessary_q_values": [
+        6,
+        -26
+      ]
+    },
+    "Kummer_2": {
+      "euler": 108,
+      "polynomial_descending": [
+        9,
+        108,
+        324
+      ],
+      "necessary_q_values": [
+        -6,
+        -6
+      ]
+    }
+  }
+}

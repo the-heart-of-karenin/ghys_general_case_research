@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-18",
+  "all_checks_passed": true,
+  "distinct_sources": 6,
+  "complete_pages_inspected": 9,
+  "sources": [
+    {
+      "filename": "41_Oguiso_2020_Cohomologically_trivial_automorphisms.pdf",
+      "sha256": "9472ad14b3eb652fb24d19ee994241a795f9ff1ff3dd5751a3a44e7617794f91",
+      "pages": 13,
+      "complete_pages_visually_inspected": [
+        10,
+        11
+      ],
+      "use": "PDF p10 Theorem 5.1, H2 faithfulness for K3^[n]-type. PDF p11 concerns finite-order fixed loci and is inspected background only."
+    },
+    {
+      "filename": "37_Markman_2011_Torelli_monodromy_survey.pdf",
+      "sha256": "55d67f2588729b1aecdb6cf3d5d9eaaba50a336cbfbf918caf9ea58c2eec76a6",
+      "pages": 46,
+      "complete_pages_visually_inspected": [
+        21
+      ],
+      "use": "Compactness/finiteness background for the projective transcendental Hodge action, independently proved in note 49."
+    },
+    {
+      "filename": "38_Mongardi_2015_Kahler_Mori_cones.pdf",
+      "sha256": "838a0a6557b6aa7f0478b16f7f82134a3a4316c52bdb3d76103ca242ad0c5609",
+      "pages": 9,
+      "complete_pages_visually_inspected": [
+        7,
+        8
+      ],
+      "use": "Proposition 2.12: exact K3^[2] wall list, for the ample axis."
+    },
+    {
+      "filename": "35_Cantat_2001_Dynamics_K3_surfaces.pdf",
+      "sha256": "fd7b7c3afeaeec0fad0ebd8c720792416a3b68a81ce92b5d3a074b1e8be946d5",
+      "pages": 57,
+      "complete_pages_visually_inspected": [
+        2,
+        3
+      ],
+      "use": "Positive-entropy surface classification, not a statement that a periodic submanifold automatically inherits Anosov."
+    },
+    {
+      "filename": "21_OGrady_2022_Modular_sheaves.pdf",
+      "sha256": "e264e65d279f8fb78fa65198d9944a5f5951a8299a6882aa16d0ef5c1ed7dbf4",
+      "pages": 38,
+      "complete_pages_visually_inspected": [
+        17
+      ],
+      "use": "c2 pairing normalization; quartic Fujiki formula is reused from previously inspected pp5-6."
+    },
+    {
+      "filename": "24_Kapfer_2016_Integral_cohomology.pdf",
+      "sha256": "a550dd86e4958a08ef44d55d9e021f1b321b0aa5b010b2d8676215467a037d6f",
+      "pages": 20,
+      "complete_pages_visually_inspected": [
+        6
+      ],
+      "use": "Rational H4 symmetric square and Betti dimensions; odd-cohomology vanishing reused from earlier inspected p4."
+    }
+  ],
+  "limitation": "Hashes and visual-reading records do not certify mathematical correctness or novelty. Proofs are in notes 49--50; exact auxiliary checks have a separate record."
+}

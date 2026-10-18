@@ -1,0 +1,26 @@
+[
+  {
+    "filename": "29_Kapfer_Menet_2018_Kummer_integral_cohomology.pdf",
+    "title": "Integral cohomology of the generalized Kummer fourfold",
+    "download_url": "https://content.algebraicgeometry.nl/2018-5/2018-5-014.pdf",
+    "landing_url": "https://doi.org/10.14231/AG-2018-014",
+    "publication_note": "Algebraic Geometry 5 (2018), 523-567; use with 2020 corrigendum",
+    "collected_utc": "2026-10-18T02:03:16.982083+00:00",
+    "resolved_url": "https://content.algebraicgeometry.nl/2018-5/2018-5-014.pdf",
+    "bytes": 645431,
+    "sha256": "0fe5f51417da2fc9f220fa7f6e75cd9d1499ce2a708047371ecf6d5fa3daf83e",
+    "pages": 45
+  },
+  {
+    "filename": "30_Kapfer_Menet_2020_Kummer_corrigendum.pdf",
+    "title": "Corrigendum: Integral cohomology of the generalized Kummer fourfold",
+    "download_url": "https://arxiv.org/pdf/1907.07031",
+    "landing_url": "https://doi.org/10.14231/AG-2020-014",
+    "publication_note": "Algebraic Geometry 7 (2020), 482-485; author preprint",
+    "collected_utc": "2026-10-18T02:03:16.982083+00:00",
+    "resolved_url": "https://arxiv.org/pdf/1907.07031",
+    "bytes": 122959,
+    "sha256": "8a4ba9764b5f84126161a96d6f2729612e75646ea95c45be266ad289a93ee081",
+    "pages": 5
+  }
+]

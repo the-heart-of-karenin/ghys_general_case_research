@@ -1,0 +1,37 @@
+{
+  "all_checks_passed": true,
+  "checks": {
+    "Fujiki_and_Chern_pairings": {
+      "theta_N_squared": "8",
+      "theta_T_squared": "483",
+      "theta_N_theta_T": "42",
+      "theta_total_theta_N": "50",
+      "theta_total_theta_T": "525",
+      "D_squared": "2300",
+      "c2_D": "120"
+    },
+    "integer_parametrization": {
+      "integers_tested": 1601,
+      "admissible_count": 201,
+      "nonzero_chi_minimum": 21,
+      "limitation": "Finite enumeration checks formulas; divisibility for every integer is proved in note 41."
+    },
+    "isolated_Lagrangian_cone": {
+      "defining_relations_checked": 3,
+      "ambient_weights": [
+        3,
+        1,
+        -1,
+        -3
+      ],
+      "pullback_wedge_coefficients": [
+        9,
+        3
+      ],
+      "symplectic_and_Lagrangian_identities": "passed",
+      "resolution_chart_equivariance": "passed",
+      "limitation": "This is a noncompact local model and is not a counterexample to the compact Ghys conjecture."
+    }
+  },
+  "scope": "Exact identities and finite arithmetic checks only; no existence or nonexistence theorem is inferred by computation."
+}

@@ -1,0 +1,505 @@
+=== PDF PAGE 1 ===
+arXiv:0901.4827v3  [math.AG]  23 Mar 2009
+A REMARK ON DYNAMICAL DEGREES OF
+AUTOMORPHISMS OF HYPERK ¨AHLER MANIFOLDS
+KEIJI OGUISO
+To the memory of Professor Masayoshi Nagata
+Abstract. W e describe all the dynamical degrees of automorphisms of hy -
+perk¨ ahler manifolds in terms of the ﬁrst dynamical degree. W e also present
+two explicit examples of diﬀerent geometric ﬂavours.
+1. Introduction
+A hyperk¨ ahler manifoldis a simply connected compact K¨ ahler manifold X such
+that H 0(X, Ω2
+X) = CσX , where σX is an everywhere non-degenerate holomorphic
+2-form on X. It is then of even dimension.
+The aim of this note is to point out the following simple, explicit behaviour of
+the dynamical degrees of automorphisms of hyperk¨ ahler manifolds (see Section 2
+for terminologies).
+1.1. Theorem. Let X be a hyperk¨ ahler manifold of dimension 2n and g be a
+holomorphic automorphism of X. Let k be an integer such that 0 ≤ k ≤ 2n and
+dk(g) be the k-th dynamical degree of g. Then
+d2n− k(g) = dk(g) = d1(g)k
+for 0 ≤ k ≤ n. In particular, if g is of positive entropy, then
+1 = d0(g) < d 1(g) < · · ·< d n− 1(g) < d n(g) > dn+1(g) > · · ·> d 2n(g) = 1 ,
+i.e., the function
+Z ∩ [0, n ] ∋ k ↦→ dk(g) ∈ R
+is strictly increasing. Moreover, the topological entropy h(g) of g is
+h(g) = n log d1(g) .
+This behaviour ﬁts well with the assumption made in [DS09] Section 4.4 . So,
+one can now apply the results there for automorphisms of hyperk¨ ahler manifolds.
+A Salem number is a real algebraic integer α such that α > 1, 1 /α is a Galois
+conjugate of α and all other Galois conjugates are of absolute value 1. Salem
+numbers play important roles in complex dynamics on K3 surfaces, ra tional surfaces
+([Mc02], [Mc07]) and hyperk¨ ahler manifolds ([Og07] and references therein).
+1.2. Corollary . The dynamical degrees of automorphisms of hyperk¨ ahler man i-
+folds are Salem numbers or 1.
+Date: November 3, 2018.
+2000 Mathematics Subject Classiﬁcation. 14J50 (14J28 14J40 37B40 53C26) .
+1
+
+=== PDF PAGE 2 ===
+Dynamical degrees are natural, important invariants in complex dyn amics of
+automorphisms, but there are very few examples in dimension ≥ 3 for which explicit
+computations are made.
+The next aim of this note is to give a few explicit computaions of dynamic al
+degrees of automorphisms of S[n] (Examples 1, 2 in Section 4). Here and hereafter
+S[n] is the Hilbert scheme of 0-dimensional subschemes of length n on a K3 surface
+S. As it is well known, S[n] is a 2 n-dimensional hyperk¨ ahler manifold ([Fu83] for
+n = 2, [Be83] for any n ≥ 2).
+Example 1 is elementary and everything is very concrete, but autom orphisms
+under consideration are all induced from automorphisms of S. In Example 2, we
+construct automorphisms of positive entropy of some S[2] that are not induced from
+any automorphisms of any S′ such that (S′)[2] ≃ S[2]. A similar construction in
+a more general context was also made by O’Grady [OGr05], Section 4 ( see espe-
+cially subsection 4.4). For our explicit computation of the dynamical d egrees, the
+speciﬁcation made in Lemma 4.5 is convenient.
+Theorem 1.1 and Examples 1, 2 will partially answer to the question of P rofessor
+Nessim Sibony to me (June 2008):
+1.3. Question. Besides automorphisms of complex tori or automorphisms of
+product type ([DS09] Section 4.4), are there any explicit examples of automorphi sms
+f of higher dimensional manifolds M such that the dynamical degrees dk(f ) (k ∈
+[0, dim M/ 2] ∩ Z) are strictly increasing, i.e., mutually distinct?
+In the view of Corollary 1.2, the following question might be of interest :
+1.4. Question. Which Salem numbers are realizable as dynamical degrees of
+automorphisms of hyperk¨ ahler manifolds? In particular, i s the Lehmer number,
+i.e., the smallest known Salem number
+λ Lehmer = 1. 17628...
+realizable in this way?
+We note that the Lehmer number is realizable as the ﬁrst dynamical d egree of a
+rational surface automorphism [Mc07].
+2. Dynamical degrees of automorphisms - a few known results
+In this section, we brieﬂy review some basic notions and some known properties of
+dynamical degrees. Our sources are [DS05] Section 2 and [Gu05] Se ction 1. [Zh08]
+Section 2 also provides a very good survey particularly for algebraic geometers. For
+more details or any history, see these papers and the references therein.
+Let M be a compact K¨ ahler manifold of dimension m and f be a biholomorphic
+automorphism of M . Let k be an integer such that 0 ≤ k ≤ m. Then, the k-th
+dynamical degree dk(f ) of f is deﬁned by
+dk(f ) = lim ℓ− →∞ (
+∫
+M
+(f ℓ)∗ ηk ∧ ηm− k)1/ℓ .
+Here η is a K¨ ahler form onM . It is well known that dk(f ) does not depend on the
+choice of η. Moreover,
+dk(f ) = ρ(f ∗ |H k,k (M, R)) = ρ(f ∗ |H 2k(M, R)) .
+2
+
+=== PDF PAGE 3 ===
+Here ρ(∗) denotes the spectral radius of the linear map ∗. Probably, the ﬁrst
+important property of dk(f ) is the following symmetry:
+dk(f ) = dm− k(f − 1) .
+This follows from the Poincar´ e duality. As a more interesting proper ty, it is also
+known that the function
+[0, m ] ∋ k ↦→ log dk(f ) ∈ R
+is always concave (see eg. [Gu05] Proposition 1.2, [DS05] Propositio n 2.6). From
+these two properties and d0(f ) = 1, we have the following general behaviour of the
+dynamical degrees:
+2.1. Theorem. There are p, q ∈ [0, m ] ∩ Z such that p ≤ q and
+1 = d0(f ) < · · ·< d p(f ) = · · ·= dq(f ) > · · ·> d m(f ) = 1 .
+The topological entropy h(f ) of f is a real number that measures the complexity
+of orbit space
+x , f (x) , f 2(x) , f 3(x) , · · ·, f m(x) , · · ·.
+Original deﬁnition of h(f ) is purely topological ([Gr03], Section 1), and the action on
+the cohomology ring never appears in the deﬁnition. However, for a n automorphism
+f of a compact K¨ ahler manifold X, it turns out that
+h(f ) = log dp(f ) = max {log dk(f ) |k ∈ [0, m ] ∩ Z} ,
+by the fundamental theorem due to Gromov and Yomdin. In this not e, we only
+need this fact. Note then that h(f ) ≥ 0, and h(f ) > 0 if and only if d1(f ) > 1 and
+that the function dk(f ) is constantly 1 when h(f ) = 0.
+So, our new Theorem 1.1 says that only two extreme cases in Theorem 2.1 can
+happen for automorphisms of hyperk¨ ahler manifolds. That is, according to h(g) = 0
+or h(g) > 0, either p = 0 and q = dim X or p = q = n = dim X/ 2.
+3. Proof of Theorem 1.1 and Corollary 1.2
+In this section, we shall prove Theorem 1.1 and Corollary 1.2. The pro of is
+extremely simple.
+Let k ∈ [0, n ] ∩ Z. Consider the natural map
+mk : Sym kH 2(X, R) − → H 2k(X, R) .
+mk is given by the multiplication of the cohomology ring H ∗(X, R). In particular,
+mk is compatible with the action of Aut X. Moreover, by a result of Verbitsky
+[Ve96] (see also [Bo96] together with [Bo78], [CY03] Part III, Propo sition 24.1), the
+map mk is injective for k in the range above. Thus dk(g) ≥ d1(g)k, i.e.,
+log dk(g) ≥ k log d1(g) .
+On the other hand, as k ↦→ log dk(g) is a concave function with log d0(g) = 0, we
+have that
+log dk(g) ≤ k log d1(g) .
+Thus, log dk(g) = k log d1(g), and hence dk(g) = d1(g)k for each k ∈ [0, n ] ∩ Z.
+On the other hand, by [Og07] Section 2.2, the characteristic polyno mial of
+g∗|H 2(X, Z) has at most one Salem polynomial factor, i.e., the minimal polynomial
+of a Salem number over Z, and the other factors are all cyclotomic polynomials.
+3
+
+=== PDF PAGE 4 ===
+Thus, the set of eigenvalues of g and g− 1 are the same. We should note that this is
+a very special property of an automorphism of hyperk¨ ahler manifolds. In particular,
+d1(g) = d1(g− 1) .
+Hence,
+d2n− k(g) = dk(g− 1) = d1(g− 1)k = d1(g)k .
+This completes the proof of Theorem 1.1.
+Let us show Corollary 1.2. The result is clear if h(g) = 0. Assume that h(g) > 0.
+Then, again by [Og07] Section 2.2, the characteristic polynomial of g∗ |H 2(X, Z)
+has a Salem polynomial factor. Thus, d1(g) is a Salem number. Let γ be a Galois
+conjugate of d1(g)k. Then, γ is of the form β k for some Galois conjugate β of d1(g)
+and vice versa. This implies the result.
+3.1. Remark. Let X be a hyperk¨ ahler 4-fold which is deformation equivalent
+to the Hilbert scheme of a K3 surface, say, S[2]. Then b2(X) = b2(S[2]) = 23 and
+b4(X) = b4(S[2]) = 276. (This is well known and is indeed easy to see from the
+explicit description of S[2].) Thus, the injective map m2 is actually an isomorphism
+for dimension reason and we have that H 4(X, R) = Sym 2H 2(X, R). Thus, if g ∈
+Aut X is of positive entropy, then the dynamical degree dk(g) is an eigenvalue of
+g∗|H 2k(X, R) of multiplicity one for each k. It would be interesting to see to what
+extent this multiplicity one property of dynamical degrees holds for automorphisms
+of hyperk¨ ahler manifolds of positive entropy.
+3.2. Remark. Recall that the Hilbert scheme F (V ) of lines on a smooth cubic
+4-fold V is deformation equivalent to S[2] [BD85]. In [Am07], Amerik computed
+the dynamical degrees of a natural, very interesting self rational map of degree 16
+on F (V ). They are
+d0 = 1 , d 1 = 7 , d 2 = 31 , d 3 = 28 , d 4 = 16 .
+It is remarkable that the behaviour is quite diﬀerent from the case o f automorphisms
+in Theorem 1.1. This diﬀerence is pointed out to us by Professor Fr´ ed´ eric Campana.
+4. A few explicit examples
+Let S be a K3 surface and S[n] be the Hilbert scheme of n ≥ 2 points on S.
+In this section, we shall compute the dynamical degrees of some au tomorphisms of
+S[n] in two speciﬁc situations (Examples 1, 2).
+4.1. Lemma. Let g be an automorphism of S and gn be the automorphism of
+S[n] induced from g. Then d1(gn) = d1(g), and d2n− k(gn) = dk(gn) = d1(g)k for
+k ∈ [0, n ] ∩ Z. In particular, h(gn) = n log d1(g).
+Proof. Let E be the exceptional divisor of the Hilbert-Chow morphism
+S[n] − → S(n) = Sn/ Σn .
+Then, by [Be83] (see also [CY03] Part III, Section 23), H 2(S[n], Z) carries a natural
+integral-valued symmetric bilinear form, called the Beauville-Bogomolov-Fujiki’s
+form. Via the natural isomorphism H 2(S, Z) ≃ H 2(Sn, Z)Σn , we can embed
+H 2(S, Z) into H 2(S[n], Z). [Be83] shows that this embedding gives a natural Hodge
+isometry
+H 2(S[n], Z) ≃ H 2(S, Z) ⊕ Z[e] .
+4
+
+=== PDF PAGE 5 ===
+Here e := E/ 2 ∈ H 2(S[n], Z) and ( e2) = − 2n + 2. Since gn is induced from g,
+under the isometry above, we have that g∗
+n(e) = e, g∗
+n(H 2(S, Z)) = H 2(S, Z) and
+g∗
+n|H 2(S, Z) = g∗ |H 2(S, Z). Thus, d1(gn) = d1(g). This together with Theorem 1.1
+implies the result. □
+Example 1. Let E be an elliptic curve. Put A = E × E. Let S = Km ( A) be the
+Kummer K3 surface associated with A, i.e., the minimal resolution of the quotient
+surface A/ ⟨− 1⟩. Let
+M :=
+( a b
+c d
+)
+∈ SL (2, Z) .
+Then M deﬁnes an automorphism fM of A by
+A ∋ (x, y ) ↦→ (ax + by, cx + dy) ∈ A .
+Since fM commutes with the inversion − 1 of A, it descends to an automorphism
+gM of S, and therefore, induces an automorphism gM,n on S[n]. Recall that
+H 2(S, Q) ≃ H 2(A, Q) ⊕ ⊕ 16
+i=1Q[ei] ,
+where ei (1 ≤ i ≤ 16) are the exceptional divisors of S − → A/ ⟨− 1⟩. This iso-
+morphism is compatible with the actions of fM and gM . In particular, the sub-
+spaces ⊕ 16
+i=1Q[ei] is stable under the action. Moreover, the cup product is negative
+deﬁnite on ⊕ 16
+i=1Q[ei]. Thus, d1(gM ) = d1(fM ). Hence d1(gM,n ) = d1(fM ) and
+h(gM,n ) = n log d1(fM ) by Lemma 4.1.
+4.2. Lemma. Let t = a + d,
+α = t +
+√
+t2 − 4
+2 , β = t −
+√
+t2 − 4
+2 .
+α and β are the eigenvalues of the matrix M counted with multiplicities. Then
+d1(fM ) = 1 if |t| ≤ 2 ,
+d1(fM ) = α 2 > 1 if t > 2 ,
+d1(fM ) = β 2 > 1 if t < − 2 .
+Proof. d1(fM ) is the spectral radius of f ∗
+M |H 1, 1(A, R). Since A is a 2-dimensional
+complex torus, we have the following natural isomorphism:
+H 1, 1(A, R) ⊗ C = H 1, 1(A, C) ≃ H 0(A, Ω1
+A) ⊗
+H 0(A, Ω1
+A) .
+Thus, the eigenvalues of f ∗
+M |H 1, 1(A, R) are α
+α , α β , β α , β β , counted with multi-
+plicities. This implies the result. □
+Hence, according to |t| ≤ 2, t > 2, t < − 2, we have
+dk(gM,n ) = 1 ( ∀k ∈ [0, 2n] ∩ Z) ,
+d2n− k(gM,n ) = dk(gM,n ) = ( t +
+√
+t2 − 4
+2 )2k (∀k ∈ [0, n ] ∩ Z) ,
+d2n− k(gM,n ) = dk(gM,n ) = ( t −
+√
+t2 − 4
+2 )2k (∀k ∈ [0, n ] ∩ Z) .
+For the entropy, h(gM,n ) = 0 in the ﬁrst case, and h(gM,n ) > 0 in the last two
+cases.
+Example 2. In this example, we present automorphisms of positive entropy of s ome
+S[2] that are not induced from automorphisms of any S′ such that ( S′)[2] ≃ S[2].
+5
+
+=== PDF PAGE 6 ===
+Note that there is a pair of K3 surfaces X, Y such that X ̸≃ Y but X [2] ≃ Y [2]
+([Yo01] Example 7.2).
+Recall the natural identiﬁcation (made in the proof of Lemma 4.1)
+H 2(S[2], Z) = H 2(S, Z) ⊕ Z[e] .
+Under this identiﬁcation, we have
+N S(S[2]) = N S(S) ⊕ Z[e] .
+The involution ι in the next Lemma is constructed by Beauville [Be82]:
+4.3. Lemma. Let S ⊂ P3 be a quartic K3 surface. Then the line P1P2 joining
+two general points P1, P 2 of S meets S in two other points, say, P3, P4. The
+correspondence {P1, P 2} ↦→ { P3, P 4} deﬁnes the birational involution
+ι : S[2]/axisshort/axisshort/arrowaxisrightS[2] .
+For this involution, one has:
+(1) ι is a biholomorphic involution if and only if S contains no line.
+(2) Under the assumption (1), ι∗ H = 3 H − 4e and ι∗ e = 2 H − 3e. Here H is
+the element of N S(S[2]) corresponding to the hyperplane class of S.
+(3) Under the assumption (1), H 2(S[2], Z)ι∗
+= Z⟨H − e⟩.
+Proof. (1) is proved by [Be82] Proposition 11. When N S(S) = ZH, i.e., the generic
+case, (2) is proved by [HT01] Subsection 5.2. For arbitrary S with no line, we shall
+prove by reducing to the generic case via deformation.
+Let us consider a general 1-dimensional small deformation of S inside P3:
+P3 × ∆ ⊃ S − → ∆ , S0 = S .
+Let H be the relative hyperplane class of S over ∆. Then N S(St) = Z⟨Ht⟩ for
+generic t ∈ ∆. Put
+∆2 = {s ∈ ∆ |rank N S(Ss) ≥ 2} .
+This set ∆ 2 is topologically dense in ∆ but it consists of at most countably many
+points ([Og03] Theorem 1.1). As R is an uncountable set, for generic c ∈ R, the
+real analytic line
+γc = {z ∈ ∆ |Im z = c ·Re z} ⊂ ∆
+then satisﬁes
+0 ∈ γc and γc ∩ (∆2 \ {0}) = ∅ .
+By construction, N S(St) = Z⟨Ht⟩ for t ∈ γc \ {0}. By taking the relative Hilbert
+scheme over ∆ and then restricting it to γc, we have an analytic family
+f : M − → γc
+such that Mt = S[2]
+t for all t ∈ γc. Let E be the exceptional divisor of the relative
+Hilbert-Chow morphism over γc. Then, N S(Mt) = Z⟨Ht, e t⟩ for all t ∈ γc \{0} and
+N S(S[2]) ⊃ Z⟨H, e ⟩ for t = 0. Here et = Et/ 2, H = H0 and e = e0. In particular,
+Z⟨Ht, e t⟩ (t ∈ γc) forms a constant subsystem Λ of the constant system R2f∗ ZM.
+As St (t ∈ γc) contains no P1, the involution ι extends to a (not only birational
+but also) biholomorphic involution I of M over γc such that I0 = ι. Under the
+natural action of I on R2f∗ZM, the constant subsystem Λ is stable. This is because
+the assertion (2) is true for Mt (t ∈ γc \ {0}) by [HT01] Subsection 5.2. Hence, by
+specializing the result to t = 0, we have the assertion (2) also for our S[2].
+6
+
+=== PDF PAGE 7 ===
+Let us show the assertion (3). Let Z ∈ S[2] be a general ﬁxed point of ι. Then
+Z = P + Q, where P ̸= Q are the tangent points of a double tangent line ℓ of a
+general hyperplane H ∩ S of S (canonical curve of genus 3). Let ( xP , y P ) be a local
+coordinate of P in S such that xP is the local coordinate of H ∩ S at P and yP is
+the local coordinate of the one parameter small deformation of th e double tangent
+points at P . We take a local coordinate ( xQ, y Q) of Q in S similarly. Consider the
+local holomorphic 2-form
+˜σ = dxP ∧ dyP + dxQ ∧ dyQ
+on S × S at (P, Q ). This ˜σ is a non-zero multiple of p∗
+1σS + p∗
+2σS at (P, Q ), possibly
+after rescalling of ( xQ, y Q). Here pi : S × S − → S is the projection to the i-th
+factor. Thus ˜σ descends to the local holomorphic 2-form, say σ , of S[2] at P + Q.
+By deﬁnition of ι, we have ι∗ σ = − σ . On the other hand, the global holomorphic
+2-form p∗
+1σS + p∗
+2σS descends to the global holomorphic 2-form σS[2] on S[2]. Hence
+ι∗ σS[2] = − σS[2]
+at P + Q, whence, on S[2] as well. The same is clearly true for the involution It on
+Mt (t ∈ γc). Thus
+I ∗
+t σMt = − σMt and I ∗
+t |T (Mt) = − 1 .
+Here T (Mt) is the transcendental lattice of Mt, i.e., the minimal primitive sub-
+module of H 2(Mt, Z) such that σMt ∈ T (Mt)C. The second equality follows from
+the ﬁrst one via the minimality of T (Mt). On the other hand,
+N S(Mt)I ∗
+t = Z⟨Ht − et⟩
+for all t ∈ γc \ {0}, by N S(Mt) = Z⟨Ht, e t⟩ and by the explicit form of I ∗
+t |N S(Mt)
+in (2). As N S(Mt) ⊕ T (Mt) is of ﬁnite index submodule of H 2(Mt, Z), we have
+then that
+H 2(Mt, Z)I ∗
+t = Z⟨Ht − et⟩
+for all t ∈ γc \ {0}. As I acts on the constant system R2f∗ ZM, by specializing to
+t = 0, we have
+H 2(S[2], Z)ι∗
+= Z⟨H − e⟩
+as well. This implies the assertion (3). □
+4.4. Lemma. Let N = Z⟨h1, h 2⟩ be a lattice whose bilinear form is
+((hi, h j)) =
+( 4 8
+8 4
+)
+.
+Then, there are a projective K3 surface S and an isometry ϕ : N ≃ N S(S) such
+that both Hi := ϕ (hi) (i = 1, 2) are very ample on S. This S contains no P1.
+Proof. By the explicit form, N is an even lattice of signature (1 , 1). Thus, by [Mo84]
+Corollary 2.9, there is a projective K3 surface S such that N ≃ N S(S), say by ϕ .
+Let A(S) ⊂ N S(S)R be the ample cone of S. Again by the explicit form, the lattice
+N represents neither 0 nor − 2. Thus, S has no P1, and therefore, A(S) coincides
+with the positive cone, i.e., one of the two connected components of
+{x ∈ N S(S) |(x2) > 0} .
+Thus, by replacing ϕ by − ϕ if necessary, both H1 and H2 are ample on S. They
+are also very ample. In fact, as N S(S) represents neither − 2 nor 0, it follows that
+S contains neither P1 nor elliptic pencil, and we can apply [SD74] Theorem 5.2. □
+7
+
+=== PDF PAGE 8 ===
+From now on, let S be a K3 surface in Lemma 4.4 . Corresponding to the com-
+plete linear systems |H1|, |H2|, we can embed S into P3 in two diﬀerent ways:
+Φ|H1| : S ≃ S1 ⊂ P3 , Φ|H2| : S ≃ S2 ⊂ P3 .
+The surfaces S1 and S2 are quartic surfaces in P3 with no line. Thus, by applying
+Lemma 4.3 to S1 and S2 respectively, we have two biholomorphic involutions ι1
+and ι2 on S[2]. We also note that N S(S[2]) = Z⟨H1, H 2, e ⟩.
+4.5. Lemma. Under the basis ⟨H1, e, H 2⟩ of N S(S[2]), the involutions ι∗
+1|N S(S[2])
+and ι∗
+2|N S(S[2]) are represented by the following matrices:
+M1 :=
+
+
+3 2 8
+− 4 − 3 − 8
+0 0 − 1
+
+ , M 2 :=
+
+
+− 1 0 0
+− 8 − 3 − 4
+8 2 3
+
+ .
+Proof. By Lemma 4.3, we see that
+ι∗
+1(H1) = 3 H − 4e , ι ∗
+1(e) = 2 H1 − 3e .
+Let us determine ι∗
+1(H2). As N S(S[2]) = Z⟨H1, e, H 2⟩, one can write
+ι∗
+1H2 = aH1 + be + cH2 .
+Since ι∗
+1 is an isometry, we have
+((aH1 + be + cH2)2) = ( H 2
+2 ) = 4 ,
+(3H1 − 4e, aH 1 + be + cH2) = ( H1, H 2) = 8 ,
+(2H1 − 3e, aH 1 + be + cH2) = ( e, H 2) = 0 .
+From these three equalities, we obtain that
+(a, b, c ) = (8 , − 8, − 1) or (4, − 8, 1) .
+Let us exclude the second case (4 , − 8, 1). If this happens, then
+ι∗
+1(H2) + H2 = 4H1 − 8e + 2H2 .
+On the other hand, the class ι∗
+1(H2) + H2 is invariant under ι1, a contradiction to
+Lemma 4.3 (3). Thus,
+ι∗
+1H2 = 8H1 − 8e − H2 .
+Hence the matrix representation of ι∗
+1|N S(S[2]) is M1 as claimed. Changing the
+roles of H1 and H2, we see that the matrix representation of ι∗
+2|N S(S[2]) is M2 as
+well. □
+4.6. Lemma. Let ℓ ∈ [1, ∞ ) ∩ Z and gℓ = ( ι2ι1)ℓ ∈ Aut S[2]. Then, gℓ is
+not induced from any Aut S′. Here S′ is any K3 surface such that (S′)[2] ≃ S[2].
+Moreover, we have:
+d1(gℓ) = d3(gℓ) = (17 + 12
+√
+2)ℓ , d 2(gℓ) = (17 + 12
+√
+2)2ℓ .
+Proof. By Lemma 4.5, the matrix representation of ( ι2ι1)∗ |N S(S[2]) is
+M1M2 =
+
+
+45 10 16
+− 36 − 7 − 12
+− 8 − 2 − 3
+
+
+8
+
+=== PDF PAGE 9 ===
+under the basis ⟨H1, e, H 2⟩ of N S(S[2]). By straightforward calculation, we see that
+the characteristic polynomial of M1M2 is
+Φ(x) = ( x − 1)(x − (17 + 12
+√
+2))(x − (17 − 12
+√
+2)) .
+This together with Theorem 1.1 implies the assertion of dynamical deg rees. Here
+we used the fact that
+ρ(g∗
+ℓ |N S(S[2])) = ρ(g∗
+ℓ |H 1, 1(S[2], R)) .
+This equality follows from the fact that the Beauville-Bogolomov-Fuj iki’s form on
+the orthogonal complement of N S(S)R in H 1, 1(S[2], R) is negative deﬁnite.
+Let us show that gℓ is not induced from any automorphism of S′. Suppose
+that gℓ is induced from some automorphism of S′. Then, g∗
+ℓ (e′) = e′. Here E′
+is the exceptional divisor of the Hilbert-Chow morphism ( S′)[2] − → (S′)(2) and
+e′ = E′/ 2. On the other hand, by the explicit form of M1M2 above, the eigen vector
+in N S(S[2]) corresponding to the eigenvalue 1 is k(H1 − 6e + H2) ( k ∈ Z \ {0}).
+Thus e′ = k(H1 − 6e + H2) for some k ∈ Z. However, this is impossible, as
+((e′)2) = − 2 but (( H1 − 6e + H2)2) = − 48 .
+□
+Acknowledgement. I would like to express my thanks to Professors Nessim Si-
+bony and Tien-Cuong Dinh for inviting me to Paris (June 2008) and for fruitful
+discussions. I would like to express my thanks to Professors Fr´ ed ´ eric Campana,
+Kieran G. O’Grady and the refreee for important comments.
+References
+[Am07] Amerik, E. : A computation of invariants of a rational self-map , arXiv:0707.3947.
+[Be82] Beauville, A. : Some remarks on K¨ ahler manifolds with c1 = 0, In: Classiﬁcation of
+algebraic and analytic manifolds (Katata, 1982), Progr. Ma th. 39 Birkh¨ auser Boston,
+Boston, MA (1983) 1–26.
+[Be83] Beauville, A. : Vari´ et´ es k¨ al´ eriennes dont la premi` ere classe de Chernest nulle , J. Dif-
+ferential Geometry 18 (1983) 755–782.
+[BD85] Beauville, A., R. Donagi, La vari´ et´ es des droites d’une hypersurface cubique de dimen-
+sion 4 , C.R. Acad. Sci. Paris S´ er. I Math. bf 301 (1985) 703–706.
+[Bo78] Bogomolov, F. A. : Hamiltonian K¨ ahlerian manifolds, Dokl. Akad. Nauk SSSR 243
+(1978), 1101–1104
+[Bo96] Bogomolov, F. A. : On the cohomology ring of a simple hyper-K¨ ahler manifold (o n the
+results of Verbitsky) , Geom. Funct. Anal. 6 (1996) 612–618.
+[DS05] Dinh, T.-C., Sibony, N. : Green currents for holomorphic automorphisms of compact
+K¨ ahler manifolds, J. Amer. Math. Soc. 18 (2005) 291–312.
+[DS09] Dinh, T.-C., Sibony, N. : Super-potentials for currents on compact K¨ ahler manifold s
+and dynamics of automorphisms , to appear in J. Algebraic Geometry.
+[Fu83] Fujiki, A. : On primitively symplectic compact K¨ ahler V -manifolds of dimension four ,
+Classiﬁcation of algebraic and analytic manifolds (Katata , 1982), 71–250, Progr. Math.,
+39, Birkh¨ auser Boston, Boston, MA, 1983.
+[Gr03] Gromov, M. : On the entropy of holomorphic maps , Enseign. Math. 49 (2003) 217–235.
+[CY03] Gross, M., Huybrechts, D., and Joyce, D. : Calabi-Yau manifolds and related geometries ,
+Universitext. Springer-Verlag, Berlin (2003).
+[Gu05] Guedj, V. : Ergodic properties of rational mappings with large topolog ical degree, Ann.
+of Math. 161 (2005) 1589–1607.
+[HT01] Hassett, B., Tschinkel, Y. : Rational curves on holomorphic symplectic fourfolds , Geom.
+Funct. Anal. 11 (2001) 1201–1228.
+[Mc02] McMullen, C. T. : Dynamics on K3 surfaces: Salem numbers and Siegel disks , J. Reine
+Angew. Math. 545 (2002) 201–233.
+9
+
+=== PDF PAGE 10 ===
+[Mc07] McMullen, C. T. : Dynamics on blowups of the projective plane , Publ. Math. Inst.
+Hautes ´Etudes Sci. 105 (2007) 49–89.
+[Mo84] Morrison, D. R. : On K3 surfaces with large Picard number , Invent. Math. 75 (1984)
+105–121.
+[OGr05] O’Grady, K. G. : Involutions and linear systems on holomorphic symplectic m anifolds,
+Geom. Funct. Anal. 15 (2005) 1223–1274.
+[Og03] Oguiso, K. : Local families of K3 surfaces and applications , J. Algebraic Geometry 12
+(2003) 405–433.
+[Og07] Oguiso, K. : Salem polynomials and birational transformation groups fo r hyperK¨ ahler
+manifolds, Sugaku 59 (2007) 1–23.
+[SD74] Saint-Donat, B. : Projective models of K −3 surfaces, Amer. J. Math. 96 (1974) 602–639.
+[Ve96] Verbitsky, M. : Cohomology of compact hyper-K¨ ahler manifolds and its appl ications,
+Geom. Funct. Anal. 6 (1996) 601–611.
+[Yo01] Yoshioka, K. : Moduli spaces of stable sheaves on abelian surfaces , Math. Ann. 321
+(2001) 817–884.
+[Zh08] Zhang, D.-Q. : Dynamics of automorphisms on projective complex manifolds ,
+arXiv:0810.4675, to appear in J. Diﬀerential Geometry.
+Keiji Oguiso
+Department of Economics, Keio University, 4-1-1 Hiyoshi Kohoku- ku, Yokohama,
+223-8521, Japan
+oguiso@hc.cc.keio.ac.jp
+10

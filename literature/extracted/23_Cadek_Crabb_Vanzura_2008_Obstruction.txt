@@ -1,0 +1,872 @@
+=== PDF PAGE 1 ===
+OBSTRUCTION THEORY ON 8-MANIFOLDS
+MARTIN ˇCADEK, MICHAEL CRABB AND JI ˇR´I V ANˇZURA
+Abstract. This paper gives a uniform, self-contained, and fairly dire ct approach
+to a variety of obstruction-theoretic problems on 8-manifo lds. We give necessary
+and suﬃcient cohomological criteria for the existence of co mplex and quaternionic
+structures on 8-dimensional vector bundles and for the redu ction of the structure
+group of such bundles to U(3) by the homomorphism U(3) → O(8) given by the Lie
+algebra representation of PU(3).
+1. Introduction
+Let M be a connected, closed, smooth, 8-dimensional, spin c manifold and let ξ be
+an 8-dimensional oriented real vector bundle over M admitting a spin c-structure. We
+consider, for various compact Lie groups G and homomorphisms ρ : G → SO(8), the
+problem of reducing the structure group of ξ from SO(8), via ρ, to G. In each case we
+shall obtain, in terms of the cohomology of M and cohomology characteristic classes of
+ξ and M, necessary and suﬃcient conditions for the reduction. The h omomorphisms
+ρ that we examine are:
+(i) the standard inclusion U(4) ⊆ SO(8);
+(ii) the homomorphism U(3) → SO(8) determined by the adjoint representation of
+the quotient PU(3) of U(3) by its centre;
+(iii) the compositions of the standard inclusions Sp(2) ×{±1}U(1) ⊆ U(4) ⊆ SO(8);
+(iv) the standard inclusion Sp(2) ×{±1}Sp(1) ⊆ SO(8);
+(v) the composition of the deﬁning map and the standard inclu sion Spin c(k) →
+SO(k) ⊆ SO(8) for k = 6, 5, 4, 3.
+The results concerning almost complex structures on M (case (i) for ξ = τ M, the
+tangent bundle of M) were obtained, using other methods, by Heaps [15] and by
+Thomas [17]; see also Geiges and M¨ uller [14]. In [4], [5], [6 ], [8] ˇCadek and Vanˇ zura
+dealt with (i) for spin vector bundles and with special cases of (iii) and (iv). The
+result in case (ii) on reduction to U(3) through the adjoint r epresentation of PU(3)
+was obtained by Crabb in response to a question of N.J. Hitchi n and F. Witt; see [18].
+Conditions for existence of a 4-ﬁeld, (v), are also due to ˇCadek and Vanˇ zura [7].
+Date: 5th December, 2007, corrected 8th July 2008.
+2000 Mathematics Subject Classiﬁcation. 55R25, 55R40, 55S35, 55N15.
+Key words and phrases. Obstruction theory, characteristic classes, reduction of the structure group,
+K-theory, index.
+Research of the ﬁrst author supported by the grant MSM 002162 2409 of the Czech Ministry of
+Education. Research of the third author supported by the Aca demy of Sciences of the Czech Republic,
+Institutional Research Plan A VOZ10190503, and by the grant 201/05/2117 of the Grant Agency of
+the Czech Republic.
+1
+
+=== PDF PAGE 2 ===
+2 M. ˇCADEK, M. C. CRABB AND J. V AN ˇZURA
+The results of this paper apply to a broader class of vector bu ndles than was pre-
+viously considered. In some cases we need make no further res triction on ξ; for the
+more diﬃcult ones we need only additional assumptions on w2(ξ) and w2(M). The
+derivation of the more delicate results involves the use of r eal KO-theory and twisted
+quaternionic K-theory, which may be of independent interest.
+We ﬁx a spin c structure on M, with characteristic class c ∈ H 2(M; Z) (lifting
+w2(M)), and an orientation for the vector bundle ξ.
+It is, at ﬁrst sight, somewhat surprising that one should be a ble to obtain purely
+cohomological criteria for reduction of the structure grou p. However, there are certain
+special features of the problem that make its solution tract able.
+1.1. Two oriented 8-dimensional real vector bundles ξ and ξ′over M such that [ ξ] =
+[ξ′] ∈ KO0(M) are isomorphic as oriented bundles if and only if e(ξ)[M] = e(ξ′)[M] ∈
+Z.
+This reduces the obstruction theory to a KO-theoretic, stable problem.
+1.2. The spin c structure for M allows us to split oﬀ the ‘top cell’ in real and complex
+K-theory. Let B ⊆ M be an embedded open disc of dimension 8, that is, a tubular
+neighbourhood of a point. Then we have short exact sequences :
+0 → Z = KO0(M, M − B) − − − →
+←−−
+KO0(M) → KO0(M − B) → 0
+id ↓ ∼= ↓ ↓
+0 → Z = K 0(M, M − B) − − − →
+←−−
+K 0(M) → K 0(M − B) → 0
+split by the spin c index:
+ind : K 0(M) → Z.
+Note that KO1(M, M − B) and K 1(M, M − B) are zero. Thus the splitting of K 0(M)
+induces a splitting of KO0(M) as a direct sum KO0(M − B) ⊕ Z, and a real vector
+bundle ξ over M is determined stably by its restriction to M − B and the image of
+[ξ] ∈ KO0(M) under the spin c index.
+This leaves us with an obstruction theory problem on the esse ntially 7-dimensional
+space M − B.
+1.3. In a cell decomposition of M as a ﬁnite complex (in which B is an open cell) the
+restriction map
+KO0(M − B) → KO0(M (4))
+to the 4-skeleton is injective. For an argument using the Ati yah-Hirzebruch spectral se-
+quence shows that the restriction map KO0(M − B) → KO0(M (7)) is an isomorphism,
+since H 8(M − B; Z) = 0 and KO1(M − B, M (7)) = 0, and the restriction KO0(M (7)) →
+KO0(M (4)) is injective, because KO0(M (5), M(4)) = 0, KO0(M (6), M(5)) = 0 and
+KO0(M (7), M(6)) = 0.
+This means that we can distinguish stable bundles over M − B by calculations in
+dimension 4 and below.
+The cohomological classes which can be realized as the Chern classes of a complex
+vector bundle over M are described in Proposition 3.2. Conditions for the existe nce
+of a complex structure on the vector bundle ξ are derived in Section 4 and stated as
+Proposition 4.1. The result on the reduction of the structur e group from SO(8) to
+
+=== PDF PAGE 3 ===
+OBSTRUCTION THEORY ON 8-MANIFOLDS 3
+U(3) is given as Proposition 6.2. Sections 7, 8 and 10 deal wit h almost quaternionic
+structures; the main results appear as Propositions 8.2, 10 .1 and 10.4. Reduction to
+Spin(3) and to Spin(4) is considered in Section 9.
+Almost ﬁfty years ago Hirzebruch and Hopf [16] investigated the reduction of the
+structure group of an oriented 4-manifold from SO(4) to SO(2 ) × SO(2) and to U(2).
+This paper follows in the tradition of their work.
+2. The spin characteristic class in dimension 4
+In this section we recall some fairly standard facts about th e spin characteristic class
+in dimension 4 and the classiﬁcation of spin and spin c bundles in low dimensions. We
+shall write ρ2 : H∗(M; Z) → H∗(M; F2) for reduction (mod 2).
+An elementary computation shows that the Chern classes c2 and c3 of a complex
+vector bundle with c1 = 0 satisfy:
+(2.1) Sq 2(ρ2c2) = ρ2c3.
+Let F be the homotopy ﬁbre of
+Sq2 ◦ρ2 + ρ2 : K(Z, 4) × K(Z, 6) → K(F2, 6).
+By (2.1), we can lift the map ( c2, c3) : BSU(∞ ) → K(Z, 4) × K(Z, 6) to a map
+BSU(∞ ) → F .
+Lemma 2.1. The map BSU(∞ ) → F above induces an isomorphism in homotopy
+groups πi(BSU(∞ )) → πi(F ) for i ≤ 7 (and a surjection for i = 8).
+Proof. We have π4(F ) = Z, π6(F ) = 2 Z, and πi(F ) = 0 otherwise. The Chern class
+c2 : ˜K 0(S4) = Z → H 4(S4; Z) = Z is an isomorphism, and c3 : ˜K 0(S6) = Z →
+H 6(S6; Z) = Z is multiplication by 2. □
+Recall that M is a closed, connected, 8-dimensional, spin c-manifold and that B ⊆ M
+is an open disc. The complex K-group K 0(M − B) = [( M − B)+; Z × BU(∞ )] splits
+as a direct sum
+K 0(M − B) = Z ⊕ H 2(M; Z) ⊕ [(M − B)+; BSU(∞ )],
+where the summand Z = [(M − B)+; Z], corresponding to the trivial bundles, is given
+by the dimension and the summand H 2(M; Z) = [( M − B)+; BU(1)], corresponding
+to the line bundles, is given by c1. (The subscript + denotes a disjoint basepoint, and
+the brackets [ − ; − ] indicate the set of pointed homotopy classes.)
+According to Lemma 2.1, the map [( M − B)+; BSU(∞ )] → [(M − B)+; F ] is
+surjective (and, in fact, bijective). This completes the de scription of the Chern classes
+of SU-bundles over M − B. (See [19] for a similar description in the case of real vecto r
+bundles.)
+Proposition 2.2. The image of the mapping
+(c2, c3) : [( M − B)+; BSU(∞ )] → H 4(M; Z) ⊕ H 6(M; Z)
+is the set {(u, v) |Sq2ρ2(u) = ρ2(v)}.
+By adding (or subtracting) a complex line bundle with c1 = l one obtains the
+following generalization.
+
+=== PDF PAGE 4 ===
+4 M. ˇCADEK, M. C. CRABB AND J. V AN ˇZURA
+Corollary 2.3. The image of the mapping
+(c1, c2, c3) : [( M − B)+; BU(∞ )] → H 2(M; Z) ⊕ H 4(M; Z) ⊕ H 6(M; Z)
+is the set {(l, u, v) |Sq2ρ2(u) + ρ2(lu) = ρ2(v)}.
+Lemma 2.4. The inclusion map
+SU(∞ ) → Spin(∞ ).
+induces an isomorphism πi(BSU(∞ )) → πi(BSpin(∞ )) for i ≤ 5.
+Proof. For restriction from C to R gives an isomorphism K−4(∗) = Z → KO−4(∗) = Z;
+the homotopy groups are zero for i < 4 and for i = 5. □
+Deﬁnition. The spin characteristic class in H 4(BSpin(∞ ); Z) corresponding to − c2 ∈
+H 4(BSU(∞ ); Z) is denoted by q1. For an oriented real vector bundle ξ admitting a
+spin structure, that is, such that w2(ξ) = 0, the characteristic class q1 is, as we show
+below, independent of the choice of spin structure and we wri te it as q1(ξ) ∈ H 4(M; Z).
+To see the independence we may argue as follows. Over the 5-sk eleton there is a
+complex vector bundle ζ with c1(ζ) = 0 that is isomorphic to ξ |M (5) as a real bundle.
+We must verify that c2(ζ) does not depend on the choice of an SU-structure. If ζ′is
+another such bundle, then ζ − ζ′is stably trivial as a real bundle and so, considered
+as a map M (5) → BSU, lifts to SO /SU. We have to show that c2(ζ − ζ′) = 0. But
+ρ2 : H 4(SO/SU; Z) → H 4(SO/SU; F2) = F2 is an isomorphism and ρ2(c2(ζ − ζ′)) =
+w4(ζ − ζ′) = 0..
+From the deﬁnition it is immediate that, for a spin bundle ξ, we have 2 q1(ξ) = p1(ξ)
+and ρ2(q1(ξ)) = w4(ξ). Note also that q1 is additive: q1(ξ ⊕ ξ′) = q1(ξ) + q1(ξ′) for
+two bundles ξ and ξ′admitting spin structures. A complex vector bundle ζ admits a
+spin structure if and only if c1(ζ) is divisible by 2, say equal to 2 m and then q1(ζ) =
+2m2 − c2(ζ) (which does not depend on the choice of m).
+We next extend this deﬁnition formally to a characteristic c lass for spin c-bundles.
+Let ξ now be a real vector bundle admitting a spin c structure. Thus w2(ξ) is the
+reduction (mod 2) ρ2(l) of an integral class l ∈ H 2(M; Z).
+Deﬁnition. For an orientable vector bundle ξ and class l ∈ H 2(M; Z) such that
+ρ2(l) = w2(ξ) we deﬁne
+q1(ξ; l) = q1(ξ − λ) ∈ H 4(M; Z),
+where λ is a complex line bundle with c1(λ) = l.
+It is elementary to verify that:
+2q1(ξ; l) = p1(ξ) − l2; ρ2(q1(ξ; l)) = w4(ξ);
+q1(ξ; l + 2m) = q1(ξ; l) − 2lm − 2m2 for m ∈ H 2(M; Z),
+and, if ζ is a complex bundle with c1(ζ) = l, then q1(ζ; l) = − c2(ζ).
+This invariant is enough to distinguish oriented vector bun dles over M − B.
+Proposition 2.5. Consider two oriented (stable) vector bundles ξ and ξ′over M − B
+with w2(ξ) = w2(ξ′) = ρ2(l), where l ∈ H 2(M; Z). Then ξ and ξ′are stably isomorphic
+if and only if q1(ξ; l) = q1(ξ′; l).
+
+=== PDF PAGE 5 ===
+OBSTRUCTION THEORY ON 8-MANIFOLDS 5
+Proof. For ξ − ξ′is a spin bundle with q1(ξ − ξ′) = 0. So ξ − ξ′is trivial over M (4),
+and hence, by (1.3), over M − B. □
+Remark 2.6. With the beneﬁt of hindsight it is now easy to rederive the mai n results
+of Hirzebruch and Hopf [16]. Let η be an oriented 4-dimensional real vector bundle
+with w2(η) the reduction of an integral class over a closed, connected , oriented 4-
+manifold N. Then η is isomorphic to a direct sum µ1 ⊕ µ2 of oriented 2-dimensional
+bundles with e(µi) = mi if and only if w2(η) = ρ2(l), where l = m1 + m2, e(η) = m1m2
+and p1(η) = m2
+1 + m2
+2 (= l2 − 2m1m2). For we have only to compare the classes q1(η; l)
+with q1(µ1 ⊕ µ2; l) and e(η) with e(µ1 ⊕ µ2). Similarly, η has a complex structure
+(compatible with its given orientation) with c1 = l if and only if w2(η) = ρ2(l) and
+p1(η) + 2e(η) = l2.
+3. The spin c index
+We turn next to the cohomological description of the fundame ntal splitting (1.2).
+The spin c index is given by
+(3.1) y ∈ K 0(M) ↦→ ind y = (e c/2 ˆA(τ M)ch(y))[M] ∈ Z.
+Here the Chern character, ch( y), of y has the explicit expansion:
+(3.2)
+ch(y) = dim y + c1 + (c2
+1 − 2c2)/2 + (c3
+1 − 3c1c2 + 3c3)/6+
+(c4
+1 − 4c2
+1c2 + 4c1c3 + 2c2
+2 − 4c4)/24 + . . . ,
+where the ci are the Chern classes of y, and
+ˆA(τ M) = 1 − p1(τ M)/24 + (− 4p2(τ M) + 7p2
+1(τ M))/5760 + · · · .
+The Chern character of the complexiﬁcation of a real class x ∈ KO0(M) is written in
+terms of the Pontrjagin classes pi of x as:
+(3.3) dim x + p1 + (p2
+1 − 2p2)/12 + . . .;
+for p1(x) = − c2(y) and p2(x) = c4(y), where y is the complexiﬁcation of x.
+Remark 3.1. From the Universal Coeﬃcient theorem and Poincar´ e duality for the
+oriented 8-dimensional manifold M one obtains a short exact sequence
+0 → T (H 2(M; Z)) ⊗ F2 → H 2(M; F2) → Hom(H 6(M; Z), F2) → 0,
+in which T denotes the torsion subgroup of an abelian group.
+When w2(M)·H 6(M; Z) = 0, or equivalently, by the Wu formula, when Sq2ρ2H 6(M; Z)
+= 0, we may choose a spin c-structure for M for which the characteristic class c is tor-
+sion and so disappears from the rational cohomology formula e.
+On the other hand, if w2(M) · H 6(M; Z) ̸= 0, then there is, for any chosen class c,
+an element t ∈ H 6(M; Z) such that ( c · t)[M] ∈ Z is odd.
+We can use the splitting to extend the description (2.3) of th e Chern classes of
+complex vector bundles over M − B to bundles over M.
+
+=== PDF PAGE 6 ===
+6 M. ˇCADEK, M. C. CRABB AND J. V AN ˇZURA
+Proposition 3.2. Consider cohomology classes l ∈ H 2(M; Z), u ∈ H 4(M; Z), v ∈
+H 6(M; Z), w ∈ H 8(M; Z). According to (2.3), there is a 4-dimensional complex
+vector bundle ζ over M − B with c1(ζ) = l, c2(ζ) = u and c3(ζ) = v if and only if
+Sq2ρ2u = ρ2(v + lu). In that case
+1
+2(u(u + q1(τ M; c) − 2l2 − 3cl − c2) + (2l + 3c)v)[M] ∈ Q
+is an integer, I say, and I (mod 6) is independent of the choice of c. Such a bundle
+extends over M to a complex vector bundle ζ with c4(ζ) = w if and only if
+w[M] ≡ I (mod 6).
+Proof. We observe, ﬁrst of all, that 4-dimensional complex vector b undles over an 8-
+dimensional space lie in the stable range, and so the problem is K-theoretic. By (1.2),
+the stable complex bundles y ∈ K 0(M) over M extending a given bundle over M − B
+are classiﬁed by the integer ind y ∈ Z. A computation using (3.1) and (3.2) shows
+that, for a bundle ζ with the given Chern classes and a complex line bundle λ with
+c1(λ) = l, we have
+ind(ζ − C4) − ind(λ − C) = 1
+6 (I − w[M]).
+The result follows. □
+In the same way, we may use the splitting of KO0(M) to distinguish oriented real
+vector bundles over M.
+Proposition 3.3. Let ξ and ξ′be oriented 8-dimensional real vector bundles over M
+with w2(ξ) = w2(ξ′) = ρ2(l), where l ∈ H 2(M; Z). Then ξ and ξ′are isomorphic if
+and only if
+a) q1(ξ; l) = q1(ξ′; l), b) p2(ξ) = p2(ξ′), c) e(ξ) = e(ξ′).
+Proof. Condition a) is necessary and suﬃcient for the restrictions of ξ and ξ′to M − B
+to be isomorphic. It implies, in particular, that p1(ξ) = p1(ξ′). And then ind( C ⊗
+ξ) = ind( C ⊗ ξ′) if and only if p2(ξ) = p2(ξ′), from (3.1) and (3.3). Hence a) and
+b) are necessary and suﬃcient conditions for ξ and ξ′to be stably isomorphic, by
+(1.2). Finally, equality of the Euler classes, (1.1), gives isomorphism as oriented vector
+bundles. □
+4. Reduction to U(4) : a complex structure
+Consider an oriented real vector bundle ξ of dimension 8 over M such that w2(ξ)
+lifts to an integral class l ∈ H 2(M; Z). We shall determine necessary and suﬃcient
+conditions for ξ to admit a complex structure with ﬁrst Chern class c1 = l. Notice that
+p2(ξ)− q2
+1(ξ; l) is divisible by 2 in H 8(M; Z), since ρ2(p2(ξ)− q2
+1(ξ; l)) = w2
+4(ξ)− w2
+4(ξ) =
+0.
+Proposition 4.1. (Heaps, ˇCadek and Vanˇ zura) Suppose that ξ is an oriented 8-
+dimensional real vector bundle over M admitting a spin c structure. Let l ∈ H 2(M; Z)
+
+=== PDF PAGE 7 ===
+OBSTRUCTION THEORY ON 8-MANIFOLDS 7
+be a class such that w2(ξ) = ρ2(l). Then the structure group SO(8) of ξ admits a reduc-
+tion to U(4) with c1 = l if and only if there is a class v ∈ H 6(M; Z) with ρ2(v) = w6(ξ)
+such that
+a) 1
+2(p2(ξ) − q2
+1(ξ; l))[M] ≡ J (mod 2) and b) p2(ξ) − q2
+1(ξ; l) = 2( e(ξ) − lv),
+where
+J = 1
+2 (q1(ξ; l)(q1(ξ; l) − q1(τ M; c) + 2l2 + 3lc + c2) + 3cv)[M]
+(which is an integer if ρ2(v) = w6(ξ)).
+Remark 4.2. The condition a), given that ρ2(v) = w6(ξ), is necessary and suﬃcient
+for the existence of a stable complex structure on ξ, that is, a complex structure on
+ξ ⊕ R2. (More precisely, if ξ has a stable complex structure outside a ﬁnite subset of
+M, then the sum of the local obstructions in π7(SO(∞ )/U(∞ )) = Z/2 to extending
+the stable structure to M is equal to 1
+2(p2(ξ) − q2
+1(ξ; l))[M] − J (mod 2).) If the class
+c can be chosen to be torsion, then the expression for J simpliﬁes, and, in particular,
+J does not depend on v. If not, then, as was observed in (3.1), there is a class t such
+that ( ct)[M] is odd, and v can be modiﬁed by addition of a multiple of 2 t to satisfy
+a). Thus, if w2(M)H 6(M; Z) ̸= 0, the only condition required for the existence of
+a stable complex structure with c1 = l is that w6(ξ) should be the reduction of an
+integral class. (Compare [15].)
+Proof. Suppose that there is a 4-dimensional complex vector bundle ζ, with Chern
+classes c1 = l, c2 = u, c3 = v, c4 = w, that is stably isomorphic to ξ. Then
+ρ2(v) = w6(ξ), u = − q1(ξ; l) and 2 w = p2(ξ) − q2
+1(ξ; l) + 2lv,
+because p2(ξ) = c4(ζ ⊕
+ζ) = 2 c4(ζ) − 2c1(ζ)c3(ζ) + c2
+2(ζ).
+Necessary and suﬃcient conditions for the existence of a sta ble complex structure on
+ξ are, therefore, given by (3.2) and (3.3) with J = I − (lv)[M]. (Notice that Sq 2w4(ξ) =
+w6(ξ) + w2(ξ)w4(ξ).) This reduces to the condition a), except that congruence is
+required (mod 6). But the congruence is automatically satis ﬁed (mod 3). For the
+integrality of ind( C ⊗ R ξ − C8) − ind(C ⊗ R λ − C2), where λ as before is a complex line
+bundle with c1 = l, gives
+(4.1) ( p2(ξ) − q2
+1(ξ; l))[M] ≡ (q1(ξ; l)(q1(ξ; l) − q1(τ M; c) + 2l2 + c2))[M] (mod 6) .
+(It is, of course, clear that there can be no 3-primary obstru ction to the existence of
+a stable complex structure on ξ, because 2 ξ = ξ ⊕ ξ admits a complex structure as
+C ⊗ R ξ.)
+Condition b) expresses the equality of the Euler classes req uired for isomorphism
+rather than stable isomorphism. □
+5. Reduction to Spinc(6) : a 2-field
+In this section we consider reduction to
+Spinc(6) → SO(6) → SO(8),
+where the ﬁrst homomorphism is the canonical projection and the second is the stan-
+dard inclusion.
+
+=== PDF PAGE 8 ===
+8 M. ˇCADEK, M. C. CRABB AND J. V AN ˇZURA
+There is an isomorphism
+{(z, g) ∈ T × U(4) |z2 = det g} → Spinc(6).
+Suppose that ζ is a 4-dimensional C-vector bundle over M, and λ a complex line
+bundle, and that we are given an isomorphism Λ 4ζ → λ ⊗ λ. Then λ∗⊗ Λ2ζ has a
+real structure as C ⊗ R η, where η is a 6-dimensional real vector bundle over M. The
+trivialization of Λ 6(λ∗⊗ Λ2ζ) = λ−6 ⊗ (Λ4ζ)3 gives an orientation of η.
+Lemma 5.1. The characteristic classes of η are as follows:
+w2(η) = ρ2(l), q 1(η; l) = l2 − c2(ζ),
+e(η) = c3(ζ) + lq1(η; l), p 2(η) = q2
+1(η; l) + 2le(η) − 4c4(ζ),
+where l = c1(λ) and the orientation of η is chosen appropriately.
+Proof. Over the 7-skeleton, the 4-dimensional complex vector bund le ( λ∗)2 ⊗ ζ has a
+non-zero section, and hence we can write ζ = ζ′⊕ λ2, with Λ 3ζ′= C. So λ∗⊗ Λ2ζ =
+(λ∗⊗ Λ2ζ′) ⊕ (λ ⊗ ζ′) and η is the underlying real bundle of λ ⊗ ζ′. This allows the
+computation of w2, q1 and e. The second Pontrjagin class is c4(λ∗⊗ Λ2ζ). □
+Proposition 5.2. Let ξ be an oriented 8-dimensional real vector bundle over M with
+w2(ξ) = ρ2(l), l ∈ H 2(M; Z). Let v ∈ H 6(M; Z). Then ξ admits a reduction of
+structure group to Spinc(6) with spin c characteristic class l and Euler class v if and
+only if the following conditions are satisﬁed.
+e(ξ) = 0; ρ2(v) = w6(ξ);
+( 1
+2 (p2(ξ) − q2
+1(ξ; l)) + q1(ξ; l)(q1(ξ; l) − q1(τ M; c) + 2l2 + 3lc + c2) + 3(l + c)v)[M]
+≡ 0 (mod 4) .
+Proof. We require a 4-dimensional complex vector bundle ζ over M with ﬁrst Chern
+class c1(ζ) = 2 l such that the associated bundle η satisﬁes:
+w2(ξ) = w2(η); q1(ξ; l) = q1(η; l); v = e(η); p2(ξ) = p2(η).
+This will guarantee that ξ and η ⊕ R2 are stably isomorphic. The vanishing of the
+Euler class e(ξ) will then be enough for the two vector bundles to be isomorph ic.
+The conditions for the existence of ζ are given in Proposition 3.2. One has ﬁrst
+Sq2(ρ2(l2 − q1(ξ; l))) = ρ2(v − lq1(ξ; l)),
+that is, Sq 2(w2
+2(ξ)+w4(ξ)) = ρ2(v)+w2(ξ)w4(ξ), which reduces to the obvious condition
+that ρ2(v) = w6(ξ). In the notation of Proposition 3.2 we ﬁnd that
+2I − 2w[M] = ( q1(ξ; l)(q1(ξ; l) − q1(τ M; c) + 2l2 + 3lc + c2) + l2q1(τ M; c)
+− l2(7l2 + 6cl + c2) + (4l + 3c)v)[M] + ( 1
+2 (p2(ξ) − q2
+1(ξ; l)) − lv)[M] ∈ 12Z.
+By considering the special case in which ξ = λ ⊕ R6, with q1(ξ; l) = 0 and p2(ξ) = 0,
+when we may take v = 0, we see that
+(l2(q1(τ M; c) − (7l2 + 6cl + c2)))[M] ∈ 12Z.
+
+=== PDF PAGE 9 ===
+OBSTRUCTION THEORY ON 8-MANIFOLDS 9
+This leads to the stated congruence, but (mod 12) instead of ( mod 4). However the
+congruence automatically holds (mod 3), by (4.1). □
+Remark 5.3. Given a complex line bundle µ over M, there is a similar necessary
+and suﬃcient condition for ξ to split as a sum η ⊕ µ. There are other methods when
+w2(ξ) = w2(M) or w2(µ) = w2(ξ) +w2(M); see [12] and [3]. The problems of reduction
+to U(4) and Spin c(6) are related, or rather the SU(4) and Spin(6) reductions - the cases
+in which l = 0. The correspondence is explained in [4].
+6. Reduction to U(3) : the adjoint representation
+For a ﬁnite dimensional complex Hilbert space V , let us write su(V ) for the Lie
+algebra of the special unitary group. Thus dim R su(V ) = (dim C V )2 − 1. In particular,
+taking V = C3, we have an 8-dimensional real representation su(C3) of U(3), and
+so, up to conjugation, a homomorphism ρ : U(3) → SO(8). (In fact, since ρ factors
+through the projective unitary group PU(3), which is a quoti ent of SU(3) by the central
+subgroup of order 3, the homomorphism must lift to U(3) → Spin(8).) In this section
+we investigate the reduction of the structure group of ξ over M to U(3).
+So suppose that ζ is a 3-dimensional complex (unitary) vector bundle over M. We
+form the associated Lie algebra bundle su(ζ) of real dimension 8.
+Lemma 6.1. The vector bundle su(ζ) is spin and its characteristic classes are as
+follows:
+w2(su(ζ)) = 0 , e (su(ζ)) = 0 ,
+q1(su(ζ)) = c2
+1(ζ) − 3c2(ζ), p 2(su(ζ)) = c4
+1(ζ) − 6c2
+1(ζ)c2(ζ) + 9c2
+2(ζ),
+w4(su(ζ)) = ρ2(c2
+1(ζ) + c2(ζ)), w 6(su(ζ)) = ρ2(c1(ζ)c2(ζ) + c3(ζ)).
+Proof. We may calculate in the torsion-free cohomology of BU(3) and so reduce to the
+case that ζ = µ1 ⊕ µ2 ⊕ µ3 is a sum of 3 complex line bundles. In that case we have
+the explicit description (using a bar for the complex conjug ate):
+su(ζ) = i R2 ⊕ ((
+µ1 ⊗ µ2) ⊕ (µ1 ⊗ µ3) ⊕ (µ2 ⊗ µ3))
+(as a real bundle). The computations are then straightforwa rd. □
+The standard method leads to necessary and suﬃcient conditi ons for reduction of
+the structure group.
+Proposition 6.2. Let ξ be an oriented 8-dimensional real vector bundle over M
+with w2(ξ) = 0 . Consider cohomology classes l ∈ H 2(M; Z), u ∈ H 4(M; Z), v ∈
+H 6(M; Z). Then there is a 3-dimensional complex vector bundle ζ over M such that
+su(ζ) ∼
+= ξ, with c1(ζ) = l, c2(ζ) = u and c3(ζ) = v, if and only if
+q1(ξ) = − 3u + l2; ρ2(v − lu) = w6(ξ); p2(ξ) = q2
+1(ξ); e(ξ) = 0;
+and
+1
+2 (u(u + q1(τ M; c) − c2) + (2l + 3c)(v − lu))[M] ≡ 0 (mod 6) .
+(It is to be understood in the statement that the expression i n the last line is integral
+if ρ2(v − lu) = w6(ξ).)
+
+=== PDF PAGE 10 ===
+10 M. ˇCADEK, M. C. CRABB AND J. V AN ˇZURA
+Proof. We require ﬁrst the existence of a complex vector bundle ζ as in Proposition
+3.2 with w = 0, so that ζ admits a nowhere zero cross-section. Then the conditions
+that q1(ξ) = l2 − 3u and p2(ξ) = l4 − 6l2u + 9u2 ensure that su(ζ) and ξ are stably
+isomorphic. Recall that ρ2(q1(ξ)) = w4(ξ), so that Sq 2ρ2(u) = Sq 2w4(ξ) = w6(ξ),
+because w2(ξ) = 0.
+Finally, equality of the Euler classes e(su(ζ)) = 0 = e(ξ) is necessary and suﬃcient
+for the two bundles to be isomorphic. □
+Remark 6.3. If µ is a complex line bundle, then su(µ ⊗ ζ) = su(ζ). Hence, the
+conditions above must be invariant under the transformatio n ζ ↦→ µ ⊗ ζ, that is:
+l ↦→ l + 3m, u ↦→ u + 2lm + 3m2, v ↦→ v + um + lm2 + m3, where c1(µ) = m.
+The conditions simplify if the manifold M is spin ( c = 0) and we look for an SU(3)-
+structure ( l = 0) on ξ.
+Corollary 6.4. Suppose that M is a spin manifold. Then the bundle ξ admits an
+SU(3)-structure if and only if w6(ξ) is the reduction of an integral class, e(ξ) = 0 , and
+there is a class u ∈ H 4(M; Z) such that
+q1(ξ) = − 3u, p2(ξ) = 9 u2 and 1
+2(u(u + q1(τ M)))[M] ≡ 0 (mod 6) .
+For the special case in which ξ = τ M, see [18] (although the argument there pur-
+porting to show that w6(M) = 0 seems to be incorrect).
+7. Quaternionic bundles
+Modules over a quaternion algebra are understood to be right modules unless explicit
+reference is made to left multiplication.
+Consider a complex line bundle λ over M, with c1(λ) = l. In order to use a spinor
+index in KO-theory, we require that ρ2(l) = w2(M).
+Let Hλ be the bundle of quaternion algebras associated with λ: Hλ = C ⊕ λ, where
+jz = zj for j ∈ S(λ), z ∈ C, and j2 = − 1. An Hλ-vector bundle is a complex vector
+bundle by restriction of scalars. We will say that a complex v ector bundle ζ admits
+an Hλ-structure if it has a compatible Hλ-multiplication. One can show that ζ has an
+Hλ-structure if and only if it has a non-singular skew-symmetr ic form ζ ⊗ ζ → λ. The
+next result, which goes back to an idea of Dupont [13], is fund amental.
+Lemma 7.1. Let β be a 3-dimensional complex vector bundle over M − B such that
+c1(β) = l and c3(β) = 0 . Then β has a nowhere-zero section over M − B and so splits
+as a direct sum β = C ⊕ µ, where µ is an Hλ-line bundle.
+Proof. We have to show that the sphere bundle S(β) has a section over M − B. The top
+obstruction is a class o in H 7(M − B; Z/2) (= H 7(M; Z/2)), because π6(S5) = Z/2.
+Consider an element x of H 1(M; Z/2), represented by a real line bundle ν. The zero-
+set of a generic cross-section of ν is a 7-dimensional submanifold N of M − B. It suﬃces
+to prove that o maps to zero in H 7(N; Z/2). For evaluation on the fundamental class
+[N] gives ( o · x)[M] ∈ Z/2. This is established by a KO-theory Hopf theorem. It will
+be convenient, as in [10] and [11], to use a local coeﬃcient no tation KO∗(M; α) for
+
+=== PDF PAGE 11 ===
+OBSTRUCTION THEORY ON 8-MANIFOLDS 11
+the reduced KO-theory ˜KO∗(M α) of the Thom space of a (virtual) real vector bundle
+α over M.
+The composition
+KO0(N; − β)
+η(ν)
+− − →KO0(N; ν − β)
+π!
+− →KO−2(∗) = Z/2,
+where η(ν) ∈ KO0(N; ν) is a twisted Hopf element (lifting the generator η of KO−1(∗) =
+Z/2) and π! is the index determined by the spin structure on τ M − β, maps the KO-
+Euler class γ(β) to ( o · x)[M] ∈ Z/2. Now there is a Z/2-equivariant lifting:
+KO0
+Z/2(N; − L ⊗ β)
+η(ν)
+− − →KO0
+Z/2(N; ν − L ⊗ β)
+π!
+− →KO−8
+Z/2(∗; − 6L) = Z,
+where L is the non-trivial 1-dimensional real representation of Z/2. (For more details,
+see [10].) But η(ν) is a torsion class. So the image of γ(L ⊗ β) in Z must be zero.
+Of course, a 2-dimensional complex bundle µ with c1 = l admits an Hλ-structure
+given by the exterior product to the determinant bundle rega rded as a skew-symmetric
+form µ ⊗ µ → Λ2µ ∼= λ. □
+8. Reduction from U(4) to Sp(2) ×{±1}U(1)
+Let ζ be a 4-dimensional complex vector bundle over M. The structure group U(4)
+of bundle ζ reduces to the subgroup Sp(2) ×{±1}U(1) if and only if there is a complex
+line bundle λ over M such that ζ has an Hλ-structure. For more details see [2].
+So consider a complex line bundle λ with c1(λ) = l and ρ2(l) = w2(M). We ask
+when the structure group of ζ can be reduced to an Hλ-structure. Simultaneously, we
+want to characterize the Chern classes of such vector bundle s.
+If an Hλ-vector bundle has a nowhere zero section, we can split oﬀ a tr ivial Hλ-line
+bundle. As a ﬁrst consequence, an m-dimensional Hλ-bundle over a 3-dimensional
+space must be trivial, that is, isomorphic to Hm
+λ , and so has c1 = ml, where l = c1(λ).
+Again we can treat the problem in three stages, starting with the stable question
+over M − B. An Hλ-bundle over M − B can be reduced to dimension 1 over Hλ because
+a higher dimensional bundle has a nowhere zero section. So a n ecessary condition for
+lifting ζ is that c3(ζ − Hλ) = 0, that is,
+c3(ζ) − lc2(ζ) + l3 = 0.
+In that case, we show that ( ζ − Hλ) |M − B can be reduced to complex dimension 2
+and so it has an Hλ-structure. Let β be a 3-dimensional complex vector bundle over
+M − B such that β ⊕ λ is stably isomorphic to ζ. (Such a bundle always exists.)
+Note that c1(β) = l. We are assuming that c3(β) = 0, so that β has a nowhere-zero
+cross-section over M − B by Lemma 7.1. This establishes:
+Lemma 8.1. A 4-dimensional complex bundle ζ has a stable Hλ-structure over M − B
+if and only if c1(ζ) = 2 l and c3(ξ) − lc2(ξ) + l3 = 0.
+The rest of the argument follows the familiar pattern. The st able Hλ-bundles are
+classiﬁed by a twisted K-group KSp0
+λ(M), which can be identiﬁed with the KO-group
+˜KO−2(M λ) of the Thom space of λ. (See [1] pp. 135–136 and [9] Chapter 9 for the
+twisted K-theory.) To describe the isomorphism, we think of ˜KO−2(M λ) as the KO-
+theory with compact supports KO0(C⊕ λ) of the total space of the bundle C⊕ λ = Hλ.
+
+=== PDF PAGE 12 ===
+12 M. ˇCADEK, M. C. CRABB AND J. V AN ˇZURA
+The isomorphism maps the class [ µ] ∈ KSpλ(M) of an Hλ-module µ over M to the
+class in KO(C ⊕ λ) given by the R-linear map
+µ → µ : x ↦→ xv
+over v ∈ Hλ = C ⊕ λ, which is an isomorphism outside the (compact) zero-sectio n.
+A spin structure on τ M+λ gives an index, or Gysin map KSp0
+λ(M) = ˜KO−2(M λ) →
+KO−4(∗) = Z. The corresponding splitting of the complex K-groups is that deﬁned
+by taking the spin c structure on M with characteristic class c = − l.
+Now we have a map from the KSpλ-sequence to the complex K-theory giving a
+commutative diagram
+Z = KSp0
+λ(M, M − B) − − − →
+←−−
+KSp0
+λ(M) → KSp0
+λ(M − B) → 0
+↓ 2× ↓ ↓
+Z = K 0(M, M − B) − − − →
+←−−
+K 0(M) → K 0(M − B) → 0
+in which the restriction from the twisted quaternionic to th e complex theory is multi-
+plication by 2 on the top cell Z.
+Taking the spin c structure on M with characteristic class c = − l, for ζ to admit an
+Hλ-structure we, thus, require that
+ind ζ = (e−l/2 ˆA(τ M)ch(ζ))[M] ∈ 2Z,
+since two stably isomorphic Hλ-bundles of dimension 2 over M are isomorphic. This
+leads to the following characterization.
+Proposition 8.2. Let λ be a complex line bundle over M with c1(λ) = l and ρ2(l) =
+w2(M). Consider cohomology classes u ∈ H 4(M ; Z) and w ∈ H 8(M ; Z). Then
+there is a 2-dimensional Hλ-vector bundle ζ over M − B with c2(ζ) = u if and only if
+Sq2ρ2u = ρ2(lu − l3). In that case c1(ζ) = 2 l, c3(ζ) = lu − l3 and the expression
+K = 1
+4 (p1(τ M)u + 2u2 + l2(3l2 − p1(τ M) − 5u))[M] ∈ Q
+is an integer. Such a bundle extends to an Hλ-bundle over M with c4(ζ) = w if and
+only if
+w[M] ≡ K (mod 12).
+Proof. A complex vector bundle over M of dimension 4 lies in the stable range, and
+so the problem is K-theoretic. Over M − B the solution is given by Corollary 2.3 and
+Lemma 8.1. Now elements y ∈ K 0(M) having Hλ-structure and extending a given
+element in K 0(M − B) are classiﬁed by even integers ind y. One can compute that
+ind ζ − ind H2
+λ = 1
+6(K − w[M]),
+and this completes the proof. □
+As immediate corrollaries we get
+
+=== PDF PAGE 13 ===
+OBSTRUCTION THEORY ON 8-MANIFOLDS 13
+Corollary 8.3. Let ξ be a 4-dimensional complex bundle over M, and let λ be a
+complex line bundle, with c1(λ) = l, such that ρ2(l) = w2(M). Then ξ admits an
+Hλ-structure if and only if
+c1(ξ) = 2 l; c3(ξ) − lc2(ξ) + l3 = 0
+and the expression
+K = 1
+4(p1(τ M)c2(ξ) + 2c2
+2(ξ) + l2(3l2 − p1(τ M) − 5c2(ξ)))[M] ∈ Q,
+which is always an integer (if the conditions above hold), sa tisﬁes
+K ≡ c4(ξ)[M] (mod 4) .
+Corollary 8.4. Let λ be a complex line bundle over M with c1(λ) = l and ρ2(l) =
+w2(M). Let u ∈ H 4(M; Z). Then there is an Hλ-line bundle η over M with ( c1(η) = l
+and) c2(η) = u if and only if Sq2ρ2(u) = ρ2(lu) and the integer
+1
+4 (p1(τ M)u + 2u2 − l2u)[M] ≡ 0 (mod 12) .
+Proof. If η is such an Hλ-line bundle, then ζ = η ⊕ Hλ is a 4-dimensional complex
+vector bundle with c1(ξ) = 2 l, c2(ξ) = u + l2, c3(ξ) = lu, c4(ξ) = 0. Conversely,
+if a 4-dimensional complex vector bundle ζ has these Chern classes and admits an
+Hλ-structure, then, since its Euler class is zero, it splits as a direct sum of an Hλ-line
+and a trivial Hλ summand. □
+9. Reduction to Spinc(4) and Spinc(3)
+Again let λ be a complex line bundle over M with c1(λ) = l and w2(M) = ρ2(l). We
+shall use the results of the last section on Hλ-line bundles to investigate the existence
+of Spin c(4) and Spin c(3)-structures on an 8-dimensional vector bundle ξ.
+Since Spin c(4) = (Sp(1) × Sp(1) × U(1))/{±(1, 1, 1)} any 4-dimensional real vector
+bundle η over M having a Spinc(4)-structure with characteristic class l can be expressed
+as
+η = Hom Hλ(ζ−, ζ+) = ζ+ ⊗ Hλ ζ∗
+−,
+where ζ+ and ζ−are right Hλ-line bundles over M and ζ∗
+−= Hom Hλ(ζ−, Hλ) is consid-
+ered as a left Hλ-line bundle.
+We may also think of η as the real form of the complex bundle ζ+ ⊗ C ζ∗
+−with the real
+structure given by the symmetric C-valued bilinear form arizing as the tensor product
+of a λ-valued skew-symmetric form on ζ+ and a λ∗-valued skew-symmetric form on ζ∗
+−.
+Lemma 9.1. The characteristic classes of η are:
+w2(η) = ρ2(l); w4(η) = w4(ζ+) + w4(ζ−);
+q1(η; l) = − (c2(ζ+) + c2(ζ−)); e(η) = c2(ζ+) − c2(ζ−),
+with the appropriate choice of orientation.
+Proof. Since c1(ζ+) = c1(ζ−) = l, by a splitting principle we may suppose that ζ+ =
+µ+ ⊕ λ ⊗ µ∗
++ and ζ−= µ−⊕ λ ⊗ µ∗
+−, where µ+ and µ−are complex line bundles. Using
+the description of C ⊗ R η as ζ+ ⊗ C ζ∗
+−, we may identify η with the complex bundle
+(µ∗
++ ⊕ λ∗⊗ C µ+) ⊗ C µ−. □
+
+=== PDF PAGE 14 ===
+14 M. ˇCADEK, M. C. CRABB AND J. V AN ˇZURA
+Proposition 9.2. ( ˇCadek and Vanˇ zura).Let ξ satisfy w2(ξ) = w2(M) = ρ2(l). Then
+the structure group of ξ can be reduced to Spinc(4) with characteristic class l if and
+only if there exist classes u+, u−∈ H 4(M; Z) such that the following conditions are
+satisﬁed.
+q1(ξ; l) = − (u+ + u−); w6(ξ) = 0; Sq 2ρ2u+ = ρ2(lu+);
+e(ξ) = 0; p2(ξ) = ( u+ − u−)2;
+1
+4 (u+(p1(τ M) + 2u+ − l2))[M] ≡ 0 (mod 12);
+1
+4 (u−(p1(τ M) + 2u−− l2))[M] ≡ 0 (mod 4) .
+Remark 9.3. The ﬁrst three conditions imply that Sq 2ρ2(u−) = ρ2(lu−). If the
+conditions on u+ and u−are satisﬁed, the last congruence holds also (mod 12). The
+integrality of ind( ξ − R8) ⊗ C − ind(λ + λ∗− C2) gives
+(q1(ξ; l)2 + q1(ξ; l)l2 + p2(ξ) − q1(ξ; l)p1(τ M))[M] ≡ 0 (mod 3) ,
+which is the sum of the (mod 3) congruences for u+ and u−.
+Proof. Given Hλ-line bundles ζ+ and ζ−with c2 equal to u+ and u−respectively, we
+construct η as above. Then η ⊕ R4 is isomorphic to ξ if and only if q1(η; l) = q1(ξ; l),
+p2(ξ) = p2(η) = e(η)2 and e(ξ) = e(η ⊕ R4) = 0. The existence of ζ+ and ζ−is
+guaranteed by Corollary 8.4. □
+The group Spin c(3) is isomorphic to Sp(1) ×{±1}U(1). By a similar argument, for
+any 3-dimensional spin c vector bundle α over M with w2(α) = ρ2(l) there is just one
+Hλ-line vector bundle ζ such that
+R ⊕ α = End Hλ(ζ) = ζ ⊗ Hλ ζ∗.
+Since w4(α) = 0, q1(α; l) = 2 u for an element u ∈ H 4(M; Z). From Lemma 9.1 and
+Corollary 8.4 we get
+Proposition 9.4. Let w2(M) = ρ2(l) and let u ∈ H 4(M; Z). Then there is a 3-
+dimensional vector bundle α over M with w2(α) = ρ2(l) and q1(α, l) = 2 u if and only
+if Sq2ρ2(u) = ρ2(lu) and the integer
+1
+4u(p1(τ M) − 2u − l2)[M] ≡ 0 (mod 12) .
+Proof. The conditions are necessary and suﬃcient for the existence of an Hλ-line bundle
+ζ with c1(ζ) = l and c2(ζ) = − u. Then α ⊕ R = ζ ⊗ Hλ ζ∗has the prescribed
+characteristic classes by Lemma 9.1. □
+Corollary 9.5. Let ξ be an 8-dimensional real vector bundle over M with w2(ξ) =
+w2(M) = ρ2(l). Then the structure group of ξ can be reduced to Spinc(3) with charac-
+teristic class l if and only if there exists a class u ∈ H 4(M; Z) such that the following
+
+=== PDF PAGE 15 ===
+OBSTRUCTION THEORY ON 8-MANIFOLDS 15
+conditions are satisﬁed.
+q1(ξ; l) = 2 u; w6(ξ) = 0; Sq 2ρ2u = ρ2(lu);
+e(ξ) = 0; p2(ξ) = 0;
+1
+4 (u(p1(τ M) − 2u − l2))[M] ≡ 0 (mod 4) .
+10. Reduction to Sp(2) ×{±1}U(1) and Sp(2) ×{±1}Sp(1) : a quaternionic
+structure
+It is straightforward now to give conditions for an 8-dimens ional real vector bundle
+ξ over M to admit an Hλ-structure.
+Proposition 10.1. ( ˇCadek and Vanˇ zura). Let λ be a complex line bundle over M
+with c1(λ) = l and w2(M) = ρ2(l). An oriented 8-dimensional real vector bundle ξ
+admits an Hλ-structure if and only if:
+a) w2(ξ) = 0 and w6(ξ) = w2(M)(w4(ξ) + w2
+2(M));
+b) 1
+2 (p2(ξ) − q2
+1(ξ))[M] ≡ 1
+4(2q2
+1(ξ) − p1(τ M)q1(ξ) + l2(p1(τ M) − 3q1(ξ) + l2))[M] (mod 4);
+c) 2 e(ξ) = p2(ξ) − q2
+1(ξ).
+Proof. Suppose that there is a 4-dimensional complex Hλ-vector bundle ζ with c2(ζ) =
+u and c4(ζ) = w stably isomorphic to ξ. Then
+w2(ξ) = ρ2(c1(ζ)) = ρ2(2l) = 0 ,
+u = − q1(ξ; 2l) = 2 l2 − q1(ξ),
+w6(ξ) = ρ2(c3(ζ)) = ρ2(lu − l3) = w2(M)(w4(ξ) + w2
+2(M)),
+2w = p2(ξ) − c2
+2(ζ) + 2c1(ζ)c3(ζ) = p2(ξ) − q2
+1(ξ).
+According to Proposition 8.2 necessary and suﬃcient condit ions for the existence
+of a stable Hλ-structure on ξ are then given by conditions a) and b) except that
+the congruence in (8.2) is required (mod 12). But the congrue nce is always satisﬁed
+(mod 3) since the integrality of ind( ξ ⊗ C − C8) − ind(2(λ ⊕
+λ) − C4) gives
+(4q2
+1(ξ) − 2p2(ξ) − q1(ξ)p1(τ M) + l2p1(τ M) − 2l4)[M] ≡ 0 (mod 3) .
+Condition c) expresses the equality of the Euler classes. □
+We next consider the extension to other twisted quaternioni c structures. Let α be
+a 3-dimensional oriented Euclidean vector bundle over M. Recall that an oriented 3-
+dimensional real inner product space V has a vector product × : V ⊗ V → V , which can
+be used to give R1⊕ V a quaternionic multiplication with (0 , x)·(0, y) = ( −⟨ x, y⟩, x× y)
+for x, y ∈ V . Applied to the ﬁbres of α, this gives the 4-dimensional real vector bundle
+R1 ⊕ α the structure of a bundle of quaternion algebras.
+When α = Ri ⊕ λ, we may identify R1 ⊕ α with the bundle Hλ already considered.
+We now investigate the more general problem of the existence of a right R1⊕ α-module
+structure on an 8-dimensional real vector bundle ξ. This is equivalent to reduction of
+the structure group to Sp(2) ×{±1}Sp(1). To apply the methods of this paper we must
+
+=== PDF PAGE 16 ===
+16 M. ˇCADEK, M. C. CRABB AND J. V AN ˇZURA
+require that w2(α) = w2(M) = ρ2(l). In that case, the bundle of algebras R1 ⊕ α is
+the endomorphism algebra of an Hλ-line bundle ζ:
+R1 ⊕ α = End Hλ(ζ).
+Notice that
+EndHλ(Hλ) = Hλ.
+Lemma 10.2. Let ξ be an 8-dimensional real vector bundle and let ζ be an Hλ-line
+bundle. Then ξ has an EndHλ(ζ)-structure if and only if there is a 2-dimensional
+Hλ-vector bundle η such that
+ξ ∼= HomHλ(ζ, η) = η ⊗ Hλ ζ∗.
+Proof. This is standard module theory: ζ is an invertible (EndHλ(ζ), Hλ)-bimodule. □
+Lemma 10.3. The characteristic classes of ξ = η ⊗ Hλ ζ∗where c1(ζ∗) = − l, c2(ζ) =
+− u and c1(η) = 2 l are
+w2(ξ) = 0; q1(ξ) = 2 u − c2(η) + 2l2;
+p2(ξ) = 2 c4(η) + c2(η)(c2(η) − 2u − 4l2) + 6u2 + 6ul2 + 4l2;
+e(ξ) = c4(η) + c2(η)u − l2u + u2.
+Proof. To compute the characteristic classes we can suppose that η is a sum of two
+Hλ-line bundles η1 ⊕ η2 and use Lemma 9.1. For instance, the computation of the
+Euler class is as follows:
+e(ξ) = e((η1 ⊕ η2) ⊗ Hλ ζ∗) = e(η1 ⊗ Hλ ζ∗)e(η2 ⊗ Hλ ζ∗)
+= (c2(η1) − c2(ζ∗))(c2(η2) − c2(ζ∗)) = c4(η) + c2(η)u − l2u + u2
+□
+Proposition 10.4. (See [5], Theorem 8.1). Let w2(M) = ρ2(l). Then an 8-dimensional
+oriented vector bundle ξ has an Hα-structure with w2(α) = ρ2(l) and q1(α; l) = 2 u if
+and only if w2(ξ) = 0 and the following conditions are satisﬁed.
+p2(ξ) − q2
+1(ξ) − 2e(ξ) = 0; w6(ξ) + w4(ξ)ρ2(l) + ρ2(l3) = 0; Sq 2ρ2u = ρ2(lu);
+1
+4 (u(p1(τ M) − 2u − l2))[M] ≡ 0 (mod 12);
+1
+4 (4q2
+1(ξ) − 2p2(ξ) − q1(ξ)p1(τ M) − 3l2q1(ξ) + l2p1(τ M) + l4
++ u(20u + 10l2 + 2p1(τ M)) − 12q1(ξ)u)[M] ≡ 0 (mod 4) .
+Substituting u = 0 we get the conditions from Proposition 10.1.
+Example 10.5. The quaternionic projective space HP 2, the Grassmannian G4,2(C)
+and the homogeneous space G 2/SO(4) are known to be quaternionic Kaehler mani-
+folds and therefore the structure groups of their tangent bu ndles can be reduced to
+Sp(2) ×{±1}Sp(1). Using our results we can say a little bit more.
+The tangent bundle τ (HP 2) has no complex structure (and hence no Hλ-structure),
+but it has an Hα-structure if and only if q1(α, 0) = 2 ka, where k ≡ 1, 9 (mod 24) and
+a is the generator of H 4(HP 2; Z).
+
+=== PDF PAGE 17 ===
+OBSTRUCTION THEORY ON 8-MANIFOLDS 17
+There are inﬁnitely many complex structures on τ (G4,2(C)), but none of them ex-
+tends to an Hλ-structure. The tangent bundle admits Hα-structures with q1(α, 0) =
+2ka2, where k ≡ 1, 9 (mod 12) and a generates H 2(G4,2; Z).
+In the case of τ (G2/SO(4)) our Proposition 10.4 can be used only to decide if ther e
+is an Hα-structure with w2(α) = w2(G2/SO(4)) = 0. And such a structure does not
+exist.
+Consider next the complex manifolds Vd = {(z0, · · · , z5) ∈ CP 5; zd
+0 + zd
+1 + · · ·+ zd
+5 =
+0}. Among them only V2 = G4,2(C) and V6 have almost quaternionic structures
+(see also [6]). The tangent bundle τ (V6), like τ (G4,2), has inﬁnitely many complex
+structures, none being a restriction of an Hλ-structure. But τ (V6) is an Hα-module
+for the bundles α with q1(α, 0) = 2 ka2, where k ≡ 1 (mod 4) and a is a generator of
+H 2(V6; Z).
+11. Reduction to Spinc(5) : a 3-field
+Consider the composition
+Sp(2) ×{±1}U(1) = Spin c(5) → SO(5) → SO(8)
+of the canonical map and the standard inclusion. Suppose tha t λ is a complex line
+bundle over M and that ζ is a 2-dimensional Hλ-bundle. Then the 6-dimensional
+complex bundle λ∗⊗ Λ2ζ has a trivial 1-dimensional summand given by the (dual of
+the) skew form ζ ⊗ ζ → λ and a real structure given by a symmetric C-valued form on
+λ∗⊗ Λ2ζ. So we may write λ∗⊗ C Λ2ζ = C ⊗ R (R ⊕ η) for a 5-dimensional real vector
+bundle η.
+Lemma 11.1. The characteristic classes of η are:
+w2(η) = ρ2(l); w4(η) = ρ2(l2) + w4(ζ);
+q1(η; l) = l2 − c2(ζ) : p2(η) = q2
+1(η; l) − 4c4(ζ).
+Proof. Apply Lemma 5.1 to η ⊕ R. □
+Proposition 11.2. (Crabb and Steer). Suppose that w2(M) = w2(ξ) = ρ2(l). Then
+ξ admits a Spinc(5)-structure with characteristic class l if and only if the following
+conditions hold.
+w6(ξ) = 0; e(ξ) = 0;
+( 1
+2 (p2(ξ) − q2
+1(ξ; l)) + 1
+2(2q2
+1(ξ; l) − q1(ξ; l)p1(τ M) + q1(ξ; l)l2))[M] ≡ 0 (mod 8) .
+Proof. The proof follows the same pattern as that of Proposition 5.2 , only that instead
+of Proposition 3.2 we use Proposition 8.2. (If e(ξ) = 0, the last congruence is always
+satisﬁed (mod 3) by (4.1).) □
+Next we describe when a given 8-dimensional vector bundle ha s a 3-dimensional
+subbundle. To do so, we will need the following statement:
+Proposition 11.3. Let w2(M) = ρ2(l). Consider cohomology classes u ∈ H 4(M; Z)
+and z ∈ H 8(M; Z). Then there is a 5-dimensional vector bundle β over M with
+
+=== PDF PAGE 18 ===
+18 M. ˇCADEK, M. C. CRABB AND J. V AN ˇZURA
+w2(β) = ρ2(l), q1(β; l) = u and p2(β) = z if and only if Sq2ρ2(u) = ρ2(lu) and there is
+a class w ∈ H 8(M; Z) such that 4w = u2 − z and the integer
+w[M] ≡ 1
+4 u(2u − p1(τ M) + l2)[M] (mod 12) .
+Proof. This follows from Lemma 11.1 and Proposition 8.2. □
+Corollary 11.4. ( ˇCadek, Vanˇ zura).Let w2(M) = ρ2(l) and let ξ satisfy w2(ξ) = 0 .
+Then ξ has a 3-dimensional subbundle α with characteristic classes w2(α) = ρ2(l) and
+q1(α; l) = 2 u if and only if the following conditions are satisﬁed.
+e(ξ) = 0; w6(ξ) + w4(ξ)ρ2(l) + ρ2(l3) = 0; Sq 2ρ2u = ρ2(lu);
+1
+4(u(p1(τ M) − 2u − l2))[M] ≡ 0 (mod 12);
+1
+4 (p2(ξ) + q2
+1(ξ) − q1(ξ)p1(τ M) − 3l2q1(ξ) + l2p1(τ M) + l4
++ u(20u + 10l2 + 2p1(τ M) − 12q1(ξ))[M] ≡ 0 (mod 4) .
+Proof. The conditions on u ensure the existence of a 3-dimensional vector bundle α
+with q1(α; l) = 2 u. It remains to show that the other conditions ensure the exis tence of
+a 5-dimensional vector bundle β with w2(β) = ρ2(l), q1(β; − l) = q1(ξ) − q1(α; l) − l2 =
+q1(ξ) − 2u − l2 and p2(β) = p2(ξ) − p1(β)p1(α) = p2(ξ) − (4u + l2)(2q1(ξ) − 4u − l2).
+This can be done using the previous proposition. □
+Remark 11.5. In [4] a certain automorphism ϕ of the group Spin(8) was found such
+that an 8-dimensional vector bundle ξ with the spin structure ξ admits reduction to
+Sp(2) ×{±1}Sp(1) if and only if a vector bundle η with spin structure η = ϕ∗(ξ) has a
+3-dimensional subbundle ([4], Theorem 3.2). Moreover, ϕ∗in the integer cohomology
+of BSpin(8) was computed as
+ϕ∗(q1) = q1; ϕ∗(e) = − q2; ϕ∗(q2) = − e.
+Here q2 is uniquely deﬁned by the equation p2 = q2
+1 + 2e + 4q2. This relates reductions
+to Sp(2) ×{±1}Sp(1) with reductions to Spin(5) ×{±1}Spin(3) and allows us to deduce
+Proposition 10.4 from Corrolary 11.4.
+References
+[1] M.F. Atiyah and E.G. Rees, Vector bundles on projective 3-space, Invent. math. 35 (1976),
+131–153
+[2] M. ˇCadek, M.C. Crabb and J. Vanˇ zura, Quaternionic structures , in preparation, to appear in
+Mathematics ArXiv
+[3] M. ˇCadek and J. Vanˇ zura,On 2-distributions in 8-dimensional vector bundles over 8-complexes,
+Colloq. Math. 70 (1996), 25–40
+[4] M. ˇCadek and J. Vanˇ zura,On complex structures in 8-dimensional vector bundles , manuscripta
+math. 95 (1998), 323–330
+[5] M. ˇCadek and J. Vanˇ zura,On Sp(2) and Sp(2)·Sp(1)-structures in 8-dimensional vector bundles ,
+Publ. Math. 41 (1997), 383–401
+[6] M. ˇCadek and J. Vanˇ zura, Almost quaternionic structures on eight-manifolds , Osaka J. Math.
+35 (1998), 165–190
+[7] M. ˇCadek and J. Vanˇ zura,On 4-ﬁelds and 4-distributions in 8-dimensional vector bundles over
+8-complexes, Colloq. Math. 76 (1998), 213–228
+
+=== PDF PAGE 19 ===
+OBSTRUCTION THEORY ON 8-MANIFOLDS 19
+[8] M. ˇCadek and J. Vanˇ zura,Various structures in 8-dimensional vector bundles over 8-manifolds,
+Banach Center Publications 45 (1998), 183–197
+[9] M.C. Crabb, Z/2-Homotopy Theory, Cambridge University Press, Cambridge, 1980
+[10] M.C. Crabb, On the KO Z/2-Euler class, I , Proc. Roy. Soc. Edinburgh 117A (1991), 115–137
+[11] M.C. Crabb, On the KO Z/2-Euler class, II , Proc. Roy. Soc. Edinburgh 117A (1991), 139–154
+[12] M.C. Crabb and B. Steer, Vector-bundle monomorphisms with ﬁnite singularities , Proc. London
+Math. Soc. 30 (1975), 1–39
+[13] J.L. Dupont, K-theory obstructions to the existence of vector ﬁelds , Acta Math. 133 (1974),
+67–80
+[14] H. Geiges and S. M¨ uller, Almost complex structures on 8-manifolds , Enseign. Math. 42 (2000),
+95–107
+[15] T. Heaps, Almost complex structures on eight- and ten-dimensional ma nifolds, Topology 9 (1970),
+111–119
+[16] F. Hirzebruch and H. Hopf, Felder von Fl¨ achenelementen in4-dimensionalen Mannigfaltigkeiten,
+Math. Ann. 136 (1958), 156–172
+[17] E. Thomas, Complex structures on real vector bundles , Am. J. Math. 89 (1967), 887–908
+[18] F. Witt, Special metric structures and closed forms , D. Phil. thesis, University of Oxford, 2004
+(available at ArXiv math.DG/0502443)
+[19] L.M. Woodward, The classiﬁcation of orientable vector bundles over CW-com plexes of small
+dimension, Proc. Roy. Soc. Edinburgh 92A (1982),175–179
+Department of Mathematics, Masaryk University, Kotl ´aˇrsk´a 2, 611 37 Brno, Czech
+Republic
+E-mail address : cadek@math.muni.cz
+Department of Mathematical Sciences, University of Aberdeen , Aberdeen AB24 3UE,
+U.K.
+E-mail address : m.crabb@maths.abdn.ac.uk
+Academy of Sciences of the Czech Republic, Institute of Math ematics, ˇZiˇzkova 22,
+616 62 Brno, Czech Republic
+E-mail address : vanzura@ipm.cz

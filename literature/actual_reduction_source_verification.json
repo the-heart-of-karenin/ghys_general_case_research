@@ -1,0 +1,26 @@
+[
+  {
+    "filename": "25_Sadovek_Schutte_2026_Complex_line_fields.pdf",
+    "title": "Complex line fields on almost-complex manifolds",
+    "download_url": "https://link.springer.com/content/pdf/10.1007/s00208-026-03440-6.pdf",
+    "landing_url": "https://doi.org/10.1007/s00208-026-03440-6",
+    "publication_note": "Mathematische Annalen 395, article 46 (2026); published 30 April 2026",
+    "collected_utc": "2026-10-18T01:54:49.122768+00:00",
+    "resolved_url": "https://link.springer.com/content/pdf/10.1007/s00208-026-03440-6.pdf?error=cookies_not_supported&code=33ce0423-f945-4ae5-b8e7-b252e88c5475",
+    "bytes": 958143,
+    "sha256": "3bd9cb09db4865f45653b92eb11354ec0bb8e8a4398c9b52749d8acd8ac791b2",
+    "pages": 67
+  },
+  {
+    "filename": "26_Cadek_Crabb_Vanzura_2010_Quaternionic_structures.pdf",
+    "title": "Quaternionic structures",
+    "download_url": "https://www.math.muni.cz/~cadek/papers/qst_rev.pdf",
+    "landing_url": "https://doi.org/10.1016/j.topol.2010.09.005",
+    "publication_note": "Author manuscript dated 17 September 2010; Topology and its Applications 157 (2010)",
+    "collected_utc": "2026-10-18T01:54:49.124742+00:00",
+    "resolved_url": "https://www.math.muni.cz/~cadek/papers/qst_rev.pdf",
+    "bytes": 256319,
+    "sha256": "37637296e91fdfa75d548dacf461d2aa3807db3d5ea64f58e9681a65692371a9",
+    "pages": 20
+  }
+]

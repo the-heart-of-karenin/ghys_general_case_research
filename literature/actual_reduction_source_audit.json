@@ -1,0 +1,70 @@
+{
+  "audited_utc": "2026-10-18T02:22:58.208818+00:00",
+  "source_count": 7,
+  "visual_pages": 20,
+  "sources": [
+    {
+      "filename": "23_Cadek_Crabb_Vanzura_2008_Obstruction.pdf",
+      "sha256": "7a9dbfd28463d2c12221d019a866f638e8e2f6c28d88f54eea8682ff40b017a5",
+      "verified_complete_visual_pages": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "filename": "24_Kapfer_2016_Integral_cohomology.pdf",
+      "sha256": "a550dd86e4958a08ef44d55d9e021f1b321b0aa5b010b2d8676215467a037d6f",
+      "verified_complete_visual_pages": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "filename": "27_Klein_Williams_2007_Homotopical_intersection.pdf",
+      "sha256": "cc0268531f8bebd2902ea6a37ceeb5a3bec6dac2b2cf9ea874c431b05514b349",
+      "verified_complete_visual_pages": [
+        8,
+        10,
+        14
+      ]
+    },
+    {
+      "filename": "28_Zibrowius_2011_Witt_groups_cellular_varieties.pdf",
+      "sha256": "792082abded6cf93f4cbb1b93283e90148fca5f6eb2c573f170e8dc1d2cc3aae",
+      "verified_complete_visual_pages": [
+        24,
+        27
+      ]
+    },
+    {
+      "filename": "29_Kapfer_Menet_2018_Kummer_integral_cohomology.pdf",
+      "sha256": "0fe5f51417da2fc9f220fa7f6e75cd9d1499ce2a708047371ecf6d5fa3daf83e",
+      "verified_complete_visual_pages": [
+        16,
+        17,
+        21,
+        23,
+        25,
+        34
+      ]
+    },
+    {
+      "filename": "30_Kapfer_Menet_2020_Kummer_corrigendum.pdf",
+      "sha256": "8a4ba9764b5f84126161a96d6f2729612e75646ea95c45be266ad289a93ee081",
+      "verified_complete_visual_pages": [
+        1
+      ]
+    },
+    {
+      "filename": "31_Meachan_2015_Derived_autoequivalences_Kummer.pdf",
+      "sha256": "ae54892cf7c2bcbf2c5a7b7bcc93ea4f995dbcb99d78981383576b62b9f6eb05",
+      "verified_complete_visual_pages": [
+        5,
+        6
+      ]
+    }
+  ],
+  "scope": "Source identities and cited theorem pages verified. This audit does not automate the mathematical proofs."
+}
