@@ -1,0 +1,2417 @@
+=== PDF PAGE 1 ===
+THE ASCENDING CENTRAL SERIES OF NILPOTENT LIE ALGEBRAS
+WITH COMPLEX STRUCTURE
+ADELA LATORRE, LUIS UGARTE, AND RAQUEL VILLACAMPA
+Abstract. We obtain several restrictions on the terms of the ascending central series of a nilpotent Lie
+algebra g under the presence of a complex structure J. In particular, we ﬁnd a bound for the dimension
+of the center of g when it does not contain any non-trivial J-invariant ideal. Thanks to these results,
+we provide a structural theorem describing the ascending central series of 8-dimensional nilpotent Lie
+algebras g admitting this particular type of complex structures J. Since our method is constructive, it
+allows us to describe the complex structure equations that parametrize all such pairs pg, Jq.
+Contents
+1. Introduction 1
+2. Classes of complex structures on a nilpotent Lie algebra g 2
+3. Strongly non-nilpotent complex structures 5
+3.1. Restrictions on the ascending central series tgkuk 6
+3.2. Dimension of the center 9
+3.3. Some consequences and applications 13
+4. The 8-dimensional case 15
+4.1. The term g2 16
+4.2. The terms g3 and g4 18
+4.2.1. Study for dim g2“ 3 18
+4.2.2. Study for dim g2“ 4 22
+4.2.3. Study for dim g2“ 5 24
+4.3. Complex structure equations 25
+Acknowledgments 28
+References 28
+1. Introduction
+Let g be an even-dimensional real Lie algebra. A complex structure on g is an endomorphism J : gÝÑ g
+satisfying J2“´ Id and the “Nijenhuis condition”
+(1) NJpX,Y q :“rX,Y s` JrJX,Y s` JrX,JY s´r JX,JY s“ 0,
+for all X,Y P g. Finding Lie algebras endowed with such structures constitutes an interesting problem
+with important algebraic and geometrical applications. In the last years several results on classiﬁcations of
+Lie algebras g admitting complex structures J have been published, mainly dealing with low dimensions.
+In the 4-dimensional case, the solvable Lie algebras admitting a complex structure were classiﬁed by
+Ovando in [19]. Concerning dimension 6, Andrada, Barberis, and Dotti classiﬁed in [1] the pairs pg,Jq
+where g is any Lie algebra and J is an abelian complex structure, i.e. J satisﬁesrJX,JY s“r X,Y s for
+everyX,Y P g. The classiﬁcation of 6-dimensional nilpotent Lie algebras that admit a complex structure
+(not necessarily abelian) was achieved by Salamon in [20]. Later, the diﬀerent complex structures on each
+of these algebras were classiﬁed by Ceballos, Otal, Ugarte, and Villacampa in [6]. In the 6-dimensional
+solvable case, complex structures of certain speciﬁc types are studied in [3] and [13]. The existence
+2000 Mathematics Subject Classiﬁcation. Primary 17B30; Secondary 53C30, 53C15.
+1
+
+=== PDF PAGE 2 ===
+2
+of complex structures on 6-dimensional product Lie algebras have been recently investigated in [10].
+However, apart from some classiﬁcations of complex paralellizable structures, i.e. those coming from
+complex Lie algebras (see e.g. [15, 18]), little is yet known in real dimensions higher than six.
+In this paper we focus on nilpotent Lie algebras. Fixed an even real dimension 2n, it seems clear that the
+knowledge of a classiﬁcation of 2n-dimensional nilpotent Lie algebras could be of great help in the study of
+existence of complex structures. Nonetheless, complete classiﬁcations are only known up to dimension 7
+(see [15] and the references therein). Hence, in order to investigate the pairs pg,Jq in dimension 2ně 8,
+other techniques are needed. In fact, when dealing with high dimensional cases, most of the eﬀorts have
+been directed to obtain algebraic constraints to the existence of complex structures, see for instance the
+papers [5, 14, 16] for quasi-ﬁliform Lie algebras, and the results in [17] bounding the nilpotency step of
+nilpotent Lie algebras admitting complex structures. Although some partial classiﬁcations are achieved
+in eight dimensions, they generally require additional conditions, such as the existence of hypercomplex
+structures [11], SKT metrics [12], or balanced metrics compatible with abelian complex structures [2].
+Some other partial results on the construction of complex structures have been recently obtained in [4].
+Our main objective here is to develop a method for constructing all complex structures on even-
+dimensional nilpotent Lie algebras g. This method will allow us to obtain several restrictions on the
+terms of the ascending central series of g imposed by the existence of a complex structure. Among them,
+we prove an upper bound on the dimension of the center of g when this subspace does not contain any
+non-trivialJ-invariant ideal. In such case, a structural theorem in eight dimensions is provided, together
+with a parametrization of the space of complex structures. We next explain in detail the contents of the
+paper.
+In Section 2 we consider a partition of the space of complex structures J on a nilpotent Lie algebra g
+into quasi-nilpotent and strongly non-nilpotent structures (see Deﬁnition 2.2 and Figure 1). The ﬁrst class
+is given by those J’s for which there exists a non-trivial J-invariant ideal in the center of g. We notice
+that this class contains those complex structures of nilpotent type [9]. The second class appeared for the
+ﬁrst time in [8], and we will simply refer to it as the class of SnN complex structures. After showing
+that quasi-nilpotent complex structures can be constructed as a certain extension of lower dimensional
+structures, we notice that the essentially new complex structures that arise in each even real dimension
+are the SnN ones. For this reason, in the rest of the paper we mainly focus on these complex structures.
+In Section 3 we obtain algebraic constraints to the existence of strongly non-nilpotent complex struc-
+tures J on a nilpotent Lie algebra g in terms of its ascending central series tgkuk. One can think of
+SnN complex structures as those J’s for which the spaces gk are far from being J-invariant. This will be
+reﬂected in the fact that the center g1 of g is rather small, whereas the nilpotency step of g can be rather
+large. Indeed, in Section 3.1 we prove, among other restrictions for the terms gk, that the nilpotency
+step s of g satisﬁes s ě 3, and in Section 3.2 we obtain an upper bound for the dimension of g1. An
+application to the study of existence of complex structures on products of nilpotent Lie algebras is given
+in Section 3.3.
+Section 4 is devoted to dimension 8. The main result is Theorem 4.1, which gives the structure of the
+ascending central series of 8-dimensional nilpotent Lie algebras g admitting an SnN complex structure J.
+For the proof of this result we construct a doubly adapted basis for each pair pg,Jq (see Deﬁnition 4.11)
+which allows us to explicitly describe the terms gk in the ascending central series of g. Indeed, in eight
+dimensions one has that dim g1“ 1 and g5“ g (sincesď 5). In Section 4.1 we focus on the space g2 and
+ﬁnd its possible dimensions, together with its description in terms of appropriate generators. A similar
+analysis is made in Section 4.2 for g3 and g4. Finally, since our method is constructive, it allows us to
+describe in Section 4.3 the complex structure equations that parametrize all the strongly non-nilpotent
+complex structures on nilpotent Lie algebras of dimension 8.
+2. Classes of complex structures on a nilpotent Lie algebra g
+In this section we introduce diﬀerent classes of complex structures on a nilpotent Lie algebra g, and we
+show that those complex structures J for which the center of g contains a non-trivial J-invariant ideal
+are a certain extension of lower dimensional pairs p˜g, ˜Jq. As a consequence, we arrive at the fact that
+
+=== PDF PAGE 3 ===
+3
+the essentially new complex structures that arise in each even real dimension are the so-called strongly
+non-nilpotent complex structures.
+The ascending central series of a Lie algebra g is given by tgkuk, where
+(2)
+#
+g0“t 0u, and
+gk“tXP g|rX, gsĎ gk´1u, for kě 1.
+Observe that g1“Zpgq is the center of g. The Lie algebra g is said to be nilpotent if there is an integer
+sě 1 such that gk“ g for every kěs. In this case, the smallest integer s satisfying the latter condition
+is called the nilpotency step of g, and the Lie algebra is said to be s-step nilpotent.
+Let g be a nilpotent Lie algebra (NLA for short) of real dimension 2 n. We introduce the following
+terminology:
+Deﬁnition 2.1. An NLA g has ascending type pm1,...,m sq if s is the nilpotency step of g and mk “
+dim gk for each 1ďkďs, being gk the terms in the ascending central series tgkuk of g.
+Thus, any NLA g has an associated s-tuple
+pm1,...,m s´1,msq :“p dim g1,..., dim gs´1, dim gsq
+which strictly increases, i.e. 0 ăm1ă¨¨¨ăms´1ăms“ 2n. Notice that m1 is precisely the dimension
+of the center of g. Moreover, since g is nilpotent one has that dim gs´1ď 2pn´ 1q, and the nilpotency
+step veriﬁes sď 2n´ 1.
+Obviously, NLAs with diﬀerent ascending type are non-isomorphic. However, the converse is only true
+up to real dimension 4. Indeed, there are three non-isomorphic 4-dimensional NLAs whose ascending
+types are p4q,p2, 4q, and p1, 2, 4q. In contrast, there exist four non-isomorphic 6-dimensional NLAs with
+the same ascending typep2, 6q (see for instance [7], where the ascending type of every 6-dimensional NLA
+is given).
+We observe that the existence of a complex structure J on an NLA g imposes restrictions on the
+ascending type of g. These restrictions are completely known up to dimension 6 (see [7, 20, 21]), but they
+are still to be understood in higher dimensions. With this goal in mind, we will ﬁrst reduce the problem
+to a speciﬁc class of complex structures that we will next introduce.
+Let J be a complex structure on g, that is, an endomorphism J : gÝÑ g satisfying J2“´ Id and the
+integrability condition (1). As it was observed in [9], the terms gk in the series (2) may not be invariant
+under J. For this reason, a new series takpJquk adapted to the complex structure J is introduced in [9],
+namely:
+(3)
+#
+a0pJq“t 0u, and
+akpJq“t XP g|rX, gsĎ ak´1pJq andrJX, gsĎ ak´1pJqu, for kě 1.
+We will refer to the series takpJquk as the ascendingJ-compatible series of g.
+Note that every akpJqĎ gk is an even-dimensional J-invariant ideal of g satisfying 0 ď dim akpJqď
+mk, for every kě 1. In particular, a1pJq is the largest subspace of the center g1 which is J-invariant.
+Deﬁnition 2.2. A complex structure J on an NLA g is said to be
+(i) strongly non-nilpotent , or SnN for short, if a1pJq“t 0u;
+(ii) quasi-nilpotent , if it satisﬁes a1pJq‰t 0u; moreover, J will be called
+(ii.1) nilpotent , if there exists an integer tą 0 such that atpJq“ g,
+(ii.2) weakly non-nilpotent , if there is an integer tą 0 such that atpJq“ alpJq, for every lě t,
+and atpJq‰ g.
+The notion of nilpotent complex structure was ﬁrst introduced and studied in [9], whereas that of
+strongly non-nilpotent appeared for the ﬁrst time in [8].
+Let us remark that the ﬁrst division above is based on whether the ascending J-compatible se-
+ries takpJquk of g is trivially zero or not. Also notice that non-nilpotent structures are those satisfy-
+ing akpJq‰ g, for every kě 1, and they can be either weakly or strongly non-nilpotent.
+
+=== PDF PAGE 4 ===
+4
+Figure 1. Partition of the space of complex structures.
+It is well known that in dimension 4, any complex structure on an NLA is nilpotent. In dimension 6,
+any complex structure is either nilpotent or strongly non-nilpotent. Moreover, these two classes cannot
+coexist on the same 6-dimensional NLA (see [7, 20, 21]).
+We next show that weakly non-nilpotent complex structures appear for the ﬁrst time in dimension 8.
+Furthermore, we illustrate that diﬀerent classes of complex structures can coexist on the same NLA when
+the dimension is greater than 6.
+Example 2.3. Let g be the 8-dimensional NLA given by the basis tX1,...,X 8u, in terms of which the
+non-zero brackets are
+rX1,X 3s“r X2,X 4s“ X6, rX3,X 5s“´ X1, rX4,X 5s“´ X2.
+The ascending central series (2) of g is the following one:
+g1“xX6,X 7,X 8y, g2“xX1,X 2,X 6,X 7,X 8y, g3“ g,
+which implies that g has ascending type p3, 5, 8q.
+LetJ be the almost complex structure deﬁned by
+JX1“X2, JX3“X4, JX5“X6, JX7“X8.
+It is easy to see that NJ ” 0, i.e. J is integrable, and the ascending J-compatible series (3) of g satisﬁes
+a1pJq“ alpJq“x X7,X 8y, for every lě 1. Hence, the complex structure J is weakly non-nilpotent.
+Let us observe that we can also deﬁne a nilpotent complex structure ˆJ on g as follows:
+ˆJX1“X2, ˆJX3“X4, ˆJX5“X8, ˆJX6“´X7.
+Indeed,N ˆJ ” 0 and a1p ˆJq“x X6,X 7y, a2p ˆJq“x X1,X 2,X 6,X 7y, and a3p ˆJq“ g.
+The following example shows that even nilpotent and strongly non-nilpotent complex structures can
+coexist on the same NLA. It should be noted that the dimension of the Lie algebra is 10 (see Corollary 3.13,
+where this is proved to be the smallest dimension where this phenomenon can occur).
+Example 2.4. [9] Let g be the nilpotent Lie algebra of dimension 10 deﬁned by a basis tX1,...,X 10u
+with non-zero brackets
+rX3,X 9s“r X4,X 10s“ X1, rX5,X 9s“r X6,X 10s“ X2,
+rX7,X 9s“ X3, rX7,X 10s“ X4, rX8,X 9s“ X5, rX8,X 10s“ X6.
+It is easy to see that g1“xX1,X 2y, g2“xX1,X 2,X 3,X 4,X 5,X 6y, and g3“ g. Hence, g has ascending
+typep2, 6, 10q.
+The almost complex structure J given by
+JX1“´X7, JX 2“´X8, JX 3“X4, JX 5“X6, JX 9“X10
+is integrable. Moreover, J is strongly non-nilpotent since a1pJq“t 0u.
+On the other hand, ˆJ deﬁned by
+ˆJX1“X2, ˆJX3“X4, ˆJX5“X6, ˆJX7“X8, ˆJX9“X10
+is also a complex structure on g, and it satisﬁes a1p ˆJq“ g1, a2p ˆJq“ g2, and a3p ˆJq“ g. Therefore, ˆJ is
+a nilpotent complex structure on g.
+
+=== PDF PAGE 5 ===
+5
+One can see from Deﬁnition 2.2 that complex structures J of quasi-nilpotent type on an NLA g are,
+up to a certain point, compatible with the nilpotent structure of g. One can take advantage of this fact,
+as we next show following the ideas in [8, 9].
+LetJ be a complex structure on an NLA g such that a1pJq‰t 0u. The ascending J-compatible series
+of g satisﬁes
+t0u“ a0pJqĹ a1pJqĹ ... Ĺ at´1pJqĹ atpJq“ alpJq, for lět,
+being t the smallest integer for which the series stabilizes. It is worth noting that t does not necessarily
+coincide with the nilpotency step s of the Lie algebra g (see Example 2.3). Nonetheless, one always
+has tďs.
+We consider the following sequence of quotient Lie algebras
+gÝÑ g{a1pJqÝÑ¨¨¨ÝÑg{aqpJq
+πq`1
+ÝÑ g{aq`1pJqÝÑ¨¨¨ÝÑg{atpJq,
+where πq`1 is the natural projection onto g{aq`1pJq, with ker πq`1 “ aq`1pJq{aqpJq. For the seek of
+simplicity, we will denote rgq “ g{aqpJq, for each 1 ď q ď t. Observe that the Lie algebras rgq are
+nilpotent. Moreover, one has that the last term in the sequence above satisﬁes rgt “ t0u when J is a
+complex structure of nilpotent type, and rgt‰t 0u otherwise.
+It is easy to see that the complex structure J deﬁned on g induces in a natural way a complex
+structure rJq on rgq, for 1 ďqďt, as follows:
+rJqprXq :“ ĄJX, for rXPrgq,
+where rX and ĄJX denote the classes of X and JX , respectively, in the quotient rgq. Therefore,
+‚ if J is nilpotent, then prgt, rJtq is a (complex) abelian Lie algebra;
+‚ ifJ is weakly non-nilpotent, thenprgt, rJtq is an NLA endowed with a strongly non-nilpotent complex
+structure.
+Hence, in both cases, the given pair pg,Jq can be recovered as a ﬁnite sequence of complex extensions
+starting from the lower dimensional pair prgt, rJtq. That is to say, quasi-nilpotent complex structures can
+be constructed from lower dimensions. Hence, the essentially new complex structures that arise in each
+even real dimension are those of strongly non-nilpotent type.
+As we have previously said, SnN complex structures appear in dimensions ě 6. In fact, in six dimen-
+sions one has the following structural result:
+Theorem 2.5. [21, 22] Let g be an NLA of dimension 6. If g admits an SnN complex structure, then g
+has ascending type p1, 3, 6q orp1, 3, 4, 6q.
+This allows us to immediately assert that an NLA g with ascending type, for instance, p1, 4, 6q does
+not admit any complex structure. Indeed, if we assume the converse, then the complex structure J on g
+must be SnN, as the center of g is 1-dimensional and consequently a1pJq “ t0u; however, this is not
+possible by Theorem 2.5.
+Our goal in the next sections is to ﬁnd, in any even dimension, new restrictions on the ascending
+typepm1,...,m sq of an NLA g endowed with a strongly non-nilpotent complex structure J. One of the
+main consequences of our study is a structural result for 8-dimensional NLAs admitting an SnN complex
+structure (see Theorem 4.1), thus providing an analogous result to Theorem 2.5 in eight dimensions.
+We ﬁnish this section by noting that the existence of a complex structure on an NLA is characterized
+in [20] in terms of the existence of a certain complex (1,0)-basis for g˚
+C. However, we will not make use
+of this point of view here, and we will instead develop a more constructive approach to the problem.
+3. Strongly non-nilpotent complex structures
+Let us focus our attention on those complex structures J on g satisfying a1pJq“t 0u. In this case, the
+construction of the pairspg,Jq cannot be based on lower dimensional classiﬁcations and other approach is
+needed. In this section, we will show that these pg,Jq can be found using the ascending central series and
+constructing an appropriateJ-adapted basis of g. In the ﬁrst part of the section, we provide some general
+results about the ascending central series tgkuk of those NLAs g admitting SnN complex structures. In
+particular, we see that the nilpotency step of g must be at least 3. Then, we focus on the term g1, which
+
+=== PDF PAGE 6 ===
+6
+corresponds to the center of g, and ﬁnd an upper bound for its dimension. In the last part, our results
+are applied to the study of existence of complex structures on products of NLAs.
+3.1. Restrictions on the ascending central series tgkuk. We introduce here a collection of results
+showing that the ascending central series of an NLA g is restricted under the existence of a complex
+structureJ on g. We also obtain several algebraic obstructions for an NLA g to admit complex structures.
+Let us start with some results where J can be a complex structure of any type (recall Deﬁnition 2.2).
+Lemma 3.1. Letpg,Jq be a 2n-dimensional NLA endowed with a complex structure. Suppose that there
+exists a subspace WĂ gk, where ką 1, such that dim W“n and WXJW“t 0u. It holds:
+(i) if gk´1“Jgk´1, then gk“ g;
+(ii) if there is XP W such that JX P gk`1 and JX R gk, then it exists Y P gk´1 such that JY P gk
+and JY R gk´1.
+Proof. LettXiun
+i“1 be a basis for W. Observe that XiRJW, for each 1ďiďn, andtXi,JXiun
+i“1 gives
+a basis of g. First, let us note that XiP gk, for every 1 ďiďn, implies that
+rXi,Xjs, rXi,JXjsP gk´1, @j“ 1,...,n.
+For the bracketsrJXi,JX js, considering the Nijenhuis condition (1) and the hypothesis in (i), we obtain
+rJXi,JXjs“r Xi,Xjs` JrJXi,Xjs` JrXi,JXjs P gk´1`Jgk´1“ gk´1,
+for all 1 ďi,j ďn. Thus, we can easily conclude that JX1,...,JX nP gk and gk“ g.
+For the second part, let us suppose that there exists XP WĂ gk such that JX P gk`1 and JX R gk.
+Then, it is possible to ﬁnd V P g such that 0 ‰ rJX,V s Pgk but rJX,V s Rgk´1. As vector spaces,
+g “ W ‘JW so we can express V “ V1`V2, where V1 P W and V2 P JW. Hence, rJX,V s “
+rJX,V 1s`r JX,V 2s, with rJX,V 1s P gk´1, and consequently rJX,V 2s must verify the same property
+as V . Writing V2“ JZ , with Z P W, one has that 0 ‰r JX,JZ sP gk butrJX,JZ sR gk´1. Applying
+the Nijenhuis condition, we get
+rJX,JZ s´r X,Zs“ J
+`
+rJX,Zs`r X,JZs
+˘
+.
+Observe that the left-hand side belongs to gk, but it is not contained in gk´1. Hence, the element
+0‰Y “rJX,Zs`r X,JZsP gk´1 and JY P gk, but it does not belong to gk´1. □
+Lemma 3.2. Letpg,Jq be a 2n-dimensional NLA endowed with a complex structure. Suppose there exist
+a 2-dimensional J-invariant subspace VĂ g and a non-zero element XP g1 such that g“ gk‘ V‘xJXy
+as vector spaces, for some kě 1. Then, JX P gk`1.
+Proof. LettXi,JXiun
+i“1 be a J-adapted basis of g. Then, any non-zero element W P g can be written as
+W “ řn
+i“1aiXi`biJXi, where ak‰ 0 for some 1 ďkďn (indeed, if ak“ 0 for every k, then bk‰ 0
+for some k and it suﬃces to interchange the roles of Xk and JXk in the J-adapted basis).
+We considerXP g1 and V“xY,JY y. We have
+X“
+nÿ
+i“1
+aiXi`biJXi, Y “
+nÿ
+i“1
+˜aiXi` ˜biJXi, with ar, ˜as‰ 0 for some r‰s,
+since X,Y are non-zero linearly independent elements. The following arrangement can be made
+X1
+1“X, X 1
+r“X1, X 1
+s“Xn, X 1
+n“Y, X 1
+i“Xi, for i‰ 1,k,s,n,
+in such a way that tX1
+i,JX 1
+iu is a new J-adapted basis of g. Renaming X1
+k”Xk for 1ďkďn, we have
+that X1“X and V“xXn,JXny. Hence, it is clear that
+gk“xX1,...,X n´1,JX 2,...,JX n´1y.
+Since the algebra is nilpotent and gk‰ g, there exists 0‰ZP gk`1 such thatZR gk. We can consider,
+without loss of generality, that
+Z“aXn`bJXn`cJX 1,
+where a,b,c P R (otherwise, apply a similar argument to that contained in the proof of Lemma 3.1).
+If a“b“ 0, then c‰ 0 and the result holds immediately.
+
+=== PDF PAGE 7 ===
+7
+If a or b are non-zero, then we can deﬁne a new basis for V as follows:
+X1
+n“bXn´aJXn, JX 1
+n“bJXn`aXn.
+In order to prove that JX1P gk`1 it suﬃces to see that rX1
+n,JX 1s,rJX1
+n,JX 1sP gk.
+On the one hand, it is clear that rZ,JX 1sP gk, i.e.
+rZ,JX 1s“ a1X1`¨¨¨`an´1Xn´1`b2JX2`¨¨¨`bn´1JXn´1,
+where ai,bi P R. On the other hand, note that we can write Z “ JpX1
+n`cX 1q Pgk`1, so using the
+Nijenhuis condition we obtain
+rZ,JX 1s“ JrcX 1`X1
+n,JX 1s“ JrX1
+n,JX 1s.
+Therefore,
+JrX1
+n,JX 1s“ a1X1`¨¨¨`an´1Xn´1`b2JX2`¨¨¨`bn´1JXn´1,
+and applying J to the previous expression, we have:
+´rX1
+n,JX 1s“ a1JX1`a2JX2`¨¨¨`an´1JXn´1´pb2X2`¨¨¨`bn´1Xn´1q.
+Due to the nilpotency of g, we get a1“ 0 and thus rX1
+n,JX 1sP gk.
+Finally, sincerJX1
+n,JX 1s“ JrX1
+n,JX 1s, we can also ensure that rJX1
+n,JX 1sP gk. □
+Remark 3.3. In the conditions of Lemma 3.2, we notice that if gk`1X V‰t 0u, then gk`1“ g whereas
+if gk`1X V“t 0u, then gk`1“ gk‘xJXy and gk`2“ g.
+In the case of SnN complex structures, the ascending J-compatible seriestakpJquk is identically zero.
+For this reason, in order to study this type of structures we will focus on the way J interacts with the
+terms gk of the ascending central series of g.
+Lemma 3.4. Letpg,Jq be a 2n-dimensional NLA endowed with a complex structure, and assume that
+gkXJgk“t 0u, for some integer kě 1. Then one has:
+(i) gk`1XJgk“t 0u;
+(ii) if rą 1 is the smallest integer such that gk`rXJgk‰t 0u, then gk`r´1XJgk`r´1‰t 0u.
+Proof. For case (i) we argue by contradiction. Suppose that there exists X P gk such that JX P gk`1
+and JX R gk. Then, it is possible to ﬁnd Y P g satisfying 0 ‰ rJX,Y s Pgk but not contained in the
+subspace gk´1. Let us denote by T the non-zero element given by T “rJX,Y s`r X,JY sP gk. By the
+Nijenhuis condition, we have
+JT “J
+`
+rJX,Y s`r X,JY s
+˘
+“rJX,JY s´r X,Y sP gk.
+Therefore, both the element T and its image by J belong to gk, which contradicts the hypothe-
+sis gkX Jgk“t 0u.
+For case (ii), take an element X P gk such that JX P gk`r and JX R gk`r´1. Following the same
+argument as before, we can ﬁnd an element Y P g satisfying 0 ‰ rJX,Y s Pgk`r´1 but not contained
+in the subspace gk`r´2. Now, the non-zero elements T and JT belong to gk`r´1, being T “rJX,Y s`
+rX,JY s. □
+Some interesting consequences arise from this result:
+Proposition 3.5. Letpg,Jq be a 2n-dimensional NLA endowed with a complex structure and suppose
+that gkXJgk“t 0u, for some integer kě 1. Then:
+(i) the nilpotency step of g satisﬁes sěk` 2; moreover, if s“k` 2 then gk`1XJgk`1‰t 0u;
+(ii) gk`1 cannot contain a subspace W satisfying dim W“n and WXJW“t 0u.
+Proof. For part (i), it suﬃces to apply Lemma 3.4 (i) in order to see that gk`1‰ g. Hence, sě k` 2.
+Furthermore, ifs“k` 2, then one has gk`2“ g and also gk`1XJgk“t 0u by Lemma 3.4 (i). To obtain
+our result, it suﬃces to make use of Lemma 3.4 (ii) with r“ 2.
+For (ii), let us assume the opposite, i.e., suppose that there exists W Ă gk`1 such that dim W “ n
+and WXJW “t 0u. By part (i) it is clear that gk`1 ‰ g. Necessarily, there is Z P gk`2 Ď g and not
+belonging to gk`1. As vector spaces, g “ gk`1‘ U, where U is a certain subspace of JW, so we can
+
+=== PDF PAGE 8 ===
+8
+write Z “ Z1`JX , being Z1P gk`1 and 0 ‰ X P W. Moreover, since Z R gk`1, then JX P gk`2 but
+JX R gk`1. Applying Lemma 3.1 (ii) for r“k`1, it would be possible to ﬁnd a non-zero element Y P gk
+such that JY P gk`1. However, this contradicts Lemma 3.4 (i). □
+Thanks to the previous proposition with k“ 1, one obtains the following result:
+Corollary 3.6. Any nilpotent Lie algebra endowed with a strongly non-nilpotent complex structure is at
+least 3-step.
+We next give some bounds for the dimensions of the terms of the ascending central series of g under
+the presence of a strongly non-nilpotent complex structure.
+Proposition 3.7. Let pg,Jq be a 2n-dimensional NLA endowed with a complex structure satisfying
+gkXJgk“ t0u for some kě 1. Then:
+(i) kď dim gkďn´ 2;
+(ii) 1 ` dim gkď dim gk`1ď 2n´ 3; furthermore, if in addition gk`1XJgk`1‰t 0u, then one indeed
+has 2` dim gkď dim gk`1ď 2n´ 3;
+(iii) if dim gk“n´r, for some rě 1, then gk`r´1XJgk`r´1‰t 0u; moreover, nď dim gk`r´1.
+Proof. For part (i) observe that the lower bound is clear, because g is a nilpotent Lie algebra and its
+ascending central series strictly increases. For the upper bound, ﬁrst note that the hypothesis gkXJgk“
+t0u leads to dim gkďn. Thus, we just need to discard the cases dim gk“n and dim gk“n´ 1.
+Let us ﬁrst suppose that dim gk“n. By Lemma 3.4 (i), one has gk`1XJgk“t 0u, so the dimension
+of the space h“ gk`1‘JgkĎ g must satisfy pn` 1q` nď dim gk`1` dimJgk“ dim hď dim g“ 2n.
+As we can see, this is a contradiction.
+Let us now consider dim gk “n´ 1. The nilpotency of g guarantees the existence of some Y P gk`1
+not contained in gk. Furthermore, as a consequence of Lemma 3.4 part (i) we have that Y ‰ JX , for
+any X P gk. Hence, one has gkXxYy“t 0u, and W “ gk‘xYyĎ gk`1 is an n-dimensional subspace
+satisfying WXJW “t 0u. However, this contradicts Proposition 3.5 (ii). Therefore, we conclude k ď
+dim gkďn´ 2.
+In part (ii), the lower bound comes straightforward. For the upper bound, we ﬁrst observe that
+Proposition 3.5 (i) and the nilpotency of g imply that dim gk`1 ď 2pn´ 1q. Consequently, it suﬃces
+to discard the case dim gk`1 “ 2pn´ 1q. Let us then assume that dim gk`1 “ 2pn´ 1q. Due to
+Proposition 3.5 (ii), notice that gk`1 is J-invariant and thusJgk`1“ gk`1. Therefore,
+t0u“ gk`1XJgk“Jgk`1X gk“ gk`1X gk“ gk,
+which is a contradiction.
+If we now assume the additional hypothesis gk`1XJgk`1‰t 0u, then there exists 0‰XP g such that
+X P gk`1XJgk`1. Moreover, since gk`1XJgk`1 is a J-invariant space, also 0 ‰ JX P gk`1XJgk`1.
+In particular, one has a 2-dimensional subspace V “ xX, JXy Ă gk`1XJgk`1. In addition, since
+gk`1XJgk“t 0u by Lemma 3.4 (i), we can ensure that VX gk“t 0u and the result holds.
+Finally, let us prove part (iii). Observe that ifgk`r´2XJgk`r´2‰t 0u, then the result is trivial. Hence,
+let us focus on the case gk`r´2XJgk`r´2“t 0u. On the one hand, by part (i), one has dimgk`r´2ďn´2.
+On the other hand, we know thatn´r“ dim gkă dim gk`1ă... ă dim gk`r´2. Since these inequalities
+are strict, it is easy to see that dim gk`r´2 ě n´ 2. Joining these two facts, we can conclude that
+dim gk`r´2 “ n´ 2 and thus, dim gk`r´1 ě n´ 1. Using (i) again, the result comes straightforward.
+For the second part of the statement, use part (ii), bearing in mind that the given hypothesis imply that
+there should be an integer kďtďk`r´ 2 such that gtXJgt“t 0u and gt`1XJgt`1‰t 0u. □
+As an immediate consequence of part (ii) we have:
+Corollary 3.8. Letpg,Jq be a 2n-dimensional NLA endowed with a complex structure, where ně 3. If
+gkXJgk“t 0u and dim gk`1“ 1` dim gk, for some kě 1, then gk`1XJgk`1“t 0u.
+Using the result above, we reach an algebraic obstruction to the existence of complex structures:
+Corollary 3.9. Let g be a 2n-dimensional NLA. If dim gn´1“n´1, then g does not admit any complex
+structure.
+
+=== PDF PAGE 9 ===
+9
+Proof. First note that the nilpotency of g implies that gk Ĺ gk`1, for each 1 ď k ď s´ 1, being s the
+nilpotency step of g. In fact, using the hypothesis we have that dim gk“k, for every 1 ďkďn´ 1, or
+equivalently, dim gk`1“ 1` dim gk.
+Suppose that there exists a complex structure J on g. Since dim g1“ 1, clearly g1XJg1“t 0u, so J
+must be of SnN type. For n“ 2, it is well known that there are no SnN complex structures on NLAs. For
+ně 3, we can apply Corollary 3.8 with k“ 1 to get g2XJg2“t 0u, but we are again in the conditions
+of Corollary 3.8, this time with k “ 2. Repeating the process, one ﬁnally gets gn´1XJgn´1 “ t0u.
+However, this contradicts Proposition 3.7, part (i). □
+We notice that this result provides a restriction to the existence of complex structures based on
+the ascending type of the NLA: if a 2 n-dimensional Lie algebra g has ascending type p1, 2,...,n ´
+1,mn,...,m sq, then g does not admit any complex structure.
+As a consequence, we recover the following result proven by Goze and Remm in [16]. Recall that an
+m-dimensional ﬁliform Lie algebra is an pm´ 1q-step nilpotent Lie algebra.
+Corollary 3.10. Filiform Lie algebras do not admit complex structures.
+Proof. Any 2n-dimensional ﬁliform Lie algebra g has ascending type p1, 2,...,n ´ 1,..., 2n´ 2, 2nq.
+Hence, dim gn´1“n´ 1 and the result is a direct consequence of Corollary 3.9. □
+3.2. Dimension of the center. The goal of this section is to obtain an upper bound for the dimension
+of the center of a 2n-dimensional NLA g endowed with an SnN complex structure J. More precisely, we
+improve the bound given in Proposition 3.7 (i) for k“ 1 when ně 4.
+Theorem 3.11. Let (g,J ) be a 2n-dimensional nilpotent Lie algebra with ně 4 endowed with an strongly
+non-nilpotent complex structure J. Then, 1ď dim g1ďn´ 3.
+Proof. As a consequence of Proposition 3.7 (i), it suﬃces to discard the case dim g1 “ n´ 2. We
+will prove the theorem by contradiction, using the following idea. As a starting point, we consider a
+2n-dimensional vector space g with an almost-complex structure J. We will try to endow g with the
+structure of a nilpotent Lie algebra with dim g1“n´ 2, assuming that J must be integrable and of SnN
+type. In particular, we will ﬁrst impose that g has anpn´2q-dimensional center and then ﬁnd all possible
+combinations for the remaining terms in the ascending central series tgkuk. This will be done deﬁning
+the Lie brackets of g in terms of the elements of a basis B that will be constructed along the process,
+attending to the nilpotency of g and the Jacobi identity
+(4) JacpX,Y,Z q :“
+“
+rX,Y s,Z
+‰
+`
+“
+rY,Zs,X
+‰
+`
+“
+rZ,Xs,Y
+‰
+“ 0,
+for any X,Y,Z P g, the Nijenhuis condition (1), and the strongly non-nilpotency of J. These four
+conditions are checked at every stage of the method, discarding the cases in which any of them fails. In
+the end, we will see that all the possible cases can be rejected.
+Let us start with the proof. Suppose that dim g1“n´ 2 and consider
+g1“xX1,...,X n´2y.
+In this way, we can choose X1,...,X n´2 as generators in B. By the Nijenhuis condition, we have 1
+rXk,¨s1ďkďn´2“ 0, rJXk,JXrs1ďkărďn´2“ 0,
+since X1,...,X n´2 are in the center of g.
+We want to complete tXk,JXkun´2
+k“1 up to a J-adapted basis B of g, for which it suﬃces to ﬁnd two
+vectors linearly independent with the previous ones that will be called Xn´1 and Xn. Observe that the
+yet completely undetermined brackets for g are exactly those involving at least one of the elementsXn´1,
+Xn, JXn´1, JXnP B.
+We should focus on g2. Our ﬁrst observation is that g2XJg1“t 0u, due to Lemma 3.4 (i). Moreover,
+we know that dim g2 ě n´ 1, so applying Proposition 3.7, part (i) with k “ 2, one immediately has
+g2XJg2‰t 0u, and thus dim g2ě n (see Proposition 3.7 (ii)). Hence, by Proposition 3.5, part (ii) for
+1 Notation: ByrXk,¨s 1ďkďn´2 we denote all the brackets rXk,¨s , where 1 ď kď n´ 2.
+
+=== PDF PAGE 10 ===
+10
+k“ 1, we conclude that dim g2“n. As a consequence g2“ g1‘ V, being V aJ-invariant 2-dimensional
+space. We can take a basis tX,JXu of V and then choose Xn´1“X. Then,
+g1“xX1,...,X n´2y, g2“xX1,...,X n´1,JXn´1y.
+Since the elements Xn´1,JXn´1 of the basis B determined above belong to g2, we are able to set the
+following real brackets:
+rXn´1,JXks1ďkďn´2 “
+ÿn´2
+i“1 µk
+i Xi, rXn´1,JXn´1s “
+ÿn´2
+i“1 βiXi.
+Applying the Nijenhuis condition,
+rJXk,JXn´1s1ďkďn´2 “ ´
+ÿn´2
+i“1 µk
+i JXi.
+These brackets belong to g1, so necessarily µk
+i “ 0 for every 1 ďi,k ďn´ 2.
+Up to this moment, we have:
+(5) rXk,¨s1ďkďn´2“ 0, rXn´1,JX n´1s “ řn´2
+i“1 βiXi,
+rXn´1,JXks1ďkďn´2 “ 0, rJXk,JXrs1ďkărďn´1“ 0.
+Since g1 and g2 are already determined, let us move to g3. We know that dim g3 ě n` 1, due to
+the nilpotency of g. First suppose that g3XJg1 “ t0u. Then, there should be a vector in g3 linearly
+independent withtXi, JXiun´1
+i“1 . We select this vector as an element of B and denote it byXn. Moreover,
+due to the nilpotency of g one could ﬁnd Z P W “x X1,...,X nyĂ g3 such that JZ P g4 and JZ R g3.
+Applying Lemma 3.1 (ii) with r“ 3, there exists an element Y P g2 such that JY P g3 andJY R g2, but
+this is not possible by construction.
+Therefore, we may assume that g3XJg1‰t 0u, i.e. there is a vector X P g1 such that JX P g3. We
+next see that it is possible to set JX1 P g3, without loss of generality. Notice that a generic non-zero
+XP g1 can be expressed as X“ řn´2
+i“1 siXi, withps1,...,s n´2q‰p 0,..., 0q. Since JX is a generator of
+g3, we would like to include it in B. However, as we want B to be J-adapted, also X should belong to B,
+so we must arrange its generators in order to fulﬁll this requirement. We can do this as follows:
+‚ if s1‰ 0, consider X1
+1“X and X1
+k“Xk, for every 2 ďkďn´ 1;
+‚ if s1“¨¨¨“sr “ 0, for some 1 ď rď n´ 3, and sr`1‰ 0, then choose X1
+1“ X, X1
+r`1“ X1,
+and X1
+k“Xk, for every 2 ďkďn´ 1 such that k‰r` 1.
+Let us notice that this type of changes do not aﬀect the structure of the ascending central series that
+has been adjusted up to this moment. In fact, the brackets of the elements tX1
+k,JX 1
+kun´1
+k“1 still follow (5),
+maybe modifying the coeﬃcientsβi if necessary (which were anyway free). Furthermore, we getJX1
+1P g3.
+This fact allows us to conclude that our assumption is equivalent to JX1P g3, up to arrangement of
+generators. In this way, we have
+(6) g1“xX1,...,X n´2y, g2“xX1,...,X n´1,JXn´1y, g3ĚxX1,...,X n´1,JX 1,JX n´1y.
+Since JX1 P g3 but JX1 R g2, there must exist an element Y P g such that rJX1,Y s Pg2 and satis-
+fying rJX1,Y s Rg1. In view of the brackets (5), this element Y should be linearly independent with
+tXi, JXiun´1
+i“1 . Hence, we can choose Xn “ Y as a new generator in B. Observe that Xn P gk and
+XnR g2 for some kě 3. Using the fact that JX1P g3, we can take:
+rXn,JX 1s“
+ÿn´2
+i“1 b1
+i Xi`b1
+n´1Xn´1`B1
+n´1JXn´1,
+where b1
+i,B 1
+n´1 P R, for 1 ď iď n´ 1. Let us remark that one needs pb1
+n´1,B 1
+n´1q‰p 0, 0q in order to
+ensure XnR g2. Furthermore, the Nijenhuis condition yields
+rJX1,JX ns“´
+ÿn´2
+i“1 b1
+i JXi´b1
+n´1JXn´1`B1
+n´1Xn´1 P g2,
+and thus b1
+i “ 0, for every 1 ďiďn´ 2. Moreover, Xn´1, JXn´1P g2, so
+rXn´1,Xns“
+ÿn´2
+i“1 αiXi, rXn´1,JXns“
+ÿn´2
+i“1 γiXi, rXn,JXn´1s“
+ÿn´2
+i“1 aiXi,
+
+=== PDF PAGE 11 ===
+11
+where αi, ai, γiP R, for 1 ďi,k ďn´ 2. If we now apply the Nijenhuis condition, then we get
+rJXn´1,JX ns “
+ÿn´2
+i“1 αiXi`
+ÿn´2
+i“1pγi´aiqJXiP g1.
+Necessarily ai“γi, for all 1 ďi,k ďn´ 2.
+Our collection of Lie brackets is now:
+(7)
+rXk,¨s1ďkďn´2 “ 0, rXn,JXn´1s“ řn´2
+i“1 γiXi,
+rXn´1,Xns “ řn´2
+i“1 αiXi, rXn,JXns unknown,
+rXn´1,JX ks1ďkďn´2 “ 0, rJXk,JX rs1ďkărďn´1 “ 0,
+rXn´1,JX n´1s “ řn´2
+i“1 βiXi, rJX1,JXns “ B1
+n´1Xn´1´b1
+n´1JXn´1,
+rXn´1,JX ns “ řn´2
+i“1 γiXi, rJXk,JX ns2ďkďn´2 unknown,
+rXn,JX 1s “ b1
+n´1Xn´1`B1
+n´1JXn´1, rJXn´1,JX ns “ řn´2
+i“1 αiXi,
+rXn,JXks2ďkďn´2 unknown,
+where αi,βi,γiP R, for 1 ď iď n´ 2. Let us remark that only the values preserving the dimension of
+the ascending central series (6) are valid for our purposes.
+Recall that we also have to ensure that the Jacobi identity (4) holds for any triplet pX,Y,Z q. Com-
+puting JacpXn,JX 1,Zq, for Z“Xn´1,JXn´1, we obtain:
+b1
+n´1βi“B1
+n´1βi“ 0, 1ďiďn´ 2.
+Sincepb1
+n´1,B 1
+n´1q‰p 0, 0q, then βi“ 0 for 1 ďiďn´ 2. Using these conditions, (7) become:
+(8)
+rXk,¨s1ďkďn´2 “ 0, rXn,JXn´1s“ řn´2
+i“1 γiXi,
+rXn´1,Xns “ řn´2
+i“1 αiXi, rXn,JXns unknown,
+rXn´1,JX ks1ďkďn´1 “ 0, rJXk,JXrs1ďkărďn´1 “ 0,
+rXn´1,JX ns “ řn´2
+i“1 γiXi, rJX1,JXns “ B1
+n´1Xn´1´b1
+n´1JXn´1,
+rXn,JX 1s “ b1
+n´1Xn´1`B1
+n´1JXn´1, rJXk,JXns2ďkďn´2 unknown,
+rXn,JXks2ďkďn´2 unknown, rJXn´1,JX ns “ řn´2
+i“1 αiXi,
+where the coeﬃcients are real numbers preserving the ascending type and satisfying the Jacobi identity.
+Let us now consider JacpXn,JXn,JX 1q. Using (8), we get
+“
+rXn,JXns,JX 1
+‰
+“ 2
+ÿn´2
+i“1
+`
+b1
+n´1γi`B1
+n´1αi
+˘
+Xi.
+At this point, we ignore the value of rXn,JXns. However, it is clear that such bracket will depend, at
+most, on all the other elements of the basis,tXi,JX iun´1
+i“1 . Since the bracket of each one of these elements
+with JX1 equals zero, as (8) shows, we can conclude that
+“
+rXn,JX ns,JX 1
+‰
+“ 0. Hence,
+(9) b1
+n´1γi`B1
+n´1αi“ 0, @i“ 1,...,n ´ 2.
+We will make use of these equations below.
+Let us now go back to the series (6). To ﬁnish the proof we will study two diﬀerent cases, namely,
+dimpg3XJg1q ě2 and dim pg3XJg1q “1. We will see that none of them is valid and in this way,
+condition g3XJg1‰t 0u will be contradicted. Since we have already refused the condition g3XJg1“t 0u
+(see p. 10) the proof of the theorem will be completed.
+‚ Study of dimpg3XJg1qě 2.
+Assume there is another element in g1 whose image byJ belongs to g3. Arranging generators if necessary,
+we can suppose JX2P g3:
+g1“xX1,...,X n´2y, g2“xX1,...,X n´1,JXn´1y, g3ĚxX1,...,X n´1,JX 1,JX 2,JXn´1y.
+Then, it should be possible to ﬁnd an elementY P g such thatrJX2,Y sP g2 andrJX2,Y sR g1. From the
+brackets (8), one can see that Y must depend on Xn or JXn. Therefore, repeating a similar argument
+to that for JX1 we have
+rXn,JX 2s“ b2
+n´1Xn´1`B2
+n´1JXn´1, rJX2,JXns“ B2
+n´1Xn´1´b2
+n´1JXn´1,
+
+=== PDF PAGE 12 ===
+12
+where b2
+n´1,B 2
+n´1P R. In particular pb2
+n´1,B 2
+n´1q‰p 0, 0q since JX2 does not belong to g2. The Jacobi
+identity (4) for the triplet pXn,JXn,JX 2q together with (8) leads to
+“
+rXn,JXns,JX 2
+‰
+“ 2
+ÿn´2
+i“1
+`
+b2
+n´1γi`B2
+n´1αi
+˘
+Xi.
+By an analogous reasoning to that used for (9), we get
+(10) b2
+n´1γi`B2
+n´1αi“ 0, @i“ 1,...,n ´ 2.
+Let us solve the system of equations given by (9) and (10).
+We ﬁrst suppose thatb1
+n´1“ 0. Then B1
+n´1‰ 0 and we getαi“ 0 for 1ďiďn´2, from (9). Observe
+that pγ1,..., γ n´2q ‰ p0,..., 0q, or otherwise Xn´1, JXn´1 P g1, which is a contradiction. Therefore,
+from (10) we conclude b2
+n´1“ 0. Now, we take 0 ‰X “B2
+n´1JX1´B1
+n´1JX2 P Jg1. Note that the
+bracket of X with every element of the basis vanishes. Thus XP g1XJg1, but this is not possible as J
+is of strongly non-nilpotent type.
+Suppose now b1
+n´1‰ 0. Then we can solve γi from (9) and replacing these values in (10), we get:
+αi
+ˆ
+B2
+n´1´ B1
+n´1b2
+n´1
+b1
+n´1
+˙
+“ 0, 1ďiďn´ 2.
+Notice that there exists some αi ‰ 0 (otherwise, γi “ 0, for every 1 ď i ď n´ 2), so the other
+factor in the equations above should vanish. In particular, this implies that b2
+n´1 ‰ 0 (or otherwise
+pb2
+n´1,B 2
+n´1q“p 0, 0q, which is not allowed). Take 0 ‰X“b2
+n´1JX1´b1
+n´1JX2. Again, XP g1XJg1,
+and a contradiction is attained.
+This concludes the analysis of this case and shows that it is not a valid one.
+‚ Study of dimpg3XJg1q“ 1.
+Under this hypothesis, we have that JXk R g3 for every 2 ď k ď n´ 2. We next divide the study
+according to the dimension of g3. By (6), simply recall that dim g3ěn` 1.
+‚ Let dim g3ąn` 1. In this case, it is clear that XnP g3 so it is possible to ﬁx the unknown real
+brackets in (8):
+rXn,JXks “ řn´2
+i“1 ck
+i Xi`ck
+n´1Xn´1`Ck
+n´1JXn´1, k “ 2,...,n ´ 2, n,
+rJXk,JXns “ ´ řn´2
+i“1 ck
+i JXi`Ck
+n´1Xn´1´ck
+n´1JXn´1, k “ 2,...,n ´ 2.
+If there is some kPt 2,...,n ´ 2u such that ck
+i “ 0, for every 1ďiďn´ 2, then JXkP g3. However,
+this is not possible by the hypothesis of this case. Thus, we can ensure pck
+1,...,c k
+n´2q‰p 0,..., 0q, for
+every 2ďkďn´ 2. Let us note that this implies JXnR g3. Hence,
+g1“xX1,...,X n´2y, g2“xX1,...,X n´1,JXn´1y, g3“xX1,...,X n,JX 1,JXn´1y,
+so in particular, dim g3“n` 2. We move to the study g4 for this case.
+Due to the nilpotency of the Lie algebra, at least JX2 (up to arrangement of generators) or JXn
+should belong to g4. If JX2P g4, then in particular rJX2,JXnsP g3, so c2
+i “ 0, for 2 ď iď n´ 2.
+The Jacobi identity JacpXn,JXn,JX 2q implies
+0 “ ´c2
+1pb1
+n´1Xn´1` B1
+n´1JXn´1q´ 2
+ÿn´2
+i“1
+`
+c2
+n´1γi`C2
+n´1αi
+˘
+Xi.
+Since pb1
+n´1,B 1
+n´1q ‰ p0, 0q, necessarily c2
+1 “ 0. Nonetheless, this yields JX2 P g3, which is not
+allowed. As a consequence, we are led to consider
+g4“xX1,...,X n,JX 1,JXn´1,JXny.
+However, asrJXk,JXnsP g3, one has that ck
+i “ 0, for every 2 ď i,k ď n´ 2, but this implies that
+JXkP g4, for 2 ďkďn´ 2, which is a contradiction. Hence, dim g3 cannot be greater than n` 1.
+‚ Let dim g3“n` 1, i.e.,
+g1“xX1,...,X n´2y, g2“xX1,...,X n´1,JXn´1y, g3“xX1,...,X n´1,JX 1,JXn´1y.
+
+=== PDF PAGE 13 ===
+13
+We will see that this is also an invalid case by carefully studyingg4. Notice that due to the construction
+of the ascending central series, g4XJg1‰t 0u. We are going to consider two diﬀerent cases according
+to the dimension of g4XJg1.
+Ź Assume dimpg4XJg1q “ 1. Since JX1 P g3 Ă g4, this implies that JXk R g4, for every
+2ď k ď n´ 2. Then, g4XxXn,JXny ‰ t0u. Observe that, without loss of generality, we can
+supposeXnP g4 because the role of the elementsXn andJXn in (8) is interchangeable. Moreover,
+it is easy to see that JXnR g4 (otherwise, g4“ g which is a contradiction) and thus
+g4“xX1,...,X n,JX 1,JXn´1y.
+Recall that the nilpotency of the algebra implies that the ascending central series ﬁnishes in g,
+so there is Y P g5 such that Y R g4. Necessarily, Y is linearly dependent with some JX2,...,
+JXn´2, JXn. In fact, we can assume that, up to a change of basis, Y “ JX for certain X P
+W“xX1,...,X nyĂ g4. Let us note that we are in the conditions of Lemma 3.1 (ii) with r“ 4.
+Thus, there exists Z P g3 such that JZ P g4 and JZ R g3. However, if we take an element
+Z“ řn´1
+i“1 siXi`S1JX1`Sn´1JXn´1P g3, then we can see that JZ P g4 if and only if JZ P g3,
+which is a contradiction.
+Ź We next study dimpg4XJg1q ą1. Up to arrangement of generators one can assume that
+JX2P g4, so
+g4ĚxX1,...,X n´1,JX 1,JX 2,JXn´1y.
+Then, there should be an element Y P g such that rJX2,Y sP g3 andrJX2,Y sR g2. Necessarily,
+Y depends on Xn or JXn and it is possible to set the real brackets
+rXn,JX 2s “ řn´2
+i“1 c2
+i Xi`c2
+n´1Xn´1`C2
+1JX1`C2
+n´1JXn´1,
+rJX2,JX ns “ ´ řn´2
+i“1 c2
+i JXi´c2
+n´1JXn´1`C2
+1X1`C2
+n´1Xn´1.
+Observe that c2
+i “ 0, for every 2 ď iď n´ 2, because both brackets belong to g3. Furthermore,
+they cannot lie in g2, so one haspc2
+1,C 2
+1q‰p 0, 0q. Now, imposing JacpXn,JXn,JX 2q the following
+system of equations must be solved:#
+0 “ C2
+1B1
+n´1`c2
+1b1
+n´1,
+0 “ C2
+1b1
+n´1´c2
+1B1
+n´1.
+Sincepc2
+1,C 2
+1q‰p 0, 0q, and pb1
+n´1,B 1
+n´1q‰p 0, 0q, the system has no solution.
+This ﬁnishes the study of this case and the proof of Theorem 3.11.
+□
+3.3. Some consequences and applications. In this section we point out some consequences of the
+results obtained in the previous sections, as well as some applications to the study of existence of complex
+structures on certain products of nilpotent Lie algebras.
+In six dimensions, if an NLA g has a strongly non-nilpotent complex structure then its center has
+dimension 1 (see Theorem 2.5). Alternatively, this result can also be obtained as a consequence of
+Proposition 3.7 (i). In dimension 8, by Theorem 3.11 we directly have:
+Corollary 3.12. Nilpotent Lie algebras of dimension eight admitting strongly non-nilpotent complex
+structures have 1-dimensional centers.
+Note that in dimension 10, there are NLAs with 2-dimensional centers admitting SnN complex struc-
+tures, as Example 2.4 illustrates. Thus, in ten dimensions the upper bound in Theorem 3.11 is attained.
+In [21, Corollary 7] it is proved that a given 6-dimensional NLA can only admit complex structures
+of either nilpotent or non-nilpotent type (recall Figure 1). Moreover, in the second case the structure is
+necessarily SnN. The next result shows that something similar happens in eight dimensions, in the sense
+that quasi-nilpotent and strongly non-nilpotent complex structures cannot coexist on the same NLA.
+Notice that a similar statement does not hold in dimension 10, as Example 2.4 illustrates.
+Corollary 3.13. Let g be an NLA of dimension 8 admitting complex structures. Then, all of them are
+either quasi-nilpotent or strongly non-nilpotent.
+
+=== PDF PAGE 14 ===
+14
+Proof. On the one hand, if g admits an SnN complex structureJ, then by Theorem 3.11 the center g1 has
+dimension 1. On the other hand, if J1 is a quasi-nilpotent complex structure on g, then by Deﬁnition 2.2
+we havet0u‰ a1pJ1qĎ g1. Since a1pJ1q has dimension at least 2, the center g1 must have dimensioně 2.
+This is a contradiction, so J and J1 cannot coexist on g. □
+It is a diﬃcult problem to decide if complex structures exist or not on a given product Lie algebra (see
+for example the recent paper [10] about complex structures on six-dimensional product Lie algebras). As
+a consequence of Theorem 3.11 we have the following result for complex structures on certain products
+of NLAs.
+Corollary 3.14. Let g be an NLA of dimension 2n, with ně 4, admitting a complex structure J. If g
+is the product of n´ 2 Lie algebras, i.e. g– h1ˆ¨¨¨ˆhn´2, then J is quasi-nilpotent.
+Proof. Since the center of hj, 1 ď j ď n´ 2, has dimension at least 1, we have that dim g1 ě n´ 2.
+By Theorem 3.11, we know that if J is SnN then dim g1 ď n´ 3. Consequently, J can only be of
+quasi-nilpotent type. □
+The previous corollary for n “ 4 gives a restriction on the type of complex structures that an 8-
+dimensional product nilpotent Lie algebra can admit. In the following examples we illustrate how to
+make use of this result to study the existence of complex structures on product Lie algebras.
+Example 3.15. Let us consider the 8-dimensional Lie algebra g“ hˆ R, where h is the nilpotent Lie
+algebra generated by tX1,...,X 7u satisfying
+rX1,X 2s“ X3, rX1,X 3s“ X4, rX1,X 4s“ X5, rX2,X 3s“ X6, rX1,X 5s“r X2,X 6s“ X7.
+Let us denote by X8 a generator of R. It is easy to see that the NLA g has ascending type p2, 4, 5, 6, 8q.
+Suppose that g admits a complex structureJ. By Corollary 3.14 we have that J must be quasi-nilpotent.
+Moreover, since the center of g is given by
+g1“xX7,X 8y,
+it is clear that the ﬁrst term in the ascending series of g compatible with J is a1pJq “g1. Now, the
+argument at the end of Section 2 implies that the quotient Lie algebra rg1“ g{a1pJq“ g{xX7,X 8y has a
+complex structure rJ1. However, rg1 is the 6-dimensional NLA generated by trX1,..., rX6u with
+rrX1, rX2s“ rX3, rrX1, rX3s“ rX4, rrX1, rX4s“ rX5, rrX2, rX3s“ rX6,
+and this NLA does not admit any complex structure, as proved in [20].
+In conclusion, the 8-dimensional NLA g“ hˆ R cannot admit any complex structure.
+Example 3.16. Let us consider the 8-dimensional Lie algebra g“ h1ˆ h2, where h1 is the nilpotent Lie
+algebra of dimension 5 generated by tX1,...,X 5u satisfying
+rX1,X 2s“ X4, rX1,X 4s“r X2,X 3s“ X5,
+and h2 is the nilpotent Lie algebra of dimension 3 given by tX6,X 7,X 8u withrX6,X 7s“ X8.
+It is easy to see that g has ascending type p2, 6, 8q and the center of g is exactly
+g1“xX5,X 8y.
+If the NLA g admits a complex structure J, then J is necessarily quasi-nilpotent by Corollary 3.14.
+Moreover, since dim g1“ 2 we have that the ﬁrst term in the ascending series of g compatible with J is
+a1pJq“ g1.
+By the last part of Section 2, the quotient Lie algebra rg1 “ g{a1pJq “ g{xX5,X 8y has a complex
+structure rJ1. Let us observe that the 6-dimensional NLA rg1 is generated by trX1, rX2, rX3, rX4, rX6, rX7u
+satisfying
+rrX1, rX2s“ rX4.
+This Lie algebra is precisely the product of the 3-dimensional Heisenberg Lie algebra and R3, so it has
+complex structures. Indeed, it follows from [6] that, up to isomorphism, the complex structure rJ1 on rg1
+is determined by
+rJ1 rX1“´ rX2, rJ1 rX3“ rX4, rJ1 rX6“´ rX7.
+
+=== PDF PAGE 15 ===
+15
+Now, we can extend this complex structure to g as follows. Deﬁne the almost complex structure J on g
+as
+JX1“´X2, JX 3“X4, JX 6“´X7, JX 5“´X8.
+A direct calculation shows that J is integrable. Hence, the product Lie algebra g“ h1ˆ h2 has a complex
+structure.
+4. The 8-dimensional case
+In this section we determine the structure of the ascending central series for those 8-dimensional NLAs
+admitting strongly non-nilpotent complex structures. More concretely, we prove the following structural
+theorem, which is the analogous result in eight dimensions to Theorem 2.5.
+Theorem 4.1. Let g be an NLA of dimension 8. If g admits an SnN complex structure, then g has
+ascending typep1, 3, 8q,p1, 3, 5, 8q,p1, 3, 6, 8q,p1, 3, 5, 6, 8q,p1, 4, 8q,p1, 4, 6, 8q,p1, 5, 8q, or p1, 5, 6, 8q.
+For the proof of this theorem, in Section 4.1 we start studying the term g2 of the ascending central
+series tgkuk, and we devote Section 4.2 to the remaining terms gk, k ě 3. It is important to remark
+that, since our method is constructive, we will be able to describe the complex structure equations that
+parametrize all the SnN complex structures in dimension 8. This is detailed in the last Section 4.3.
+Before beginning with the proof, we would like to explain the main ideas on which the method is
+based.
+We ﬁrst observe that there are some general results in dimension 8 that come straightforward from
+Section 3. More precisely, if g is an 8-dimensional NLA with an SnN complex structure J, then:
+(11)
+$
+’’’&
+’’’%
+‚ dim g1“ 1 (see Theorem 3.11 and Corollary 3.12);
+‚ 2ď dim g2ď 5 (see Proposition 3.7, (ii));
+‚ g2XJg1“t 0u (see Lemma 3.4);
+‚ g3XJg3‰t 0u and dim g3ě 4 (see Proposition 3.7, (iii) with k“ 1, r“ 3).
+Furthermore, thanks to Garc´ ıa Vergnolle and Remm [14], we know that if an 8-dimensional NLA is
+quasi-ﬁliform, i.e., its nilpotency step is 6, then it does not admit any complex structure. This fact
+together with Corollary 3.6 allows us to conclude that an 8-dimensional NLA g endowed with a strongly
+non-nilpotent complex structure has nilpotency step 3 ďsď 5. Consequently, dim g1“ 1 and g5“ g, so
+the study of the ascending central series is reduced to the terms g2, g3, and g4. For this aim we will use
+the same ideas contained in the proof of Theorem 3.11. That is, we will construct a J-adapted basis B
+of g that will be also adapted to the nilpotent structure of g. Let us begin the construction.
+Since dim g1“ 1, we can establish g1“xX1y. In this way,X1 andJX1 can be considered two elements
+in the J-adapted basis B. Moreover, it is clear that rX1,¨s“ 0 and rJX1,J¨s“ JrJX1,¨s, as X1 is a
+central element and J is integrable, so it satisﬁes the Nijenhuis condition (1).
+We now focus on g2. By the nilpotency of g and conditions (11), there is a vector Y P g2 linearly
+independent with X1 and JX1. Let us denote X2“Y . Then,
+g1“xX1y, g2ĚxX1,X 2y.
+Observe thatX2 and its image by J can be taken as new elements of B. By construction, rX2,¨sPxX1y.
+Furthermore, rX2,JX 1s “λX 1 and thus rJX1,JX 2s “ ´λJX 1, for some λ P R, due to (1). The
+nilpotency of the Lie algebra requires λ“ 0. Hence,
+(12) rX1,¨s“ 0, rX2,JX 1s“ 0, rX2,JX 2s“ b1
+22X1, rJX1,JX 2s“ 0,
+where b1
+22P R. This is the starting point of our construction. We also introduce the following notation,
+that will be of great help in the next sections:
+Notation 4.2. LettXi,JXiun
+i“1 be aJ-adapted basis of g. For each 1ďiďn, we denote Vi“xXi,JXiy.
+In this way, as a vector space, g can be decomposed as direct sum of the 2-dimensional J-invariant
+spaces Vi, that is, g“ Àn
+i“1 Vn.
+
+=== PDF PAGE 16 ===
+16
+4.1. The term g2. In this section we provide the possible dimensions for the term g2. Moreover, we
+give a description of this space in terms of elements of the J-adapted basis B.
+Proposition 4.3. Letpg,Jq be an 8-dimensional NLA endowed with a strongly non-nilpotent complex
+structure. Then, g2XJg2‰t 0u. As a consequence, 3ď dim g2ď 5.
+Proof. We proceed by contradiction. Let us suppose that g2XJg2“t 0u. From Proposition 3.7, part (i)
+we have dim g2“ 2, thus
+g1“xX1y, g2“xX1,X 2y.
+Moreover, by part (i) we know that the nilpotency step s of g satisﬁes s“ 4 or s“ 5.
+Let us now focus on g3. By (11) we know that g3XJg3 ‰t 0u. As a consequence of Lemma 3.4 (i)
+withk“ 2, we also have that g3XJg2“t 0u, so we can ensure the existence of a 2-dimensional subspace
+V3“xX3,JX 3y contained in g3. Furthermore, due to Proposition 3.5 (ii) it is not possible to ﬁnd another
+element in g3 linearly independent with tXi,JXiu3
+i“1. Therefore, the ascending central series comes as
+follows:
+g1“xX1y, g2“xX1,X 2y, g3“xX1,X 2,X 3,JX 3y.
+Observe that one can ﬁnd a vector ing, that we will callX4, such that B“tXi,JXiu4
+i“1 andX4,JX 4R g3.
+With this information, it is possible to add some new Lie brackets to those in (12):
+rX2,Xksk“3,4“a1
+2kX1, rX2,JXksk“3,4“b1
+2kX1, rX3,X 4s“ a1
+34X1`a2
+34X2,
+rX3,JXks1ďkď4“b1
+3kX1`b2
+3kX2, rX4,JX 3s“ b1
+43X1`b2
+43X2,
+where the coeﬃcients are real numbers. Furthermore,
+rJX1,JX 3s“ JrJX1,X 3s“´ b1
+31JX1´b2
+31JX2P g2,
+so we conclude that b1
+31“b2
+31“ 0. In a similar way, imposing the equations NJpX2,X 3q andNJpX3,X 4q
+given by (1), we obtain
+b1
+32“b1
+23, b 2
+32“ 0, rJX2,JX 3s“ a1
+23X1,
+b1
+43“b1
+34, b 2
+43“b2
+34, rJX3,JX 4s“ a1
+34X1`a2
+34X2.
+Up to this moment, we have the following real brackets:
+(13)
+rX1,¨s“ 0, rX4,JX ksk“1,2 unknown,
+rX2,Xksk“3,4“a1
+2kX1, rX4,JX 3s“ b1
+34X1`b2
+34X2,
+rX2,JX 1s“ 0, rX4,JX 4s unknown,
+rX2,JXksk“2,3,4“b1
+2kX1, rJX1,JXksk“2,3“ 0,
+rX3,X 4s“ a1
+34X1`a2
+34X2, rJX1,JX 4s unknown,
+rX3,JX 1s“ 0, rJX2,JX 3s“ a1
+23X1,
+rX3,JX 2s“ b1
+23X1, rJX2,JX 4s unknown,
+rX3,JXksk“3,4“b1
+3kX1`b2
+3kX2, rJX3,JX 4s“ a1
+34X1`a2
+34X2.
+Moreover, for those brackets above involving X4, we can write:
+rX4,JXks“
+ÿ3
+i“1bi
+4kXi`
+ÿ4
+j“1,j‰kcj
+4kJXj, k “ 1, 2, 4.
+Now, using the Nijenhuis condition and the nilpotency of g, we have:
+b1
+41“ 0, rJX1,JX 4s“´ ř3
+i“2bi
+41JXi`ř4
+j“2cj
+41Xj,
+b2
+42“ 0, rJX2,JX 4s“p a1
+24`c1
+42qX1`c3
+42X3`c4
+42X4`pb1
+24´b1
+42qJX1´b3
+42JX3.
+Hence, the unknown brackets in (13) can be expressed as:
+(14)
+rX4,JX 1s“ ř3
+i“2bi
+41Xi`ř4
+j“2cj
+41JXj, rX4,JX 4s“ ř3
+i“1bi
+44Xi`ř3
+j“1cj
+44JXj,
+rX4,JX 2s“ ř3
+i“1,i‰2bi
+42Xi`ř4
+j“1,j‰2cj
+42JXj, rJX1,JX 4s“´ ř3
+i“2bi
+41JXi`ř4
+j“2cj
+41Xj,
+rJX2,JX 4s“p a1
+24`c1
+42qX1`c3
+42X3`c4
+42X4`pb1
+24´b1
+42qJX1´b3
+42JX3.
+
+=== PDF PAGE 17 ===
+17
+Observe that the position of JXk (k“ 1, 2, 4) in the ascending central series will immediately make some
+of the coeﬃcients above equal to zero. Indeed, recall that g can be either 4-step or 5-step nilpotent. We
+will next analyze these two possibilities.
+‚ The 4-step case.
+To ensure that g4“ g, the following values in (14) are needed:
+b1
+24“b1
+42, b 2
+41“c2
+41“c4
+41“c1
+42“c4
+42“c1
+44“c2
+44“ 0.
+Note that the only (possibly) non-zero brackets involving JX1 are rX4,JX 1s “b3
+41X3`c3
+41JX3 and
+rJX1,JX 4s“ c3
+41X3´b3
+41JX3. Since JX1R g1, necessarily pb3
+41,c 3
+41q‰p 0, 0q.
+Let us study the Jacobi identity to contradict this case. Considering JacpX3,JX 1,Y q, for Y “
+X4,JX 4, we have:
+c3
+41
+`
+b1
+33X1`b2
+33X2
+˘
+“ 0,
+b3
+41
+`
+b1
+33X1`b2
+33X2
+˘
+“ 0,
+*
+so we conclude b1
+33“b2
+33“ 0.
+FromJacpX2,JX 1,Y q, with Y “X4,JX 4, we obtain
+ˆ
+a1
+23 b1
+23
+b1
+23 ´a1
+23
+˙ˆ
+b3
+41
+c3
+41
+˙
+“
+ˆ
+0
+0
+˙
+, and thus a1
+23“b1
+23“ 0.
+Now, we observe that due to the previous choices we need pa2
+34,b 2
+34q‰p 0, 0q, or otherwise X3P g2. If we
+compute JacpX3,JX 2,Y q, for Y “X4,JX 4, we get
+b1
+22a2
+34“b1
+22b2
+34“ 0, which implies b1
+22“ 0.
+Finally, usingJacpX4,JX 4,Y q with Y “X3,JX 3 one has:
+ˆ
+b1
+24 ´a1
+24
+a1
+24 b1
+24
+˙ˆ
+a2
+34
+b2
+34
+˙
+“
+ˆ
+0
+0
+˙
+, and necessarily a1
+24“b1
+24“ 0.
+Nonetheless, replacing all these zero values in (13), one then realizes that X2 belongs to the center of g,
+which is a contradiction. Therefore, this case does not hold and the algebra must be 5-step nilpotent.
+‚ The 5-step case.
+First, we observe that g4XJg2‰t 0u. In fact, if we assume g4XJg2“t 0u, then X4P g4 and we are in
+the conditions of Lemma 3.1 (ii) for r“ 4. This means that there should be a vector W P g3 such that
+JW P g4 but JW R g3. Due to the arrangement of the ascending central series, the only possibility is
+havingW P g2, which contradicts our assumption.
+In addition, we remark that the nilpotency of g yields dim g4“ 5 or 6. We will next see that none of
+these cases is valid, thus ﬁnishing the proof.
+‚ Let dim g4“ 5. Then,
+g4“xX1,X 2,X 3,JX 3,JY y, where Y P g2.
+Let us express Y “ α1X1`α2X2. After a suitable arrangement of generators, we can assume that
+eitherpα1,α 2q“p 1, 0q orpα1,α 2q“p 0, 1q. We analize these two possibilities in the next lines.
+On the one hand, if Y “X1 then
+g1“xX1y, g2“xX1,X 2y, g3“xX1,X 2,X 3,JX 3y, g4“xX1,X 2,X 3,JX 1,JX 3y, g5“ g.
+This structure of the ascending central series forces the Lie brackets to follow (13) and (14) with
+b2
+41“c2
+41“c4
+41“c4
+42“c2
+44“ 0.
+The contradiction is reached repeating the same calculations for the Jacobi identity performed in the
+case g4“ g.
+On the other hand, if
+g1“xX1y, g2“xX1,X 2y, g3“xX1,X 2,X 3,JX 3y, g4“xX1,X 2,X 3,JX 2,JX 3y, g5“ g,
+a similar argument can be applied to obtain a contradiction after studying the Jacobi identities.
+More concretely, imposing the vanishing of JacpX2,JX 2,Y q for Y “ X4,JX 4, JacpX3,JX 2,Y q for
+Y “X4,JX 4, and JacpX4,JX 4,JX 1q, we get JX1P g4, which is not possible.
+
+=== PDF PAGE 18 ===
+18
+Due to the previous discussion, the case dim g4“ 5 is not valid.
+‚ Assume dim g4“ 6. Repeating a similar argument, one can show that this case can neither hold.
+Indeed, it suﬃces to consider the cases Jg2 Ă g4 and its opposite, and impose the vanishing of the
+Jacobi identities in order to obtain contradictions with the assumed arrangement of the ascending
+central series. □
+As a consequence of this result, we obtain the possible structure of the term g2:
+Corollary 4.4. Letpg,Jq be an 8-dimensional NLA admitting a strongly non-nilpotent complex structure.
+Then,
+dim g1“ 1, and g2“
+$
+’&
+’%
+g1‘ V2,
+g1‘ V2‘xYy,
+g1‘ V2‘ V3,
+whereY RJg1 and V2, V3 areJ-invariant subspaces of dimension 2 (see Notation 4.2).
+4.2. The terms g3 and g4. Once we have obtained the structure of g2, we next describe the spaces g3
+and g4 depending on the dimension of g2. As a ﬁnal result, we obtain a structural theorem for the
+ascending central series (see Theorem 4.1).
+Let us remark that every case of Corollary 4.4 implies g1‘ V2Ď g2. Hence, we can set
+g1“xX1y, V2“xX2,JX 2y.
+This determines a family tXi,JXiu2
+i“1 that will be completed up to a J-adapted basis B of the Lie
+algebra g. In addition, the Lie brackets within the previous family satisfy:
+rX1,¨s“ 0, rX2,¨s,rJX2,¨sPx X1y.
+4.2.1. Study for dim g2“ 3. In this case, one clearly has g1‘ V2“ g2. As a ﬁrst observation for g3, we
+prove the following result:
+Lemma 4.5. Letpg,Jq be an 8-dimensional NLA endowed with an SnN complex structure. If dim g2“ 3,
+then g3‰ g2‘Jg1.
+Proof. We argue by contradiction. Let us suppose that g3“ g2‘Jg1“ V1‘ V2. Then, we can assume
+V3X g4‰t 0u, i.e., there exists an element X3 in B belonging to g4. The ascending central series starts
+as follows:
+g1“xX1y, g2“xX1,X 2,JX 2y, g3“xX1,X 2,JX 1,JX 2y, g4ĚxX1,X 2,X 3,JX 1,JX 2y.
+Up to this moment, we have ﬁxed six elements in B, namely,tXi,JXiu3
+i“1. Moreover, gzpV1‘ V2‘ V3q
+is a J-invariant space of dimension 2 that we will call V4. We will consider two diﬀerent situations:
+V4X g4‰t 0u and V4X g4“t 0u.
+‚ Study of V4X g4‰t 0u.
+Due to the previous hypothesis, there exists a new element in g4 linearly independent with tXi,JXiu3
+i“1
+that we will denote X4. In this way,
+g4ĚxX1,X 2,X 3,X 4,JX 1,JX 2y.
+
+=== PDF PAGE 19 ===
+19
+By Lemma 3.1, part (i) for k“ 4, we have g4 “ g. Hence, it is possible to express the Lie brackets as
+follows, making use of the Nihenjuis condition and the nilpotency of g:
+(15)
+rX1,¨s“ 0, rX3,JXksk“3,4“ ř2
+i“1pbi
+3kXi`ci
+3kJXiq,
+rX2,Xksk“3,4“a1
+2kX1, rX4,JX 1s“ b2
+41X2`c2
+41JX2,
+rX2,JX 1s“ 0, rX4,JX 2s“ b1
+24X1,
+rX2,JX ksk“2,3,4“b1
+2kX1, rX4,JXksk“3,4“ ř2
+i“1pbi
+4kXi`ci
+4kJXiq,
+rX3,X 4s“ ř2
+i“1pai
+34Xi`αi
+34JXiq, rJX1,JX 2s“ 0,
+rX3,JX 1s“ b2
+31X2`c2
+31JX2, rJX1,JXksk“3,4“c2
+k1X2´b2
+k1JX2,
+rX3,JX 2s“ b1
+23X1, rJX2,JXksk“3,4“a1
+2kX1,
+rJX3,JX 4s“ ř2
+i“1pai
+34´ci
+34`ci
+43qXi`ř2
+i“1pαi
+34`bi
+34´bi
+43qJXi.
+The idea is now to impose the vanishing of the Jacobi identity (4) in order to get a contradiction.
+We sketch how to proceed. Consider JacpX3,JX 3,Y q for Y “ X4,JX 4 and JacpX4,JX 4,Y q for Y “
+X3,JX 3 to obtain the following homogeneous systems of equations:
+A
+ˆ
+b2
+31
+c2
+31
+˙
+“
+ˆ
+0
+0
+˙
+, A
+ˆ
+b2
+41
+c2
+41
+˙
+“
+ˆ
+0
+0
+˙
+, where A“
+ˆ
+c1
+43´c1
+34 b1
+34´b1
+43
+´pb1
+34´b1
+43q c1
+43´c1
+34
+˙
+.
+In order to preserve the arrangement of the ascending central series, the determinant of A must be zero,
+i.e.,c1
+43“c1
+34 andb1
+43“b1
+34. With these values of the parameters, we go back to the previous four Jacobi
+identities and obtain:
+B
+ˆ
+b2
+31
+c2
+31
+˙
+“c1
+33
+ˆ
+c2
+41
+b2
+41
+˙
+, B
+ˆ
+c2
+41
+b2
+41
+˙
+“c1
+44
+ˆ
+b2
+31
+c2
+31
+˙
+, where B“
+ˆ
+α1
+34 c1
+34
+c1
+34 ´α1
+34
+˙
+.
+The contradiction appears here, since it is not possible to have determinant of B either equal to zero or
+diﬀerent from zero if we want to preserve the desired ascending central series.
+‚ Study of V4X g4“t 0u.
+First, let us note that g5“ g. The proof will be ﬁnished after analyzing two cases: V3Ă g4 and V3Ć g4.
+‚ Let us consider V3Ă g4. This is equivalent to g4“ g3‘ V3, so in particular we observe that g4 is
+J-invariant. The Lie brackets are the same as in (15) with the only exception of
+rX4,JX 4s“ b1
+44X1`b2
+44X2`b3
+44X3`c1
+44JX1`c2
+44JX2`c3
+44JX3.
+Let us remark that one needs pb3
+44,c 3
+44q‰p 0, 0q in order to ensure g4‰ g. We again compute diﬀerent
+Jacobi identities to get a contradiction. More concretely, focusing on the triplets pX2,JX 1,Y q, where
+Y “ X3,X 4,JX 3,JX 4, we can conclude that b1
+22 “ 0. Furthermore, from pX4,JX 4,Y q with Y “
+X2,JX 1,JX 2, we obtaina1
+23“b1
+23“b2
+31“c2
+31“ 0. Now, look at JacpX3,JX 3,Y q, forY “X4,JX 4,
+to get b2
+33 “ c2
+33 “ 0. Finally, working again with JacpX4,JX 4,Y q, this time for Y “ X3,JX 3, we
+reach the desired contradiction.
+‚ We now focus on the case V3 Ć g4, i.e., g4 “ g3‘xX3y. We remark that the Lie brackets agree
+with (15), except for rX4,JX 4s (which coincides with that deﬁned a few lines above), and rX4,JX 3s,
+rJX3,JX 4s (which belong to g4). More precisely, let
+rX4,JX 3s“ b1
+43X1`b2
+43X2`b3
+43X3`c1
+43JX1`c2
+43JX2,
+where bi
+43,b 3
+43,ci
+43P R, for i“ 1, 2. Applying the Nijenhuis condition, one obtains
+rJX3,JX 4s“
+2ÿ
+i“1
+pai
+34´ci
+34`ci
+43qXi`
+2ÿ
+i“1
+pαi
+34`bi
+34´bi
+43qJXi´b3
+43JX3.
+Since our Lie algebra g is nilpotent, we necessarily have b3
+43 “ 0. Nevertheless, this choice makes
+JX3P g4, which is not allowed.
+This completes the proof of the lemma. □
+
+=== PDF PAGE 20 ===
+20
+Lemma 4.6. Letpg,Jq be an 8-dimensional NLA endowed with an SnN complex structure. If dim g2“ 3
+and g3XJg1‰t 0u, then the ascending central series of g satisﬁes:
+dim g1“ 1, g2“ g1‘ V2, g3 is J-invariant with dim g3“ 6 or 8,
+being V2 a 2-dimensional J-invariant space.
+Proof. Making use of the hypothesis and Lemma 4.5, we can ﬁnd X1,X 2,X 3P g such that:
+g1“xX1y, g2“xX1,X 2,JX 2y, g3ĚxX1,X 2,X 3,JX 1,JX 2y.
+We considertXi,JXiu3
+i“1 belonging to the J-adapted basis B andX4,JX 4 generators of the J-invariant
+subspace V4“ gzpV1‘ V2‘ V3q. We can set the following brackets, where we have already applied the
+Nijenhuis condition and the nilpotency of g:
+(16)
+rX1,¨s“ 0, rX4,JX 1s“ b2
+41X2`c2
+41JX2,
+rX2,Xksk“3,4“a1
+2kX1, rX4,JX 2s“ b1
+24X1,
+rX2,JX 1s“ 0, rX4,JXksk“3,4 unknown,
+rX2,JXksk“2,3,4“b1
+2kX1, rJX1,JX 2s“ 0,
+rX3,X 4s“ a1
+34X1`a2
+34X2`α2
+34JX2, rJX1,JXksk“3,4“c2
+k1X2´b2
+k1JX2,
+rX3,JX 1s“ b2
+31X2`c2
+31JX2, rJX2,JXksk“3,4“a1
+2kX1,
+rX3,JX 2s“ b1
+23X1, rJX3,JX 4s unknown,
+rX3,JXksk“3,4“b1
+3kX1`b2
+3kX2`c2
+3kJX2,
+where all the coeﬃcients are real numbers.
+We should accomplish the study of g3. The idea is the following one: ﬁrst, we will suppose that g3 is
+notJ-invariant and contradict the assumption; afterwards, we will show that valid solutions exist wheng3
+is J-invariant of dimension both 6 and 8.
+‚ Study when g3 is not J-invariant.
+The possible dimensions for this space are 5 and 6. Let us separately analyze each case.
+‚ Let dim g3“ 6. This implies that V4X g3‰t 0u, and we can set:
+g3“xX1,X 2,X 3,X 4,JX 1,JX 2y, g4“ g.
+Hence, the unknown brackets in (16) can be determined:
+rX4,JX ksk“3,4“b1
+4kX1`b2
+4kX2`c2
+4kJX2,
+rJX3,JX 4s“ a1
+34X1`pa2
+34´c2
+34`c2
+43qX2`pb1
+34´b1
+43qJX1`pα2
+34`b2
+34´b2
+43qJX2.
+Observe thatb1
+43‰b1
+34, or otherwise g3“ g. Computing the Jacobi identities JacpJX3,JX 4,Y q with
+Y “ X3,X 4, we are led to consider b2
+31 “ b2
+41 “ c2
+31 “ c2
+41 “ 0, but then one observes that indeed
+JX1P g1, which is a contradiction.
+‚ We now assume dim g3“ 5. As Jg3‰ g3, we have
+g3“xX1,X 2,X 3,JX 1,JX 2y,
+and we need to turn our attention tog4. Two diﬀerent situations arise: V4Xg4‰t 0u and V4Xg4“t 0u.
+Ź If V4X g4‰t 0u, the unknown real Lie brackets can be set as follows:
+rX4,JX 3s“ b1
+43X1`b2
+43X2`c1
+43JX1`c2
+43JX2,
+rX4,JX 4s“ b1
+44X1`b2
+44X2`b3
+44X3`c1
+44JX1`c2
+44JX2,
+rJX3,JX 4s“p a1
+34`c1
+43qX1`pa2
+34´c2
+34`c2
+43qX2`pb1
+34´b1
+43qJX1`pα2
+34`b2
+34´b2
+43qJX2.
+Observe that one necessarily has g4 “ g. The contradiction arises from the Jacobi identity.
+More concretely, imposing the vanishing of JacpX2,JX 1,Y q, for Y “ X3,JX 3,X 4,JX 4, one
+obtains b1
+22 “ 0, in order to ensure that JX1 R g1. Next, if we compute JacpX3,JX 3,Y q for
+Y “ X4,JX 4 and JacpX4,JX 4,Zq for Z “ X3,JX 1, we must assume b2
+31“ c2
+31“ 0 if we want
+to preserve the arrangement of the series. In a similar way, JacpX3,JX 1,Y q with Y “X4,JX 4
+imply a1
+23 “ b1
+23 “ 0. Coming back to JacpX3,JX 3,X 4q and JacpX3,JX 3,JX 4q, one gets
+
+=== PDF PAGE 21 ===
+21
+b2
+33“c2
+33“ 0. Finally, taking into account the previous ﬁxed values, the contradiction comes from
+JacpX4,JX 4,JX 3q.
+Ź If V4X g4“t 0u, the structure of the ascending central series is:
+g1“xX1y, g2“xX1,X 2,JX 2y, g3“xX1,X 2,X 3,JX 1,JX 2y,
+g4“xX1,X 2,X 3,JX 1,JX 2,JX 3y, g5“ g.
+We note that the only diﬀerent bracket between this case and the previous one is
+rX4,JX 4s“ b1
+44X1`b2
+44X2`b3
+44X3`c1
+44JX1`c2
+44JX2`c3
+44JX3,
+wherebi
+44,ci
+44P R, fori“ 1, 2, 3. For this reason, one needs c3
+44‰ 0 in order to eﬀectively separate
+the two situations. Repeating the same Jacobi computations as above, we conclude that this case
+is neither valid.
+This proves that g3 must be J-invariant.
+‚ Study when g3 is J-invariant.
+There are two possibilities for g3: either dim g3 “ 6 or dim g3 “ 8. In what follows, we will see that
+in both cases one can ﬁnd an appropriate choice of the parameters that fulﬁlls the Jacobi identity and
+preserves the desired ascending central series.
+‚ If dim g3“ 6, then
+g3“xX1,X 2,X 3,JX 1,JX 2,JX 3y, g4“ g.
+The unknown brackets in (16) can be expressed as:
+rX4,JX 3s“ b1
+34X1`b2
+43X2`c2
+43JX2,
+rX4,JX 4s“ b1
+44X1`b2
+44X2`b3
+44X3`c1
+44JX1`c2
+44JX2`c3
+44JX3,
+rJX3,JX 4s“ a1
+34X1`pa2
+34´c2
+34`c2
+43qX2`pα2
+34`b2
+34´b2
+43qJX2.
+From JacpX2,JX 1,Y q for Y “ X3,X 4,JX 3,JX 4, we are able to conclude that b1
+22 “ 0, since
+pb2
+31,c 2
+31,b 2
+41,c 2
+41q ‰ p0, 0, 0, 0q to ensure JX1 R g1. Then, calculating JacpX4,JX 4,Y q with Y “
+X2,JX 1,JX 2, two systems of equations arise:
+C
+ˆ
+a1
+23
+b1
+23
+˙
+“
+ˆ
+0
+0
+˙
+, C
+ˆ
+c2
+31
+b2
+31
+˙
+“
+ˆ
+0
+0
+˙
+, where C“
+ˆ
+b3
+44 c3
+44
+c3
+44 ´b3
+44
+˙
+.
+Using JacpX4,JX 4,Y q for Y “ X3,JX 3 when pb3
+44,c 3
+44q ‰ p 0, 0q, and JacpX4,JX 4,X 3q,
+JacpX3,JX 1,Y q, JacpX3,JX 3,Y q, for Y “X4,JX 4, when pb3
+44,c 3
+44q“p 0, 0q, one obtains
+a1
+23“b1
+23“b2
+31“b2
+33“c2
+31“c2
+33“ 0.
+We note that 19 structure constants are still undetermined. They must be chosen in such a way that
+the desired ascending central series is preserved and the 3 equations given by the non-trivial Jacobi
+identities are fulﬁlled. Here, we simply note that particular solutions satisfying the two previous
+requirements can be found.
+‚ If dim g3“ 8, then g3“ g and the unknown brackets in (16) are given by:
+rX4,JX 3s“ b1
+34X1`b2
+43X2`c2
+43JX2,
+rX4,JX 4s“ b1
+44X1`b2
+44X2`c2
+44JX2,
+rJX3,JX 4s“ a1
+34X1`pa2
+34´c2
+34`c2
+43qX2`pα2
+34`b2
+34´b2
+43qJX2,
+where b1
+44,b 2
+4k,c 2
+4k P R, for k“ 1, 3, 4. Let us study the Jacobi identity (4). From JacpX2,JX 1,Y q,
+for Y “X3,X 4,JX 3,JX 4, we get:
+b1
+22c2
+31“b1
+22c2
+41“b1
+22b2
+31“b1
+22b2
+41“ 0.
+Sincepb2
+31,c 2
+31,b 2
+41,c 2
+41q‰p 0, 0, 0, 0q is needed to ensure JX1R g1, one immediately concludes b1
+22“ 0.
+The remaining Jacobi identities give a quadratic system with 8 equations and 22 unknowns that
+admits particular solutions fulﬁlling all the prerequisites.
+This concludes the proof of the lemma. □
+
+=== PDF PAGE 22 ===
+22
+Lemma 4.7. Letpg,Jq be an 8-dimensional NLA endowed with an SnN complex structure. If dim g2“ 3
+and g3XJg1“t 0u, then the ascending central series of g satisﬁes:
+dim g1“ 1, g2“ g1‘ V2, g3“ g1‘ V2‘ V3, g4 is J-invariant,
+where V2, V3 are 2-dimensional J-invariant spaces.
+Proof. By hypothesis, one can ﬁnd X1,X 2,X 3P g such that:
+g1“xX1y, g2“xX1,X 2,JX 2y, g3ĚxX1,X 2,X 3,JX 2y.
+Furthermore, we know thatJX1R g3, so g must be at least 4-step nilpotent. Let us take tXi,JXiu3
+i“1 in
+the J-adapted basis B and X4,JX 4 generators of the J-invariant subspace V4“ gzpV1‘ V2‘ V3q. The
+following real brackets can be set, bearing in mind the Nijenhuis condition and the nilpotency of g:
+rX1,¨s“ 0, rX4,JX 1s unknown,
+rX2,Xksk“3,4“a1
+2kX1, rX4,JX 2s“ b1
+24X1,
+rX2,JX 1s“ 0, rX4,JX ksk“3,4 unknown,
+rX2,JX ksk“2,3,4“b1
+2kX1, rJX1,JX 2s“ 0,
+rX3,X 4s“ a1
+34X1`a2
+34X2`α2
+34JX2, rJX1,JX 3s“ c2
+31X2´b2
+31JX2,
+rX3,JX 1s“ b2
+31X2`c2
+31JX2, rJX1,JX 4s unknown,
+rX3,JX 2s“ b1
+23X1, rJX2,JXksk“3,4“a1
+2kX1
+rX3,JXksk“3,4“b1
+3kX1`b2
+3kX2`c2
+3kJX2, rJX3,JX 4s unknown.
+To prove the result it suﬃces to follow the next scheme. First, one checks by contradiction that
+V4X g3 “ t0u. As a consequence, one has 4 ď dim g3 ď 5. Then, the 4-dimensional case is rejected
+(studying V4Xg4‰t 0u and V4Xg4“t 0u), and ﬁnally one shows that solutions exist for the 5-dimensional
+case. This completes the study of every possibility, and thus our result is attained. □
+As a consequence of the previous three Lemmas 4.5, 4.6, and 4.7, we reach the following structure
+result.
+Proposition 4.8. Let pg,Jq be an 8-dimensional NLA endowed with an SnN complex structure. If
+dim g2“ 3, then the ascending central series of g satisﬁes:
+dim g1“ 1, g2“ g1‘ V2,
+and one of the following possibilities:
+(i) g3“ g;
+(ii) g3“ V1‘ V2‘ V3, g4“ g;
+(iii) g3“ g1‘ V2‘ V3, g4“ g;
+(iv) g3“ g1‘ V2‘ V3, g4“ V1‘ V2‘ V3, g5“ g,
+where Vi are 2-dimensional J-invariant spaces.
+4.2.2. Study for dim g2 “ 4. After the analysis of dim g2 “ 3, let us suppose that dim g2 “ 4. As a
+consequence of Corollary 4.4, we can ﬁnd X1,X 2,X 3P g such that:
+g1“xX1y, g2“xX1,X 2,X 3,JX 2y.
+We considertXi,JXiu3
+i“1 in theJ-adapted basis B and denoteX4,JX 4 the generators of the J-invariant
+subspace V4“ gzpV1‘ V2‘ V3q. The Lie brackets of g have the following form:
+(17)
+rX1,¨s“ 0, rX3,JX 1s“ 0, rX4,JXksk“3,4 unknown,
+rX2,Xksk“3,4“a1
+2kX1, rX3,JX 2s“ b1
+23X1, rJX1,JXksk“2,3“ 0,
+rX2,JX 1s“ 0, rX3,JXksk“3,4“b1
+3kX1, rJX1,JX 4s unknown,
+rX2,JXksk“2,3,4“b1
+2kX1, rX4,JX 1s unknown, rJX2,JX ksk“3,4“a1
+2kX1,
+rX3,X 4s“ a1
+34X1, rX4,JX 2s“ b1
+24X1, rJX3,JX 4s unknown,
+where all the coeﬃcients are real numbers.
+
+=== PDF PAGE 23 ===
+23
+Proposition 4.9. Let pg,Jq be an 8-dimensional NLA endowed with an SnN complex structure. If
+dim g2“ 4, then the ascending central series of g satisﬁes:
+dim g1“ 1, g2“ g1‘ V2‘xYy, g3 is J-invariant with dim g3“ 6 or 8,
+whereY RJg1 and V2 is a 2-dimensional J-invariant space.
+Proof. As a consequence of the previous lines we directly focus on g3. We will ﬁrst see by contradiction
+that g3 must be J-invariant and then provide two valid arrangements of the ascending central series.
+‚ Study when g3 is not J-invariant.
+Due to the nilpotency of g, one has 5 ď dim g3ď 6. We next analyze these two possibilities.
+‚ Let dim g3“ 6. As a consequence of our assumptions, one directly has V4X g3‰t 0u, i.e.,
+g1“xX1y, g2“xX1,X 2,X 3,JX 2y, g3ĚxX1,X 2,X 3,X 4,JX 2y.
+This arrangement together with the Nijenhuis condition allows us to ﬁx the unknown real brackets
+in (17):
+(18)
+rX4,JX 1s“ b2
+41X2`b3
+41X3`c2
+41JX2,
+rX4,JX 3s“ b1
+43X1`b2
+43X2`c2
+43JX2,
+rX4,JX 4s“ b1
+44X1`b2
+44X2`b3
+44X3`c2
+44JX2,
+rJX1,JX 4s“ c2
+41X2´b2
+41JX2´b3
+41JX3,
+rJX3,JX 4s“ a1
+34X1`c2
+43X2`pb1
+34´b1
+43qJX1´b2
+43JX2.
+Moreover, g3 must contain a 4-dimensionalJ-invariant subspace. After an arrangement of generators,
+we can ensure that one of the spaces Vi, where i “ 1, 3, 4, lies in g3. We separately study each
+possibility, discarding all of them:
+Ź If V4Ă g3, then we see from (18) that g3“ g, which contradicts our assumption.
+Ź Let V3 Ă g3. The Lie brackets in (18) tell us that b1
+43 “ b1
+34 and b3
+41 ‰ 0 (to ensure g3 ‰ g).
+Moreover, fromJacpX4,JX 4,JX 1q we needb2
+43“c2
+43“ 0, but this choice makes JX3P g2, which
+is a contradiction.
+Ź Suppose that V1Ă g3. Then, from (18) we ﬁndb3
+41“ 0 andb1
+43‰b1
+34. Using JacpX4,JX 4,JX 3q
+we also get b2
+41“c2
+41“ 0. However, these values lead to JX1P g1, which is not possible.
+‚ Let dim g3“ 5. Notice that V4X g3“t 0u (otherwise, one would apply Lemma 3.1 (ii) with r“ 3
+and reach a contradiction), so g3 must contain a 4-dimensionalJ-invariant subspace. Similarly to the
+previous case, we can assume that one of the spaces V1 or V3 is contained in g3. Again, none of the
+situations is possible.
+Ź Let us suppose that V1Ă g3. The ﬁrst terms of the ascending central series are
+g1“xX1y, g2“xX1,X 2,X 3,JX 2y, g3“xX1,X 2,X 3,JX 1,JX 2y.
+The unknown brackets in (17) can be set as follows. The integrability of J and the nilpotency of g
+imply that
+rX4,JX 1s“ b2
+41X2`c2
+41JX2,
+rJX1,JX 4s“ c2
+41X2´b2
+41JX2.
+In addition, if either V4X g4‰t 0u or V4X g4“t 0u, it is easy to see that
+rX4,JX 3s“ b1
+43X1`b2
+43X2`c1
+43JX1`c2
+43JX2,
+rX4,JX 4s“ b1
+44X1`b2
+44X2`b3
+44X3`c1
+44JX1`c2
+44JX2`c3
+44JX3,
+rJX3,JX 4s“p a1
+34`c1
+43qX1`c2
+43X2`pb1
+34´b1
+43qJX1´b2
+43JX2,
+where g is 4-step nilpotent if c3
+44 “ 0 and 5-step nilpotent otherwise. Imposing the vanishing of
+JacpX4,JX 4,JX 3q, a contradiction is obtained.
+Ź Let us consider V3Ă g3. In this case, the arrangement of the ascending central series starts as
+follows:
+g1“xX1y, g2“xX1,X 2,X 3,JX 2y, g3“xX1,X 2,X 3,JX 2,JX 3y.
+
+=== PDF PAGE 24 ===
+24
+The unknown brackets in (17) can be determined as follows. Due to the Nijenhuis condition and
+the nilpotency of the algebra, one has:
+rX4,JX 3s“ b1
+34X1`b2
+43X2`c2
+43JX2,
+rJX3,JX 4s“ a1
+34X1`c2
+43X2´b2
+43JX2.
+Furthermore, for both V4X g4‰t 0u and V4X g4“t 0u, it is possible to set
+rX4,JX 1s“ b2
+41X2`b3
+41X3`c2
+41JX2`c3
+41JX3,
+rX4,JX 4s“ b1
+44X1`b2
+44X2`b3
+44X3`c1
+44JX1`c2
+44JX2`c3
+44JX3,
+rJX1,JX 4s“ c2
+41X2`c3
+41X3´b2
+41JX2´b3
+41JX3,
+where g is 4-step nilpotent if c1
+44 “ 0 and 5-step nilpotent otherwise. The vanishing of
+JacpX4,JX 4,JX 1q generates a new contradiction.
+Observe that we have rejected the case in which g3 is not J-invariant. Hence, we are led to consider
+the opposite situation.
+‚ Study when g3 is J-invariant.
+One necessarily has g3Ě V1‘ V2‘ V3 and
+(19)
+rX4,JX 1s“ b2
+41X2`c2
+41JX2,
+rX4,JX 3s“ b1
+34X1`b2
+43X2`c2
+43JX2,
+rX4,JX 4s“ b1
+44X1`b2
+44X2`b3
+44X3`c1
+44JX1`c2
+44JX2`c3
+44JX3,
+rJX1,JX 4s“ c2
+41X2´b2
+41JX2,
+rJX3,JX 4s“ a1
+34X1`c2
+43X2´b2
+43JX2,
+where g is 4-step nilpotent if c1
+44“ c3
+44“ 0 and 5-step nilpotent otherwise. From JacpX2,JX 3,Y q and
+JacpX3,JX 1,Y q for Y “ X4,JX 4, one obtains a1
+23 “ b1
+22 “ b1
+23 “ 0 in order to preserve the desired
+arrangement of the series. Furthermore, it is possible to give particular solutions to the remaining Jacobi
+identities, showing that our two cases are valid. □
+4.2.3. Study for dim g2“ 5. We ﬁnally focus our attention on dim g2“ 5. In this case it is possible to
+ﬁnd X1,X 2,X 3P g such that:
+g1“xX1y, g2“xX1,X 2,X 3,JX 2,JX 3y.
+Let tXi,JXiu3
+i“1 belong to the J-adapted basis B and consider X4,JX 4 generators of the J-invariant
+subspace V4“ gzpV1‘ V2‘ V3q. The Lie brackets of g are given by:
+(20)
+rX1,¨s“ 0, rX3,JX 2s“ b1
+23X1, rJX1,JXksk“2,3“ 0,
+rX2,Xksk“3,4“a1
+2kX1, rX3,JXksk“3,4“b1
+3kX1, rJX1,JX 4s unknown,
+rX2,JX 1s“ 0, rX4,JX 1s unknown, rJX2,JXksk“3,4“a1
+2kX1,
+rX2,JXksk“2,3,4“b1
+2kX1, rX4,JX 2s“ b1
+24X1, rJX3,JX 4s“ a1
+34X1,
+rX3,X 4s“ a1
+34X1, rX4,JX 3s“ b1
+34X1,
+rX3,JX 1s“ 0, rX4,JX 4s unknown,
+where all the coeﬃcients are real numbers.
+Proposition 4.10. Let pg,Jq be an 8-dimensional NLA endowed with an SnN complex structure. If
+dim g2“ 5, then the ascending central series of g satisﬁes:
+dim g1“ 1, g2“ g1‘ V2‘ V3, g3 is J-invariant,
+where Vi are 2-dimensional J-invariant spaces.
+Proof. We observe that g“ g2‘ V4‘Jg1, so we are in the conditions of Lemma 3.2 with k“ 2. As a
+consequence, we can directly conclude that either g3“ g, if V4X g3‰t 0u, or g4“ g, if V4X g3“t 0u.
+In the second case, we notice that V1Ă g3, which means g3“ V1‘ V2‘ V3. Hence, in both cases g3 is
+J-invariant. To ﬁnish the proof, it suﬃces to show that the two situations are valid.
+Let us ﬁrst assume that V4X g3‰t 0u. Then,
+g1“xX1y, g2“xX1,X 2,X 3,JX 2,JX 3y, g3“ g,
+
+=== PDF PAGE 25 ===
+25
+and we can set all the unknown real brackets in (20):
+(21)
+rX4,JX 1s“ b2
+41X2`b3
+41X3`c2
+41JX2`c3
+41JX3,
+rX4,JX 4s“ b1
+44X1`b2
+44X2`b3
+44X3`c2
+44JX2`c3
+44JX3,
+rJX1,JX 4s“ c2
+41X2`c3
+41X3´b2
+41JX2´b3
+41JX3.
+The Jacobi identity gives rise to a quadratic system with 9 equations and 17 (real) unknowns that admit
+appropriate solutions. Hence, this case leads to a ﬁrst positive result.
+We now study the opposite situation, namely, V4X g3“t 0u. Then,
+g1“xX1y, g2“xX1,X 2,X 3,JX 2,JX 3y, g3“xX1,X 2,X 3,JX 1,JX 2,JX 3y, g4“ g,
+and we have:
+rX4,JX 1s“ b2
+41X2`b3
+41X3`c2
+41JX2`c3
+41JX3,
+rX4,JX 4s“ b1
+44X1`b2
+44X2`b3
+44X3`c1
+44JX1`c2
+44JX2`c3
+44JX3,
+rJX1,JX 4s“ c2
+41X2`c3
+41X3´b2
+41JX2´b3
+41JX3.
+In particular, notice that c1
+44‰ 0 or otherwise, we would go back to the ﬁrst case. Also here it is possible
+to ﬁnd a solution to the Jacobi identities preserving the arrangement of the ascending central series. □
+As a consequence of the previous results, we have found every 8-dimensional NLA g admitting an SnN
+complex structure J. Indeed, we have provided a J-adapted basis of each g additionally adapted to the
+structure of the ascending central series tgkuk. This fact motivates the following deﬁnition.
+Deﬁnition 4.11. Let g be an s-step nilpotent Lie algebra of dimension 2n endowed with an almost-
+complex structure J. A J-adapted basis B“tXk,JXkun
+k“1 of g will be called doubly adapted if there is
+a permutation Bσ“tV1,...,V 2nu of the elements of B such that Bσ is adapted to the ascending central
+seriestgkuk, i.e.,
+g1“xV1,...,V m1yĂ g2“xV1,...,V m1,Vm1`1,...,V m2yĂ¨¨¨Ăgs“ g“xV1,...,V 2ny,
+beingmk“ dim gk.
+4.3. Complex structure equations. In the previous section, we have completely determined those
+NLAs g of dimension eight admitting an SnN complex structure J. Here, we describe the complex
+structure equations for every such pair pg,Jq.
+Let g be an NLA of dimension 8 endowed with a strongly non-nilpotent complex structure. Let
+B “ tX1,X 2,X 3,X 4,JX 1,JX 2,JX 3,JX 4u be the doubly adapted basis that we have constructed in
+each case of Section 4.2, in this speciﬁc order. Consider its dual basis B˚ “ te1,...,e 8u. We recall
+that the diﬀerential of any element eP g˚ can be computed using the Lie brackets of g by means of the
+well-known formula
+depX,Y q“´ eprX,Y sq,
+where X,Y P g. Since J is a complex structure, one can then construct the p1, 0q-basis
+(22) ω1“e4´ie8, ω 2“e3´ie7, ω 3“e2´ie6, ω 4“e1´ie5,
+and calculate the (complex) structure equations of pg,Jq. We present them in diﬀerent propositions
+according to the dimension of g2.
+Proposition 4.12. Let J be a strongly non-nilpotent complex structure on an 8-dimensional nilpotent
+Lie algebra g such that dim g1“ 1 and dim g2“ 3. The pair pg,Jq is parametrized by
+$
+’’’’&
+’’’’%
+dω1 “ 0,
+dω2 “ Aω 1¯1´Bpω14´ω1¯4q,
+dω3 “ pC´Dqω12´Epω14´ω1¯4q` Fω 1¯1`pG`Dqω1¯2´Hpω24´ω2¯4q
+`pC´Gqω2¯1`Kω 2¯2,
+dω4 “ Lω 1¯1`Mω 1¯2`Nω 1¯3´ ¯Mω 2¯1`isω 2¯2`Pω 2¯3´ ¯Nω 3¯1´ ¯Pω 3¯2,
+where the coeﬃcients are complex numbers with sP R and satisfying the Jacobi identity. Moreover:
+(i) ifpdim gkqk“p 1, 3, 8q then A“B“ 0 and ReL“ 0,
+(ii) ifpdim gkqk“p 1, 3, 6, 8q then B“H“K“P “ 0,
+
+=== PDF PAGE 26 ===
+26
+(iii) ifpdim gkqk“p 1, 3, 5, 8q then K“P “ 0 and ReL“ 0,
+(iv) ifpdim gkqk“p 1, 3, 5, 6, 8q then H“K“P “s“ 0 and ReL‰ 0.
+Proof. On the one hand, from the Lie brackets obtained in the proof of Lemma 4.6 one has real structure
+equations:
+$
+’’’’’’’’’’’’’’’’’’’’’&
+’’’’’’’’’’’’’’’’’’’’’%
+de1 “ ´a1
+23e23´a1
+24e24´b1
+23e27´b1
+24e28´a1
+34e34´b1
+23e36´b1
+33e37
+´b1
+34e38´b1
+24e46´b1
+34e47´b1
+44e48´a1
+23e67´a1
+24e68´a1
+34e78,
+de2 “ ´a2
+34e34´b2
+31e35´b2
+33e37´b2
+34e38´b2
+41e45´b2
+43e47
+´b2
+44e48´c2
+31e57´c2
+41e58´pa2
+34´c2
+34`c2
+43qe78,
+de3 “ ´b3
+44e48,
+de4 “ 0,
+de5 “ ´c1
+44e48,
+de6 “ ´α2
+34e34´c2
+31e35´c2
+33e37´c2
+34e38´c2
+41e45´c2
+43e47
+´c2
+44e48`b2
+31e57`b2
+41e58´pα2
+34`b2
+34´b2
+43qe78,
+de7 “ ´c3
+44e48,
+de8 “ 0,
+where the structure constants satisfy b3
+44“c1
+44“c3
+44“ 0 for pdim gkqk“p 1, 3, 8q and a1
+23“b1
+23“b2
+31“
+b2
+33“c2
+31“c2
+33“ 0 for pdim gkqk“p 1, 3, 6, 8q.
+On the other hand, using the Lie brackets found in the proof of Lemma 4.7 we get:
+$
+’’’’’’’’’’’’’’’’’’’’’&
+’’’’’’’’’’’’’’’’’’’’’%
+de1 “ ´a1
+24e24´b1
+24e28´a1
+34e34´b1
+33e37´b1
+34e38
+´b1
+24e46´b1
+34e47´b1
+44e48´a1
+24e68´a1
+34e78,
+de2 “ ´a2
+34e34´b2
+31e35´b2
+34e38´b2
+41e45´b2
+43e47
+´b2
+44e48´c2
+31e57´c2
+41e58´pa2
+34´c2
+34`c2
+43qe78,
+de3 “ ´b3
+41e45´b3
+44e48´c3
+41e58,
+de4 “ 0,
+de5 “ ´c1
+44e48,
+de6 “ ´α2
+34e34´c2
+31e35´c2
+34e38´c2
+41e45´c2
+43e47
+´c2
+44e48`b2
+31e57`b2
+41e58´pα2
+34`b2
+34´b2
+43qe78,
+de7 “ ´c3
+41e45´c3
+44e48`b3
+41e58,
+de8 “ 0,
+where the structure constants satisfy c1
+44 “ 0 for pdim gkqk “ p1, 3, 5, 8q, and b2
+31 “ c2
+31 “ b1
+33 “ 0 for
+pdim gkqk“p 1, 3, 5, 6, 8q.
+Constructing the p1, 0q-basistωku4
+k“1 described in (22) we get the desired result, simply deﬁning the
+following complex numbers:
+(23)
+A“ c3
+44`ib 3
+44
+2 , D “ c2
+43`ib 2
+43
+2 , G “ a2
+34´iα 2
+34
+2 , L “ c1
+44`ib 1
+44
+2 , P “ a1
+23`ib 1
+23
+2 ,
+B“ c3
+41`ib 3
+41
+2 , E “ c2
+41`ib 2
+41
+2 , H “ c2
+31`ib 2
+31
+2 , M “ a1
+34`ib 1
+34
+2 , s “ b1
+33
+2 .
+C“ c2
+34`ib 2
+34
+2 , F “ c2
+44`ib 2
+44
+2 , K “ c2
+33`ib 2
+33
+2 , N “ a1
+24`ib 1
+24
+2 ,
+□
+Proposition 4.13. Let J be a strongly non-nilpotent complex structure on an 8-dimensional nilpotent
+Lie algebra g such that dim g1 “ 1 and dim g2 “ 4. The pair pg,Jq is parametrized by the structure
+
+=== PDF PAGE 27 ===
+27
+equations $
+’’&
+’’%
+dω1 “ 0,
+dω2 “ Aω 1¯1,
+dω3 “ ´Dpω12´ω1¯2q´ Epω14´ω1¯4q` Fω 1¯1,
+dω4 “ Lω 1¯1`Mω 1¯2`Nω 1¯3´ ¯Mω 2¯1`isω 2¯2´ ¯Nω 3¯1,
+where the coeﬃcients are complex numbers with sP R, and satisfying the Jacobi identity. Furthermore:
+(i) ifpdim gkqk“p 1, 4, 8q thenpReA, ReLq“p 0, 0q,
+(ii) ifpdim gkqk“p 1, 4, 6, 8q thenpReA, ReLq‰p 0, 0q.
+Proof. Using the Lie brackets (17) and (19) we obtain the real structure equations:
+$
+’’’’’’’’’’’’’’’&
+’’’’’’’’’’’’’’’%
+de1 “ ´a1
+24e24´b1
+24e28´a1
+34e34´b1
+33e37´b1
+34e38´b1
+24e46´b1
+34e47´b1
+44e48´a1
+24e68´a1
+34e78,
+de2 “ ´b2
+41e45´b2
+43e47´b2
+44e48´c2
+41e58´c2
+43e78,
+de3 “ ´b3
+44e48,
+de4 “ 0,
+de5 “ ´c1
+44e48,
+de6 “ ´c2
+41e45´c2
+43e47´c2
+44e48`b2
+41e58`b2
+43e78,
+de7 “ ´c3
+44e48,
+de8 “ 0.
+Now, construct the p1, 0q-basis tωku4
+k“1 described in (22) to get the result, where the parameters fol-
+low (23). □
+Proposition 4.14. LetJ be an SnN complex structure on an 8-dimensional NLA g such that dim g1“ 1
+and dim g2“ 5. The pair pg,Jq is parametrized by the structure equations
+$
+’’&
+’’%
+dω1 “ 0,
+dω2 “ Aω 1¯1´Bpω14´ω1¯4q,
+dω3 “ Fω 1¯1´Epω14´ω1¯4q,
+dω4 “ Lω 1¯1`Mω 1¯2`Nω 1¯3´ ¯Mω 2¯1`isω 2¯2`Pω 2¯3´ ¯Nω 3¯1´ ¯Pω 3¯2`itω 3¯3,
+where the coeﬃcients are complex numbers, s,t P R, and they satisfy the Jacobi identity. Moreover:
+(i) ifpdim gkqk“p 1, 5, 8q then ReL“ 0,
+(ii) ifpdim gkqk“p 1, 5, 6, 8q then ReL‰ 0.
+Proof. Directly from the Lie brackets (20) and (21) we obtain the real structure equations:
+$
+’’’’’’’’’’’’’’’’’&
+’’’’’’’’’’’’’’’’’%
+de1 “ ´a1
+23e23´a1
+24e24´b1
+22e26´b1
+23e27´b1
+24e28´a1
+34e34´b1
+23e36´b1
+33e37,
+´b1
+34e38´b1
+24e46´b1
+34e47´b1
+44e48´a1
+23e67´a1
+24e68´a1
+34e78,
+de2 “ ´b2
+41e45´b2
+44e48´c2
+41e58,
+de3 “ ´b3
+41e45´b3
+44e48´c3
+41e58,
+de4 “ 0,
+de5 “ ´c1
+44e48,
+de6 “ ´c2
+41e45´c2
+44e48`b2
+41e58,
+de7 “ ´c3
+41e45´c3
+44e48`b3
+41e58,
+de8 “ 0,
+where c1
+44 “ 0 for pdim gkqk “p 1, 5, 8q and c1
+44 ‰ 0 for pdim gkqk “p 1, 4, 6, 8q. Constructing the p1, 0q-
+basis tωku4
+k“1 given by (22), we get our complex equations above, where t “ b1
+22
+2 and the rest of the
+parameters follow (23). □
+
+=== PDF PAGE 28 ===
+28
+Acknowledgments
+Some results of this paper overlap with the ﬁrst author’s Ph. D. thesis at the University of Zaragoza,
+under the supervision of the second and third authors; we would like to thank D. Angella, A. Fino, S.
+Ivanov and M.T. Lozano for their interest and useful comments and suggestions on the subject. The
+ﬁnal version of this paper was prepared during the stay of the ﬁrst and the last authors at the Fields
+Institute. They would like to thank this institution for its kind hospitality and support. This work
+has been partially supported by the projects MINECO (Spain) MTM2014-58616-P, and Gobierno de
+Arag´ on/Fondo Social Europeo–Grupo Consolidado E15 Geometr´ ıa.
+References
+[1] A. Andrada, M.L. Barberis, I. Dotti, Classiﬁcation of abelian complex structures on 6-dimensional Lie algebras, J.
+Lond. Math. Soc. (2) 83 (2011), no. 1, 232–255. Corrigendum: J. Lond. Math. Soc. (2) 87 (2013), no. 1, 319–320.
+[2] A. Andrada, R. Villacampa, Abelian balanced Hermitian structures on unimodular Lie algebras, Transform. Groups
+21 (2016), 903–927.
+[3] D. Angella, A. Otal, L. Ugarte, R. Villacampa, Complex structures of splitting type, to appear in Rev. Mat. Iberoam.,
+arXiv:1507.03385v3 [math.DG].
+[4] R. Campoamor Stursberg, I.E. Cardoso, G.P. Ovando, Extending invariant complex structures, Internat. J. Math. 26
+(2015), no. 11, 1550096, 25 pp.
+[5] G.R. Cavalcanti, M. Gualtieri, Generalized complex structures on nilmanifolds, J. Symplectic Geom. 2 (2004), 393–410.
+[6] M. Ceballos, A. Otal, L. Ugarte, R. Villacampa, Invariant complex structures on 6-nilmanifolds: classiﬁcation, Fr¨ olicher
+spectral sequence and special Hermitian metrics, J. Geom. Anal. 26 (2016), no. 1, 252–286.
+[7] L.A. Cordero, M. Fern´ andez, A. Gray, L. Ugarte, Nilpotent complex structures on compact nilmanifolds, Rend. Circ.
+Mat. Palermo. (2) Suppl. 2 (1997), no. 49, 83–100.
+[8] L.A. Cordero, M. Fern´ andez, A. Gray, L. Ugarte, The holomorphic ﬁbre bundle structure of some compact complex
+nilmanifolds, Proceedings of the 1st International Meeting on Geometry and Topology (Braga, 1997), 207–221, Cent.
+Mat. Univ. Minho, Braga, 1998.
+[9] L.A. Cordero, M. Fern´ andez, A. Gray, L. Ugarte, Compact nilmanifolds with nilpotent complex structures: Dolbeault
+cohomology, Trans. Amer. Math. Soc. 352 (2000), no. 12, 5405–5433.
+[10] A. Czarnecki, M. Sroka, Six-dimensional product Lie algebras admitting integrable complex structures, J. Pure Appl.
+Algebra (2017), https://doi.org/10.1016/j.jpaa.2017.06.010.
+[11] I.G. Dotti, A. Fino, Hypercomplex eight-dimensional nilpotent Lie groups, J. Pure Appl. Algebra 184 (2003), no. 1,
+41–57.
+[12] N. Enrietti, A. Fino, L. Vezzoni, Tamed symplectic forms and strong K¨ ahler with torsion metrics,J. Symplectic Geom.
+10 (2012), no. 2, 203–223.
+[13] A. Fino, A. Otal, L. Ugarte, Six dimensional solvmanifolds with holomorphically trivial canonical bundle, Int. Math.
+Res. Not. IMRN (2015), no. 24, 13757–13799.
+[14] L. Garc´ ıa Vergnolle, E. Remm, Complex structures on quasi-ﬁliform Lie algebras, J. Lie Theory 19 (2009), no. 2,
+251–265.
+[15] M. Gong, Classiﬁcation of nilpotent Lie algebras of dimension 7 (over algebraically closed ﬁelds and R), PhD. thesis,
+University of Waterloo, 1998.
+[16] M. Goze, E. Remm, Non existence of complex structures on ﬁliform Lie algebras, Comm. Algebra 30 (2002), no. 8,
+3777–3788.
+[17] D.V. Millionshchikov, Complex structures on nilpotent Lie algebras and descending central series, arXiv:1412.0361
+[math.RA].
+[18] I. Nakamura, Complex parallelisable manifolds and their small deformations, J. Diﬀerential Geom. 10 (1975), no. 1,
+85–112.
+[19] G. Ovando, Invariant complex structures on solvable real Lie groups, Manuscripta Math. 103 (2000), 19–30.
+[20] S.M. Salamon, Complex structures on nilpotent Lie algebras, J. Pure Appl. Algebra 157 (2001), no. 2-3, 311–333.
+[21] L. Ugarte, Hermitian structures on six-dimensional nilmanifolds, Transform. Groups 12 (2007), no. 1, 175–202.
+[22] L. Ugarte, R. Villacampa, Non-nilpotent complex geometry of nilmanifolds and heterotic supersymmetry, Asian J.
+Math. 18 (2014), no. 2, 229–246.
+(A. Latorre and R. Villacampa) Centro Universitario de la Defensa - I.U.M.A., Academia General Militar,
+Crta. de Huesca s/n. 50090 Zaragoza, Spain
+E-mail address: adela@unizar.es
+E-mail address: raquelvg@unizar.es
+(L. Ugarte) Departamento de Matem´aticas - I.U.M.A., Universidad de Zaragoza, Campus Plaza San Francisco,
+50009 Zaragoza, Spain
+E-mail address: ugarte@unizar.es

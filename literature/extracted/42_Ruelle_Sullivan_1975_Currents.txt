@@ -1,0 +1,412 @@
+=== PDF PAGE 1 ===
+Epkyy Vol. II, pp. 319-327. Pergamon Press 1975. Printed in Great Britmn 
+CURRENTS, FLOWS AND DIFFEOMORPHISMS 
+DAVID RUELLE and DENNIS SULLIVAN 
+(Received 25 October 1974: revised 25 April 1975) 
+HERE we describe a geometrical object in a manifold which determines by integration of 
+differential forms a closed current in the sense of de Rham. In certain examples from dynamical 
+systems, for example Anosov diffeomorphisms, these geometrical objects will lead to non-trivial 
+real homology classes. 
+Our ‘geometrical currents’ share some of the features of incompressible flows in the manifold. 
+A geometrical currentt is made up of three things-a partial foliation in the manifold which is 
+oriented and provided with a transversal measure. 
+To go into more detail, to give a partial foliation (the streamlines of the current) we give a 
+closed subset S of our smooth manifold W divided into connected subsets L,. There is a 
+collection of closed disks of the form 
+D k x D “-’ = (horizontal disk x vertical disk) 
+called ‘flow boxes’ whose interiors cover W and which meet the L, nicely. Namely, each L, 
+intersects one of the flow boxes Dk x Dnek in a collection of ‘horizontal disks’ {D” x y}. We 
+assume each horizontal disk is smoothly embedded in W with tangent planes varying 
+continuously over the entire flow box. 
+Now we describe the transversal measure on our streamlines {L,} which is the analogue of 
+incompressibility. By a transversal T we mean a smooth (n - k) dimensional submanifold which 
+is transversal to each L,. T is small if it can be surrounded by a single flow box. Now the part of a 
+small transversal in the support S of the current can be slid horizontally to one of the standard 
+transversals x x D”-“. Maps between parts of small transversals constructed by iterations of this 
+operation and its inverse are called canonical isomorphisms. 
+A transversal measure p for our geometric current provides each small transversal with a 
+measure of finite mass. We assume each such measure is supported on the part of the transversal 
+intersecting the support of the current and that the canonical isomorphisms are measure 
+preserving. 
+Finally, to complete our notion of geometric current we need the analogue of direction of flow. 
+This is the orientation u which continuously assigns to each point x of the support S of the 
+current, an orientation of the manifold L, passing through x. 
+The three objects (L,, p, V) define a geometric current with support S. 
+Remark. In what follows it will be clear that we can dispense with introducing those horizontal 
+disks {D” x y} of the flow box Dk x D”-’ which are not contained in the support S of our 
+geometric current. Therefore it suffices to define partial frow boxes {D k x K”-‘} where K “-’ is a 
+closed subset of D”-’ such that S f~ D”-’ C Knek (transversal measures and orientation 
+remain defined as above). This fact will prove useful in the study of Axiom A diffeomorphisms 
+below, where partial flow boxes are available but it is not known if they can be completed to flow 
+boxes Dk x D”-‘. For simplicity we shall, however, continue to consider the flow boxes 
+D Ir x D n-k, and leave to the reader the obvious extension of the results to partial flow boxes. 
+We can speak of two geometric currents (Lp, CL, V) and (Lh, /.L’, v’) intersecting transversally 
+in a third current (Ll, CL”, v”) if W is oriented. For this we assume the layers L, and Lh intersect 
+transversally in the layers LZ. We assume there is one system of flow boxes working 
+simultaneously for all three currents, 
+(D’ x DC); = (Dk’ x DC’), = (Dk”x Dc”)i 
+‘This terminologv is not meant to exclude other geometrical objects defining currents. The examples we discuss have a 
+marked laminar quaiity related to the incompressibility needed to obtain a closed current. 
+319 
+
+=== PDF PAGE 2 ===
+320 DAVID RUELLE AND DENNIS SULLIVAN 
+where c, c', and c” are the codimensions. Then Dk”= Dk II D” and DC”= DC x DC’ and we 
+have the usual relation 
+codimension (L,, p, V) + codimension (L h, p’, v’) = codimension (L Z, CL”, Y”). 
+The orientations of these currents combine with the orientation of W to orient the 
+transversals D’, DC’, and DC”. We assume 
+for these transversal orientations. Finally we assume the relation 
+,J,“=,JXP’ on D”‘=D’ xD” 
+holds for the transversal measures. 
+The de Rham current associated to a geometric current 
+Fix a geometric current (JL, II, u) of dimension k and support S contained in W. We assume 
+W is covered by a locally finite system of flow boxes (D“ x D”-” ), provided with a partition of 
+unity. Then each compactly supported k-form w on W becomes decomposed into a finite sum 
+w = Z wi where wi is supported in the ith flow box. 
+Now we can integrate wi over each horizontal (D’ x y ), and obtain a continuous function fi on 
+(D”-k)i. We can then average this function using the transversal measure CL to obtain a real 
+number ci. Note that ci only depends on the horizontal integrals over the layers of 
+(Dk x D”-“), fl S because the support of p is contained in (D”-k)i n S. There is also a sign 
+question which is fixed using the orientation v in case the flow box really intersects S. So we can 
+define a current in the sense of de Rham from the geometric current (L,, CL, V) by the formula 
+where w = Z wi. 
+In the special case where the support of w is contained in the flow box i, one checks that 
+From this follows that (in the general case) the de Rham current defined above does not depend 
+on the choice of the partition of unity used. It also does not depend on the choice of the system of 
+flow boxes (to see this use a common refinement of any two systems). 
+A second remark is that our de Rham current is closed. That is, if w = dq where Q also has 
+compact support then ((L, CL, v), dQ) = 0. This follows by writing a finite sum Q = F (pi and 
+observing the inside integrals in the definition, JCD~ryj, dQi, vanish. 
+We also note that if the support of w does not meet S then ((La, p, v), w) = 0. 
+So if c is the codimension of our geometric current (L,, p, v) and U C W is the open 
+complement of its support S then we have the 
+PROPOSITION 1. A geometrical current defines a canonical cohomology class 
+if W is oriented. 
+[L, CL, VI E H’(K w, 
+Now we prove a precise geometrical form of the cohomological formula 
+[La, /4 Yl u [L&p’, v’] = [LE, p”, Y”] 
+when (L,, p, v) and (Lh, p’, Y’) intersect transversally in 
+First, recall that any n - k form v on W determines a (k 
+after fixing an orientation of W. 
+(LZ, p”, v”). 
+dimensional) current by the formula 
+
+=== PDF PAGE 3 ===
+CURRENTS, FLOWS AND DIFFEOMORPHISMS 
+Such currents can be multiplied using the wedge products of forms, 
+(V, *) A (u’, -) = (V A v’, .). 
+321 
+One can try to extend this multiplication to more general currents by continuity since these form 
+(or smooth) currents are dense in all currents. 
+Currents can be smoothed by convolution15j. 
+This approximation (or regularization) procedure for currents is linear, commutes with the 
+boundary operator, approximately preserves the support, and (can) proceed by smoothing the 
+current in one coordinate patch at a time[5]. 
+In the case of two currents defined by integration along two submanifolds intersecting 
+transversally the multiplication procedure works in the limit and there is the formula[5] 
+I6i_moR*(M) A Rs(M’) = 
+I 
+(*) Ml7M’ 
+where C -+ RsC is the regularization which depends on choices and a degree of approximation 
+parameter 8. This convergence is uniform for evaluation on uniformly bounded forms supported 
+in a given compact set of W. 
+In these terms we can state the 
+PROPOSITION 2. If two geometrical currents (Lp, II, Y) and (L;, CL’, v’) intersect transversally in 
+(LZ, p”, v”), then for each compactly supported form w we have 
+Isi_mo(&(L,, I*, Y) A Ra(Lh, CL’, V’))(W) = ((LL, CL”, u”), w). 
+Proof. It suffices to discuss forms supported in a single fiow box ’ 
+D =Dk xD= =Dk’xDc~=Dk’xDc” 
+where D’“= Dk fl Dk’ and DC”= DC x DC’. 
+We can write 
+RsG, II, v) = j-D= p(dyWi(Dk x Y)), 
+expressing the basic linearity property of regularizing. We can also write 
+Rs(Lh, CL’, v’) = 
+I 
+Dc, p’(dy)(Ra(Dk’x Y’)). 
+If we approximate these integrals by finite sums 
+Rs(L,,p,v)-&Rs(D’xyi) 
+Rs(Lb,p’,v’)-&diRs(D”xy:) 
+we see that 
+As 6 + 0, Rs (D’ x yi ) A Rs (D *’ x y :) approaches the current defined by Dk n D k’ X (yi, y :) 
+i.e. Dk’ x y:‘j where y’$ = (yi, y:) in D’” = DC x D”[5]. Since this convergence is uniform in y:‘j, 
+and p’= p x IL’ on DC” f~ S”, 
+Ra(L,, p, v) A Rs(Lb, CL’, v’)-+ I D=‘nS” 
+AW)( fDk.., (9) 
+as currents. This completes the proof of Proposition 2. 
+As a corollary we can write the equation of currents 
+(L,, /.L, v) A (LA, I*‘, v’) = (L:, FL!‘, v”) 
+in an oriented manifold. We also obtain the cohomological equation 
+[Lo, /.L, VI u [Lh, p’, u’l = [LE, CL”, u”1 
+
+=== PDF PAGE 4 ===
+322 
+where 
+DAVID RUELLE AND DENNIS SULLIVAN 
+[LL, p’, u’] E H”( w, U’) 
+[LI, p”, Y”] E H”‘( w, U”), 
+C” = c + c’ are the codimensions, and U” = U U U’ are the open sets complementary to the 
+respective supports of the currents. 
+Examples of geometric currents 
+(i) We have already seen that a single oriented submanifold of W defines a geometric current. 
+The. existence of flow boxes is clear and the transverse measure is the point mass along the 
+submanifold. 
+(ii) Consider a linear foliation of the plane by parallel lines. We have a measure on 
+transversals defined by projecting onto orthogonals and we can choose an orientation. If we pass 
+to the standard quotient torus we obtain a geometric current representing the real homology class 
+X cos 8 + Y sin 0 where 8 is the angle between the linear foliation and the x-axis and X and Y 
+are the standard generators of H, (torus, R). 
+(iii) Let S denote the standard solid torus S’ x D* in R’. Consider a diffeomorphism 
+S + interior S which squeezes in and stretches around twice. Then ur?l, f”S is the dyadic solenoid 
+which is locally homeomorphic to C x R where C is the Cantor set of bi-infinite sequences of O’s 
+and 1’s. The transversal Cantor sets are canonically endowed with the (i, t) measure because the 
+ambiguity in the identification involves the interchange of zero and one. Choosing an orientation 
+yields a geometric current supported on the solenoid and representing the generator of H, (solid 
+torus). The theoretical discussion behind this example is given below for general Axiom A 
+diffeomorphisms. 
+(iv) Let (o, be any volume preserving flow on W. Suppose w is an invariant volume form and X 
+is the vector field generating the flow. If X is never zero, then we obtain a geometric current using 
+the flow lines of cp,, oriented by X, and the transversal measure defined by the (n - 1) form 
+“rl(*, . . ., *) = w (X, ‘) . . .) .). The de Rham current associated to this geometric current, described 
+above by two integrations, is also given by the formula 
+C,.,(u) = j-W u(X) A w. 
+This formula defines a current for any pair (w, X) but it only yields a closed current when w is 
+invariant along the flow determined by X. 
+Using the ergodic theorem when W is compact and the pair (Q, w) is ergodict, one can show 
+that the homology class of this current can be approximated as follows-start at (w-almost) any 
+point x and travel along the tlow for a long time T until a point x’ near x is reached. The l/T 
+times the cycle made up of the traveled path plus a small path connecting x and x’ gives the 
+homological approximation, see [6]. 
+These incompressible flow examples include the torus example above, as well as any 
+Hamiltonian dynamical system. However, if the zeroes of the vector field X are not ‘laminar in 
+nature’ one finds new ‘geometrical currents’ outside the class discussed above. 
+(v) Another way to generalize the torus example is to consider higher dimensional foliations. 
+If {L,} is a k-dimensional foliation of W which can be oriented by u and provided with a 
+transversal measure I*, then of course we have a geometric current (I,,, p, v). 
+In general, a non-trivial transversal measure may not exist for a foliation, and if it exists it is only 
+unique in certain cases. If the manifold is compact such a measure generalizes the notion of a 
+compact leaf. For each compact leaf determines the transversal measure which is just the point 
+mass along this leaf and zero elsewhere. In the Reeb foliation of S” the compact leaf determines the 
+only transversal measure. 
+In another example, the manifold W is the unit tangent bundle of an oriented negatively 
+curved compact surface M* of higher genus. The geodesic flow of W, which defines a geometric 
+tThat is, 9, leaves no set invariant whose w measure is positive and less than the total mass of W. 
+
+=== PDF PAGE 5 ===
+CURRENTS.FLOWS AND DIFFEOMORPHISMS 323 
+current, is the transversal intersection of two codimension one foliations. These foliations are 
+transversal to the foliation of W defined by circles of unit tangent vectors. This latter foliation 
+also defines a geometric current by pulling up the volume form of the surface to give a transverse 
+measure. 
+Since the Euler characteristic of MZ is non-zero this current of circles defines the zero 
+homology class. It follows that neither of the transversal codimension one foliations admit 
+transverse measures. If one did, the intersection with the current of circles would be non-zero 
+homologically, which is a contradiction. 
+Axiom A diffeomorphisms 
+Now we turn to the discussion for which the introduction was intended. 
+Let f be a diffeomorphism of the compact manifold M. Recall x E M is called wandering if x 
+has a neighbourhood U which moves away under f, i.e. f”U n lJ = 0 for n 2 1, and 
+non -wandering if it is not wandering. The set of non-wandering points form a closed invariant set 
+n = n(j). Axiom A assumes the density of periodic points in fi and the existence of a df 
+invariant splitting of the tangent bundle of M along a, T = E” @ E”, where E” is exponentially 
+expanded by (df)” and E” similarly contracted (relative to some Riemannian metric). 
+Our constructions here are based on assembling several of the striking geometrical 
+consequences of this axiom established by several workers. 
+Let A be a closed invariant subset of R which is open in a and contains a dense orbit (basic 
+set). The Axiom A splitting has a constant dimension, (n - k, k) along A and we assume that the 
+bundles E” and E” admit orientations. Let 
+WAS ={x E M:f”x+h as n ++m} 
+W,,” ={x E M:f-“x+Aas n-++m}. 
+Now WnS can be filled up by k-dimensional submanifolds of M, the ‘stable manifolds’ of A. 
+Similarly WA” can be filled up by the ‘unstable manifolds of A’. These two systems of 
+submanifolds are oriented, laminar (they admit partial flow boxes) and can be transversely 
+measured. Thus we can obtain two geometric currents of dimensions k and n - k respectively, 
+supported by WAS and WA”, which intersect transversally in A. 
+To begin the construction we choose an adapted Riemann metric on M and for sufficiently 
+small E > 0 and x E A define the local stable and unstable manifolds 
+W,‘(e)={y E M:dCf”x,f”y)<e forall n rO} 
+W,“(e) = {y E M: dCf-“x, f-“y) c e for all n 2 0). 
+Thus fW,‘(e) C W;,(E) and f-‘Wx”(e) C Wfu-lCx,(e). 
+By stable manifold theory[4], if x E A, there are partial flow boxes 
+Dk x K”+ 
+where Knek is a closed subset of W,“(E) so that, for x’ near x, W:,(E) intersects Dk x Knek in 
+exactly one vertical factor. There are also partial flow boxes 
+Kk x D”-k 
+xxx 
+Fig. 1. 
+TOP Vol. 14, No 4-C 
+
+=== PDF PAGE 6 ===
+324 DAVID RUELLE AND DENNIS SULLIVAN 
+where K* is a closed subset of W,‘(E) so that, for x’ near x, W:,(E) intersects Kk x Dnek in 
+exactly one horizontal factor. Furthermore, near x, A agrees with the Cartesian product 
+Kk x K”-“ (Fig. 1). 
+This picture has many consequences, for example if 
+W,“(e)= u {W,‘(e):x E A}, W*“(e)= u {W,“(E):X E A} 
+then W‘\‘(e) n W.,“(a) = A. Also, there are canonical homeomorphisms between parts of 
+Wx’(e) and W:(e) and also W,“(E) and W:.(E), denoted pt.,, and pL,, defined by projection 
+along the appropriate factor. The projections are denoted px’ and p*“. We suppose a is chosen so 
+that, for x, x’ in A and d(x, x’) < a, pxs is defined on W:(a) II A and imbeds this set in 
+Wx’(e) fl A. Similarly, for pxu. 
+Writing B,(P) = {y E M: d(x, y) < p} we can choose /3 < a such that, if x E A, 
+&(p) n W,“(E) C u {WY”(E): y E W,“(e) (-I A} 
+and 
+p33,(p) n W.,“(E)) c w,“(fd 
+and similarly when s and u are interchanged. 
+1. THEOREM. Let log A be the topological entropy off]A. For each x E A there is a measure 
+ux3 r0 on W,‘(E) and a measure ux” 20 on W,“(E) such that: 
+(a) SUPP~; c W,‘(E) n A, supp pxu c W:(E) n A 
+(b) If d(x, x’) < a, the image by p:.,. of the restriction ofu:, to W:(a) n A is the restriction 
+of uxs to p:.x(W:(a) n A): 
+pXuZ~IWXa) n A) = uxs(p~.,(W~(a) fl A). 
+Similarly 
+pXu,U2JWXa) n A)=~~“]p&(W5(a) n A) 
+(c) cf-‘&s - h-‘/.L;-l,)( W;-‘,(E) = 0 
+cfpx” - A -‘/L;(x)/ W;(,(E) = 0 
+(d) Let [., .I: (W,“(E) n A) x (W:(E) n A)+ A be defined by {[y, zl} = W,“Gk) n W/(28). 
+Then 
+1.9 .lbx” x /.~~)iBx(/3) n A=pIBx(P) n A 
+where p is Bowen’s measure on A, i.e., the unique f-invariant probability measure on A such that 
+its measure-theoretical entropy is log A. 
+This theorem is proved by Sinai[7, Theorem 5.11 for Anosov diffeomorphisms. The general 
+case follows simply by using Bowen’s construction of Markov partitions for basic setsill. For 
+completeness we give the argument in the Appendix. 
+As a corollary we see that the stable manifolds near A form a geometric current C.“. The 
+stable bundle Es is assumed oriented so we have a continuous orientation of the W,” (E ). The p ,“.,s 
+generate the canonical isomorphisms among the standard transversals W:(E) n (D* X K”-‘) of 
+the partial flow box Dk X K”-“. The theorem, parts (a) and (b), then provides us with a 
+transversal measure p” generated by canonical isomorphism from Pi”. 
+To go further we must make an orientation assumption about f. Namely that f preserves (or 
+reverses) the orientation of E”. 
+Then by part (c) of the theorem, f maps the geometric current C.” to *h-‘C.’ (when 
+restricted to a small neighbourhood of A). Using this fact we can construct an extension C’ of C.’ 
+to the complement in M of the set 
+X~S = n clos. (w,s\f-W&s(e)). “Z-O 
+It is known[4] that x,,’ n W,,’ = 0. Therefore every x E X,,” belongs to WL for a basic set 
+A’ # A. Furthermore if the Axiom-A diffeomorphism f satisfies the No-Cycle condition, then 
+
+=== PDF PAGE 7 ===
+CURRENTS, FLOWS AND DIFFEOMORPHISMS 325 
+(X,’ n wf.%. # 0) j (A’ > A) (*) 
+where A’ > A means that there is a sequence A’ = A,, AZ,. . ., A,,+, = A such that 
+WXi f-l w;,,, = 0 
+for i = 1,. . ., n. How to prove (*), using [4], was shown to us by J. Palis. Altogether we see that if 
+f satisfies Axiom-A and the No-Cycle condition, C’ is defined on 
+M\ U Wi. (Figure 2). K:h’>* 
+Fig. 2. 
+Similarly we construct a geometric current C” using f, the W,“(e), the measures pi, and the 
+orientation of E” which we suppose is preserved or reversed by f. 
+We also denote by C” and C” the de Rham currents determined by these geometric currents. 
+We summarize all this in the following theorem which makes use of the further fact[4], [2] 
+that 
+W,” II W,,” = A. 
+THEOREM 2. There are naturally defined geometric currents C” of dimension k on M\ U WzL I\‘:A’>,% 
+and C” of dimension n - k on M\ U WZ. C” is supported by the stable manifolds of A and C” h’:*\‘<* 
+by the unstable manifolds of A. C’ and C’ intersect transversally in A which becomes a O-current 
+via the Bowen measure p. On the level of de Rham currents we can say 
+(a) Cs and C” are closed and thus define cohomology classes [C’] and [C”] in 
+H’(M\ u Was, M\ U WI,) and H”-‘(M\ U Wt., M\ U WX,) respectively. X:N>* N:NZA KA’<A i\‘:l\‘r* 
+(b) C” A C” is defined as a current and coincides with the O-dimensional current (A, Bowen 
+measure). It follows that 
+[Cl U [C”] = (A, Bowen measure)d”“’ 
+in H”(M, M\A). 
+(c) Finally fC’ = ?l/hC’ and fC” = ?hC” on the level of currents where log A is the 
+topological entropy of flA. 
+Remark. The orientation assumption on f cannot always be satisfied for example in the 
+horseshoe example where A is totally disconnected. 
+The orientation assumption is fulfilled when A is connected for example when A is an 
+attractor and flA_ is topologically mixing. In fact, Theorem 2 was in part motivated by the 
+homological study of expanding attractors in [8] where the classes [C”] and [C”] are studied in 
+this special case. (See for example the solenoid case (iii) above.) 
+Finally, we note a consequence of Theorem 2 and Proposition 2. Let f be an Anosov 
+
+=== PDF PAGE 8 ===
+326 DAVID RUELLE AND DENNIS SULLIVAN 
+diffeomorphism of a smooth manifold M. In our terms this means the non-wandering set is all of 
+M and f satisfies Axiom A. The classification of these diffeomorphisms whose study has inspired 
+much of the work on Axiom A diffeomorphisms can hopefully be reduced to a study of the 
+algebraic topology of M. As a small step in this direction we have the following 
+COROLLARY. Zf f: M + M is an Anosov diffeomorphism with orientable stable and unstable 
+foliations then there are canonical homology classes (defined by these foliations) S E H,(M. R) 
+and U E Hmer,(M,R) so that S n U= 1 in Ho(M,R) and fU=+hU and fS =+l/AS where 
+log A is the topological entropy off. 
+Appendix: proof of Theorem 1 
+Let V be a Markov partition of A (see [l]) and, if E, F E 92, write 
+Define 
+and ?r:C+Aby 
+t 1 
+EF = 1 
+iff(intE) 17 intF#g 
+0 otherwise 
+Z = {(Et) E %“: tEIE,_, = 1 for all i E Z} 
+{~@i)} = & f-‘Ei. 
+Then it is known that r is a continuous surjective map and f 0 T = T 0 u where (T is the shift on 
+2. Let v be the unique o-invariant probability measure on C. such that its entropy h,(r) is 
+maximum (Parry), then p = PV is the unique f-invariant probability measure on A such that its 
+entropy is maximum and the abstract dynamical systems (u, v) and Cf, p) are isomorphic. 
+Let t be the matrix indexed by V x V with elements tEF. From the Perron-Frobenius 
+theorem [3] it follows that t and its adjoint t * have eigenvectors a, b with components aE > 0, 
+b, > 0 corresponding to the same eigenvalue A > 0, and we may assume that EE E ‘g bEaE = 1. If 
+k I 1, the measure u satisfies 
+v{(Ei) E Z: El, = R,. . ., El = E} = h-(L-k)b&~F~+l . . . tF,_,F,aF, 
+which expresses that (u, v) is a Markov chain. We also have log A = h,(r) = h&). 
+Let 2’ resp. X- be defined like Z with 2 replaced by Z’ = {n E Z: n 2 0) resp. 
+Z-={n EZ:n~O}.Wedefineu:C’+Z’anda-‘: Z- + Z- in the obvious manner. There are 
+measures v* 2 0 on X* such that, for k 2 0, 
+V+{(Ei) E 2’: Eo = Fo, . . ., E, = Fk} = h-&F, * * * tFk_-IFkaFk 
+v-{(Ei) E x-: E-k = F-t, . . ., Eo = Fo} = h -kb&F_~F_~+, . * * tF-,Fo. 
+We may assume that the sets in the Markov partition V have diameter less then E /3. If y = n(Fi ), 
+let ry.Fo: {(Ei) E 2’: E. = IT,}-, WY”(e) fl F. be detined by 
+a&&E,) = T(. . ., F-z, F-i, Fo, El, Ez, . . .I 
+so that 
+{T&,(R)} = W;(E) ni,z+ f-‘Ei. 
+The image of v’l{(Ei) E Z’: E. = Fo} by ?T&, is a measure CL &, on W,“(e) n Fo. The measure s ky.Fo is defined similarly. We have 
+f~:.&i) = ~:~w,kdEi)) 
+for any y*(E,) E E, n f(WxU(e) n I%). The image of v+l{(Ei) E C’: Eo = FO and EI = FJ by c 
+is A-‘v’I{(Ei) E C’: Eo= F,}. Therefore 
+fP J.F” = A-’ 2 tFoF,/.L:*w,LF,. (*) F,EW 
+If x E A we define the measure pI” on W,“(E) as follows. For each E E % such that 
+W,“(E) n Ef 0, choose y E WX”(6) n E. Let supp ~1~” C W,“(E) n ,I and wX” restricted to E 
+
+=== PDF PAGE 9 ===
+CURRENTS, FLOWS AND DIFFEOMORPHISMS 327 
+be CL y,E restricted to W,“(E) n E. We define CL,’ similarly. For the definition of bX” to make sense 
+we have to check that if W,“(E) n E’ # 0 the definition of bxu on E agrees with that on E’. We 
+also want to verify that FL%“, CL:, correspond by p:,,, as asserted in (b). To prove both facts it 
+suffices to show that ~Y,.E. and ~Y,E correspond by the projection p F, along stable manifolds. 
+More precisely we want to show that the image of P:.~ by p:, agrees with P;.,~. on 
+(W;.(E) E E’) n p;.( W,“(E) n E). If E = E’ this is the case because of 
+lr:,.,. = p:m;, 
+and the definition of F:,~, P;..~.. If E Z E’ we use (*) repeatedly to compare flip:.E and fl’~;..~‘. 
+Let Y’ be the set of points (Ei) E 2’ such that E. = E and there exists (E’J E 2’ such that 
+(i) El, = E’ 
+(ii) p F..E.~y.E(Ei) = T,,.~.(E’J 
+(iii) EiZ EI for all i E Z’ 
+We have to prove that v’(Y’) = 0. 
+Let Y be the set of points (Ei) E 2 such that E. = E and there exists (E’J E Z’ such that 
+(i) El, = E’ 
+(ii) ~r;,.~,r(E~) = T:.&E:) 
+(iii) Ei # El for all i E P’ 
+The claim that v’(Y’) = 0 will follow from v(Y) = 0. If z E PY, then for all k E Z’ there exist 
+Ek, EL distinct such that f“z E R and , 
+;i_m_ dcf”z, EL) = 0 
+uniformly in z. The p-measure of the boundary of each set in the Markov partition % vanishes. 
+Therefore 
+v(Y) = I = lim pcf’7rY) = 0. r-X= 
+We have thus verified (a) and (b); (c) follows from (*). Consider now the map 
+{(Ei) E X+:Eo=E}x{(Ei) E X-:Eo=E}+{(Ei) E Z:Eo=E} 
+such that 
+(Eo, E,, . . .) x (. . ., E-,, Eo)+ (. . ., E-,, Eo, E,, . . .). 
+The image of 
+(o+l{(Ei) E Z’: Eo = E}) x (cr-I{(Ei) E C-: Eo = E}) 
+by this map is (+I{(Ei) E 2: E. = E}, and (d) follows readily. 
+REFERENCES 
+I. R. BOWEN: Markov partitions for Axiom A diffeomorphisms, Am. 1. Math. 92 (1970), 725-747. 
+2. R. BOWEN: o-limit sets for Axiom A diffeomorphisms. Preprint. 
+3. F. R. GANTMACHER: The Theory of Matrices. Vol. 2. Chelsea, New York (1964). 
+4. M. HIRSCH, 1. PALIS. C. PUGH and M. SHUB: Invent. Math. 9 (1970), 121-134. 
+5. G. DERHAM: Van’&% D@rentiables. 2nd edn. Hermann, Paris (1960). 
+6. S. SCHWARTZMANN: Asymptotic cycles, Ann. Math. 66 (1957), 270-284. 
+7. IA. G. SINAI: Markov partitions and C-diffeomorphisms, Funkts. Anal. Prilozh. 2 No. 1 (1968). 64-89. 
+8. D. SULLIVAU and R. WILLIAMS: Homological properties of attractors (in preparation). 
+Institut des Hautes Etudes Scientifiques 

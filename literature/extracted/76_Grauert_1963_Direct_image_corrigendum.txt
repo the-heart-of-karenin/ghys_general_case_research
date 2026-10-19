@@ -1,0 +1,73 @@
+--- PDF PAGE 1 ---
+P UBLICATIONS MATHÉMATIQUES DE L ’I.H.É.S.
+HANS GRAUERT
+Berichtigung : Ein Theorem der analytischen Garbentheorie
+und die Modulräume komplexer Strukturen
+Publications mathématiques de l’I.H.É.S. , tome 16 (1963), p. 35-36
+<http://www.numdam.org/item?id=PMIHES_1963__16__35_0>
+© Publications mathématiques de l’I.H.É.S., 1963, tous droits réservés.
+L’accès aux archives de la revue « Publications mathématiques de l’I.H.É.S. » ( http://
+www.ihes.fr/IHES/Publications/Publications.html) implique l’accord avec les conditions géné-
+rales d’utilisation ( http://www.numdam.org/conditions). Toute utilisation commerciale ou im-
+pression systématique est constitutive d’une infraction pénale. Toute copie ou impression de
+ce ﬁchier doit contenir la présente mention de copyright.
+Article numérisé dans le cadre du programme
+Numérisation de documents anciens mathématiques
+http://www.numdam.org/
+
+--- PDF PAGE 2 ---
+BERICHTIGUNG ZU DER ARBEIT
+« EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE
+UND DIE MODULRÄUME KOMPLEXER STRUKTUREN »
+von HANS GRAUERT
+{Publications mathematiques 5, 1960)
+i) In Satz i, § 3 muß an Stelle von p<pi(ä?2? • • •? <^ ^)<Po vorausgesetzt werden
+Pm<P^ 9m-l<^-l{9m)^ Pm-^P^Pm. Pm-l). • • •. P^P?^ . . ., ?2) • Dabei sind p^
+positive Funktionen mit pi= (p^, . . ., p^Po, die noch von (rfg, . . ., d^ K) abhängen,
+jedoch nicht von p„, wenn ^ = i ist. — In den folgenden Sätzen (z. B. Satz 2, 5, 6, 7, 8, g
+aus § 35 Hauptlemma u.s.w.) ist die Voraussetzung für p dementsprechend zu modifi-
+zieren. p ^ po bedeutet fortan diese Dreiecksbedingung.
+Ergänzung zum Beweis von Satz i, § 3. Wir beweisen den Zusatz II gleichzeitig
+mit. Der erste Abschnitt auf p. 26 ist zu ersetzen durch :
+«(/) b'^i,^...,^)
+(^) M^ = M(bJ) n^IP(^), M, = M^-^IM^.
+Die Garbe M^ ist der Kern des Homomorphismus
+M(b,)->H^(bJ->H^(b,)^H^bJ
+und deshalb kohärent. Gleiches gilt für M^. Die Multiplikation mit ^ : M^-^M^^
+definiert eine Injektion M„ ->M^ ^. Es gibt ein pg mit o< pg< po, so daß M„ = M^, v> d^
+über K(pg). Die Garben M^ lassen sich ferner als Untergarben von H^b') auffassen.
+Wir wählen über K (pg) Homomorphismen o^ : {0}^->{0y mit
+a^HH^b^M,
+und über K(p2) Homomorphismen ß^ : ^->^, derart, daß Ä(bJoß^(bJoH^(b,) cM^_i
+und die Abbildungen y, : H^(b^)-^H^b,)-^M^-^-^M, und *(H)^(bJ -^M^
+übereinstimmen.
+Es sei nun pi<p2 so gewählt, daß für K (p, ^), p<pi der Satz i auch in Bezug auf ^
+mit seinem Zusatz II gilt; /eF(K(p, b), H^b)) sei eine endliche Schnittfläche mit
+II/H^M und /|K(e)eM(e) für alle e<b. Es gelte zunächst d^<d[. In diesem Falle
+kommen wir durch Induktion über d-^==d zum Ziele. Sei etwa bereits
+/JK(p,rf—i,<4, ...,rfJ=o.
+131
+
+
+--- PDF PAGE 3 ---
+36 HANSGRAUERT
+Dann liegt nach dem Satz i^_i /^ImUl^-^r^p, b'), H^(b'))] in M^, da
+aus dem induktiv mitbewiesenen Zusatz II in bezug auf K (p, d— i, ^, . . ., ö?J folgt :
+/'|K(e)eM^e). Es gibt eine Schnittfläche ^er(K(p, bQ, (H)^(b')) mit
+T.o^M/'l^-^IWp), b'), MJ.
+Also ist /—A(b)oß„(b)o^==o. Die Zuordnung f-^g ist ferner linear beschränkt, da
+f->g und ß^, linear beschränkt ist.
+Fortan sei also d^>d^. Es folgt : ... »
+Nun weiter bei (*) auf p. 26! g* werde gleich ß^(b )og mit a^(b')o^=/i gesetzt.
+Die Fußnote auf p. 26 ist überflüssig.
+Weitere durch die Änderung von Satz i bedingte Korrekturen :
+a) P. 33 oben : Die Überdeckungen Z und Z' müssen gleichzeitig konstruiert
+werden.
+b) Die Fußnote auf p. 49 und daher auch der Beweis des Korollars II sind nur
+für d== i richtig. Er muß durch eine Induktion über d unter Verwendung der Garben
+S^^/S" vervollständigt werden (wie beim Beweis von Satz i). Analoges gilt für den
+Beweis von Hilfssatz 3.
+2) In § 7, Satz 2 braucht die Menge, in der Xy nicht bijektiv ist, nicht immer
+abgeschlossen zu sein.
+1963. — Imprimerie des Presses Universitaires de France. — Vendome (France)
+ßDIT. N° 27 343 IMPRIME EN FRANCE IMP. N° 17759

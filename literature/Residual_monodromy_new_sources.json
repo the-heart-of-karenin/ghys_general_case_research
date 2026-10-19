@@ -1,0 +1,36 @@
+[
+  {
+    "filename": "67_Franks_Handel_2005_Distortion_elements_v2.pdf",
+    "title": "Distortion Elements in Group actions on surfaces",
+    "authors": [
+      "John Franks",
+      "Michael Handel"
+    ],
+    "download_url": "https://arxiv.org/pdf/math/0404532v2",
+    "landing_url": "https://doi.org/10.1215/S0012-7094-06-13132-0",
+    "resolved_url": "https://arxiv.org/pdf/math/0404532v2",
+    "download_status": "downloaded",
+    "bytes": 283289,
+    "pages": 25,
+    "sha256": "4c5dbaa9bb1b2195668f94b0fafc2e19da71e827f8f21e63edffa6e9521dd245",
+    "collected_utc": "2026-10-19T01:52:35.193967+00:00",
+    "publication_note": "arXiv v2 dated 3 March 2005; PDF title page says 10 November 2018, retained as generation-date discrepancy. Journal Duke Math. J. 131 (2006), 441-468."
+  },
+  {
+    "filename": "68_Hurtado_Xue_2020_Global_rigidity_ABC_v2.pdf",
+    "title": "Global rigidity of some Abelian-by-cyclic group actions on T^2",
+    "authors": [
+      "Sebastian Hurtado",
+      "Jinxin Xue"
+    ],
+    "download_url": "https://arxiv.org/pdf/1909.10112v2",
+    "landing_url": "https://doi.org/10.2140/gt.2021.25.3133",
+    "resolved_url": "https://arxiv.org/pdf/1909.10112v2",
+    "download_status": "downloaded",
+    "bytes": 587546,
+    "pages": 36,
+    "sha256": "ba992626e0d784515f403db419103e9b8bda7b97b591542e55c2dad713f5b44d",
+    "collected_utc": "2026-10-19T01:52:36.044223+00:00",
+    "publication_note": "arXiv v2, 5 December 2020; journal Geometry & Topology 25 (2021), 3133-3178. General-dimensional ping-pong Theorem 1.11 is distinct from the T^2 classification."
+  }
+]

@@ -1,0 +1,1063 @@
+=== PDF PAGE 1 ===
+arXiv:math/0404532v2  [math.DS]  3 Mar 2005
+Distortion Elements in Group actions on surfaces
+John Franks∗ and Michael Handel †
+November 10, 2018
+Abstract
+If G is a ﬁnitely generated group with generators {g1, . . . , gj} then an inﬁnite
+order element f ∈ G is a distortion element of G provided lim inf
+n→∞
+|f n|/n = 0,
+where |f n| is the word length of f n in the generators. Let S be a closed
+orientable surface and let Diﬀ( S)0 denote the identity component of the group
+of C 1 diﬀeomorphisms of S. Our main result shows that if S has genus at
+least two and if f is a distortion element in some ﬁnitely generated subgroup o f
+Diﬀ(S)0, then supp(µ) ⊂ Fix(f ) for every f -invariant Borel probability measure
+µ. Related results are proved for S = T 2 or S2.
+For µ a Borel probability measure on S, denote the group of C 1 diﬀeo-
+morphisms that preserve µ by Diﬀ µ(S). We give several applications of our
+main result showing that certain groups, including a large c lass of higher rank
+lattices, admit no homomorphisms to Diﬀ µ(S) with inﬁnite image.
+1 Introduction and Notation
+In this paper S is a closed orientable surface and µ is a, not necessarily smooth, Borel
+probability measure on S. We denote the group of C 1 diﬀeomorphisms [preserving µ]
+by Diﬀ( S) [Diﬀ µ(S)] and its identity component by Diﬀ( S)0 [Diﬀ µ(S)0]. The support
+of µ is denoted supp( µ). The set of ﬁxed points for f is denoted Fix( f ) and the set
+of periodic points for f is denoted Per( f ).
+Deﬁnition 1.1. If G is a ﬁnitely generated group with generators {g1, . . . , gj} then
+f ∈ G is said to be a distortion element of G provided f has inﬁnite order and
+lim inf
+n→∞
+|f n|
+n = 0,
+∗Supported in part by NSF grant DMS0099640.
+†Supported in part by NSF grant DMS0103435.
+1
+
+=== PDF PAGE 2 ===
+where |f n| is the word length of f n in the generators {g1, . . . , gj}. If G is not ﬁnitely
+generated, then we say that f ∈ G is distorted in G if it is distorted in some ﬁnitely
+generated subgroup of G.
+Equivalently, f is distorted if the translation length of f in G as deﬁned in [12] is
+zero.
+Remark 1.2. It is straightforward to see that the property of being a distortio n ele-
+ment is independent of the set of generators used to measure |f n|. It is also immediate
+that if f is a distortion element then so is f k for all k > 0. The structure theorem for
+ﬁnitely generated abelian groups implies that they have no distortion elements and
+hence no abelian group contains any distortion elements.
+It is easy to check (see Lemma 7.3) that central elements of the th ree dimensional
+Heisenberg group are distortion elements. Lubotzky, Mozes and R aghunathan [16]
+proved that irreducible non-uniform lattices in higher rank Lie group s have distor-
+tion elements. (They prove the stronger result that there are ele ments in the group
+whose word length has logarithmic growth; in this paper we use only th at the growth
+is sublinear.) On the other hand, there are no distortion elements in b iautomatic
+groups [12], mapping class groups [5] and the outer automorphism gr oup of a ﬁnitely
+generated free group [1]. In particular, none of these groups hav e a subgroup that is
+isomorphic to the three dimensional Heisenberg group.
+Polterovich (1.6.C of [18]) proved that if S is a closed surface of genus at least
+two and ω is a smooth measure on S, then ﬁnitely generated subgroups of Ham ω(S),
+the group of Hamiltonian diﬀeomorphisms on S, do not contain distortion elements.
+There is also a closely related result (Theorem 1.6.B of [18]) for ﬁnitely g enerated
+subgroups of Diﬀ ω(S).
+Our main theorem is a generalization of these results from [18]. We do n ot assume
+that the invariant measure is smooth and in particular do not assume that its support
+is all of S. In several respects there are parallels between properties of D iﬀ(S1) and
+Diﬀ µ(S) for S a surface. One of the striking properties of homeomorphisms of S1 is
+that periodic points all have the same period and if there are periodic points they
+contain the support of any invariant measure. Of course, in gener al this is far from
+true for surfaces. However, our main result shows this property does generalize for
+distortion elements in Diﬀ µ(S).
+Theorem 1.3. Suppose that S is a closed oriented surface, that f is a distortion
+element in Diﬀ(S)0 and that µ is an f -invariant Borel probability measure.
+1. If S has genus at least two then supp(µ) ⊂ Fix(f ).
+2. If S = T 2 and Per(f ) ̸= ∅ then supp(µ) ⊂ Fix(f n), where n > 0 is the minimal
+value for which Fix(f n) ̸= ∅.
+3. If S = S2 and if f n has at least three ﬁxed points for some smallest n > 0, then
+supp(µ) ⊂ Fix(f n).
+2
+
+=== PDF PAGE 3 ===
+Remark 1.4. Every periodic orbit is the support of some invariant measure. The-
+orem 1.3 therefore implies that if f is a distortion element in Diﬀ( S)0 and if S has
+genus at least two then Per( f ) = Fix( f ). Similarly, if S is T 2 or S2 and if n > 0 is as
+in (2) or (3) above, then Per( f ) = Fix( f n).
+We do not know if the hypothesis that Per( f ) contains at least three points is
+necessary in (3).
+This result is motivated by an interest in understanding the algebraic properties
+of Diﬀ µ(S)0. We will apply it to obtain results showing that certain ﬁnitely generat ed
+groups can only have homomorphic images in Diﬀ µ(S)0 which are ﬁnite.
+Recall that a group G is called almost simple provided every normal subgroup
+is ﬁnite or has ﬁnite index. Also G is called Kazhdan or said to satisfy property T
+provided the identity is isolated in the unitary dual ˆG (see [15] or [20]).
+Theorem 1.5. Suppose that S is a closed oriented surface of positive genus equipped
+with a Borel probability measure µ and that G is a ﬁnitely generated group which is
+almost simple and possesses a distortion element u. Suppose further that either µ
+has inﬁnite support or that G is a Kazhdan group. Then any homomorphism φ :
+G → Diﬀ µ(S) has ﬁnite image. The result is valid for S = S2 with the additional
+assumption that φ(u) has at least three periodic points.
+In the case S = S2 we may remove the rather artiﬁcial hypothesis on periodic
+points of φ(u) at the expense of replacing the hypothesis of the existence of a d istortion
+element with the stronger hypothesis that G contains a subgroup isomorphic to the
+three-dimensional Heisenberg group. In this case the additional a ssumptions on µ are
+not necessary.
+Theorem 1.6. Suppose that S is a closed oriented surface equipped with a Borel
+probability measure µ, and that G is a ﬁnitely generated almost simple group which
+has a subgroup H isomorphic to the three-dimensional Heisenberg group. The n any
+homomorphism φ : G → Diﬀ µ(S) has ﬁnite image.
+There are two almost immediate corollaries obtained by applying these results to
+higher rank lattices. Their proofs amount to checking that the hyp otheses on the
+lattice are suﬃcient to give the hypotheses of one of the results ab ove. We defer these
+proofs to the last section.
+Corollary 1.7. Let G be an irreducible non-uniform lattice in a semisimple real L ie
+group of real rank at least two. Assume that the Lie group is co nnected, without com-
+pact factors and with ﬁnite center. Suppose that S is a closed oriented surface of genus
+at least one equipped with a Borel probability measure µ. Then every homomorphism
+φ : G → Diﬀ µ(S) has ﬁnite image.
+In case that µ is smooth, Corollary 1.7 is due to Polterovich [18]. There are also
+results due to Farb and Shalen [6] and Ghys [13] which show that larg e classes of
+3
+
+=== PDF PAGE 4 ===
+lattices admit no analytic actions on surfaces except those which fa ctor through a
+ﬁnite group. No invariant measure is required, but the action must b e analytic.
+Any ﬁnite index subgroup of SL(n, Z), n > 2, contains a subgroup isomorphic
+to the Heisenberg group and is also almost simple, (as a result of the M argulis nor-
+mal subgroups theorem; see [17]). Therefore as an immediate cons equence of Theo-
+rem (1.6) we have the following.
+Corollary 1.8. Suppose that Γ is a ﬁnite index subgroup of SL(n, Z). If µ is a Borel
+probability measure on a closed oriented surface S and n ≥ 3, then every homomor-
+phism φ : Γ → Diﬀ µ(S) has ﬁnite image.
+It is known that some interesting classes of groups have the prope rty that their
+commutator subgroup consists entirely of distortion elements (se e [3], Corollary (1.4)
+for example). With this hypothesis our main result gives another inte resting corollary.
+Corollary 1.9. Suppose that S is a closed oriented surface of genus at least one
+equipped with a Borel probability measure µ whose support is all of S. Suppose also
+that Γ is a ﬁnitely generated group such that [Γ, Γ] is generated by distortion elements.
+Then every homomorphism φ : Γ → Diﬀ µ(S) has an abelian image.
+In the same vein we have the following.
+Corollary 1.10. Suppose that S is a closed oriented surface equipped with a Borel
+probability measure µ whose support is all of S and that N ⊂ Diﬀ µ(S)0 is nilpotent.
+If S ̸= S2 then N is abelian. If S = S2 then N has an index two abelian subgroup.
+To conclude this section we give several illustrative examples. An exa mple of G.
+Mess shows that at least some translations on T2 are distorted.
+Example 1.11 (G. Mess). Suppose µ is Lebesgue measure on T2. In the subgroup
+of Diﬀ µ(T2) generated by the automorphism
+A =
+( 2 1
+1 1
+)
+and a translation T (x) = x + w where w ̸= 0 is parallel to the unstable manifold of
+A, the element T is distorted.
+Proof. Let λ be the expanding eigenvalue of A. The element hn = AnT A− n satisﬁes
+hn(x) = x + λnw and gn = A− nT An satisﬁes gn(x) = x + λ− nw. Hence gnhn(x) =
+x + (λn + λ− n)w. Since trAn = λn + λ− n is an integer we conclude
+T trAn
+= gnhn, so |T trAn
+| ≤ 4n + 2.
+But
+lim
+n→∞
+n
+trAn = 0,
+so T is distorted.
+4
+
+=== PDF PAGE 5 ===
+A similar example illustrating Theorem 1.3 starts with an action on S1.
+Example 1.12. Let G be the subgroup of P SL(2, Z[
+√
+2]) generated by
+A =
+( √
+2 − 1 0
+0
+√
+2 + 1
+)
+and B =
+(
+1 1
+0 1
+)
+.
+Let λ =
+√
+2 + 1 and note λ− 1 =
+√
+2 − 1. These matrices satisfy
+A− nBAn =
+( 1 λ2n
+0 1
+)
+and
+AnBA− n =
+( 1 λ− 2n
+0 1
+)
+.
+It is easy to see that m = λ2n + λ− 2n is an integer. Hence
+(A− nBAn)(AnBA− n) =
+( 1 λ2n + λ− 2n
+0 1
+)
+= Bm.
+Thus m grows exponentially in n while |Bm| ≤ 4n + 2 so B is distorted. The group
+G acts naturally on RP1 (the lines in R2 through the origin) which is diﬀeomorphic
+to S1. The element B has a single ﬁxed point, the x− axis, and the only B invariant
+measure is supported on this point.
+In example 1.6.K of [18] Polterovich considers the embedding ψ : G → P SL(2, R)×
+P SL(2, R) where ψ(g) = ( g, ¯g) with ¯g being the conjugate of g obtained by replacing
+an entry a + b
+√
+2 with a − b
+√
+2. He points out that the image of ψ is an irreducible
+non-uniform lattice in a Lie group of real rank 2 . Of course ( B, ¯B) = ( B, B) is a
+distortion element in ψ(G) and in the product action of P SL(2, R) × P SL(2, R) on
+T 2 = S1 × S1 it has only one ﬁxed point ( p, p) where p is the ﬁxed point of B acting
+on S1. It is also clear that the only ( B, ¯B) invariant measure is supported on this
+point. It is easy to see that there are elements of ψ(G) which do not ﬁx this point,
+and hence there is no probability measure invariant under all of ψ(G).
+D. Calegari showed us an example which illustrates that Diﬀ µ(S) cannot be re-
+placed with Homeo µ(S) in Theorem 1.6.
+Example 1.13 (D. Calegari). There is a C 0 action of the Heisenberg group on S2
+whose center is generated by an irrational rotation. Hence an irra tional rotation of
+S2 is distorted in Homeo µ(S2) where µ is a measure supported on the ﬁxed points of
+this rotation.
+Proof. Consider the linear homeomorphism of R2 given by G(x, y) = ( x + y, y) and
+the translation H(x, y) = ( x, y + 1). We compute F = [ G, H] to be a translation
+F (x, y) = ( x + 1, y). This deﬁnes an action of the Heisenberg group on R2. Let C
+5
+
+=== PDF PAGE 6 ===
+be the cylinder obtained by quotienting by the relation ( x, y) ∼ (x + α, y) for some
+α ∈ R \Q. The quotient action is well deﬁned. The two ends of C are ﬁxed by every
+element of the action and hence if we compactify C to obtain S2 by adding a point
+at each end, we obtain an action of the Heisenberg group by homeom orphisms on
+S2.
+Question 1.14. Is an irrational rotation of S1 distorted in Diﬀ( S1) or Homeo( S1)? Is
+an irrational translation distorted in Diﬀ( T 2)0? Example 1.11 shows that at least some
+irrational translations are distorted Diﬀ( T 2), but the construction requires generators
+which are not isotopic to the identity. Is an irrational rotation of S2 distorted in
+Diﬀ(S2) or area preserving diﬀeomorphisms of S2? Example 1.13 shows that any
+irrational rotation of S2 is distorted in Homeo( S2).
+Conversations with K. Parwani were valuable in the preparation of t his article.
+2 Rotation vectors
+Suppose that S ̸= S2, that g ∈ Diﬀ(S)0 and that ˜g : ˜S → ˜S is a lift to the universal
+cover that commutes with all covering translations of ˜S. If S ̸= T 2, then there is a
+unique such lift but if S = T 2 then every lift has this property.
+Given x ∈ S, choose a lift ˜ x ∈ ˜S. For each n > 0, choose a lift ˜ xn of x whose
+distance from ˜gn(˜x) is uniformly bounded, say by the diameter of S. There is a
+covering translation Tn such that Tn(˜x) = ˜xn and we denote the element of H1(S)
+corresponding to Tn by δn(x). We deﬁne the rotation vector of x ∈ S with respect to
+˜g by
+ρ(x, ˜g) = lim
+n→∞
+1
+nδn(x)) ∈ H1(S, R)
+if this limit exists. It is clear that ρ(x, ˜g) is independent of the exact choice of Tn.
+Moreover, if A is a covering translation and if ˜ x is replaced by A(˜x), then Tn can be
+replaced by ATnA− 1. Thus ρ(x, ˜g) depends only on x and ˜g and not on the lift ˜ x.
+The following results are proved in [8].
+If g ∈ Diﬀ µ(S)0 then ρ(x, ˜g) is deﬁned for almost every point with respect to µ.
+If S ̸= T 2 that the mean rotation vector ρµ(˜g) :=
+∫
+ρ(x, ˜g)dµ : Diﬀ µ(S)0 → H1(S, R)
+is a homomorphism.
+There is a natural identiﬁcation of H1(T 2, R) with the universal cover R2 of T 2.
+Moreover, if T : R2 → R2 is a covering translation then ρ(x, T ˜f ) = T ρ(x, ˜f ). It
+follows that the image ˆ ρ(x, f) ∈ T 2 of ρ(x, ˜f ) is independent of the choice of lift
+˜f . There is an induced homomorphism ˆ ρµ : Diﬀ µ(T )0 → T 2. Abusing terminology
+slightly we will also refer to ˆ ρµ(f ) as a rotation vector.
+These deﬁnitions works equally well for a homeomorphism g : A → A of a closed
+annulus. In that case, H1(A, R) is identiﬁed with R, ρ(x, ˜g) is called the rotation
+number of x with respect to ˜g and ρµ(˜g) is called the mean rotation number of µ with
+respect to ˜g. There is an induced homomorphism ˆ ρµ : Homeo µ(A)0 → S1.
+6
+
+=== PDF PAGE 7 ===
+Remark 2.1. Suppose that g ∈ Diﬀ µ(S)0 or g ∈ Diﬀ µ(A)0 . Then ˆρµ(g) = 0 if and
+only if there is a lift ˜ g such that ρµ(˜g) = 0.
+Lemma 2.2. Suppose that M = T 2 or M = A, that g ∈ Homeo(M)0 and that for
+some lift ˜gto the universal cover ρ(x, ˜g) = 0 for all x in the interior of M for which
+it is deﬁned. Then
+1. Fix(g) ̸= ∅.
+2. If in the case M = A there is an invariant measure µ with µ(A \∂A) > 0, then
+g has a ﬁxed point in the interior of A.
+Proof. Suppose ﬁrst that M = T 2. It is an immediate consequence of the hypotheses
+and the deﬁnitions that ρµ(˜g) = 0 for every invariant measure µ. There is always an
+invariant ergodic measure µ. The lemma therefore follows from applying Theorem
+3.5 of [7].
+For the case M = A we note that under the hypotheses of (2) there is an invariant
+ergodic measure ν with ν(A \∂A) > 0. It then must be the case that ν(∂A) = 0 and
+that ρν(˜g) = 0. The result then follows from the following proposition.
+Proposition 2.3. Suppose that g : A → A is a homeomorphism of the annulus which
+is isotopic to the identity and possesses an ergodic invaria nt measure ν whose support
+intersects the interior of A. If ρν(˜g) = 0 for some lift ˜g : ˜A → ˜A of g to the universal
+cover ˜A then ˜g has a ﬁxed point in the interior of ˜A.
+Proof. Let P be a disk in the interior of A with ν(P ) > 0 and let h be the ﬁrst return
+map of g on P .
+Denote the full pre-image of P in ˜A by ˜P and the lift of h corresponding to ˜g by
+˜h. Projection p1 : A → S1 onto the ﬁrst coordinate lifts to a projection ˜ p1 : ˜A → R.
+For x in the domain of h, deﬁne ψ0(x) = (˜p1(˜g(˜x)) − ˜p1(˜x)) where ˜x is a lift of x and
+deﬁne ψ(x) = (˜p1(˜h(˜x)) − ˜p1(˜x)). From the fact that
+∫
+A
+ψ0 dν = ρν(˜g) = 0
+it is straightforward to check that
+∫
+P
+ψ dν = 0.
+Using this, Proposition (12.1) from [10] asserts that if
+S(n, x) =
+n− 1∑
+i=0
+ψ(hi(x))
+then for a full measure subset of P there are inﬁnitely many values of n > 0 with
+|S(n, x)|< 1. Hence p1(hn(˜x))− p1(˜x) < 1 for inﬁnitely many values of n. We conclude
+that ˜g has an interior recurrent point and by the Brouwer plane translatio n theorem
+has an interior ﬁxed point.
+7
+
+=== PDF PAGE 8 ===
+3 Hyperbolic Geometry
+Some of our proofs rely on mapping class group techniques that use hyperbolic geome-
+try. In this section we establish notation and recall standard resu lts about hyperbolic
+structures on surfaces.
+Let S be a closed orientable surface. We will say that a connected open su bset
+M of S has negative Euler characteristic if H1(M, R) is inﬁnite dimensional or if M
+is of ﬁnite type and the usual deﬁnition of Euler characteristic has a negative value.
+All such M have complete hyperbolic structures; further details can be foun d, for
+example, in [10].
+We use the Poincar´ e disk model for the hyperbolic plane H. In this model, H is
+identiﬁed with the interior of the unit disk and geodesics are segment s of Euclidean
+circles and straight lines that meet the boundary in right angles. A ch oice of hy-
+perbolic structure on M provides an identiﬁcation of the universal cover ˜M of M
+with H. Under this identiﬁcation covering translations become isometries o f H and
+geodesics in M lift to geodesics in H. The compactiﬁcation of the interior of the unit
+disk by the unit circle induces a compactiﬁcation of H by the ‘circle at inﬁnity’ S∞ .
+Geodesics in H have unique endpoints on S∞ .
+Each covering translation T extends to a homeomorphism (also called) T : H ∪
+S∞ → H ∪ S∞ . The ﬁxed point set of a non-trivial T is either one or two points in
+S∞ . We denote these point(s) by T + and T − , allowing the possibility that T + = T − .
+If T + = T − , then T is said to be parabolic. If T + and T − are distinct, then T is said
+to be hyperbolic and we may assume that T + is a sink and T − is a source. In this
+case the geodesic connecting T − to T + is said to be the axis of T .
+Suppose now that f ∈ Diﬀ(S) and that K ⊂ Fix(f ). Each component of S\Fix(f )
+is f -invariant by [2]. If M is a component of S \K with negative Euler characteristic,
+then we denote f |M by h to keep a clear distinction between f and f |M and to
+simplify notation. We use the identiﬁcation of H with ˜M and write ˜h : H → H for
+lifts of h : M → M to the universal cover. A fundamental result of Nielsen theory
+is that every lift ˜h : H → H extends uniquely to a homeomorphism (also called)
+˜h : H ∪ S∞ → H ∪ S∞ . (A proof of this fact appears in Proposition 3.1 of [14]). If
+h : M → M is isotopic to the identity then there is a unique lift ˜h, called the identity
+lift, that commutes with all covering translations and whose extension o ver S∞ is the
+identity.
+In certain contexts it is convenient to blow up isolated ends of M. More precisely,
+we compactify an isolated end of M by adding a circle via the following well known
+lemma, a proof of which can be found in Lemma 5.1 of [10]. This construc tion does
+not depend on the hyperbolic structure of M and can be applied equally well when
+M is topologically an annulus.
+Lemma 3.1. Suppose that U ⊂ S is an open f -invariant set and that E is an isolated
+end of U whose frontier is contained in Fix( f ). Then E can be compactiﬁed by a circle
+C and f |U has a continuous extension
+f |C over C. If the frontier of E is not a single
+8
+
+=== PDF PAGE 9 ===
+point then f |C = identity. Moreover, if γ is a smooth path in U with an endpoint p
+in the frontier of U, then γ \ {p} extends to a path in ¯U = U ∪ C with an endpoint P
+in C.
+This ‘blowing up’ is functorial in the sense that if g : S → S preserves U and
+pointwise ﬁxes the frontier of U then f |C ◦ g|C = f |C ◦ g|C. (This is immediate if the
+frontier of E is not a single point and follows easily from the smoothness of f and g
+in the remaining case.) Similarly, if γ1 and γ2 are smooth paths in U with a common
+endpoint p in the frontier of U, and if γ2 and γ2 are homotopic relative to the frontier
+of U, then the extensions of γ1 \ {p} and γ2 \ {p} have a common endpoint P in C.
+If ﬁnitely many isolated ends of M have been blown up, then the resulting surface,
+which we continue to denote by M, has a complete hyperbolic structure but now its
+universal cover is naturally identiﬁed with the intersection of H with the convex hull
+of a Cantor set C ⊂ S∞ . The frontier of ˜M in H ∪ S∞ is the union of C with the full
+pre-image ∂ ˜M of ∂M . If h is isotopic to the identity, then the identity lift commutes
+with all covering translations and extends to a homeomorphism of ∂ ˜M ∪ C that ﬁxes
+C.
+4 Some results when K = Fix(f )
+The main lemma of this section is a consequence of the results and met hods of [10].
+We begin with a pair of deﬁnitions. The ﬁrst is linear tracing.
+Deﬁnition 4.1. Suppose that f ∈ Diﬀ(S), that M is a component of S \ Fix(f )
+with negative Euler characteristic and that β is an essential simple closed curve in
+M whose isotopy class is ﬁxed by h = f |M . If β is peripheral in M assume that the
+end that it encloses has been blown up to a boundary component . Choose a covering
+translation T : H ∪ S∞ → H ∪ S∞ whose axis AxT projects to a simple closed curve
+that is isotopic to β. Identify AxT with R so that the action of T on AxT corresponds
+to unit translation on R. Let ˜p : H ∪ (S∞ \ {T ± }) → R be a T -equivariant projection
+of H ∪ S∞ onto AxT (e.g. orthogonal projection) followed by the identiﬁcatio n of AxT
+with R. Let ˜h : H ∪ S∞ → H ∪ S∞ be a lift of h that commutes with T . We say that
+x ∈ M linearly traces β if there is a lift ˜x ∈ H such that
+lim inf
+n→∞
+|˜p(˜hn(˜x)) − ˜p(˜x)|
+n > 0.
+Since any two T -equivariant projections of H ∪ S∞ onto Ax T diﬀer by a bounded
+amount, Deﬁnition 4.1 is independent of the choice of projection. We make use of
+this ﬂexibility in Lemma 5.3.
+The surface S is assumed to have an underlying Riemannian metric so a smooth
+closed curve τ ⊂ S has a well deﬁned length lS(τ ). Deﬁne the exponential growth rate
+by
+egr(f, τ ) = lim inf
+n→∞
+log(lS(f n(τ ))
+n
+9
+
+=== PDF PAGE 10 ===
+.
+We can now state and prove the main result of this section.
+Lemma 4.2. Suppose that f ∈ Diﬀ µ(S)0 has inﬁnite order and that supp(µ) ̸⊂
+Fix(f ). Suppose further that if S = T 2 then Fix(f ) ̸= ∅ and that if S = S2 then
+Fix(f ) contains at least three points. Then, after possibly replac ing f with an iterate,
+at least one of the following holds:
+(1) There is a closed curve τ such that egr(f, τ ) > 0.
+(2) f is isotopic relative to Fix(f ) to a composition of non-trivial Dehn twists about
+a ﬁnite collection of non-peripheral, non-parallel, disjo int simple closed curves
+in S \Fix(f ).
+For the following, f is isotopic to the identity relative to Fix(f ).
+(3) There is an f -invariant annular component U of S \Fix(f ) with canonical ex-
+tension
+f |U : ¯U → ¯U and there is x ∈ U such that the rotation number of x
+with respect to the lift of f |U that ﬁxes points on the boundary is non-zero.
+(4) There exists a component M of S \Fix(f ) with negative Euler characteristic, a
+simple closed curve β ⊂ M that is essential in M and there exists x ∈ M that
+linearly traces β in M.
+(5) There exists x ∈ S and a lift ˜f such that Fix( ˜f ) ̸= ∅ and such that the rotation
+vector ρ(x, ˜f ) is not zero. In this case S ̸= S2 and ˜f is the identity lift if S ̸= T 2.
+Proof. We follow the proof of Theorem 1.1 of [10].
+Theorem 1.2 of [10] implies that if neither (1) nor (2) holds then f is isotopic to
+the identity relative to Fix( f ). Applying this to iterates of f we may assume that f k
+is isotopic to the identity relative to Fix( f k) for all k ≥ 1.
+Each component U of S \ Fix(f ) is f -invariant by [2]. Choose a component U
+of S \ Fix(f ) with µ(U) > 0. Poincare recurrence implies that there are recurrent
+points in U. The Brouwer plane translation theorem therefore implies that U is not a
+disk. If U is an open annulus, then by Lemma 3.1, U can be compactiﬁed to a closed
+annulus ¯U in such a way that f extends to the identity on at least one boundary
+component. Lemma 2.2 implies that (3) is satisﬁed.
+We may therefore assume that U has negative Euler characteristic; for notational
+consistency we denote U by M. Lemma 3.7 of [11], applied to the map obtained by
+redeﬁning f to be the identity on all components of S \Fix(f ) other than M, implies
+that Per( f |M) = Fix( f |M).
+The three preceding paragraphs replace the ﬁrst four paragrap hs of the proof of
+Theorem 1.1 of [10]. The remainder of that proof, save the very last sentence, apply
+to our current context without change and prove that either (4) or (5) hold.
+10
+
+=== PDF PAGE 11 ===
+5 Spread
+Suppose that f ∈ Diﬀ(S)0, that γ ⊂ S is a smoothly embedded path with distinct
+endpoints in Fix( f ) and that β is a simple closed curve that crosses γ exactly once.
+We want to measure the relative rate at which points move ‘across γ in the direction
+of β’.
+Let A be the endpoint set of γ and let M be the surface with boundary obtained
+from S by blowing up both points of A. We now think of γ as a path in M and
+of β as a simple closed curve in M. Assume at ﬁrst that S ̸= S2 and that M is
+equipped with a hyperbolic structure as in section 3. Choose non-dis joint extended
+lifts ˜β ⊂ H ∪ S∞ and ˜γ ⊂ H ∪ S∞ and let T : H ∪ S∞ → H ∪ S∞ be the covering
+translation corresponding to ˜β, i.e. T ± are the endpoints of ˜β. Denote T i(˜γ) by ˜γi.
+Each ˜γi is an embedded path in H ∪ S∞ that intersects S∞ exactly in its endpoints.
+Moreover, ˜γi separates ˜γi− 1 from ˜γi+1.
+An embedded smooth path α ⊂ S whose interior is disjoint from A can be thought
+of as a path in M. For each lift ˜α ⊂ H ∪ S∞ , there exist a < b such that ˜α ∩ ˜γi ̸= ∅
+if and only if a < i < b . Deﬁne
+˜L ˜β,˜γ( ˜α) = max {0, b − a − 2}
+and
+Lβ,γ (α) = max { ˜L ˜β,˜γ( ˜α)}
+as ˜α varies over all lifts of α.
+Suppose now that S = S2 and hence that M is the closed annulus. In this case
+˜M is identiﬁed with R × [0, 1], T (x, y) = ( x + 1, y) and ˜γ is an arc with endpoints in
+both components of ˜M. With these modiﬁcations, Lβ,γ (α) is deﬁned as in the S ̸= S2
+case.
+There is an equivalent deﬁnition of Lβ,γ (α) that does not involve covers or blowing
+up. Namely, Lβ,γ (α) is the maximum value k for which there exist subarcs γ0 ⊂ γ
+and α0 ⊂ α such that γ0α0 is a closed path that is freely homotopic relative to A to
+βk. We allow the possibility that γ and α share one or both endpoints. The ﬁniteness
+of Lβ,γ (α) follows from the smoothness of the arcs α and γ.
+Remark 5.1. For future reference we observe that there is a subpath α1 ⊂ α0 so that
+the absolute value of the algebraic intersection of α1 with γ is at least Lβ,γ (α) − 1.
+Deﬁne the spread of α with respect to f, β and γ to be
+σf,β,γ (α) = lim inf
+n→∞
+Lβ,γ (f n ◦ α)
+n .
+Remark 5.2. If γ′ is another smoothly embedded arc that crosses β exactly once and
+that has the same endpoints as γ then σf,β,γ (α) = σf,β,γ ′(α) for all α. This follows
+from the fact that ˜ γ′ is contained in the region bounded by ˜ γj and ˜γj+J for some j
+and J and hence |Lβ,γ ′(α) − Lβ,γ (α)| ≤ 2J for all α.
+11
+
+=== PDF PAGE 12 ===
+Lemma 5.3. Suppose that M is a component of S \ Fix(f ) with negative Euler
+characteristic, that β is a simple closed essential curve in M and that there exists
+a smoothly embedded path γ ⊂ S that has interior in M, endpoint set A ⊂ Fix(f )
+and that crosses β exactly once. If there exists x ∈ M that linearly traces β then
+σf,β,γ (γ) > 0.
+Proof. Let ˜β, ˜γ and T be as in the deﬁnition of spread. Let ˜ p : H ∪ (S∞ \ {T ± }) → R
+and ˜x be as in Deﬁnition 4.1. We may assume that ˜ p˜γ = 0 and ˜ p(˜x) ∈ (− 1, 0).
+Thus ˜γk = ˜p− 1(k) for all k. For all suﬃciently large n, ˜p(˜hn(˜x)) > Cn for some ﬁxed
+constant C > 0. Since the endpoints of ˜ γ are ﬁxed by ˜h it follows that there is a
+subpath µn of ˜hn(˜γ) with initial endpoint z1 ∈ ˜γ1 and terminal endpoint z2 ∈ ˜γCn and
+there is a subpath νn of ˜γ1 with terminal endpoint z1 and initial endpoint T 1− Cnz2.
+Then µnνn is homotopic to βCn− 1 relative to Fix( f ) and so also relative to A. This
+proves that Lβ,γ (f nγ) ≥ Cn − 1 and hence that σf,β,γ (γ) ≥ C > 0.
+We need one more deﬁnition. Assume that f ∈ Homeo(S)0 and that S ̸= S2. A
+metric d on S lifts to an equivariant metric ˜d on the universal cover ˜S. We say that
+f has linear displacement if either of the following conditions hold.
+• S ̸= T 2, ˜f is the identity lift and there exists ˜ x ∈ ˜S = H such that
+lim inf
+n→∞
+˜d( ˜f n(˜x), ˜x)
+n > 0.
+• S = T 2 and there exist ˜f and ˜x1, ˜x2 ∈ ˜S = R2 such that
+lim inf
+n→∞
+˜d( ˜f n(˜x1), ˜f n(˜x2))
+n > 0.
+We recognize linear displacement via the following lemma.
+Lemma 5.4. Assume that S ̸= S2. Then f ∈ Homeo(S)0 has linear displacement if
+any of the following conditions is satisﬁed.
+• S ̸= T 2 and the identity lift does not ﬁx the full pre-image of Fix(f ).
+• S = T 2 and there is a lift ˜f that ﬁxes some but not every point in the full
+pre-image of Fix(f ).
+• There exist x1, x2 ∈ S such that ρ(x, ˜f ) ̸= ρ(x, ˜f ) where ˜f is the identity lift if
+S ̸= T 2 and is arbitrary if S = T 2.
+Proof. In the ﬁrst case, there exists ˜ x ∈ ˜S and a non-trivial covering translation
+T such that ˜f (˜x) = T (˜x) where ˜f is the identity lift. Since ˜f commutes with T ,
+˜f n(˜x) = T n(˜x) for all n and the lemma follows from the fact that the translation
+length of T n is n times the translation length of T . In the second case, there is a ﬁxed
+12
+
+=== PDF PAGE 13 ===
+point ˜x1 for ˜f and there is a point ˜ x2 such that ˜f (˜x2) = T (˜x2) for some non-trivial
+covering translation T . Thus ˜f n(˜x1) = ˜x1 and ˜f n(˜x2) = T n(˜x2) and the lemma follows
+as in the previous case. In the third case the lemma follows from the d eﬁnition of
+rotation vector.
+The following corollary of Lemma 4.2 is the main result of this section.
+Corollary 5.5. Suppose that f ∈ Diﬀ µ(S)0 has inﬁnite order and that supp(µ) ̸⊂
+Fix(f ). Suppose further that if S = T 2 then Fix(f ) ̸= ∅ and that if S = S2 then
+Fix(f ) contains at least three points. Then, after possibly replac ing f with an iterate,
+at least one of the following holds:
+(1) There is a closed curve τ such that egr(f, τ ) > 0.
+(2) f has linear displacement.
+(3) There is a k-fold cover Sk of S with k = 1 or k = 2 , a lift fk : Sk → Sk of
+f : S → S that is isotopic to the identity and there exist α, β and γ as above
+such that σfk,β,γ (α) > 0.
+Proof. We consider the ﬁve cases of Lemma 4.2. If the ﬁrst item of that lemm a holds
+then the ﬁrst item of this corollary holds. If the ﬁfth item of the lemm a holds then
+the second item of the corollary holds by Lemma 5.4.
+Suppose that the third item of the lemma holds. Let β be the core curve of U.
+Let γ be an arc with interior in U that extends to an arc ¯ γ in ¯U with endpoints on
+diﬀerent components of ∂ ¯U and that intersects β exactly once. Finally, let α be an
+arc whose interior is contained in U, that has x as one endpoint and that extends
+to an arc ¯α that is disjoint from ¯ γ and that has an endpoint in a component of ∂ ¯U
+consisting of ﬁxed points of f . Then σf,β,γ (α) > 0 and (3) is satisﬁed with k = 1.
+Suppose next that the second item of the lemma holds, i.e. that f is isotopic
+relative to Fix( f ) to a composition of Dehn twists about a ﬁnite collection R(f ) of
+simple closed curves in S \Fix(f ) that are neither peripheral nor parallel in S \Fix(f ).
+Denote the set of elements of R(f ) that are essential in S by Re(f ). If Re(f ) ̸= ∅ then
+S ̸= S2 and there are two possibilities. One is that there exist x1, x2 ∈ Fix(f ) and a
+path τ connecting them such that τ has exactly one intersection with Re(f ). In this
+case no lift of f ﬁxes the full pre-image of x1 and x2 so (2) holds by Lemma 5.4. If
+S = T 2 then this case always occurs so we may now assume that S has negative Euler
+characteristic. The second possibility is that there exists x ∈ Fix(f ), a lift ˜x ∈ H and
+a ray ˜σ connecting ˜x to a point in S∞ such that ˜σ crosses exactly one element of the
+full pre-image ˜Re of Re. In this case ˜ x is not ﬁxed by the identity lift ˜f and so again
+(2) holds.
+Suppose then every element of R(f ) bounds a disk in S that contains at least
+two points in Fix( f ). We will assume at ﬁrst that Fix( f ) is not contained in a single
+component of S \ R(f ). Choose a path γ connecting x1 ∈ Fix(f ) to x2 ∈ Fix(f )
+such that γ has either one or two intersections with R(f ) and that if there are two
+13
+
+=== PDF PAGE 14 ===
+intersections then they are with diﬀerent elements of R(f ). Choose a lift ˜γ ⊂ H ∪ S∞
+of γ and let ˜f : H ∪ S∞ → H ∪ S∞ be the lift that ﬁxes the initial endpoint P ∈ S∞
+of ˜γ. If β is the ﬁrst element of R(f ) intersected by γ then there is a lift ˜β of β that
+intersects ˜γ; the endpoints of ˜β are ﬁxed by ˜f . Let T : H ∪ S∞ → H ∪ S∞ be the
+covering translation corresponding to ˜β. Let l be the order of the Dehn twist of f
+about β and let Q ∈ S∞ be the terminal endpoint of ˜ γ. If β is the only element of
+R(f ) that intersects γ then ˜f n(Q) = T nl(Q). If γ intersects another element ˜β′ of
+˜R( ˜f ), with endpoints say R1, R2 ∈ S∞ , then ˜f n(Ri) = T nl(Ri) and ˜f n(Q) lies in the
+interval bounded by T nl(R1) and T nl(R2) that does not contain P . In either case
+˜f n(˜γ) intersects T (˜γ) and T nl− 1(˜γ). An argument exactly like that in the proof of
+Lemma 5.3 shows that σf,β,γ (γ) > 0 and (3) is satisﬁed with k = 1.
+To complete this case, suppose R(f ) is a single element β and that Fix( f ) is
+contained in a disk bounded by β. Then S ̸= S2 and we can choose a connected two-
+fold cover S2 of S and a lift f2 : S2 → S2 of f : S → S that ﬁxes the full pre-image
+of Fix( f ). The pre-images β1 and β2 of β in S2 bound disjoint disks that contain
+at least two points in Fix( f2). The isotopy, relative to Fix( f ), of f to a Dehn twist
+about β lifts to an isotopy, relative to Fix( f2), of f2 to a composition of Dehn twists
+about β1 and β2. We are now reduced to the previous subcase.
+It remains to consider the case that the fourth item of Lemma 4.2 ho lds. After
+passing to a two fold cover if necessary, the hypothesis of Lemma 5 .3 applies so (3)
+is satisﬁed.
+6 Proof of Theorem 1.3
+We prove Theorem 1.3 by showing that f can not satisfy any of the three possibilities
+listed in Corollary 5.5. We begin this section by proving the lemmas that r elate to
+(1) and (2) of that corollary . We then state a proposition needed f or the third and
+prove the theorem. The section concludes with a proof of the prop osition.
+Lemma 6.1. If G is a ﬁnitely generated subgroup of Homeo(S)0 and f ∈ G is dis-
+torted in G then f does not have linear displacement.
+Proof. Suppose at ﬁrst that S has negative Euler characteristic. In this case the
+identity lifts {˜g : g ∈ G} form a subgroup ˜G and ˜f is a distortion element in ˜G. Let d
+be the distance function of a Riemannian metric on S and let ˜d be its lift to H. For
+generators g1, . . . , gj of G there exists C > 0 such that ˜d(˜gi(˜x), ˜x) < C for all ˜x ∈ H
+and all i. It follows that
+lim inf
+n→∞
+˜d( ˜f n(˜x), ˜x)
+n ≤ lim inf
+n→∞
+C |f n|
+n = 0.
+We now turn to the case that S = T 2 and ˜S = R2. Suppose that ˜f : R2 → R2
+is a lift of f and that ˜x1, ˜x2 ∈ R2. Choose lifts ˜ gi of the generators gi and note that
+14
+
+=== PDF PAGE 15 ===
+there is a constant C > 0 such that ˜d(˜gi(˜x), ˜x) ≤ C for all i and all ˜x ∈ R2 and such
+that ˜d(˜x1, ˜x2) < C . Now f n = wN . . . w2w1 where N = |f n|and each wj is one of the
+gi or its inverse. Let ˜wj = ˜gi or ˜g− 1
+i if wj = gi or g− 1
+i and let ˜w = ˜wN . . . ˜w2 ˜w1. Then
+˜d( ˜w(˜x), ˜x) ≤ CN for all ˜x ∈ ˜R2 which implies that ˜d( ˜w(˜x1), ˜w(˜x2)) < C (2N + 1).
+Since ˜w is a lift of f n, T ˜w = ˜f n for some covering translation T . The metric ˜d is
+T -equivariant. Thus ˜d( ˜f n(˜x1), ˜f n(˜x2)) = ˜d( ˜w(˜x1), ˜w(˜x2)) and
+lim inf
+n→∞
+˜d( ˜f n(˜x1), ˜f n(˜x2))
+n ≤ C(1 + 2 lim inf
+n→∞
+|f n|
+n ) = 0
+since f is a distortion element. This proves that f does not have linear displacement.
+Lemma 6.2. If G ⊂ Homeoµ(T 2)0 is a ﬁnitely generated subgroup and f is a distor-
+tion element of G then Per(f ) ̸= ∅.
+Proof. Since T 2 has no distortion elements (see Remark 1.2), the image of f under
+the homomorphism ˆρµ : G → T 2 has ﬁnite order, say k. Let h = f k. Remark 2.1
+implies that there is a lift ˜h with ρµ(˜h) = 0. Lemma 5.4 and Lemma 6.1 imply that
+ρ(x, ˜h) is independent of x. Thus ρ(x, ˜h) = 0 whenever it is deﬁned and Lemma 2.2
+completes the proof.
+Lemma 6.3. If G is a ﬁnitely generated subgroup of Diﬀ(S)0 and f ∈ G is distorted
+in G then egr(f, τ ) = 0 for all closed curves τ .
+Proof. . Choose generators g1, . . . , gj of G. There exists C > 0 such that ||Dgi||< C
+for all i. Thus lS(gi(τ )) ≤ Cl S(τ ) for all τ and all i. It follows that
+lim inf
+n→∞
+log(lS(f n(τ ))
+n ≤ lim inf
+n→∞
+log(lS(τ )) + log(C)|f n|
+n = 0.
+The following lemma is used to reduce the third item of Corollary 5.5 to th e case
+that k = 1.
+Lemma 6.4. Suppose that f ∈ Diﬀ(S)0, that S2 is a two fold cover of S and that
+f2 ∈ Diﬀ(S2)0 is a lift of f . If f is distorted in a ﬁnitely generated subgroup G of
+Diﬀ(S)0 then f2 is distorted in a ﬁnitely generated subgroup G2 of Diﬀ(S2)0.
+Proof. Choose generators g1, . . . , gj of G and lifts hi ∈ Diﬀ(S2)0 of gi. Let t2 : S2 → S2
+be a generator of the (order two) group of covering translations of S2 and deﬁne G2 to
+be the subgroup generated by {t2, h1, . . . hj}. If f n = g1 . . . gm then f n
+2 = ti
+2h1 . . . hm,
+where i = 0 or 1, so |f n
+2 |in these generators is at most |f n|+ 1 and f2 is a distortion
+element of G2. 15
+
+=== PDF PAGE 16 ===
+Proposition 6.5. If G is a ﬁnitely generated subgroup of Diﬀ(S)0 and f ∈ G is
+distorted in G then σf,β,γ (α) = 0 for all α, β, γ.
+Before proving Proposition 6.5 we use it to prove Theorem 1.3.
+Proof of Theorem 1.3 If S = T 2 let n be the smallest positive integer such
+that Fix( f ) ̸= ∅. If S = S2 let n be the smallest positive integer such that Fix( f )
+contains three points. And let n = 1 if the genus of S is at least two. Lemma 6.3 and
+Lemma 6.1 imply that f n does not satisfy either (1) or (2) of Corollary 5.5. Lemma 6.4
+and Proposition 6.5 imply that f n does not satisfy (3) of Corollary 5.5. Since f n does
+not satisfy the conclusion of Corollary 5.5, it cannot satisfy the hyp otheses. The only
+unveriﬁed hypothesis is that supp( µ) ̸⊂ Fix(f n), so this must fail.
+The proof of Proposition 6.5 requires some preliminary lemmas. The re ason that
+this case is more diﬃcult than the others is that the generators gj of G need not ﬁx
+the endpoints of γ even though f does. To overcome this we will show that if f n can
+be written as a product of N generators then it can be written as a product of N
+diﬀeomorphisms chosen from a (perhaps inﬁnite) collection of diﬀeom orphisms that
+ﬁx the endpoints of γ and that possess a uniform bound on their spread.
+Deﬁne D to be twice the diameter of S. By Remark 5.2 we may assume that γ
+is geodesic with respect to an underlying Riemannian metric on S and has length at
+most D.
+Lemma 6.6. Suppose that g ∈ Diﬀ(S) and that η and η′ are smoothly embedded
+geodesic arcs in S with length at most D. There exists a constant C(g), independent
+of η and η′ such that the absolute value of the algebraic intersection n umber of any
+subsegment of g(η) with η′ is less than C(g).
+Proof. We ﬁrst show that there is an ε > 0 such that this result holds (in fact with
+C(g) = 1) if the lengths of η and η′ are less than ε > 0.
+To do this we observe that S can be covered with a ﬁnite set of charts in which
+geodesics are roughly straight, for example these charts may be o btained via the
+exponential map exp : T Sxi → S where we consider the domain to be a neighborhood
+of 0 ∈ T Sxi and we choose the points xi so that the charts deﬁned cover all of S. By
+roughly straight we will mean that if u and v are unit tangent vectors to a geodesic
+segment lying entirely in the image of a single chart then the inner prod uct ( u, v) of
+u and v in the co-ordinates of the chart is > 1/2. (The inner product is well deﬁned
+even though u and v have diﬀerent base points because we are working in a chart.)
+We next observe that if ε is suﬃciently small and x, y ∈ S are points within ε of
+each other then Dg is roughly linear at these points. In particular for ε suﬃciently
+small we may assume that if ux and vy are unit tangent vectors at x and y respectively,
+and they satisfy ( ux, vy) > 1/2 in one of our charts, then ( Dg(ux), Dg(vy)) > 0 in
+any of our charts containing g(x) and g(y).
+Suppose now that β and β′ are geodesic segments of length less than ε and g(β) ∩
+β′ ̸= ∅. We may assume that there is a single one of our charts containing bot h g(β)
+16
+
+=== PDF PAGE 17 ===
+and β′. If g(β) crosses β′ twice in succession with the same intersection number it
+can do so only by going entirely around one end of β′ (looked at in local co-ordinates
+of the chart). The mean value theorem would then say that there a re two points on
+g(β) where the tangents have opposite directions. But this would imply t he existence
+of tangent vectors ux and vy to β with ( Dg(ux), Dg(vy)) < 0. Hence the result holds
+with C(g) = 1 if the lengths of β and β′ are less than ε.
+The general case now follows because the lengths of β and β′ are are bounded by
+D. We can divide each of β and β′ into subsegments of length at most ε and apply the
+result above. It follows that the absolute value of the algebraic inte rsection number
+of any subsegment of g(β) with β′ is less than ( D/ε)2.
+Let γ be a ﬁxed oriented geodesic arc in S with length at most D, let A = {x, y}
+be its endpoint set and let M be the surface with boundary obtained from S \A by
+blowing up x and y. For each ordered pair {x′, y′} of distinct points in S choose once
+and for all, an oriented geodesic arc η = η(x′, y′) of length at most D that connects
+x′ to y′ and choose hη ∈ Diﬀ(S)0 such that hη(γ) = η, h η(x) = x′, h η(y) = y′. There
+is no obstruction to doing this since both γ and η are contained in disks. If x = x′
+and y = y′ we choose η = γ and hη = id.
+Given g ∈ Diﬀ(S) and an ordered pair {x′, y′} of distinct points in S, let η =
+η(x′, y′), η′ = η(g(x′), g(y′)) and note that gx′,y′ := h− 1
+η′ ◦ g ◦ hη pointwise ﬁxes A.
+The following lemma asserts that although the pairs {x′, y′} vary over a non-compact
+space, the elements of {gx′,y′} exhibit uniform behavior from the point of view of
+spread.
+Lemma 6.7. With notation as above, the following hold for all g ∈ Diﬀ(S).
+1. There exists a constant C(g) such that
+Lβ,γ (gx′,y′(γ)) ≤ C(g) for all β and all x′, y′.
+2. There exists a constant K(g) such that
+Lβ,γ (gx′,y′(α)) ≤ Lβ,γ (α) + K(g) for all β, all α and all x′, y′.
+Proof. If δ is a subarc of gx′,y′(γ) then hη′(δ) is a subarc of g(hη(γ)) = g(η). Also
+hη(δ ∩ γ) is the intersection of this subarc of g(η) with η′. Assertion (1) now follows
+from Lemma 6.6 and Remark 5.1.
+We next prove assertion (2) using the notation of the S ̸= S2 case of section 5; the
+argument works equally well in the S = S2 case. There exist a and b = a + Lβ,γ (α)
+such that ˜α is in the region bounded by ˜γa and ˜γb. Since gx′,y′ ﬁxes x and y it extends
+to a map (also called) gx′,y′ : M → M. Choose a lift ˜ gx′,y′ : H ∪ S∞ → H ∪ S∞ such
+that ˜gx′,y′(˜γa) intersects the region bounded by ˜γa and ˜γa+1. Let a′ = a− C(g) − 1 and
+b′ = b + C(g) + 1. By (1), the region bounded by ˜ γa′ and ˜γb′ contains ˜gx′,y′(˜γa) and
+17
+
+=== PDF PAGE 18 ===
+˜gx′,y′(˜γb) and hence also ˜gx′,y′( ˜α). Thus Lβ,γ (gx′,y′α) ≤ b′ − a′ ≤ Lβ,γ (α) + 2C(g) + 2
+and we may set K(g) = 2 C(g) + 2.
+The elements of {gx′,y′} play a crucial role in the next lemma.
+Lemma 6.8. Suppose that gi ∈ Diﬀ(S)0, 1 ≤ i ≤ k, that f is in the group they
+generate and that |f n| is the word length of f n in the generators {gi}. Then there is
+a constant C > 0 such that
+Lβ,γ (f n(α)) ≤ Lβ,γ (α) + C|f n|
+for all α, β, γ and all n > 0.
+Proof. We may assume that γ is geodesic with length at most D. For each gi, let K(gi)
+be the constant given by Lemma 6.7 and let C = max{K(gi)}. Suppose N = |f n|and
+f n = wN wN − 1 . . . w2w1 where each wj is one of the generators {gi} or its inverse. Let
+x and y be the endpoints of γ, let ηj be the chosen geodesic joining wjwj− 1 . . . w1(x)
+and wjwj− 1 . . . w1(y) and let hj = hηj as above be a diﬀeomorphism carrying γ to ηj.
+Denote h− 1
+j wjhj− 1 by ˆwj.
+We note that h0 = id and since f n ﬁxes x and y we also have hN = id. Hence
+f n = wN wN − 1 . . . w2w1
+= (h− 1
+N wN hN − 1)(h− 1
+N − 1wN − 1hN − 2) . . .(h− 1
+2 w2h1)(h− 1
+1 w1h0),
+so
+f n = ˆwN ˆwN − 1 . . . ˆw2 ˆw1.
+Now N applications of Lemma 6.7 yield
+Lβ,γ (f n(α)) = Lβ,γ ( ˆwN . . . ˆw2 ˆw1(α))
+≤ Lβ,γ ( ˆwN − 1 . . . ˆw2 ˆw1(α)) + C
+. . .
+≤ Lβ,γ (α) + CN.
+Proof of Proposition 6.5 Since f is distorted in G
+lim inf
+n→∞
+|f n|
+n = 0.
+According to the deﬁnition of spread and Lemma 6.8 we then have
+σf,β,γ (α) = lim inf
+n→∞
+Lβ,γ (f n(α))
+n ≤ lim inf
+n→∞
+Lβ,γ (α) + C|f n|
+n = 0.
+18
+
+=== PDF PAGE 19 ===
+7 Applications of the main theorem
+We need a few preliminary lemmas.
+Lemma 7.1. Let G be a ﬁnitely generated almost simple group and let H be a normal
+subgroup. If u ∈ H is a distortion element in G then it is also a distortion element
+in H.
+Proof. Since G is almost simple and H contains an inﬁnite order element, H has ﬁnite
+index. Since H is a ﬁnite index subgroup of a ﬁnitely generated group, it is ﬁnitely
+generated. Let {h1, . . . , hm} be a set of generators for H and let 1 = a0, a1, . . . , ak be
+coset representatives of H. Deﬁne word length in H with respect to {h1, . . . , hm} and
+word length in G with respect to the generating set {h1, . . . , hm, a1, . . . , ak}.
+For each g ∈ G there exists 0 ≤ i ≤ k and h ∈ H such that g = aih. Choose
+C such that |h|H ≤ C for the ﬁnitely many g satisfying |g|G ≤ 2. We claim that
+|h|H ≤ C · |g|G for all g. The proof is by induction on |g|G with the |g|G ≤ 2 being
+by construction. Given g ∈ G with l := |g|G ≥ 3, write g = ug1 where |u|G = 1
+and |g1|G = l − 1. The inductive hypothesis implies that g1 = aih1 and uai = ajh2
+where |h1|H ≤ C(l − 1) and |h2|H ≤ C. Setting h = h2h1 we have |h|H ≤ C ·l which
+completes the inductive step.
+It follows that |h|H ≤ C · |h|G for all h ∈ H which implies the lemma.
+Lemma 7.2. Let G be a ﬁnitely generated almost simple group which contains a
+distortion element and let H be a normal subgroup. Then any homomorphism ψ :
+H → R is trivial.
+Proof. Since G is almost simple, H is either ﬁnite or has ﬁnite index. Clearly the
+result is true if H is ﬁnite, so we assume it has ﬁnite index. If u is a distortion
+element in G then v := uk ∈ H for some k > 0. The normalizer D of v in G is inﬁnite
+and hence has ﬁnite index in G; it is obviously contained in H. Thus D has ﬁnite
+index in H. Since R contains neither torsion nor distortion elements, v, and hence D
+is in the kernel of ψ for every homomorphism ψ : H → R. Since D has ﬁnite index
+in H we conclude that ψ(H) is ﬁnite and hence trivial.
+Lemma 7.3. The generator f of the center of the three dimensional Heisenberg group
+H is a distortion element. If ψ : H → GL(2, R) is a homomorphism then ψ(f ) = ± I.
+Proof. Suppose H is the three dimensional Heisenberg group. There are generators
+g and h of H such that f = [g, h] has inﬁnite order and generates the center of H. It
+follows that f n2
+= [gn, gn] and hence that f is a distortion element of H.
+Suppose φ : H → GL(2, R) is a homomorphism. Let F = φ(f ), G = φ(g), H =
+φ(h), all of which we consider as 2 × 2 matrices.
+If F has distinct eigenvalues then F, G and H are all simultaneously diagonalizable
+over C. Hence all commute and it follows that F = [G, H] = I.
+19
+
+=== PDF PAGE 20 ===
+Suppose F has a single eigenvalue. Since F is a commutator its determinant is 1
+and hence its eigenvalue must be 1 or − 1. If F is diagonal we are done so we may
+assume F is upper triangular in a suitable basis with a non-zero oﬀ-diagonal ent ry.
+An easy computation shows the fact that F commutes with G and H implies that
+they also are upper triangular in this basis and have equal diagonal e ntries. From
+this one sees again that G and H commute, so again F = I.
+Lemma 7.4. Suppose the subgroup H ⊂ Diﬀ µ(S2)0 is ﬁnitely generated and that f
+is a central element of H that is distorted in H. Suppose further that the support of
+µ contains at least three points. Then Per(f ) contains at least three points.
+Proof. Since f is orientation preserving, it has at least one ﬁxed point. If there we re
+only one ﬁxed point then its complement would be an invariant open disk U with
+µ(U) > 0. Poincar´ e recurrence implies thatU contains recurrent points for f and the
+Brouwer translation theorem then implies that U contains ﬁxed points for f . Thus
+Fix(f ) contains at least two points.
+Suppose that Fix( f ) has exactly two points. Since f is central, every element of
+H preserves Fix(f ). If the elements of Fix( f ) are atoms for the measure µ we change
+µ so µ(Fix(f )) = 0 . Let A be the closed annulus obtained by blowing up these points.
+There is an induced measure, still called µ, such that µ(∂A) = 0. After passing
+to an index two subgroup of H, we may assume that every element of H ﬁxes the
+elements of Fix( f ) and so H can be thought of as a group of homeomorphisms of A
+that preserve orientation and the components of ∂A. Consider the homomorphism
+ˆρµ : H → S1 of section 2. Since S1 has no distortion elements, some iterate of f , say
+f1 = f m, is in the kernel of this homomorphism. Remark 2.1 implies that the mea n
+rotation vector ρµ( ˜f1) = 0 for some lift ˜f1.
+Letting each element of H act on the double of A deﬁnes an embedding of H
+into Homeo ν(T 2), where the measure ν on T 2 is the double of the measure µ on
+A. Lemma 5.4 and Lemma 6.1, applied to the double of f1, imply that ρ(x, ˜f1) is
+independent of x. Thus ρ(x, ˜f1) = 0 whenever it is deﬁned and ρν( ˜f1) = 0 for all
+f1-invariant measures ν. Choosing ν to be an ergodic invariant measure the result
+follows from Proposition (2.3).
+We say that x ∈ S is a global ﬁxed point for H if x ∈ Fix(h) for each h ∈ H.
+Lemma 7.5. Suppose G is a ﬁnitely generated subgroup of Diﬀ(S) which is almost
+simple and contains a distortion element f . If H ⊂ G is a normal subgroup that
+contains f then the set Λ of global ﬁxed points for H is ﬁnite.
+Proof. The subgroup H is normal so by Lemma (7.2) the only homomorphism from
+H to R is the trivial one. We will use this fact repeatedly.
+We will assume Λ is inﬁnite and show this leads to a contradiction. Let x ∈ Λ be
+an accumulation point and let v ∈ T Sx be a limit of a subsequence from the sequence
+of vectors {vn} where vn = ( x − xn)/∥x − xn∥ (in local co-ordinates) and xn ∈ Λ
+20
+
+=== PDF PAGE 21 ===
+satisﬁes lim
+n→∞
+xn = x. Then Dhx(v) = v for all h ∈ H and v is a global ﬁxed point
+of the action of H on the circle S1 of unit vectors in T Sx where h acts on S1 as the
+projectivization of Dhx on T Sx. Considering this action of H on S1 and taking the
+logarithm of the derivative at the global ﬁxed point v gives a homomorphism from H
+to R, which must be trivial.
+Thus the value of these derivatives at v ∈ S1 is 1 for every element of H, so we
+can apply the Thurston stability theorem (Theorem 3 of [19]) to this action. This
+theorem asserts that either the action of H on S1 is trivial or there is a non-trivial
+homomorphism from H to R. Since the latter is impossible we conclude that the
+action of H on S1 is trivial. In fact since the group is acting on S1 by fractional linear
+transformations it is not diﬃcult to give a direct argument that H acts trivially.
+It follows that for every h ∈ H we have Dhx = I, since Dhx must be a homothety
+to projectivize to the identity, but also Dhx ﬁxes the vector v.
+We can now again apply the Thurston stability theorem, this time to H acting
+on S with the global ﬁxed point x. The theorem asserts that either H acts trivially
+or there is a non-trivial homomorphism from H to R. Since neither of these are the
+case we have arrived at a contradiction.
+Theorem 1.5 Suppose that S is a closed oriented surface of positive genus equipped
+with a Borel probability measure µ and that G is a ﬁnitely generated group which is
+almost simple and possesses a distortion element u. Suppose further that either µ
+has inﬁnite support or that G is a Kazhdan group. Then any homomorphism φ :
+G → Diﬀ µ(S) has ﬁnite image. The result is valid for S = S2 with the additional
+assumption that φ(u) has at least three periodic points.
+Proof. Since G is almost simple, it suﬃces to show that the kernel of φ is inﬁnite. We
+assume that the kernel of φ is ﬁnite and argue to a contradiction.
+Since f = φ(u) has inﬁnite order in G = φ(G), it is a distortion element in G. By
+[5], there are no distortion elements in MCG( S). After replacing f with an iterate we
+may assume that f ∈ Diﬀ µ(S)0. Lemma (7.1) implies that f is a distortion element
+in Diﬀ µ(S)0.
+In the case that S = T 2 we note that Lemma 6.2 that Per( f ) ̸= ∅. After replacing f
+with a further iterate if necessary, we may assume by Theorem (1.3 ) that supp( µ) ⊂
+Fix(f ). Since supp( µ) is invariant under G, the stabilizer H = {g ∈ G | g(x) =
+x for all x ∈ supp(µ)} of supp(µ) is a normal subgroup of G. Lemma 7.5 implies that
+supp(µ) is ﬁnite. It follows from our hypotheses that G is a Kazhdan group. A result
+of R. Zimmer (Theorem 3.14 of [22]) implies that every G orbit is inﬁnite. But this
+contradicts the fact that each point in supp( µ) has ﬁnite H-orbit and hence ﬁnite
+G-orbit since H has ﬁnite index in G.
+Theorem 1.6 Suppose that S is a closed oriented surface equipped with a Borel
+probability measure µ, and that G is a ﬁnitely generated almost simple group which
+21
+
+=== PDF PAGE 22 ===
+has a subgroup H isomorphic to the three-dimensional Heisenberg group. The n any
+homomorphism φ : G → Diﬀ µ(S) has ﬁnite image.
+Proof. Since G contains a subgroup isomorphic to the Heisenberg group we know by
+Lemma (7.3) that it contains a distortion element. If supp( µ) is inﬁnite, then the
+theorem follows from Theorem 1.5 with Lemma (7.3) and Lemma (7.4) su pplying the
+extra hypothesis needed when S = S2.
+Suppose now that supp( µ) is ﬁnite. Then the stabilizer G1 = {g ∈ G | g(x) =
+x for all x ∈ supp(µ)} of supp( µ) is an inﬁnite, and hence ﬁnite index, normal sub-
+group of G. Choose x ∈ supp(µ). After replacing H with a ﬁnite index subgroup of
+itself, we may assume that H ⊂ G 1.
+Choose x ∈ supp(µ). The group G1 acts via the derivative on T Sx and hence
+there is a homomorphism ψx : G1 → GL(2, R) deﬁned by ψx(g) = Dφ(g)x. If f is the
+generator of the center of H then Lemma (7.3) implies ψx(f 2) = I. We conclude that
+the kernel G2 of ψx is inﬁnite and hence has ﬁnite index in G.
+The Thurston stability theorem (Theorem 3 of [19]) applied to G2 acting with
+global ﬁxed point x implies that either φ(G2) is trivial or there is a non-trivial homo-
+morphism from G2 to R. But Lemma (7.2) asserts there is only the trivial homomor-
+phism from G2 to R so φ(G2) is trivial and φ(G) is ﬁnite.
+Proof of Corollary 1.7 By [16], G has a distortion element u. The Margulis normal
+subgroups theorem (see [17]) implies that G is almost simple and results of [15] imply
+that G is a Kazhdan group. Thus Theorem 1.5 implies the desired result.
+The following easy and well known lemma is needed in the proofs of Coro llary 1.9
+and Corollary 1.10.
+Lemma 7.6. Suppose that f ∈ Diﬀ(S)0 has ﬁnite order. If S = T 2 assume that
+Fix(f ) ̸= ∅ and if S = S2 assume that Fix(f ) contains at least three points. Then f
+is the identity.
+Proof. By averaging a Riemannian metric we may assume f is an isometry. If f is not
+the identity then all ﬁxed points of f are isolated and have index +1. By hypothesis
+the number of ﬁxed points of f is greater than the Euler characteristic of S. This
+contradicts the Lefschetz ﬁxed point theorem unless f = id.
+Proof of Corollary 1.9 Suppose ﬁrst that the genus of S is greater than one. Then
+Theorem (1.3) implies that S = supp( µ) ⊂ Fix(g) for every g ∈ [φ(G), φ(G)]. Thus
+[G, G] is in the kernel of φ and φ(G) is abelian.
+In case S = T 2 Lemma 6.2 says that Per( f ) ̸= ∅. We know that [ φ(G), φ(G)] is
+generated by the φ image of distortion elements, i.e. according to Theorem (1.3)
+by elements of ﬁnite order. Let g be a ﬁnite order element of a generating set for
+[φ(G), φ(G)]. Since [ φ(G), φ(G)] is also generated by commutators the rotation vector
+(see section 2) ˆρµ(g) = 0 .
+22
+
+=== PDF PAGE 23 ===
+Hence there is a lift ˜ g to R2 with mean rotation vector ρµ(˜g) = 0 . This implies
+ρµ(˜gk) = 0 for all k and hence if k is the order of g, then ˜gk is a covering translation
+with zero mean rotation and hence it is the identity. Thus ˜ g has a ﬁxed point and g
+must also. Lemma 7.6 implies that g is the identity.
+Since this is true for g in a generating set of [ φ(G), φ(G)] we again conclude that
+[G, G] is in the kernel of φ and that φ(G) is abelian.
+Proof of Corollary 1.10 Suppose
+N = N1 ⊃ N 2 ⊃ · · · ⊃ Nm ⊃ { 1}
+is the lower central series of the nilpotent group N . We will show that (perhaps after
+passing to an index two subgroup if S = S2) the assumption that m > 1 leads to a
+contradiction.
+Assume that m > 1. Then Nm is contained in the center of N and is generated by
+elements f that are commutators, f = [g, h], in N . We claim that f has ﬁnite order.
+If not, then g and h generate a group H ⊂ N isomorphic to the Heisenberg group
+and f is a distortion element by Lemma (7.3). In the case that S = S2, Lemma (7.4)
+implies that f has at least three periodic points and in the case S = T 2 Lemma 6.2
+implies that Per(f ) ̸= ∅. Thus for any genus, we have a contradiction to Theorem (1.3)
+and the fact that supp( µ) = S. This veriﬁes the claim.
+If the genus of S is greater than 1, then f = id by Lemma 7.6. Since this is true for
+a generating set for Nm, we conclude that Nm is trivial contradicting the assumption
+m > 1.
+In the case S = T 2, since f is a commutator, there is a lift ˜f to R2 with mean
+rotation vector ρµ( ˜f ) = 0 . If k is the order of f , then ˜f k is a covering translation with
+ρµ( ˜f k) = 0 and so ˜f k = id. It follows that ˜f , and hence f , has a ﬁxed point. Thus
+Lemma 7.6 applies and the proof concludes as in the previous case.
+It remains to consider the case S = S2. As a special case, assume that there are a
+pair of global ﬁxed points for N and let A be the closed annulus obtained by blowing
+up these two points. Then N can be thought of as a group of homeomorphisms of
+A that preserve orientation and the components of ∂A. Consider the homomorphism
+ρµ : G → S1 of section 2. Since f is a commutator ˆρµ(f ) = 0 . There is a lift ˜f to the
+universal covering space of A such that ρµ( ˜f ) = 0 . The proof in this special case now
+concludes as in the S = T 2 case.
+We now return to the general S = S2 case. Poincar´ e recurrence and the Brouwer
+plane translation theorem imply that Fix( f ) contains at least two points. If Fix( f )
+has at least three points then Lemma 7.6 applies and the proof conclu des as before.
+Suppose then that Fix( f ) has exactly two points. Since f is central, the subgroup G
+of N consisting of elements that ﬁx both elements of Fix( f ) has index at most two.
+By the special case, G is abelian and we are done.
+23
+
+=== PDF PAGE 24 ===
+References
+[1] E. Alibegovi´ c, Translation lengths in Out(Fn), Geom. Dedicata, 92 (2002),
+87–93
+[2] J. Kister and M. Brown, Invariance of complementary domains of a ﬁxed
+point set, Proc. Amer. Math. Soc. 91 no.3, (1984) 503–504
+[3] M. Burger and N. Monod Bounded cohomology of lattices in higher rank
+Lie groups J. Eur. Math. Soc. 1 (1999) 199–235
+[4] B. Farb and H. Masur, Superrigidity and mapping class groups, Topology
+37 no. 6 (1998) 1169–1176
+[5] B. Farb, A. Lubotzky and Y. Minsky Rank 1 phenomena for mapping
+class groups Duke Math. J. 106 no. 3 (2001) 581–597
+[6] B. Farb and P. Shalen, Real analytic actions of lattices, Invent. Math. 135
+(1998), 271–296.
+[7] J. Franks, Recurrence and Fixed Points of Surface Homeomorphisms, Ergodic
+Theory and Dynamical Systems 8* (1988) 99–107
+[8] J. Franks, Rotation vectors and ﬁxed points of area preserving surface diﬀeo-
+morphisms, Trans. Amer. Math. Soc. 348 (1996) 2637–2662
+[9] J. Franks, Rotation numbers for Area Preserving Homeomorphisms of the
+Open Annulus, Proceedings of the International Conference Dynamical System s
+and Related Topics, K Shiraiwa, ed. World Scientiﬁc (1991) 123–128
+[10] J. Franks and M. Handel, Periodic points of Hamiltonian surface diﬀeo-
+morphisms, Geom. Topol. 7 (2003) 713–756
+[11] J. Franks and M. Handel, Area preserving group actions on surfaces, Geom.
+Topol. 7 (2003) 757–771
+[12] S. Gersten and H. Short, Rational subgroups of biautomatic groups, Annals
+of Math. 134 (1991) 125–158
+[13] ´E. Ghys, Sur les groupes engendr´ e par des diﬀ´ eomorphismes proches de
+l’identit´ e,Bol. Soc. Brasil. Mat. (N.S.) 24 (1993) 137178
+[14] M. Handel, A ﬁxed point theorem for planar homeomorphisms, Topology 38
+(1999) 235–264
+[15] D. Kazhdan, Connection of the dual space of a group with the structure of i ts
+closed subgroups, Funct. Anal. Appl. 1 (1967) 63-65
+24
+
+=== PDF PAGE 25 ===
+[16] A. Lubotzky, S. Mozes and M.S. Raghunathan, The word and Rieman-
+nian metric on lattices in semisimple Lie groups, IHES PUbl. Math. 91 (2000),
+5–53
+[17] G.A. Margulis, Discrete subgroups of semisimple Lie groups, Ergebnisse der
+Mathematik und ihrer Grenzgebiete, 17. Springer-Verlag, Berlin (1991)
+[18] L. Polterovich, Growth of maps, distortion in groups and symplectic geometr y,
+Invent. Math. 150 (2002), 655–686
+[19] W. Thurston A generalization of the Reeb stability theorem Topology 13
+(1974) 347352
+[20] R. Zimmer, Ergodic Theory and Semisimple Groups, Monographs in Math.,
+81 Birhauser, (1984)
+[21] R. Zimmer, Actions of semisimple groups and discrete subgroups, Proc. In-
+ternat. Congr. Math. (Berkeley 1986), Vol 2 A. W. Gleason, ed., A mer. Math.
+Soc., Providence, RI, (1987) 1247–1258
+[22] R. Zimmer, Lattices in semisimple groups and invariant geometric stru ctures
+on compact manifolds, in Discrete Groups in Geometry and Analysis, Progress
+in Mathematics 67 Birhauser, (1987), 152–210
+25

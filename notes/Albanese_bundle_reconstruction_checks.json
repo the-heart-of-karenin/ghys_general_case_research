@@ -1,0 +1,20 @@
+{
+  "purpose": "New exact algebra checks only; no proof of the missing W lower bound or global analytic steps.",
+  "fivefold_H1_cup_products_with_explicit_primitives": 56,
+  "quadratic_field_minimal_polynomials_verified": true,
+  "Riemann_form_orientation_choices_verified": 4,
+  "local_critical_model": {
+    "Anosov_symplectic_and_semiconjugacy_identity": true,
+    "constant_Poisson_rank": 2,
+    "observed_map_ranks": [
+      2,
+      3,
+      4
+    ],
+    "compact_lattice_not_asserted": true
+  },
+  "global_translation_equation_exact_checks": 12,
+  "W_dimension_lower_bound_proved": false,
+  "global_Albanese_theorems_proved_by_script": false,
+  "all_assertions_passed": true
+}

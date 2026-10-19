@@ -1,0 +1,478 @@
+=== PDF PAGE 1 ===
+arXiv:1703.01850v1  [math.CV]  6 Mar 2017
+AROUND BRODY LEMMA
+Julien Duval
+1. Brody lemma.
+Let X be a compact complex manifold. An entire curve in X is a non constant
+holomorphic map f : C → X. It is a Brody curve if its derivative ∥f ′∥ is bounded,
+where the norm is computed with respect to the standard metri c on C and a given
+metric on X. Brody curves arise naturally as limits of sequences of larg er and
+larger holomorphic discs, thanks to Brody lemma [5].
+Brody lemma. Let fn : D → X a sequence of holomorphic maps from the unit
+disc to a compact complex manifold. Suppose that ∥f ′
+n(0)∥ blows up. Then there
+exist reparametrizations rn such that fn ◦ rn converges toward a Brody curve, after
+extracting a subsequence.
+Proof. We may suppose fn smooth up to the boundary. Denote by δ(z) the dis-
+tance from z to ∂D . As the function δ∥f ′
+n∥ vanishes on ∂D it reaches its maxi-
+mum inside D, say at an. This is where we will reparametrize fn. Let dn be the
+disc D(an, δ(an)
+2 ). We have ∥δf ′
+n∥dn ≤ δ(an)∥f ′
+n(an)∥. But δ ≥ δ(an)
+2 on dn so
+∥f ′
+n∥dn ≤ 2∥f ′
+n(an)∥.
+Deﬁne the reparametrization by rn(z) = an + z
+∥f ′
+n(an)∥ . let Dn be the preimage
+of dn by rn. Its radius blows up as δ(an)∥f ′
+n(an)∥ ≥ ∥ f ′
+n(0)∥. We may suppose
+that Dn increases toward C after extracting. Moreover ∥(fn ◦ rn)′∥Dn ≤ 2 and
+∥(fn ◦ rn)′(0)∥ = 1. By Ascoli theorem we may extract a subsequence of fn ◦ rn
+which converges toward a holomorphic map f : C → X such that ∥f ′∥C ≤ 2 and
+∥f ′(0)∥ = 1. It is a Brody curve.
+As a consequence we get a characterization of Kobayashi-hyp erbolicity.
+Recall that the Kobayashi pseudometric of X at p in the direction v is K(p, v ) =
+inf{r > 0/ ∃f : D → X holomorphic, f (0) = p, f ′(0) = v
+r }. It measures the size of
+Laboratoire de Math´ ematiques, Universit´ e Paris-Sud, 91405 Orsay cedex, France
+julien.duval@math.u-psud.fr
+Keywords : Brody curve, Ahlfors current, hyperbolicity
+AMS class. : 32Q45
+Typeset by AMS-TEX
+1
+
+=== PDF PAGE 2 ===
+the holomorphic discs passing through a point in a given dire ction. The manifold
+X is Kobayashi-hyperbolic if its pseudometric is non degenerate.
+Criterion. A compact complex manifold X is Kobayashi-hyperbolic if and only if
+there is no entire curve in it.
+Indeed the vanishing of K(p, v ) gives rise to a sequence of holomorphic discs fn :
+D → X such that fn(0) = p and f ′
+n(0) blows up in the direction of v. By Brody
+lemma we get a Brody curve in X. Conversely the Kobayashi pseudometric has
+to vanish along any entire curve.
+In the sequel we will say that U ⊂ X is hyperbolic if U does not contain any
+entire curve. Hyperbolicity is invariant by etale covering . Indeed if U → V is
+such a covering, an entire curve in U may be pushed down in an entire curve in
+V . Conversely an entire curve in V can be lifted to an entire curve in U . Another
+consequence of Brody lemma is that hyperbolicity is an open p roperty.
+Openness. Let X be a compact complex manifold and F ⊂ X a closed subset. If
+F is hyperbolic then so is a small neighbourhood of it.
+Indeed if not we would get an entire curve in each ǫ-neighbourhood Fǫ of F . This
+would allow us to construct a sequence of holomorphic discs fn : D → F 1
+n
+such
+that ∥f ′
+n(0)∥ blows up, giving at the limit a Brody curve in F .
+We discuss now some examples of hyperbolic surfaces. We star t with the sim-
+plest hyperbolic complement.
+Green theorem [9]. Let L be a collection of ﬁve lines in general position in
+P 2(C). Then P 2(C) \L is hyperbolic.
+Here general position means there is no triple point in the co nﬁguration.
+Proof. Embedd P 2(C) into P 4(C) by z ↦→ [l1(z) : ... : l5(z)] using the equations of
+the lines. Call P its image and P ∗ = P \H the complement of the collection H of
+coordinate hyperplanes in P 4(C). We want to prove the hyperbolicity of P ∗ . Let
+Fn be the self-map of P 4(C) given by z ↦→ [zn
+1 : ... : zn
+5 ]. It induces an etale covering
+from P 4(C) \H to itself, so the hyperbolicity of P ∗ and F − 1
+n (P ∗ ) are equivalent.
+The point is that F − 1
+n (P ) converges toward a polyhedron whose hyperbolicity is
+easily checked by Liouville theorem. This will conclude by o penness.
+Let us make it precise. By general position P avoids the coordinate lines ( zi =
+zj = zk = 0). So P is contained in Xǫ = ∩ {i,j,k } (max(|zi|, |zj|, |zk|) ≥ ǫ∥z∥) for
+some small ǫ > 0. Here ∥z∥ = max |zi|. Now F − 1
+n (Xǫ) = Xǫ
+1
+n
+decreases toward
+the polyhedron X = X1 when n goes to inﬁnity. Note that on X ∥z∥ is reached
+on one out of three arbitrary components of z, meaning that ∥z∥ is always reached
+on three components at least. So X is alternatively seen as a ﬁnite union of faces
+Xi,j,k = (|zi|= |zj|= |zk|= ∥z∥).
+2
+
+=== PDF PAGE 3 ===
+Let us check its hyperbolicity. If f : C → P 4(C), z ↦→ [f1(z) : ... : f5(z)] is
+a holomorphic map such that f (C) ⊂ X, it has to spend some time in one of
+the faces, say X1, 2, 3. This implies by analytic continuation that |f1| = |f2| =
+|f3| everywhere. But ∥f ∥ = max( |f1|, |f2|, |f3|) by deﬁnition of X. Hence |f1|
+dominates the other components everywhere, meaning that f is bounded in the
+chart ( z1 = 1) thus constant by Liouville theorem. Therefore X does not contain
+any entire map.
+This argument is dynamical in essence as X is nothing but an intermediate
+Julia set for F2 which is known to attract backward iterates of a generic plan e. It
+stems from the proof of Picard theorem (the hyperbolicity of P 1(C) \3 points) by
+A. Ros [17] and works in any dimension [2].
+We focus now on examples of hyperbolic surfaces of low degree in P 3(C). This
+ﬁts into the framework of Kobayashi conjecture which predic ts that a generic
+surface of degree ≥ 5 in P 3(C) is hyperbolic. It holds true for degree ≥ 18 [16]
+but few examples of hyperbolic surfaces of smaller degree ar e known, according
+to the motto ”the lower the degree the harder the hyperbolici ty”. Here we adapt
+a deformation method due to M. Zaidenberg [18] to produce exa mples of degree
+6 by reduction to Green theorem. This also works for higher de grees and higher
+dimensions [11]. Note that remains open the question of ﬁndi ng a single hyperbolic
+quintic in P 3(C).
+We will use Brody lemma in the following form.
+Sequences of entire curves. Let X be a compact complex manifold. Then any
+sequence of entire curves in X can be made converging toward an entire curve
+after reparametrization and extraction.
+Indeed let ( fn) be the sequence of entire curves. By translating we may supp ose
+that f ′
+n(0) does not vanish and by dilating that actually ∥f ′
+n(0)∥ blows up. It
+remains to apply Brody lemma.
+We will also invoke the following fact.
+Stability of intersections. Let X be a complex manifold and H ⊂ X an analytic
+hypersurface. Suppose that a sequence (fn) of entire curves in X converges toward
+an entire curve f . If f (C) is not contained in H then f (C) ∩ H ⊂ limfn(C) ∩ H.
+Indeed let z be a point in f − 1(H) and h a local equation of H near f (z). As
+h ◦ f does not vanish identically near z, h ◦ fn has to have a zero in any small
+neighbourhood of z for large n by Rouch´ e theorem.
+We construct now our example of hyperbolic sextic as a suitab le small defor-
+mation of a union of six planes (see also [6], [7] for other exa mples).
+3
+
+=== PDF PAGE 4 ===
+A hyperbolic sextic. Let (Pi = (pi = 0)) be a collection of six planes in general
+position in P 3(C). Then we can ﬁnd a sextic S = ( s = 0) such that the surface
+Σǫ = (Πpi = ǫs) is hyperbolic for ǫ ̸= 0 suﬃciently small.
+Here general position means there is no quadruple point in th e conﬁguration.
+Moreover S will be in general position with respect to the Pi, in the sense that it
+will avoid the triple points of the conﬁguration. Note that b y deﬁnition Σ ǫ∩ Pi ⊂ S.
+Proof. The ﬁrst step reduces the problem to the hyperbolicity of com plements. It
+is the heart of Zaidenberg method and goes as follows. If Σ ǫn is not hyperbolic for
+ǫn going to zero we have entire curves fn : C → Σǫn . By Brody lemma we get at
+the limit an entire curve f : C → Σ0 = ∪ Pi. It lands inside one of the planes.
+We analyze now its position with respect to the rest of them. T he crucial
+remark is the following. If f (C) is not contained in Pi then f (C) ∩ Pi ⊂ S. Indeed
+by stability of intersections f (C) ∩ Pi ⊂ lim fn(C) ∩ Pi ⊂ lim Σ ǫn ∩ Pi ⊂ S. We
+infer that f (C) cannot land into a double line of the conﬁguration of planes . If
+it were the case f (C) would have to avoid the 4 triple points on the line by the
+remark and the general position of S, contradicting Picard theorem.
+We end up with f (C) contained in one plane and avoiding the others except
+at points of S, again by the remark. So f (C) is in a complement of the form
+Pi \(∪ j̸=iPj \S). Hence we are ﬁnished if we are able to ﬁnd a sextic S such that
+all these complements are hyperbolic.
+The second step consists in constructing this sextic. Note t hat the situation is
+similar to Green theorem. We have plane complements of ﬁve li nes on which a
+few points are deleted. To create S we proceed by deformation in order to remove
+these points on more and more double lines. Our starting poin t is the collection
+of complements Pi \(∪ j̸=iPj) which are hyperbolic by Green theorem.
+We want to remove points on a double line, say D = P1 ∩ P2, keeping the
+hyperbolicity. For this consider a sextic S0 = ( s0 = 0) in general position with
+respect to the Pi and deform it toward the union of the remaining planes by taki ng
+S1 = ( p3p4p2
+5p2
+6 = ǫ0s0) for a small ǫ0 ̸= 0. This pushes on D the points of the
+sextic toward the triple points. So the complement P1 \(∪ i̸=1Pi \(D ∩ S1)) is close
+to P1 \(∪ i̸=1Pi), hence hyperbolic by a suitable openness argument.
+This is a particular case of the following lemma which we appl y inductively to
+conclude.
+Lemma. Let ∆k be a collection of k double lines, D = Pi1 ∩ Pi2 an extra one
+and ∆k+1 = ∆ k ∪ D. Assume Sk = ( sk = 0) already constructed such that the
+complements Pi \(∪ j̸=iPj \(∆k ∩ Sk)) are hyperbolic. Then so are Pi \(∪ j̸=iPj \
+(∆k+1 ∩ Sk+1)) where Sk+1 = (pi3 pi4 p2
+i5 p2
+i6 = ǫksk) for a small ǫk ̸= 0.
+4
+
+=== PDF PAGE 5 ===
+Note that Sk+1 is still in general position with respect to the Pi if Sk was. Remark
+also that the situation does not change on ∆ k. We have ∆ k ∩ Sk = ∆ k ∩ Sk+1.
+Proof of the lemma. Take D = P1 ∩ P2 for simplicity. If we cannot ﬁnd such an ǫk,
+we have a sequence of sextics Sk+1,n converging toward P3 ∪ P4 ∪ P5 ∪ P6 and entire
+curves fn(C) sitting in one of the corresponding complements, say P1 \(∪ j≥ 2Pj \
+((∆k ∩ Sk) ∪ (D ∩ Sk+1,n ))). We get at the limit an entire curve f (C) in P1. As
+before it cannot degenerate inside a double line. By stabili ty of intersections, for
+j ≥ 2 we have f (C) ∩ Pj ⊂ limfn(C) ∩ Pj ⊂ (∆k ∩ Sk) ∪ lim D ∩ Sk+1,n . If
+j ≥ 3 we infer that f (C) ∩ Pj ⊂ ∆k ∩ Sk as Pj ∩ D ∩ Sk+1,n is empty by general
+position. Note now that lim D ∩ Sk+1,n consists in the triple points of D hence sits
+in ∪ j≥ 3Pj. Then thanks to the previous case we also have f C) ∩ P2 ⊂ ∆k ∩ Sk.
+Therefore f (C) lands in P1 \(∪ j≥ 2Pj \(∆k ∩ Sk)) contradicting the hypothesis.
+2. A variant.
+A drawback of Brody lemma is the lack of information about the location of
+the entire curve it produces. It might land far away from the p oints where the
+discs blow up. Here is a simple example due to J. Winkelmann (s ee also [19], and
+[10] for background on blow-ups).
+Example. Let A = C2/ (Z ⊕ iZ)2 be the standard torus and π : ˜A → A the blow-
+up of A at a point p. Take a dense injective line L in A, say L = (z2 = λz 1) for λ
+irrational. Consider the sequence of discs fn(D) on L given by fn(z) = ( nz, λnz ).
+Then the Brody curve ˜f (C) produced by their strict transforms ˜fn lands in the
+exceptional divisor E.
+Indeed if ˜f (C) is not contained in E it projects down to a (non constant) Brody
+curve f (C) in A. It is linear by Liouville theorem (the lift of f ′ is bounded in
+C2), and parallel to L by construction. So it is again a dense injective line L′.
+In particular the derivative of π − 1|L′ = ˜f ◦ f − 1 is bounded. On the other hand
+consider an open cone of vertex p transversal to the direction of L′. By density
+it cuts out a sequence of smaller and smaller discs dn on L′ converging toward p.
+But π − 1(dn) converges toward a non constant disc in E (the basis of the cone) by
+deﬁnition of a blow-up. This is the contradiction.
+We want to address this problem by constructing entire curve s where the discs
+accumulate in terms of area. To formulate this we introduce t he notion of Ahlfors
+current.
+We start by brieﬂy recalling what a current is (see [10] for mo re background on
+currents). Let X be a compact complex manifold of dimension n endowed with a
+hermitian metric. Denote by ω its area form. A current (of bidimension (1 , 1)) in
+X is a continuous linear form on the space of diﬀerential forms (of bidegree (1 , 1))
+of X. It is positive if it is non negative on positive forms, and closed if it vanishes
+5
+
+=== PDF PAGE 6 ===
+on exact forms. Instances of such currents are currents of in tegration on complex
+curves or positive closed forms of bidegree ( n − 1, n − 1), given respectively by
+α ↦→
+∫
+C α and α ↦→
+∫
+X α ∧ β . In general a positive current may be seen as a form
+of bidegree ( n− 1, n − 1) with measure coeﬃcients. A useful fact is the compactness
+of the set of positive currents of mass 1 (here the mass of T is < T, ω > or
+∫
+X T ∧ ω
+if we see T as a form with measure coeﬃcients).
+Let now fn : D → X be a sequence of holomorphic discs smooth up to the
+boundary. We make the standing assumption
+(A) ln
+an
+→ 0
+where an = area ( fn(D)) and ln = length ( fn(∂D )). In other words the bound-
+aries of the discs become asymptotically negligible. By com pactness we may sup-
+pose that the sequence of normalized currents of integratio n [fn(D)]
+an
+converges
+toward a positive current T of mass 1. It is closed because of ( A). This is the
+Ahlfors current associated to the sequence of discs.
+Let us present our variant of Brody lemma.
+V ariant [8]. Let T be an Ahlfors current in X and K ⊂ X a compact set charged
+by T . Then there exists an entire curve passing through K.
+Here K charged by T means
+∫
+K T ∧ ω > 0. In other words the proportion of area
+of fn(D) near K remains bounded away from zero. As in Brody lemma the entire
+curve f : C → X is obtained by reparametrizing the holomorphic discs. By th e
+very construction it cuts K out on a set of positive area. In particular if K is an
+analytic subset then f (C) ⊂ K by analytic continuation.
+As a consequence we get another characterization of hyperbo licity with a ﬂavour
+of negative curvature (see also [12] for another proof).
+Criterion. Let X be a compact complex manifold. Then X is hyperbolic if and
+only if its holomorphic discs satisfy a linear isoperimetri c inequality.
+This means that there exists a constant C such that for any holomorphic disc
+f : D → X smooth up to the boundary we have
+area ( f (D)) ≤ C length ( f (∂D )).
+Indeed if it does not hold we get a sequence of holomorphic dis cs satisfying ( A),
+therefore an Ahlfors current and so an entire curve in X by the theorem. Con-
+versely the presence of an entire curve forbids a linear isop erimetric inequality by
+Ahlfors lemma.
+6
+
+=== PDF PAGE 7 ===
+Ahlfors lemma [1]. Let f : C → X be an entire curve. Then there exists
+rn → +∞ such that the corresponding sequence of holomorphic discs fn : D →
+X, z ↦→ f (rnz) satisﬁes (A).
+Proof. Let Dr be the disc of radius r centered at 0 in C. Denote by l(r) the length
+of f (∂D r) and a(r) the area of f (Dr). If λ|dz| is the pull-back by f of the metric
+on X then in polar coordinates
+l(r) =
+∫ 2π
+0
+λ(r, θ ) r dθ, a ′(r) =
+∫ 2π
+0
+λ 2(r, θ ) r dθ.
+By Cauchy-Schwarz inequality we get l2(r) ≤ 2πr a ′(r). Dividing by 2 πr a 2(r)
+and integrating we infer that
+∫ +∞
+1
+l2(r)
+a2(r)
+dr
+2πr ≤
+∫ +∞
+1
+a′(r)
+a2(r) dr ≤ 1
+a(1) < +∞ .
+This gives a sequence rn → +∞ such that l(rn)
+a(rn) → 0.
+Ahlfors lemma also gives a description of rational curves as entire curves of
+bounded area.
+Rational curves. Let f : C → X be an entire curve such that area( f (C)) < +∞ .
+Then f extends to a holomorphic map from P 1(C) to X, a rational curve.
+Indeed by Riemann removable singularity theorem it is enoug h to extend f con-
+tinuously at inﬁnity. Because of the bounded area, applying Ahlfors lemma xe get
+a sequence rn such that length(f( ∂D rn )) → 0. We may suppose that f (∂D rn) con-
+verges toward a point p. It suﬃces to show that the annuli An = f (Drn \
+Drn− 1 )
+also converge toward p. Note that area( An) → 0. If a point qn of An remains
+far from p say at distance > ǫ , then for large n A n ∩ B(qn, ǫ ) is a proper holo-
+morphic curve in B(qn, ǫ ) passing through qn. By Lelong inequality we have
+area(An ∩ B(qn, ǫ )) ≥ c ǫ2 (c depending only on X). This is the contradiction.
+Lelong inequality [13]. Let C be a proper holomorphic curve in B(0, ǫ ) ⊂ Cn,
+passing through 0. Then area( C) ≥ π ǫ 2.
+Proof. For 0 < r < ǫ put Cr = C ∩ B(0, r ) and a(r) = area( Cr). Note that
+∂C r = C ∩ ∂B (0, r ) by properness. We claim that a(r)
+r2 is increasing. Assuming
+this we get
+area(C)
+ǫ2 = lim
+r→ ǫ
+a(r)
+r2 ≥ lim
+r→ 0
+a(r)
+r2 ≥ π
+as C goes through 0. As for the claim if 0 < r < s < ǫ we have
+a(s)
+s2 − a(r)
+r2 = 1
+s2
+∫
+Cs
+ddc∥z∥2 − 1
+r2
+∫
+Cr
+ddc∥z∥2 = 1
+s2
+∫
+∂C s
+dc∥z∥2 − 1
+r2
+∫
+∂C r
+dc∥z∥2
+7
+
+=== PDF PAGE 8 ===
+=
+∫
+∂C s
+dc log ∥z∥2 −
+∫
+∂C r
+dc log ∥z∥2 =
+∫
+Cs\ Cr
+ddc log ∥z∥2 ≥ 0
+by Stokes theorem and the fact that ddc log ∥z∥2 is a positive form.
+A consequence is the compactness of holomorphic discs under an area bound in
+absence of rational curves.
+Compactness of discs. Assume X does not contain any rational curve. Let
+fn : D → X be a sequence of holomorphic discs of bounded area. Then it co nverges
+toward a holomorphic disc after extracting.
+Indeed if ( fn) does not admit any converging subsequence, then ∥f ′
+n∥ has to blow
+up on a smaller disc (if not apply Ascoli theorem). So by Brody lemma we get an
+entire curve of bounded area, contradicting the absence of r ational curve.
+Let us now sketch a proof of our variant under this hypothesis (absence of
+rational curves) for simplicity.
+Proof of the variant . Recall that we are given an Ahlfors current T = lim [fn(D)]
+an
+with ln
+an
+→ 0, charging K. Note that the hypothesis forces an to blow up. Let U be
+a neighbourhood of K. For simplicity we will just construct an entire curve passi ng
+through U out of these discs. The full statement would follow in the sam e way
+taking a sequence of neighbourhoods shrinking to K and extracting diagonally.
+By assumption for large n we have
+area(fn(D) ∩ U )
+an
+≥ ǫ.
+The strategy for constructing our entire curve is to look for germs of it, small
+discs passing through U , try and double them as long as we could and pass to the
+limit using an area bound. Let us make this scheme more precis e.
+Consider collections Fn of round discs centered in D depending on n. They are
+disjoint if the discs in Fn are disjoint, and consistent if card(Fn)
+an
+is bounded from
+below, say by δ. Let us call disjoint consistent collections simply families. Families
+automatically contain subfamilies with an area bound. Inde ed for at least half of
+the discs d of Fn we have area( fn(d ∩ D)) ≤ 2
+δ .
+Let us explain how to get families of germs through U . For each point z of D
+let dz be the smallest disc centered at z such that area( fn(dz ∩ D) ∩ U ) = 1. By
+Besicovich lemma [14] we may extract from this collection a ﬁ xed number N of
+disjoint subcollections covering D. Take the one with most area in U . This gives
+the families Fn of germs.
+8
+
+=== PDF PAGE 9 ===
+We will double them now. Given a disc d write 2 d for the disc centered at the
+same point and of radius twice. Consider the collections 2 Fn = {2d, d ∈ F n}. If
+we are able to extract families from them, then we say that the doubling process
+works. In this case as already seen we get an area bound. Moreo ver we may
+suppose that the discs 2 d stay mostly inside D. If not we would get families of
+such discs for which on one hand 2 d ∩ ∂D is relatively big, say ∂D cuts 2d roughly
+by half, and on the other hand length( fn(2d ∩ ∂D ) ≤ 2ln
+δan
+(same argument as for
+the area bound). Reparametrizing the discs d by D we would get at the limit a
+holomorphic map f : 2 D+ → X (where 2 D+ is the upper half of 2 D) such that
+f |[− 2, 2] is constant (because ln
+an
+→ 0) but f is not (because area( f (2D+) ≥ 1).
+This is impossible.
+Assume that we are able to iterate this doubling process inde ﬁnitely. Then we
+have families 2 kFn for each k. Reparametrizing the d in Fn by D, we deduce that
+the holomorphic maps fn ◦ rn : 2 kD → X have area bounds for each k. Passing
+to the limit we get a holomorphic map f : C → X such that area( f (C) ∩ U ) ≥ 1.
+But in general the doubling process may fail at some step, at t he ﬁrst for
+instance. Then a combinatorial argument shows that there ex ist in Fn arbitrary
+long chains of discs d1, ..., d k of fast decreasing size, such that 2 dk ⊂ 2dk− 1 ⊂ ... ⊂
+2d2 ⊂ 2d1. Now instead of reasoning with discs, we involve the annuli 2 di \2di+1.
+Actually we have families of such annuli. With roughly the sa me arguments as
+before for the discs, by reparametrizing the middle annulus of these chains and
+passing to the limit, we get this time a holomorphic map f : C∗ → X. We even
+have area(f (C∗ ) ∩ U ) = ∞ . See [8] for more details.
+Bloch principle . Let us mention to ﬁnish an application to Bloch principle du e
+to M. McQuillan. In the classical setting Bloch principle re ads as follows. Consider
+a conﬁguration of four lines in general position in P 2(C). It deﬁnes three extra
+lines joining opposite double points, the diagonals. Borel [4] remarked that the
+complement of the conﬁguration is hyperbolic modulo the diagonals . Any entire
+curve avoiding the conﬁguration has to be contained in a diag onal. Bloch [3] trans-
+lated this in terms of discs. A diverging sequence of holomor phic discs avoiding
+the conﬁguration has to converge toward the diagonals. In ot her words diverging
+sequences of discs localize precisely where entire curves a re. In [15] McQuillan
+extends this principle to general logarithmic surfaces by u sing the variant.
+References
+1. L. Ahlfors, Zur Theorie der ¨Uberlagerungsﬂ¨ achen, Acta Math. 65 (1935), 157–194.
+2. F. Berteloot, J. Duval, Sur l’hyperbolicit´ e de certains compl´ ementaires, Ens. Math. 47
+(2001), 253–267.
+3. A. Bloch, Sur les syst` emes de fonctions holomorphes ` a vari´ et´ es lin´ eaires lacunaires, Ann.
+Sci. Ecole Norm. Sup. 43 (1926), 309–362.
+4. E. Borel, Sur les z´ eros des fonctions enti` eres, Acta Math. 20 (1897), 357–396.
+9
+
+=== PDF PAGE 10 ===
+5. R. Brody, Compact manifolds and hyperbolicity , Trans. Amer. Math. Soc. 235 (1978), 213–
+219.
+6. C. Ciliberto, M. Zaidenberg, Scrolls and hyperbolicity, Internat. J. Math. 24 (2013), 1350026-
+25p.
+7. J. Duval, Une sextique hyperbolique dans P 3(C), Math. Ann. 330 (2004), 473–476.
+8. J. Duval, Sur le lemme de Brody , Invent. Math. 173 (2008), 305–314.
+9. M. Green, Some Picard theorems for holomorphic maps to algebraic vari eties, Amer. J.
+Math. 97 (1975), 43–75.
+10. P. Griﬃths, J. Harris, Principles of algebraic geometry , Wiley, New York, 1978.
+11. D. T. Huynh, Examples of hyperbolic hypersurfaces of low degree in proje ctive spaces, arXiv:
+1507.03542, to appear in IMRN.
+12. B. Kleiner, Hyperbolicity using minimal surfaces , preprint.
+13. P. Lelong, Propri´ et´ es m´ etriques des vari´ et´ es analytiques complexes d´ eﬁnies par une ´ equation,
+Ann. Sci. Ecole Norm. Sup. 67 (1950), 393–419.
+14. P. Mattila, Geometry of sets and measures in euclidean spaces , Cambridge University Press,
+Cambridge, 1995.
+15. M. McQuillan, The Bloch principle , arXiv:1209.5402.
+16. M. Paun, Vector ﬁelds on the total space of hypersurfaces in the proje ctive space and hyper-
+bolicity, Math. Ann. 340 (2008), 875–892.
+17. A. Ros, The Gauss map of minimal surfaces, in Diﬀerential geometry, Valencia 2001 , World
+Sci., River Edge, 2002, pp. 235–252.
+18. B. Shiﬀman, M. Zaidenberg, New examples of Kobayashi hyperbolic surfaces in P 3(C),
+Funct. Anal. Appl. 39 (2005), 76–79.
+19. J. Winkelmann, On Brody and entire curves , Bull. Soc. Math. France 135 (2007), 25–46.
+10

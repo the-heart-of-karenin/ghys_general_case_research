@@ -1,0 +1,80 @@
+{
+  "purpose": "Exact finite-dimensional identities for notes 61-63; not a global proof or convergence/novelty test.",
+  "complex_dimension_of_model": 6,
+  "weights": [
+    2,
+    -1,
+    1,
+    -2,
+    1,
+    -1
+  ],
+  "dolbeault": {
+    "dim_C0": 6,
+    "rank_D0": 2,
+    "dim_C1": 36,
+    "rank_D1": 10,
+    "h0": 4,
+    "h1": 24,
+    "fixed_C0": 0,
+    "fixed_C1": 10,
+    "fixed_D1_rank": 4,
+    "fixed_H1": 6,
+    "fixed_H1_representatives": [
+      "baralpha tensor X",
+      "barbeta tensor C",
+      "bargamma tensor Z",
+      "bardelta tensor A",
+      "barepsilon tensor Z",
+      "barzeta tensor C"
+    ]
+  },
+  "graph_integrability_remainders": {
+    "UR": {
+      "Z": "-1*p*xi + 1*u",
+      "B": "-1*r*xi"
+    },
+    "US": {
+      "Z": "1*w"
+    },
+    "VP": {
+      "C": "1*r"
+    },
+    "VQ": {
+      "C": "-1*eta*t + 1*s",
+      "Y": "-1*eta*w"
+    }
+  },
+  "integrable_fixed_F_complex_structure_parameters": [
+    "xi",
+    "eta",
+    "p",
+    "q",
+    "v",
+    "t"
+  ],
+  "closure_isolating_coefficients": {
+    "(1, 5, 6)": "-1*M",
+    "(0, 1, 7)": "-1*L*p",
+    "(3, 4, 10)": "-1*O*t"
+  },
+  "abstract_symplectic_cube_coefficient": "6*K*L*O + 6*K*M*N",
+  "fixed_F_symplectic_triple_parameters": [
+    "xi",
+    "eta",
+    "q",
+    "v",
+    "K",
+    "L",
+    "N",
+    "O"
+  ],
+  "family_closed_identically": true,
+  "linearized_form_closure_rank": 3,
+  "linearized_general_triple_dimension_after_gauge": 8,
+  "two_step_Maurer_Cartan_differential_exact_tests": 200,
+  "zero_mean_factorization_exact_tests": 200,
+  "right_translation_conjugacy_exact_tests": 200,
+  "elliptic_estimate_proved_in_note_62_not_tested_numerically": true,
+  "all_assertions_passed": true
+}

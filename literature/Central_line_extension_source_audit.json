@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-19",
+  "note": "93_common_central_line_extends_through_rank_degeneracy.md",
+  "new_sources": [
+    {
+      "filename": "72_Fernandez_Hernandez_Gimenez_Conejero_2024_Plane_curve_rigidity.pdf",
+      "title": "A note on complex plane curve singularities up to diffeomorphism and their rigidity",
+      "authors": [
+        "A. Fernandez-Hernandez",
+        "R. Gimenez Conejero"
+      ],
+      "download_url": "https://link.springer.com/content/pdf/10.1007/s40687-024-00439-w.pdf",
+      "landing_url": "https://doi.org/10.1007/s40687-024-00439-w",
+      "publication_note": "Research in the Mathematical Sciences 11, article 28 (2024); published 27 March 2024. Only Section 2.1, Definition 2.1 and Theorem 2.3 used for classical ambient topological invariance of smoothness of a plane curve.",
+      "resolved_url": "https://link.springer.com/content/pdf/10.1007/s40687-024-00439-w.pdf?error=cookies_not_supported&code=72381fad-7745-4b26-861b-71d8a204cc8c",
+      "download_status": "downloaded",
+      "bytes": 923029,
+      "pages": 21,
+      "sha256": "1b2b7519a9991a3ede4a5f7f5bc1fdd35843af0e13f5e6929fe25e08256c9148",
+      "collected_utc": "2026-10-19T09:46:33.812046+00:00"
+    }
+  ],
+  "complete_pages_visually_checked": [
+    {
+      "source": "72_Fernandez_Hernandez_Gimenez_Conejero_2024_Plane_curve_rigidity.pdf",
+      "pdf_page": 2,
+      "image": "Central_line_extension_source_previews/72_Plane_curve_rigidity-02.png",
+      "complete_page_visually_checked": true,
+      "content": "Definition 2.1: ambient homeomorphism of plane curve germs, including the surrounding scope."
+    },
+    {
+      "source": "72_Fernandez_Hernandez_Gimenez_Conejero_2024_Plane_curve_rigidity.pdf",
+      "pdf_page": 3,
+      "image": "Central_line_extension_source_previews/72_Plane_curve_rigidity-03.png",
+      "complete_page_visually_checked": true,
+      "content": "Definition 2.2 and Theorem 2.3: branch value semigroups and embedded topological classification."
+    }
+  ],
+  "actual_external_input": {
+    "statement": "A reduced complex plane curve germ ambiently homeomorphic to a smooth complex line is analytically nonsingular.",
+    "derivation": "Theorem 2.3 gives one branch and the semigroup of a smooth branch; Definition 2.2 then gives an order-one holomorphic function along the primitive normalization, forcing a nonzero derivative.",
+    "scope": "Complex dimension two inside a genuine actual g stable or unstable leaf. H supplies an ambient homeomorphism within that leaf, not merely an abstract homeomorphism of the curve.",
+    "not_used": [
+      "The paper main theorem about smooth diffeomorphisms",
+      "Bilipschitz classification",
+      "Any regularity of H beyond homeomorphism",
+      "Any high-dimensional topological smoothness claim"
+    ]
+  },
+  "internal_inputs": [
+    "76 actual compact suspension and marked toral conjugacy",
+    "86 actual twisted returns and dense return parameters",
+    "87 fixed-side common line on Y minus a proper closed Z",
+    "91 identification of that line with the specified topological central fine foliation"
+  ],
+  "proof_checks": [
+    "Annihilator argument proves every g stable leaf dense, not just existence of a dense orbit.",
+    "Continuation into each fixed actual leaf uses complete induced leaf metric and holomorphic defining functions; transverse holomorphicity is never assumed.",
+    "A curve is shown central by continuation into every actual stable leaf, discreteness of one nontrivial plane-equality locus on its normalization, and note91.",
+    "Area bound uses two generic complex projections and finite zero counts, with constants local to the chosen nonzero intersection equation.",
+    "Analytic limits are obtained from bounded-degree monic factors; multiplicities are allowed until reduced supports are taken.",
+    "Invariance of domain only gives an analytic branch; ambient topology, rather than the abstract disk property, is used to exclude a cusp.",
+    "After all fine leaves are analytic and smooth, a separate degree-one projection argument proves uniform local graphs and continuity of tangents."
+  ],
+  "not_claimed": [
+    "Z is empty",
+    "Both central sides analytic",
+    "Transversely C1 or holomorphic distribution",
+    "Holomorphic central surface fibration",
+    "A nonzero closed holomorphic one-form",
+    "Resolution of note76 or general Ghys rigidity"
+  ],
+  "model_checks": "Analytical substitutions in notes05 and92; scope comparison with local rough/concentration models11,18,85,88. No old numerical suites rerun.",
+  "novelty_status": "Classical tools; limited searches do not establish novelty of the specific extension argument."
+}

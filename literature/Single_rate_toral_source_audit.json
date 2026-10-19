@@ -1,0 +1,148 @@
+{
+  "date": "2026-10-19",
+  "new_sources": [
+    {
+      "filename": "64_Cattaneo_Tomassini_2017_Complex_symplectic_ddbar_v2.pdf",
+      "title": "Complex symplectic structures and the partial-barpartial-lemma",
+      "download_url": "https://arxiv.org/pdf/1612.08183v2",
+      "landing_url": "https://doi.org/10.1007/s10231-017-0672-1",
+      "resolved_url": "https://arxiv.org/pdf/1612.08183v2",
+      "download_status": "downloaded",
+      "bytes": 188471,
+      "pages": 11,
+      "sha256": "8108fd266c384bfedac9eff689357e2d896a4b9eb705bd1b4463c93dc19b31aa",
+      "collected_utc": "2026-10-19T00:50:44.720675+00:00",
+      "publication_note": "arXiv v2, 15 September 2017; Ann. Mat. Pura Appl. 197 (2018), 139-151.",
+      "authors": [
+        "Andrea Cattaneo",
+        "Adriano Tomassini"
+      ]
+    },
+    {
+      "filename": "65_Baouendi_Rothschild_Winkelmann_Zaitsev_2004_Lie_groups.pdf",
+      "title": "Lie group structures on groups of diffeomorphisms and applications to CR manifolds",
+      "download_url": "https://www.maths.tcd.ie/~zaitsev/papers/brwz.pdf",
+      "landing_url": "https://www.maths.tcd.ie/~zaitsev/papers/brwz.pdf",
+      "resolved_url": "https://www.maths.tcd.ie/~zaitsev/papers/brwz.pdf",
+      "download_status": "downloaded",
+      "bytes": 225695,
+      "pages": 18,
+      "sha256": "b63e34fd8abf16f0aae2164154382a69e5705d2039c5cb0a2376567da8be5d03",
+      "collected_utc": "2026-10-19T00:50:45.023612+00:00",
+      "publication_note": "Author manuscript of Ann. Inst. Fourier 54 (2004), 1279-1303; Theorem 3.5 recalls Bochner-Montgomery.",
+      "authors": [
+        "M. S. Baouendi",
+        "L. P. Rothschild",
+        "J. Winkelmann",
+        "D. Zaitsev"
+      ]
+    },
+    {
+      "filename": "66_Wilkinson_Xue_2017_Abelian_by_cyclic_actions.pdf",
+      "title": "Rigidity of some Abelian-by-cyclic solvable group actions on T^N",
+      "download_url": "https://www.math.uchicago.edu/~wilkinso/papers/rigidity_solvable.pdf",
+      "landing_url": "https://doi.org/10.1007/s00220-019-03658-3",
+      "resolved_url": "https://www.math.uchicago.edu/~wilkinso/papers/rigidity_solvable.pdf",
+      "download_status": "downloaded",
+      "bytes": 476752,
+      "pages": 40,
+      "sha256": "f0887ac4dfb39b0293b264ee52ced93874570eb7414ada46e6b58e4a90f86b75",
+      "collected_utc": "2026-10-19T00:50:45.982482+00:00",
+      "publication_note": "Author manuscript dated 22 May 2017; journal publication CMP 376 (2020), 1223-1259.",
+      "authors": [
+        "Amie Wilkinson",
+        "Jinxin Xue"
+      ]
+    }
+  ],
+  "complete_pages_visually_checked": [
+    {
+      "source": "64_Cattaneo_Tomassini_2017_Complex_symplectic_ddbar_v2.pdf",
+      "pdf_page": 4,
+      "image": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\Single_rate_toral_source_previews\\64_Cattaneo_Tomassini_2017_Complex_symplectic_ddbar_v2_page_4.png",
+      "complete_page_visually_checked": true,
+      "status": "legible, mathematical hypotheses and page identity checked"
+    },
+    {
+      "source": "64_Cattaneo_Tomassini_2017_Complex_symplectic_ddbar_v2.pdf",
+      "pdf_page": 8,
+      "image": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\Single_rate_toral_source_previews\\64_Cattaneo_Tomassini_2017_Complex_symplectic_ddbar_v2_page_8.png",
+      "complete_page_visually_checked": true,
+      "status": "legible, mathematical hypotheses and page identity checked"
+    },
+    {
+      "source": "65_Baouendi_Rothschild_Winkelmann_Zaitsev_2004_Lie_groups.pdf",
+      "pdf_page": 9,
+      "image": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\Single_rate_toral_source_previews\\65_Baouendi_Rothschild_Winkelmann_Zaitsev_2004_Lie_groups_page_9.png",
+      "complete_page_visually_checked": true,
+      "status": "legible, mathematical hypotheses and page identity checked"
+    },
+    {
+      "source": "66_Wilkinson_Xue_2017_Abelian_by_cyclic_actions.pdf",
+      "pdf_page": 3,
+      "image": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\Single_rate_toral_source_previews\\66_Wilkinson_Xue_2017_Abelian_by_cyclic_actions_page_3.png",
+      "complete_page_visually_checked": true,
+      "status": "legible, mathematical hypotheses and page identity checked"
+    },
+    {
+      "source": "66_Wilkinson_Xue_2017_Abelian_by_cyclic_actions.pdf",
+      "pdf_page": 8,
+      "image": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\Single_rate_toral_source_previews\\66_Wilkinson_Xue_2017_Abelian_by_cyclic_actions_page_8.png",
+      "complete_page_visually_checked": true,
+      "status": "legible, mathematical hypotheses and page identity checked"
+    }
+  ],
+  "primary_html_sources_checked": [
+    {
+      "title": "Cohomology and Hodge Theory on Symplectic Manifolds: I",
+      "authors": [
+        "Li-Sheng Tseng",
+        "Shing-Tung Yau"
+      ],
+      "url": "https://arxiv.org/html/0909.5418#S3.SS2.SSS2",
+      "result": "Definition 3.12 / Proposition 3.13, compact real symplectic HLC equivalent to ddLambda lemma",
+      "local_pdf_downloaded": false,
+      "used_in": "notes/78 section 3, only the real-symplectic primitive equation"
+    }
+  ],
+  "proof_inputs": [
+    {
+      "claim": "Joint smoothness of compact group of holomorphic symplectomorphisms",
+      "source": "65_Baouendi_Rothschild_Winkelmann_Zaitsev_2004_Lie_groups.pdf",
+      "location": "Theorem 3.5, actual PDF page 9",
+      "hypotheses_met": "K is compact; action continuous, free, by biholomorphisms. Open-set effectiveness follows from freeness.",
+      "scope": "2004 paper recalls Bochner-Montgomery; original 1946 PDF not separately audited."
+    },
+    {
+      "claim": "No extra Hodge decomposition may be imported from a holomorphic symplectic Dolbeault Lefschetz isomorphism",
+      "source": "64_Cattaneo_Tomassini_2017_Complex_symplectic_ddbar_v2.pdf",
+      "location": "Lemma 2.3, Corollary 2.4, Lemma 2.5, actual PDF page 4; Example 4.1 starts page 8",
+      "scope": "Only a scope check; does not refute HLC plus toral topology giving a one-form."
+    },
+    {
+      "claim": "Translation-type ABC rigidity cannot be applied just from the same abstract semidirect product",
+      "source": "66_Wilkinson_Xue_2017_Abelian_by_cyclic_actions.pdf",
+      "location": "Affine action setup page 3; section 1.3 page 8",
+      "scope": "Our normal subgroup acts nontrivially unipotently on H1, so cannot be conjugate to the translation-type subgroup."
+    }
+  ],
+  "standard_inputs_not_claimed_new_or_original_PDF_audited": [
+    "Birkhoff ergodic theorem and dominated convergence",
+    "Anosov-Hopf smooth-volume ergodicity as in note75, no repeat audit",
+    "Classical complex Lie structure on automorphism group of a compact complex manifold",
+    "Cartan formula, completeness of holomorphic vector fields on a compact manifold",
+    "Serre duality and compact complex surface Riemann-Roch",
+    "Long exact sequence of 0 -> C -> O -> dO -> 0",
+    "Principal torus Chern class equals central fundamental group extension class"
+  ],
+  "independent_proofs": [
+    "notes/77_single_rate_toral_Anosov_one_form_rigidity.md",
+    "notes/78_toral_period_HLC_and_discrete_monodromy_obstruction.md"
+  ],
+  "countertests": "Standard complex four-torus passes; full noncommutative model05 not in the one-rate hypothesis; note76 half-power local example has a strictly slower rate and is not a counterexample; Iwasawa x elliptic is not a toral-topology counterexample.",
+  "old_computation_suites_rerun": false,
+  "new_numerical_tests_claimed": false,
+  "external_2026_preprints_used_in_notes_77_78": false,
+  "novelty_confirmed": false,
+  "unresolved": "W_Y nonzero has not been deduced from the residual original hypotheses. No exclusion of note76 W_Y=0 branch."
+}

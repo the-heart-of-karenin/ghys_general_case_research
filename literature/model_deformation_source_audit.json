@@ -1,0 +1,128 @@
+{
+  "audited_utc": "2026-10-18T14:07:36.155034+00:00",
+  "purpose": "Notes 61-63: exact fixed-F model moduli, actual local normalization of varying holomorphic automorphisms, independent global first-order verification.",
+  "manifest_count": 57,
+  "new_pdf_files": [
+    {
+      "filename": "55_Console_Fino_2001_Dolbeault_nilmanifolds.pdf",
+      "title": "Dolbeault cohomology of compact nilmanifolds",
+      "author": "Sergio Console and Anna Fino",
+      "download_url": "https://arxiv.org/pdf/math/9803135",
+      "landing_url": "https://doi.org/10.1007/BF01597131",
+      "publication_note": "Transformation Groups 6 (2001), 111-124; stored arXiv:math/9803135v2, 23 January 2001, 15 pages. Scalar Dolbeault background; tangent-coefficient input is verified directly in file 57.",
+      "bytes": 212239,
+      "pages": 15,
+      "sha256": "951caebd80729e75a94ab2e2a491966c1f064f0370c99b9fffc3ce41d0de78ea",
+      "collected_utc": "2026-10-18T13:35:54.897703+00:00"
+    },
+    {
+      "filename": "56_Rollenske_2009_Dolbeault_small_deformations_nilmanifolds.pdf",
+      "title": "Lie-algebra Dolbeault cohomology and small deformations of nilmanifolds",
+      "author": "Soenke Rollenske",
+      "download_url": "https://arxiv.org/pdf/0709.0467v2",
+      "landing_url": "https://doi.org/10.1112/jlms/jdn076",
+      "publication_note": "JLMS 79(2) (2009), 346-362; author arXiv v2, 20 January 2009.",
+      "bytes": 245110,
+      "pages": 19,
+      "sha256": "effd7644a355167bd2a2b88bf1e0aa4a6fba3d055bf11c2cefac5e441b283c5e",
+      "collected_utc": "2026-10-18T13:35:55.347295+00:00"
+    },
+    {
+      "filename": "57_Console_Fino_Poon_Stability_abelian_complex_structures.pdf",
+      "title": "Stability of abelian complex structures",
+      "author": "Sergio Console, Anna Fino, Yat-Sun Poon",
+      "download_url": "https://arxiv.org/pdf/math/0506314v1",
+      "landing_url": "https://doi.org/10.1142/S0129167X06003576",
+      "publication_note": "International Journal of Mathematics 17(4) (2006), 401-416; download is arXiv:math/0506314v1, margin 15 June 2005, but title page reads November 9, 2018. Both dates recorded without inferring file-generation history. Theorems 1-3 directly checked.",
+      "bytes": 197655,
+      "pages": 17,
+      "sha256": "53006a5c434f3cfe63912e62ab7da6f9191c5e2cd960d0670a1a438456aaa9c9",
+      "collected_utc": "2026-10-18T13:35:59.997473+00:00"
+    }
+  ],
+  "source_count": 5,
+  "sources": [
+    {
+      "filename": "01_Zhang_2026_Codimension_one_v2.pdf",
+      "absolute_path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\01_Zhang_2026_Codimension_one_v2.pdf",
+      "bytes": 354138,
+      "pages": 18,
+      "sha256": "44625f74139bc3b5a6e5597f96f05090f795d73cd37a7df8d99381d1ebedb1ad",
+      "reviewed_full_pages": [
+        17
+      ],
+      "all_reviewed_pages_visually_inspected": true,
+      "role": "Existing six-dimensional non-holomorphic-splitting nil model; no attribution of the new symplectic normal-form calculation to this page.",
+      "publication_note": "2026 preprint, v2, 2026-10-05"
+    },
+    {
+      "filename": "02_Zhang_2026_Invariant_complex_structures.pdf",
+      "absolute_path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\02_Zhang_2026_Invariant_complex_structures.pdf",
+      "bytes": 409794,
+      "pages": 13,
+      "sha256": "98ae9ba19cc73f82e385838d9d04c4cc0a7c5d78c2111582b60f1261d6ce1137",
+      "reviewed_full_pages": [
+        3,
+        4
+      ],
+      "all_reviewed_pages_visually_inspected": true,
+      "role": "Scope comparison only: invariant structures and the already-bi-Lipschitz bootstrap.",
+      "publication_note": "2026 preprint, v1"
+    },
+    {
+      "filename": "55_Console_Fino_2001_Dolbeault_nilmanifolds.pdf",
+      "absolute_path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\55_Console_Fino_2001_Dolbeault_nilmanifolds.pdf",
+      "bytes": 212239,
+      "pages": 15,
+      "sha256": "951caebd80729e75a94ab2e2a491966c1f064f0370c99b9fffc3ce41d0de78ea",
+      "reviewed_full_pages": [
+        1,
+        2
+      ],
+      "all_reviewed_pages_visually_inspected": true,
+      "role": "Scalar rational/abelian Dolbeault background, not a substitute for tangent-coefficient cohomology.",
+      "publication_note": "Transformation Groups 6 (2001), 111-124; stored arXiv:math/9803135v2, 23 January 2001, 15 pages. Scalar Dolbeault background; tangent-coefficient input is verified directly in file 57."
+    },
+    {
+      "filename": "56_Rollenske_2009_Dolbeault_small_deformations_nilmanifolds.pdf",
+      "absolute_path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\56_Rollenske_2009_Dolbeault_small_deformations_nilmanifolds.pdf",
+      "bytes": 245110,
+      "pages": 19,
+      "sha256": "effd7644a355167bd2a2b88bf1e0aa4a6fba3d055bf11c2cefac5e441b283c5e",
+      "reviewed_full_pages": [
+        1,
+        14,
+        16,
+        17
+      ],
+      "all_reviewed_pages_visually_inspected": true,
+      "role": "Actual graph families, natural tangent cohomology, convergent complete left-invariant Kuranishi family under the applicable hypotheses.",
+      "publication_note": "JLMS 79(2) (2009), 346-362; author arXiv v2, 20 January 2009."
+    },
+    {
+      "filename": "57_Console_Fino_Poon_Stability_abelian_complex_structures.pdf",
+      "absolute_path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\57_Console_Fino_Poon_Stability_abelian_complex_structures.pdf",
+      "bytes": 197655,
+      "pages": 17,
+      "sha256": "53006a5c434f3cfe63912e62ab7da6f9191c5e2cd960d0670a1a438456aaa9c9",
+      "reviewed_full_pages": [
+        1,
+        2,
+        5,
+        8,
+        11,
+        12,
+        13
+      ],
+      "all_reviewed_pages_visually_inspected": true,
+      "role": "Primary input: abelian-base global tangent cohomology (Theorem 1), invariant harmonic theory (Theorem 2), actual complete invariant Kuranishi family (Theorem 3). Does not itself normalize the varying automorphism.",
+      "publication_note": "International Journal of Mathematics 17(4) (2006), 401-416; download is arXiv:math/0506314v1, margin 15 June 2005, but title page reads November 9, 2018. Both dates recorded without inferring file-generation history. Theorems 1-3 directly checked."
+    }
+  ],
+  "rendered_full_pages": 16,
+  "all_pages_visually_inspected": true,
+  "actual_completeness_input": "Known convergent marked Kuranishi slice plus independently proved nonlinear elliptic near-identity mapping lemma; not merely a formal deformation comparison.",
+  "independent_results": "Two-step small-biholomorphism lemma; actual local conjugacy to the fixed F; six/four/eight complex parameter classification for the specified model.",
+  "novelty": "Not confirmed; old invariant Kuranishi theorems explicitly attributed.",
+  "mathematical_limit": "Local model theorem only; no arbitrary global Ghys classification, no IHS exclusion, no general transverse-regularity theorem."
+}

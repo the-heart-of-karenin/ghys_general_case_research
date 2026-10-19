@@ -1,0 +1,1223 @@
+=== PDF PAGE 1 ===
+arXiv:math/9803135v2  [math.DG]  23 Jan 2001
+DOLBEAUL T COHOMOLOGY OF COMP ACT NILMANIFOLDS
+SERGIO CONSOLE AND ANNA FINO
+Abstract. Let M = G/Γ be a compact nilmanifold endowed with an invariant
+complex structure. W e prove that, on an open set of any connec ted component
+of the moduli space C(g) of invariant complex structures on M , the Dolbeault
+cohomology of M is isomorphic to the one of the diﬀerential bigraded algebra
+associated to the complexiﬁcation gC of the Lie algebra of G. To obtain this
+result, we ﬁrst prove the above isomorphism for compact nilm anifolds endowed
+with a rational invariant complex structure. This is done us ing a descending
+series associated to the complex structure and the Borel spe ctral sequences for
+the corresponding set of holomorphic ﬁbrations. Then we app ly the theory of
+Kodaira-Spencer for deformations of complex structures.
+1. Introduction
+Let M be a compact nilmanifold of real dimension 2 n. It follows from a result
+of Mal’ˇ cev [16] thatM = G/ Γ where G is a simply connected ( s + 1)-step nilpotent
+Lie group admitting a basis of left invariant 1-forms for which the coe ﬃcients in
+the structure equations are rational numbers, and Γ is a lattice in G of maximal
+rank (i.e., a discrete uniform subgroup, cf. [23]). We will let Γ act on G on the left.
+It is well known that such a lattice Γ exists in G if and only if the Lie algebra g
+of G has a rational structure, i.e. if there exists a rational Lie subalgeb ra gQ such
+that g ∼
+= gQ ⊗ R.
+The de Rham cohomology of a compact nilmanifold can be computed by m eans
+of the cohomology of the Lie algebra of the corresponding nilpotent Lie group
+(Nomizu’s Theorem [21]).
+We assume that M has an invariant complex structure J, that is to say that J
+comes from a (left invariant) complex structure J on g.
+Our aim is to relate the Dolbeault cohomology of M with the cohomology ring
+H ∗,∗
+∂ (gC) of the diﬀerential bigraded algebra Λ ∗,∗(gC)∗ , associated to gC with respect
+to the operator ∂ in the canonical decomposition d = ∂ + ∂ on Λ ∗,∗ (gC)∗ .
+The study of the Dolbeault cohomology of nilmanifolds with an invariant complex
+structure is motivated by the fact that the latter provided the ﬁr st known examples
+of compact symplectic manifolds which do not admit any K¨ ahler structure [1, 5, 28].
+Since there exists a natural map
+i : H ∗,∗
+∂ (gC) → H ∗,∗
+∂ (M )
+which is always injective (cf. Lemma 7), the problem we will study is to s ee for
+which complex structure J on M the above map gives an isomorphism
+H p,q
+∂ (M ) ∼
+= H p,q
+∂ (gC). (1)
+1991 Mathematics Subject Classiﬁcation. 53C30, 53C35.
+Research partially supported by MURST and CNR of Italy.
+1
+
+=== PDF PAGE 2 ===
+2 SERGIO CONSOLE AND ANNA FINO
+Note that H ∗,∗
+∂ (gC) can be identiﬁed with the cohomology of the Dolbeault complex
+of the forms on G which are invariant by the left action of G (we shall call them
+brieﬂy G-invariant forms) and H ∗,∗
+∂ (M ) with the cohomology of the Dolbeault
+complex of Γ-invariant forms on G. We shall use these identiﬁcations throughout
+this note.
+Our main result is the following
+Theorem A The isomorphism (1) holds on an open set of any connected compone nt
+of the moduli space C(g) of invariant complex structures on M .
+To obtain Theorem A we ﬁrst consider the case of complex structur es J which
+are rational, i.e. they are compatible with the rational structure of G (J(gQ) ⊆ gQ).
+Theorem B For any rational complex structure J, the isomorphism (1) holds.
+It is an open problem whether the isomorphism (1) holds for any comp act nil-
+manifold endowed with an arbitrary invariant complex structure. We do not know
+examples for which (1) does not hold.
+Theorem A will follow from Theorem B using the theory of deformation s of
+complex structures [13, 26]. Indeed by [24] the set C(g) of complex structures on
+g is at least inﬁnitesimally a complex variety. Using the theory of deform ations
+of complex structures, we are able to prove that for any small def ormation of a
+rational complex structure J, the isomorphism (1) holds (Lemma 8).
+If M is a compact complex parallelisable nilmanifold, i.e., G is a nilpotent complex
+Lie group and J is also right invariant, we have that gi
+J = gi and Theorem B follows
+from [25, Theorem 1].
+An important class of complex structures is given by the abelian ones (i.e. those
+satisfying the condition [ J X, J Y] = [ X, Y ], for any X, Y ∈ g [3, 8]). The nil-
+manifolds with an abelian complex structure are to some extent dual to complex
+parallelisable nilmanifolds: indeed, in the complex parallelisable case
+dλ 1,0 ⊂ λ 2,0,
+and in the abelian case
+dλ 1,0 ⊂ λ 1,1,
+where λ p,q denotes the space of ( p, q)-forms on g. In this last case we will compute
+the minimal model of the Dolbeault cohomology of M and prove that the isomor-
+phism (1) holds for any abelian complex structure. In [6] was proved a similar result
+for the Dolbeault cohomology of M endowed with a nilpotent complex structure,
+which is a slight generalization of the abelian one.
+Note that, however, if M is a complex solvmanifold G/ Γ (with G a solvable not
+nilpotent Lie group), the isomorphism (1) does not hold in general, as shown in [15];
+a discussion of the behaviour of the Dolbeult cohomology of homegen eous mani-
+folds under group actions can be found in [2]. If G is a compact even dimensional
+(semisimple) Lie group endowed with a left invariant complex structur e, the Dol-
+beault cohomology of G does not arise from just invariant classes, as the example
+in [22] shows.
+This paper is organized as follows.
+In Section 2, following [24], we deﬁne a descending series of subalgebr as {gi
+J }
+(with g0
+J = g and gs+1
+J = {0}) for the Lie algebra g associated to the complex
+
+=== PDF PAGE 3 ===
+DOLBEAULT COHOMOLOGY OF COMPACT NILMANIFOLDS 3
+structure J. In general, the subalgebra gi
+J is not a rational subalgebra of gi− 1
+J . If
+J is rational, any gi
+J is rational in gi− 1
+J .
+The importance of this series is twofold.
+First (Section 3), in the case that the subalgebra gi
+J is rational in gi− 1
+J (in particular
+if J is rational), it allows us to deﬁne a set of holomorphic ﬁbrations of nilma nifolds:
+˜p0 : M = G/ Γ → G0,1
+J /p 0(Γ), with standard ﬁbre G1
+J / Γ1,
+. . .
+˜ps− 1 : Gs− 1
+J / Γs− 1 → Gs− 1,s
+J /p s− 1(Γs− 1) with standard ﬁbre Gs
+J / Γs.
+For the above ﬁbrations we will consider the associated Borel spec tral sequence
+(Er, dr) ([12, Appendix II by A. Borel, Theorem 2.1], [10, 14]), which relates t he
+Dolbeault cohomology of each total space with the Dolbeault cohomo logy of each
+base and ﬁbre.
+Secondly (Section 4) following [24], we will prove that one can choose a basis of
+(1, 0)-forms (and also (0 , 1)-forms) on g which is compatible with the above de-
+scending series. This basis will give a basis of Gi− 1,i
+J -invariant (1, 0)-forms on the
+nilmanifolds Gi− 1,i
+J /p i− 1(Γi− 1) and of Gi
+J -invariant (1, 0)-forms on the nilmanifolds
+Gi
+J / Γi, i = 0, ..., s .
+Next, in Section 5, we consider a spectral sequence ( ˜Er, ˜dr) concerning the Gi− 1
+J -
+invariant Dolbeault cohomology of each total space Gi− 1
+J / Γi− 1, the Gi− 1,i
+J -invariant
+Dolbeault cohomology each base Gi− 1,i
+J /p i− 1(Γi− 1) and the Gi
+J -invariant Dolbeault
+cohomology of each ﬁbre Gi
+J / Γi. In this way ( ˜Er, ˜dr) is relative to the Dolbeault
+cohomologies of the Lie algebras gi
+J , gi− 1
+J and gi− 1
+J / gi
+J . Note that the latter are the
+underlying Lie algebras of the ﬁbre, the total space and the base, respectively, of
+the above holomorphic ﬁbrations.
+In Section 6 we compare the spectral sequence ( ˜Er, ˜dr) with the Borel spectral
+sequence ( Er, dr). Inductively (starting with i = s) these two spectral sequences
+allow us to give isomorphisms between the Dolbeault cohomologies of th e total
+spaces and the one of the corresponding Lie algebras. The last ste p gives Theorem
+B.
+Note that our construction of this set of holomorphic ﬁbrations is in the same
+vein as principal holomorphic torus towers, introduced by Barth an d Otte [4]. In
+some cases, like the one of abelian complex structures, G/ Γ is really a principal
+holomorphic torus tower.
+In Section 7 we will give a proof of Theorem A.
+In Section 8 we give examples of compact nilmanifolds with non rational complex
+structures.
+We wish to thank Prof. Simon Salamon for the great deal of suggest ions he gave
+us and his constant encouragement. We are also grateful to Prof . Isabel Dotti for
+useful conversations and the hospitality at the FaMAF of C´ ordob a (Argentina).
+2. A descending series associated to the complex structure
+We recall that, since G is ( s + 1)-step nilpotent, one has the descending central
+series {gi}i≥ 0, where
+g = g0 ⊇ g1 = [g, g] ⊇ g2 = [g1, g] ⊇ ... ⊇ gs ⊇ gs+1 = {0}. (D)
+
+=== PDF PAGE 4 ===
+4 SERGIO CONSOLE AND ANNA FINO
+We deﬁne the following subspaces of g
+gi
+J := gi + Jgi.
+Note that gi
+J is J -invariant.
+Lemma 1 .
+(1) gi
+J is an ideal of gi− 1
+J .
+(2) gi− 1
+J / gi
+J is an abelian algebra.
+(3) gs
+J is an abelian ideal of gs− 1
+J .
+Proof.
+(1) For any X = X1 + J X2 ∈ gi− 1
+J and Y = Y1 + J Y2 ∈ gi
+J (with Xl ∈ gi− 1 and
+Yk ∈ gi), we have that
+[X, Y ] = [ X1, Y1] + [X1, J Y2] + [J X2, Y1] + [J X2, J Y2].
+We can easily see that [ X1, Y1], [X1, J Y2] and [ J X2, Y1] belong to gi by deﬁnition of
+the descending central series. Moreover [ J X2, J Y2] belongs to gi
+J because J satisﬁes
+an integrability condition, namely the Nijenhuis tensor N of J, given by
+N (Z, W ) = [ Z, W ] + J[J Z, W] + J[Z, J W] − [J Z, J W], Z, W ∈ g,
+must be zero [20].
+(2) For any X = X1 + J X2 , Y = Y1 + J Y2 elements of gi− 1
+J we have that
+[X + gi
+J , Y + gi
+J ] = [ X1, Y1] + [X1, J Y2] + [J X2, Y1] + [J X2, J Y2] + gi
+J .
+Then using the same argument as in (1) it follows that [ X + gi
+J , Y + gi
+J ] = gi
+J .
+(3) Using the fact that gs is central (i.e. [ gs, g] = 0) and that N = 0 it is possible
+to prove that [ X, Y ] vanishes for any X, Y ∈ gs
+J .
+Observe moreover that any gi
+J is nilpotent.
+Hence we have the descending series
+g = g0
+J ⊃ g1
+J ⊇ g2
+J ⊇ ... ⊇ gs
+J ⊇ gs+1
+J = {0}. (DJ )
+Remark 1. The ﬁrst inclusion g1
+J ⊂ g is always strict [24, Corollary 1.4].
+Observe also that in case of complex parallelisable nilmanifolds [25], the ﬁ ltration
+{gi
+j} coincides with the descending central series {gi} and then the {gi
+j} are rational.
+In general, given a rational structure gQ for g, we say that a R-subspace h of g is
+rational if h is the R-span of hQ = h∩ gQ. In general g1
+J is not a rational subalgebra of
+g. When J is rational, it is possible to prove that gi
+J is rational in gi− 1
+J . Indeed, we
+have that gi is rational in gi− 1. Then gi = R− span{gi ∩ gi− 1
+Q }. Since Jgi− 1
+Q ⊆ gi− 1
+Q
+it follows that gi
+J = R− span{gi
+J ∩ gi− 1
+Q }. Moreover when J is abelian, gi
+J is an ideal
+of g, for any i and the center
+g1 = {X ∈ g |[X, g] = 0 }
+is a rational J-invariant ideal of g.
+
+=== PDF PAGE 5 ===
+DOLBEAULT COHOMOLOGY OF COMPACT NILMANIFOLDS 5
+3. Holomorphic fibrations and Borel spectral sequences
+In this section we suppose that the complex structure J is rational and we
+associate a set of holomorphic ﬁbrations to the above descending s eries. We recall
+that a holomorphic ﬁbre bundle π : T → B is a a holomorphic map between the
+complex manifolds T and B, which is locally trivial, whose typical ﬁbre F is a
+complex manifold and such that the transition functions are holomor phic. By
+deﬁnition the structure group (i.e. the group of holomorphic autom orphisms of the
+typical ﬁbre) is a complex Lie group.
+To deﬁne the above ﬁbrations, we consider ﬁrst the surjective ho momorphism
+pi− 1 : gi− 1
+J → gi− 1
+J / gi
+J ,
+for each i = 1 , . . . , s . If Gi− 1
+J and Gi− 1,i
+J denote the simply connected nilpotent
+Lie group corresponding to gi− 1
+J and gi− 1
+J / gi
+J respectively, we have the surjective
+homomorphism
+pi− 1 : Gi− 1
+J → Gi− 1,i
+J .
+We deﬁne inductively Gi
+J to be the ﬁbre of pi− 1. Remark that the Lie algebra of
+Gi
+J is gi
+J .
+Given the uniform discrete subgroup Γ of G = G0, we consider the continuous
+surjective map
+˜p0 : G/ Γ → G0,1
+J /p 0(Γ).
+Since J is rational, g1
+J is a rational subalgebra of g, then Γ 1 := Γ ∩ G1
+J is a uniform
+discrete subgroup of G1
+J [7, Theorem 5.1.11]. Then, by [7, Lemma 5.1.4 (a)], p0(Γ)
+is a a uniform discrete subgroup of G0,1
+J (i.e. G0,1
+J /p 0(Γ) is compact, cf. [23]).
+Note moreover that G1
+J is simply connected. This follows from the homotopy exact
+sequence of the ﬁbering p0. Indeed we have
+. . . → π2(G0,1
+J ) = ( e) → π1(G1
+J ) → π1(G) = ( e) → . . .
+Finally it is not diﬃcult to see that G1
+J is connected. Indeed, if C is the connected
+component of the identity in G1
+J , id: G → G induces a covering homomorphism
+G/C → G/G 1
+J ∼
+= G0,1
+J which must be the identity, since G0,1
+J ∼
+= RN0. Thus C = G1
+J .
+Now one can repeat the same construction for any i, since gi
+J is a rational ideal
+of gi− 1
+J . So, for any i = 1, . . . , s we have a map
+˜pi− 1 : Gi− 1
+J / Γi− 1 → Gi− 1,i
+J /p i− 1(Γi− 1).
+Lemma 2 . ˜pi− 1 : Gi− 1
+J / Γi− 1 → Gi− 1,i
+J /p i− 1(Γi− 1) is a holomorphic ﬁbre bundle.
+Proof. Observe ﬁrst that ˜pi− 1 is the induced map of pi− 1 taking quotients of discrete
+subgroups. The tangent map of ˜ pi− 1
+gi− 1
+J → gi− 1
+J / gi
+J
+is J-invariant. Thus ˜pi− 1 is a holomorphic submersion. In particular it is a holo-
+morphic family of compact complex manifolds in the terminology of [13] ( see also
+[27]). The ﬁbres of ˜ pi− 1 are all holomorphically equivalent to Gi
+J / Γi (the typical
+ﬁbre). Thus a theorem of Grauert and Fisher [9] applies, implying tha t ˜pi− 1 is a
+holomorphic ﬁbre bundle.
+Note that Gi− 1
+J / Γi− 1, Gi
+J / Γi, Gi− 1,i
+J /p i− 1(Γi− 1) are compact connected nilmani-
+folds.
+
+=== PDF PAGE 6 ===
+6 SERGIO CONSOLE AND ANNA FINO
+Given a holomorphic ﬁbre bundle it is possible to construct the associa ted Borel
+spectral sequence, that relates the Dolbeault cohomology of the total space T with
+that of the basis B and of the ﬁbre F . We will need the following Theorem (which
+follows from [12, Appendix II by A. Borel, Theorem 2.1] and [10]).
+Theorem 3. Let p : T → B be a holomorphic ﬁbre bundle, with compact connected
+ﬁbre F and T and B connected. Assume that either
+(I) F is K¨ ahler
+or
+(I’) the scalar cohomology bundle
+Hu,v(F ) =
+⋃
+b∈ B
+H u,v
+∂ (p− 1(b))
+is trivial.
+Then there exists a spectral sequence (Er, dr), ( r ≥ 0) with the following prop-
+erties:
+(i) Er is 4-graded by the ﬁbre degree, the base degree and the type. Le t p,qEu,v
+r be
+the subspace of elements of Er of type (p, q), ﬁbre degree u and base degree v. We
+have p,qEu,v
+r = 0 if p + q ̸= u + v or if one of p, q, u, v is negative. The diﬀerential
+dr maps p,qEu,v
+r into p,q+1Eu+r,v− r+1
+r .
+(ii) If p + q = u + v
+p,qEu,v
+2 ∼
+=
+∑
+k
+H k,u− k
+∂ (B) ⊗ H p− k,q− u+k
+∂ (F ).
+(iii) The spectral sequence converges to H∂(T ).
+4. An adapted basis of (1, 0)-forms
+In this section we prove that one can choose a basis of (1,0)-forms on g which
+is compatible with the descending series ( DJ ). We consider, like in [24], some
+subspaces Vi (i = 0, . . . , s + 1) of V := (TeG)∗ ∼
+= g∗ , that determine a series, which
+is related to the descending central series ( D).
+Indeed we deﬁne:
+V0 = {0}
+V1 = {α ∈ V |dα = 0}
+. . .
+Vi = {α ∈ V |dα ∈ Λ2Vi− 1}
+. . .
+Vs+1 = V.
+Note that Vi is the annihilator ( gi)o of the subspace gi and that {0} = V0 ⊆ V1 ⊆
+. . . ⊆ Vs+1 = V [24, Lemma 1.1].
+If we now let ( gi
+J )0 ∩ λ 1,0 =: V 1,0
+i , by [24, Lemma 1.2] we have that there exists a
+basis of (1,0)-forms {ω 1, . . . ω n} such that if ω l ∈ V 1,0
+i then dω l belongs to the ideal
+(in ( gC)∗ ) generated by V 1,0
+i− 1 [24, Theorem 1.3]. In particular there exists at least
+a closed (1 , 0)-form (this implies Remark 1).
+Moreover we have the following isomorphisms:
+(
+gi− 1
+J / gi
+J
+) C ∼
+= V 1,0
+i /V 1,0
+i− 1 ⊕ V 0,1
+i /V 0,1
+i− 1, i = 1, . . . , s,
+where V 0,1
+i is the conjugate of V 1,0
+i .
+
+=== PDF PAGE 7 ===
+DOLBEAULT COHOMOLOGY OF COMPACT NILMANIFOLDS 7
+With respect to the subspaces V 1,0
+i the above basis can be ordered as follows (we
+let ni := dim C gi
+J ):
+ω 1, . . . , ω n− n1 are elements of V 1,0
+1 (such that dω l = 0) or g/ g1
+J is the real vector
+space underlying V 1,0
+1 ;
+ω n− n1+1, . . . , ω n− n2 are elements of V 1,0
+2 \V 1,0
+1 or g1
+J / g2
+J is the real vector space
+underlying the quotient V 1,0
+2 /V 1,0
+1 ;
+. . .
+ω n− ns− 1+1, . . . , ω n− ns are elements of V 1,0
+s \V 1,0
+s− 1;
+ω n− ns+1, . . . , ω n are elements of λ 1,0\V 1,0
+s .
+Here V 1,0
+i \V 1,0
+i− 1 denotes a complement of V 1,0
+i− 1 in V 1,0
+i (which corresponds to the
+choice of a complement of gi
+J in gi− 1
+J ).
+Hence, by deﬁnition, the elements of V 1,0
+i \V 1,0
+i− 1 and, by identiﬁcation, the elements
+of the quotient V 1,0
+i /V 1,0
+i− 1, are (1,0)-forms on g which vanish on gi
+J . So they may
+be identiﬁed with forms on the quotient gi− 1
+J / gi
+J .
+In this way we can consider:
+- the elements of λ 1,0/V 1,0
+1 = V 1,0
+2 /V 1,0
+1 ⊕ V 1,0
+3 /V 1,0
+2 ⊕ . . . ⊕ λ 1,0/V 1,0
+s as (1,0)-forms
+on g1
+J ,
+...
+- the elements of λ 1,0/V 1,0
+s− 1 = V 1,0
+s /V 1,0
+s− 1 ⊕ λ 1,0/V 1,0
+s as (1,0)-forms on gs− 1
+J and
+- the elements of λ 1,0/V 1,0
+s as (1,0)-forms on gs
+J .
+Thus we can prove a Lemma on the existence of a basis of (1 , 0) forms on g related
+to the series ( DJ ).
+Lemma 4 . It is possible to choose a basis of (1,0)-forms on g such that (with
+respect to the order of before) {ω n− ni− 1+1, . . . ω n− ni , . . . ω n} is a basis of (1,0)-
+forms on gi− 1
+J . Moreover we can consider (up to identiﬁcations) {ω n− ni+1, . . . ω n}
+as forms on gi
+J and {ω n− ni− 1+1, . . . ω n− ni} as forms on gi− 1
+J / gi
+J.
+Proof. By the above arguments, for any i = 1 , . . . , s + 1, it is possible to choose
+a basis of (1,0)-forms on gi− 1
+J as elements of λ 1,0/V 1,0
+i− 1 = λ 1,0/V 1,0
+i ⊕ V 1,0
+i /V 1,0
+i− 1.
+With respect to the above decomposition the forms on λ 1,0/V 1,0
+i can be identiﬁed
+with forms on gi
+J extended by zero on gi− 1
+J and the forms on V 1,0
+i /V 1,0
+i− 1 with forms
+on gi− 1
+J / gi
+J , because these forms vanish on gi
+J .
+Remark 2. dω i, i = n − ni− 1 + 1 , . . . , n − ni belongs to the ideal generated by
+{ω l, l = 1, . . . , n − ni− 1}.
+Remark 3. If J is abelian it is possible to choose a basis of (1 , 0)-forms {ω 1, . . . , ω n}
+on g such that
+dω i ∈ ∧ 2 ⟨ω 1, . . . , ω i− 1, ω 1, . . . , ω i− 1⟩ ∩ λ 1,1.
+5. A spectral sequence for the complex of invariant forms
+We construct a spectral sequence p,q ˜Eu,v
+r for the complexes of Gs− 1
+J -invariant
+forms on Gs− 1
+J / Γs− 1 whose Dolbeault cohomology identiﬁes with H∂ ((gs− 1
+J )C). To
+do this, we give a ﬁltration of the complex Λ t = ⊕ Λp,q
+t of diﬀerential forms of type
+(p, q) on t = gi− 1
+J .
+We know from Lemma 4 that there exists a basis of (1 , 0)-forms ω t
+h on t (and of
+(0, 1)-forms
+ω t
+h) such that part of them are (1 , 0)-forms ω b
+j on b = gi− 1
+J / gi
+J and part
+
+=== PDF PAGE 8 ===
+8 SERGIO CONSOLE AND ANNA FINO
+are forms ω f
+k on f = gi
+J . We deﬁne
+˜Lk := {ω t ∈ Λt |ω t is a sum of monomials
+ω b
+I ∧
+ω b
+J ∧ ω f
+I ′ ∧
+ω f
+J ′ in which |I|+ |J| ≥ k},
+where |A| denotes the number of elements of the ﬁnite set A.
+Note that ˜L0 = Λ t and that
+˜Lk = 0 for k > dimR b,
+˜Lk ⊃ ˜Lk+1,
+∂ ˜Lk ⊆ ˜Lk, k ≥ 0
+The above shows that { ˜Lk} deﬁnes a bounded decreasing ﬁltration of the diﬀerential
+module (Λ t, ∂).
+Of course
+˜Lk =
+∑
+p,q
+p,q ˜Lk, where p,q ˜Lk = ˜Lk ∩ Λp,q
+t
+and the ﬁltration is compatible with the bigrading provided by the type (and also
+with the total degree).
+Recall that, by deﬁnition (see e.g. [11])
+p,q ˜Eu,v
+r =
+p,qZ u,v
+r
+p,qZ u+1,v− 1
+r− 1 + p,qBu,v
+r− 1
+,
+where
+p,qZ u,v
+r = p,q ˜Lu(Λu+v
+t ) ∩ ker
+∂(p,q+1 ˜Lu+r(Λu+v+1
+t ))
+p,qBu,v
+r = p,q ˜Lu(Λu+v
+t ) ∩ ∂(p,q− 1 ˜Lu+r(Λu+v− 1
+t ))
+Moreover (cf. [11])
+p,q ˜Eu
+0 =
+p,q ˜Lu
+p,q ˜Lu+1
+,
+where we denote by p,q ˜Eu,v
+r and p,q ˜Eu
+r the spaces of elements of type ( p, q) and total
+degree u + v and degree u respectively in the grading deﬁned by the ﬁltration.
+Note also that an element of ˜Lk identiﬁes with an element of ∑
+c+d≥ k Λa,b
+f ⊗ Λc,d
+b .
+Lemma 5 . Given the holomorphic ﬁbration
+Gi− 1
+J / Γi− 1 → Gi− 1,i
+J /p i− 1(Γi− 1),
+with standard ﬁbre Gi
+J / Γi, the spectral sequence ( ˜Er, ˜dr) (r ≥ 0) converges to
+H
+∂((gi− 1
+J )C) and
+p,q ˜Eu,v
+2 ∼
+=
+∑
+k
+H k,u− k
+∂ ((gi− 1
+J / gi
+J )C) ⊗ H p− k,q− u+k
+∂ ((gi
+J )C). ( ˜Ii)
+Proof. The fact that ( ˜Er, ˜dr) converges to H
+∂ ((gi− 1
+J )C) is a general property of
+spectral sequences associated to ﬁltered complexes (cf. [11]).
+Let [ ω ] ∈ p,q ˜Eu
+0 =
+p,q ˜Lu
+p,q ˜Lu+1
+. We compute the diﬀerential ˜d0 : p,q ˜E
+u
+0 → p,q+1 ˜E
+u
+0
+deﬁned by ˜d0[ω ] = [
+∂ω ]. We can write (up the above identiﬁcations) ω = ∑ω b
+I ∧
+ω b
+J ∧ ω f
+I ′ ∧
+ω f
+J ′ where |I|+|J|= u (because we operate mod ˜Lu+1), and |I ′|+|J ′|=
+p + q − u, since |I ′|+ |J ′|+ |I|+ |J|= p + q. Moreover, using the fact that
+∂ sends
+forms in b on forms that either are in b or vanish on b (cf. Remark 2) and that b
+is abelian, we get
+∂ω = ∑∂ b(ω b
+I ∧ ω b
+J ) ∧ (ω f
+I ′ ∧
+ω f
+J ′) + (− 1)s(ω b
+I ∧
+ω b
+J ) ∧
+∂(ω f
+I ′ ∧ ω f
+J ′) =
+= ( − 1)s(ω b
+I ∧
+ω b
+J ) ∧
+∂ f(ω f
+I ′ ∧ ω f
+J ′) mod ˜Lu+1,
+
+=== PDF PAGE 9 ===
+DOLBEAULT COHOMOLOGY OF COMPACT NILMANIFOLDS 9
+where ∂ b and ∂ f denote the diﬀerential on the complexes Λ b and Λ f, respectively.
+Thus
+˜d0[ω ] = [ ∂ fω ],
+which implies
+p,q ˜Eu
+1 ∼
+=
+∑
+k
+H p− k,q− u+k
+∂ (fC) ⊗ Λk,u− k
+b . (k1)
+Performing the same proof as in [12, Appendix II by Borel, Section 6] and using
+the fact that b is abelian, it is possible to prove that ˜d1 identiﬁes with ∂ via the
+above isomorphism and that we have
+p,q ˜Eu
+2 ∼
+=
+∑
+k
+H k,u− k
+∂ (bC) ⊗ H p− k,q− u+k
+∂ (fC)(∼
+=
+∑
+k
+Λk,u− k
+b ⊗ H p− k,q− u+k
+∂ (fC)). (k2)
+6. Proof of Theorem B
+First we note that Theorem B is trivially true if the nilmanifold comes fro m an
+abelian group, i.e., it is a complex torus. Namely, if A/ Γ is a complex torus we
+have
+H∂(A/ Γ) ∼
+= H
+∂(aC). (a)
+We consider the holomorphic ﬁbrations
+Gs
+J / Γs֒→Gs− 1
+J / Γs− 1 → Gs− 1,s
+J /p s− 1(Γs− 1)
+. . .
+G1
+J / Γ1֒→G/ Γ → G0,1
+J /p 0(Γ).
+The aim is to obtain informations about the Dolbeault cohomology of G/ Γ induc-
+tively through the Dolbeault cohomologies of Gi
+J / Γi (the nilmanifolds Gi
+J / Γi play
+alternately the rˆ oles of ﬁbres and total spaces of the above ﬁbr e bundles). Note
+that since the bases are complex tori, H
+∂ (Gi,i− 1
+J /p i− 1(Γi− 1) ∼
+= H
+∂((gi− 1/ gi)C).
+To this purpose we will associate to these ﬁbrations two spectral s equences.
+The ﬁrst is a version of the Borel spectral sequence (considered in Section 3) which
+relates the Dolbeault cohomologies of the total spaces with those o f ﬁbres and bases.
+The second is the spectral sequence ( ˜Er, ˜dr) (constructed in the previous Section)
+relative to the Dolbeault cohomologies of the Lie algebras gi, gi− 1, gi− 1/ gi.
+We will proceed inductively on the index i in the descending series ( DJ ), starting
+from i = s.
+First inductive step. Let us use the holomorphic ﬁbre bundle
+˜ps− 1 : Gs− 1
+J / Γs− 1 → Gs− 1,s
+J /p s− 1(Γs− 1)
+with typical ﬁbre Gs
+J / Γs.
+Recall (cf. Lemma 1) that Gs
+J / Γs and Gs− 1,s
+J /p s− 1(Γs− 1) are complex tori. Thus
+by ( a)
+H
+∂(Gs
+J / Γs) ∼
+= H
+∂((gs
+J )C) ( s)
+H
+∂(Gs− 1,s
+J /p s− 1(Γs− 1)) ∼
+= H
+∂((gs− 1
+J / gs
+J )C). (s, s − 1)
+Applying Theorem 3 (since the ﬁbre Gs
+J / Γs is K¨ ahler) and using (s) and ( s, s − 1),
+we get
+p,qEu,v
+2 ∼
+=
+∑
+k
+H k,u− k
+∂ ((gs− 1
+J / gs
+J )C) ⊗ H p− k,q− u+k
+∂ ((gs
+J )C). (Is)
+
+=== PDF PAGE 10 ===
+10 SERGIO CONSOLE AND ANNA FINO
+Next we use the spectral sequence ( ˜Er, ˜dr). Note that the inclusion between
+the Dolbeault complex of Gs− 1
+J -invariant forms on Gs− 1
+J / Γs− 1 and the forms on
+Gs− 1
+J / Γs− 1, induces an inclusion of each term in the spectral sequences
+p,q ˜Eu,v
+r ⊆ p,q Eu,v
+r ,
+(which is actually a morphism of spectral sequences).
+By Lemma 5, for i = s, we have that ( ˜Er, ˜dr) converges to H
+∂((gs− 1
+J )C) and
+p,q ˜Eu,v
+2 ∼
+=
+∑
+k
+H k,u− k
+∂ ((gs− 1
+J / gs
+J )C) ⊗ H p− k,q− u+k
+∂ ((gs
+J )C). ( ˜Is)
+Comparing ( Is) with ( ˜Is), we get that E2 = ˜E2, hence the spectral sequences
+(Er, dr) and ( ˜Er, ˜dr) converge to the same cohomologies. Thus
+H
+∂(Gs− 1
+J / Γs− 1) ∼
+= H
+∂((gs− 1
+J )C). (s − 1)
+General inductive step. We use the holomorphic ﬁbre bundle
+˜pi− 1 : Gi− 1
+J / Γi− 1 → Gi− 1,i
+J /p i− 1(Γi− 1)
+with typical ﬁbre Gi
+J / Γi. We assume inductively that
+H
+∂(Gi
+J / Γi) ∼
+= H
+∂((gi
+J )C). (i)
+Lemma 6 . The scalar cohomology bundle
+Hu,v(Gi
+J / Γi) =
+⋃
+b∈ Gi− 1,i
+J /pi− 1(Γi)
+H u,v
+∂ (˜p− 1
+i− 1(b))
+is trivial.
+Proof. By [13, Section 5, formula 5.3] there exists a locally ﬁnite covering {Ul} of
+Gi− 1,i
+J /p i− 1(Γi− 1) such that the action of the structure group of the holomorphic
+ﬁber bundle on Ul ∩ (Gi
+J / Γi) is the diﬀerential of the change of complex coordinates
+on the ﬁbre, so one can restrict oneself to consider the left trans lation by elements of
+Gi− 1
+J as change of coordinates. Then the scalar cohomology bundle Hu,v(Gi
+J / Γi) is
+trivial since any of its ﬁbres is canonically isomorphic to H
+∂((gi
+J )C). More explicitly,
+a global frame for Hu,v(Gi
+J / Γi) is given as follows: for any cohomology class
+α ∈ H u,v
+∂ (˜p− 1
+i− 1(1)) = H u,v
+∂ (Gi
+J / Γi) ∼
+= H u,v
+∂ ((gi
+J )C),
+(1: identity element of Gi− 1,i
+J /p i− 1(Γi)) one can take the corresponding cohomol-
+ogy class ω ∈ H u,v
+∂ ((gi
+J )C) and regard it as a Gi− 1
+J -invariant diﬀerential form on
+Gi− 1
+J / Γi− 1. Thus b ↦→ ω |˜p− 1
+i− 1(b) gives a global holomorphic section of Hu,v(Gi
+J / Γi).
+Taking a basis of H
+∂((gi
+J )C) one gets a global holomorphic frame of Hu,v(Gi
+J / Γi).
+Thus the assumption (I’) in Theorem 3 is fulﬁlled.
+Observe moreover that, since Gi− 1,i
+J /p i− 1(Γi− 1) is a complex torus, by ( a),
+H∂(Gi− 1,i
+J /p i− 1(Γi− 1)) ∼
+= H
+∂ ((gi− 1
+J / gi
+J)C). (i, i − 1)
+Hence, by Theorem 3, we have
+p,qEu,v
+2 ∼
+=
+∑
+k
+H k,u− k
+∂ ((gi− 1
+J / gi
+J )C) ⊗ H p− k,q− u+k
+∂ ((gi
+J )C). (Ii)
+
+=== PDF PAGE 11 ===
+DOLBEAULT COHOMOLOGY OF COMPACT NILMANIFOLDS 11
+Then we proceed exactly like in the ﬁrst inductive step. Namely, we co nsider the
+spectral sequence p,q ˜Eu,v
+r for the complexes of Gi− 1
+J -invariant forms on Gi− 1
+J / Γi− 1
+whose Dolbeault cohomology identiﬁes with H∂((gi− 1
+J )C). By Lemma 5 we have
+that ( ˜Er, ˜dr) converges to H∂((gi− 1
+J )C) and
+p,q ˜Eu,v
+2 ∼
+=
+∑
+k
+H k,u− k
+∂ ((gi− 1
+J / gi
+J )C) ⊗ H p− k,q− u+k
+∂ ((gi
+J )C). ( ˜Ii)
+Using (Ii) and proceeding like in the ﬁrst inductive step we get the proof of Th eorem
+B.
+Remark on abelian complex structures. If the invariant structure J is
+abelian, the centre g1 is a rational J-invariant ideal of g (cf. Remark 1 in Section
+2).
+We give an alternative (and simpler) proof of that given in [5] in the abe lian
+case. In the same vein of [21] we consider the principal holomorphic ﬁ bre bundle
+G/ Γ → G/ (ΓG1),
+with typical ﬁbre G1/ (Γ ∩ G1) ∼
+= ΓG1/G 1 (where G1 is the simply connected Lie
+group corresponding to g1).
+First we can consider the Borel spectral sequence ( Er, dr) associated to the Dol-
+beault complex Λ ∗,∗(G/ Γ) (cf. Theorem 3) and a spectral sequence ( ˜Er, ˜dr) associ-
+ated to Λ ∗,∗(g)C and constructed like in Section 5. As to the latter spectral sequen ce
+( ˜Er, ˜dr), observe that it is possible to prove that there exists a basis {ω 1, . . . , ω n}
+of (1, 0)- forms on g such that {ω 1, . . . , ω n− k} is a basis on g/ g1 (with dim g1 = 2k)
+and {ω n− k+1, . . . , ω n} is a basis on g1. So one can perform the same construction
+as in Section 5 (with t = g, b = g/ g1 and f = g1), using the fact that f is abelian.
+Thus one gets
+p,q ˜Eu,v
+2 ∼
+=
+∑
+k
+H k,u− k
+∂ ((g/ g1)C) ⊗ H p− k,q− u+k
+∂ ((g1)C)
+and ( ˜Er, dr) converges to H∂((g)C).
+Moreover, since G1/ Γ ∩ G1 and G/ (ΓG1) are complex torus, H∂(G1/ Γ ∩ G1) ∼
+=
+H
+∂((g1)C) and H∂(G/ (ΓG1) ∼
+= H
+∂((g/ g1)C) , so by Theorem 3 we have
+p,qEu,v
+2 ∼
+=
+∑
+k
+H k,u− k
+∂ (G/ (ΓG1)) ⊗ H p− k,q− u+k
+∂ ((g1)C).
+This implies that Theorem B holds also for complex abelian structures.
+Next we construct a minimal model for the Dolbeault cohomology of a nilmani-
+fold endowed with an abelian complex structure.
+Recall that a model for the Dolbeault cohomology of M is a diﬀerential bigraded
+algebra ( M∗,∗ , ∂) for which there exists a homomorphism ρ : M∗,∗ → Λ∗,∗(M ) of
+diﬀerential bigraded algebras inducing an isomorphism ρ∗ on the respective Dol-
+beault cohomologies [19].
+Suppose M is free on a vector space V . Then
+∂ is called decomposable if there
+is an ordered basis of V such that the diﬀerential ∂ of any generator v of V can
+be expressed in terms of the elements of the basis preceding v. A model is called
+minimal if M is free and ∂ is decomposable [26].
+
+=== PDF PAGE 12 ===
+12 SERGIO CONSOLE AND ANNA FINO
+By [24], in the abelian case, there exists a basis {ω 1, . . . , ω n} of (1 , 0)-forms on
+g such that
+dω i =
+∑
+j<k<i
+Aijk ω j ∧ ω k, i = 1, . . . , n. (m)
+Thus, by Theorem B and ( m), (Λ ∗,∗ (gC), ∂) is a minimal model for the Dolbeault
+cohomology of G/ Γ.
+7. Proof of Theorem A
+Let
+C(g) = {J ∈ End(g) |J 2 = − id, [J X, J Y] = [ X, Y ] + J[J X, Y ] + J[X, J Y ]}
+denote the set of complex structures on g. We will use the same notation as in [24].
+If M = G/ Γ is a nilmanifold associated to g, then
+0 → Hom(λ 1,0, λ0,1)
+∂
+→ Hom(λ 1,0, λ0,2)
+∂
+→ . . .
+∂
+→ Hom(λ 1,0, λ0,n) → 0
+is a subcomplex of the Dolbeault complex of M tensored with the holomorphic
+tangent bundle T 1,0M . The Kernel K of ∂ acting on Hom(λ 1,0, λ1,0) can be
+identiﬁed with the subspace of invariant classes in the sheaf cohomo logy space
+H 1(M, O(T )). By [24, Proposition 4.1] if J is a smooth point of C(g), then the
+tangent space TJ C(g) to C(g) is contained in the complex subspace of TJ C (where
+C ∼
+= GL(2n, R)/GL (n, C) is the set of all almost complex structures on g) deter-
+mined by K = ker
+∂.
+By the above section we know that if J0 is a rational complex structure, then
+H p,q
+∂ (M ) ∼
+= H p,q
+∂ (gC). Given J0 ∈ C (g), we know by [13] there exists a complete
+complex analytic family {Mt = (M, Jt) |Jt ∈ B}.
+Let ∂ t and ∆ t be respectively the ∂-operator and the Laplacian determined
+by the global inner product gt induced by an invariant Hermitian metric on M
+compatible with Jt. More precisely,
+∆t = ∂
+∗
+t
+∂ t + ∂ t∂
+∗
+t ,
+where
+∂
+∗
+t is the adjoint of
+∂ t with respect to gt.
+Lemma 7 . i) ∆t sends G-invariant forms of type (p, q) to G-invariants forms.
+Moreover, the orthogonal complement with respect to gt of the invariant forms on
+the space Λp,q
+t of Γ-invariant forms of type (p, q) on (M, Jt) is preserved by ∆t.
+ii) H p,q
+∂ (gC) is a subspace of H p,q
+∂ (M ), for any invariant complex structure J on
+M .
+Proof. i) follows by the fact that ∂ t and ∂
+∗
+t preserve G-invariant forms.
+ii) We have to prove that there exists an injective homomorphism
+π : H p,q
+∂ (gC) → H p,q
+∂ (M ).
+By the decomposition
+Λp,q = Hp,q ⊕ Im∂ ⊕ Im∂
+∗
+,
+where Hp,q denotes the space of Γ-invariant harmonic forms of type ( p, q) on M ,
+we have similarly, for the G-invariant forms, the decomposition
+Λp,q
+inv = Hp,q
+inv ⊕ Im
+∂|inv ⊕ Im∂
+∗
+|inv,
+where H p,q
+∂ (gC) ∼
+= Hp,q
+inv.
+
+=== PDF PAGE 13 ===
+DOLBEAULT COHOMOLOGY OF COMPACT NILMANIFOLDS 13
+We can deﬁne π (ω ) as the orthogonal projection of ω on Hp,q = (Im∂ ⊕ Im∂
+∗
+)⊥ ,
+for any [ ω ] ∈ H p,q
+∂ (gC). To prove that π is injective, suppose that π (ω ) = 0 on
+H p,q
+∂ (M ). Then π (ω ) = ∂ϕ . We may assume that ϕ belongs to the orthogonal
+complement to the G-invariant forms. Since ∂ϕ is G-invariant we have that also
+∂
+∗
+(∂ϕ ) is invariant and then the inner product of ϕ with ∂
+∗
+(∂ϕ ) is zero and thus
+ϕ must be G-invariant, i.e. [ ω ] = 0 in H p,q
+∂ (gC).
+Lemma 8 . For any small deformation of the rational complex structure J the
+isomorphism (1) holds.
+Proof. Using the same proof as in [13, p.67-68] it is possible to show that for a ny
+(p, q) and on any ( M, Jt) there exists a complete orthonormal set of forms of type
+(p, q) orthogonal to the G-invariant ones
+{ep,q
+t1 , . . . ; f p,q
+t1 , . . . ; gp,q
+t1 , . . . }
+such that
+(i) ∆ tep,q
+tj = 0, for any j = 1 , . . . , d q, dq = dim Hp,q
+⊥ (where Hp,q
+⊥ is the space of
+harmonic forms of type ( p, q) orthogonal to the G-invariant ones).
+(ii) ∆ tf p,q
+tj = ap,q
+j (t)f p,q
+tj ;
+(iii) ∆ tgp,q
+tj = ap,q− 1
+j (t)gp,q
+tj ; with ap,q
+j (t) > 0.
+Let c be a positive constant and denote by νp,q(t) the number of eigenvalues
+ap,q
+j (t) of ∆ t such that ap,q
+j (t) < c . Let Λ p,q
+t (c)⊥ be the subspace spanned by the
+eigenforms of ∆ t (orthogonal to the G-invariant ones) such that the corresponding
+eigenvalues are less than c. Thus we have
+dim Λp,q
+t (c)⊥ = hp,q(t)⊥ + νp,q(t) + νp,q− 1(t),
+where hp,q(t)⊥ is the dimension of the orthogonal complement H p,q
+∂ (Mt)⊥ of the
+space of G-invariant forms H p,q
+∂ (gC) in H p,q
+∂ (Mt). Given a point Jt0 ∈ C (g), we can
+choose c such that 0 < c < a p,q
+j (t0) for any p, q = 0, . . . , n and for any j. Moreover
+let U be a suﬃciently small neighbourhood of t0 in C(g). Since any eigenvalue ap,q
+j (t)
+is a continuous function of t [13, Theorem 2, p.47] we have that the dimension of
+Λp,q
+t (c)⊥ is independent of t ∈ U and Λ p,q
+t0 (c)⊥ = H p,q
+∂ (Mt0)⊥ . Thus we have
+hp,q(t)⊥ + νp,q(t) + νp,q− 1(t) = hp,q(t0)⊥ ,
+for any t ∈ U . This means that the function hp,q(t)⊥ is upper semicontinuous. Since
+for any rational complex structure J0, we have that hp,q(t0)⊥ = 0, so hp,q(t)⊥ = 0
+in some neighbourhood of t0. Consequently the set
+{t ∈ C (g) |hp,q(t)⊥ = 0} = {t ∈ C (g) |H ∗,∗
+∂ (Mt) ∼
+= H ∗,∗
+∂ (gC)}
+is a open set in any connected component of C(g) (with respect to the induced
+topology of gl(2n, R) on C(g)).
+8. Examples of compact nimanifolds with non rational complex
+structures
+Let M = Γ \G be the Iwasawa manifold. Recall that it can be constructed by
+taking as nilpotent Lie group G the complex Heisenberg group
+G =
+
+
+
+
+
+1 z1 z3
+0 1 z2
+0 0 1
+
+ : zi ∈ C, i = 1, 2, 3
+
+
+ ,
+
+=== PDF PAGE 14 ===
+14 SERGIO CONSOLE AND ANNA FINO
+and, as lattice Γ, the subgroup of G consisting of those matrices whose entries
+are Gaussian integers. It is known that the 1-forms ω 1 = dz1, ω 2 = dz2, ω 3 =
+dz3 + z1dz2, are left invariant on G. G has structure equations
+dω 1 = dω 2 = 0, dω 3 = ω 1 ∧ ω 2.
+If one regards G as a real Lie group and sets
+ω 1 =: e1 + ie2, ω 2 =: e3 + ie4, ω 3 =: e5 + ie6 (2)
+then ( ei) is a real basis of g∗ such that:
+
+
+dei = 0, 1 ≤ i ≤ 4,
+de5 = e1 ∧ e3 + e4 ∧ e2,
+de6 = e1 ∧ e4 + e2 ∧ e3.
+By [18], the bi-invariant complex structure J0 deﬁned by (2) on the complex Heisen-
+berg group has a deformation space of positive dimension. Then the complex struc-
+ture associated to the subspace
+< ω 1, ω 2, ω 3 + t¯ω 1 >
+of g∗
+C belongs to the orbit of J0 in C(g) with respect the group of automorphisms
+of g (see [24, Section 4]) and it is not rational for appropriate t ∈ C.
+In the same way one can see that every compact nilmanifold M = G/ Γ of real
+dimension 2n, with at least one (rational) complex structure J0 having a non trivial
+deformation, has a non rational complex structure. Indeed, by [2 4, Theorem 1.3],
+given the complex structure J0 it is possible to construct a basis of left invariant
+(1, 0)-forms {ω 1, . . . , ω n} such that dω i+1 belongs to the ideal generated by the
+set {ω 1, . . . , ω i} (i = 0 , . . . , n − 1) in the complexiﬁed exterior algebra. Then the
+complex structure associated to the subspace
+< ω 1, . . . , ω n + t¯ω 1 >
+is a not rational complex structure on M for appropriate t ∈ C.
+References
+[1] E. Abbena, An example of an almost K¨ ahler manifold which is not K¨ ahlerian,
+Boll. Un. Mat. Ital. A 6 (3) (1984), 383-392.
+[2] D. Akhiezer, Group actions on the Dolbeault cohomology of homogeneous ma n-
+ifolds, Math. Z. 226 (1997), 607-621.
+[3] M. L. Barberis, I. Dotti Miatello, Hypercomplex structures on a class of solv-
+able Lie groups, Quart. J. Math. Oxford Ser. (2) 47 (1996), 389-404.
+[4] W. Barth, M. Otte, ¨Uber fast-uniforme Untergruppen komplexer Liegrup-
+pen und auﬂ¨ osbare komplexe Mannigfaltigkeiten, Comment. Math. Helv. 44
+(1969), 269–281.
+[5] L.A. Cordero, M. Fern´ andez, A. Gray, Symplectic manifolds with no K¨ ahler
+structure, Topology 25 (1986), 375-380.
+[6] L.A. Cordero, M. Fern´ andez, A. Gray, L. Ugarte, Compact nilmanifolds with
+nilpotent complex structures: Dolbeault cohomology, Trans. Amer. Math. Soc.,
+to appear.
+[7] L.J. Corwin, F.P. Greenleaf, Representations of nilpotent Lie groups and their
+applications, Cambridge studies in advanced mathematics 18, Cambridge,
+New York, 1990.
+
+=== PDF PAGE 15 ===
+DOLBEAULT COHOMOLOGY OF COMPACT NILMANIFOLDS 15
+[8] I. Dotti, A. Fino, Abelian hypercomplex 8-dimensional nilmanifolds, Ann.
+Global Anal. Geom., 18 (2000), 47–59.
+[9] G. Fischer, H. Grauert, Lokal-triviale Familien kompakter komplexer Mannig-
+faltigkeiten, Nachr. Akad. Wiss. G¨ ottingen Math.-Phys. Kl. II (1965), 89-94.
+[10] H. R. Fischer, F. L. Williams, The Borel spectral sequence: some remarks
+and applications, Diﬀerential Geometry, Calculus of variations and their ap-
+plications, dedic. mem. L. Euler 200th Anniv. Death., Lect. Notes Pu re Appl.
+Math. 100 (1985), 255-266.
+[11] P. Griﬃths, J. Harris, Principles of Algebraic Geometry, Wiley-Interscience,
+New York, 1978.
+[12] F. Hirzebruch, Topological Method in Algebraic Geometry, Springer G.M.W.
+131, Berlin, Heidelberg, New York, 1978.
+[13] K. Kodaira, D. C. Spencer, On deformation of complex analytic structures, I
+and II, Ann. of Math., 67 (1958), 328-466.
+[14] J. Le Potier, Sur la suite spectrale de A. Borel, C. R. Acad. Sci. Paris, 276,
+s´ erie A (1973), 463-466.
+[15] F. Lescure, Action non triviale sur le premier groupe de cohomologie de D ol-
+beault, C. R. Acad. Sci. Paris S´ erie I Math. 316, (1993), 823-825.
+[16] A. Mal’ˇ cev, On a class of homogeneous spaces, Amer. Math. Soc. Trasl., 39
+(1951).
+[17] Y. Matsushima, On the discrete subgroups and homogeneous spaces of nilpo-
+tent Lie groups, Nagoya Math. J. 2 (1951), 95-110.
+[18] I. Nakamura, Complex parallelizable manifolds and their small deformat ions,
+J. Diﬀ. Geometry 10 (1975), 85-112.
+[19] J. Neisendorfer, L. Taylor, Dolbeault homotopy theory, Trans. Amer. Math.
+Soc. 245 (1978), 183-210.
+[20] A. Newlander, L. Nirenberg, Complex coordinates in almost complex mani-
+folds, Ann. of Math. (2) 65 (1957), 391-404.
+[21] K. Nomizu, On the cohomology of compact homogeneous spaces of nilpoten t
+Lie groups, Ann. of Math. (2) 59 (1954), 531-538.
+[22] H. V. Pittie The nondegeneration of the Hodge-de Rham spectral sequence ,
+Bull. Amer. Math. Soc. 20 (1989), 19-22.
+[23] M. S. Raghunathan, Discrete subgroups of Lie groups, Springer E.M.G. 68,
+Berlin, Heidelberg, New York, 1972.
+[24] S. M. Salamon, Complex structures on nilpotent Lie algebras, J. Pure Appl.
+Algebra, to appear.
+[25] Y. Sakane, On compact parallelisable solvmanifolds, Osaka J. Math. 13 (1976),
+187-212.
+[26] D. Sullivan, Diﬀerential forms and the topology of manifolds, Manifolds-Tokyo
+1973 (Proc. Internat. Conf., Tokyo, 1973), 37-49. Univ. Tokyo Press, Tokyo,
+1975.
+[27] D. Sundararaman, Moduli, deformations and classiﬁcation of compact complex
+manifolds, Research Notes in Mathematics 45 Pitman, London, 1980.
+[28] W. P. Thurston, Some simple examples of symplectic manifolds, Proc. Amer.
+Math. Soc. 55 (1976), 476-478.
+Dipartimento di Matematica, Universit `a di Torino, Via Carlo Alberto 10, I-10123
+Torino
+E-mail address : console@dm.unito.it, fino@dm.unito.it

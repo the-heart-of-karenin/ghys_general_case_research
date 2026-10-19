@@ -1,6 +1,10 @@
 # 文献目录
 
-收集日期：2026-10-17 起，2026-10-18 继续。共三十九篇 PDF 已下载并核验 PDF 文件头；URL、下载时间、版本说明、大小及 SHA-256 见 sources_manifest.json。arXiv 手稿与期刊最终版的区别保存在版本说明中。
+收集日期：2026-10-17 起，持续至 2026-10-19。当前共七十六份 PDF，manifest 中有七十六个唯一文件条目；51、53 为同一项 Lauret–Will 研究的不同稿件，不能作为两项独立分类。URL、下载时间、版本说明、大小及 SHA-256 见 sources_manifest.json。arXiv 手稿与期刊最终版的区别保存在版本说明中。以下各轮的较小计数为当时历史状态。
+
+98–100 新增 75（Grauert 1960）与 76（1963 勘误），五个完整页及散列核验见 Single_fast_form_source_audit.json。只用上半连续性、恒定维数下的局部自由/base-change，不使用被勘误指出未必闭的一般非双射点集断言。当前一维分支仍未排除；真实 proper 约化及快 Dolbeault 障碍的独立证明在 notes/98–100，文献范围和失败路线在 Single_fast_form_scope_and_novelty_log.md。
+
+96–97 新增 73（Buchdahl 1999）与 74（Douady 1966）两份旧期刊 PDF，六个完整页及散列核验见 Global_central_fibration_source_audit.json。只使用偶 b₁ 的复曲面 Kähler 判据、紧致子空间变形空间的存在/切空间/有限维性；最大连续族迫使无阻碍的具体论证写在 notes/97，未删去现成 hyperkähler 定理的假设移用。原始 PDF 与独立笔记分开；有限比较、绕过路线和准确分支排除范围见 Global_central_fibration_scope_and_novelty_log.md。未确认该动力学应用新颖性。
 
 | 编号 | 文献 | 首先阅读的内容 | 在规划中的作用 |
 |---|---|---|---|
@@ -38,6 +42,26 @@
 | 37 | Markman 2011, A survey of Torelli and monodromy results for holomorphic-symplectic varieties | 周期满射；Theorem 1.3(2)；Theorem 9.1、Lemma 9.2 | 44 从形式格等距到实际正则自同构的实现 |
 | 38 | Mongardi 2015, A note on the Kähler and Mori cones of hyperkähler manifolds | 所存作者稿 Proposition 2.12，PDF pp.7–8 | K3^[2] 的 −2、−10/div2 精确墙；44 中证明无墙 |
 | 39 | Huybrechts 2017, The K3 category of a cubic fourfold | 作者稿 Proposition 3.11 证明，PDF p.22 | 确认奇秩简单 Hodge 等距只有 ±I 为已知事实；期刊编号 3.12 |
+| 40–41 | Oberdieck–Song–Voisin 2022；Oguiso 2020 | 见 46–50 的来源补充 | 六维特征数、K3^[n] 的 H² 忠实性 |
+| 42 | Ruelle–Sullivan 1975, Currents, flows and diffeomorphisms | PDF pp.1–2、6–7 | 连续切平面下闭叶状积分流、Margulis 乘积、特征缩放 |
+| 43 | de Thélin–Dinh 2012, Dynamics of automorphisms on compact Kähler manifolds | PDF pp.2–3 | Green 测度的唯一最大熵性质；一般 woven 不自动 uniformly laminar |
+| 44 | Dinh–Sibony 2010, Super-potentials for currents on compact Kähler manifolds and dynamics of automorphisms | PDF p.38 Theorem 4.3.1 | Green 特征同调类中正闭流的唯一性 |
+| 45 | Young 2002, What are SRB measures, and which dynamical systems have them? | PDF pp.2–3、6 | 原作者综述中的唯一 SRB、满 basin、稳定叶绝对连续性；注意 p.2(ii) 漏印 log |
+| 46 | Ledrappier–Young 1985, The metric entropy of diffeomorphisms I | PDF p.6 Theorem A，背景 pp.2–3 | 熵公式等号的原始绝对连续性刻画；用此原式避免 45 的排印遗漏 |
+| 47 | de Thélin 2008, Sur les exposants de Lyapounov des applications méromorphes | PDF pp.1–2 Corollaire 3；作者 arXiv 稿 | 最大熵测度的复 Lyapunov 临界界；原文无需体积绝对连续，编码损坏按整页图像核对 |
+| 48 | Bressaud–Liverani 2002, Anosov diffeomorphisms and coupling | 作者稿 PDF pp.6–7，§4.1、Proposition 4.1 | 稳定 holonomy 的绝对连续性与 Jacobian 双边界；不据此预设 C¹，避开一处排印问题 |
+| 49 | Cantat–Dupont 2020, Automorphisms of surfaces: Kummer rigidity and measure of maximal entropy | 实存 2014 arXiv v1，PDF pp.5–6、12–13、43–44 | 曲面非 Kummer 奇异性与严格超临界复指数；本地 Cor.1.6/1.7，勿与后稿混号；56 的曲面输入 |
+| 50 | Rey–Bellet–Young 2008, Large deviations in non-uniformly hyperbolic dynamical systems | PDF pp.3、17–18 | 压力及对数矩的原始机制比较；无限塔参数有限，55 的有限编码全参数公式另证 |
+| 51 | Lauret–Will 2004, Anosov diffeomorphisms on nilmanifolds up to dimension 8 | 2004 v2 的版本及范围 | 同项研究的长稿；证明输入优先用 53，不能重复计算为两套分类 |
+| 52 | Bazzoni–Freibert–Latorre–Meinke, Complex symplectic structures on Lie algebras | 实存 2018 v1，PDF pp.17、20 | 八维复辛氧化分类背景；58 不需要穷举其连续参数 |
+| 53 | Lauret–Will 2009, Nilmanifolds of dimension ≤8 admitting Anosov diffeomorphisms | 实存 2007 作者稿，PDF p.8 Table 1、p.14 Theorem 3.2、p.18 Table 3 | 完备的五类八维非交换 Anosov 候选及真实括号 |
+| 54 | Latorre–Ugarte–Villacampa 2019, The ascending central series of nilpotent Lie algebras with complex structure | PDF p.9 Theorem 3.11、p.13 Corollary 3.12 | 八维中心至少二维时 Z∩JZ≠0；不预设整个中心 J 不变 |
+| 55 | Console–Fino 2001, Dolbeault cohomology of compact nilmanifolds | 实存 arXiv v2，2001-01-23；PDF pp.1–2 | rational/abelian Dolbeault 同构的原始背景，不直接替代切丛系数定理 |
+| 56 | Rollenske 2009, Lie-algebra Dolbeault cohomology and small deformations of nilmanifolds | PDF pp.14、16–17；Cor.2.5、Thm.2.6 | 图复结构、切丛自然同构及实际左不变 Kuranishi 族；该定理本身不处理变化的 f |
+| 57 | Console–Fino–Poon 2006, Stability of abelian complex structures | PDF pp.5、8、11–13；Thms.1–3 | abelian 基点的全局切丛上同调与不变完备小变形族；小变形不必继续 abelian；边注 2005 / 标题 2018 的差异已记录 |
+| 58 | Hasegawa–Sillari–Tomassini 2026, Invariant forms compute the Dolbeault cohomology of complex nilmanifolds | arXiv v1，PDF pp.1–2、15–16；Thms.7.1–7.2 | 一般 nil 的小变形左不变性；67 普遍开放性的外部新预印本输入，66 闭性不使用它 |
+| 59 | Wehler 2026, Teichmüller and moduli spaces for complex nilmanifolds | arXiv v1，PDF pp.3、12–16；Thm.2.1 | 全部 nil 间全纯映射的全局仿射性；明确覆盖 62/65 的小映射结论 |
+| 60 | Hasegawa–Rollenske–Sillari–Tomassini–Wehler 2026, Biholomorphism type of left-invariant complex structures on nilpotent Lie groups | arXiv v1，完整首页 | 万有覆盖多项式统一化背景及 58/59 依赖定位；未作为 66 的输入 |
 
 主要原始入口：
 
@@ -81,3 +105,17 @@ extracted/ 和 previews/ 为阅读辅助，不是独立研究结论。下载程�
 
 新增第 41 篇 Oguiso 的 2020 期刊版 PDF，使用 Theorem 5.1 的 K3^[n] 型二阶上同调作用忠实性。当前共 41 篇原始 PDF；本轮六篇来源、九个完整页的核验见 boundary_normalizer_source_audit.json，检索和适用边界见 boundary_normalizer_novelty_and_scope_log.md。原始文献与 notes/49–50 的独立证明、精确算术证书分开保存。
 
+
+53–54 的六篇来源（含一篇历史 Cantat 原文）和 14 个完整页核验见 metric_growth_source_audit.json，全部完整页图像已查看。47 的字体编码使提取失真，定理以 PDF p.2 为准；48 PDF p.7 仅使用明确的 Jacobian 双边界，未用其有排印问题的前一条比值式。精确适用条件、有限新颖性核对及失败步骤见 metric_growth_scope_and_novelty_log.md。
+
+55–57 的八篇来源、26 个完整页核验见 pressure_compact_source_audit.json；均已查看完整渲染页。49 为 2014 arXiv 原作者稿，不是期刊版；50 通过作者当前 GitHub 页面取得期刊 PDF。两处旧下载入口故障、编号差别、旧文献适用范围、有限新颖性检索及计算角色见 pressure_compact_scope_and_novelty_log.md。57 单列反例缺失的 Anosov/空 null locus 输入，未将模型性质拼接为完整猜想反例。
+
+58–60 的新来源 51–54 属于三项研究，其中 51/53 是同项研究两个版本，52 实存 2018 v1，53 有 2007 年作者稿封面。复用 02；五份来源及 16 个完整页的散列和视觉核验见 nil_model_source_audit.json。证明归属、有限新颖性核验、未采用参数穷举及 Foulon–Hasselblatt PDF 入口失败记录见 nil_model_scope_and_novelty_log.md。
+
+61–63 新增 55–57，复用 01、02；五份来源、16 个完整页及散列核验见 model_deformation_source_audit.json。57 下载地址为 2005 arXiv v1，页首印 2018-11-09；两种日期均按原样记录，不猜测文件历史，也不将已知变形定理据为新结果。62 的小映射椭圆引理和实际局部共轭由独立证明给出，61、63 的精确计算在 notes/；有限检索与仍未处理的范围见 model_deformation_scope_and_novelty_log.md。
+
+65–68 新增 58–60，均按 2026 arXiv v1 预印本登记。只查看实际需要的 11 个完整新页，旧来源 56 复用既有核验；记录在 nil_progression_source_audit.json。59 已有更强的全局仿射映射定理，62/65 的结论新颖性状态已据此修正。66 的周期闭性不依赖这三篇新预印本；67 的普遍分支定理需要 58 的一般小变形输入。准确依赖、有限检索和未解决范围见 nil_progression_scope_and_novelty_log.md。
+
+86–88 不新增 PDF。复用 68（Hurtado–Xue，2020 v2 / 2021 期刊）的 Proposition 2.6，新增完整第 7 页视觉核验，既有第 8–9 页检查直接沿用；见 Twisted_returns_source_audit.json。87 自行证明其双 Anosov 推论，未调用实二维分类或自由半群矛盾。当前仍为 69 份 PDF；独立公共线定理、未闭合面积路线、反检验范围及有限新颖性搜索见 notes/86–88 与 Twisted_returns_scope_and_novelty_log.md。
+
+89–91 新增两份期刊 PDF：70 为 Mañé–Sad–Sullivan，On the dynamics of rational maps（1983），只用 λ 引理的开集拟共形结论；71 为 Astala，Area distortion of quasiconformal mappings（1994），只用映射及其逆的面积零集保持。当前 manifest 共 71 个唯一条目，四整页核验及散列见 Common_line_identification_source_audit.json。全纯运动的绝对连续性机制是经典的；本轮独立应用为 note87 公共线的指定中心识别，未排除退化集或 W_Y=0。范围与有限新颖性比较见 Common_line_identification_scope_and_novelty_log.md。

@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-19",
+  "new_sources": [
+    {
+      "filename": "69_Duval_2017_Around_Brody_lemma_v1.pdf",
+      "title": "Around Brody lemma",
+      "authors": [
+        "Julien Duval"
+      ],
+      "download_url": "https://arxiv.org/pdf/1703.01850v1",
+      "landing_url": "https://arxiv.org/abs/1703.01850",
+      "resolved_url": "https://arxiv.org/pdf/1703.01850v1",
+      "download_status": "downloaded",
+      "bytes": 144382,
+      "pages": 10,
+      "sha256": "eb0bf8aaaffd3cc0fd3c27d85263e3e920b914cc4702805e89f0797814a5f14c",
+      "collected_utc": "2026-10-19T02:33:51.139315+00:00",
+      "publication_note": "arXiv v1 6 March 2017. Published in Hyperbolicity properties of algebraic varieties, Panoramas et Syntheses 56 (2021), pp. 1-12; local manuscript pagination is recorded separately.",
+      "publication_landing_url": "https://smf.emath.fr/publications/autour-du-lemme-de-brody"
+    }
+  ],
+  "new_file_integrity_checks": [
+    {
+      "filename": "69_Duval_2017_Around_Brody_lemma_v1.pdf",
+      "sha256_matches": true,
+      "bytes_match": true,
+      "pages_match": true
+    }
+  ],
+  "complete_pages_visually_checked": [
+    {
+      "source": "69_Duval_2017_Around_Brody_lemma_v1.pdf",
+      "pdf_page": 1,
+      "image": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\Central_fibre_curves_source_previews\\69_Duval_2017_Around_Brody_lemma_v1_page_1.png",
+      "complete_page_visually_checked": true,
+      "status": "Full page viewed in this turn; statement, hypotheses, normalization and localization scope checked."
+    },
+    {
+      "source": "69_Duval_2017_Around_Brody_lemma_v1.pdf",
+      "pdf_page": 5,
+      "image": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\Central_fibre_curves_source_previews\\69_Duval_2017_Around_Brody_lemma_v1_page_5.png",
+      "complete_page_visually_checked": true,
+      "status": "Full page viewed in this turn; statement, hypotheses, normalization and localization scope checked."
+    },
+    {
+      "source": "69_Duval_2017_Around_Brody_lemma_v1.pdf",
+      "pdf_page": 6,
+      "image": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\Central_fibre_curves_source_previews\\69_Duval_2017_Around_Brody_lemma_v1_page_6.png",
+      "complete_page_visually_checked": true,
+      "status": "Full page viewed in this turn; statement, hypotheses, normalization and localization scope checked."
+    }
+  ],
+  "actual_external_input": {
+    "source": "69_Duval_2017_Around_Brody_lemma_v1.pdf",
+    "pdf_page": 1,
+    "statement": "Classical Brody reparametrization: diverging derivatives of holomorphic discs in a compact complex target yield an entire limit with derivative norm 1 at the origin and at most 2 globally.",
+    "used_in": "notes/84, Sections 4-5",
+    "independent_location_control": "Full-disc slow-base contraction and stable-coordinate oscillation, not a prescribed-point version of Brody."
+  },
+  "comparison_only_passages": [
+    {
+      "source": "69_Duval_2017_Around_Brody_lemma_v1.pdf",
+      "pdf_page": 5,
+      "scope": "Winkelmann blow-up example: Brody centers can move. Not an Anosov counterexample."
+    },
+    {
+      "source": "69_Duval_2017_Around_Brody_lemma_v1.pdf",
+      "pdf_page": 6,
+      "scope": "Ahlfors positive-mass localization variant reviewed but not invoked; its area hypothesis remains unproved here."
+    }
+  ],
+  "primary_publication_metadata": {
+    "url": "https://smf.emath.fr/publications/autour-du-lemme-de-brody",
+    "verified": "Panoramas et Syntheses 56, 2021, pages 1-12. Downloaded arXiv v1 has 10 pages."
+  },
+  "failed_primary_fetches": [
+    {
+      "url": "https://www.ams.org/tran/1978-235-00/S0002-9947-1978-0470252-3/S0002-9947-1978-0470252-3.pdf",
+      "status": "Browser 403; not counted as read or downloaded."
+    }
+  ],
+  "independent_proof_files": [
+    "notes/83_constant_rank_stable_intersection_integrates_holomorphically.md",
+    "notes/84_every_central_fibre_contains_stable_and_unstable_entire_curves.md",
+    "notes/85_central_curve_results_countermodel_and_remaining_localization.md"
+  ],
+  "proved": [
+    "Actual constant-rank one-complex-dimensional intersection of two Anosov stable bundles integrates locally to a unique smooth analytic curve germ.",
+    "Each specified topological central fibre contains a normalized stable Brody curve and an unstable Brody curve.",
+    "Periodic central fibres have a dense set of points with both analytic central stable and unstable plaque germs and independent tangent lines; their union is dense in Y."
+  ],
+  "countermodel": "Explicit noncompact linear holomorphic symplectic hyperbolic map and a Cantor-function triangular quotient, with exact hyperbolic quotient equivariance, stable/unstable entire curves in every fibre, dense Lagrangian analytic pieces and non-complex fibres. No compact lattice or original monodromy.",
+  "unresolved": [
+    "Analytic central plaques at every point",
+    "Uniform germ radius or area control",
+    "Whole fibres being complex surfaces",
+    "Central error w_r vanishing",
+    "W_Y nonzero and exclusion of note76"
+  ],
+  "computational_scope": "No old mathematical suites rerun; no numerical proof or new numerical model tests. New identities checked directly in the written proofs. Only new-source metadata, hashes, page counts and manifest bookkeeping checked computationally.",
+  "novelty": "Not confirmed; finite primary-source searches only."
+}

@@ -1,0 +1,998 @@
+=== PDF PAGE 1 ===
+arXiv:1612.08183v2  [math.DG]  15 Sep 2017
+COMPLEX SYMPLECTIC STRUCTURES AND THE ∂ ¯∂-LEMMA
+ANDREA CATTANEO AND ADRIANO TOMASSINI
+Abstract. In this paper we study complex symplectic manifolds, i.e., c ompact complex mani-
+folds X which admit a holomorphic (2 , 0)-form σ which is d-closed and non-degenerate, and in
+particular the Beauville–Bogomolov–Fujiki quadric Qσ associated to them. W e will show that if
+X satisﬁes the ∂ ¯∂-lemma, then Qσ is smooth if and only if h2,0(X) = 1 and is irreducible if and
+only if h1,1(X) > 0.
+Introduction
+Let M be a compact real manifold, endowed with both a complex structure I and a compatible
+Riemannian metric g. Then the 2-form associated to ( M, I, g ), namely ωg( , ) = g(I , ),
+can be seen as a collection of non-degenerate 2-forms on each rea l tangent space to M , varying
+smoothly with the point. If ωg is d-closed, then the triple ( M, I, ω g) is a K¨ ahler manifold.
+Let now X be a compact complex manifold, and assume we have a collection of non-degenerate
+2-forms, one on each holomorphic tangent space, varying holomor phically with the point. This is
+then a (2 , 0)-form on X, and under the further assumption that it is d-closed, it is called a complex
+symplectic structure (cf. [2, p. 763] and [3]).
+In the context of K¨ ahler geometry, such kind of manifolds plays an important role: by the
+Bogomolov covering theorem, any compact K¨ ahler manifold with van ishing ﬁrst Chern class has
+a covering which splits as the product of Calabi–Yau manifolds, comple x tori and irreducible
+holomorphic symplectic manifolds. Among these, the last two are in fa ct complex symplectic
+manifolds. In particular, an interesting and crucial tool for the st udy of the latter is the Beauville–
+Bogomolov–Fujiki quadratic form introduced in [2] (see (1.3) for the deﬁnition).
+The aim of this paper is to study cohomological properties of compac t complex (possibly non-
+K¨ ahler) manifoldsX endowed with a complex symplectic structure σ. We weaken the K¨ ahler
+assumption requiring that X satisﬁes the ∂ ¯∂-lemma (cf. [5]). Observing that the Beauville–
+Bogomolov–Fujiki form qσ makes sense also in this setting, we will show that if X satisﬁes the
+∂ ¯∂-lemma, then there is a deep link between the geometric properties o f the quadric Qσ deﬁned
+in P(H 2
+dR(X, C)) by the vanishing of qσ and the Dolbeault cohomology of X: the smoothness of
+Qσ depends on the Dolbeault spaces H 2,0
+¯∂ (X) and H 0,2
+¯∂ (X), while its irreducibility depends on
+H 1,1
+¯∂ (X).
+The structure of the paper is as follows. In Section 1 we set up the n otation and recall the basic
+facts we will use throughout the paper. Section 2 is devoted to the proof of the two main theorems:
+Date: September 18, 2017.
+2010 Mathematics Subject Classiﬁcation. 53C15, 53C56, 32C35.
+Key words and phrases. Complex symplectic; ∂∂-lemma; Beauville–Bogomolov–Fujiki form.
+The ﬁrst author is granted with a research fellowship by Isti tuto Nazionale di Alta Matematica INdAM, and is
+supported by the Project PRIN “Variet` a reali e complesse: g eometria, topologia e analisi armonica”, by the Project
+FIRB “Geometria Diﬀerenziale e Teoria Geometrica delle Fun zioni”, and by GNSAGA of INdAM. The second
+author is supported by the Project PRIN “Variet` a reali e com plesse: geometria, topologia e analisi armonica” and
+by GNSAGA of INdAM.
+1
+
+=== PDF PAGE 2 ===
+2 ANDREA CATTANEO AND ADRIANO TOMASSINI
+Theorem 1 (cf. Thm. 2.1) . Let (X, σ) be a complex symplectic manifold, and assume that X
+satisﬁes the ∂ ¯∂-lemma. Let Qσ be the quadric in P(H 2
+dR(X, C)) deﬁned by (1.3). Then the following
+are equivalent:
+(1) h1,1(X) > 0;
+(2) the quadric Qσ is irreducible.
+Theorem 2 (cf. Thm. 2.2) . Let (X, σ) be a complex symplectic manifold, and assume that X
+satisﬁes the ∂ ¯∂-lemma. Let Qσ be the quadric in P(H 2
+dR(X, C)) deﬁned by (1.3). Then the following
+are equivalent:
+(1) qσ is non-degenerate;
+(2) h2,0(X) = 1 , i.e., H 2,0
+¯∂ (X) = C ·[σ];
+(3) the quadric Qσ is smooth.
+We collect through Section 2 all the results we need for the proofs o f the two main theorems
+and which are interesting also on their own; in particular Corollary 2.4 c an be viewed as a sort of
+Lefschetz Theorem for complex symplectic manifolds. In Section 3 w e brieﬂy study some property
+of the set
+{[σ] ∈ H 2,0
+¯∂ (X)|σ is a complex symplectic form } ⊆ H 2,0
+¯∂ (X).
+Finally, Section 4 contains two examples: with the ﬁrst we want to sho w the importance of the
+assumption that the ∂ ¯∂-lemma holds for the manifolds we are dealing with, and with the second
+we want to show explicitly the results of the paper.
+Acknowledgement: the authors would like to thank Daniele Angella for useful comments.
+They want also thank the referee for his suitable suggestions.
+1. Preliminaries
+In this Section we want to recall the basic deﬁnitions and properties we will use in the sequel.
+Let X be a compact complex manifold and denote by Ap,q(X) the space of smooth ( p, q)-forms
+on X. According to Deligne, Griﬃths, Morgan and Sullivan [5], X is said to satisfy the ∂ ¯∂-lemma
+if
+ker ∂ ∩ ker ¯∂ ∩ im d = im ∂ ¯∂.
+The manifolds X satisfying the ∂ ¯∂-lemma (e.g., the K¨ ahler or Moishezon manifolds as observed
+in [5, Cor. 5.23]) have interesting cohomological properties, which we will brieﬂy sketch. Denote
+by
+H p,q
+BC (X) = ker(d : Ap,q(X) − → A p+1,q(X) ⊕ A p,q+1(X))
+im(∂ ¯∂ : Ap−1,q−1(X) − → A p,q(X))
+the Bott–Chern cohomology of X, and by
+H p,q
+¯∂ (X) = ker( ¯∂ : Ap,q(X) − → A p,q+1(X))
+im( ¯∂ : Ap,q−1(X) − → A p,q(X))
+the Dolbeault cohomology of X.
+Then we have a natural homomorphism
+(1.1) H p,q
+BC (X) − → H p,q
+¯∂ (X)
+[α]BC ↦− → [α] ¯∂,
+which is an isomorphism if and only if the ∂ ¯∂-lemma holds for X (cf. [5, Remark 5.16]).
+Two consequences of this fact (cf. [5]) are that:
+
+=== PDF PAGE 3 ===
+COMPLEX SYMPLECTIC STRUCTURES AND THE ∂ ¯∂-LEMMA 3
+(1) we have a decomposition
+H k(X, C) =
+⨁
+p+q=k
+H p,q
+¯∂ (X);
+(2) complex conjugation gives an isomorphism
+H p,q
+¯∂ (X) − → H q,p
+¯∂ (X)
+[α] ¯∂ ↦− → [α] ¯∂ = [ ¯α] ¯∂.
+Let ( X, σ) be a complex symplectic manifold , namely X is an even dimensional (connected)
+compact complex manifold, and σ is a d-closed (2 , 0)-form which is non-degenerate at any point
+(cf. [3, Def. 3.3]). Observe that σ is automatically holomorphic and that as direct consequences X
+has trivial canonical bundle and dim H 2,0
+¯∂ (X) ≥ 1.
+To ﬁx the notation, ( X, σ) will denote a compact complex symplectic manifold, dim C X = 2 n,
+and we will always assume that σ is normalized, that is
+(1.2)
+∫
+X
+(σ¯σ)n = 1.
+Remark 1.1. Observe that our normalization assumption (1.2) is not restrictive. In fact, as σn is a
+nowhere vanishing canonical section, we have that dim H 2n,0
+¯∂ (X) = 1 and that [ σn] ¯∂ is a generator
+for this space. By Serre duality H 0,2n
+¯∂ (X) is 1-dimensional as well, and it is generated by [¯ σn] ¯∂
+since
+(1) ¯σ is a d-closed (0 , 2)-form, and so it is also ¯∂-closed;
+(2) ¯σn is nowhere vanishing as σn has the same property.
+As a consequence
+0 ̸= [σn] ¯∂ ∪ [¯σn] ¯∂ =
+∫
+X
+(σ¯σ)n
+and so we can always assume this integral to be 1.
+The Beauville–Bogomolov–Fujiki quadratic form qσ on H 2(X, C) is deﬁned, as in the hyperk¨ ahler
+case (cf. [2, §8]), as follows: for each [ α] ∈ H 2(X, C) set
+(1.3) qσ([α]) = n
+2
+∫
+X
+(σ¯σ)n−1α2 + (1 − n)
+( ∫
+X
+σn−1 ¯σnα
+) ( ∫
+X
+σn ¯σn−1α
+)
+.
+We will denote by ⟨ , ⟩σ the symmetric bilinear form polar to qσ, namely
+⟨[α], [β]⟩σ = 1
+2 (qσ([α] + [β]) − qσ([α]) − qσ([β])).
+Since qσ is homogeneous of degree 2, we can consider the quadric Qσ deﬁned by the equation
+qσ = 0 in P(H 2(X, C)). In the next Section we will mainly be concerned with the study of t his
+quadric.
+2. The Beauville–Bogomolov–Fujiki quadric and the ∂ ¯∂-lemma
+The purpose of this Section is to show the following results.
+Theorem 2.1. Let (X, σ) be a complex symplectic manifold, and assume that X satisﬁes the
+∂ ¯∂-lemma. Then the following are equivalent:
+(1) h1,1(X) > 0;
+(2) the quadric Qσ is irreducible.
+Theorem 2.2. Let (X, σ) be a complex symplectic manifold, and assume that X satisﬁes the
+∂ ¯∂-lemma. Then the following are equivalent:
+
+=== PDF PAGE 4 ===
+4 ANDREA CATTANEO AND ADRIANO TOMASSINI
+(1) qσ is non-degenerate;
+(2) h2,0(X) = 1 , i.e., H 2,0
+¯∂ (X) = C ·[σ];
+(3) the quadric Qσ is smooth.
+To be as clear as possible, we prove here the technical results need ed for the Proofs of Theorem
+2.1 and Theorem 2.2, which we postpone at the end of the Section.
+As a matter of notations, Ω 1
+X will be used to denote the holomorphic cotangent bundle of X,
+while Ω p
+X = ⋀p Ω1
+X and KX = Ω n
+X will denote the bundles of holomorphic p-forms on X and the
+canonical bundle of X respectively. Finally, Lα will denote the operator given by wedging with α.
+Lemma 2.3. Let (X, σ) be a complex symplectic manifold of dimension 2n. Then the map
+Ln−1
+σ : Ω 1
+X − → Ω2n−1
+X
+given by the wedge product with σn−1 is an isomorphism of vector bundles.
+Proof. The Lemma follows from the description of this map in [7] and [6], which we recall here.
+Since σ is non-degenerate, it induces isomorphisms TX ≃ Ω1
+X and KX ≃ O X . The ﬁrst is given by
+TX ↦− → Ω1
+X
+v ↦− → σ(v,
+),
+while the second is induced by σn, which is holomorphic and everywhere non-vanishing. Since we
+have also a non-degenerate pairing Ω 1
+X ⊗ Ω2n−1
+X − → KX induced by the cup product, the fact that
+KX ≃ O X exhibits also Ω 2n−1
+X as (Ω 1
+X )∗. So we have the sequence of isomorphisms
+Ω1
+X ≃ TX ≃ (Ω1
+X )∗ ≃ Ω2n−1
+X ,
+and the map Ln−1
+σ is nothing but this composition. □
+As a consequence of Lemma 2.3 the following Corollary holds.
+Corollary 2.4. We have for the Dolbeault cohomology the following isomorph isms:
+Ln−1
+σ : H q(X, Ω1
+X ) →→
+H q(X, Ω2n−1
+X )
+H 1,q
+¯∂ (X) H 2n−1,q
+¯∂ (X),
+where Ln−1
+σ is induced by the wedge product with σn−1.
+We can see this result as an instance of a sort of “symplectic Lefsch etz theorem”.
+Lemma 2.5. Let (X, σ) be a complex symplectic manifold, and assume that X satisﬁes the ∂ ¯∂-
+lemma. Then
+Ln−1
+σ¯σ : H 1,1
+¯∂ (X) − → H 2n−1,2n−1
+¯∂ (X)
+[α] ¯∂ ↦− → [(σ¯σ)n−1α] ¯∂
+is an isomorphism.
+Proof. By Corollary 2.4, Ln−1
+σ : H 1,q
+¯∂ (X) − → H 2n−1,q(X) is an isomorphism. Since X satisﬁes the
+∂ ¯∂-lemma, and so complex conjugation is an isomorphism, Ln−1
+¯σ : H q,1
+¯∂ (X) − → H q,2n−1(X) is an
+isomorphism as well, being Ln−1
+¯σ ([α]) =
+Ln−1σ ([ ¯α]). In particular, for q = 1 we get our result since
+
+=== PDF PAGE 5 ===
+COMPLEX SYMPLECTIC STRUCTURES AND THE ∂ ¯∂-LEMMA 5
+we have the commutative square
+H 1,1
+¯∂ (X)
+Ln−1
+σ →→
+Ln−1
+¯σ
+↓↓
+H 2n−1,1
+¯∂ (X)
+Ln−1
+¯σ
+↓↓
+H 1,2n−1
+¯∂ (X)
+Ln−1
+σ →→ H 2n−1,2n−1
+¯∂ (X)
+where all the maps are isomorphisms. □
+Remark 2.6. Lemma 2.5 is false if X does not satisfy the ∂ ¯∂-lemma, as we will show in Example
+4.1.
+Lemma 2.7. Let (X, σ) be a complex symplectic manifold, and assume that X satisﬁes the ∂ ¯∂-
+lemma. Then the restriction of ⟨
+, ⟩σ to H 1,1
+¯∂ (X) is non-degenerate.
+Proof. The symmetric bilinear form ⟨ , ⟩σ on H 2(X, C) restricts to the form on H 1,1
+¯∂ (X) given
+by
+⟨[α], [β]⟩σ = n
+2
+∫
+X
+(σ¯σ)n−1αβ.
+Assume now that [ α] ∈ H 1,1
+¯∂ (X) is a class such that ⟨[α], [β]⟩σ = 0 for all [ β] ∈ H 1,1
+¯∂ (X). This
+means that ∫
+X
+Ln−1
+σ¯σ ([α])[β] = 0 ,
+i.e., that Ln−1
+σ¯σ ([α]) is a (2 n − 1, 2n − 1)-class which annihilates all the space H 1,1
+¯∂ (X). By Serre
+duality, we have that then Ln−1
+σ¯σ ([α]) = 0, and since we proved that Ln−1
+σ¯σ is an isomorphism, we
+ﬁnally get that [ α] = 0. □
+Proposition 2.8. Let (X, σ) be a complex symplectic manifold, and assume that X satisﬁes the
+∂ ¯∂-lemma. Then
+H 2,0
+¯∂ (X) ⊕ H 0,2
+¯∂ (X) = H 1,1
+¯∂ (X)⊥.
+Proof. We will prove that H 2,0
+¯∂ (X) ⊕ H 0,2
+¯∂ (X) ⊆ H 1,1
+¯∂ (X)⊥ and that the two spaces have the same
+dimension.
+(⊆ ) It is an easy computation with the polar form of qσ. Let [ α2,0 + α0,2] ∈ H 2,0
+¯∂ (X)⊕ H 0,2
+¯∂ (X),
+we need to prove that for any [ α1,1] ∈ H 1,1
+¯∂ (X) we have
+⟨[α2,0 + α0,2], [α1,1]⟩σ = ⟨[α2,0], [α1,1]⟩σ + ⟨[α0,2], [α1,1]⟩σ = 0.
+It is only a matter of type that
+qσ([α2,0]) = qσ([α0,2]) = 0 ,
+from which we deduce the equality
+2⟨[α2,0], [α1,1]⟩σ = qσ([α2,0] + [α1,1]) − qσ([α2,0]) − qσ([α1,1]) = qσ([α1,1]) − qσ([α1,1]) = 0 ,
+and similarly ⟨[α0,2], [α1,1]⟩σ = 0. So we are done.
+(=) We denote bi(X) = dim H i(X, C) and hp,q(X) = dim H p,q
+¯∂ (X) as usual. By Lemma 2.7,
+⟨ , ⟩σ is non degenerate on H 1,1
+¯∂ (X), which is equivalent to H 1,1
+¯∂ (X) ∩ H 1,1
+¯∂ (X)⊥ = {0}.
+In turn this implies that dim H 1,1
+¯∂ (X)⊥ = b2(X) − h1,1(X), and ﬁnally that
+dim H 1,1
+¯∂ (X)⊥ = b2(X) − h1,1(X) = h2,0(X) + h0,2(X).
+□
+
+=== PDF PAGE 6 ===
+6 ANDREA CATTANEO AND ADRIANO TOMASSINI
+Now we study the restriction of the quadratic form on H 2,0
+¯∂ (X) ⊕ H 0,2
+¯∂ (X).
+Lemma 2.9. Let (X, σ) be a complex symplectic manifold satisfying the ∂ ¯∂-lemma, and let V =
+Span{[σ], [¯σ]}. Let [τ2,0] + [τ0,2] ∈ H 2,0
+¯∂ (X) ⊕ H 0,2
+¯∂ (X). Then [τ2,0] + [τ0,2] ∈ V ⊥ if and only if
+∫
+X
+σn ¯σn−1τ0,2 =
+∫
+X
+σn−1 ¯σnτ2,0 = 0.
+Proof. We observe that 2 ⟨[σ], [τ2,0] + [τ0,2]⟩σ = 0 if and only if qσ([σ] + [τ2,0] + [τ0,2]) − qσ([τ2,0] +
+[τ0,2]) = 0; a straightforward computation shows that this last is equivale nt to say that
+∫
+X
+σn ¯σn−1τ0,2 = 0.
+In the same way, one sees that 2 ⟨[¯σ], [τ2,0] + [τ0,2]⟩σ = 0 if and only if
+∫
+X σn−1 ¯σnτ2,0 = 0, and the
+result then follows. □
+Observe that we have two natural linear functionals on H 2,0
+¯∂ (X) and H 0,2
+¯∂ (X) respectively:
+H 2,0
+¯∂ (X) − → C
+[τ2,0] ↦− →
+∫
+X σn−1 ¯σnτ2,0
+, H 0,2
+¯∂ (X) − → C
+[τ0,2] ↦− →
+∫
+X σn ¯σn−1τ0,2
+These functionals are surjective since their value on [ σ], resp. [¯σ], is 1, and so they have ( d − 1)-
+dimensional kernel, where d = h2,0(X) = h0,2(X). In particular, after ﬁxing a basis {[σ2], . . . ,[σd]}
+for the kernel of the ﬁrst, we have
+H 2,0
+¯∂ (X) ⊕ H 0,2
+¯∂ (X) = Span {σ, ¯σ}  
+V
+⊕ Span{σ2, . . . , σd, ¯σ2, . . . ,¯σd}  
+W
+,
+where W is the orthogonal complement of V in H 2,0
+¯∂ (X) ⊕ H 0,2
+¯∂ (X) by Lemma 2.9.
+We now want to show that W is the subspace where the form qσ degenerates.
+Proposition 2.10. Let (X, σ) be a complex symplectic manigold, and assume that X satisﬁes the
+∂ ¯∂-lemma. Then the second complex cohomology group of X has an orthogonal decomposition for
+qσ
+H 2(X, C) = Span {[σ], [¯σ]} ⊕ W ⊕ H 1,1
+¯∂ (X),
+where W ⊆ H 2,0
+¯∂ (X) ⊕ H 0,2
+¯∂ (X) is the kernel of ⟨ , ⟩σ.
+Proof. We know by Lemma 2.7 and Proposition 2.8 that ⟨ , ⟩σ is non-degenerate on H 1,1
+¯∂ (X) and
+that H 1,1
+¯∂ (X)⊥ = H 2,0
+¯∂ (X) ⊕ H 0,2
+¯∂ (X). Hence we can restrict our attention to H 2,0
+¯∂ (X) ⊕ H 0,2
+¯∂ (X),
+where the Beauville–Bogomolov–Fujiki form has expression
+qσ([τ2,0] + [τ0,2]) = n
+∫
+X
+(σ¯σ)n−1τ2,0τ0,2 + (1 − n)
+( ∫
+X
+σn ¯σn−1τ0,2
+) ( ∫
+X
+σn−1 ¯σnτ2,0
+)
+.
+Assume now that [ τ2,0] + [τ0,2] ∈ H 2,0
+¯∂ (X) ⊕ H 0,2
+¯∂ (X) is orthogonal to Span {[σ], [¯σ]}: by Lemma
+2.9 this means that { ∫
+X σn ¯σn−1τ0,2 = 0∫
+X σn−1 ¯σnτ2,0 = 0.
+Since H 2n,0
+¯∂ (X) = C ·[σn], H 0,2n
+¯∂ (X) = C ·[¯σn] and the natural pairing is non-degenerate, we
+obtain that [¯σn−1τ0,2] = [ σn−1τ2,0] = 0, and consequently
+qσ([τ2,0] + [τ0,2]) = 0 .
+This computation shows that the bilinear form ⟨ , ⟩σ vanishes on W , and since it is non-
+degenerate on Span {[σ], [¯σ]} it follows that W = ker⟨ , ⟩σ. □
+
+=== PDF PAGE 7 ===
+COMPLEX SYMPLECTIC STRUCTURES AND THE ∂ ¯∂-LEMMA 7
+We are now ready to prove the two Main Theorems.
+Proof of Theorem 2.1. The quadric Qσ is irreducible if and only if the Gram matrix of ⟨ , , ⟩σ
+has rank at least 3. So, it suﬃces to show that there exist three or thogonal classes [ α]i ∈ H 2(X, C)
+such that qσ([α]i) ̸= 0 if and only if h1,1(X) > 0. It is an easy computation that [ σ + ¯σ] and [ σ − ¯σ]
+are orthogonal and satisfy qσ([σ ± ¯σ]) = ± 1. It follows then from Proposition 2.10 and Lemma 2.7
+that a third class with this property exists if and only if h1,1(X) > 0. □
+Proof of Theorem 2.2. It is well known that a quadric is smooth if and only if it is deﬁned by a
+non-degenerate quadratic form. From Proposition 2.10 we have th at qσ is non-degenerate if and
+only if (with the notations of Proposition 2.10) W = {0}, i.e., if and only if h2,0(X) = 1. □
+Remark 2.11. Assume that ( X, σ) is an irreducible holomorphic symplectic manifold, i.e., that X
+is a (compact) simply connected K¨ ahler manifold such that H 2,0
+¯∂ (X) = C ·[σ]. Then it was shown
+in [2, Th´ eor` eme 5] thatQσ is smooth and irreducible. In particular, to show the irreducibility the
+proof uses the fact that the K¨ ahler class [ ω] of X is orthogonal to H 2,0
+¯∂ (X) ⊕ H 0,2
+¯∂ (X) and satisﬁes
+qσ([ω]) = n
+2
+∫
+X
+(σ¯σ)n−1ω2 > 0
+by the Hodge–Riemann bilinear relations.
+Remark 2.12. Let ( X, σ) be a complex symplectic manifold. As qσ([σ]) = 0, the point deﬁned by
+[σ] in P(H 2
+dR(X, C)) lies on Qσ, and it follows from Proposition 2.10 that [ σ] is always a smooth
+point of Qσ.
+3. Complex symplectic cones
+In this section we want to study the locus
+Sp(X) = {[σ] ∈ H 2,0
+¯∂ (X)|σ is a complex symplectic form } ⊆ H 2,0
+¯∂ (X).
+Observe ﬁrst of all that since there are no ¯∂-boundaries in A2,0(X), then we have only one
+element in each Dolbeault class, so
+Sp(X) = {σ ∈ A 2,0(X)|σ is a complex symplectic form } ⊆ Z 2,0
+¯∂ (X) = {ϕ ∈ A 2,0(X)|¯∂ϕ = 0}.
+It is then easy to see from the deﬁnitions that Sp(X) is a cone in Z 2,0
+¯∂ (X): if σ ∈ Sp(X), then
+λσ ∈ Sp(X) for any λ ∈ C∗.
+Proposition 3.1. Let X be a compact complex manifold satisfying the ∂ ¯∂-lemma. Then the set
+Sp(X) is open in H 2,0
+¯∂ (X).
+Proof. Observe that if τ is a ¯∂-closed (2, 0)-form, then dτ = 0. In fact dτ = ∂τ is of type (3 , 0), and
+as dτ ∈ ker ∂ ∩ ker ¯∂ ∩ im d = im ∂ ¯∂ we deduce that dτ = 0 because there are on X no (2, − 1)-forms.
+Let then σ ∈ Sp(X) be ﬁxed, and let τ ∈ Z 2,0
+¯∂ (X) be any (2 , 0)-form. Consider then the form
+σ + ετ , with ε > 0: this is
+(1) ¯∂-closed, since both σ and τ are;
+(2) d-closed, since both σ and τ are;
+(3) non-degenerate for some suitable ε > 0, since σ is non-degenerate and X is compact.
+So we can perturb σ ∈ Sp(X) in any direction remaining in Sp(X), which implies that Sp(X) is
+open. □
+
+=== PDF PAGE 8 ===
+8 ANDREA CATTANEO AND ADRIANO TOMASSINI
+4. Examples
+As we observed in Corollary 2.4, the map
+Ln−1
+σ : H 1,q
+¯∂ (X) − → H 2n−1,q
+¯∂ (X)
+[ϕ] ¯∂ ↦− → [σn−1ϕ] ¯∂
+is an isomorphism.
+In Example 4.1 we will show that this is not true if we consider Bott–Che rn cohomology instead
+of Dolbeault cohomology, and that if X does not satisfy the ∂ ¯∂-lemma, then its conjugate Ln−1
+¯σ :
+H q,1
+¯∂ (X) − → H q,2n−1
+¯∂ (X) may fail to be an isomorphism. Finally, in Example 4.2 we want to deal
+with an explicit example that clariﬁes our results, in particular Theore ms 2.1 and 2.2.
+Example 4.1. Let I(3) = Γ \G be the Iwasawa threefold, i.e., the quotient of the complex nilpotent
+lie group
+G =
+
+
+
+
+
+1 z1 z3
+0 1 z2
+0 0 1
+
+
+⏐
+⏐
+⏐
+⏐
+⏐
+⏐
+z1, z2, z3 ∈ C
+
+
+
+by the lattice Γ consisting of the matrices with entries in Z[√
+− 1]. We have then on I(3) the
+following global (1 , 0)-forms, expressed in terms of the natural coordinates ( z1, z2, z3):
+ϕ1 = dz1, ϕ 2 = dz2, ϕ 3 = dz3 − z1dz2,
+and which satisfy the structure equations
+dϕ1 = 0, dϕ 2 = 0, dϕ 3 = − ϕ1 ∧ ϕ2.
+We consider then X = I(3) × T, where T is a complex 1-dimensional torus with coordinate z4
+giving us a fourth (1 , 0)-form ϕ4 = dz4 satisfying the structure equation dϕ4 = 0. Observe that X
+is a 4-dimensional complex manifold which does not satisfy the ∂ ¯∂-lemma as I(3) does not. In the
+sequel we will use the following notation:
+ϕij = ϕi ∧ ϕj, ϕ i¯j = ϕi ∧ ¯ϕj, . . . .
+With some computations we can see that the second cohomologies of X have the following gener-
+ators: the de Rham cohomology is
+(4.1) H 2
+dR(X, C) = Span
+
+
+
+
+
+
+
+
+
+
+
+[ϕ13]dR, [ϕ14]dR, [ϕ23]dR, [ϕ24]dR,
+[ϕ1¯
+1]dR, [ϕ1¯
+2]dR, [ϕ1¯
+4]dR,
+[ϕ2¯
+1]dR, [ϕ2¯
+2]dR, [ϕ2¯
+4]dR,
+[ϕ4¯
+1]dR, [ϕ4¯
+2]dR, [ϕ4¯
+4]dR,
+[ϕ¯
+1¯
+3]dR, [ϕ¯
+1¯
+4]dR, [ϕ¯
+2¯
+3]dR, [ϕ¯
+2¯
+4]dR
+
+
+
+
+
+
+
+
+
+
+
+;
+the Bott–Chern cohomology is
+H 2,0
+BC (X) = Span
+{ [ϕ12]BC , [ϕ13]BC , [ϕ14]BC , [ϕ23]BC , [ϕ24]BC
+}
+,
+H 1,1
+BC (X) = Span
+
+
+
+[ϕ1¯
+1]BC , [ϕ1¯
+2]BC , [ϕ1¯
+4]BC ,
+[ϕ2¯
+1]BC , [ϕ2¯
+2]BC , [ϕ2¯
+4]BC ,
+[ϕ4¯
+1]BC , [ϕ4¯
+2]BC , [ϕ4¯
+4]BC
+
+
+ ,
+H 0,2
+BC (X) = Span
+{ [ϕ¯
+1¯
+2]BC , [ϕ¯
+1¯
+3]BC , [ϕ¯
+1¯
+4]BC , [ϕ¯
+2¯
+3]BC , [ϕ¯
+2¯
+4]BC
+}
+;
+
+=== PDF PAGE 9 ===
+COMPLEX SYMPLECTIC STRUCTURES AND THE ∂ ¯∂-LEMMA 9
+and ﬁnally the Dolbeault cohomology is
+H 2,0
+¯∂ (X) = Span
+{ [ϕ12] ¯∂, [ϕ13] ¯∂, [ϕ14] ¯∂, [ϕ23] ¯∂, [ϕ24] ¯∂ , [ϕ34] ¯∂
+}
+,
+H 1,1
+¯∂ (X) = Span
+
+
+
+
+
+
+
+[ϕ1¯
+1] ¯∂ , [ϕ1¯
+2] ¯∂ , [ϕ1¯
+4] ¯∂,
+[ϕ2¯
+1] ¯∂ , [ϕ2¯
+2] ¯∂ , [ϕ2¯
+4] ¯∂,
+[ϕ3¯
+1] ¯∂ , [ϕ3¯
+2] ¯∂ , [ϕ3¯
+4] ¯∂,
+[ϕ4¯
+1] ¯∂, [ϕ4¯
+2] ¯∂, [ϕ4¯
+4] ¯∂
+
+
+
+
+
+
+
+,
+H 0,2
+¯∂ (X) = Span
+{ [ϕ¯
+1¯
+3] ¯∂, [ϕ¯
+1¯
+4] ¯∂, [ϕ¯
+2¯
+3] ¯∂, [ϕ¯
+2¯
+4] ¯∂
+}
+.
+For later purposes, we list here the generators for other cohomo logy groups:
+H 3,1
+¯∂ (X) = Span
+
+
+
+
+
+
+
+[ϕ123¯
+1] ¯∂, [ϕ123¯
+2] ¯∂ , [ϕ123¯
+4] ¯∂ ,
+[ϕ124¯
+1] ¯∂, [ϕ124¯
+2] ¯∂ , [ϕ124¯
+4] ¯∂ ,
+[ϕ134¯
+1] ¯∂, [ϕ134¯
+2] ¯∂ , [ϕ134¯
+4] ¯∂ ,
+[ϕ234¯
+1] ¯∂, [ϕ234¯
+2] ¯∂, [ϕ234¯
+4] ¯∂
+
+
+
+
+
+
+
+,
+H 3,1
+BC (X) = Span
+
+
+
+
+
+
+
+[ϕ123¯
+1]BC , [ϕ123¯
+2]BC , [ϕ123¯
+4]BC ,
+[ϕ124¯
+1]BC , [ϕ124¯
+2]BC , [ϕ124¯
+4]BC ,
+[ϕ134¯
+1]BC , [ϕ134¯
+2]BC , [ϕ134¯
+4]BC ,
+[ϕ234¯
+1]BC , [ϕ234¯
+2]BC , [ϕ234¯
+4]BC
+
+
+
+
+
+
+
+,
+H 1,3
+¯∂ (X) = Span
+
+
+
+
+
+
+
+[ϕ1¯
+1¯
+2¯
+3] ¯∂, [ϕ1¯
+1¯
+3¯
+4] ¯∂ , [ϕ1¯
+2¯
+3¯
+4] ¯∂ ,
+[ϕ2¯
+1¯
+2¯
+3] ¯∂, [ϕ2¯
+1¯
+3¯
+4] ¯∂ , [ϕ2¯
+2¯
+3¯
+4] ¯∂ ,
+[ϕ3¯
+1¯
+2¯
+3] ¯∂, [ϕ3¯
+1¯
+3¯
+4] ¯∂ , [ϕ3¯
+2¯
+3¯
+4] ¯∂ ,
+[ϕ4¯
+1¯
+2¯
+3] ¯∂, [ϕ4¯
+1¯
+3¯
+4] ¯∂, [ϕ4¯
+2¯
+3¯
+4] ¯∂
+
+
+
+
+
+
+
+(see also [1] for general computations and [4] for Dolbeault forma lity).
+We now focus on the complex symplectic forms on X. Let σ be any d-closed form of type (2 , 0)
+on X: according to (4.1) it is cohomologus to
+αϕ12 + βϕ13 + γϕ14 + δϕ23 + εϕ24,
+and it is easy to see by taking its square that such a form is non-dege nerate (hence a symplectic
+form) if and only if
+βε − γδ ̸= 0.
+We now ﬁx such a symplectic form σ, and we also assume that it satisﬁes the normalization∫
+X
+(σ¯σ)2 = 4|βε − γδ|2
+∫
+X
+ϕ1234¯
+1¯
+2¯
+3¯
+4 = 1.
+It is then only a matter of computation with the generators given ab ove that
+(1) the Lefschetz operator Lσ : H 1,1
+¯∂ − → H 3,1
+¯∂ (X) is an isomorphism (as stated in Corollary
+2.4), while on the Bott–Chern cohomology it deﬁnes only an injective h omomorphism
+Lσ : H 1,1
+BC − → H 3,1
+BC (X);
+(2) the Lefschetz operator induced by ¯ σ is not an isomorphism, since
+ker(L¯σ : H 1,1
+¯∂ − → H 1,3
+¯∂ (X)) = Span
+{
+[ ¯βϕ1¯
+1 + ¯δϕ1¯
+2] ¯∂, [ ¯βϕ2¯
+1 + ¯δϕ2¯
+2] ¯∂ ,
+[ ¯βϕ3¯
+1 + ¯δϕ3¯
+2] ¯∂, [ ¯βϕ4¯
+1 + ¯δϕ4¯
+2] ¯∂
+}
+,
+and so the hypothesis that X satisﬁes the ∂ ¯∂-lemma is necessary in Lemma 2.5;
+(3) the images under the canonical maps H p,q
+BC (X) − → H p+q
+dR (X, C) of H 2,0
+BC (X) ⊕ H 0,2
+BC (X)
+and H 1,1
+BC (X) are orthogonal with respect to ⟨
+, ⟩σ, and the form qσ is degenerate on
+both of them.
+Example 4.2. Let t ∈ C∖ {0} and consider the manifold Xt which is the product of a deformation
+of the holomorphic parallelizable Nakamura threefold and a complex 1- dimensional torus. The
+deformations of the Nakamura threefold we are considering were a nalysed in [1], where it is shown
+
+=== PDF PAGE 10 ===
+10 ANDREA CATTANEO AND ADRIANO TOMASSINI
+that they satisfy the ∂ ¯∂-lemma: in terms of the natural coordinates ( z1, z2, z3) on the threefold
+and z4 on the torus the manifold Xt is described by
+(1, 0) − forms: ϕ1 = dz1 − td¯z1 (0, 1) − forms: ω1 = d¯z1 − ¯tdz1
+ϕ2 = e−z1dz2 ω2 = e−z1d¯z2
+ϕ3 = ez1dz3 ω3 = ez1d¯z3
+ϕ4 = dz4 ω4 = d¯z4,
+with structure equations
+dϕ1 = 0 dω1 = 0
+dϕ2 = − 1
+1−|t|2 ϕ1 ∧ ϕ2 + t
+1−|t|2 ϕ2 ∧ ω1 dω2 = − 1
+1−|t|2 ϕ1 ∧ ω2 − t
+1−|t|2 ω1 ∧ ω2
+dϕ3 = 1
+1−|t|2 ϕ1 ∧ ϕ3 − t
+1−|t|2 ϕ3 ∧ ω1 dω3 = 1
+1−|t|2 ϕ1 ∧ ω3 + t
+1−|t|2 ω1 ∧ ω3
+dϕ4 = 0 dω4 = 0.
+We observe that among all the (2 , 0)-forms, the one which are d-closed are those of the form
+αϕ14 + βϕ23, α, β ∈ C
+and such forms are non-degenerate if and only if α, β ∈ C∗. This shows that Sp(Xt) ⊆ H 2,0
+¯∂ (Xt)
+is nothing but ( C∗)2 ⊆ C2, which is clearly an open cone. It is then possible to compute explicitly
+the cohomology of our manifold, and in particular its second cohomolo gy spaces:
+(4.2)
+H 2,0
+¯∂ (Xt) = Span {[ϕ14], [ϕ23]},
+H 1,1
+¯∂ (Xt) = Span {[ϕ1 ∧ ω1], [ϕ1 ∧ ω4], [ϕ2 ∧ ω3], [ϕ3 ∧ ω2], [ϕ4 ∧ ω1], [ϕ4 ∧ ω4]},
+H 0,2
+¯∂ (Xt) = Span {[ω14], [ω23]}.
+As a consequence of the ∂ ¯∂-lemma, each Dolbeault class has a representative which is d-closed,
+and in (4.2) we used such representatives. We can also describe the action of complex conjugation:
+[ϕ14] = [ ω14] [ϕ1 ∧ ω1] = − [ϕ1 ∧ ω1] [ϕ1 ∧ ω4] = − [ϕ4 ∧ ω1]
+[ϕ23] = [ ω23] [ϕ2 ∧ ω3] = − [ϕ3 ∧ ω2] [ϕ4 ∧ ω4] = − [ϕ4 ∧ ω4].
+Fix now a complex symplectic form σ = αϕ14 + βϕ23, with α, β ∈ C∗, and let ¯σ = ¯αω14 + ¯βω23 be
+its complex conjugate. By our normalization assumption (1.2), we will assume that
+∫
+Xt
+(σ¯σ)2 =
+∫
+X
+4|α|2|β|2ϕ1234 ∧ ω1234 = 1.
+Writing now
+[α] = a14[ϕ14] + a23[ϕ23]+
++ b11[ϕ1 ∧ ω1] + b14[ϕ1 ∧ ω4] + b23[ϕ2 ∧ ω3] + b32[ϕ3 ∧ ω2] + b41[ϕ4 ∧ ω1] + b44[ϕ4 ∧ ω4]+
++ c14[ω14] + c23[ω23]
+for the generic class [ α] ∈ H 2(X, C), we can compute explicitly qσ([α]). Using on H 2(X, C) the
+ordered set of coordinates ( a14, a23, b11, b14, b23, b32, b41, b44, c14, c23) we have just introduced, the
+
+=== PDF PAGE 11 ===
+COMPLEX SYMPLECTIC STRUCTURES AND THE ∂ ¯∂-LEMMA 11
+Beauville–Bogomolov–Fujiki form on Xt is described by the matrix
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0 0
+0 0 0 0 0 0 1
+8|α|2
+1
+8α ¯β
+0 0 0 0 0 0 0 0 1
+8β ¯α
+1
+8|β|2
+0 0 0 0 0 0 0 − 1
+4|α|2 0 0
+0 0 0 0 0 0 1
+4|α|2 0 0 0
+0 0 0 0 0 1
+4|β|2 0 0 0 0
+0 0 0 0 1
+4|β|2 0 0 0 0 0
+0 0 0 1
+4|α|2 0 0 0 0 0 0
+0 0 − 1
+4|α|2 0 0 0 0 0 0 0
+1
+8|α|2
+1
+8β ¯α 0 0 0 0 0 0 0 0
+1
+8α ¯β
+1
+8|β|2 0 0 0 0 0 0 0 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,
+from which it is possible to observe that
+(1) the form is degenerate, and its kernel is Span {α[ϕ14] − β[ϕ23], ¯α[ω14] − ¯β[ω23]},
+(2) the signature of this form is ( p+, p−, p0) = (4 , 4, 2), and its restriction to H 1,1
+¯∂ (Xt) is
+non-degenerate of signature ( p+, p−) = (3 , 3).
+According to Theorem 2.1 and Theorem 2.2, we see that the quadric d eﬁned in P9 by this matrix
+is irreducible and singular.
+References
+[1] Angella D., Kasuya H., Cohomologies of deformations of s olvmanifolds and closedness of some properties,
+arXiv:1305.6709v2 [math.CV] (2015).
+[2] Beauville A., Vari´ et´ es K¨ ahleriennes dont la premi` ere classe de Chern est nulle, J. Diﬀerential Geom. 18 (1983),
+no. 4, 755–782
+[3] Boalch P., Noncompact complex symplectic and hyperk¨ ah ler manifolds,
+https://www.math.u-psud.fr/~boalch/cours09/hk.pdf
+[4] Cattaneo A., Tomassini A., Dolbeault-Massey triple pro ducts of low degree, J. Geom. Phys. 98 (2015), 300–311.
+[5] P. Deligne, Ph. Griﬃths, J. Morgan, D. Sullivan, Real hom otopy theory of K¨ ahler manifolds,Invent. Math. 29
+(1975), no. 3, 245–274.
+[6] Fujiki A., On the de Rham cohomology group of a compact K¨ a hler symplectic manifold, Algebraic geometry,
+Sendai, 1985, 105–165, Adv. Stud. Pure Math. , 10, North-Holland, Amsterdam, 1987.
+[7] Huybrechts D., Compact hyper-K¨ ahler manifolds: basic results, Invent. Math. 135 (1999), no. 1, 63–113.
+[8] Huybrechts, D. Erratum: Compact hyper-K¨ ahler manifol ds: basic results, Invent. Math. 152 (2003), no. 1,
+209–212.
+Dipartimento di Scienza e Alta Tecnologia, Universit `a degli Studi dell’Insubria, Via V alleggio, 11,
+22100, Como, Italy
+E-mail address : andrea1.cattaneo@uninsubria.it
+Dipartimento di Scienze Matematiche, Fisiche, ed Informat iche, Plesso Matematico e Informatico,
+Universit`a di Parma, Parco Area delle Scienze, 53/A, 43124, Parma, Italy
+E-mail address : adriano.tomassini@unipr.it

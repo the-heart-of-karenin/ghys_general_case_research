@@ -1,0 +1,19 @@
+[
+  {
+    "filename": "69_Duval_2017_Around_Brody_lemma_v1.pdf",
+    "title": "Around Brody lemma",
+    "authors": [
+      "Julien Duval"
+    ],
+    "download_url": "https://arxiv.org/pdf/1703.01850v1",
+    "landing_url": "https://arxiv.org/abs/1703.01850",
+    "resolved_url": "https://arxiv.org/pdf/1703.01850v1",
+    "download_status": "downloaded",
+    "bytes": 144382,
+    "pages": 10,
+    "sha256": "eb0bf8aaaffd3cc0fd3c27d85263e3e920b914cc4702805e89f0797814a5f14c",
+    "collected_utc": "2026-10-19T02:33:51.139315+00:00",
+    "publication_note": "arXiv v1 6 March 2017. Published in Hyperbolicity properties of algebraic varieties, Panoramas et Syntheses 56 (2021), pp. 1-12; local manuscript pagination is recorded separately.",
+    "publication_landing_url": "https://smf.emath.fr/publications/autour-du-lemme-de-brody"
+  }
+]

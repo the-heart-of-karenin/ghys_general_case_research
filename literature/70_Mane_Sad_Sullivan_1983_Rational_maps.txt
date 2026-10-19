@@ -1,0 +1,1020 @@
+=== PDF PAGE 1 ===
+A NNALES SCIENTIFIQUES DE L ’É.N.S.
+R. MAÑÉ
+P. SAD
+D. SULLIVAN
+On the dynamics of rational maps
+Annales scientiﬁques de l’É.N.S. 4e série, tome 16, n o 2 (1983), p. 193-217
+<http://www.numdam.org/item?id=ASENS_1983_4_16_2_193_0>
+© Gauthier-Villars (Éditions scientiﬁques et médicales Elsevier), 1983, tous droits réservés.
+L’accès aux archives de la revue « Annales scientiﬁques de l’É.N.S. » ( http://www.
+elsevier.com/locate/ansens) implique l’accord avec les conditions générales d’utilisation
+(http://www.numdam.org/conditions). Toute utilisation commerciale ou impression systé-
+matique est constitutive d’une infraction pénale. Toute copie ou impression de ce ﬁ-
+chier doit contenir la présente mention de copyright.
+Article numérisé dans le cadre du programme
+Numérisation de documents anciens mathématiques
+http://www.numdam.org/
+
+=== PDF PAGE 2 ===
+Ann. sclent. EC. Norm. Sup.,
+^ serie, t. 16, 1983, p. 193 a 217.
+ON THE DYNAMICS OF RATIONAL MAPS
+BY R. MANE, P. SAD AND D. SULLIVAN
+I. — Introduction
+1. It is a remarkable fact that each analytic (1) endomorphism/ofthe Riemann sphere C
+exhibits highly non-trivial dynamical phenomena. In this paper we first describe classical
+and recent results which give the basic dynamical picture of these mappings. Then we make
+use of this picture to construct topological conjugacies or partial topological conjugates
+between certain nearby endomorphisms in analytic families of endomorphisms.
+The partial or global conjugacies we will construct depend analytically on the parameters
+of the family and these satisfy the interesting geometric property of quasi-conformality. One
+corollary will be — there is an open dense set C of degree d polynomial mappings of C such that
+all mappings in each connected component ofC are conjugate by quasi-conformal
+homeomorphisms.
+Another corollary will be — an open dense set of polynomial mappings satisfies the Axiom A
+expanding property iff there is an open dense set of polynomial mappings where the Julia set has
+Lebesgue measure zero. A precise statement of results comes later in this introduction.
+2. Our construction of conjugacies depends on a simple but at first surprising proposition
+concerning analytic perturbations of the inclusion of an arbitrary subset A of the sphere.
+^--LEMMA. - Let Abe a subset ofC, D the open unit disk of C and ;\: A -> C a family of
+injections depending analytically on'keD (i.e. the function X-^\(z) is analytic for
+all zeA). Suppose that io is the inclusion map A^ C. Then every ;\ has a quasi-conformal
+extension ;\: A -> C which is a topological embedding depending analytically on X e D and so
+that the map D xA9(^, z) -> z\(z)eC is continuous.
+Using the ^-Lemma and the general picture of the dynamics of endomorphisms of C the
+topological conjugacies between endomorphisms are built in two steps. First, one builds
+analytically varying partial conjugacies on some dynamically easy subset A of the sphere
+(1) Without mention to the contrary analytic here means complex analytic.
+ANNALES SCIENTIFIQUES DE L'ECOLE NORMALE SUPERIEURE, — 0012-9593/1983/ 193/$ 5.00
+© Gauthier-Villars
+
+
+=== PDF PAGE 3 ===
+194 R. MANE, P. SAD AND D. SULLIVAN
+(like the countable set of expanding periodic points union the basins of attracting periodic
+cycles). Second, one saturates by the mapping and applies the ^-Lemma to extend this
+partial conjugacy to the closure of A.
+It is easy to see that from the above version of the ^-Lemma it can be deduced the more
+general statement obtained by replacing the unit disk in C by the unit ball in C".
+After this paper was written, Sullivan and Thurston [14] proved an extension Lemma that
+states that given a compact set A c: C and a family of injections ;\ depending analytically on ^
+and satisfying the hypothesis of the ^-Lemma, then there exist a family of quasi-conformal
+homeomorphisms ;\: C ^ extending ;\: A -> C and depending analytically on ^ for X in a
+diskDo<=D, whose radius is a universal constant independent of the original
+family. Combining this Lemma with the techniques developed in this paper Sullivan
+obtained in [13] a substantial improvement of the stability Theorem presented here
+(Theorem D).
+3. We will work with analytic families/: W x C -> C of endomorphisms where W is a
+connected complex manifold and /=/(w, z) is analytic in two variables. For the global
+family of all endomorphisms of degree d, End/C), W is an open connected subset of the
+complex projective space CP2^ \ with the inherited topology equivalent to the C° topology
+on End^(C). The three-dimensional Moebius group {A:z ->(az-\-b)l(cz-}-d)] acts by
+conjugation/ -> A ./.A~1 on the global family showing the space of analytically inequivalent
+endomorphisms has dimension Id—2. The number Id—1 coincides with the number of
+critical points {c|/'(c)=0} of any endomorphism/of degree af. Critical points have
+topological dynamical meaning (/ is not locally injective there) and the reader will observe in
+the course of the discussion below a relationship between the structure of the orbits of critical
+points and the number of essential analytic parameters for perturbations of/
+Similarly, the analytic family of all polynomial mappings of degree dis parameterized by
+an open connected dense subset of CP^1 in which the similarity group {z -> az + b} acts by
+conjugation. The quotient analytic space of analytically inequivalent polynomial
+mappings has dimension d— 1 which coincides with the number of critical points of a
+polynomial mapping of degree d.
+4. THE JULIA SET AND THE STABLE REGIONS. — Now we describe the dynamical picture of an
+analytic endomorphism/ of C. Say that a point xeC is stable for/ if on some
+neighborhood of x the family of interates /, /2, /3,..., is an equicontinuous family of
+mappings of a neighborhood into the sphere. Note that when x is not stable i. e. unstable,
+for any neighborhood the union of images of iterates must cover C except two points at
+most. Fatou [3] and Julia [6] showed the set of unstable points J(/) (now called the Julia
+set) coincides with the closure of the expanding periodic points (sources).
+The open set of stable points consists ofcountably many connected components, the stable
+regions off, which are transformed among themselves by/ In Sullivan [9] it is shown that
+under the iteration of/each stable region is even tually cyclic. The cycles of stable regions are
+classified into five types (Sullivan [9]). The first two types attractive basins and parabolic
+basins have fundamental domains for the equivalence relation x^,y \S fx^^y for
+4eSERIE - TOME 16 - 1983 - ?2
+
+
+=== PDF PAGE 4 ===
+ON THE DYNAMICS OF RATIONAL MAPS 195
+some n, m^O. The third type, superattractive basins do not, but they are foliated by the
+closures of the classes of the equivalence relation, x wy iff/"x =fny for some n ^ 0. The last
+two types are rotation domains, Siegel disks or Herman rings, which are foliated by the
+closures of forward orbits.
+(i) An attractive basin D arises from an attractive periodic cycle y with non zero derivative
+of modulus less than one, y={z,/(z),.. ../"-^(z)}, /"(z)=z, 0<|(/")(z)[<l, and D
+consists of the components of W,(y)=U [y\ lim distance (fny,fnx)=0} containing
+xey n-* +00
+points of y. Fatou [3] showed that such a D must contain a critical point of/. Thus there
+are no more than 2d—2 attractive basins for an endomorphism of degree d.
+Siegel disk
+ANNALES SCIENTIFIQUES DE L'ECOLE NORMALE SUPERIEURE
+
+
+=== PDF PAGE 5 ===
+196 R MANE, P. SAD AND D. SULLIVAN
+If we remove from D the inverse orbit ofy^lj/'^y^theset of - equivalence classes
+n^O
+(x^y }Sfnx=fmy) defines a torus with branch points corresponding to the critical points
+of/. This follows easily from the local model of/near y, where near a fixed point of a power
+of/we have z -> 'kz, 0< | X | < 1.
+(ii) A parabolic basin D arises from a non-hyperbolic periodic cycle y with derivative a
+root of unity, y={z,/(z),...,/" ^(z)},/"(z)=z, ((/")' (z))m=l, y is contained in the
+frontier of D, and each compact in D converges to y under forward iteration of/
+(Fatou [3]). The local picture of the dynamics consists of parabolic sectors arranged around
+the fixed point of a power of/which in local coordinates is z -> z + z1 + ... and topologically
+equivalent to z -> z+z1 (Fatou [3], Camacho [2]).
+Local model Fundamental
+domain
+The local model produces a fundamental domain for the global dynamics on D because all
+orbits in D tend to y. Looking at the local picture then shows the quotient of D by
+the x ^ y equivalent classes is a union of twice punctured sphere with branched points coming
+from the critical points of/ lying in D (there must be at least one critical point in D,
+Fatou [3]).
+(iii) A superat tractive basin D is defined just like an attractive basin but now the derivative
+of the power of/having a fixed point is zero. Now points arbitrarily near the attracting
+cycle are identified by/and there is no true fundamental domain for the ^ equivalence
+classes. The more precise relation x wy iff/"^ =fny for some n ^ 0 defines a foliation with
+singularities of D' = D — inverse orbit of y by the closures of the w equivalence classes. The
+leaves are 1-manifolds which are not necessarily compact and which have singularities at the
+inverse orbit of other critical points in D. The local analytic "linearization" near a
+superattractive fixed point or, more precisely, its analytical equivalence to z -> Z"1 for
+some m>0 shows the leaves near y are nearly concentric closed curves around the points
+of y. The rest of the foliation of D' is obtained by applying / ~1 to this concentric foliation
+near y.
+(iv) A Siegel disk is a stable region which is cyclic and on which the appropriate power of/
+is analytically conjugate to a rotation of the standard unit disk. Siegel [1942] proved these
+occur near a non-hyperbolic periodic point if the argument u of its derivative satisfies the
+4eSERIE - TOME 16 - 1983 - ?2
+
+
+=== PDF PAGE 6 ===
+ON THE DYNAMICS OF RATIONAL MAPS 197
+following diophantine condition: there exists c > 0 and v ^ 2 such that | u —(p/q) | ^ c/^ for
+every relatively prime integers p and q.
+Fatou and Julia showed that if such regions existed their frontiers were contained in the
+union of the co-limit sets of critical points.
+Siegel disks around the origin may occur already in the family z->'kz+z2,
+| X-1 = 1. However, they do not occur when u is sufficiently Liouville because then there are
+periodic points tending to zero in this case (an easy calculation).
+(v) A Herman ring is a stable region similar to a Siegel disk. Now we have a periodic cycle
+of annuli and a power of/which restricted to any of these annuli is analytically equivalent to
+an irrational rotation of the standard annulus. Again the frontier is contained in the ©-limit
+sets of critical points (Fatou [3]). Such regions were found by M. Herman for the map:
+e16 ( z-a \2
+z \l-dz ) ?
+for appropriate 9 and a. Herman uses Arnold's theorem about real analytic conjugations of
+real analytic diffeomorphisms of the circle to rigid rotations when the rotation number is like
+a Siegel number. Note that both Siegel disks and Herman rings are foliated by the closures
+of orbits and the leaves are closed real analytic curves.
+5. MORE DYNAMICAL PROPERTIES. — (i) One knows there are only finitely many cyclic stable
+regions described in 4 (Sullivan [9]). But it is a problem to find the sharp upper bound for
+the number of cycles in terms of the degree. Is it 2d—2 ?
+(ii) Also for polynomials one knows each bounded stable region is simply connected (apply
+the maximum principle to/,/2,...). Thus polynomials do not have Herman rings.
+(iii) An amusing corollary of the classification of stable regions in 4 is the following - if all
+critical points of fare eventually periodic but none are periodic then the Julia set offis all of C
+(because each type of cyclic region besides the superattractive basin requires a critical point
+with an infinite forward orbit). Examples of this type are z -> ((z — 2)/z)2 and the quotient of
+some higher degree endomorphism of a one-dimensional torus by the equivalence
+relation x^ —x. See for instance the example due to Lattes [4].
+(iv) Fatou and Julia showed that/on J(/) is topologically transitive. In fact, for any z
+in J(/) the inverse orbit U /""(z) is dense in J(/). If no critical points tend to J(/) or
+71^0
+touch it, Fatou showed some power of/is expanding on J(/). He surmised the dynamical
+structure was continuous in the coefficients for such examples (now called Axiom A or
+hyperbolic systems, see below) and guessed that this property should be true except for special
+values of the parameters.
+Even when J(/) is contaminated by critical points one may think of J(/) as the hyperbolic
+part (2) of the dynamics. The Siegel disks and Herman rings are in the elliptic part of the
+dynamics. The attractive basins and the parabolic basins are the properly discontinuous
+part of the dynamics.
+(2) The words "hyperbolic" and "elliptic" are meant to suggest chaotic and rigid structure respectively in the
+dynamics.
+ANNALES SCIENTIFIQUES DE L'ECOLE NORMALE SUPERIEURE
+
+
+=== PDF PAGE 7 ===
+198 R. MANE, P. SAD AND D. SULLIVAN
+6. Now we state our theorems about partial conjugacies between members of analytic
+families f:WxC->C of endomorphisms. First we shall introduce the concept of
+persistently non-hyperbolic periodic point. We shall give first the definition in a particular
+case where it is easier to understand. If ZQ is a periodic point of/^, say (/J1 (zo) = ZQ, and if
+CO^o)^^ Aen when w moves in a small neighborhood Wo ofwo we can find z(w),
+depending analytically on w and such that z (u;o) = ZQ and (/^) (z (w)) = z (w) for every w in the
+neighborhood. We say that ZQ is a persistently non-hyperbolic periodic point of/^, if
+K/u'yC2^))^! tor every w in a neighborhood ofu;o i.e. if we cannot destroy the
+non hyperbolicity of ZQ by moving the parameter. Observe that the condition
+\(fiy(ZW)\=^ for every w nearby WQ implies that in fact (f^)\z(w)) is constant in that
+neighborhood. Unfortunately this definition is not sufficient because we shall need to
+handle the case (/^)' (zo) = 1, when it is not always possible to find z (w) as before. To state
+the general definition we first introduce the analytic sets:
+M^={(u;,z)eWxC|/,;(z)=z,^(z)^z,0^<^}.
+Define the projection P^: M^ -> W as P^(u;, z) = w and the eigenvalue function ^: M -> C
+by:
+U^z)^/,")^).
+IfP^ is injective when restricted to a neighborhood of a point (u?o, Zo) e M^, then there exists a
+neighborhood Wo of WQ and an analytic function (p : Wo -> C, with (p (wo) = ZQ, such that its
+graph {(w, (p(w)) | we Wo } is a neighborhood of(u;o, Zo) in M^. We say that a periodic
+point ZQ of/^ is persistently non-hyperbolic if it is non-hyperbolic and:
+(i) There exists a neighborhood Wo of WQ and an analytic function (p : Wo -> C such that
+(p(wo)=Zo and its graph {(w, (p (w)) | ic G Wo } is a neighborhood of(wo, Zo) in M^;
+(ii) ^ is constant in a neighborhood of(wo, Zo) in M^.
+By the analicity of / we can reformulate (i) in a weaker form: P^ is injective on a
+neighborhood of(zo, Wo). In fact, since/is analytic and the function/J1 (z) - z is not
+identically zero, we can find neighborhoods Wo of WQ and Uo of ZQ such that on Wo x Uo we
+can factorize/^(z)-z (assuming ZQ=O) as:
+^CO-^^+'E ^.(w)z^(w, z),
+J=0
+where the coefficients aj are analytic functions of w and g is analytic and 7^ 0 in Wo x Uo. If
+^/((^ x Uo)n MJ is injective then for every w e Wo there exists a unique (p(w) e Uo such
+that (w, (p(w))eM^. Then (p(w) is the unique element ofUo such that
+f^(^(w))—^(w)=Q. By Rouche's Theorem, if Wo is small enough, the order of (p(w) as
+zero of z ->f^ (z) — z must be the same of ZQ = 0 as root of z ->f^ (z) — z, that is k. But g -^ 0
+fc-i
+in a neighborhood of (wo, Zo). Hence (p(w) is a root of order k ofz^ ^ a -(w) z3. Hence
+j=o
+this polynomial is (z-^(w)Y. This means that (p(w)=fc^_i(w) and then (p is analytic.
+46 SERIE - TOME 16 - 1983 - ?2
+
+
+=== PDF PAGE 8 ===
+ON THE DYNAMICS OF RATIONAL MAPS 199
+Moreover observe that ^ is analytic on the analytic set M^ [since it is the restriction of
+(w, z) -> (/^y(z)]. Then, if ^ is constant in a neighborhood of a point, it is constant on the
+whole connected component ofM^ containing that point. Since every connected
+component of M^ projects onto W, it follows that if for some w^f^ has a persistently non-
+hyperbolic periodic point, then/^ has a non-hyperbolic periodic point for
+every weW. Therefore, if for some w^ eW, all the periodic points off^ are hyperbolic,
+then, for all weW,/^ has no persistently non-hyperbolic periodic points.
+Now define the set H(/)cW as the set of values WoeW that have a neighborhood Wo
+such that for every w e W every periodic point of/^ is either hyperbolic or persistently non-
+hyperbolic. Clearly this set is open. It is also dense:
+THEOREM A. - For any analytic family f: W x C -> C, H(/) is an open dense subset ofW.
+Thus we have an open dense set of parameters W for which the nature of each periodic
+point of/^ stays constant. We can show that in this open dense set of parameters the
+dynamical structure of/^ in its Julia set J(/) remains topologically unchanged.
+DEFINITIONS. — Two endomorphisms /, g in End C are J-equivalent if there exists a
+homeomorphism h: J(/) -> J(g) such that hf=gh. Given an analytic family/: W x C -> C
+we say that WQ e W is J-stable if WQ has a neighborhood Wo such that/^ is J-equivalent to f^
+for all w in Wo and J(/^) depends continuously on we Wo in the sense of the Hausdorff
+distance between two closed sets. Say that a map (p of a subset X<=C into the sphere is
+quasi-conformal if it is a topological embedding and:
+sup ^((p(j0, (p(x))
+sup lim sup 26S^———————— ^ oo,
+'6X t-0 inf ^((p(}0, (p(x))YeS,(;c)
+where S,(x)={yeX\d(y, x)=t}.
+We ignore whether a quasi-conformal map (p: X -> C can be extended to a quasi-
+conformal map of a neighborhood of X.
+THEOREM B. — For every analytic family of endomorphisms f: WxC->C, H(/)cW
+coincides with the set of J-stable values of the parameter. Moreover, if WQ belongs to H(/)
+there exists a neighborhood Wo mW of WQ and a continuouu conjugacy function
+h: Wo x J(f^ ) -> C so that for all w in Wo;
+(i) h^ is a conjugacy between f^ on J(/^) andf^ on J(/J and h^ is the identity;
+(ii) for each z, h^(z) is analytic in w;
+(iii) F of each w, h^ is quasi-conformal;
+(iv) the set of J-stable points coincide with the interior of the set of parameters where the
+Julia set moves continuously.
+7. Now we will enlarge our topological conjugacies beyond the Julia set using the
+structure described in 4. We obtain almost the natural expected result. Whenever Siegel
+disks or Herman rings are present there is, however, a glueing problem near their
+frontiers. On this problem, see remark after the statement of Theorem D.
+ANNALES SCIENTIFIQUES DE L'ECOLE NORMALE SUPERIEURE
+
+
+=== PDF PAGE 9 ===
+200 R. MANE, P. SAD AND D. SULLIVAN
+Now we discuss the orbit structure of critical points: we say aSb if either a == b or a and b
+lie in the same leaf of the dynamically defined foliations ofsuperattractive basins, Siegel disks,
+or Herman rings discussed in 4. We define a subset C(/)c=W for the analytic family
+/: W x C -> C by WQ e C(/) iff there is a neighborhood Wo c= W of WQ and analytic functions
+Ci,..., ^ on Wo so that:
+(i) Ci(w),..., ^(w) are all the critical points of/^;
+(ii) either /^(c,(w))S/^(c,(w)) for some m^O, n^O and all weWo, or
+/^(^(w))^^^)) tor all weWo, m^O, ^0.
+Remark. - Note that for w in a component ofH(/) the critical points in J(/) satisfy (ii) by
+Theorem B.
+THEOREM C. — For any analyticfamilyf: W x C -> C, C(/) is an open dense subset of H(/)
+(which is open and dense in W).
+Now we will state global or almost global stability results for endomorphisms
+of C (/). Given an endomorphism /let A (/) denote the collection of completely invariant
+compact sets A [i.e./(A)=A=/ ^(A)] which intersect each (open) Siegel disk or (open)
+Herman ring in a compact set. For instance, the closure of all stable regions which are
+eventually attractive, superattractive or parabolic basins belongs to A(/).
+THEOREM D. - For any analyticfamilyf'. W x C -> C; ifwo belongs to the open dense subset
+C(/) c W then for any choice of A e A(/^) there is a neighborhood Wo of WQ and a continuous
+mapping h: WQ x A -> C satisfying:
+(i) h^is a conjugacy between f^ on A andf^ on /?JA); and /?JA) belongs to A(/J;
+(ii) for each z, h^(z) is analytic in w;
+(iii) For each w, h^ is quasi-conformal.
+Conversely, if for any choice AeA(/^) there exists a neighborhood Wo of WQ and a
+continuous mapping h: Wo x A -> C satisfying (i) then WQ eC(/).
+Observe that when/^ has no Siegel disks or Herman domains then C eA(/,), and this is
+the best choice to which Theorem D applies. It always happens for the family of
+polynomials of a given degree. As we explained in the introduction, in [13] Sullivan,
+combined the extension Lemma in [14] with the results above to obtain an improvement of
+Theorem D that states that it holds globally i. e. if w e C (/) then we can find h: WQ x C -> C
+satisfying all the properties in Theorem D. Therefore, the set of values WQ e W such that/^,
+is stable in the family (i. e. topologically equivalent to any/^ with w near to Wo) is open and
+dense.
+8. Say that an endomorphism/is expanding on, the Julia set if for each z in J(/) there is
+an n so that | (/")'(z) | > 1. An easy argument shows the expanding property is equivalent
+to the Axiom A property: there exist c > 1 and N > 0 such that | (/fc)' (z) \>ck, for all k > N
+and zeJ(/).
+The classification of 4 shows immediately the Axiom A expanding property implies all
+critical points are contained in attractive or superattractive basins and these are the only
+periodic stable regions. The converse as remarked above follows from Fatou[3].
+46 SERIE - TOME 16 - 1983 - ?2
+
+
+=== PDF PAGE 10 ===
+ON THE DYNAMICS OF RATIONAL MAPS 201
+Note that the Axiom A expanding property implies membership in H(/) for any
+family/. Thus we have an intrinsic property. Axiom A, which implies a property,
+membership in H(/), determined by perturbations. For example we don't know if
+membership in H(/) for the global family/implies the same is true for the
+iterates. However, it is obvious the Axiom A expanding property passes to iterates.
+A second favorable feature of this property is that there is a powerful theory [Anosov, Sinai,
+Smale, Bowen, ...] for treating the dynamics of these hyperbolic systems. Markov
+partitions and symbolic dynamics can be used to describe/on J(/) (Jacobson [5]).
+Also in the conformal case the Axiom A expanding property for/implies J(/) is a quasi-
+self similar fractal. It is not hard to show J (/) has finite positive Hausdorff measure in its
+dimension which is strictly less than 2 (Sullivan [10], see also Bowen [1] and Ruelle [7]).
+For all these reasons it is important to be able to verify the Axiom A expanding
+property. It would be important to know whether or not the Axiom A expanding property is
+true for an open dense set of endomorphisms (in reasonable families). The openess is known
+(see Jacobson [5]). But the density has defied verification.
+Say that an endomorphism f has a invariant line field on J(/) if there is a completely
+invariant subset A c:J(/) of positive Lebesgue measure, and a measurable family of tangent
+lines defined a. e. in A invariant by the tangent action of/
+Say that an analytic family of endomorphisms /: W x C -> C is reduced if different
+members cannot be analytically conjugate. Define r{w) for weW as the number of
+equivalence classes of not eventually periodic critical points in J(/Y under the equivalence
+relation c^Cj iff/^ (c,) %/^ (Cj) for some n ^ 0, m ^ 0 (where % is defined before the statement
+of Theorem C) plus the number of critical points in JC/u;).
+THEOREM E. — Suppose f': W x C -» C is a reduced analytic family andw is a point ofC(f)
+where r(w)^ dimension W. Thenf^ satisfies the Axiom A expanding property iff'.
+(i) all periodic points off^ are hyperbolic',
+(ii) /y, has no Herman rings',
+(iii) /y, has no invariant line fields on the Julia set.
+COROLLARY. — The Axiom A expanding property is true for an open dense set of polynomial
+mappings of degree d iff the Lebesgue measure of the Julia set is zero for an open dense set of
+polynomial mappings of degree d.
+II. — Proof of the X-Lemma and Theorem A and B
+The proof of the X-Lemma is based in the following: any analytic map of the unit ^-disk
+into the triply punctured sphere C — { 0, 1, oo } is distance non increasing for the complete
+Poincare metrics on the unit disk and punctured sphere (Schwarz's Lemma). Choose three
+points from A and renormalize / so their images by ;\ are constantly 0, 1, and oo.
+For any three other distinct finite points x, y, z of A, consider the functions x(X) = ;\(x),
+yW=h(y). z(k)=i^z), ^->(yW-xW)/yW. Let 0<R<1 and 0<m<M be
+ANNALES SCIENTIFIQUES DE L'ECOLE NORMALE SUPERIEURE
+
+
+=== PDF PAGE 11 ===
+202 R. MANE, P. SAD AND D. SULLIVAN
+given. These functions avoid 0, 1 and oo. Applying the above to the second function we
+see that |,^(0)[<M implies that^(X,) is not too large for |^|^R<1 (i.e. bounded by a
+function of M). Applying the above to the fourth function we see that if
+0<m^|^(0)|^M<oo and |x(0)-j(0)| is small then \(x(0)-v(Q))/y(0)\ is small, which
+implies | (x (^) - v (^)) /,y (K) \ is small if | A, | ^ R < 1, which implies | x (^) - y (k) \ is small by the
+first remark.
+Thus each ;\ is uniformly continuous on An { z | m ^ | z | ^ M }.
+Such annuli cover the sphere (permuting the roles of 0, 1, oo) so ;\ has a continuous
+extension ;\ : A -> C. Since 0 and any other particular ^ play symmetric roles in the
+hypothesis, the (p^ have continuous inverses. For each z inA, ;\(z) is analytic in X because it
+is a uniform limit of analytic functions on each disk | ^ | ^ R < 1.
+To prove ;\(x) is quasiconformal apply the non-increasing property to the
+fmctiongW=(xW-yW)/(xW-zW) when |x(0)-^(0)|=[x(0)-z(0)| and conclude
+that [ gCk) | is bounded for [ X [ ^ R. To prove the continuity of i: D x A -> C is sufficient to
+show that the family of functions X->;\(x), xeA, is equicontinuous. Again this is a
+consequence of the non-increasing property that grants | i^ (x) — ^ (x) | = | x (^i) — x (X^) | is
+small uniformely in x if | X-i —^ \ is small.
+To prove Theorem A take WQ e W and any open neighborhood Wo of WQ. We shall show
+that WQ contains points of H(/). If we Wo denote a (w) the number of attractive and
+superattractive periodic orbits of/y,, and P(uQ the number of non-hyperbolic periodic
+orbits. By Fatou[3], a(w)+P(w)^4(J-l). Choose w^eWo such that a(wi)=max
+{ a(w) [ weWo }. Then, since attractive and superattractive periodic orbits are persistent,
+there exists an open neighborhood W^ <=Wo of w^ such that a/Wi is constant. Choose
+w^eWl such that p(w2)=max{ P(w)|weWi }. Denote /?i,..., pi the non-hyperbolic
+periodic orbits of/^. We claim there exists a neighborhood W^cW^ of w^ and
+neighborhoods Uf of p^ l^i^l, such that if n^ is determined by (w^,pi)eM^, then
+^/((^ x uf)n Mn) is injective and:
+U({w}xC)n((W2xU,)nM^),
+is the set of non-hyperbolic periodic points of/y,, for all weW^. Since the attractive and
+superattractive periodic points of/^ move analytically with w and their number is constant in
+Wi, it follows that we can find neighborhoods U^. ofp^ and a neighborhood W2 <= W^ of u^
+such that for every weW^ and l^i^l, U, doesn't contain attractive or superattractive
+periodic points of/^. Suppose W^ and the LJ^'s; = 1, ..., / so small that M^n (W2 x U^) is
+connected for every l^i^l. The absence of attractive or superattractive periodic points in
+Uf for all weW^ means that the analytic function ^ on the analytic set M^r\(W^ xU^)
+satisfies |X» (w, z)|^l. Hence X^1 is also an analytic function on this analytic set and
+is bounded by 1. But \^n,l(.w2^ .Pi)^!- Hence it attains its maximum at
+(w^, pi). Therefore it is constant in the connected analytic set (W^ x LJ^n M^. Then, for
+every we W^, the points of({ w ] x C)n((W2 x Uf)nM^) are non-hyperbolic periodic points
+4eSERIE - TOME 16 - 1983 - ?2
+
+
+=== PDF PAGE 12 ===
+ON THE DYNAMICS OF RATIONAL MAPS 203
+of/y,. Since P attains a maximum at w=w^ it is easy to see that the number of non-
+hyperbolic periodic points of/^ also attains a maximum at w=w^ Then:
+E #({w}xC)n((W2xU,)nM,)^p(u^)=/,1=1
+for every w e W2. But #({ w} x C)n ((W^ x U,)n M^) ^ 1. Hence it must be equal to one
+for all weW^. This means that P^W^ xU,)nM^) is injective for all l^i^l. The
+previous arguments also show that points in the set:
+S(w)=U({w}xC)n((W,xU,)nM^,
+1=1
+^{W)= \j HWJ- x^n^w^ xu^nivi^,
+1=1
+are non-hyperbolic and that # S (w) = /. But since as we observed above the number of non-
+hyperbolic periodic points off^ attains a maximum / at w=w^ it follows that number is
+bounded by /. Hence S(w) is exactly the set of all the non-hyperbolic periodic points of/^
+and this completes the Proof of the Claim. Now we claim that u^ e H(/). If it doesn't,
+there exists w^ e W^ such that/^ has a non-hyperbolic periodic point/? that is not persistently
+non-hyperbolic. But by the Claim, p must have the form
+P=({W3} xC)n((W2 xU^)nM^) for some l^'^/. Then P^ is injective in a
+neighborhood of (w^p) in M^ [in fact, the neighborhood (W^nU^nM^. satisfies this
+property]. Hence (w^, p) satisfies condition (i) of the Definition of persistently non-
+hyperbolic periodic point (in the equivalent formulation that we gave after the
+Definition). But we proved that ^ is constant in (W^ x U^)n M^. Then it also satisfies
+part (ii) of the Definition and p is persistently non-hyperbolic.
+To prove Theorem B suppose WQ belongs to H(/)c:W for the analytic family/:
+W x C —^ C. Let WQ containing WQ be a simply connected neighborhood of WQ in
+H(/)- We claim each expanding periodic point x^ off^ defines an analytic function x^ :
+Wo -> C such that x^(w) is a periodic point of/y, of the same period of x^. The implict
+function theorem tells us we can analytically continue a transversal fixed point off^ uniquely
+for some neighborhood of parameters. Thus by following the periodic point determined by
+x^ (wo) we locally define x^ (w) on an open set. At a frontier point w^ of such an open set, the
+limit ofx^ (w) is still a periodic point which is hyperbolic if it has period n because Wp c H (/).
+Actually, the period can not drop neither when x= lim x^(w) has period k<n
+w-^w^
+(f^y 00 not a root of unit (if m i=- k is given there exists a neighborhood Uofxso that no point
+in U-{x} has period m) nor when (/^)'(x) is a root of unit [use the local model for the
+dynamics and the fact that WQ(=H(/)].
+Thus x^(wi) is a hyperbolic periodic point of order n which may be analytically continued
+on a neighborhood of w^. This definition agrees with the previous one by the
+uniqueness. So we can define x^(w) on all of Wo which is simply connected.
+Since hyperbolic periodic points cannot collide, as we have already remarked, we may
+apply the ^-Lemma to the set A of expanding periodic points. We obtain h(w, z) :
+Wo XKfw} -> C, analytic in w, quasi-conformal in z.
+ANNALES SCIENTIFIQUES DE L'ECOLE NORMALE SUPERIEURE
+
+
+=== PDF PAGE 13 ===
+204 R. MANE, P. SAD AND D. SULLIVAN
+Since the role ofwo and any particular w^ in W\ may be reversed it is clear the x^(w^) must
+be all of the expanding periodic points of/^. Thus for each w, h(w, z) defines a
+homeomorphism between Julia sets. By definition h(w, z) is a conjugacy between sets of
+expanding periodic points. By continuity h(w, z) is a conjugacy between Julia sets.
+This proves the first part of Theorem B.
+To prove the converse property, let WQ be a J-stable value of W. Since the number of
+periodic cycles of/^ in J(/^) stays constant for w in a small neighborhood Wo of WQ, we see
+that all periodic cycles of/^ with derivative equal to one have an analytic continuation
+through Wo. Now observe that the function WQBW -> J(/J is continuous with respect
+to the Hausdorff metric. We shall show that w e H (/). Obviously this shows that J-stable
+values of the parameter belong to H(/). If WO.^H(/), there exists w^ e Wo such that for
+some ^0, /^ has a non hyperbolic fixed point z^ that is not persistently non
+hyperbolic. This implies that we can find w^ near to w^ such that/^ has a fixed point z^
+(near to z^) such that (/y (z^) is a Siegel number and z^ is not a persistently non hyperbolic
+periodic point. Then z^ t J (/^).
+But since z^ is not persistently non hyperbolic, we can find 1^3 arbitrarily near to w^ and
+fixed points z^ of/^, arbitarily near to z^, such that | (/y^) | ^ 1. Hence z^ eJ(/^). We
+have thus proved that there exist arbitrarily small perturbations of w^ e Wo that make the
+Julia set reach points (like z^) that are bounded away from J(/^) [because z^ is arbitrarily
+near to z^, and z^ ^J(/^)]. This concludes the proof of Theorem B.
+III. - Proof of Theorem C
+First we shall show that C (/) is contained in H (/). We shall use the following standard
+Lemma:
+LEMMA III. 1. - J/Wo <= W is an open simply connected set and (p : Wo -> C is an analytic
+function such that for every we Wo the point (p(w) doesn't belong to any forward f^-orbit of a
+critical point off^, then there exist analytic functions (p^=Wo-^C, ^0, i^i^a",
+satisfying f^^ ^.(w))=(p(w) and (p^ ,(w) -^ (p ^.(w) for all n^O, 1^ i ^d\ weWo.
+The X-Lemma now yields the following property:
+LEMMA III. 2. - Suppose tha t Wo and (p sa tisfy the hypo thesis of Lemma III. 1. Moreover
+suppose that either (p(w) is not f ^-periodic for anyweWQ or that for some N^0 we have
+/^((p (w)) = (p (w) for all w e Wo. Then Wo c H (/).
+Proof. - We shall prove the Lemma only in the case when (p (w) is not/^-periodic for any
+w e Wo. The other case reduces to this just by replacing cp by cp^., where ; is chosen taking
+any u;o e Wo and; such that/^ ((p, ^ (wo)) ^ /^-' (cp (wo)).Then the same relation holds for all
+weWo because by III.l preimages of (p(^o) don't collide. Therefore (pi^(w) is not/a-
+periodic for any w e Wo. Now fix some WQ e Wo and set A = U f^ ((p (w^)). Define h :
+M^O
+WoxA-^Cby:
+M^^iO^
+46 SERIE - TOME 16 - 1983 - ?2
+
+
+=== PDF PAGE 14 ===
+ON THE DYNAMICS OF RATIONAL MAPS 205
+ifz=(p^ i(wo). Observe that since q)(^o) is not/^-periodic, and (p^/Wo)^^ i(wo)forall
+M>O, 1 ^i^'^d", the ^ and ;' satisfying z=(p^ i(wo) are unique. This shows that h^(z) is
+well defined and depends analytically in w. Moreover, every h^ is injective. In fact if
+z^z^ belong to A, then:
+z! = <Pn^ (wo), Z2 = (p^,,, (wo), where either ^ ^ ^2 o1' "i = "2 and ^i ^ ^ ^ n! ~+n^ Ae
+equality h^(z^)=h^(z^) implies:
+(p^(w)=(p^w)
+and then:
+/". (^, „ (u0) = (P (w) = ^ (cp^, ^ (w)) = /", ((p,, „ (w)).
+Suppose ^2 ^ ^i • Then:
+y^-"1 (cpW) = /"w-"1 (/". (^. ^ (^))) = ^ (^... (w)) = ^ (M;)'
+thus contradicting that(p(w) is not/^-periodic. If n^=n^ then:
+^w(zl)=^,^(^)^<P^^(^)=^«,(z2)•
+Now we can apply the X-Lemma to extend every map h^ : A -> h^ (A) to a homeomorphism
+A^ : A -> /?u,(A) that obviously satisfies:
+(*) /JU^U/wO^)),
+for every zef^ \A). But A contains J (/^) because it contains the full backward orbit of a
+point. Therefore, if we show that h ^ (J (/^)) = J (/J we shall be done. If z e J (/^), it is the
+limit of a sequence z^ of/^-periodic points different from z. Then A „, (Zy,) is a sequence of/^-
+periodic points different from h^(z) and converging to h^(z). Hence /^(z)eJ(/J thus
+proving A „ (J (/^)) c J (/J. To prove J (/J c A ^ (J (/^)) we just observe that interchanging
+the roles of w and WQ we obtain /i „;1 instead of h ^ Then h ^1 (J (/„,)) c: J (/^) and J (/J = /z ^,
+(A;1 (J(/J))<=MJ(/J) thus concluding the Proof of Lemma III. 2.
+To prove C(/)<=H(/) we start observing than any endomorphism g : C<pnot satisfying
+Axiom A, has a critical point Zg such that U g~n(zo) doesn't contain critical points. In
+n^O
+fact, if such a critical point doesn't exist, it is easy to see that every critical point must be
+periodic. Therefore g satisfies Axiom A. Now suppose that WQ e C(/). Then either/^
+satisfies Axiom A (and then WQ e H(/)) or it doesn't, in which case we can take ZQ with the
+above property. The definition ofC(/) grants the existence of a neighborhood WQ of WQ
+and an analytic function v|/ : Wo -> C such that v|/(wo)=Zo and (/^)' (\|/(w))=0 for all
+w e Wo. Also from the definition of C (/) we know that \|/ (w) doesn't belong to the forward
+/y,-orbit of any critical point because ZQ =\|/(wo) is not in the/^-forward orbit of any critical
+points. Applying Lemma III. 2 to v|/ : Wg -> C it follows that W()C=H(/).
+ANNALES SCIENTIFIQUES DE L'ECOLE NORMALE SUPERIEURE
+
+
+=== PDF PAGE 15 ===
+206 R. MANE, P. SAD AND D. SULLIVAN
+The openness of C(/) is trivial. To prove its density we shall produce a dense set
+S c: H(/) whose elements can be aproximated by elements in C(/). First define the critical
+set:
+C,={(w,z)|(/,y(z)=0}.
+If7c:WxC-^Wis the projection, let So be the set of regular values of n/Cy Then So is
+open and dense in W. Moreover given any WQ e So there exist a neighborhood Wo <= So of
+WQ and analytic functions c^: Wo -> C, 1 ^ i^k, such that { c^ (w), ..., c^(w)} is the set of
+critical points for all we Wo. Define SQ',7, n, m) as the set of values Wo^Son H(/) such
+that either/^ (c,(wo))S/^ (c/Wo)) or/", (c,(w))^(c,(u0) holds for every w in a
+neighborhood of WQ. Now we set:
+SO'^-nsay^m)
+n, m
+We claim that each S(i,j\n,m) is open and dense and that if u?oeS(i,j), it has a
+neighborhood Wo such that for all ^0, m>0 either /^(c,(w))g^(c/w)) or
+/^(^iO^) J$/S(^(^)) holds for every we Wo. It follows from the claim that the residual
+(thus dense) set S = 0 S (i, j, n, m) is contained in C (/). The Proof of the Claim requires a
+useries of Lemmas that describe how cyclic domains vary with the parameter.
+LEMMA III. 3. - Let ZQ be an attractive periodic point off^ with period m. Then there
+exist neighborhoods Vo and Wo of ZQ and WQ and analytic functions fi: Wo xVo -> C, (p :
+^o "-)> ^o suc^ t^lat:
+(^)/S(Vo)c=Vo/^a//weWo;
+W f^(w))=^w)for all weWo;
+(c) ^((p(w))=0,u;eWo;
+W (/^((PO^M^. (fW)for all weWo, zeVo.
+LEMMA III. 4. — Suppose that for some i and w>0,/^(Cf(w))=c^(w)/or every w in a
+neighborhood of some WoCSo. Then there exist neighborhoods VQ and Wo O/ZQ and ^o
+respectively and an analytic function fi: Wo x Vo -> C ^MC/? ^a^;
+(^)/S(Vo)<=Vo/^^u;eWo;
+(^) ^(^(w))=0,weWo;
+(c) fi^zY^, {f^z))for all weWo, zeVo,
+w/z^r^ n is the multiplicity ofc,(wo) as a critical point off^ .
+LEMMA III. 5. - Suppose that WQeH(f) and ZQ is a parabolic periodic point of f^ of
+period m. Then there exist neighborhoods Vo and Wo of ZQ and WQ respectively and a
+continuous map fi: Wo xVo-^C such that:
+(a) fi^(.)==fi(w, .) is continuous and injective for all weWo;
+(b) for all zeVo, the map w -> ^(z) is analytic;
+(c) fwfiw^^^wfw^for every weWo and zeVon/u,'/(Vo).
+46 SERIE - TOME 16 - 1983 - ?2 ;
+
+
+=== PDF PAGE 16 ===
+ON THE DYNAMICS OF RATIONAL MAPS 207
+LEMMA III. 6. — Suppose that WQ e H(/) and A is a Herman ring or Siegel disk satisfying
+/m (A) = A. Le t U <= A be an open /w-invarian t (i. e. /w (U) = U) disk or annulus whose closure
+is contained in A and whose boundary consists in one or two /w-invariant analytic curves. Then
+there exist a neighborhood Wo of WQ, an open disk or ring Tc=C and an analytic function
+n '. Wo xT -> C such that every n^ is a conformed representation satisfying:
+U^)=/w(^00).
+for all zeU, where 6 is the rotation number off^/A, and ^o(T)=U.
+Lemma III. 3 is an analytically parametrized version ofPoincare 's linearization Theorem,
+and its Proof follows immediately from the usual technique used to prove this
+Theorem. Lemma III. 4 is in a similar situation with respect to the analytic linearization
+Theorem of super attractive periodic points. The Proofs of Lemmas III. 5 and III. 6 will be
+presented after completing the Proof of the Claim. First observe the Lemmas above imply
+easily that each S (/, j, n, m) is open and dense. Suppose that WQ e S (i, j). The Proof of the
+Claim will be divided according to the following cases:
+(I) There exist ^0, m>0, such that/^ (c, (wo)) S/^ (^(^o))- Suppose that HQ is the
+minimum positive integer such that the equality above is satisfied for some m > 0. Then take
+as mo the minimum integer such that the equality/^ (c,(wo) ®^° (c^(wo)) holds. Since
+WQ e S (i, 7, no, mo) there exists a neighborhood Wo such that/"^ (c,(w)) ®/^° (^.(w)) for all
+w e Wo. Restricting Wo if necessary, we can grant that/^(c,(w)) ^/^(^.(w)) for all w e Wo
+and O^n^Uo, 0^m<mo. From these facts it follows that Wo satisfies the property
+required by the Claim. ?
+(II)/^ (c, (w)) ^f^ (Cj(w)) for every n^O, m>0. This case is subdivided in two
+situations:
+(II a) c,(wo) or c^Wo) (perhaps both) belong to J(/^). Then it suffices to takes as Wo the
+connected component of H (/) that contains WQ . Then the topological equivalence between
+the Julia sets off^ and f^ for any w e Wo, given by Theorem B, plus the fact that the number
+(counted with multiplicity) of critical points in J(/J is constant on connected components of
+H(/) (again a Corollary of Theorem B), implies the Claim.
+(II b) c, (wo) t J (/^), Cj (wo) i J (/wo) and they eventually belong to orbits of different cyclic
+domains of J(/^y. Then Lemmas III. l,2,3or4implythat/"J^(w)) ^/^(c/w)) for every
+n^O, m^O and all w in a neighborhood of WQ.
+(He) c,.(wo)^J(/^), Cj(wo)tJ(f^) and they eventually belong to the orbit of the same
+cyclic domain. Taking as Wo the neighborhood given by Lemma 1.1, 2, 3 or 4 (according
+to which type belongs the cyclic domain that eventually contain the orbits of c^Wo) and
+Cj(Wo)) the parametrized linearization shows that/^(c,(w)) ^/^(c/w)) for every we Wo.
+Let us prove Lemma III. 5. Suppose that/^(zo)=Zo to simplify the discussion. Set
+^(/woV^o)- ^ ^=1 and X^l for 0</<<7, we can write, after an analytic change of
+coordinates in a neighborhood of ZQ C^[2] for details):
+/,(z)=?iz+f; a,(w)z^\
+7=1
+ANNALES SCIENTIFIQUES DE L'ECOLE NORMALE SUPERIEURE
+
+
+=== PDF PAGE 17 ===
+208 R. MANE, P. SAD AND D. SULLIVAN
+where the series converge in a fixed disk B,. (zo) for every w e Wo (taking Wo sufficiently small)
+and the functions cij are analytic. Observe that we are here using that ZQ ^ a persistently
+where the series converge in a fixed disk B,. (zo) for every w e Wo (taking Wo sufficiently small)
+and the functions Oj are analytitic. Observe that we are here using that ZQ is a persistently
+non hyperbolic fixed point of/^ because WQ e H (/). This grants that the fixed point ZQ has
+an analytic continuation as fixed point z(w) o{f^ and that/^(z'(w))=^ for every w
+near WQ. We claim that if ^.(wo)=0 for l^/<m and a^(wo)^0 then ^.(w)=0 for all
+l^/<m and every w near to WQ, To prove this we shall again use the hypothesis
+WoeH(/). Write:
+/^(z)=z+ f ^.(w)z^
+j=i
+and observe that a^Wo)=Q for 1 ^j<m and ^(wo)^O. Then:
+/JU7)-^ Z ^(Oz^^z^- ( f ^(Oz^-V
+.7=1 \j=m /
+IfVoisa neighborhood of 0 where the second factor in the last term is ^0, then z=0 is the
+unique fixed point of/^ in Vo. The J-stability off^ implies that f^ has a unique fixed point
+in Vo for w near to WQ. This implies that ^.(w)==0 for every 1 ^j<m and every w in a
+neighborhood ofwo. Hence Oj(w) =0 for every w in the same neighborhood and 1 ^/<m
+completing the Proof of the Claim. Now with a linear change of coordinates we can write:
+00
+/^(z)=^z+ ^ a^z^J.
+j=m+l
+Ky [2],/u, is equivalent to the map z-^^z+z4'""1 in a neighborhood of 0 and the
+homeomorphism/^ that conjugates both maps can be chosen depending analytically in w.
+Now let us prove Lemma III. 6. To simplify the notation suppose that m=l. Let
+U\ c: U be an invariant annulus whose boundary has two analytic closed curves. We shall
+need the following Lemma, to be proved later:
+LEMMA III. 7. — There exists a neighborhood Wo ofWQ such that for every we Wo, U^
+doesn't contain eventually periodic points off^ or points ofJ(f^).
+Now take some point z^eUi and if C={einQ\n^O} define h^ : C-^C, weWo, by
+^w^1"6)= fw^i)' This family of maps depends analytically on the parameter w e Wo. To
+apply the ^-Lemma to this family we have only to check that every h ^ is injective. If/^is not
+injective, there exist n and m such that/^(zi)=/^(zi). Thenz^ is an eventually periodic
+point of/^, contradicting Lemma III. 5. Now, applying the ^-Lemma we obtain a
+conjugacy/^ between the rotation z -> e19 z in the circle C and the restriction off^ to the
+Jordan /^-invariant curve /^(C). By Lemma III. 5 this Jordan/^-invariant curve must
+belong to some fixed connected component of^/J^ Clearly it must be either a Herman
+4eSERIE - TOME 16 - 1983 - ?2
+
+
+=== PDF PAGE 18 ===
+ON THE DYNAMICS OF RATIONAL MAPS 209
+ring or a SiegeRs disk. But ho (C) is a Jordan /^-invariant curve and has points of J (/^) in
+its interior if and only if A is a Herman ring. Moreover h y,(C) contains points ofJ(/y,) in its
+interior if and only if/?o (C) does. Therefore h y, (C) belongs to a Siegel disk or Herman ring if
+and only if/?o (C) belongs to the same type of component. Moreover it is an analytic curve
+and since it belongs to a Herman ring or Siegel disk, the restriction of/y, to Ay,(C) is real
+analytically equivalent to a rotation of the circle. Say that the circle is C and let
+F : Ay,(C) -> C be this real analytic conjugacy. Then F~1 Ay, is a conjugacy between two
+rotations. Therefore the rotations must coincide. In particular Ay, is real analytic. Now
+let ^w={z\rl(w)<\z\<r2(w)} ^e tne maximal ring where an analytic extension
+Hy,:By,-»Cof/z^:C-^C exists. From the identity principle it is easy to conclude that
+fw^lw(z)=^w(elQ z) f01" every zeBy,. We claim that for values of w near to WQ the relation
+h y, (B J =) U holds. This will clearly prove Lemma III. 6. In fact we can show that h y, (B J
+is the Herman ring A (w) containing h y, (C). This follows from the fact that if Ay, (By,) <= A (w)
+then one of the boundaries of Ay, (By,) must be an/y.-invariant real analytic curve or reduce to
+a point. In the first case, the extension property ofconformal representations would show
+that By, is not maximal. We leave to the reader to verify that the second only arises when
+rl(w)=Q and then Ay, extends to an analytic map of By, u {0}.
+To prove Lemma III.7, take Wo so small that J(/y,)nU=0 for all weWo. This is
+granted by Theorem B. It remains to show that there are no eventually periodic points of/y,
+in Ui,for w in Wo.
+Take a neighborhood V of the periodic orbits of/y, not contained in J(/y,) or in A if A is a
+Siegel disk. Take V so small that Vn A = 0. Since WQ e H (/), all the /^-periodic orbits
+not in J (/y,) are contained in V for all w e Wo, if Wo is chosen small enough. Now suppose
+that for some we Wo and zeU^ there exists N>0 such that/^(z) is /^-periodic. Since
+J(/JnU=0,/^(z)^J(/,). Hence/^(z)eV.
+Moreover ifAy,:J (/yj -> J (/J is the homeomorphism given by Theorem B, the fact that V
+and Ui belong to different connected components of the complement of J(/y,), implies that
+they are also in different connected components of ^u,(J(/^))=J(/Jfor all we Wo, if Wo is
+small enough.
+But we can take Wo such that/y,(Ui)n U^ ^ 0 all w e Wo. Then/y^1 (Ui)n/^(Ui) ^ 0
+for all n, thus implying that U /y;(Ui) is connected. On the other hand the property
+n^O
+/y;(z)eV implies that U /^(Ui))nV^0 then U and V belong to the same connected
+n^O
+component of the complement of J (/y,).
+Lastly, suppose A is Siegel disk with fixed point ZQ; let Zo(w) be its local analytic
+continuation. If U^ still belongs to the Siegel disk corresponding to Zo(w), clearly
+U /u*(U) ^ZQ (w) for w close to WQ.n'^0
+ANNALES SCIENTIFIQUES DE L'ECOLE NORMALE SUPERIEURE
+
+
+=== PDF PAGE 19 ===
+210 R. MANE, P. SAD AND D. SULLIVAN
+IV. - Proof of Theorem D
+Suppose that WQ e C (/) and that A is a compact totally invariant set of/^ i. e. f^~1 (A) == A
+such that its intersection with any Siegel disk or Herman ring is compact. We shall
+construct a set Ao<=A, a simply connected open neighborhood Wo of WQ and a map
+h: Wo x AQ -> C with the following properties:
+(^Uo(Ao)=Ao;
+(b) A=U/^(Ao);
+n^O
+(c) The map w-^h^z) is analytic for every zeAo, ^ (z)=z and h^ is injective for
+allweWo;
+(^0 ^i^) belongs to the orbit of a critical point of/^ if and only if z belongs to the orbit of a
+critical point of/^ .
+(^) /JU^))=U400)for every weWo, zeAo.
+Let us show how to prove the partial stability follows from the existence of /z, Wo
+and AQ. Let Ao be Ao minus the intersection of forward f^ -orbits of critical points
+with Ao. Set A= (J ^"(Ao). Then A is dense in A. Define h^: A -. C as follows:n^O
+ifzeA choose n such that/^(z)eAo and let (p:Wo -^C be an analytic function such that
+(p(u;o)=z and:
+^(cpO^U/^)),
+for all w e Wo. Then define h ^ (z) = cp (w). The existence of (p in a neighborhood od WQ is
+granted by the implicit function theorem and the fact that (/^y(z)^0 (because orbits of
+critical points don't intersect Ao). Now let W^cWo be the maximal simply connected
+open set to which (p can be extended. Suppose that W^Wo. Then there exists a
+sequence w^eW^ converging to some weWo\Wi. Suppose that cp(wj converges
+toz^. Then/^(zJ=/^(^(z)), We claim that 0"J(z)^0. If no t,^(/^(z)) belongs
+to the orbit of a critical point of/^. By (e) this can happen only if/^ (z) has same property
+with respect to f^. But this is impossible because/^ (z) e Ao. Then (f^J (zj ^ 0 and the
+implicit function theorem gives an analytic function cp: W^ -> C, where W^ is a
+neighborhood ofw^ satisfying (p(w^)=z^ and (/«;)(p(w))=V/^(z)) for
+all w e W. Moreover, the uniqueness property of the implicit function theorem grants
+(p (w)= (p (w) for all we W^ n W^. Then this contradicts the maximality of W^ thus proving
+thatWi=Wo.
+Now that we have well defined maps h^: A -> C, that depend analytically in w, let us show
+that every h^ is injective. Suppose that z^ ^ and h^z^=h^(z^). Take ^0 such that
+/"(z,)eAo,/=l,2. Then:
+/^.a:(^))=^"(^.(^))=/u;(^J^2))=^.a:(^)).
+46 SERIE - TOME 16 - 1983 - ?2
+
+
+=== PDF PAGE 20 ===
+ON THE DYNAMICS OF RATIONAL MAPS 211
+But h^ is injective on Ao. Then f^(z^)=f^(z^). Take the minimum no>0 such that
+f^(z^)=f^(z^).. On the other hand:
+U^-K^^U/^0-^))
+for values of w near to WQ. Then we can assume that there exists a sequence w^ -> w such
+that:
+M^r^i^M^o0"^))-But:
+(*) ^(^(^o-l(^)))=^/^o(^))=^Woo(^))=/.„(^^^
+Hence /^ (/^^(zi)) and h^ C^"0"1^)) are different, converge to the same point:
+^J/^-K^))=^o-l(AJ^l))=^o-l^.(^))=^J^O-l((z2)))-
+and its images under f^ are by (*) the same. This means that:
+U^-1^))^^0-1^)) is a critical point of/,. But:
+fn-(no-l)(h^-l(z^)=h^(z^.
+By (d) this means that/^°(zi) belongs to the orbit of a critical point, contradicting the
+definition of Ao.
+To finish the Proof of Theorem D we have only to show the existence ofAo, Wo and
+h: Wo xAo -> C. To simplify the exposition suppose that every non hyperbolic periodic
+point or Herman ring is fixed. Without loss of generality we can suppose that A contains
+the attractive regions of attractive and superattractive fixed points. Let Si,..., S^ be the
+Siegel disks of/^ and Hi,.... H,. its Herman rings. Let z^,..., z, be the attracting cycles
+and superattracting fixed points of/^ and let V\,..., V^ be disjoint neighborhoods of
+z^,. . ., z, obtained by the application of Lemmas III. 3 and III. 4 to these attracting and
+superattracting fixed points. Finally, if z, +1,..., z^+ j are the parabolic periodic points, we
+take open sets Aj c= V^ + p j = 1,. .., / where V^ 4- j is obtained applying III. 5 to these points,
+such that/^ (A •) <= A • and U / ~n (A^) is the union of all the parabolic domains with z^ + j inn=0
+its boundary. The existence of these sets follows from the discussion in the
+introduction. First we shall show that if we take a neighborhood Wo of WQ contained in all
+the neighborhoods ofwo given be Lemmas III. 3 to III. 6, and setting:
+Ao-(U S,n A) u (U H,n A) u (U V,) u (U A,),
+i i i i
+then, it is possible to define the map-/?: Wo x Ao -> C with the desired properties [that Ao
+satisfies (a) and (b) is obvious]. If we forget about condition (d), the construction of h^ can
+be easily completed as follows. Suppose we want to define h^ on Si. Then look at the
+preimage ofz under the map h^ given by Lemma III. 4 and compose it with h^
+ANNALES SCIENTIFIQUES DE L'ECOLE NORMALE SUPERIEURE
+
+
+=== PDF PAGE 21 ===
+212 R. MANE, P. SAD AND D. SULLIVAN
+i.e. h^(z)=h^h^(z). This definition satisfies (c) and (e) (on S^) but (d) may fait to be
+true. To satisfy also (d) we define h^ as the composition h^g^h^, where g^ is a
+homeomorphism of the domain D of the map h^ that maps the /^-prelmage of the" set of
+points where/^-forward orbits of critical points of/^ first hit Si onto the /^-preimage of the
+set of points where/^-forward orbits of critical points of/^ first hit /^(T). Require also
+that g^ depends analytically in w and that commutes with the rotation z -> ze19, where 9 is
+the rotation number of/^/S^. Then h^h^g^ satisfies also property (d). To
+formalize the construction of the rearrangement map g^ we need the following Lemma:
+LEMMA IV. 1. - Let D be the unit disk, U a complete manifold, and (p,: U -> D, 1 ^i^k
+analytic functions without zeroes such that for all l^i<j^k either \ (p^(w)|^| cp-(w)[ for
+all we U or there exists a e R such that (pi (w) = ^ia (p^(w) for all w e U. Then given WQ e U
+there exists g: U x D -> D such that:
+(a) for all weU, ^«,(.)==^(w, .) is a homeomorphism ofD and g^ = Identity;
+(b) for every zeD ^ m^/? w -> g^(z) is analytic;
+(c) gw^i{^o))=^i(w)for allweV, l^i^k;
+W g^iQz)=eiQg^z)for all weU, zeD, 9eR.
+Proo/. - Arrange the indexes of the family {(p,} in such a way that:
+l<Pl(^o)l<J(P2(^o)l<...<|(Pn(^o)l
+and for all n <j^k, there exists 1 ^ ;(j) ^ ^ satisfying:
+l<P/Wo)|=|(p,(,)(wo)|.
+Then
+(*) 0<| (pi(w) [ <| (p2(w) | < ... <| (pn(w) | < 1
+and
+l<P/^)l=|(PfO-)(w)l,
+4e SERIE - TOME 16 - 1983 - ?2
+
+
+=== PDF PAGE 22 ===
+ON THE DYNAMICS OF RATIONAL MAPS 213
+for every weU, n<j^k. Write the functions (p, in polar coordinates as:
+(p,(w)=(r,(uO,e,(M;)).
+Let Fy,: [0, 1] be the unique monotone continuous function such that logFy, is piecewise
+linear and logF,(r,(wo))=logr,(uO for l^i^n, F,(0)=0, F,(l)==l.
+The existence of Fy, follows from (*).
+Let G^: [0, 1] -> (R be the continuous piecewise linear function satisfying:
+G.W-O,
+G.(0)=0,
+Gw(^(<))=e,(w)-9^wo).
+Now define (in polar coordinates) g^(r, 6)=(F^,(r), G^(r)+9). Clearly every g^ is a
+homeomorphisms satisfying (a), (c) and (d). To prove (b) observe that in each annulus
+{(r, 9) | r,(wo) < r < r,+1 (wo)} we can write:
+logF^(r)=[r^l(wo)-r,(wo)]~l[(r-^(wo))logr^l(w)-(r-r^l(wo))log^•(w)]
+and:
+logG,(r)=[r^l(wo)-r,(wo)]~l[(r-r,(wo))e,4.l(w)-(r-r^l(wo))e,(w)].
+Clearly, for each fixed r, these are harmonic conjugate functions. Hence {b) is satisfied in all
+these annulus. A similar computation shows that it is also satisfied in the disk r < r^ (w^) and
+in the annulus r^(wo)<r<l, so the Lemma is proved.
+Now take analytic functions (p,:Wo -^D,;=l,..., A:suchthat/^((pf(u0), l^f^/r,arethe
+points where the/^-forward orbits of critical points of/y, first hit S^. If we show that these
+functions satisfy the hypothesis of Lemma IV. 1 we are done. Restrict Wo to grant that if
+l<Pi(^o)l^l<Pj(^o)l for some 1^'</^ then | (p^(w)|^| (p,(^o)l for a11 ^eWo. Now
+suppose that |(p,(^o)l=l ^-(^o)! for some 1^'<7^. Since WoeC(/) we must have
+I ^iW I = I <Pj(^) I for every w e Wo. Hence (p,/(p^ has constant modulus. Therefore it is
+constant i.e. (^(^^"(p^w) for all weWo.
+Now we shall show how to construct h^ on a set of type A^. To simplify the notation
+set f= 1 and let V a neighborhood of z^ is defined a map h: Wo x V -> C such that h^ is a
+local conjugacy between f^ and /y,. This map is given by Lemma III. 5. We can take A^
+ANNALES SCIENTIFIQUES DE L'ECOLE NORMALE SUPERIEURE
+
+
+=== PDF PAGE 23 ===
+214 R MANE, P. SAD AND D. SULLIVAN
+such that AI //^ (Ai) is a union of sets whose boundaries are closed arcs: as in the Figure (see
+the discusion in the Introduction). Then every /^-orbit intersects U(wo) =Ai \fw,(^i) m
+at most one point, and, by the existence of a local conjugacy, every /^-orbit intersects
+U (w) = h „ (U (wo)) in at most one point. Take the images by h ^1 of the intersections of the
+forward /^-orbits of critical points of/^ with U(w).
+U(wo) /^\ U(w)
+Describe these images by analytic functions (pi (w),..., (p^(w), w e Wo. Restricting Wo if
+necessary it is easy to construct a map g^: U(wo)<p, that is a homeomorphism for ^
+all w e Wo, is the identity in the boundary of U(wo), depends analytically in w, is the identity *
+for W=WQ and maps (p,(wo) in (p,(w), l^i^m. Extend g^: U(wo)<p to ^: Ai -P using
+A, i.e.:
+g.Wz))=f^g^ if ^^0, weWo, zeU(wo).
+Now define /?^:A,^Cby/z^=^^^^;1. Clearly h ^ satisfies conditions (a)-(d). As in the
+case of Siegel disks and Herman rings the role of the rearrangement map g^ is to make h^
+satisfy condition (d).
+To construct h^ on sets of type V^, associated to an attractive fixed point, the construction
+is exactly the same replacing Lemma III. 5 by Lemma III. 3. Let h: Wo x V, -> C be the
+parameterized linearization given by III.3. Set ^=(/^y(z,). By composing fi^ with a
+convenient map we can suppose that ^ is a conjugacy between/^: V, <p and D a z -> 'kz eD,
+where D is a disk. Set U=D\^D. This set is a ring and we have analytic functions
+(pi(uQ,..., (p^(w) indicating the images by h^ of the points where forward/^,-orbits of
+critical points of/., hit V,\/JV,). Take g^: U,p as before and extend it to g^: D <D by:
+^,,(X"z)=^,(z). Finally define: h^=h~^g,h^.
+This map satisfies the required conditions. Once more observe that h~^ h^ would
+satisfy (a), (b\ (c) and (^), and that the role of g^ is to make it satisfy also (d). It remains to
+consider the case of super attracttive fixed points.
+4eSERIE - TOME 16 - 1983 - ?2
+
+
+=== PDF PAGE 24 ===
+ON THE DYNAMICS OF RATIONAL MAPS 215
+By Lemma III. 4 there is a map h: Wo x V, -> D, where D is a disk centered at 0, such that
+each h^ conjugates f^: V, <p with D: z -^ z" e D. Set U = D \ {z" | z e D }. Let
+(pi(w),..., (p^(w) be analytic functions describing the images by h^ of the points of/y,
+intersect U. Let g^: U <p be a family ofhomeomorphisms of U, that are the identity in the
+boundary of U, depending analytically in w, and satisfying gw(.^>i(wo))==n>i(w). Require
+also thatg^, acts as a linear map in circles z= Const. Such family is given by
+Lemma IV. 1. Now extend g^ to D by setting g^z)=g^Zo)nm ifzeD, ZoeU and
+z^"=z. The fact that g^ acts as a linear map on circles grants that this definition is
+independent of the root ZQ of z used. Now define h^=h~^1 g^h^ .
+To prove the converse property is sufficient to observe that a map h ^ satisfying (i) maps the
+set of critical points of/^ onto the set of critical points of/y,, preserving their orders, and
+maps the foliations of superattractive regions, Herman rings and Siegel disks of/^, onto the
+corresponding foliations for/^. Those properties immediately yield that WoeC(f).
+V. - Proof of Theorem E
+We start proving the following property:
+LEMMA V.I.— Suppose that f and g are analytic endomorphisms of C such that there exists
+a quasi-conformal homeomorphism h: C ^ satisfying gh=hfand analytic in the complement
+°f^(f)' Then, if f has no invariant line fields in J(/), h is analytic.
+Proof. - Associate to a.e. zeC the ellipse C(z)=/?(z)~1 Co(/?(z)) where Co(/z(z)) is the
+unit circle of T^ ^ C. The relation gh = hf implies:
+(*) /'(z)C(z)=C(/(z)),
+for a. e. ze C. If J(/) has measure zero, the Lemma is proved because h is in this case 1-
+quasi-conformal, hence conformal. Then we can suppose that J(/) has non zero
+measure. Let S be the set of points of zeJ(/) where C(z) is defined and is not a
+circle. Then (*) shows that /^(S^E. If ze£ define E(z) as the one dimensional
+subspace of T^C containing the major axis of C(z). Again, (*) proves that
+/'(z)E(z)=E(jf(z))forzeE. Since/has no invariant line fields in J(/), it follows that the
+measure ofS is zero. This means that C(z) is a circle for a. e. z e J(/). Outside J(/), C(z) is
+always a circle by the analyticity of h in the complement ofJ(/). Therefore C(z) is a circle
+for a. e. z e ^. This means that h is 1-quasi-conformal, therefore conformal as we wanted to
+prove.
+Now suppose that WQ e C(f) satisfies the hypothesis of Theorem E. First of all observe
+that the hypothesis WoeC(f) plus the non existence of Herman rings and non hyperbolic
+periodic points imply that J(/^ )^C because by Theorem D, every f^ with w near WQ, is
+topologically equivalent tof^ via a quasi-conformal map. By the previous Lemma this
+means that these maps are analytic, thus implying that every /„,, with w near WQ, is
+analytically equivalent to /^ contradicting the hypothesis that the family is reduced. Then
+ANNALES SCIENTIFIQUES DE L'ECOLE NORMALE SUPERIEURE
+
+
+=== PDF PAGE 25 ===
+216 R. MANE, P. SAD AND D. SULLIVAN
+J(/wo)=C, and since there are no Herman rings or Siegel disks, there exist attracting cycles
+and superattracting cycles whose attractive sets cover the complement ofJ(/^). Recall
+^Sy tf/^MS/u"^) for some ^0, m^O. Let r^(w) be the number of (§ ^equivalence
+classes of critical points not contained in J (/J and not eventually periodic. The next step of
+the proof is the construction of an analytic function ^F: W^ -> M of constant rank, where
+Wi c=W is open and M is a complex manifold with dimension r^(wo), such that for every
+value ce^(Wi) and every connected component S of ^F"1^), all the endomorphisms f^
+with w e S are analytically conjugate. If such a function exists, then the fact that the family
+of endomorphisms that we are considering is reduced implies that every S must consist of at
+most one point. Hence dimW^r^Wo). But on the other hand dimW^r(wo) by
+hypothesis. Then y"i(wo)=r(wo). This means that there are no critical points in J(f^ ),
+hence, as observed in the introduction, f^ satisfies Axiom A.
+Therefore the proof of Theorem E is now reduced to construct the function ^F. In fact we
+shall construct this function satisfying the a priori weaker property that all the
+endomorphisms f^ with M; in a set S as above, are topologically equivalent via a conjugacy
+that is quasi-conformal and analytic outside J(/J. But then Lemma V.I shows that the
+conjugacy is in fact analytic. To simplify the construction of ^F, we shall suppose that every
+attractive periodic point of/^ is fixed. Then the same property holds for every w in Wo,
+if Wo is small enough. Let (p^: Wo -> C, ;'= 1,..., k be analytic functions describing the
+position of the attractive and superattractive fixed points (pi(w),..., cp^(w) of/,p,
+weWo. Suppose that (pi(wo) is superattractive for ;'=1,..., k^ and that(/y, y((pf(wo))7^0
+for k^ <i^k. Define ^: Wo -> C, k^<i^k, by ^(w)=(/.J((p,(w)). Let V^,..., V^ be
+neighborhoods of (pi (wo),..., (pfc(wo) given by Lemma III .4. Assume that Wo is so small
+that the maps h^ given by this Lemma are defined for we Wo. If 1 ^i^k^, let n^ be the
+number of (i§ ^equivalence classes of critical points of/^ whose orbits intersect V, and don't
+coincide eventually with cp^ (wo). For each i^i^k^ take an analytic function ^ : Wo -> C"1
+such that each coordinate is the image under /^ofa point in the forward/^-orbit of a critical
+point of/y, and moreover different coordinates correspond to different (^-equivalence
+classes of critical points. For k^ <i^k, define n^ as before and let M^ be the quotient of
+(C - { 0 })^ by the action of C - {0 } given by (z^,..., z^) =(^1,..., Xz^). Define
+^i'- Wo -> Mi as an analytic function that to every we Wo associates the element of M^
+determined by the images under h^ of the forward /^-orbits of critical points. Finally,
+define:
+x? : Wo -^ d> x . . . x C^ x M^+i x . . . x Mfc x C x . . . x C,
+by ^(w) =CPi (w),.... ^(w), T^+i (w),..., ^(w)). The manifold at right has dimension:
+^i+. . .+^+(^+i-l)+.. .+(^-l)+(^-^i)=ri(wo),
+as we wished. Now restrict ^F to W^czWo where it has maximal rank. Let S be a
+connected component of ^P"1 (c) where c e ^(W^). Fix some w^ e S. Let A be the union
+of the attractive sets of the attractive fixed points of/y, minus the orbits of the eventually fixed
+points. In a neighborhood W^ of w^ there exist, for every weW^, an analytic conjugacy
+46 SERIE - TOME 16 - 1983 - ?2
+
+
+=== PDF PAGE 26 ===
+ON THE DYNAMICS OF RATIONAL MAPS 217
+Ay,: A -> /^(A) between/^/A and/^//^(A), depending analytically in w, constructed by the
+same method used in Section IV to prove Theorem D i. e., starting with local conjugacies
+nearby the attractive fixed points that map/^-orbits of critical points of/^ onto/^-orbits of
+critical points of/^, and then pulling back these conjugacies byf^ and/^, in order to
+fill A. The new fact we have now is that w varies in S. Then the property
+lF(w)=c=XF(wo) makes it possible to take these local conjugacies to be analytic because
+now that there are only attractive and superattractive fixed points to consider and
+the rearrangement functions g^ can be taken as linear maps depending in w. Then
+h ^: A -> h y, (A) is analytic. The extension of h ^ to C (granted as before by the ^- Lemma) is
+(also by the ^-Lemma) quasi-conformal and analytic in A. Since A is C —J(/^) minus a
+discrete set of points, it follows that h^ is analytic in A—J(^,) as we wished.
+REFERENCES
+[1] R. BOWEN, Hausdorff Dimension of Quasi Circles {Publications Mathematiques I.H.E.S., Vol. 50,1979, pp. 11-
+25).
+[2] C. CAMACHO, On the Local Structure ofConformal Mappings andHolomorphic Vector Fields in C2 (Asterisque,
+Vol. 59-60, 1978, pp. 83-94).
+[3] M. FATOU, Sur les equations f one tionnelles (Bull. Soc. Math. Fr., Vol. 47, 1919, pp. 161-271, Vol. 48, 1920,
+pp. 33-94 and pp. 208-314).
+[4] S. LATTES, Sur Piteration des substitutions rationnelles et lesfonctions de Poincare(C.R. Acad. Sc., Paris, T. 166,
+1918, pp. 26-28).
+[5] M. V. JACOBSON, On the Question of the Classification of Rational Maps ofRiemann Sphere(Uspehi Mat. Nauk.,
+Vol. 28, 1973, pp. 247-248).
+[6] G. JULIA, Sur Uiteration desfonctions rationnelles (Journal de Math. Pure et Appliquee, Vol. 8, 1918, pp. 47-
+245).
+[7] D. RUELLE, Analytic Repellors, Ergodic Theory and Dynamical Systems (to appear).
+[8] C. L. SIEGEL, Iteration of Analytic Functions (Annals of Mathematics, Vol. 43, 1942, pp. 607-612).
+[9] D. SULLIVAN, Quasi Conformal Homeomorphisms and Dynamics II (to appear).
+[10] D. SULLIVAN, Conformal Dynamical Systems [Proc. of the International Symposium on Dynamical Systems, Rio
+de Janeiro, 1981 (to appear)].
+[11] D. SULLIVAN, Density at Infinity (Publications Mathematiques I.H.E.S., Vol. 50, 1979, pp. 419-450).
+[12] D. SULLIVAN, Discrete Conformal Groups and Measurable Dynamics (Bull. of the A.M.S., Vol. 6, 1982).
+[13] D. SULLIVAN, Quasi Conformal Homeomorphisms and Dynamics III (to appear).
+[14] D. SULLIVAN and W. THURSTON, Extending Holomorphic Motions (to appear).
+(Manuscrit re^u Ie 27 mat 1982,
+revise Ie 22 mars 1983).
+R. MANE, P. SAD and D. SULLIVAN,
+I.M.PA.,
+Estrada Dona Castorina 110,
+22460 Rio de Janeiro, RJ
+Brasil.
+ANNALES SCIENTIFIQUES DE L'ECOLE NORMALE SUPERIEURE

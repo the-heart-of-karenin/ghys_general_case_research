@@ -1,0 +1,1964 @@
+=== PDF PAGE 1 ===
+GLOBAL RIGIDITY OF SOME ABELIAN-BY-CYCLIC GROUP ACTIONS ON T2
+SEBASTIAN HURTADO AND JINXIN XUE
+ABSTRACT . For groups of diffeomorphisms of T2 containing an Anosov diffeomorphism, we give
+a complete classiﬁcation for polycyclic Abelian-by-Cyclic group actions on T2 up to both topologi-
+cal conjugacy and smooth conjugacy under mild assumptions. Along the way, we also prove a Tits
+alternative type theorem for some groups of diffeomorphisms of T2.
+1. I NTRODUCTION
+In this article, we study the action of certain abelian-by-cyclic groups (ABC, for simplicity) onT2.
+Our groups are given as follows. Let B∈ SLn(Z) be an invertible matrix with integer coefﬁcients
+and determinant one, and let ΓB = Z ⋉B Zn be the semi-direct product, where Z acts on Zn via the
+linear standard action ofB on Zn.
+1.1. The topological classiﬁcation result. We consider the case wheren = 2, that is B∈ SL2(Z)
+and ΓB = Z ⋉B Z2. We deﬁne anafﬁne actionof ΓB on T2 to be a group homomorphismΦ : ΓB→
+Aﬀ(T2), where Aﬀ(T2) is the group of orientation preserving afﬁne transformations onT2, and
+Φ(B) =A∈ SL2(Z), Φ(ei) :x↦→x +ρi mod Z2, i= 1, 2, (1)
+wheree1 = (1, 0),e2 = (0, 1)∈ Z2 andρi∈ R2, i= 1, 2.
+In this case, we letρ = (ρ1,ρ 2) to be the matrix havingρ1 andρ2 as columns and call it the rotation
+matrix of Φ. The group relation Φ(B)Φ(v) = Φ(Bv)Φ(B),∀v∈ Z2, is equivalent to
+Aρ =ρB, mod Z2×2, (2)
+in other words, for the equation to deﬁne an action, there must exists a matrix C∈ Z2×2 such that
+Aρ =ρB +C. As discussed in Section 5.1 (Corollary 5.1), these actions can only be faithful in the
+case where|trA| =|trB|. Afﬁne actions will be classiﬁed in Section 4.2.
+One of our main results is the following global rigidity result for actions of ΓB on T2 by diffeo-
+morphisms. We denote by Diﬀr(T2) the group ofCr diffeomorphisms on T2 and by Homeo(T2) the
+group of homeomorphisms on T2.
+Theorem 1.1. Suppose that Φ : ΓB→ Diﬀr(T2), r> 2, is such that:
+(1) B∈ SL2(Z) is an Anosov linear map (i.e. B has its eigenvalues with norm different than
+one);
+(2) Φ(B) is an Anosov diffeomorphism of T2 homotopic toA∈ SL2(Z).
+Then Φ is topologically conjugate to an afﬁne action of ΓB up to ﬁnite index. More concretely,
+there exist a ﬁnite index subgroupΓ′⊂ ΓB andh∈ Homeo(T2) such thathΦ(γ)h−1, for allγ∈ Γ′,
+coincides with an afﬁne action of the form(1.1).
+1
+arXiv:1909.10112v2  [math.DS]  5 Dec 2020
+
+=== PDF PAGE 2 ===
+2 SEBASTIAN HURTADO AND JINXIN XUE
+Remark 1.2. When|trA|≥| trB|, the differentiabilityr >2 can be relaxed tor≥ 1. The assump-
+tionr >2 is only needed in the proof of the|trA|<|trB| case where we apply the Herman-Yoccoz
+theory for circle maps.
+This result gives a complete classiﬁcation of actions of ABC groups containing an Anosov element
+up to topological conjugacy and up to ﬁnite covers. It strengthens Theorem 1.5 of [39] by removing
+the slow oscillation condition therein.
+Remark 1.3. We do not know how to remove the assumption of the existence of an Anosov element in
+Theorem 1.1 since the proof relies strongly on the conjugacy linearizing an Anosov diffeomorphism
+provided by Franks’ theorem, but it seems plausible the result still holds without this assumption in
+the smooth category. In the topological category, it is possible to construct faithful actions of ΓB by
+homeomorphisms in any surface (even by homeomorphisms homotopic to the identity) as the group
+ΓB is left-orderable ifB has inﬁnite order and therefore the groupΓB admits an action on Homeo(R).
+1.2. Smooth conjugacy. We next show how to improve the regularity of the conjugacyh in Theorem
+1.1. The main strategy is to use the ergodic effect of the Z2 part of the action to promote an SRB
+measure to a measure of maximal entropy.
+In the next theorem, we get complete classiﬁcation of faithful volume-preserving actions up to
+smooth conjugacy.
+Theorem 1.4. Let Φ : ΓB→ Diﬀr(T2), r≥ 2, be a faithful action by volume-preserving diffeomor-
+phisms satisfying:
+(1) B∈ SL2(Z) is an Anosov linear map;
+(2) Φ(B) is an Anosov diffeomorphism.
+Thenh andh−1 in Theorem 1.1 areCr−ε for allε> 0.
+We remark that the volume-preservation assumption in the above Theorem 1.4 might be unneces-
+sary and we believe our methods might lead to a proof. Also, the volume-preservation assumption
+can be replaced by the assumption of preserving a smooth measure.
+In the proof of Theorem 1.4 we can reduce to the case wheretrA =trB, since the rotation matrix
+ρ has to be rational (hence is nonfaithful) if trA̸=trB, as we will see in the classiﬁcation of afﬁne
+actions given in Proposition 4.1 in Section 4.2. We will use the following notation.
+Notation: For a diagonalizable matrix D∈ SL2(Z), we let uD to be a choice of an eigenvector
+associated to the larger in norm eigenvalueλD. We deﬁneD−t be the transpose ofD−1. For vectors
+v,w ∈ R2, we let v⊗w denote the matrix product of v treated as a column vector and w treated as
+a row vector. More formally, this matrix represents the endomorphism of R2 deﬁned by the tensor
+product of the element v of R2 and the element wt of the dual (R2)∗ (deﬁned by the standard inner
+product).
+We will see in Proposition 4.1 that a rotation matrix ρ satisfying the equation Aρ = ρB +C for
+someC∈ Z2×2 andtrA =trB,|trA|> 2, has the form
+ρ =ρC +c1uA⊗uBt +c2uA−1⊗uB−t, (c1,c 2)∈ R2, (3)
+whereρC∈ Q2×2 is a particular solution toAρ =ρB +C.
+
+=== PDF PAGE 3 ===
+GLOBAL RIGIDITY OF ABC GROUP ACTIONS 3
+An afﬁne action of the form (1.1) is faithful if and only ifA is of inﬁnite order and{ρp, p∈ Z2}
+is dense on T2 (c.f. Proposition 1.2 of [39]). Therefore in terms of the representation (3), the rotation
+matrices of faithful afﬁne actions correspond to a full measure set of(c1,c 2)∈ R2. In general the full
+measure set cannot beR2. For example, we considerA =B thenρ =ρC+a1id+a2A, (a1,a 2)∈ R2
+and the afﬁne action is not faithful if we take a1,a 2∈ Q. Given ρ, it can be checked directly if the
+afﬁne action is faithful or not.
+Next, replacing the above full measure set by another implicit full measure set, we obtain the
+following theorem without assuming the volume preservation assumption.
+Theorem 1.5. There exists a full measure subsetC of R2 such that if Φ : ΓB→ Diﬀr(T2), r≥ 2, is
+an action satisfying:
+(1) B∈ SL2(Z) is an Anosov linear map;
+(2) Φ(B) is an Anosov diffeomorphism;
+(3) the rotation matrix (3) has (c1,c 2)∈C .
+Thenh andh−1 in Theorem 1.1 areCr−ε for allε> 0.
+For special rotation vectors translating along the stable or unstable leaves of A, we can combine
+the Herman-Yoccoz theory for circle maps and the Ledrappier-Young entropy formula to obtain the
+following theorem.
+Theorem 1.6. Suppose that Φ : ΓB→ Diﬀr(T2), r> 2, is such that:
+(1) B∈ SL2(Z) is an Anosov linear map;
+(2) Φ(B) is a volume-preserving Anosov diffeomorphism of T2 homotopic toA∈ SL2(Z) with
+trA =trB;
+(3) The matrix ρ = (ρ1,ρ 2) in (1.1) has the form ρ = cuA⊗uBt orρ = cuA−1⊗uB−t, c∈
+R\{ 0}.
+Thenh andh−1 in Theorem 1.1 areCr−ε for allε> 0.
+The proofs of Theorem 1.4 and 1.5 rely crucially on the two dimensionality. However, the proof
+of Theorem 1.6 admits a partial higher dimensional generalization as follows.
+LetB∈ SLn(Z)n≥ 2 be an Anosov linear map with simple real spectrum. We extend the group
+ΓB to a group ΓB,n = Z ⋉B (Zn)n, where each Zn factor form a copy of ΓB = Z ⋉B Zn with Z and
+the Zn factors commute. An afﬁne action Φ of ΓB,n on torus Tn is given by Φ(B) = A∈ SLn(Z)
+and thei-th Zn factor acts by translation with rotation matrix ρi∈ Rn×n such thatAρi = ρiB mod
+Zn×n holds for alli = 1,...,n .
+Theorem 1.7. Let Φ : ΓB,n→ Diﬀr(Tn), r>n, be an action satisfying:
+(1) B∈ SLn(Z) is an Anosov linear map with simple real spectrumλ1,...,λ n, andA∈ SLn(Z)
+has the same spectrum;
+(2) Φ(B) is volume-preserving AnosovC1 close toA;
+(3) There is a homeomorphism h conjugating the action to an afﬁne action satisfying ρi =
+ciuA,i⊗ uBt,i, where ci ̸= 0 and uA,i (resp. uBt,i) is the normalized eigenvector of A
+(resp. Bt) corresponding to eigenvalue λi,i = 1,...,n. Moreover, the Anosov part of the
+afﬁne action isA.
+
+=== PDF PAGE 4 ===
+4 SEBASTIAN HURTADO AND JINXIN XUE
+Thenh andh−1 areC1,ν for someν >0.
+We have the following remarks improving the result slightly.
+Remark 1.8. (1) The ci corresponding to one of the largest in norm or smallest in norm eigen-
+value is allowed to be zero by the volume preserving condition.
+(2) In the case ofn = 3, when Φ(B) is sufﬁciently smooth (Cr forr large enough), the conjugacy
+h can beCr−ϵ for allϵ> 0 applying [18].
+In recent years, there has been an emerging interest in understanding actions of non-abelian groups
+on manifolds by homeomorphisms or diffeomorphisms. Among the simplest interesting examples are
+solvable groups. For example, for the Bamslag-Solitar group
+BS(p,q ) =⟨a,b|abpa−1 =bq⟩,
+there are results by Farb and Franks [12], by Burslem and Wilkinson [8], who classiﬁed analytic
+BS(1,n ) action on S1, which was later improved in [19, 7]. And there are results about Baumslag
+solitar group actions on surfaces by [3, 4] and [20, 21].
+Actions of ABC groups have been studied by many authors. In [1, 2], Asaoka studied the local
+rigidity of some non polycyclic (| detB| > 1) ABC group actions on Tn and Sn generalizing [8].
+In [39], Wilkinson and the second author studied the local rigidity for polycyclic (| detB| = 1)
+ABC group actions on Tn using a KAM method and also obtained a number of semi-global rigidity
+results by combining the Herman-Yoccoz theory for circle maps and the geometry of the invariant
+foliations. In [33], McCarthy proved certain C1 local rigidity of the trivial action of ABC groups on
+compact manifolds, which is generalized to actions by semi products in [9] by Bonatti-Kim-Koberda-
+Triestino. In [7], Bonatti-Monteverde-Navas-Rivas obtained a number of rigidity results for the C1
+action of ABC groups on interval with some hyperbolicity. We also note that the local rigidity result
+of [38] was proved in the Lie group setting which can be considered as a continuous analogue of our
+discrete ABC group action. In [29], it is proved a local rigidity result for a solvable group ( Z ⋉λ R)
+acting on Tn.
+1.3. Free subgroups of diffeomorphism groups. One novel discovery in the proof of Theorem 1.1
+is a version of Tits alternative for subgroups of the diffeomorphism group Diﬀ1(T2) containing an
+Anosov element.
+The Tits alternative is a well-known theorem stating that a linear group (i.e. a subgroup of the
+group of invertible matrices GLn(R)) either contains a free subgroup on two generators or it is vir-
+tually solvable. This result has far-reaching applications in various ﬁelds in mathematics such as
+group theory, geometry and dynamics, etc. Non-linear transformation groups such as the groups of
+homeomorphisms or diffeomorphisms of a closed connected manifold M (denoted by Homeo (M)
+and Diﬀ(M) respectively) are conjectured to behave in many ways similar to linear groups (See [16])
+and therefore one can ask whether the Tits Alternative still holds for such groups.
+Unfortunately, the Tits alternative does not hold for these groups, since Homeo (S1) and Diﬀ(S1)
+contain subgroups isomorphic to Thompson’s groupF , which is known to not contain free subgroups
+and neither be solvable (c.f. [35, 23]). Nonetheless, up to what extent such an alternative fails for
+Homeo(M) and Diﬀ(M) is not clear. As an example, a well known theorem of Margulis (Conjec-
+tured by Ghys) for the group of homeomorphisms of the circle S1 states the following:
+
+=== PDF PAGE 5 ===
+GLOBAL RIGIDITY OF ABC GROUP ACTIONS 5
+Theorem 1.9. (Margulis) A groupΓ⊆ Homeo(S1) either contains a free subgroup on two generators
+or preserves a probability measure on S1.
+In the case when the dimension ofM is greater than one, very few similar results are known due to
+the complexity of elements in Homeo(M), but there have been some recent results in this direction.
+For example, Franks-Handel [13] have shown that groups of real-analytic area-preserving diffeomor-
+phisms of S2 which contain certain entropy zero diffeomorphisms satisfy the Tits alternative.
+Our discovery is a Tits alternative for Diﬀ1(M) in the presence of an Anosov element. To ﬁx the
+notations, for an Anosov diffeomorphismf onM, we denote byWs
+f andWu
+f its stable and unstable
+foliations respectively.
+Theorem 1.10. Let Γ be a subgroup ofDiﬀ1(T2) containing an Anosov elementf∈ Diﬀ1(T2), then
+there is a dichotomy:
+(1) either there is an index 2 subgroup of Γ which preserves eitherWs
+f orWu
+f ;
+(2) or Γ contains a free subgroup F2.
+The above result relies crucially on the two dimensionality. We next state two results as partial
+generalizations of Theorem 1.10 to higher dimensions. We denote further by Es
+f andEu
+f the stable
+and unstable distributions of an Anosov diffeomorphism f respectively. The next result is the main
+technical ingredient in the proof of Theorem 1.10.
+Theorem 1.11. Let Γ be a subgroup of Diﬀ1(M) satisfying the following:
+(1) There exists f ∈ Γ which is a transitive Anosov diffeomorphism such that dimWs
+f =
+dimWu
+f .
+(2) There existsh∈ Γ andx∈M such that each of the subspacesDxh(Es
+f(x)) andDxh(Eu
+f (x))
+intersect transversely bothEs
+f(h(x)) andEu
+f (h(x)).
+Then, there exists an integerN such that{fN,hf Nh−1} generate a free group F2.
+Relaxing assumption (2) in Theorem 1.11 we have the following result.
+Theorem 1.12. Let Γ be a subgroup in Diﬀ1(M) satisfying
+(1) there is a transitive Anosov element f∈ Γ with stable and unstable foliations Ws
+f andWu
+f
+respectively and dimWs
+f≤ dimWu
+f ;
+(2) there exist an elementh∈ Γ and a pointx∈M, such thatDxhEu
+f (x) intersects transversally
+Eu
+f (h(x)).
+Then there exists an integerN such that{fN,hf Nh−1} generate a nontrivial free semi-group.
+The paper is organized as follows: In Section 2, we ﬁrst give an outline and then proceed to prove
+Theorem 1.11 and Theorem 1.12. The main observation in the proof is a ping-pong argument. In
+Section 3, we prove Theorem 1.10. The next four sections are devoted to the proof of Theorem 1.1.
+The proof is divided into three cases depending on the comparison of |λA| and|λB| respectively. In
+Section 6 we prove Theorem 1.1 in the case of|λA|>|λB|. In Section 7, we prove Theorem 1.1 in
+the case of|λA| =|λB|. In Section 8 we prove Theorem 1.1 in the case of |λA| <|λB|. In Section
+9, we prove Theorem 1.6 and 1.7. In Section 10, we prove Theorem 1.4. In Section 11, we prove
+Theorem 1.5.
+
+=== PDF PAGE 6 ===
+6 SEBASTIAN HURTADO AND JINXIN XUE
+2. P ING -PONG : P ROOFS OF THEOREM 1.11 AND THEOREM 1.12
+In this section, we prove Theorem 1.11 and Theorem 1.12. We ﬁrst give an outline of the proof
+in Section 2.1. Afterwards, we give the formal proof. We will start by recalling some notations and
+results from hyperbolic dynamics in Section 2.2. In Section 2.3, we give the ping-pong argument. In
+the remaining two subsections, we prove Theorem 1.11 and Theorem 1.12.
+2.1. Outline of the proof of Theorem 1.11. We now proceed to give an outline of the proof of
+Theorem 1.11.
+If we consider the two Anosov diffeomorphism f1 := f andf2 := hfh−1, both the stable folia-
+tions and unstable foliations off1 andf2 are transverse in some open neighborhood of by assumption
+2) in Theorem 1.11. The existence of a free group follows from a ping-pong argument using the fol-
+lowing elementary observation: Suppose B is a small open ball in M, ifN >0 is large enough, the
+ballfN
+1 (B) looks similar to a small neighborhood of a long piece of a leaf of the unstable foliation
+Wu
+f1, as the foliationWu
+f1 is transverse to both foliationsWs
+f2 andWu
+f2, by the inclination lemma 2.3
+the setfN
+2 fN
+1 (B) (orf−N
+2 fN
+1 (B)) must contain an open set that looks like an open neighborhood of
+a leaf ofWu
+f2 (orWs
+f2) near every point inM and so we conclude that the wordsfN
+2 fN
+1 andf−N
+2 fN
+1
+are non-trivial elements in Γ, see Figure 1. In general, we will show that if N is large enough, for
+any non-trivial wordw in the elementsfN
+1 andfN
+2 the setw(B) will contain a subset that looks like
+the stable or unstable foliations of f1 orf2 and this will guarantee that w(B)̸= B and so the group
+generated by{fN
+1 ,f N
+2} must be necessarily free.
+2.2. Preparations from hyperbolic dynamics. We recall some deﬁnitions and well known facts
+about hyperbolic dynamics and prepare notations for later use. Let p be a hyperbolic ﬁxed point of a
+diffeomorphismf ofMm.
+Deﬁnition 2.1. (1) By Theorem 6.2.3 in [26], there exists a neighborhood O of p and a coor-
+dinate chart φ : O→ Rm such that φ(Wu
+f (p)∩O)⊂ Rk⊕{ 0} and φ(Ws
+f (p)∩O)⊂
+{0}⊕ Rm−k wherem = dim(M) and k = dim(Wu
+f (p)), this construction is known as
+“adapted coordinates” for the dynamics off nearp.
+(2) In those coordinates there are obvious projections from Rm into Rk or Rm−k that we denote
+byπ1,π 2 respectively.
+(3) In the decomposition Rk⊕ Rm−k, we say that Rk is horizontal and Rm−k is vertical.
+Deﬁnition 2.2. (1) Let Dk⊂ Rk be thek-dimensional open unit disk, a C1 embeddedk-diskD
+inM is deﬁned as aC1 embeddingf : Dk→M.
+(2) Consider the k-Grassmanian Grk(M) of M, which is a ﬁber bundle over M whose ﬁber
+over pointp ofM consist of all the k−dimensional subspaces of the tangent space Tp(M),
+we choose an arbitrary metric on Grk(M) that we denote by d. A C1 mapf : Dk→ M
+induces a natural mapGk(f) : Dk→ Grk(M) viaGk(f)(p) = (f(p),Dpf(TpDk)).
+(3) We say that two disks f1 : Dk→ M andf2 : Dk→ M are C1ε-close if for everyp∈ Dk
+we haved(Gk(f1(p)),Gk(f2(p)))<ε .
+Our main technical tool is the following theorem known as the Inclination Lemma orλ-Lemma.
+
+=== PDF PAGE 7 ===
+GLOBAL RIGIDITY OF ABC GROUP ACTIONS 7
+Lemma 2.3 (Inclination Lemma, Lemma 6.2.23 [26]) . Considering C1 adapted coordinates on a
+neighborhoodO of a hyperbolic ﬁxed pointp of a diffeomorphismf :M→M. Given ε,K,ν > 0,
+there exists N such that if D is a C1 embedded k-disk containing q ∈ Ws
+f∩O with all tangent
+spaces in horizontalK-cones and such thatπ2(D) contains aν-ball around 0∈ Rk, then there exists
+D1⊂D embedded disk such that for anyn≥N, the setπ1(fn(D1)) contains a unit ball in Rk and
+Tzfn(D1) is contained in a horizontalε-cone for everyz∈fn(D1).
+Remark 2.4. See ([26], Sec. 6.2) for the deﬁnition of cones. In [26] the theorem is stated slightly
+different but the equivalence is easy. See also Lemma 5.7.1. in [10].
+We have the following corollary of the inclination lemma.
+Corollary 2.5. Suppose thatD1 is aC1 embeddedk-disk intersectingWs
+f (p) transversely andD2⊂
+Wu
+f (p) is an embedded k-disk, then there exists ε0 > 0 (just depending on D1) such for any 0 <
+ε < ε0 there existsN > 0 such that if D is a k-disk which is C1 ε0-close to D1, then D intersects
+transverselyWs
+f (p), and for alln≥N,fn(D) contains aC1 embedded diskD′ which isC1ε-close
+toD2.
+For a ﬁxed Riemannian metric onM,x∈M,δ > 0, letWs
+f (p,δ ) andWu
+f (p,δ ) be the local stable
+and unstable manifolds at distance δ, which are the subsets of M consists of points whose forward
+orbit (or backward orbit) stay at distance less than δ to the orbit of p. If p is a hyperbolic periodic
+point andδ is small enough, thenWs
+f (p,δ ) andWu
+f (p,δ ) are embedded manifolds.
+2.3. The Ping-Pong argument. The main idea in the proof of Theorem 1.11 is enclosed in the
+following proposition:
+Proposition 2.6 (Ping Pong argument) . Suppose f1,f 2 ∈ Diﬀ(M) have hyperbolic ﬁxed points
+p1,p 2∈ M andδ > 0 is such that the local stable and unstable disks Ws
+f1(p1,δ ), Wu
+f1(p1,δ ) are
+smooth and both disks intersect transversely and non-trivially both Ws
+f2(p2,δ ) andWu
+f2(p2,δ ), then
+there existsN >0 such that for alln≥N the group generated by{fn
+1,f n
+2} is free.
+Proof. LetO1, O2 be adapted coordinates for f1 andf2 with corresponding system of coordinates
+φi :Oi→ Rn, we can assume thatO1 andO2 are disjoint sets and for simplicity assume thatφi(Oi)
+contains the ballBn
+4 (0)⊂ Rn of radius 4 for eachi = 1, 2. Let
+Ci :=φ−1
+i
+(
+{2}× Bk
+1(0)∪Bn−k
+1 (0)×{ 2}
+)
+and letC =C1∪C2. Therefore C is the union of four “small” disks, each one parallel to one of the
+stable or unstable manifolds off1 atp1 orf2 atp2. See ﬁgure 1.
+As an application of Corollary 2.5, there exists ε1 > 0, such that for any 0 < ε < ε1, there is
+N1 > 0 such that if aC1 smooth diskD isε1-close toWs
+f1(p1,δ ) (orWu
+f1(p1,δ )), thenD intersects
+transversely Ws
+f2(p2,δ ) and Wu
+f2(p2,δ ) and if n≥ N1, then fn
+2 (D) contains a disk which is C1
+ε-close toWu
+f2(p2,δ ) andf−n
+2 (D) contains a disk which isC1ε-close toWs
+f2(p2,δ ).
+The same argument implies there exists ε2 > 0, such that for any 0< ε < ε2 there isN2 > 0 so
+that if a C1 smooth diskD isε2-close toWs
+f2(p2,δ ) (orWu
+f2(p2,δ )), then D intersects transversely
+
+=== PDF PAGE 8 ===
+8 SEBASTIAN HURTADO AND JINXIN XUE
+FIGURE 1. In the right, the set C consists of the four small segments colored in
+green, the yellow dashed lines correspond to disks contained in fn
+2 (C) and
+f−n
+1 fn
+2 (C).
+bothWs
+f1(p1,δ ) andWu
+f1(p1,δ ) and if n≥ N2, thenfn
+1 (D) contains a disk which is C1 ε-close to
+Wu
+f1(p1,δ ) and alsof−n
+1 (D)contains a disk which isC1ε-close toWs
+f1(p1,δ ).
+Also, from the inclination Lemma, for any ε >0 there existsN3 > 0 so that if n≥ N3, then for
+everyi = 1, 2,fn
+i (C) contains an embedded disk ε-close toWu
+fi(p,δ ) and thatf−n
+i (C) contains an
+embedded diskε-close toWs
+fi(p,δ ).
+Let ε = min{ε1,ε 2} and let N = max{N1,N 2,N 3}. By deﬁnition of ε1,ε 2,N 1,N 2,N 3 one
+obtains by an easy induction in the word length the following:
+Claim 2.7. Ifn≥N, for any non trivial wordw in{fn
+1,f n
+2,f−n
+1 ,f−n
+2 } we have:
+(1) If w starts by fn
+1 (fn
+2 respectively), the set w(C) contains an embedded disk D that is C1
+ε-close toWu
+f1(p1,ε ) (Wu
+f2(p2,ε ) respectively).
+(2) if w starts byf−n
+1 (f−n
+2 respectively), the setw(C) contains an embedded diskD that isC1
+ε-close toWs
+f1(p1,ε ) (Ws
+f2(p2,ε ) respectively).
+As a consequence of Claim 2.7, for any non-trivial word w(C) contains an embedded disk C1
+ε-close to one among Wu
+fi(pi) orWs
+fi(pi) for somei and in particular choosing ε small enough, we
+can guarantee thatw(C)̸=C. In that case, the group generated by{fn
+1,f n
+2} is free.
+□
+2.4. Proof of Theorem 1.11. We now ﬁnish the proof of Theorem 1.11:
+Proof of Theorem 1.11. As the condition ofDxh(Es
+f(x)) andDxh(Eu
+f (x)) intersecting transversely
+both Es
+f(h(x)) and Eu
+f (h(x)) is an open condition on x∈ M and periodic points of f are dense
+(consequence of the Anosov Closing lemma andf being transitive) we can assume thatx is a periodic
+point off.
+
+=== PDF PAGE 9 ===
+GLOBAL RIGIDITY OF ABC GROUP ACTIONS 9
+By choosing δ small enough we can assume that Ws
+f (x,δ ) andWu
+f (x,δ ) are embedded disjoint
+disks such that each of the disksh(Ws
+f (x,δ )) andh(Wu
+f (x,δ )) are both transverse toWs
+f (h(x)) and
+Wu
+f (h(x)).
+Letp2 := h(x), as the periodic points of f are dense, we can assume that there exists a periodic
+point p1 of f near the point p2 such that the local stable and unstable manifolds Ws
+f (p1,δ ) and
+Wu
+f (p1,δ ) are embedded manifolds that intersect transverselyh(Ws
+f (x,δ )) andh(Wu
+f (x,δ )) (we are
+using thatWs andWu vary continuously). By taking p1 close enough to h(x), we can assume that
+the intersection of any of the disksh(Ws
+f (x,δ )) andh(Wu
+f (x,δ )) with any of the disksWs
+f (p1,δ ) (or
+Wu
+f (p1,δ )) is a transverse intersection at exactly one point. See ﬁgure 1.
+Let f1 := fN and f2 := hfNh−1 for some N > 0. Observe that both f1 and f2 are Anosov
+diffeomorphisms, by choosing N multiple of both the periods of p1 andp2, we can assume that the
+pointsp1,p2 are hyperbolic ﬁxed points offN
+1 andfN
+2 . We can therefore apply proposition 2.6 and
+we are done.
+□
+2.5. Proof of Theorem 1.12. Similarly, we ﬁnish the proof of Theorem 1.12.
+Proof of Theorem 1.12. Similar to the proof of Theorem 1.11, by the assumption, we can ﬁndN1 and
+p1,p 2 such that the following hold:
+(1) f1 =fN1, f2 =hfN1h−1 havep1 andp2 as hyperbolic ﬁxed points respectively;
+(2) Wu
+f1(p1) intersectsWu
+f2(p2) transversally.
+We can now repeat the proof of Proposition 2.6 for words generated by {fN2
+1 ,f N2
+2 } for someN2
+large to show that{fN2
+1 ,f N2
+2 } generates a semigroup. Indeed, we pick a diskDi of dimension dimWu
+f
+nearpi transverse toWs
+fi(pi) and disjoint fromWu
+fi(pi),i = 1, 2. After the application of any word
+starting withfN2
+1 , the image ofD1 would be very close to either of Wu
+fi(pi), so is transverse to both
+Wu
+f2−i(p2−i) andWu
+f2−i(p2−i), i = 1, 2. In particular, the image can never by D1. Similarly for a
+word starting withfN2
+2 , we look at the image ofD2 instead. This completes the proof. □
+3. P ROOF OF THEOREM 1.10
+In this section we give a proof of Theorem 1.10. Observe that by Theorem 1.11 to obtain a free
+subgroup of Γ, we only need to show the existence of an elementh∈ Γ and a pointx∈ T2 such that
+the subspaces Dxh(Es
+f(x)) and Dxh(Eu
+f (x)) intersect transversely both Es
+f(h(x)) and Eu
+f (h(x)).
+This will be shown in Proposition 3.2.
+Proposition 3.1. Supposef is an Anosov diffeomorphism in a subgroupΓ⊂ Diﬀ1(T2) and suppose
+there existh1,h 2∈ Γ andx1,x 2∈ T2 such that:
+(1) Dx1h1(Es
+f(x1)) intersect transversely bothEs
+f(h1(x1)) andEu
+f (h1(x1)).
+(2) Dx2h2(Eu
+f (x2)) intersect transversely bothEs
+f(h2(x2)) andEu
+f (h2(x2)).
+Then, there exists h∈ Γ andx∈ T2 suchDxh(Es
+f(x)) andDxh(Eu
+f (x)) intersect transversely
+bothEs
+f(h(x)) andEu
+f (h(x)).
+
+=== PDF PAGE 10 ===
+10 SEBASTIAN HURTADO AND JINXIN XUE
+Proof. IfDx1h1(Eu
+f (x1)) intersect transversely both Es
+f(h1(x1)) andEu
+f (h1(x1)) then we can take
+h =h1 andx =x1 and we are done. Otherwise we have either of the following two cases holds:
+(a) Dx1h1(Eu
+f (x1)) =Es
+f(h1(x1));
+(b) Dx1h1(Eu
+f (x1)) =Eu
+f (h1(x1)).
+Suppose the former is true, i.e. we haveDx1h1(Eu
+f (x1)) =Es
+f(h1(x1)).
+We may further assume thatDx′h1(Eu
+f (x′)) = Es
+f(h1(x′)) for allx′ sufﬁciently close tox1. The
+assumption (1) still holds with x′ in place of x1 by the continuity. We also have Dx′h1(Eu
+f (x′))̸=
+Eu
+f (h1(x′)) since we have assumedDx1h1(Eu
+f (x1))̸=Eu
+f (h1(x1)). IfDx′h1(Eu
+f (x′))̸=Es
+f(h1(x′))
+for some pointx′ close tox1, we then complete the proof by choosingh =h1 andx =x′.
+By the transitivity off, we choosex′ sufﬁciently close tox1 such that
+• h1(x′) lies in a dense backward orbit off;
+• (1) holds withx′ in place ofx1;
+• Dx′h1(Eu
+f (x′)) =Es
+f(h1(x′)).
+For anyN we haveDx′f−Nh1(Eu
+f (x′)) = Es
+f(f−Nh1(x′)). Next, by assumption (1) and taking
+N sufﬁciently large we have thatDx′f−Nh1(Es
+f(x′)) is as close as we want toEs
+f(f−Nh1(x′)).
+By the ﬁrst bullet point and the assumption (1), we can chooseN such thatf−Nh1(x′) andx1 are
+close enough to guarantee that the image underDh1 of bothDx′f−Nh1(Eu
+f (x′)) andDx′f−Nh1(Es
+f(x′))
+are transverse toEs(h1f−Nh1x′) andEu(h1f−Nh1x′). The proposition is then proved by choosing
+h =h1f−Nh1 andx =x′.
+The argument for the case (b) is similar. We have Dx′fNh1(Eu
+f (x′)) = Eu
+f (fNh1(x′)) for all
+N, and by (1) in the assumption Dx′fNh1(Es
+f(x′)) is arbitrarily close to Eu
+f (fNh1(x′)). Hence we
+complete the proof by takingh =h2fNh1 and apply (2) in the assumption. □
+The following proposition ﬁnishes the proof of Theorem 1.10.
+Proposition 3.2. Suppose f ∈ Γ is an Anosov diffeomorphism of T2 and let Ws and Wu be the
+stable and unstable foliations off. One of the following holds:
+(1) There exists an index 2-subgroup Γ0⊂ Γ preserving one amongWs orWu.
+(2) There exists h∈ Γ andx∈ T2 such that each of Dxh(Es
+f(x)) andDxh(Eu
+f (x)) intersect
+transversely bothEs
+f(h(x)) andEu
+f (h(x)).
+Proof. If Condition (2) does not hold, then one of the conditions in Proposition 3.1 does not hold,
+suppose the ﬁrst condition does not hold, that is, suppose that for everyh∈ Γ and everyx∈M we
+have thatDxh(Es
+f(x)) does not intersect transversely one amongEs
+f(h(x)) andEu
+f (h(x)) , as T2 is
+2-dimensional then we must have Dxh(Es
+f(x)) coincides with Es
+f(h(x)) orEu
+f (h(x)) and as T2 is
+connected, this imply thath(Ws) =Ws orh(Ws) =Wu, and this implies that the subgroup
+Γ0 ={h∈ Γ such thath(Ws) =Ws}
+is a subgroup of index 2 in Γ preservingWs.
+□
+
+=== PDF PAGE 11 ===
+GLOBAL RIGIDITY OF ABC GROUP ACTIONS 11
+4. G LOBAL RIGIDITY OF ANOSOV ABC ACTIONS ON T2: P ROOF OUTLINE
+4.1. Outline of the global rigidity. In this section we give an outline of the proof of Theorem 1.1.
+We will proceed to carry out this outline in the next sections. Recall that for a matrix B∈ SL2(Z),
+we let ΓB := Z ⋉B Z2 be the corresponding Polycyclic Abelian-by-cyclic (ABC) group, which is a
+semi-direct product where Z acts in Z2 byB and for convenience we denote the generator ofZ in ΓB
+byB as well.
+Recall that we are concerned with understanding homomorphisms Φ : Γ B → Diﬀ(T2) such
+that Φ(B) is an Anosov diffeomorphism. By Franks Theorem [11] there exists a homeomorphism
+h∈ Homeo(T2) such that the conjugateA :=hΦ(B)h−1 is an Anosov linear map, we denote byλA
+andλB the larger in modulus eigenvalue ofA andB respectively.
+The proof of Theorem 1.1 has several steps:
+Step 1: By using our ping pong result (Theorem 1.10) and using the fact that ΓB does not contain
+any free subgroup we can reduce to the case whereΦ(ΓB) preserves the unstable (or stable) foliation
+of Φ(B).
+Step 2: We must show that for all v∈ Z2⊂ ΓB,hΦ(v)h−1 of Homeo(T2) is a translation. We
+ﬁrst use the fact that PSL2(Z) is isomorphic to Z2∗Z3 to show that eachΦ(v) is homotopic to identity
+(Corollary 5.1). Next, we show that for any v∈ Z2, the Misiurewicz-Ziemian rotation set of Φ(v)
+consists of a single point (Proposition 5.5). This is carried out as follows. Step 1 allow us to show that
+forv∈ Z2 the rotation set of a lift ofΦ(v) consists of either a single rotation vector or is a non-trivial
+segment parallel to the unstable eigenvector of A and so we have to rule out this later possibility.
+While understanding the rotation set of elements of Φ(Z2), we were lead into understanding the
+joint rotation set (See Deﬁnition 5.9) which is the set of possible average rotation vectors forΦ(Z2)-
+invariant measures, this set has a natural invariance byA andB, and by using the hyperbolicity ofA
+andB and basic facts about the joint rotation set, we will conclude that the actual rotation set ofΦ(v)
+is a singleton for all v∈ Z2⊂ ΓB. The proof that the rotation set is a singleton is much easier in
+the case where|λA|̸ =|λB|, the case where|λA| =|λB| require another argument which is given in
+Section 7.
+After showing that rotation sets consists of singletons, the proof is divided into two cases:
+Step 3: The case where |λA|≥| λB|: In the case where |λA| >|λB| , using that rotation set
+consists of singletons and conjugating by high powers ofB one shows that the grouphΦ(Z2)h−1 is a
+group of translations by a elementary geometric argument, ﬁnishing the proof in this case (Proposition
+6.2). The case where|λA| =|λB| is more difﬁcult and requires further understanding of the rotation
+set and a modiﬁcation of Proposition 6.2.
+Step 4: The case where|λA|<|λB|: This case is much more difﬁcult, we proceed by contradiction
+and assume such an action exists. By using the classiﬁcation of the afﬁne actions of ΓB (Section
+4.2), we can show that the set of rotation vectors is ﬁnite and passing to a ﬁnite index subgroup
+we assume that for all v∈ Z2, Φ(v) preserves set-wise each of the leaves of the unstable foliation
+of Φ(A), obtaining actions of Z2 in copies of R (the leaves of the foliation). We then proceed to
+study such actions and show that away from ﬁxed points, such actions are conjugated to an action by
+translations in R that satisﬁes a speciﬁc algebraic (diophantine) condition on the possible translations.
+This allows to use one-dimensional Herman-Yoccoz theory to embed the action of Z2 into a ﬂow gt
+that preserves the leaves of the unstable foliation. The vector ﬁeld X generating such ﬂow must
+
+=== PDF PAGE 12 ===
+12 SEBASTIAN HURTADO AND JINXIN XUE
+satisfyD(Φ(B))X =λBX by the group relations of ΓB and then ifµ is the SRB measure preserved
+byf, we must have thathµ(f) = log(|λB|), but as the topological entropyhtop(Φ(B)) = log(|λA|)
+being Φ(B) conjugate toA we must have that log|λA|≥ log|λB|, contradicting the assumption that
+|λA|<|λB|.
+We ﬁnish this section by discussing the classiﬁcation of afﬁne actions of our groupΓB.
+4.2. Classiﬁcation of afﬁne actions. Let us consider afﬁne actions Φ : ΓB→ Aff(T2) of the form
+Φ(B) = A∈ SL2(Z), and Φ(ei) : x↦→ x +ρi∈ R2 wheree1 = (1, 0) ande2 = (0, 1),i = 0, 1.
+We denote byρ the matrix (ρ1,ρ 2) formed byρ1 andρ2 as columns. For this afﬁne action, the group
+relation can be written as (equation (2))
+Aρ =ρB mod Z2×2.
+The main result of this section is the following.
+Proposition 4.1. LetA andB be two matrices in SL2(Z) satisfying (2). Then
+(1) If tr(A) ̸= tr(B), then all solutions ρ of the equation (2) have rational coefﬁcients and
+therefore the action Φ is not faithful.
+(2) If tr(A) =tr(B), and|tr(A)|> 2, then
+(a) the null space of the map X↦→AX−XB is spanned byuA⊗uBt anduA−1⊗uB−t.
+So the general solution to (2) has the form
+ρ =ρC +c1uA⊗uBt +c2uA−1⊗uB−t, c1,c 2∈ R
+whereρC∈ Q2×2 is a particular solution toAρ−ρB =C, C∈ Z2×2.
+(b) Suppose in addition that A =B, then the null space ofX↦→AX−XA is spanned by
+{id,A}. So the general solution to (2) has the form
+ρ =ρC +c1id +c2A, c1,c 2∈ R.
+We use the following deﬁnition of Kronecker product.
+Deﬁnition 4.2. LetA′ = (aij) be am×n matrix andB′ be ap×q matrix. We deﬁne the Kronecker
+productA′⊙B′ as the mp×nq matrix written in block form whose (i,j )-th block is aijB′ where
+1≤i≤m, 1≤j≤n.
+The Kronecker product has the following properties:
+Proposition 4.3. (1) If A′,B′ are both n×n with eigenvalues{λi} and{µi}, i = 1,...,n ,
+respectively, then the eigenvalues ofA′⊙B′ are{λiµj},i,j = 1,...,n.
+(2) (A′⊙B′)(C′⊙D′) =A′C′⊙B′D′.
+(3) (A′⊙B′)−1 =A′−1⊙B′−1, if bothA′ andB′ are invertible.
+(4) ( [24], Chapter 4.4) an n× n matrix X solves A′X + XB′ = C′ for A′,B′,C′ n× n
+matrices, if and only if the Rn2
+vector ⃗X formed by listing columns ofX solves the equation
+(idn⊙A′ +B′⊙ idn)⃗X = ⃗C.
+Proof of Proposition 4.1. Now forA,B ∈ SL2(Z), there are two cases depending on whether tr(A)
+andtr(B) are equal or not.
+Supposetr(A)̸= tr(B). In this case, the set of eigenvalues of A has no intersection with that of
+B, so that id2⊙A−B⊙ id2 is nondegenerate. The equationAρ =ρB has only trivial solution and
+
+=== PDF PAGE 13 ===
+GLOBAL RIGIDITY OF ABC GROUP ACTIONS 13
+the equationAρ =ρB +C whereC∈ Z2×2 has only rational solution. In this case, the afﬁne action
+generated by (1.1) cannot be faithful.
+Supposetr(A) = tr(B). Nontrivial afﬁne actions exist already in the case of C = 0. Indeed, in
+this case, we have
+(id2⊙A−B⊙ id2) = (id2⊙A)(id4−B⊙A−1).
+The matrix (id2⊙A) is nondegenerate and the matrix (id4−B⊙A−1) is degenerate sinceB⊙A−1
+has two eigenvalues 1. So the equationAρ =ρB has nontrivial solution.
+Note that in general we may have B and A with tr(A) = tr(B) without being conjugate in
+SL2(Z). For example one can take B =
+(
+1 2
+1 3
+)
+andA =
+(
+2 1
+3 2
+)
+, but we must point out that
+for a matrix A inSL2(Z), the number of conjugacy classes of matrices B withtr(A) = tr(B) is
+ﬁnite and it is related to the class number of the number ﬁeld deﬁned by the eigenvalues ofA.
+We next prove item (2) in the statement. By assumption,A andB have same eigenvalues{λ, 1/λ}
+withλ̸= 1/λ. In this case, the null space ofX↦→AX−XB has dimension 2 by Theorem 4.4.14 of
+[24]. It is clear that bothuA⊗uBt anduA−1⊗uB−t are in the null space and are linearly independent,
+so we obtain item (2.a).
+For item (2.b), again the null space has dimension 2 and it is clear that id andA are in the null
+space and are linearly independent (see also Corollary 4.4.15 of [24]). This gives item (2.b).
+To show thatρC can be chosen to be rational, we apply Gauss elimination to the equation (id⊙
+A−B⊙ id)⃗ ρ= ⃗C. This completes the proof. □
+5. B ASIC REDUCTIONS AND ROTATION SET PROPERTIES
+In this section we begin the proof of Theorem 1.1 by ﬁrst making some reductions and then proceed
+to study the rotation set of the translation subgroup of ΓB. This carries out Step 1 and Step 2 of the
+outline discussed in Section 4.
+5.1. The Z2 action has trivial homotopy type. To start with the proof of Theorem 1.1, we have
+from Theorem 1.10, the following corollary:
+Proposition 5.1. Suppose that B ∈ SL2(Z) is Anosov and Φ : Γ B → Diﬀ(T2) is such that the
+diffeomorphism f := Φ(B) is an Anosov diffeomorphism of T2. Then there exist a ﬁnite index
+subgroup Γ′⊂ ΓB isomorphic to ΓB andg∈ Homeo(T2) such that the conjugate action Φ′ : Γ′→
+Homeo(T2) given by Φ′(γ) :=gΦ(γ)g−1 satisfy:
+(1) A =gΦ(B)g−1∈ SL2(Z).
+(2) Each Φ′(γ), γ∈ Γ′, preserves the unstable foliationF ofA (up to replacingA withA−1).
+(3) For each γ∈ Z2∩ Γ′, Φ′(γ) is homotopic to the identity.
+Proof. By Franks Theorem [11], there is a homeomorphism g∈ T2 homotopic to the identity such
+that the conjugategΦ(B)g−1 is an Anosov linear map of T2 homotopic to the action Φ(B)∗ of Φ(B)
+onH1(T2, Z). We denote byA = Φ(B)∗∈ SL2(Z).
+By Theorem 1.10, there exists a ﬁnite index subgroup ofΓ1⊂ ΓB that preserves one of the stable
+or unstable foliations of A denoted byF, moreover we can assume that such subgroup Γ1 contains
+B, because Φ(B) preservesF.
+
+=== PDF PAGE 14 ===
+14 SEBASTIAN HURTADO AND JINXIN XUE
+Now observe that Φ gives a homomorphism:
+Ψ : ΓB→ MCG(T2)
+where MCG(T2) is the mapping class group of T2. It is well known that MCG(T2) is isomorphic
+to SL2(Z) and PSL2(Z) is isomorphic to the free product Z2∗ Z3 which is virtually free. As ΓB is
+a solvable group and Ψ(B) has inﬁnite order (becauseΦ(B) is Anosov), by using thatB normalizes
+Z2 and MCG(T2) virtually free, it follows easily that Ψ(Z2) must be ﬁnite and so we can ﬁnd a
+subgroup of the form Z ⋉BkZ2 for somek̸= 0 such that Ψ(kZ2) is trivial, we call this group Γ2.
+The group Γ3 = Γ1∩Γ2 satisfy both (1) and (2) and contains a subgroupΓ′ of the form Z ⋉Bk′Z2
+for somek′̸= 0, which is isomorphic to ΓB. □
+5.2. Rotation sets. We now discuss rotation sets for toral homeomorphisms and some of its proper-
+ties.
+Deﬁnition 5.2. For a homeomorphismf : Tn→ Tn homotopic to the identity of Tn = Rn/Zn and
+a lift ˜f : Rn→ Rn off the Misiurewicz-Ziemian rotation set rot( ˜f) is deﬁned to be the subset ofRn
+consisting of limits of sequences of the form
+{ ˜fni(xi)−xi
+ni
+}
+wherexi∈ Rn andni→∞ .
+The rotation set is an important dynamical invariant and it is known to be compact for arbitrary n
+and convex in the case n = 2, see [34]. Observe also that the rotation set depends on the lift ˜f but
+it is deﬁned forf up to translation by an element of Zn. Observe also that if rot( ˜f) consists of only
+one point, we have that for everyx,y∈ Rn:
+lim
+n→∞
+( ˜fn(x)−x)− ( ˜fn(y)−y)
+n = 0 (4)
+and moreover such limit converges uniformly with respect tox andy in Rn.
+Deﬁnition 5.3. For anf-invariant probability measureµ on Tn and a lift ˜f : Rn→ Rn, one can
+also deﬁne theaverage rotation vector rotµ( ˜f) by
+rotµ( ˜f) =
+∫
+Tn
+˜f(˜x)− ˜xdµ.
+When the measure µ is ergodic, Birkhoff’s theorem implies that rotµ( ˜f)∈ rot( ˜f) and so in the
+case when n = 2 , the convexity of rot( ˜f), implies that for any invariant probability measure µ,
+rotµ( ˜f)∈ rot( ˜f). We will use the following fact repeatedly:
+Lemma 5.4. Letf : T2→ T2 be a homeomorphism homotopic to the identity and ˜f : R2→ R2 be
+a lift off. Let r be an extreme point of the convex set rot( ˜f). Then there exists an invariant ergodic
+probability measureµ on T2 such that rotµ( ˜f) =r.
+5.3. Trivializing the rotation sets. The main result of this section is the following.
+Proposition 5.5. SupposeB∈ SL2(Z) is Anosov and Φ : ΓB→ Homeo(T2) is such that:
+
+=== PDF PAGE 15 ===
+GLOBAL RIGIDITY OF ABC GROUP ACTIONS 15
+(1) A = Φ(B) is an Anosov linear map.
+(2) Let e1,e 2 two generators of Z2⊂ ΓB. Assume Φ(e1) and Φ(e2) are homotopic to the identity
+and preserve the unstable foliationF ofA.
+Then iftr(A)̸=tr(B), the rotation set of Φ(ei), i= 1, 2, consists of a single point.
+We proceed to prove this proposition. We begin by showing that the rotation set ofΦ(ei), i= 1, 2,
+is either a segment of a line or a point. Let u∈ R2 be the expanding eigenvector of A, we have the
+following:
+Proposition 5.6. For eachv∈ Z2, the rotation set of a liftfv of Φ(v) is a segment of the form
+S =
+{
+αv +tu, wheret∈ [l−
+v,l +
+v ]
+}
+whereαv∈ R2 andl−
+v,l +
+v ∈ R.
+Proof. Recall thatA is a linear anosov map the unstable foliationF is linear. Using thatfv preserves
+the unstable foliation F of A, we have that fv(ℓ0) = ℓ0 +αv for some αv ∈ R2 and some leaf
+ℓ0∈F . Therefore, we havefv(ℓ0 +w) =ℓ0 +w +αv for everyw∈ Z2 becausefv commutes with
+Z2 translations. As for the (irrational) foliation F the leavesℓ0 +w wherew∈ Z2 are dense in R2
+we conclude thatfv(ℓ) =ℓ +αv for everyℓ∈F .
+Therefore for everyx∈ R2 we have thatfn
+v (x)−x−nαv must lie in the line ℓ′ ={tu,t∈ R}.
+This together with the convexity of rot(fv) imply Proposition 5.6 easily. □
+Moreover we have the following:
+Proposition 5.7. The following dichotomy holds:
+(1) For every v∈ Z2\{ 0}, the rotation set of a liftfv of Φ(v) is a non-trivial segment.
+(2) There is a ﬁnite index subgroupL of Z2 such that for everyv∈L\{ 0}, the rotation set of a
+liftfv of Φ(v) is a point.
+Proof. Assume that for some w∈ Z2\{ 0}, the rotation set of a lift fw of Φ(w) is a point. We will
+show in that case that there is a ﬁnite index subgroup L <Z2 such that for every v∈ L\{ 0}, the
+rotation set of a liftfv of Φ(v) is a point.
+Observe that for everyv∈ Z2 and any integern, the rotation set of a lift offv of Φ(v) consists of
+a single point if and only if the rotation set offnv consists of a single point.
+As Φ(B(w)) is conjugate to Φ(w) byA using the group relation in ΓB, the rotation set of a lift of
+Φ(B(w)) must also consist of a single point. Observe that as B is Anosov, the vectorsw andB(w)
+generate a groupL of ﬁnite index inZ2, and so it is enough to show that the rotation set of Φ(v) for
+anyv∈L\{ 0} consists of a single point.
+Therefore, let v = nw +mB(w), then each of the rotation sets of fnw and f−mB(w) consists
+of a point, so does the rotation set of fnw+mB(w), because if it was a segment, then we obtain a
+contradiction to the following:
+Proposition 5.8. Letv,w ∈ Z2, if the rotation set of a lift fv of Φ(v) consists of a single point and
+the rotation set of fw is a non-trivial segment, then the rotation set of a lift fv+w of Φ(v +w) is a
+non-trivial segment.
+
+=== PDF PAGE 16 ===
+16 SEBASTIAN HURTADO AND JINXIN XUE
+Proof. Let rot(fv) ={α}, and observe thatfvfw is a lift of Φ(v +w). By the deﬁnition of rotation
+set, if β1 andβ2 are two different rotation vectors for fw, we have two sequences {xi},{yi} in T2
+and two divergent sequences{ni} and{mi} of positive integers such that
+limfwni(xi)−xi
+ni
+=β1 and limfwmi(yi)−yi
+mi
+=β2.
+Moreover we have that for everyx∈ R2, fvn(x)−x
+n =α and this convergence must be uniform for
+allx∈ R2. It follows that
+lim (fvfw)ni(xi)−xi
+ni
+= limfni
+v fni
+w (xi)−fni
+w (xi)
+ni
++ limfwni(xi)−xi
+ni
+=α +β1,
+where the ﬁrst limit holds because of the uniform convergence and similarly lim (fvfw)mi(yi)−yi
+mi
+=
+α +β2 and therefore the rotation set of fvfw has two different vectors and by Proposition 5.6 must
+be a non-trivial segment.
+□
+□
+We deﬁne the following subset of the set of 2× 2 real matricesM2×2(R) whose study will be
+crucial to ﬁnish the proof of proposition 5.5.
+Deﬁnition 5.9. For a ﬁxed choice of lifts fe1 and fe2, the set of joint rotation numbers Srot ⊂
+M2×2(R) is deﬁned by:
+Srot :=
+{(
+rotµ(fe1), rotµ(fe2)
+)
+∈M 2×2(R)
+⏐⏐⏐⏐µ is Z2-invariant
+}
+.
+Observe thatSrot must be contained in the bounded squarerot(fe1)×rot(fe2)⊂M 2×2(R) since a
+choice of liftsfe1 andfe2 is ﬁxed. Recall that for a subsetX ofM2×2(R),X−X :={x−y|x,y∈
+X}.
+Proposition 5.5 follows easily from the following key proposition.
+Proposition 5.10. The setSrot satisﬁes the following properties:
+(1) Srot is a convex and compact set.
+(2) For every n∈ Z: ifR1,R 2∈Srot, thenAn(R1−R2)B−n∈Srot−Srot.
+(3) One of the following holds:
+(a) The set rot(fe1)× rot(fe2) consists of a single point.
+(b)|λA| =|λB| andSrot is one of the diagonals of rot(fe1)× rot(fe2).
+We postpone the proof of Proposition 5.10 to the next subsection.
+5.4. Description of the rotation sets. In this section, we give the proof of Proposition 5.10.
+Lemma 5.11. The action of Z2 on T2 lifts to an action on the universal covering R2 of T2. In other
+words, for everyv∈ Z2, we can choose a liftfv : R2→ R2 of Φ(v), so that we have
+fv+w =fvfw, for allv,w ∈ Z2. (5)
+
+=== PDF PAGE 17 ===
+GLOBAL RIGIDITY OF ABC GROUP ACTIONS 17
+Proof. Ifv,w ∈ Z2 andfv,fw are lifts of Φ(v), Φ(w) respectively, we have thatfvfwf−1
+v f−1
+w is a lift
+of the identity so it must be a translation by some k∈ Z2, the action of Z2 lifts if and only if k = 0
+for allv,w .
+From the proof of Proposition 5.6, we havefv(ℓ) =ℓ +αv for allℓ∈F andαv∈ R2 depending
+only onv∈ Z2, so we havef−1
+v (ℓ) = ℓ−αv. This implies that fvfwf−1
+v f−1
+w (ℓ) = ℓ for allℓ∈F .
+In particular,fvfwf−1
+v f−1
+w preserves the leafℓ(0)∈F passing through 0. However, as the foliation
+is irrationalℓ(0)∩ Z2 ={0}, which implies thatk = 0. □
+In the following discussion we ﬁx such choice of lifts.
+For a Z2-invariant probability measureµ on T2 and eachi = 1, 2, we consider the vectorrotµ(fei)
+as a column vector and so we construct a 2× 2 matrix inM2×2(R) given by:(
+rotµ(fe1), rotµ(fe2)
+)
+.
+Observe also that asA−1Φ(ei)A = Φ(B−1(ei)), thenA−1feiA is also a lift of Φ(B−1(ei)) and so
+there existswi∈ Z2 such that
+fei◦A =Twi◦A◦fB−1(ei). (6)
+One can easily check that for anyC∈ SL2(Z), the linearity equation (5) implies that:
+(rotµfCe1, rotµfCe2) = (rotµfe1, rotµfe2)C. (7)
+We have the following:
+Proposition 5.12. Ifµ is a Z2-invariant probability measure onT2, thenA∗µ is Z2-invariant and we
+have the following:(
+rotA∗µ(fe1), rotA∗µ(fe2)
+)
+=A
+(
+rotµ(fe1), rotµ(fe2)
+)
+B−1 +
+(
+w1,w 2
+)
+.
+wherew1,w 2∈ Z2 are as in equation (6).
+Proof. We ﬁrst show thatA∗µ is Z2-invariant. Since µ is Z2 invariant, we have Φ(v)∗µ = µ for all
+v∈ Z2. So we get
+Φ(v)∗(A∗µ)(E) =A∗µ(Φ(v)−1(E)) =µ(A−1Φ(v)−1(E)) =µ(Φ(B−1v)A−1(E)) =µ(A−1(E))
+for all Borel setE and allv∈ Z2. This gives the Z2-invariance ofA∗µ.
+We next prove the identity. By deﬁnition we have for everyi = 1, 2:
+rotA∗µ(fe1) =
+∫
+T2
+fei( ˜Ax)− ˜Axdµ
+=
+∫
+T2
+fei(A˜x)−A˜xdµ
+=
+∫
+T2
+Twi◦AfB−1(ei)(˜x)−A(˜x)dµ
+=
+∫
+T2
+A
+(
+fB−1(ei)(˜x)− ˜x)
+)
++widµ
+=A
+∫
+T2
+(fB−1(ei)(˜x)− ˜x)dµ +wi
+=A(rotµfB−1ei) +wi.
+
+=== PDF PAGE 18 ===
+18 SEBASTIAN HURTADO AND JINXIN XUE
+And so to ﬁnish the proof, we must only show that:
+(rotµfB−1e1, rotµfB−1e2) = (rotµfe1, rotµfe2)B−1,
+which follows immediately from equation (7).
+□
+Proof of Proposition 5.10. Item (1) follows from the convexity and compactness ofZ2 invariant prob-
+ability measures and the fact that the maprotµ(.) depends linearly inµ. Item (2) follows from Propo-
+sition 5.12. We remark that the integer vectors (w1,w 2) in Proposition 5.12 might depend onn if we
+iterateAn andBn. However, they disappear after taking differenceSrot−Srot.
+We consider item (3). Suppose thatr∈ R2 is an extreme point ofrot(fe1), we will show that there
+exist (r,s )∈Srot for somes∈ R2. Letµ1 a probability measure which isΦ(e1)-invariant on T2 such
+that rotµ(fe1) =r, if we consider the sequence of measures
+νn := 1
+n
+n∑
+i=1
+Φ(e2)i
+∗(µ1)
+and ν a limit measure of a subsequence of νn, then ν is Z2-invariant and we have rotν(fe1) = r.
+Moreover, if we denotes = rotν(fe2), then we have that (r,s )∈Srot by deﬁnition.
+This implies that Srot has at least a point in two opposite sides of the square rot(fe1)× rot(fe2),
+arguing similarly for rot(fe2) one can show there are points in the other pair of opposite sides of
+the square rot(fe1)× rot(fe2). In conclusion the set Srot contains points in each side of the square
+rot(fe1)× rot(fe2). From the convexity of Srot it follows that either Srot is a one of the diagonals
+of rot(fe1)× rot(fe2) or it has non-empty interior and then item (3) follows from the following
+Proposition 5.13.
+□
+Proposition 5.13. The setSrot has empty interior. Moreover if|λA|̸ =|λB|, the setrot(fe1)×rot(fe2)
+consists of a single point.
+Proof. Let’s show that Srot has empty interior. Assume by contradiction that Srot has non empty
+interior. As we know that for every i = 1, 2, points in the set rot(fei) are of the form αei +tu,
+wheret∈ [l−
+ei,l +
+ei]. If Srot has non-empty interior we conclude there exists ε >0 such that for any
+t1,t 2∈ [−ε,ε ] we have that (t1u,t 2u)∈Srot−Srot and so by item (2) in Proposition 5.10 we have
+An(t1u,t 2u)B−n∈Srot−Srot. We will show that this cannot be true forn large enough.
+Diagonalizing the matrix B, we have that B = Qdiag(λB,λ−1
+B )Q−1 forQ = (v1,v 2) wherev1
+andv2 are the eigenvectors ofB. We then have:
+An(t1u,t 2u)B−n = (t1An(u),t 2An(u))B−n
+=λn
+A(t1u,t 2u)B−n
+=λn
+A(t1u,t 2u)Qdiag(λ−n
+B ,λn
+B)Q−1
+= (t1u,t 2u)(v1,v 2)diag((λAλ−1
+B )n, (λAλB)n)Q−1
+= (t1u,t 2u)((λAλ−1
+B )nv1, (λAλB)nv2)Q−1.
+
+=== PDF PAGE 19 ===
+GLOBAL RIGIDITY OF ABC GROUP ACTIONS 19
+One can show easily that the vector (t1u,t 2u)((λAλB)nv2) diverges for an appropriate choice of
+t1,t 2∈ [−ε,ε ] and so An(t1u,t 2u)B−n cannot lie in the compact set Srot−Srot for everyn >0.
+ThereforeSrot must have empty interior.
+In the case where|λA|̸ =|λB|. As we showed thatSrot must be one of the diagonals of rot(fe1)×
+rot(fe2) we must only show thatSrot does not consists of a single point. Arguing by contradiction as
+before ifSrot was not a single point, then (t1u,t 2u)∈Srot−Srot for somet1,t 2∈ R where at least
+one of them is different than zero. From the calculations above we have:
+An(t1u,t 2u)B−n = (t1u,t 2u)((λAλ−1
+B )nv1, (λAλB)nv2)Q−1,
+which implies in particular that (t1u,t 2u)((λAλB)nv2) is bounded and so by takingn large we have
+(t1,t 2) is orthogonal tov2. We also have that (t1u,t 2u)((λAλ−1
+B )nv1) is bounded and so takingn or
+−n large depending whether|λ1|>|λ2| or not, we have that (t1,t 2) is also orthogonal to v1 and so
+t1 =t2 = 0, a contradiction.
+□
+6. C ASE|λA|>|λB|.
+In this section, we prove Theorem 1.1 in the case where |λA| >|λB|, more concretely, we show
+the following proposition under the assumption that|λA|>|λB|.
+Theorem 6.1. Suppose that B ∈ SL2(Z) is Anosov and Φ : Γ B → Diﬀ(T2) is such that the
+diffeomorphism Φ(B) is an Anosov diffeomorphism of T2 homotopic to A∈ SL2(Z) with|λA|≥
+|λB|.
+Then Φ is topologically conjugate to an afﬁne action ofΓB of the form(1.1) up to ﬁnite index. More
+concretely, there exist a ﬁnite index subgroup Γ′⊂ ΓB andg∈ Homeo(T2) such that gΦ(Γ′)g−1
+coincides with an action of the form (1.1).
+Theorem 6.1 in the case|λA|>|λB| follows from Proposition 5.5 and the following proposition.
+The case in Theorem 6.1 when|λA| =|λB| will be consider in the next section.
+Proposition 6.2. Suppose ΓB = Z ⋉ Z 2 is an ABC group as in Theorem 6.1 and Φ : Γ B →
+Homeo(T2) is such that:
+(1) A = Φ(B) is an Anosov linear map with|λA|≥| λB|.
+(2) Φ(e1) and Φ(e2) are homotopic to the identity.
+(3) For i = 1, 2, iffei : R2→ R2 is any lift of Φ(ei), the rotation setrot(fei) consists of a single
+point.
+Then Φ is an afﬁne action.
+Proof. It is enough to show that fei, i= 1, 2, is a translation of R2. Indeed, for any v = (v1,v 2)∈
+Z2, we havefv, the lift of Φ(v), equalsfv1
+e1fv2
+e2 +k, for somek∈ Z2. Since fei is a translation, we
+get thatfv hence Φ(v) are also translations.
+Suppose thatx,y ∈ R2 are such thatfe1(x) = x +p andfe1(y) = y +q for somep,q ∈ R2, we
+must show thatp =q. We have the following:
+Anfe1(x) =An(x) +An(p),
+Anfe1(y) =An(y) +An(q).
+
+=== PDF PAGE 20 ===
+20 SEBASTIAN HURTADO AND JINXIN XUE
+We have that bothAnfe1A−n andfBn(e1) are lifts of Φ(Bn(e1)), therefore they differ by a translation
+and soAnfe1 =TwfBn(e1)An for some translationTw for somew∈ Z2, and so:
+Anfe1(x) =fBn(e1)An(x) +w,
+Anfe1(y) =fBn(e1)An(y) +w.
+Therefore from the previous equations:
+fBn(e1)An(x)−fBn(e1)An(y) =An(x) +An(p)− (An(y) +An(q))
+and so we obtain:
+(
+fBn(e1)An(x)−An(x)
+)
+−
+(
+fBn(e1)An(y)−An(y)
+)
+|Bn(e1)| = An(p−q)
+|Bn(e1)| . (8)
+Since we have fv(x + k) = fv(x) + k, k ∈ Z2 by the deﬁnition of a lift, in the expression
+(
+fBn(e1)An(x)−An(x)
+)
+, we may assume that An : T2→ T2. Suppose Bn =
+(
+an bn
+cn dn
+)
+, then
+Bn(e1) = (an,cn) andfBn(e1) =fan
+e1 fcn
+e2 . Denotingzn =An(x) orAn(y)∈ T2, we have
+fBn(e1)(zn)−zn =fan
+e1 fcn
+e2 (zn)−zn
+=fan
+e1 fcn
+e2 (zn)−fcn
+e2 (zn) +fcn
+e2 (zn)−zn
+= (fan
+e1 Φ(cne2)(zn)− Φ(cne2)(zn)) + (fcn
+e2 (zn)−zn).
+The sequences (an), (cn), (|Bn(e1)|) all go to inﬁnity with a rate proportional to |λB|n. Using the
+fact that fei, i = 1, 2, has one point in its rotation set, by equation (4) and the uniformity of the
+convergence we get
+1
+|Bn(e1)|[(fan
+e1 Φ(cne2)(xn)− Φ(cne2)(xn))− (fan
+e1 Φ(cne2)(yn)− Φ(cne2)(yn))]→ 0,
+1
+|Bn(e1)|[(fcn
+e2 (xn)−xn)− (fcn
+e2 (yn)−yn)]→ 0,
+wherexn =An(x), yn =An(y)∈ T2. This shows that the LHS of (8) vanishes. So we have
+lim
+n→∞
+An(p−q)
+λn
+B
+= 0.
+But this can happen only if p− q lies in the one dimensional eigenspace of λ−1
+A since we have
+|λA|≥| λB|. Applying the same argument with B−1 we have thatp−q lies in the one dimensional
+eigenspace ofλA, thereforep−q = 0 as we wanted. This proves that fe1 is a translation. Similarly,
+we get thatfe2 is a translation.
+□
+7. C ASE|λA| =|λB|
+In this section we ﬁnish the proof of Theorem 6.1 dealing with the remaining case where |λA| =
+|λB|. Recall we assume that Φ : ΓB→ Homeo(T2) is an action satisfying the following:
+(1) A = Φ(B) is an Anosov linear map with|λA| =|λB|.
+
+=== PDF PAGE 21 ===
+GLOBAL RIGIDITY OF ABC GROUP ACTIONS 21
+(2) For every v∈ Z2, Φ(v) is isotopic to the identity and fv : R2→ R2 denotes some lift of
+Φ(v).
+Observe that we cannot use Proposition 6.2 because we have not shown the rotation set of elements
+of Z2 consists of a single point in the case|λA| =|λB|. We will argue by contradiction to show that
+for allv∈ Z2 the rotation set of Φ(v) consists of a single point. Therefore we will suppose that some
+rot(fv) is not a single point and in that case, recall we have shown in Proposition 5.6 and 5.7 that
+rot(fv) must be a non-trivial segment for every v∈ Z2. Let e1,e 2 be the standard basis of Z2 and
+recall the joint rotation set Srot deﬁned in Section 5.3. By Proposition 5.10, we can assume that Srot
+is one of the diagonals of the square rot(fe1)× rot(fe2). Moreover, a point in the segment Srot has
+the form α + (au,b u), α∈ R2×2, a/b /∈ Q arguing as Proposition 5.13. Indeed, if a/b∈ Q, then
+following the proof of Proposition 5.13, we will see that ((au,b u))(λAλB)nv2 diverges asn→∞
+since we have (a,b )·v2̸= 0 due to the irrationality of v2. Then the argument of Proposition 5.13
+goes through and we get rot(fe1)× rot(fe1) is a single point. The irrationality of a/b implies that
+the segmentSrot cannot form a loop on the torus T2× T2(⊃ rot(fe1)× rot(fe2)).
+We start by showing the existence of a niceΓB-invariant measureν where the asymptotic behaviour
+of the action of Z2 is given by the rotation number with respect to ν. We will then use this measure
+together with a modiﬁcation of Proposition 6.2 to obtain a contradiction.
+Proposition 7.1. There exists a ΓB-invariant probability measureν on T2 such for anyi = 1, 2, any
+liftfei : R2→ R2 of Φ(ei) andν a.e.x∈ T2 we have :
+lim
+n→∞
+fn
+ei(x)−x
+n = rotν(fei) mod Z2.
+Proof. We will prove the proposition for the coordinate vectorsv =e1,e 2.
+Recall also that ifµ is a Z2-invariant measure, thenA∗µ is also Z2-invariant and we have an action
+ofA inSrot ( mod Z2× Z2) which is described by Proosition 5.12 and states that:(
+rotA∗µ(fe1), rotA∗µ(fe2)
+)
+=A
+(
+rotµ(fe1), rotµ(fe2)
+)
+B−1 mod Z2× Z2.
+Observe that the action inSrot is linear and therefore is clearly continuous. Therefore the two end-
+points of the intervalSrot are either ﬁxed or permuted and by replacingA withA2 (this is the same as
+replacing ΓB with the ﬁnite index subgroupΓB2) we will assume that the endpoints ofSrot are ﬁxed.
+We ﬁx an endpoint ofSrot and take a Z2-ergodic invariant measureµ such that (rotµ(fe1), rotµ(fe2))
+is equal to this endpoint, this implies in particular that both rotµ(fe1) and rotµ(fe2) are extremal
+points of rot(fe1) and rot(fe2) respectively.
+Consider the sequence of measuresµn := 1
+n
+∑n
+j=1Aj
+∗µ. From the equality
+(rotA∗µ(fe1), rotA∗µ(fe2)
+)
+= (rotµ(fe1), rotµ(fe2)), mod Z2× Z2,
+we get by linearity that (rotµn(fe1), rotµn(fe2) = (rotµ(fe1), rotµ(fe2)). We let ν be any weak∗-
+limit of (µn). Observe that ν is Z2- andA-invariant and therefore is ΓB-invariant. By continuity we
+also have
+(rotν(fe1), rotν(fe2)) = (rotµ(fe1), rotµ(fe2)).
+It is possible thatν is not Φ(e1) ergodic, but nonetheless forν-a.e.every Φ(e1)-ergodic component
+η ofν we must have rotη(fe1) = rotν(fe1) because rotν(fe1) is an extremal point of rot(fe1). From
+
+=== PDF PAGE 22 ===
+22 SEBASTIAN HURTADO AND JINXIN XUE
+Birkhoff ergodic theorem we conclude that:
+lim
+n→∞
+fn
+e1(x)−x
+n = rotν(fe1) mod Z2
+forη a.e. x∈ T2 and because this is true for a.e. every ergodic component η, it is also true forν a.e.
+x∈ T2 as we wanted. We can argue similarly for Φ(e2).
+□
+We will now show that for a measure ν as in Proposition 7.1, the action of Z2 restricted to the
+support ofν is by translations, the proof is very similar to the proof of Proposition 6.2. This will lead
+us later to a contradiction.
+Proposition 7.2. For everyi = 1, 2 and everyδ,ε> 0, there exists a setC withν(C)> 1−δ such
+that for everyx,y∈C we have:
+|(fei(x)−x)− (fei(y)−y)|<ε.
+Proof. The proof follows closely the argument in Proposition 6.2. We only prove it forv =e1.
+Suppose thatpx,py∈ R2 are such thatfe1(x) =x +px andfe1(y) =y +py for eachx,y∈ R2.
+We will ﬁnd a setC withµ(C)> 1−δ such that|px−py|< εforx,y ∈C. observe that because
+Z2 preserves the unstable foliation, there exists a ﬁxedα∈ R2 andtx,ty∈ R such thatpx =α +txu
+andpy =α +tyu (see the proof of Proposition 5.6).
+We have the following:
+Anfe1(x) =An(x) +An(px),
+Anfe1(y) =An(y) +An(py).
+As in proposition 6.2, we have that for somew∈ Z2 we have:
+Anfe1(x) =fBn(e1)An(x) +w,
+Anfe1(y) =fBn(e1)An(y) +w.
+Therefore from the previous equations:
+fBn(e1)An(x)−fBn(e1)An(y) =An(x) +An(px)− (An(y) +An(py))
+and if we letxn :=An(x) andyn :=An(y) we obtain:
+⏐⏐⏐⏐
+(
+fBn(e1)(xn)−xn
+)
+−
+(
+fBn(e1)yn−yn
+)
+λn
+B
+⏐⏐⏐⏐ =
+⏐⏐⏐⏐
+An(px−py)
+λn
+B
+⏐⏐⏐⏐ =
+⏐⏐⏐⏐
+An(txu−tyu)
+λn
+A
+⏐⏐⏐⏐ =|tx−ty|. (9)
+SupposeBn =
+(
+an bn
+cn dn
+)
+, thenBn(e1) = (an,cn) andfBn(e1) =fan
+e1 fcn
+e2 . We can choose a large
+constantM >0 such that the quantities |an|
+|λn
+B|, |bn|
+|λn
+B|, |cn|
+|λn
+B|,|dn|
+|λn
+B| are bounded above byM and below by
+1/M.
+From Proposition 7.1, we can chooseNε andCδ such thatµ(Cδ)> 1− δ
+3, everyz∈Cδ and every
+|n|>N ε andi = 1, 2 we have:
+
+=== PDF PAGE 23 ===
+GLOBAL RIGIDITY OF ABC GROUP ACTIONS 23
+⏐⏐⏐⏐
+fn
+ei(z)−z−nrotν(fei)
+n
+⏐⏐⏐⏐< ε
+4M. (10)
+Let us choosen≥Nε such that|cn|>N ε and|an|>N ε and deﬁne
+C :=Cδ∩A−n(Cδ)∩A−nf−cn
+e2 (Cδ).
+Observe thatµ(C)> 1−δ as we wanted. Letx,y∈C and deﬁnex′
+n :=fcn
+e2 (x′
+n) andy′
+n :=fcn
+e2 (y′
+n).
+We have by deﬁnition ofC that the pointsxn,x′
+n,yn,y′
+n∈C, and easy computation shows that:
+fBn(e1)(xn)−xn =fan
+e1 (x′
+n)−x′
+n +fcn
+e2 (xn)−xn
+fBn(e1)(yn)−yn =fan
+e1 (y′
+n)−y′
+n +fcn
+e2 (yn)−yn.
+Therefore using (10), the fact that|an|,|cn|>N ε and the triangle inequality we obtain:
+|fBn(e1)(xn)−xn−fBn(e1)(yn)−yn|
+|λn
+B| ≤ M|fan
+e1 (x′
+n)−x′
+n−fan
+e1 (y′
+n)−y′
+n|
+|an|
++ M|fcn
+e2 (xn)−xn−fcn
+e2 (yn)−yn|
+|cn|
+<ε/ 2 +ε/2 =ε.
+Therefore, by equation (9) we obtain|(fe1(x)−x)−(fe1(y)−y)| =|tx−ty|<ε for everyx,y∈C
+as we wanted. We can argue similarly forfe2.
+□
+Proposition 7.3. Suppose that ν is a ΓB-invariant probability measure as in Proposition 7.1. We
+have that forν a.e.x∈ T2 and everyv∈ Z2:
+fv(x) =x + rotν(fv).
+That is, Z2 acts as a translation forν a.e .x∈ T2.
+Proof. We will only prove it in the casev =e1,e 2. It follows from Proposition 7.2 that the function
+fei(x)−x must be constant forν a.e. x∈ T2 and it follows easily by integration that such constant
+must be equal to rotν(fei) ﬁnishing the proof of Proposition 7.3. □
+We are now ready to complete the proof of Theorem 6.1.
+Completing the proof of Theorem 6.1. We will now obtain a contradiction to the non-triviality of the
+rotation sets and show that Z2 acts by translations on T2. Let ν be a measure as in Proposition
+7.1. Observe that by continuity, Proposition 7.3 implies the action of Z2 restricted to the support
+supp(ν) is by translations. Moreover we have that supp(ν) is also invariant by the Anosov linear
+transformationA becauseν is ΓB-invariant.
+If the matrix (rotν(fe1), rotν(fe2)) contains an irrational entry we have that supp(ν) is invariant
+by an irrational translation, so supp(ν) is either T2 or contains a circle. In the latter case, the circle
+intersects the stable manifold of 0 transversally since the eigenvectors of A have irrational slopes.
+We apply theλ-lemma to obtain that under iterates the image of the circle will approach the unstable
+manifold of 0 and get stretched exponentially so will become dense on T2. Using the invariance by
+
+=== PDF PAGE 24 ===
+24 SEBASTIAN HURTADO AND JINXIN XUE
+the AnosovA it follows that supp(ν) = T2. Therefore we conclude thatfe1,fe2 must be translations
+everywhere.
+In the case where (rotν(fe1), rotν(fe2)) has all entries rational, recall that in the proof of Proposi-
+tion 7.1 the probability measureν was constructed in such a way that the matrix(rotν(fe1), rotν(fe2))
+is one of the endpoints of the interval Srot. We can also construct in the same way another measure
+ν′∈ T2 such that (rotν′(fe1), rotν′(fe2)) is the other endpoint ofSrot, but this matrix cannot have all
+entries being rational because otherwiseSrot is a segment with rational slope and this contradicts the
+fact that rot(fe1), rot(fe2) are segments with an irrational direction given by the unstable eigenvector
+u ofA. Therefore the matrix (rotν′(fe1), rotν′(fe2)) contains an irrational entry and in that case ν′
+is invariant by an irrational translation and we can argue as before. This give us a contradiction and
+ﬁnishes the proof of Theorem 6.1.
+□
+8. C ASE|λA|<|λB|.
+Proposition 6.1 proves the case of|λA|≥| λB| of Theorem 1.1. In this section, we prove Theorem
+1.1 in the case where|λB|>|λA| ﬁnishing the proof of Theorem 1.1, we will use the same notation
+as in Section 5. We recall that in this case we want to obtain a contradiction from the fact that the
+action is faithful, we will indeed show that for allv∈ Z2 we have Φ(v) = Id. From Proposition 5.5,
+we can assume that the rotation set for v∈ Z2⊂ ΓB every diffeomorphismsfv consists of a single
+point in R2 and we will abuse notation and call such vector rot(fv). We have from Proposition 5.12
+that the following equation holds:(
+rot(fe1), rot(fe2)
+)
+B =A
+(
+rot(fe1), rot(fe2)
+)
++
+(
+w1,w 2
+)
+for somew1,w 2∈ Z2. Therefore from Proposition 4.1, astr(B)̸=tr(A), we have that bothrot(fe1)
+and rot(fe2) are rational vectors. Therefore we can pass to a ﬁnite cover ofΓB of the formB ⋉mZ2
+and assume that the rotation set of every fv is in Z2 for all v∈ Z. Moreover, we will assume that
+the rotation set offv is{0} for allv, which follows because we can assume that the liftsfe1,fe2 have
+rotation set{0} and this imply thatfv has rotation set{0} for allv. We have the following:
+Lemma 8.1. The action of ΓB on T2 lifts to an action of ΓB in the universal covering R2.
+Proof. As we observed, we can take lifts of the Z2 action in such a way that everyfv has as rotation
+set{0}, then one can check thatAfvA−1 has rotation set{0} as well and conclude that
+AfvA−1 =fB(v)
+which implies the action ΓB lifts.
+□
+Therefore, we can assume that ΓB acts on R2. Moreover, every fv leaves invariant every leaf
+of the foliationF, this follows because all fv have rotation set{0}, and each fv acts in the set of
+leafs as a translation, this is because the lifts of any leaf ofF are dense and asfv commutes with deck
+transformations iffv(l) =l+α for some leafl∈F ,α∈ R, thenfv(l) =l+α for alll∈L , therefore
+if a leaf ofF is not preserved we will have non-zero rotation set. The following two propositions will
+be proved in the next subsection.
+
+=== PDF PAGE 25 ===
+GLOBAL RIGIDITY OF ABC GROUP ACTIONS 25
+Proposition 8.2. There exists a continuous one parameter subgroupgt : T2→ T2 such that
+(1) for each t∈ R, the mapgt : T2→ T2 is measurable;
+(2) the map t↦→gt induces a group homomorphism R→ Homeo(R) which preserves the unsta-
+ble foliation of Φ(B);
+(3) we have g1 = Φ(e1) andgc = Φ(e2) where (1,c ) is an unstable eigenvector ofB.
+Moreover we have
+Φ(B)gtΦ(B)−1 =gλBt
+whereλB is the larger in norm eigenvalue ofB.
+Proposition 8.3. The ﬂow gt : R× T2→ T2 is differentiable int∈ R and measurable inp∈ T2.
+We should point out that the smoothness ofgt(p) as function oft will be crucial for the following
+discussion. Assuming the previous propositions, we can deﬁne the vector ﬁeld X(p) = dgt
+dt|t=0(p).
+Observe thatX(p) is a well deﬁned vector ﬁeld because of 8.3, but it might not vary continuously as
+a function ofp. From the equality Φ(B)gtΦ(B)−1 =gλBt, we have the following equation:
+Dp(Φ(B))X(p) =λBX(Φ(B)p), ∀p∈ T2. (11)
+Deﬁnition 8.4. (1) Let
+C ={p∈ T2| Φ(v)(p) =p,∀v∈ Z2}.
+Observe thatC is a closed set which is invariant by the action of ΓB.
+(2) For every realM >0, let
+XM =
+{
+p∈ T2| 1
+M <∥X(p)∥<M
+}
+and observe that T2 =C∪ (⋃
+M>0XM).
+Letµ be the SRB-ergodic measure preserved by Φ(B), we have the following:
+Proposition 8.5. Ifµ(XM)> 0 for someM >0, then we have|λA|≥| λB|.
+Proof. As Φ(B) is topologically conjugate toA, the topological entropy ofΦ(B) is equal tolog(|λA|).
+Letχµ be the positive Lyapunov exponent of Φ(B), if µ(XM) > 0, then for a.e. p∈ XM we have
+χµ = lim log∥DpΦ(B)n(X(p))∥
+n but from equation (11) we have that
+Dp(Φ(B)n)(X(p)) =λn
+BX(Φ(B)np)
+and so Poincar´e recurrence implies thatχµ = log(|λB|).
+From the Ledrappier-Young entropy formula we have
+log(|λA|) =htop(Φ(B))≥hµ(Φ(B)) = dimµ(Wu) log(|λB|) = log(|λB|). (12)
+The last equality holds because the dimension dimµ(Wu) of the measure µ along the unstable
+manifolds is equal to one asµ is an SRB-measure.
+□
+With this proposition, we complete the proof of Theorem 1.1 in the case of|λB|>|λA|.
+
+=== PDF PAGE 26 ===
+26 SEBASTIAN HURTADO AND JINXIN XUE
+Proof of Theorem 1.1 in the case of|λB|>|λA|. Ifµ(XM) > 0 for some M > 0 we are done. If
+no such M exists, µ(⋃
+M>0XM) = 0 and so µ(C) = 1 , but as the conditional measures of µ
+along unstable manifolds are absolutely continuous with respect to Lebesgue by taking a partition
+subordinate toF we must have that there exists a closed non-trivial interval J of a leaf of F such
+that Lebesguea.e. point ofJ is inC, butC is closed, and soJ must be contained inC. Also asC is
+invariant by Φ(B), then Φ(Bn)(J) is contained inC, but then as⋃
+n>0 Φ(Bn)(J) is dense we have
+C = T2 and we are done. □
+8.1. The reduction to circle maps with Diophantine rotation number. The remaining work is to
+prove Proposition 8.2 and Proposition 8.3. In this section, we ﬁrst show how the Z2 action action
+along each leaf ofW is by translations and induces a circle map with Diophantine rotation number
+(coming from the group structure of ΓB). We then apply the Herman-Yoccoz theory for circle maps
+to show that the ﬂow gt is smooth in t∈ R. We should also point out that Denjoy’s theorem is not
+enough for concluding the smoothness ofgt.
+Lemma 8.6. For everyv∈ Z2, we have
+limfB−n(v)(p) =p
+for allp∈ R2 and moreover such limit converges uniformly with respect top.
+Proof. Suppose there isv∈ Z2 and a sequence of pointspk in R2 such that for some constantK >0
+and a subsequence{nk} we have|fB−nk(v)(pk)−pk|≥ K >0. This will lead us to a contradiction
+because then as both pk andfB−nk(v)(pk) are in the same leaf of the foliationF, we have that as A
+expands the leaves of the foliation, we have that
+lim|AnkfB−nk(v)(pk)−Ank(pk)| =∞
+But this is the same as|fvAnk(pk)−Ank(pk)|→∞ and this is not possible because|fv(p)−p|
+is bounded independent ofp∈ R2 becausefv is a lift of a map in T2. □
+We take a leafℓ∈F and consider an open intervalIv⊂ ℓ which is invariant under fv for some
+v∈ Z2\{ 0}, and where there is no ﬁxed point for thefv. If this interval does not exist, that means
+for any open intervalJv that is invariant under fv, there is a ﬁxed point offv in the interval, which
+breaksJv into two subintervals that are invariant underfv due to the one-dimensionality. Repeating
+the argument, we get that there is a dense subset of ﬁxed points in Jv. Then the continuity of fv
+implies that each point in the entire intervalJv is ﬁxed byfv. Arguing this for any open intervalJv
+and for allv∈ Z2, we conclude that Z2 ﬁxesℓ. Asℓ is dense on the torus, we have that the Z2 action
+is trivial. So in the following, we consider the above deﬁned intervalIv.
+We have the following analogue of Kopell’s lemma.
+Proposition 8.7. The group Z2 acts freely inIv, more precisely, iffw(p) = p for somep∈I v and
+somew(̸=v)∈ Z2\{ 0}, thenfw = id.
+Proof. Iffw has a ﬁxed pointp insideIv, we can assume thatp is an endpoint of an intervalJ⊂I v
+wherefv is conjugate to a translation on R. Since fv is known to have no ﬁxed point inIv we get
+that v and w are linearly independent. We decompose mB−n(v) = anv +bnw for some m∈ Z
+
+=== PDF PAGE 27 ===
+GLOBAL RIGIDITY OF ABC GROUP ACTIONS 27
+depending only onw,v andan,bn∈ Z. So we get
+fmB−n(v)p =fanvfbnwp =fan
+v p.
+For n large, the LHS converges to p by Lemma 8.6, while the RHS moves away from p since fv
+is monotone on Iv and each point converges to one of the endpoints under iterations of fv. This
+contradiction veriﬁes our claim.
+□
+It follows that the Z2 action on any interval likeI is conjugate to a group of translations (Corollary
+4.1.4 and Theorem 4.1.37 of [35]), therefore there is a homeomorphism h : I →R such that
+Tv :=hfvh−1 is a translation and suppose thatTe1(p) =p + 1 andTe2(p) =p +c for somec∈ R.
+Lemma 8.8. The vector (1,c ) lies in the unstable subspace corresponding toB.
+Proof. Recall that from Proposition 8.6 we have thatTB−n(ei)(x)→x fori = 1, 2.
+Therefore if
+B−n =
+(
+an bn
+cn dn
+)
+,
+we have thatT−n
+B (e1)(p) =p +an +ccn andT−n
+B (e2)(p) =p +bn +cdn and so
+(
+an cn
+bn dn
+)(
+1
+c
+)
+→
+(
+0
+0
+)
+which implies the fact that (1,c ) must be in the unstable subspace corresponding to B (in particular
+thatc is an algebraic irrational number.) □
+Lemma 8.9. LetI be any open interval which is a connected component of ℓ\C for some leaf ℓ
+of the unstable foliationF of the Anosov diffeomorphism Φ(B). Then restricted to I, we have that
+Φ : Z2→ Diﬀ(I) is conjugate to an action by translations and the conjugacy is smooth.
+Proof. It remains to show that the conjugacy is smooth. We reduce the action to a circle map and
+obtain the smoothness of the conjugacy by the Herman-Yoccoz theory for circle maps.
+We have thatI is aCr smooth embedded interval and observe thatS1∼=I/Φ(e1) is a smooth circle
+where Φ(e2) acts as a smooth diffeo with rotation numberc, which is algebraic irrational number and
+therefore Diophantine (∀δ,∃γ such that|qc−p| > γ
+q1+δ,∀ (p,q )∈ Z, q̸= 0, c.f. Chapter VI,
+Corollary 1E of [36]) and therefore Φ(e2) is conjugate to a rotation with angle c (modulo 1) by a
+conjugacy that isCr−1−2δ (c.f. [28]).
+The action of Φ(e2) onI/Φ(e1) is deﬁned as follows more explicitly. Pick a fundamental domain
+D⊂I andp∈ D and denote by ¯D the circle obtain from D by identifying two endpoints. Denote
+by ¯f : ¯D→ ¯D the action. Then
+¯fnp = Φ(m(n)e1)Φ(ne2)p,
+wherem(n) is the unique integer such that Φ(m(n)e1)Φ(ne2)p∈ D. By Herman-Yoccoz theory,
+there exists aC1h : ¯D→ S1 such thath ¯fh−1p =p +c mod 1. That is to say
+Φ(m(n)e1)Φ(ne2)p =h−1(h(p) +nc).
+DeﬁneDm := Φ(me1)D and ¯fm : ¯Dm→ ¯Dm the action on ¯Dm. We get that hm ¯fmh−1
+m (p) =
+p +c wherehm : ¯Dm→ S1 is given byhm =hΦ(−me1).
+
+=== PDF PAGE 28 ===
+28 SEBASTIAN HURTADO AND JINXIN XUE
+□
+8.2. Embedding the action into a ﬂow. We next embed the Z2-action into a ﬂow. For a single
+diffeomorphism on (0, 1) without ﬁxed points, this is given by Szekeres theorem (Theorem 4.1.11 of
+[35]). The construction in our setting is simpler.
+Proof of Proposition 8.2. We introduce the following map R→ Φ(Z2) via (1,c )·v↦→ Φ(v). Using
+the circle map constructed in the previous proof, we give a more explicit description. Choosing
+(−1/2, 1/2) as the fundamental domain for R/Z and ¯D as a fundamental domain forI/Φ(e1). We
+have a conjugationh : ¯D→ S1 satisfying
+Φ(m(n)e1)Φ(ne2)p =h−1(h(p) +nc) =h−1(h(p) +nc +m(n)).
+Letv∈ Z2 be such that (1,c )·v∈ (−1/2, 1/2) then we have Φ(v)p =h−1(h(p) + (1,c )·v). This
+deﬁnes the ﬂow fort in the dense subset of R. We then extend the domain of deﬁnition of the ﬂow to
+R by the smoothness ofh. Explicitly, we obtain a ﬂow g· : R→ Diﬀ(I) viagt(p) =h−1(h(p) +t)
+for allp∈I .
+This gives us a smooth one parameter ﬂow gt : I→I without ﬁxed points such that for every
+v∈ Z2, Φ(v) = gtv fortv = (1,c )·v∈ R. So we have g1 = Φ(e1) andgc = Φ(e2). We next
+deﬁne a one parameter subgroup of mapsgt : T2→ T2 by deﬁninggt inF\ C as above and deﬁned
+gt(p) =p for allp∈C. By constructiongt is differentiable with respect tot, but a priorigt(p) is not
+differentiable inp.
+From the equation Φ(B)Φ(v)Φ(B−1) = Φ(B(v)) it follows that fortv = (1,c )·v, we have
+Φ(B)gtvΦ(B)−1 = Φ(B)Φ(v)Φ(B)−1 = Φ(Bv) =g(1,c)·Bv =gλBtv.
+Extending the domain oftv, we get
+Φ(B)gtΦ(B)−1 =gλBt
+for everyt∈ R.
+□
+Proof of Lemma 8.3. The differentiability in t is seen from the deﬁnition of the ﬂow. To see the
+measurability in p, we ﬁrst notice that Φ(v)(p) = gtv(p) wheretv = (1,c )·v. This shows that for
+eachv, the ﬂow gtv(p) is differentiable inp fortv ﬁxed. Choosingv∈ Z2, we get that tv is deﬁned
+on a dense subsetD of R, so this shows that gt(p) is differentiable inp fort∈D . For each t∗ /∈D ,
+we choose a sequencetn∈D withtn→t∗, we get thatgtn(p)→gt∗(p) pointwise. This shows that
+gt∗(p) is measurable inp. □
+9. H IGHER REGULARITY FOR TRANSLATIONS ALONG LEAVES
+In this section, we prove Theorem 1.6 and 1.7 of higher regularity.
+Proof of Theorem 1.6 . We consider the caseρ =uA⊗uBt, the other caseρ =uA−1⊗uB−t is similar.
+It can be veriﬁed that (2) is satisﬁed. SupposeuB = (1,c ), wherec is a Diophantine irrational number
+becauseB is Anosov. This shows that
+hΦ(e1)h−1(x) =x +uA, h Φ(e2)h−1(x) =x +cuA.
+
+=== PDF PAGE 29 ===
+GLOBAL RIGIDITY OF ABC GROUP ACTIONS 29
+Therefore the mapshΦ(e1)h−1 andhΦ(e2)h−1 preserve each leaf of the unstable foliation ofA and
+act as translations on each leaf, and the maps Φ(e1) and Φ(e2) preserves the unstable foliations of
+Φ(B).
+In this setting, we recover Proposition 8.2. Therefore we have (11) by differentiation with respect
+tot.
+Let vol be the volume measure which is preserved by Φ(B), by the argument in the proof of
+Proposition 8.5 with µ replaced by vol, the larger Lyapunov exponent of Φ(B) is logλB and we
+have the same calculation as (12). By assumption we have λA =λB, therefore vol is the measure of
+maximal entropy for Φ(B). On the other hand logλB = logλA is the entropy of A with respect to
+the measure h∗vol. We also know that logλA is the topological entropy of A, so we conclude that
+h∗vol = vol, since vol is the unique measure of maximal entropy forA. Now we apply Theorem 1.3
+of [30] to complete the proof (see also Theorem F of [37]). □
+Proof of Theorem 1.7 . We ﬁrst claim:
+Claim: On the afﬁne action side, along each eigen-directionuA,i ofA corresponding to the eigen-
+valueλi as in the statement of the theorem, there is a Z2 action whose generators act by translating
+cuAi andcνuA,i, whereν is a Diophantine number andc̸= 0. Therefore, the line alonguA,i quotient
+the Z2 action gives rise to a circle rotationx↦→x +ν mod 1.
+Proof of the claim. We cite the following lemma of Katznelson.
+Lemma 9.1 ([27] Lemma 3). LetA be an irreduciblen×n integer matrix andv be an eigenvector of
+A corresponding to a real eigenvalue of multiplicity 1. Thenv is Diophantine with of type (C,n− 1),
+i.e. there existsC >0 such that for allp∈ Zn\{ 0} we have|⟨p,v⟩|≥ C
+|p|n−1 .
+Since we have a Zn afﬁne action with rotation matrixρ =cuA,i⊗uBt,i, each generator is a trans-
+lation alonguA,i with translation length c times each entry of uBt,i respectively. IfB is irreducible,
+then by the lemma of Katznelson, the eigenvectoruBt,i is Diophantine of type(C,n−1). Picking any
+two entries ofuBt,i, we get a vector denoted byc(1,ν )∈ R2 that is Diophantine of type (C,n− 1).
+The claim is then established in this case. Suppose Bt is reducible. Without loss of generality, we
+consider the case Bt =
+[
+B1 D
+0 B2
+]
+∈ SLn(Z) whereBi, i = 1, 2 is irreducible, and the cases of
+more diagonal blocks are similar. Since there is no eigenvalue 1, we have that Bi∈ Zni×ni satisﬁes
+ni≥ 2, i = 1, 2. Ifu1 is an eigenvector of B1, then (u1, 01×n2) is an eigenvectorB with the same
+eigenvalue. Sinceu1 is a Diophantine vector of type (C,n 1− 1) by the above lemma and has at least
+two entries, we can pick two entries to obtain a Diophantine vector c(1,ν ). If u2 is an eigenvector
+ofB2 with eigenvalueλ, then we can solve for v from the equation (B1−λId)v =Du2 to get that
+(v,u 2) is an eigenvector ofB with eigenvalueλ (note thatλ is not an eigenvalue of B1 by assump-
+tion). Then we pick two entries from u2 to get a Diophantine vector. This completes the proof of the
+claim. □
+We next work on the nonlinear action Φ. We relabel the eigenvalues ofB as follows
+|λs
+k|<...< |λs
+1|< 1<|λu
+1|<...< |λu
+ℓ|, k +ℓ =n.
+
+=== PDF PAGE 30 ===
+30 SEBASTIAN HURTADO AND JINXIN XUE
+It is known that for eachλu/s
+i there is a one-dimensional foliation tangent to the invariant distribution
+corresponding to λu/s
+i and that the conjugacy h preserves the weakest stable and unstable leaves
+(Lemma 6.1-6.3 of [17]). We then apply the argument in the proof of Theorem 1.6 and the above
+claim to recover Proposition 8.2 and (11), i.e. there is a Z2 subaction of Φ(ΓB,n) along the one
+dimensional foliation which can be embedded into a ﬂow. This shows that the Lyapunov exponent
+of Φ(B) with respect to the volume along the weakest stable and unstable foliations agree with the
+corresponding Lyapunov exponents for the linear Anosov maps. Applying Theorem F of [37], we
+get that h and h−1 are C1+ along the weakest stable and weakest unstable foliations. We remark
+that in the proof of Proposition 8.2, we need to invoke Herman-Yoccoz theory for the regularity of
+the conjugacy for circle maps induced by the Z2 subaction. Since the Diophantine vector (1,ν )
+in the claim is of type (C,n− 1), we get that the conjugacy is C1+ if ΓB,n acts by Cr, r > n
+diffeomorphisms.
+We next apply Proposition 2.4 of [22] to show that h preserves the next weak stable and unstable
+foliations corresponding to Lyapunov exponents λs
+2 andλu
+2 respectively. The same argument as the
+previous paragraph allows us to show thath andh−1 areC1+ along these foliations.
+Repeating the above arguments, we obtain that h andh−1 areC1+ along each one-dimensional
+foliation corresponding to each eigenvalue λu/s
+i . An application of Journ ´e theorem [25] completes
+the proof.
+Note that when we have shown that n− 1 Lyapunov exponents of Φ(B) agrees with the corre-
+sponding ones ofA, the remaining one agrees automatically. For this reason, in the statement of the
+theorem, we may allowci = 0 forci corresponding toλu
+ℓ orλs
+k.
+In the three dimensional case, if Φ(B) is smooth enough, by the main result of [18], the conjugacy
+can be as smooth as possible. □
+10. P ROOF OF THEOREM 1.4
+In this section, we give the proof of Theorem 1.4.
+Proof of Theorem 1.4. Since Φ(B) is Anosov and volume-preserving, we see that the Lebesgue mea-
+sure vol is an SRB measure. We next show thatvol is preserved byh∗ and is the measure of maximal
+entropy (see Proposition 10.1 below), so we get that the entropy
+hvol(Φ(B)) = logλA.
+By ergodicity and the Ledrappier-Young entropy formula, the Lyapunov exponent of Φ(B) with
+respect to vol is logλA. We then complete the proof of Theorem 1.4 by applying Theorem 1.3 of
+[30] (see also Theorem F of [37]). □
+Proposition 10.1. Under the assumption of Theorem 1.4, we have that h∗vol = vol, and vol is the
+measure of maximal entropy of Φ(B).
+Proof. Since each Φ(v) is volume-preserving by assumption, we get that h∗Φ(v)∗vol = h∗vol. On
+the other hand, using the conjugacyh, we can express each Φ(v), v∈ Z2, as
+Φ(v)(x) =h−1(h(x) +ρv). (13)
+
+=== PDF PAGE 31 ===
+GLOBAL RIGIDITY OF ABC GROUP ACTIONS 31
+Therefore
+h∗Φ(v)∗vol = (h∗Φ(v)∗h−1
+∗ )(h∗vol) = (hΦ(v)h−1)∗(h∗vol) = (h∗vol)(• +ρv).
+So eachh∗Φ(v)∗vol is a translation ofh∗vol byρv and we have
+h∗vol =h∗vol(• +ρv), ∀v∈ Z2.
+Proposition 1.2 of [39] shows that the afﬁne action of the form (1.1) is faithful if and only if A is
+of inﬁnite order and{ρp|p∈ Z2} is dense on T2. So the faithfulness assumption in the statement
+implies that h∗vol is invariant under the group of translations on T2, therefore we get h∗vol = vol.
+Moreover, since vol is the measure of maximal entropy for hΦ(B)h−1 = A and the measure of
+maximal entropy is preserved under conjugacy, we see thatvol is the measure of maximal entropy for
+Φ(B).
+□
+11. P ROOF OF THEOREM 1.5
+In this section, we prove Theorem 1.5.
+Proof of Theorem 1.5. Letµ be an ergodic SRB measure of Φ(B). We consider the following mea-
+sure
+ν := lim
+N→∞
+1
+N
+N∑
+n=1
+Φ(Bn(e1))∗µ. (14)
+We show in the following Proposition 11.1 that ν = h−1
+∗ vol is well-deﬁned and is both an SRB
+measure and the measure of maximal entropy of Φ(B). By the Ledrappier-Young entropy formula,
+sinceν is the measure of maximal entropy, the positive Lyapunov exponent of Φ(B) with respect to
+ν is logλB. Applying Theorem F of [37] we conclude that the conjugacy h restricted to the support
+of ν is Cr−ϵ along each unstable leaf in supp ν, and h−1 is Cr−ϵ along each unstable leaf of A in
+supph∗ν = T2, for allϵ.
+Next, by Corollary 11.14 of [5], we know that ν as an SRB measure is a Gibbs u-state and its
+support contains entire leaves. Since Φ(B) is Anosov on T2, an entire leaf of Φ(B) is dense on T2,
+so we conclude that suppν is the whole T2. This shows that the conjugacyh andh−1 areCr−ϵ along
+each unstable leaf.
+Applying the same argument to Φ(B)−1, by taking an SRB measureµ′ of Φ(B)−1, the averaging
+procedure limN→∞ 1
+N
+∑N
+n=1 Φ(B−ne1)∗µ′ yields the same measure ν = h−1
+∗ vol (see the proof of
+Proposition 11.1). Repeating the above argument, we conclude that the conjugacy h and h−1 are
+Cr−ϵ along each stable leaf for all ϵ. Then by Journ ´e theorem [25], we get that h andh−1 are both
+Cr−ϵ for allϵ. □
+Proposition 11.1. The limit in the deﬁnition(14) ofν exists, andν =h−1
+∗ vol is an SRB measure and
+the measure of maximal entropy for Φ(B).
+Proof. Consider the following sequence
+h∗
+1
+N
+N∑
+n=1
+Φ(Bn(e1))∗µ = 1
+N
+N∑
+n=1
+h∗Φ(Bn(e1))∗µ.
+
+=== PDF PAGE 32 ===
+32 SEBASTIAN HURTADO AND JINXIN XUE
+Using (13), the following holds
+h∗Φ(Bn(e1))∗µ = (hΦ(Bn(e1))h−1)∗(h∗µ) =h∗µ(• +ρBne1).
+We know from (3) that
+ρ =ρC +c1uA⊗uBt +c2uA−1⊗uB−t,
+whereρC solvesAρ =ρB +C, C∈ Z2×2. Then we haveAnρ =ρBn +Cn withCn∈ Z2×2.
+Then we have
+ρBne1 =Anρe1−Cne1 =c1(uBt·e1)λn
+BuA +c2(uB−t·e1)λ−n
+B uA−1 mod Z2.
+Therefore, the mapρe1↦→ρBe1 on T2 can be equivalently considered as the mapρc↦→Aρc with
+ρc =c1(uBt·e1)uA +c2(uB−t·e1)uA−1.
+Note that linear Anosov is ergodic on T2 with respect to Lebesgue. We thus obtain the full measure
+setC of parameters as the set of (c1,c 2) such that the correspondingρc is a generic point for applying
+Birkhoff ergodic theorem toA.
+Therefore by the Ergodic Theorem we get lim 1
+N
+∑N
+n=1δx+Anρc = vol, where δx is the Dirac-δ
+supported at x, also the limit is independent of x by the translation invariance of vol. Therefore we
+have
+lim 1
+N
+N∑
+n=1
+h∗Φ(Bn(e1))∗µ = lim 1
+N
+N∑
+n=1
+h∗µ(• +Anρc)
+=
+∫
+lim 1
+N
+N∑
+n=1
+δx+Anρcdh∗µ(x)
+= vol.
+This shows thatν =h−1
+∗ vol is well-deﬁned and is invariant underΦ(B). Since vol is the measure
+of maximal entropy (MME) forA and the MME is preserved under conjugacy, we conclude thatν is
+the MME for Φ(B).
+We next show that ν is an SRB measure. First, by Corollary 11.14 of [5], we know that the
+conditional measure of µ along each unstable leaf in suppµ is absolutely continuous with respect to
+Legesgue with a densityρ satisfying
+1
+K≤ ρ(z1)
+ρ(z2)≤K
+for some constantK uniform for all leaves in suppµ and allz1,z 2 in the same leaf withd(z1,z 2)< 10
+(equation (11.4) of [5]). Next, by the following Lemma 11.2, we know that ∥Du
+xΦ(Bn(e1))∥ along
+each unstable leaf is bounded from above and below uniformly with respect to both n ∈ N and
+x∈ T2. This shows that Φ(Bn(e1))∗µ has conditional measure absolutely continuous with respect
+to Lebesgue with a densityρn satisfying
+1
+K′≤ ρn(z1)
+ρn(z2)≤K′
+
+=== PDF PAGE 33 ===
+GLOBAL RIGIDITY OF ABC GROUP ACTIONS 33
+where the constantK′ is uniform for all leaves in suppΦ(Bn(e1))∗µ, allz1,z 2 in the same leaf with
+d(z1,z 2)< 10K′ and for alln∈ N. The averaged measure ν therefore has the same property hence
+is SRB. □
+The proof is then reduced to establishing a uniform derivative bound of Φ(Bn(e1)) along the
+unstable leaves.
+Lemma 11.2. For eachv∈ Z2, there is a constantK =Kv such that
+1/K≤∥Du
+xΦ(Bn(v))∥≤ K, 1/K≤∥Ds
+xΦ(B−n(v))∥≤ K, ∀x ∈ T2, n∈ N.
+Proof. We prove the statement forDsΦ(B−n(v)). The other one is analogous.
+Note thath is biH¨older. Denote byα the H¨older exponent. Fix a smallr, then we have
+Br1/α(h(x))⊂hBr(x)⊂Brα(h(x)).
+Choose z∈ Br(x)∩Ws
+x such that d(Φ(B−n(v))x, Φ(B−n(v))z) = δ for some δ > 0. Since
+hΦ(B−n(v))h−1 acts as translation, by the H ¨olderness ofh, we get δ1/α≤ d(x,z )≤ δα. Next, by
+the mean value theorem, we have for somey lying betweenx andz on the same leaf
+δ =d(Φ(B−n(v))x, Φ(B−n(v))z) =d(x,z )·∥Ds
+yΦ(B−n(v))∥
+Next, applying the following Lemma 11.3 we have
+1/Cδ 1−α≤∥Ds
+xΦ(B−n(v))∥≤ Cδ 1−1/α.
+□
+Lemma 11.3. For eachv∈ Z2, there exists constant C = Cv > 1 such that for any two nearby
+pointsx andy on the same unstable leaf, we have⏐⏐⏐⏐logDu
+xΦ(Bn(v))
+Duy Φ(Bn(v))
+⏐⏐⏐⏐≤C|x−y|α2
+for alln∈ N, whereα is the H¨older constant of the conjugacyh andh−1.
+Similarly, we have for all nearbyx,y on the same stable leaf⏐⏐⏐⏐logDs
+xΦ(B−n(v))
+DsyΦ(B−n(v))
+⏐⏐⏐⏐≤C|x−y|α2
+.
+for alln∈ N.
+Proof. By the group relation Φ(B)nΦ(v)Φ(B)−n = Φ(Bn(v)), we get
+DΦ(v)x−nΦ(B)nDx−nΦ(v)DxΦ(B)−n =DxΦ(Bn(v)),
+where we use the notationxi to denote thei-th orbit point under the iteration Φ(B). In the following
+we denote x′
+n := Φ(v)x−n and y′
+n := Φ(v)y−n and by (x′
+n)i the orbit point of x′
+n under Φ(B),
+similarly fory′
+n.
+By assumption, x and y lie on the same unstable leaf of Φ(B). So we get that |x−i−y−i| <
+λi|x−y| for some 0<λ< 1.
+
+=== PDF PAGE 34 ===
+34 SEBASTIAN HURTADO AND JINXIN XUE
+We have the following estimate
+logDuΦ(Bn(v))(x)
+DuΦ(Bn(v))(y) = log
+Du
+x−nΦ(v)
+Duy−nΦ(v)−
+n−1∑
+i=0
+log
+Du
+x−iΦ(B−1)
+Duy−iΦ(B−1) +
+n−1∑
+i=0
+log
+Du
+(x′
+−n)i
+Φ(B)
+Du
+(y′
+−n)i
+Φ(B)
+≤
+(Du
+y−n)2Φ(v)
+Duy−nΦ(v) |x−n−y−n|
++
+n−1∑
+i=0
+(Du
+y−i)2Φ(B)
+Duy−iΦ(B) |x−i−y−i|
++
+n−1∑
+i=0
+(Du
+(y′
+−n)i
+)2Φ(B)
+D(y′
+−n)iΦ(B) |(x′
+−n)i− (y′
+−n)i|.
+(15)
+Now by the exponential expansion and contraction, the estimate of the second summand on the RHS
+is bounded by the distanceC∥ (Du)2Φ(B)
+DuΦ(B) ∥|x−y|. Also, each term of the third summand on the RHS
+is bounded byC∥ (Du)2Φ(B)
+DuΦ(B) ∥|(x′
+−n)i− (y′
+−n)i|.
+As the conjugacyh, which is known to be bi-H¨older, we have that
+1
+C|x−y|1/α≤|h(x)−h(y)|≤ C|x−y|α.
+As
+|h((x′
+−n)i)−h((y′
+−n)i)| =|Ai−nh(x)−Ai−nh(y)|,
+one has that
+|(x′
+−n)i− (y′
+−n)i|≤ C′|x−y|α2
+λα(n−i)
+and so the third summand in (15) is bounded byC′′|x−y|α2
+. □
+ACKNOWLEDGMENT
+We would like to thank Professor A. Wilkinson for getting us interested in the problem and many
+stimulating discussions. We also would like to thank the referees for pointing out a mistake (corrected
+in Section 7) in the ﬁrst version. J. X. is supported by NSFC (Signiﬁcant project No.11790273) in
+China and Beijing Natural Science Foundation (Z180003).
+REFERENCES
+[1] Asaoka, Masayuki. Rigidity of certain solvable actions on the sphere. Geometry & Topology 16.3 (2012): 1835-
+1857.
+[2] Asaoka, M. (2017). Rigidity of certain solvable actions on the torus. In Geometry, Dynamics, and Foliations 2013:
+In honor of Steven Hurder and Takashi Tsuboi on the occasion of their 60th birthdays (pp. 269-281). Mathematical
+Society of Japan.
+[3] J. Alonso, C. Rivas, and J. Xavier, Planar Baumslag-Solitar actions. arXiv:1707.05675.
+[4] Alonso, J., Guelman, N., Rivas, C., & Xavier, J. (2017). On some planar Baumslag-Solitar actions. arXiv preprint
+arXiv:1703.09102.
+[5] Bonatti, Christian, Lorenzo J. D ´ıaz, and Marcelo Viana. Dynamics beyond uniform hyperbolicity: A global geo-
+metric and probabilistic perspective. V ol. 102. Springer Science & Business Media, 2006.
+
+=== PDF PAGE 35 ===
+GLOBAL RIGIDITY OF ABC GROUP ACTIONS 35
+[6] B. Farb and J. Franks, Groups of homeomorphisms of one-manifolds, I: actions of nonlinear groups (2011). Arxiv
+preprint https://arxiv.org/abs/0107085
+[7] Bonatti, C., Monteverde, I., Navas, A., & Rivas, C. (2017). Rigidity for C 1 actions on the interval arising from
+hyperbolicity I: solvable groups. Mathematische Zeitschrift, 286(3-4), 919-949.
+[8] L. Burslem and A. Wilkinson, Global rigidity of solvable group actions on S1, Geometry & Topology 8 (2004),
+no. 2, 877-924.
+[9] Bonatti, Christian, S-H Kim, T. Koberda, M. Triestino. Small C 1 actions of semidirect products on compact
+manifolds. arXiv preprint arXiv:1910.04620 (2019).
+[10] Brin, Michael, and Garrett Stuck. Introduction to dynamical systems. Cambridge University Press, 2002.
+[11] Franks, John. Anosov diffeomorphisms on tori. Transactions of the American Mathematical Society 145 (1969):
+117-124.
+[12] B. Farb and J. Franks, Groups of homeomorphisms of one-manifolds, I: actions of nonlinear groups (2011). Arxiv
+preprint https://arxiv.org/abs/0107085.
+[13] Franks, John, and Michael Handel. Entropy zero area preserving diffeomorphisms of S2. Geometry & Topology
+16.4 (2013): 2187-2284.
+[14] Farb, Benson, and Lee Mosher. On the asymptotic geometry of abelian-by-cyclic groups. Acta Mathematica 184.2
+(2000): 145-202.
+[15] Farb, Benson, and Lee Mosher. Problems on the geometry of ﬁnitely generated solvable groups. Crystallographic
+groups and their generalizations (Kortrijk, 1999), 121-134, Contemp. Math 262.
+[16] Fisher, David. Groups acting on manifolds: around the Zimmer program. arXiv preprint arXiv:0809.4849 (2008).
+[17] Gogolev, Andrey. Smooth conjugacy of Anosov diffeomorphisms on higher dimensional tori . Journal of Modern
+Dynamics, 2, no. 4, 645-700 (2008).
+[18] Gogolev, Andrey. Bootstrap for local rigidity of Anosov automorphisms on the 3-torus. Communications in Math-
+ematical Physics 352.2 (2017): 439-455.
+[19] Guelman, Nancy, and Isabelle Liousse. C 1-actions of Baumslag-Solitar groups on S1. Algebraic & Geometric
+Topology 11.3 (2011): 1701-1707.
+[20] Guelman, Nancy, and Isabelle Liousse. Actions of Baumslag-Solitar groups on surfaces. arXiv preprint
+arXiv:1004.2126 (2010).
+[21] Guelman, Nancy, and Isabelle Liousse. Any Baumslag-Solitar action on surfaces with a pseudo-Anosov element
+has a ﬁnite orbit.Ergodic Theory and Dynamical Systems 39.12 (2019): 3353-3364.
+[22] Gogolev, Andrey, Boris Kalinin, and Victoria Sadovskaya. Local rigidity for Anosov automorphisms, Communi-
+cations in Mathematical Physics, June 2017, V olume 352, Issue 2, 439-455
+[23] Ghys, ´Etienne, and Vlad Sergiescu. Sur un groupe remarquable de diff ´eomorphismes du cercle. Commentarii
+Mathematici Helvetici 62, no. 1 (1987): 185-239.
+[24] Horn, Roger A., and Charles R. Johnson. Topics in matrix analysis.1991. Cambridge University Presss, Cambridge
+37: 39.
+[25] Journ ´e, Jean-Lin. A regularity lemma for functions of several variables . Revista Matematica Iberoamericana 4.2
+(1988): 187-194.
+[26] Katok, Anatole, and Boris Hasselblatt. Introduction to the modern theory of dynamical systems.V ol. 54. Cambridge
+University Press, 1997.
+[27] Katzenlson, Yitzhak. Ergodic automorphisms of Tn are bernoulli shifts , Israel Journal of Mathematics 10, no.
+2(1971), 186-195.
+[28] Katznelson, Yitzhak, and Donald Ornstein. The differentiability of the conjugation of certain diffeomorphisms of
+the circle. Ergodic Theory and Dynamical Systems 9.04 (1989): 643-680.
+[29] Liu, Qiao. Local rigidity of certain solvable group actions on tori. arXiv preprint arXiv:1910.13541 (2019).
+[30] de la Llave, Rafael. Smooth conjugacy and SRB measures for uniformly and non-uniformly hyperbolic systems.
+Communications in Mathematical Physics 150.2 (1992): 289-320.
+[31] Ledrappier, Francois, and L-S. Young. The metric entropy of diffeomorphisms: Part I: Characterization of mea-
+sures satisfying Pesin’s entropy formula.Annals of Mathematics (1985): 509-539.
+
+=== PDF PAGE 36 ===
+36 SEBASTIAN HURTADO AND JINXIN XUE
+[32] Ledrappier, Francois, and L-S. Young. The metric entropy of diffeomorphisms: Part II: Relations between entropy,
+exponents and dimension. Annals of Mathematics (1985): 540-574.
+[33] A. McCarthy, Rigidity of trivial actions of Abelian-by-cyclic groups , Proc. Amer. Math. Soc. 138 (2010), no. 4,
+1395-1403.
+[34] Misiurewicz, Micha, and Krystyna Zieman. Rotation sets for maps of tori. Journal of the London Mathematical
+Society 2.3 (1989): 490-506.
+[35] Navas, And ´es. Groups of circle diffeomorphisms. University of Chicago Press, 2011.
+[36] W. Schmidt, Diophantine Approximation, Lecture Notes in Math. 785. Springer-Verlag, New York, 1980.
+[37] Saghin, Radu, and Jiagang Yang. Lyapunov exponents and rigidity of Anosov automorphisms and skew products.
+arXiv preprint arXiv:1802.08266 (2018).
+[38] Wang, Zhenqi Jenny. New examples of local rigidity of algebraic partially hyperbolic actions.arXiv preprint arXiv:
+1908.09181v3 (2019).
+[39] A. Wilkinson, J. Xue, Rigidity of some abelian-by-cyclic solvable group actions on TN , arXiv 1902.01003, to
+appear in Communications in Mathematical Physics.
+[40] Young, Lai-Sang. What are SRB measures, and which dynamical systems have them?Journal of Statistical Physics
+108.5 (2002): 733-754.
+DEPARTMENT OF MATHEMATICS , U NIVERSITY OF CHICAGO , C HICAGO , IL 60637, USA
+Email address: shurtados@uchicago.edu
+YAU MATHEMATICAL SCIENCES CENTER & DEPARTMENT OF MATHEMATICS , TSINGHUA UNIVERSITY , BEIJING ,
+CHINA , 100084
+Email address: jxue@tsinghua.edu.cn

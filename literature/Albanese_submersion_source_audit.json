@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-19",
+  "new_source": {
+    "filename": "63_Gimenez_Conejero_Le_Nuno_Ballesteros_2023_Thom_monodromy.pdf",
+    "title": "Thom condition and monodromy",
+    "author": "R. Gimenez Conejero, Dung Trang Le, J. J. Nuno-Ballesteros",
+    "download_url": "https://real.mtak.hu/191928/1/s13398-022-01353-y.pdf",
+    "landing_url": "https://doi.org/10.1007/s13398-022-01353-y",
+    "bytes": 693366,
+    "pages": 26,
+    "sha256": "f7414db2cab895f886f499dc814b4b4e439ff988886dc759f634134bc8435cfe",
+    "collected_utc": "2026-10-19T00:11:58.752514+00:00",
+    "publication_note": "Journal version, RACSAM 117 (2023), article 18; online 13 November 2022. Theorem 0.1 gives A Campo Lefschetz vanishing with no isolated-critical-point hypothesis; Theorem 0.2 proves a fixed-point-free geometric monodromy."
+  },
+  "complete_pages_visually_checked": [
+    {
+      "source": "63_Gimenez_Conejero_Le_Nuno_Ballesteros_2023_Thom_monodromy.pdf",
+      "page": 1,
+      "image": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\Albanese_submersion_previews\\63_page_1.png",
+      "visual_checked": true
+    },
+    {
+      "source": "63_Gimenez_Conejero_Le_Nuno_Ballesteros_2023_Thom_monodromy.pdf",
+      "page": 2,
+      "image": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\Albanese_submersion_previews\\63_page_2.png",
+      "visual_checked": true
+    },
+    {
+      "source": "09_Rodriguez_Hertz_Wang_Higher_rank_rigidity.pdf",
+      "page": 6,
+      "image": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\Albanese_submersion_previews\\09_page_6.png",
+      "visual_checked": true
+    }
+  ],
+  "reused_without_repeating_old_page_audit": [
+    {
+      "file": "62_Catanese_Frediani_2005_Deformation_in_the_large_II.pdf",
+      "claim": "Theorem 3.6, zero Chern-class principal torus bundle is a complex torus; m=2,d=2 is covered",
+      "previous_audit": "Albanese_source_audit.json"
+    }
+  ],
+  "standard_inputs_not_claimed_as_new_or_full_original_PDF_audits": [
+    "Franks-Manning marked topological conjugacy (statement checked in old source 09 p.6)",
+    "Anosov-Hopf smooth-volume ergodicity (assumptions restated in note75, research-primary web statement checked)",
+    "Bochner-Montgomery compact complex automorphism group",
+    "Compact complex surfaces with trivial canonical bundle and b1=4 are tori",
+    "Fischer-Grauert holomorphic local triviality"
+  ],
+  "external_2026_preprints_used_in_notes_74_to_76": false,
+  "fixed_F_final_model_exit_still_uses_source_59_as_in_note73": true,
+  "independent_proofs": [
+    "notes/74_closed_one_form_developing_map_has_no_critical_points.md",
+    "notes/75_a_single_slow_one_form_recovers_the_central_torus.md",
+    "notes/76_remaining_fast_Albanese_branch_and_countertests.md"
+  ],
+  "novelty_confirmed": false
+}

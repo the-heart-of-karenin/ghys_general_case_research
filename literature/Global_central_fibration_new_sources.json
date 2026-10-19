@@ -1,0 +1,56 @@
+[
+  {
+    "filename": "73_Buchdahl_1999_On_compact_Kahler_surfaces.pdf",
+    "title": "On compact Kahler surfaces",
+    "authors": [
+      "Nicholas Buchdahl"
+    ],
+    "download_url": "https://www.numdam.org/article/AIF_1999__49_1_287_0.pdf",
+    "landing_url": "https://doi.org/10.5802/aif.1674",
+    "publication_note": "Annales de l Institut Fourier 49 (1999), no. 1, 287-302. Journal scan with Numdam cover. Only Theorem 11: an even first Betti number implies a compact complex surface is Kahler.",
+    "resolved_url": "https://www.numdam.org/article/AIF_1999__49_1_287_0.pdf",
+    "download_status": "downloaded",
+    "bytes": 1645763,
+    "pages": 17,
+    "sha256": "9d5be904779f040102392f41f6acb4717e2b8ec874443d128532f234406c8c0e",
+    "collected_utc": "2026-10-19T11:46:03.426955+00:00",
+    "verified_full_pdf_pages": [
+      3,
+      12
+    ],
+    "visual_status": "All six listed full rendered pages inspected in this turn.",
+    "previews": [
+      "literature/Global_central_fibration_source_previews/73_Buchdahl_1999_On_compact_Kahler_surfaces_page_3.png",
+      "literature/Global_central_fibration_source_previews/73_Buchdahl_1999_On_compact_Kahler_surfaces_page_12.png"
+    ]
+  },
+  {
+    "filename": "74_Douady_1966_Modules_compact_analytic_subspaces.pdf",
+    "title": "Le probleme des modules pour les sous-espaces analytiques compacts d'un espace analytique donne",
+    "authors": [
+      "Adrien Douady"
+    ],
+    "download_url": "https://www.numdam.org/item/10.5802/aif.226.pdf",
+    "landing_url": "https://doi.org/10.5802/aif.226",
+    "publication_note": "Annales de l Institut Fourier 16 (1966), no. 1, 1-95. Journal scan with Numdam cover. Section 9: local construction, universal proper flat family, tangent Hom(I,O), finite dimensionality.",
+    "resolved_url": "https://www.numdam.org/item/10.5802/aif.226.pdf",
+    "download_status": "downloaded",
+    "bytes": 7529827,
+    "pages": 96,
+    "sha256": "c9f53b70c17ef8a5ebdfa8fca37f043736feda9338da1602d5bb2c97234f5185",
+    "collected_utc": "2026-10-19T11:46:03.447275+00:00",
+    "verified_full_pdf_pages": [
+      78,
+      81,
+      84,
+      85
+    ],
+    "visual_status": "All six listed full rendered pages inspected in this turn.",
+    "previews": [
+      "literature/Global_central_fibration_source_previews/74_Douady_1966_Modules_compact_analytic_subspaces_page_78.png",
+      "literature/Global_central_fibration_source_previews/74_Douady_1966_Modules_compact_analytic_subspaces_page_81.png",
+      "literature/Global_central_fibration_source_previews/74_Douady_1966_Modules_compact_analytic_subspaces_page_84.png",
+      "literature/Global_central_fibration_source_previews/74_Douady_1966_Modules_compact_analytic_subspaces_page_85.png"
+    ]
+  }
+]

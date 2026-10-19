@@ -1,0 +1,824 @@
+=== PDF PAGE 1 ===
+Comment. Math. Helv. 79 (2004) 779–797
+0010-2571/04/040779-19
+DOI 10.1007/s00014-004-0811-3
+c⃝ 2004 Birkh¨auser Verlag, Basel
+Commentarii Mathematici Helvetici
+Diﬀ´eomorphismes holomorphes Anosov
+Serge Cantat
+Abstract. We classify the holomorphic diﬀeomorphisms of complex projective varieties with an
+Anosov dynamics and holomorphic stable and unstable foliations : The variety is ﬁnitely covered
+by a compact complex torus and the diﬀeomorphism corresponds to a linear transformation of
+this torus.
+Mathematics Subject Classiﬁcation (2000). 58F15, 58F18, 32L30, 32Q57.
+Keywords. Anosov diﬀeomorphisms, holomorphic foliations, Calabi–Yau manifolds, rational
+connectedness.
+1. Introduction
+1.1. Dynamique holomorphe
+Par d´eﬁnition, un automorphisme d’une vari´et´e complexe M est un diﬀ´eo-
+morphisme holomorphe de M. Lorsque M est compacte, le groupe form´ep a rs e s
+automorphismes est un groupe de Lie complexe de dimension ﬁnie not´e Aut (M).
+Certaines vari´et´es projectives admettent des automorphismes dont la dynamique
+est tr`es riche. Par exemple, si l’on choisit une sextique du plan projectif avec
+dix points doubles, la surface obtenue en ´eclatant ces dix points est munie d’un
+automorphisme qui poss`ede une inﬁnit´e de points p´eriodiques et dont l’entropie
+topologique est strictement positive ([16], [7]). Cette remarque appelle deux ques-
+tions naturelles : un tel exemple d’automorphisme ´etant donn´e, peut-on d´ecrire
+avec pr´ecision sa dynamique ? Peut-on classer les vari´et´es projectives qui sont le
+si`ege d’une dynamique chaotique ?
+Dans ce texte, nous abordons un probl`eme classique qui se situe `al af r o n t i `ere
+des deux questions pr´ec´edentes. Il s’agit de classer les automorphismes des vari´et´es
+projectives complexes dont la dynamique est de type Anosov. Cet article poursuit
+donc l’´etude amorc´ee par ´E. Ghys dans [15].
+
+=== PDF PAGE 2 ===
+780 S. Cantat CMH
+1.2. Automorphismes Anosov
+Avant de pr´esenter les r´esultats principaux, rappelons ce qu’est un diﬀ´ eo-
+morphisme Anosov. Soit M une vari´et´e compacte munie d’une m´etrique rieman-
+nienne. Un diﬀ´eomorphisme f : M → M est de type Anosov s’il existe deux sous-
+ﬁbr´es E+ et E− du ﬁbr´e tangent TM et deux constantes strictement positives c
+et χ tels que
+(i) TM est la somme directe de E+ et E− ;
+(ii) E+ et E− sont invariants sous l’action def ;
+(iii) pour tout entier relatif n, pour tout vecteur v+ de E+ et tout vecteur v−
+de E− ,
+∥ dfn(v+) ∥≤ c ∥v+ ∥ exp(nχ)
+∥ dfn(v− ) ∥≤ c ∥v− ∥ exp(−nχ).
+Sous ces hypoth`eses, les deux champs de plans d´etermin´es par E+ et E− sont
+continus et int´egrables : ils d´eterminent deux feuilletages continus deM, le feuille-
+tage instable F+ et le feuilletage stable F− . En g´en´eral, F+ et F− ne sont pas
+diﬀ´erentiables, mˆeme lorsque le diﬀ´eomorphisme f est de classe C∞ , mais leurs
+feuilles le sont.
+Remarque 1.1. Si f pr´eserve une structure complexej,E + et E− sont j-invariants
+et les feuilles deF+ et F− sont donc holomorphes. A priori, la structure transverse
+de F+ et F− est seulement continue, toutefois nous ne connaissons aucun exemple
+d’automorphisme sur une vari´et´e complexe compacte qui soit de type Anosov et
+dont les feuilletages stable et instable ne soient pas holomorphes.
+Nous utiliserons le vocabulaire suivant : si F est un feuilletage continu d’une
+vari´et´e complexe M dont les feuilles sont holomorphes, la dimension de F est la
+dimension complexe de ses feuilles. Un automorphisme Anosov estde codimension
+1 si F+ ou F− est de dimension 1.
+Lorsque f est un diﬀ´eomorphisme Anosov d’une vari´et´e compacte M, et lorsque
+F+ est un feuilletage par courbes, le feuilletageF− est continuement diﬀ´erentiable
+(cf. [17]). Cette propri´et´es ’ ´etend aux automorphismes Anosov des vari´et´es com-
+plexes compactes et l’on peut mˆeme remplacer continuement diﬀ´erentiable par
+holomorphe :
+Proposition 1.2 (Ghys, [15]). Soit f un automorphisme Anosov d’une vari´et´e
+complexe compacte M. Si F+ est de dimension 1, alors F− est un feuilletage ho-
+lomorphe. En particulier, siM est une surface, alorsF+ et F− sont holomorphes.
+
+=== PDF PAGE 3 ===
+Vol. 79 (2004) Diﬀ´ eomorphismes holomorphes Anosov 781
+1.3. ´Enonc´es
+Une conjecture c´el`ebre de S. Smale aﬃrme que toute vari´et´e compacte poss´edant
+un diﬀ´eomorphisme de type Anosov est une infra-nilvari´et´e, c’est-`a-dire qu’apr`es
+un revˆetement ﬁni la vari´et´e est le quotient d’un groupe de Lie nilpotent par
+un r´eseau cocompact. De nombreux r´esultats sont disponibles si l’on fait des hy-
+poth`eses de r´egularit´e sur les feuilletages stable et instable du diﬀ´ eomorphisme
+Anosov ([13], [14], [2], [3]). En ce qui concerne les automorphismes, on dispose du
+tr`es joli r´esultat suivant.
+Theorem 1.3 (Ghys, [15]). Soit M une vari´et´e complexe compacte etf un auto-
+morphisme de M.
+(a) Si f est un automorphisme Anosov de codimension1 qui a une orbite dense,
+alors M est hom´eomorphe `a un tore et f est topologiquement conjugu´e`a
+un diﬀ´eomorphisme lin´eaire de ce tore.
+(b) Si M est une surface, et si f est Anosov, alors M est un tore complexe et
+f en est un automorphisme lin´eaire.
+La preuve de ce th´eor`eme repose sur les propri´et´es transverses du feuilletage de
+codimension 1 : c’est un feuilletage holomorphe transversalement projectif (cf. [15]
+et le paragraphe 5.1). Le but du pr´esent article est d’obtenir un r´esultat analogue en
+supposant d’entr´ee de jeu que les feuilletages stable et instable sont holomorphes,
+mais sans faire d’hypoth`ese sur la codimension des feuilletages ou la transitivit´e
+topologique de la dynamique. Par contre, nous supposerons queM est projective.
+Theorem 1.4. Soient M une vari´et´e projective complexe etf un automorphisme
+de M de type Anosov.
+(a) Si les feuilletages stable et instable de f sont holomorphes, alors M est
+revˆetue par un tore et f provient d’un automorphisme lin´e a i r ed ec et o r e .
+(b) Si f est un automorphisme Anosov de codimension 1, alors M est un tore
+et f est lin´eaire.
+Exemple 1.5. Soient Λ = Z ⊕ Zα un r´eseau cocompact de la droite complexe, A
+le tore C2/Λ2 et τ le point de A associ´e au point (1/2,1/2) de C2. La transfor-
+mation lin´eaire (x, y) ↦→ (3x +2 y, 2x + y)p r ´eserve le r´eseau Λ2 et induit donc un
+automorphisme Anosov deA. Nous noterons f l’automorphisme Anosov obtenu en
+faisant agir cette transformation diagonalement surA ×A. Soit j l’automorphisme
+d’ordre 2 de A × A d´eﬁni par
+j(a, b)=( a + τ,−b).
+Les automorphismes f et j commutent et l’automorphisme induit par f sur
+(A × A)/j est un automorphisme Anosov d’une vari´et´e projective qui n’est pas
+un tore.
+
+=== PDF PAGE 4 ===
+782 S. Cantat CMH
+Remarque 1.6. (i) La conclusion du th´eor`eme 1.4 est plus forte que la conjecture
+de Smale puisque la vari´et´e M est revˆetue par un tore. Ceci r´esulte de la remarque
+suivante : soient N un groupe de Lie complexe connexe et Γ un r´eseau cocompact
+de N, alors N/Γe s tk ¨ahl´erienne si et seulement si N est ab´elien ; dans ce casN/Γ
+est un tore.
+Dans le mˆeme ordre d’id´ee, si M est une vari´et´e complexe compacte k¨ahl´erien-
+ne dont le groupe fondamental est nilpotent sans ˆetre virtuellement ab´elien il est
+facile de d´eduire de [5] qu’aucun automorphisme de M n’est Anosov.
+(ii) Puisque toute vari´et´e compacte k¨ahl´erienne hom´eomorphe `a un tore est un
+tore complexe, la seconde aﬃrmation du th´eor`eme 1.4 est une faible g´en´eralisation
+du th´eor`eme de Ghys.
+Remarque 1.7. Dans [15], Ghys ´etudie aussi les actions holomorphes de C∗ qui
+sont de type Anosov (les ﬁbr´es stable et instable forts sont en somme directe avec
+le champ de droites complexes tangent au ﬂot) : ces actions y sont compl`etement
+class´ees pour les vari´et´es de dimension 3.
+Sur une vari´et´ek ¨ahl´erienne, un th´eor`eme de M. Gromov montre que tout au-
+tomorphisme isotope `a l’identit´e a une entropie nulle. En particulier, il n’y a pas
+de ﬂot d’Anosov. De surcroˆıt, toute action holomorphe deC∗ est compactiﬁable
+(cf. [20]).
+1.4. Organisation de l’article
+Les arguments employ´es pour d´emontrer les r´esultats de cet article rel`event
+essentiellement de la g´eom´etrie alg´ebrique et analytique complexe. C’est d’ailleurs
+pour cela que nous supposons la vari´et´e ambiante projective et les feuilletages holo-
+morphes. Les techniques diﬀ`erent donc profond´ement de celles pr´esent´ees dans [15].
+La partie 2 concerne une alternative dˆue `a J.-P. Demailly et T. Peternell. Elle
+permet de rapporter l’´etude `a celle des vari´et´es unir´egl´ees (trait´ee dans la partie 4)
+et des vari´et´es dont la premi`ere classe de Chern est nulle (partie 3). La partie 5 est
+consacr´ee aux automorphismes Anosov dont le feuilletage stable ou instable est de
+dimension 1 complexe.
+1.5. Remerciements
+Un grand merci `a ´Etienne Ghys, `aS ´ebastien Boucksom, `a Dominique Cerveau,
+`a Jean-Pierre Conze et `aF r ´ed´eric Touzet pour les discussions que nous avons eues
+autour de ce th`eme. Les remarques judicieuses du rapporteur m’ont permis de
+rectiﬁer une premi`ere version confuse et incompl`ete de ce texte. La partie 2 doit
+beaucoup `a ses lectures attentives et je l’en remercie. Ce travail a ´et´e eﬀectu´e lors
+d’une d´el´egation cnrs. Merci au cnrs pour m’avoir oﬀert ces moments privil´egi´es.
+
+=== PDF PAGE 5 ===
+Vol. 79 (2004) Diﬀ´ eomorphismes holomorphes Anosov 783
+2. L’alternative de Demailly et Peternell
+Dans cette partie, nous renfor¸cons une alternative r´ecente dˆue `a J.-P. Demailly et
+T. Peternell lorsque la vari´et´e projective M poss`ede un automorphisme Anosov.
+2.1. Courants positifs et pseudo-eﬀectivit´e
+Soit M une vari´et´e complexe compacte de dimensiond. Une forme diﬀ´erentielle
+de type (p, p) est dite positive si sa restriction `a tout germe de sous-vari´et´e com-
+plexe W de dimension p est une forme volume d´eﬁnissant la mˆeme orientation que
+la structure complexe de W.
+Un (1,1)-courant est une forme lin´eaire continue sur l’espace des formes diﬀ´e-
+rentielles de type (d − 1,d − 1), muni de la topologie de la convergence uniforme.
+Un courant est positif s’il attribue une valeur positive `a toute forme positive ; il
+est ferm´e s’il est nul sur les formes exactes. Si T est un courant ferm´e, la classe
+d’homologie qui lui correspond sera not´ee [T].
+Exemple 2.1. Soit ω une forme de type (1,1). On lui associe le (1,1)-courant Tω
+d´eﬁni par la formule
+⟨Tω |α ⟩ =
+∫
+M
+ω ∧ α
+pour toute forme α de type (d − 1,d − 1). Ce courant est positif (resp. ferm´e) si
+et seulement si ω l’est.
+Si L est un ﬁbr´e en droites sur M, nous noterons c1(L)s ap r e m i `ere classe de
+Chern et [L] la classe d’homologie Poincar´e-duale. La classe [L] sera appel´ee classe
+d’homologie de L. Le ﬁbr´e L est pseudo-eﬀectif s’il existe un courant positif ferm´e
+dont la classe d’homologie est ´egale `a[ L]. Par exemple, si le ﬁbr´e en droites L est
+muni d’une m´etrique hermitienne dont la forme de courbureω est positive, alors L
+est pseudo-eﬀectif. Le courantTω associ´e`al af o r m eω est en eﬀet un courant positif
+ferm´e repr´esentant la classe d’homologie de L. Nous utiliserons de tels courants
+Tω dans la preuve de la proposition 2.6. De mˆeme, lorsque L poss`ede une section
+holomorphe, le courant d’int´egration sur le lieu des z´eros de cette section est un
+courant positif ferm´e dont la classe d’homologie co¨ıncide avec celle deL : le ﬁbr´e
+L est donc pseudo-eﬀectif.
+Le ﬁbr´e en droites le plus important est le ﬁbr´ e canonique. Il s’agit du ﬁbr´e
+KM = det(T ∗M) dont les sections sont les formes holomorphes de degr´e maximal
+dimC(M). Les propri´et´es de positivit´e de ce ﬁbr´er ´egulent la g´eom´etrie de M. En
+particulier, nous exploiterons un th´eor`eme r´ecent de J.-P. Demailly et T. Peternell
+oﬀrant l’alternative suivante [11] : si M est une vari´et´e projective complexe, ou
+bien KM est pseudo-eﬀectif, ou bien M est unir´egl´ee, ce qui signiﬁe que M est
+couverte par une famille de courbes rationnelles.
+Nous allons maintenant renforcer cette alternative dans le cas o`u M poss`ede
+un automorphisme Anosov.
+
+=== PDF PAGE 6 ===
+784 S. Cantat CMH
+2.2. ´Enonc´e de l’alternative renforc´ee
+Le but de ce paragraphe est de d´emontrer la proposition suivante.
+Proposition 2.2. Si M est une vari´et´e projective complexe qui poss`ede un auto-
+morphisme Anosov, ou bien M est unir´egl´ee ou bien sa premi`e r ec l a s s ed eC h e r n
+est nulle.
+D’apr`es l’alternative de Demailly et Peternell, il s’agit de montrer que la classe
+d’homologie du ﬁbr´e canoniqueKM est nulle d`es queKM est pseudo-eﬀectif et qu’il
+existe un automorphisme Anosov. Un cas particulier instructif apparaˆıt lorsque
+KM admet une section et, plus g´en´eralement, lorsque la dimension de Kodaira de
+M est positive ou nulle.
+Lemme 2.3. Soit M une vari´et´e complexe compacte. Si M poss`ede un automor-
+phisme Anosov, ou bien son ﬁbr´e canonique est un ﬁbr´e de torsion, ou bien la
+dimension de Kodaira de M est ´egale `a −∞ . En particulier, si la dimension de
+Kodaira de M est positive ou nulle, KM est un ﬁbr´e de torsion.
+D´emonstration. Supposons que la dimension de Kodaira de M est positive ou
+nulle. Il existe alors une puissance positive K⊗l
+M du ﬁbr´e canonique admettant des
+sections holomophes non triviales. L’automorphisme Anosov f agit lin´eairement
+sur le C-espace vectoriel de dimension ﬁnie form´e des sections de K⊗l
+M et poss`ede
+donc un un vecteur propre non nul :
+∃λ ∈ C, ∃Ω ∈ H0(M,K ⊗l
+M ),f ∗Ω= λΩ. (2.1)
+Le module de λ est ´egal `a1c a r λλ co¨ıncide avec la racinel-`eme du degr´e topo-
+logique de f. En particulier, f pr´eserve la mesure (Ω ∧ Ω)1/l. Puisque le support
+de cette mesure co¨ıncide avec la vari´et´e M, l’ensemble des points p´eriodiques de
+f est dense dans M ; en eﬀet, les points p´eriodiques d’un diff´eomorphisme Anosov
+forment une partie dense de son ensemble non-errant.
+Soit Z le lieu des z´eros de Ω. Si Z n’est pas vide, c’est une hypersurface (sin-
+guli`ere) f-invariante. Si m est un point p´eriodique de f et si la vari´et´e stable ou
+instable de m coupe Z, alors m appartient `a Z, car Z est un ensemble compact
+f-invariant.
+Soit z un point de Z et U un voisinage ouvert dez qui soit un ouvert distingu´e
+pour le feuilletage stable et le feuilletage instable def. Puisque Z est une hypersur-
+face, si U est suﬃsamment petit alors Z coupe chaque vari´et´e instable ou chaque
+vari´et´e stable locale contenue dans U. En particulier, Z contient tous les points
+p´eriodiques situ´es dans un tel ouvert. Ainsi, siZ ´etait non vide, Z contiendrait un
+ouvert, car les points p´eriodiques de f sont denses. Ceci est absurde.
+La section holomorphe Ω ne s’annule donc pas et K⊗l
+M est le ﬁbr´e en droites
+trivial. Ceci termine la preuve. □
+Remarque 2.4. L’´etude des sous-vari´et´es compactes invariantes par un diff´ e-
+omorphisme Anosov est un sujet diﬃcile pour lequel on dispose d’une litt´erature
+
+=== PDF PAGE 7 ===
+Vol. 79 (2004) Diﬀ´ eomorphismes holomorphes Anosov 785
+importante. L’absence d’hypersurface compacte invariante par un diff´eomorphisme
+Anosov transitif a ´et´e remarqu´ee par M. W. Hirsch [18]. On pourra consulter [12]
+et la bibliographie qui s’y trouve pour des compl´ements.
+2.3. Courants positifs invariants
+Dans ce paragraphe nous ´etudions les courants positifs T qui sont invariants
+sous l’action d’un automorphisme Anosovf. Ceci signiﬁe que, pour toute forme α,
+⟨T |f ∗α ⟩ = ⟨T |α ⟩.
+Lemme 2.5. Soit M une vari´et´e complexe compacte k¨ahl´erienne dont le ﬁbr´ec a -
+nonique est pseudo-eﬀectif. Pour tout automorphismef de M il existe un courant
+positif ferm´e T v´eriﬁant les deux propri´et´es suivantes :
+(a) f∗T = T ;
+(b) la classe d’homologie de T co¨ıncide avec celle deKM .
+D´emonstration. Puisque KM est pseudo-eﬀectif, le convexe Γ([ KM ]) form´e des
+courants positifs ferm´es dont la classe d’homologie est celle deKM n’est pas vide.
+Puisque M est une vari´et´e compacte k¨ahl´erienne, la norme d’un courant positif
+ferm´en ed ´epend que de sa classe d’homologie. La norme des ´el´ements de Γ([KM ])
+est donc constante et Γ([KM ]) est compact pour la topologie faible.
+Puisque la classe d’homologie [KM ] est un point ﬁxe pour l’action de Aut( M)
+sur H2n− 2(M, R), ce convexe est Aut(M)-invariant. Le th´eor`eme du point ﬁxe de
+Schauder–Leray–Tychonoﬀ permet de conclure. □
+Proposition 2.6. Soit M une vari´et´e complexe compacte munie d’un automor-
+phisme Anosov f. Si le ﬁbr´e canonique KM est pseudo-eﬀectif, la premi`ere classe
+de Chern c1(M) est nulle.
+D’apr`es l’alternative de Demailly et Peternell, cette proposition est ´equivalente
+`a la proposition 2.2. Pour l’´etablir, nous allons montrer que le courant T fourni
+par le lemme 2.5 est nul. Un cas particulier a d´ej`a´et´e obtenu au cours de la preuve
+du lemme 2.3 : nous y montrons en eﬀet que le courant d’int´egration sur le lieu
+des z´eros d’une section holomorphe de KM f-invariante est nul. Voici la seconde
+id´ee pour traiter le cas g´en´eral.
+Puisque f est un diff´eomorphisme Anosov, f r´ealise une dilatation uniforme le
+long de son feuilletage instable et une contraction uniforme le long de son feuille-
+tage stable. En particulier, toute forme diﬀ´erentielle invariante par f est nulle le
+long de F+ et de F− . Une forme diﬀ´erentielle positive qui est nulle le long de deux
+sous-espaces suppl´ementaires est identiquement nulle : c’est l’in´egalit´e de Cauchy–
+Schwartz. Il n’existe donc pas de forme positive invariante. Pour les courants posi-
+tifs, la preuve est essentiellement la mˆeme ; pour la mettre en place, on approxime
+le courant invariant par une forme presque positive et presque invariante.
+
+=== PDF PAGE 8 ===
+786 S. Cantat CMH
+D´emonstration. Notons d la dimension de la vari´et´e M et ﬁxons une m´etrique
+hermitienne de forme fondamentale κ. Sa forme volume est donc ´egale `a κd. Nous
+calculerons la norme des (1,1)-courants `a l’aide de cette m´etrique ; ainsi, pour tout
+courant positif T, ∥ T ∥= ⟨T |κd− 1 ⟩.
+Soit T un (1,1)-courant positif ferm´e invariant sous l’action de f et dont la
+classe d’homologie est ´egale `a celle de KM . Il s’agit de montrer que T est identi-
+quement nul. Pour cela, eﬀectuons la d´ecomposition de Siu de T :
+T =
+∑
+i≥ 1
+λi{Zi} + R (2.2)
+o`u chaque {Zi} est le courant d’int´egration sur une hypersurface de M et R est
+un courant positif ferm´e dont les nombres de Lelong sont concentr´es sur des sous-
+ensembles analytiques de codimension sup´erieure ou ´egale `a2 . Cette d´ecomposition
+est unique, donc invariante sous l’action de f. Nous allons tout d’abord montrer
+que R est nul.
+Soit {Ui} un recouvrement de M par des ouverts distingu´es pour F+ et F− et
+{ρi} une partition de l’unit´e adapt´ee `a ce recouvrement. Sur chaqueUi, on dispose
+donc de p =d i mC(F− ) sections continues v1, ..., vp du ﬁbr´e tangent complexe
+TM telles que, en tout point x de Ui,
+TxF− = VectC(v1,v 2, ..., vp). (2.3)
+De mˆeme, chaque Ui est muni deq =d i mC(F+) champs de vecteursvp+1, ..., vp+q
+engendrant le feuilletage F+.
+Notons w le champ de bivecteurs
+wx =
+∑
+i
+ρi(x)
+p∑
+j=1
+vj(x) ∧ vj(x). (2.4)
+Ce champ est partout tangent au feuilletage stable donc, lorsquen est suﬃsamment
+grand, le champ de bivecteurs w − fn
+∗ w est strictement positif le long de F− .
+Autrement dit, il existe une constante positiveC telle que, pour toute (1,1)-forme
+ω positive le long de F− et pour tout point x,
+1
+C ωx (wx − (fn
+∗ w)x) ≤∥ ωTx F − ∥≤ Cω x (wx − (fn
+∗ w)x) . (2.5)
+Cette in´egalit´e permet de contrˆoler la norme d’une forme diﬀ´erentielle positive le
+long du feuilletage stable. Une in´egalit´e similaire est valable le long du feuilletage
+instable si l’on remplace f par son inverse et que l’on choisit n et C convenable-
+ment. Lorsque la forme ω est presque positive, i.e. lorsque ω ≥− ϵκ, une in´egalit´e
+analogue est valable, avec un terme correcteur additif de taille ϵ.
+L’in´egalit´e de Cauchy–Schwartz montre que, pour tout point x, et pour toute
+forme positive ω, la norme deω en x est major´ee par la moyenne g´eometrique de la
+norme de ω le long de TxF− et le long deTxF+. De mˆeme, s’il existeϵ strictement
+positif tel que ω ≥− ϵκ, alors
+∀x ∈ X, ∥ ωx ∥≤ ϵ +
+√
+∥ ωTxF + ∥2 + ∥ ωTxF − ∥2. (2.6)
+
+=== PDF PAGE 9 ===
+Vol. 79 (2004) Diﬀ´ eomorphismes holomorphes Anosov 787
+Dans la suite, l’entiern et la constante C seront telles que l’´equation (2.5) soit
+v´eriﬁ´ee. Pour chaque paire d’indices (i, j), nous noterons αj
+i la (d − 1,d − 1)-forme
+duale du champ de bivecteurs ρivj ∧ vj pour la forme volume κd ; autrement dit,
+pour toute forme ω de type (1,1) et pour tout point x,
+(
+ω ∧ αj
+i
+)
+x
+= ωx (ρi(x)(vj ∧ vj)x)
+(
+κd)
+x .
+Tout ceci ´etant mis en place, nous pouvons d´emontrer la proposition. D’apr`es le
+th´eor`eme d’approximation de Demailly [10], il existe une suite (ωk)d e( 1,1)-formes
+`a singularit´es alg´ebriques satisfaisant :
+|⟨R − Tωk |αj
+i ⟩| ≤ 1
+k ∀i, j, k, (2.7)
+|⟨R − Tωk |κd− 1⟩| ≤ 1
+k ∀k, (2.8)
+ωk ≥− 1
+kκ ∀k. (2.9)
+Le troisi`eme point signiﬁe que ωk est presque positive : plusk est grand et plus
+ωk est proche d’une forme positive. De plus, les singularit´es desωk sont concentr´ees
+sur des ensembles analytiques (de codimension 2) contenus dans l’ensemble des
+points o`u R a des nombres de Lelong positifs.
+Le premier point, l’invariance deT sous l’action def et la d´eﬁnition des formes
+αj
+i montrent que ⏐⏐
+⏐
+⏐
+⏐
+∫
+′
+X
+ωk (w − fn
+∗ w) κd
+⏐⏐
+⏐
+⏐
+⏐ ≤ p1+ ∥ f
+∗ ∥n
+k . (2.10)
+Le signe
+∫ ′
+X signiﬁe que l’on int`egre en dehors des singularit´es deωk. Cette quantit´e
+tend donc vers 0 lorsque k tend vers l’inﬁni. En rempla¸cant f par son inverse et
+en choisissant n convenablement, la mˆeme aﬃrmation s’av`ere bien sˆure valable le
+long du feuilletage F+.
+L’in´egalit´e (2.5), son analogue pour F+ et la remarque concernant l’in´egalit´e
+de Cauchy–Schwartz (´equation 2.6) assurent alors que la suite
+k ↦→
+⏐⏐
+⏐
+⏐
+⏐
+∫
+′
+X
+ωk ∧ κd− 1
+⏐⏐
+⏐
+⏐
+⏐
+tend vers z´ero. Ceci montre que le courantR se concentre sur le sous-ensemble o`u
+ses nombres de Lelong sont strictement positifs. Puisque les nombres de Lelong de
+R sont nuls en codimension 1, et puisque R est un courant positif ferm´ed et y p e
+(1,1) (i.e. de bidimension (d − 1,d − 1)), ce courant est nul.
+Nous pouvons maintenant conclure. PuisqueR est nul, la d´ecomposition de Siu
+de T est r´eduite `al ’ ´egalit´e
+T =
+∑
+i≥ 1
+λi{Zi}. (2.11)
+
+=== PDF PAGE 10 ===
+788 S. Cantat CMH
+Le courant T ´etant invariant sous l’action de f, nous pouvons supposer que les
+diviseurs Zi sont eux-mˆemes invariants. SoitW l’espace vectoriel engendr´e par les
+classes d’homologie [Zi]. Au sein de W, la classe d’homologie [KM ] est contenue
+dans l’int´erieur du cˆone convexe engendr´e par les [Zi]. Il en r´esulte que l’un des
+multiples entiers de [KM ]e s t´egal `a la somme d’un nombre ﬁni de classes [ Dj],
+o`u chaque Dj est un diviseur eﬀectif f-invariant. Le ﬁbr´e en droites KM est donc
+isomorphe au produit tensoriel
+(⊗j O(Dj)) ⊗ L
+o`u L est un ﬁbr´e plat (donc unitaire). Puisque KM et les Dj sont f-invariants,
+L∗ l’est aussi et l’on peut munir L∗ d’une m´etrique plate invariante ∥.∥L∗ . Nous
+noterons encore ∥.∥L∗ la m´etrique qui s’en d´eduit sur les puissances tensorielles
+de L∗.
+Comme les Dj sont eﬀectifs, il existe une section Ω de KM ⊗ L∗ qui est f-
+invariante. Nous pouvons maintenant reprendre la preuve du lemme 2.3. Cette
+section est une forme holomorphe `a valeurs dans L, et la densit´e ∥Ω ∧ Ω∥L∗ est
+f-invariante. La d´emonstration du lemme 2.3 s’adapte alors en utilisant la mesure
+associ´ee `a cette densit´e car c’est une mesure de support total absolument continue
+par rapport `a la mesure de Lebesgue. On en d´eduit que KM ⊗ L∗ poss`ede une
+section ne s’annulant pas. Ainsi, KM est un ﬁbr´e plat et la premi`ere classe de
+Chern de M est nulle. □
+3. Principe de Bochner et th´eor`eme de Bogomolov
+Le but de cette partie est de d´emontrer le th´eor`eme principal de ce texte lorsque
+la premi`ere classe de Chern de la vari´et´e ambiante M est nulle. Pour cela, nous
+emploierons le th´eor`eme de structure de Bogomolov, ce qui permet de ramener
+l’´etude aux vari´et´es de Calabi–Yau (cf. [1]). Dans ce contexte, c’est le principe de
+Bochner qui permet de conclure.
+3.1. Vari´et´es de Calabi–Yau
+Une vari´et´e de Calabi–Yau est une vari´et´e complexe, compacte, k¨ahl´erienne et
+simplement connexe dont le ﬁbr´e canonique est trivial. La vari´et´e est donc munie
+d’une forme volume holomorphe partout non nulle. Une telle vari´et´ep o s s `ede une
+m´etrique K¨ahl´erienne Ricci-plate (cf. [1]) ; nous ﬁxerons une telle m´etrique h et
+noterons κ l af o r m ed eK ¨ahler associ´ee.
+On dit qu’une vari´et´e de Calabi–Yau est irr´eductible si la composante connexe
+du groupe d’holonomie de cette m´etrique est irr´eductible. En ce cas, le th´eor`eme
+de classiﬁcation de Berger montre que ce groupe co¨ıncide avecSU(m)o u Sp(r)( m
+est ´egal `a la dimension de M et r `a la moiti´e). L’irr´eductibilit´e correspond au fait
+que ces deux groupes ne pr´eservent aucun sous-espace vectoriel non trivial deCn.
+
+=== PDF PAGE 11 ===
+Vol. 79 (2004) Diﬀ´ eomorphismes holomorphes Anosov 789
+Lorsqu’une vari´et´e de Calabi–Yau est r´eductible, elle est isomorphe au produit
+d’un nombre ﬁni de vari´et´es de Calabi–Yau irr´eductibles : la d´ecomposition du
+ﬁbr´e tangent en la somme des ﬁbr´es tangents `a chacun des facteurs irr´eductibles
+correspond `al ad ´ecomposition en sous-espaces invariants par l’holonomie.
+Proposition 3.1. Soit M une vari´et´e de Calabi–Yau. Toute d´ecomposition du
+ﬁbr´e tangent de M en la somme de deux sous-ﬁbr´es holomorphes est subordonn´ee
+`al ad ´ecomposition deM en facteurs irr´eductibles. En particulier,M n’a pas d’au-
+tomorphisme Anosov dont les feuilletages stable et instable sont holomorphes.
+D´emonstration. Il s’agit d’un r´esultat classique qui r´esulte du c´el`ebre principe
+de Bochner.
+Supposons que le ﬁbr´e tangent de M scinde en la somme de deux sous-ﬁbr´es
+holomorphes :
+TM = E1 ⊕ E2. (3.1)
+Notons p la dimension de E1 et j : E1 → TM l’injection canonique. En prenant la
+puissance ext´erieure p-i`eme de j, nous obtenons un morphisme non nul du ﬁbr´ee n
+droites det(E1) vers le ﬁbr´e vectoriel ⋀p TM. Autrement dit, ∧pjd ´etermine une
+section holomorphe non nulle du ﬁbr´e vectoriel ⋀p(TM )⊗ (det(E1))∗. Puisque TM
+est un ﬁbr´e Ricci-plat, ce ﬁbr´e vectoriel peut ˆetre muni d’une structure d’Hermite-
+Einstein. D’apr`es le principe de Bochner, la courbure de ce ﬁbr´e doit ˆetre positive
+ou nulle et, TM ´etant Ricci-plat, nous obtenons
+c1(E1) ≤ 0. (3.2)
+La mˆeme in´egalit´e s’applique `a E2 et l’´equation (3.1) entraˆıne les ´egalit´es
+c1(E1)=0= c1(E2). (3.3)
+Nous sommes donc dans le cas d’´egalit´e du principe de Bochner. En particulier,
+E1 est invariant par transport parall`ele et peut ˆetre d´ecompos´e en une somme de
+sous-espaces irr´eductibles pour l’action du groupe d’holonomie. Nous avons donc
+montr´eq u eE1 et E2 sont subordonn´es `al ad ´ecomposition de M en ses facteurs
+irr´eductibles.
+Si f est un automorphisme Anosov dont les feuilletages stable et instable sont
+holomorphes, on peut appliquer cette propri´et´e`a T F+ et T F− . Ceci montre que
+les feuilles de F+ et F− sont compactes, ce qui est impossible car f contracte
+uniform´ement F− . □
+3.2. Le th´eor`eme de Bogomolov
+Employons maintenant le th´eor`eme de structure de F. A. Bogomolov : si la
+classe de Chern de M e s tn u l l e ,e ts iM est k¨ahl´erienne, il existe un revˆetement
+ﬁni de M qui est isomorphe au produit d’un tore par une vari´et´e de Calabi–Yau.
+
+=== PDF PAGE 12 ===
+790 S. Cantat CMH
+Proposition 3.2. Si M est une vari´et´ek ¨ahl´erienne compacte dont la premi`ere
+classe de Chern est nulle et si M poss`ede un automorphisme Anosov dont les
+feuilletages stable et instable sont holomorphes, alors M est revˆetue par un tore.
+D´emonstration. Appliquons le th´eor`eme de F. A. Bogomolov. Le revˆetement uni-
+versel de M est donc le produit d’un espace aﬃne Ck par une vari´et´e de Calabi–
+Yau B.
+Soit f : M → M un automorphisme deM et ˜f son relev´e au revˆetement univer-
+sel ˜M = Ck × B. L’espace aﬃne Ck ne contient pas de sous-ensemble analytique
+compact, donc ˜f pr´eserve la projection de ˜M sur Ck. Autrement dit, il existe un
+automorphisme φ de Ck et une application holomorphe a ↦→ ψa de Ck vers le
+groupe de Lie Aut(B) tels que
+˜f(a, b)=( φ(a),ψa(b)) (3.4)
+pour tout point (a, b) du produit Ck × B. Le groupe d’automorphismes de B est
+discret (principe de Bochner), donc ψa ne d´epend pas de a. Ceci montre que ˜f
+agit diagonalement sur ˜M = Ck × B.
+Puisque l’automorphisme Anosov f agit diagonalement, l’automorphisme in-
+duit par f sur le facteur B est un automorphisme Anosov `a feuilletages stable
+et instable holomorphes. D’apr`es la proposition 3.1, la vari´et´e B est r´eduite `au n
+point. La vari´et´e M est donc revˆetue par un tore etf provient d’un automorphisme
+de ce tore. □
+Remarque 3.3. Tout automorphisme d’un tore complexe compactCk/Γ est une
+transformation aﬃne de ce tore car sa diﬀ´ erentielle est constante : c’est, en ef-
+fet, une fonction holomorphe du tore (compact) vers l’espace aﬃne des matrices
+complexes de taille k × k. Puisque cette transformation aﬃne d´eﬁnit un automor-
+phisme Anosov, il est facile de voir qu’elle poss`ede un point ﬁxe. Quitte `a choisir
+convenablement l’origine, il s’agit donc d’une transformation lin´eaire.
+4. Vari´et´es unir´egl´ees
+Le but de cette partie est de d´emontrer qu’il n’y a pas d’automorphisme Anosov
+`a feuilletages stable et instable holomorphes sur les vari´et´es projectives unir´egl´ees.
+Modulo l’existence du quotient rationnel, ce r´esultat se ram`ene `au nt h ´eor`eme de
+Y. Miyaoka sous une forme r´ecente dˆue `a F. A. Bogomolov et M. McQuillan.
+4.1. Vari´et´es rationnellement connexes
+Une vari´et´e projective complexe M est rationnellement connexe si deux points
+quelconques de M peuvent ˆetre joints par une courbe rationnelle. Pour qu’une
+vari´et´e soit rationnellement connexe, il faut et il suﬃt qu’il existe une courbe
+
+=== PDF PAGE 13 ===
+Vol. 79 (2004) Diﬀ´ eomorphismes holomorphes Anosov 791
+rationnelle c : P1(C) → M telle que le ﬁbr´e c∗(TM ) soit une somme de ﬁbr´es en
+droites O(m) strictement positifs (i.e. m> 0). Cette d´eﬁnition a un sens car tout
+ﬁbr´e vectoriel de la droite projective est une somme de ﬁbr´es en droites, et ce de
+mani`ere unique `a permutation pr`es des facteurs.
+Voici une formulation aﬀaiblie et simpliﬁ´ee, mais suﬃsante pour les applications
+que nous avons en vue, du th´eor`eme de Y. Miyaoka renforc´e par F. A. Bogomolov
+et M. McQuillan.
+Theorem 4.1 ([4]). Soit M une vari´et´e projective etF un feuilletage holomorphe
+lisse de M. S’il existe une courbe rationnelle c : P1(C) → M telle que le ﬁbr´e
+c∗(T F) soit une somme de ﬁbr´es en droites O(m) strictement positifs, il existe
+alors une courbe rationnelle contenue dans l’une des feuilles de F.
+Corollaire 4.2. Si M est rationnellement connexe, et si M poss`ede deux feuille-
+tages holomorphes partout transversesF et G, il existe alors une courbe rationnelle
+contenue dans l’une des feuilles de F (resp. de G).
+D´emonstration. Fixons une courbe rationnellec: P1(C) → M le long de laquelleTM
+est une somme de ﬁbr´es en droites strictement positifs. Puisque TM =T F⊕ T G,
+nous avons l’´egalit´e c∗(TM )= c∗(T F)⊕c∗(T G) et chacun des deux facteurs de cette
+somme directe est donc lui-mˆeme une somme de ﬁbr´es en droites positifs. Ainsi,
+F et G contiennent chacun une courbe rationnelle dans l’une de leurs feuilles. □
+Corollaire 4.3. Une vari´et´e rationnellement connexe ne poss`ede pas d’automor-
+p h i s m eA n o s o v`a feuilletages stable et instable holomorphes.
+D´emonstration. Soient {Bi} un recouvrement ﬁni de M par des ouverts biholo-
+morphes `a des boules et ϵ un nombre de Lebesgue pour ce recouvrement : tout
+ensemble de diam`etre inf´erieur `a ϵ est contenu dans l’un desBi. Puisqu’une boule
+ouverte ne contient pas d’ensemble analytique compact de dimension strictement
+positive, toute courbe de M a un diam`etre sup´erieur `a ϵ.
+Appliquons le th´eor`eme 4.1 et le corollaire 4.2. Si un tel automorphisme Anosov
+f existait, il existerait une courbe rationnelleC dans l’une des feuilles du feuilletage
+stable de f. Puisque f est une contraction uniforme le long de ce feuilletage, pour
+n tr`es grand devant 1,f
+n(C) serait une sous-vari´et´e compacte de M de diam`etre
+inf´erieur `a ϵ. Ceci contredit le choix de ϵ. □
+4.2. Quotient rationnel
+Soit M une vari´et´e projective. On d´eﬁnit sur M une relation d’´equivalence R,
+d´enomm´ee ´equivalence rationnelle, en disant que deux points sont en relation s’il
+existe une chaine de courbes rationnelles dans M qui joint x `a y. En g´en´eral, l’es-
+
+=== PDF PAGE 14 ===
+792 S. Cantat CMH
+pace quotientM/R n’est pas une vari´et´e ; par exemple, toute surface K3 projective
+poss`ede une inﬁnit´ed ´enombrable de courbes rationnelles. Toutefois, la construc-
+tion du quotient rationnel montre que c’est presque le cas (cf. [9], chap. 5) :
+Soit M une vari´et´e projective complexe. Il existe une vari´et´e projective normale
+(singuli`ere) Rat(M) et une ﬁbration m´eromorphe ρ : M /axisshort/axisshort/arrowaxisrightRat(M) qui satisfait
+les propri´et´es suivantes :
+(a) ρ est une ﬁbration r´eguli`ere propre en dehors d’un ferm´e de Zariski de M ;
+(b) les ﬁbres de ρ sont rationnellement connexes ;
+(c) les ﬁbres g´en´eriques de ρ sont des classes de R-´equivalence ;
+(d) si ψ : M /axisshort/axisshort/arrowaxisrightB est une autre ﬁbration m´eromorphe satisfaisant (a) et (b),
+il existe une application rationnelle π : B /axisshort/axisshort/arrowaxisrightRat(M) telle que ρ= π ◦ψ.
+Le troisi`eme point utilise la d´eﬁnition suivante : une propri´et´ee s t g´en´erique si
+elle est valable sur le compl´ementaire d’une famille d´enombrable de ferm´es de
+Zariski d’int´erieur vide. La ﬁbration ρest appel´ee quotient rationnel deM. D’apr`es
+la propri´et´e (d), cette ﬁbration est invariante par tout endomorphisme rationnel
+de M. Tout automorphisme de M permute donc les ﬁbres de ρ.
+Poursuivons maintenant l’´etude des automorphismes Anosov. Nous supposons
+donc queM est une vari´et´e projective unir´egl´ee munie d’un automorphisme Anosov
+dont les feuilletages stable et instable sont holomorphes. PuisqueM est unir´egl´ee,
+les ﬁbres du quotient rationnel ρ : M /axisshort/axisshort/arrowaxisrightRat(M) ont une dimension strictement
+positive.
+Lemme 4.4. Les feuilletages F+ et F− induisent deux feuilletages holomorphes
+partout transverses sur les ﬁbres g´en´eriques de ρ.
+Dans cet ´enonc´e, la transversalit´ee s t`a prendre au sens fort : siV est une ﬁbre
+g´en´erique de ρ,alors TV est ´egal `a la somme directe deT F− ∩TV et de T F+ ∩TV.
+D´emonstration. Soit V une ﬁbre lisse de ρ autour de laquelle ρ est une ﬁbration
+holomorphe propre. Notons TV le ﬁbr´e tangent de V et π : TM |V → NV la
+projection du ﬁbr´e tangent `a M sur le ﬁbr´e normal de V (ce ﬁbr´e est trivial, il
+s’identiﬁe au produit de V et du ﬁbr´e tangent de Rat(M) au point ρ(V )).
+D’apr`es le corollaire 5.14 du livre [9], on peut choisir une courbe rationnelle
+c : P1(C) → V passant par un point g´en´erique de V pour laquelle c∗(TM )e s tl a
+somme directe de dim( V ) ﬁbr´es en droites strictement positifs et de codim( V )
+ﬁbr´es en droites triviaux. Les facteurs positifs de cette somme directe corres-
+pondent au ﬁbr´e tangent de V et les facteurs triviaux au ﬁbr´e normal de V.
+D´ecomposons cette somme directe de mani`ere compatible avec la d´ecomposition
+TM = T F+ ⊕ T F− . On obtient ainsi
+c∗(T F+)= O(p1) ⊕ ... ⊕O (pd+ ) ⊕O⊕ ... ⊕O (4.1)
+c∗(T F− )= O(q1) ⊕ ... ⊕O (qd− ) ⊕O⊕ ... ⊕O (4.2)
+o`ul e s pi et les qj sont strictement positifs, ( d+ + d− )e s t´egal `a la dimension
+de V et le nombre total de facteurs triviaux est ´egal `a la codimension de V. Le
+
+=== PDF PAGE 15 ===
+Vol. 79 (2004) Diﬀ´ eomorphismes holomorphes Anosov 793
+long de l’image de c, la projection π|T F + : T F+ → NV contient chaque facteur
+strictement positif dans son noyau car NV est trivial. Ainsi, le long de l’image
+de c, TF + intersecte TV sur un ﬁbr´e de dimension sup´erieure ou ´egale `a d+. Le
+mˆeme argument s’applique `a F− . Puisque (d+ + d− )e s t´egal `a la dimension de V
+et puisque T F+ et T F− sont en somme directe, il vient :
+∀x ∈ c(P1(C)),T xV =( TxF+ ∩ TxV ) ⊕ (TxF− ∩ TxV ). (4.3)
+En d´eformant c le long deV, on peut faire passer la courbec par un point g´en´erique
+de V. Cette propri´et´e est donc valable au point g´en´erique, et par semi-continuit´e
+de la dimension, elle est valable partout, ce qu’il fallait d´emontrer. □
+Proposition 4.5. Une vari´et´e projective complexe unir´egl´ee ne poss`ede pas d’auto-
+morphisme Anosov `a feuilletages stable et instable holomorphes.
+D´emonstration. Supposons qu’une telle vari´et´e M admette un automorphisme
+Anosov f `a feuilletages holomorphes. Puisque M est unir´egl´ee, le quotient ra-
+tionnel a des ﬁbres de dimension positive et nous pouvons appliquer le lemme
+pr´ec´edent. Le corollaire 4.2 montre alors que F
++ poss`ede une courbe rationnelle
+dans l’une de ses feuilles et l’argument du corollaire 4.3 s’applique sans modiﬁca-
+tion pour conclure. □
+5. Diﬀ´eomorphismes Anosov de codimension 1
+Nous abordons maintenant la preuve du second point du th´ eor`eme 1.4. Les
+techniques sont similaires mais s’appuient sur les travaux de Ghys mentionn´es dans
+l’introduction. En particulier, la structure transverse du feuilletage de codimension
+1j o u eu nr ˆole important.
+5.1. Codimension 1 et structure transverse
+Dans toute cette partie, f d´esignera un automorphisme Anosov d’une vari´et´e
+complexe compacte M dont le feuilletage instable est de dimension 1 complexe.
+Dans ce cadre le feuilletage F
+− est un feuilletage holomorphe et les feuilles de
+F+ sont param´etr´ees par la droite complexe C. En particulier, les feuilles de
+F+ sont munies d’une structure aﬃne canoniquement associ´ ee `a leur structure
+complexe ; cette structure aﬃne est f-invariante et est uniquement caract´eris´ee
+par cette propri´et´e [15]. Le pseudo-groupe d’holonomie deF− agit projectivement
+par rapport `a cette structure aﬃne (cf. [15]). Autrement dit, F− est un feuilletage
+holomorphe lisse de codimension 1 transversalement projectif.
+Notons ˜M le revˆetement universel deM, π: ˜M → M l’application de revˆetement
+et Γ le groupe d’automorphismes de ce revˆetement. Les feuilletages F+ et F− se
+rel`event en deux feuilletages ˜F+ et ˜F− de ˜M. D’apr`es [21], il existe une appli-
+
+=== PDF PAGE 16 ===
+794 S. Cantat CMH
+cation holomorphe δ: ˜M → P1(C) et une repr´esentation du groupe fondamental
+ρ:Γ → PGL(2,C) telles que
+(i) δ est une submersion locale et, localement, les ﬁbres de δ sont les feuilles
+de ˜F− ;
+(ii) δ est Γ-´equivariante : pour tout x dans ˜M et tout γ dans Γ,δ (γ(x)) =
+ρ(γ)(δ(x)).
+Chaque feuille de ˜F+ se projette aﬃnement et biholomorphiquement sur le com-
+pl´ementaire d’un point de P1(C). A priori, ce point d´epend de la feuille. S’il n’en
+d´epend pas, on peut supposer que ρ(Γ) est contenu dans le groupe aﬃne, ce qui
+revient `a dire que le feuilletage F− est transversalement aﬃne.
+5.2. Simple connexit´ee tc o n c l u s i o n
+Commen¸cons par renforcer l’alternative obtenue dans la deuxi`eme partie de ce
+texte.
+Lemme 5.1. Soit M une vari´et´e projective complexe munie d’un automorphisme
+Anosov de codimension 1. Ou bien M est rationnellement connexe, ou bien KM
+est un ﬁbr´e de torsion.
+D´emonstration. D’apr`es la proposition 2.2 et le th´eor`eme de Bogomolov, il suﬃt de
+montrer que M est rationnellement connexe si elle est unir´egl´ee. Vues l’existence
+et l’invariance du quotient rationnel, il suﬃt de montrer qu’un automorphisme
+Anosov de codimension 1 ne pr´eserve pas de ﬁbration holomorphe.
+Supposons donc que f : M → M est un automorphisme Anosov dont le
+feuilletage stable est de codimension 1 et que f permute les ﬁbres d’une ﬁbration
+π : M → B. Notons f : B → B l’automorphisme induit par f sur la base de la
+ﬁbration. Nous allons montrer que cette situation est impossible. Nous verrons en
+eﬀet qu’ou bienf est une contraction uniforme, ou bienf contracte uniform´ement
+une ﬁbre invariante, ces deux cas de ﬁgure ´etant absurdes.
+Soit y un point deB pour lequel il existe un pointx de M satisfaisant π(x)= y
+et dπ(| TxF− )= TyB. Il existe alors un voisinage U de x dans la feuille stable F−
+x
+dont l’image par π est un voisinage de y. Si tous les points de B satisfont cette
+propri´et´e, alors B peut ˆetre couverte par un nombre ﬁni d’ouverts Ui tels que le
+diamˆetre de f
+n
+(Ui) tend vers 0 lorsquen tend vers l’inﬁni. Ceci est impossible car
+f : B → B est une transformation surjective.
+L’ensemble des points y de B tels que
+∀x ∈ π− 1(y), dimC(dπx(TxF− )) < dimC(B)
+est donc non vide. C’est un sous-ensemble analytique deB car F− est holomorphe.
+Nous noterons E son image r´eciproque par π; comme le feuilletage instable de f
+est de dimension 1, E est contenu dans l’ensemble des pointsx de M tels que F+
+est partout transverse `a la ﬁbre de π passant par x.
+
+=== PDF PAGE 17 ===
+Vol. 79 (2004) Diﬀ´ eomorphismes holomorphes Anosov 795
+L’ensembleE est un sous-ensemble analytique deM qui estf-invariant. Puisque
+l’ensemble des points p´eriodiques de f est dense dans l’ensemble des points non
+errants de f, on en d´eduit facilement que f poss`ede un point p´eriodique x0 dans
+E. Quitte `a changer f en l’un de ses it´er´es, nous pouvons supposer que x0 est un
+point ﬁxe.
+Notons V0 la ﬁbre de π passant par x0 et f0 la restriction de f `a cette ﬁbre
+invariante. Puisque le feuilletage instable de f est partout transverse `a V0, tous
+les points p´eriodiques de f0 situ´es sur V0 sont des points p´eriodiques attractifs.
+L’ensemble non errant de f0 est donc constitu´e de points p´eriodiques attractifs
+et V0 est couverte par les bassins d’attraction de ces points. Ceci contredit la
+surjectivit´ed e f0.
+Nous avons ainsi obtenu une contradiction et ceci termine la preuve. □
+Remarque 5.2. Cet argument n’est plus valable d`es que les feuilletages stable et
+instable de l’automorphisme Anosov sont de dimension 2. Par exemple, l’automor-
+phisme diagonal f : A × A → A × A construit dans l’exemple 1.5 pr´eserve deux
+ﬁbrations non triviales.
+Le lecteur int´eress´e trouvera dans [18], th´eor`eme 7, et surtout [19], th´eor`eme 5.1,
+des ´enonc´es qui permettent de court-circuiter les arguments propos´ es dans la
+preuve du lemme 5.1.
+Proposition 5.3. Soit f un automorphisme Anosov d’une vari´et´e projective com-
+plexe M. Si le feuilletage stable ou instable def est de dimension1 complexe, alors
+M est un tore et f est un automorphisme lin´eaire.
+D´emonstration. Supposons que c’est le feuilletage instable qui est de dimension 1
+et employons l’alternative fournie par le lemme pr´ec´edent.
+Si M est rationnellement connexe, M est simplement connexe. Dans ce cas,
+l’application δ permettant de d´evelopper la structure projective tranverse de F−
+est une application holomorphe (surjective) de M sur P1(C) dont les ﬁbres sont
+les feuilles de F− . Ceci est impossible car aucune feuille de F− n’est compacte.
+Supposons maintenant que le ﬁbr´e canonique de M est un ﬁbr´e de torsion.
+Puisque f est un automorphisme Anosov de codimension 1,f ne pr´eserve aucune
+ﬁbration holomorphe non triviale. En particulier, le th´eor`eme de Bogomolov assure
+que M est rev´etue par un tore ou que ˜M est compacte. La deuxi`eme situation est
+exclue par l’argument pr´ec´edent.
+La vari´et´e M est donc rev´etue par un tore : il existe un revˆ etement ﬁni et
+galoisien P : M ′ → M, o`u M ′ est un tore, auquelf se rel`eve en un automorphisme
+Anosov lin´eaire f ′ de codimension 1. Soit G le groupe des automorphismes (aﬃnes)
+du revˆetement P : M ′ → M. L’automorphisme f ′ appartient au normalisateur de
+G et l’un de ses it´er´es commute donc avec chaque ´el´ement de G. En particulier
+les espaces propres de la partie lin´eaire de chaque ´el´ement de G sont invariants
+sous l’action de f ′ : chacun de ces espaces contient donc la droite instable ou est
+contenu dans l’espace stable de f ′. Ces espaces sont donc denses dans le tore M ′.
+
+=== PDF PAGE 18 ===
+796 S. Cantat CMH
+Soit g un ´el´ement de G. Puisque g n’a pas de point ﬁxe, g(x)= a(x)+ t avec un
+vecteur de translationt qui n’appartient pas `a l’image de la transformation lin´eaire
+a − id. En particulier, le sous-espace propre de a associ´e`a la valeur propre 1 est
+de dimension positive. Ce sous-espace est donc dense dansM ′ et, par cons´equent,
+a =i d. Chaque ´el´ement de G est donc une translation, ce qui montre que M est
+un tore. □
+Remarque 5.4. La proposition pr´ec´edente est encore valable lorsqueM est seule-
+ment suppos´ee k¨ahl´erienne compacte. Pour cela, on peut employer les arguments
+suivants.
+La dimension de Kodaira de M est n´egative ou nulle, donc M doit ˆetre une
+vari´et´es p ´eciale au sens de F. Campana [6] : sinon, la ﬁbration du coeur intro-
+duite par Campana serait une ﬁbration m´eromorphe cM : M /axisshort/axisshort/arrowaxisrightC(M)p r e s q u e
+holomorphe invariante par f, ce qui est impossible.
+Puisque M est sp´eciale, toute repr´esentation lin´eaire du groupe fondamental
+de M est virtuellement ab´elienne [6].
+La structure transverse projective du feuilletage stable de f montre alors que
+le premier nombre de Betti de M est strictement positif. La ﬁbration d’Albanese
+de M ´etant f-invariante, la dimension de ses ﬁbres est nulle et elle r´ ealise un
+biholomorphisme si l’on remplace M par l’un de ses revˆetements ﬁnis. Ainsi, `a
+revˆetement ﬁni pr`es M est un tore.
+Remarque 5.5. Le th´eor`eme de Ghys mentionn´e dans l’introduction permet de
+montrer que M est hom´eomorphe `a un tore sans supposer que M est k¨ahl´erienne
+mais en supposant que f a une orbite dense. Sous de telles hypoth`eses, nous ne
+savons pas renforcer la conclusion et montrer que M est biholomorphe `a un tore.
+Pourtant, il est facile de montrer que les exemples connus de vari´et´es complexes
+compactes hom´eomorphes mais non biholomorphes `a des tores ne poss`edent pas
+d’automorphismes Anosov (cf. [8] pour de tels exemples).
+R´ef´erences
+[1] Arnaud Beauville, Vari´et´es K¨ahleriennes dont la premi`ere classe de Chern est nulle, J.
+Diﬀerential Geom. 18 (1984), 755–782.
+[2] Yves Benoist, Patrick Foulon and Fran¸cois Labourie, Flots d’Anosov `a distributions stable
+et instable diﬀ´erentiables, J. Amer. Math. Soc. 5 (1992), 33–74.
+[3] Yves Benoist et Fran¸cois Labourie, Sur les diﬀ´eomorphismes d’Anosov aﬃnes `a feuilletages
+stable et instable diﬀ´erentiables, Invent. Math. 111 (1993), 285–308.
+[4] Fedor A. Bogomolov and Michael McQuillan, Rational curves on foliated varieties,
+Pr´epublication de l’IHES (2001), 1–29.
+[5] Fr´ed´eric Campana, Remarques sur les groupes de K¨ahler nilpotents, Ann. Sci. ´Ecole Norm.
+Sup. (4) 28 (1995), 307–316.
+[6] Fr´ed´eric Campana, Orbifolds, special varieties and classiﬁcation theory, preprint, 1–102,
+version 2003.
+
+=== PDF PAGE 19 ===
+Vol. 79 (2004) Diﬀ´ eomorphismes holomorphes Anosov 797
+[7] Serge Cantat, Dynamique des automorphismes des surfaces complexes compactes ,T h `ese
+de doctorat de l’´E.N.S., Lyon, 1999.
+[8] Fabrizio Catanese, Deformation types of real and complex manifolds, in : Contemporary
+trends in algebraic geometry and algebraic topology (Tianjin, 2000),N a n k a iT r a c t sM a t h .
+5, 195–238, World Sci. Publishing, River Edge, NJ, 2002.
+[9] Olivier Debarre, Higher-dimensional algebraic geometry , Universitext, Springer-Verlag,
+New York, 2001.
+[10] Jean-Pierre Demailly, Regularization of closed positive currents and intersection theory, J.
+Algebraic Geom. 1 (1992), 361–409.
+[11] Jean-Pierre Demailly and Thomas Peternell, On the geometry of positive cones of projective
+and K¨ahler varieties, preprint, 1–9, 2002.
+[12] Albert Fathi, Some compact invariant sets for hyperbolic linear automorphisms of tori,
+Ergodic Theory Dynam. Systems 8 (1988), 191–204.
+[13] ´Etienne Ghys, Flots d’Anosov dont les feuilletages stables sont diﬀ´erentiables, Ann. Sci.
+´Ecole Norm. Sup. (4) 20 (1987), 251–270.
+[14] ´Etienne Ghys, Rigidit´ed i ﬀ ´erentiable des groupes fuchsiens, Inst. Hautes ´Etudes Sci. Publ.
+Math. 78 (1993), 163–185.
+[15] ´Etienne Ghys, Holomorphic Anosov systems, Invent. Math. 119 (1995), 585–614.
+[16] Marat H. Gizatullin, Rational G-surfaces, Izv. Akad. Nauk SSSR Ser. Mat. 44 (1980),
+110–144, 239.
+[17] Moris W. Hirsch, Charles C. Pugh and Michael Shub, Invariant manifolds, Lecture Notes
+in Mathematics 583, Springer-Verlag, Berlin, 1977.
+[18] Morris W. Hirsch, On invariant subsets of hyperbolic sets, in : Essays on Topology and
+Related Topics (M´emoires d´edi´es `a Georges de Rham), 126–135, Springer, New York, 1970.
+[19] Morris W. Hirsch and Charles C. Pugh, Stable manifolds and hyperbolic sets, in : Global
+Analysis (Proc. Sympos. Pure Math., Vol. XIV, Berkeley, Calif., 1968) , 133–163, Amer.
+Math. Soc., Providence, R.I., 1970.
+[20] David I. Lieberman, Compactness of the Chow scheme : applications to automorphisms
+and deformations of K¨ahler manifolds, in : Fonctions de plusieurs variables complexes, III
+(S´em. Fran¸cois Norguet, 1975–1977), 140–186, Springer, Berlin, 1978.
+[21] William Thurston, The geometry and topology of 3-manifolds, Princeton University Lecture
+Notes, 1977.
+S. Cantat
+IRMAR, UMR 6625 du CNRS
+Universit´ed eR e n n e sI
+35042 Rennes
+France
+e-mail : cantat@univ-rennes1.fr
+(Received: May 26, 2003)

@@ -1,0 +1,1145 @@
+=== PDF PAGE 1 ===
+arXiv:math/0507508v1  [math.CV]  25 Jul 2005
+1
+DEFORMATION IN THE LARGE OF SOME COMPLEX
+MANIFOLDS, II
+F ABRIZIO CATANESE
+PAOLA FREDIANI
+Abstract. The compact complex manifolds considered in this article are
+principal torus bundles over a torus. We consider the Kodaira Spen cer map
+of the complete Appell Humbert family (introduced by the ﬁrst auth or in
+Part I) and are able to show that we obtain in this way a connected co mpo-
+nent of the space of complex structures each time that the base d imension
+is two, the ﬁbre dimension is one, and a suitable topological condition is
+veriﬁed.
+1. Introduction
+One of the most interesting problems in the theory of compact comp lex man-
+ifolds is ” Moduli theory”, i.e., the study of the space of complex stru ctures
+C(M) on a given oriented diﬀerentiable manifold M. Viewing these as inte-
+grable almost complex structures yields a description as an inﬁnite dim ensional
+space on which acts the inﬁnite dimensional group Dif f+(M) of orientation
+preserving diﬀeomorphisms of M.
+Moduli theory in a proper sense means studying in detail the quotien t
+M(M) := C(M)/Dif f +(M), and often this study is split into two parts.
+First one studies the Teichm¨ uller space of M, i.e., T(M) :=
+C(M)/Dif f 0(M), where Dif f0(M) ⊂ Dif f+(M) is the connected compo-
+nent of the identity (its elements are called the diﬀeomorphisms isotopic
+to the identity). Then one may view the Moduli space M(M) as the quo-
+tient of the Teichm¨ uller spaceT(M) by the Mapping class group Map(M) :=
+Dif f+(M)/Dif f 0(M), hoping that this action turn out to be properly dis-
+continuous.
+Of course a preliminary question is the determination of the connect ed com-
+ponents of C(M), which are called the deformation classes in the large of the
+complex structures on M, and which we believe may be countably many (their
+number may be arbitrarily high, cf. [Cat02], [Cat04]). Observe that t he usual
+deformation theory addresses only the study of the small deformations , i.e.,
+it describes the so called Kuranishi space B(M) which is the germ of the Te-
+ichm¨ uller space at the point corresponding to a given complex struc ture. Ku-
+ranishi’s theorem ([Ku1],[Ku2]) shows that the Teichm¨ uller space is a complex
+1The present research took place in the framework of the Schwerp unkt ”Globale Methode
+in der komplexen Geometrie”, and of the PRIN 2003: ”Spazi dei mod uli e teoria di Lie”
+(MURST)
+AMS Subject classiﬁcation: 14D15, 32G08, 32G13, 32L05, 32Q57, 53C30, 53C56.
+Date: May 18, 2005.
+1
+
+=== PDF PAGE 2 ===
+2 F ABRIZIO CATANESE PAOLA FREDIANI
+space of locally ﬁnite dimension (its dimension may however be unbound ed,
+cf. cor. 7.7 of [Cat04]).
+A prototype test for all these desiderata is furnished by the exam ple of
+the complex tori. These are parametrized by an open set Tn of the complex
+Grassmann Manifold Gr(n, 2n), image of the open set of matrices
+{Ω ∈ M at(2n, n; C) | (i)ndet(Ω
+Ω) > 0}.
+This parametrization is very explicit: if we consider a ﬁxed lattice Γ ∼= Z2n,
+to each matrix Ω as above we associate the subspace V = (Ω)( Cn), so that
+V ∈ Gr(n, 2n) and Γ ⊗ C ∼= V ⊕ ¯V .
+Finally, to Ω we associate the torus YV := V /p V (Γ), pV : V ⊕ ¯V → V being
+the projection onto the ﬁrst addendum.
+Not only we obtain in this way a connected open set inducing all the sma ll
+deformations (cf. [K-M71]), but indeed, as it was shown in [Cat02] (c f. also
+[Cat04]) a connected component of the Teichm¨ uller space.
+It was observed however by Kodaira and Spencer already in their ﬁr st article
+([K-S58], and volume II of Kodaira’s collected works) that the mappin g class
+group SL(2n, Z) does not act properly discontinuously on Tn. This shows that
+for compact complex manifolds it is better to consider, rather than the Moduli
+space, the Teichm¨ uller space, which can be obtained by glueing together several
+Kuranishi spaces.
+Moreover, after some initial constructions by Blanchard and Calab i (cf.
+[Bla53], [Bla56], [Cal58]) of non K¨ ahler complex structures X on manifolds
+diﬀeomorphic to a product C × T , where C is a compact complex curve and
+T is a 2-dimensional complex torus, Sommese observed ([Somm75]) tha t the
+space of complex structures on a six dimensional real torus is not c onnected.
+These examples were then generalized in [Cat02] [Cat04] under the n ame
+of Blanchard-Calabi manifolds showing (corollary 7.8 of [Cat04]) that also
+the space of complex structures on the product of a curve C of genus g ≥ 2
+with a four dimensional real torus is not connected.
+On the positive side, however, our goal is to determine completely th e con-
+nected components of spaces C(M) (the so called equivalence classes for ”de-
+formation in the large”) for suitable diﬀerentiable manifolds.
+A very interesting class of examples to consider is given by the quotie nts of
+an aﬃne space Cn by a nilpotent or solvable group Π. One of the main tools
+in order to analyse this type of examples should be the cited result th at every
+deformation in the large of a complex torus is a complex torus.
+Since this ambitious program carries several big diﬃculties with it, we b egin
+to address it in the simplest possible case, i.e., when we have a holomorp hic
+torus bundle f : X → Y over a torus Y and the group is 2-step nilpotent (the
+central group extension is given by Λ := π1(F )֒→π1(X) = Π → π1(Y ) = Γ,
+classiﬁed by an alternating bilinear form A ∈ Λ2(Γ)∨ ⊗ (Λ)).
+We shall use the classiﬁcation theory for principal holomorphic toru s bundles
+over tori given in Theorem 6.8 of [Cat04], where an explicit family is pro duced,
+described purely in terms of bilinear algebra, and called the complete Appell-
+Humbert family of Torus Bundles .
+
+=== PDF PAGE 3 ===
+DEFORMATION IN THE LARGE OF SOME COMPLEX MANIFOLDS, II 3
+Roughly speaking, one looks for the subspaces U ⊂ Λ ⊗ C, V ⊂ Γ ⊗ C such
+that, viewing A as a real element of
+Λ2(Γ ⊗ R)∨ ⊗ (Λ ⊗ R) = Λ 2(V ⊕ ¯V )∨ ⊗ (U ⊕ ¯U ),
+its component in Λ 2( ¯V )∨ ⊗ (U) is zero (one says then that the Riemann
+bilinear relations hold).
+This theory bears close similarities with the theory of line bundles over
+tori, and allows for explicit descriptions of several holomorphic invar iants (see
+theorems 6.11-6.12 of [Cat04]).
+The simplest way to explain the meaning of the Appell- Humbert family
+is as follows: one observes that the diﬀerentiable manifold M underlying X
+is simply the quotient of a contractible real Lie group Π ⊗ R by a discrete
+subgroup Π. We consider now all the right invariant almost complex st ructures
+on Π ⊗ R, and we show that the Riemann bilinear relations are equivalent to
+the integrability of these almost complex structures.
+In particular, explicit formulae can be given for this family of complex s truc-
+tures, and from these one derives for instance
+Theorem 6.10 of [Cat04] : The cokernel of 0 → H 0(Ω1
+Y ) → H 0(Ω1
+X ) is
+the subspace of U ∨ which annihilates the image of the Hermitian part B′′ of
+A, B′′∈ [(V ⊗ ¯V )∨ ⊗ (U)], i.e., {u∨ ∈ U ∨ |u∨ ⊣ B′′= 0 ∈ (V ⊗ ¯V )∨ }.
+It follows in particular that X is parallelizable if and only if the Hermitian
+part of A is zero.
+We already observed that X, as a diﬀerentiable manifold, is the quotient of
+the real Lie group Π ⊗ R by the discrete subgroup Π: the point is that there are
+some complex structures where we can realize X as the quotient of a complex
+Lie group by Π.
+The most famous example is the Iwasawa 3-fold (cf. [K-M71], whose s mall
+deformations were analysed by Nakamura in [Nak75], who thus showe d that
+small deformations of a complex parallelizable manifold need not be par alleliz-
+able.
+Our ﬁrst result in this paper will be the following
+Theorem 4.11 Let f : X → Y be a holomorphic principal bundle with
+base a complex torus Y := YV of dimension m = 2, and ﬁbre an elliptic curve
+T := TU .
+Then the complete Appell Humbert family is versal at X if either B′ ̸= 0 ,
+or B′ = 0 and B(v, x) non degenerate in the ﬁrst factor, or X is parallelizable
+and A ̸= 0.
+The strong restriction on the dimensions m = 2 , d = 1 is forced by the
+requirement that the complete Appell Humbert family have a smooth basis.
+This condition, combined with the surjectivity of the Kodaira Spence r map,
+ensures that all the small deformations are again principal holomor phic torus
+bundles.
+The above result combines with the following
+Theorem 6.17 of [Cat04] Let f : X → Y be a holomorphic principal bundle
+with base a complex torus YV of dimension m, and ﬁbre an elliptic curve TU .
+
+=== PDF PAGE 4 ===
+4 F ABRIZIO CATANESE PAOLA FREDIANI
+Assume moreover π1(X) := Π to be a nontrivial central extension
+1 → Λ → Π → Γ → 1
+classiﬁed by a cohomology class ǫ ̸= 0 ∈ H 2(Y, Λ) whose associated bilinear
+form A has an image of dimension = 2.
+Then every limit of manifolds in the complete Appell-Humber t family is again
+a holomorphic principal bundle f ′ : X ′ → Y ′ with ﬁbre an elliptic curve T ′,
+and thus occurs in the complete Appell-Humbert family .
+and one shows that the class of holomorphic torus bundles with ﬁbre di-
+mension d = 1, and base dimension m = 2 form irreducible components in the
+Teichm¨ uller space.
+With a further assumption, however, we are able to produce many c onnected
+components of the Teichm¨ uller space
+Main Theorem 4.13 Consider the family of holomorphic principal torus
+bundles f : X → Y with base a complex torus YV of dimension 2, and with
+ﬁbre an elliptic curve TU , corresponding to a bilinear form A such that
+1) A is non degenerate and ImA has dimension 2
+2) the associated pencil
+P1 ∼
+= P((Λ ⊗ R)∨ )֒→P(Λ2(Γ ⊗ R)∨ ) ∼= P(Λ2(R4)) intersects the Klein
+Pfaﬃan quadric in at least one real point.
+Then this family forms a connected component of the Teichm¨ u ller space.
+Indeed condition 2) is necessary: in fact there are deformations o f the Iwa-
+sawa manifold for which the complete Appell Humbert family has not su rjective
+Kodaira Spencer map.
+Time reasons do not allow us to investigate fully the diﬃcult question
+whether in this and similar cases the complete Appell Humbert family fa ils
+to yield an open set in the Teichm¨ uller space.
+2. Principal holomorphic torus bundles over tori: generaliti es
+Throughout the paper, our set up will be the following: we have a holo mor-
+phic submersion between compact complex manifolds
+f : X → Y,
+such that the base Y is a complex torus, and one ﬁbre F (whence all the ﬁbres,
+by theorem 2.1 of [Cat04]) is also a complex torus.
+We shall denote this situation by saying that f is diﬀerentiably a torus
+bundle.
+We let n = dimX, m = dimY , d = dimF = n − m.
+In general ( cf.[FG65])) f is a holomorphic bundle if and only if all the ﬁbres
+are biholomorphic.
+This holds necessarily in the special case d = 1, because the moduli space
+for 1-dimensional complex tori exists and is isomorphic to C.
+
+=== PDF PAGE 5 ===
+DEFORMATION IN THE LARGE OF SOME COMPLEX MANIFOLDS, II 5
+Assume now that we have a holomorphic torus ﬁbre bundle, thus we h ave
+(cf. [Cat04], pages 271-273) the exact sequence
+0 → Ω1
+Y → f∗Ω1
+X → f∗Ω1
+X|Y → 0.
+and a principal holomorphic bundle if moreover f∗Ω1
+X|Y is holomorphically
+trivial.
+Remark 2.1. In general (cf. e.g. [BPV84]) if T is a complex torus, we have
+an exact sequence of complex Lie groups
+0 → T → Aut(T ) → M → 1
+where M is discrete. Taking sheaves of germs of holomorphic maps wit h source
+Y we get
+0 → H (T )Y → H (Aut(T ))Y → M → 1
+and the exact sequence
+0 → H 1(Y, H(T )Y ) → H 1(Y, H(Aut(T )))Y → H 1(Y, M )
+(since holomorphic bundles with base Y and ﬁbre T are classiﬁed by the co-
+homology group H 1(Y, H(Aut(T ))Y )) determines the discrete obstruction for a
+holomorphic bundle to be a principal holomorphic bundle.
+In the case of a principal holomorphic bundle we write π1(T ) ∼= Λ, π1(Y ) ∼= Γ
+and the exact sequence
+→ H 0(H(T )Y ) → H 1(Y, Λ) → H 1(Y, Od
+Y ) → H 1(H(T )Y ) → c→ H 2(Y, Λ)
+determines a cohomology class ǫ ∈ H 2(Y, Λ) which classiﬁes the central exten-
+sion
+1 → π1(T ) = Λ → Π := π1(X) → π1(Y ) = Γ → 1
+(it is central by the triviality of the monodromy automorphism).
+Proposition 2.2. Let f : X → Y be a principal holomorphic torus bundle
+over a torus as above.
+Then the universal covering of X is isomorphic to Cm+d and X is biholo-
+morphic to a quotient X ∼
+= Cm+d/ Π.
+Proof.
+Let π : Cm → Y be the universal covering map and let us consider the pull
+back bundle π ∗X → Cm as in the following Cartesian diagram:
+π ∗X
+π ′
+→→
+↓↓
+X
+↓↓
+Cm π →→ Y
+π ∗X → Cm is a principal holomorphic torus bundle on Cm, therefore it
+is trivial. In fact principal holomorphic torus bundles on Cm are classiﬁed
+by H 1(Cm, H(T )Cm),and we claim that H 1(Cm, H(T )Cm) = 0. Let us in fact
+consider the exact sequence deﬁning T ,
+1 → Λ → U → T → 1
+
+=== PDF PAGE 6 ===
+6 F ABRIZIO CATANESE PAOLA FREDIANI
+Taking germs of holomorphic functions with source Cm, we get
+1 → Λ → H (U)Cm → H (T )Cm → 1
+and the long exact cohomology sequence yields
+0 = H 1(Cm, Λ) → H 1(Cm, Od
+Cm) = 0 → H 1(Cm, H(T )Cm) → H 2(Cm, Λ) = 0 ,
+therefore H 1(Cm, H(T )Cm) = 0.
+So we have π ∗X ∼= Cm × T and by taking the universal covering Cm × Cd →
+π ∗X ∼= Cm × T and the composition with the covering π ′ : π ∗X → X, we
+obtain the desired assertion. Q.E.D.
+Let us brieﬂy recall again the standard way to look at the family Tm of
+complex tori of complex dimension = m. We ﬁx a lattice Γ of rank 2 m,
+and we look at the complex ( m-dimensional) subspaces V ⊂ Γ ⊗ C such that
+V ⊕ ¯V = Γ ⊗ C: to V corresponds the complex torus YV := Γ ⊗ C/ (Γ ⊕ ¯V ). We
+ﬁnallyselect one of the two resulting connected components by req uiring that
+the complex orientation of V induces on Γ ∼= pV (Γ) a standard orientation.
+We deﬁne similarly TU := Λ ⊗ C/ (Λ ⊕ ¯U ).
+Consider now our principal holomorphic torus bundle f : X → Y over a
+complex torus YV of dimension m, and with ﬁbre a complex torus TU of di-
+mension d and let ǫ ∈ H 2(Y, Λ) = H 2(Γ, Λ) be the cohomology class classifying
+the central extension
+(1) 1 → Λ → Π → Γ → 1.
+Lemma 2.3. It is possible to ”tensor” the above exact sequence with R, ob-
+taining an exact sequence of Lie Groups
+1 → Λ ⊗ R → Π ⊗ R → Γ ⊗ R → 1
+such that Π is a discrete subgroup of Π ⊗ R and such that X is diﬀeomorphic
+to the quotient
+M := Π ⊗ R/ Π.
+Proof. Consider, as usual, the map
+A : Γ × Γ → Λ,
+A(γ, γ ′) = [ˆγ, ˆγ′] = ˆγ ˆγ′(ˆγ)− 1( ˆγ′)− 1,
+where ˆγ and ˆγ′ are respective liftings to Π of elements γ, γ ′ ∈ Γ. We observe
+that since the extension (1) is central, the deﬁnition of A does not depend on
+the choice of the liftings of γ, resp. γ′ to Π.
+As well known, A is bilinear and alternating, so A yields a cocycle in
+H 2(Γ, Λ) which ”classiﬁes” the central extension (1). Let us review how d oes
+this more precisely hold.
+
+=== PDF PAGE 7 ===
+DEFORMATION IN THE LARGE OF SOME COMPLEX MANIFOLDS, II 7
+Assume that {γ1, ..., γ 2m} is a basis of Γ and choose ﬁxed liftings ˆ γi of γi in
+Π, for each i = 1, . . . , 2m. Then automatically we have determined a canonical
+way to lift elements γ ∈ Γ through:
+γ = γn1
+1 . . . γ n2m
+2m ↦→ ˆγ := ˆγn1
+1 ... ˆγn2m
+2m .
+Hence a canonical way to write the elements of Π as products λ ˆγ, where λ ∈ Λ
+and ˆγ is as above.
+Since ∀i, j, one has
+ˆγi ˆγj = A(γi, γj) ˆγj ˆγi,
+we have a standard way of computing the products ( λ ˆγ)(λ ′ˆγ′) as λ ′′( ˆ(γγ ′))
+in Π, where λ ′′will be computed using A.
+We can also view Π as a group of aﬃne transformations of (Λ ⊗ R) ⊕ (Γ ⊗ R).
+In fact, (Λ ⊗ R)⊕ (Γ⊗ R) is a real vector space with basis {λ 1, ..., λ 2d, γ1, ..., γ 2m}
+where {λ 1, ..., λ 2d} is a basis of Λ and the action of Π on (Λ ⊗ R) ⊕ (Γ ⊗ R) is
+given as follows:
+λ i acts on (Λ ⊗ R) ⊕ (Γ ⊗ R) sending ( y, x) to ( y + λ i, x), while the action
+of ˆγj is deﬁned using the multiplication ( λ ˆγ) ↦→ (λ ˆγ) ˆγj.
+More precisely if y ∈ Λ ⊗ R, x = ∑xjγj ∈ Γ ⊗ R, γ′ = ∑νhγh ∈ Γ, we have
+(y, x) ˆγ′ := (y + φ γ ′(x), x + γ′),
+where
+φ γ ′(x) =
+∑
+j≥ h
+xjνhA(γj, γh) =
+∑
+j≥ h
+xjAjhνh =t xT − γ′,
+where T − is the lower triangular part of the matrix A, so that we can write
+A = T − − t T − .
+Therefore we can endow (Λ ⊗ R) ⊕ (Γ ⊗ R) =: Π ⊗ R with a Lie group
+structure deﬁned by
+(y, x)(y′, x′) = ( y + y′ + T − (x, x′), x + x′),
+and the quotient (Π ⊗ R)/ Π of this Lie group by the discrete subgroup Π is
+easily seen to be diﬀeomorphic to X.
+Q.E.D.
+Remark 2.4. We can change coordinates in (Λ ⊗ R) ⊕ (Γ ⊗ R) in such a way
+that the action of the set ˆΓ ∼= Γ ⊂ Γ ⊗ R on Π ⊗ R is given by
+(y, x)ˆγ = (y + A(x, γ) + 2S(γ, γ), x + γ),
+where S(γ, γ ′) is a symmetric bilinear ( 1
+4Λ)- valued form, and 2S(γ, γ) ∈ Λ.
+Proof.
+Let us deﬁne the symmetric form S := − T − +tT −
+4 , so that T − + 2 S =
+T − − tT −
+2 = A
+2 .
+Consider the map F : (Λ ⊗ R) ⊕ (Γ ⊗ R) → (Λ ⊗ R) ⊕ (Γ ⊗ R) deﬁned by
+F (y, x) = (2( y + S(x, x)), x) =: ( η, x).
+
+=== PDF PAGE 8 ===
+8 F ABRIZIO CATANESE PAOLA FREDIANI
+Then ∀ˆγ ∈ ˆΓ we have an induced action
+(η, x)ˆγ = F ((y, x)ˆγ) = F (y + T − (x, γ), x + γ) =
+(2y + 2T − (x, γ) + 2S(x + γ, x + γ), x + γ) = ( η + A(x, γ) + 2S(γ, γ), x + γ),
+and we conclude observing that 2 S(γ, γ) = T − (γ, γ) ∈ Λ.
+Q.E.D.
+We recall from [Cat04] the First Riemann bilinear Relation: it is derived
+from the exact cohomology sequence
+H 1(Y, OY ⊗ U) ∼= H 1(Y, H(U)Y ) → H 1(H(T )Y ) → c→ H 2(Y, Λ) → H 2(Y, H(U)Y )
+and says that the class ǫ maps to zero in H 2(Y, H(U)Y ). More concretely we
+have the
+First Riemann Relation for principal holomorphic Torus Bun dles
+Let A : Γ × Γ → Λ be the alternating bilinear map representing the
+cohomology class ǫ : then
+A ∈ Λ2(Γ ⊗ R)∨ ⊗ (Λ ⊗ R) ⊂ Λ2(Γ ⊗ C)∨ ⊗ (Λ ⊗ C) ⊂ Λ2(V ⊕ ¯V )∨ ⊗ (U ⊕ ¯U ),
+satisﬁes the property that its component in Λ2( ¯V )∨ ⊗ (U) is zero.
+We want now to explain in detail the bilinear algebra underlying the Rie-
+mann bilinear relation.
+We observe preliminarly that one has a natural isomorphism Λ 2(V ⊕ V )∨ ∼=
+Λ2(V )∨ ⊕ (V ∨ ⊗ V )∨ ⊕ Λ2(V )∨ , where the middle summand embeds by the
+wedge product : w′ ⊗ ¯w ↦→ w′ ∧ ¯w = w′ ⊗ ¯w − ¯w ⊗ w′.
+Consider the bilinear form
+A ∈ Λ2(Γ ⊗ C)∨ ⊗ (Λ ⊗ C) = Λ 2(V ⊕ V )∨ ⊗ (U ⊕ U ),
+satisfying the ﬁrst bilinear relation and let us write
+A = B + B,
+where B ∈ Λ2(Γ ⊗ C)∨ ⊗ U, and B ∈ Λ2(Γ ⊗ C)∨ ⊗ U .
+By the ﬁrst bilinear relation B = B′ + B′′, with B′ ∈ Λ2(V )∨ ⊗ U, B′′ ∈
+(V ∨ ⊗ V )∨ ⊗ U.
+Concretely, A = B′ + B′′+ B′ + B′′, where B′ is an alternating complex
+bilinear form. The fact that B′′is alternating reads out as:
+B′′(v′, ¯v) = − B′′(¯v, v′) ∀v, v′ ∈ V
+whereas conjugation of tensors reads out as:
+¯B(¯x, ¯y) = B(x, y) ∀x, y ⇒ ¯B′′(¯v, v′) = B′′(v, ¯v′).
+Deﬁnition 2.5. We deﬁne the associated (vector-valued) Hermitian bilinea r
+form
+D : V × V → Λ ⊗ C
+through
+D(v1, v2) := iA(v1, ¯v2).
+
+=== PDF PAGE 9 ===
+DEFORMATION IN THE LARGE OF SOME COMPLEX MANIFOLDS, II 9
+In fact D is clearly complex linear in v1 and complex antilinear in v2, and
+D(v2, v1) := iA(v2, ¯v1) = − iA( ¯v1, v2) = − iA(v1, ¯v2) = D(v1, v2).
+We have
+D(v1, v2) := iA(v1, ¯v2) = i(B′′(v1, v2) + B′′(v1, v2)) = iB′′(v1, v2) + iB′′(v2, v1).
+Remark 2.6. One can view D(v, v) : V → Λ ⊗ R as a real linear system (of
+dimension ≤ 2d) of Hermitian forms on V , and its discriminant
+∆D = {(λ i) |det(∑2d
+1 λ iDi) = 0 } will be a real hypersurface of degree m in
+the projective space P((Λ ⊗ C)∨ ).
+Observe that this linear system is independent of the choice of U, but it
+depends upon the choice of V .
+The geometry of ∆D and more generally the geometry of the linear rational
+map P((Λ ⊗ R)∨ ) /axisshort/axisshort/arrowaxisrightP(Herm (m, C)) produces holomorphic invariants of the
+complex structure.
+These are however related to the topological invariants giv en by the linear
+rational map P(R2d) ∼= P((Λ ⊗ R)∨ ) /axisshort/axisshort/arrowaxisrightP(Λ2(Γ ⊗ R)∨ )) ∼
+= P(Λ2(R2m)).
+3. Appell Humbert families and Kodaira Spencer map
+We shall consider in this section the family given by the pairs of subspa ces
+satisfying the Riemann bilinear relations, and the main goal will be to co mpute
+explicitly its tangent space and its Kodaira Spencer map.
+Deﬁnition 3.1. Given A as above, we deﬁne T BA as the subset of the product
+of Grassmann Manifolds Gr(m, 2m) × Gr(d, 2d) deﬁned by
+T BA = {(V, U ) ∈ Gr(m, 2m) × Gr(d, 2d) | V ∩
+V = (0),
+U ∩ U = (0), | the component of A in Λ2(V )∨ ⊗ U is = 0}.
+This complex space is called the Appell Humbert space of Toru s Bundles.
+Since this space is not connected, we restrict ourselves to i ts intersection
+with Tm × T d, i.e., we ﬁx respective complex structures which have the sa me
+orientation as ﬁxed orientations of Λ, resp. Γ.
+One sees immediately that T BA is a complex analytic variety of codimension
+at most dm(m − 1)/ 2.
+Note however that, for d ≥ 3, m >> 0 we get a negative expected dimension.
+The structure of these complex spaces has to be investigated in ge neral, for
+our present purposes we limit ourselves to establish the following
+Lemma 3.2. If d = 1 then the open set T BA ∩ (Tm × T d) is connected.
+Proof.
+Since T BA∩ (Tm×T 1) ﬁbres onto the upper half plane T1, which is connected,
+it suﬃces to show that each ﬁbre is connected.
+Our method of proof will be quite simple minded. We shall consider the
+ﬁbration onto T1, but without restricting to Tm, and considering instead the
+
+=== PDF PAGE 10 ===
+10 F ABRIZIO CATANESE PAOLA FREDIANI
+larger open set {V |V ∩
+V = (0) } (which has two connected components) and
+will show that the corresponding ﬁbre has exactly two connected c omponents.
+Observe then that, if we ﬁx U and write Λ ⊗ C = U ⊕ U, the connectivity of
+our space in independent of the given integral structures, and it a mounts to the
+following problem: we are given an oriented real vector space W ( W = Γ ⊗ R)
+and a real alternating map A : Λ 2(W ) → U ⊕ U, so that clearly we can write
+A = B ⊕ B.
+We are seeking for the subspaces V such that V is isotropic for B, such that
+W ⊗ C = V ⊕ V , and such that the complex orientation of V induces the ﬁxed
+orientation on W .
+Since the complex linear group is connected, it is suﬃcient to show the
+connectedness of the variety of frames v1, . . . v m for V .
+There are two conditions to be satisﬁed in the choice of v1, . . . v m :
+1) the closed condition that vi belongs to the complex subspace
+Wi := {v|B(v, vj) = 0 ∀ 1 ≤ j ≤ i − 1},
+which has obviously complex dimension at least 2 m − i + 1
+2) the open condition that vi belongs to the open set
+Ωi := {vi|v1, v1, . . . v i, vi are C- linearly independent }.
+We show the connectedness of the variety Fi of partial frames v1, . . . v i sat-
+isfying 1) and 2) by induction on i.
+For i = 1, we consider an arbitrary vector v1, belonging to the open set
+Ω1 := {v1|v1, v1 are C- linearly independent }.
+Observe that the complement of Ω 1 has real codimension 2 m − 1, thus it
+does not disconnect a vector space of real dimension 4 m, as soon as m ≥ 2.
+A similar argument applied to the projection of vi into the quotient vector
+space ˜Wi := W ⊗ C/ << v 1, v1, . . . v i− 1, vi− 1 >>, which has complex dimension
+2m − 2i + 2, shows that Ω i has a complementary set of real codimension
+2m − 2i + 1, thus we conclude that Ω i ∩ Wi is connected for i < m .
+In the ﬁnal step instead, we have to remove the zero locus of the H ermitian
+form (of vm)
+det(v1, v1, . . . v m, vm) = 0 .
+We conclude by observing that a Hermitian form has even positivity an d
+even negativity, thus the complementary set of its zero locus has e xactly two
+connected components.
+Therefore we get, by induction on i, that the variety Fi of partial frames
+v1, . . . v i satisfying 1) and 2) is connected for i ≤ m − 1, while the variety Fm
+of such frames has at most two connected components for i = m.
+Q.E.D.
+Deﬁnition 3.3. The standard (Appell-Humbert) family of torus bundles
+parametrized by T BA is the family of principal holomorphic torus bundles
+XV,U over Y := YV and with ﬁbre T := TU determined by the cocycle in
+
+=== PDF PAGE 11 ===
+DEFORMATION IN THE LARGE OF SOME COMPLEX MANIFOLDS, II 11
+H 1(Y, H(T )Y ) obtained by taking fγ (v) which is the class modulo Λ of
+Fγ (v) := B′(v, pV (γ)) + 2B′′(v, pV (γ)) + B′′(pV (γ), pV (γ)), ∀v ∈ V.
+In other words, XV,U is the quotient of TU × V by the action of Γ such that
+γ([u], v) = ([ u + B′(v, pV (γ)) + 2B′′(v, pV (γ)) + B′′(pV (γ), pV (γ))], v + pV (γ)).
+Remark 3.4. The above formula diﬀers from the formula given in Deﬁnition
+6.4 of [Cat04], where an identiﬁcation of Γ ⊗ R with V was used, and thus
+A(z, γ) was identiﬁed with B(z, γ). In the latter formula one had thus
+− B′(v, γ) − B′′(v, pV (γ)) instead of
+B′(v, γ) + 2B′′(v, pV (γ)) + B′′(pV (γ), pV (γ)).
+However, this alteration does not aﬀect the proofs of Theore ms 6.10, 6.11,
+6.12 since in those proofs B′ and B′′ were playing separate roles, and multi-
+plication by 2 or − 1 does not alter the condition that a certain expression be
+zero.
+We also recall from [Cat04] the deﬁnition of the complete Appell-Humb ert
+space.
+Deﬁnition 3.5. Given A as above we deﬁne
+T ′BA = {(V, U, φ) | (V, U ) ∈ T B A, φ ∈ H 1(YV , H(U)YV ) ∼=
+V
+∨
+⊗ U}.
+The complete Appell-Humbert family of torus bundles parame trized by T ′BA
+is the family of principal holomorphic torus bundles XV,U,φ on Y := YV and
+with ﬁbre T := TU determined by the cocycle in H 1(Y, H(T )Y ) obtained by
+taking the sum of fγ (z) with the cocycle φ ∈ H 1(YV , H(U)YV ) ∼= H 1(Y, Od
+Y ).
+Finally we have the following
+Theorem 3.6. [Cat04]
+Any principal holomorphic torus bundle with extension clas s isomorphic to
+ǫ ∈ H 2(Γ, Λ) occurs in the complete Appell-Humbert family T ′BA.
+Without reproving the above theorem, we want to give a diﬀerential geo-
+metric explanation of the cocycle formula above.
+The idea is very simple : we consider the homogeneous space M := Π ⊗ R/ Π
+as a ﬁxed diﬀerentiable manifold, and we use the canonical identiﬁcat ion of
+the tangent space at the identity in Π ⊗ R with (Λ ⊗ R) ⊕ (Γ ⊗ R) to deﬁne a
+right invariant almost complex structure on Π ⊗ R by translating U ⊕ V .
+This induces a right invariant almost complex structure on M, and we prove
+that if the Riemann bilinear relations hold, then the complex structur e is
+integrable. Observe that in general Π ⊗ R will not have a complex Lie group
+structure, because, even if right multiplication is holomorphic, the in verse
+mapping needs not be holomorphic.
+This interpretation will be quite useful in order to understand the K odaira
+Spencer map of the Appell Humbert families.
+
+=== PDF PAGE 12 ===
+12 F ABRIZIO CATANESE PAOLA FREDIANI
+Proposition 3.7. Let us consider the unique subbundle T (1, 0) ⊂ TM ⊗ C of
+the complexiﬁed tangent bundle of M := Π ⊗ R/ Π, which is invariant by right
+translations, and is such that under the identiﬁcation of th e tangent space at
+the identity in Π ⊗ R with (Λ ⊗ R) ⊕ (Γ ⊗ R), we have T (1, 0)
+Id = U ⊕ V .
+Then, using the other identiﬁcation of TM ⊗ C with the trivial bundle (Λ ⊗
+C) ⊕ (Γ ⊗ C), provided by the diﬀeomorphism of Π ⊗ R with (Λ ⊗ R) ⊕ (Γ ⊗ R),
+with coordinates (y, x), then
+T (1, 0)
+(y,x ) = {(u + A(v, x), v) | u ∈ U, v ∈ V } =
+= {u + v +
+B′′(v, pV (x)) | u ∈ U, v ∈ V } ⊂ U ⊕ V ⊕ U
+.
+Proof. ∀g = (y, x) ∈ Π ⊗ R, since
+(y′, x′)(y, x) = ( y′ + y + A(x′, x) + 2S(x, x), x′ + x),
+we have
+T (1, 0)
+g = {Rg∗(u, v) | u ∈ U, v ∈ V } = {(u + A(v, x), v) | u ∈ U, v ∈ V }
+which equals, as claimed,
+= {(u + B′(v, pV (x)) + B′′(v, pV (x)) + B′′(v, pV (x)), v) =
+= (u′ + B′′(v, pV (x)), v) |u′ ∈ U, v ∈ V }.
+Q.E.D.
+It is now clear that this subbundle T (1, 0) is stable under the operation of the
+discrete group Π given by multiplication from the right.
+Remark 3.8. We observe that if we denote by i : Π ⊗ R → Π ⊗ R the inverse
+map sending g to g− 1 and by D(i)g the diﬀerential of i at the point g ∈ Π ⊗ R,
+we have in general that D(i)g(T (1, 0)
+g ) ̸= T (1, 0)
+g− 1 .
+Proof. If g = ( y, x) ∈ Π ⊗ R, g− 1 = i(y, x) = ( − y − 2S(x, x), − x), so we
+have
+D(i)g(u + A(v, x), v) = ( − u − A(v, x) − 4S(x, v), − v).
+On the other hand
+T (1, 0)
+g− 1 = {(u + A(v, − x), v) | u ∈ U, v ∈ V }
+̸= {(u + A(v, x) + 4S(x, v), v) | u ∈ U, v ∈ V }.
+Q.E.D.
+Lemma 3.9. The above almost complex structure on the diﬀerentiable man i-
+fold M := Π ⊗ R/ Π that we have deﬁned is integrable iﬀ the Riemann bilinear
+relations are satisﬁed for the pair (U, V ).
+
+=== PDF PAGE 13 ===
+DEFORMATION IN THE LARGE OF SOME COMPLEX MANIFOLDS, II 13
+Proof.
+We have already observed the necessity of the Riemann bilinear relat ions,
+so let us just prove the ”if” part.
+We have ∀g = (y, x) ∈ Π ⊗ R, the holomorphic tangent subbundle
+T (1, 0)
+g = {u + v +
+B′′(v, pV (x)) | u ∈ U, v ∈ V } ⊂ U ⊕ V ⊕ U
+and its conjugate
+T (0, 1)
+g = T (1, 0)
+g = {¯u + ¯v + B′′(¯v, pV (x)) | ¯u ∈ U , ¯v ∈ V } ⊂ U ⊕ V ⊕ U.
+We have to show that the holomorphic cotangent bundle, which is the an-
+nihilator of T (0, 1)
+g , is generated by the diﬀerentials of certain local functions.
+But we are lucky and we can indeed produce these functions globally.
+Consider in fact the diﬀeomorphism Ψ : Π ⊗ R → U ⊕ V given by
+(y, x) ↦→ (pU (y) − B′′(x, pV (x)), p V (x)) = ( pU (y) − B′′(pV (x), pV (x)), p V (x)).
+Ψ is a diﬀeomorphism since one can in fact compute the inverse map exp licitly
+as
+(u, v) ↦→ (u + ¯u + B′′(¯v, v) + B′′(¯v, v), v + ¯v)
+It is easy to verify that the diﬀerentials of the coordinates of Ψ ann ihilate
+T (0, 1)
+g .
+Q.E.D.
+Corollary 3.10. Given U, V satisying the Riemann bilinear relations, the cor-
+responding integrable complex structure induces a holomor phic action of Π on
+U ⊕ V which corresponds to the cocycle given in deﬁnition 3.3.
+Proof. We use the diﬀeomorphism Ψ used previously to induce an action
+of Π on U ⊕ V . This action is holomorphic since the complex structure is
+invariant by right translation.
+We just have to read out Ψ ◦ Rg ◦ Ψ− 1(u, v) using the shorthand notation
+g = ( y, x) and pU (y) := yU , pV (x) := xV (thus, for instance x = xV + xV ).
+We have:
+Ψ ◦ Rg ◦ Ψ− 1(u, v) = Ψ ◦ Rg(u + ¯u + B′′(¯v, v) + B′′(¯v, v), v + ¯v) =
+= Ψ(y + u + ¯u + B′′(¯v, v) + B′′(¯v, v) + A(v + ¯v, x), x + v + ¯v) =
+= (yU + u + B′′(¯v, v) + B(v + ¯v, x) − B′′(x + v + ¯v, xV + v), xV + v) =
+= (yU + u + B′(v, xV ) + 2B′′(v, xV ) + B′′(xV , xV ), xV + v).
+Q.E.D.
+We give now a description of the tangent space to T BA, observing that
+T ′BA = {(V, U, φ) | (V, U ) ∈ T B A, φ ∈ V
+∨
+⊗ U} is the restriction to T BA of
+a vector bundle on G(m, 2m) × G(d, 2d).
+For (V, U ) ∈ T B A, the tangent space to T BA in ( V, U ) is a subspace of the
+tangent space to the product of the Grassmannians,
+TT BA, (V,U ) ⊂ TGr(m, 2m)× Gr(d, 2d), (V,U ) ∼
+= Hom(V,
+V ) ⊕ Hom(U, U).
+
+=== PDF PAGE 14 ===
+14 F ABRIZIO CATANESE PAOLA FREDIANI
+Let ( L, M) ∈ Hom(V, V ) ⊕ Hom(U, U) be a tangent vector. In order to
+determine the Zariski tangent space to T BA, we work over the ring of dual
+numbers C[ǫ]/ (ǫ2) and impose the Riemann bilinear conditions inﬁnitesimally,
+i.e., considering the inﬁnitesimal variations of V , resp. U, given by the graph
+Vǫ of ǫL : V ⊕ ǫV → V ⊕ ǫV , resp. the graph Uǫ of ǫM. Concretely, Vǫ =
+{v + ǫv′ + ǫLv|v, v′ ∈ V }, and we want A(Vǫ, Vǫ) ⊂ Uǫ.
+A(v + ǫv2 + ǫL(v), v′ + ǫv′
+2 + ǫL(v′)) ∈ Uǫ, ∀v, v′, v2, v′
+2 ∈ V.
+So we must have elements u0, u′
+0 ∈ U such that
+A(v + ǫv2 + ǫL(v), v′ + ǫv′
+2 + ǫL(v′)) = u0 + ǫu′
+0 + ǫM u0,
+i.e.,
+• A(v, v′) = u0,
+• A(Lv, v′) + A(v, Lv′) + A(v, v′
+2) + A(v2, v′) = u′
+0 + M u0.
+Since (V, U ) ∈ T B A, A(v, v′) = B(v, v′) = B′(v, v′), and the second equation
+may be rewritten as:
+B′(v, v′
+2)+B′(v2, v′)− B′′(v′, Lv)+
+B′′(Lv, v′)+B′′(v, Lv′)− B′′(Lv′, v) = u′
+0+M u0.
+Finally, observing that u′
+0 ∈ U, M u0 ∈
+U , we must have
+u′
+0 = B′(v, v′
+2) + B′(v2, v′) − B′′(v′, Lv) + B′′(v, Lv′),
+M u0 = M B′(v, v′),
+M B′(v, v′) =
+B′′(Lv, v′) − B′′(Lv′, v),
+and the last one is the equation deﬁning the tangent space to T BA in (V, U ),
+which we rewrite using complex conjugation as
+(2)
+M B′(v, v′) = B′′(Lv, v′) − B′′(Lv′, v).
+Proposition 3.11. Let A : Γ × Γ → Λ be non zero.
+If m = 2 , d = 1 , i.e., Γ ∼
+= Z4, Λ ∼= Z2, both Appell - Humbert spaces T BA
+and T ′BA are smooth.
+Proof.
+Recall once more that T ′BA = {(V, U, φ) | (V, U ) ∈ T B A, φ ∈
+V
+∨
+⊗ U} is
+the restriction to T BA of a vector bundle on G(m, 2m) × G(d, 2d) (here m = 2,
+d = 1), so it suﬃces to prove that T BA is smooth.
+We have shown that the tangent space to T BA in ( V, U ) is the subspace of
+Hom(V, V ) ⊕ Hom(U, U) given by kernel of the following linear map
+G : Hom(V, V ) ⊕ Hom(U, U) → Hom(Λ2(V ), U),
+(L, M) ↦→ [(v, v′) ↦→ M B′(v, v′) − B′′(Lv, v′) + B′′(Lv′, v)],
+thus it suﬃces to show that G is surjective. Since m = 2 and d = 1, the
+dimension of the space Hom(Λ2(V ), U) is one, and we only have to prove that
+the map G is non zero.
+
+=== PDF PAGE 15 ===
+DEFORMATION IN THE LARGE OF SOME COMPLEX MANIFOLDS, II 15
+For this purpose we observe that if B′ ̸= 0, G(0, M) ̸= 0, if M ̸= 0.
+If B′ = 0, we have B′′̸= 0 and there must exist L ∈ Hom(V, V ) such that
+G(L, 0) ̸= 0.
+In fact, otherwise we would have
+B′′(Lv, v′) = B′′(Lv′, v), ∀L ∈ Hom(V, V ), ∀v, v′ ∈ V.
+For each v, v′, v′′∈ V , with v, v′ linearly independent, there is L such that
+Lv = ¯v′′ = Lv′, whence we get B′′(v′′, v′ − v) = 0 and it follows right away
+that B′′= 0.
+Q.E.D.
+Remark 3.12. The previous proposition contradicts remark 6.13 of [Cat04],
+which however was due to a trivial misprint (exchanging H 1(OX ) and
+H 1(OY )).
+If d = 1 and m ≥ 3, however, T BA is singular at the points where B′′= 0.
+Proof.
+Let ( V, U ) ∈ T B A.
+Since d = dim(U) = 1, the map
+G : Hom(V,
+V ) ⊕ Hom(U, U) → Hom(Λ2(V ), U),
+(L, M) ↦→ [(v, v′) ↦→ M B′(v, v′) − B′′(Lv, v′) + B′′(Lv′, v)]
+has rank one if B′′= 0.
+Q.E.D.
+Now we want to determine the Kodaira Spencer map for the Appell-Hu mbert
+family.
+Recall that ∀g = (y, x) ∈ Π ⊗ R, the holomorphic tangent subbundle is
+T (1, 0)
+g = {(u + B′′(v, x), v) | u ∈ U, v ∈ V } ⊂ U ⊕ V ⊕ U
+thus its conjugate is
+T (0, 1)
+g = T (1, 0)
+g = {(¯u + B′′(¯v, x), ¯v) | ¯u ∈ U , ¯v ∈ V } ⊂ U ⊕ V ⊕ U.
+Recall that one way to look at the Kodaira Spencer map is to regard it as
+associating to M ∈ Hom(U , U), L ∈ Hom(V , V ) a linear map R = ρ(L, M) ∈
+Hom(T (0, 1)
+g , T (1, 0)
+g ) which gives the inﬁnitesimal variation of the subspace T (0, 1)
+g
+as the graph of I + ǫR, where I denotes the identity of T (0, 1)
+g .
+So, for M ∈ Hom(U , U), L ∈ Hom(V , V ), we consider the space
+(T (0, 1)
+g )ǫ := {(¯u + ǫM ¯u + B′′(¯v + ǫL¯v, x), ¯v + ǫL¯v) | ¯u ∈ U , ¯v ∈ V } =
+= {(¯u + B′′(¯v, x) + ǫ(M ¯u + B′′(L¯v, x)), ¯v + ǫL¯v) | ¯u ∈ U , ¯v ∈ V }.
+We obtain R simply by projecting the variation (i.e., the terms divisible by
+ǫ) to T (1, 0)
+g .
+
+=== PDF PAGE 16 ===
+16 F ABRIZIO CATANESE PAOLA FREDIANI
+We write this projection using the decomposition: u + ¯u′ + v + ¯v′ =
+= (u − B′′( ¯v′, x)) + ( ¯u′ − B′′(v, x)) + (v + B′′(v, x)) + ( ¯v′ + B′′( ¯v′, x))
+So we have a map
+T (0, 1)
+g → T (1, 0)
+g ,
+and using the isomorphism U ⊕ V ∼= T (1, 0)
+g provided by the choice of g =
+(y, x), ( u, v) ↦→ u + v + B′′(v, x), we obtain
+R : U ⊕ V → U ⊕ V,
+R : (¯u, ¯v) ↦→ (M ¯u + B′′(L¯v, x), L¯v).
+We can partly summarize the above description (dependent upon th e local
+choice of a splitting ) as follows:
+Lemma 3.13. Consider the exact sequences of vector bundles on X:
+0 → U → T (1, 0) → V → 0, 0 →
+U → T (0, 1) → V → 0.
+Then if R = ρ(L, M, φ) is the Kodaira Spencer image of the tangent vec-
+tor (L, M, φ) to the complete Appell Humbert space, then the image of R
+in Hom(T (0, 1), V ) is the image of L ∈ Hom(V , V ), and the image of R in
+Hom(U , T(1, 0)) is the image of M ∈ Hom(U , U).
+4. On the versality of the complete Appell Humbert family
+We recall for the reader’s beneﬁt some results from [Cat04]:
+Theorem 4.1. The cokernel of 0 → H 0(Ω1
+Y ) → H 0(Ω1
+X ) is the subspace of U ∨
+which annihilates the image of the Hermitian part of A, i.e., of the component
+B′′ in [(V ⊗ ¯V )∨ ⊗ (U)].
+It follows in particular that X is parallelizable if and only if the Hermitian
+part of A is zero.
+□
+Corollary 4.2. The space H 0(dOX) of closed holomorphic 1-forms on X con-
+tains the pull- back of H 0(Ω1
+Y ) with cokernel the subspace U ∗ of U ∨ which
+annihilates the image of B, i.e., U ∗ = {β | β ◦ B(z, γ) = 0 , ∀γ, ∀z}.
+Theorem 4.3. The cokernel of 0 → H 1(OY ) → H 1(OX ) is the subspace of
+¯U ∨ which annihilates the image of the anti-complex component o f A, i.e., of
+the conjugate of the component B′ in [(Λ2V )∨ ⊗ (U)].
+In order to analyse the problem of describing the small deformation s of prin-
+cipal holomorphic torus bundles over tori we need to calculate the c ohomology
+groups of the tangent sheaf Θ X.
+These ﬁt into the following exact sequences, according to
+Corollary 4.4. [Cat04] H i(ΘX ) ﬁts into a short exact sequence
+0 → cokerbi− 1 → H i(ΘX) → kerbi → 0,
+where bi : V ⊗ H i(OX ) → U ⊗ H i+1(OX) is given by cup product and contraction
+with B′′∈ [( ¯V ) ⊗ V )∨ ⊗ (U)].
+
+=== PDF PAGE 17 ===
+DEFORMATION IN THE LARGE OF SOME COMPLEX MANIFOLDS, II 17
+We want to give now a more explicit description of these groups for i = 1.
+We have an exact sequence
+0 → U ⊗ O X → ΘX → V ⊗ O X → 0,
+whose extension class is provided by B′′, yielding a cohomology exact sequence
+(∗∗)V → U ⊗ H 1(X, OX ) → H 1(X, ΘX) → V ⊗ H 1(X, OX) → U ⊗ H 2(X, OX ),
+and the above cited corollary says that the ﬁrst and the last maps a re given
+by cup product and contraction with B′′.
+The following proposition allows us to describe the cohomology groups
+H 1(X, OX ), H 2(X, OX).
+Proposition 4.5. [Cat04] The Leray spectral sequence for the sheaf OX and
+for the map f : X → Y is a spectral sequence which degenerates at the E3
+level and with E2 term = ( H i(Rjf∗OX ), d2), where d2 : ( H i(Rjf∗OX ) =
+H i(Λj( ¯U ∨ ) ⊗ O Y ) = Λ i( ¯V ∨ ) ⊗ Λj( ¯U ∨ ) → Λi+2( ¯V ∨ ) ⊗ Λj− 1( ¯U ∨ ) is provided
+by cup product and contraction with ¯B′ ∈ Λ2( ¯V ∨ ) ⊗ ( ¯U ).
+The Leray spectral sequence yields then an exact sequence
+0 → H 1(Y, OY ) = V
+∨
+→ H 1(X, OX ) → H 0(R1f∗OX ) = U
+∨
+→
+→ H 2(Y, OY ) = Λ 2(V
+∨
+) → H 2(X, OX),
+and the map
+H 0(R1f∗OX) = U
+∨
+→ H 2(Y, OY ) = Λ 2(V
+∨
+)
+is given by B′.
+So we see again that H 1(X, OX ) ∼
+=
+V
+∨
+⊕ Ker(B′), where we view B′ as a
+map B′ : U
+∨
+→ Λ2(V
+∨
+).
+Thus, to determine H 1(X, ΘX), it remains to compute H 2(X, OX).
+Since the Leray spectral sequence degenerates at E3 level, we have
+H 2(X, OX ) ∼= E0, 2
+3 ⊕ E2, 0
+3 ⊕ E1, 1
+3 ,
+where E0, 2
+3 = Ker(d2 : E0, 2
+2 → E2, 1
+2 ) = Ker(B′ : Λ 2(U
+∨
+) → U
+∨
+⊗ Λ2(V
+∨
+)),
+E1, 1
+3 = Ker(d2 : E1, 1
+2 → E3, 0
+2 ) = Ker(B′ : U
+∨
+⊗ V
+∨
+→ Λ3(V
+∨
+)),
+E2, 0
+3 = E2,0
+2
+Im(d2:E0,1
+2 → E2,0
+2 ) = Coker (B′ : U
+∨
+→ Λ2(V
+∨
+)).
+Now we want to determine the kernel of the coboundary map
+F : V ⊗ H 1(X, OX ) → U ⊗ H 2(X, OX ),
+in the exact sequence ( ∗∗)
+V → U ⊗ H 1(X, OX ) → H 1(X, ΘX) → V ⊗ H 1(X, OX ) → U ⊗ H 2(X, OX ).
+in terms of the isomorphism
+V ⊗ H 1(X, OX) ∼= V ⊗ (V
+∨
+⊕ Ker(B′)) = ( V ⊗ V
+∨
+) ⊕ (V ⊗ Ker(B′)),
+
+=== PDF PAGE 18 ===
+18 F ABRIZIO CATANESE PAOLA FREDIANI
+Lemma 4.6. The kernel of the coboundary map
+F : V ⊗ H 1(X, OX ) → U ⊗ H 2(X, OX ),
+in the exact sequence (∗∗) consists of the pairs ( ¯L, ∑
+i vi ⊗
+ui∨ ) such that
+1) there exists M ∈ U
+∨
+⊗ U such that B′′(L) = M ◦ B′ : Λ 2(V ) → U,
+2) ∑
+i B′′(vi) ⊗ ui∨ = 0 in U ⊗ V
+∨
+⊗ U
+∨
+for each choice of vi ∈ V , ui∨ ∈
+Ker(B′)
+Proof.
+Since F is given by cup product and contraction with B′′, for
+L ∈ V ⊗ V
+∨
+,
+v ∈ V , u∨ ∈ Ker(B′), we have
+F (L, v ⊗ u∨ ) = ( ζ(L), B′′(v) ⊗ u∨ ),
+where ζ(L) = [ B′′(L)] ∈ Λ2(V
+∨
+)⊗ U
+Im(B′)⊗ U = E2, 0
+3 ⊗ U,
+(B′′(v) ⊗ u∨ ) ∈ U ⊗ Ker(B′
+|U
+∨
+⊗ V
+∨ ) = U ⊗ E1, 1
+3 .
+So ζ(L) = 0 if and only if B′′(L) ∈ Im(B′ ⊗ Id : U
+∨
+⊗ U → Λ2(V
+∨
+) ⊗ U),
+i.e. there exists M ∈ U
+∨
+⊗ U such that B′′(L) = M ◦ B′ : Λ 2(V ) → U → U.
+Q.E.D.
+Remark 4.7. Observe that condition 1) says exactly that the pair (L, M)
+belongs to the tangent space to the Appell Humbert space.
+Proposition 4.8. The Kodaira Spencer map of the complete Appell Humbert
+family is surjective under one of the following assumptions :
+i] h1(OX ) = h1(OY ), i.e., Ker(
+B′) = 0
+ii] d = 1 and B′ ̸= 0
+iii] d = 1 and B(v, x) non degenerate in the ﬁrst factor.
+iv] X is parallelizable and A is surjective as a linear map between Λ2(V ⊕
+V ) → (U ⊕ U ).
+Proof.
+By the previous remark and by lemma 3.13 the image of ρ(L, M, φ) inside
+H 1(V ⊗ O X) is simply the pair ( ¯L, 0).
+Thus, we ﬁrst observe that the subspace of the tangent vector s with L = 0,
+namely, {(0, M, φ)|M ◦ B′ = 0 } maps onto {(
+M , φ)|M ◦ B′ = 0 } = ( U ⊗
+ker(B′)) ⊕ (U ⊗ V
+∨
+) = H 1(U ⊗ O X ).
+Second, by condition 1) above, the image of the Kodaira Spencer ma p of
+the complete Appell Humbert family is surjective onto ker(F ) ⊂ H 1(V ⊗ O X )
+if and only if ker(F ) ⊂ (V ⊗ V
+∨
+).
+Therefore, we want that ∑
+i B′′(vi) ⊗ ui∨ = 0 in U ⊗ V
+∨
+⊗ U
+∨
+with vi ∈ V ,
+ui∨ ∈ Ker(B′) implies ∑
+i vi ⊗ ui∨ = 0.
+Therefore this holds trivially under condition i], that Ker(B′) = 0.
+In turn, condition ii] : d = 1 and B′ ̸= 0 implies condition i].
+
+=== PDF PAGE 19 ===
+DEFORMATION IN THE LARGE OF SOME COMPLEX MANIFOLDS, II 19
+In the case d = 1 we do not need to take a sum of simple tensors, but just
+one, and then B′′(v) ⊗ u∨ = 0, for u∨ ̸= 0, holds iﬀ B′′(v) = 0 ∈ (V
+∨
+⊗ U).
+However, since we may assume B′ = 0, the last condition is equivalent to
+B(v) = 0, which contradicts iii].
+Finally, we show that iv] implies i]: in fact we know that parallelizability is
+equivalent to the vanishing of B′′. Whence, we have A = B′ ⊕ B′, thus A is
+surjective if and only if B′ is surjective as a linear map Λ 2(V ) → (U). But
+then the conjugate of the transpose is injective, i.e., condition i] ho lds.
+Q.E.D.
+Remark 4.9. On a compact complex manifold X one has the Kodaira inequal-
+ities
+2h1(X, OX ) ≥ h1(X, OX ) + h0(dOX) ≥ b1(X),
+which hold iﬀ X has a very good (cf. e.g. [Cat04]) Albanese variety, of dimen-
+sion h1(X, OX ) = h0(dOX) = 1
+2 b1(X).
+For principal holomorphic torus bundles then h1(OX ) = h1(OY ) implies
+by semicontinuity that every small deformation Xt deforms together with an
+Albanese map Xt → Yt. If d = 1 necessarily Xt → Yt is an elliptic bundle,
+but for d ≥ 2 we only have a diﬀerentiable torus bundle as a deformation, a nd
+therefore i] of the previous proposition yields a further co ntribution.
+Recall the following
+Theorem 4.10. [Cat04] Let f : X → Y be a holomorphic principal bundle
+with base a complex torus YV of dimension m, and ﬁbre an elliptic curve TU .
+Assume moreover π1(X) := Π to be a nontrivial central extension
+1 → Λ → Π → Γ → 1
+classiﬁed by a cohomology class ǫ ̸= 0 ∈ H 2(Y, Λ) whose associated bilinear
+form A has an image of dimension = 2.
+Then every limit of manifolds in the complete Appell-Humber t family is again
+a holomorphic principal bundle f ′ : X ′ → Y ′ with ﬁbre an elliptic curve T ′,
+and thus occurs in the complete Appell-Humbert family .
+The above result combines with the following one:
+Theorem 4.11. Let f : X → Y be a holomorphic principal bundle with base
+a complex torus Y := YV of dimension m = 2 , and ﬁbre an elliptic curve
+T := TU .
+Then the complete Appell Humbert family is versal at X if either B′ ̸= 0 ,
+or B′ = 0 and B(v, x) non degenerate in the ﬁrst factor, or X is parallelizable
+and A ̸= 0.
+Proof. By Proposition 3.11 the complete Appell Humbert space is smooth
+for m = 2 , d = 1, thus versality would follow from the surjectivity of the
+Kodaira Spencer map.
+Surjectivity under the ﬁrst two respective assumptions follows dir ectly from
+ii] and iii] of proposition 4.8, whereas, if X is parallelizable, we argue as in iv]
+
+=== PDF PAGE 20 ===
+20 F ABRIZIO CATANESE PAOLA FREDIANI
+of 4.8: B′′= 0, and if also B′ = 0, then A = 0, a contradiction. Thus B′ ̸= 0
+and we are done.
+Q.E.D.
+Proposition 4.12. Assume m = 2 , d = 1 and assume further that A is non
+degenerate. Then the case : there is (U, V ) such that B′ = 0 and B(v, x) is
+degenerate in the ﬁrst factor occurs only if the associated p encil
+P1 ∼
+= P((Λ ⊗ R)∨ )֒→P(Λ2(Γ ⊗ R)∨ ) ∼= P(Λ2(R4)) intersects the Klein
+Pfaﬃan quadric in two distinct complex conjugate points.
+Proof. Assume that v ∈ V is such that B(v, x) = 0 for each x, and recall
+the assumption B′ = 0. We can choose w ∈ V such that {v, w} is a basis of
+V .
+We have B′′(v, ¯v) = 0 =
+B′′(v, ¯v), B′′(v, ¯w) = 0 = B′′(w, ¯v).
+We set B′′(w, ¯v) := ζ so that B′′(v, ¯w) = − ¯ζ, and observe that ζ ̸= 0,
+otherwise v is in the kernel of A.
+Up to a change of basis replacing w by w + µv , we may assume that also
+B′′(w, ¯w) = 0 = B′′(w, ¯w).
+We have found two real isotropic subspaces for A, whose complexiﬁcations
+are spanned by {v, ¯v},{w, ¯w} respectively.
+These two subspaces are spanned by {v ± ¯v},{w ± ¯w} and we compute the
+corresponding values of B′′on pairs of such vectors. Setting ǫ1, ǫ2 = ± 1 we get
+B′′(v + ǫ1¯v, w + ǫ2 ¯w) = − ǫ1ζ
+B′′(v + ǫ1¯v, w + ǫ2 ¯w) = − ǫ2 ¯ζ.
+We observe at this point that e1 := ζ + ¯ζ, e2 := 1
+i (ζ − ¯ζ) give a real basis for
+Λ ⊗ R, whence in the basis {2Re(v), 2Im(v), 2Re(w), 2Im(w)} A is given by
+a 2 × 2 block matrix with diagonal blocks equal to zero and with upper right
+block equal to:
+M =
+(
+− e1 − e2
+e2 − e1
+)
+.
+Therefore, the corresponding Pfaﬃan of µ 1A1 + µ 2A2, if A1, A2 are the com-
+ponents of A with respect to the basis e1, e2, equals µ 2
+1 + µ 2
+2, and it has no real
+roots.
+Q.E.D.
+Combining the last three stated results follows rightaway the followin g
+Theorem 4.13. Consider the family of holomorphic principal torus bundles
+f : X → Y with base a complex torus YV of dimension 2, and with ﬁbre an
+elliptic curve TU , corresponding to a bilinear form A such that
+1) A is non degenerate and ImA has dimension 2
+2) the associated pencil
+P1 ∼
+= P((Λ ⊗ R)∨ )֒→P(Λ2(Γ ⊗ R)∨ ) ∼= P(Λ2(R4)) intersects the Klein
+Pfaﬃan quadric in at least one real point.
+Then this family forms a connected component of the Teichm¨ u ller space.
+
+=== PDF PAGE 21 ===
+DEFORMATION IN THE LARGE OF SOME COMPLEX MANIFOLDS, II 21
+Remark 4.14. One example of an elliptic bundle over a 2-dimensional torus
+is the so called Iwasawa manifold (cf. [K-M71]). It is parallelizable, being
+the quotient of the complex Lie group N of 3 × 3 upper trangular matrices with
+all eigenvalues equal to 1 (N ∼= C3 as a complex manifold) by the discrete
+cocompact subgroup Π which is the subgroup of the matrices with entries in the
+subring Λ ⊂ C, Λ := Z[i].
+Nakamura observed that the Kuranishi family of X is smooth of dimension
+6, and there are small deformations which are not paralleliza ble. This follows
+by our result in greater generality.
+In this case, the alternating form A is gotten as the antisymmetrization of
+the product map C × C → C , which induces Λ × Λ → Λ.
+One can explicitly calculate the integral bilinear map A, and it turns out
+that there are indeed cases where B′ = 0 and B(v, x) is degenerate in the ﬁrst
+factor.
+In fact, one can verify that the corresponding pencil of alte rnating forms
+intersects the Pfaﬃan Klein quadric in two distinct complex conjugate points.
+Thus, there are manifolds where the Kodaira Spencer image of the complete
+Appell Humbert family is not surjective.
+If the complete Appell Humbert family does not yield an open s et in the
+Kuranishi space, then the following should happen: we have a X for which
+h1(OX ) = 3 , h0(dOX ) = 2 = h0(Ω1
+X ). But there is a small deformation Xt
+such that h1(OXt) = 3 , h0(dOXt) = 1 .
+It is interesting to see whether this can happen, for instanc e if this could be
+related to the existence of a ﬁbration of X over an elliptic curve which deforms
+along, producing another component of the Kuranishi space.
+We conclude by observing, as recalled to us by Marian Aprodu:
+Remark 4.15. Let f : X → Y be a holomorphic principal bundle with base a
+complex torus Y := YV of dimension m, and ﬁbre a torus T := TU , such that
+A ̸= 0.
+Then X is not K¨ ahler.
+Indeed, this was proven by Blanchard in [Bla56] more generally for h olomor-
+phic ﬁbre bundles whose transgression H 1(T, R) → H 2(Y, R) is nonzero ( cf.
+also [H¨ o93]).
+Acknowledgements.
+The authors wish to thank Marian Aprodu, resp. Alessandro Ghigi, f or a
+useful conversation.
+References
+[Apr] M. Aprodu, “ An Appell-Humbert theorem for hyperelliptic surfaces”, J. Math. Kyoto
+Univ. 38, no. 1 (1998), 101-121.
+[BPV84] W. Barth, C. Peters and A. Van de Ven, “ Compact Complex Surfaces ”, Ergeb-
+nisse der Mathematik und ihrer Grenzgebiete, 3.F, B. 4, Spri nger-V erlag,
+1984.
+
+=== PDF PAGE 22 ===
+22 F ABRIZIO CATANESE PAOLA FREDIANI
+[Bla53] A. Blanchard, “ Recherche de structures analytiques complexes sur certain es
+vari´ et´ es”, C.R. Acad.Sci., Paris 238 (1953), 657-659.
+[Bla56] A. Blanchard, “ Sur les vari´ et´ es analytiques complexes”, Ann.Sci. Ec. Norm. Su-
+per., III Ser., 73 (1956), 157-202.
+[Cal58] E. Calabi, “ Construction and properties of some 6-dimensional almost c omplex man-
+ifolds, T rans. Amer. Math.Soc. 87 (1958), 407-438.
+[Cat91] F. Catanese, “ Moduli and classiﬁcation of irregular K¨ ahler manifolds (and algebraic
+varieties) with Albanese general type ﬁbrations. Appendix by Arnaud Beauville. ” Inv.
+Math. 104 (1991) 263-289; Appendix 289 .
+[Cat95] F. Catanese, “ Compact complex manifolds bimeromorphic to tori. ” Proc. of the
+Conf. ”Abelian Varieties”, Egloﬀstein 1993, De Gruyter (1995), 55-62.
+[Cat02] F. Catanese, “ Deformation types of real and complex manifolds ”, Proc. of the Chen-
+Chow Memorial Conference, Contemporary trends in algebraic geo metry and algebraic
+topology (Tianjin, 2000), Nankai T racts Math., 5, World Sci. Publishing, River
+Edge, NJ (2002), 195–238 .
+[Cat04] F. Catanese, “ Deformation in the large of some complex manifolds, I ”, Ann. Mat.
+Pura Appl. (4) 183, no. 3 , Volume in Memory of Fabio Bardelli, (2004), 261–289 .
+[Che58] S.S. Chern, “ Complex manifolds ”, Publ. Mat. Univ. Recife (1958).
+[FG65] W. Fischer, H. Grauert, “ Lokal-triviale Familien kompakter komplexer Mannig-
+faltigkeiten ” Nachr. Akad. Wiss. G¨ ottingen, II. Math.-Phys. Kl. 1965 (1965),
+89-94 .
+[Hir62] H. Hironaka, “ An example of a non-K¨ ahlerian complex-analytic deformati on of
+K¨ ahlerian complex structures”, Ann. Math. (2) 75, (1962),190-208.
+[H¨ o93] T. H¨ ofer, “Remarks on torus principal bundles ”, J. Math. Kyoto Univ. 33 , no.
+1 (1993), 227–259.
+[Ko64] K. Kodaira ,” On the structure of complex analytic surfaces I ”, Amer. J. Math. 86
+(1964), 751-798 .
+[Ko68] K. Kodaira ,” On the structure of complex analytic surfaces IV ”, Amer. J. Math.
+90 (1968), 1048-1066 .
+[K-M71] K. Kodaira, J. Morrow ,“ Complex manifolds ” Holt, Rinehart and Winston ,
+New York-Montreal, Que.-London (1971).
+[K-S58] K. Kodaira , D. Spencer ” On deformations of complex analytic structures I-II ”,
+Ann. of Math. 67 (1958), 328-466 .
+[Ku1] M. Kuranishi, ” On a type of family of complex structures ”, Ann. of Math. (2) 74
+(1961), 262–328.
+[Ku2] M. Kuranishi, ” New proof for the existence of locally complete families of c omplex
+structures”, Proc. Conf. Complex Analysis (Minneapolis, 1964) Springer, Berlin
+(1965), 142–154.
+[Nak75] I. Nakamura, ” Complex parallelisable manifolds and their small deformat ions” J.
+Diﬀer. Geom. 10 , (1975),85-112 .
+[Nak98] I. Nakamura, ” Global deformations of P2-bundles over P1” J. Math. Kyoto Univ.
+38, No.1 (1998), 29-54 .
+[Somm75] A. J. Sommese ,“ Quaternionic manifolds ”, Math. Ann. 212 (1975), 191-214.
+[Su70] T. Suwa, “ On hyperelliptic surfaces”, J. F ac. Sci. Univ. T okyo, 16 (1970), 469-476
+.
+[Su75] T. Suwa, “ Compact quotient spaces of C2 by aﬃne transformation groups ”, J. Diﬀer.
+Geom. 10 , (1975) 239-252.
+[Su77-I] T. Suwa, “ Compact quotients of C3 by aﬃne transformation groups, I. ”, Several
+complex V ariables, Proc. Symp. Pure Math. 30, Part 1, Willia mstown 1975,
+(1977), 293-295.
+[Su77-II] T. Suwa, “ Compact quotients of C3 by aﬃne transformation groups, II. ”, Com-
+plex Analysis and Algebraic Geometry , Iwanami Shoten (1977), 259-278 .
+[Ue75] K. Ueno, “ Classiﬁcation theory of algebraic varieties and compact co mplex spaces.
+Lecture Notes in Mathematics 439, Springer-Verlag, XIX, 278 p.(1975).
+[Ue80] K. Ueno, “ On three-dimensional compact complex manifolds with non po sitive Ko-
+daira dimension”, Proc. Japan Acad., vol.56,S.A.n.10 (1980), 479-483.
+
+=== PDF PAGE 23 ===
+DEFORMATION IN THE LARGE OF SOME COMPLEX MANIFOLDS, II 23
+[Ue82] K. Ueno, “ Bimeromorphic Geometry of algebraic and analytic threefol ds”, in
+’C.I.M.E. Algebraic Threefolds, Varenna 1981’ Lecture Notes in math. 947 (1982),
+1-34 .
+[Ue87] K. Ueno, “ On compact analytic Threefolds with non trivial Albanese To ri”, Math.
+Ann. 278 (1987), 41-70.
+Author’s address:
+Prof. Fabrizio Catanese
+Lehrstuhl Mathematik VIII
+Universit¨ at Bayreuth
+D-95440, BAYREUTH, Germany
+e-mail: Fabrizio.Catanese@uni-bayreuth.de
+Dr. Paola Frediani
+Dipartimento di Matematica
+Universit` a di Pavia
+I-27100 Pavia, Italy
+e-mail: paola.frediani@unipv.it

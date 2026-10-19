@@ -1,0 +1,620 @@
+{
+  "purpose": "Exact independent counterchecks; analytic proof and classification inputs in note 58.",
+  "all_passed": true,
+  "candidate_algebras": [
+    {
+      "name": "h3+h3+R2",
+      "jacobi": true,
+      "center_dimension": 4,
+      "derived_dimension": 2
+    },
+    {
+      "name": "f3+R2",
+      "jacobi": true,
+      "center_dimension": 5,
+      "derived_dimension": 3
+    },
+    {
+      "name": "g",
+      "jacobi": true,
+      "center_dimension": 2,
+      "derived_dimension": 2
+    },
+    {
+      "name": "h",
+      "jacobi": true,
+      "center_dimension": 4,
+      "derived_dimension": 4
+    },
+    {
+      "name": "l4+l4",
+      "jacobi": true,
+      "center_dimension": 2,
+      "derived_dimension": 4
+    }
+  ],
+  "h_spectral_matchings": [
+    {
+      "permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "nullity": 0,
+      "forced_unit_modulus": [
+        "b1",
+        "b2",
+        "c1",
+        "c2",
+        "b1c1",
+        "b1c2",
+        "b2c1",
+        "b2c2"
+      ]
+    },
+    {
+      "permutation": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "nullity": 1,
+      "forced_unit_modulus": [
+        "b1",
+        "c1",
+        "b1c1",
+        "b2c2"
+      ]
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "nullity": 0,
+      "forced_unit_modulus": [
+        "b1",
+        "b2",
+        "c1",
+        "c2",
+        "b1c1",
+        "b1c2",
+        "b2c1",
+        "b2c2"
+      ]
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "nullity": 0,
+      "forced_unit_modulus": [
+        "b1",
+        "b2",
+        "c1",
+        "c2",
+        "b1c1",
+        "b1c2",
+        "b2c1",
+        "b2c2"
+      ]
+    },
+    {
+      "permutation": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "nullity": 0,
+      "forced_unit_modulus": [
+        "b1",
+        "b2",
+        "c1",
+        "c2",
+        "b1c1",
+        "b1c2",
+        "b2c1",
+        "b2c2"
+      ]
+    },
+    {
+      "permutation": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "nullity": 0,
+      "forced_unit_modulus": [
+        "b1",
+        "b2",
+        "c1",
+        "c2",
+        "b1c1",
+        "b1c2",
+        "b2c1",
+        "b2c2"
+      ]
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "nullity": 0,
+      "forced_unit_modulus": [
+        "b1",
+        "b2",
+        "c1",
+        "c2",
+        "b1c1",
+        "b1c2",
+        "b2c1",
+        "b2c2"
+      ]
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "nullity": 1,
+      "forced_unit_modulus": [
+        "b1",
+        "c2",
+        "b1c2",
+        "b2c1"
+      ]
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "nullity": 1,
+      "forced_unit_modulus": [
+        "b2",
+        "c2",
+        "b1c1",
+        "b2c2"
+      ]
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "nullity": 0,
+      "forced_unit_modulus": [
+        "b1",
+        "b2",
+        "c1",
+        "c2",
+        "b1c1",
+        "b1c2",
+        "b2c1",
+        "b2c2"
+      ]
+    },
+    {
+      "permutation": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "nullity": 1,
+      "forced_unit_modulus": [
+        "b1",
+        "c2",
+        "b1c2",
+        "b2c1"
+      ]
+    },
+    {
+      "permutation": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "nullity": 0,
+      "forced_unit_modulus": [
+        "b1",
+        "b2",
+        "c1",
+        "c2",
+        "b1c1",
+        "b1c2",
+        "b2c1",
+        "b2c2"
+      ]
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "nullity": 0,
+      "forced_unit_modulus": [
+        "b1",
+        "b2",
+        "c1",
+        "c2",
+        "b1c1",
+        "b1c2",
+        "b2c1",
+        "b2c2"
+      ]
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "nullity": 0,
+      "forced_unit_modulus": [
+        "b1",
+        "b2",
+        "c1",
+        "c2",
+        "b1c1",
+        "b1c2",
+        "b2c1",
+        "b2c2"
+      ]
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "nullity": 0,
+      "forced_unit_modulus": [
+        "b1",
+        "b2",
+        "c1",
+        "c2",
+        "b1c1",
+        "b1c2",
+        "b2c1",
+        "b2c2"
+      ]
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "nullity": 1,
+      "forced_unit_modulus": [
+        "b1",
+        "c1",
+        "b1c1",
+        "b2c2"
+      ]
+    },
+    {
+      "permutation": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "nullity": 0,
+      "forced_unit_modulus": [
+        "b1",
+        "b2",
+        "c1",
+        "c2",
+        "b1c1",
+        "b1c2",
+        "b2c1",
+        "b2c2"
+      ]
+    },
+    {
+      "permutation": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "nullity": 0,
+      "forced_unit_modulus": [
+        "b1",
+        "b2",
+        "c1",
+        "c2",
+        "b1c1",
+        "b1c2",
+        "b2c1",
+        "b2c2"
+      ]
+    },
+    {
+      "permutation": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "nullity": 0,
+      "forced_unit_modulus": [
+        "b1",
+        "b2",
+        "c1",
+        "c2",
+        "b1c1",
+        "b1c2",
+        "b2c1",
+        "b2c2"
+      ]
+    },
+    {
+      "permutation": [
+        3,
+        0,
+        2,
+        1
+      ],
+      "nullity": 0,
+      "forced_unit_modulus": [
+        "b1",
+        "b2",
+        "c1",
+        "c2",
+        "b1c1",
+        "b1c2",
+        "b2c1",
+        "b2c2"
+      ]
+    },
+    {
+      "permutation": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "nullity": 0,
+      "forced_unit_modulus": [
+        "b1",
+        "b2",
+        "c1",
+        "c2",
+        "b1c1",
+        "b1c2",
+        "b2c1",
+        "b2c2"
+      ]
+    },
+    {
+      "permutation": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "nullity": 1,
+      "forced_unit_modulus": [
+        "b2",
+        "c1",
+        "b1c2",
+        "b2c1"
+      ]
+    },
+    {
+      "permutation": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "nullity": 1,
+      "forced_unit_modulus": [
+        "b2",
+        "c2",
+        "b1c1",
+        "b2c2"
+      ]
+    },
+    {
+      "permutation": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "nullity": 1,
+      "forced_unit_modulus": [
+        "b2",
+        "c1",
+        "b1c2",
+        "b2c1"
+      ]
+    }
+  ],
+  "log_moment_polynomials": {
+    "square_difference": {
+      "0 2 0": 2,
+      "0 0 2": 2,
+      "2 0 0": -4
+    },
+    "cube_difference": {
+      "1 2 0": 6,
+      "1 0 2": -6
+    }
+  },
+  "compact_nonpreserving_example": {
+    "omega_closed": true,
+    "omega_square": {
+      "0 1 2 3": 2
+    },
+    "invariant_nondegenerate_form_not_closed": {
+      "0 3 4": -1,
+      "1 2 6": -1
+    },
+    "zero_weight_pairs": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "multiplication_matrix": [
+      [
+        2,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        3
+      ],
+      [
+        1,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        2
+      ]
+    ],
+    "central_multiplication_matrix": [
+      [
+        7,
+        0,
+        12,
+        0
+      ],
+      [
+        0,
+        7,
+        0,
+        12
+      ],
+      [
+        4,
+        0,
+        7,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        7
+      ]
+    ],
+    "both_determinants": 1
+  },
+  "noncompact_example": {
+    "omega_closed": true,
+    "omega_square": {
+      "0 1 2 3": -2
+    },
+    "weights": [
+      1,
+      -2,
+      -1,
+      2
+    ]
+  },
+  "torus_example": {
+    "symplectic": true,
+    "determinant": 1,
+    "finite_free_quotient": true,
+    "cube_matrix": [
+      [
+        13,
+        8,
+        0,
+        0
+      ],
+      [
+        8,
+        5,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        13,
+        8
+      ],
+      [
+        0,
+        0,
+        8,
+        5
+      ]
+    ],
+    "involution": [
+      [
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "cube_commutes_mod_lattice": true
+  },
+  "limitations": [
+    "Does not prove external classification theorems.",
+    "Does not certify novelty or classify unknown Anosov systems."
+  ]
+}

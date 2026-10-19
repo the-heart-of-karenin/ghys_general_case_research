@@ -1,0 +1,36 @@
+[
+  {
+    "filename": "70_Mane_Sad_Sullivan_1983_Rational_maps.pdf",
+    "title": "On the dynamics of rational maps",
+    "authors": [
+      "Ricardo Mane",
+      "Paulo Sad",
+      "Dennis Sullivan"
+    ],
+    "download_url": "https://www.numdam.org/item/ASENS_1983_4_16_2_193_0.pdf",
+    "landing_url": "https://doi.org/10.24033/asens.1446",
+    "publication_note": "Annales scientifiques de l Ecole Normale Superieure (4) 16 (1983), 193-217; scanned journal PDF with Numdam cover.",
+    "resolved_url": "https://www.numdam.org/item/ASENS_1983_4_16_2_193_0.pdf",
+    "download_status": "downloaded",
+    "bytes": 3221866,
+    "pages": 26,
+    "sha256": "9ae5222a441b4eae94828668ef028082509b79da05d906ded01a870cf0c1043a",
+    "collected_utc": "2026-10-19T09:11:10.022579+00:00"
+  },
+  {
+    "filename": "71_Astala_1994_Area_distortion_quasiconformal.pdf",
+    "title": "Area distortion of quasiconformal mappings",
+    "authors": [
+      "Kari Astala"
+    ],
+    "download_url": "https://archive.ymsc.tsinghua.edu.cn/pacm_download/117/6501-11511_2006_Article_BF02392568.pdf",
+    "landing_url": "https://doi.org/10.1007/BF02392568",
+    "publication_note": "Acta Mathematica 173 (1994), 37-60; archived journal PDF.",
+    "resolved_url": "https://archive.ymsc.tsinghua.edu.cn/pacm_download/117/6501-11511_2006_Article_BF02392568.pdf",
+    "download_status": "downloaded",
+    "bytes": 1015939,
+    "pages": 24,
+    "sha256": "21f09b6a43d782754b0b16347270b946d240ecb0ec1785a63dedaacdfade95a3",
+    "collected_utc": "2026-10-19T09:11:10.979774+00:00"
+  }
+]

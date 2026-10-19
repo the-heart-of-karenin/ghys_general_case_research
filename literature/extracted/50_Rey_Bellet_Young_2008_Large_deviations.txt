@@ -1,0 +1,1552 @@
+=== PDF PAGE 1 ===
+Ergod. Th. & Dynam. Sys. (2008), 28, 587–612 c⃝ 2008 Cambridge University Press
+doi: 10.1017/S0143385707000478 Printed in the United Kingdom
+Large deviations in non-uniformly hyperbolic
+dynamical systems
+LUC REY -BELLET† and LAI-SANG YOUNG‡
+† Department of Mathematics and Statistics, University of Massachusetts, Amherst,
+MA 01003, USA
+(e-mail: luc@math.umass.edu)
+‡ Courant Institute of Mathematical Sciences, New York University, New York,
+NY 10012, USA
+(e-mail: lsy@cims.nyu.edu)
+(Received 3 April 2007 and accepted in revised form 12 June 2007)
+Abstract. We prove large deviation principles for ergodic averages of dynamical systems
+admitting Markov tower extensions with exponential return times. Our main technical
+result from which a number of limit theorems are derived is the analyticity of logarithmic
+moment generating functions. Among the classes of dynamical systems to which our
+results apply are piecewise hyperbolic diffeomorphisms, dispersing billiards including
+Lorentz gases, and strange attractors of rank one including H ´enon-type attractors.
+1. Introduction and statement of results
+This paper is about large deviations of ergodic averages in chaotic dynamical systems.
+Let f : M → M be a map with an ergodic invariant measure µ. Given an observable g ∈
+L 1(µ), let Sn g(x) = ∑ n− 1
+j= 0 g(f j(x)) . If x is distributed according toµ, then(1/ n) Sn g(x)
+is an ergodic stationary sequence of random variables. By the Birkhoff ergodic theorem,
+(1/ n) Sn g converges almost surely and in probability (with respect to µ) to the mean
+valueµ(g) ≡
+∫
+g dµ. The theory of large deviations provides exponential bounds on the
+probability that (1/ n) Sn g takes values away from the mean µ(g) . These estimates are
+typically expressed in the form
+lim
+ϵ→ 0
+limn→∞
+1
+n logµ
+{
+x : 1
+n Sn g(x) ∈ [a − ϵ,a + ϵ]
+}
+= − I(a)
+where I : R → [ 0, ∞] is called the rate function.
+Of interest to us are situations where µhas a density or is an SRB measure. Large
+deviation results are known for Axiom A attractors and piecewise expanding maps in one
+dimension; see e.g. [ 7, 24, 30, 42]. In this paper we extend these results to a class of
+dynamical systems with weaker hyperbolic properties or, more precisely, to systems that
+
+=== PDF PAGE 2 ===
+588 L. Rey-Bellet and L.-S. Young
+admit Markov tower extensions with exponential return times in the sense of [ 43]. This
+class can be seen as a generalization of systems with ﬁnite Markov partitions. It has been
+shown to include many of the standard, much studied examples such as dispersing billiards
+and H ´enon-type attractors.
+Given a dynamical system f : M → M, we say F : )Delta1→ )Delta1is an extension of f if there
+is a continuous map π: )Delta1→ M such thatπ◦ F = f ◦π. In general, πneed not be one-
+to-one or onto. When we say F : )Delta1→ )Delta1has the structure of a Markov tower, we mean,
+roughly, that: (i) )Delta1= ⋃ ∞
+l= 0)Delta1l where )Delta1l denotes the lth ﬂoor of the tower, each point
+x ∈)Delta10 moves up the tower until it reaches the top level above x, after which it returns to
+)Delta10; and (ii) F has a countable Markov partition {)Delta1l, j }with the property that πmaps each
+)Delta1l, j injectively onto a set in M with a hyperbolic product structure. To make a connection
+to SRB measures, we require that each of the local unstable manifolds deﬁning the product
+structure ofπ()Delta10) meetπ()Delta10) in a set of positive Lebesgue measure. Further analytic and
+regularity conditions are imposed in [ 43].
+Systems admitting Markov tower extensions are more ﬂexible than Axiom A systems in
+that they are permitted to be non-uniformly hyperbolic ; roughly speaking, think of uniform
+hyperbolicity as required only for the return map to the base. Reasonable singularities
+and discontinuities are also permitted; they can be ‘hidden’, i.e. they do not appear in )Delta1.
+Most important of all, the tower structure makes transparent a characteristic of the system
+intimately related to its statistical properties, a kind of ‘dynamical renewal time’ expressed
+in terms of the return time function R : )Delta10 → Z+ where R(x) is deﬁned to be the smallest
+n with F n(x) ∈)Delta10. A number of statistical properties of F : )Delta1→ )Delta1have been shown
+to be captured by the tail properties of R; some of these properties can be passed to f .
+Among the results proved in [ 43, 44] are the following.
+• SRB measure. If
+∫
+R dm u< ∞ where mu is the Lebesgue measure on unstable
+manifolds, then f has an ergodic SRB measure µwithµ(π()Delta1))= 1.
+• Rates of mixing. Under an additional aperiodicity assumption on R,(f,µ) is mixing
+and the rate of decay of correlation for H ¨older continuous observables is directly
+related to the behavior of mu{R> n} as n → ∞ . For example, if mu{R> n} =
+O(e−αn) for some α>0, then (f,µ) has exponential decay of correlations. If
+mu{R> n} = O(1/ nα) , then(f,µ) has polynomial decay of correlations.
+• Central limit theorem. Given a H ¨older observable g, the central limit theorem holds
+for Sn g provided that: (i) the autocorrelation functions of g decay fast enough in n
+for the varianceσ2 to be deﬁned; and (ii) σ >0.
+In this paper we complement these statistical properties by proving a few additional
+limit theorems. See [ 13, 16, 19, 27, 34] for other limit theorems proved by using Markov
+tower extensions.
+Setting and assumptions in Theorems A, B, and C. The setting is that of a C 1+ ϵ
+diffeomorphism f : M → M, possibly with discontinuities or singularities. We assume
+that:
+(i) f admits a Markov tower extension with properties (P1)–(P5) in [ 43];
+(ii) the return time function R satisﬁes mu{R> n} = O(e−γn) for someγ >0;
+(iii) the observable g : M → R is H ¨older continuous.
+
+=== PDF PAGE 3 ===
+Large deviations in non-uniformly hyperbolic dynamical systems 589
+We let µdenote the ergodic SRB measure given by the tower extension, and let
+σ2 denote the variance of (1/√ n) ∑ n− 1
+i= 0 g ◦ f i as n → ∞ where g ◦ f i are distributed
+according to µ. Our main technical result, on which the other results are based, is the
+following.
+THEOREM A. (Logarithmic moment generating functions) There exist positive numbers
+θmax andωmax such that the logarithmic moment generating function
+e(θ)= limn→∞
+1
+n logµ(eθSn g)
+exists and is analytic in the strip
+{θ∈ C; |Reθ|<θmax, |Imθ|<ωmax}.
+One may take θmax to be any number less than γ/(max g − min g) where γis as in
+Assumption (ii) above. As usual, e ′(0) = µ(g), e′′(0) = σ2. We also have that e (θ)is
+strictly convex for realθprovidedσ2> 0.
+We now state two results that can be deduced from Theorem A using large deviation
+techniques [18].
+THEOREM B. (Large deviations) Let I(t) be the Legendre transform of e(θ). Then for any
+interval [a, b] ⊂ [e′(−θmax), e′(θmax) ],
+limn→∞
+1
+n logµ
+{
+x : 1
+n Sn g(x) ∈ [a, b]
+}
+= − inf
+t∈[a, b]
+I(t).
+Theorem B follows from Theorem A using essentially the same ideas as in the Gartner–
+Ellis theorem [ 18, §4.5] and [ 21, pp. 102–103]. Note that we do not prove a full large
+deviation principle: our estimates hold only on an interval containing the mean µ(g) . It is
+instructive to compare our results with those for countable state Markov chains, for which
+it is well known (see e.g. [ 4, 9, 20, 25, 26, 40]) that exponential bounds on return times are
+in general not sufﬁcient to ensure a full large deviation principle for bounded observables.
+They only imply a ‘local’ large deviation result (see [ 25]), which is similar to the result in
+Theorem B.
+We thank the referee for pointing out the following references to closely related works:
+the recent preprint [ 28] contains similar but slightly less general results on exponential
+large deviations as well as polynomial upper large deviations bounds for systems that admit
+Markov tower extensions with polynomial return times (see also [ 31] in this direction);
+the monograph [ 21] contains a thorough description of the approach to large deviations
+via quasi-compactness which we follow here (see also [ 7, 25, 40]); ﬁnally the paper [ 1]
+deals with non-uniformly expanding maps which admit a thermodynamic formalism and
+therefore satisfy large deviation principles like Axiom A attractors.
+In a slightly different direction, we remark that a central limit theorem (less general than
+that in [ 44] since an exponential tail for R is assumed) can be deduced from the existence
+of an analytic moment generating function e(θ)in a small complex neighborhood of the
+origin.
+One can also characterize the ﬂuctuations of Sn g which are of an order intermediate
+between √ n (central limit theorem) and n (large deviations). Such ﬂuctuations, when
+
+=== PDF PAGE 4 ===
+590 L. Rey-Bellet and L.-S. Young
+suitably scaled, satisfy large deviations type estimates with a quadratic rate function
+determined byσ2.
+THEOREM C. (Moderate deviations) Let a n be an increasing sequence of positive real
+numbers such that limn→∞ an/√ n = ∞ and limn→∞ an/ n = 0. Then for any interval
+[a, b] ⊂ R we have
+limn→∞
+1
+a2n/ n logµ
+{
+x; Sn g − nµ(g)
+an
+∈ [a, b]
+}
+= − inf
+t∈[a, b]
+t 2
+2σ2.
+Theorem C is obtained from Theorem A by showing that the moment generating
+function of this scaled family of random variables is a quadratic and by using the Gartner–
+Ellis theorem, see [ 18, §3.7] and [ 41].
+We note that the results in this paper are derived solely from the Markov tower
+extensions of the given system f . When f is sufﬁciently simple, such as in the case
+of Axiom A attractors or piecewise expanding maps of the interval, other methods have
+yielded stronger results (such as a large deviation principle on all of R or for empirical
+measures) [24, 30, 42]. The tower construction enables one to treat—in a uniﬁed way—a
+larger class of dynamical systems without insisting on optimal results.
+Examples of dynamical systems to which the results above apply include:
+(1) billiards with convex scatterers [ 43], including the case of small external forces [ 12,
+14]; see [15] for related systems;
+(2) piecewise hyperbolic attractors [ 11, 43];
+(3) rank-one attractors including those of the H ´enon maps [5, 35–37, 39, 43];
+(4) non-uniformly expanding maps in one dimension [ 38, 43].
+This paper is organized as follows. Sections 2–4 contain a detailed study of reduced
+Markov tower models (towers with no contracting directions). We prove in this simpler
+setting a number of results that may be of independent interest. Speciﬁcally, we introduce
+a family of transfer operators Lθassociated to an observable g, provide conditions under
+which these operators are quasi-compact on a suitable Banach space, and prove a Ruelle–
+Perron–Frobenius theorem about their spectra. The moment generating function e(θ)is
+then identiﬁed as the logarithm of the leading eigenvalue of Lθ, and more detailed versions
+of Theorems A, B, and C are presented in §4. In §5 we show how to pass some of the results
+obtained in §§2–4 to dynamical systems admitting Markov tower extensions. In particular,
+Theorems A, B, and C apply to all systems that admit Markov towers with exponential
+tails, including the ones listed above.
+2. Tower models and transfer operators
+Tower models with no contractive directions are studied in §§ 2–4. These objects are
+introduced in [ 43]. A complete model description is included in § 2.1 for the convenience
+of the reader.
+2.1. The reduced tower model. We begin with a ﬁnite measure space ()Delta10, m) , a
+measurable return time function R : )Delta10 → Z+ , and a measurable map F R : )Delta10 → )Delta10
+
+=== PDF PAGE 5 ===
+Large deviations in non-uniformly hyperbolic dynamical systems 591
+called the return map . Our dynamical system of interest is the suspension of the return
+map F R under the return time R, i.e. we let
+)Delta1= { (x, l) : x ∈)Delta10;l = 0, 1,..., R(x) − 1},
+and
+F(x, l) =
+{
+(x, l + 1) if R(x)> l + 1,
+(F R(x), 0) if R(x) = l + 1.
+One can picture the phase space )Delta1as a tower; )Delta1is the disjoint union ⋃ ∞
+l= 0)Delta1l where)Delta1l
+consists of those points(x, l) ∈)Delta1. We refer to)Delta1l as the lth ﬂoor of the tower and)Delta10 as the
+base of the tower. Identifying )Delta1l with the subset of )Delta10 given by {x ∈)Delta10; R(x)> l}, we
+obtain a measure—also called m—deﬁned on all of)Delta1. We view m as a reference measure.
+If
+∫
+R dm < ∞ , then we may normalize m and assume that m()Delta1)= 1.
+Assumptions (A1)–(A4) are in effect through § 4.
+(A1) Markov partition, dynamical distance and shift space. We assume the existence of
+a measurable partition M = { )Delta1l, j } with the following properties. Each element of M
+is contained in some )Delta1l , and for each l ≥ 0, M|)Delta1l is a ﬁnite partition whose elements
+are denoted by )Delta1l, j , j = 1, 2,..., l j , l j< ∞ . The image of each )Delta1l, j under the map
+F is a ﬁnite union of elements of the form )Delta1l+ 1, j ′ together with possibly )Delta10. We
+denote)Delta1∗
+l, j = )Delta1l, j ∩ F − 1()Delta10) when it is non-empty, and require that F|)Delta1∗
+l, j maps)Delta1∗
+l, j
+bijectively onto)Delta10. The points in )Delta1l, j \)Delta1∗
+l, j can be thought of as moving upward, while
+the points in )Delta1∗
+l, j return to the base of the tower. We assume M is a generating partition,
+i.e. ⋁ ∞
+i= 0 F − i M consists of at most a single point.
+The space )Delta1is endowed with the following dynamical distance. First, we deﬁne a
+separation time s(·, ·) associated with the Markov partition M: if x and y do not belong
+to the same )Delta1l, j , we set s(x, y) = 0. If x, y belong to the same )Delta1l, j , we deﬁne s(x, y) to
+be the largest integer n such that F i(x) and F i(y) belong to the same element of M for
+1 ≤ i ≤ n. Fix 0 <β<1. Then d(x, y) = βs(x, y) deﬁnes a metric on )Delta1. In this metric, )Delta1
+is a separable space and F is continuous.
+The way )Delta1comes about in examples, it need not be complete as a metric space,
+i.e. for )Delta1lk, jk ∈ M, k = 0, 1,... , ⋁ ∞
+k= 0 F − k)Delta1lk, jk can be empty even when all ﬁnite
+intersections are not. For deﬁniteness, we will complete )Delta1and extend F to a continuous
+map on its completion. Denoting these new objects also by F and)Delta1, we may now think
+of F : )Delta1→ )Delta1as topologically conjugate to a countable shift of ﬁnite type.
+Remarks. Since compactness and recurrence are two major issues in inﬁnite shifts, the
+following observations are important.
+(1) Assuming the completion above, )Delta1is locally compact; indeed all cylinder sets are
+compact. This is because each element of M is mapped onto a ﬁnite number of
+elements.
+(2) Since every point in )Delta1eventually returns to )Delta10, the shift is irreducible, i.e.⋃ ∞
+i= 0 F i()Delta1l, j) = )Delta1for every)Delta1l, j ∈ M.
+
+=== PDF PAGE 6 ===
+592 L. Rey-Bellet and L.-S. Young
+(A2) Exponential return times. There exist constantsγ >0 and D< ∞ such that
+m{R ≥ n} ≤ De− nγ.
+(A3) Regularity of the Jacobian. The map F is absolutely continuous with respect to m.
+Letting J F denote its Jacobian, we have:
+• J F = 1 on)Delta1\ F − 1()Delta10) ;
+• there exists C0> 0 such that for all l, j and for all x1, x2 ∈)Delta1∗
+l, j = )Delta1l, j ∩ F − 1()Delta10) ,
+⏐⏐⏐⏐
+J F(x1)
+J F(x2) − 1
+⏐⏐⏐⏐≤ C0βs(F(x1), F(x2)) . (1)
+(A4) Aperiodicity. The values taken by R have no common divisor greater than 1.
+2.2. Relevant transfer operators. In our study of large deviation properties, the
+observables considered will be functions g : )Delta1→ R or C which are bounded and uniformly
+Lipschitz with respect to the metric d(x, y) deﬁned in (A1).
+Let X = { ϕ; ∥ϕ∥< ∞} be the Banach space with norm ∥ϕ∥ = | ϕ|∞ + | ϕ|h where
+|ϕ|∞ ≡ sup
+x∈)Delta1
+|ϕ(x) |,
+and
+|ϕ|h ≡ sup
+l, j
+|ϕl, j |h, |ϕl, j |h ≡ sup
+x1, x2∈)Delta1l, j
+|ϕ(x1) − ϕ(x2) |
+d(x1, x2) .
+The transfer operator L0 associated with F is deﬁned by
+(L0ϕ)(x) ≡
+∑
+y: F y= x
+1
+J F(y) ϕ(y).
+First, we check that L0(ϕ)is well deﬁned for bounded ϕ: by the regularity of the Jacobian
+in (A3), there exists C ′
+0 such that for any x ∈)Delta1∗
+l, j ,
+C ′− 1
+0
+m()Delta1∗
+l, j)
+m()Delta10) ≤ 1
+J F(x) ≤ C ′
+0
+m()Delta1∗
+l, j)
+m()Delta10) .
+This implies that for all x ∈)Delta10,
+∑
+y: F(y) = x
+1
+J F(y) ≤ C ′
+0
+∑
+)Delta1∗
+l, j
+m()Delta1∗
+l, j)
+m()Delta10) ≤ C ′
+0.
+Two elementary and useful facts are that for all bounded functions ϕandψ:
+• m(ψ(L0ϕ)) = m((ψ◦ F)ϕ);
+• a measureµ= ϕm,ϕ∈ L 1(m) , is F-invariant if and only if L0ϕ= ϕ.
+We know from [43] that for F satisfying (A1)–(A4), there is a unique h such that L0h = h.
+This fact will be proved again in greater generality in the next two sections, but we ﬁrst
+assume it to motivate the approach taken below.
+
+=== PDF PAGE 7 ===
+Large deviations in non-uniformly hyperbolic dynamical systems 593
+Let g : )Delta1→ R be a bounded observable. The transfer operator Lg is deﬁned by
+(Lgϕ)(x) ≡ L0(egϕ)(x) =
+∑
+y: F y= x
+eg(y)
+J F(y) ϕ(y).
+In the study of large deviations of Sn g = ∑ n− 1
+i= 0 g ◦ F i , the family of transfer operators Lθg
+parametrized byθ∈ R is relevant for the following reasons. Letµ= h dm where L0h = h,
+and consider the moment generating function
+e(θ)= limn→∞
+1
+n logµ(eθSn g).
+Using the identity Ln
+g(ϕ)= L0(eSn gϕ), we have
+e(θ)= limn→∞
+1
+n log m(L0(eθSn gh)) = limn→∞
+1
+n log m(Ln
+θgh).
+From this relation it follows that the existence and smoothness properties of e(θ)are
+related to the spectral properties of the family of transfer operators Lθg. On the other hand,
+the existence and smoothness of e(θ)lead to large deviation results via the Gartner–Ellis
+theorem [18]; see §4.
+One way to show the analyticity of e(θ)is to prove that Lθg has a spectral gap. The
+fact, however, is that the space X is too small for Lθg to have a spectral gap; we need
+to consider a larger Banach space as in [ 43]. Equivalently, this can be accomplished by
+changing the potential, which is what we will do. Let γbe as in (A2). We ﬁx 0 ≤ γ1<γ,
+and letv : )Delta1→ R be the function given by v(x) = elγ1 if x ∈)Delta1l . We deﬁne
+Pγ1, g(ϕ)≡ v− 1Lg(vϕ)=
+∑
+y: F(x) = y
+eg(y)
+ˆJ F(y)
+ϕ(y)
+where ˆJ F is deﬁned as follows:
+• if x /∈ F − 1()Delta10) , ˆJ F(x) = eγ1 ;
+• if x ∈)Delta1∗
+l, j , ˆJ F(x) = J F(x) e− lγ1 .
+In particular, P0, g = Lg. Note that, for γ1<γ, Pγ1, g(ϕ)is well deﬁned for all bounded ϕ
+because
+∑
+y: F(y) = x
+1
+ˆJ F(y)
+≤ C
+∑
+l, j
+m()Delta1∗
+l, j)
+m()Delta10) elγ1 ≤ C D
+m()Delta10)
+∑
+l
+el(γ1−γ)< ∞ ,
+and the distortion estimate ( 1) in (A3) is unchanged. Moreover, we have (ˆJ F) n(x) =
+J F n(x) for all x ∈)Delta10 ∩ {R = n}by construction.
+We will work with Pγ1,θg for a suitably chosen 0<γ1<γ(instead of Lθg) as operators
+acting on the Banach space X . This is similar to studying the operators Lθg on the weighted
+Banach space used in [ 43]. The choice of γ1 is discussed in Proposition 2.5. Elsewhere we
+regard it as ﬁxed, and simply write Pg. Let us also drop the hat in ˆJ F.
+Two standing assumptions through the end of § 4 are (i) g is real-valued and (ii) g ∈ X .
+We remark that for our purposes it sufﬁces to prove a spectral gap for Pθg withθ∈ R;
+results for nearby complex θwill be obtained by perturbation.
+
+=== PDF PAGE 8 ===
+594 L. Rey-Bellet and L.-S. Young
+2.3. Pressure and spectral radius.
+LEMMA 2.1. (Lasota–Y orke type estimates) There exists a constant C 1> 0 such that, for
+anyϕ∈ X and n ≥ 1, we have
+|P n
+gϕ(x) | ≤ |P n
+g 1(x) | |ϕ|∞ , (2)
+|P n
+gϕ|h ≤ |P n
+g 1|∞ {βn|ϕ|h + C1|ϕ|∞ }. (3)
+It follows immediately from ( 2) and ( 3) that
+∥P n
+gϕ∥ ≤ |P n
+g 1|∞ (βn∥ϕ∥ + (C1 + 1) |ϕ|∞ ). (4)
+Proof. The proof of ( 2) is immediate:
+|P n
+gϕ(x) | =
+⏐⏐⏐⏐
+∑
+y: F n(y) = x
+eSn g(y)
+J F n(y) ϕ(y)
+⏐⏐⏐⏐≤ |ϕ|∞
+∑
+y: F n(y) = x
+eSn g(y)
+J F n(y) .
+To prove (3), we note that for any y1, y2 with s(y1, y2) ≥ n (see (A1)) and x1 = F n(y1) ,
+x2 = F n(y2) , we have ⏐⏐⏐⏐
+J F n(y1)
+J F n(y2) − 1
+⏐⏐⏐⏐≤ Cd(x1, x2), (5)
+and ⏐⏐⏐⏐
+eSn g(y1)
+eSn g(y2) − 1
+⏐⏐⏐⏐≤ C ′d(x1, x2). (6)
+The estimate (5) is an immediate consequence of (A3). The estimate ( 6) follows from
+⏐⏐⏐⏐log eSn g(y1)
+eSn g(y2)
+⏐⏐⏐⏐=
+⏐⏐⏐⏐
+n− 1∑
+i= 0
+g(F i(y1)) − g(F i(y2))
+⏐⏐⏐⏐≤ |g|hd(x1, x2)
+n− 1∑
+i= 0
+βn− i.
+In the last inequality we have used d(F i(y1), F i(y2)) = d(x1, x2)βn− i , for i =
+0,..., n − 1.
+For x1, x2 ∈)Delta1l, j , we denote by y1, y2 the (paired) preimages of x1, x2 and by ‘ ∑
+br’
+the sum over the inverse branches of F n. Then
+|P n
+gϕ(x1) − P n
+gϕ(x2) |
+d(x1, x2) ≤
+∑
+br
+|(eSn g(y1)/ J F n(y1))ϕ(y1) − (eSn g(y2)/ J F n(y2))ϕ(y2) |
+d(x1, x2)
+≤ βn ∑
+br
+eSn g(y1)
+J F n(y1)
+|ϕ(y1) − ϕ(y2) |
+d(y1, y2) (7)
++
+∑
+br
+|(J F n(y2) eSn g(y1)/ J F n(y1) eSn g(y2)) − 1|
+d(x1, x2)
+eSn g(y2)
+J F n(y2) |ϕ(y2) |
+≤ βn|P n
+g 1|∞ |ϕ|h + (C + C ′) |P n
+g 1||ϕ|∞ . (8)
+This concludes the proof of Lemma 2.1. 2
+We introduce next a notion of pressure.
+Deﬁnition 2.1. Assuming the limit exists, the pressure P(g) is deﬁned to be
+P(g) = limn→∞
+1
+n log |P n
+g 1|∞ .
+
+=== PDF PAGE 9 ===
+Large deviations in non-uniformly hyperbolic dynamical systems 595
+LEMMA 2.2. P(g) is well deﬁned, and is related to σ(Pg) , the spectral radius of Pg, by
+σ(Pg) = e P(g).
+Proof. Using the estimate ( 2) we have
+|P n+ m
+g 1|∞ = | P n
+g(P m
+g 1) |∞ ≤ |P n
+g 1|∞ |P m
+g 1|∞ ,
+so that the sequence log |P n
+g 1|∞ is subadditive. Thus the pressure P(g) is well deﬁned. To
+prove the formula for the spectral radius, note ﬁrst that
+σ(Pg) = limn→∞ ∥P n
+g ∥1/ n ≥ limn→∞ (|P n
+g 1|∞ ) 1/ n = e P(g).
+For the reverse inequality, for any ϵ>0, we have |P n
+g 1|∞ < en(P(g) + ϵ)for n sufﬁciently
+large. It then follows from Lemma 2.1 that
+∥P n
+gϕ∥ ≤ en P(g) eϵn(βn∥ϕ∥ + C|ϕ|∞ ).
+This implies thatσ(Pg) ≤ e P(g) + ϵ. Since ϵis arbitrary, the assertion is proved. 2
+2.4. Condition for quasi-compactness. We introduce next the notion of tail pressure,
+and relate it to the essential spectral radius of Pg. For a function ϕon )Delta1, we denote
+byϕ≤ k ≡ ϕχ⋃
+l≤ k)Delta1l the function obtained by annihilating ϕon all ﬂoors greater than k.
+Similarly, we deﬁneϕ>k ≡ ϕ− ϕ≤ k = ϕχ⋃
+l>k)Delta1l .
+Deﬁnition 2.2. The tail pressure P♯(g) is given by
+P♯(g) = lim sup
+n→∞
+1
+n log
+{
+inf
+k>0
+|(P n
+g 1) >k|∞
+}
+.
+THEOREM 2.3. F or anyτ >max{e P♯(g),βe P(g) }and N = N(τ)sufﬁciently large, there
+exists a ﬁnite rank operator Q such that
+∥P N
+g − Q∥ ≤ τN.
+In particular , if P♯(g)< P(g) , then Pg is quasi-compact and its essential spectral radius
+is no greater than τ.
+Proof. For N ∈ Z+ , we denote by MN = ⋁ N
+i= 0 F − i M the reﬁnement of the partition
+M = M0, by MN(x) the element of MN containing the point x ∈)Delta1, and by E N [ϕ]the
+corresponding conditional expectation with respect to m, i.e.
+E N [ϕ](x) ≡ 1
+m(MN(x))
+∫
+MN(x)
+ϕdm.
+For an integer N to be speciﬁed, we construct the operator Q in two steps. First, we
+truncate the tail of the tower, i.e. for some integer k we set
+Qk(ϕ)≡ P N
+g (ϕ≤ k).
+Then we average on the elements of the partition MN , letting
+ˆQk(ϕ)≡ Qk(E N(ϕ))= P N
+g (E N(ϕ≤ k)).
+
+=== PDF PAGE 10 ===
+596 L. Rey-Bellet and L.-S. Young
+Since M has ﬁnitely many elements on each level, the operator ˆQk has ﬁnite rank. Then
+∥(P N
+g − ˆQk)(ϕ)∥ ≤ ∥(P N
+g − Qk)(ϕ)∥ + ∥ (Qk − ˆQk)(ϕ)∥
+= ∥ P N
+g (ϕ>k) ∥ + ∥ Qk(ϕ− E N(ϕ))∥
+≡ I + I I.
+(i) Estimating term II . Note that for any A ∈ MN and x, y ∈ A, we have s(x, y) ≥ N .
+Thus
+|ϕ− E N [ϕ]|∞ ≤ sup
+A∈MN
+sup
+x, y∈ A
+|ϕ(x) − ϕ(y) | ≤βN |ϕ|h.
+This estimate substituted into ( 4) gives
+∥P N
+g (ϕ− E N(ϕ))∥ ≤ |P N
+g 1|∞ βN(2 + C1) |ϕ|h.
+Fix arbitrary ˜β>β. Choosing ϵso thatβeϵ< ˜βand N sufﬁciently large, we obtain
+∥Qk(ϕ− E N(ϕ))∥ ≤ ∥P N
+g (ϕ− E N(ϕ))∥ ≤ ˜βN eN P(g) ∥ϕ∥.
+(ii) Estimating |P N
+g (ϕ>k) |∞ in term I. We will show that given any ϵ,ϵ′> 0, we have
+|P N
+g (ϕ>k) |∞ ≤ (eN(P♯(g) + ϵ)+ ϵ′) |ϕ|∞
+for all N, k sufﬁciently large, N chosen ﬁrst, and k depending on N . Since
+|P N
+g (ϕ>k)(x) | ≤ P N
+g (1>k)(x) |ϕ|∞ , this boils down to estimating |P N
+g (1>k) |∞ .
+By the deﬁnition of P♯(g) , given any ϵ>0, we can ﬁrst choose N and then k0 ≥ N
+so that
+|(P N
+g 1) >k0|∞ ≤ eN(P♯(g) + ϵ).
+Let k ≥ k0 − N and consider separately the following three cases.
+(a) If x ∈)Delta1l with N ≤ l ≤ k0, then P N
+g (1>k)(x) = 0.
+(b) If x ∈)Delta1l with l> k0, then P N
+g (1>k)(x) ≤ (P N
+g 1)(x) = (P N
+g 1) >k0(x) ≤ eN(P♯(g) + ϵ).
+(c) If x ∈)Delta1l with l< N , let
+)Gamma1k, i =
+{
+y ∈
+⋃
+l>k
+)Delta1l : F N y = x, F i y ∈)Delta10 and F j y ̸∈)Delta10 for 0 ≤ j< i
+}
+.
+Then
+P N
+g (1>k)(x) =
+N − l∑
+i= 1
+∑
+y∈)Gamma1k, i
+eSN g(y)
+J F N(y) ≤
+N − l∑
+i= 1
+∑
+y∈)Gamma1k, i
+eSi g(y)
+J Fi(y) |P N − i
+g 1|∞ .
+With N held ﬁxed, we have sup i≤ N |P i
+g1|∞ < ∞ , and also that
+N − l∑
+i= 1
+∑
+y∈)Gamma1k, i
+eSi g(y)
+J Fi(y)
+is arbitrarily small (uniformly in x) as k tends to inﬁnity. Thus, in case (c), we have
+P N
+g (1>k)(x)<ϵ′for large enough k.
+
+=== PDF PAGE 11 ===
+Large deviations in non-uniformly hyperbolic dynamical systems 597
+(iii) Estimating |P N
+g (ϕ>k) |h in term I. As in Lemma 2.1, see equation ( 8), we obtain
+|P N
+g ϕ>k(x1) − P N
+g ϕ>k(x2) |
+d(x1, x2) ≤ βN ∑
+br
+eSN g(y1)
+J F N(y1)
+|ϕ>k(y1) − ϕ>k(y2) |
+d(y1, y2)
++
+∑
+br
+|(J F N(y2) eSN g(y1)/ J F N(y1) eSN g(y2)) − 1|
+d(x1, x2)
+eSN g(y2)
+J F N(y2) |ϕ>k(y2) |.
+The ﬁrst term on the right-hand side is bounded by βN |P N
+g 1|∞ |ϕ|h and is treated as in (i).
+The second term is bounded by (C + C ′) |P N
+g (ϕ>k) |∞ and is estimated as in (ii). 2
+We end this section with a concrete (but by no means optimal) condition on g which
+ensures that the tail pressure is strictly smaller than the pressure. Let γbe as in
+condition (A2), and for 0 <γ1<γrecall the meaning of Pg = Pγ1, g as deﬁned in § 2.2.
+We consider ﬁrst the special case where g is identically zero.
+LEMMA 2.4. F or g≡ 0, we have P ♯(0) = − γ1 and P(0) = 0.
+Proof. It is easy to see that P♯(0) = − γ1. For x ∈)Delta1k, k> n, there is a unique y such that
+F n(y) = x. This implies P n
+0 1(x) = 1/ J F n(y) = e− nγ1.
+To show P(0) ≥ 0, note that P ∗
+0(vm) = vm where P ∗
+0 is the dual of P0 and v is
+the change of coordinates that connect P0 and L0. This is because, for all ϕ∈ X ,
+m(vP0ϕ)= m(L0(vϕ))= m(vϕ). It follows that the spectral radius of P ∗
+0 , and thus that
+of P0, is at least 1, i.e. P(0) ≥ 0. To complete the proof, assume P(0)> 0. Since P0
+is quasi-compact, by Theorem 2.3 there exists ψ∈ X such that P0ψ= λψwith |λ|> 1.
+But this is impossible, for m(v|P0ψ|) ≤ m(vP0|ψ|) = m(v|ψ|) , i.e. P0 is a contraction on
+L 1(vm) . 2
+Deﬁne the range of g,
+ρ(g) ≡ max
+x
+g(x) − minx g(x).
+PROPOSITION 2.5. Assumeρ(g)<γ1<γ. Then P ♯(g)< P(g) .
+Proof. Consider ﬁrst the case where 0 ≤ g ≤ ρ(g) . The same argument as above gives
+P♯(g) ≤ ρ(g) − γ1< 0. On the other hand, we have P(g) ≥ P(0) since
+∑
+y: F n(y) = x
+eSn g(y)
+J F n(y) ≥
+∑
+y: F n(y) = x
+1
+J F n(y) ,
+and P(0) = 0 by Lemma 2.4. Hence P♯(g)< P(g) .
+The general result is easily deduced from the special case above using the fact that, for
+c ∈ R, we have P(g + c) = P(g) + c and P♯(g + c) = P♯(g) + c. 2
+3. A Ruelle–Perron–Frobenius theorem
+3.1. Statement of results. Let X ∗ denote the dual space of X . The main results of this
+section are the following theorem and proposition.
+
+=== PDF PAGE 12 ===
+598 L. Rey-Bellet and L.-S. Young
+THEOREM 3.1. Assume P♯(g)< P(g) . Then:
+(i) the spectrum of Pg = )Sigma10 ∪ {e P(g) }where sup{|z|;z ∈)Sigma10}< e P(g) ; e P(g) is a simple
+eigenvalue with a one-dimensional generalized eigenspace;
+(ii) there existϕg ∈ X and νg ∈ X ∗ such that
+(a) ϕg is real-valued, greater than 0, and satisﬁes Pgϕg = e P(g)ϕg,
+(b) P ∗
+gνg = e P(g)νg, andνg is a positive Borel measure with supp(νg) = )Delta1,
+(c) νg(ϕg) = 1;
+(iii) the Borel probability measureµg = ϕgνg is F-invariant.
+From Theorem 3.1 one deduces the following proposition.
+PROPOSITION 3.2. Assuming P ♯(g)< P(g) , there exist constants C 2< ∞ and τ <1
+such that, for any ϕ1,ϕ2 ∈ X , we have
+|µg((ϕ1 ◦ F n)ϕ2) − µg(ϕ1)µg(ϕ2) | ≤ C2τn∥ϕ1∥∥ϕ2∥
+for any n ≥ 1, i.e. the correlations decay exponentially with time.
+Remark on the case g = 0. From Theorem 3.1 and Lemma 2.4, we deduce that µ0 is
+the unique F-invariant measure that is absolutely continuous with respect to the reference
+measure m. We will refer to µ≡ µ0 as the SRB measure (see § 5). The existence of this
+invariant measure and its correlation decay properties were proved in [ 43].
+Without loss of generality, we may assume that the spectral radius of the operator in
+question is equal to one by considering P = e− P(g) Pg. We will work with P in the rest of
+§3. Many of the arguments in this section are not new. However, we know of no suitable
+reference(s) that contain all the needed results in our particular setup. We will follow
+closely parts of [ 3, 23, 32], noting that most of the arguments in fact date back earlier (see
+also the monograph [ 21]).
+3.2. Eigenfunctions with eigenvalue one. Lemma 3.3 contains a general result that holds
+for all positive quasi-compact operators. The argument below is due to Ruelle [ 32]. We
+have included it for completeness.
+LEMMA 3.3. There exists ϕ∈ X , real-valued and greater than or equal to 0, such that
+Pϕ= ϕ.
+Proof. Since P is quasi-compact and its spectral radius is one, there is at least one and
+at most ﬁnitely many eigenvalues of modulus one. We label them λj, j = 1, 2,..., j0,
+counted with multiplicity. Let
+1 = ψ+
+∑
+j
+ψj (9)
+be the decomposition of the constant function 1 with ψj in the generalized eigenspace of
+the eigenvalueλj . Since
+limn→∞
+1
+n log ∥P(1) ∥ = 1,
+at least one of theψj is not identically equal to zero (abbreviated ψj ̸≡0). For each j such
+thatψj ̸≡0, writing the restriction of P to the generalized eigenspace corresponding to λj
+
+=== PDF PAGE 13 ===
+Large deviations in non-uniformly hyperbolic dynamical systems 599
+in Jordan normal form, we see that there exists an integer k(j) such that
+limn→∞
+1
+λn
+j nk(j) P nψj = ϕj (10)
+for someϕj ∈ X withϕj ̸≡0 and Pϕj = λjϕj . Let k = max j k(j) . Writing
+P n1
+nk = P nψ
+nk +
+( ∑
+j: k(j)< k
+P nψj
+nk
+)
++
+( ∑
+j: k(j) = k
+P nψj
+nk
+)
+and noticing that the ﬁrst two quantities on the right-hand side tend to 0 as n → ∞ , we
+deﬁne
+ϵn = P nψ
+nk +
+∑
+j: k(j)< k
+P nψj
+nk +
+∑
+j: k(j) = k
+λn
+j
+( P nψj
+λn
+j nk − ϕj
+)
+.
+From ( 10), it follows that ϵn → 0 as n → ∞ . We claim that ϵn is real: since P is a real
+operator, the eigenvalues are either real or they occur in complex conjugate pairs; in the
+latter case, the corresponding eigenfunctions and generalized eigenfunctions also occur in
+complex conjugate pairs. It follows that in the decomposition ( 9), if ψj ̸≡0, then there
+exists i such that λi = λj , ψi = ψj , ϕi = ϕj and k(j) = k(i) . Hence ∑
+jλn
+jϕj is real.
+Combining this with the fact that P n1/ nk ≥ 0, we obtain
+∑
+j: k(j) = k
+λn
+jϕj ≥ − ϵn. (11)
+Let us denote by ⟨an⟩ = limn→∞ (1/ n) ∑ n− 1
+j= 0 a j the Cesaro limit of a sequence an if
+such a limit exists. Since ⟨ei nξ⟩ = 1 when ξ= 0 and = 0 for all other values of ξ, we
+obtain ⟨ ∑
+j: k(j) = k
+λn
+jϕj
+⟩
+=
+∑
+j∈E
+ϕj ≥ 0 where E = { j : k(j) = k,λj = 1}.
+If E ̸= ∅ , then ∑
+j∈Eϕj is a candidate eigenfunction. We claim that ∑
+j∈Eϕj ̸≡0,
+otherwise by linear independence ϕj ≡ 0 for all j ∈ E, which is impossible. To show
+E ̸= ∅ , note that ( 11) implies that, for any real number a,
+⟨
+(1 ± sin(na))
+∑
+j: k(j) = k
+λn
+jϕj
+⟩
+≥ −⟨(1 ± sin(na))ϵn⟩ = 0
+and ⟨
+(1 ± cos(na))
+∑
+j: k(j) = k
+λn
+jϕj
+⟩
+≥ −⟨(1 ± cos(na))ϵn⟩ = 0.
+If E = ∅ , it would follow that⟨
+sin(na)
+∑
+j: k(j) = k
+λn
+jϕj
+⟩
+=
+⟨
+cos(na)
+∑
+j: k(j) = k
+λn
+jϕj
+⟩
+= 0,
+and hence ⟨
+ei na ∑
+j: k(j) = k
+λn
+jϕj
+⟩
+= 0
+for all real a. For each λ, by choosing eia = λ, we conclude that ∑
+j;k(j) = k,λj = λϕj = 0.
+As before, this implies all the ϕj involved are ≡ 0, which is a contradiction. 2
+
+=== PDF PAGE 14 ===
+600 L. Rey-Bellet and L.-S. Young
+We prove next the following lemma.
+LEMMA 3.4.
+(a) Ifϕ∈ X is such that Pϕ= ϕandϕ≥ 0, then eitherϕ>0 orϕ≡ 0.
+(b) The subspace {ϕ∈ X ;Pϕ= ϕ}has dimension at most one.
+Proof. (a) Suppose Pϕ= ϕ,ϕ≥ 0, andϕ(x) = 0 at some x. Then, for any n ≥ 1,
+0 = ϕ(x) = P nϕ(x) =
+∑
+y: F n(y) = x
+eSn g(y)
+J F n(y) ϕ(y).
+Therefore,ϕ(y) = 0 for every y ∈ ⋃
+n≥ 1{F − n(x) }. By irreducibility, this set is dense and
+thusϕ≡ 0.
+Lemma 3.3 tells us, therefore, that there exists ϕ∈ X withϕ>0 and P(ϕ)= ϕ.
+(b) Letψbe another eigenfunction with eigenvalue one. We may assume ψis real (by
+taking its real or imaginary part) but do not know if it is non-negative. Since both ϕand
+ψare continuous and )Delta10 is compact, we know that for small enough t> 0,ϕ− tψ>0
+on)Delta10. Let t0 = sup{t;ϕ− tψ≥ 0}, and let )Gamma1= ϕ− t0ψ. Then )Gamma1≥ 0 on )Delta10, and since
+P()Gamma1)= )Gamma1, it follows that)Gamma1≥ 0 on all of)Delta1. By deﬁnition,)Gamma1(x) = 0 for some x ∈)Delta10. The
+argument in (a) then implies that )Gamma1≡ 0, i.e. ϕ= t0ψ. 2
+From Lemmas 3.3 and 3.4, it follows that the subspace {ϕ∈ X ;Pϕ= ϕ}has dimension
+exactly equal to one. Moreover, there exists eigenfunctions ϕthat are real-valued and
+strictly positive. We ﬁx one such ϕand call itϕg.
+3.3. Spectral gaps and invariant measures.
+LEMMA 3.5. There existsνg ∈ X ∗ such that:
+(i) P ∗νg = νg;
+(ii) νg is a positive ﬁnite Borel measure on )Delta1with supp(ν)= )Delta1; and
+(iii) νg(ϕg) = 1.
+Proof. Let K be the order of the pole at one of the resolvents of P. We decompose P as
+P = (E + N) + R,
+where E is the projection onto the generalized eigenspace of the eigenvalue one and
+N = (P − I) E is the nilpotent part. It follows that N K = 0 but N K − 1 ̸= 0.
+By Lemmas 3.3 and 3.4(b), the range of E N K − 1 is one-dimensional. Hence there is a
+bounded linear functionalν∈ X ∗ such that, for any ψ∈ X ,
+E N K − 1ψ= ν(ψ)ϕg.
+This functional satisﬁes P ∗ν= ν, for
+(P ∗ν)(ψ)ϕg = ν(Pψ)ϕg = E N K − 1(E + N + R)ψ= E N K − 1ψ= ν(ψ)ϕg.
+To prove (ii), ﬁrst we show that E N K − 1 is a positive operator. For t< 1, consider the
+resolvent(I − tP) − 1. Using its Laurent expansion one ﬁnds
+(I − tP) − 1 =
+∞∑
+n= 0
+t nP n =
+K∑
+k= 1
+t k− 1
+(1 − t) k E Nk− 1 + S(t),
+
+=== PDF PAGE 15 ===
+Large deviations in non-uniformly hyperbolic dynamical systems 601
+where S(t) is a bounded operator for t close to one. Since P is a positive operator, so is
+(I − tP) − 1. Thus
+E N K − 1 = lim
+t→ 1−
+(1 − t) K
+t K − 1 (1 − tPg) − 1
+is also a positive operator.
+Deﬁneν(Z) ≡ ν(IZ) for cylinders Z ∈ Mn. Since ν(Z) = ∑
+Z ′∈Mn+ 1, Z ′⊂ Zν(Z ′) , ν
+extends uniquely to a ﬁnitely additive non-negative set function on the algebra generated
+by the cylinders. Since all cylinders are compact, νis continuous at ∅. Thus it deﬁnes a
+countably additive measure on the σ-algebra generated by cylinders, i.e. the Borel sets.
+It remains to show that the support ofνis all of)Delta1. A simple but crucial observation here
+is that if A ⊂ )Delta1andψis a function with inf ψ|A> 0, thenν(ψI A) = 0 impliesν(A) = 0.
+Let Z ∈ Mn be an arbitrary cylinder set. We will show that ν(Z) ̸= 0. Suppose it is equal
+to 0. Then ν(P(IZ)) = ν(IZ) = 0. Since inf(eg/ J F) |Z> 0, it follows that ν(F(Z)) = 0.
+By irreducibility, this argument iterated inﬁnitely many times gives ν()Delta1)= 0, which is
+impossible.
+Finally,νg is obtained by normalizing ν. 2
+LEMMA 3.6.
+(a) The eigenvalue one is semi-simple, i.e. its Jordan block is one-dimensional.
+(b) Other than one, P has no eigenvalueλwith |λ| = 1.
+Proof. (a) We will show that all eigenvalues λof modulus one are semisimple. Suppose
+not. Then there exist ϕ,ψ∈ X ,ϕ̸≡0, such that, for any n ≥ 1,
+P nϕ= λnϕ and P nψ= λnψ+ nλn− 1ϕ.
+Since |Pϕ| ≤ P|ϕ|, we have
+νg(|Pϕ|) ≤ νg(P|ϕ|) = νg(|ϕ|). (12)
+Using the fact that supp νg = )Delta1, we have
+0<νg(|ϕ|) = 1
+nνg(|P nψ− λnψ|) ≤ 2
+nνg(|ψ|),
+which gives a contradiction as n → ∞ .
+To prove (b), we observe from ( 12) that P can be seen as an operator acting on L 1(νg) ,
+and that, as such, it is a contraction. We claim that, as an operator on X and on L 1(νg) ,
+the two sets of eigenvalues of P of modulus one are identical. To prove this, it sufﬁces to
+show that any eigenfunction ϕ∈ L 1(νg) corresponding to an eigenvalueλof modulus one
+actually belongs to X . By the semisimplicity of λ, Eλ,n ≡ (1/ n) ∑ n− 1
+j= 0(λ− 1P) j converges
+in the norm of X to Eλ, the projection onto the (ﬁnite-dimensional) eigenspace of λ. Since
+both operators P and Eλ,n extend to contractions on L 1(νg) , Eλ,n converges strongly in
+L 1(νg) . Thus Eλextends to a projection on L 1(νg) whose image is contained in X .
+By [ 33, Proposition 4.6, Ch. V], the set of eigenvalues λof modulus one of P acting
+on the Banach lattice L 1(νg) is fully cyclic. They are, therefore, roots of unity. If among
+these eigenvalues there is a kth root of unity with k> 1, then, as an eigenvalue of P k, one
+
+=== PDF PAGE 16 ===
+602 L. Rey-Bellet and L.-S. Young
+has multiplicity strictly greater than one. The aperiodicity assumption (A4) together with
+Lemma 3.4 applied to P k says this is impossible. 2
+Proof of Theorem 3.1. Parts (i) and (ii) follow from the quasi-compactness of P together
+with Lemmas 3.3–3.6. To prove (iii), note the simple relation P((ϕ◦ F)ψ) = ϕP(ψ). The
+F-invariance of µg follows from
+µg(ϕ◦ F) = νg((ϕ◦ F)ϕg) = νg(P((ϕ◦ F)ϕg)) = νg(ϕP(ϕg)) = νg(ϕϕg) = µg(ϕ).
+This completes the proof of Theorem 3.1. 2
+Proof of Proposition 3.2. By the spectral decomposition of P, we have P n(ϕ)=
+νg(ϕ)ϕg + Rn(ϕ)where R has spectral radius ˆτ <1. For any τ >ˆτwe have
+|µg((ϕ1 ◦ F n)ϕ2) − µg(ϕ1)µg(ϕ2) |
+= | νg(P((ϕ1 ◦ F n)ϕ2ϕg)) − νg(ϕ1ϕgνg(ϕ2ϕg)) | = |νg(ϕ1[P n(ϕ2ϕg) − νg(ϕ2ϕg)ϕg]) |
+≤ |ϕ1|∞ |Rn(ϕ2ϕg) |∞ ≤ Cτn|ϕ1|∞ ∥ϕ2ϕg∥ ≤ (2C∥ϕg∥)τn∥ϕ1∥∥ϕ2∥
+where in the last inequality we have used the fact that ∥ϕψ∥ ≤ 2∥ϕ∥∥ψ∥. 2
+4. Moment generating function and limit theorems
+The results of this section apply to all F : )Delta1→ )Delta1satisfying (A1)–(A4) and real
+observables g ∈ X .
+4.1. Analyticity of logarithmic moment generating functions. First, we prove the
+following general result which holds for all θ∈ C. We showed in § 2.1 that Pθg is a
+bounded operator on X for all suchθ.
+LEMMA 4.1. The mapθ↦→ Pθg is analytic.
+Proof. We claim that if Qn is the operator on X deﬁned by Qn(ϕ)= P0(ϕgn) , then the
+series ∑
+n≥ 0(θn/ n!) Qn converges in operator norm to Pθg. The convergence is due to
+∥θnP0(gnϕ)∥ ≤ |θ|n∥P0∥∥gnϕ∥ ≤ 2∥P0∥∥ϕ∥(2|θ|∥g∥) n.
+Knowing that the limit exists, we now identify it as Pθg. For any ϕ∈ X and x ∈)Delta1,
+(∑
+n≥ 0
+θn
+n!Qnϕ
+)
+(x) =
+∑
+y: F y= x
+(∑
+n≥ 0
+[θg(y) ]n
+n!
+) ϕ(y)
+J F(y) = Pθgϕ(x).
+This proves the analyticity of Pθg as an operator-valued function. 2
+Next letθmax be a real number less thanγ/ρ(g) . We pickγ1 such thatθmaxρ(g)<γ1<
+γ, and for simplicity write Pθ≡ Pγ1,θg. By Proposition 2.5 and Theorem 3.1, Pθhas a
+spectral gap for θ∈ [−θmax,θmax]. We write P(θ)≡ P(θg) ,ϕθ≡ ϕθg,νθ≡ νθg, and so
+on. By analytic perturbation theory [ 22] we have the following corollary.
+COROLLARY 4.2. The map θ↦→ P(θ)is analytic in a complex neighborhood of
+[−θmax,θmax].
+
+=== PDF PAGE 17 ===
+Large deviations in non-uniformly hyperbolic dynamical systems 603
+Our main result is the following theorem.
+THEOREM 4.3. F or anyθmax<γ/ρ(g) , there exists ωmax> 0 such that for any complex
+θin the strip
+{θ∈ C; |Reθ| ≤θmax, |Imθ| ≤ωmax},
+the logarithmic moment generating function
+e(θ)= limn→∞
+1
+n logµ(eθSn g)
+is well deﬁned and is an analytic function. Restricted to real θ, e(θ)is either strictly
+convex or purely linear , the latter occurring if and only if g can be written in the form
+g = h ◦ F − h + C for some h ∈ X and C ∈ R. The formulas for e ′(θ)and e′′(θ)are
+e′(θ)= µθ(g),
+e′′(θ)= µθ(g2 − µθ(g) 2) + 2
+∞∑
+j= 1
+µθ(g ◦ F j g − µθ(g) 2). (13)
+Proof. We consider ﬁrst realθwith |θ| ≤θmax. By Theorem 3.1, Pθis quasi-compact and
+we have the spectral decomposition
+P n
+θ(ϕ)= en P(θ)ϕθνθ(ϕ)+ Rn
+θ(ϕ),
+where the spectral radius of Rθis strictly smaller than e P(θ). The SRB measure is given
+byµ= ϕ0ν0 whereϕ0 andν0 are the eigenfunctions for the eigenvalue one of P0 and P ∗
+0 ,
+respectively. Thus
+e(θ)= limn→∞
+1
+n logµ(eθSn g) = limn→∞
+1
+n logν0(ϕ0eθSn g) = limn→∞
+1
+n logν0(P n
+θ(ϕ0))
+= limn→∞
+1
+n log(en P(θ)ν0(ϕθ)νθ(ϕ0) + ν0(Rn
+θ(ϕ0))) = P(θ), (14)
+where in the last inequality we have used the fact that both νθ(ϕ0) andν0(ϕθ) are positive.
+From Lemma 4.1, analytic perturbation theory [ 22], and Theorem 3.1, the limit in e(θ)
+exists also for complex θwith |Imθ| ≤ωmax for sufﬁciently smallωmax.
+We ﬁrst compute the derivatives of e(θ)atθ= 0. The sequence {(1/ n) logµ(eθSn g) }
+is uniformly bounded for θin a complex neighborhood of the origin. Thus by the Vitali
+convergence theorem we can freely exchange derivative and limits. That
+e′(0) = limn→∞
+1
+nµ(Sn g) = µ(g) (15)
+is straightforward. For the second derivative, setting ¯g = g − µ(g) we have
+e′′(0) = limn→∞
+1
+n(µ((Sn g) 2) − µ(Sn g) 2) = limn→∞
+1
+nµ((Sn ¯g) 2)
+= µ(¯g2) + 2 limn→∞ µ
+(n− 1∑
+j= 1
+(
+1 − j
+n
+)
+¯g ◦ F j ¯g
+)
+= µ(¯g2) + 2
+∞∑
+j= 1
+µ(¯g ◦ F j ¯g). (16)
+
+=== PDF PAGE 18 ===
+604 L. Rey-Bellet and L.-S. Young
+The last equality follows from Proposition 3.2, the summability of the correlations, and
+dominated convergence.
+In order to compute e′(κ)and e′′(κ)atκ̸= 0, let
+eκ(θ)≡ limn→∞
+1
+n logµκ(eθSn g),
+i.e. eκis the moment generating function for the F-invariant state µκ. Note that
+µκ(eθSn g) = νκ(eθSn gϕκ) = νκ(e− n P(κ)P n
+κ(eθSn gϕκ)) = e− n P(κ)νκ(P n
+κ+ θ(ϕκ)).
+Using the spectral decomposition of Pκ+ θand proceeding as in the computation of e(θ)in
+equation (14), we ﬁnd that
+eκ(θ)= P(θ+ κ)− P(κ)= e(θ+ κ)− e(κ),
+i.e. eκ(θ)is the translated pressure. Differentiating with respect to θgives e′(κ)= e′
+κ(0)
+and e′′(κ)= e′′
+κ(0) . Computing e′
+κ(0) and e′′
+κ(0) as in equations ( 15) and ( 16) we obtain
+(13).
+To prove the statement about strict convexity we note that if g = h ◦ F − h + C,
+then e(θ)= θC for all θ. Conversely, let us assume that e′′(κ)= 0 for some κ. Let
+¯g = g − µκ(g) and
+hκ≡
+∞∑
+j= 1
+e− j P(κ)P j
+κ¯g.
+This sum is easily seen to converge in X by Theorem 3.1. Deﬁne
+f ≡ ¯g − hκ◦ F + hκ.
+A simple computation shows that e− P(κ)Pκ(fϕκ) = 0. Thus, for any j ≥ 1,
+µκ(f ◦ F j f) = νκ(f e− j P(κ)P j
+κ(fϕκ)) = 0. (17)
+We havee(f)(θ)≡ limn→∞ (1/ n) logµ(eθSn f) = e(θ)− θµκ(g) . Therefore, if e′′(κ)= 0,
+then e(f) ′′(κ)= 0. Applying ( 13) to f and equation ( 17) gives µκ(f 2) = 0. Since µκ
+assigns positive measure to every cylinder and f is continuous, f must be identically
+zero. 2
+4.2. Fluctuations of trajectory averages. A number of limit theorems follow
+immediately from Theorem 4.3, in particular from the smoothness of e(θ)forθin suitable
+regions of the complex plane. To avoid triviality we assume σ2 = e′′(0)> 0.
+Our ﬁrst result is about the ﬂuctuations of Sn g of order n.
+THEOREM 4.4. (Large deviations) Let I(t) be given by
+I(t) = sup
+−θmax≤θ≤θmax
+(θt − e(θ)).
+Then for any interval [a, b] ⊂ [e′(−θmax), e′(θmax) ]we have
+limn→∞
+1
+n logµ
+{
+x; Sn g
+n ∈ [a, b]
+}
+= − inf
+t∈[a, b]
+I(t).
+
+=== PDF PAGE 19 ===
+Large deviations in non-uniformly hyperbolic dynamical systems 605
+Proof. This is an immediate consequence of the Gartner–Ellis theorem [ 18], and the
+existence and smoothness of e(θ)for realθwith |θ| ≤θmax. 2
+Our second result is about ﬂuctuations of Sn g of order √ n, i.e. the central limit theorem.
+Note that the central limit theorem is valid under weaker conditions than stated here; see
+e.g. [44].
+THEOREM 4.5. (Central limit theorem) F or any interval[a, b] ⊂ R we have
+limn→∞ µ
+{
+x; Sn g − nµ(g)√ n ∈ [a, b]
+}
+=
+∫ b
+a
+1√
+2π
+e− x 2/2σ2
+d x.
+Proof. This is an immediate consequence of the existence of e(θ)in a complex
+neighborhood of the origin, see e.g. [ 8]. 2
+Our ﬁnal result is about the so-called moderate ﬂuctuations of order Sn g, i.e. the
+ﬂuctuations of order larger than √ n but smaller than n. These ﬂuctuations, suitably scaled,
+satisfy a large deviation principle with a rate function that is always quadratic.
+THEOREM 4.6. (Moderate deviations) Let an be a positive increasing sequence such that
+limn→∞ an/√ n = +∞ and limn→∞ an/ n = 0. Let
+J(t) = t 2
+2σ2.
+Then, for any interval [a, b] ⊂ R, we have
+limn→∞
+1
+a2n/ n logµ
+{
+x; Sn g − nµ(g)
+an
+∈ [a, b]
+}
+= − inf
+t∈[a, b]
+J(t).
+Proof. This is also an application of the Gartner–Ellis theorem; see e.g. [ 17, 18, 41].
+Remark. (Reﬁnements of limit theorems) Using our spectral results one can obtain further
+reﬁnements of the large deviation principle. For example, for non-lattice functions g, one
+can prove that for any a with a = e′(θ)and 0<θ<θmax we have
+limn→∞ Jnµ
+{
+x; Sn g
+n ≥ a
+}
+= 1
+where Jn = θ√ e′′(θ)2πnen I(a) . This and other results (for lattice functions) can be found
+in [2, 10, 18]. Applications to piecewise expanding maps in one dimension are given in [ 7]
+and to Markov chains in [ 25, 26].
+Remark. (Large deviations for empirical measures: comparison with Markov chains)
+It is natural to ask if there is a large deviation principle for the empirical measures
+(1/ n) ∑ n− 1
+j= 0δF j(x) (Level II large deviation). The answer is in general no, as one can
+see by considering the following simple Markov chain. The state space is the set of non-
+negative integers {0, 1, 2,... }, the transition probabilities are given by
+Pi0 = p, Pi, i+ 1 = 1 − p,
+and the stationary distribution µis a geometric distribution. This Markov chain satisﬁes
+the Doeblin condition, and it is a special example of the tower model considered here:
+
+=== PDF PAGE 20 ===
+606 L. Rey-Bellet and L.-S. Young
+)Delta1l corresponds to the state l, with locally constant Jacobians. It is not difﬁcult to see that
+the empirical measures for this Markov chain do not satisfy a large deviation principle [ 4].
+To obtain a large deviation principle for empirical measures one needs, in general, very
+strong estimates (see e.g. [ 20, 26, 40]). In the context of this paper it essentially amounts
+to requiring that the tail pressure P♯(g) = 0 for a sufﬁciently large class of observables g.
+One can also ask for a weaker property, namely whether one can, for a ﬁxed observable
+g, obtain large deviation estimates which hold for all intervals in R (and not only in a
+sufﬁciently small interval containing the mean as in Theorem 4.4). This question is not
+easily answered. For Markov chains Xn on a countable state space which satisfy the
+Doeblin condition, one has, on the one hand, large deviation estimates on any interval for
+bounded observables provided Xn starts in some ﬁxed but arbitrary state [ 29]. On the other
+hand, there are examples of stationary Markov chains for which the logarithmic moment
+generating functions do no exist past certain critical values [ 9].
+5. Application to dynamical systems
+5.1. Markov tower extensions: a review. A main assumption in Theorems A, B, and
+C is that the dynamical system f admits a Markov tower extension as deﬁned in [ 43].
+We do not repeat the setup in [ 43] here, but review in paragraphs (a)–(d) below the basic
+idea of a Markov tower extension, focusing on facts directly pertinent to the present paper
+and referring the reader to [ 43] for the complete treatment. In paragraph (e), a slight
+modiﬁcation of the construction in [ 43] involving measure zero sets is discussed.
+(a) Conditions (P1)–(P5) in [ 43]. Let f be a C 1+ ϵdiffeomorphism, possibly with
+discontinuities or singularities, of a ﬁnite-dimensional Riemannian manifold M. The
+metric on M is denoted by d(·, ·) .
+In §§1.1 and 1.2 of [ 43], positive-measure horseshoes with inﬁnitely many branches
+and variable return times are introduced. This object can be described roughly as
+follows. One starts with a compact set )Lambda1⊂ M with a hyperbolic product structure , i.e.
+)Lambda1= (⋃ γu) ∩(⋃ γs) where {γu}is a family of unstable disks, {γs}is a family of stable
+disks, and each γu meets eachγs transversally in exactly one point. The positivity of the
+measure refers to the requirement that if mu denotes the induced Riemannian measure on
+γu-leaves, then mu(γu ∩)Lambda1)> 0 for everyγu (or equivalently for someγu). A u-subset of
+)Lambda1is a Borel subset of)Lambda1obtained by intersecting a subfamily of {γu}with the entire family
+of {γs}; s-subsets are deﬁned similarly. The ‘horseshoe’ structure refers to the following.
+There are pairwise disjoint s-subsets )Lambda1i ⊂ )Lambda1,i = 1, 2,... , and Ri ∈ Z+ such that, for
+each i, f Ri maps)Lambda1i onto a u-subset of )Lambda1. Moreover, mu(γu ∩()Lambda1\⋃
+i)Lambda1i)) = 0. This is
+described in (P1) and (P2).
+There is a notion of separation time s0(·, ·) which depends on the system in question.
+Typical examples of ‘separation’ are when two points move a certain distance apart, or
+when they land on opposite sides of a discontinuity curve, or when their derivatives cease
+to be comparable. In the abstract model, we assume s0(x, y) is a notion for γs-leaves,
+i.e. s0(x, y) = s0(x ′, y′) if x ′∈γs(x) and y′∈γs(y) . With regard to the horseshoe )Lambda1, we
+assume (i) for x, y ∈)Lambda1i , s0(x, y)> Ri , i.e. all points )Lambda1i must stay together through their
+return to)Lambda1, and (ii) for x ∈)Lambda1i, y ∈)Lambda1j , i ̸= j but Ri = R j , we assume s0(x, y)< Ri − 1,
+
+=== PDF PAGE 21 ===
+Large deviations in non-uniformly hyperbolic dynamical systems 607
+i.e. points in different branches must ﬁrst separate if they return at the same time.
+Conditions (P3)–(P5) contain analytic estimates on hyperbolic behavior expressed in
+terms of s0(·, ·) . (P3) and (P4)(a), for example, state that there exist C> 0 andα∈(0, 1)
+such that for all x, y ∈)Lambda1and n ≥ 0:
+(P3) d(f n x, f n y) ≤ Cαn for y ∈γs(x) ;
+(P4)(a) d(f n x, f n y) ≤ Cαs0(x, y) − n for y ∈γu(x) .
+The meaning of (P4)(a) will become clear in paragraph C.
+In paragraphs (b) and (c), two other dynamical systems associated with the horseshoe
+structure will be introduced. These three systems are related by
+˜F : ˜)Delta1→ ˜)Delta1
+¯π
+↘↘↗↗↗↗↗↗↗↗↗↗↗
+π
+↙↙↙↙↙↙↙↙↙↙↙↙↙↙
+f : M → M ¯F : ¯)Delta1→ ¯)Delta1
+The system ˜F : ˜)Delta1→ ˜)Delta1is called an extension of f : M → M in the sense that ˜F and f
+are related by π◦ ˜F = f ◦π. By the same token, ¯F : ¯)Delta1→ ¯)Delta1is a quotient of ˜F : ˜)Delta1→ ˜)Delta1
+as ˜F and ¯F are related by ¯π◦ ˜F = ¯F ◦ ¯π. Since the purpose of this section is to justify
+passing between these systems, let us be pedantic with notation, using tildes and bars to
+indicate where the various objects belong. The system ¯F : ¯)Delta1→ ¯)Delta1will eventually be the
+reduced tower system studied in §§ 2–4.
+(b) Construction of Markov extension ˜F : ˜)Delta1→ ˜)Delta1. Markov extensions are introduced in
+§1.3 of [ 43]. Here ˜)Delta1= ⋃ ∞
+l= 0 ˜)Delta1l is a disjoint union where, for each l, ˜)Delta1l is an (isometric)
+copy of f l({R> l}) and ˜π|˜)Delta1l is the isometry. We think of ˜)Delta1as a tower, and ˜)Delta1l as the lth
+ﬂoor of the tower. The map ˜F is deﬁned as follows. For each x ∈ ˜)Delta10 such thatπ(x) ∈)Lambda1i ,
+˜F j(x) ∈ ˜)Delta1j for j< Ri , i.e. under ˜F it moves up the tower until it reaches ˜)Delta1Ri − 1, and
+˜F Ri(x) is the point in ˜)Delta10 withπ(˜F Ri(x)) = f Ri(π(x)) .
+The main object of interest for this extension of f is the countable Markov partition
+˜M on ˜)Delta1. Each element of ˜M lies in some ˜)Delta1l , and each ˜)Delta1l contains a ﬁnite number of
+partition elements. The following hold for each A ∈ ˜M|˜)Delta1l :
+(i) π(A) = ⋃
+i∈I(A) f l()Lambda1i) for some I(A) ⊂ Z+ ;
+(ii) s0(x, y)> l for x, y ∈ ⋃
+i∈I(A) )Lambda1i ;
+(iii) Ri = l + 1 for at most one i ∈ I(A) ;
+(iv) ˜F(A) is the union of some elements in ˜M|˜)Delta1l+ 1 and possibly a u-subset of ˜)Delta10.
+Associated with ˜M is the following notion of separation time on ˜)Delta1. For x, y ∈ ˜)Delta1,
+we let ˜s(x, y) = 0 if x, y are in different elements of ˜M, otherwise we let ˜s(x, y) be the
+largest n for which ˜F i x and ˜F i y stay in the same element of ˜M for all i ≤ n. From (ii)
+above and (P4)(a), it follows that, for all x, y ∈ ˜)Delta1,
+d(π(x),π(y)) ≤ Cα˜s(x, y).
+That is to say, the right-hand side can be thought of as a symbolic distance on the set of
+stable leaves in ˜)Delta1.
+
+=== PDF PAGE 22 ===
+608 L. Rey-Bellet and L.-S. Young
+We note that even though [43] began with the simpler horseshoe description, the idea of
+a Markov tower extension is more central to the method of study proposed. The analysis
+of the abstract model in Part I of [ 43] is based on Markov extensions. For the concrete
+examples studied in Part II, it is also Markov extensions that are constructed; (P1)–(P5) are
+deduced from them.
+(c) Reduced tower models . To bring to bear ideas related to the transfer operator, we
+quotient out the stable manifolds in ˜)Delta1. Let ¯)Delta1= ˜)Delta1/∼ where x ∼ y if y ∈γs(x) . It is easy
+to see that the map ˜F, the partition ˜M, and the separation time ˜s all pass to this quotient;
+we call them ¯F, ¯M, and ¯s, respectively, and for simplicity write s = ¯ s = ˜ s.
+In §3.1 of [ 43], a differential structure is shown to exist for ¯F R : ¯)Delta10 → ¯)Delta10 where ¯F R
+is the return map to ¯)Delta10. More precisely, it is shown that there is a reference measure ¯m on
+¯)Delta10 (related to the measure mu) such that, with respect to ¯m, ¯F R is absolutely continuous,
+and its Jacobian J ¯F has a distortion estimate of the form
+⏐⏐⏐⏐
+J ¯F R(x)
+J ¯F R(y) − 1
+⏐⏐⏐⏐≤ C ′α
+1
+2 s(¯F R x, ¯F R y).
+From the information above, one deduces easily the description of reduced towers in § 2.1
+withβ≥ α
+1
+2 .
+(d) Invariant measures. We now assume
+∫
+R dm u< ∞ , noting that this assumption is well
+deﬁned as the measures mu on differentγu are uniformly equivalent.
+In §2 of [ 43], it is shown that there is an ˜F-invariant probability measure ˜µon ˜)Delta1with
+the properties that: (i) µ= π∗(˜µ)is an SRB measure of the original system f : M → M,
+i.e. µis an f -invariant Borel probability measure with absolutely continuous conditional
+measures on unstable manifolds; and (ii) ¯µ= ¯π∗(˜µ)is a ¯F-invariant measure absolutely
+continuous with respect to ¯m.
+This completes our brief summary of the relevant setup from [ 43].
+(e) A modiﬁcation on measure zero sets . In [ 43], the only measure class of interest is that
+of Lebesgue, or mu. That is why in the horseshoe construction in paragraph (a) there was
+no need to specify the dynamics on )Lambda1\(⋃
+i)Lambda1i) . While the large deviation results proved
+in this paper are also with respect to SRB measures, we have seen in § 2.1 that one way to
+prove analyticity of the logarithmic moment generating function is via transfer operators
+associated with more general potentials. This takes us outside of the Lebesgue measure
+class.
+For deﬁniteness, let )Lambda1∗ = ⋂
+n≥ 0(f R) − n(⋃
+i)Lambda1i) . One can verify easily that )Lambda1∗ is an
+s-subset of )Lambda1and, for each i, f Ri()Lambda1i ∩)Lambda1∗) is a u-subset of )Lambda1∗. A Markov tower extension
+˜)Delta1∗ and a reduced tower ¯)Delta1∗ are then built over )Lambda1∗. Note that these are full ˜µ- and
+¯µ-measure subsets of ˜)Delta1and ¯)Delta1, respectively. Moreover, the maps ˜F and ¯F are now deﬁned
+everywhere, and all orbits return to the base of the towers inﬁnitely often. We assume this
+modiﬁcation throughout, and drop the asterisk for notational simplicity.
+5.2. Proofs of theorems. As in § 4, Theorems B and C follow from Theorem A by
+applying the Gartner–Ellis theorem. We focus therefore on the proof of Theorem A. Our
+strategy is to lift the problem to the Markov extension ˜F : ˜)Delta1→ ˜)Delta1, pass it to the reduced
+
+=== PDF PAGE 23 ===
+Large deviations in non-uniformly hyperbolic dynamical systems 609
+tower ¯F : ¯)Delta1→ ¯)Delta1, solve the problem there, and hopefully bring the result back to the
+original system.
+Let g : M → R be a H ¨older continuous observable, i.e. there exist K > 0 andη∈(0, 1]
+such that g satisﬁes |g(x) − g(y) | ≤ K d(x, y) ηfor all x, y ∈ M. Deﬁne ˜g : ˜)Delta1→ R by
+˜g(x) = g(π(x)) . Lemma 5.1 contains a result that is standard for ﬁnite shifts which says
+that ˜g differs from a function constant on γs-leaves by a coboundary.
+LEMMA 5.1. There exists a bounded function u on ˜)Delta1such that
+¯g(x) ≡ ˜g(x) − u(x) + u(˜F(x)) (18)
+is constant onγs-leaves and satisﬁes
+| ¯g(x) − ¯g(y) | ≤ constant ·α
+1
+2ηs(x, y). (19)
+Proof. We mimic an argument in [ 6]. On ˜)Delta10, ﬁx an arbitrary γu-leaf; call it ˆγu. For
+x ∈ ˜)Delta10, let ˆx be the unique point in γs(x) ∩ ˆγu. For x ∈ ˜)Delta1l, l> 0, let x− l = ˜F − l x, and
+deﬁne ˆx = ˜Fl(ˆx− l) . Let
+u(x) =
+∞∑
+j= 0
+{ ˜g(˜F j x) − ˜g(˜F j ˆx) }. (20)
+By (P3), d(π(˜F j x),π(˜F j ˆx)) ≤ Cαj , so u is well deﬁned and uniformly bounded. From
+(18) and (20), it follows that
+¯g(x) = ˜ g(ˆx) +
+∞∑
+j= 0
+˜g(˜F j(˜F ˆx)) −
+∞∑
+j= 0
+˜g(˜F j(ˆ˜F x)).
+Note that the right-hand side of this formula depends only on ˆx and ˆ˜F x, and not on the
+speciﬁc location of x inγs(x) . In fact, for x such that ˜F x ̸∈˜)Delta10, we have ¯g(x) = ˜ g(ˆx) .
+To verify (19), let k be an integer ≈ 1
+2 s(x, y) . Then
+| ¯g(x) − ¯g(y) | ≤
+⏐⏐⏐⏐
+k∑
+i= 0
+{ ˜g(˜F i ˆx) − ˜g(˜F i ˆy) }
+⏐⏐⏐⏐+
+⏐⏐⏐⏐
+k− 1∑
+i= 0
+{
+˜g(˜F i(ˆ˜F x)) − ˜g(˜F i(ˆ˜F y))
+}⏐⏐⏐⏐
++
+⏐⏐⏐⏐
+∞∑
+i= k
+{
+˜g(˜F i(˜F ˆx)) − ˜g(˜F i(ˆ˜F x))
+}⏐⏐⏐⏐+
+⏐⏐⏐⏐
+∞∑
+i= k
+{
+˜g(˜F i(˜F ˆy)) − ˜g(˜F i(ˆ˜F y))
+}⏐⏐⏐⏐.
+By (P4)(a), the ﬁrst term is at most ∑ k
+i= 0 K(Cαs(x, y) − i) η≤ K ′α
+1
+2ηs(x, y) , and similarly for
+the second term. Since ˜F(ˆx) and ˆ˜F x belong to the same stable leaf, by (P3), each of the
+last two terms is at most ∑ ∞
+k K(Cαi) η≤ K ′α
+1
+2ηs(x, y) . 2
+Proof of Theorem A. Letµbe the ergodic SRB measure given by the Markov extension,
+and let g be as above. The objects of interest here are
+en(θ)= 1
+n logµ(eθSn g) and e(θ)= limn→∞ en(θ)
+
+=== PDF PAGE 24 ===
+610 L. Rey-Bellet and L.-S. Young
+if the limit in e(θ)exists. Let ˜g be the lift of g to ˜)Delta1, and let ˜µbe the measure on ˜)Delta1that
+projects toµ. Then clearly
+˜en(θ)≡ 1
+n log ˜µ(eθSn ˜g) = en(θ),
+and ˜e(θ)= e(θ)when it makes sense. Passing to the quotient ¯F : ¯)Delta1→ ¯)Delta1is a little less
+straightforward. Let ¯g be given by Lemma 5.1. Thinking of ¯g as deﬁned on ¯)Delta1(as well as
+˜)Delta1), we deﬁne
+¯en(θ)≡ 1
+n log ¯µ(eθSn ¯g) and ¯e(θ)≡ limn→∞ ¯en(θ)
+if the limit in ¯e(θ)exists. To relate these quantities back to e(θ), observe that from ( 18) we
+have that, for x ∈ ˜)Delta1,
+n− 1∑
+i= 0
+¯g(¯F i(¯πx)) =
+n− 1∑
+i= 0
+¯g(˜F i(x)) =
+(n− 1∑
+i= 0
+˜g(˜F i(x))
+)
+− u(x) + u(˜F n(x)). (21)
+Thus
+¯µ(eθSn ¯g) = ˜µ(eθ{(Sn ˜g) − u+ u◦ ˜F n }).
+Since u is bounded, it follows that if ¯en(θ)converges, then ˜en(θ)also converges to the
+same limit, and thus we have e(θ)= ˜ e(θ)= ¯ e(θ). That is to say, the problem boils down
+to proving the convergence of ¯en(θ)as n → ∞ to an analytic function on a set of θof the
+form speciﬁed in the statement of Theorem A.
+To do this, we go to §§2–4, and seek to apply the results there to the system ¯F : ¯)Delta1→ ¯)Delta1
+with observable ¯g. By construction, ¯F is a reduced tower map. With β= α
+1
+2η, Lemma 5.1
+tells us that ¯g is Lipschitz with respect to the metric deﬁned usingβ. To apply Theorem 4.3,
+we need to check that the range of ¯g,ρ(¯g) , is at mostρ(g) . This is not quite true in general,
+but using (21) we have the following bounds. For x ∈ ¯)Delta1,
+e− 2|u|∞
+( ∑
+y: ¯F n y= x
+en min g
+J ¯F n(y)
+)
+≤
+∑
+y: ¯F n y= x
+eSn ¯g(y)
+J ¯F n(y) ≤ e2|u|∞
+( ∑
+y: ¯F n y= x
+en max g
+J ¯F n(y)
+)
+.
+These estimates show that if γ1 is chosen as in § 4.1, i.e. with θmaxρ(g)<γ1<γ, then
+we have P♯(θ¯g)< P(θ¯g) for |θ| ≤θmax. Thus Theorem 4.3 applies to give the desired
+analyticity properties of ¯e(θ).
+It remains to check that ¯µ(¯g) = µ(g) andσ2(¯g) = σ2(g) . The ﬁrst follows fromµ(g) =
+˜µ(˜g) = ˜µ(¯g + u − u ◦ ˜F) = ¯µ(¯g) . The second follows from the fact that the distributions
+of {(1/√ n) Sn ¯g}with respect to ¯µare asymptotically close to those of {(1/√ n) Sn ˜g}with
+respect to ˜µ; see (21). 2
+Acknowledgements. L. R.-B. would like to thank Pierre Collet for useful suggestions.
+The ﬁrst author’s research is partially supported by NSF Grant DMS-0605058. The second
+author’s research is partially supported by NSF Grant DMS-0600974.
+
+=== PDF PAGE 25 ===
+Large deviations in non-uniformly hyperbolic dynamical systems 611
+REFERENCES
+[1] V . Ara´ujo and M. J. Paciﬁco. Large deviations for non-uniformly expanding maps. J. Stat. Phys. 125
+(2006), 415–457.
+[2] R. R. Bahadur and R. Ranga Rao. On deviations from the sample mean. Ann. Math. Statist. 31 (1960),
+1015–1027.
+[3] V . Baladi. Positive Transfer Operators and Decay of Correlations (Advanced Series in Nonlinear
+Dynamics, 16). World Scientiﬁc, River Edge, NJ, 2000.
+[4] J. R. Baxter, N. C. Jain and S. R. S. V aradhan. Some familiar examples for which the large deviation
+principle does not hold. Comm. Pure Appl. Math. 44 (1991), 911–923.
+[5] M. Benedicks and L.-S. Y oung. Markov extensions and decay of correlations for certain H ´enon maps.
+G´eom´etrie complexe et syst `emes dynamiques (Orsay, 1995). Ast´erisque 261 (2000), 13–56.
+[6] R. Bowen. Equilibrium States and the Ergodic Theory of Anosov Diffeomorphisms (Lecture Notes in
+Mathematics, 470). Springer, Berlin, 1975.
+[7] A. Broise. Transformations dilatantes de l’intervalle et th ´eor`emes limites. Etudes spectrales d’op ´erateurs
+de transfert et applications . Ast´erisque 238 (1996), 1–109.
+[8] W. Bryc. A remark on the connection between the large deviation principle and the central limit theorem.
+Statist. Probab. Lett. 18 (1993), 253–256.
+[9] W. Bryc and A. Dembo. Large deviations and strong mixing. Ann. Inst. H. Poincar ´e Probab. Statist. 32
+(1996), 549–569.
+[10] N. R. Chaganthy and J. Sethuraman. Strong large deviations and local limit theorems. Ann. Probab. 21
+(1993), 1671–1690.
+[11] N. I. Chernov. Statistical properties of piecewise smooth hyperbolic systems in high dimensions. Discrete
+Contin. Dyn. Syst. 5 (1999), 425–448.
+[12] N. I. Chernov. Sinai billiards under small external forces. Ann. Henri Poincar´e 2 (2001), 197–236.
+[13] N. I. Chernov. Advanced statistical properties of dispersing billiards. J. Stat. Phys. 122 (2006),
+1061–1094.
+[14] N. I. Chernov, G. L. Eyink, J. L. Lebowitz and Y a. G. Sinai. Steady-state electrical conduction in the
+periodic Lorentz gas. Comm. Math. Phys. 154 (1993), 569–601.
+[15] N. I. Chernov and L.-S. Y oung. Decay of correlations for Lorentz gases and hard balls. Encycl. of Math.
+Sc., Math. Phys. II, vol. 101 . Ed. D. Szasz. 2001, pp. 89–120.
+[16] P . Collet. Statistics of closest return for some non-uniformly hyperbolic systems. Ergod. Th. & Dynam.
+Sys. 21 (2001), 401–420.
+[17] A. de Acosta and X. Chen. Moderate deviations for empirical measures of Markov chains. J. Theoret.
+Probab. 11 (1995), 1075–1110.
+[18] A. Dembo and O. Zeitouni. Large Deviations Techniques and Applications , 2nd edn (Applications of
+Mathematics, 38). Springer, New Y ork, 1998.
+[19] D. Dolgopyat, D. Szasz and T. V arju. Recurrence properties of Lorentz gas. Duke Math. J. to appear.
+[20] M. D. Donsker and S. R. S. V aradhan. Asymptotic evaluation of certain Markov process expectations for
+large time. I. II. Comm. Pure Appl. Math. 28 (1975), 1–47, 279–301
+[21] H. Hennion and L. Herv. Limit Theorems for Markov Chains and Stochastic Properties of Dynamical
+Systems by Quasi-Compactness (Lecture Notes in Mathematics, 1766) . Springer, Berlin, 2001.
+[22] T. Kato. Perturbation Theory for Linear Operators , 2nd edn (Grundlehren der mathematischen
+Wissenchaften, 132). Springer, Berlin, 1984.
+[23] G. Keller. Markov extensions, zeta functions, and Fredholm theory for piecewise invertible dynamical
+systems. Trans. Amer . Math. Soc.314 (1989), 433–497.
+[24] Y . Kifer. Large deviations in dynamical systems and stochastic processes. Trans. Amer . Math. Soc. 321
+(1990), 505–524.
+[25] I. Kontoyiannis and S. P . Meyn. Spectral theory and limit theorems for geometrically ergodic Markov
+processes. Ann. Appl. Probab. 13 (2003), 304–362.
+[26] I. Kontoyiannis and S. P . Meyn. Large deviations asymptotics and the spectral theory of multiplicatively
+regular Markov processes. Electron. J. Probab. 10 (2005), 61–123.
+[27] I. Melbourne and M. Nicol. Almost sure invariance principle for non-uniformly hyperbolic systems.
+Comm. Math. Phys. 260 (2005), 131–146.
+[28] I. Melbourne and M. Nicol. Large deviations for non-uniformly hyperbolic systems. Preprint.
+[29] P . Ney and E. Nummelin. Markov additive processes (I): Eigenvalue properties and limit theorems: (II)
+Large deviations. Ann. Probab. 15 (1987), 561–592, 593–609.
+
+=== PDF PAGE 26 ===
+612 L. Rey-Bellet and L.-S. Young
+[30] S. Orey and S. Pelikan. Deviations of trajectory averages and the defect in Pesin’s formula for Anosov
+diffeomorphisms. Trans. Amer . Math. Soc.315 (1989), 741–753.
+[31] M. Pollicott, R. Sharp and M. Y uri. Large deviations for maps with indifferent ﬁxed points. Nonlinearity
+11 (1998), 1173–1184.
+[32] D. Ruelle. Dynamical Zeta Functions for Piecewise Monotone Maps of the Interval (CRM Monograph
+Series, 4). American Mathematical Society, Providence, RI, 1994.
+[33] H. H. Schaefer. Banach Lattices and Positive Operators (Die Grundlagen der mathematischen
+Wissenschaft, 215). Springer, Berlin, 1974.
+[34] D. Szasz and T. V arju. Local limit theorem for the Lorentz process and its recurrence in the plane. Ergod.
+Th. & Dynam. Sys. 24 (2004), 257–278.
+[35] Q. Wang and L.-S. Y oung. Strange attractors with one direction of instability. Comm. Math. Phys. 218
+(2001), 1–97.
+[36] Q. Wang and L.-S. Y oung. From invariant curves to strange attractors. Comm. Math. Phys. 225 (2002),
+275–304.
+[37] Q. Wang and L.-S. Y oung. Strange attractors in periodically-kicked limit cycles and Hopf bifurcations.
+Comm. Math. Phys. 240 (2003), 509–529.
+[38] Q. Wang and L.-S. Y oung. Nonuniformly expanding 1D maps. Comm. Math. Phys. 264 (2006), 255–282.
+[39] Q. Wang and L.-S. Y oung. Toward a theory of rank one maps. Ann. Math. (2005), to appear.
+[40] L. Wu. Essential spectral radius for Markov semigroups. I. Discrete time case. Probab. Theory Related
+Fields 128 (2004), 255–321.
+[41] L. Wu. Moderate deviations of dependent random variables related to CLT. Ann. Probab. 23 (1995),
+420–445.
+[42] L.-S. Y oung. Large deviations in dynamical systems. Trans. Amer . Math. Soc.318 (1990), 525–543.
+[43] L.-S. Y oung. Statistical properties of dynamical systems with some hyperbolicity. Ann. of Math. 147
+(1998), 585–650.
+[44] L.-S. Y oung. Recurrence times and rates of mixing. Israel J. Math. 110 (1999), 153–188.

@@ -1,0 +1,1566 @@
+=== PDF PAGE 1 ===
+ANOSOV DIFFEOMORPHISMS AND COUPLING.
+XA VIER BRESSAUD AND CARLANGELO LIVERANI
+Abstract. We prove the existence of an SRB measure and the exponential
+decay of correlations for smooth observables for mixing Anosov C1+α diﬀe-
+ormorphisms on a d-dimensional (d ≥ 2) Riemannian manifold. The novelty
+lies in the very simple method of proof. We construct explicitly a coupling
+between two initial densities so that under the action of the diﬀeomorphism,
+both components get closer and closer. The speed of this convergence can be
+explicitly estimated and is directly related to the speed of decay of correlations.
+The existence of the SRB measure and its properties readily follow.
+1. Introduction
+The study of convergence to equilibrium in Dynamical Systems has witness an
+exciting revival in the last years.
+This is due to the introduction of new approaches that have supplemented the
+original one based on Markov partitions [2]. In particular, the approach based
+on quasi-compactness of the Perron-Frobenius operator has shed a new light on
+expanding maps [1]; the use of projective metrics has provided a general constructive
+tool that can be applied to a large variety of situations [12], [21], [13], [20], [17]; a
+specialized type of tower construction has introduced a new, more ﬂexible, way of
+coding dynamical systems [22]; new insights on the properties and the structure of
+the transfer operator for ﬂows have ﬁnally allowed to obtain results for a vast class
+of Anosov ﬂows [7], [5], [6]; the use of random perturbations has proven an easy
+tool to obtain rough estimates on the rate of convergence to equilibrium [15], [14],
+[9].
+In this paper we explore yet another approach. An approach well known in other
+ﬁelds but only recently introduced in this context by [23], [3], [4]: coupling.
+Coupling is a technique used to compare stochastic processes that has yielded
+very important results in probability [11]; statistical mechanics [10] and abstract
+ergodic theory [18], just to mention a few.
+In this paper we apply it to Anosov diﬀeomorphisms. The result that we obtain
+is exponential decay of correlations for a large (as far as we know larger than usual)
+class of functions. Of course, this result is far from new, nevertheless it should be
+emphasized that the method yields explicit estimates on the rate of convergence
+to equilibrium (unlike other methods). 1 The main diﬀerence with Lai-Sang Young
+Date: December 20, 2000.
+We would like to thank P. Ferrari, A. Galves, F. Ledrappier, L.-S. Young and J. Schmeling for
+valuable discussions and suggestions. The authors gladly acknowledge the support of the E.S.F.
+Programme PRODYN; one of us (C.L.) acknowledges support from the CNR-GNFM as well.
+1As mentioned above, the only other technique that provides explicit bounds is the one based
+on Hilbert metrics [21]. Such an approach seems to yield convergence in a stronger sense but the
+present approach could prove more ﬂexible.
+1
+
+=== PDF PAGE 2 ===
+2 XA VIER BRESSAUD AND CARLANGELO LIVERANI
+approach is that the technique is applied directly to the system without the need
+to code it beforehand into an expanding tower.
+The aim is twofold. On the one hand we want to introduce the coupling method
+as a general tool to study decay of correlations. On the other hand we tried to
+simplify as much as possible the method in order to understand exactly the technical
+conditions needed to make it work. This is an essential preliminary work needed if
+one wants to try to apply coupling techniques to situations with polynomial decay
+of correlations which it is certainly the next challenge in the ﬁeld.
+1.1. Coupling. Let X and Y be two random variables valued in M distributed
+according to smooth densities with respect to the natural measure on M. The task
+is to construct a coupling ( ˜X, ˜Y ) of these random variables such that, in mean, the
+distance between Tn ˜X and Tn ˜Y decays to 0. Since the dynamic is deterministic,
+the only possibility is to couple the initial distributions.
+A coupling of two random variables is a joint distribution, that is a distribution
+on M × M with the marginals given by the two random variables. The simpler
+example is the so-called independent coupling (simply take the product distribu-
+tion). If the random variables have the same law, another simple coupling is the
+diagonal coupling ( ˜X = ˜Y with probability one). Intermediate cases present some
+“correlation” between the two random variables.
+Let us think of discrete random variables for one moment. A coupling is a way
+of ﬁlling an array with a constraint on the sums of the lines and of the columns.
+Given two distributions ( µi)i=1,...,n and (νi)i=1,...,n , it is an array ( pi,j )i,j =1,...,n
+with non negative entries satisfying ∑
+jpi,j = µi and ∑
+ipi,j = νj. Let us see
+how to construct a coupling with a strong correlated part. We can ﬁll ﬁrst the
+diagonal of the array in an arbitrary way imposing only that the value of each
+entry is less than the constrained values of the associated row and column (this will
+be the “correlated part”). For example choose a third distribution ( ηi)i=1,...,n and
+anε>0 small enough so that for all i,εηi < min{µi,νi} and put the values εηi on
+the diagional. 2 The total amount of mass “used” is ε. The remainder can (among
+other possibilities) be coupled ”independently”,
+pi,j =χ{i=j}εηi + (1 − ε)− 1(µi − εηi)(νj − εηj).
+Such an array is indeed a coupling of µand ν. One can realize this coupling as
+follows. Drop a Bernoulli coin ( ε,1 − ε). If you get head, then choose the two
+random variables according to the distribution η(in this case they take the same
+value). If you get tail, then choose both random variables independently according
+to the “remaining” joint distribution, (1 − ε)− 2(µi − εηi)(νj − εηj).
+This last point of view easily generalizes to the case of continuous random vari-
+ables with densities. Consider two density functions, g and h, bounded away from
+0. Let f be a third density function and ε>0 such that εf(x)< min{g(x),h (x)}.
+Now, drop a Bernoulli coin ( ε,1 − ε). If you get head, then choose the two ran-
+dom variables according to the distribution with density f . If you get tail, then
+choose both random variables independently according to the “remaining” joint
+distribution, whose density on the square is given by F (x,y ) = (1 − ε)− 2(g(x) −
+εf(x))(h(y) − εf(y)).
+2To be optimal, one could choose ηso that εηi = min{µi,νi}. But then, the remainder cannot
+be coupled independently.
+
+=== PDF PAGE 3 ===
+ANOSOV DIFFEOMORPHISMS AND COUPLING. 3
+Back to our case, the general idea is to try to make points match whenever
+possible. Yet, since the map is a diﬀeomorphism, two points which do not match
+will never match. Nonetheless, two points that are on the same stable manifold
+will come closer and closer under the action of the diﬀeomorphism. Thus, it should
+suﬃce to couple points laying in the same stable manifold. A ﬁrst obstacle stemms
+from the highly non–local nature of the stable manifod which makes it hard to
+control the speed at which points get closer. To overcome this we will consider only
+local stable manifolds and proceed inductively.
+Fix some δ >0. Firstly, we decide to couple points that are in the same local
+stable manifold of size δ. Then, we couple points that will be in the same local
+stable manifold after one iteration of the diﬀeomorphism, and so on. What happens
+is that, at each step, we can couple a certain fraction of the mass that was not yet
+coupled. Finally, every point is coupled with points that will be in the same local
+stable manifold after some time (and hence that were in the same stable manifold
+since the beginning). Technically, the procedure consists in a sequence of couplings
+( ˜Xn, ˜Yn) of TnX and of TnY , constructed inductively, keeping track of the mass
+coupled at each step. In the limit all the mass is coupled. More precisely, for the
+coupling at step n the probability that the two components are in diﬀerent pieces
+of stable leaves of size δis bounded by (1 −ε)n, decaying exponentially fast with n.
+1.2. Plan of the paper. In Section 2 we state precisely the result and introduce
+some basic notations.
+Section 3 is devoted to the precise deﬁnition of the space of densities that will
+be used in the following.
+In Section 4 we deﬁne special averages that will be used to actually construct
+the wanted coupling. In addition, some standard and less standard, but essential,
+parts of the theory of Anosov diﬀeomorphism are recalled and stated.
+Section 5 investigates the properties of the densities when iterated via the dy-
+namics. Such properties based on the results of Section 4, are the reason why the
+approach ultimately works.
+Section 6 introduces the coupling and details its properties.
+In Section 7 we have the proof of the main theorem and its corollary.
+Finally, the appendix contains the proof of some technical facts that are used in
+the paper and it is added for completeness.
+2. Statement of the result
+Let M be a d-dimensional (d ≥ 2) Riemannian manifold endowed with the
+Riemannian volume m. We consider a transitive (and hence mixing) Anosov
+C(1+α)(M, M) diﬀeomorphism T on M. We mean that T is a diﬀeomorphism
+of M whose diﬀerential DxT at point x ∈ M depends α–H¨ older continuously
+on x and is such that there exists an invariant splitting of the tangent bundle
+TxM = Es(x) ⨁ Eu(x) into a stable and an unstable directions, that is with
+||DT |Es ||∞ < 1 and ||DT − 1|Eu ||∞ < 1. We denote by ds anddu the dimensions of
+the stable and unstable subspaces, respectively.
+We denote by D the distortion constant,
+(2.1) e−Dd(x,y )α
+≤ |det(DxT )|
+|det(DyT )|≤ eDd(x,y )α
+,
+
+=== PDF PAGE 4 ===
+4 XA VIER BRESSAUD AND CARLANGELO LIVERANI
+where d(·, ·) is the Riemannian distance. We set,
+(2.2)
+∥DT |Es ∥∞ =λ− 1
+− ; ∥DT |Eu ∥∞ =µ+
+∥DT − 1|Es ∥∞ =λ+; ∥DT − 1|Eu ∥∞ =µ− 1
+− .
+2.1. Stable and unstable foliations. For all x ∈ M , we denote by Ws(x) and
+Wu(x) the global stable and unstable manifolds (such manifolds are C(1+α), e.g.
+[8]). For all x ∈ M and all y ∈Ws(x), we denote by ds(x,y ) the distance measured
+along the leaves Ws(x) induced by the Riemannian metric on the leaf considered
+as a sub-manifold in M. In addition, for each x,y ∈ M deﬁne ds(x,y ) = ∞ if
+they do not belong to the same stable manifold. The corresponding distance for
+the unstable manifolds will be denoted by du. In the same spirit, ms will denote
+the restriction of the Riemannian volume to the stable manifolds. For all δ >0 and
+all x ∈ M, we will denote by Ws
+δ(x) the ball of radius δcentered at x in Ws(x),
+Ws
+δ(x) = {y ∈ M |ds(x,y )<δ}.
+2.2. Observables. Fix δ >0 and βs ∈ (0, 1). For all real functions f : M → R,
+we set
+|f |s = sup
+ds(x,y )≤δ
+|f (x) − f (y)|
+ds(x,y )βs
+and
+(2.3) ∥f ∥s = ||f ||∞ + |f |s.
+We consider the following subset of the Borel measurable functions B(M, R),
+Cs = {f ∈ B (M, R) | ∥f ∥s < +∞} .
+2.3. Statement. We are interested in the convergence to equilibrium, that is in
+the speed with which an initial measure, absolutely continuous with respect to
+the Riemannian measure, converges toward the SRB measure. As is well known,
+only reasonably smooth initial measures yield fast convergence. To state the result
+we must then introduce introduce, for the densities of the initial measure, H¨ older
+norms ∥ · ∥u deﬁned in analogy with (2.3) by using the unstable distance instead of
+the stable one,
+(2.4) ∥f ∥u = ∥f ∥1 + sup
+du(x,y )≤δ
+|f (x) − f (y)|
+du(x,y )α .
+Note theL1–norm instead of the L∞ –norm to take advantage of the obvious duality.
+Theorem 2.1. There exists a θ <1, computable, and a constant C such that, for
+eachβs ∈ (0, 1], for all f ∈ Cs and g,h ∈ C (α)(M, R) with
+∫
+Mhdm =
+∫
+Mgdm = 1,
+(2.5)
+⏐⏐⏐⏐
+∫
+M
+f ◦Tngdm −
+∫
+M
+f ◦Tnhdm
+⏐⏐⏐⏐≤ C∥f ∥s max{∥g∥u, ∥h∥u}θnβs
+
+=== PDF PAGE 5 ===
+ANOSOV DIFFEOMORPHISMS AND COUPLING. 5
+From this result it is easy to deduce the existence of an SRB measure for the
+system as well as the exponential decay of the correlations for this measure. This
+is the content of the following corollary
+Corollary 2.1. There is a unique T -invariant measure µsuch that
+(2.6) lim
+n→ +∞
+1
+n
+n− 1∑
+k=0
+δT kx =µ, m − a.s.,
+where δx denotes the Dirac mass at point x. In addition, there is a θ <1 and a
+constantC such that, for all f ∈ Cs and all h ∈ C (α)(M, R),
+(2.7)
+⏐⏐⏐⏐
+∫
+M
+f ◦Tnhdµ−
+∫
+M
+fdµ
+∫
+M
+hdµ
+⏐⏐⏐⏐≤ C∥f ∥s∥h∥u θn
+In fact, the other standard properties of the SRB measure can also be easily
+obtained, we do not insist on them since the present method does not seem to add
+any particular insight on such issues.
+3. Densities
+To prove the above theorems we ﬁnd necessary to specify more precise regularity
+requirements for the smoothness of the densities along the unstable manifold. It
+turns out that in two dimensions, or more generally when the foliations are smooth,
+this can be done in a rather na ¨ ıve way by deﬁning smoothness with respect to the
+metric du as already done in (2.4). 3 Nonetheless, in the more general situation in
+which the foliations are only H¨ older it is not immediately obvious how to proceed.
+As we will see later the problem arises because if du(x,y ) ≤ ε, then the maximal
+distance of the associated local stable manifolds Ws
+δ(x) and Ws
+δ(y) can be of order
+ετwhich is not enough for our need. To overcome this we introduce a diﬀerent
+notion of “distance” between point, which in fact is not a distance (it does not
+satisfy the triangle inequality and it is degenerate) but is nevertheless well suited
+to satisfy our needs.
+Letϕ: R+ → [0, 1] be a smooth positive monotone function such that, for some
+δ >0,
+ϕ(x) = 0 ∀x ∈ [0,δ] and ϕ(x) = 1 ∀x ≥ 2δ.
+Deﬁnition 3.1. Fix ν >1. Given two points x,y ∈ M we deﬁne their separation
+s(x,y ) by
+(3.1) s(x,y ) =
+∞∑
+n=0
+ν−nϕ(d(Tnx, Tny)).
+A direct computation shows that if µ− <νthis separation is Lipschitz, while if
+µ− > ν, it is H¨ older of exponent logν
+logµ−
+. The relation between the separation and
+the usual distance, as well as some useful properties of the separation are clariﬁed
+by the next lemma.
+3To purse this point of view it is also necessary to impose an a priori bound on the measure
+of small balls in the stable manifold, this is a natural condition since the invariant measure is
+typically singular when restricted to the stable manifold and it is characterized by some Hausdorﬀ
+dimension.
+
+=== PDF PAGE 6 ===
+6 XA VIER BRESSAUD AND CARLANGELO LIVERANI
+Lemma 3.1. There exists c0 =c0(δ,ν) ∈ R+ such that for each two points x,y ∈
+M, if d(x,y ) ≤ δ, then
+s(Tx,Ty ) = νs(x,y ).
+If x ∈Wu
+δ(y), then,
+c− 1
+0 du(x,y )α+ ≤ s(x,y ) ≤ c0d(x,y )α−,
+with α− = lnν
+lnµ+
+and α+ = lnν
+lnµ−
+. In addition, if y ∈B δ
+4
+(x),
+c− 1
+0 s(x,y ) ≤ sup
+z ∈Ws
+δ
+4
+(x)
+w ∈Ws
+δ
+4
+(y)
+s(z,w ) ≤ c0s(x,y ).
+The proof of the Lemma is by direct computation. The idea is that s is essentially
+a continuous version of the usual discrete separation. For completeness we provide
+the details in the appendix.
+To deﬁne the smoothness of a function along the unstable directions we can then
+deﬁne
+(3.2) |f |σ= sup
+du(x,y )≤δ
+|f (x) − f (y)|
+s(x,y ) .
+The relation with the above mentioned more conventional deﬁnitions of smooth-
+ness
+|f |u,β= sup
+du(x,y )≤δ
+|f (x) − f (y)|
+du(x,y )β
+(which characterizes H¨ older continuous functions) is explicitly stated in the follow-
+ing immediate consequence of Lemma 3.1.
+Corollary 3.1. Letν≤ µ− , then α−, α+ ∈ (0, 1] and
+|f |u,α− ≤ |f |σ≤ |f |u,α+.
+We can ﬁnally deﬁne the class of densities we are interested in
+(3.3) Cu(a) =
+{
+h ∈ C 0(M, R)
+⏐⏐⏐⏐h> 0; h(x)
+h(y) ≤ eas(x,y ), ∀x,y :du(x,y ) ≤ δ
+}
+,
+where C0(M, R) is the space of continuous functions.
+4. Mean on the stable leaves
+4.1. Holonomy map. Given two manifoldsU,V transversal to the stable foliation,
+with distance less than δ, we deﬁne the (stable) holonomy map φ=φs
+U,V :U → V
+byφ(z) = Ws
+δ(z) ∩V .4 We deﬁne the unstable holonomies symmetrically.
+Given z ∈ U , let EU (z) = TzU . Since EU (z) is transversal to Es(z) we can
+deﬁne the map LEU (z) : Eu(z) → Es(z) by asking that LEU (z)v be the unique
+vectorw ∈Es(z) such that v +w ∈EU (z). Let γU :U → R be
+γU (z) = ∥LEU (z)∥,
+clearly this quantity measure the “angle” between EU (z) and Eu(z). Similar deﬁ-
+nitions can be given for manifolds transversal to the unstable distribution.
+4Of course, the domain of φis given exactly by
+the z ∈U for which W s
+δ (z) ∩V ̸= ∅.
+
+=== PDF PAGE 7 ===
+ANOSOV DIFFEOMORPHISMS AND COUPLING. 7
+Proposition 4.1. There exists τ∈ (0,α] such that the stable and unstable distri-
+butions are τ-H¨ older continuous.
+In addition, the holonomy maps are τ-H¨ older continuous and absolutely contin-
+uous as well.
+Finally, calling JφU,V the Jacobian of the holonomy, also
+the Jacobian is τ-H¨ older continuous, more precisely,
+JφUV (z)
+JφUV (ξ) ≤ e−const d(z,ξ)τ
+if z,ξ∈U ;
+and it is close to the identity, namely
+e−const {d(z,φ(z))τ +γU (z)+γV (z)} ≤ JφUV (z) ≤ econst {d(z,φ(z))τ +γU (z)+γV (z)}.
+Proof. These are classical results. See for example [8] for the H¨ older continuity of
+the distributions and of the holonomies and [16] for the bounds on the Jacobian. □
+4.2. The local product structure. Given x0 ∈ M , we want to introduce local
+coordinates, adapted to the hyperbolic structure, in a neighborhood of x0. Given
+δ0 > 0 small enough, we start by considering the manifolds Ws
+δ0(x0) and Wu
+δ0(x0)
+endowed with the restriction of the Riemannian metric on M. Since they are
+C(1+α), we can introduce two C(1+α) systems of coordinates ψs
+x0 : Rds → Ws
+δ0(x0)
+andψu
+x0 : Rdu → Wu
+δ0(x0).5 We can then deﬁne the map ψx0 : Rds × Rdu → Bδ0(x0)
+by
+ψx0(ξ,η) = Wu
+δ0(ψs
+x0(ξ)) ∩Ws
+δ0(ψu
+x0(η)).
+Note that in the coordinates η,ξthe stable and unstable foliations consist of the
+linear parallel subspaces {ξ=a}and {η=b}respectively. In addition, remark that,
+by Proposition 4.1, ψx0 is an H¨ older, and hence continuous, change of coordinates.
+We consider the Lebesgue measure mL(dξ,dη) = dξdη. It is also natural to consider
+that the Riemannian volume m induces the measure ¯m =ψ− 1∗
+x0 m in Rds × Rdu . It
+turns out that ¯m is absolutely continuous with respect to the Lebesgue measure and
+that the Jacobian is a rather nice function as the next proposition more precisely
+states.
+Proposition 4.2. There exist c,M,δ 0 > 0 such that, for each x0 ∈ M , one can
+construct a measurable function ρx0 : Rd → R+ for which, given any function
+f ∈L1(M, R) supported in Bδ0(x0), holds
+∫
+M
+f (y)m(dy) =
+∫
+Rd
+f ◦ψx0(ξ,η)ρx0(ξ,η)dξdη.
+The above function has the following properties:
+e−c|η−η′|τ
+≤ ρx0(ξ,η)
+ρx0(ξ,η′) ≤ ec|η−η′|τ
+, ∀ξ∈ Rds,η,η′∈ Rdu,
+and 1
+M ≤ ρx0 ≤ M.
+The above result is more or less known to experts in the ﬁeld, yet we were not
+able to locate a clear cut reference to it. Due to this sorry state of aﬀairs we provide
+a complete proof in the appendix.
+5If the manifold were C2, one could use the standard exponential mappings, identifying, iso-
+metrically,Eu(x0) with Rdu and Es(x0) with Rds .
+
+=== PDF PAGE 8 ===
+8 XA VIER BRESSAUD AND CARLANGELO LIVERANI
+4.3. Stable averages. We introduce an average on the local stable manifolds
+Ws
+δ(x), namely Aδ: C0(M, R) → C 0(M, R) deﬁned by,
+Aδf (x) = Zδ(x)
+∫
+W s
+δ (x)
+f (z)ms(dz)
+where
+Zδ(x)− 1 =
+∫
+W s
+δ (x)
+ms(dz) = ms(Ws
+δ(x)).
+The following Lemma is the key fact we will use in studying the conditional
+expectation we will deﬁne shortly.
+Lemma 4.1. For all δ >0, suﬃciently small, there exists ε0 = ε0(δ,a) > 0 such
+that, for all h ∈ Cu(a),
+(4.1) ε0
+∫
+M
+h ≤ Aδh ≤ 1
+ε0
+∫
+M
+h.
+Proof. Ifδ <δ0, then we can write Aδh in some local coordinates and use regularity
+of the observable to compare it to the integral on an open set of positive volume.
+In particular, we can choose any C(1+α) coordinate systems ˜ψ: Rds × Rdu → M
+such that ˜ψ(0) = x, ˜ψ({(ξ,0)}) = Ws
+loc(x); ˜ψ({(0,η)}) = Wu
+loc(x) and ∥Dψ∥∞ +
+∥Dψ− 1∥∞ ≤ M1 for some M1 independent of x.6 Let ˜ψ(Ws
+δ(x)) := A(x) and
+˜ψ(Wu
+δ(x)) := B(x), then const − 1δdu ≤
+∫
+B(x)dη≤ const δdu , for some constant
+independent of x, and
+(4.2)
+∫
+W s
+δ (x)h =
+∫
+A(x)h ◦ψx(ξ,0)|det(Dξ˜ψ)(ξ,0)|dξ
+≤ eM1(d+ds )eac0δα +
+const Cδdu
+∫
+A(x)×B(x)h ◦ ˜ψ(ξ,η)|det(D ˜ψ)(ξ,η)|dηdξ
+≤ const
+∫
+˜ψ(A(x)×B(x))h
+≤ const
+∫
+Mh.
+For further reference notice that the same type of reasoning shows that there
+exists c1 > 1, independent of x ∈ M, such that
+(4.3)
+∫
+W s
+c1δ(x)
+h(z)ms(dz) ≥ const
+∫
+B2δ(x)
+h,
+where, as usual, Bδ(x) is the ball of radius δcentered at x.
+The proof of the opposite inequality is slightly more sophisticated.
+It is well known that there exists N0 such that, for each ε>0, one can cover M
+with balls of radius εin such way that each ball does not overlap with more than
+N0 other balls of the cover. From now on we will only consider covers with such a
+property.
+Let {Bε(xi)} be one of such covers. For each function h ≥ 0 there exists i such
+that
+1
+m(Bε(xi))
+∫
+m(Bε(xi))
+h ≥ N − 1
+0
+∫
+M
+h.
+6If in doubt about existence, see footnote 12 in the appendix for the explicit construction of
+such a coordinate
+systems.
+
+=== PDF PAGE 9 ===
+ANOSOV DIFFEOMORPHISMS AND COUPLING. 9
+To see it, just suppose the contrary, then∫
+M
+h ≤
+∑
+j
+∫
+m(Bε(xj ))
+h<N − 1
+0
+∑
+j
+m(Bε(xi))
+∫
+M
+h ≤
+∫
+M
+h
+which is a contradiction. Let us ﬁx εsuch that c1ε<δ0 and {Bε(xi)} a cover with
+the above property.
+It is a standard consequence of topological mixing (or transitiveness) and the
+Anosov property that there is a Lεsuch that any piece of stable manifold of (inner)
+diameterLεis at distance less than εfrom any point of M. Let us ﬁx n such that
+λn
+−δ >2Lε. We write
+∫
+W s
+δ (x)
+h =
+∫
+T − nW s
+δ (x)
+h ◦Tn|det(DTn|Es )|
+≥ λ−nds
++
+∫
+T − nW s
+δ (x)
+h ◦Tn.
+Since h ◦Tn is positive, we can choose Bε(xi) in the cover such that
+(4.4) 1
+m(Bε(xi))
+∫
+Bε(xi)
+h ◦Tn ≥ 1
+N0
+∫
+M
+h ◦Tn.
+For the inner diameter of T −nWs
+δ(x) is larger than 2 Lε, there exists a piece
+Ws
+c1ε(z) ⊂ T −nWs
+δ(x) of inner diameter c1ε, centered on a point z ∈Wu
+ε(xi). Re-
+member that our choice of c1 is such thatψ− 1
+z (B2ε(z)) ⊂ Cc1ε(z) := ψ− 1
+z (Wu
+c1ε(z))×
+ψ− 1
+z (Ws
+c1ε(z)). Accordingly, remembering (4.3) and (4.4),
+∫
+W s
+δ (x)
+h ≥ λ−nds
++
+∫
+W s
+c1ε(z)
+h ◦Tn ≥ λ−nds
++
+∫
+B2ε(z)
+h ◦Tn
+≥ const
+∫
+Bε(xi)
+h ◦Tn
+≥ const
+∫
+M
+h.
+Both estimates hold in particular for h = 1 and hence for Zδ. So the ratios
+deﬁning Aδh are uniformly bounded.
+□
+Remark 4.1. Note that the only dynamical property used in Lemma 4.1 (apart
+from the existence and regularity of the stable and unstable manifolds) is the tran-
+sitiveness.
+For the purposes of the next section it is necessary to deﬁne an
+averaging operator that preserves regularity along the unstable manifold. This is
+the case for the operator Aδonly if the diﬀerence between λ− andλ+ is suﬃciently
+small.7 To deal with the general case it is necessary to deﬁne a diﬀerent (more
+local) average. The deﬁnition of such an operator and its properties are the focus
+of the rest of the section.
+7There are two sources of trouble. On the one hand, if the foliation is only H¨ older, then the
+image, under the holonomy, of a ball, in the unstable manifold, it is not a ball anymore. We know
+how to handle this mismatch only if the diﬀerence between λ+ and λ− is small enough. On the
+other hand, if y ∈W s
+δ (x), then the stable distance, measured along the holonomy, between W u
+δ (x)
+and W u
+δ (y) can be of order d(x,y )β , where βdepends also on λ−λ−1
++ and can be < 1.
+
+=== PDF PAGE 10 ===
+10 XA VIER BRESSAUD AND CARLANGELO LIVERANI
+Pick any ¯x ∈ M and consider
+(4.5) R =
+⋃
+z∈W u
+δ (¯x)
+Ws
+δ(z)(z).
+Where const − 1δ≤ δ(z) ≤ const δ, for some constant independent of ¯ x, and∫
+ψ− 1
+x (W s
+δ(z)(z))dξ=δds .
+By constructionR is foliated by stable manifolds and, provided δis small enough,
+there exists c∗ ∈ (0, 1) such that
+Bc∗δ(¯x) ⊂ R ⊂ Bc− 1
+∗ δ(¯x) ⊂ Bδ0(¯x).
+Next, consider theσ-algebra F associated to the partition {{Ws
+δ(z)(z)}z∈W u
+δ (¯x),R c}.
+Finally, choose a smooth function Φ such that
+Φ ≥ 0;
+∫
+M
+Φ = 1; supp Φ ⊂ Bc∗δ(¯x).
+Deﬁne
+(4.6) AΦf (x) = Φ( x)E(Φf | F)(x),
+where E( · | F) denotes the conditional expectation given F, with respect to the
+probability measure m. Notice that, using the local coordinates around ¯ x intro-
+duced in section 4.2, we can write a nice version of this conditional expectation:
+(4.7) AΦf (ψ¯x(ξ,η)) = Φ( ψ¯x(ξ,η))
+∫
+{∥ξ′∥≤δ}
+(Φf ) ◦ψ¯x(ξ′,η)) ρ¯x(ξ′,η)
+ρ¯x(ξ,η)δds
+dξ′.
+In the following, we shall omit the ψ¯x if no confusion arises. Clearly, if f has
+support disjoint from R, then AΦf = 0. Other instrumental properties of AΦ are
+summarized by the
+following Lemma
+Lemma 4.2. Assumeν≤ µτ
+− , so that τ≥ α+, then, the following statements hold:
+• E(gAΦf ) = E(f AΦg);
+• there exists ε1 =ε1(a,δ) ∈ R such that, for all f,g ∈ Cu(a),
+∥AΦf ∥∞ ≤ ε− 1
+1
+∫
+M
+f and
+∫
+M
+gAΦf ≥ ε1
+∫
+M
+f
+∫
+M
+g.
+• there exists κ1 =κ1(a,δ)> 0 such that, for
+all f ∈ Cu(a),
+|AΦf |σ≤ κ1
+∫
+M
+f ;
+Proof. The ﬁrst statement follows directly by the properties of the conditional
+expectation. The second assertion follows from Lemma 4.1.
+In fact, formula (4.7) shows that AΦ is constructed via stable averages; thus the
+same arguments as in Lemma 4.1 can be used to obtain upper and lower bounds
+for such averages (formulae (4.2) and (4.3)).
+For the last part of the lemma we must compute
+Φ(x)E(Φf |F)(x) − Φ(y)E(Φf |F)(y).
+
+=== PDF PAGE 11 ===
+ANOSOV DIFFEOMORPHISMS AND COUPLING. 11
+This is most easily done by using in R the coordinates introduced just before
+Proposition 4.2. Let ( ξ1,η1) be the coordinates of x and (ξ2,η2) the coordinates of
+y. Thus we have
+|Φ(x)E(Φf |F)(x) − Φ(y)E(Φf |F)(y)| ≤const s(x,y )Φ(y)E(Φf |F)(y)
++Φ(x)
+∫
+{∥ξ∥≤δ}|Φ(ξ,η1)f (ξ,η1)ρ¯x(ξ,η1) − Φ(ξ,η2)f (ξ,η2)ρ¯x(ξ,η2)|dξ.
+But, if z =ψ(ξ,η1) and w =ψ(ξ,η2),
+|Φfρ¯x(z) − Φfρ¯x(w)| ≤ || Φ ||∞ const (as(z,w ) +cd(z,w )τ)fρ¯x(z)
++fρ¯x(w)|Φ |σs(z,w )
+≤ const (fρ¯x(z) +fρ¯x(w))s(z,w ).
+We can now conclude since, by the third statement of Lemma 3.1, we can control
+the distance of the two stable manifolds. The integral
+∫
+Mf appears by Lemma 4.1.
+□
+Remark 4.2. Concerning possible attempts to generalize the present scheme: note
+that the last two points of Lemma 4.2 are the only points in our construction where
+the properties of the holonomies (and their Jacobians) play a role.
+5. Regularity properties of the densities
+5.1. Losing regularity. The following lemma gives an estimate on the regularity
+of g(1 − εAΦh) given that g and h are in Cu(a) and εis small enough.
+Lemma 5.1. Choose a real number a0. For all g and h in Cu(a), with
+∫
+Mh = 1,
+(5.1) g(1 − εAΦh) ∈ Cu(a +a0)
+providedε<min{ε1, a0κ− 1
+1 (1 − εε− 1
+1 )}.
+Proof. It follows directly by Lemma 4.2. We have
+g(y)(1 − εAΦh(y)) ≤ g(x)eas(x,y )(1 − εAΦh(x))(1 +εAΦh(x) − AΦh(y)
+1 − εAΦh(x) )
+≤ g(x)(1 − εAΦh(x))eas(x,y )(1 +ε |AΦh|σ
+1 − ε∥AΦh∥∞
+s(x,y ))
+≤ g(x)(1 − εAΦh(x))eas(x,y )(1 +ε κ1
+1 − εε− 1
+1
+s(x,y ))
+≤ g(x)(1 − εAΦh(x))e
+(a+ε κ1
+1− εε− 1
+1
+)s(x,y )
+.
+□
+5.2. Recovering regularity . The diﬀeomorphism T has regular derivatives. Re-
+call that D is the distortion constant (crf. (2.1)).
+The Perron-Frobenius operator is given by 8
+Lg(x) = |det(DxT − 1)|g ◦T − 1(x).
+It satisﬁes,
+8Remember that if the measure µon M is absolutely continuous with respect to the Riemann-
+ian volumem with densityg, then the evolved measure T∗µ, deﬁned as usual by T∗µ(f ) = µ(f ◦T ),
+is absolutely continuous with respect to m as well and its density is given by Lg.
+
+=== PDF PAGE 12 ===
+12 XA VIER BRESSAUD AND CARLANGELO LIVERANI
+Lemma 5.2. Assume ν≤ µα
+− , so that α≥ α+, then
+(5.2) L(Cu(a)) ⊂ Cu(ν− 1a +c0D)
+Proof. Clearly, for all g ∈ Cu(a), Lg >0. For x ∈ M and y ∈Wu(x), d(x,y ) ≤ δ,
+by Lemma 3.1,
+Lg(x) = |det(DxT − 1)|g(T − 1x)
+≤ | det(DyT − 1)|eDd(x,y )α
+g(T − 1y)eas(T − 1x,T − 1y)
+≤ L g(y)e(aν− 1+c0D)s(x,y ).
+□
+6. Coupling
+We ﬁx aδ >0 small enough and ν≤ µτ
+− , whereτis given by Proposition 4.1. We
+choose a0 and set a = ν− 1a0+c0D
+1−ν− 1 . Let g and h be in Cu(a) with ||g||1 = ||h||1 = 1.
+We consider two independent random variablesX andY , on some probability space
+(Ω, F, P), valued in M and distributed according to, respectively, gdm and hdm.
+That is, P(X ∈A) =
+∫
+Ag(x)dm(x) and P(Y ∈A) =
+∫
+Ah(x)dm(x).
+We set θ >max {λ− 1
+− , 1 − ε2
+1, 1 − a0ε2
+1
+a0+κ1ε1
+}.9 Our key estimate consists in the
+following statement.
+Proposition 6.1. There exists a constant C such that, for all n ≥ 0, one can
+construct a coupling ( ˜Xn, ˜Yn) of TnX and TnY such that
+E
+[
+ds
+δ( ˜Xn, ˜Yn)
+]
+≤ Cθn,
+whereds
+δ(x,y ) = min {ds(x,y ),δ}.
+Proof. Given two density functions h,g ∈ Cu(a) the basic idea to construct a cou-
+pling between the corresponding two random variables (measures) is to introduce
+the auxiliary random variable τon Ω with values in {0, 1}, independent of X and
+Y , having the distribution 10
+P(τ= 0) = ε,
+where ε= 1 − θ. We set,
+(6.1) δΦ,h,g (A × B) =
+∫
+MχAgAΦ (hχB)∫
+MgAΦh .
+9Since the choice of a0 is arbitrary, the last term it is not harmful. It should also be remarked
+that the second term can be improved. To do so consider n disjoint setRi in which to couple (rather
+than just one set R). Each set will have associated its operator AΦ i . Deﬁne then AΦ = ∑
+i AΦ i .
+Clearly
+∫
+AΦhg ≥ nε1
+∫
+g while AΦh ≤ ε−1
+1
+∫
+h. Following the proof of Proposition 6.1 yields that
+1 −ε2
+1, can be substituted with 1 −nε2
+1. We did not pursue this possibility because, most likely,
+the estimate we are obtaining are anyhow not optimal and if one wants to improve the bounds
+realistically, then more work is certainly needed.
+10Intuitively if τ(ω) is zero then the two points X(ω) and Y (ω) will be coupled and if it is one
+then they are left independent. For example one can imagine that a coin (loaded accordingly to
+the distribution {ε,1 −ε}) is tossed in order to decide if to couple the points or not.
+
+=== PDF PAGE 13 ===
+ANOSOV DIFFEOMORPHISMS AND COUPLING. 13
+We can then deﬁne the coupling ( ˆX, ˆY ) by
+P( ˆX ∈A; ˆY ∈B |τ= 0) = δΦ,h,g (A × B)
+P( ˆX ∈A; ˆY ∈B |τ= 1) = (1 − ε)− 2[P(X ∈A) − εP( ˆX ∈A |τ= 0)]
+× [P(Y ∈B) − εP( ˆY ∈B |τ= 0)].
+Note that the distribution of ( ˆX, ˆY ), conditioned to the absence of coupling
+(that is to {τ= 1 }), is a product measure absolutely continuous with respect to
+the Riemannian volume. A direct computation shows that the above is indeed a
+coupling (i.e. P( ˆX ∈ A) = P(X ∈ A) and P( ˆY ∈ B) = P(Y ∈ B)). It is now
+natural to deﬁne
+˜X0 =X; ˜Y0 =Y ˜X1 =T ˆX; ˜Y1 =T ˆY.
+An obvious computation shows that,
+P( ˜X1 ∈A; ˜Y1 ∈B |τ= 1) =
+∫
+A
+˜gdm
+∫
+B
+˜hdm,
+where,
+˜g = (1 − ε)− 1L
+(
+g(1 − ε∫
+MgAΦh AΦh)
+)
+,
+and,
+˜h = (1 − ε)− 1L
+(
+h(1 − ε∫
+MhAΦg AΦg)
+)
+.
+This is consistent, since, according to Lemma 4.2,
+∫
+M
+hAΦg =
+∫
+M
+gAΦh ≥ ε1,
+and,
+1 − ε AΦh∫
+MgAΦh ≥ 1 − ε
+ε1
+AΦh ≥ 1 − ε
+ε1
+ε− 1
+1 > 0.
+Lemma 5.1 and 5.2 together with our choice of a andεguarantee that ˜g, ˜h ∈ Cu(a).
+Obviously, ∥˜g∥1 = ∥˜h∥1 = 1.
+The result of what we just said is that ( ˜X1, ˜Y1) is a coupling of ( TX, TY ). In
+addition, E( ˜X1 |τ= 1) and E( ˜Y1 |τ= 1) are independent random variables with
+absolutely continuous distributions in Cu(a). This is exactly the original situation
+for the variables ( X,Y ). It is then clear the possibility to perform the same cou-
+pling again. This leads to the following inductive procedure. We start with the
+independent coupling of the original random variables. Then, given a coupling
+( ˜Xn, ˜Yn) of TnX and TnY , we construct a new coupling ( ˆXn, ˆYn). If τn− 1 was
+equal to 0, meaning that points were coupled, we keep them coupled, while if τn− 1
+was equal to 1, we use a random variable τn, deﬁned independently of what has
+been constructed up to this stage, to deﬁne the law of ( ˆXn, ˆYn); then we obtain
+
+=== PDF PAGE 14 ===
+14 XA VIER BRESSAUD AND CARLANGELO LIVERANI
+( ˜Xn+1, ˜Yn+1) by applying T :
+τ− 1 = 1; ˜X0 =X; ˜Y0 =Y
+P( ˜Xn ∈A, ˜Yn ∈B |τn− 1 = 1) =
+∫
+Ahn(x)m(dx)
+∫
+Bgn(x)m(dx)
+P(τn = 0 |τn− 1 = 0) = 1
+P(τn = 0 |τn− 1 = 1) = ε
+P( ˆXn ∈A; ˆYn ∈B |τn− 1 = 0) = P( ˜Xn ∈A; ˜Yn ∈B |τn− 1 = 0)
+P( ˆXn ∈A; ˆYn ∈B |τn = 0; τn− 1 = 1) = δΦ,h n,g n(A × B)
+P( ˆXn ∈A; ˆYn ∈B |τn = 1) = (1 − ε)− 2[P( ˜Xn ∈A |τn− 1 = 1)
+−εP( ˆXn ∈A |τn = 0; τn− 1 = 1)]
+× [P( ˜Yn ∈B |τn− 1 = 1) − εP( ˆYn ∈B |τn = 0; τn− 1 = 1)]
+˜Xn+1 =T ˆXn; ˜Yn+1 =T ˆYn.
+The event {τn = 1} corresponds to the points that have not yet been coupled at
+time n; their measure is easily computed
+P(τn = 1) = (1 − ε)n.
+To compute the expectation it is useful to introduce the time of coupling ¯ τ=∑ ∞
+n=0τn. Clearly the above computation shows that ¯τis almost everywhere ﬁnite.
+Thus
+E[ds
+δ( ˜Xn, ˜Yn)] = ∑ ∞
+k=0 E[ds
+δ( ˜Xn, ˜Yn) |¯τ=k]P(τk+1 = 0; τk = 1)
+= ∑ n
+k=0 E[ds
+δ(Tn−k ˜Xk, Tn−k ˜Yk) |¯τ=k]P(τk+1 = 0; τk = 1)
++ ∑ ∞
+k=n+1 E[ds
+δ( ˜Xn, ˜Yn) |¯τ=k]P(τk+1 = 0; τk = 1)
+≤ ∑ n
+k=0λ−n+k
+− E[ds
+δ( ˜Xk, ˜Yk) |¯τ=k](1 − ε)k + ∑ ∞
+k=n+1δ(1 − ε)k
+≤ const θn
+□
+Remark 6.1. In alternative, it is possible to construct a coupling ( ˜X, ˜Y ) of X and
+Y such that for all n ≥ 0,
+E
+[
+ds
+δ(Tn ˜X,T n ˜Y )
+]
+≤ const θn.
+The idea is to introduce a random variable ¯ τwith geometrical law of parameter
+1 − εand set,
+P( ˜X ∈A; ˜Y ∈B |¯τ=n) = δΦ,h n,g n(TnA × TnB).
+
+=== PDF PAGE 15 ===
+ANOSOV DIFFEOMORPHISMS AND COUPLING. 15
+It is a coupling since,
+P( ˜X ∈A) =
+∑
+n≥ 0
+P( ˜X ∈A |¯τ=n)P(¯τ=n)
+=
+∑
+n≥ 0
+δΦ,h n,g n(TnA × M )ε(1 − ε)n
+=
+∑
+n≥ 0
+(1 − ε)n ε∫
+MgnAΦhn
+∫
+T nA
+gnAΦhn
+=
+∑
+n≥ 0
+(1 − ε)n
+(∫
+T nA
+gn − (1 − ε)
+∫
+T n+1A
+gn+1
+)
+=
+∫
+A
+g0 = P(X ∈A),
+and its properties follow from previous results.
+7. Proofs of the main statements
+7.1. Proof of Theorem 2.1.
+Proof. Let g and h be in Cu(a) such that
+∫
+Mgdm = 1,
+∫
+Mhdm = 1. We consider
+two random variables X andY valued in M distributed according to, respectively,
+gdm and hdm. Clearly,
+(7.1) E[f (TnX)] =
+∫
+M
+f ◦Tngdm.
+Hence
+(7.2)
+∫
+M
+f ◦Tngdm −
+∫
+M
+f ◦Tnhdm = E[f (TnX)] − E[f (TnY )].
+For all coupling ( ˜Xn, ˜Yn) of TnX and TnY ,
+we have,
+(7.3)
+∫
+M
+f ◦Tngdm −
+∫
+M
+f ◦Tnhdm = E[f ( ˜Xn) − f ( ˜Yn)].
+If f ∈ Cs, we have,
+(7.4)
+⏐⏐∫
+Mf ◦Tngdm −
+∫
+Mf ◦Tnhdm
+⏐⏐ ≤ ∥f ∥sE[ds
+δ( ˜Xn, ˜Yn)βs ]
+≤ ∥f ∥sE[ds
+δ( ˜Xn, ˜Yn)]βs.
+This together with Proposition 6.1 concludes the proof of Theorem 2.1 in the special
+case g,h ∈ Cu(a). The general case is obtained by noticing that each function g
+with ∥g∥u < ∞ can be seen as the diﬀerence of two positive such functions. Then
+we can restrict to the case g ≥ 0 and, for each b> 0, we have
+g(x) +b
+g(y) +b ≤ g(y) +Hσ(g)s(x,y ) +b
+g(y) +b ≤ |g|σs(x,y )
+b + 1 ≤ e
+|g|σ s(x,y )
+b
+that is g +b ∈ Cu(a) provided we choose
+b =a− 1|g|σ.
+
+=== PDF PAGE 16 ===
+16 XA VIER BRESSAUD AND CARLANGELO LIVERANI
+In conclusion, if b =a− 1 max{|g|σ, |h|σ} and ∥g∥1 = ∥h∥1 holds
+|
+∫
+Mf ◦Tng −
+∫
+Mf ◦Tnh| = |
+∫
+Mf ◦Tn g+b
+∥g∥1+b −
+∫
+Mf ◦Tn h+b
+∥h∥1+b |(∥g∥1 +b)
+≤ const ∥f ∥s max{∥h∥u, ∥g∥u}θnβs.
+□
+Remark 7.1. The d–distance (associated to a distance d) between two random
+variablesX and
+Y is the inﬁmum over all couplings ( ˜X, ˜Y ) of these random variables of E[d( ˜X, ˜Y )].
+It is a general fact that the speed of decay of correlations can be expressed in terms
+of the d–distance (associated to the distance ds
+δ):
+(7.5)
+⏐⏐⏐⏐
+∫
+M
+f ◦Tngdµ−
+∫
+M
+fdµ
+∫
+M
+gdµ
+⏐⏐⏐⏐≤ ∥f ∥sd(TnX,T nY )βs.
+7.2. Proof of Corollary 2.1.
+Proof. For simplicity, we write the proof for the case βs = 1. We start by proving
+a weak convergence result to identify µ.
+Let h ∈ Cu(a), ∥h∥1 = 1 and set dµ0 =hdm andµn =Tn∗µ0. We want to show
+that the sequence {µn} is weakly convergent.
+Let f ∈ Cs then, by Theorem 2.1, for each n,m ≥ n0,
+|µn(f ) − µm(f )|=
+⏐⏐⏐⏐
+∫
+M
+Ln−n0hf ◦Tn0 −
+∫
+M
+Lm−n0hf ◦Tn0
+⏐⏐⏐⏐≤ constθn−n0∥f ∥s,
+since Lkh ∈ Cu(a). Noticing that Cs ∩ C (0)(M, R) is dense in C(0)(M, R), by the
+usual 3–εargument it follows that {µn} is a weakly Cauchy sequence from which
+the claim follows.
+In addition, an obvious modiﬁcation of the above argument shows that the limit
+measure µdoes not depend on the function h. Clearly µis an invariant measure.
+The next step is to prove that µsatisﬁes (2.7).
+Givenh ∈ C (α)(M, R), let us apply Theorem 2.1 to the two functions h1 =hLk1
+and h2 = Lk1
+∫
+MhLk1dm, then for each f ∈ Cs holds
+(7.6)
+⏐⏐⏐⏐
+∫
+M
+h1f ◦Tn −
+∫
+M
+h2f ◦Tn
+⏐⏐⏐⏐≤ const ∥f ∥s max{∥h1∥u, ∥h2∥u}θn
+but ∥h2∥u ≤ const and ∥h1∥u ≤ const ( ∥h∥u + 1). We can then take the limit for
+k → ∞ in (7.6) and the result follows.
+By a standard approximation argument (2.7) implies that µis mixing, and hence
+ergodic.
+Before we turn to the conclusion of the proof, it is very relevant to notice the
+following stronger convergence result.
+Lemma 7.1. If h ∈ C (α)(M, R) and dµ0 =hdm, µn =Tn∗µ0, then
+lim
+n→∞
+µn(g) = µ(g) ∀g ∈ Cs.
+Proof. We know already that the lim n→∞ µn(g) exists, what is not obvious is that
+it equals µ(g), since g may very well not be a continuous function. To prove this
+the idea is to approximate g by continuous functions in some not too weak sense,
+the problem is that we need some control on the ∥ · ∥s of the approximation. This
+can be achieved by using the average operator Aδ, let us see how.
+
+=== PDF PAGE 17 ===
+ANOSOV DIFFEOMORPHISMS AND COUPLING. 17
+For each δ >0, νδ(f ) = µ(Aδf ) deﬁnes a Borel measure, moreover, if f ∈
+C(0)(M, R) then Aδf ∈ C (0)(M, R). By Lusin’s theorem, for each g ∈ Cs andε>0
+there exists gε∈ C (0)(M, R) and a closed set Kδ⊂ M such that g|Kδ = gε|Kδ,
+∥g∥∞ = ∥gε∥∞ and (m +νδ)(Kc
+δ) ≤ ε.
+Let gδ,ε= Aδgε, then ∥gδ,ε∥s ≤ (δ−βs + 1)∥g∥∞ and
+∥gδ,ε◦Tn − g ◦Tn∥1 ≤ ∥(Aδgε− Aδg) ◦Tn)∥1 + ∥Aδg ◦Tn − g ◦Tn∥∞
+≤ Λn∥Aδ(gε− g)∥1 + ∥g∥sδβs
+≤ const (Λ nε+δβs ),
+where Λ = |det(DT − 1)|∞ . Accordingly,
+|µ(g) − µn(g)| ≤ |µ(Aδg) − µn(g)|+δβs ∥g∥s
+≤ |µ(gδ,ε) − µn(g)|+ (ε+δβs )∥g∥s
+≤ |µn(gδ,ε) − µn(g)|+ O((δ−βsθn +ε+δβs )∥g∥s)
+≤ O (Λnε+δβs +δ−βsθn).
+Thus, by choosing ﬁrst δsmall, then n suﬃciently large and ﬁnally εsuﬃciently
+small, the result follows. □
+We are now in position to conclude the argument. Let
+A =
+{
+x ∈ M
+⏐⏐⏐⏐⏐ lim
+n→∞
+1
+n
+n− 1∑
+i=0
+δT ix =µ
+}
+.
+Then, clearly T − 1A =A and A is not empty. In fact, for f ∈ C (0)(M, R), the set
+Af for which
+lim
+n→∞
+1
+n
+n− 1∑
+i=0
+δT ix(f ) = lim
+n→∞
+1
+n
+n− 1∑
+i=0
+f (Tix) = µ(f )
+is measurable and µ(Af ) = 1 by Birkhoﬀ Theorem. This, plus the separability of
+C(0)(M, R), implies A measurable and µ(A) = 1. 11 Finally, notice that if x ∈ A
+then Ws(x) ⊂ A. Accordingly, χA ∈ Cs hence, by Lemma 7.1,
+m(A) = m(χA ◦Tn) = lim
+n→∞
+m(χA ◦Tn) = µ(A) = 1.
+□
+8. Appendix
+Proof of Lemma 3.1. The ﬁrst statement is obvious:
+s(Tx,Ty ) =
+∞∑
+n=1
+ν−nϕ(Tn+1x,T n+1y) = νs(x,y ).
+To prove the next statement, let us consider x ∈Wu
+δ(y), then
+(8.1) µn
++d(x,y ) ≥ d(Tnx,T ny) ≥ µn
+−d(x,y ).
+Next, let nδ∈ N be deﬁned as
+nδ= inf {n ∈ N |d(Tnx,T ny)>δ}
+11Indeed, if {fn} ⊂C(0)(M, R) is dense, then A = ⋂
+n∈N
+Afn .
+
+=== PDF PAGE 18 ===
+18 XA VIER BRESSAUD AND CARLANGELO LIVERANI
+and set n− =nδand n+ =n2δ. Accordingly,
+(8.2) s(x,y ) ≤
+∞∑
+n=n−
+ν−n = ν−n−
+1 − ν− 1
+and
+(8.3) s(x,y ) ≥ ν−n+ϕ(d(Tn+x,T n+y)) = ν−n+.
+On the other hand, from (8.1) follows, if δis
+small enough,
+n− ≥
+ln δ
+d(x,y )
+lnµ+
+and n+ ≤
+ln 2δ
+d(x,y )
+lnµ−
+from which the result follows with α− = lnν
+lnµ+
+and α+ = lnν
+lnµ−
+.
+To prove the third statement of the Lemma, ﬁrst notice that the triangle in-
+equality yields,
+d(Tnx,T ny) − 2λ−n
+−
+δ
+4 ≤ d(Tnz, Tnw) ≤ d(Tnx,T ny) + 2λ−n
+−
+δ
+4.
+Then notice that if n∗ =n δ
+2
+, then n+ − n∗ is bounded. So that, since 2 λ−n
+−
+δ
+4 < δ
+2 ,
+s(z,w ) ≤
+∑
+n≥ 0
+ν−nϕ
+(
+d(Tnx,T ny) + 2λ−n
+−
+δ
+4
+)
+≤
+∑
+n≥n∗
+ν−nϕ
+(
+d(Tnx,T ny) + 2λ−n
+−
+δ
+4
+)
+≤
+∑
+n≥n∗
+ν−nϕ(d(Tnx,T ny)) + ∥ϕ′∥∞ν−nλ−n
+−
+δ
+2
+≤ s(x,y ) + const νn+−n∗ν−n+
+≤ c0s(x,y ),
+where we have used (8.3) to conclude. □
+Proof of Proposition 4.2. To prove Proposition 4.2, we start by noticing that ψs
+x0
+and ψu
+x0 can be extended to a C(1+α) system of local coordinates on the manifold:
+˜ψx0 : Rds × Rdu → Bδ(x0) that maps Ws
+δ(x0) andWu
+δ(x0) onto straight subspaces of
+Rd (but does not, a priori send the foliation into a foliation in parallel subspaces). 12
+The image of the Riemannian volume through this map is absolutely continuous
+with respect to the Lebesgue measure on Rd and its Jacobian is α–H¨ older. To sim-
+plify, we shall write again m for this measure as if it was exactly the Riemannian
+12Consider any chart ϕ: Rd → Bδ(x) ⊂ M not too far from an isometry (for example the
+chart provided by the exponential map). Clearly, provided that δis chosen small enough ( δ≤ δ0
+independent on x0), there exists M0 ∈ R+, independent on x0, such that ∥Dϕ∥∞ + ∥Dϕ−1∥∞ ≤
+M0. Then we can deﬁne
+˜ψx0 (ξ,η) := ϕ(ϕ−1 ◦ψs
+x0 (ξ) +ϕ−1 ◦ψu
+x0 (η)).
+Since D0ψs
+x0 and D0ψu
+x0 are transversal by the Anosov property and ψs
+x0 , ψu
+x0 are C(1+α ), it
+follows that Dξψs
+x0 , Dηψu
+x0 are uniformly transversal, provided δ≤ δ0 for some δ0 independent
+on x0. Thus ˜ψx0 , is a change of coordinates and there exists M1 ∈ R+, independent on x0,
+such that ∥D ˜ψx0 ∥∞ + ∥˜ψ−1
+x0 ∥∞ ≤ M1 (we have used the fact that Dξψs
+x0 , Dηψu
+x0 are uniformly
+bounded, e.g. [8]).
+
+=== PDF PAGE 19 ===
+ANOSOV DIFFEOMORPHISMS AND COUPLING. 19
+volume (that is we confuse m with its image ˜ψ− 1∗m in the coordinates) and use
+ms and mu to denote the restrictions of m to subspaces of dimension ds and du.
+Consequently, we just need to prove absolute continuity and regularity of the Jaco-
+bian for the map Ψ = ˜ψ− 1
+x0 ◦ψx0 : Rd → Rd. It means that we (locally) identify the
+manifold M with Rd, the stable and unstable manifold around x0 being straight
+subspaces. Remark that Ψ( ξ,0) = (ξ,0) and Ψ(0 ,η) = (0,η) by construction (see
+Figure 1 for a pictorical representation of the action of the map Ψ).
+-
+Ψ
+x0 x0
+Wu(x0) +
+Ws(x0)
+   
+Figure 1. The action of Ψ (all curves on the right are stable and
+unstable manifolds)
+Our task is then to investigate the regularity of Ψ. That is we want to show
+that Ψ − 1∗m is absolutely continuous with respect to the Lebesgue measure and we
+must compute dΨ − 1∗m
+dmL
+.
+Let us introduce two families of sets.
+Sr(x) = {Wu
+δ(y) ∩Ws
+δ(z) |y ∈Ws
+δ(x); z ∈Wu
+δ(x); ∥x − y∥ ≤r; ∥x − z∥ ≤r},
+Pr(x) = {x +v +w |v ∈Es(x); w ∈Eu(x); ||v|| ≤r; ||w|| ≤r},
+where the tangent space TxM is isometrically identiﬁed with Rd. We shall see that
+it is possible to compare the measure of these sets with the measure of their images
+Ψ(Sr(x)). The Sr, we will refer to as pseudo-rectangles, are constructed on pieces
+of stable and unstable manifolds which are close to balls (they are intersections of
+balls in the ambient space and the manifolds)
+while the Pr, parallelograms, are bounded by aﬃne “approximations” of these
+pieces of manifolds which are real balls of radius r in Rds and Rdu . Let us denote
+Ps
+r (x) = {x +v |v ∈ Es(x); ||v|| ≤r} = {x +Es(x)} ∩Br(x) and Pu
+r (x) =
+{x +w |w ∈Eu(x); ||w|| ≤r}.
+A ﬁrst Lemma shows that the measure of the Sr is well approximated by the
+measure of the parallelograms Pr, which we know how to compute in terms of the
+measure of their faces and the angle between them.
+Lemma 8.1. There exists c ∈ R+ such that the following properties hold:
+(1) Pr(1−crτ2 )(x) ⊂ Sr(x) ⊂ Pr(1+crτ2 )(x) .
+(2) There exists a τ-H¨ older functionθ: M → R+ such that
+m(Sr(x)) = (1 + O(rτ2
+))θ(x)ms(Ps
+r (x))mu(Pu
+r (x)),
+
+=== PDF PAGE 20 ===
+20 XA VIER BRESSAUD AND CARLANGELO LIVERANI
+Proof. To investigate the shape of the setsSr(x) it is convenient to introduce normal
+coordinates with respect to the the base point x ∈ Rd. A stable manifold, in
+the neighborhood of x, can be represented by {x +ξ+A(ξ),ξ∈ Es(x)} where
+A :Es(x) → Eu(x) is a smooth map. The map A associated to Ws(x) has clearly
+the propertyA(0) = 0 and D0A = 0. More generally, for z ∈x+Eu(x), the manifold
+Ws(z) is uniquely represented by the map Az as {z +ξ+Az(ξ),ξ∈ Es(x)}. By
+construction Az(0) = 0 while Proposition 4.1 (the H¨ older continuity of the stable
+distribution) implies
+∥DξAz∥ ≤ const ∥z +ξ+Az(ξ)∥τ,
+where the constant is independent on x. Proposition 4.1 also shows that, to repre-
+sent points in Sr(x) we need only to consider |z| ≤r and ∥ξ∥<r τ.
+Forv ∈Es(x), ∥v∥ = 1 we deﬁne
+h(t) = ∥Az(vt)∥.
+We have
+⏐⏐⏐⏐
+dh
+dt
+⏐⏐⏐⏐=
+⏐⏐⏐⏐
+(Az(tv),D tvAzv)
+∥Az(tv)∥
+⏐⏐⏐⏐≤ ∥DtvAz∥ ≤ const ∥z +vt +Az(tv)∥τ
+so that, if |z| ≤r,h must satisfy the following diﬀerential inequality in the domain
+|t|<r τ, { ⏐⏐dh
+dt
+⏐⏐≤ const (rτ+h(t))τ
+h(0) = 0
+Solving the above diﬀerential inequality yields
+h(t) ≤ const trτ2
++ O(t2r−τ+2τ2
+)
+We conclude that if |z| ≤r and ∥v∥<r τ, we have
+(8.4) ∥Az(v)∥ ≤ const ∥v∥rτ2
+.
+The same estimate clearly holds for unstable manifolds. The two estimates together
+immediately imply that (see Figure 2)
+Pr(1−crτ2 ) ⊂ Sr ⊂ Pr(1+crτ2 ).
+Hence m(Pr(1−crτ2 )) ≤ m(Sr) ≤ m(Pr(1+crτ2 )). But the measure of Pr can be
+expressed as
+m(Pr(x)) = const θ(x)rd
+where, the constant depends only on the dimensions, ds anddu, and where, Propo-
+sition 4.1 shows that, if {vi} is an orthonormal base for Es(x) and {wi} forEu(x),
+then
+θ(x) = |det(v1...v dsw1...w du)|
+is τ-Holder. Finally,
+m(Sr(x)) = m(Pr(x))(1 + O(rτ2
+)).
+□
+
+=== PDF PAGE 21 ===
+ANOSOV DIFFEOMORPHISMS AND COUPLING. 21
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+x
+r
+r
+Es(z) -
+Ws(z)
+Eu(x)
+r(1+O(rτ ))
+ 
+r(1+O(rτ2
+))
+@@ I
+Es(x)
+Eu(y) PP q
+Ws(y) HHH j
+Figure 2. Foliation and its linear approximations ( z = (r, 0), y = (0,r ))
+The next lemma shows that the Lebesgue measure of the sets
+Cr(x) = Ψ − 1(Sr(Ψ(x)))
+can be compared to the measure of the corresponding parallelogram Pr(Ψ(x)) and
+hence to the measure of Sr(Ψ(x)) = Ψ( Cr(x)).
+Lemma 8.2. There exists a τ-H¨ older function˜ρx0 such that
+mL(Cr(Ψ − 1(x)))
+m(Sr(x)) = ˜ρ− 1
+x0 (x)(1 + O(rτ2
+)).
+Proof. Let x = Ψ(ξ,η). The sets Cr(ξ,η) are product sets.
+Cr(ξ,η) = Cs
+r (ξ,η) × Cu
+r (ξ,η),
+where Cs
+r (ξ,η) = {ξ′∈ Rds |Ψ(ξ′,η) ∈ Sr(x)} (that is Ψ − 1(Ws(x) ∩Sr(x)) seen
+as a subset of Rds ) and Cu
+r (x) is similarly deﬁned. Since Ψ is the identity when
+restricted to the coordinate axis, their measure is exactly
+mL(Cr) = mL(Cs
+r )mL(Cu
+r )
+=ms(Ψ(Cs
+r × {0}))mu(Ψ( {0} ×Cu
+r )).
+To compare this measure to the measure of Sr, we shall compare it to the measure
+of the parallelogram Pr. The images by Ψ of the projection of the faces of Cr on the
+coordinate axes are approximately images of the faces of Pr through the holonomy
+map φu : {x +Es(x)} → Ws(Ψ(0,η)). More precisely, the estimate (8.4) shows
+that, if r is small enough,
+φu(Ps
+r(1−crτ2 )) ⊂ {Ψ(0,η′),η′∈Cs
+r } ⊂φu(Ps
+r(1+crτ2 )).
+
+=== PDF PAGE 22 ===
+22 XA VIER BRESSAUD AND CARLANGELO LIVERANI
+The holonomy map has a Jacobian ˜Ju. This Jacobian is not exactly the one deﬁned
+in Proposition 4.1 because of the change of coordinate ˜ψx0, but together with the
+regularity of ˜ψx0, Proposition 4.1 proves that it is τ-H¨ older. We can thus compute
+the measures by doing a change of variable:
+mL(Cs
+r ) = ms({Ψ(0,η′),η′∈Cs
+r })
+=
+∫
+φ− 1
+u ({Ψ(0,η′),η′∈Cs
+r })
+˜Ju
+= ˜Ju(x)ms(φ− 1
+u ({Ψ(0,η′),η′∈Cs
+r }))(1 + O(rτ))
+= ˜Ju(x)ms(Pr(x))(1 + O(rτ2
+)).
+Of course, the same estimate holds for the unstable part. Hence, denoting ˜Js
+the corresponding Jacobian,
+(8.5) mL(Cr(Ψ − 1(x)))
+m(Sr(x)) =
+˜Ju(x) ˜Js(x)
+θ(x) (1 + O(rτ2
+)).
+□
+We shall now use these estimates to compare the measure ¯ m = Ψ ∗m with the
+Lebesgue measure.
+Lemma 8.3. The measures ¯m and mL are equivalent.
+Proof. Let us start by proving that ¯m is absolutely continuous with respect to mL.
+This is equivalent to saying that if, for some measurable set A, ¯m(A) = 0 then
+mL(A) = 0. Since, by deﬁnition, ¯m(A) = m(Ψ(A)) this means that, for each ε>0,
+it is possible to cover the set Ψ( A) with a collections of pseudo-rectangles Sn such
+that ∑
+n
+m(Sn) ≤ ε.
+But, by Lemma 8.2, m(Sn) ≥ c− 1mL(Cn), where Sn = Ψ(Cn). Hence,
+mL(A) ≤
+∑
+n
+mL(Cn) ≤ c
+∑
+n
+m(Sn) ≤ cε
+which shows that mL(A) = 0.
+Next, let us prove that mL is absolutely continuous with respect to ¯m. To prove
+this we will show that if for a measurable set A, ¯m(A)> 0, then mL(A)> 0. We
+will argue by contradiction.
+Suppose that there exists a measurable set A such that ¯m(A)> 0 and mL(A) =
+0. Since both ¯m andmL are Borel measures they are regular. Accordingly, for each
+ε>0 there exists an open set U ⊃ A such that
+mL(U ) ≤ ε,
+and there exists a compact set K ⊂ A such that
+¯m(K) ≥ 1
+2 ¯m(A).
+Since Ψ is continuous together with its inverse, Ψ( K) is compact and Ψ( U ) is open.
+It is then easy to construct a ﬁnite disjoint collection of cubes Γ n such that Γn ⊂ U
+and
+m(∪nΓn ∩ Ψ(K)) ≥ 1
+2 ¯m(K).
+
+=== PDF PAGE 23 ===
+ANOSOV DIFFEOMORPHISMS AND COUPLING. 23
+By Lemma 8.1 it is clear that in each such cube we can ﬁt a pseudo-rectangle Sn
+such that m(Sn) ≥ cqm(Γn). Collecting the above considerations and remembering
+m(S) ≤ cmL(C) from Lemma 8.2 yields
+mL(U ) ≥ mL(∪nΨ − 1(Sn)) ≥ c− 1 ∑
+nm(Sn) ≥ c− 1cq
+∑
+nm(Γn)
+≥ cq
+2c ¯m(K) ≥ cq
+4c ¯m(A)
+which leads to the announced contradiction provided εhas been chosen small
+enough. □
+We are now in position to conclude the proof of Proposition 4.2. In eﬀects,
+the family {Sr(x)} is a family of nicely shrinking sets (in the sense of Rudin [19],
+p. 163). So we can use the Lebesgue diﬀerentiation Theorem (see, for example,
+Rudin [19], p. 166) to conclude that the Radon-Nikodym derivative of ¯ m with
+respect to Lebesgue can be computed as inverse of limit of ratios ψ∗mL(Sr(x))
+m(Sr(x)) as
+r → 0. Its value, at all points, is given by Lemma 8.2.
+The result is obtained by pulling back the Jacobian to the manifold M through
+the C (1+α) change of coordinates ˜ψx0 to ﬁnally obtain ρx0. This function inherits
+the regularity properties of ˜ψx0, ˜Js, ˜Ju and ˜ρx0. □
+References
+[1] V. Baladi Dynamical zeta functions. NATO Adv. Sci. Inst. Ser. C Math. Phys. Sci., 464,
+Kluwer Acad. Publ., Dordrecht, 1995.
+[2] R. Bowen Equilibrium states and the ergodic theory of Anosov diﬀeomorphisms, Lecture
+Notes in Mathematics, 470, Springer-Verlag, New York, Heidelberg, Berlin, (1978).
+[3] X. Bressaud, R. Fernandez, A. Galves, Speed of d-convergence for Markov approximations
+of chains with complete connections. A coupling approach, Stochastic Process. Appl., 83,
+(1999), no. 1, 127–138.
+[4] X. Bressaud, R. Fernandez, A. Galves, Decay of correlations for non-H¨ olderian dynamics. A
+coupling approach, Electron. J. Probab., 4, (1999), no. 3, 19 pp.
+[5] D. Dolgopyat, On decay of correlations in Anosov ﬂows. Annals of Mathematics (2), 147,
+(1998), no. 2, 357–390
+[6] D. Dolgopyat, Prevalence of rapid mixing in hyperbolic ﬂows. Ergodic Theory Dynam. Sys-
+tems, 18, (1998), no. 5, 1097–1114.
+[7] N. I. Chernov, Markov approximations and decay of correlations for Anosov ﬂows , Annals
+of Mathematics (2), 147, (1998), no. 2, 269–324.
+[8] A. Katok, B. Hasselblatt Introduction to the Modern Theory of Dynamical Systems , Cam-
+bridge University Press, Encyclopedia of Mathematics and its Applications 54, edited by
+G.-C.Rota, New York (1995).
+[9] G. Keller, C. Liverani Stability of the spectrum for transfer operators, Ann. Scuola Norm.
+Sup. Pisa Cl. Sci. (4), 28, (1999), no. 1, 141–152.
+[10] Holley Remarks on the FKG inequalities, Comm. Math. Phys. 36, 227–231, (1974).
+[11] T. M. Ligget Interacting particle systems , Springer-Verlag, Berlin Heidelberg New York,
+(1985).
+[12] C. Liverani, Decay of correlations , Annals of Mathematics, 142, pp. 239-301, (1995).
+[13] C. Liverani, Decay of Correlations in Piecewise Expanding maps , Journal of Statistical
+Physics, 78, 3/4, pp. 1111-1129, (1995).
+[14] C. Liverani, Flows, Random Perturbations and Rate of Mixing , Ergodic Theory and Dynam-
+ical Systems, 18, 6, pp. 1421–1446 (1998).
+[15] C. Liverani, B. Saussol, S. Vaienti A probabilistic approach to intermittency. Ergodic Theory
+Dynam. Systems, 19, no.3, 671–685, (1999).
+[16] R. Ma˜ neErgodic Theory and Diﬀerentiable Dynamics , Springer–Verlag, Berlin Heidelberg
+New York, A Series of Modern Surveys in Mathematics, (1978).
+[17] V. Maume-Deshamps Propri´ et´ es de m´ elange pour des syst` emes dynamiques Markoviens
+Th` ese, Universit´ e de Bourgogne, Dijon (1998).
+
+=== PDF PAGE 24 ===
+24 XA VIER BRESSAUD AND CARLANGELO LIVERANI
+[18] D. Ornstein Bernoulli shifts with the same entropy are isomorphic, Advances in Math., 4,
+337–352, (1970).
+[19] W. Rudin Real and Complex Analysis , Mc Graw-Hill series in higher Mathematics, Second
+Edition (1974).
+[20] B. Saussol Absolutely continuous invariant measures for multidimensional expanding maps,
+to appear in Israel. J. Math..
+[21] M. Viana, Stochastic dynamics of deterministic systems , Col. Bras. de Matem´ atica, notes
+(1997).
+[22] L.-S. Young, Statistical Properties of Dynamical Systems with Some Hyperbolicity, Annals
+of Mathematics (2), 147, (1998), no. 3, 585–650.
+[23] L.-S. Young, Recurrence times and rates of mixing, Israel J. of Math., 110, (1999), 153–188.

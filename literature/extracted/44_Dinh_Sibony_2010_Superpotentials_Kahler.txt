@@ -1,0 +1,2823 @@
+=== PDF PAGE 1 ===
+arXiv:0804.0860v1  [math.DS]  5 Apr 2008
+Super-potentials for currents on compact K¨ ahler
+manifolds and dynamics of automorphisms
+Tien-Cuong Dinh and Nessim Sibony
+October 18, 2021
+Abstract
+We introduce a notion of super-potential (canonical functi on) associ-
+ated to positive closed ( p, p)-currents on compact K¨ ahler manifolds and we
+develop a calculus on such currents. One of the key points in o ur study
+is the use of deformations in the space of currents. As an appl ication,
+we obtain several results on the dynamics of holomorphic aut omorphisms:
+regularity and uniqueness of the Green currents. We also get the regu-
+larity, the entropy, the ergodicity and the hyperbolicity o f the equilibrium
+measures.
+AMS classiﬁcation : 37F, 32H50, 32U40.
+Key-words : super-potential, structural variety of currents, moderate me asure,
+Green current, equilibrium measure.
+Contents
+1 Introduction 2
+2 Background on positive closed currents 5
+2.1 Compact K¨ ahler manifolds . . . . . . . . . . . . . . . . . . . . . . 5
+2.2 Positive currents and plurisubharmonic functions . . . . . . . . . 7
+2.3 Transforms on currents . . . . . . . . . . . . . . . . . . . . . . . . 12
+2.4 Regularization and Green potential . . . . . . . . . . . . . . . . . 15
+3 Structural varieties and super-potentials 20
+3.1 Structural varieties in the space of currents . . . . . . . . . . . . . 20
+3.2 Super-potentials of currents . . . . . . . . . . . . . . . . . . . . . 22
+3.3 Intersection of currents . . . . . . . . . . . . . . . . . . . . . . . . 26
+3.4 H¨ older super-potentials and moderate currents . . . . . . . . . . . 28
+1
+
+=== PDF PAGE 2 ===
+4 Dynamics of automorphisms 30
+4.1 Action on currents and on cohomology groups . . . . . . . . . . . 30
+4.2 Construction of Green currents . . . . . . . . . . . . . . . . . . . 33
+4.3 Uniqueness of Green currents and equidistribution . . . . . . . . . 3 7
+4.4 Equilibrium measure, mixing and hyperbolicity . . . . . . . . . . 40
+4.5 Appendix: measures of maximal entropy . . . . . . . . . . . . . . 48
+1 Introduction
+Let (X,ω ) be a compact K¨ ahler manifold of dimension k. Our purpose in this
+paper is to develop a calculus on positive closed currents of bidegree (p,p ) on X.
+We will also apply this calculus to prove some surprising uniqueness res ults for
+dynamical currents in their cohomology classes.
+WhenS is a positive closed (1 , 1)-current on X, it is possible to introduce its
+potential u satisfying the following equation with a normalization condition
+ddcu =S − α and
+∫
+X
+uω k = 0,
+where α is a smooth representative of the cohomology class of S. The function
+u is quasi-p.s.h.; it is deﬁned everywhere and satisﬁes ddcu ≥ − cω for some
+constant c >0. This is the unique solution of the above equation and calculus
+problems on S can be transfered to computation on the potential u.
+We have developed in [25] a theory of super-potentials associated to positive
+closed currents S of bidegree ( p,p ) in Pk (our approach can be easily extended
+to homogeneous manifolds). Let ω FS denote the Fubini-Study form on Pk nor-
+malized by
+∫
+Pkω k
+FS = 1. Assume for simplicity that S is of mass 1, that is, S is
+cohomologous to ω p
+FS. One can always solve the equation
+ddcUS =S − ω p
+FS and ⟨US,ω k− p+1
+FS ⟩ = 0. (1.1)
+But when p > 1, the current US is not unique and it is diﬃcult to give US a
+value at every point, in order for example, to consider expressions like the wedge-
+product US ∧ [V ] where [V ] is a current associated to an analytic set V . In [25],
+we have introduced for S a super-potential US which is a function deﬁned on the
+space of positive closed currents R of bidegree (k − p + 1,k − p + 1) and of mass
+1. More precisely, we have shown that it is possible to deﬁne 1
+US(R) = ⟨US,R ⟩ := lim sup⟨US,R ′⟩
+withR′ smooth positive closed converging to R. The above formula is symmetric
+in R and S, that is, US(R) = UR(S). So, we also have US(R) = ⟨S,U R⟩ where
+1in [25] we call US the super-potential of mean 0 of S.
+2
+
+=== PDF PAGE 3 ===
+UR is a normalized solution of the equation ddcUR =R − ω k− p+1
+FS . In particular,
+US(R) does not depend on the choice of US and UR.
+The super-potentials appear as quasi-p.s.h. functions on an inﬁnite dimen-
+sional space and the value −∞ is admissible. The calculus we have obtained is
+satisfactory and permits to solve non trivial dynamical questions f or holomorphic
+endomorphisms of Pk and polynomial automorphisms of Ck. It also permits to
+give a useful intersection theory of positive closed currents in Pk.
+It will be important to extend such a calculus to arbitrary compact K ¨ ahler
+manifolds. There are however some important diﬃculties. First, acc ording to
+Bost-Gillet-Soul´ e [5], ifp > 1, it is not always possible to solve the equation
+(1.1) with US bounded from above. In some sense, using the potentials one may
+loose the positivity or the boundedness from below. Second, the ap proximation
+of arbitrary positive closed currents by smooth ones is only possible when a loss
+in positivity is allowed, see Theorem 2.4.4 below. The loss of positivity is un der
+control but it is still a source of several technical diﬃculties. In ge neral, the
+deformation of currents on non-homogeneous manifolds is a delicat e problem.
+In the present paper, we introduce the super-potentials of S as acting on the
+real vector space of closed currents R which are smooth and cohomologous to 0.
+Then US is deﬁned as
+US(R) := ⟨S,U R⟩,
+where UR is a smooth solution of ddcUR = R satisfying some normalization
+conditions. This permits to develop the ﬁrst steps of a theory of su per-potential
+on an arbitrary compact K¨ ahler manifold. In particular, we can deﬁ ne with some
+regularity assumption, the wedge-product S1 ∧ S2 where Sj are positive closed
+(pj,p j)-currents.
+We then apply these notions to the dynamical study of automorphis ms of a
+compact K¨ ahler manifold. Let f be a holomorphic automorphism of X. The
+dynamical degree of order s of f is deﬁned as the spectral radius of the pull-
+back operator f ∗ on the cohomology group H s,s (X, R). It follows from a result
+by Khovanskii-Teissier-Gromov [33] that the function s ↦→ logds is concave. In
+particular, we can assume that
+1 = d0 <d 1 < · · ·<d p = · · ·=dp′> · · ·>d k− 1>d k = 1.
+We have constructed in [20] for 1 ≤ q ≤ p, Green ( q,q )-currents Tq. In our
+context, they are the positive closed currents of bidegree ( q,q ) such that f ∗(Tq) =
+dqTq, see Section 4.2 for the precise deﬁnition. Under the hypothesis th at the
+dynamical degrees are distinct (i.e. p = p′), we also constructed and studied
+an ergodic invariant measure µ for f . The case of surfaces ( k = 2) was studied
+by Cantat in [7]. Dynamically interesting automorphisms of surfaces a re also
+constructed in Bedford-Kim [1] and McMullen [41].
+Here, we propose a new approach using super-potentials to deal w ith conver-
+gence problems. We will show that the Green currents have H¨ older continuous
+3
+
+=== PDF PAGE 4 ===
+super-potentials. The following uniqueness result is quite surprising and can be
+applied to all q smaller than or equal to p. We refer to [29, 27, 26, 24, 25, 16]
+and the references therein for analogous results in other setting s.
+Theorem. Letf be a holomorphic automorphism of a compact K¨ ahler manifold
+X and ds the dynamical degrees of f . Suppose V is a subspace of H q,q (X, R)
+invariant under f ∗. Assume that all the (real and complex) eigenvalues of the
+restriction of f ∗ to V are of modulus strictly larger that dq− 1. Then each class in
+V contains at most one positive closed (q,q )-current.
+As a consequence, we deduce that given a positive closed ( q,q )-currentS, the
+convergence of the classes (f ni)∗[S], properly normalized, implies the convergence
+of the currents ( f ni)∗(S), properly normalized. Here, f n :=f ◦ · · · ◦f (n times)
+is the iterate of order n of f . The result applied to the current of integration on
+a subvarietyY ofX gives a description of the asymptotic behavior of the inverse
+image of Y byf n whenn → ∞ . We also deduce that the Green currents are the
+unique positive closed currents in their cohomology classes without r estricting to
+invariant currents.
+Assume that the dynamical degrees of f are distinct, i.e. p =p′ (for surfaces
+this just means d1 > 1). Assume also that the action of f ∗ onH p,p (X, R) satisﬁes
+the following condition which is always true for surfaces. Let H be the invariant
+subspace of H p,p (X, R) corresponding to eigenvalues of maximal modulus. Sup-
+pose that f ∗ restricted to H is diagonalizable over C. This condition means that
+the Jordan form of f ∗ restricted to H ⊗ R C is a diagonal matrix. Let T + be
+a Green ( p,p )-current of f and T − a Green ( k − p,k − p)-current associated to
+f − 1. The hypothesis on f ∗
+|H is a necessary and suﬃcient condition in order to
+haveT + ∧ T − ̸= 0 for a suitable choice of T +, T − , see Proposition 4.4.1. These
+measuresT + ∧T − generate a real space N of ﬁnite dimension. We will show that
+the convex cone N+ of positive measures in N is closed, with a simplicial basis
+and that the measures µ on the extremal rays are ergodic. When the eigenvalues
+of f ∗
+|H are all real positive, i.e. equal to dp, µ is mixing.
+We will show that any such measure µ is of maximal entropy log dp. Then,
+using a recent result of de Th´ elin [13] we deduce that µ is hyperbolic with precise
+estimates on the positive and the negative Lyapounov exponents. The H¨ older
+continuity of the super-potentials of the Green currents implies th at µ is moder-
+ate: if u belongs to a compact family of quasi-p.s.h. functions and ddcu ≥ − ω
+then ⟨µ,e λ |u|⟩ ≤ c for some positive constants λ and c. As far as we know, this
+property is the strongest regularity property satisﬁed by the eq uilibrium mea-
+sures in a quite general setting. It implies that any quasi-p.s.h. func tion is in
+Lp(µ) for all 1 ≤ p <∞ . Moreover, µ has no mass on proper analytic subsets
+of X. A result due to Katok [38, p.694] implies that the set of saddle period ic
+points is Zariski dense in X since its closure contains the support of µ.
+We have tried to make the paper readable for non experts. In Sect ion 2 we give
+background on positive closed currents and we introduce transfo rms on currents
+4
+
+=== PDF PAGE 5 ===
+in a quite general context. We show how to regularize positive closed currents
+and how to solve the ddc-equation in an arbitrary compact K¨ ahler manifold. In
+Section 3 we construct an explicit structural variety for a given cu rrentR which
+is a diﬀerence of positive closed currents. So, R appears as the slice by {0} × X
+of a closed current R in P1 × X. This is the main technical tool, which permits
+to use the powerful estimates on subharmonic functions in order t o prove the
+convergence theorems. We also deﬁne here the intersection of cu rrents. In the
+last section, we give the applications to the dynamics of automorphis ms.
+Main notations and conventions. Throughout the paper, except for some
+deﬁnitions in Section 2.2, ( X,ω ) is a compact K¨ ahler manifold of dimension k.
+The notation [V ] or [S] means the current of integration on an analytic set V or
+the class of a ddc-closed (p,p )-currentS in H p,p (X, C) or H p,p (X, R). Denote by
+π : ˆX × X → X × X the blow-up along the diagonal ∆ and ˆ∆ := π − 1(∆) the
+exceptional hypersurface in ˆX × X. The canonical projections of X × X on its
+factors are denoted by πi and we deﬁne Π i := πi ◦π for i = 1, 2. We also ﬁx
+a K¨ ahler form ˆω on ˆX × X. Let Cp denote the convex cone of positive closed
+(p,p )-currents on X, Dp the real space generated by Cp and D0
+p the subspace of
+currents in Dp which belong to the class 0 in H p,p (X, R). We consider on these
+spaces the norms ∥·∥C− l, ∥·∥∗ and the ∗-topology deﬁned in Section 2.2. On Cp or
+on ∗-bounded (i.e. bounded with respect to ∥ · ∥∗) subsets of Dp, the ∗-topology
+coincides with the weak topology on currents. The current Θ 0, its deformations
+Θθ with θ ∈ P1, the associated transforms L0, Lθ and the transform LK are
+deﬁned in Section 2.4. The deformations Sθ := Lθ(S) of a current S and the
+associated structural line ( Sθ)θ∈ P1 are introduced in Sections 2.4 and 3.1. The
+super-potential of a current S in Dp, normalized by a ﬁxed family α of closed
+(p,p )-forms, is denoted by US. If S belongs to D0
+p, then US does not depend on
+the choice of α , see Section 3.2. Finally, most of the constants depend only on
+(X,ω ). The notations ≳, ≲ mean inequalities up to a multiplicative constant
+and we will write ∼ when both inequalities are satisﬁed.
+2 Background on positive closed currents
+In this section, we recall some basic facts on Hodge theory for com pact K¨ ahler
+manifolds, some properties of positive closed currents and plurisub harmonic func-
+tions. We refer to [10, 11, 28, 37, 40, 46] for more detailed exposit ions on these
+subjects.
+2.1 Compact K¨ ahler manifolds
+• Hodge cohomology groups. Consider a compact K¨ ahler manifoldX of di-
+mensionk. Let H r(X, R) and H r(X, C) denote the de Rham cohomology groups
+5
+
+=== PDF PAGE 6 ===
+of real and complex smooth r-forms. Let H p,q (X, C), p +q =r, be the subspace
+of H r(X, C) generated by the classes of closed ( p,q )-forms. The Hodge theory
+asserts that
+H r(X, C) =
+⨁
+p+q=r
+H p,q (X, C) and H p,q (X, C) = H q,p (X, C).
+Forp =q, deﬁne
+H p,p (X, R) := H p,p (X, C) ∩ H 2p(X, R),
+then
+H p,p (X, C) = H p,p (X, R) ⊗ R C.
+The cup-product ⌣ on H p,p (X, R) × H k− p,k − p(X, R) is deﬁned by
+([β ], [β ′]) ↦→ [β ]⌣ [β ′] :=
+∫
+X
+β ∧ β ′
+where β and β ′ are smooth closed forms. The last integral depends only on the
+classes of β andβ ′. The bilinear form ⌣ is non-degenerate and induces a duality
+(Poincar´ e duality) betweenH p,p (X, R) andH k− p,k − p(X, R). In the deﬁnition of ⌣
+one can take β ′ smooth and β a current in the sense of de Rham. So, H p,p (X, R)
+can be deﬁned as the quotient of the space of real closed ( p,p )-currents by the
+subspace of d-exact currents. Recall that a ( p,p )-current β is real if β = β .
+When β is a real ( p,p )-current such that ddcβ = 0, by the ddc-lemma [10, 46],
+the integral
+∫
+Xβ ∧ β ′ is also independent of the choice of β ′ smooth and closed
+in a ﬁxed cohomology class. So, using the duality, one can associate t o β a class
+in H p,p (X, R).
+• Blow-up along the diagonal. The integration on the diagonal ∆ of X × X
+deﬁnes a real closed ( k,k )-current [∆] which is positive, see Section 2.2 for the
+notion of positivity. By K¨ unneth formula, we have a canonical isomo rphism
+H k,k (X × X, C) ≃
+∑
+0≤ r≤ k
+H r,k − r(X, C) ⊗ H k− r,r (X, C).
+Hence, [∆] is cohomologous to a smooth real closed ( k,k )-form α ∆ which is a
+ﬁnite combination of forms of type β (x) ∧ β ′(y). Here, β andβ ′ are closed forms
+on X of bidegree ( r,k − r) and ( k − r,r ) respectively, and ( x,y ) denotes the
+coordinates of X × X. In other words, if πi denote the projections of X × X
+on its factors, then α ∆ is a combination of π ∗
+1(β ) ∧ π ∗
+2(β ′). So, α ∆ satisﬁes
+dxα ∆ =dyα ∆ = 0. Replacing α ∆(x,y ) by 1
+2α ∆(x,y ) + 1
+2α ∆(y,x ) allows to assume
+that α ∆ is symmetric, i.e. invariant by the involution ( x,y ) ↦→ (y,x ).
+Letπ : ˆX × X → X × X be the blow-up of X × X along ∆ and ˆ∆ := π − 1(∆)
+the exceptional hypersurface. By a theorem of Blanchard [4], ˆX × X is a compact
+6
+
+=== PDF PAGE 7 ===
+K¨ ahler manifold. We ﬁx a K¨ ahler formˆω on ˆX × X. According to Gillet-Soul´ e
+[32, 1.3.6], there is a real smooth closed ( k − 1,k − 1)-formη on ˆX × X such that
+π ∗(α ∆) is cohomologous to [ ˆ∆] ∧ η, where [ ˆ∆] is the positive closed (1 , 1)-current
+of integration on ˆ∆. Hence, π∗([ ˆ∆] ∧ η) is cohomologous to α ∆ and to [∆]. On
+the other hand, π∗([ ˆ∆] ∧η) is supported on ∆ and is equal to a product of [∆] by
+a function. We deduce that π∗([ ˆ∆] ∧ η) = [∆]. The map ( x,y ) ↦→ (y,x ) induces
+an involution on ˆX × X. We can also choose η symmetric with respect to this
+involution.
+Let γ be a real closed (1 , 1)-form on ˆX × X, cohomologous to [ ˆ∆]. We can
+choose γ symmetric. We will see later that there is a quasi-p.s.h. function ϕ
+on ˆX × X such that ddcϕ = [ ˆ∆] − γ. This function is necessarily symmetric.
+Subtracting from ϕ a constant allows to assume that ϕ< − 2.
+• Local coordinates near ∆ and ˆ∆. Consider a local coordinate system
+x = (x1,...,x k) on a chart of X. For simplicity assume that the ball W of center
+0 and of radius 1 is strictly contained in this chart. For the neighbour hoodW × W
+of (0, 0) in X × X, we will use the coordinates ( x,y ) = ( x1,...,x k,y 1,...,y k).
+The diagonal ∆ contains the point (0 , 0) and is given by the equation x = y.
+Deﬁne x′ :=x − y. Then ( x′,y ) is also a coordinate system of W × W and ∆ is
+given by x′ = 0. Consider the submanifold M of Ck × Ck × Pk− 1 deﬁned by
+M :=
+{
+(x′,y, [v]) ∈ Ck × Ck × Pk− 1, x ′ ∈ [v]
+}
+,
+where [v] = [v1 : · · ·: vk] denotes the homogeneous coordinates of Pk− 1. Recall
+that x′ belongs to [ v] if and only if x′ and v are proportional. The submanifold
+M is the blow-up of Ck × Ck along x′ = 0. So, we identify π − 1(W × W ) with an
+open set in M deﬁned by ∥x′ +y∥ = ∥x∥< 1 and ∥y∥< 1.
+Consider a point ( a,b, [u]) in ˆ∆. We have necessarily a = 0. For simplicity,
+assume that the ﬁrst coordinate of u is the largest one. Therefore, we can write
+[u] = [1 : u2 : · · ·: uk] with |ui| ≤ 1. In a neighbourhood of (0 ,b, [u]), the ﬁrst
+coordinate of v does not vanish and we can write [ v] = [1 : v2 : · · ·: vk] with
+|vi|< 2. Write v′ := (v2,...,v k). Then, ( x′
+1,y,v ′) is a local coordinate system for
+a neighbourhood of (0 ,b, [u]). Here, ˆ∆ is given by the equation x′
+1 = 0. We also
+have
+π(x′
+1,y,v ′) = (x′,y ) = (x′
+1,x ′
+1v′,y ) and Π 2(x′
+1,y,v ′) = y.
+We see that Π 2 and its restriction to ˆ∆ are submersions. In the same way, we
+prove that Π 1 and its restriction to ˆ∆ are also submersions.
+2.2 Positive currents and plurisubharmonic functions
+• Positive closed currents. A smooth ( p,p )-form φ on a general complex
+manifold of dimension k is positive if it can be written in local charts as a ﬁnite
+7
+
+=== PDF PAGE 8 ===
+combination with positive coeﬃcients of forms of type
+(iα 1 ∧ α 1) ∧ ... ∧ (iα p ∧ α p)
+where α i are (1, 0)-forms. The positivity is a pointwise property and does not
+depend on local coordinates. A ( p,p )-current S is weakly positive if S ∧ φ is a
+positive measure for every smooth positive ( k − p,k − p)-form φ. The current
+S is positive if S ∧ φ is a positive measure for every smooth weakly positive
+(k − p,k − p)-form φ. The notions of positivity and weak positivity coincide
+for p = 0, 1,k − 1 and k. We say that S is negative if −S is positive and we
+write S ≥ S′, S′ ≤ S when S − S′ is positive. Note that positive and negative
+currents are real. If S, S′ are positive and S′ is smooth then S ∧ S′ is positive.
+LetV be an analytic subset of pure codimension p. Then, the integration on the
+regular part of V deﬁnes a positive closed ( p,p )-current that we denote by [ V ].
+A (p,p )-currentS is said to be strictly positive if in local coordinates x, we have
+S ≥ ǫ(ddc∥x∥2)p for some ǫ> 0.
+Let (X,ω ) be a compact K¨ ahler manifold of dimension k. If S is a positive
+or negative (p,p )-current on X, deﬁne the mass 2 of S by
+∥S∥ := |⟨S,ω k− p⟩|.
+Let Cp denote the cone of positive closed ( p,p )-currents on X, Dp the real space
+generated by Cp and D0
+p the space of currents S ∈ Dp such that [ S] = 0 in
+H p,p (X, R). The duality between the cohomology groups implies that if S is a
+current in Cp, its mass depends only on the class [ S] in H p,p (X, R). Deﬁne the
+norm ∥ · ∥∗ on Dp by
+∥S∥∗ := min ∥S+∥ + ∥S− ∥,
+where the minimum is taken over S+, S− in Cp such that S = S+ − S− . A
+subset in Dp is ∗-bounded if it is bounded with respect to the ∥ · ∥∗-norm. We will
+consider on Dp and D0
+p the following ∗-topology. We say that Sn converge to S
+in Dp ifSn → S weakly and if ∥Sn∥∗ is bounded by a constant independent of n.
+Note that the ∗-topology restricted to Cp or to a ∗-bounded subset of Dp coincides
+with the weak topology. We will see in Theorem 2.4.4 below that smooth f orms
+are dense in Dp and D0
+p for the ∗-topology.
+Consider some natural norms and distances on Dp. For l ≥ 0, let [ l] denote
+the integer part of l. Let Cl
+p,q be the space of (p,q )-forms whose coeﬃcients admit
+all derivatives of order ≤ [l] and these derivatives are ( l − [l])-H¨ older continuous.
+We use here the sum of Cl-norms of the coeﬃcients for a ﬁxed atlas. If S and S′
+are currents in Dp, deﬁne 3
+∥S∥C− l := sup
+∥Φ∥Cl ≤ 1
+|⟨S, Φ⟩| and dist l(S,S ′) := ∥S − S′∥C− l
+2in this case, this quantity is equivalent to the mass norm for current s of order 0, see [28].
+3the deﬁnition is meaningful for any current S of order 0 and ∥ · ∥C−0 is equivalent to the
+mass norm in the usual sense, see [28].
+8
+
+=== PDF PAGE 9 ===
+where Φ is a test smooth ( k − p,k − p)-form on X. Observe that ∥ · ∥C− l ≲ ∥ · ∥∗
+for every l ≥ 0. The following result is proved as in [25] using the theory of
+interpolation between Banach spaces.
+Proposition 2.2.1. Let l and l′ be real strictly positive numbers with l < l′.
+Then on any ∗-bounded subset of Dp, the topology induced by distl or by distl′
+coincides with the weak topology. Moreover, on any ∗-bounded subset of Dp, there
+is a constant cl,l ′> 0 such that
+distl′ ≤ distl ≤ cl,l ′[distl′]l/l ′
+.
+In particular, a function on a ∗-bounded subset of Dp is H¨ older continuous with
+respect to distl if and only if it is H¨ older continuous with respect to distl′.
+• Plurisubharmonic functions. Consider a general (connected) complex man-
+ifold X. An upper semi-continuous function u :X → R ∪ {−∞} , not identically
+−∞ , is plurisubharmonic (p.s.h. for short) if its restriction to each holomorphic
+disc in X is subharmonic or identically equal to −∞ . If u is a p.s.h. function
+thenu belongs to Lp
+loc for 1 ≤ p< ∞ , and ddcu is a positive closed (1 , 1)-current
+on X. Conversely, if S is a positive closed (1 , 1)-current, it can be locally writ-
+ten as S = ddcu with u p.s.h. A subset of X is locally pluripolar if it is locally
+contained in the pole set {u = −∞} of a p.s.h. function. P.s.h. functions satisfy
+a maximum principle. In particular, on a compact manifold, p.s.h. funct ions are
+constant. A function u on X is quasi-p.s.h. if it is locally a diﬀerence of a p.s.h.
+function and a smooth function.
+Assume now that X is a compact K¨ ahler manifold of dimension k and ω is
+a K¨ ahler form onX. If u is a quasi-p.s.h. function on X then ddcu +cω is a
+positive closed (1, 1)-current for c> 0 large enough. Conversely, if S is a positive
+closed (1, 1)-current and α is a real closed smooth (1 , 1)-form cohomologous to S,
+then there is a quasi-p.s.h. function u such that ddcu =S − α . The function u is
+unique up to an additive constant. A subset of X is pluripolar if it is contained
+in the pole set {u = −∞} of a quasi-p.s.h. function u.
+A function is called d.s.h. if it is equal outside a pluripolar set to a diﬀerence
+of two quasi-p.s.h. functions. We identify two d.s.h. functions if they are equal
+out of a pluripolar set. If u is d.s.h. then ddcu is a diﬀerence of two positive closed
+(1, 1)-currents which are cohomologous. Conversely, if S+ and S− are positive
+closed (1, 1)-currents in the same cohomology class then S+ − S− =ddcu for some
+d.s.h. function u. The function u is unique up to an additive constant. There
+are several equivalent norms on the space of d.s.h. functions. We c onsider the
+following one, see [21]
+∥u∥DSH := ∥u∥L1 + ∥ddcu∥∗.
+We have the following proposition [21].
+9
+
+=== PDF PAGE 10 ===
+Proposition 2.2.2. Let u be a d.s.h. function on X. Then there exist two
+quasi-p.s.h. functions u+, u− such that
+u =u+ − u−, ∥u± ∥L1 ≤ c∥u∥DSH, and ddcu± ≥ − c∥u∥DSHω,
+wherec> 0 is a constant independent of u.
+We deduce from this proposition and the fundamental exponential estimate
+for p.s.h. functions [37] the following result, see also [17].
+Proposition 2.2.3. There are constants λ > 0 and c > 0 such that if u is a
+d.s.h. function with ∥u∥DSH ≤ 1 then
+∫
+X
+eλ |u|ω k ≤ c.
+We will need the following version of the exponential estimate for d.s.h . func-
+tions on P1 and for ω FS the Fubini-Study form on P1.
+Lemma 2.2.4. Let u be a d.s.h. function on P1 = C ∪ {∞} . Assume that u
+vanishes outside the unit disc of C and that ddcu is a measure of mass at most
+equal to 1. Then there are constants λ> 0 and c> 0 independent of u such that
+∫
+P1
+eλ |u|ω FS ≤ c,
+In particular, if B is a disc of radius r, 0 < r <1/ 2, then inf B |u| ≤ − c′log |r|
+for some constant c′> 0 independent of u, B and r.
+Proof. Writeddcu =ν+ − ν− whereν± are probability measures with support in
+the unit disc. Deﬁne for z ∈ C
+u± (z) :=
+∫
+C
+log |z − ξ|dν± (ξ).
+Observe that ∥u± ∥L1(P1) are bounded by a constant independent of ν± . We also
+have
+lim
+z→∞
+u± (z) − log |z|= 0 and ddcu± =ν± − δ∞
+where δ∞ is the Dirac mass at ∞ . It follows that
+lim
+z→∞
+u+(z) − u− (z) = 0 and ddc(u+ − u− ) = ν+ − ν− =ddcu.
+So,u+ − u− andu diﬀere by a constant. The fact that u is supported in the unit
+disc implies that u =u+ − u− . We deduce that ∥u∥L1 is bounded by a constant
+independent of u, and then ∥u∥DSH is bounded by a constant independent of u.
+Proposition 2.2.3 implies the result.
+10
+
+=== PDF PAGE 11 ===
+• Slicing of positive closed current. LetV be a complex manifold of dimen-
+sion l. We are interested in families of currents parametrized by V which are
+slices of some closed current R in V × X. Let πV and πX denote the canonical
+projections from V × X on its factors. We have the following proposition where
+currents on {θ} × X are identiﬁed with currents on X, see also [22].
+Proposition 2.2.5. Let R be a positive closed (s,s )-current inV × X withs ≤ k.
+Then there is a locally pluripolar subset E ofV such that the slice ⟨R,π V,θ ⟩ exists
+for θ ∈ V \E. Moreover, ⟨R,π V,θ ⟩ is a positive closed (s,s )-current on {θ} × X
+and its class in H s,s (X, R) does not depend on θ.
+Recall that slicing is the generalization of restriction of forms to leve l sets of
+holomorphic maps. It can be viewed as a version of Fubini’s theorem or Sard’s
+theorem for currents. The operation is well-deﬁned for currents R of order 0 and
+of bidegree ≤ (k,k ) such that ∂R and ∂R are of order 0. When R is a smooth
+form, ⟨R,π V,θ ⟩ is simply the restriction of R to {θ} × X. When R is the current
+of integration on an analytic subset Y of V × X, ⟨R,π V,θ ⟩ is the current of
+integration on the analytic set Y ∩ {θ} × X for θ generic.
+In general, if φ is a smooth form on V × X then ⟨R ∧φ,π V,θ ⟩ = ⟨R,π V,θ ⟩ ∧φ.
+Slicing commutes with the operations ∂ and ∂. So, in our situation, since R is
+closed, ⟨R,π V,θ ⟩ is also closed. The following description shows that ⟨R,π V,θ ⟩
+is positive.
+Let z denote the coordinates in a chart of V and λ V the standard volume
+form. Let ψ (z) be a positive smooth function with compact support such that∫
+ψλ V = 1. Deﬁne ψ ǫ(z) := ǫ− 2lψ (ǫ− 1z) and ψ θ,ǫ (z) := ψ ǫ(z − θ). The measures
+ψ θ,ǫλ V approximate the Dirac mass at θ. For every smooth test form Ψ of bidegree
+(k − s,k − s) on V × X one has
+⟨R,π V,θ ⟩(Ψ) = lim
+ǫ→ 0
+⟨R ∧ π ∗
+V (ψ θ,ǫλ V ), Ψ⟩ (2.1)
+when ⟨R,π V,θ ⟩ exists. This property holds for all choice of ψ . Conversely, when
+the previous limit exists and is independent of ψ , it deﬁnes the current ⟨R,π V,θ ⟩
+and one says that ⟨R,π V,θ ⟩ is well-deﬁned . The following formula holds for
+smooth forms Ω of maximal degree with compact support in V :
+∫
+θ∈ V
+⟨R,π V,θ ⟩(Ψ)Ω(θ) = ⟨R ∧ π ∗
+V (Ω), Ψ⟩. (2.2)
+Proof of Proposition 2.2.5. Since the problem is local on V , we can assume
+thatV is a ball in Cl andz are the standard coordinates. It is enough to consider
+real test forms Ψ with compact suppport. Deﬁne φ := (πV )∗(R ∧ Ψ). This is a
+current of bidegree (0, 0) on V . Observe that ddcΨ can be written as a diﬀerence
+of positive closed forms on V × X, not necessarily with compact support. It
+follows that ddcφ = (πV )∗(R ∧ ddcΨ) is a diﬀerence of positive closed currents.
+11
+
+=== PDF PAGE 12 ===
+Therefore, φ can be considered as a d.s.h. function. We have
+⟨R ∧ π ∗
+V (ψ θ,ǫλ V ), Ψ⟩ =
+∫
+V
+φψ θ,ǫλ V.
+Classical properties of p.s.h. functions imply that for θ outside a pluripolar set
+(because φ is only d.s.h.) the last integral converges to φ(θ) when ǫ → 0. So, for
+such a θ, the limit in (2.1) exists and does not depend on ψ .
+Choose a pluripolar set E ⊂ V such that the previous convergence holds for
+θ outside E and for a countable family F of test forms Ψ. We choose a family
+F which is dense for the C0-topology. The density implies that we have the
+convergence for a test form Ψ strictly positive near {θ} × X. This, the density
+of F together with the positivity of R imply the convergence for every Ψ. Hence,
+⟨R,π V,θ ⟩ is well-deﬁned for θ ̸∈ E and is a positive closed current on {θ} × X.
+We have ⟨R,π V,θ ⟩(Ψ) = φ(θ). Consider a closed ( k − s,k − s)-form Φ on
+X and Ψ := π ∗
+X(Φ). If φ is deﬁned as above, we have dφ = 0. Therefore, φ
+is a constant function and ⟨R,π V,θ ⟩(Ψ) does not depend on θ. If ⟨R,π V,θ ⟩ is
+identiﬁed with a current on X, then ⟨R,π V,θ ⟩(Φ) is independent of θ. This,
+together with Poincar´ e’s duality, implies that the class of ⟨R,π V,θ ⟩ inH s,s (X, R)
+does not depend on θ. □
+Remark 2.2.6. Assume that ⟨R,π V,θ ⟩ is deﬁned for θ outside a set of zero
+measure and that θ ↦→ ⟨ R,π V,θ ⟩ can be extended to a continuous map with
+values in the space of currents of order 0. Then, by deﬁnition of slic ing, (2.1) and
+(2.2), ⟨R,π V,θ ⟩ is deﬁned for every θ and coincides with the continuous extension
+ofθ ↦→ ⟨ R,π V,θ ⟩. If Rn are positive closed currents converging to R, we can prove
+that there is a subsequence Rni with ⟨Rni,π V,θ ⟩ → ⟨ R,π V,θ ⟩ for almost every
+θ. Indeed, for a bounded sequence of d.s.h. functions on V we can extract a
+subsequence which converges almost everywhere.
+2.3 Transforms on currents
+• General transforms on currents. We recall here a general idea how to
+construct linear operators on currents which are useful in geome trical questions.
+Let X1, X2 and Z be Riemannian manifolds and τ1, τ2 smooth maps from Z to
+X1 andX2. Let Θ be a ﬁxed current on Z. Deﬁne for a current S onX1 another
+current LΘ(S) on X2 by
+LΘ(S) := (τ2)∗
+(
+τ∗
+1 (S) ∧ Θ
+)
+when the last expression is meaningful. The current τ∗
+1 (S) is well-deﬁned if S is
+a bounded form or if τ1 is a submersion. The operator ( τ2)∗ is well-deﬁned if τ2
+is proper, in particular, when Z is compact. Assume that Z is compact. Then,
+LΘ is well-deﬁned on smooth currents S. Let Θ ′ denote the push-forward of Θ
+to X1 × X2 by the map ( τ1,τ 2). Then, Θ ′ deﬁnes a transform LΘ′ where Z is
+12
+
+=== PDF PAGE 13 ===
+replaced by X1 × X2 . The transform LΘ′ is equal to LΘ on smooth forms S and
+this useful property may be extended to larger spaces of curren ts.
+In this paper, we consider the following situation used in Gillet-Soul´ e [32] and
+[5, 19, 20, 45], see also [3, 36, 42, 21]. We use the notations introduc ed in Section
+2.1. Consider a current Θ of bidegree ( r,s ) on ˆX × X. If S is a current on X,
+deﬁne the transform LΘ(S) of S by
+LΘ(S) := (Π 2)∗
+(
+Π∗
+1(S) ∧ Θ
+)
+.
+This deﬁnition makes sense if the last wedge-product is well-deﬁned, in particular
+when Θ or S is smooth.
+If S is of bidegree ( p,q ) then LΘ(S) is of bidegree ( p +r − k,q +s − k). So,
+we say that the transform LΘ is of bidegree (r − k,s − k). The bidegree may be
+negative. In what follows, we will be interested in the cases where r =s =k or
+r =s =k − 1, and S is a current in Dp. The current Θ will be real and smooth
+or smooth outside ˆ∆. If Θ is positive or negative, we say that the transform LΘ
+is positive or negative respectively.
+Example 2.3.1. Consider Θ 0 := [ ˆ∆] ∧ η where η is the smooth real closed form
+of bidegree (k − 1,k − 1) chosen in Section 2.1, and deﬁne L0 := LΘ0. Since Π 1
+and its restriction to ˆ∆ are submersions, L0 can be extended continuously to any
+currentS. We have π∗(Θ0) = [∆]. So, if S is a smooth form, then
+L0(S) = (π2)∗
+(
+π ∗
+1(S) ∧ [∆]
+)
+=S.
+By continuity, L0 is equal to the identity on all currents S. If S is in Dp, using
+the theory of intersection with positive closed (1 , 1)-currents [8, 9, 31] and that
+[ ˆ∆] = ddcϕ +γ, we obtain for S in Dp that if S′ := Π ∗
+1(S)
+S = L0(S) = (Π 2)∗
+(
+ddc(ϕS ′ ∧ η) +γ ∧ S′ ∧ η
+)
+,
+see also [19]. We will construct some deformations Lθ of L0, i.e. transforms
+associated to some deformations Θ θ of Θ 0.
+• Regular and semi-regular transforms. Consider now a situation used in
+[19, 20]. Let Θ be a form which is smooth outside ˆ∆ and such that
+|Θ|≲ − log dist(·, ˆ∆) and |∇ Θ|≲ dist(·, ˆ∆)− 1
+near ˆ∆. Here, the estimate on ∇ Θ means an estimate on the gradients of the
+coeﬃcients of Θ for a ﬁxed atlas. Transforms associated to such f orms Θ are called
+semi-regular (when Θ is smooth, we say that LΘ is regular). The form Θ ′ :=π∗(Θ)
+is smooth outside ∆. Using the local coordinates described in Section 2.1, one
+proves that
+|Θ′|≲ − log dist(·, ∆)dist(·, ∆)2− 2k
+13
+
+=== PDF PAGE 14 ===
+and
+|∇ Θ′|≲ dist(·, ∆)1− 2k
+near ∆, see [19]. In particular, the coeﬃcients of Θ ′ restricted to X × {y} are in
+L1+1/k for every y ∈ X.
+Recall that LΘ is deﬁned for S smooth. Since Π ∗
+1(S) ∧ Θ has no mass on ˆ∆,
+we have
+LΘ(S) = (π2)∗
+(
+π ∗
+1(S) ∧ Θ′).
+The wedge-product π ∗
+1(S) ∧ Θ′ has no mass on ∆. So, one has to integrate only
+outside ∆. Then, using the estimates on |Θ′|, |∇ Θ′| and the H¨ older inequality,
+we obtain the following result, see [19, 20].
+Proposition 2.3.2. Any semi-regular transform can be extended to a linear con-
+tinuous operator from the space of currents of order 0 to the space of L1+1/k forms.
+It deﬁnes a linear continuous operator from the space of Lq forms, q ≥ 1, to the
+space of Lq′
+forms where q′ is given by q′− 1 + 1 = q− 1 + [1 + 1/k ]− 1 if q <k + 1
+and q′ = ∞ if q ≥ k + 1. It also deﬁnes a linear continuous operator from the
+space of L∞ forms to the space of C1 forms.
+The following result is a direct consequence of Proposition 2.3.2.
+Corollary 2.3.3. Let L1, ... , Lk+2 be semi-regular transforms of bidegree (0, 0).
+If S is a current of order 0, then S′ := Lk+2 ◦ · · · ◦ L1(S) is a form of class C1.
+Moreover, we have ∥S′∥C1 ≤ c∥S∥, where c> 0 is a constant independent of S.
+We will need the following lemma.
+Lemma 2.3.4. Assume that Θ is a smooth positive closed (k,k )-form. Then LΘ
+deﬁnes a linear map from Dp to itself which preserves Cp, D0
+p and is continu-
+ous with respect to the ∗-topology. Moreover, if S is in Dp, then ∥LΘ(S)∥∗ ≤
+c∥Θ∥∥S∥∗ for some constant c> 0 independent of Θ and S.
+Proof. Since Π 1 is a submersion, by deﬁnition, LΘ is a linear continuous map on
+currents. It is clear that LΘ preserves Cp, Dp and D0
+p. We only have to prove
+the estimate on ∥LΘ(S)∥∗. We can assume that S is positive. Since Π 1 is a
+submersion, we have ∥Π∗
+1(S)∥ ≲ ∥S∥. Recall that the mass of a positive closed
+current can be computed cohomologically. Therefore,
+∥Π∗
+1(S) ∧ Θ∥ ≲ ∥Θ∥∥Π∗
+1(S)∥ ≲ ∥Θ∥∥S∥.
+The continuity of (Π 2)∗ implies the result.
+• Symmetric transforms. The map ( x,y ) ↦→ (y,x ) on X × X induces an
+involution on ˆX × X. In order to simplify notations, we will only consider the
+transforms LΘ associated to forms Θ which are invariant by this involution. We
+14
+
+=== PDF PAGE 15 ===
+say that LΘ is symmetric. Let Ψ be a smooth test form on X of the apropriate
+bidegree. If S is smooth then we deduce from the symmetry of LΘ that
+⟨LΘ(S), Ψ⟩ =
+∫
+ˆ X× X
+Π∗
+1(S) ∧ Θ ∧ Π∗
+2(Ψ) = ⟨S, (Π1)∗(Π∗
+2(Ψ) ∧ Θ)⟩ = ⟨S, LΘ(Ψ)⟩.
+WhenS is closed and Φ is a smooth test form of the apropriate bidegree, we h ave
+⟨LΘ(S),dd cΦ⟩ =
+∫
+ˆ X× X
+Π∗
+1(S) ∧ ddcΘ ∧ Π∗
+2(Φ) = ⟨LddcΘ(S), Φ⟩.
+Observe that the smoothness of S is superﬂous when Θ is smooth. The previous
+identities may be extended to some cases where S and Θ are not smooth using a
+regularization on S.
+2.4 Regularization and Green potential
+• Deformation of the identity transform. We introduce in this section
+a family of regular transforms Lθ, θ ∈ P1 \ {0}, of bidegree (0 , 0) which is a
+continuous deformation of the identity transform L0 considered in Example 2.3.1.
+We use the notations of Section 2.1. Consider the following regulariza tion
+of the function ϕ . Recall that ϕ ≤ − 2. Let χ be a smooth convex increasing
+function on R ∪ {−∞} such that χ (t) = t for t ≥ 0, χ (t) = − 1 for t ≤ − 2 and
+0 ≤ χ ′ ≤ 1. Deﬁne
+χ θ(t) := χ (t − log |θ|) + log |θ| and ϕ θ :=χ θ(ϕ ).
+When |θ| decreases to 0, χ θ decreases to χ 0 = id and ϕ θ decreases to ϕ . The
+following lemma gives some properties of ϕ θ where the coordinates ( x′
+1,y,v ′) are
+introduced in Section 2.1.
+Lemma 2.4.1. There is a constant c > 0 such that for θ ∈ C∗ small enough,
+ddcϕ θ +γ vanishes on {|x1|>c |θ|}. Moreover, we can write
+ddcϕ θ +γ =Adx1 ∧ d
+x1 +B
+where A is a smooth function such that ∥A∥∞ ≤ c|θ|− 2 and B is a smooth form
+such that ∥B∥∞ ≤ c|θ|− 1.
+Proof. Since ˆ∆ is given by x1 = 0 and ddcϕ = [ ˆ∆] − γ, the function ψ :=
+ϕ − log |x1| is smooth. By deﬁnition, ϕ θ = ϕ on {ϕ > log |θ|} which contains
+{|x1|>c |θ|} for some constant c> 0 large enough. So, we have for |x1|>c |θ|
+ddcϕ θ +γ =ddcϕ +γ = 0.
+This proves the ﬁrst assertion of the lemma.
+15
+
+=== PDF PAGE 16 ===
+For the second assertion, observe that ϕ θ is constant on {|x1|< c′|θ|} for
+some constant c′ > 0. Therefore, it is enough to consider the problem on the
+domain {c′|θ| ≤ |x1| ≤ c|θ|} where we have ddcϕ = γ. Observe that ∥ϕ ∥C1 ≲
+|x1|− 1, ∥ϕ ∥C2 ≲ |x1|− 2 and that the derivatives of χ θ are bounded by a constant
+independent of θ. We have
+ddcϕ θ =ddcχ θ(ϕ ) = χ ′′
+θ(ϕ )dϕ ∧ dcϕ +χ ′
+θ(ϕ )ddcϕ.
+The last term is bounded. For the ﬁrst term, we have since ψ is smooth
+dϕ ∧ dcϕ =d(log |x1|+ψ ) ∧ dc(log |x1|+ψ ) = i
+π |x1|− 2dx1 ∧ dx1 +O(|x1|− 1).
+This implies the result.
+Lemma 2.4.2. The function (θ,z ) ↦→ ϕ θ(z) can be extended to a quasi-p.s.h.
+function on C × ˆX × X which is continuous outside {0} × ˆ∆ and d.s.h. on
+P1 × ˆX × X. We have ϕ 0(z) = ϕ (z) and ddcϕ θ(z) ≥ − λ ˆω (z) on C × ˆX × X
+for some constant λ > 0. Moreover, ddcϕ θ(z) can be written as a diﬀerence of
+positive closed currents on P1 × ˆX × X which are smooth on C∗ × ˆX × X.
+Proof. If ψ (θ,z ) := ϕ (z) − log |θ|, then we have on C∗ × ˆX × X
+ddcϕ θ(z) = [ χ ′(ψ )]2dψ ∧ dcψ +χ ′′(ψ )ddcψ
+≥ χ ′′(ψ )ddcψ =χ ′′(ψ )ddcϕ (z).
+Hence,ddcϕ θ(z) ≥ − λ ˆω (z),λ> 0, on C∗ × ˆX × X becauseχ ′′is positive bounded
+and ϕ is quasi-p.s.h. On the other hand, by deﬁnition, ϕ θ(z) = log |θ| − 1 when
+|θ| ≥ 1 and ϕ θ(z) is bounded from above when |θ| ≤ 1. By classical properties
+of p.s.h. functions, ϕ θ(z) can be extended to a quasi-p.s.h. function and the
+estimate ddcϕ θ(z) ≥ − λ ˆω (z) holds on C × ˆX × X.
+Since ϕ θ(z) = log |θ| − 1 for |θ| ≥ 1, ϕ θ(z) is d.s.h. on P1 × ˆX × X. We have
+for the ddc operator on P1 × ˆX × X
+ddcϕ θ(z) ≥ −
+[
+{∞} × ˆX × X
+]
+− λ ˆω (z).
+So, we can writeddcϕ θ(z) as the following diﬀerence of two positive closed currents
+(
+ddcϕ θ(z) +
+[
+{∞} × ˆX × X
+]
++λ ˆω (z)
+)
+−
+( [
+{∞} × ˆX × X
+]
++λ ˆω (z)
+)
+.
+These currents are smooth on C∗ × ˆX × X since ϕ θ(z) is smooth there.
+It remains to study ϕ θ(z) when θ = 0 or θ → 0. For a ̸∈ ˆ∆, we have
+ϕ θ(z) → ϕ (a) when (θ,z ) → (0,a ). Therefore, ϕ θ(z) is continuous out of {0} × ˆ∆
+and ϕ 0(z) = ϕ (z) outside ˆ∆. Finally, since ϕ θ ≤ max(ϕ, log |θ|), we have that
+ϕ θ(z) → −∞ when (θ,z ) tends to {0} × ˆ∆. Since ϕ θ(z) is quasi-p.s.h. on
+C × ˆX × X, we deduce that ϕ 0(z) = −∞ =ϕ (z) on ˆ∆.
+16
+
+=== PDF PAGE 17 ===
+Deﬁne for θ ∈ C∗ the current Θ θ on ˆX × X by
+Θθ := (ddcϕ θ +γ) ∧ η and Θ 0 := [ ˆ∆] ∧ η,
+see Example 2.3.1. Observe that Θ θ = γ ∧ η for |θ|> 1 since in this case ϕ θ is
+constant. So, deﬁne also Θ ∞ := γ ∧ η. Since γ and η are smooth, they can be
+written as diﬀerences of smooth positive closed forms. By Lemma 2.4 .2, for each
+θ ̸= 0, ddcϕ θ can be written as a diﬀerence of smooth positive closed forms on X
+with masses bounded by a constant independent of θ. Therefore, we can write
+Θθ := Θ +
+θ − Θ−
+θ where Θ ±
+θ are smooth positive closed with mass bounded by a
+constant independent of θ. We see that the family (Θ θ)θ∈ P1 is continuous with
+respect to the ∗-topology. Deﬁne
+L±
+θ := LΘ±
+θ
+and Lθ := LΘθ = L+
+θ − L −
+θ.
+Note that Lθ is symmetric.
+• Regularization of currents. Regularization of positive closed currents on
+complex manifolds was developed by Demailly in the case of bidegree (1 , 1) [10].
+The case of bidegree (p,p ) was studied in [19]. Deﬁne Sθ := Lθ(S) for all currents
+S in Dp.
+Lemma 2.4.3. The current Sθ depends continuously on (θ,S ) for the ∗-topology
+on S, Sθ. In particular, we have ∥Sθ∥∗ ≤ c∥S∥∗ for some constant c > 0 in-
+dependent of S and θ. Moreover, we have dist2(Sθ,S ) ≤ c|θ|∥S∥∗ with c > 0
+independent of S and θ.
+Proof. The estimate ∥Sθ∥∗ ≤ c∥S∥∗ is clear for θ = 0 since L0 = id, see Example
+2.3.1. The case θ ̸= 0 is a consequence of Lemma 2.3.4 applied to L±
+θ . When
+θ tends to a ∈ C∗, then ϕ θ converges in the C∞ -topology to ϕ a. Therefore, Sθ
+depends continuously on ( θ,S ) for θ ∈ C∗.
+It remains to prove the estimate on dist 2(Sθ,S ) for |θ| ≤ 1. This and the
+triangle inequality imply the continuity of Sθ atθ = 0, see also Proposition 2.2.1.
+We can assume that S is positive and that ∥S∥ ≤ 1. Let Φ be a test form such
+that ∥Φ∥C2 ≤ 1. We have using the description of L0 in Example 2.3.1
+⟨Sθ − S, Φ⟩ = ⟨ddc(ϕ θ − ϕ ) ∧ η ∧ Π∗
+1(S), Π∗
+2(Φ)⟩
+= ⟨(ϕ θ − ϕ )η ∧ Π∗
+1(S), Π∗
+2(ddcΦ)⟩
+=
+⟨
+S, (Π1)∗
+(
+(ϕ θ − ϕ )η ∧ Π∗
+2(ddcΦ)
+)⟩
+.
+We have to bound the last integral by c|θ| for some constant c> 0.
+Since ∥S∥ ≤ 1, it is enough to show that the form (Π 1)∗
+[
+(ϕ θ − ϕ )η ∧ Π∗
+2(ddcΦ)
+]
+has a ∥ · ∥∞ -norm bounded by c|θ|. The map Π 1 is a submersion. So, the
+coeﬃcients of the considered form are equal to some integrals of c oeﬃcients of
+(ϕ θ − ϕ )η ∧ Π∗
+2(ddcΦ) on ﬁbers of Π 1. The ∥ · ∥∞ estimate is not diﬃcult to
+17
+
+=== PDF PAGE 18 ===
+obtain. Indeed, η ∧ Π∗
+2(ddcΦ) is a smooth form with bounded ∥ · ∥∞ -norm, the
+function ϕ θ − ϕ has support in a neighbourhood of ˆ∆ of size ≲ |θ| and satisﬁes
+|ϕ θ − ϕ |≲ − log dist(·, ˆ∆) near ˆ∆.
+We deduce the following result obtained in [19], see also Propositions 3.1 .2
+and 3.2.8 below.
+Theorem 2.4.4. Smooth forms are dense in Dp and in D0
+p for the ∗-topology.
+Moreover, there is a constant c >0 such that for every current S ∈ Dp, we can
+writeS =S+ − S− withS± ∈ Cp, ∥S± ∥ ≤ c∥S∥∗ andS± approximable by smooth
+forms in Cp.
+Proof. We prove the ﬁrst assertion. If S is in Dp, we can add to S a smooth
+form in order to obtain a current in D0
+p. So, it is enough to approximate currents
+S in D0
+p by smooth forms in D0
+p. Observe that the problem is easy when S is
+a form of class C1. Indeed, we can write S = ddcU with U of class C2 and
+approximateS uniformly by Sǫ :=ddcUǫ where Uǫ is smooth and Uǫ → U in the
+C2 topology. It remains to approximate S by C1 forms in D0
+p. Consider non-zero
+complex numbers θ1,...,θ k+2. The currents Θ θi are smooth, then the associated
+transforms Lθi are regular. By Lemma 2.4.3, we can choose θi converging to 0
+such that Lθk+2 ◦ · · · ◦ Lθ1(S) converges to S. By Corollary 2.3.3 and Lemma
+2.3.4, Lθk+2 ◦ · · · ◦ Lθ1(S) is a C1 form in D0
+p. This completes the proof of the ﬁrst
+assertion.
+For the second assertion, we can assume that S is positive. Recall that when
+θ ̸= 0, Lθ = L+
+θ − L −
+θ where L±
+θ are associated to smooth positive forms Θ ±
+θ with
+mass bounded by a constant. Therefore, Lθk+2 ◦ · · · ◦ Lθ1(S) is a diﬀerence of
+C1 positive closed forms of bounded mass. We obtain the result by extr acting
+subsequences of forms converging to some currents S± .
+Corollary 2.4.5. LetS be a current in Dp andS′ a current in Dp′ withp+p′ ≤ k.
+Assume that S restricted to an open set W is a continuous form. Then S ∧ S′ is
+deﬁned on W and its mass on W satisﬁes
+∥S ∧ S′∥W ≤ c∥S∥∗∥S′∥∗
+for some constant c> 0 independent of S and S′.
+Proof. It is clear that S ∧S′ is well-deﬁned on W and depends continuously on S′
+for the ∗-topology on S′. Therefore, by Theorem 2.4.4, we can assume that S′ is
+positive and smooth. Now S ∧ S′ is deﬁned on X for every S smooth or not. We
+can assume that S is positive but we may loose the continuity of S. The current
+S ∧ S′ is positive on X. Its mass can be computed cohomologically. Therefore,
+we have
+∥S ∧ S′∥W ≤ ∥ S ∧ S′∥ ≤ c∥S∥∥S′∥.
+This implies the result.
+18
+
+=== PDF PAGE 19 ===
+Lemma 2.4.6. LetS and Sθ be as above. Assume that S is smooth. Then Sθ is
+smooth for every θ and
+∥Sθ − S∥∞ ≤ c|θ|∥S∥C1
+wherec> 0 is a constant independent of S and θ.
+Proof. The current S0 is equal to S. Hence, S0 is smooth. For θ ̸= 0, Lθ is a
+regular transform. Using the fact that Π 2 is a submersion, we deduce easily that
+Sθ = Lθ(S) is smooth. It remains to prove the estimate in the lemma.
+Assume that ∥S∥C1 ≤ 1. Observe that (Π 2)∗(Θθ) is a closed current of bidegree
+(0, 0) on X. So, it is deﬁned by a constant function. On the other hand, since
+Θθ is cohomologous to Θ 0, (Π 2)∗(Θθ) is cohomologous to
+(Π2)∗(Θ0) = (π2)∗π∗(Θ0) = (π2)∗[∆] = [X].
+Hence, (Π 2)∗(Θθ) is equal to 1. We deduce that S = (Π 2)∗(Π∗
+2(S) ∧ Θθ) and then
+Sθ − S = (Π 2)∗(π ∗(S′) ∧ Θθ), where S′ :=π ∗
+1(S) − π ∗
+2(S).
+Observe that ∥S′∥C1 is bounded and the restriction of S′ to ∆ vanishes. If S′′:=
+π ∗(S′), then ∥S′′∥C1 is bounded and S′′ restricted to ˆ∆ vanishes. Therefore, in
+the local coordinates near ˆ∆ as in Section 2.1, we have
+S′′(x1,y,v ′) = |x1|A +Bdx1 +Cd
+x1
+where A, B, C are bounded forms.
+The coeﬃcients of Sθ − S at a point y0 is computed by some integrals involving
+the coeﬃcients ofS′′∧ Θθ =S′′∧ (ddcϕ θ+γ)∧η on {y =y0}. The above description
+of S′′ together with Lemma 2.4.1, implies that these coeﬃcients are ≲ |θ|. The
+result follows.
+• Green potential and ddc-equation. Consider a current S in D0
+p withp ≥ 1.
+Then, since [S] = 0, by ddc-lemma [10, 46], there is a real current US of bidegree
+(p − 1,p − 1) such that ddcUS = S. We call US a potential of S. In order to
+construct an explicit potential and to estimate its norm, we use a tr ansform of
+bidegree (− 1, − 1). Choose a real smooth ( k− 1,k − 1)-formβ on ˆX × X such that
+ddcβ = −γ ∧η +π ∗(α ∆) where α ∆,γ andη are introduced in Section 2.1. We can
+choose β symmetric. Consider the symmetric transform LK with K := ϕη − β .
+The following result was obtained in [20, Proposition 2.1], see also [32].
+Proposition 2.4.7. LetS be a current in D0
+p with p ≥ 1. Then US := LK(S) is
+a potential of S. Moreover, we have
+∥US∥L1+1/k ≤ c∥S∥∗
+for some constant c> 0 independent of S.
+19
+
+=== PDF PAGE 20 ===
+Proof. By Proposition 2.3.2, S ↦→ L K(S) is continuous with respect to the ∗-
+topology on S ∈ D0
+p and the estimate on ∥US∥L1+1/k is clear. We show that
+ddcUS = S. By Theorem 2.4.4, it is enough to consider S smooth. Deﬁne
+K ′ :=π∗(K). This is a form smooth outside ∆. We have seen in Section 2.3 that
+|K ′|≲ − log dist(·, ∆)dist(·, ∆)2− 2k
+near ∆. We also have
+ddcK ′ =π∗(ddcK) = π∗
+(
+[ ˆ∆] ∧ η − π ∗(α ∆)
+)
+= [∆] − α ∆.
+So,K ′ is a kernel for solving the ddc-equation on X. Since S is smooth, we have
+US = (π2)∗(π ∗
+1(S) ∧ K ′) and
+ddcUS = ( π2)∗
+(
+π ∗
+1(S) ∧ [∆]
+)
+− (π2)∗
+(
+π ∗
+1(S) ∧ α ∆
+)
+= S − (π2)∗
+(
+π ∗
+1(S) ∧ α ∆
+)
+=S,
+where the last identity is obtained using that [S] = 0 and that α ∆ is a combination
+of forms of type β (x) ∧ β ′(y) with β and β ′ closed.
+Deﬁnition 2.4.8. We call LK(S) the Green potential of S.
+Note that the Green potential depends on the choice of K.
+Remark 2.4.9. The transform associated to i
+π∂K solves the ∂-equation on X
+and i
+ππ∗(∂K ) is a kernel which solves the ∂-equation.
+3 Structural varieties and super-potentials
+In this section, we deﬁne for each positive closed ( p,p )-current a super-potential
+which is a function on the space of smooth forms in D0
+k− p+1. In this space,
+we construct some special structural lines parametrized by the p rojective line
+P1. The restriction of the super-potential to such a structural line is a d.s.h.
+function. This is a key point in our study. We will also consider current s with
+regular super-potentials and their intersection.
+3.1 Structural varieties in the space of currents
+Consider a current R onV × X which is a diﬀerence of two positive closed ( s,s )-
+currents. We will use in next sections the case where s =k− p+1. By Proposition
+2.2.5, for θ inV outside a locally pluripolar set, the slice Rθ := ⟨R,π V,θ ⟩ is well-
+deﬁned and is a current in Ds. Its cohomology class does not depend on θ.
+Assume that Rθ is in D0
+s, i.e. [ Rθ] = 0. So, we obtain a map τ : V → D0
+s given
+byθ ↦→ Rθ which is deﬁned out of a locally pluripolar set.
+20
+
+=== PDF PAGE 21 ===
+Deﬁnition 3.1.1. We say thatτ or the family (Rθ)θ∈ V deﬁnes a structural variety
+of D0
+s. When Rθ is deﬁned for every θ and depends continuously on θ for the
+∗-topology, we say that the structural variety is continuous.
+In what follows, we use some structural lines, i.e. structural varieties parametrized
+by the projective line P1 = C ∪ {∞} . Let Lθ := LΘθ be transforms deﬁned in
+Section 2.4. For a given current R in D0
+s and for θ ∈ C ∪ {∞} , consider the
+current Rθ := Lθ(R). Recall that Lθ, Θ θ, Rθ do not depend on θ when |θ| ≥ 1
+and that L0 = id, R0 =R.
+Proposition 3.1.2. The family of currents (Rθ)θ∈ P1 deﬁnes a continuous struc-
+tural line in D0
+s which depends linearly on R. Moreover, there is a constant c> 0
+independent of R such that ∥Rθ∥∗ ≤ c∥R∥∗ for every θ.
+Deﬁnition 3.1.3. We call (Rθ)θ∈ P1 the special structural line associated to R.
+Proof of Proposition 3.1.2. The linear dependence on R is clear. The con-
+tinuity of ( Rθ)θ∈ P1 and the estimate on ∥Rθ∥∗ are proved in Lemma 2.4.3. Let
+τ0 denote the projection of P1 × ˆX × X on P1 and τ the projection on ˆX × X.
+Consider ϕ θ(z) as a function on C × ˆX × X. Deﬁne a current ˆR on C∗ × ˆX × X
+by
+ˆR(θ,z ) :=
+(
+ddcϕ θ(z) +τ∗(γ)
+)
+∧ τ∗(η) ∧ τ∗(Π∗
+1(R)).
+In this wedge-product, each current is a diﬀerence of positive clos ed currents with
+bounded mass in P1 × ˆX × X. We can apply Corollary 2.4.5 to the current ˆR,
+which is well-deﬁned on C∗ × ˆX × X, and Skoda’s theorem [44] on the extension
+of positive closed currents. Hence, the trivial extension of ˆR is a diﬀerence of
+positive closed currents on P1 × ˆX × X with bounded mass. Denote also by ˆR
+this extension.
+On C∗ × ˆX × X, in the deﬁnition of ˆR, all currents except R, are smooth. We
+deduce easily from the slicing theory that
+⟨ˆR,τ 0,θ ⟩ = (ddc
+zϕ θ +γ) ∧ η ∧ Π∗
+1(R)
+where we identify {θ} × ˆX × X with ˆX × X. Let τ2 := (τ0, Π2 ◦τ) denote the
+projection of P1 × ˆX × X onto the product of P1 with the second factor X. Deﬁne
+R := (τ2)∗(ˆR). It is deduced from the slicing theory that
+⟨R,π P1,θ ⟩ = (Π 2)∗⟨ˆR,τ 0,θ ⟩ =Rθ,
+for θ ∈ C∗. Recall that Rθ depends continuously on θ ∈ P1. By Remark 2.2.6,
+the identity ⟨R,π P1,θ ⟩ = Rθ holds for any θ ∈ P1. So, ( Rθ)θ∈ P1 is a structural
+line. □
+Remark 3.1.4. We can prove that θ ↦→ L k+2
+θ (R) deﬁnes a continuous structural
+line. In this case, for θ ̸= 0, Lk+2
+θ (R) is a C1 form.
+21
+
+=== PDF PAGE 22 ===
+3.2 Super-potentials of currents
+Consider a current S in Dp. The super-potentials of S are deﬁned (at least) on
+the smooth forms in D0
+k− p+1. They are unique under apropriate normalization.
+Let α = {α 1,...,α h} with h := dim H p,p (X, R) be a ﬁxed family of real
+smooth closed ( p,p )-forms such that the family of classes [ α ] = {[α 1],..., [α h]}
+is a basis of H p,p (X, R). We can ﬁnd a family α ∨ = {α ∨
+1,...,α ∨
+h } of real smooth
+closed (k − p,k − p)-forms such that [ α ∨ ] = {[α ∨
+1 ],..., [α ∨
+h ]} is the dual basis of
+[α ] with respect to the cup-product ⌣ . Let R be a current in D0
+k− p+1 and UR a
+potential of R. Adding to UR a suitable combination of α ∨
+i allows to assume that
+⟨UR,α i⟩ = 0 for i = 1,...,h . We say that UR is α -normalized.
+Lemma 3.2.1. Assume that S is smooth or that R,UR are smooth. Then ⟨S,U R⟩
+does not depend on the choice of UR. Assume that [S] = 0 . Let US be a potential
+of S, smooth if S is smooth. Let U ′
+R be another potential of R, smooth when R
+is smooth. Then ⟨S,U ′
+R⟩ = ⟨S,U R⟩ = ⟨US,R ⟩. In particular, ⟨S,U R⟩ does not
+depend on α and α ∨ .
+Proof. LetU ′
+R be anotherα -normalized potential ofR. We have ddc(UR−U ′
+R) = 0
+and [α i]⌣ [UR − U ′
+R] = 0 for every i. Since [α ] is a basis of H p,p (X, R), we deduce
+that [S]⌣ [UR − U ′
+R] = 0. Hence, ⟨S,U R⟩ = ⟨S,U ′
+R⟩. So, ⟨S,U R⟩ does not depend
+on the choice of UR. If [ S] = 0, we have
+⟨S,U ′
+R⟩ = ⟨ddcUS,U ′
+R⟩ = ⟨US,dd cU ′
+R⟩ = ⟨US,R ⟩.
+These identities hold for all U ′
+R not necessarily normalized, in particular for UR.
+Note that the smoothness of S, US or R, UR, U ′
+R implies that the considered
+integrals are meaningful.
+Deﬁnition 3.2.2. The α -normalized super-potential US of S, is the following
+function deﬁned on smooth forms R in D0
+k− p+1 by
+US(R) := ⟨S,U R⟩, (3.1)
+where UR is an α -normalized smooth potential of R. We say that S has a con-
+tinuous super-potential 4 if US can be extended to a function on D0
+k− p+1 which
+is continuous with respect to the ∗-topology. In this case, the extension is also
+denoted by US and is also called super-potential of S.
+Note that the α -normalized super-potential of α i is identically zero. By
+Lemma 3.2.1, when [ S] = 0, the super-potential US does not depend on the
+choice of α . When S is smooth then S has a continuous super-potential and the
+formula (3.1) holds for all R in D0
+k− p+1. In this case, if [ S] = 0 and if US is a
+smooth potential of S, we also have US(R) = ⟨US,R ⟩.
+4this is equivalent to the notion of PC current introduced in [20].
+22
+
+=== PDF PAGE 23 ===
+Proposition 3.2.3. LetS and S′ be two currents in Dp such that [S] = [S′]. If
+they have the same α -normalized super-potential then they are equal.
+Proof. Theα -normalized super-potential US′′ ofS′′:=S − S′ vanishes identically.
+If U is a real smooth ( k − p,k − p)-form, then U is a potential of ddcU which is
+a form in D0
+k− p+1. Since [ S′′] = 0, it follows from Lemma 3.2.1, that ⟨S′′,U ⟩ =
+US′′(ddcU) = 0. Hence, S′′= 0.
+Here is one of the fundamental properties of super-potential. It can be ex-
+tended to more general structural varieties but, for simplicity we restrict ourselves
+to this particular case.
+Proposition 3.2.4. Let (Rθ)θ∈ P1 be the special structural line associated to a
+smooth form R ∈ D0
+k− p+1. Let S be a current in Dp. Then θ ↦→ US(Rθ) is a
+continuous d.s.h. function on P1 which is constant on {|θ| ≥ 1}. Moreover, we
+have
+∥ddc
+θUS(Rθ)∥∗ ≤ c∥S∥∗∥R∥∗
+wherec> 0 is a constant independent of R and S.
+Proof. By Lemma 2.4.6 applied to Rθ, the function H(θ) := US(Rθ) is continuous
+on P1. It remains to bound the mass of ddcH. Since this function depends
+continuously onS, by Theorem 2.4.4, we can assume that S is smooth. Recall that
+theα -normalized super-potential of α i is zero. Subtracting from S a combination
+of α i allows to assume that [ S] = 0. So, we can use the last assertion of Lemma
+3.2.1: if U is a smooth potential of S, then H(θ) = ⟨U,R θ⟩.
+It is enough to estimate the mass of ddcH on C∗. Indeed, the continuity of
+H implies that ddcH has no mass on ﬁnite sets. Consider in P1 × ˆX × X the
+currents
+ˆRU := ˆR ∧ τ∗Π∗
+2(U) and ˆRS := ˆR ∧ τ∗Π∗
+2(S).
+These currents are smooth on C∗ × ˆX × X. A direct computation gives H =
+(τ0)∗(ˆRU ) and ddcH = (τ0)∗(ˆRS) on C∗. So, it is enough to estimate the mass of
+ˆRS on C∗ × ˆX × X. By Corollary 2.4.5, since S and R are smooth, this mass is
+bounded by a constant times
+∥ˆR∥∗∥τ∗Π∗
+2(S)∥∗ ≲ ∥τ∗Π∗
+1(R)∥∗∥τ∗Π∗
+2(S)∥∗ ≲ ∥R∥∗∥S∥∗,
+where the last inequality follows from the fact that τ, Π 1, Π2 are submersions.
+Lemma 3.2.5. Let USθ be the α -normalized super-potential of Sθ. If [S] = 0 ,
+then USθ(R) = US(Rθ) for R smooth.
+Proof. Since Sθ = Lθ(S), the Green potential of Sθ is equal to LKLθ(S). Using
+the symmetry of Lθ and LK, we have by Lemma 3.2.1
+USθ(R) = ⟨LKLθ(S),R ⟩ = ⟨S, LθLK(R)⟩.
+23
+
+=== PDF PAGE 24 ===
+On the other hand,
+ddcLθLK(R) = Lθ(ddcLK(R)) = Lθ(R) = Rθ.
+It follows that USθ (R) = US(Rθ).
+The following result is an analogue of the estimate in Proposition 2.2.3 fo r
+super-potentials of currents.
+Theorem 3.2.6. Let S be a current in Dp and US the α -normalized super-
+potential of S. Then we have for R smooth in D0
+k− p+1 with ∥R∥∗ ≤ 1
+|US(R)| ≤ c∥S∥∗
+(
+1 + log+ ∥R∥C1
+)
+,
+where log+ := max(log, 0) and c> 0 is a constant independent of S, R.
+Proof. Subtracting from S a combination of α i allows to assume that [ S] = 0.
+We can also assume that ∥S∥∗ = 1. Let US be the Green potential of S. By
+Lemma 3.2.1, US(R) = ⟨US,R ⟩. We have to show that
+MS,R := |⟨US,R ⟩|
+1 + log+ ∥R∥C1
+is bounded when ∥R∥∗ ≤ 1. The proof uses Proposition 2.3.2, Lemma 2.2.4 and
+special structural lines in D0
+k− p+1. Consider the numbers qn ≥ 1 given by the
+induction identity q− 1
+n = q− 1
+n− 1 − 1 + (1 + 1/k )− 1 for n ≤ k + 1 with q0 = 1. We
+haveqk+1 = ∞ .
+Claim. For every 0 ≤ n ≤ k + 1 and M > 0, there is a constant c > 0
+independent of S, R such that MS,R ≤ c if ∥R∥∗ ≤ 1 and ∥R∥Lqn ≤ M.
+Forn = 0, the claim implies the theorem, i.e. MS,R is bounded when ∥R∥∗ ≤
+1. Indeed, we have ∥R∥L1 ≲ ∥R∥ ≲ ∥R∥∗ and then the hypothesis ∥R∥Lq0 ≤ M
+is satisﬁed. We prove now the claim using a decreasing induction on n. For
+n =k + 1, by Proposition 2.3.2, ∥US∥L1 is bounded uniformly on S. If ∥R∥∞ is
+bounded, it is clear that ⟨US,R ⟩ is bounded. So, the claim is true for n =k + 1.
+Assume now that the claim is true for n + 1. We check it for n and we only have
+to consider the case where ∥R∥C1 is large.
+Let Rθ be as above and deﬁne HS,R (θ) := US(Rθ). By Proposition 3.2.4,
+HS,R is a continuous d.s.h. function on P1. It is equal to some constant cS,R on
+{|θ| ≥ 1}. We have cS,R = ⟨US,R ∞ ⟩. Moreover, ∥ddcHS,R ∥ is bounded uniformly
+on S, R. On the other hand, by Propositions 2.3.2 and 3.1.2, R∞ is a smooth
+form in D0
+k− p+1 with boundedLqn+1-norm and bounded ∥·∥∗-norms. Since ⟨US,R ⟩
+depends linearly on R, we can apply the claim to R∞ and deduce that
+cS,R ≲ 1 + log+ ∥R∞ ∥C1 ≲ 1 + log+ ∥R∥C1.
+24
+
+=== PDF PAGE 25 ===
+Because ⟨US,R ⟩ =HS,R (0), it is enough to show that
+|HS,R (0) − cS,R |≲ 1 + log+ ∥R∥C1.
+Since ∥ddcHS,R ∥ is uniformly bounded, by Lemma 2.2.4 applied to HS,R − cS,R ,
+there is a θ with |θ| ≤ ∥R∥− 1
+C1 such that
+|HS,R (θ) − cS,R |≲ 1 + log+ ∥R∥C1.
+On the other hand, Lemma 2.4.6 implies that
+∥R − Rθ∥∞ ≲ |θ|∥R∥C1 ≤ 1.
+Therefore, using that ∥US∥L1 is bounded, we obtain
+|HS,R (0) − cS,R | ≤ | HS,R (0) − HS,R (θ)|+ |HS,R (θ) − cS,R |
+= |⟨US,R − Rθ⟩|+ |HS,R (θ) − cS,R |
+≲ 1 + log+ ∥R∥C1.
+This completes the proof.
+We will use the following notion of convergence.
+Deﬁnition 3.2.7. Let (Sn) be a sequence of currents converging in Dp to a
+current S. Let US, USn be the α -normalized super-potentials of S, Sn. We
+say that the convergence is SP-uniform if USn converge to US uniformly on any
+∗-bounded set of smooth forms in D0
+k− p+1.
+By linearity, it is enough to check the SP-uniform convergence on th e unit ball
+of D0
+k− p+1. This notion does not depend on α . Indeed, by Lemma 3.2.1, the case
+where [Sn] = [S] = 0 is clear. Since [ Sn] converge to [ S], we obtain the general
+case by adding to Sn and S suitable combinations of α i. Moreover, if Sn and S
+have continuous super-potentials, then since smooth forms are d ense in D0
+k− p+1,
+the extensions of USn converge to the extension of US uniformly on ∗-bounded
+subsets of D0
+k− p+1.
+Proposition 3.2.8. Let S be a current in Dp with continuous super-potentials.
+Then Sθ has continuous super-potentials and Sθ converges SP-uniformly to S
+when θ → 0. In particular, S can be approximated SP-uniformly by smooth
+forms in Dp.
+Proof. Observe that the second assertion is deduced from the ﬁrst one a s in the
+proof of Theorem 2.4.4. We prove now the ﬁrst assertion. When S is smooth, by
+Proposition 2.3.2, Sθ converges to S in the C1-topology and the result is clear.
+Adding to S a combination of α i allows to assume that [ S] = 0. Then, we also
+have [Sθ] = 0 for every θ. We only have to consider |θ| ≤ 1 since Sθ does not
+depend on θ when |θ| ≥ 1. Let R be a current in D0
+k− p+1 with ∥R∥∗ ≤ 1. Let USθ
+25
+
+=== PDF PAGE 26 ===
+denote the super-potential of Sθ. By Lemma 3.2.5, when R is smooth, we have
+USθ(R) = US(Rθ). Since Rθ depends continuously on R, USθ admits a continuous
+extension to D0
+k− p+1 and the last identity holds for all R.
+It remains to check that USθ converges SP-uniformly to US. Recall that since
+US is continuous, if ∥R∥∗ is bounded, we have US(R) → 0 when ∥R∥C− 2 → 0.
+We also have USθ(R) − US(R) = US(Rθ − R). When θ → 0 and ∥R∥∗ ≤ 1,
+∥Rθ − R∥∗ is bounded and by Lemma 2.4.3, ∥Rθ − R∥C− 2 tends to 0 uniformly on
+R. Therefore, US(Rθ − R) tends to 0 uniformly on R with ∥R∥∗ ≤ 1. The result
+follows.
+3.3 Intersection of currents
+We will deﬁne the intersection of two currents such that at least on e of them
+has a continuous super-potential. The theory of intersection is fa r from being
+complete but we will see that the following properties suﬃce in order t o study
+the dynamics of automorphisms. We refer the reader to [8, 9, 31] f or the theory
+of intersection with currents of bidegree (1 , 1) and [22, 25] for the case of bidegree
+(p,p ) on local setting or on homogeneous manifolds, see also [5, 32].
+Let S be a current in Dp and S′ a current in Dp′ with p +p′ ≤ k. Assume
+that S has a continuous super-potential. We will deﬁne the intersection S ∧ S′
+as a current in Dp+p′. This wedge-product satisﬁes some continuity properties.
+Let US be the α -normalized super-potential of S and let (a1,...,a h) denote the
+coordinates of [ S] in the basis [ α ]. Deﬁne for any test smooth real form Φ of
+bidegree (k − p − p′,k − p − p′):
+⟨S ∧ S′, Φ⟩ := US(ddcΦ ∧ S′) +
+∑
+1≤ i≤ h
+ai⟨α i, Φ ∧ S′⟩.
+Lemma 3.3.1. Assume that S or S′ is smooth. Then S ∧ S′ coincides with the
+usual wedge-product of S and S′.
+Proof. Assume that S′ is smooth. Observe that Φ ∧S′ is a potential of ddcΦ ∧S′.
+Deﬁnemi := ⟨α i, Φ ∧ S′⟩. Then Φ ∧ S′− ∑miα ∨
+i is an α -normalized potential of
+ddcΦ ∧ S′. Therefore,
+US(ddcΦ ∧ S′) +
+∑
+aimi = ⟨S, Φ ∧ S′⟩ −
+∑
+mi⟨S,α ∨
+i ⟩ +
+∑
+aimi
+= ⟨S, Φ ∧ S′⟩.
+This implies that S ∧S′ coincides with the usual wedge-product of S andS′. The
+computation still holds when S is smooth but S′ is singular.
+Theorem 3.3.2. LetS be a current in Dp andS′ a current in Dp′ withp+p′ ≤ k.
+Assume that S has continuous super-potentials. Then S ∧ S′, deﬁned as above,
+is a current in Dp+p′ which depends linearly on S, S′. Moreover, we have
+[S ∧ S′] = [S]⌣ [S′] and ∥S ∧ S′∥∗ ≤ c∥S∥∗∥S′∥∗
+26
+
+=== PDF PAGE 27 ===
+for some constant c> 0 independent of S,S′. Let Sn be currents in Dp with con-
+tinuous super-potentials converging SP-uniformly to S and S′
+n be currents con-
+verging in Dp′ to S′. Then, Sn ∧ S′
+n converge in Dp+p′ to S ∧ S′.
+Proof. It is clear that ⟨S ∧ S′, Φ⟩ depends continuously on the smooth test form
+Φ. Hence, S ∧ S′ is a current. Clearly, this current depends linearly on S and
+S′. By deﬁnition, since US is continuous, S ∧ S′ depends continuously on S′. We
+deduce using Theorem 2.4.4 that [ S ∧ S′] = [S] ⌣ [S′] since this identity holds
+for S′ smooth. In order to estimate ∥S ∧ S′∥∗, it is enough to assume that S′
+is smooth positive. Writing S as a diﬀerence of positive closed current, we see
+that ∥S ∧ S′∥∗ ≲ ∥S∥∗∥S′∥∗. We use here that the mass of a positive closed
+current depends only on its cohomology class. The last assertion of the theorem
+is deduced directly from the deﬁnition of S ∧ S′.
+Proposition 3.3.3. Assume that S, S′, Sn, S′
+n have continuous super-potentials
+and that Sn, S′
+n converge SP-uniformly to S, S′ respectively. Then S ∧ S′ and
+Sn ∧S′
+n have also continuous super-potentials and Sn ∧S′
+n converge SP-uniformly
+to S ∧ S′.
+Proof. The proposition is clear when S, Sn are linear combinations of α i. Sub-
+tracting from S and Sn suitable combinations of α i allows to assume that [ S] =
+[Sn] = 0. So, if Φ is a smooth test form we have by deﬁnition ⟨S ∧ S′, Φ⟩ =
+US(S′∧ddcΦ). We deduce that if R is smooth then US∧ S′(R) = US(S′∧R). Since
+S and S′ have continuous super-potentials, US(S′ ∧ R) can be extended contin-
+uously to R in D0
+k− p− p′+1. So, S ∧ S′ has a continuous super-potential and the
+identity US∧ S′(R) = US(S′∧R) holds for all R in D0
+k− p− p′+1. In the same way, we
+prove thatSn∧S′
+n has a continuous super-potential and USn∧ S′n(R) = USn(S′
+n∧R).
+It is now clear that Sn ∧ S′
+n converge SP-uniformly to S ∧ S′.
+The following result shows that the wedge-product is commutative a nd asso-
+ciative. The ﬁrst property allows to deﬁne S′∧S :=S ∧S′ whenS has continuous
+super-potentials and S′ is singular.
+Proposition 3.3.4. Let Si, i = 1, 2, 3, be currents in Dpi. Assume that S1 and
+S2 have continuous super-potentials, then
+S1 ∧ S2 =S2 ∧ S1 and (S1 ∧ S2) ∧ S3 =S1 ∧ (S2 ∧ S3).
+Proof. The proposition is clear when S1 and S2 are smooth. The general case
+is deduced from this particular case using Propositions 3.2.8, 3.3.3 and Theorem
+3.3.2.
+Remark 3.3.5. Assume that S andS′ are positive currents. By Theorem 3.3.2,
+if S is SP-uniformly approximable by smooth positive closed ( p,p )-forms, then
+S ∧ S′ is positive. This is also the case when S′ can be approximated by positive
+smooth forms. In general, we don’t know if S ∧ S′ is always positive when S or
+S′ has continuous super-potentials.
+27
+
+=== PDF PAGE 28 ===
+3.4 H¨ older super-potentials and moderate currents
+Consider a current S in Dp with continuous super-potentials. Its super-potentials
+are deﬁned on D0
+k− p+1.
+Deﬁnition 3.4.1. We say that S has a H¨ older continuous super-potential if it
+admits a super-potential which is H¨ older continuous on ∗-bounded subsets of
+D0
+k− p+1 with respect to dist l for some real number l> 0.
+In order to prove that US is H¨ older continuous, it is enough to show that
+|US(R)| ≲ ∥R∥λ
+C− l for ∥R∥∗ ≤ 1 and for some constant λ > 0. By Proposition
+2.2.1, the deﬁnition does not depend on the choice of l. One checks easily that
+the super-potentials of smooth forms are H¨ older continuous. He nce, if S admits
+a H¨ older continuous super-potential, all the super-potentials of S are H¨ older
+continuous. In other words, this notion does not depend on the no rmalization of
+the super-potential.
+Proposition 3.4.2. Let S, S′ be currents in Dp and Dp′, p +p′ ≤ k, having
+H¨ older continuous super-potentials. ThenS ∧ S′ has a H¨ older continuous super-
+potential.
+Proof. We can assume that [ S] = 0 and [ S′] = 0. Let US, US′ and U be the
+super-potentials of S, S′ and S ∧ S′ respectively. So, for R in D0
+k− p− p′+1 we
+have U(R) = US(S′ ∧ R). It is enough to prove for R in a ∗-bounded subset of
+D0
+k− p− p′+1 that
+∥S′ ∧ R∥C− 4 ≲ ∥R∥λ
+C− 2,
+where λ > 0 is a constant. Using a regularization, we can assume that R is
+smooth. Let U ′ be a potential of S′ and Φ a test form with ∥Φ∥C4 ≤ 1. We have
+since US′ is H¨ older continuous and∥ddcΦ∥C2 is bounded
+∥S′ ∧ R∥C− 4 = sup
+Φ
+|⟨S′ ∧ R, Φ⟩|= sup
+Φ
+|⟨U ′ ∧ R,dd cΦ⟩|
+= sup
+Φ
+|⟨U ′,R ∧ ddcΦ⟩|= sup
+Φ
+|US′(R ∧ ddcΦ)|
+≲ ∥R ∧ ddcΦ∥λ
+C− 2 ≲ ∥R∥λ
+C− 2.
+The result follows.
+Moderate currents and moderate measures were introduced in [17 , 18]. With
+respect to test d.s.h. functions, moderate measures have the sa me regularity as
+the Lebesgue measure does.
+Deﬁnition 3.4.3. A positive measure ν on X is moderate if there are constants
+λ> 0 and A> 0 such that
+⟨ν,e λ |φ |⟩ ≤ A
+for every d.s.h. function φ onX such that ∥φ∥DSH ≤ 1. A measure is moderate if
+it is a diﬀerence of moderate positive measures. A positive closed ( p,p )-current
+28
+
+=== PDF PAGE 29 ===
+S is moderate if its trace measure S ∧ ω k− p is moderate and a current in Dp is
+moderate if it is a diﬀerence of moderate positive closed ( p,p )-currents.
+Proposition 3.4.4. LetS be a positive closed (p,p )-current. Assume that S has
+a H¨ older continuous super-potential. ThenS is moderate.
+Proof. By Proposition 3.4.2, the trace measure of S has a H¨ older continuous
+super-potential. Replacing S by its trace measure allows to assume that S is a
+positive measure, i.e. p =k. Let φ be a d.s.h. function with ∥φ∥DSH ≤ 1. Deﬁne
+ψ M := min( |φ|,M ) − min(|φ|,M − 1) for M ≥ 1. Observe that 0 ≤ ψ M ≤ 1
+and that ψ M = 0 on {|φ| ≤ M − 1}, also ψ M is larger than or equal to the
+characteristic function ρM of {|φ| ≥ M}. Moreover, the DSH-norm of ψ M is
+bounded by a constant independent of φ andM, see e.g. [21]. We want to prove
+that ⟨S,e λ |φ |⟩ ≤ A for some positive constants λ andA. So, it is enough to check
+that ⟨S,ρ M ⟩ ≲e− λM for some (other) positive constant λ. For this purpose, we
+will show that ⟨S,ψ M ⟩ ≲e− λM .
+By Proposition 2.2.3, the volume of the support of ψ M is ≲ e− λM since it is
+contained in {|φ| ≥ M − 1}. Therefore, the estimate ⟨S,ψ M ⟩ ≲ e− λM is clear
+when S is a form with bounded ∥ · ∥∞ -norm because 0 ≤ ψ M ≤ 1. Subtracting
+from S a smooth form allows to assume that [ S] = 0 but we loose here the
+positivity of S. Recall that the super-potential US ofS is H¨ older continuous and
+that ψ M has a bounded DSH-norm. We have for some constant λ> 0
+⟨S,ψ M ⟩ = US(ddcψ M ) ≲ ∥ddcψ M ∥λ
+C− 2.
+On the other hand, if Φ is a test form with ∥Φ∥C2 ≤ 1 then
+∥ddcψ M ∥C− 2 = sup
+Φ
+|⟨ddcψ M, Φ⟩|= sup
+Φ
+|⟨ψ M,dd cΦ⟩|≲e− λM,
+where the last inequality follows from the above volume estimate of th e support
+of ψ M . This completes the proof.
+Proposition 3.4.5. LetS be a positive closed (p,p )-current with H¨ older contin-
+uous super-potentials on X. Assume that the manifold X is projective. Then the
+Hausdorﬀ dimension of S is strictly larger than 2(k − p). More precisely, the trace
+measureS ∧ ω k− p has no mass on sets of ﬁnite Hausdorﬀ measure of dimension
+2(k − p) +ǫ for ǫ> 0 small enough.
+We will need the following lemma where we use that X is projective.
+Lemma 3.4.6. LetA> 0 be a constant large enough and r0 > 0 a constant small
+enough. If Br0, Br are concentric balls of radius r0, r respectively,r ≪ r0, then
+there is a positive smooth form Φ of bidegree (k − p,k − p) supported in Br0 with
+Φ ≥ ω k− p on Br and such that
+∥Φ∥ ≤ Ar2k− 2p+2, ∥ddcΦ∥∗ ≤ Ar2k− 2p and ∥ddcΦ∥C− 1 ≤ Ar2k− 2p+1.
+29
+
+=== PDF PAGE 30 ===
+Proof. The case where X is the projective space Pk is proved in [25, Lemma
+3.3.7]. We will deduce the lemma from this particular case. Since r0 is small,
+we can choose a ﬁnite family of holomorphic maps from X onto Pk such that
+every ball of radius 3 r0 is sent injectively to Pk by at least one of these maps.
+Let Π : X → Pk be such a map corresponding to the ball B3r0 with the same
+center as the considered balls Br and Br0. Then, Π( Br0) contains a ball B′ in
+Pk of radius ≳ r0 and Π(Br) is contained in a ball B′′ of radius ≲ r. Let Ψ be
+a form satisfying the lemma for Pk, B′, B′′and for a ﬁxed K¨ ahler metric on Pk.
+The choice of Π implies that the jacobian of (Π |B2r0 )− 1 is bounded from below
+and from above by positive constants. Therefore, the form Φ := Π ∗
+|Br0
+(Ψ) is
+positive with support in Br0. It satisﬁes Φ ≳ ω k− p on Br and ∥Φ∥ ≲ r2k− 2p+2,
+∥ddcΦ∥∗ ≲r2k− 2p on X. Multiplying Ψ by a constant allows to get Φ ≥ ω k− p on
+Br. Finally, it remains to check the inequality ∥ddcΦ∥C− 1 ≲ r2k− 2p+1. We have
+to show that sup Ω |⟨ddcΦ, Ω⟩|≲r2k− 2p+1 for smooth test form Ω with ∥Ω∥C1 ≤ 1.
+Since Φ is supported in Br0, it is enough to consider Ω with support in B2r0. In
+that case, the desired estimate is deduced from the analogous est imate for Ψ in
+Pk.
+End of the proof of Proposition 3.4.5. Fix a constant ǫ >0 small enough.
+We only have to prove that
+∫
+Br
+S ∧ω k− p ≲r2k− 2p+ǫ forr small, see e.g. [43]. Using
+the previous lemma, it suﬃces to check that ⟨S, Φ⟩ ≲ r2k− 2p+ǫ. The estimate is
+clear when S is smooth. Subtracting from S a smooth form allows to assume
+that [S] = 0 but we loose the positivity of S. Let US be the super-potential of
+S. Since US is H¨ older continuous and∥r2p− 2kddcΦ∥∗ ≤ A, we have
+⟨S, Φ⟩ = US(ddcΦ) = r2k− 2pUS(r2p− 2kddcΦ)
+≲ r2k− 2p∥r2p− 2kddcΦ∥ǫ
+C− 1 ≲r2k− 2p+ǫ.
+This implies the proposition. □
+4 Dynamics of automorphisms
+In this section, we study the dynamics of automorphisms on compac t K¨ ahler man-
+ifolds. The main dynamical objects (Green currents and equilibrium m easure)
+were constructed by the authors in [20]. In [35], under some extra hypothesis,
+Guedj gives another construction of the Green current of some b idegree and of
+the equilibrium measure. Here, the theory of super-potentials allow s us to obtain
+a new construction and to prove some ﬁne properties of these dyn amical objects.
+4.1 Action on currents and on cohomology groups
+We ﬁrst give some basic properties of linear maps. Their proofs are le ft to the
+reader. Recall that a Jordan block Jλ,m is a square complex matrix ( aij)1≤ i,j ≤ m
+30
+
+=== PDF PAGE 31 ===
+such that aij = λ if i = j, aij = 1 if j = i + 1 and aij = 0 otherwise. If λ ̸= 0,
+the entry of index (1 ,m ) of J n
+λ,m is equal to
+( n
+m− 1
+)
+λ n− m+1 when n ≥ m − 1. This
+is the only entry of order nm− 1|λ|n, the other ones have order at most equal to
+nm− 2|λ|n. We have
+∥J n
+λ,m ∥ ∼
+( n
+m − 1
+)
+|λ|n− m+1 ∼ nm− 1|λ|n.
+The eigenspace of Jλ,m associated to the unique eigenvalue λ is a complex line.
+Consider a linear automorphism L of a real space E ≃ Rh. We assume
+there is an open convex cone K in E which is salient, i.e. K ∩ − K = {0}, and
+totally invariant by L, i.e. L(K) = K. For a ﬁxed basis of E, L is associated
+to an invertible square matrix with real coeﬃcients. One can extend L to an
+automorphism of EC := E ⊗ R C ≃ Ch. Then, there is a complex basis of EC
+such that the associated matrix of L is a Jordan matrix, i.e. a block diagonal
+matrix whose blocks are Jordan blocks. In other words, one can de compose EC
+into direct sum of complex subspaces EC
+l which are invariant by L:
+EC =
+⨁
+1≤ l≤ r
+EC
+l with dim EC
+l =ml and
+r∑
+l=1
+ml =h,
+such that the restriction Ll of L to EC
+l is deﬁned by a Jordan block Jλ l,m l.
+Up to a permutation of the EC
+l , we can assume that the ( |λ l|,m l) are ordered
+so that either |λ l|> |λ l+1|or |λ l|= |λ l+1|andml ≥ ml+1 for every 1 ≤ l ≤ r − 1.
+We say thatJλ l,m l is a dominant Jordan block if ( |λ l|,m l) = ( |λ 1|,m 1) and in that
+case we say that λ l is a dominant eigenvalue ofL. Let ν be the integer such that
+Jλ 1,m 1,... ,Jλ ν ,m ν are the dominant Jordan blocks. The positive number λ := |λ 1|
+is the spectral radius of L. The integer m := m1 is called the multiplicity of the
+spectral radius. Since L preserves the salient open cone K, λ is a dominant
+eigenvalue of L. Moreover, the Perron-Frobenius theorem implies that L admits
+an eigenvector in K associated to the dominant eigenvalue λ. It is clear that
+∥Ln∥ ∼ nm1− 1λ n. Let ˜EC
+l be the hyperplane generated by the ﬁrst ml − 1 vectors
+of the basis of EC
+l associated to the Jordan form. We have ∥Lnv∥ ∼ nm1− 1λ n for
+any vector v ̸∈ ˜EC
+1 ⊕ · · · ⊕ ˜EC
+ν ⊕ EC
+ν+1 ⊕ · · · ⊕EC
+r , in particular for v ∈ K.
+Let F C
+l denote the eigenspace of Ll which is a complex line. We say that
+F C := F C
+1 ⊕ · · · ⊕ F C
+ν is the dominant eigenspace . Deﬁne H C := ⊕F C
+l with
+1 ≤ l ≤ ν and λ l = λ. This is the strictly dominant eigenspace of L. Deﬁne
+also F := F C ∩ E and H := H C ∩ E. One can check that F C = F ⊗ R C and
+H C =H ⊗ R C. The previous spaces are invariant under L.
+For any 1 ≤ l ≤ ν, there is a unique θl ∈ S := R/ 2πZ such thatλ l =λ exp(iθl).
+We say that θ := (θ1,...,θ ν ) ∈ Sν is the dominant direction ofL. The dominant
+direction of Ln is equal to nθ. Denote by Θ the closed subgroup of Sν generated
+by θ. It is a ﬁnite union of real tori. The orbit of each point θ′ ∈ Θ under the
+31
+
+=== PDF PAGE 32 ===
+translation θ′ ↦→ θ′ +θ is dense in Θ. If λ l = λ for every 1 ≤ l ≤ ν, we have
+F C =H C, θ = 0 and Θ = {0}. Deﬁne
+ˆLN := 1
+N
+N∑
+n=1
+Ln
+nm− 1λ n.
+We have the following proposition, see also [20].
+Proposition 4.1.1. The sequence (ˆLN ) converges to a surjective real linear map
+ˆL∞ :E → H. Let (ni) be an increasing sequence of integers. Then (n1− m
+i λ − niLni)
+converges if and only if (niθ) converges. Moreover, any limit of (n1− mλ − nLn) is
+a surjective real linear map from E to F .
+Note that surjective linear maps are open and the image of K by such a map
+is an open convex cone.
+We will apply the previous result to the action of a holomorphic map on
+cohomology groups. Let f be an automorphism on a compact K¨ ahler manifold
+(X,ω ) of dimension k. The pull-back operator f ∗ acts on smooth forms and on
+currents. It commutes with ∂,
+∂ and preserves positivity. Therefore, f ∗ acts as a
+linear automorphism on H q,q (X, R). The operator push-forward f∗ is deﬁned in
+the same way. It coincides with the pull-back ( f − 1)∗ byf − 1.
+Recall that the dynamical degree of order q of f is the spectral radius of f ∗
+acting on H q,q (X, R). Let us denote by dq(f ) (or dq if there is no confusion) this
+degree. We have dq(f n) = dq(f )n forn ≥ 1 and d0(f ) = dk(f ) = 1. An inequality
+due to Khovanskii, Teissier and Gromov [33] implies that the function q ↦→ logdq
+is concave on 0 ≤ q ≤ k, see also [35]. In particular, there are two integers p and
+p′ with 0 ≤ p ≤ p′ ≤ k such that
+1 = d0 < · · ·<d p = · · ·=dp′> · · ·>d k = 1.
+By Gromov and Yomdin [34, 48], the dynamical degrees are related to the topo-
+logical entropy ht(f ) of f by the formula ht(f ) = max q logdq, see also [19] for a
+more general context.
+Let K be the convex cone of the classes in H q,q (X, R) associated to strictly
+positive closed (q,q )-forms. Then K is salient and totally invariant by f ∗. Hence,
+we can apply Proposition 4.1.1 to f ∗ (one can also apply it to the cone of the
+classes associated to strictly positive closed ( q,q )-currents). Recall that the bi-
+linear form ⌣ on H q,q (X, R) × H k− q,k − q(X, R) given by
+([β ], [β ′]) ↦→ [β ]⌣ [β ′] :=
+∫
+X
+β ∧ β ′
+is non-degenerate. Moreover, we have f ∗[β ]⌣ [β ′] = [β ]⌣f ∗[β ′]. So, if we con-
+sider two basis of H q,q (X, R) and of H k− q,k − q(X, R) which are dual with respect
+to ⌣ , then f ∗ acting on H q,q (X, R) and f∗ acting on H k− q,k − q(X, R) are given
+by the same matrix. Therefore, these operators have the same s pectral radius
+dq(f ) = dk− q(f − 1) with the same multiplicity m.
+32
+
+=== PDF PAGE 33 ===
+Lemma 4.1.2. If S is a current in Dq then
+∥(f n)∗S∥∗ ≤ κnm− 1dn
+q ∥S∥∗
+whereκ> 0 is a constant independent of S. Moreover, if S is a strictly positive
+current, we have ∥(f n)∗(S)∥ ∼ nm− 1dn
+q .
+Proof. We can assume that S is positive. The mass of a positive closed current
+can be computed cohomologically. Therefore,
+∥(f n)∗S∥ = (f n)∗[S]⌣ [ω k− q] ≲ ∥(f n)∗∥∥[S]∥ ≲nm− 1dn
+q ∥S∥.
+This gives the ﬁrst part of the lemma. For the second one, if S is strictly positive
+then [S] is in the interior of the cone of the classes of positive closed curren ts.
+We deduce from the above discussion on the linear operator L that ∥(f n)∗[S]∥ ∼
+nm− 1dn
+q . The result follows.
+Note that the previous lemma allows to compute the dynamical degre es using
+the following formula
+dq(f ) = lim
+n→∞
+[ ∫
+X
+(f n)∗ω q ∧ ω k− q
+]1/n
+= lim
+n→∞
+[ ∫
+X
+ω q ∧ (f n)∗ω k− q
+]1/n
+.
+4.2 Construction of Green currents
+In this section, we give a new construction of the Green currents u sing the super-
+potentials. This approach permits to establish some new properties of the Green
+currents. The result can be extended to open non-invertible maps , see [23] for the
+pull-back operator on currents by non-invertible maps. We use her e the notations
+introduced in Section 4.1.
+Theorem 4.2.1. Let f be a holomorphic automorphism on a compact K¨ ahler
+manifold (X,ω ). Let ds be the dynamical degrees of f and q an integer such that
+dq− 1 < dq. Let F (resp. H) denote the real dominant (resp. strictly dominant)
+subspace associated to the operator f ∗ on H q,q (X, R). Then each class c of F
+can be represented by a current Tc in Dq with H¨ older continuous super-potentials
+which depends linearly on c and satisﬁes f ∗(Tc) = Tf ∗ (c). In particular, we have
+f ∗(Tc) = dqTc for c ∈ H. The set of the classes c in F (resp. in H) with Tc
+positive is a closed convex cone with non-empty interior.
+The cone of positive closed currents Tc with c ∈ H is a closed cone of ﬁnite
+dimension. We say that Tc is a Green current of order q of f if Tc is a non-
+zero positif current (this implies that c ̸= 0). By Proposition 3.4.4, the Green
+currents are moderate. We will see that Green currents are the o nly positive
+closed currents in their cohomology classes.
+Consider now the action of f ∗ on H q,q (X, R) as described in Section 4.1. Let
+m denote the multiplicity of its spectral radius dq.
+33
+
+=== PDF PAGE 34 ===
+Proposition 4.2.2. LetS be a current in Dq with a continuous super-potential.
+Let (ni) be an increasing sequence of integers. Assume that n1− m
+i d− ni
+q (f ni)∗[S]
+converge to some class c in H q,q (X, R). Then n1− m
+i d− ni
+q (f ni)∗(S) converge SP-
+uniformly to a current Tc in Dq which depends only on c.
+Let α = {α 1,...,α h} be a family of smooth closed real ( q,q )-forms such
+that [α ] = {[α 1],..., [α h]} is a basis of H q,q (X, R) where h is the dimension of
+H q,q (X, R). In what follows, we consider the super-potentials normalized by α
+as in Section 3. Let M denote the h × h matrix whose column of index j is
+given by the coordinates of f ∗[α j] with respect to the basis [ α ]. Let Uj denote
+the super-potential of f ∗(α j) and deﬁne U := (U1,..., Uh). Let A = t(a1,...,a h)
+denote the coordinates of [ S] in the basis [ α ] and US, USn the super-potentials of
+S and of Sn := (f n)∗S respectively. Denote also by Λ the operator f∗ acting on
+D0
+k− q+1.
+Lemma 4.2.3. We have
+USn =
+n− 1∑
+l=0
+(U ◦ Λl)M n− l− 1A + US ◦ Λn.
+Proof. The proof is by induction. For n = 0, we have S0 =S and the lemma is
+clear. Assume the lemma for n. We show it for n + 1. Let R be a smooth form in
+D0
+k− q+1 andU a smooth potential of R normalized by α . So, f∗(U) is a potential
+of Λ(R) but it is not normalized. Let α ∨ = {α ∨
+1,...,α ∨
+h } be a family of smooth
+real closed forms such that [ α ∨ ] is the basis of H k− q,k − q(X, R) which is dual to
+[α ] with respect to ⌣ . Deﬁne
+bj := ⟨α j,f ∗(U)⟩ = ⟨f ∗(α j),U ⟩ = Uj(R)
+and
+b := t(b1,...,b m) = tU(R).
+ThenU ′ :=f∗(U) − α ∨b is a potential of Λ( R) normalized by α . We obtain using
+the induction hypothesis
+USn+1(R) = ⟨Sn+1,U ⟩ = ⟨f ∗(Sn),U ⟩ = ⟨Sn,f ∗(U)⟩
+= ⟨Sn,U ′⟩ + ⟨Sn,α ∨b⟩ = USn(Λ(R)) + ⟨Sn,α ∨b⟩
+=
+n∑
+l=1
+U(Λl(R))M n− lA + US(Λn+1(R)) + ⟨Sn,α ∨b⟩.
+We only have to check that the last integral satisﬁes
+⟨Sn,α ∨b⟩ = U(R)M nA.
+34
+
+=== PDF PAGE 35 ===
+Observe that the integral ⟨Sn,α ∨b⟩ can be computed cohomologically. Since S is
+cohomologous to αA , by deﬁnition of M,Sn = (f n)∗S is cohomologous to αM nA.
+Hence
+⟨Sn,α ∨b⟩ = ⟨αM nA,α ∨b⟩ = tbM nA = U(R)M nA.
+This completes the proof.
+End of the proof of Proposition 4.2.2. By Proposition 4.1.1 the limit c of
+n1− m
+i d− ni
+q (f ni)[S] is a class in F . Write c = t(c1,...,c h) with respect to the basis
+[α ]. Then, n1− m
+i d− ni
+q M niA converges to c.
+By Lemma 4.2.3, the super-potential Uni of n1− m
+i d− ni
+q (f ni)∗(S) is equal to
+Uni = n1− m
+i d− ni
+q
+[ ni− 1∑
+l=0
+(U ◦ Λl)M ni− l− 1A + US ◦ Λni
+]
+=
+ni− 1∑
+l=0
+(U ◦ Λl)M ni− l− 1A
+nm− 1
+i dni
+q
++n1− m
+i d− ni
+q US ◦ Λni. (4.1)
+Since US is continuous, we have
+|US ◦ Λn(R)|≲ ∥Λn(R)∥∗ ≲δn∥R∥∗, (4.2)
+where dq− 1 < δ < dq is a ﬁxed constant. It follows that the last term in (4.1)
+tends uniformly to 0 on ∗-bounded sets of R.
+Recall that ∥M n∥ ∼ nm− 1dn
+q . Analogous estimates as in (4.2) for Uj imply
+that 
+
+M ni− l− 1A
+nm− 1
+i dni
+q
+
+
+ ≲d− l
+q and
+⏐
+⏐
+⏐(Uj ◦ Λl)M ni− l− 1A
+nm− 1
+i dni
+q
+⏐
+⏐
+⏐ ≲δld− l
+q . (4.3)
+Since ∑
+l≥ 0δld− l
+q converges, we can apply the Lebesgue convergence theorem for
+the sum in (4.1). We obtain the uniform convergence on ∗-bounded sets:
+lim
+i→∞
+Uni =
+∑
+l≥ 0
+(U ◦ Λl)M − l− 1c.
+The last series converge because (4.3) implies that ∥M − l− 1c∥ ≲d− l
+q . One can also
+obtain this inequality using the fact that c is a vector in F and that the matrix
+of f ∗
+|F is conjugate to a diagonal matrix whose eigenvalues are of modulus dq.
+Hence, the sequence (n1− m
+i d− ni
+q (f ni)∗(S)) converges to some current Tc. More-
+over, the last series deﬁnes a super-potential UTc of Tc and Uni converge to UTc
+uniformly on ∗-bounded sets of R. Hence, the convergence of ( n1− m
+i d− ni
+q (f ni)∗(S))
+is SP-uniform. Since UTc depends only on the class c, by Proposition 3.2.3, Tc
+depends only on this class. □
+Proposition 4.2.4. Let (ni) be an increasing sequence such that (n1− m
+i d− ni
+q (f ni)∗)
+converges on H q,q (X, R). Then for any class c ∈ F there is a smooth form S in
+Dq such that n1− m
+i d− ni
+q (f ni)∗(S) converge SP-uniformly to Tc.
+35
+
+=== PDF PAGE 36 ===
+Proof. By Proposition 4.1.1, one can ﬁnd a smooth form S in Dq such that
+n1− m
+i d− ni
+q (f ni)∗[S] converge to c. It is enough to apply Proposition 4.2.2.
+Lemma 4.2.5. The current Tc in Proposition 4.2.2 has H¨ older continuous po-
+tential.
+Proof. We follow the approach in [20] and [25]. Let R be a smooth form in D0
+k− q+1
+such that ∥R∥∗ ≤ 1. Since f ∗(α j) is smooth, its super-potential Uj is Lipschitz in
+the sense that ∥Uj(R)∥ ≤ κ∥R∥C− 1 with κ >1 independent of R. By deﬁnition
+of ∥ · ∥C− 1, we also have ∥Λ(R)∥C− 1 ≤ κ∥R∥C− 1 for some constant κ> 1.
+Letδ be a constant as above with dq− 1<δ <d q. Deﬁne ρ :=δd− 1
+q , ˜Λ := δ− 1Λ,
+λ := − logρ(logκ − logρ)− 1 andN0 the integer part of (λ − 1) log ∥R∥C− 1(logκ)− 1.
+Then the sequence ( ˜Λl)l≥ 0 is bounded with respect to the ∥ · ∥∗-norm. For ∥R∥C− 1
+small enough, we have since ∥M − l− 1c∥ ≲d− l
+q
+|
+∑
+l≥ 0
+(U ◦ Λl(R))M − l− 1c| ≲
+N0∑
+l=0
+ρl∥U ◦ ˜Λl(R)∥ +
+∑
+l>N0
+ρl∥U ◦ ˜Λl(R)∥
+≲
+( N0∑
+l=0
+ρlκl
+)
+∥R∥C− 1 +
+∑
+l>N0
+ρl
+≲ κN0∥R∥C− 1 +ρN0 ≲ ∥R∥λ
+C− 1.
+Therefore, ∑
+l≥ 0(U◦Λl)M − l− 1c isλ-H¨ older continuous with respect to dist− 1.
+End of the proof of Theorem 4.2.1. By Proposition 4.2.4, Tc depends lin-
+early on c because it depends linearly on S. By Lemma 4.2.5, Tc has H¨ older
+continuous super-potentials. Observe that if n1− m
+i d− ni
+q (f ni)∗[S] converge to c
+then n1− m
+i d− ni
+q (f ni)∗[f ∗(S)] converge to f ∗(c). Applying Proposition 4.2.2 to S
+and to f ∗(S) yields
+f ∗(Tc) = f ∗
+(
+lim
+i→∞
+n1− m
+i d− ni
+q (f ni)∗(S)
+)
+= lim
+i→∞
+n1− m
+i d− ni
+q (f ni)∗(
+f ∗(S)
+)
+=Tf ∗ (c).
+If c is in H, we have f ∗(c) = dqc. Hence, f ∗(Tc) = dqTc.
+We deduce easily from the linear dependence of Tc on c that the cone CF
+(resp. CH) of the classes c in F (resp. in H) with Tc positive is convex and
+closed. It remains to prove that they have non-empty interior. Ob serve that CF
+contains the classes c associated to S smooth strictly positive and that the cone
+K in H q,q (X, R) of such forms S is open. By Proposition 4.1.1, any limit L∞ of
+(n1− md− n
+q (f n)∗) is an open map from H q,q (X, R) to F . Hence, CF contains the
+cone L∞ (K) which is open in F .
+Consider as in Section 4.1 the operators
+ˆLN := 1
+N
+N∑
+n=1
+n1− md− n
+q (f n)∗
+36
+
+=== PDF PAGE 37 ===
+on H q,q (X, R) and ˆL∞ the limit of this sequence which is an open map from
+H q,q (X, R) to H. Observe that any class in ˆL∞ (K) belongs to the closed convex
+cone generated by the L∞ (K). Hence, CF contains ˆL∞ (K). We deduce that CH,
+which is equal to CF ∩ H, contains the open cone ˆL∞ (K) of H. This completes
+the proof of Theorem 4.2.1. □
+Proposition 4.2.6. Let S be a current in Dq with continuous super-potentials.
+Let ˆLN be as above and ˆc ∈ H the limit of the sequence (ˆLN [S]). Then ˆLN (S)
+converge SP-uniformly to the current Tbc. Moreover, any current Tbc with ˆc ∈ H
+can be obtained as the limit of (ˆLN [S]) for some S smooth in Dq.
+Proof. Proposition 4.2.2 implies that any limit T of ˆLN (S) belongs to the space
+generated by the Tc with c ∈ F . Hence, T is equal to one of the current Tc. On
+the other hand, T is a current in the class ˆc. We deduce that c = ˆc and that
+ˆLN (S) converge to Tbc. The main point here is to show that the convergence is
+SP-uniform. We follows the proof of Proposition 4.2.2.
+By Lemma 4.2.3 the super-potential UbLN (S) of ˆLN (S) is equal to
+UbLN (S) = 1
+N
+N∑
+n=1
+n1− md− n
+q
+[ n− 1∑
+l=0
+(U ◦ Λl)M n− l− 1A + US ◦ Λn
+]
+=
+N − 1∑
+l=0
+d− l− 1
+q (U ◦ Λl)
+[ 1
+N
+N − l− 1∑
+n=0
+(n +l + 1)1− md− n
+q M nA
+]
++ (4.4)
++ 1
+N
+N∑
+n=1
+n1− md− n
+q US ◦ Λn. (4.5)
+Since US is continuous, the quantity in (4.5) tends to 0 uniformly on ∗-bounded
+sets. By Proposition 4.1.1, the term in the brackets in (4.4) converg es to the
+vector of coordinates equal to the coordinates of ˆc in the basis [ α ]. Denote also
+by ˆc this vector. We deduce that the expression in (4.4) converges unif ormly on
+∗-bounded sets to
+UTbc :=
+∑
+l≥ 0
+d− l− 1
+q (U ◦ Λl)ˆc,
+which deﬁnes a super-potential of Tbc. Hence, the convergence of ˆLN (S) is SP-
+uniform.
+The last assertion of the proposition is deduced from the surjectiv ity of the
+map ˆL∞ in Proposition 4.1.1.
+4.3 Uniqueness of Green currents and equidistribution
+In this section, we will prove the uniqueness of the Green currents in their coho-
+mology classes. We have the following general result.
+37
+
+=== PDF PAGE 38 ===
+Theorem 4.3.1. Let f be a holomorphic automorphism of a compact K¨ ahler
+manifold (X,ω ) and ds the dynamical degrees of f . Let V be a subspace of
+H q,q (X, R) invariant by f ∗. Assume that dq > dq− 1 and that all the (real and
+complex) eigenvalues of the restriction of f ∗ to V are of modulus strictly larger
+than dq− 1. Then each class in V contains at most one positive closed (q,q )-
+current.
+Proof. Let S and S′ be positive closed currents in the same class in V . Deﬁne
+λ n := ∥(f n)∗(S)∥− 1 = ∥(f n)∗(S′)∥− 1, Sn := λ n(f n)∗(S) and S′
+n := λ n(f n)∗(S′).
+The currents Sn, S′
+n are of mass 1. We have S = λ − 1
+n (f n)∗(Sn) and S′ =
+λ − 1
+n (f n)∗(S′
+n). Let δ1 > δ2 > dq− 1 be constants such that the eigenvalues of
+f ∗
+|V have modulus strictly larger than δ1. We deduce that the eigenvalues of f∗|V
+have modulus strictly smaller than δ− 1
+1 . Therefore, Lemma 4.1.2 applied to f∗
+implies that λ n ≳ δn
+1 . Let US, US′, USn, US′n denote the super-potentials of S,
+S′, Sn and S′
+n respectively.
+Assume that S ̸= S′. Proposition 3.2.3 implies that US ̸= US′. Then, there
+is a smooth form R in D0
+k− q+1 such that US(R) − US′(R) ̸= 0. If we multiply
+R by a constant, we can assume that US(R) − US′(R) = 1. Since S and S′ are
+cohomologous, they have the same coordinates A in the basis [ α ]. By Lemma
+4.2.3, we have
+USn((f n)∗R) − US′n((f n)∗R) = U(f n)∗ Sn(R) − U(f n)∗ S′n(R)
+= λ nUS(R) − λ nUS′(R)
+= λ n.
+DeﬁneRn :=γ− 1
+n (f n)∗(R) whereγn is the norm of (f n)∗ acting onH q− 1,q − 1(X, R).
+Recall that γn is also the norm of ( f n)∗ acting on H k− q+1,k − q+1(X, R). We have
+limn→∞ γ1/n
+n =dq− 1 <δ 2. Moreover, ∥Rn∥∗ is bounded by a constant independent
+of n. We have for n large enough
+USn(Rn) − US′n(Rn) = λ nγ− 1
+n ≥ 2δn
+1δ− n
+2 .
+It follows that either |USn(Rn)| ≥ δn
+1δ− n
+2 or |US′n(Rn)| ≥ δn
+1δ− n
+2 . On the other
+hand, if κ is a ﬁxed constant large enough, we have ∥f∗(R)∥C1 ≤ κ∥R∥C1 since f
+is an automorphism, and by induction
+∥Rn∥C1 =γ− 1
+n ∥(f n)∗(R)∥C1 ≲ ˜κn,
+for some constant ˜κ. Theorem 3.2.6, applied to Sn andS′
+n, implies thatδn
+1δ− n
+2 ≲n.
+This is a contradiction because δ1 >δ 2.
+Observe that in Theorem 4.3.1, by linearity, each class of V contains at most
+one current T = T + − T − with T +, T − positive closed and [ T +], [T − ] in V .
+We apply this theorem to V the maximal subspace of H q,q (X, R) where the
+eigenvalues of f ∗ are of modulus dq. We obtain the following corollaries.
+38
+
+=== PDF PAGE 39 ===
+Corollary 4.3.2. Letf ,ds andq be as in Theorem 4.2.1. Then the Green (q,q )-
+currents of f are the unique positive closed currents in their cohomology classes.
+They are the only non-zero positive closed (q,q )-currents which are invariant by
+d− 1
+q f ∗, i.e. satisfying the equation d− 1
+q f ∗(T ) = T .
+Corollary 4.3.3. Let f , ds and q be as in Theorem 4.2.1. Let T be a Green
+(q,q )-current of f and CT the set of positive closed (q,q )-currents S such that
+S ≤ cT for some constant c > 0. Then CT is a salient convex closed cone
+of ﬁnite dimension. Moreover, each current in CT is the unique positive closed
+current in its cohomology class.
+Proof. It is clear that CT is a convex cone. It is salient since the cone of of all
+positive closed ( q,q )-currents is salient. Let E+ denote the cone of the classes
+of currents S in CT and E the space generated by E+. Then E+ is convex and
+salient since it is contained in the cone of the classes of positive closed currents.
+Since T is a Green current, it is invariant by d− 1
+q f ∗ and dqf∗. If v is a vector
+in E+, then by deﬁnition of E+, ∥(f n)∗v∥ ≲ d− n
+q . Therefore, the eigenvalues
+of f∗ restricted to E are of modulus at most equal to d− 1
+q . We deduce that all
+eigenvalues of f ∗ have modulus equal to dq. By Theorem 4.3.1, S is the only
+positive closed current in [ S]. Moreover, in
+E
++
+, the current S depends linearly
+on its class. We deduce from the correspondence S ↔ [S] and the deﬁnition of
+E+ that E
++
+=E+. So, CT is closed.
+The following results can be applied to the currents of integration on subva-
+rieties of pure codimension q of X, and give equidistribution properties of their
+images by f − n.
+Corollary 4.3.4. Let f , ds and q be as in Theorem 4.2.1. Let m denote the
+multiplicity of the spectral radius of f ∗ on H q,q (X, R). Let (Si) be a sequence of
+positive closed (q,q )-currents. If (ni) is an increasing sequence of integers such
+thatn1− m
+i d− ni
+q (f ni)∗[Si] converge inH q,q (X, R), then n1− m
+i d− ni
+q (f ni)∗(Si) converge
+either to 0 or to a Green (q,q )-current.
+Proof. Let c denote the limit of n1− m
+i d− ni
+p (f ni)∗[Si]. Observe that the sequence
+of n1− m
+i d− ni
+p (f ni)∗[Si] is bounded. Hence, the currents n1− m
+i d− ni
+q (f ni)∗(Si) have
+mass bounded by a constant independent of i. Then, we can extract convergence
+subsequences. All the limit currents are in the same class c of F . By Theorem
+4.3.1, they are equal. This implies the result.
+Corollary 4.3.5. Letf ,ds,q andm be as in Corollary 4.3.4. Let S be a positive
+closed (q,q )-current on X. Then the sequence
+1
+N
+N∑
+n=1
+n1− md− n
+q (f n)∗(S)
+converges either to 0 or to a Green (q,q )-current of f .
+39
+
+=== PDF PAGE 40 ===
+Proof. It is enough to apply Theorem 4.3.1 and to observe that by Propositio n
+4.1.1, the sequence
+1
+N
+N∑
+n=1
+n1− md− n
+q (f n)∗[S]
+converges to a class in H. Note that when all the dominant eigenvalues of f ∗ on
+H q,q (X, R) are equal to dq (i.e. real positive), then n1− md− n
+q (f n)∗[S] converges to
+a class c in H. Therefore, n1− md− n
+q (f n)∗(S) converge to 0 if c = 0 or to a Green
+current otherwise.
+4.4 Equilibrium measure, mixing and hyperbolicity
+In this section, we assume that f admits a dynamical degree dp strictly larger
+than the other ones. We have
+1 = d0 < · · ·<d p> · · ·>d k = 1.
+Then, we can construct Green ( q,q )-currents of f for 1 ≤ q ≤ p and Green
+(q,q )-currents associated to f − 1 for 1 ≤ q ≤ k − p.
+If T + is a Green ( p,p )-current of f and T − is a Green ( k − p,k − p)-current
+associated to f − 1, then as it is noticed in [20], we can deﬁne the intersection
+T + ∧ T − , see also Section 3.3. This gives an invariant measure. However, we
+cannot prove that this measure does not vanish. We introduced in [2 0] another
+construction which always gives an ergodic probability measure 5. This measure is
+the intersection of a Green current T + with (1, 1)-currents with H¨ older continuous
+potentials. The main result in [17] implies that the measure is moderate . Here
+is a criterion for the non-vanishing of T + ∧ T − , see also [35].
+Proposition 4.4.1. If f is as above, then the following properties are equivalent
+1. There is a Green (p,p )-currentT + of f and a Green (k − p,k − p)-current
+T − of f − 1 such that T + ∧ T − is a positive non-zero measure.
+2. The spectral radius of f ∗ on H p,p (X, R) is of multiplicity 1.
+3. The spectral radius of f∗ on H k− p,k − p(X, R) is of multiplicity 1.
+Proof. To say that the multiplicity of the spectral radius is 1 means that the
+Jordan blocks associated to the eigenvalues of maximal modulus are reduced
+to these eigenvalues. As it is showed in Section 4.1, if we consider a bas is of
+H p,p (X, R) and H k− p,k − p(X, R) which are dual with respect to the cup-product
+⌣ , then f ∗ acting on H p,p (X, R) and f∗ acting on H k− p,k − p(X, R) are given by
+the same matrix. Therefore, properties 2 and 3 are equivalent.
+5there is a slip at the end of [20, p.310]; the measure that we construc ted is only ergodic,
+almost mixing and mixing when the dominant eigenvalues of f ∗ on H p,p(X, R) are equal to dp.
+40
+
+=== PDF PAGE 41 ===
+Assume that properties 2 and 3 hold. Then, by Proposition 4.2.6, the currents
+S+
+N := ˆL+
+N (ω p) where L+
+N := 1
+N
+N∑
+n=1
+d− n
+p (f n)∗,
+converge SP-uniformly to a positive closed ( p,p )-current T +. By Lemma 4.1.2,
+the cohomology class of T + is non-zero. Therefore, T + is a Green ( p,p )-current.
+In the same way, we prove that
+S−
+N := ˆL−
+N (ω k− p) where ˆL−
+N := 1
+N
+N∑
+n=1
+d− n
+p (f n)∗,
+converge SP-uniformly to a Green ( k − p,k − p)-currentT − of f − 1.
+Since the convergences are SP-uniform, S+
+N ∧S−
+N converge toT + ∧T − . Observe
+thatS+
+N ∧S−
+N is a smooth positive measure. In order to prove property 1, we only
+have to check that the mass of S+
+N ∧ S−
+N does not tend to 0. We have
+∥S+
+N ∧ S−
+N ∥ = 1
+N 2
+∑
+1≤ n,l ≤ N
+d− n− l
+p
+∫
+X
+(f n)∗(ω p) ∧ (f l)∗(ω k− p)
+= 1
+N 2
+∑
+1≤ n,l ≤ N
+d− n− l
+p
+∫
+X
+(f n+l)∗(ω p) ∧ ω k− p
+= 1
+N 2
+∑
+1≤ n,l ≤ N
+d− n− l
+p ∥(f n+l)∗(ω p)∥.
+By Lemma 4.1.2, the last quantity is bounded from below by a positive co nstant
+independent of N. This implies that the mass of S+
+N ∧ S−
+N does not tend to 0.
+Now assume property 1 and let m denote the multiplicity of the spectral radius
+off ∗ onH p,p (X, R). By Proposition 4.2.4, there are smooth closed ( p,p )-formS+
+and (k − p,k − p)-form S− , not necessarily positive, and an increasing sequence
+(ni) such that
+T + = lim
+i→∞
+n1− m
+i d− ni
+p (f ni)∗(S+) and T − = lim
+i→∞
+n1− m
+i d− ni
+p (f ni)∗(S− ).
+Moreover, the convergences are SP-uniform. We have
+∥T + ∧ T − ∥ = lim
+i→∞
+∫
+X
+n1− m
+i d− ni
+p (f ni)∗(S+) ∧ n1− m
+i d− ni
+p (f ni)∗(S− )
+= lim
+i→∞
+∫
+X
+n2− 2m
+i d− 2ni
+p (f 2ni)∗(S+) ∧ S−
+= lim
+i→∞
+( 2
+ni
+) m− 1 ∫
+X
+(2ni)1− md− 2ni
+p (f 2ni)∗(S+) ∧ S−.
+The last integral can be computed cohomologically. By Lemma 4.1.2, it c onverges
+to a constant when i tends to inﬁnity. Therefore, if ∥T + ∧T − ∥ is strictly positive,
+(2/n i)m− 1 does not converge to 0. It follows that m = 1.
+41
+
+=== PDF PAGE 42 ===
+Whenp = 1, using Hodge-Riemann theorem one prove easily that the proper -
+ties in Proposition 4.4.1 are always satisﬁed. We don’t know if this is the c ase in
+general. For this question, the reader will ﬁnd some useful results and techniques
+developed in [33, 15, 39]. Here is the main result of this section. The pr operty
+that µ is of maximal entropy was obtained in collaboration with de Th´ elin.
+Theorem 4.4.2. Let f be a holomorphic automorphism on a compact K¨ ahler
+manifold (X,ω ) of dimension k and ds the dynamical degrees of f . Assume that
+there is a dynamical degree dp strictly larger than the other ones and that f sat-
+isﬁes the properties in Proposition 4.4.1. Then f admits an invariant probability
+measureµ with H¨ older continuous super-potentials. The measureµ is ergodic, hy-
+perbolic and of maximal entropy. If the dominant eigenvalue s of f ∗ onH p,p (X, C)
+are equal to dp then µ is mixing.
+We will see that the last assertion holds under a weaker hypothesis: dp is
+the unique dominant eigenvalue which is a root of a real numbe r. This condition
+is always satisﬁed for some iterates of f . The measure µ is called equilibrium
+measure of f . By Propositions 3.4.4 and 3.4.5, µ is moderate and has positive
+Hausdorﬀ dimension when X is projective. Since µ is hyperbolic, a theorem by
+Katok [38, p.694] says that any point in the support of µ can be approximated
+by saddle periodic points. Therefore, the saddle periodic points are Zariski dense
+in X since moderate measures have no mass on proper analytic subsets of X.
+Recall that a positive invariant measure µ is mixing if for any test functions
+φ, ψ (smooth, continuous, bounded or in L2(µ)) we have
+⟨µ, (φ ◦f n)ψ ⟩ → ∥ µ∥− 1⟨µ,φ ⟩⟨µ,ψ ⟩.
+The invariance of µ implies that ⟨µ, (φ ◦f n)ψ ⟩ = ⟨µ,φ (ψ ◦f − n)⟩. So, µ is mixing
+for f if and only if it is mixing for f − 1. Mixing is equivalent to the the property
+that (φ ◦f n)µ converge to a constant times µ. Indeed, since µ is invariant, we
+have ⟨(φ ◦f n)µ, 1⟩ = ⟨µ,φ ⟩; hence, the above constant should be ∥µ∥− 1⟨µ,φ ⟩. In
+fact, mixing is also equivalent to the property that any limit value of ( φ ◦f n)µ is
+proportional to µ.
+If µ is mixing then it is ergodic, that is, µ is extremal in the cone of positive
+invariant measures. This property is equivalent to the convergenc e
+1
+N
+N∑
+n=1
+⟨µ, (φ ◦f n)ψ ⟩ → ∥ µ∥− 1⟨µ,φ ⟩⟨µ,ψ ⟩
+or to the property that any limit value of
+µ N := 1
+N
+N∑
+n=1
+(φ ◦f n)µ
+42
+
+=== PDF PAGE 43 ===
+is proportional to µ. Note that µ is ergodic for f if and only if it is ergodic for f − 1.
+We refer to [38, 47] for the notions of entropy and of Lyapounov e xponent. An
+invariant positive measure is hyperbolic if its Lyapounov exponents are non-zero.
+We recall and introduce some notations that we will use. Let F and H be
+the dominant and strictly dominant subspaces of H p,p (X, R) for the action of
+f ∗. Let F ∨ and H ∨ denote the dominant and strictly dominant subspaces of
+H k− p,k − p(X, R) for the action of f∗. By Theorem 4.2.1, we can associate to each
+classc inF or in H a current in Dp with H¨ older continuous super-potentials that
+we denote by T +
+c . We can also apply this result to f − 1 and associate to each
+class c∨ in F ∨ or in H ∨ a current T −
+c∨ in Dk− p with H¨ older continuous super-
+potentials. By Proposition 3.4.2, the measure T +
+c ∧ T −
+c∨ has H¨ older continuous
+super-potentials.
+Denote by M the real space generated by T +
+c ∧ T −
+c∨ with c ∈ F and c∨ ∈ F ∨
+and N the real space generated by T +
+c ∧ T −
+c∨ with c ∈ H and c∨ ∈ H ∨ . We have
+dim M ≤ (dimF )(dimF ∨ ) = (dim F )2
+and
+dim N ≤ (dimH)(dimH ∨ ) = (dim H)2.
+Let M+, N+ be the closed convex cones of positive measures in M and in N. The
+measure µ that we will construct is an extremal element of N+. We ﬁrst prove
+the following lemmas.
+Lemma 4.4.3. For all c ∈ F and c∨ ∈ F ∨ , we have
+f ∗(T +
+c ∧ T −
+c∨ ) = T +
+f ∗ c ∧ T −
+f ∗ c∨.
+If c is in H and c∨ is in H ∨ , then T +
+c ∧ T −
+c∨ is an invariant measure.
+Proof. Write as in Proposition 4.2.2
+T +
+c = lim
+i→∞
+d− ni
+p (f ni)∗(S+) and T −
+c∨ = lim
+i→∞
+d− ni
+p (f ni)∗(S− ),
+with S+, S− smooth. Observe that d− ni
+p (f ni)∗[S+] converge to the class c and
+d− ni
+p (f ni)∗[S− ] converge to c∨ . Hence, d− ni
+p (f ni)∗[f ∗(S+)] converge to f ∗c and
+d− ni
+p (f ni)∗[f ∗(S− )] converge to f ∗c∨ . Applying Proposition 4.2.2 to f ∗(S+) and
+to f ∗(S− ) yields
+f ∗(T +
+c ∧ T −
+c∨ ) = f ∗(
+lim
+i→∞
+d− ni
+p (f ni)∗(S+) ∧ d− ni
+p (f ni)∗(S− )
+)
+= lim
+i→∞
+d− ni
+p (f ni)∗(
+f ∗(S+)
+)
+∧ d− ni
+p (f ni)∗
+(
+f ∗(S− )
+)
+= T +
+f ∗ c ∧ T −
+f ∗ c∨.
+Whenc is in H andc∨ is in H ∨ , we have f ∗c =dpc andf ∗c∨ =d− 1
+p c∨ . Therefore,
+T +
+f ∗ c =dpT +
+c andT −
+f ∗ c∨ =d− 1
+p T −
+c∨ . We deduce that f ∗(T +
+c ∧T −
+c∨ ) = T +
+c ∧T −
+c∨ . Since
+f is an automorphism, this also implies that f∗(T +
+c ∧ T −
+c∨ ) = T +
+c ∧ T −
+c∨ . Hence,
+T +
+c ∧ T −
+c∨ is invariant.
+43
+
+=== PDF PAGE 44 ===
+Lemma 4.4.4. The cones M+ and N+ have non-empty interior in M and N
+respectively.
+Proof. Consider c ∈ F and c∨ ∈ F ∨ . Observe that if T +
+c or T −
+c∨ is approximable
+by smooth positive closed currents then T +
+c ∧ T −
+c∨ is positive and belongs to M+.
+We have seen that the sets of such classes have non-empty interio rs in F andF ∨ .
+Hence, M is generated by such positive measures T +
+c ∧ T −
+c∨ . It follows that M+
+has non-empty interior. The case of N+ is treated in the same way.
+Deﬁnition 4.4.5. Letµ be an invariant positive measure of f . We say that µ is
+almost mixing if there is a ﬁnite dimensional space V of measures such that for
+any function φ inL2(µ) the limit values of ( φ ◦f n)µ, when n → ∞ , belong to V .
+The above notion does not change if we use the continuous function s or the
+space L1(µ) instead of L2(µ) since continuous and L2 functions are dense in
+L1(µ). Note also that mixing corresponds to the case where V is of dimension 1.
+We will see in the following lemma that µ is almost mixing if and only if L2(µ)
+can be decomposed into an invariant orthogonal sum W ⊕ W ⊥ withW ⊥ of ﬁnite
+dimension such that (φ ◦f n)µ → 0 forφ ∈ W . We can deduce that (ψ ◦f − n)µ → 0
+for ψ ∈ W and that µ is also almost mixing for f − 1. The following lemma is
+valid for a general dynamical system.
+Lemma 4.4.6. Let µ be a positive measure invariant by f . Assume that µ is
+almost mixing and that µ is ergodic for every f n with n ≥ 1. Then µ is mixing.
+Proof. Let V be the smallest space of measures such that for any real-valued
+continuous function φ the limit values of ( φ ◦f n)µ, when n → ∞ , belong to
+V . This space is invariant by f ∗ and f∗. We have to prove that dim V = 1.
+Let W denote the space of functions ψ ∈ L2(µ) with complex values such that
+⟨µ ′,ψ ⟩ = 0 for every µ ′ ∈ V . Let W ⊥ denote the orthogonal of W . The spaces
+W , W ⊥ are invariant under f ∗, f∗ and we have dim CW ⊥ = dim V . Moreover,
+continuous functions are dense in W . We show that dim CW ⊥ = 1.
+Sincef ∗ andf∗ preserve the scalar product in L2(µ), all the eigenvalues of f ∗
+and of f∗ have modulus equal to 1. So, if ψ is an eigenvector of f ∗ associated to
+an eigenvalue λ, we have |ψ | ◦f = |ψ |and then |ψ |is constant since µ is ergodic.
+Therefore, ψ n ∈ L2(µ) and ψ n ◦f = λ nψ n for every n ∈ Z. We claim that W
+does not contain any eigenvector. Otherwise, there is a function ψ ∈ W \ {0}
+such that ψ ◦f =λψ with |λ|= 1. Since ψ can be approximated by continuous
+functions in W , we deduce from the deﬁnition of W that for every φ ∈ L2(µ):
+|⟨ψµ,φ ⟩|= |⟨(ψ ◦f − n)µ,φ ⟩|= |⟨(φ ◦f n)µ,ψ ⟩| → 0.
+We get that ψµ = 0, hence ψ = 0. This is a contradiction.
+Consider now an eigenvector ψ of f ∗ in W ⊥ associated to an eigenvalue λ.
+Then, ψ n is an eigenvector associated to λ n for every n ∈ Z. We deduce that ψ n
+44
+
+=== PDF PAGE 45 ===
+is a function in W ⊥ . Since W ⊥ is ﬁnite dimensional, λ is a root of unity. We
+haveψ ◦f n =ψ for some n ≥ 1. Since µ is ergodic for f n, ψ is constant. Hence,
+λ = 1 and it follows that dim CW ⊥ = 1 because f ∗ is an isometry of W ⊥ .
+Consider the automorphism ˜f of X × X given by ˜f (x,y ) := ( f (x),f − 1(y)).
+By K¨ unneth formula, we have
+H l,l (X × X, C) ≃
+∑
+r+s=l
+H r,s (X, C) ⊗ H s,r (X, C).
+Moreover, ˜f ∗ ≃ (f ∗,f ∗) preserves this decomposition. It is shown in [14] that the
+spectral radius of f ∗ on H r,s (X, C) is bounded by √ drds. We deduce that dk( ˜f )
+is the maximal dynamical degree of ˜f . It is equal to d2
+p, with multiplicity 1 and is
+strictly larger than the other ones. So, the results obtained for f can be applied
+to ˜f . We will deduce several properties for f .
+We use analogous notations ˜N, ˜N+... for ˜f instead of the notations N, N+...
+for f . By Theorem 4.2.1 and Corollary 4.3.2 applied to ˜f , together with the
+K¨ unneth formula, the family of the Green ( k,k )-currents of ˜f is a convex cone
+with non-empty interior in the real space generated by the curren ts T +
+c ⊗ T −
+c∨ .
+The Green (k,k )-currents of ˜f − 1 is a convex cone with non-empty interior in the
+real space generated by the currents T −
+c∨ ⊗ T +
+c . Therefore, ˜N is generated by µ ⊗ µ ′
+with µ, µ ′ in N and ˜M is generated by µ ⊗ µ ′ with µ, µ ′ in M.
+Let S+ be a smooth current in Dp such that d− ni
+p (f ni)∗S+ converge SP-
+uniformly to T +
+c for some increasing sequence ( ni). Let S− be a smooth cur-
+rent in Dk− p such that d− ni
+p (f ni)∗S− converge SP-uniformly to T −
+c∨ . Then, we
+deduce from Proposition 4.2.2 applied to ˜f that d− 2ni
+p ( ˜f ni)∗(S+ ⊗ S− ) converge
+SP-uniformly toT +
+c ⊗T −
+c∨ . We will use this property in the computations involving
+T +
+c ⊗ T −
+c∨ .
+Lemma 4.4.7. Letφ be a continuous real-valued function onX. If µ is a measure
+in M, then any limit value of (φ ◦f n)µ is a measure in M. In particular, the
+measures in N+ are almost mixing. If µ is in N, then any limit value of
+µ N := 1
+N
+N∑
+n=1
+(φ ◦f n)µ
+is a measure in N.
+Proof. Since continuous functions are uniformly approximable by smooth fu nc-
+tions, we can assume that φ is smooth. We prove the ﬁrst assertion. By deﬁnition
+of M, we can assume that µ = T + ∧ T − where T + is a (p,p )-current associated
+to a class c in F and T − is a ( k − p,k − p)-current associated to a class c∨ in
+F ∨ as above. It is enough to show that if a subsequence ( φ ◦f 2ni)µ converge,
+45
+
+=== PDF PAGE 46 ===
+then the limit is a measure in M. Indeed, we obtain the case with odd powers by
+replacing φ byφ ◦f .
+Let ψ be another test smooth function on X. Deﬁne Φ( x,y ) := φ(x)ψ (y).
+Since µ is invariant, lifting the integrals on X to ∆ we get
+⟨(φ ◦f 2n)µ,ψ ⟩ = ⟨µ, (φ ◦f n)(ψ ◦f − n)⟩
+= ⟨T + ∧ T −, (φ ◦f n)(ψ ◦f − n)⟩
+= ⟨(T + ⊗ T − ) ∧ [∆], Φ ◦ ˜f n⟩,
+where in order to obtain the last line we use a SP-uniform approximatio n of
+T + ⊗ T − by smooth currents as above. We have
+⟨(φ ◦f 2n)µ,ψ ⟩ = ⟨( ˜f n)∗(T + ⊗ T − ) ∧ ( ˜f n)∗[∆], Φ⟩
+=
+⟨
+(dn
+p (f n)∗T + ⊗ dn
+p (f n)∗T − ) ∧ d− 2n
+p ( ˜f n)∗[∆], Φ
+⟩
+.
+Observe that dn
+p (f n)∗T + belongs to a bounded family of currents constructed in
+Theorem 4.2.1. An analogous property holds for dn
+p (f n)∗T − . Therefore, the limit
+values of
+(dn
+p (f n)∗T + ⊗ dn
+p (f n)∗T − ) ∧ d− 2n
+p ( ˜f n)∗[∆]
+are measures in ˜M. It follows that ⟨(φ ◦f 2ni)µ,ψ ⟩ converge to a ﬁnite combination
+of
+⟨µ + ⊗ µ −, Φ⟩ = const⟨µ −,ψ ⟩
+withµ +, µ − in M. We deduce that ( φ ◦f 2ni)µ converge to a combination of µ − .
+So, the limit values of ( φ ◦f 2n)µ are in M. This completes the proof of the ﬁrst
+assertion.
+For the last assertion, we follow the same approach with T + associated to a
+class in H andT − associated to a class in H ∨ . In this case, T +,T − are invariant
+and any limit value of
+(T + ⊗ T − ) ∧ 1
+N
+N∑
+n=1
+d− 2n
+p ( ˜f n)∗[∆]
+is a measure in ˜N. We deduce as above that the limit values of µ N are in N.
+Proposition 4.4.8. Let µ be a probability measure in N+. Then µ is ergodic if
+and only if it is an extremal element of N+. Moreover, the number of extremal
+probability measures in N+ is equal to dim N and the convex cone N+ is generated
+by these measures. When dp is the only dominant eigenvalue of f ∗ onH p,p (X, C)
+which is a root of a real number, then µ is mixing if and only if it is an extremal
+element of N+.
+46
+
+=== PDF PAGE 47 ===
+Proof. If µ ergodic, µ is extremal in the cone of invariant positive measures.
+Therefore,µ is extremal in N+. Assume now that µ is extremal in N+. We show
+that it is ergodic. Let φ be a positive continuous function. The measures µ N ,
+deﬁned as above, are positive and bounded by ∥φ∥∞ µ. By Lemma 4.4.7, any
+limit value of µ N is a measure in N+ and it is bounded by ∥φ∥∞ µ. Since µ is
+extremal in N+, these limit values are proportional to µ. Therefore, µ is ergodic.
+Recall that N+ is a salient convex closed cone in N with non-empty interior.
+Moreover, any element ν of N+ is an integral over extremal elements of mass
+1. So, we get a decomposition of ν into ergodic probability measures. Since
+this decomposition is unique [47] and since N is generated by dim N elements,
+we deduce that the number of extremal probability measures in N+ is equal to
+dim N and the convex cone N+ is generated by these measures. So, N+ is a cone
+with simplicial basis.
+Assume that dp is the only dominant eigenvalue of f ∗ onH p,p (X, C) which is
+a root of a real number. Then the spaces H, H ∨ do not change if we replace f
+by f n. Therefore, N do not change if we replace f by f n. We deduce that µ is
+ergodic for f n. Lemmas 4.4.7 and 4.4.6 imply that µ is mixing. This completes
+the proof of the proposition.
+End of the proof of Theorem 4.4.2. Let µ be a probability measure which
+is an extremal element of N+. By Proposition 4.4.8, µ is ergodic and is mixing if
+dp is the only dominant eigenvalue of f ∗ on H p,p (X, C) which is a root of a real
+number. By deﬁnition of N, this measure has H¨ older continuous super-potentials.
+It remains to prove that µ is of maximal entropy. Indeed, by a recent result of de
+Th´ elin [13], the property thatµ is of entropy log dp together with the fact that dp
+is strictly larger than the other dynamical degrees implies that µ is hyperbolic,
+see also [16]. More precisely, µ admits p positive Lyapounov exponents larger
+than or equal to 1
+2 log(dp/d p− 1) and k − p negative exponents at most equal to
+− 1
+2 log(dp/d p+1).
+The variational principle [47] implies that the entropy of an invariant m easure
+is bounded from above by the topological entropy of f . By Gromov and Yomdin
+results [34, 48], the topological entropy of f is equal to log dp. Therefore, if ν is a
+probability measure in N+ then the entropy h(ν) of ν is at most equal to log dp.
+We will prove that h(ν) = log dp for every probability measure ν in N+.
+Let S+ be a smooth form in Dp and S− a smooth form in Dk− p. If S+ and
+S− are strictly positive, by Proposition 4.5.2 in the appendix below, any limit
+valueν of
+νn := 1
+n
+n∑
+l=1
+d− n
+p (f l)∗(S+) ∧ (f n− l)∗(S− )
+is proportional to an invariant probability measure of maximal entro py log dp.
+By Proposition 4.2.2, the space M generated by these measures ν is of ﬁnite
+dimension. Let MP denote the convex of probability measures in M. Since the
+entropy h(ν) is an aﬃne function on ν [47, p.183], all the measures in MP are
+47
+
+=== PDF PAGE 48 ===
+of entropy log dp. It suﬃces to show that M contains N. Observe that since νn
+depends linearly on S+, S− , the space M contains also the limit values of νn
+when S+, S− are not necessarily positive. When S+ is in a class c ∈ H and S−
+is in a class c∨ ∈ H ∨ , by Proposition 4.2.2, νn converge to T +
+c ∧ T −
+c∨ . We deduce
+that M contains N and this implies the result. □
+Remark 4.4.9. The property that the equilibrium measures are of maximal
+entropy can be proved using ˜f . More precisely, using Proposition 4.5.3 below
+for Y := ∆, we can construct equilibrium measures of ˜f with maximal entropy
+2 logdp. This together with the Brin-Katok formula applied to f ,f − 1 and ˜f , see
+the appendix below and [47, p.99], implies that the equilibrium measures o f f
+are of entropy log dp. The use of ˜f may be a good method in order to study the
+distribution of periodic points of f by considering the intersection ( ˜f n)∗[∆] ∧ [∆].
+Remark 4.4.10. The Green currents and the equilibrium measures have been
+constructed and studied by the authors in [20], for f with a dynamical degree
+dp strictly larger than the other ones. Guedj considered in [35] the sit uation
+with the aditional hypothesis that dp is the unique dominant eigenvalue of f ∗
+on H p,p (X, C), i.e. dim F = dim H = 1. He claims that when X is projective,
+the equilibrium measure is of maximal entropy but he didn’t give the pro of.
+In this situation, we can ﬁnd a subvariety Y of dimension p in X such that
+d− n
+p (f n)∗[Y ] converge to a Green current T − , see also [21]. Then, using the
+SP-uniform convergence d− n
+p (f n)∗(ω p) → T + or properties proved in [20], we
+deduce thatd− n− l
+p (f n)∗(ω p)∧ (f l)∗[Y ] converge to a constant times the equilibrium
+measure which, by Proposition 4.5.3 below, is of maximal entropy.
+4.5 Appendix: measures of maximal entropy
+This section contains an abstract construction of measures of ma ximal entropy.
+Most of the arguments given here are well-known, see Bedford-Sm illie [2] and de
+Th´ elin [12]. For simplicity, assume thatf :X → X is an automorphism as above
+which satisﬁes the properties in Proposition 4.4.1. The last hypothes is garantees
+that the construction gives non-zero measures. The method is st ill valid in a
+much more general setting, in particular, when f is a non-invertible ﬁnite map.
+Givenǫ> 0 and n ∈ N, deﬁne the Bowen ball Bn(a,ǫ ) by
+Bn(a,ǫ ) :=
+{
+x ∈ X, dist(f i(x),f i(a)) ≤ ǫ for 0 ≤ i ≤ n
+}
+.
+Let ν be a probability measure invariant by f . By Brin-Katok [6], the function
+h(ν,a ) := sup
+ǫ>0
+lim
+n→∞
+− 1
+n logν(Bn(a,ǫ ))
+is well-deﬁned ν-almost everywhere and the entropy of ν is equal to
+h(ν) =
+∫
+h(ν,a )dν(a).
+48
+
+=== PDF PAGE 49 ===
+We have the following Misiurewicz’s lemma which is valid for continuous map s
+on compact metric spaces, see [2, 12, 47].
+Lemma 4.5.1. Let (ni) be an increasing sequence of integers and νni probability
+measures such that the sequence
+1
+ni
+ni− 1∑
+l=0
+(f l)∗(νni)
+converges to a measure ν. Assume there are constants ǫ> 0 andcni > 0 such that
+νni(Bni(a,ǫ )) ≤ cni for all i and all Bowen ball Bni(a,ǫ ). Then ν is an invariant
+probability measure and its entropy h(ν) satisﬁes the inequality
+h(ν) ≥ lim sup
+i→∞
+− 1
+ni
+logcni.
+We deduce from this lemma and an estimate due to Yomdin [48] the follow ing
+proposition which was obtained in collaboration with de Th´ elin.
+Proposition 4.5.2. LetS+ be a bounded positive (p,p )-form and S− a bounded
+positive (k − p,k − p)-form on X, not necessarily closed. Assume there is an
+increasing sequence (ni) of integers such that
+1
+ni
+ni∑
+l=1
+d− ni
+p (f l)∗(S+) ∧ (f ni− l)∗(S− )
+converge to a probability measure ν. Then ν is an invariant measure of maximal
+entropy logdp.
+Proof. Denote by ν′
+ni the positive measure d− ni
+p (f ni)∗(S+) ∧ S− . Deﬁne νni :=
+λ − 1
+niν′
+ni where λ ni is the mass of ν′
+ni. Then νni are probability measures and we
+have
+λ ni
+1
+ni
+ni− 1∑
+l=0
+(f l)∗(νni) = 1
+ni
+ni∑
+l=1
+d− ni
+p (f l)∗(S+) ∧ (f ni− l)∗(S− )
+which converge to the probability measure ν. We deduce that λ ni converge to 1.
+Therefore, by Lemma 4.5.1, it is enough to prove for any 0 <δ < 1 the existence
+of positive constants ǫ, A such that ν′
+ni(Bni(a,ǫ )) ≤ Ad− ni
+p eδni for every a ∈ X.
+For this purpose, we can assume for simplicity that S+ = ω p and S− = ω k− p.
+We have to show that ν′′
+n(Bn(a,ǫ )) ≤ Aenδ where ν′′
+n := (f n)∗(ω p) ∧ ω k− p. This
+inequality will be obtained by taking an average on an estimate due to Y omdin.
+LetY ⊂ X be a complex manifold of dimension p smooth up to the boundary.
+IfνY
+n := (f n)∗(ω p)∧ [Y ] thenνY
+n (Bn(a,ǫ )) is equal to the volume off n(Y ∩Bn(a,ǫ ))
+counted with multiplicity. Yomdin proved in [48] that this volume is boun ded by
+Aenδ when ǫ is small and A is large enough. The estimate is uniform on a and
+49
+
+=== PDF PAGE 50 ===
+on Y . Now, consider a coordinate system x = (x1,...,x k) on a ﬁxed chart of X
+with |xi|< 2. In the unit polydisc D, up to a multiplicative constant, ω k− p is
+bounded by (ddc∥x∥2)k− p which is equal to a combination of
+(idzi1 ∧ dzi1) ∧ ... ∧ (idzik− p ∧ dzik− p) with 1 ≤ i1 < · · ·<i k− p ≤ k.
+The last form is equal to an average on the currents of integration on the complex
+submanifolds of D which are given by
+xi1 =a1, ..., x ik− p =ak− p with ai ∈ C.
+So, by Yomdin’s inequality, ν′′
+n restricted to D satisﬁes ν′′
+n|D(Bn(a,ǫ )) ≤ Aenδ for
+some constants ǫ, A. Since X can be covered by a ﬁnite family of open sets D,
+we deduce that ν′′
+n(Bn(a,ǫ )) ≤ Aenδ with A> 0. This completes the proof.
+One can prove in the same way the following proposition which is essent ially
+due to Bedford-Smillie [2].
+Proposition 4.5.3. Let S be a continuous positive (p,p )-form, Y a complex
+manifold of dimension p inX smooth up to the boundary and χ a bounded positive
+function on Y . Assume there is an increasing sequence (ni) such that
+1
+ni
+ni∑
+l=1
+d− ni
+p (f l)∗(S) ∧ (f ni− l)∗(χ [Y ])
+converge to a probability measure ν. Then ν is an invariant measure of maximal
+entropy logdp.
+More general situations will be considered by de Th´ elin and Vigny in a f orth-
+coming paper.
+References
+[1] Bedford E., Kim K., Dynamics of Rational Surface Automor phisms: Linear Frac-
+tional Recurrences, preprint, 2006. arXiv:math/0611297
+[2] Bedford E., Smillie J., Polynomial diﬀeomorphisms of C2. III. Ergodicity, expo-
+nents and entropy of the equilibrium measure. Math. Ann. , 294 (1992), no. 3,
+395-420.
+[3] Berndtsson B., Integral formulas on projective space an d the Radon transform of
+Gindikin-Henkin-Polyakov, Publ. Mat. , 32 (1988), no. 1, 7-41.
+[4] Blanchard A., Sur les vari´ et´ es analytiques complexes, Ann. Sci. Ecole Norm. Sup.
+(3), 73 (1956), 157-202.
+[5] Bost J.-B., Gillet H., Soul´ e C., Heights of projective v arieties and positive Green
+forms, J. Amer. Math. Soc. , 7 (1994), no. 4, 903-1027.
+50
+
+=== PDF PAGE 51 ===
+[6] Brin M., Katok A., On local entropy. Geometric dynamics ( Rio de Janeiro, 1981),
+30-38, Lecture Notes in Math., 1007, Springer, Berlin, 1983.
+[7] Cantat S., Dynamique des automorphismes des surfaces K3 , Acta Math. , 187
+(2001), no. 1, 1-57.
+[8] Demailly J.-P., Courants positifs et th´ eorie de l’inte rsection, Gaz. Math. , 53
+(1992), 131-159.
+[9] ——, Monge-Amp` ere Operators, Lelong numbers and Inters ection theory in Com-
+plex Analysis and Geometry, Plemum Press (1993), 115-193, (V. Ancona and A.
+Silva editors).
+[10] ——, Complex analytic geometry , available at
+www.fourier.ujf-grenoble.fr/∼ demailly.
+[11] de Rham G., Diﬀerentiable manifolds. Forms, currents, harmonic forms , 266,
+Springer-Verlag, Berlin, 1984.
+[12] de Th´ elin H., Sur la construction de mesures selles, Ann. Inst. Fourier (Grenoble) ,
+56 (2006), no. 2, 337-372.
+[13] ——, Sur les exposants de Lyapounov des applications m´ e romorphes, Invent.
+math., to appear. arXiv:math.DS/0609628
+[14] Dinh T.-C., Suites d’applications m´ eromorphes multi valu´ ees et courants lami-
+naires, J. Geom. Anal. , 15 (2005), no. 2, 207-227.
+[15] Dinh T.-C., Nguyˆ en V.-A., The mixed Hodge-Riemann bil inear relations for com-
+pact K¨ ahler manifolds,Geom. Funct. Anal. , 16 (2006), no. 4, 838-849.
+[16] Dinh T.-C., Nguyˆ en V.-A., Sibony N., Dynamics of horiz ontal-like maps in higher
+dimension, preprint, 2007. arXiv:0710.4007
+[17] ——, Exponential estimates for plurisubharmonic funct ions and stochastic dy-
+namics, preprint, 2008. arXiv:0801.1983
+[18] Dinh T.-C., Sibony N., Dynamique des applications d’al lure polynomiale, J. Math.
+Pures Appl. , 82 (2003), 367-423.
+[19] ——, Regularization of currents and entropy, Ann. Sci. Ecole Norm. Sup. , 37
+(2004), 959-971.
+[20] ——, Green currents for holomorphic automorphisms of co mpact K¨ ahler mani-
+folds, J. Amer. Math. Soc. , 18 (2005), no. 2, 291-312.
+[21] ——, Distribution des valeurs de transformations m´ ero morphes et applications,
+Comment. Math. Helv. , 81 (2006), no. 1, 221-258.
+[22] ——, Geometry of currents, intersection theory and dyna mics of horizontal-like
+maps, Ann. Inst. Fourier (Grenoble) , 56 (2006), no. 2, 423-457.
+51
+
+=== PDF PAGE 52 ===
+[23] ——, Pull-back of currents by holomorphic maps, Manuscripta Math., 123 (2007),
+no. 3, 357-371.
+[24] ——, Equidistribution towards the Green current for hol omorphic maps, Ann. Sci.
+Ecole Norm. Sup. , to appear. arXiv:math.DS/0609686
+[25] ——, Super-potentials of positive closed currents, int ersection theory and dynam-
+ics, preprint, 2007. arXiv:math/0703702
+[26] Dujardin R., H´ enon-like mappings in C2, Amer. J. Math. , 126 (2004), 439-472.
+[27] Favre C., Jonsson M., Brolin’s theorem for curves in two complex dimensions,
+Ann. Inst. Fourier , 53 (2003), no. 5, 1461-1501.
+[28] Federer H., Geometric Measure Theory , New York, Springer Verlag, 1969.
+[29] Fornæss J.-E., Sibony N., Complex dynamics in higher di mension. II, Modern
+methods in complex analysis (Princeton, NJ, 1992), 135-182 , Ann. of Math. Stud.,
+137, Princeton Univ. Press, Princeton, NJ, 1995.
+[30] ——, Complex dynamics in higher dimensions, Notes parti ally written by Estela A.
+Gavosto, NATO Adv. Sci. Inst. Ser. C Math. Phys. Sci. , 439, Complex potential
+theory (Montreal, PQ, 1993), 131-186, Kluwer Acad. Publ., D ordrecht, 1994.
+[31] ——, Oka’s inequality for currents and applications, Math. Ann. , 301 (1995),
+399-419.
+[32] Gillet H., Soul´ e C., Arithmetic intersection theory, I.H.E.S. Publ. Math. , 72
+(1990), 93-174 (1991).
+[33] Gromov M., Convex sets and K¨ ahler manifolds, Advances in diﬀerential geometry
+and topology, Word Sci. Publishing, Teaneck, NJ, 1998, 1-38.
+[34] ——, On the entropy of holomorphic maps, Enseign. Math. (2) , 49 (2003), no.
+3-4, 217-235.
+[35] Guedj V., Propri´ et´ es ergodiques des applications ra tionnelles, preprint, 2006.
+arXiv:math/0611302
+[36] Henkin G. M., The Abel-Radon transform and several comp lex variables. Modern
+methods in complex analysis (Princeton, NJ, 1992), 223-275 , Ann. of Math. Stud. ,
+137, Princeton Univ. Press, Princeton, NJ, 1995.
+[37] H¨ ormander L., An introduction to complex analysis in several variables , Third
+edition, North-Holland Mathematical Library, 7, North-Holland Publishing Co.,
+Amsterdam, 1990.
+[38] Katok A., Hasselblatt B., Introduction to the modern theory of dynamical sys-
+tems, Encyclopedia of Mathematics and its Applications, 54, Cambridge Univer-
+sity Press, Cambridge, 1995.
+52
+
+=== PDF PAGE 53 ===
+[39] Keum J., Oguiso K., Zhang D.-Q., Conjecture of Tits type for complex varieties
+and Theorem of Lie-Kolchin type for a cone, preprint, 2007. arXiv:math/0703103
+[40] Lelong P., Fonctions plurisousharmoniques et formes diﬀ´ erentielle s positives ,
+Dunod Paris, 1968.
+[41] McMullen C. T., Dynamics on blowups of the projective pl ane, Publ. Math. Inst.
+Hautes ´Etudes Sci. , No. 105 (2007), 49-89.
+[42] M´ eo M., Caract´ erisation des courants associ´ es aux c ycles alg´ ebriques par leur
+transform´ e de Chow,J. Math. Pures Appl. (9) , 79 (2000), no. 1, 21-56.
+[43] Sibony N., Dynamique des applications rationnelles de Pk, Panoramas et
+Synth` eses, 8 (1999), 97-185.
+[44] Skoda H., Prolongement des courants positifs, ferm´ esde masse ﬁnie, Invent. Math.,
+66 (1982), 361-376.
+[45] Vigny G., Lelong-Skoda transform for compact K¨ ahler m anifolds and self-
+intersection inequalities, preprint, 2007. arXiv:0711.3782
+[46] Voisin C., Hodge theory and complex algebraic geometry. I. , Cambridge Studies in
+Advanced Mathematics, 76, Cambridge University Press, Cambridge, 2002.
+[47] Walters P., An introduction to ergodic theory , Berlin-Heidelberg-NewYork,
+Springer, 1982.
+[48] Yomdin Y., Volume growth and entropy, Israel J. Math. , 57 (1987), no. 3, 285-300.
+T.-C. Dinh, UPMC Univ Paris 06, UMR 7586, Institut de Math´ ematiques de Jussieu, F-
+75005 Paris, France. dinh@math.jussieu.fr, http://www.math.jussieu.fr/∼ dinh
+N. Sibony, Universit´ e Paris-Sud, Math´ ematique - Bˆ atiment 425, 91405 Orsay, France.
+nessim.sibony@math.u-psud.fr
+53

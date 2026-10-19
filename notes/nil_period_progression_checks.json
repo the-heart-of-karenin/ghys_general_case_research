@@ -1,0 +1,24 @@
+{
+  "purpose": "Only new finite-dimensional identities; no numerical test claims to prove elliptic compactness, closedness, or external preprint results.",
+  "arbitrary_step_Maurer_Cartan_checks": {
+    "UT_4_nilpotency_step_3": 40,
+    "UT_5_nilpotency_step_4": 40
+  },
+  "three_step_naive_mean_residual_entry_14": "-1/48",
+  "three_step_central_correction_succeeds": true,
+  "six_dimensional_model": {
+    "fixed_C2": 20,
+    "fixed_closed_C2": 12,
+    "fixed_exact_C2": 0,
+    "fixed_H2_dimension": 12,
+    "nonabelian_sharp_base_closed_symplectic": true,
+    "sample_period_form_rank": 6,
+    "sample_period_top_volume": "29160"
+  },
+  "nonsemisimple_algebra_test": {
+    "fixed_Z2": 1,
+    "fixed_H2": 1,
+    "invariant_lattice_not_asserted": true
+  },
+  "all_assertions_passed": true
+}

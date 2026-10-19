@@ -1,0 +1,2600 @@
+=== PDF PAGE 1 ===
+arXiv:1811.05969v1  [math.SG]  14 Nov 2018
+COMPLEX SYMPLECTIC STRUCTURES ON LIE ALGEBRAS
+GIOV ANNI BAZZONI, MARCO FREIBERT, ADELA LATORRE,
+AND BENEDICT MEINKE
+Abstract. We investigate Lie algebras endowed with a complex symplect ic
+structure and develop a method, called complex symplectic oxidation , to con-
+struct certain complex symplectic Lie algebras of dimensio n 4n+ 4 from those
+of dimension 4 n. We specialize this construction to the nilpotent case and
+apply complex symplectic oxidation to classify eight-dime nsional nilpotent
+complex symplectic Lie algebras.
+1. Introduction
+A complex symplectic , or holomorphic symplectic , manifold ( M, J, ω C) is a
+smooth manifold M together with an integrable almost complex structure J and
+a closed, non-degenerate (2 , 0)-form ω C. Since ( M, J ) is a complex manifold,
+the real dimension of M is even; the fact that ω C is non-degenerate has two
+further consequences: the complex dimension of M is equal to 2 n, and ω n
+C is a
+nowhere vanishing section of KM , the canonical bundle of ( M, J ), which is there-
+fore holomorphically trivial. Special examples of complex symplectic manifolds
+are given by hyperk¨ ahler manifolds (M, g, I, J, K ), which carry naturally a com-
+plex symplectic structure ω C := ω J + iω K; here ω J (·, ·) := g(·, J ·) and similarly
+for ω K. The converse is not true: primary Kodaira surfaces are comp act com-
+plex symplectic manifolds which are not hyperk¨ ahler. In re al dimensions ≥ 8,
+Todorov [39] asked whether every irreducible compact complex symplect ic man-
+ifold is k¨ ahlerian. In [20], Guan constructed a complex symplectic structure on
+the complexiﬁcation of the Kodaira-Thurston manifold, whi ch is 8-dimensional
+and does not admit a (hyper-)K¨ ahler structure. Moreover, t he same author con-
+structed in [ 21, 22] a simply connected non-K¨ ahler compact complex symplectic
+manifold in each dimension 4 n; his examples are in spirit analogous to the two
+series of compact hyperk¨ ahler manifolds obtained by Beauv ille in [ 9] and they
+use in a crucial way primary Kodaira surfaces. It is somehow s urprising, and
+perhaps a reﬂection of the scarcity of compact hyperk¨ ahler manifolds, that these
+are the only known simply connected examples.
+It is well-known that primary Kodaira surfaces have the stru cture of nilmani-
+folds; this is the quotient of a connected, simply connected, nilp otent Lie group G
+by a lattice Γ (i.e. a discrete and cocompact subgroup; see Se ction 6 for the
+relevant details). Now note that a left-invariant complex s ymplectic structure
+on G induces a natural “invariant” complex symplectic structur e on the nil-
+manifold Γ \G and that any K¨ ahler nilmanifold is diﬀeomorphic to a torus [ 23].
+Thus, complex symplectic nilmanifolds never carry hyperk¨ahler metrics provided
+2010 Mathematics Subject Classiﬁcation. 53C30, 53C56, 53D05, 22E25.
+Key words and phrases. Complex symplectic structures, Lie algebras, hypercomple x struc-
+tures, nilmanifolds, solvmanifolds.
+1
+
+=== PDF PAGE 2 ===
+2 G. BAZZONI, M. FREIBERT, A. LATORRE, AND B. MEINKE
+that G is non-abelian. Moreover, left-invariant complex symplec tic structures
+on G are in one-to-one correspondence with complex symplectic s tructures on
+the associated Lie algebra g and G admits a lattice if and only if g admits a
+rational structure [
+32].
+Summarizing, any complex symplectic structure on a non-abe lian nilpotent
+Lie algebra admitting a rational structure provides us with an example of a
+compact (nil-)manifold admitting a complex symplectic str ucture which does
+not come from a hyperk¨ ahler structure. This is the reason wh y we will focus in
+this paper on complex symplectic structures on nilpotent Li e algebras. Note also
+that examples of left-invariant complex symplectic struct ures on solvmanifolds
+have been considered in [ 13].
+This topic does not seem to have got much attention in the lite rature so far
+and only a very restrictive class of complex symplectic stru ctures, called special
+Lagrangian, on not necessarily nilpotent or solvable Lie algebras was s tudied in
+[14] in detail.
+The purpose of this paper is to delve into left-invariant com plex symplectic
+structures on connected and simply connected Lie groups. Wh en the group
+is nilpotent or solvable, one may obtain compact examples by modding out a
+suitable lattice.
+The paper is organized as follows:
+• in Section 2 we show how complex symplectic structures are related to
+many other geometric structures and state some open questio ns;
+• Section 3 contains some generalities on complex symplectic structur es on
+Lie algebras;
+• in Section 4 we present a method to construct complex symplectic struc-
+tures on Lie algebras of dimension 4 n + 4 starting from a 4 n-dimensional
+complex symplectic Lie algebra. We call this construction complex sym-
+plectic oxidation in analogy with the symplectic oxidation, see [ 6];
+• in Section 5 we concentrate on the nilpotent case. We show that every
+complex symplectic nilpotent Lie algebra (NLA) whose under lying com-
+plex structure is quasi-nilpotent can be obtained by symple ctic oxidation.
+Moreover, we show that 8-dimensional complex symplectic NL As do not
+admit complex structures of strongly non-nilpotent type. A s a conse-
+quence, we conclude that any 8-dimensional complex symplec tic NLA is
+the complex symplectic oxidation of a 4-dimensional one. We then explic-
+itly compute the oxidation data for the 4-dimensional compl ex symplectic
+NLAs, thus classifying all 8-dimensional complex symplect ic NLAs;
+• Section 6 contains various examples of nilmanifolds and solvmanifol ds
+endowed with both complex symplectic and related geometric structures.
+2. Geometric structures on complex manifolds
+We next explain how, apart from hyperk¨ ahler, complex sympl ectic manifolds
+in general and complex symplectic Lie algebras in particula r are related to a
+number of geometric structures and give rise to interesting problems.
+In the language of principal bundles, the existence of a geom etric structure
+on an n-dimensional manifold can be rephrased in terms of the exist ence of a
+reduction of the structure group of the frame bundle of a mani fold, which is a
+principal GL(n, R)-bundle, to a certain Lie subgroup G ⊂ GL(n, R). In this case,
+
+=== PDF PAGE 3 ===
+COMPLEX SYMPLECTIC STRUCTURES ON LIE ALGEBRAS 3
+one says that the manifold is endowed with a G-structure. For every G-structure
+there is a notion of integrability, which is equivalent to th e existence of an atlas,
+which is G-adapted up to order two terms.
+As an example, a Riemannian metric is an integrable O( n)-structure and a
+corresponding atlas is given by normal coordinates. Simila rly, if n = 2 m, a
+symplectic structure is an integrable Sp(2 m, R)-structure, a corresponding atlas
+being given by Darboux coordinates, and a complex structure is an integrable
+GL(m, C)-structure, where a corresponding atlas is simply a holomo rphic one.
+It is well-known that these three structures can appear simu ltaneously on a
+manifold, and that the following relations among subgroups of GL(2 m, R) hold:
+(2.1) O(2 m) ∩ Sp(2m, R) = O(2m) ∩ GL(m, C) = Sp(2m, R) ∩ GL(m, C) = U(m) .
+This fact is sometimes referred to as K¨ ahler geometry, the g eometry of an inte-
+grable U( m)-structure, lying at the intersection of Riemannian, symp lectic and
+complex geometry. It should also be noted that U( m) is one of the special holo-
+nomy groups of Riemannian manifolds appearing in the celebr ated Berger list,
+see [ 10].
+Remark 2.1. Any manifold carries a Riemannian metric. There exist examp les
+of symplectic manifolds without K¨ ahler structures [33, 40], of complex manifolds
+without K¨ ahler structures [12, 26] and even of manifolds which are complex and
+symplectic but still not K¨ ahler, see [ 7, 8, 38].
+Things can be complicated a bit by ﬁxing an integrable almost complex struc-
+ture I on a manifold M of even complex dimension 2n; with respect to this choice,
+the frame bundle of M has naturally the structure of a GL(2 n, C)-principal
+bundle, whose associated GL(2 n, C)-structure is integrable. Consider now the
+following subgroups of GL(2 n, C):
+GL(n, H) = {A ∈ GL(2n, C) |AJ = J ¯A} ,
+Sp(2n, C) = {A ∈ GL(2n, C) |AtJA = J} ,
+U(2n) = {A ∈ GL(2n, C) | ¯AtA = Id} ,
+where
+J =
+(
+0 − Id
+Id 0
+)
+.
+GL(n, H) consists of those linear transformations of C2n which are H-linear ( H
+being the quaternions), where the identiﬁcation Hn ∼
+= C2n is given by z + w ·j ↦→
+(z, ¯w). Sp(2 n, C) denotes those linear transformations of C2n which preserve the
+symplectic form
+ω C =
+n∑
+i=1
+ei ∧ en+i ,
+being {ei}2n
+i=1 the canonical basis of C2n. In this setting, the statement which
+mirrors (
+2.1) is
+U(2n) ∩ Sp(2n, C) = U(2 n) ∩ GL(n, H) = Sp(2 n, C) ∩ GL(n, H) = Sp( n) ,
+where Sp( n) is the group of linear transformations of Hn which preserve the
+quaternionic scalar product ⟨q, r ⟩ = ¯qtr.
+In the language of G-structures, we have the following nomenclature:
+
+=== PDF PAGE 4 ===
+4 G. BAZZONI, M. FREIBERT, A. LATORRE, AND B. MEINKE
+• an integrable GL(n, H)-structure is a hypercomplex structure. By spelling
+out this condition, one ﬁnds that ( M, I ) has a second integrable almost
+complex structure J which anticommutes with I. Thus K := I ◦ J is
+a third integrable almost complex structure. Each tangent s pace to a
+hypercomplex manifold inherits the structure of a quaterni onic vector
+space. Further details on hypercomplex structures can be fo und in [ 28,
+35]; in particular, 8-dimensional nilpotent Lie algebras (NL As) which
+carry a hypercomplex structure have been classiﬁed in [ 18];
+• an integrable Sp(2 n, C)-structure is a complex symplectic or holomorphic
+symplectic structure, see [ 11]; this is the topic of this paper. In the recent
+papers [ 5, 13], the authors show that, in the compact case, complex
+symplectic manifolds which satisfy the ∂∂-lemma retain some properties
+of hyperk¨ ahler manifolds. Since a complex manifold which s atisﬁes the
+∂∂-lemma is formal, see [ 17], and by a result of Hasegawa [ 23], a formal
+nilmanifold is diﬀeomorphic to a torus, except for tori, the r esults of
+[5, 13] do not apply to complex symplectic nilmanifolds. However, we
+shall show that our construction allows to recover an exampl e described
+in [ 13], which is a certain 8-dimensional solvmanifold;
+• an integrable Sp( n)-structure is a hyperk¨ ahlerstructure. The metric of
+a hyperk¨ ahler manifold is Ricci-ﬂat and such manifolds hav e attracted a
+great deal of interest, both from the mathematical and the ph ysical point
+of view. We refer the reader to [ 27, 29, 36] and the references therein.
+Thus one can say that hyperk¨ ahler geometry lies at the intersection of K¨ ahler,
+hypercomplex and complex symplectic geometry. Again we sho uld note that
+Sp(n) is one of the special holonomy groups of the Berger list. Con cerning the
+interplay of these structures on compact manifolds, it was s hown by Beauville in
+[9, Proposition 4] that on a compact complex manifold of K¨ ahle r type, of com-
+plex dimension 2 n, the existence of a K¨ ahler metric whose holonomy group is
+contained in Sp( n) is equivalent to the existence of a complex symplectic stru c-
+ture. Hence, a compact K¨ ahler manifold which admits a compl ex symplectic
+structure is necessarily hyperk¨ ahler. As for manifolds wh ich are hypercomplex
+and K¨ ahler, Verbitsky proved in [41] that if a compact hypercomplex manifold
+(M, I, J, K ) is such that ( M, I ) admits a K¨ ahler metric, then ( M, I ) is complex
+symplectic and hyperk¨ ahler a fortiori, thanks to Beauvill e’s result 1. The situ-
+ation here is way more constrained than in the real case, see R emark 2.1. In
+particular, one can only hope to ﬁnd examples of compact mani folds which are
+complex symplectic and hypercomplex but not hyperk¨ ahler. Example 6.3 below
+shows that such compact manifolds exist.
+Complex symplectic structures are also related to hypersymplectic structures,
+introduced by Hitchin in [ 25]. As it happens for every complex simple Lie group,
+Sp(2n, C) has the following two real forms: the compact one, which is Sp( n),
+and the split one, which is Sp(2 n, R). A hypersymplectic structure on a complex
+symplectic manifold ( M, J, ω C) of real dimension 4 n is a further reduction of
+the frame bundle from Sp(2 n, C) to Sp(2 n, R). This is accomplished by a real
+1As explained in [ 41], it is however not a priori clear that the hyperk¨ ahler stru cture provided
+by Beauville’s argument has ( I, J, K) as underlying hypercomplex structure, although Verbitsk y
+conjectures this should be the case.
+
+=== PDF PAGE 5 ===
+COMPLEX SYMPLECTIC STRUCTURES ON LIE ALGEBRAS 5
+structure, i.e. an endomorphism S : T M → T M which satisﬁes S2 = Id and an-
+ticommutes with J. Sp(2 n, R) is not compact, but it acts on R4n as a subgroup
+of SO(2 n, 2n); hypersymplectic metrics live therefore outside the Riem annian
+world, in the realm of neutral metrics, i.e. metrics with sig nature (2 n, 2n). Fur-
+ther general information on hypersymplectic structures ca n be found in [ 16];
+hypersymplectic structures on NLAs and nilmanifolds have b een investigated in
+[1, 2, 19].
+3. Basic definitions and properties
+3.1. Generalities on Lie algebras. Let G be a Lie group with Lie alge-
+bra g. To a g-module W we can associate the Chevalley-Eilenberg complex
+(C •(g; W ), d W ), whose elements are linear maps α : Λ qg → W ; the diﬀerential
+dW : C q(g; W ) → C q+1(g; W ) is deﬁned by
+(dW α )(X0, . . . , X q) =
+∑
+i<j
+(− 1)i+jα ([Xi, X j], X 0, . . . , ˆXi, . . . , ˆXj , . . . , X q)
++
+q∑
+i=0
+Xi ·α (X0, . . . , ˆXi, . . . , X q) .(3.1)
+For a trivial g-module W we denote dW by d or dg, if confusion arises; in this
+case, ( 3.1) reduces to
+(dα )(X0, . . . , X q) =
+∑
+i<j
+(− 1)i+j α ([Xi, X j], X 0, . . . , ˆXi, . . . , ˆXj, . . . , X q) .
+When W equals the trivial module R, ( C •(g; R), d ) is the usual Chevalley-
+Eilenberg complex (Λ •g∗, d ), which computes the Lie agebra cohomology of g.
+In this case d : g∗ → Λ2g∗ satisﬁes
+dα (X, Y ) = − α ([X, Y ]) ,
+hence d is the transpose of the linear map [ ·, ·] : Λ2g → g and d2 = 0 is equivalent
+to the Jacobi identity in g; thus, the knowledge of d is equivalent to the knowledge
+of [ ·, ·]. To denote a Lie algebra g we use Salamon’s notation, which is best
+explained by an example: g = (0, 0, 0, 12, 13+3 ·14) means that the 5-dimensional
+Lie algebra g has basis {e1, . . . , e 5} with dual basis {e1, . . . , e 5} and diﬀerential
+d : g∗ → Λ2g∗ given by
+de1 = 0, de 2 = 0, de 3 = 0 de4 = e12 and de5 = e13 + 3e14 ;
+the short-hand notation eij := ei ∧ ej will be used throughout.
+An almost complex structure on a Lie algebra g is an endomorphism J : g → g
+satisfying J 2 = − id. The natural extension of J to the complexiﬁcation gC =
+g ⊗ C diagonalizes with eigenvalues i and − i; the eigenspaces are
+g(1, 0) = {X − iJ X |X ∈ g} and g(0, 1) = {X + iJ X |X ∈ g} .
+J also gives an endomorphism J ∗ of g∗, J ∗α = α ◦J, providing in turn a splitting
+of g∗
+C = g∗ ⊗ C
+g∗(1, 0) = {α − iJ ∗α |α ∈ g∗} and g∗(0, 1) = {α + iJ ∗α |α ∈ g∗} .
+
+=== PDF PAGE 6 ===
+6 G. BAZZONI, M. FREIBERT, A. LATORRE, AND B. MEINKE
+With this notation, giving an almost complex structure on g is equivalent to
+giving the subspace g∗(1, 0). By deﬁnition, J is integrable if and only if the
+Nijenhuis tensor
+NJ (X, Y ) := [X, Y ] + J([J X, Y ] + [X, J Y ]) − [J X, J Y ]
+vanishes for every X, Y ∈ g. This is known to be equivalent to the subspace
+g(1, 0) being closed with respect to the Lie bracket and also to
+d(g∗(1, 0)) ⊂ Λ2g∗(1, 0) ⊕ g∗(1, 0) ⊗ g∗(0, 1) .
+We call an integrable almost complex structure simply a complex structure.
+Finally, a symplectic structure on a Lie algebra g of dimension 2 n is nothing
+but a cocycle ω ∈ Λ2g∗ which is non-degenerate, i.e. ω n ̸= 0.
+3.2. Complex symplectic manifolds and Lie algebras. We start with the
+usual deﬁnition of a complex symplectic structure :
+Deﬁnition 3.1. A complex symplectic structure on a manifold M is a pair
+(J, ω C) consisting of a complex structure J and a 2-form ω C ∈ Ω2(M, C) which
+is non-degenerate, closed and of type (2 , 0). In this case, we call ( M, J, ω C) a
+complex symplectic manifold .
+As already stated in the introduction, a complex symplectic structure is a
+special kind of an Sp(2 n, C)-structure. Since Sp(2 n, C) = GL(2 n, C) ∩ Sp(4n, R),
+there has to be an equivalent description of a complex symple ctic structure in
+terms of a pair ( J, ω ) consisting of an almost complex structure J and non-
+degenerate two-form ω with certain properties. This description is as follows:
+Lemma 3.2. Let M be a manifold. Then the set of all complex symplectic
+structures (J, ω C) on M is bijective to the set of all pairs (J, ω ) of complex
+structures J and symplectic 2-forms ω such that J is symmetric with respect
+to ω , i.e. ω (J X, Y ) = ω (X, J Y ) for all X, Y ∈ X(M ) holds. The bijection is
+given by (J, ω C) ↦→ (J, Re(ω C)) with inverse (J, ω ) ↦→ (J, ω − iω (J·, ·)).
+Proof. Let ( J, ω C) be a complex symplectic structure and X, Y ∈ X(M ). Since
+ω C is of type (2 , 0), one has ω C(J X, J Y ) = − ω C(X, Y ), giving Re( ω C)(J X, Y ) =
+− Re(ω C)(J X, J (J Y )) = Re( ω C)(X, J Y ). Thus Re( ω C) is, in fact, symmetric
+with respect to J. Moreover,
+Re(ω C)(J X, Y ) + i Im(ω C)(J X, Y ) = ω C(J X, Y ) = iω C(X, Y )
+= i Re(ω C)(X, Y ) − Im(ω C)(X, Y ),
+i.e. Im( ω C) = − Re(ω C)(J·, ·).
+To ﬁnish the proof, we need to show that ω (J·, ·) is closed for any pair ( J, ω )
+of a complex structure J and a symplectic form ω such that J is symmetric with
+respect to ω . However, a short computation shows that
+d(ω (J·, ·))(X, Y, Z ) = 1
+2 (dω (J X, Y, Z ) + dω (X, J Y, Z ) + dω (X, Y, J Z )) = 0
+for any X, Y, Z ∈ X(M ). □
+Thanks to Lemma 3.2, we will from now on also call a pair ( J, ω ) on a manifold
+M consisting of an integrable almost complex structure J and a symplectic form
+ω such that ω is symmetric with respect to J a complex symplectic structure and
+(M, J, ω ) a complex symplectic manifold .
+
+=== PDF PAGE 7 ===
+COMPLEX SYMPLECTIC STRUCTURES ON LIE ALGEBRAS 7
+We are here mainly interested in left-invariant complex sym plectic structures
+on a Lie group G. As left-invariant structures are fully determined by thei r
+value in the identity e of G, i.e. on the associated Lie algebra g = TeG, we
+may describe left-invariant complex symplectic structure s on G equivalently as
+complex symplectic structures on g. Then we say that ( g, J, ω ), or ( g, J, ω C), is
+a complex symplectic Lie algebra . Note that then J is a complex structure on g
+and ω is a symplectic structure on g such that J is symmetric with respect to ω .
+Remark 3.3. Since a complex symplectic structure ( J, ω ) on a 4 n-dimensional
+manifold M is an Sp(2 n, C)-structure, each point p ∈ M admits an Sp(2 n, C)-
+orbit of bases {e1, . . . , e 4n} of TpM such that Jp and ω p are given by
+Jp :=
+2n∑
+i=1
+e2i ⊗ e2i−1 − e2i−1 ⊗ e2i, ω p :=
+n∑
+j=1
+e4j−3 ∧ e4j + e4j−2 ∧ e4j−1.
+Such a basis is called an adapted basis for ( J, ω ) at p ∈ M . Clearly, for a left-
+invariant complex symplectic structure ( J, ω ) on a 4 n-dimensional Lie group G, a
+global left-invariant frame {e1, . . . , e 4n}, i.e. a basis of the associated Lie algebra
+g, may give adapted bases at any point in G, and we then also call {e1, . . . , e 4n}
+an adapted basis for ( g, J, ω ).
+4. Complex symplectic reduction and oxidation
+Let (g, ω ) be a symplectic Lie algebra. An ideal a is ω -isotropic if ω (X, Y ) = 0
+for every X, Y ∈ a; in this case, a⊥ is a Lie subalgebra containing a and ω induces
+a symplectic form on the Lie algebra a⊥/ a, where here and in the following
+the orthogonal complement is taken with respect to ω . This process is called
+symplectic reduction, see e.g. [ 6].
+We can easily extend this construction to complex symplecti c Lie algebras as
+follows:
+Lemma 4.1 (Complex symplectic reduction). Let (g, J, ω ) be a complex symplec-
+tic Lie algebra and let a be an ω -isotropic J-invariant ideal. Then (J, ω ) induces
+a complex symplectic structure ( ¯J , ¯ω ) on ¯g := a⊥/ a and a⊥ is a J-invariant sub-
+algebra of g. If a is central, then a⊥ contains the commutator ideal [g, g] and so
+is, in particular, an ideal in g.
+Proof. We have an induced symplectic structure ¯ ω on ¯g given by ¯ω (X + a, Y +
+a) := ω (X, Y ) for all X, Y ∈ a⊥ by symplectic reduction and one easily checks
+that if a is central, then a⊥ is actually an ideal which contains the commutator
+ideal [ g, g], see also [
+6].
+Now the symmetry of J with respect to ω and the J-invariance of a imply
+that a⊥ is J-invariant. Thus, J induces an integrable almost complex structure
+¯J on a⊥/ a by ¯J (X + a) := J(X) +a for X ∈ a⊥, which is symmetric with respect
+to ¯ω . □
+When a is a J-invariant central 2-dimensional ideal, there is an inverse con-
+struction to complex symplectic reduction. We call it complex symplectic oxida-
+tion. It is analogous to the so-called symplectic oxidation introduced in [ 6] as a
+converse to symplectic reduction with respect to a central o ne-dimensional ideal.
+First, a trivial observation:
+
+=== PDF PAGE 8 ===
+8 G. BAZZONI, M. FREIBERT, A. LATORRE, AND B. MEINKE
+Claim 4.2. Any J-invariant 2-dimensional ideal a is ω -isotropic.
+Proof. Fix X ∈ a nonzero; then {X, J X } is a basis of a and we have
+ω (X, J X ) = ω (J X, X ) = − ω (X, J X ) ⇒ ω (X, J X ) = 0 .
+□
+We next describe in detail complex symplectic oxidation. Le t ( ¯g, ¯J , ¯ω ) be a
+complex symplectic Lie algebra obtained by complex symplec tic reduction from
+a complex symplectic Lie algebra ( g, J, ω ) of dimension 4 n + 4 using a central
+two-dimensional J-invariant ideal a. Identifying ¯g with a J-invariant subspace
+of a⊥ complementary to a, we have
+¯ω = ω |¯g×¯g and ¯J = J|¯g .
+If we also choose a J-invariant complement V of a⊥ in g which is ω -orthogonal
+to ¯g, then the map
+a → V ∗, w ↦→ ω (w, ·)|V
+is a J-equivariant isomorphism and we may use it to identify a with V ∗. So
+to invert complex symplectic reduction with respect to a 2-d imensional central
+J-invariant ideal we need to start with a 4 n-dimensional complex symplectic
+Lie algebra ( ¯g, ¯J , ¯ω ) and a 2-dimensional real vector space V endowed with an
+almost complex structure I and deﬁne the vector space g := V ⊕ ¯g ⊕ V ∗. Under
+the above identiﬁcation,
+(4.1) ω ((v, X, α ), (w, Y, γ )) = ¯ω (X, Y ) + α (w) − γ(v)
+and
+(4.2) J(v, X, α ) := ( Iv, ¯J X, I ∗α )
+for all ( v, X, α ), (w, Y, γ ) ∈ g. Note that then J is symmetric with respect to ω .
+It remains to deﬁne a Lie bracket on g = V ⊕ ¯g ⊕ V ∗. Thereto, note that
+V ∗ = a has to be central and so [ g, g] has to be in ¯g ⊕ V ∗ = a⊥ by Lemma
+4.1.
+Hence, the non-zero (up to skew-symmetry) parts of the Lie br acket [ ·, ·] on g
+are given by
+[(v, 0, 0), (w, 0, 0)] = (0 , ν (v, w ), τ (v, w )),(4.3)
+[(v, 0, 0), (0, X, 0)] = (0 , f (v, X ), g (v, X )),(4.4)
+[(0, X, 0), (0, Y, 0)] = (0 , [X, Y ]¯g, β (X, Y )),(4.5)
+for v, w ∈ V and X, Y ∈ ¯g, where
+• ν : Λ 2V → ¯g (⇔ ν ∈ Λ2V ∗ ⊗ ¯g),
+• τ : Λ 2V → V ∗ (⇔ τ ∈ Λ2V ∗ ⊗ V ∗),
+• f : V ⊗ ¯g → ¯g (⇔ f ∈ V ∗ ⊗ ¯g∗ ⊗ ¯g ∼
+= V ∗ ⊗ End(¯g)),
+• g : V ⊗ ¯g → V ∗ (⇔ g ∈ V ∗ ⊗ ¯g∗ ⊗ V ∗),
+• β : Λ 2¯g → V ∗ (⇔ β ∈ Λ2¯g∗ ⊗ V ∗),
+and [ ·, ·]¯g is the Lie bracket of ¯g. Altogether, the Lie bracket on g is
+[(v, X, α ), (w, Y, γ )] =(0 , ν (v, w ) + f (v, Y ) − f (w, X ) + [X, Y ]¯g,
+g(v, Y ) − g(w, X ) + τ(v, w ) + β (X, Y )) .
+We need to reformulate the following in terms of conditions o n ν, τ, f , g and β :
+1: [·, ·] satisﬁes the Jacobi identity,
+
+=== PDF PAGE 9 ===
+COMPLEX SYMPLECTIC STRUCTURES ON LIE ALGEBRAS 9
+2: ω is closed and
+3: J is integrable
+This will be done in the next three lemmas.
+We introduce notation needed in the ﬁrst lemma:
+• For ξ, η ∈ V ∗ ⊗ End(¯g), we denote by {ξ, η } ∈ Λ2V ∗ ⊗ End(¯g) their
+bracket as endomorphisms of ¯g, namely
+{ξ, η }(v, w ) = ξ(v) ◦ η(w) − ξ(w) ◦ η(v) .
+• Given ρ ∈ Λ2¯g∗ ⊗ V ∗ and D ∈ Der(¯g), deﬁne D.ρ ∈ Λ2¯g∗ ⊗ V ∗ by
+(D.ρ )(X, Y ) = ρ(DX, Y ) + ρ(X, DY ) .
+• Given f and g as above, we deﬁne g ◦ f : V ⊗ V ⊗ ¯g → V ∗ by
+(g ◦ f )(v, w, X ) = g(v, f (w, X )) .
+• Let U , W and Z be vector spaces; given a tensor T : U ⊗ U ⊗ W → Z,
+we denote by Alt( T ) : Λ2U ⊗ W → Z its skew-symmetrization in the ﬁrst
+two variables, i.e.
+Alt(T )(u, v, w ) = 1
+2 (T (u, v, w ) − T (v, u, w )) .
+Lemma 4.3. The anti-symmetric product [·, ·] deﬁned by (4.3), (4.4) and (4.5)
+satisﬁes the Jacobi identity if and only if the following con ditions hold:
+(i) f ∈ V ∗ ⊗ Der(¯g),
+(ii) ad ν = {f, f },
+(iii) d¯gg = − f.β ,
+(iv) ν⌟ β = 2 Alt(g ◦ f ),
+(v) d¯gβ = 0.
+Proof. Since V ∗ is central in g and V is two-dimensional, it is enough to check
+the Jacobi identity in three situations:
+A: (v, 0, 0), ( w, 0, 0), (0 , X, 0),
+B: (v, 0, 0), (0 , X, 0), (0 , Y, 0) and
+C: (0, X, 0), (0 , Y, 0), (0 , Z, 0).
+For A, writing down the Jacobi identity in each summand one gets
+[ν(v, w ), X ]¯g = f (v, f (w, X )) − f (w, f (v, X ))(4.6)
+β (ν(v, w ), X ) = g(v, f (w, X )) − g(w, f (v, X )) ;(4.7)
+doing the same for B one arrives to
+f (v, [X, Y ]¯g) = [ f (v, X ), Y ]¯g + [X, f (v, Y )]¯g(4.8)
+g(v, [X, Y ]¯g) = β (f (v, X ), Y ) + β (X, f (v, Y )) .(4.9)
+Using the notation above, condition (
+4.6) is simply
+adν = {f, f }
+in Λ 2V ∗ ⊗ End(¯g), which is part (ii) of the statement above, while ( 4.8) gives
+part (i), namely,
+f ∈ V ∗ ⊗ Der(¯g) .
+
+=== PDF PAGE 10 ===
+10 G. BAZZONI, M. FREIBERT, A. LATORRE, AND B. MEINKE
+Moreover, (4.9) reads
+d¯gg = − f.β
+in V ∗ ⊗ Λ2¯g∗ ⊗ V ∗, i.e. d¯gg(v) = − f (v).β for every v ∈ V . This is part (iii) of
+the lemma.
+Using our notation, ( 4.7) becomes
+ν⌟ β = 2 Alt(g ◦ f )
+in Λ 2V ∗ ⊗ ¯g∗ ⊗ V ∗, which coincides with (iv) in the statement.
+Finally, we deal with C above; (4.5) shows that the Jacobi identity on vectors
+(0, X, 0), (0 , Y, 0) and (0 , Z, 0) is equivalent to
+[[X, Y ]¯g, Z ]¯g + [[Y, Z ]¯g, X ]¯g + [[Z, X ]¯g, Y ]¯g = 0
+β ([X, Y ]¯g, Z ) + β ([Y, Z ]¯g, X ) + β ([Z, X ]¯g, Y ) = 0 ;(4.10)
+The ﬁrst equation is just the Jacobi identity on ¯g. For the second one, note that
+β ∈ Λ2¯g∗ ⊗ V ∗ and (
+4.10) is simply d¯gβ = 0. This gives part (v) of the lemma
+and concludes the proof. □
+For the second lemma, we need the following convention: sinc e V ∗ ⊗ ¯g∗ ⊗ V ∗
+and V ∗ ⊗ V ∗ ⊗ ¯g∗ are canonically isomorphic we can think of g as an element
+of the latter vector space; as such, we can decompose it in its symmetric and
+skew-symmetric part, g = S + A ∈ S2V ∗ ⊗ ¯g∗ ⊕ Λ2V ∗ ⊗ ¯g∗; according to the
+notation introduced before Lemma
+4.3, A = Alt(g).
+Lemma 4.4. Assume that [·, ·] deﬁned by (4.3), (4.4) and (4.5) is a Lie bracket
+on g. Then the 2-form ω deﬁned by (4.1) is closed if and only if
+ν⌟ ¯ω = 2A and β = − f. ¯ω.
+Proof. First of all notice that V ∗⌟ dω = 0 since V ∗ is central and [ g, g] ⊆ ¯g⊕ V ∗ =
+(V ∗)⊥. Moreover, one has dω |Λ3¯g = d¯g ¯ω = 0. Hence, we have to deal with two
+cases:
+D: (v, 0, 0), ( w, 0, 0), (0 , X, 0) and
+E: (v, 0, 0), (0 , X, 0), (0 , Y, 0).
+For D, applying ( 4.1), one gets
+(4.11) ¯ ω (ν(v, w ), X ) = g(v, X )(w) − g(w, X )(v) ,
+while for E one computes
+β (X, Y )(v) = − ¯ω (f (v, X ), Y ) − ¯ω (X, f (v, Y )) .(4.12)
+Equation (
+4.11) is equivalent to ν⌟ ¯ω = 2 Alt(g) in Λ 2V ∗ ⊗ ¯g∗, which we rewrite,
+according to our convention, as
+ν⌟ ¯ω = 2A ;
+this is the ﬁrst condition in the lemma. Viewing f as an element of V ∗ ⊗ Der(¯g),
+(
+4.12) is nothing but
+β = − f. ¯ω
+in Λ 2¯g∗ ⊗ V ∗, which is precisely the second condition in the statement. □
+We introduce some conventions and notation before stating t he last lemma.
+
+=== PDF PAGE 11 ===
+COMPLEX SYMPLECTIC STRUCTURES ON LIE ALGEBRAS 11
+• Given T ∈ V ∗ ⊗ V ∗ ⊗ W , we deﬁne the trace of T , tr( T ) ∈ Λ2V ∗ ⊗ W ,
+by using the canonical isomorphisms
+V ∗ ⊗ V ∗ ∼
+= V ∗ ⊗ V ⊗ Λ2V ∗ ∼
+= End(V ) ⊗ Λ2V ∗ .
+• Given T ∈ V ∗ ⊗ V ∗ ⊗ ¯g∗, deﬁne TI ∈ V ∗ ⊗ V ∗ ⊗ ¯g∗ by TI (v, w ) = T (Iv, w ).
+• The symplectic form ¯ ω gives an isomorphism ♯: ¯g∗ → ¯g which can be
+extended to a map ♯: V ∗ ⊗ V ∗ ⊗ ¯g∗ → V ∗ ⊗ V ∗ ⊗ ¯g
+Lemma 4.5. Assume that [·, ·] deﬁned by (
+4.3), (4.4) and (4.5) is a Lie bracket
+on g and that the 2-form ω deﬁned by (4.1) is closed. Then the almost complex
+structure J deﬁned by (4.2) is integrable if and only if
+I ∗f − ¯J ◦ f ∈ V ∗ ⊗ sp(¯g, ¯J , ¯ω ) and ν = ¯J(tr(SI ))♯ .
+Proof. We only have to check the integrability for elements of V ⊕ ¯g since V ∗
+is central and J-invariant. Moreover, we always have NJ ( ˜X, J ˜X) = 0 for any
+˜X ∈ g. Hence, since V is J-invariant and two-dimensional, we are left with the
+following two cases:
+F: (v, 0, 0), (0 , X, 0) and
+G: (0, X, 0), (0 , Y, 0).
+Applying formulæ ( 4.2) and ( 4.4) to F, we get
+f (v, X ) + ¯J f(Iv, X ) + ¯J f(v, ¯J X) − f (Iv, ¯J X) = 0 ,(4.13)
+g(v, X ) + I ∗(
+g(Iv, X ) + g(v, ¯J X)
+)
+− g(Iv, ¯J X) = 0 ;(4.14)
+Using Lemma
+4.3, we consider f as an element of V ∗ ⊗ Der(¯g) and deﬁne:
+• I ∗f ∈ V ∗ ⊗ Der(¯g) by ( I ∗f )(v, X ) = f (Iv, X );
+• ¯J ◦ f ∈ V ∗ ⊗ End(¯g) by ( ¯J ◦ f )(v, X ) = ¯J f(v, X ).
+One sees immediately that (
+4.13) is equivalent to
+(4.15)
+{
+I ∗f − ¯J ◦ f, ¯J
+}
+= 0 ∈ V ∗ ⊗ End(¯g),
+i.e. to I ∗f − ¯J ◦ f ∈ V ∗ ⊗ End(¯g, ¯J). As for the second equation, given v ∈ V ,
+note that {v, Iv } is a basis of V . Evaluating (
+4.14) on v and Iv we get
+g(v, X, v ) + g(Iv, X, Iv ) + g(v, ¯J X, Iv ) − g(Iv, ¯J X, v ) = 0(4.16)
+g(v, X, Iv ) − g(Iv, X, v ) − g(v, ¯J X, v ) − g(Iv, ¯J X, Iv ) = 0 ;(4.17)
+by plugging ¯J X instead of X in (
+4.17), we recover ( 4.16), thus both conditions
+are equivalent. Writing g = S + A as before, ( 4.16) amounts to
+0 =
+(
+S(v, v ) + S(Iv, Iv )
+)
+X +
+(
+g(v, Iv ) − g(Iv, v )
+) ¯J X
+=
+(
+S(v, v ) + S(Iv, Iv )
+)
+X + 2A(v, Iv ) ¯J X
+=
+(
+S(v, v ) + S(Iv, Iv )
+)
+X + ¯ω
+(
+ν(v, Iv ), ¯J X
+)
+=
+(
+S(v, v ) + S(Iv, Iv )
+)
+X + ¯ω
+(¯J ν(v, Iv ), X
+)
+.(4.18)
+According to our conventions and using (
+4.18), one checks that
+tr(SI )(v, Iv ) = S(v, v ) + S(Iv, Iv ) = − ¯ω ( ¯J ν(v, Iv ), ·) .
+Using the isomorphism given by the symplectic form, we can re write the last
+equation as
+ν = ¯J(tr(SI ))♯ .
+This ensures ( 4.18) and gives the second condition in our statement.
+
+=== PDF PAGE 12 ===
+12 G. BAZZONI, M. FREIBERT, A. LATORRE, AND B. MEINKE
+For G, ( 4.2) gives two conditions; the ﬁrst one is N ¯J (X, Y ) = 0, which is
+satisﬁed, since ¯J is a complex structure on ¯g. The second one reads
+β (X, Y ) + I ∗β ( ¯J X, Y ) + I ∗β (X, ¯J Y ) − β ( ¯J X, ¯J Y ) = 0 ;
+in view of the second expression in Lemma 4.4, this gives
+0 = ( f. ¯ω )(X, Y ) + (f. ¯ω )( ¯J X, Y ) ◦ I + (f. ¯ω )(X, ¯J Y ) ◦ I − (f. ¯ω )( ¯J X, ¯J Y )
+= (f. ¯ω )(X, Y ) +
+(
+(I ∗f ). ¯ω
+)
+( ¯J X, Y ) +
+(
+(I ∗f ). ¯ω
+)
+(X, ¯J Y ) − (f. ¯ω )( ¯J X, ¯J Y )
+=
+(
+(I ∗f − ¯J ◦ f ). ¯ω
+)
+( ¯J X, Y ) +
+(
+(I ∗f − ¯J ◦ f ). ¯ω
+)
+(X, ¯J Y ) ,
+where the symmetry of ¯J with respect to ¯ω was used in the last equality. More-
+over, using again the symmetry of ¯J and ( 4.15) one sees that the two terms in
+the last equation above are equal. Since this holds for arbit rary vectors, we get
+(I ∗f − ¯J ◦ f ). ¯ω = 0 which, together with ( 4.15), gives the ﬁrst condition in the
+lemma:
+I ∗f − ¯J ◦ f ∈ V ∗ ⊗ sp(¯g, ¯J , ¯ω ) .
+□
+With these three lemmas we prove the following result:
+Proposition 4.6. Let (¯g, ¯J , ¯ω ) be a complex symplectic Lie algebra, let V be a
+two-dimensional real vector space with a complex structure I : V → V and set
+g := V ⊕ ¯g ⊕ V ∗. Let [·, ·] : g × g → g be the skew-symmetric map deﬁned by
+equations (
+4.3) – (4.5), let J : g → g be the almost complex structure deﬁned by
+(4.2) and let ω ∈ Λ2g∗ be the 2-form deﬁned by (4.1). Also, let g = S + A be
+the decomposition of g in its symmetric and skew-symmetric part. Then [·, ·] is
+a Lie bracket on g and (g, J, ω ) a complex symplectic Lie algebra if and only if
+all of the following seven conditions hold:
+1. f ∈ V ∗ ⊗ Der(¯g) and I ∗f − ¯J ◦ f ∈ V ∗ ⊗ sp(¯g, ¯J , ¯ω );
+2. β = − f. ¯ω ;
+3. ν = ¯J(tr(SI ))♯;
+4. A = 12 ν⌟ ¯ω = 1
+2
+¯J ∗(tr(SI ));
+5. Alt( S ◦ f ) = − 1
+2 ¯ω (f (ν), ·) − 3
+4 ¯ω (ν, f );
+6. {f, f } = ad ν ;
+7. d¯gS = f.f. ¯ω − 1
+2 d¯g( ¯J ∗(trV (SI ))).
+Proof. Observe that Lemmas 4.3, 4.4 and 4.5 must hold. These directly give us
+conditions 1 – 4 and 6 in the statement above. We next show that 5. and 7.
+are equivalent to conditions (iii) and (iv) in Lemma 4.3. This will conclude the
+proof, as part (v) in Lemma 4.3 is trivially fulﬁlled. The reason is that conditions
+1. and 2. in the statement (namely, f ∈ V ∗ ⊗ Der(¯g) and β = − f. ¯ω ) directly
+give
+d¯gβ = − d¯g(f. ¯ω ) = − f. (d¯g ¯ω ) = 0 ,
+since ¯ω is d¯g-closed.
+Let us then rewrite part (iv) of Lemma 4.3. On the one hand, using part 2.
+of the proposition one gets
+Alt(g ◦ f )(v, w, X, u ) = − 1
+2 (ν⌟ f. ¯ω )(v, w, X, u )
+= − 1
+2 ¯ω
+(
+f (u, ν (v, w )), X
+)
+− 1
+2 ¯ω
+(
+ν(v, w ), f (u, X )
+)
+.
+
+=== PDF PAGE 13 ===
+COMPLEX SYMPLECTIC STRUCTURES ON LIE ALGEBRAS 13
+On the other hand, by 4. in the proposition, we get
+Alt(A ◦ f )(v, w, X, u ) = 1
+2 A
+(
+v, f (w, X ), u
+)
+− 1
+2 A
+(
+w, f (v, X ), u
+)
+= 1
+4 (ν⌟ ¯ω )
+(
+v, f (w, X ), u
+)
+− 1
+4 (ν⌟ ¯ω )
+(
+w, f (v, X ), u
+)
+= 1
+4 ¯ω
+(
+ν(v, u ), f (w, X )
+)
+− 1
+4 ¯ω
+(
+ν(w, u ), f (v, X )
+)
+.
+Hence, writing g = S + A, we have
+Alt(S ◦ f )(v, w, X, u ) = − 1
+2 ¯ω
+(
+f (u, ν (v, w )), X
+)
+− 3
+4 ¯ω
+(
+ν(v, w ), f (u, X )
+)
++ 1
+4
+(
+¯ω
+(
+ν(v, w ), f (u, X )
+)
+− ¯ω
+(
+ν(v, u ), f (w, X )
+)
++ ¯ω
+(
+ν(w, u ), f (v, X )
+) )
+= − 1
+2 ¯ω
+(
+f (u, ν (v, w )), X
+)
+− 3
+4 ¯ω
+(
+ν(v, w ), f (u, X )
+)
+,
+since the last three terms form an element of Λ 3V ∗ ⊗ ¯g∗, which is zero since
+dim V = 2. We rewrite the last equation as
+Alt(S ◦ f ) = − 1
+2 ¯ω
+(
+f (ν), ·
+)
+− 3
+4 ¯ω
+(
+ν, f
+)
+in Λ 2V ∗ ⊗ ¯g∗ ⊗ V ∗. This is precisely part 5. in the statement above.
+We now focus on part (iii) of Lemma 4.3. Using conditions 3. and 4. we
+compute
+(d¯gA)(v, X, Y, w ) = − A(v, [X, Y ]¯g, w ) = − 1
+2 ¯ω (ν(v, w ), [X, Y ]¯g)
+= − 1
+2
+¯J ∗ tr(SI )(v, w, [X, Y ]¯g) = 1
+2 d¯g( ¯J ∗ tr(SI )(v, w ))(X, Y )
+and we arrive at
+(4.19) d¯gA = 1
+2 d¯g( ¯J ∗ tr(SI )) .
+Moreover, from part 2. we have
+(4.20) d¯gg = − f.β = f.f. ¯ω .
+Putting (
+4.20) and ( 4.19) together, we obtain
+d¯gS = d¯gg − d¯gA = f.f. ¯ω − 1
+2 d¯g( ¯J ∗ tr(SI )) .
+which is precisely condition 7. in our statement. □
+Let ( ¯g, ¯J , ¯ω ) be a complex symplectic Lie algebra and let V be 2-dimensional
+real vector space endowed with a complex structure I. Given a triple ( f, S, τ ) ∈
+V ∗ ⊗ Der(¯g) × S2V ∗ ⊗ ¯g∗ × Λ2V ∗ ⊗ V ∗, deﬁne
+(4.21) β := − f. ¯ω, ν := ¯J(tr(SI ))♯, A := 12
+¯J ∗(tr(SI )) .
+Then Proposition 4.6 motivates the following deﬁnition:
+Deﬁnition 4.7. A triple ( f, S, τ ) is called complex symplectic oxidation data for
+(¯g, ¯J , ¯ω ) if
+
+=== PDF PAGE 14 ===
+14 G. BAZZONI, M. FREIBERT, A. LATORRE, AND B. MEINKE
+(i) I ∗f − ¯J ◦ f ∈ V ∗ ⊗ sp(¯g, ¯J , ¯ω )
+(ii) {f, f } = ad ν ,
+(iii) d¯gS = f.f. ¯ω − 12 d¯g( ¯J ∗(trV (SI ))) and
+(iv) Alt( S ◦ f ) = − 1
+2 ¯ω (f (ν), ·) − 3
+4 ¯ω (ν, f ).
+The complex symplectic Lie algebra ( g, ω, J ) deﬁned by ( 4.1) – ( 4.5) using the
+tensors deﬁned in ( 4.21) is the complex symplectic oxidation of ( ¯g, ¯J , ¯ω ) by the
+complex symplectic oxidation data ( f, S, τ ). Two complex symplectic oxidation
+data (f, S, τ ) and ( ˜f , ˜S, ˜τ) are isomorphic if the corresponding complex symplec-
+tic oxidations are isomorphic as complex symplectic Lie alg ebras.
+Remark 4.8. Note that the natural action of GL( V, I ) × Aut(¯g, ¯J , ¯ω ) on V ∗ ⊗
+Der(¯g) × S2V ∗ ⊗ ¯g∗ × Λ2V ∗ ⊗ V ∗ preserves the subset of complex symplectic
+oxidation data and all elements in one orbit are isomorphic t o each other.
+We extract the following two corollaries from Proposition
+4.6:
+Corollary 4.9. The complex symplectic oxidation (g, J, ω ) of a 4n-dimensional
+complex symplectic Lie algebra (¯g, ¯J , ¯ω ) by complex symplectic oxidation data
+(f, S, τ ) is a complex symplectic Lie algebra of dimension 4n + 4 with a central,
+J-invariant ideal V ∗. The complex symplectic reduction of (g, J, ω ) with respect
+to V ∗ is isomorphic to (¯g, ¯J , ¯ω ). Moreover, g is nilpotent if ¯g and f are nilpotent.
+Corollary 4.10. A complex symplectic Lie algebra (g, J, ω ) of dimension 4n + 4
+is the oxidation of a complex symplectic Lie algebra (¯g, ¯J , ¯ω ) of dimension 4n if
+and only if z(g) satisﬁes
+z(g) ∩ Jz(g) ̸= {0} .
+For later purposes, it is useful to reformulate the conditio ns on the complex
+symplectic oxidation data ( f, S, τ ) by ﬁxing a basis {v, Iv } of ( V, I ):
+Lemma 4.11. Let (¯g, ¯J , ¯ω ) be a complex symplectic Lie algebra, let V be a two-
+dimensional real vector space endowed with a complex struct ure I and v ∈ V \{0}
+be given. Moreover, let (f, S, τ ) ∈ V ∗ ⊗ Der(¯g) × S2V ∗ ⊗ ¯g∗ × Λ2V ∗ ⊗ V ∗ be given
+and set v1 := v, v2 := Iv , fi := f (vi) ∈ Der(¯g) and Sij := S(vi, v j) ∈ ¯g∗ for all
+i, j = 1, 2. Then (f, S, τ ) is a complex symplectic oxidation datum on (¯g, ¯J , ¯ω ) if
+and only if
+(i) f2 − ¯J f1 ∈ sp(¯g, ¯J , ¯ω ),
+(ii) {f1, f 2} = [ ¯J (S♯
+11 + S♯
+22), ·]¯g,
+(iii) d¯gSii = fi. (fi. ¯ω ) for i = 1, 2, d¯gS12 = f1. (f2. ¯ω ) − 1
+2 d¯g( ¯J ∗(S11 + S22)) and
+(iv) Si2 ◦ f1 − Si1 ◦ f2 = ¯ω
+(
+fi
+(
+¯J(S♯
+11 + S♯
+22)
+)
+, ·
+)
++ 3
+2 (S11 + S22) ◦ ¯J ◦ fi for
+i = 1, 2.
+Proof. We show the equivalence of any of the conditions (i)– (iv) in L emma 4.11
+to the condition with the same number in Deﬁnition 4.7.
+The equivalence of the conditions (i) is clear once one notic es that ( I ∗f − ¯J ◦
+f )(v1) = f2 − ¯J f1 ∈ sp(¯g, ¯J , ¯ω ) implies ( I ∗f − ¯J ◦ f )(v2) = − ¯J ◦ (f2 − ¯J ◦ f1) ∈
+sp(¯g, ¯J , ¯ω ).
+The conditions in (ii) are equivalent, since
+ν(v1, v 2) = ¯J(tr(SI ))♯(v1, v 2) = ¯J(tr(SI )(v, Iv ))♯ = ¯J(S♯
+11 + S♯
+22) .
+
+=== PDF PAGE 15 ===
+COMPLEX SYMPLECTIC STRUCTURES ON LIE ALGEBRAS 15
+As the conditions (iii) are obviously equivalent, we are lef t with showing the
+equivalence of conditions (iv). But that equivalence follo ws from
+Alt(S ◦ f )(v1, v 2, X, v i) = 1
+2 (S(v1, f (v2, X ), v i) − S(v2, f (v1, X ), v i))
+= 1
+2 (S1i ◦ f2 − S2i ◦ f1)(X)
+= − 1
+2 (Si2 ◦ f1 − Si1 ◦ f2)(X),
+¯ω (f (ν), ·)(v1, v 2, X, v i) = ¯ω (f (vi, ν (v1, v 2)), X ) = ¯ω
+(
+fi
+(
+¯J(S♯
+11 + S♯
+22)
+)
+, X
+)
+and
+¯ω (ν, f )(v1, v 2, X, v i) = ¯ω (ν(v1, v 2), f (vi, X )) = ¯ω ( ¯J (S♯
+11 + S♯
+22), f i(X))
+= ¯ω (S♯
+11 + S♯
+22, ¯J fi(X)) =
+(
+(S11 + S22) ◦ ¯J ◦ fi
+)
+(X)
+for any X ∈ g and any i ∈ { 1, 2}. □
+5. Nilpotent complex symplectic Lie algebras
+In this section we apply our construction to nilpotent Lie al gebras and show
+that every nilpotent complex symplectic Lie algebra of dime nsion 4 and 8 can be
+obtained by oxidating a nilpotent complex symplectic Lie al gebras of dimension
+0 and 4 respectively. We start with some preliminary facts co ncerning complex
+structures on nilpotent Lie algebras.
+Deﬁnition 5.1. Let g be a Lie algebra. The ascending central series of g is the
+sequence of ideals of g recursively deﬁned by
+g0 = {0} , gk = {X ∈ g | [X, g] ⊆ gk−1} for k ≥ 1 .
+Notice that g1 = z(g) and that g is nilpotent if there is some s ≥ 1 such that
+gk = g for all k ≥ s. The smallest integer s satisfying the latter condition is
+called the nilpotency step of g and then the Lie algebra g is said to be s-step
+nilpotent.
+Deﬁnition 5.2. Let g be an s-step nilpotent Lie algebra g and set mk = dim gk
+for 1 ≤ k ≤ s. The ascending type of g is ( m1, . . . , m s).
+Let J : g → g be a complex structure on the nilpotent Lie algebra g. In general,
+the ideals gk in the ascending central series are not J-invariant, see [
+15]. In order
+to adapt the ascending central series to the existence of a co mplex structure J,
+the following deﬁnitions are introduced in [ 15, 30].
+Deﬁnition 5.3. Let ( g, J ) be a nilpotent Lie algebra endowed with a complex
+structure. The ascending J-compatible series {ak(J)}k of g is recursively deﬁned
+by a0(J) = {0} and
+ak(J) = {X ∈ g | [X, g] ⊆ ak−1(J), [J X, g] ⊆ ak−1(J)} for k ≥ 1 .
+Now we are ready to deﬁne diﬀerent natural classes of complex s tructures on
+nilpotent Lie algebras according to how the ascending J-compatible series looks
+like:
+Deﬁnition 5.4. A complex structure J on a nilpotent Lie algebra g is said to
+be
+(i) strongly non-nilpotent (SnN) if a1(J) = {0};
+
+=== PDF PAGE 16 ===
+16 G. BAZZONI, M. FREIBERT, A. LATORRE, AND B. MEINKE
+(ii) quasi-nilpotent if it satisﬁes a1(J) ̸= {0}; moreover J will be called
+(ii.1) nilpotent, if there exists some integer t > 0 such that at(J) = g,
+(ii.2) weakly non-nilpotent, if there is an integer t > 0 such that aℓ(J) =
+at(J) for all ℓ ≥ t, and at(J) ̸= g.
+As explained in [ 30], quasi-nilpotent complex structures on a nilpotent Lie
+algebra of a given dimension can be reduced to complex struct ures on a nilpotent
+Lie algebra of lower dimension; in particular, notice that a1(J) = z(g) ∩ Jz(g)
+is central and J-invariant. On the contrary, strongly non-nilpotent compl ex
+structures are “genuine” in each dimension, and constitute the building blocks
+of complex structures on nilpotent Lie algebras of higher di mension.
+The following result contained in [15] gives a characterization of complex struc-
+tures of nilpotent type:
+Theorem 5.5. Let (g, J ) be a 2n-dimensional nilpotent Lie algebra endowed
+with a complex structure. J is nilpotent if and only if there is a basis {ϕ i}n
+i=1 of
+g∗(1, 0) such that the complex structure equations of (g, J ) satisfy
+dϕ i =
+∑
+j<k<i
+Ai
+jk ϕ j ∧ ϕ k +
+∑
+j,k<i
+Bi
+jk ϕ j ∧
+ϕ k, 1 ≤ i ≤ n ,
+where Ai
+jk , Bi
+jk are complex numbers.
+For the sake of simplicity, from now on we will denote by ϕ jk the wedge
+product ϕ j ∧ ϕ k and by ϕ
+k the complex conjugate ϕ k.
+The next corollary summarizes the extent to which reduction and oxidation
+allow to describe complex symplectic structures on nilpote nt Lie algebras.
+Corollary 5.6. Every complex symplectic nilpotent Lie algebra (g, J, ω ) of di-
+mension 4n + 4 with quasi-nilpotent complex structure J is the oxidation of a
+complex symplectic Lie algebra (¯g, ¯J , ¯ω ) of dimension 4n.
+Proof. This follows immediately from Corollary 4.10 and the fact that if J is
+quasi-nilpotent, then z(g) ∩ Jz(g) = a1(J) ̸= 0. □
+Our next goal is to show that if ( g, J, ω ) is a complex symplectic nilpotent Lie
+algebra of dimension 4 and 8, then J is necessarily quasi-nilpotent.
+5.1. Nilpotent complex symplectic Lie algebras in dimension four. First
+of all, note that there are only three four-dimensional nilp otent Lie algebras,
+namely, R4, h3 ⊕ R and n4. The non-zero Lie brackets of h3 ⊕ R and n4 are,
+in terms of a basis {e1, . . . , e 4}, [ e1, e 2] = e3 and [ e1, e 4] = e2, [e2, e 4] = e3,
+respectively. Now [ 37] shows that of these only R4 and h3 ⊕ R have an integrable
+almost complex structure, which is given, up to equivalence , in both cases by
+J0 = e2 ⊗ e1 − e1 ⊗ e2 + e4 ⊗ e3 − e3 ⊗ e4, where {e1, . . . , e 4} denotes the dual
+basis of {e1, . . . , e 4}. Next, observe that any ω ∈ Λ2g∗, g ∈ { R4, h3 ⊕ R}, for
+which (J0, ω ) is a complex symplectic Lie algebra, is a non-degenerate re al form
+of type (2 , 0) and (0 , 2) and so given by
+ω := ω (z) := Re( z)(e14 + e23) + Im(z)(e13 − e24)
+for some z ∈ C \ {0}. Note that ω (z) is closed for all values of z in both cases.
+For w ∈ C \ {0}, consider the vector space automorphism F (w) of g given with
+
+=== PDF PAGE 17 ===
+COMPLEX SYMPLECTIC STRUCTURES ON LIE ALGEBRAS 17
+respect to the above basis by
+F (w) :=
+
+
+Re(w) − Im(w) 0 0
+Im(w) Re( w) 0 0
+0 0 |w|2 0
+0 0 0 |w|2
+
+ .
+One easily checks that F (w) is in both cases a Lie algebra automorphism, pre-
+serves J0 and that F (w)∗ω (z) = ω (wz |w|2). Hence, one may ﬁnd w ∈ C \ {0}
+such that
+F (w)∗ω (z) = ω (1) = e14 + e23 =: ω 0
+i.e. ( g, J 0, ω (z)) is isomorphic to ( g, J 0, ω 0). Thus, with respect to the above
+basis {e1, . . . , e 4} of g, we have shown:
+Proposition 5.7. Let (g, J, ω ) be a four-dimensional nilpotent complex symplec-
+tic Lie algebra. Then (g, J, ω ) is isomorphic to (h3 ⊕ R, J 0, ω 0) or to (R4, J 0, ω 0)
+with
+J0 = e2 ⊗ e1 − e1 ⊗ e2 + e4 ⊗ e3 − e3 ⊗ e4 and ω 0 = e14 + e23.
+Remark 5.8. The subspace ⟨e3, e 4⟩ is J0-invariant and central both in R4 and
+h3 ⊕ R. By Corollary
+5.6, one can obtain ( R4, J 0, ω 0) and ( h3 ⊕ R, J 0, ω 0) from
+the trivial complex symplectic Lie algebra {0}. More precisely, the complex
+symplectic oxidation data ( f, S, τ ) on {0} always satisﬁes f = 0 and S = 0 and
+one gets, up to isomorphism, ( R4, J 0, ω 0) for τ = 0 and ( h3 ⊕ R, J 0, ω 0) for τ ̸= 0.
+5.2. Nilpotent complex symplectic Lie algebras in dimension eight. In
+[30], the authors obtained the following result on 8-dimension al nilpotent Lie
+algebras endowed with a strongly non-nilpotent complex str ucture:
+Theorem 5.9. Let J be a strongly non-nilpotent complex structure on an 8-
+dimensional nilpotent Lie algebra g. Then
+• dim z(g) = 1 ;
+• the ascending type of g belongs to the following list:
+(1, 3, 8), (1, 3, 5, 8), (1, 3, 5, 6, 8), (1, 3, 6, 8), (1, 4, 8),
+(1, 4, 6, 8), (1, 5, 8), or (1, 5, 6, 8).
+Moreover, there exists a basis {ϕ 1, ϕ 2, ϕ 3, ϕ 4} of g∗(1, 0) in terms of which the
+complex structure equations of (g, J ) are one of the following:
+(i) if the ascending type of g is (1, 3, 8), (1, 3, 6, 8), (1, 3, 5, 8) or (1, 3, 5, 6, 8),
+then
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dϕ 1 = 0,
+dϕ 2 = A ϕ 1¯
+1 − B(ϕ 14 − ϕ 1¯
+4),
+dϕ 3 = C ϕ 12 − E (ϕ 14 − ϕ 1¯
+4)
++F ϕ 1¯
+1 + D ϕ 1¯
+2 − H (ϕ 24 − ϕ 2¯
+4) + G ϕ 2¯
+1 + K ϕ 2¯
+2,
+dϕ 4 = L ϕ 1¯
+1 + M ϕ 1¯
+2 + N ϕ 1¯
+3
+− ¯M ϕ 2¯
+1 + i s ϕ 2¯
+2 + P ϕ 2¯
+3 − ¯N ϕ 3¯
+1 − ¯P ϕ 3¯
+2;
+
+=== PDF PAGE 18 ===
+18 G. BAZZONI, M. FREIBERT, A. LATORRE, AND B. MEINKE
+(ii) if the ascending type is (1, 4, 8) or (1, 4, 6, 8), then
+
+
+
+
+
+
+
+
+
+dϕ 1 = 0,
+dϕ 2 = A ϕ 1¯
+1,
+dϕ 3 = − D(ϕ 12 − ϕ 1¯
+2) − E (ϕ 14 − ϕ 1¯
+4) + F ϕ 1¯
+1,
+dϕ 4 = L ϕ 1¯
+1 + M ϕ 1¯
+2 + N ϕ 1¯
+3 − ¯M ϕ 2¯
+1 + i s ϕ 2¯
+2 − ¯N ϕ 3¯
+1;
+(iii) if the ascending type is (1, 5, 8) or (1, 5, 6, 8), then
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dϕ 1 = 0,
+dϕ 2 = A ϕ 1¯
+1 − B(ϕ 14 − ϕ 1¯
+4),
+dϕ 3 = F ϕ 1¯
+1 − E(ϕ 14 − ϕ 1¯
+4),
+dϕ 4 = L ϕ 1¯
+1 + M ϕ 1¯
+2 + N ϕ 1¯
+3
+− ¯M ϕ 2¯
+1 + i s ϕ 2¯
+2 + P ϕ 2¯
+3 − ¯N ϕ 3¯
+1 − ¯P ϕ 3¯
+2 + i t ϕ 3¯
+3.
+All coeﬃcients are complex numbers except for s, t , which are real. Additionally
+the coeﬃcients must be such that d2 = 0 , which is equivalent to the Jacobi
+identity.
+Remark 5.10. Mind that the presence of an SnN complex structure J on g implies
+the existence of a basis for g∗(1, 0) satisfying part (i), (ii), or (iii) of the previous
+theorem. However, the converse is not true: there are choice s of the parameters
+that might give rise to nilpotent complex structures, accor ding to Theorem
+5.5.
+From this parametrization of SnN complex structures on 8-di mensional nilpo-
+tent Lie algebras, one can deduce the following result:
+Proposition 5.11. An 8-dimensional nilpotent Lie algebra endowed with an
+SnN complex structure does not admit a complex symplectic st ructure.
+Proof. A complex symplectic structure ω C on an 8-dimensional nilpotent Lie
+algebra g endowed with a complex structure J is given by a (2 , 0)-form, i.e. an
+element of Λ 2g∗(1, 0); hence we have
+ω C = α ϕ 12 + β ϕ 13 + γ ϕ 14 + τ ϕ 23 + θ ϕ 24 + ζ ϕ 34,
+for α, β, γ, τ, θ, ζ ∈ C, dω C = 0 and ω C ∧ ω C ̸= 0. We simply observe that
+(5.1) ω C ∧ ω C ̸= 0 ⇔ α ζ − β θ + τ γ ̸= 0.
+Let us study the condition dω C = 0 when ( g, J ) is parametrized by the complex
+structure equations given in Theorem
+5.9. We will see that the presence of ω C
+on (g, J ) implies the existence of a basis for g∗(1, 0) in terms of which the complex
+structure equations follow Theorem 5.5, thus J being nilpotent.
+We ﬁrst focus on those ( g, J ) parametrized by part (i) of the theorem. Since
+we are interested in SnN complex structures, we can assume
+(B, E, H ) ̸= (0, 0, 0),
+
+=== PDF PAGE 19 ===
+COMPLEX SYMPLECTIC STRUCTURES ON LIE ALGEBRAS 19
+as otherwise Theorem 5.5 directly holds. Using the structure equations (i), we
+compute
+dω C = (H β + C ζ − E τ) ϕ 124 − (G β − L θ − F τ − ¯M γ ) ϕ 12¯
+1
+− (K β + i s γ − M θ − D τ) ϕ 12¯
+2 − (P γ − N θ) ϕ 12¯
+3 − (H β − E τ) ϕ 12¯
+4
++ B τ ϕ 134 + (L ζ − A τ + ¯N γ ) ϕ 13¯
+1 + (M ζ + ¯P γ ) ϕ 13¯
+2 + N ζ ϕ 13¯
+3
+− B τ ϕ 13¯
+4 − (F ζ + A θ) ϕ 14¯
+1 − D ζ ϕ 14¯
+2 − (E ζ + B θ) ϕ 14¯
+4
+− ( ¯M ζ − ¯N θ) ϕ 23¯
+1 + (i s ζ + ¯P θ ) ϕ 23¯
+2 + P ζ ϕ 23¯
+3 − G ζ ϕ 24¯
+1
+− K ζ ϕ 24¯
+2 − H ζ ω 24¯
+4 .
+Imposing dω C = 0, the coeﬃcient of each element ϕ ijk in the expression above,
+that we will denote [ dω C]ijk , must be zero. In particular,
+[dω C]13¯
+3 = [dω C]14¯
+2 = [dω C]23¯
+3 = [dω C]24¯
+1 = [dω C]24¯
+2 = [dω C]24¯
+4 = 0 ,
+so we have
+Dζ = Gζ = Hζ = Kζ = N ζ = P ζ = 0 ,
+and two cases arise. If we assume ζ ̸= 0, then D = G = H = K = N = P = 0
+and from [ dω C]13¯
+2 = [ dω C]23¯
+2 = 0 we get M = s = 0. Replacing these values in
+Theorem
+5.9, part (i), it suﬃces to deﬁne a new basis
+τ1 = ϕ 1, τ 2 = ϕ 4, τ 3 = ϕ 2, τ 4 = ϕ 3 ,
+to check that Theorem 5.5 is fulﬁlled. If ζ = 0, the non-degeneracy condition
+(5.1) becomes βθ − γτ ̸= 0. In particular, this implies ( θ, γ ) ̸= (0, 0) and ( θ, τ ) ̸=
+(0, 0). Consequently, from
+[dω C]134 = [dω C]14¯
+4 = 0, [dω C]13¯
+2 = [dω C]23¯
+2 = 0 ,
+we conclude B = P = 0. Moreover, [ dω C]23¯
+1 = ¯N θ = 0 make us distinguish two
+diﬀerent cases:
+• Suppose N = 0. Then, we observe that dϕ 4 ∈ Λ2⟨ϕ 1, ϕ 2, ϕ ¯
+1, ϕ ¯
+2⟩. Deﬁn-
+ing
+(5.2) τ1 = ϕ 1, τ 2 = ϕ 2, τ 3 = ϕ 4, τ 4 = ϕ 3,
+one ﬁnds a basis for g∗(1, 0) for which Theorem
+5.5 holds.
+• Let N ̸= 0, thus θ = 0. Bearing in mind that also ζ = 0, ( 5.1) is simply
+γτ ̸= 0. Moreover, as B = P = 0, the Jacobi identity d2ϕ 4 = 0 gives the
+equations
+N ¯K = 0, N ¯H = 0.
+Consequently, H = K = 0. As we are interested in the SnN case, recall
+that one needs ( B, E, H ) ̸= (0 , 0, 0). Since B = H = 0, necessarily
+E ̸= 0. However, from [ dω C]12¯
+4 = Eτ = 0 one gets τ = 0, but this
+contradicts the non-degeneracy of ω C.
+This concludes the proof for those ( g, J ) parametrized by Theorem
+5.9 (i).
+Let us now consider an 8-dimensional NLA g endowed with a complex struc-
+ture J whose complex structure equations follow Theorem 5.9 (ii). We ﬁrst
+
+=== PDF PAGE 20 ===
+20 G. BAZZONI, M. FREIBERT, A. LATORRE, AND B. MEINKE
+observe that E ̸= 0 to avoid being in the conditions of Theorem
+5.5. A direct
+computation shows
+dω C = (− D ζ − E τ) ϕ 124 + (L θ + F τ + ¯M γ ) ϕ 12¯
+1 − (i s γ − M θ − D τ) ϕ 12¯
+2
++ N θ ϕ 12¯
+3 + E τ ϕ 12¯
+4 + (L ζ − A τ + ¯N γ ) ϕ 13¯
+1 + M ζ ϕ 13¯
+2 + N ζ ϕ 13¯
+3
+− (F ζ + A θ) ϕ 14¯
+1 − D ζ ϕ 14¯
+2 − E ζ ϕ 14¯
+4 − ( ¯M ζ − ¯N θ) ϕ 23¯
+1 + i s ζ ϕ23¯
+2 .
+From [dω C]12¯
+4 = [ dω C]14¯
+4 = 0, we obtain τ = ζ = 0 and the non-degeneracy
+condition (
+5.1) becomes βθ ̸= 0. As a consequence, [ dω C]13¯
+1 = 0 yields N = 0.
+Deﬁning a new basis as in (
+5.2), one sees that Theorem 5.5 is satisﬁed, and thus
+J is nilpotent.
+We ﬁnally consider the case of a pair ( g, J ) parametrized by Theorem 5.9 (iii).
+First, we observe that B = E = 0 implies that J is nilpotent (due to Theo-
+rem 5.5), so we assume
+(B, E ) ̸= (0, 0) .
+Now, we compute
+dω C = − E τ ϕ 124 + (L θ + F τ + ¯M γ ) ϕ 12¯
+1 − (i s γ − M θ) ϕ 12¯
+2
+− (P γ − N θ) ϕ 12¯
+3 + E τ ϕ 12¯
+4 + B τ ϕ 134 + (L ζ − A τ + ¯N γ ) ϕ 13¯
+1
++ (M ζ + ¯P γ ) ϕ 13¯
+2 − (i t γ − N ζ) ϕ 13¯
+3 − B τ ϕ 13¯
+4 − (F ζ + A θ) ϕ 14¯
+1
+− (E ζ + B θ) ϕ 14¯
+4 − ( ¯M ζ − ¯N θ) ϕ 23¯
+1 + (i s ζ + ¯P θ ) ϕ 23¯
+2
++ (P ζ − i t θ) ϕ 23¯
+3 .
+Since [dω C]124 = [dω C]134 = 0, one needs τ = 0. We next distinguish two cases
+depending on the value of the parameter B.
+If we let B = 0, then E ̸= 0 and [ dω C]14¯
+4 = 0 gives ζ = 0. Bearing in mind
+that also τ = 0, the non degeneration condition (
+5.1) simpliﬁes to βθ ̸= 0. Then,
+[dω C]14¯
+1 = [ dω C]23¯
+1 = [ dω C]23¯
+2 = [ dω C]23¯
+3 = 0 gives A = N = P = t = 0, so
+applying (
+5.2) one ﬁnds a basis for g∗(1, 0) in terms of which Theorem 5.5 holds.
+If B ̸= 0, deﬁne a new basis for g∗(1, 0) as follows
+{
+for E = 0 : τ1 = ϕ 1, τ 2 = ϕ 3, τ 3 = ϕ 2, τ 4 = ϕ 4,
+for E ̸= 0 : τ1 = ϕ 1, τ 2 = ϕ 2 − B
+E ϕ 3, τ 3 = ϕ 3, τ 4 = ϕ 4 .
+In both cases, one checks that the new structure equations fo llow Theorem 5.9
+(iii) with B = 0. We have already seen that the existence of a complex sympl ectic
+form on such ( g, J ) implies that J is nilpotent. This concludes our proof. □
+Corollary 5.12. Every complex symplectic nilpotent Lie algebra of dimension 8
+is the complex symplectic oxidation of a nilpotent complex s ymplectic Lie algebra
+of dimension 4.
+Proof. By Proposition 5.11, the complex structure of an 8-dimensional complex
+symplectic nilpotent Lie algebra ( g, J, ω ) is quasi-nilpotent, hence we can apply
+Corollary 5.6 □
+Remark 5.13. The proof of Proposition 5.11 relies on the above mentioned clas-
+siﬁcation of SnN complex structures on 8-dimensional nilpo tent Lie algebras.
+Two natural questions arise:
+
+=== PDF PAGE 21 ===
+COMPLEX SYMPLECTIC STRUCTURES ON LIE ALGEBRAS 21
+• Is it possible to prove the result without appealing to the cl assiﬁcation?
+• Are there examples of complex symplectic structures ( J, ω ) on nilpotent
+Lie algebras of dimension 4 n, n ≥ 3, such that J is SnN?
+5.3. Complex symplectic oxidation data in dimension four. Our next
+goal is to explicitly obtain all complex symplectic nilpote nt Lie algebras in di-
+mension 8. To do this, we need to determine all possible nilpo tent complex
+symplectic oxidation data on the 4-dimensional complex sym plectic nilpotent
+Lie algebras ( R4, J 0, ω 0) and ( h3 ⊕ R, J 0, ω 0).
+We start with nilpotent complex symplectic oxidation data o n ( h3 ⊕ R, J 0, ω 0)
+and use here and in the next proposition the notations from Le mma 4.11:
+Proposition 5.14. Let (f, S, τ ) be nilpotent complex symplectic oxidation data
+on (h3 ⊕ R, J 0, ω 0). Then there exists a non-zero vector v ∈ V and real numbers
+α i, β i, γ i ∈ R, i = 1, 2, 4, such that with the notations of Lemma 4.11 we have
+S11 = α 1e1 + α 2e2 + α 4e4, S 22 = β1e1 + β2e2 − α 4e4 and S12 = γ1e1 + γ2e2 + γ4e4
+and f1 =
+(0 0
+A 0
+)
+, f2 =
+(0 0
+B 0
+)
+, where the 2 × 2-matrices A, B have one of the
+following forms:
+(i) A =
+(
+2 0
+0 0
+)
+, B =
+(
+0 − 2
+0 0
+)
+and α 4 ̸= 0 or γ4 ̸= 0;
+(ii) A =
+(
+a + 1 − b
+b a − 1
+)
+, B =
+(
+c − d − 1
+d − 1 c
+)
+with a, b, c, d ∈ R and α 4 =
+γ4 = 0;
+(iii) A =
+(
+1 0
+0 1
+)
+, B =
+(
+a − b
+b a
+)
+with b ̸= 0 and α 4 = γ4 = 0;
+(iv) A =
+(
+cos(φ) − sin(φ)
+sin(φ) cos( φ)
+)
+, B = 0, φ ∈ [0, 2π ) and α 4 = γ4 = 0;
+(v) A = B = 0.
+Proof. Let (f, S, τ ) be nilpotent complex symplectic oxidation data, choose so me
+non-zero vector v ∈ V and set v1 := v and v2 := Iv . Then f1 := f (v1), f 2 := f (v2)
+are nilpotent derivations. We ﬁrst investigate how such a ni lpotent derivation
+ϕ ∈ Der(h3 ⊕ R) looks like in general. Thereto, observe that [ h3 ⊕ R, h3 ⊕ R] =
+⟨e3⟩ and z(h3 ⊕ R) = ⟨e3, e 4⟩. As ϕ has to preserve these spaces and is addi-
+tionally nilpotent, we must have ϕ (e3) = 0 and ϕ (e4) ∈ ⟨ e3⟩. Now ϕ ([X, Y ]) =
+[ϕ (X), Y ] + [X, ϕ (Y )] is automatically fulﬁlled if X or Y is central and we only
+need to check this equation for X = e1, Y = e2, which gives us 0 = ϕ ([e1, e 2]) =
+[ϕ (e1), e 2] + [e1, ϕ (e2)].
+We denote f1(ek) = ∑4
+i=1 xik ei and f2(ek) = ∑4
+i=1 yik ei. Then, in matrix
+form with respect to the basis {e1, . . . , e 4}, one has
+f1 =
+
+
+
+
+x11 x12 0 0
+x21 − x11 0 0
+x31 x32 0 x34
+x41 x42 0 0
+
+
+
+ , f 2 =
+
+
+
+
+y11 y12 0 0
+y21 − y11 0 0
+y31 y32 0 y34
+y41 y42 0 0
+
+
+
+
+with xij, y ij ∈ R such that x2
+11 + x12 x21 = 0 and y2
+11 + y12 y21 = 0, the latter two
+conditions coming from the fact that f1 and f2 have to be nilpotent.
+
+=== PDF PAGE 22 ===
+22 G. BAZZONI, M. FREIBERT, A. LATORRE, AND B. MEINKE
+Let us now impose the condition h := f2 − J0 ◦ f1 ∈ sp(h3 ⊕ R, ω 0, J 0), as
+required in Lemma 4.11. First observe that h(e3) = 0 and h(e4) = y34e3 + x34e4.
+But h is an element of sp(h3 ⊕ R, ω 0, J 0), so we must have h(e4) = 0 as well,
+i.e. x34 = y34 = 0. Moreover, the condition h.ω 0 = 0 gives us ω 0(h(ei), e j ) = 0
+for all i = 1 , 2 and all j = 3 , 4, which implies that h(e1), h (e2) ∈ ⟨ e3, e 4⟩⊥ =
+⟨e3, e 4⟩. Performing the appropriate computations, one checks that the latter
+is equivalent to − y21 = x11 = − y12, x21 = y11 = x12, which together with
+x2
+11 + x12 x21 = 0 = y2
+11 + y12 y21 implies x11 = x12 = x21 = y11 = y12 = y21 = 0.
+This gives us f1 =
+(0 0
+A 0
+)
+and f2 =
+(0 0
+B 0
+)
+, for some 2 × 2 matrices
+A :=
+(
+x31 x32
+x41 x42
+)
+and B :=
+(
+y31 y32
+y41 y42
+)
+.
+Hence, h.ω 0 = 0 is fulﬁlled. We now need to impose [ h, J 0] = 0. Setting J :=( 0 1
+−1 0
+)
+, the previous condition is equivalent to [ B − J A, J ] = 0. Decomposing
+A = A1 + A2 and B = B1 + B2 into their J-commutative parts A1, B1 and
+J-anti-commutative parts A2 and B2, the condition becomes B2 = J A2.
+Let us ﬁrst assume that A2 ̸= 0. Then A2 =
+(
+˜a ˜b
+˜b −˜a
+)
+and so B2 =
+( ˜b −˜a
+−˜a −˜b
+)
+for certain (˜a, ˜b) ∈ R2 \ {(0, 0)}. Since A2 and B2 are linearly independent, there
+is a linear combination of them which is equal to
+(1 0
+0 −1
+)
+. Hence, by replacing
+the non-zero vector v by a linear combination of v and J v, we may assume that
+A2 =
+(1 0
+0 −1
+)
+and consequently B2 =
+( 0 −1
+−1 0
+)
+. Then, we have A =
+(a+1 −b
+b a −1
+)
+and B =
+( c −d−1
+d−1 c
+)
+for certain a, b, c, d ∈ R in this case.
+We now suppose A2 = 0, which implies B2 = 0 as well. Thus, A =
+(
+˜a −˜b
+˜b ˜a
+)
+and
+B =
+(a −b
+b a
+)
+for certain ˜a, ˜b, a, b ∈ R. If (˜a, ˜b) and ( a, b ) are linearly independent,
+we can replace v as before by a linear combination of v and J v such that we may
+assume ˜a = 1, ˜b = 0 and b ̸= 0. If they are linearly dependent but not both zero,
+then we may assume that a = b = 0 and normalize ˜a2 + ˜b2 = 1, i.e. ˜a = cos(φ),
+˜b = sin(φ) for some φ ∈ [0, 2π ). Finally, the last case is A = 0 and B = 0.
+Summarizing we have the following possibilities for A and B:
+• A =
+(a+1 −b
+b a −1
+)
+, B =
+( c −d−1
+d−1 c
+)
+, a, b, c, d ∈ R,
+• A = ( 1 0
+0 1 ), B =
+(a −b
+b a
+)
+with a, b ∈ R and b ̸= 0,
+• A =
+(
+cos(φ ) − sin(φ )
+sin(φ ) cos( φ )
+)
+, B = 0, φ ∈ [0, 2π ),
+• A = 0, B = 0.
+Now, we investigate the remaining data S11, S22 and S12. By Lemma
+4.11 (ii),
+we need [ f1, f 2] = [ J0(S♯
+11 + S♯
+22), ·]¯g, where ¯g = h3 ⊕ R. In our situation f1
+and f2 commute. Hence, J0(S♯
+11 + S♯
+22) lies in z(h3 ⊕ R) = ⟨e3, e 4⟩. Writing
+S11 = ∑4
+i=1 α iei, S22 = ∑4
+i=1 βiei, S12 = ∑4
+i=1 γiei for α i, β i, γ i ∈ R, we obtain
+J0(S♯
+11 + S♯
+22) = ( α 3 + β3)e1 − (α 4 + β4)e2 − (α 1 + β1)e3 + (α 2 + β2)e4 ,
+and so β3 = − α 3, β4 = − α 4. Hence, S11 + S22 ∈ ⟨ e1, e 2⟩.
+Now look at the conditions (iii) in Lemma
+4.11. Since fi ◦ fj = 0 for i, j = 1, 2
+and im( f1), im(f2) ⊆ ⟨ e3, e 4⟩, we have fi.f j.ω 0 = 0. Moreover, J ∗
+0 (S11 + S22) ∈
+⟨e1, e 2⟩ implies d¯g(J ∗
+0 (S11 + S22)) = 0. Hence, the conditions (iii) in Lemma 4.11
+are equivalent to S11, S22 and S12 all being closed, i.e. to α 3 = β3 = γ3 = 0.
+
+=== PDF PAGE 23 ===
+COMPLEX SYMPLECTIC STRUCTURES ON LIE ALGEBRAS 23
+Finally, consider the conditions (iv) in Lemma 4.11. Since J0(S♯
+11 + S♯
+22) ∈
+⟨e3, e 4⟩ ⊂ ker f1, ker f2, the ﬁrst summand on the right hand side of the conditions
+vanishes. Moreover, im( J0 ◦ fi) ⊂ ⟨ e3, e 4⟩ for i = 1, 2 and S11 + S22 vanishes on
+⟨e3, e 4⟩, so the initial expressions (iv) are equivalent to
+(5.3) S12 ◦ f1 − S11 ◦ f2 = 0, S 22 ◦ f1 − S12 ◦ f2 = 0 .
+We evaluate both equations individually for the above possi bilities for A
+and B. Thereto, notice that both equations are automatically ful ﬁlled if evalu-
+ated on ⟨e3, e 4⟩ ⊂ ker f1, ker f2. Hence, we only have to check the equations on
+⟨e1, e 2⟩:
+• If A =
+(a+1 −b
+b a −1
+)
+, B =
+( c −d−1
+d−1 c
+)
+, a, b, c, d ∈ R, then we obtain by
+inserting e1 and e2 the equations
+γ4b − α 4(d − 1) = 0 , γ 4(a − 1) − α 4c = 0,
+− α 4b − γ4(d − 1) = 0 , − α 4(a − 1) − γ4c = 0.
+These equations are equivalent to
+Lx :=
+
+
+
+
+0 γ4 0 − α 4
+γ4 0 − α 4 0
+0 − α 4 0 − γ4
+− α 4 0 − γ4 0
+
+
+
+
+
+
+
+
+a − 1
+b
+c
+d − 1
+
+
+
+ =
+
+
+
+
+0
+0
+0
+0
+
+
+
+
+One computes det( L) = ( α 2
+4 + γ2
+4)2. Therefore, if α 4 ̸= 0 or γ4 ̸= 0, then
+a = 1, b = 0, c = 0 and d = 1. This is case (i). If α 4 = γ4 = 0, then
+there are no further restrictions for a, b, c, d . This is case (ii).
+• If A = ( 1 0
+0 1 ), B =
+(a −b
+b a
+)
+, the equations (
+5.3) are equivalent to α 4 =
+γ4 = 0, giving us case (iii).
+• If A = ( c −ss c ), B = 0 with c = cos( φ), s = sin( φ) for φ ∈ [0, 2π ), the
+equations ( 5.3) are equivalent to α 4 = γ4 = 0. This is case (iv).
+• If A = 0 and B = 0 then there are no further restrictions to α 4 and γ4
+and we obtained case (v).
+□
+We move to the nilpotent complex symplectic oxidation data o n ( R4, J 0, ω 0).
+Thereto, we ﬁrst prove two lemmas which will turn out to be use ful for that
+computation:
+Lemma 5.15. Let (g, J, ω ) be a 4-dimensional complex symplectic Lie algebra
+and let W ⊆ g be a two-dimensional J-invariant subspace. Then there is an
+adapted basis {X1, X 2, X 3, X 4} for (g, J, ω ) such that {X3, X 4} is a basis of W .
+Proof. Choose an arbitrary adapted basis {Y1, Y 2, Y 3, Y 4} for ( g, J, ω ). Obvi-
+ously, SL(2 , C) acts transitively on C2 \ {(0, 0)} and so SL(2 , C), considered
+as a subgroup of GL(4 , R), acts transitively on complex one-dimensional sub-
+spaces of R4. As {Y1, Y 2, Y 3, Y 4} identiﬁes g with R4 as vector spaces such
+that J-invariant subspaces of g correspond to complex-one-dimensional sub-
+spaces of R4, there is an element A ∈ SL(2, C) ⊆ GL(4, R) such that for
+{X1, X 2, X 3, X 4} := {Y1, Y 2, Y 3, Y 4} ·A, the vectors X3 and X4 span W . Now
+by Remark
+3.3, {X1, X 2, X 3, X 4} is an adapted basis for ( g, J, ω ) as well and the
+claim follows. □
+
+=== PDF PAGE 24 ===
+24 G. BAZZONI, M. FREIBERT, A. LATORRE, AND B. MEINKE
+Lemma 5.16. Let (f, S, τ ) be a nilpotent complex symplectic oxidation datum
+on (R4, J 0, ω 0). Then there exist a two-dimensional J0-invariant subspace W
+such that f (v)|W = 0 for all v ∈ V .
+Proof. Let v ∈ V \ {0} and set f1, f2. We need to show that f1|W = f2|W = 0.
+Thereto, we note that, as R4 is Abelian, all one-forms are closed, so condition (ii)
+in Lemma
+4.11 simpliﬁes to [ f1, f 2] = 0 and condition (iii) becomes fi.f j.ω 0 = 0,
+for all i, j = 1, 2.
+Since f1 and f2 are nilpotent and commute, there is a common eigenvector
+X1 with eigenvalue 0 of f1 and f2. Moreover, Lemma 4.11 (i) states that h :=
+f2 − J0 ◦ f1 commutes with J0 and so we have h(X2) = 0 for X2 := − J0X1 as
+well, i.e. f2(X2) = J0(f1(X2)).
+Note that by Lemma 5.15 one can complete {X1, X 2} up to an adapted ba-
+sis for ( g0, J 0, ω 0). Hence, for any Y ∈ R4 and any i ∈ { 1, 2} the identity
+0 = ( h.ω 0)(Y, X i) = ω 0(h(Y ), X i) holds, which implies im( h) ⊆ ⟨ X1, X 2⟩⊥ =
+⟨X1, X 2⟩.
+First assume that f1(X2) ∈ ⟨ X1, X 2⟩. If f1(X2) ̸= 0, then there is a linear
+combination ˜f of f1 and f2 with ˜f (X2) = X2, so ˜f is not nilpotent, which is
+a contradiction. Hence, we must have f1(X2) = 0 and so f2(X2) = 0 as well,
+i.e. W := ⟨X1, X 2⟩ is a subspace of R4 as desired.
+Next, assume that X3 := f1(X2) /∈ ⟨ X1, X 2⟩. Then, f2(X2) = J0X3 := − X4.
+On the one hand, we compute
+0 = ( f1.f 1.ω 0)(X1, X 2) = ω 0
+(
+X1, f 1(X3)
+)
+,
+0 = ( f1.f 2.ω 0)(X1, X 2) = ω 0
+(
+X1, f 2(X3)
+)
+= ω 0
+(
+X1, h (X3) + J0 ◦ f1(X3)
+)
+= ω 0
+(
+J0X1, f 1(X3)
+)
+= − ω 0
+(
+X2, f 1(X3)
+)
+,
+and similarly one also has
+0 = ( f2.f 1.ω 0)(X1, X 2) = − ω 0
+(
+X1, f 1(X4)
+)
+,
+0 = ( f2.f 2.ω 0)(X1, X 2) = − ω 0
+(
+X1, f 2(X4)
+)
+= ω 0
+(
+X2, f 1(X4)
+)
+.
+Hence, we can conclude f1(X3), f 1(X4) ∈ ⟨ X1, X 2⟩⊥ = ⟨X1, X 2⟩. Moreover,
+observe that
+ω 0
+(
+X2, f 2(X3)
+)
+= ω 0
+(
+X2, h (X3) + J0 ◦ f1(X3)
+)
+= ω 0
+(
+J0X2, f 1(X3)
+)
+= ω 0
+(
+X1, f 1(X3)
+)
+= 0,
+ω 0
+(
+X2, f 2(X4)
+)
+= ω 0
+(
+X2, h (X4) + J0 ◦ f1(X4)
+)
+= ω 0
+(
+J0X2, f 1(X4)
+)
+= ω 0
+(
+X1, f 1(X4)
+)
+= 0,
+so also f2(X3), f 2(X4) ∈ ⟨ X1, X 2⟩.
+On the other hand, since ( f1 ◦ f1)(X2) = f1(X3) ∈ ⟨ X1, X 2⟩ and f1 is a
+nilpotent derivation, one can ensure f1(X3) ∈ ⟨ X1⟩. Similarly, f2(X4) ∈ ⟨ X1⟩.
+Now, as f1(X1) = f2(X1) = 0 and f1, f2 commute, one concludes that ( fi ◦
+
+=== PDF PAGE 25 ===
+COMPLEX SYMPLECTIC STRUCTURES ON LIE ALGEBRAS 25
+fj)(Xk) = 0, for every i, j = 1, 2 and k = 3, 4. Consequently,
+0 = ( f1.f 1.ω 0)(X2, X 3) = ω 0(f1(X3), X 3) + 2ω 0(X3, f 1(X3)) = − ω 0(f1(X3), X 3),
+0 = ( f1.f 2.ω 0)(X2, X 3) = − ω 0(X4, f 1(X3)),
+0 = ( f2.f 1.ω 0)(X2, X 4) = ω 0(X3, f 2(X4)),
+0 = ( f2.f 2.ω 0)(X2, X 4) = − ω 0(f2(X4), X 4) − 2ω 0(X4, f 2(X4)) = ω 0(f2(X4), X 4).
+This implies f1(X3), f 2(X4) ∈ ⟨ X3, X 4⟩⊥ = ⟨X3, X 4⟩. Moreover, f1(X4) =
+− f1(f2(X2)) = − f2(f1(X2)) = − f2(X3), thus
+0 = ( f1.f 1.ω 0)(X2, X 4) = 2 ω 0(X3, f 1(X4)) = − 2ω 0(X3, f 2(X3)),
+0 = ( f2.f 2.ω 0)(X2, X 3) = − 2ω 0(X4, f 2(X3)) = 2 ω 0(X4, f 1(X4)).
+Hence, f1(X4) = f2(X3) ∈ ⟨ X3, X 4⟩ as well.
+As a consequence, f1(X3), f 1(X4), f 2(X3), f 2(X4) ∈ ⟨ X1, X 2⟩ ∩ ⟨ X3, X 4⟩ =
+{0}, and we can conclude that W := ⟨X3, X 4⟩ is a subspace of R4 as desired. □
+Now we are able to compute the possible complex symplectic ox idation data
+on ( R4, J 0, ω 0):
+Proposition 5.17. Let (f, S, τ ) be a nilpotent complex symplectic oxidation da-
+tum on (R4, J 0, ω 0). Then there exists a non-zero vector v ∈ V and real numbers
+α i, βi, γi ∈ R, i = 1 , 2, 3, 4, such that, up to an isomorphism of complex sym-
+plectic oxidation data, we have
+S11 =
+4∑
+i=1
+α iei, S 22 =
+4∑
+i=1
+βiei, S 12 =
+4∑
+i=1
+γiei ,
+and f1 = f (v) =
+(0 0
+A 0
+)
+, f2 = f (Iv ) =
+(0 0
+B 0
+)
+, where the 2 × 2-matrices A, B have
+one of the following form:
+(i) A =
+(a+1 0
+0 a−1
+)
+, B =
+( b −c−1
+c−1 b
+)
+with a ≥ 0 and (α 3, α 4, β 3, β 4, γ 3, γ 4)T ∈
+R6 lying in the kernel of
+L :=
+
+
+
+
+
+−b a−2c+7
+2 0 a+5
+2 a+1 0
+2c−a+7
+2 −b 5−a
+2 0 0 a−1
+1−c
+2
+b
+2
+2a−c+3
+2
+b
+2 −b 1−c
+− b
+2 − c+1
+2 − b
+2
+2a−c−3
+2 c+1 −b
+
+
+
+
+ ;
+(ii) A =
+(
+1 0
+0 1
+)
+, B =
+(
+a − b
+b a
+)
+with b ̸= 0 and (a, b ) ̸= (0, 1) and
+β3 = b α 3 − a α 4, β 4 = a α 3 + b α 4, γ 3 = a
+2 α 3 + b−1
+2 α 4, γ 4 = 1−b
+2 α 3 + a
+2 α 4 ;
+(iii) A =
+(
+1 0
+0 1
+)
+, B =
+(
+0 − 1
+1 0
+)
+and γ3 = 1
+2 (α 4 − β4), γ4 = − 1
+2 (α 3 − β3);
+(iv) A =
+(
+1 0
+0 1
+)
+, B = 0 and β3 = β4 = 0 and γ3 = − 1
+2 α 4, γ4 = 1
+2 α 3 or
+(v) A = 0, B = 0.
+Proof. Let ( f, S, τ ) be oxidation data on R4 and v ∈ V \ {0}. Set f1 := f (v),
+f2 := f (Iv ) and h := f2 − J0 ◦ f1. By Lemma 5.16, we have a two-dimensional
+J0-invariant subspace W such that f1|W = f2|W = 0 and by Lemma 5.15, there
+is an adapted basis {X1, X 2, X 3, X 4} for ( R4, J 0, ω 0) such that X3, X 4 span W .
+
+=== PDF PAGE 26 ===
+26 G. BAZZONI, M. FREIBERT, A. LATORRE, AND B. MEINKE
+Now note that we have h(X3) = h(X4) = 0 and so im( h) ⊆ ⟨ X3, X 4⟩⊥ =
+⟨X3, X 4⟩ as for any Y ∈ R4 and any j ∈ { 3, 4} the identity 0 = ( h.ω 0)(Y, X j) =
+ω 0(h(Y ), X j ) is true. Consequently, if we consider the projection π : R4 →
+⟨X1, X 2⟩ along ⟨X3, X 4⟩, then we have π
+(
+f2(Xi)
+)
+= J0
+(
+π
+(
+f1(Xi)
+))
+, for any
+i = 1, 2. Hence, these projections have to be zero as otherwise we ma y arrange a
+linear combination ˜f of f1 and f2 such that π
+(˜f (Xi)
+)
+= Xi for some i ∈ { 1, 2},
+a contradiction to ˜f being nilpotent.
+Thus, f1 =
+(0 0
+A 0
+)
+and f2 =
+(0 0
+B 0
+)
+for certain A, B ∈ R2×2 with respect to the
+adapted basis {X1, . . . , X 4}. As in the proof of Proposition 5.14, we decompose
+A = A1 + A2 and B = B1 + B2 into their J-commutative parts A1, B1 and
+J-anti-commutative parts A2 and B2, being J :=
+( 0 1
+−1 0
+)
+. Then, the condition
+h ∈ sp(R4, J 0, ω 0) reduces to B2 = J A2. Arguing as in the proof of Proposition
+5.14, we get the same possible forms for A and B. Now note that rotating in
+the ⟨X1, X 2⟩-plane by an angle of φ
+2 and in the ⟨X3, X 4⟩-plane by an angle of
+− φ
+2 is an automorphism of ( R4, J 0, ω 0). This automorphism does not change the
+J-anti-commutative parts A2 and B2 but rotates the J-commutative parts by
+an angle of φ. Then:
+In the ﬁrst case, i.e. A =
+(a+1 −b
+b a −1
+)
+, B =
+( c −d−1
+d−1 c
+)
+for certain a, b, c, d ∈ R,
+we may apply this automorphism to be able to assume that a ≥ 0 and b = 0.
+In the third case, i.e. A =
+(
+cos(φ ) − sin(φ )
+sin(φ ) cos( φ )
+)
+, B = 0 for some φ ∈ [0, 2π ), we
+may apply this automorphism to be able to assume that A = I2 and B = 0.
+Hence, we have the following possibilities for A and B:
+• A =
+(a+1 0
+0 a−1
+)
+, B =
+( b −c−1
+c−1 b
+)
+for certain a, b, c ∈ R with a ≥ 0,
+• A = ( 1 0
+0 1 ), B =
+(a −b
+b a
+)
+for certain a, b ∈ R with b ̸= 0,
+• A = ( 1 0
+0 1 ), B = 0 or
+• A = 0, B = 0.
+Now note that since R4 is Abelian, conditions (i) – (iii) in Lemma
+4.11 are fulﬁlled
+for all these As and Bs and we only have to look at condition (iv). Thereto, we
+write S11 = ∑4
+i=1 α iei, S22 = ∑4
+i=1 βiei, S12 = ∑4
+i=1 γiei for α i, β i, γ i ∈ R and
+obtain
+J0(S♯
+11 + S♯
+22) = ( α 3 + β3)e1 − (α 4 + β4)e2 − (α 1 + β1)e3 + (α 2 + β2)e4
+as in the proof of Proposition
+5.14. Note that condition (iv) in Lemma 4.11 is
+automatically fulﬁlled in the last case, giving us part ( v) in Proposition 5.17.
+Thus, we only have to discuss the ﬁrst three cases:
+First assume that A =
+(a+1 0
+0 a−1
+)
+, B =
+( b −c−1
+c−1 b
+)
+for certain a, b, c ∈ R with
+a ≥ 0. Then condition ( iv) in Lemma 4.11 gives us
+(− c + 1)α 4 + (a + 1)γ3 − bα 3 = − a+5
+2 (α 4 + β4),
+(c + 1)α 3 + (a − 1)γ4 − bα 4 = a−5
+2 (α 3 + β3),
+(− c + 1)γ4 + (a + 1)β3 − bγ3 = c−1
+2 (α 3 + β3) − b
+2 (α 4 + β4),
+(c + 1)γ3 + (a − 1)β4 − bγ4 = c+1
+2 (α 4 + β4) + b
+2 (α 3 + β3).
+
+=== PDF PAGE 27 ===
+COMPLEX SYMPLECTIC STRUCTURES ON LIE ALGEBRAS 27
+This is equivalent to ( α 3, α 4, β 3, β 4, γ 3, γ 4)T ∈ R6 lying in the kernel of
+L =
+
+
+
+
+
+−b −c+1+ a+5
+2 0 a+5
+2 a+1 0
+c+1− a−5
+2 −b − a−5
+2 0 0 a−1
+− c−1
+2
+b
+2 a+1− c−1
+2
+b
+2 −b −c+1
+− b
+2 − c+1
+2 − b
+2 a−1− c+1
+2 c+1 −b
+
+
+
+
+ ,
+obtaining case (i) in the statement above.
+Now we consider the case A = ( 1 0
+0 1 ), B =
+(a −b
+b a
+)
+with b ̸= 0. Then, by
+condition (iv) in Lemma
+4.11, we have
+γ3 − aα 3 − bα 4 = − 1
+2 (α 4 + β4),
+γ4 + bα 3 − aα 4 = 1
+2 (α 3 + β3),
+β3 − aγ3 − bγ4 = b
+2 (α 3 + β3) − a
+2 (α 4 + β4),
+β4 + bγ3 − aγ4 = a
+2 (α 3 + β3) + b
+2 (α 4 + β4).
+The ﬁrst two equations imply
+γ3 = aα 3 + (b − 1
+2 )α 4 − 1
+2 β4,
+γ4 = ( 1
+2 − b)α 3 + aα 4 + 1
+2 β3.
+Inserting into the last two equations gives
+(b2 − a2 − b)α 3 + a(1 − 2b)α 4 + (1 − b)β3 + aβ4 = 0,
+a(2b − 1)α 3 + (b2 − a2 − b)α 4 − aβ3 + (1 − b)β4 = 0.
+If ( a, b ) ̸= (0, 1), then the above equations imply
+β3 = bα 3 − aα 4,
+β4 = aα 3 + bα 4.
+This is case (ii). If ( a, b ) = (0 , 1), then the equations give case (iii).
+Finally, we have to consider the case A = ( 1 0
+0 1 ) and B = 0. Then, the
+computations coincide with those of the previous case, so it suﬃces to take
+a = b = 0 in the above equations, which imply β3 = β4 = 0 and γ3 = − 1
+2 α 4,
+γ4 = 1
+2 α 3. This is case (iv). □
+Corollary 5.18. The nilpotency step of an 8-dimensional complex symplectic
+nilpotent Lie algebra is ≤ 4 and all nilpotency steps between 1 and 4 may occur.
+Proof. By Corollary 5.12, any 8-dimensional complex symplectic nilpotent Lie
+algebra (g, J, ω ) is the complex symplectic oxidation a four-dimensional co mplex
+symplectic Lie algebra. Hence, it is obtainable by the compl ex symplectic oxida-
+tion data on ( h3 ⊕ R, J 0, ω 0) given in Proposition 5.14 or by the complex symplec-
+tic oxidation data on ( R4, J 0, ω 0) given in Proposition 5.17. In the following, we
+use the notation for complex symplectic oxidation from Sect ion 4 and note that
+we have g = V ⊕ ¯g ⊕ V ∗ as vector space with ¯g ∈ { h3 ⊕ R, R4}. Surely, we have
+V ∗ ⊆ g1. Then we see from Proposition 5.14 and Proposition 5.17 that in both
+cases there is a two-dimensional subspace U such that Im( f (v)) ⊆ U ⊆ ker(f (v))
+for all v ∈ V and such that U is ¯g-central and contains the commutator ideal
+of ¯g. From the form of the Lie bracket of g given in (
+4.3) – ( 4.5), we deduce
+that [ U, g]g ⊆ V ∗ ⊆ g1 and so U ⊕ V ∗ ⊆ g2. But then the same equations imply
+
+=== PDF PAGE 28 ===
+28 G. BAZZONI, M. FREIBERT, A. LATORRE, AND B. MEINKE
+[¯g, g]g ⊆ V ∗ ⊕ U ⊆ g2, i.e. ¯g ⊕ V ∗ ⊆ g3. Finally, the mentioned equations show
+that [g, g] ⊆ ¯g ⊕ V ∗ ⊆ g3 and so g = g4, i.e. the nilpotency step of g is at most 4.
+Now for the existence of 8-dimensional nilpotent complex sy mplectic Lie al-
+gebras with nilpotency step 1 – 4 note that R8 and h3 ⊕ R5 provide exam-
+ples of nilpotency step 1 and 2, respectively, obtainable fr om ( R4, J 0, ω 0) and
+(h3 ⊕ R, J 0, ω 0), respectively, with trivial complex symplectic oxidatio n data.
+A nilpotency step 3 example may be obtained by choosing τ = 0, S11 = e3,
+S12 = e1 and S22 = 0 in case (v) in Proposition
+5.17. Then the non-zero Lie
+brackets (up to anti-symmetry) on the vector space g = V ⊕ R4 ⊕ V ∗ with respect
+to the basis {v1, v 2, e 1, . . . , e 4, v 1, v 2} are given by
+[v1, v 2] = e1, [v1, e 1] = v2, [v1, e 3] = v1, [v1, e 4] = 1
+2 v2, [v2, e 1] = v1, [v2, e 4] = − 1
+2 v1
+and one has g1 = z(g) = V ∗, g2 = ¯g ⊕ V ∗ and g3 = g.
+Finally, a nilpotency step 4 example may be obtained by choos ing τ = 0,
+S11 = e3, S12 = e1 and S22 = 12 e4 in case (iv) in Proposition 5.17. In this case, the
+non-zero Lie brackets (up to anti-symmetry) on the vector sp ace g = V ⊕ R4 ⊕ V ∗
+with respect to the basis {v1, v 2, e 1, . . . , e 4, v 1, v 2} are given by
+[v1, v 2] = e1 − 1
+2 e2, [v1, e 1] = e3 + v2, [v1, e 2] = e4, [v1, e 3] = v1 − 1
+4 v2,
+[v1, e 4] = 1
+2 v2, [v2, e 1] = v1, [v2, e 3] = 1
+4 v1, [v2, e 4] = − 1
+2 v1 + 1
+2 v2.
+Here, we have g1 = z(g) = V ∗, g2 = ⟨e3, e 4⟩ ⊕ V ∗, g3 = ¯g ⊕ V ∗ and g4 = g. □
+Remark 5.19. It was shown in [ 18, Theorem 2.1] that an 8-dimensional hy-
+percomplex nilpotent Lie algebra is necessarily 2-step nil potent. Compared to
+this, the existence of complex symplectic structures on nil potent Lie algebras
+seems to be less restrictive. On the other hand, the 8-dimens ional Lie alge-
+bra (0 , 0, 12, 13, 14, 15, 16, 17) has nilpotency step 7 and carries the symplectic
+structure ω = e18 + e27 − e36 + e45. Moreover, the 8-dimensional Lie algebra
+obtained by setting A = E = F = H = K = M = P = s = 0, B = − 1 and
+C = D = G = L = N = 1 in Theorem 5.9 (i) has ascending type (1 , 3, 5, 6, 8)
+and nilpotency step 5; its center is 1-dimensional, hence th e complex structure is
+strongly non-nilpotent and the Lie algebra admits no comple x symplectic struc-
+ture.
+6. Complex symplectic structures on nilmanifolds and
+solvmanifolds
+In this section we apply the previous constructions to provi de several examples
+of compact manifolds with complex symplectic structures. O ur examples will be
+nilmanifolds and solvmanifolds; as we recalled in the intro duction, a nilmanifold
+(resp. solvmanifold) is the quotient of a connected, simply connected nilpo-
+tent (resp. solvable) Lie group G by a lattice Γ (i.e. a discrete and cocompact
+subgroup). Every such G is homeomorphic to Rn for some n, and the natural
+projection G → Γ\G exhibits G as the universal cover of Γ \G; thus π1(Γ\G) = Γ
+and nilmanifolds (resp. solvmanifolds) are aspherical spa ces.
+By a result of Mal’tsev [ 32], a connected, simply connected, nilpotent Lie
+group G contains a lattice if and only if the associated Lie algebra g has a
+rational structure, that is, a rational subalgebra gQ ⊂ g such that g = gQ ⊗ R.
+Nothing is known, in general, about lattices in solvable Lie groups.
+
+=== PDF PAGE 29 ===
+COMPLEX SYMPLECTIC STRUCTURES ON LIE ALGEBRAS 29
+If G is connected, simply connected and nilpotent, Nomizu’s the orem [34] says
+that the de Rham cohomology of the nilmanifold Γ \G is isomorphic to the Lie
+algebra cohomology of g, H •
+dR(Γ\G) ∼
+= H •(g∗). Hattori proved an analogous
+result for completely solvable solvmanifolds, see [
+24].
+As a consequence of Nomizu’s theorem, if a nilmanifold has a s ymplectic struc-
+ture it also has a left-invariant one. By Hattori’s result, t he same happens for
+completely solvable solvmanifolds. Concerning complex sy mplectic structures,
+we have the following reﬁnement:
+Proposition 6.1. Let N = Γ\G be a solvmanifold endowed with a left-invariant
+complex structure J such that H •
+dR(Γ\G) ∼
+= H •(g∗). If (N, J ) admits a complex
+symplectic structure ˜ω (not necessarily left-invariant), then there exists a left -
+invariant complex symplectic structure (J, ω ) on N .
+To prove the proposition, we need to recall a few facts. Let N be a 2 n-
+dimensional manifold. An almost complex structure J on N acts on the space
+of real 2-forms Ω 2(N ) as an involution:
+J ∗ : Ω 2(N ) − → Ω2(N ).
+ω (·, ·) − → ω (J·, J ·)
+Therefore, one has the splitting
+Ω2(N ) = Ω +(N ) ⊕ Ω−(N ) ,
+where Ω ±(N ) = {ω ∈ Ω2(N ) |J ∗ω = ± ω }.
+Denote by Z+
+J (N ) (resp. Z−
+J (N )) the space of closed 2-forms that are J-
+invariant (resp. J-anti-invariant). The following subspaces were introduce d in
+[
+31], in relation with Donaldson’s “tamed to compatible” conje cture:
+H ±
+J (N ) := {[α ] ∈ H 2
+dR(N ) |α ∈ Z±
+J (N )} ⊆ H 2
+dR(N ) .
+Suppose ( J, ω ) is a complex symplectic structure on a manifold N ; then
+ω (J·, ·) = ω (·, J ·) or, equivalently, ω (J·, J ·) = − ω (·, ·), so ω ∈ Ω−(N ). Since
+dω is closed and non-degenerate, 0 ̸= [ω ] ∈ H −
+J (N ).
+Proof of the proposition. Let g be the (real) Lie algebra of G. As a consequence
+of [
+4, Theorem 5.4], the condition H •
+dR(Γ\G) ∼
+= H •(g∗) implies that H −
+J (N ) ∼
+=
+H −
+J (g). Therefore, one can ﬁnd a left-invariant 2-form ω ∈ Λ2g∗ such that
+[ω ] = [˜ω ] ∈ H −
+J (N ). Observe that ω is anti- J-invariant and satisﬁes dω = 0. To
+prove the result, it suﬃces to check that ω n ̸= 0, where 2 n = dim N . Notice that
+0 ̸= [˜ω ]n = [ω ]n = [ω n],
+where ω n ∈ Λ2ng∗ is a top degree form. Consequently, if {e1, . . . , e 2n} is a basis
+for g∗, then ω n = k e1 ∧ · · · ∧e2n, for some k ∈ R. Due to the previous equality
+between cohomology classes, k ̸= 0 and thus ω n ̸= 0, as desired. □
+Combining Proposition
+5.11 with the previous result, we can conclude the
+following:
+Corollary 6.2. Let N be an 8-dimensional nilmanifold endowed with an in-
+variant complex structure J. If the Lie algebra underlying N has 1-dimensional
+center, then (N, J ) cannot admit a complex symplectic structure.
+
+=== PDF PAGE 30 ===
+30 G. BAZZONI, M. FREIBERT, A. LATORRE, AND B. MEINKE
+Example 6.3. Consider the 8-dimensional 2-step nilpotent Lie algebra
+g = qh7 ⊕ R = (0, 0, 0, 0, 0, 12 − 34, 13 + 24, 14 − 23) ,
+which is the direct sum of the quaternionic Heisenberg algeb ra qh7 with R. g is
+precisely the Lie algebra denoted by n3 in [
+18]. Consider the complex structures
+I, J and K whose spaces of (1 , 0)-forms are, respectively,
+ϕ 1
+I = e1 + ie2,
+ϕ 1
+J = e1 + ie3,
+ϕ 1
+K = e1 + ie4,
+ϕ 2
+I = e3 + ie4,
+ϕ 2
+J = e2 − ie4,
+ϕ 2
+K = e2 + ie3,
+ϕ 3
+I = e5 + ie6,
+ϕ 3
+J = e5 + ie7,
+ϕ 3
+K = e5 + ie8,
+ϕ 4
+I = e7 + ie8,
+ϕ 4
+J = e6 − ie8,
+ϕ 4
+K = e6 + ie7.
+According to [
+18, Page 54], {I, J, K } is a hypercomplex structure. Moreover,
+one checks easily that ω = 1
+2 e18 + 1
+2 e27 + e36 + e45 is a symplectic form and ( I, ω )
+is a complex symplectic structure. g has an obvious rational structure, hence G,
+the unique connected, simply connected nilpotent Lie group with Lie algebra g,
+contains a lattice Γ, and N = Γ\G is a compact nilmanifold with a hypercomplex
+and a complex symplectic structure, both invariant. Using N omizu’s theorem,
+one sees that b1(N ) = 5, hence N is not diﬀeomorphic to the torus T 8, which,
+by a result of Hasegawa [ 23], is a necessary condition for a nilmanifold to admit
+a K¨ ahler structure. Thus, N has also no hyperk¨ ahler structure.
+Consider the I-invariant, central ideal a ⊂ g with basis {e6, e 5}; notice that
+a ∼
+= V ∗, where V has basis {− e3, − e4}. Then a⊥/ a is isomorphic to R4 with
+basis
+{√
+2e2,
+√
+2e1,
+√
+2e8,
+√
+2e7
+}
+. The complex symplectic Lie algebra ( g, I, ω )
+can be obtained from Proposition 5.17 case (i) with a = b = c = 0, τ(e3, e 4) = e6
+and S = 0.
+Example 6.4. Consider the 8-dimensional 2-step nilpotent Lie algebra
+g = (0, 0, 0, 0, 0, 0, 0, 12 − 34) ;
+notice that g is isomorphic to h5 ⊕ R3, where h2n+1 is the Heisenberg Lie algebra,
+with basis {X1, Y 1, . . . , X n, Y n, Z } and non-zero brackets [ Xi, Y i] = Z for i =
+1, . . . , n . It is easy to see that h2n+1 ⊕ R2m+1 is not symplectic for n ≥ 2, so in
+particular, it is not complex symplectic (for n = 1, recall that h3 ⊕ R5 admits a
+complex symplectic structure, as remarked in the proof of Co rollary 5.18). Notice
+that g is obtained by setting all parameters equal to zero in [ 18, Page 54], except
+for d1 = 1, hence the complex structures I, J and K described in the previous
+example give a hypercomplex structure {I, J, K } on g. Since g has a rational
+structure, G, the unique connected, simply connected nilpotent Lie grou p with
+Lie algebra g contains a lattice Γ, and N = Γ \G is a compact nilmanifold
+with a left-invariant hypercomplex structure. By Nomizu’s theorem, N has no
+symplectic structure, hence, in particular, no complex sym plectic structure.
+Example 6.5. Consider the family of Lie algebras g = g(A, B, C ) with com-
+plex structure J given in terms of a basis {ϕ 1, . . . , ϕ 4} of g∗(1, 0) with structure
+equations 
+
+
+
+
+dϕ 1 = dϕ 2 = 0,
+dϕ 3 = ϕ 1¯
+2,
+dϕ 4 = A ϕ 13 + B ϕ 1¯
+1 + C ϕ 2¯
+2,
+
+=== PDF PAGE 31 ===
+COMPLEX SYMPLECTIC STRUCTURES ON LIE ALGEBRAS 31
+where A, B, C ∈ C are such that AC ̸= 0. The complex 2-form
+(6.1) ω C = α ϕ 12 + β ϕ 13 + γ ϕ 14 + Cγ ϕ 23, α, β, γ ∈ C, γ ̸= 0
+is in Λ 2g∗(1, 0) and is closed and non-degenerate, hence ( J, ω C) is a complex
+symplectic structure on g. Deﬁning the following real basis of g
+
+
+
+
+
+
+
+
+
+e1 = 1
+2 (ϕ 1 + ϕ ¯
+1)
+e2 = 12 (ϕ 2 + ϕ ¯
+2)
+e3 = − i2 (ϕ 1 − ϕ ¯
+1)
+e4 = − i2 (ϕ 2 − ϕ ¯
+2)
+
+
+
+
+
+
+
+
+
+e5 = 1
+2 (ϕ 3 + ϕ ¯
+3)
+e6 = i2 (ϕ 3 − ϕ ¯
+3)
+e7 = 12 (ϕ 4 + ϕ ¯
+4)
+e8 = − i2 (ϕ 4 − ϕ ¯
+4)
+we get the real structure equations of g:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+de1 = de2 = de3 = de4 = 0,
+de5 = e12 + e34,
+de6 = e14 + e23,
+de7 = 2 Im B e13 + Re A e15 + Im A e16 + 2 Im C e24 − Im A e35 + Re A e36,
+de8 = − 2 Re B e13 + Im A e15 − Re A e16 − 2 Re C e24 + Re A e35 + Im A e36.
+Notice that A ̸= 0 ensures that g has nilpotency step 3, while C ̸= 0 is needed for
+the non-degeneration of the complex symplectic form ω C. As we already pointed
+out in Remark
+5.19, g carries no hypercomplex structure by a result of Dotti
+and Fino. Fixing for instance A = C = 1, B = 0, we see that g has a rational
+structure, hence the corresponding connected, simply conn ected, nilpotent Lie
+group G admits a lattice Γ, and N = Γ\G carries a complex symplectic structure
+but no left-invariant hypercomplex structures.
+The center of g is z(g) = ⟨e7, e 8⟩ which is J-invariant. One sees that a⊥/ a
+is isomorphic to R4 = ⟨e4, e 2, e 5, e 6⟩. Furthermore, if one sets α = 0, β = 0
+and γ = 1 in ( 6.1), the complex symplectic Lie algebra ( g, J, Re(ω C)) can be
+obtained by complex symplectic oxidation from Proposition 5.17 case (i) by
+setting a = b = c = 0, S11 = − e3, S12 = − e4, S22 = e3 and τ = 0, with
+v1 = − e3, v2 = e1, v1 = − e8 and v2 = − e7.
+Example 6.6. Consider the complex Heisenberg group
+H C
+3 =
+
+
+
+
+
+1 z1 z3
+0 1 z2
+0 0 1
+
+ |z1, z 2, z 3 ∈ C
+
+
+ ;
+notice that it is a nilpotent Lie group. Ξ = {A ∈ H C
+3 |z1, z 2, z 3 ∈ Z[i]} ⊂ H C
+3 is a
+lattice and Ξ \H C
+3 is the Iwasawa manifold. We set G = H C
+3 × C and Γ = Ξ × Z[i].
+Thus Γ \G is a nilmanifold. A basis of left-invariant holomorphic 1-f orms on G
+is given by
+ϕ 1 = dz1, ϕ 2 = dz2, ϕ 3 = dz3 − z1dz2 and ϕ 4 = dz4 ,
+z4 being the coordinate on the C factor. Then
+dϕ 1 = 0, dϕ 2 = 0, dϕ 3 = − ϕ 12 and dϕ 4 = 0 .
+The Lie algebra of G is g = hC
+3 ⊕ C = ( h3 ⊕ R) ⊗ C, the complexiﬁcation of
+h3 ⊕ R. As shown in [
+13, Example 4.1], Γ \G admits the following family of
+
+=== PDF PAGE 32 ===
+32 G. BAZZONI, M. FREIBERT, A. LATORRE, AND B. MEINKE
+complex symplectic structures:
+(6.2) ω C = αϕ 12 + βϕ 13 + γϕ 14 + δϕ 23 + εϕ 24 .
+This example was also considered by Guan in [
+20]. We now show how, for selected
+values of these parameters, ( hC
+3 ⊕ C, J, ω C) can be obtained by oxidation (notice
+that here the complex structure J is given in terms of the basis {ϕ 1, . . . , ϕ 4} of
+(1, 0)-forms). We ﬁx the following real basis of 1-forms
+
+
+
+
+
+
+
+
+
+ϕ 1 = e1 − ie2
+ϕ 2 = e3 − ie4
+ϕ 3 = e7 − ie8
+ϕ 4 = e5 − ie6
+and let {ei}8
+i=1 be the dual basis. Thus g = (0, 0, 0, 0, 0, 0, − 13 + 24 , − 14 − 23).
+Choosing ω C = ϕ 13 − ϕ 24 in (
+6.2), and taking its real part, we see that
+ω = e17− e28− e35+e46 is a symplectic form with respect to which J is symmetric.
+The central ideal a = ⟨e6, − e5⟩ ∼
+= V ∗ is clearly J-invariant and a⊥/ a ∼
+= R4 =
+⟨− e2, e 1, e 7, e 8⟩; choosing {− e4, − e3} as a basis of V , the complement of a⊥ in
+g, the corresponding oxidation data are τ = 0, S = 0 and A, B as in case (ii) of
+Proposition
+5.17 with a = 0 and b = − 1.
+Picking ω C = ϕ 14 + ϕ 23 in ( 6.2), and taking the real part, we obtain the
+symplectic form ω = e15 − e26 + e37 − e48, with respect to which J is symmetric.
+a = ⟨e7, e 8⟩ ∼
+= V ∗ is a central, J-invariant ideal and a⊥/ a ∼
+= R4 = ⟨− e2, e 1, e 5, e 6⟩.
+In the notation of Lemma
+4.11, we have v1 = − e3 and v2 = e4, spanning V ;
+moreover, S11 = e1, S12 = e2 and S22 = − e1. The other oxidation data are
+τ = 0, f = 0, i.e. we are in case (v) of Proposition 5.17.
+Example 6.7. We show that our construction also works in the more general
+context of solvable Lie algebras. Consider the compact comp lex manifold X0
+which is the product of the Nakamura threefold and a complex t orus. X0 has
+the structure of a solvmanifold Γ \G, where G is a certain solvable complex Lie
+group and Γ ⊂ G is a lattice. A global, left-invariant frame of holomorphic
+1-forms on G is given by
+ϕ 1 = dz1, ϕ 2 = e−z1dz2, ϕ 3 = ez1dz3 and ϕ 4 = dz4 .
+In terms of {ϕ 1, . . . , ϕ 4}, the structure equations of g are
+dϕ 1 = 0, dϕ 2 = − ϕ 12, dϕ 3 = ϕ 13 and dϕ 4 = 0 .
+The form ω C = αϕ 14 + βϕ 23, αβ ̸= 0, is holomorphic, closed and non-
+degenerate, hence deﬁnes a complex symplectic structure on X0. X0 does
+not satisfy the ∂ ¯∂-lemma, but some deformations of its complex structures Xt,
+t ∈ C − { 0}, do, see [ 3, Section 4]. In fact, X0 and its deformations (all of which
+admit complex symplectic structures) have been considered in [13, Example 4.2].
+We ﬁx the following real basis of 1-forms
+
+
+
+
+
+
+
+
+
+ϕ 1 = e1 − ie2
+ϕ 2 = e3 − ie4
+ϕ 3 = e5 − ie6
+ϕ 4 = e7 − ie8
+
+=== PDF PAGE 33 ===
+COMPLEX SYMPLECTIC STRUCTURES ON LIE ALGEBRAS 33
+and let {ei}8
+i=1 be the dual basis. One sees that
+g = (0, 0, − 13 + 24, − 14 − 23, 15 − 26, 16 + 25, 0, 0) .
+We choose ω C = ϕ 14 +ϕ 23; its real part ω = e17 − e28 +e35 − e46 is a symplectic
+form with respect to which J is symmetric. The central ideal a = ⟨e7, e 8⟩ ∼
+= V ∗
+is clearly J-invariant and a⊥/ a ∼
+= R4 = ⟨e3, e 4, − e6, e 5⟩; choosing {− e1, e 2} as
+a basis of V , the complement of a⊥ in g, the corresponding oxidation data are
+τ = 0, S = 0 and the derivations
+f (− e1) =
+
+
+
+
+− 1 0 0 0
+0 − 1 0 0
+0 0 1 0
+0 0 0 1
+
+
+
+ , f (e2) =
+
+
+
+
+0 − 1 0 0
+1 0 0 0
+0 0 0 1
+0 0 − 1 0
+
+
+
+ .
+with respect to the adapted basis {e3, e 4, − e6, e 5} of ( R4, J 0, ω 0).
+Acknowledgements. The authors would like to thank Ilka Agricola, Daniele
+Angella, S¨ onke Rollenske and Luis Ugarte for useful conver sations. The ﬁrst
+author was supported by a Juan de la Cierva - Incorporaci´ on Fellowship of
+Spanish Ministerio de Ciencia, Innovaci´ on y Universidade s. The second au-
+thor was partly supported by a Forschungsstipendium (FR 3473/2-1) from the
+Deutsche Forschungsgemeinschaft (DFG). The third author w as partially sup-
+ported by the project MTM2017-85649-P (AEI/FEDER, UE) and t he group
+E22-17R “Algebra y Geometr ´ ıa” (Gobierno de Arag´ on/FEDER).
+References
+[1] Adri´ an Andrada. Hypersymplectic Lie algebras. J. Geom. Phys. , 56(10):2039–2067, 2006.
+(cited on p.
+5)
+[2] Adri´ an Andrada and Isabel G. Dotti. Double products and hypersymplectic structures on
+R4n. Comm. Math. Phys. , 262(1):1–16, 2006. (cited on p. 5)
+[3] Daniele Angella and Hisashi Kasuya. Cohomologies of def ormations of solvmanifolds and
+closedness of some properties. North-West. Eur. J. Math. , 3:75–105, i, 2017. (cited on
+p. 32)
+[4] Daniele Angella, Adriano Tomassini, and Weiyi Zhang. On cohomological decomposability
+of almost-K¨ ahler structures.Proc. Amer. Math. Soc. , 142(10):3615–3630, 2014. (cited on
+p. 29)
+[5] Ben Anthes, Andrea Cattaneo, S¨ onke Rollenske, and Adriano Tomassini. ∂∂-complex sym-
+plectic and Calabi-Yau manifolds: Albanese map, deformati ons and period maps. 2017.
+https://arxiv.org/abs/1711.05107. (cited on p. 4)
+[6] Oliver Baues and Vicente Cort´ es. Symplectic Lie groups: symplectic reduction, Lagrangian
+extensions, and existence of Lagrangian normal subgroups. Ast´ erisque, (379):vi+90, 2016.
+(cited on p. 2, 7)
+[7] Giovanni Bazzoni, Marisa Fern´ andez, and Vicente Mu˜ no z. A 6-dimensional simply con-
+nected complex and symplectic manifold with no K¨ ahler metr ic. 2016. to appear in J.
+Symplectic Geom. (cited on p. 3)
+[8] Giovanni Bazzoni and Vicente Mu˜ noz. Manifolds which ar e complex and symplectic but
+not K¨ ahler. InEssays in mathematics and its applications , pages 49–69. Springer, [Cham],
+2016. (cited on p. 3)
+[9] Arnaud Beauville. Vari´ et´ es K¨ ahleriennes dont la premi` ere classe de Chern est nulle. J.
+Diﬀerential Geom., 18(4):755–782 (1984), 1983. (cited on p. 1, 4)
+[10] Marcel Berger. Sur les groupes d’holonomie homog` ene d es vari´ et´ es ` a connexion aﬃne et
+des vari´ et´ es riemanniennes.Bull. Soc. Math. France , 83:279–330, 1955. (cited on p. 3)
+[11] Philip Boalch. Noncompact complex sympletic and hyper k¨ ahler manifolds, 2009.
+https://www.math.u-psud.fr/~boalch/cours09/hk.pdf. (cited on p. 4)
+
+=== PDF PAGE 34 ===
+34 G. BAZZONI, M. FREIBERT, A. LATORRE, AND B. MEINKE
+[12] Eugenio Calabi and Beno Eckmann. A class of compact, com plex manifolds which are not
+algebraic. Ann. of Math. (2) , 58:494–500, 1953. (cited on p.
+3)
+[13] Andrea Cattaneo and Adriano Tomassini. Complex symple ctic structures and the ∂∂-
+lemma. Ann. Mat. Pura Appl. (4) , 197(1):139–151, 2018. (cited on p. 2, 4, 31, 32)
+[14] Richard Cleyton, Yat S. Poon, and Gabriela P. Ovando. We ak mirror symmetry of complex
+symplectic Lie algebras. J. Geom. Phys. , 61(8):1553–1563, 2011. (cited on p. 2)
+[15] Luis A. Cordero, Marisa Fern´ andez, Alfred Gray, and Lu is Ugarte. Compact nilmani-
+folds with nilpotent complex structures: Dolbeault cohomo logy. Trans. Amer. Math. Soc. ,
+352(12):5405–5433, 2000. (cited on p. 15, 16)
+[16] Andrew Dancer and Andrew Swann. Hypersymplectic manif olds. In Recent developments
+in pseudo-Riemannian geometry , ESI Lect. Math. Phys., pages 97–111. Eur. Math. Soc.,
+Z¨ urich, 2008. (cited on p. 5)
+[17] Pierre Deligne, Phillip Griﬃths, John Morgan, and Denn is Sullivan. Real homotopy theory
+of K¨ ahler manifolds.Invent. Math. , 29(3):245–274, 1975. (cited on p. 4)
+[18] Isabel G. Dotti and Anna Fino. Hypercomplex eight-dime nsional nilpotent Lie groups. J.
+Pure Appl. Algebra , 184(1):41–57, 2003. (cited on p. 4, 28, 30)
+[19] Anna Fino, Henrik Pedersen, Yat-Sun Poon, and Marianne W. S¨ orensen. Neutral Calabi-
+Yau structures on Kodaira manifolds. Comm. Math. Phys. , 248(2):255–268, 2004. (cited
+on p. 5)
+[20] Daniel Guan. Examples of compact holomorphic symplect ic manifolds which admit no
+K¨ ahler structure. In Geometry and analysis on complex manifolds , pages 63–74. World
+Sci. Publ., River Edge, NJ, 1994. (cited on p. 1, 32)
+[21] Daniel Guan. Examples of compact holomorphic symplect ic manifolds which are not
+K¨ ahlerian. II.Invent. Math. , 121(1):135–145, 1995. (cited on p. 1)
+[22] Daniel Guan. Examples of compact holomorphic symplect ic manifolds which are not
+K¨ ahlerian. III.Internat. J. Math. , 6(5):709–718, 1995. (cited on p. 1)
+[23] Keizo Hasegawa. Minimal models of nilmanifolds. Proc. Amer. Math. Soc. , 106(1):65–71,
+1989. (cited on p. 1, 4, 30)
+[24] Akio Hattori. Spectral sequence in the de Rham cohomolo gy of ﬁbre bundles. J. Fac. Sci.
+Univ. Tokyo Sect. I , 8:289–331 (1960), 1960. (cited on p. 29)
+[25] Nigel Hitchin. Hypersymplectic quotients. Acta Acad. Sci. Taurinensis, 124:169–180, 1990.
+(cited on p. 4)
+[26] Heinz Hopf. Zur Topologie der komplexen Mannigfaltigk eiten. In Studies and Essays Pre-
+sented to R. Courant on his 60th Birthday, January 8, 1948 , pages 167–185. Interscience
+Publishers, Inc., New York, 1948. (cited on p. 3)
+[27] Daniel Huybrechts. Compact hyper-K¨ ahler manifolds: basic results. Invent. Math. ,
+135(1):63–113, 1999. (cited on p. 4)
+[28] Dominic Joyce. Compact hypercomplex and quaternionic manifolds. J. Diﬀerential Geom. ,
+35(3):743–761, 1992. (cited on p. 4)
+[29] Dominic Joyce. Compact manifolds with special holonomy . Oxford Mathematical Mono-
+graphs. Oxford University Press, Oxford, 2000. (cited on p. 4)
+[30] Adela Latorre, Luis Ugarte, and Raquel Villacampa. The ascending central series of nilpo-
+tent lie algebras with complex structure. 2018. to appear in Trans. Amer. Math. Soc. (cited
+on p. 15, 16, 17)
+[31] Tian-Jun Li and Weiyi Zhang. Comparing tamed and compat ible symplectic cones and
+cohomological properties of almost complex manifolds. Comm. Anal. Geom. , 17(4):651–
+683, 2009. (cited on p. 29)
+[32] Anatoli ˇ ı I. Mal’tsev. On a class of homogeneous spaces . Amer. Math. Soc. Translation ,
+1951(39):33, 1951. (cited on p. 2, 28)
+[33] Dusa McDuﬀ. Examples of simply-connected symplectic n on-K¨ ahlerian manifolds.J. Dif-
+ferential Geom., 20(1):267–277, 1984. (cited on p. 3)
+[34] Katsumi Nomizu. On the cohomology of compact homogeneo us spaces of nilpotent Lie
+groups. Ann. of Math. (2) , 59:531–538, 1954. (cited on p. 29)
+[35] Morio Obata. Aﬃne connections on manifolds with almost complex, quaternion or Her-
+mitian structure. Jap. J. Math. , 26:43–77, 1956. (cited on p. 4)
+
+=== PDF PAGE 35 ===
+COMPLEX SYMPLECTIC STRUCTURES ON LIE ALGEBRAS 35
+[36] Simon M. Salamon. Riemannian geometry and holonomy groups , volume 201 of Pitman
+Research Notes in Mathematics Series . Longman Scientiﬁc & Technical, Harlow; copub-
+lished in the United States with John Wiley & Sons, Inc., New Y ork, 1989. (cited on
+p. 4)
+[37] Joanne E. Snow. Invariant complex structures on four-d imensional solvable real Lie groups.
+Manuscripta Math. , 66(4):397–412, 1990. (cited on p. 16)
+[38] William P. Thurston. Some simple examples of symplecti c manifolds. Proc. Amer. Math.
+Soc., 55(2):467–468, 1976. (cited on p. 3)
+[39] Andre ˘ ı N. Todorov. Every holomorphic symplectic manifold admits a K¨ ahler metric. 1991.
+preprint. (cited on p. 1)
+[40] Aleksy Tralle and John Oprea. Symplectic manifolds with no K¨ ahler structure , volume
+1661 of Lecture Notes in Mathematics . Springer-Verlag, Berlin, 1997. (cited on p. 3)
+[41] Misha Verbitsky. Hypercomplex structures on K¨ ahler m anifolds. Geom. Funct. Anal. ,
+15(6):1275–1283, 2005. (cited on p. 4)
+(G. Bazzoni) Departamento de ´Algebra, Geometr ´ıa y Topolog ´ıa, Universidad
+Complutense de Madrid, Plaza de Ciencias 3, 28040 Madrid, Sp ain
+E-mail address : gbazzoni@ucm.es
+(M. Freibert) Department of Mathematics, King’s College London, Strand, Lon-
+don WC2R 2LS, United Kingdom
+E-mail address : marco.freibert@kcl.ac.uk
+Mathematisches Seminar, Christian-Albrechts-Universit ¨at zu Kiel, Ludewig-
+Meyn-Strasse 4, D-24098 Kiel, Germany
+E-mail address : freibert@math.uni-kiel.de
+(A. Latorre) Centro Universitario de la Defensa - I.U.M.A., Academia Gen eral
+Militar, Crta. de Huesca s/n. 50090 Zaragoza, Spain
+E-mail address : adela@unizar.es
+(B. Meinke) Institut f ¨ur Differentialgeometrie, Gottfried Wilhelm Leibniz Uni-
+versit¨at Hannover, Welfengarten 1, D-30167 Hannover, Germany
+E-mail address : meinke@math.uni-hannover.de

@@ -1,0 +1,10 @@
+{
+  "scope": "New formal exterior identities only; not a proof certification.",
+  "theta_sixth_top_coefficient": "-720*d1*d2*d3*d4*h11*h22 + 720*d1*d2*d3*d4*h12*h21",
+  "theta6_equals_15_H2_D4": true,
+  "all_64_Lefschetz_pairing_entries_checked": true,
+  "slow_block_zero": true,
+  "fast_pairing_determinant": "207360000*d1*d1*d1*d1*d2*d2*d2*d2*d3*d3*d3*d3*d4*d4*d4*d4*h11*h11*h22*h22 + -414720000*d1*d1*d1*d1*d2*d2*d2*d2*d3*d3*d3*d3*d4*d4*d4*d4*h11*h12*h21*h22 + 207360000*d1*d1*d1*d1*d2*d2*d2*d2*d3*d3*d3*d3*d4*d4*d4*d4*h12*h12*h21*h21",
+  "fast_determinant_factorization": "(120*d1*d2*d3*d4)^4*(h11*h22-h12*h21)^2",
+  "fast_nondegeneracy_under_nonzero_top_volume": true
+}

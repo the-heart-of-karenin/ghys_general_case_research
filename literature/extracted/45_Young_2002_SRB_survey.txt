@@ -1,0 +1,854 @@
+=== PDF PAGE 1 ===
+What are SRB measures,
+and which dynamical systems have them?
+To David and Yasha
+Lai-Sang Young1
+This is a slightly expanded version of the text of a lecture I gave in a conference
+at Rutgers University in honor of David Ruelle and Yasha Sinai. In this lecture
+I reported on some of the main results surrounding an invariant measure introduced
+by Sinai, Ruelle and Bowen in the 1970s. SRB measures, as these objects are called,
+play an important role in the ergodic theory of dissipative dynamical systems with
+chaotic behavior. Roughly speaking,
+• SRB measures are the invariant measures most compatible with volume when
+volume is not preserved;
+• they provide a mechanism for explaining how local instability on attractors can
+produce coherent statistics for orbits starting from large sets in the basin.
+An outline of this paper is as follows.
+The original work of Sinai, Ruelle and Bowen was carried out in the context of
+Anosov and Axiom A systems. For these dynamical systems they identiﬁed and
+constructed an invariant measure which is uniquely important from several diﬀerent
+points of view. These pioneering works are reviewed in Section 1.
+Subsequently, a nonuniform, almost-everywhere notion of hyperbolicity expressed
+in terms of Lyapunov exponents was developed. This notion provided a new frame-
+work for the ideas in the last paragraph. While not all of the previous characteriza-
+tions are equivalent in this broader setting, the central ideas have remained intact,
+leading to a more general notion of SRB measures. This is discussed in Section 2.
+The extension above opened the door to the possibility that the dynamics on many
+attractors are described by SRB measures. Determining if this is (or is not) the case,
+however, let alone proving it, has turned out to be very challenging. No genuinely
+nonuniformly hyperbolic examples were known until the early 1990s, when SRB
+measures were constructed for certain H´enon maps. Today we still do not have a
+good understanding of which dynamical systems admit SRB measures, but some
+progress has been made; a sample of it is reported in Section 3.
+1Courant Institute of Mathematical Sciences, 251 Mercer Street, New York, NY 10012, USA.
+Email lsy@cims.nyu.edu. This research is partially supported by a grant from the NSF
+
+=== PDF PAGE 2 ===
+It is now clear that away from Axiom A systems, the dynamical picture is neces-
+sarily very complex. This and other observations form my concluding remarks.
+Finally, I close the introduction by stating the obvious, namely that this short
+note is in no way intended to be a complete treatment of SRB measures. A number
+of topics have been omitted. I mention in particular [PS2], [SW], [D2] and [R4], which
+contain promising ideas.
+1 SRB measures for Axiom A attractors
+We introduce the setting in which SRB measures were ﬁrst conceived.
+Deﬁnition 1.1 (a) Let f : M → M be a diﬀeomorphism of a compact Riemannian
+manifold onto itself. We say f is an Anosov diﬀeomorphism if the tangent space
+at every x ∈ M is split into Eu(x) ⊕ Es(x) where Eu and Es are Df-invariant
+subspaces, Df |Eu is uniformly expanding and Df |Es is uniformly contracting.
+(b) A compact f-invariant set Λ ⊂ M is called an attractor if there is a neigh-
+borhood U of Λ called its basin such that f nx → Λ for every x ∈ U. Λ is called an
+Axiom A attractor if the tangent bundle over Λ is split into Eu ⊕ Es as above.
+To be precise, by the uniform expanding property of Df |Eu, we mean there is a
+constant λ > 1 such that ||Df(v)|| ≥ λ||v|| for every v ∈ Eu. Anosov diﬀeomorphims
+can be viewed as special cases of Axiom A attractors with Λ = U = M. In the
+discussion to follow, we will assume that Eu is nontrivial for the attractors in question,
+so that there is sensitive dependence on initial conditions or chaos. We will also
+assume that the attractor is irreducible, meaning Λ cannot be written as the union of
+two disjoint attractors. The main results on SRB measures for Axiom A attractors
+can be summarized as follows:
+Theorem 1 ([S2], [R1], [R2], [B2], [K1]) Let f be a C2 diﬀeomorphism with an
+Axiom A attractor Λ. Then there is a unique f-invariant Borel probability measure
+µ on Λ that is characterized by each of the following (equivalent) conditions:
+(i) µ has absolutely continuous conditional measures on unstable manifolds;
+(ii)
+hµ(f) =
+∫
+| det(Df |Eu)|dµ
+where hµ(f) is the metric entropy of f;
+(iii) there is a set V ⊂ U having full Lebesgue measure such that for every continuous
+observable ϕ : U → R, we have, for every x ∈ V ,
+1
+n
+n−1∑
+i=0
+ϕ(f ix) →
+∫
+ϕdµ ;
+2
+
+=== PDF PAGE 3 ===
+(iv) µ is the zero-noise limit of small random perturbations of f.
+The invariant measure µ in Theorem 1 is called the Sinai-Ruelle-Bowen mea-
+sure or SRB measure of f. There are analogous results for ﬂows but for simplicity
+we will limit our exposition to the discrete-time case. We wish now to explain infor-
+mally the meanings of (i)–(iv), postponing technical deﬁnitions to Section 2 where a
+broader class of dynamical systems is treated. More detailed attributions are given
+after these explanations.
+In a neighborhood of an attractor, the deﬁning map is often volume decreasing,
+ruling out the possibility of an invariant measure equivalent to volume. The meaning
+of (i) is that every Axiom A attractor admits an invariant measure with a density in
+the unstable direction. (In the stable direction, this measure is usually singular with
+respect to Lebesgue measure.)
+(ii) expresses the following variational principle: Metric entropy or Kolmogorov-
+Sinai entropy is a measure of dynamical complexity for measure-preserving transfor-
+mations. For diﬀerentiable maps, there is another measure of dynamical complexity,
+namely the expanding part of the derivative. For Axiom A attractors it was shown
+that the ﬁrst of these quantities is always dominated by the second, and µ is the
+unique invariant measure for which these two quantities coincide.
+If one adopts the view that positive Lebesgue measure sets correspond to observ-
+able events, then (iii) expresses the fact that µ can be “observed”, for it governs
+the asymptotic distributions of orbits starting from Lebesgue-a.e. initial condition.
+This property does not follow from the Birkhoﬀ Ergodic Theorem: The support of
+µ is contained in Λ, which for a genuinely volume decreasing attractor has Lebesgue
+measure zero, yet it controls the behavior of orbits starting from an open set.
+Here is what we mean by “zero-noise limit”: Let P ε(·|·), ε > 0, be a family
+of Markov chains whose transition probabilities have densities with some regularity
+properties and which satisfy P ε(·|x) → δfx, the Dirac measure at fx, as ε → 0. (iv)
+says that the stationary measures for P ε converge to µ as ε → 0. If one accepts
+that the world is intrinsically a little noisy, then zero-noise limits are the observable
+invariant measures.
+SRB measures have their origins in statistical mechanics. Here is a very brief
+account of how (i)–(iv) came about. In 1968, Sinai constructed for Anosov diﬀeomor-
+phisms certain partitions called Markov partitions [S1]. These partitions enabled him
+to identify points in the phase space with conﬁgurations in one-dimensional lattice
+systems. In [S2], he developed for Anosov systems a Gibbs theory analogous to that
+in statistical mechanics. SRB measures are special cases of Gibbs measures. They are
+deﬁned by the potential − log | det(Df |Eu)| or, equivalently, by the fact that they have
+smooth conditional measures on unstable manifolds. This point of view is reﬂected in
+(i). At about the same time, Bowen extended the construction of Markov partitions
+to Axiom A attractors [B1]. Ruelle brought earlier works in statistical mechanics to
+bear on Axiom A theory, notably the variational principle and the notion of equilib-
+3
+
+=== PDF PAGE 4 ===
+rium states [R1]. He also emphasized the connection of SRB measures to Lebesgue
+measure on the ambient manifold [R2], [BR]. These points of view are reﬂected in
+(ii) and (iii); see also [B2] for an exposition. The idea that zero-noise limits represent
+measures that are truly physically observable was expressed by Kolmogorov. That
+this property is equivalent to (i) is proved formally by Kifer [Ki]; see also [Y1].
+2 A more general notion of SRB measures
+In this section we discuss extensions of the four properties in Theorem 1 to more
+general dynamical systems. As before, we will limit ourselves to the discrete-time
+case. Also, to avoid technicalities, we consider only diﬀeomorphisms, i.e. diﬀeren-
+tiable maps with diﬀerentiable inverses, leaving aside noninvertible maps, maps with
+singularities etc. for which some versions of the results discussed also hold. Through-
+out this section, let f : M → M be a C2 diﬀeomorphism of a compact Riemannian
+manifold to itself.
+2.1 Conditional measures on W u and the entropy formula
+Recall the deﬁnition of Lyapunov exponents: For x ∈ M and v ∈ TxM, let
+λ(x, v) = lim
+n→±∞
+1
+n log ∥DT n
+x (v)∥
+if these limits exist and coincide. A theorem due to Oseledec [O] states that if µ is an
+f-invariant probability on M, then there exist measurable functions λi such that at
+µ-a.e. x, the tangent space TxM = ⊕Ei(x) where λ(x, v) = λi(x) for v ∈ Ei(x). The
+λi are called the Lyapunov exponents of (f, µ). We remark that since Df(Ei(x)) =
+Ei(fx), the functions x ↦→ λi(x) and dimEi(x) are constant µ-a.e. if (f, µ) is ergodic.
+Suppose now that (f, µ) has a positive (respectively negative) Lyapunov exponent
+a.e. Then unstable (resp. stable) manifolds are well deﬁned a.e. More precisely, for
+x ∈ M, let
+W u(x) := {y ∈ M : lim sup
+n→∞
+1
+n log d(f −nx, f −ny) < 0}.
+A well known fact from nonuniform hyperbolic theory [P1] states that at µ-a.e. x,
+W u(x) is an immersed submanifold tangent at x to ⊕λi>0Ei(x). It is called the un-
+stable manifold at x. The stable manifold at x, denoted W s(x), is deﬁned anal-
+ogously with d(f −nx, f −ny) in the deﬁnition of W u replaced by d(f nx, f ny). Stable
+and unstable manifolds are invariant, i.e. f(W u(x)) = W u(fx), f(W s(x)) = W s(fx).
+A measurable partition ζ of M is said to be subordinate to W u if for µ-a.e. x,
+ζ(x), the element of ζ containing x, is contained in W u(x). We focus on the following
+4
+
+=== PDF PAGE 5 ===
+two families of measures on the elements of ζ: {µζ
+x}, the conditional measures of µ,
+and mζ
+x, the restriction of the Riemannian measure on W u(x) to ζ(x).
+Deﬁnition 2.1 An f-invariant Borel probability measure µ is said to have abso-
+lutely continuous conditional measures on unstable manifolds if (f, µ) has
+a positive Lyapunov exponents a.e., and for every measurable partition ζ subordinate
+to W u, we have µζ
+x << mζ
+x at µ-a.e. x.
+As in Section 1, let hµ(f) denote the metric entropy of f with respect to µ.
+Theorem 2 states that properties (i) and (ii) in Theorem 1 are, in fact, equivalent
+under very general conditions. (Unlike Theorem 1, however, it does not assert the
+existence of a measure with these properties.)
+Theorem 2 ([R3], [P2], [LS], [LY1]) Let f be an arbitrary diﬀeomorphism and µ an
+f-invariant Borel probability measure with a positive Lyapunov exponent a.e.. Then
+µ has absolutely continuous conditional measures on W u if and only if
+hµ(f) =
+∫ ∑
+λi>0
+λi dim Ei dµ .
+Without the absolute continuity assumption on µ, “=” above is replaced by “≤”.
+This result has the following interpretation: It suggests that entropy is created
+by the exponential divergence of nearby orbits. A strict inequality results when some
+of the expansion is “wasted” due to leakage or dissipation from the system under
+forward iterations; by the same token equality holds when no leakage takes place.
+Thus measures with absolutely continuous conditional measures on W u can be seen
+as the counterpart of Lebesgue or Liouville measure in systems that are “conservative
+in positive time”. (Note that in the presence of an attractor, the direction of time is
+never ambiguous: if time is reversed, the attractor becomes a repellor.)
+Theorem 2 is a summary of results from several papers combined together:
+(1) The general inequality is due to Ruelle [R3], and is valid for all C1 maps.
+(2) For µ equivalent to Lebesgue, the displayed equality is proved by Pesin [P2];
+this result is extended to the case of measures having absolutely continuous
+conditional measures on W u by Ledrappier and Strelcyn [LS].
+(3) The reverse implication is proved by Ledrappier [L] in the case where none
+of the Lyapunov exponents is zero, and is extended to complete generality by
+Ledrappier and Young [LY1].
+Deﬁnition 2.2 Let f be a C2 diﬀeomorphism of a compact Riemannian manifold.
+An f-invariant Borel probability measure µ is called an SRB measure if (f, µ) has a
+positive Lyapunov exponent a.e. and µ has absolutely continuous conditional measures
+on unstable manifolds.
+5
+
+=== PDF PAGE 6 ===
+This terminology was ﬁrst formally introduced in the review article by Eckmann
+and Ruelle [ER]. The concept itself had been identiﬁed and studied a couple of years
+earlier (see e.g. [LS], [L], [LY1], [Y2]).
+2.2 Absolute continuity of W s and physical measures
+We now explain the relation between SRB measures and property (iii) in Theorem 1.
+Deﬁnition 2.3 Let f : M → M be an arbitrary map and µ an invariant probability
+measure. We call µ a physical measure if there is a positive Lebesgue measure set
+V ⊂ M such that for every continuous observable ϕ : M → R,
+1
+n
+n−1∑
+i=0
+ϕ(f ix) →
+∫
+ϕdµ
+for every x ∈ V .
+We say a point x ∈ M is µ-generic if the time averages of continuous observables
+along the trajectory of x converge to their space averages with respect to µ. Hence a
+measure is physical if its set of generic points has positive Lebesgue measure. From
+the point of view of physical observations, it is not clear if this is a more or less
+realistic notion of observability than zero-noise-limits (see Section 1 for a deﬁnition),
+but since the latter notion already has a suggestive name, we will, following [ER], use
+the deﬁnition of “physical” in the sense of Deﬁnition 2.3.
+What allows us to go from Lebesgue measure on W u-leaves to Lebesgue measure
+in the phase space is the following regularity property of the stable “foliation”. The
+technical deﬁnition of this property is a little complicated. We give a version which
+is adequate for our purposes, and refer the reader to e.g. [PS1] for more details.
+Deﬁnition 2.4 Let (f, µ) be ergodic, and assume it has a negative Lyapunov expo-
+nent a.e. We say its W s-foliation is absolutely continuous if the following holds: Let
+Σ and Σ′ be embedded disks having complementary dimension to W s, and let {Ds
+α}
+be a positive µ-measure set of local stable manifolds such that each Ds
+α meets both Σ
+and Σ′ transversally. Let Φ : (∪Ds
+α) ∩Σ → Σ′ be the holomony map2, and let mΣ and
+mΣ′ denote Lebesgue measure on Σ and Σ′ respectively. Then for E ⊂ (∪Ds
+α) ∩ Σ,
+mΣ(E) > 0 if and only if mΣ′(Φ(E)) > 0.
+Theorem 3 ([P2], [KS], [PS1]) Assume (f, µ) has a negative Lyapunov exponent
+a.e. Then its W s-foliation is absolutely continuous. It follows that every ergodic SRB
+measure with no zero Lyapunov exponents is a physical measure.
+2Φ(x) is the unique point in Ds
+α(x) ∩ Σ′ where Ds
+α(x) is the disk containing x.
+6
+
+=== PDF PAGE 7 ===
+In the context of nonuniformly hyperbolic systems, this property was ﬁrst proved
+in the volume-preserving case by Pesin [P2], and later on by Katok and Strelcyn [KS],
+who also allowed singularies; the general case is due to Pugh and Shub [PS1]. We
+explain why the second assertion follows from the ﬁrst. Recall that if µ is an SRB
+measure, then by deﬁnition, there are W u-leaves on which Lebesgue-a.e. point is
+µ-generic. In the absence of zero Lyapunov exponents, transversal to W u-leaves are
+families of W s-leaves, forming a kind of local “coordinate system”. Since all points
+on a W s-leaf have asymptotically the same future, one obtains, by “integrating out”
+along stable manifolds and appealing to the absolute continuity of the W s-foliation,
+that the set of µ-generic points has positive Lebesgue measure in the phase space.
+We record below two important facts about SRB measures. The proofs of these
+facts rely heavily on the structures of stable and unstable manifolds and their absolute
+continuity properties.
+Theorem 4 (a) [P2] In the presence of positive Lyapunov exponents, invariant
+measures equivalent to Riemannian volume are special cases of SRB measures.
+(b) [P2], [L] Let µ be an SRB measure with no zero Lyapunov exponents. Then
+(i) µ has at most a countable number of ergodic components, and
+(ii) on each ergodic component, f permutes k (k ≥ 1) disjoint sets restricted
+to each one of which (f k, µ) is mixing.
+The following result, due to Tsujii, gives a partial converse to Theorem 3.
+Theorem 5 [T] Let f : M → M be a diﬀeomorphism, and suppose there is a positive
+Lebesgue measure set R ⊂ M such that the following hold for every x ∈ R:
+(i) 1
+n
+∑n−1
+i=0 δf ix converges weakly to an ergodic measure which we call µx;
+(ii) the Lyapunov exponents at x as n → +∞ coincide with those of µx;
+(iii) µx has no zero and at least one positive Lyapunov exponent.
+Then µx is an SRB measure for Lebesgue-a.e. x in R.
+The conclusion of Theorem 5 is not valid if condition (ii) above is omitted. To see
+this, consider the “ﬁgure-eight attractor”: Figure 1 shows a ﬂow with a stationary
+saddle point p whose stable and unstable manifolds coincide. Let f be the time-
+one-map, and assume that | detDf(p)| < 1. Then every point in the basin of this
+attractor is generic with respect to its unique invariant measure δp, which is not an
+SRB measure.
+Remarks on the relation between SRB measures and physical measures.
+We have seen in Theorem 3 that ergodic SRB measures with no zero Lyapunov
+exponents are physical measures. Ergodicity is needed because physical measures,
+by deﬁnition, are ergodic. SRB measures with zero Lyapunov exponents may or
+may not be physical. Conversely, not all physical measures are SRB. The simplest
+7
+
+=== PDF PAGE 8 ===
+counterexamples are point masses on attractive ﬁxed points and periodic orbits. The
+ﬁgure-eight attractor has a physical measure with a positive Lyapunov exponent which
+is not an SRB measure.
+To sum up then, ergodic SRB measures with no zero Lyapunov exponents are a
+special kind of physical measures: they describe chaotic behavior, are accompanied by
+rich geometric and dynamical structures (see Theorems 2, 3 and 4), and carry special
+meanings (such as the entropy formula). Physical measures, on the other hand, focus
+on a single property. It is a very important property, but by focusing on it alone, they
+carry little additional information. For example, physical measures do not distinguish
+between chaotic attractors and simple equilibria.3
+Fig. 1 The ﬁgure-eight attractor
+2.3 Randomly perturbed dynamical systems
+Turning now to zero-noise limits, it is conceivable that under suitable conditions,
+SRB measures are stochastically stable, i.e. they can be realized as zero-noise limits,
+but as of now there is no general result to that eﬀect. Evidently, not all zero-noise
+limits are SRB; point masses at sinks and on the ﬁgure-eight attractor, for example,
+are zero-noise limits. The relation between physical measures and zero-noise limits is
+also unclear.
+We ﬁnish with a brief discussion of random dynamical systems. Consider a family
+of small perturbations P ε deﬁned by random diﬀeomorphisms, i.e. for ε > 0, let νε
+be a probability measure on Diﬀ(M), the space of diﬀeomorphisms of M, and let
+P ε(E|x) = νε{g, g(x) ∈ E}. Not all Markov chains can be represented by random
+diﬀeomorphisms, but some can be, including solutions to stochastic diﬀerential equa-
+tions [Ku]. For this type of Markov chains, there are two kinds of invariant measures:
+µε, the marginal of the stationary measure of the process, and {µε
+ω}, sample mea-
+sures corresponding to individual realizations. More precisely, µε =
+∫
+g∗µεdνε(g), and
+3We caution the reader that recently some authors have chosen to call physical measures “SRB
+measures”. We discourage this change in terminology, for in addition to introducing confusion into
+the literature, it takes away the multifaceted meanings of SRB measures.
+8
+
+=== PDF PAGE 9 ===
+associated with a.e. iid sequence ω = (gi)∞
+i=−∞ with law νε, we have a probability
+measure µε
+ω satisfying µε =
+∫
+µε
+ωdνZ
+ε and (g0)∗µε
+ω = µε
+σω where σ is the shift operator.
+Finally, we assume that as ε → 0, νε tends to the Dirac measure at f.
+Extending slightly the ideas for a single map, Lyapunov exponents and entropy
+are deﬁned for a.e. ω and are nonrandom. (See [LY2] or [K2] for more detail.) We let
+λε
+i denote the Lyapunov exponents and hε the entropy of the random maps at noise
+level ε. Stable and unstable manifolds make sense for individual realizations.
+Theorem 6 [LY2] Assume for ε > 0 that µε has a density with respect to Lebesgue
+measure. Then for a.e. ω, µε
+ω has absolutely conditional measures on unstable mani-
+folds and
+hε =
+∫ ∑
+λε
+i>0
+λε
+i dim Eε
+i dµε
+ω .
+For obvious reasons, µε
+ω with the properties above are called random SRB mea-
+sures. Theorem 6 expresses the fact that in noisy systems, chaos is synonymous
+with the invariant measure being SRB, lending some hope to the possibility that
+zero-noise limits may, under fairly general conditions, continue to be SRB measures
+(although we know this is not always true). We remark also that while the formula
+above resembles that in Theorem 2, the mechanisms responsible for them are really
+quite diﬀerent: the one here comes not from special properties of the maps but from
+randomness of the noise, which in turn is guaranteed by the densities of the transition
+probabilities.
+3 Which dynamical systems have SRB measures?
+In Section 2 we explained how the idea of SRB measures can be generalized to ar-
+bitrary diﬀeomorphisms. We note that the theorems there are “abstract”, meaning
+they contain no assertions of existence, not to mention prevalence, and do not tell us
+in general how to determine if a concrete dynamical system admits an SRB measure.
+These questions are, in fact, very diﬃcult, and the ﬁrst results are only beginning to
+come in.
+To help conceptualize this emerging information, I ﬁnd it useful to distinguish
+between the following two approaches, which account for most (but not all) of the
+results I know. The ﬁrst, which I call the “axiomatic approach”, seeks to relax
+the conditions that deﬁne Axiom A in the hope of systematically enlarging the set
+of maps with SRB measures. The second approach is aimed at modeling concrete
+examples of dynamical behaviors (not necessarily related to Axiom A). Here one
+seeks to identify dynamical phenomena, mechanisms and underlying characteristics
+conducive to having SRB measures. For lack of a better name, I will call this the
+“phenomenological approach”. Samples of results from these two approaches are
+presented in Sects. 3.2 and 3.3.
+9
+
+=== PDF PAGE 10 ===
+3.1 Construction of SRB measures on Axiom A attractors
+To better understand the recent results, we think it is instructive to ﬁrst explain how
+SRB measures are constructed for Axiom A attractors. The construction below was
+not exactly the one used by Sinai, Ruelle or Bowen in their original works, but it is
+not far from Sinai’s construction; see also [PS]. Among the proofs of existence I know,
+this one generalizes most easily.
+Let f : M → M be a C2 diﬀeomorphism of a compact Riemannian manifold, and
+let Λ ⊂ M be an attractor. We pick an arbitrary piece of local unstable manifold
+γ ⊂ Λ, and let mγ denote Lebesgue measure on γ. Now use f i to transport mγ
+forward, and call the image measures f i
+∗(mγ), i = 1, 2, · · ·. We claim that any limit
+point µ of {
+1
+n
+n−1∑
+i=0
+f i
+∗(mγ)
+}
+n=1,2,···
+is an SRB measure. Invariance is obvious because an average is taken. Since f i|γ
+expands distances uniformly with bounded distortion, f i
+∗(mγ) has a density with
+respect to Lebesgue measure on f i(γ). These densities have uniform upper and lower
+bounds independent of i. Since the W u-leaves are roughly parallel, these bounds are
+passed on to µ. (For a formal proof, see e.g. [Y3].)
+3.2 Existence of SRB measures: axiomatic approach
+Three sets of results will be reported representing three diﬀerent ways of relaxing
+the Axiom A condition. I have chosen to organize these results in a conceptually
+convenient way rather than to follow chronological order. Let f and Λ be as above.
+The ﬁrst set of results assumes a priori a uniform invariant dominated split-
+ting everywhere on the attractor. This means that the tangent bundle is decom-
+posed into Df-invariant subbundles E ⊕ F, with min{||Df(u)||/∥u∥, u ∈ E} ≥
+λ max{||Df(v)||/∥v∥, v ∈ F } for some λ > 1 (abbreviated notation: Df |E > Df |F).
+In addition to having a dominated splitting, an Axiom A map is uniformly expand-
+ing in E and uniformly contracting in F. Theorem 7 keeps the invariant dominated
+splitting and explores several ways to relax the other two conditions.
+Theorem 7 Assume in each of the results below that the tangent bundle over Λ is
+decomposed into E ⊕ F with Df |E > Df |F.
+(a) [PS], [BnV] If Df |E is uniformly expanding and Df |F is (nonuniformly) con-
+tracting or neutral (see remark below), then f has an SRB measure.
+(b) [HY] Assume dim(M) = 2, Df |F is uniformly contracting, and Df |E > 1
+except at a ﬁxed point p where Df |E(p) = 1. Then 1
+n
+∑n−1
+i=0 δf ix → δp for
+Lebesgue-a.e. x. In particular, f does not admit a (ﬁnite) SRB measure.
+10
+
+=== PDF PAGE 11 ===
+(c) [ABV] Assume that the invariant splitting E ⊕ F extends to a neighborhood U
+of Λ, Df |F is uniformly contracting, and there is a positive Lebesgue measure
+set V ⊂ U such that ∀x ∈ V ,
+lim inf
+n→∞
+1
+n
+n−1∑
+i=0
+log min{||Df(f ix)u||, u ∈ E(f ix), ∥u∥ = 1} > 0 .
+Then f has an SRB measure.
+(d) [CY] Suppose f has a zero-noise limit µ such that µ-a.e. the Lyapunov expo-
+nents λ(·, u) are ≥ 0 ∀u ∈ E and ≤ 0 ∀u ∈ F. Then µ satisﬁes the entropy
+formula in Theorem 2. In particular, for a.e. ergodic component µe of µ, either
+all the Lyapunove exponents of µe are ≤ 0 or it is an SRB measure. (This result
+requires that f be C ∞.)
+We remark that (a) follows immediately from the construction in Sect. 3.1, since
+what happens in the subbundle F is immaterial. Part (b) contains a nonexistence
+result; it gives a sense of the delicateness of the existence question. Since the maps in
+(b) lie on the boundary of the set of Anosov diﬀeomorphisms, it also shows how SRB
+measures can “disappear suddenly”. See also [Hu]. Part (d) is obtained by letting
+ε → 0 in Theorem 6.
+Our second set of results has to do with partially hyperbolic systems. Follow-
+ing [PS2], we say f |Λ is partially hyperbolic if TΛ = E ⊕C ⊕F where E, C and F are
+Df-invariant subbundles, Df |E > Df |C > Df |F, Df |E is uniformly expanding, and
+Df |F is uniformly contracting. Theorem 8 treats some situations when the behavior
+in the “central subbundle” is relatively simple.
+Theorem 8 (a) [CY] If dim C=1, then f has an SRB measure.
+(b) [D1] Assume Λ = M. If µ is the unique invariant measure with absolutely
+continuous conditional measures on the invariant manifolds tangent to E, then
+it is a physical measure.
+The third group of results is intended for systems which are “predominantly
+hyperbolic”, a descriptive, nontechnical term I like to use to express the fact that
+the system in question has a great deal of expansion and contraction on large parts
+of its phase space. No global invariant splittings of the type in the two previous
+theorems are assumed. Our goal here is to identify structures in the phase space
+the presence of which is suﬃcient for the construction of SRB measures. Theorem 9
+contains two such sets of suﬃcient conditions.
+To avoid getting technical, I will give only the main ideas, referring the reader to
+the cited papers for precise formulations. In part (b), for example, I will leave it to
+the reader to imagine what a “generalized horseshoe” looks like, given that we think
+of the standard horseshoe (due to Smale [Sm]) as having “2 branches both of which
+return at time 1”.
+11
+
+=== PDF PAGE 12 ===
+Theorem 9 (a) [BY1] Suppose there is a W u-leaf γ, a number δ > 0, a continuous
+stack of unstable disks {Du
+α}, and a sequence of times n1 < n2 < · · · for which
+the following hold: for each i, there exists γ(ni) = ∪γ(ni)
+j ⊂ γ with mγ(γ(ni)) ≥ δ
+such that f ni maps each γ(ni)
+j onto one of the Du
+α-disks with uniformly bounded
+distortion. Then f has an SRB measure.
+(b) [Y4] Suppose that embedded in the attractor Λ is a “generalized horseshoe”
+Ω with inﬁnitely many branches returning at variable times. We assume also
+that Ω has positive measure in the unstable direction, i.e. mγ(Ω ∩ γ) > 0
+for some unstable leaf γ. Let R : Ω → Z+ denote the return time function.
+If
+∫
+R dmγ < ∞, then f has an SRB measure.
+Theorem 9 has been used in various applications (including the ones in Theorems
+11 and 12). The structures required in (a) are essentially the “minimum” needed
+for the construction in Sect. 3.1 to go through. The advantage of the additional
+structures in (b) is that the tail behavior of R, i.e. the rate at which mγ{R > n}
+decreases, contains a great deal of information on the statistical properties of f with
+respect to its SRB measure (see [Y4], [Y5]).
+3.3 Analysis of a class of strange attractors
+As an example of what I called the “phenomenological approach”, we focus in this
+subsection on a body of work surrounding the analysis of a particular class of strange
+attractors. Leaving precise deﬁnitions for later, we ﬁrst give a rough description of
+the maps in this class:
+– The deﬁning maps are strongly dissipative, i.e. | det(Df)| << 1;
+– the attractors are chaotic with a single direction of instability, and
+– some unstable curves have “folds” similar to those in the H´enon maps
+(see below).
+Natural examples of attractors that ﬁt this general description will be discussed later.
+We begin with the results which inspired this study.
+Theorem 10 ([J], [GS], [L1], [L2]) The following hold for the logistic family
+Qa(x) = 1 − ax2, x ∈ [−1, 1], a ∈ [0, 2]:
+(i) There is an open and dense set A in parameter space such that for all a ∈ A,
+Qa has a periodic sink to which the orbit of Lebesgue-a.e. point converges.
+(ii) There is a positive Lebesgue measure set of parameters B such that for a ∈ B,
+Qa has an invariant measure absolutely continuous wrt Lebesgue measure.
+The union of A and B has full measure in parameter space.
+Part (ii) of Theorem 9 is, in many ways, the precursor to the results on SRB
+measures in this subsection. This important theorem is due to Jakobson [J]. The
+12
+
+=== PDF PAGE 13 ===
+density of A was ﬁrst announced by Graczyk and Swiatek (see [GS] and [L1]), and
+the fact that A ∪ B has full Lebesgue measure is due to Lyubich [L2].
+In 1977, H´enon carried out numerical studies of a family of maps and demonstrated
+that for certain ranges of parameters there were chaotic attractors [He]. The H´enon
+family is given by
+Ta,b :
+(x
+y
+)
+↦→
+(1 − ax2 + y
+bx
+)
+Observe that when b = 0, Ta,b maps the x-axis to itself and reduces to the logistic
+family. By continuity, it follows that given any a ∈ (0, 2), Ta,b maps a rectangle into
+itself and has an attractor provided b is suﬃciently small.
+Benedicks and Carleson studied small values of b for a ≈ 2, treating Ta,b as small
+perturbations of Qa. In a work that is an analytic tour de force [BC], they developed
+techniques for tracking the growth of derivatives along certain crucial orbits. Building
+on the analysis in [BC], Benedicks and I obtained the following result:
+Theorem 11 [BY1] For every b > 0 that is suﬃciently small, there is a positive
+Lebesgue measure set ∆b ⊂ (2 − ε, 2) such that for each a ∈ ∆b, Ta,b admits a unique
+SRB measure.
+To my knowledge this is the ﬁrst time SRB measures were constructed for nonuni-
+formly hyperbolic attractors. Theorem 9(a) is used in this proof.
+A few years ago, Qiudong Wang and I began to think that (i) even though [BC]
+and [BY] treated only the H´enon family, the type of analysis involved can probably
+be carried out for the class of maps described at the beginning of this subsection, and
+(ii) there is a number of naturally occurring attractors ﬁtting this general description.
+To achieve (i), we would have to replace the computation-based arguments in [BC] by
+a more conceptual approach, and to replace the formulas of the H´enon maps (which
+are used explicitly in [BC]) by qualitative, geometric conditions. If our results are to
+be applicable to the situations in (ii), these conditions would have to be suﬃciently
+inclusive, and checkable.
+The current status of this project is that we have isolated a class of attractors for
+which we have developed a dynamical theory, and have begun to apply it to some
+simple situations. The ultimate usefulness of this project remains to be seen. I report
+below on our results thus far, focusing on the parts related to SRB measures.
+To give a sense of the type of conditions used, I will state them in full although
+perhaps a little tersely, referring the reader to [WY1] or [WY2] for further clariﬁcation
+if necessary. Let M = N × Dm−1 where N = S1 or [0, 1] and Dm−1 is the unit
+disk in Rm−1, m ≥ 2. Points in M are denoted by (x,y) where x ∈ N and y =
+(y1, · · · , ym−1) ∈ Dm−1.
+13
+
+=== PDF PAGE 14 ===
+(C1) Existence of singular limits. We assume that the maps of interest can be
+embedded in a 2-parameter family Ta,b : M → M, b > 0, of the form
+Ta,b :
+(x
+y
+)
+↦→
+(Fa(x,y) + bu(x,y; a, b)
+b v(x,y; a, b)
+)
+where (x, y, a) ↦→ Fa(x,y), u(x,y; a, b) and v(x,y; a, b) have C3-norms bounded
+above by a constant independent of b. We assume also that Ta,b is one-to-
+one, and that for each (a, b), det(DTa,b) at diﬀerent points in M are roughly
+comparable.
+The maps Fa : M → N and fa : N → N deﬁned by fa(x) = Fa(x,0) are called the
+singular limits of Ta,b. The rest of the conditions are on these singular limits.
+(C2) Existence of a map in {fa} which is suﬃciently expanding. We assume there
+exists a∗ such that fa∗ satisﬁes the Misiurewicz condition [M].4
+(C3) Transversality with respect to parameters. Let C denote the critical set of fa∗.
+For c ∈ C and p = fa∗(c), let c(a) and p(a) 5 denote the smooth continuations
+of c and p respectively for a near a∗. Then
+d
+dafa(c(a)) ̸= d
+dap(a) at a = a∗.
+(C4) Nondegeneracy at critical points. For every c ∈ C, there exists j such that
+∂Fa∗(c,0)
+∂yj ̸= 0.
+Theorem 12 ([WY1], [WY2]) Assume (C1)– (C4). Then for every suﬃciently
+small b, there is a positive measure set of a for which T = Ta,b has the following
+dynamical description:
+(i) T admits r ergodic SRB measures where 1 ≤ r ≤ the number of critical points
+of the map fa∗ in (C2). Let us call these measures µ1, · · · , µr.
+(ii) The µi are physical measures, and if B(µi) denotes the set of generic points
+of µi, then ∪iB(µi) has full Lebesgue measure in M.
+(iii) Let ϕ : M → R be a H¨older continuous observable. Then on the mixing com-
+ponents of each µi, the sequence ϕ, ϕ ◦ T, ϕ ◦ T 2, · · · , ϕ ◦ T n, · · · satisﬁes
+the Central Limit Theorem and has exponential decay of correlations.
+4This means essentially that fa∗ has no stable or neutral periodic orbits, that all of its critical
+points are nondegenerate, and the positive iterates of the critical points stay a bounded distance
+away from the critical set.
+5p(a) refers to the point with the same itinerary with respect to fa as p does with respect to fa∗.
+It is not to be confused with fa(c(a)).
+14
+
+=== PDF PAGE 15 ===
+The 2-dimensional case of this theorem is proved in [WY1]. The general case,
+which has more complicated geometry, is treated in [WY2]. See Section 2 for some
+of the deﬁnitions.
+Applications of Theorem 12
+(1) The H´enon family [WY1]. (C1)–(C4) hold with a∗ equal to any of the
+uncountably many Misiurewicz points in the logistic family. (The case a∗ = 2
+was treated earlier: building on [BC], (i) was proved in [BY1], (ii) in [BeV] and
+(iii) in [BY2].)
+(2) H´enon-like attractors arising from homoclinic bifurcations [WY1]. From [PT],
+we know that the maps deﬁning these attractors have the form in (C1) with
+the same Fa as the H´enon maps, i.e. they have the same singular limits. Thus
+(C2)–(C4), which depend only on these limits, follow immediately. (Direct
+adaptations of [BC] to these settings were carried out earlier by Viana et. al.
+in [MV] and [V].)
+(3) A simple mechanical model with periodic forcing [WY3]. Consider a linear
+second order equation describing the motion of a particle in a circle, externally
+forced so that it tends to uniform motion. If attraction to the resulting limit cy-
+cle is weak, then with additional periodic “kicks”, the system has, for a positive
+measure set of parameters, a strange attractor with an SRB measure. (Models
+of this type were studied earlier in the physics literature; see [Z].)
+(4) Strange attractors emerging from Hopf bifurcations [WY4]. We show under
+reasonable conditions that if a system undergoing a Hopf bifurcation is sub-
+jected to certain types of periodic kick-forces, then for a positive measure set of
+parameters, what comes oﬀ the newly unstable ﬁxed point is not an invariant
+circle but a strange attractor with an SRB measure.
+These are the main applications that have been worked out so far. We are hopeful
+there will be others.
+4 Concluding remarks
+The theory of ﬁnite-dimensional dynamical systems, in my opinion, has provided
+excellent models or paradigms for understanding chaos. Axiom A theory, and the
+idea of SRB measures in particular, were remarkable breakthroughs. The fact that
+these ideas go beyond Axiom A (as we now know) makes them all the more powerful.
+The purpose of this article is to report on the main developments related to SRB
+measures since their original conception. With regard to the two questions in the
+15
+
+=== PDF PAGE 16 ===
+title of this paper, I hope Section 2 gives at least a partial understanding of what
+SRB measures are in the context of all ﬁnite-dimensional systems. I have tried, in
+Section 3, to convey the directions of recent research and to report on some of the
+results. I would like to attempt now to put things in perspective, and to explain why I
+think we are still very much in search of an answer to the question “which dynamical
+systems admit SRB measures”.
+By focusing on positive results in Section 3, I may have given the impression that
+we have gone far beyond Axiom A. I would like to discuss in these closing paragraphs
+some of the ﬁrst hurdles which stand between current techniques and “the general
+dynamical picture”, whatever the latter means.
+To varying degrees, some of the results from the “axiomatic approach” take for
+granted a priori knowledge of the expanding and contracting directions of the map.
+Various assumptions are made to the eﬀect that these directions vary continuously
+and are uniformly separated, meaning the respective subspaces are bounded away
+from each other. While these properties are natural within certain classes of maps,
+they are quite special among all dynamical systems. In general, almost everywhere
+with respect to an invariant measure, the expected picture is that stable and unstable
+directions vary measurably but not continuously, and the angles between them can
+be arbitrarily small in places. 6
+The description above is for (f, µ) where f is a map and µ is a known invariant
+measure. If only f is given – which is the case at hand since we are looking for
+our invariant measure – then we lose the beneﬁt of statistical arguments and the
+situation becomes even more dire: Along the orbits of arbitrary points, there is
+no reason why a map cannot be sometimes expanding and sometimes contracting
+in a given direction. In other words, the quantities 1
+n log ∥Df n(x)v∥ may oscillate
+arbitrarily and indeﬁnitely with n. Stable and unstable directions, if and where they
+are deﬁned, are diﬃcult to identify because that requires information on an inﬁnite
+number of iterates. These are some of the problems we face when attempting to
+determine if an arbitrary dynamical system has an SRB measure.
+The results in Sect. 3.3 do not presume a priori knowledge of expanding and
+contracting directions. Indeed, the attractors in question have some of the properties
+of full-blown nonuniformly hyperbolic systems. But the analysis there rely on other
+circumstances which are, in my opinion, quite special. Let me mention two of them.
+The ﬁrst is the strong codimension-one contraction on most parts of the phase
+space. Locally, this gives the attractor a one-dimensional character, allowing us to
+borrow techniques from the theory of 1-D maps. We have a well developed theory
+of 1-D endomorphisms with nonuniformly expanding properties. This cannot be said
+about n-D maps for n ≥ 2; a good understanding of the geometry of n-dimensional
+6Results specialized to the C 1-generic picture (e.g. [BcV]) are not pertinent to this discussion.
+In most of the ergodic theory of hyperbolic systems, the map is assumed to be C 1+α for some α > 0.
+In particular, the deﬁnition and properties of SRB measures use in a crucial way the regularity of
+Df, without which even the existence of stable and unstable manifolds is not guaranteed.
+16
+
+=== PDF PAGE 17 ===
+unstable manifolds is also lacking. These are some of the hurdles one probably has
+to overcome to go beyond a theory with one direction of instability.
+For 1-D maps with critical points, the critical set is an obvious source of non-
+expansion. For the attractors in Sect. 3.3, it is shown that there are small fractal
+sets (near the critical points of the corresponding 1-D maps) which play essentially
+the same role, i.e. away from these sets the map is uniformly hyperbolic, and upon
+approaching them, the stable and unstable directions of an orbit are confused. In
+other words, the maps in question have the following special feature: they are not
+uniformly hyperbolic, but all the problems are caused by certain well-deﬁned, localized
+“bad sets” or sources of nonhyperbolicity. As a ﬁrst generalization of Axiom A, maps
+which are predominantly hyperbolic with identiﬁable “bad sets” are excellent models
+to consider, but I doubt that all dynamical systems have this property.
+Returning to the question “which dynamical systems have SRB measures”, I hope
+that the preceding paragraphs, read in conjunction with Section 3, will enable the
+reader to assess more accurately the progress to date and the many challenges ahead.
+References
+[ABV] J.F. Alves, C. Bonatti and M. Viana, SRB measures for partially hyperbolic
+systems whose central direction is mostly expanding, Invent. Math. 140 (2000),
+351-398.
+[BC] M. Benedicks and L. Carleson, The dynamics of the H´enon map, Ann. Math.
+133 (1991), 73-169.
+[BeV] M. Benedicks and M. Viana, Solution of the basin problem for certain non-
+uniformly hyperbolic attractors, Invent. Math. (2001).
+[BY1] M. Benedicks and L.-S. Young, Sinai-Bowen-Ruell measure for certain H´enon
+maps, Invent. Math. 112 (1993), 541-576.
+[BY2] M. Benedicks and L.-S. Young, Markov extensions and decay of correlations
+for certain H´enon maps, Asterisque (2000).
+[BcV] J. Bochi and M. Viana, Uniform (projective) hyperbolicity: a dichotomy for
+generic conservative systems, to appear in Annales Inst. Henri Poincar´e.
+[BnV] C. Bonatti and M. Viana, SRB measures for partially hyperbolic systems whose
+central direction is mostly contracting, Israel J. Math. 115 (2000), 157-194.
+[B1] R. Bowen, Markov partitions for Axiom A diﬀeomorphisms, Amer. J. Math. 92
+(1970), 725-747.
+17
+
+=== PDF PAGE 18 ===
+[B2] R. Bowen, Equilibrium states and the ergodic theory of Anosov diﬀeomorphisms,
+Springer Lecture Notes in Math. 470 (1975).
+[BR] R. Bowen and D. Ruelle, The ergodic theory of Axiom A ﬂows, Invent. Math.
+29 (1975) 181-202.
+[CY] W. Cowieson and L.-S. Young, SRB measures as zero-noise limits, in prepara-
+tion.
+[D1] D. Dolgopyat, Lectures on u-Gibbs states, lecture notes, Conference on Partially
+Hyperbolic Systems, Northwestern Univ. (2001)
+[D2] D. Dolgopyat, On diﬀerentiability of SRB states, 2001 preprint.
+[ER] J.-P. Eckmann and D. Ruelle, Ergodic theory of chaos and strange attractors,
+Rev. Mod. Phys. 57 (1985) 617-656
+[GS] J. Graczyk and G. Swiatek, Generic hyperbolicity in the logistic family, Ann.
+Math., 146 (1997) 1-52.
+[He] M. H´enon, A two-dimensional mapping with a strange attractor, Comm. Math.
+Phys. 50 (1976), 69-77.
+[Hu] H. Hu, Conditions for the existence of SRB measures of “almost Anosov” dif-
+feomorphisms, Trans. AMS 352 (2000), 2331-2367.
+[HY] H. Hu and L.-S. Young, Nonexistence of SRB measures for some systems that
+are “almost Anosov”, Ergodic Theory and Dynamical Systems 15 (1995), 67-
+76.[HY]
+[J] M. Jakobson, Absolutely continues invariant measures for one-parameter families
+of one-dimensional maps, Comm. Math. Phys. 81 (1981), 39-88.
+[KS] A. Katok and J.-M. Strelcyn, Invariant manifolds, entropy and billiards, smooth
+maps with singularities, Springer Lecture Notes in Math., 1222 (1986).
+[K1] Yu. Kifer, On small random perturbations of some smooth dynamical systems,
+Math. USSR Ivestija 8 (1974), 1083-1107.
+[K2] Yu. Kifer, Ergodic theory of random transformations, Progress in Prob. and
+Stat., Birkhauser (1986).
+[Ku] H. Kunita, Stochastic ﬂows and stochastic diﬀerential equations, Cambridge
+Univ. Press (1990).
+[L] F. Ledrappier, Propri´et´es ergodiques des mesures de Sinai, Publ. Math., Inst.
+Hautes Etud. Sci. 59 (1984), 163-188.
+18
+
+=== PDF PAGE 19 ===
+[LS] F. Ledrappier and J.-M. Strelcyn, A proof of the estimation from below in Pesin
+entropy formula, Ergod. Th. & Dynam. Sys., 2 (1982) 203-219.
+[LY1] F. Ledrappier and L.-S. Young, The metric entropy of diﬀeomorphisms, Ann.
+Math. 122 (1985) 509-574.
+[LY2] F. Ledrappier and L.-S. Young, Entropy formula for random transformations,
+Prob. Th. Rel. Fields 80 (1988) 217-240.
+[L1] M. Lyubich, Dynamics of quadratic polynomials, I-II, Acta Math., 178 (1997),
+185-297.
+[L2] M. Lyubich, Almost every real quadratic map is either regular or stochastic, Ann.
+of Math. (2001)
+[M] M. Misiurewicz, Absolutely continuous invariant measures for certain maps of
+an interval, Publ. Math. IHES, 53, (1981), 17-51.
+[MV] L. Mora and M. Viana, Abundance of strange attractors, Acta. Math. 171
+(1993), 1-71.
+[O] V.I. Oseledec, A multiplicative ergodic theorem: Liapunov characteristic numbers
+of dynamical systems, Trans. Moscow Math. Soc. 19 (1968) 197-231.
+[PT] J. Palis and F. Takens, Hyperbolicity & sensitive chaotic dynamics at homo-
+clinic bifurcations, Cambridge studies in advanced mathematics, 35 Cambridge
+University Press, Cambridge, (1993).
+[P1] Ya. B. Pesin, Families if invariant manifolds corresponding to non-zero charac-
+teristic exponents, Math. of the USSR, Izvestjia 10 (1978) 1261-1305.
+[P2] Ya. B. Pesin, Characteristic Lyapunov exponents and smooth ergodic theory,
+Russ. math. Surv. 32.4 (1977), 55-114.
+[PS] Ya. B. Pesin and Ya. G. Sinai, Gibbs measures for partially hyperbolic attractors,
+Erg. Th. & Dynam. Sys. 2 (1982) 417-438.
+[PS1] C. Pugh and M. Shub, Ergodic attractors, Trans. A. M. S. 312 (1989) 1-54.
+[PS2] C. Pugh and M. Shub, Stable ergodicity and julienne quasi-conformality, J Eur.
+Math. Soc. (2001).
+[R1] D. Ruelle, Thermodynamic Formalism, Addison Wesley, Reading, MA, 1978.
+[R2] D. Ruelle, A measure associated with Axiom A attractors, Amer. J. Math. 98
+(1976), 619-654.
+19
+
+=== PDF PAGE 20 ===
+[R3] D. Ruelle, An inequality of the entropy of diﬀerentiable maps, Bol. Sc. Bra. Mat.
+9 (1978) 83-87.
+[R4] D. Ruelle, Perturbation theory for Lyapunov exponents of a toral map: extension
+of a result of Shub and Wilkinson, 2001 preprint.
+[S1] Ya. G. Sinai, Markov partitions and C-diﬀeomorphisms, Func. Anal. and its
+Appl. 2 (1968) 64-89.
+[S2] Ya. G. Sinai, Gibbs measure in ergodic theory, Russian Math. Surveys 27 (1972),
+21-69.
+[Sm] S. Smale, Diﬀerentiable dynamical systems, Bull. Amer. Math. Soc. 73 (1967),
+747-817.
+[SW] M. Shub and A. Wilkinson, Pathological foliations and removable exponents,
+Invent. Math. 139, (2000) 495-508.
+[T] M. Tsujii, Regular points for ergodic Sinai measures, Trans. AMS, Vol 328, No.
+2 (1991), 747-777.
+[V] M. Viana, Strange attractors in higher dimensions, Bull. Braz. Math. Soc. 24
+(1993), 13-62.
+[WY1] Q.D. Wang and L.-S. Young, Strange attractors with one direction of insta-
+bility, Commun. Math. Phys. 218 (2001), 1-97.
+[WY2] Q.D. Wang and L.-S. Young, Strange attractors with one direction of insta-
+bility in n-dimensional spaces, 2001 preprint.
+[WY3] Q.D. Wang and L.-S. Young, From invariant curves to strange attractors, to
+appear in Commun. Math. Phys.
+[WY4] Q.D. Wang and L.-S. Young, Strange attractors emerging from Hopf bifurca-
+tions, in preparation.
+[Y1] L.-S. Young, Stochastic stability of hyperbolic attractors, Erg. Th. & Dynam.
+Sys. 6 (1986), 311-319.
+[Y2] L.-S. Young, A Bowen-Ruelle measure for certain piecewise hyperbolic maps,
+Trans. A.M.S. 287 (1985), 41-48.
+[Y3] L.-S. Young, Ergodic theory of diﬀerentiable dynamical systems, in “Real and
+complex dynamical systems”, Ed. Branner and Hjorth, Kluwer Acad. Publ.
+(1995) 293-336.
+[Y4] L.-S. Young, Statistical properties of dynamical systems with some hyperbolicity,
+Ann. of Math. 147 (1998), 585-650.
+20
+
+=== PDF PAGE 21 ===
+[Y5] L.-S. Young, Recurrence time and rate of mixing, Israel J. of Math. (1999).
+[Z] G. Zaslavsky, The simplest case of a strange attractor, Physics Letters, 69A,
+number 3 (1978) 145-147.[Z]
+21

@@ -1,0 +1,54 @@
+[
+  {
+    "filename": "75_Grauert_1960_Direct_images_and_moduli.pdf",
+    "title": "Ein Theorem der analytischen Garbentheorie und die Modulraume komplexer Strukturen",
+    "authors": [
+      "Hans Grauert"
+    ],
+    "download_url": "https://www.numdam.org/item/10.1007/BF02684746.pdf",
+    "landing_url": "https://doi.org/10.1007/BF02684746",
+    "publication_note": "Publications Mathematiques de l IHES 5 (1960), 5-64. Numdam scan, 63 PDF pages including cover and front matter. Only Section 7 Satz 3 and Satz 5 used, with 1963 corrigendum checked.",
+    "resolved_url": "https://www.numdam.org/item/10.1007/BF02684746.pdf",
+    "download_status": "downloaded",
+    "bytes": 7632181,
+    "pages": 63,
+    "sha256": "0559856be254902e7dd116725732117606912ab7d72b0f0fe88b600566829cde",
+    "collected_utc": "2026-10-19T12:18:33.089862+00:00",
+    "verified_full_pdf_pages": [
+      61,
+      62,
+      63
+    ],
+    "visual_status": "All listed full rendered pages visually inspected.",
+    "preview_paths": [
+      "literature/Single_fast_form_source_previews/75_Grauert_1960_Direct_images_and_moduli_page_61.png",
+      "literature/Single_fast_form_source_previews/75_Grauert_1960_Direct_images_and_moduli_page_62.png",
+      "literature/Single_fast_form_source_previews/75_Grauert_1960_Direct_images_and_moduli_page_63.png"
+    ]
+  },
+  {
+    "filename": "76_Grauert_1963_Direct_image_corrigendum.pdf",
+    "title": "Berichtigung: Ein Theorem der analytischen Garbentheorie und die Modulraume komplexer Strukturen",
+    "authors": [
+      "Hans Grauert"
+    ],
+    "download_url": "https://www.numdam.org/item/10.1007/BF02684291.pdf",
+    "landing_url": "https://doi.org/10.1007/BF02684291",
+    "publication_note": "Publications Mathematiques de l IHES 16 (1963), 35-36. Three PDF pages with cover. Corrects proof estimates and the claim in Section 7 Satz 2 that the base-change failure locus must be closed; that claim is not used here.",
+    "resolved_url": "https://www.numdam.org/item/10.1007/BF02684291.pdf",
+    "download_status": "downloaded",
+    "bytes": 229804,
+    "pages": 3,
+    "sha256": "04b24590e8c56e1a05c0cb520843e8160447ebb560d9ca2394b0682d83ed489c",
+    "collected_utc": "2026-10-19T12:18:33.090861+00:00",
+    "verified_full_pdf_pages": [
+      2,
+      3
+    ],
+    "visual_status": "All listed full rendered pages visually inspected.",
+    "preview_paths": [
+      "literature/Single_fast_form_source_previews/76_Grauert_1963_Direct_image_corrigendum_page_2.png",
+      "literature/Single_fast_form_source_previews/76_Grauert_1963_Direct_image_corrigendum_page_3.png"
+    ]
+  }
+]

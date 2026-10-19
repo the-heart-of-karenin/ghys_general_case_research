@@ -1,0 +1,86 @@
+{
+  "audited_utc": "2026-10-18T14:52:38.087811+00:00",
+  "purpose": "Only new-source checks for notes 65-68; old audits reused per user instruction to reduce rechecking.",
+  "manifest_count": 60,
+  "new_sources": [
+    {
+      "filename": "58_Hasegawa_Sillari_Tomassini_2026_Invariant_forms_Dolbeault.pdf",
+      "title": "Invariant forms compute the Dolbeault cohomology of complex nilmanifolds",
+      "author": "Keizo Hasegawa, Lorenzo Sillari, Adriano Tomassini",
+      "download_url": "https://arxiv.org/pdf/2607.26786v1",
+      "landing_url": "https://arxiv.org/abs/2607.26786",
+      "publication_note": "2026 arXiv v1, 29 July 2026; preprint, not represented here as a refereed journal publication.",
+      "bytes": 417450,
+      "pages": 19,
+      "sha256": "4c76d685ef473cdbd04f86213701bbef42d6d95d90c61663e4da9b9b52eebac5",
+      "collected_utc": "2026-10-18T14:23:52.884477+00:00",
+      "absolute_path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\58_Hasegawa_Sillari_Tomassini_2026_Invariant_forms_Dolbeault.pdf",
+      "reviewed_full_pages": [
+        1,
+        2,
+        15,
+        16
+      ],
+      "visually_inspected": true
+    },
+    {
+      "filename": "59_Wehler_2026_Teichmuller_moduli_complex_nilmanifolds.pdf",
+      "title": "Teichmueller and moduli spaces for complex nilmanifolds",
+      "author": "Konstantin Wehler",
+      "download_url": "https://arxiv.org/pdf/2609.31516v1",
+      "landing_url": "https://arxiv.org/abs/2609.31516",
+      "publication_note": "2026 arXiv v1, 25 September 2026; preprint. Holomorphic-map theorem is inspected for overlap with the local-affinity argument.",
+      "bytes": 741146,
+      "pages": 57,
+      "sha256": "081eee0f96542f94c7d083401ea7ff5431c215bfb0c4671baa4f077999d12454",
+      "collected_utc": "2026-10-18T14:24:04.789597+00:00",
+      "absolute_path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\59_Wehler_2026_Teichmuller_moduli_complex_nilmanifolds.pdf",
+      "reviewed_full_pages": [
+        3,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "visually_inspected": true
+    },
+    {
+      "filename": "60_Hasegawa_Rollenske_Sillari_Tomassini_Wehler_2026_Biholomorphism_type.pdf",
+      "title": "Biholomorphism type of left-invariant complex structures on nilpotent Lie groups",
+      "author": "Keizo Hasegawa, Soenke Rollenske, Lorenzo Sillari, Adriano Tomassini, Konstantin Wehler",
+      "download_url": "https://arxiv.org/pdf/2606.31448v1",
+      "landing_url": "https://arxiv.org/abs/2606.31448",
+      "publication_note": "2026 arXiv v1, 30 June 2026; preprint; polynomial universal-cover theorem inspected as a possible separate global input.",
+      "bytes": 405855,
+      "pages": 6,
+      "sha256": "14b6d6484520b07abd37a92c7ccf4337f154ba80f4072935880d1ae1517cdf24",
+      "collected_utc": "2026-10-18T14:24:08.763133+00:00",
+      "absolute_path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\60_Hasegawa_Rollenske_Sillari_Tomassini_Wehler_2026_Biholomorphism_type.pdf",
+      "reviewed_full_pages": [
+        1
+      ],
+      "visually_inspected": true
+    }
+  ],
+  "new_full_pages": 11,
+  "all_new_recorded_pages_viewed": true,
+  "reused_old_input": {
+    "filename": "56_Rollenske_2009_Dolbeault_small_deformations_nilmanifolds.pdf",
+    "pages": [
+      16,
+      17
+    ],
+    "previous_audit": "model_deformation_source_audit.json"
+  },
+  "independent_proof_inputs_for_note66": [
+    "Nomizu invariant de Rham theorem",
+    "Anosov structural stability and expansivity",
+    "Standard elliptic Lp/Schauder estimates"
+  ],
+  "new_preprint_dependency_for_note67": "File 58 Theorems 7.1-7.2, same real group and lattice confirmed in p.16 proof; general Dolbeault theorem is not independently reproved here.",
+  "known_overlap": "File 59 Theorem 2.1 is stronger than notes 62/65 small-map conclusion. This is now recorded as known coverage, not merely unconfirmed novelty.",
+  "background_only": "File 60 uniformization theorem; not a proof input for note66.",
+  "novelty": "Period-section/closedness/component conclusions not confirmed novel; finite searches only.",
+  "arxiv_status_check": "2026-10-18: official abstract pages for 2607.26786 and 2609.31516 show v1 only; no withdrawal or replacement notice on the checked pages."
+}

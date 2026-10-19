@@ -1,0 +1,2688 @@
+=== PDF PAGE 1 ===
+AUTOMORPHISMS OF SURFACES:
+KUMMER RIGIDITY AND MEASURE OF MAXIMAL ENTROPY
+SERGE CANTAT AND CHRISTOPHE DUPONT
+ABSTRACT . We classify complex projective surfaces with an automorphism
+of positive entropy for which the unique invariant measure of maximal en-
+tropy is absolutely continuous with respect to Lebesgue measure.
+RÉSUMÉ . Nous classons les surfaces complexes projectives munies d’un
+automorphisme dont l’unique mesure d’entropie maximale est absolument
+continue par rapport à la mesure de Lebesgue.
+CONTENTS
+1. Introduction 1
+2. Invariant currents and periodic curves 9
+3. Parametrizations of stable manifolds 13
+4. Product structure and absolute continuity 21
+5. Renormalization along stable manifolds 27
+6. Normal families of entire curves 32
+7. Holomorphic foliation and Hartogs extension 39
+8. Consequences and applications 43
+9. Appendix 48
+References 54
+1. I NTRODUCTION
+1.1. Automorphisms and absolutely continuous measures. Let X be a com-
+plex projective surface and Aut(X) be the group of holomorphic diffeomor-
+phisms of X. By Gromov-Yomdin theorem, the topological entropy htop ( f )
+of every f∈ Aut(X) is equal to the logarithm of the spectral radius λ f of the
+linear endomorphism
+f∗ : H2(X;Z)→ H2(X;Z)
+Date: 2013/2014.
+1
+arXiv:1410.1202v1  [math.DS]  5 Oct 2014
+
+=== PDF PAGE 2 ===
+DYNAMICS ON COMPLEX SURFACES 2
+(here H2(X;Z) is the second cohomology group of X). Thus, f has positive
+entropy if, and only if there is an eigenvalue λ∈ C of f∗ with|λ| > 1. In fact
+such an eigenvalue is unique if it exists, and is equal to the spectral radius λ f .
+The number λ f is called the dynamical degree of f . As a root of the char-
+acteristic polynomial of f∗ : H2(X;Z)→ H2(X;Z), it is an algebraic integer;
+more precisely, λ f is equal to 1, to a reciprocal quadratic integer, or to a Salem
+number (see [21]).
+. When the entropy is positive, there is a natural f -invariant probability mea-
+sure µ f on X which satisﬁes the following properties (see [7, 18]):
+• µ f is the unique f -invariant probability measure with maximal en-
+tropy;
+• if µn denotes the average on the set of isolated ﬁxed points of f n, then
+µn converges towards µ f as n goes to +∞.
+Thus µ f encodes the most interesting features of the dynamics of f . In the
+sequel we shall call µ f the measure of maximal entropy of f .
+The main goal of this paper is to study the regularity properties of this
+measure. By ergodicity, µ f is either singular or absolutely continuous with
+respect to Lebesgue measure. By deﬁnition, it is singular if there exists a
+Borel subset A of X satisfying µ f (A) = 1 and vol(A) = 0 (the volume is taken
+with respect to any smooth volume form on X); it is absolutely continuous if
+µ f (B) = 0 for every Borel subset B⊂ X such that vol(B) = 0.
+. Classical examples of pairs (X, f ) for which µ f is absolutely continuous are
+described in Section 1.2 below. The ﬁrst examples are linear Anosov auto-
+morphisms of complex tori; one derives new examples from these linear au-
+tomorphisms by performing equivariant quotients under a ﬁnite group action
+and by blowing up periodic orbits. Our main theorem, stated in Section 1.3,
+establishes that these are the only possibilities. This result answers a question
+raised by Curtis T. McMullen and by the ﬁrst author.
+. This theorem allows to exhibit automorphisms of complex projective sur-
+faces for which µ f is singular (see §1.4). All previously known examples were
+constructed on rational surfaces whereas here, we focus on K3 surfaces. A
+complex projective surfaceX is a K3 surface if it is simply connected and if it
+supports a holomorphic 2-formΩX that does not vanish. Such a form is unique
+up to multiplication by a non-zero complex number; thus, if one imposes the
+
+=== PDF PAGE 3 ===
+DYNAMICS ON COMPLEX SURFACES 3
+constraint ∫
+X
+ΩX∧ ΩX = 1,
+the volume form vol X := ΩX∧ ΩX is uniquely determined by the complex
+structure of X; in particular, this volume form is Aut(X)-invariant. A byprod-
+uct of our main theorem is a characterization of the pairs (X, f ) for which
+µ f = volX; this occurs if and only if µ f is absolutely continuous.
+Example 1.1. A good example to keep in mind is the family of (smooth)
+surfaces of degree (2,2,2) in P1
+C× P1
+C× P1
+C. Such a surface X comes with
+three double covers X→ P1
+C× P1
+C, hence with three holomorphic involutions
+σ1, σ2, and σ3. The composition f = σ1◦ σ2◦ σ3 is an automorphism of X
+of positive entropy. The measure µ f is singular for a generic choice of X but
+coincides with volX for speciﬁc choices.
+1.2. Examples with absolutely continuous maximal entropy measure.
+1.2.1. Abelian surfaces. Let A be a complex abelian surface and let vol A de-
+note the Lebesgue (i.e. Haar) measure onA, normalized by volA(A) = 1. Every
+f∈ Aut(A) preserves volA, and the measure of maximal entropyµ f is equal to
+volA when λ f > 1.
+Complex abelian surfaces with automorphisms of positive entropy have
+been classiﬁed in [40]. The simplest example is obtained as follows. Start
+with an elliptic curve E = C/Λ0 and consider the product A = E× E. The
+group GL 2(Z) acts on C2 linearly, preserving the lattice Λ = Λ0× Λ0 ; thus,
+it acts also on the quotient A = C2/Λ. This gives rise to a morphism M↦→ fM
+from GL 2(Z) to Aut(A). The spectral radius of ( fM)∗ on H2(A;Z) is equal to
+the square of the spectral radius ofM. In particular, λ f > 1 as soon as the trace
+of M satisﬁes|tr(M)| > 2.
+1.2.2. Classical Kummer surfaces. Consider the complex abelian surfaceA =
+E×E as in Section 1.2.1. The center of GL 2(Z) is generated by the involution
+η =−Id; it acts on A by
+η(x,y) = (−x,−y).
+The quotient A/η is a singular surface. Its singularities are sixteen ordinary
+double points; they can be resolved by a simple blow-up, each singular point
+giving rise to a smooth rational curve with self-intersection−2. Denote by X
+this minimal regular model of A/η. Since GL 2(Z) commutes to η, one gets an
+
+=== PDF PAGE 4 ===
+DYNAMICS ON COMPLEX SURFACES 4
+injective morphism M↦→ gM from PGL 2(Z) to Aut(X). The topological en-
+tropy of gM (on X) is equal to the topological entropy of fM (on A). The holo-
+morphic 2-form ΩA = dx∧ dy is η-invariant and determines a non-vanishing
+holomorphic 2-form ΩX on X. The volume form ΩX∧ ΩX is invariant under
+each automorphism gM, and the associated probability measure coincides with
+the measure of maximal entropy µgM when htop (gM) > 0. Hence, again, one
+gets examples of automorphisms for which the measure of maximal entropy
+is absolutely continuous. The surface X is a Kummer surface and provides a
+famous example of K3 surface (see [3]).
+Remark 1.2. Kummer surfaces A/η with A a complex torus and η(x,y) =
+(−x,−y) form a dense subset of the moduli space of K3 surfaces (see [3]).
+Moreover, there are explicit families (Xt, ft)t∈D of automorphisms of K3 sur-
+faces such that (X0, f0) is such a Kummer example, but Xt stops to be a Kum-
+mer surface for t̸= 0 (see [20], Section 8.2).
+1.2.3. Rational quotients. Consider the complex abelian surface A = E× E
+of Section 1.2.1 given by the lattice Λ0 = Z[τ] with τ2 =−1 or τ3 = 1 (and
+τ̸= 1). The group GL 2(Z[τ]) acts on A and its center contains
+ητ(x,y) = (τx, τy).
+The quotient space X0 = A/ητ is singular and rational. Resolving the singu-
+larities, one gets examples of smooth rational surfaces X with automorphisms
+of positive entropy. The image of the Lebesgue measure onA provides a prob-
+ability measure on X which is smooth on a Zariski open subset of X but has
+“poles” along the exceptional divisor of the projection π: X→ X0. Neverthe-
+less, this measure is absolutely continuous with respect to Lebesgue measure
+(see [20]).
+1.3. Main theorem. The examples of Section 1.2 lead to the following deﬁ-
+nition (see also [19, 26, 64]).
+Deﬁnition 1.3. Let X be a complex projective surface and let f∈ Aut(X). The
+pair (X, f ) is a Kummer example if there exist
+• a birational morphism π : X→ X0 onto an orbifold X0,
+• a ﬁnite orbifold coverε : Y→ X0 by a complex torus Y ,
+• an automorphism f 0 of X0 and an automorphism ˆf of Y such that
+f0◦ π = π◦ f and f 0◦ ε = ε◦ ˆf .
+
+=== PDF PAGE 5 ===
+DYNAMICS ON COMPLEX SURFACES 5
+If (X, f ) is a Kummer example with λ f > 1, then µ f is absolutely continu-
+ous with respect to Lebesgue measure (it is real analytic with integrable poles
+along a ﬁnite set of algebraic curves).
+Main Theorem. Let X be a complex projective surface and f be an automor-
+phism of X with positive entropy. Let µ f be the measure of maximal entropy
+of f . If µ f is absolutely continuous with respect to Lebesgue measure, then
+(X, f ) is a Kummer example.
+This answers a question raised by the ﬁrst author in his thesis [17] and
+solves Conjecture 3.31 of Curtis T. McMullen in [53]. Moreover, the surfaces
+X which can occur are speciﬁed by the following easy theorem (see [22, 23]).
+Classiﬁcation Theorem. Let X be a complex projective surface and f be
+an automorphism of X of positive entropy. Assume that (X, f ) is a Kummer
+example.
+(1) X is an abelian surface, a K3 surface, or a rational surface.
+(2) If X is a K3 surface, it is a classical Kummer surface, i.e. the quo-
+tient of an abelian surface A by the involution σ(x,y) = (−x,−y); in
+particular, the Picard number of X is not less than 17.
+(3) If X is rational, then λ f is contained in Q(ζl) where ζl is a primitive
+root of unity of order l = 3, 4, or 5.
+In particular, X is not an Enriques surface, i.e. a quotient of K3 surface by
+a ﬁxed point free holomorphic involution.
+Remark 1.4 (see [10, 11, 52, 63]). An analogous result holds for holomorphic
+endomorphisms g of the projective space Pk
+C of topological degree > 1. In
+this case, there is also an invariant probability measure µg that describes the
+repartition of periodic points and is the unique measure of maximal entropy,
+and if µg is absolutely continuous with respect to Lebesgue measure, then g
+is a Lattès example: it lifts to an endomorphism of an abelian variety via an
+equivariant ramiﬁed cover. This is due to Zdunik for k = 1 and to Berteloot,
+Loeb and the second author for k≥ 2.
+Remark 1.5 (see [19]). There are examples of non injective rational transfor-
+mations h: X99K X of K3 surfaces such that
+• the topological entropy of h is positive,
+• h preserves a unique measure of maximal entropy µh,
+
+=== PDF PAGE 6 ===
+DYNAMICS ON COMPLEX SURFACES 6
+• µh coincides with the canonical volume form vol X = ΩX∧ ΩX on the
+K3 surface X,
+but h is not topologically conjugate to a Kummer example. In particular the
+Kummer and Lattès rigidities do not extend to non injective rational mappings.
+1.4. Applications.
+1.4.1. Lyapunov exponents and Hausdorff dimension. The ﬁrst consequence
+relies on theorems of Ledrappier, Ruelle and Young.
+Corollary 1.6. Let X be a complex projective surface and f be an automor-
+phism of X with positive entropy log λ f . Let λs < λu denote the negative and
+positive Lyapunov exponents of the measure µ f . The following properties are
+equivalent
+(1) µ f is absolutely continuous with respect to Lebesgue measure;
+(2) λs =− 1
+2 log λ f and λu = 1
+2 log λ f ;
+(3) for µ f -almost every x∈ X,
+lim
+r→0
+logµ f (Bx(r))
+logr = 4;
+(4) (X, f ) is a Kummer example.
+If X is a K3 surface or, more generally, if there is an f -invariant volume
+form on X, the Lyapunov exponents of µ f are opposite ( λu =−λs), and one
+can replace the second item by either one of the two equalities.
+1.4.2. K3 and Enriques surfaces. Recall that the Néron-Severi group NS(X)
+of a complex projective surface X is the subgroup of the second homology
+group H2(X;Z) generated by the homology classes of algebraic curves on X.
+The rank of this abelian group is the Picard number ρ(X). When ρ(X) is
+equal to 1, the entropy of every automorphism f of X vanishes (see [20, 21]);
+thus, the ﬁrst interesting case isρ(X) = 2.
+Corollary 1.7. Let X be a complex projective K3 surface with Picard num-
+ber 2. Assume that the intersection form does not represent 0 and−2 on
+NS(X). Then
+(1) Aut(X) contains an inﬁnite cyclic subgroup of index at most2;
+(2) if f ∈ Aut(X) has inﬁnite order its entropy is positive and its measure
+of maximal entropy µf is singular with respect to Lebesgue measure.
+
+=== PDF PAGE 7 ===
+DYNAMICS ON COMPLEX SURFACES 7
+Examples of such K3 surfaces with an inﬁnite group of automorphisms are
+described in [59, 25].
+An Enriques surface Z is the quotient of a K3 surface by a ﬁxed point free
+involution. If π: X→ Z is such a quotient, the canonical volume form vol X
+of X determines a smooth Aut(Z)-invariant volume form vol Z on Z. Thus,
+Enriques surfaces have a natural invariant volume form that is uniquely deter-
+mined by the complex structure.
+Corollary 1.8. If f is an automorphism of an Enriques surface with positive
+entropy, then µf is singular with respect to Lebesgue measure.
+Let now Z be a general Enriques surface. Up to ﬁnite index, the group
+Aut(Z) is isomorphic to the group of isometries of the lattice U⊕ (−E8)
+(see [4, 29]), so that it contains automorphisms with positive topological en-
+tropy. Thus, Corollary 1.8 implies that general Enriques surfaces have au-
+tomorphisms for which the measure of maximal entropy is singular; on the
+other hand, the volume form vol Z provides the only probability measure that
+is invariant under the action of Aut(Z) ([16]).
+1.4.3. Dynamical degrees and rational surfaces. For the next statement, re-
+call that the dynamical degree λ f is an algebraic integer (see Section 1.1).
+Corollary 1.9. Let X be a complex projective surface and f be an automor-
+phism of X with positive entropy. If the degree of λ f (as an algebraic integer)
+is larger than or equal to5 then the measure of maximal entropy µf is singular
+with respect to Lebesgue measure.
+This can be applied to the examples constructed by Bedford and Kim (see
+[5, 6]) and McMullen (see [54]). They exhibit families of automorphisms of
+rational surfaces fm : Xm→ Xm for which the degree of the algebraic number
+λ fm increases with m. Thus Corollary 1.9 shows that µ fm is singular with re-
+spect to Lebesgue measure when m is large enough. This may also be applied
+to a family of examples constructed by Blanc. (See Sections 8.3.1 and 8.3.2
+for more details)
+1.5. Related problems.
+1.5.1. Geodesic ﬂows. A similar question of entropy rigidity concerns the ge-
+odesic ﬂow (θt)t∈R on a negatively curved riemannian manifold (M,g). Neg-
+ative curvature implies that this ﬂow is Anosov with a unique invariant proba-
+bility measure ν of maximal entropy (i.e. with metric entropyh(θ1, ν) equal to
+
+=== PDF PAGE 8 ===
+DYNAMICS ON COMPLEX SURFACES 8
+the topological entropy htop (θ1)). The ﬂow preserves also the Liouville mea-
+sure λg, and the Entropy conjecture predicts that νg is absolutely continuous
+with respect to λg if and only if the riemannian manifold(M,g) is locally sym-
+metric. This is proved by Katok for surfaces (see [45]). We refer to [50] for
+a nice survey on this type of problem and to [37, 8] for its relationship to the
+rigidity properties of Anosov ﬂows with smooth stable and unstable foliations.
+1.5.2. Random walks. Another related question concerns the regularity of har-
+monic measures. Consider the fundamental group Γg of an orientable, closed
+surface of genus g≥ 2, and identify the boundary ∂Γg to the unit circle S1. Let
+νS be a probability measure on Γg with ﬁnite supportS, such that S generates
+Γg. The measure νS determines a random walk on Γg. Given a starting point x
+in Γg and a subset A of the boundary ∂Γg, the harmonic measure ωx(A) is the
+probability that a random path which starts atx converges to a point ofA when
+time goes to +∞. It is conjectured that ωx is singular with respect to Lebesgue
+measure on ∂Γg = S1. We refer to [44, 12] for an introduction to this topic and
+references; see also [14] for a recent example.
+1.6. Organization of the paper. Fix a complex projective surface X and an
+automorphism f of X with positive entropy. Section 2 is devoted to classical
+facts concerning the dynamics of f . In particular, we explain that µ f is the
+product of two closed positive currents T +
+f and T−
+f , that the generic stable
+and unstable manifolds of f are parametrized by holomorphic entire curvesξ :
+C→ X, and that T +
+f and T−
+f are respectively obtained by integration on these
+stable and unstable manifolds. Assume, now that µ f is absolutely continuous
+with respect to Lebesgue measure.
+1.6.1. Renormalization along the invariant manifolds. We ﬁrst show that
+(1) the absolute continuity of µ f can be transferred to the currents T +
+f
+and T−
+f ;
+(2) if ξ: C→ X parametrizes (bijectively) the stable manifold of a µ f -
+generic point, then ξ∗T−
+f = a i
+2dz∧ d ¯z for some constant a > 0.
+These two steps occupy sections 3 to 5. The proof of Property (1) builds on the
+local product structure of µ f and on the weak laminarity properties ofT±
+f . The
+proof of (2) relies on a renormalization argument (along µ f -generic orbits).
+Remark 1.10. The renormalization techniques already appear in the proof
+of Lattès rigidity for endomorphisms of projective spaces Pk
+C (see [52] and
+
+=== PDF PAGE 9 ===
+DYNAMICS ON COMPLEX SURFACES 9
+[10]). Our context is actually closer to the conformal case k = 1 since the
+renormalization is done along the stable and unstable manifolds. In the case
+of endomorphisms of Pk
+C, the unstable manifolds cover open subsets of Pk
+C;
+here, the stable and unstable manifolds have co-dimension 1, and we have to
+overcome important new difﬁculties.
+1.6.2. Normal families of entire curves. We combine Zalcman’s reparametri-
+zation lemma, Hodge index theorem, and a result of Dinh and Sibony to derive
+a compactness property, in the sense of Montel, for the entire parametrizations
+of stable and unstable manifolds. This crucial step is detailed in Section 6.
+1.6.3. Laminations, foliations, and conclusion. Thanks to the previous step,
+we prove that the stable (resp. unstable) manifolds of f are organized in a
+(singular) lamination by holomorphic curves. Then, an argument of Ghys can
+be coupled to Hartogs phenomenon to show that this lamination extends to an
+f -invariant, singular, holomorphic foliation of X.
+Remark 1.11. Thus, at this stage of the proof, the starting hypothesis on µ f
+has been upgraded in a regularity property for T +
+f and T−
+f (these currents are
+smooth, and correspond to transverse invariant measures for two holomor-
+phic foliations). For endomorphisms of Pk
+C, this fact follows directly from the
+renormalization argument and pluripotential theory (see Lemma 3 in [10]).
+To conclude, we refer to a previous theorem of the ﬁrst author and Favre
+concerning symmetries of foliated surfaces. These steps are done in Section 6
+and Section 7
+1.6.4. Consequences and appendices. Section 8 contains the proofs of the
+main corollaries and consequences. In the appendices, we state several the-
+orems of Dinh, Sibony, and Moncet, and prove those which are not easily
+accessible.
+1.7. Acknowledgements. We thank to Eric Bedford, Romain Dujardin, Sé-
+bastien Gouëzel, Anatole Katok, Misha Lyubich, François Maucourant, and
+Nessim Sibony for useful discussions related to this article.
+2. I NVARIANT CURRENTS AND PERIODIC CURVES
+In this section, we collect general results concerning the dynamics of auto-
+morphisms of compact Kähler surfacesX. We refer to [21], and the references
+
+=== PDF PAGE 10 ===
+DYNAMICS ON COMPLEX SURFACES 10
+therein, for a complete exposition. (the proofs of a few technical complements
+are given in the appendix, § 9)
+2.1. Cohomology groups. Let X be a compact Kähler surface. Let Hk(X;R)
+and Hk(X;C) denote the real and complex de Rham cohomology groups ofX.
+If η is a closed differential form (or a closed current, see below), its cohomol-
+ogy class is denoted by [η].
+For 0≤ p, q≤ 2, let H p,q(X;C) denote the subspace of H p+q(X;C) of all
+classes represented by closed (p,q)-forms, and let hp,q(X) be its dimension.
+Hodge theory implies that
+Hk(X;C) =
+⨁
+p+q=k
+H p,q(X).
+Complex conjugation exchanges H p,q(X;C) and Hq,p(X;C); thus, H1,1(X;C)
+inherits a real structure, with real part
+H1,1(X;R) := H1,1(X;C)∩ H2(X;R).
+The intersection form is an integral quadratic form on H2(X;Z). It satisﬁes
+∀u,v∈ H1,1(X;R) ,⟨u|v⟩ :=
+∫
+X
+˜u∧ ˜v,
+where ˜u and ˜v are closed 2-forms on X representing u and v. By Hodge
+index theorem ⟨·|·⟩ is non-degenerate and of signature (1,h1,1(X)− 1) on
+H1,1(X;R). This endows H1,1(X;R) with the structure of a Minkowski space.
+The subset of H1,1(X;R) consisting of classes of Kähler forms is called
+the Kähler cone of X. By deﬁnition, the closure of the Kähler cone is the nef
+cone. These cones intersect only one of the two connected components of{u∈
+H1,1(X;R) ,⟨u|u⟩ = 1}. We denote by H(X) this connected component. With
+the distance given by cosh(dist(u,v)) =⟨u|v⟩, this is a model of the hyperbolic
+space of dimension h1,1(X)− 1.
+2.2. Action on cohomology groups (see[21], §2). Every f∈ Aut(X) induces
+a linear invertible mapping f∗ on H1,1(X;R) which is an isometry for the
+intersection product. Since the Kähler cone is f∗-invariant, so isH(X). Let λ f
+denote the spectral radius of f∗ : H1,1(X;R)→ H1,1(X;R).
+• λ f coincides with the spectral radius of f∗ acting on the full cohomol-
+ogy space⊕4
+k=0Hk(X;C).
+• The topological entropy of f is equal to log λ f .
+
+=== PDF PAGE 11 ===
+DYNAMICS ON COMPLEX SURFACES 11
+• When λ f > 1 the eigenvalues of f∗ on H1,1(X;R) (resp. on H2(X;R))
+are precisely λ f , λ−1
+f (which are both simple), and complex numbers of
+modulus 1. The eigenlines corresponding to λ f and λ−1
+f are isotropic,
+and they intersect the nef cone.
+From the third item, we can ﬁx a nef eigenvector θ+
+f (resp. θ−
+f ) for the
+eigenvalue λ f (resp. λ−1
+f ). Let Π f be the subspace generated by θ+
+f and θ−
+f ,
+and let Π⊥
+f be its orthogonal complement inH1,1(X;R). The intersection form
+has signature (1,1) on Π f and is negative deﬁnite onΠ⊥
+f .
+2.3. Contraction of periodic curves. If C⊂ X is a complex curve, one de-
+notes by [C]∈ H2(X;Z) the dual of the homology class of C for the natural
+pairing between H2(X;Z) and H2(X;Z). We call it the cohomology class of
+C, this is an element of H1,1(X;R). If C is periodic, then [C] is ﬁxed by a non
+trivial iterate of f∗ and belongs to Π⊥
+f .
+Proposition 2.1 (see [21], §4.1) . Let f be an automorphism of a compact
+Kähler surface X with positive entropy. There exists a (singular) surface X0, a
+birational morphism π: X→ X0 and an automorphism f 0 of X0 such that
+(1) π◦ f = f0◦ π.
+(2) A curve C⊂ X is contracted by π if and only if [C]∈ Π⊥
+f . In particular
+π contracts the periodic curves of f .
+(3) If C is a connected periodic curve, then the genus of C is 0 or 1.
+Indeed, the intersection form being negative deﬁnite onΠ⊥
+f , Grauert-Mumford
+criterium allows to contract all irreducible curves C with [C]∈ Π⊥
+f , and only
+those curves. This yields the desired morphism π. Property (3) is more difﬁ-
+cult to establish, and is due to Castelnuovo for irreducible curves and to Diller,
+Jackson, and Sommese for the general case (see § 9.1).
+Remark 2.2. The surface X0 is projective (see § 9.1) but it may be singular;
+for instance, if f : X→ X is a Kummer example on a K3 or rational surface,
+then X0 is automatically singular. We shall make use of basic notions from
+complex analysis and pluri-potential theory on complex analytic spaces. For
+this, we refer to the ﬁrst chapter of [30] and chapter 14 in [28].
+Remark 2.3. The class θ+
+f +θ−
+f∈ H1,1(X;R) has positive self intersection and
+is in the nef cone. After contraction of all periodic curves by the morphism
+π0 : X→ X0, there is no curve E with⟨(π0)∗θ+
+f + (π0)∗θ−
+f|[E]⟩ = 0. Hence,
+(π0)∗(θ+
+f + θ−
+f ) is a Kähler class on X0 (see § 9.1).
+
+=== PDF PAGE 12 ===
+DYNAMICS ON COMPLEX SURFACES 12
+2.4. Invariant currents and continuous potentials. We refer to [41, Chapter
+3] for an account concerning currents on complex manifolds.
+Let T be a closed positive current on X. It is locally equal to dd cu where
+u is a plurisubharmonic function. By deﬁnition u is a local potential of T ,
+it is unique up to addition of a pluriharmonic function. Every closed positive
+current T has a cohomology class [T ] in H1,1(X,R). For instance, if C⊂ X is
+a complex curve and TC is the current of integration on C, then [TC] = [C].
+If f∈ Aut(X) then one can deﬁne f∗T by duality: the value of f∗T on a
+(1,1)-form ω is equal to the value of T on ( f−1)∗ω. If u is a local potential
+for T , then u◦ f is a local potential for f∗T .
+Theorem 2.4 (see [32, 55, 21]). Let f be an automorphism of a compact Käh-
+ler surface X with positive entropylog λ f . There exists a unique closed positive
+current T +
+f of bidegree (1,1) on X such that [T +
+f ] coincides with the nef class
+θ+
+f . Its local potentials are Hölder continuous. It satisﬁes f∗T +
+f = λ f T +
+f .
+Similarly, there exists a unique closed positive currentT−
+f of bidegree (1,1)
+satisfying f∗T−
+f = λ−1
+f T−
+f .
+Remark 2.5. In a recent preprint [33], Dinh and Sibony strengthen Theo-
+rem 2.4 by showing that T +
+f (resp. T−
+f ) is the unique dd c-closed positive
+current whose cohomology class is [T +
+f ] (resp. [T−
+f ]).
+Remark 2.6. When contracting the periodic curves, as in Proposition 2.1, one
+may get a singular surface X0. Theorem 9.8 shows that the image of T±
+f by
+π: X→ X0 is a closed positive current on X0 with continuous potentials, even
+around the singularities.
+Let C be a Riemann surface and θ: C→ X be a non-constant holomorphic
+mapping. The pull-back θ∗(T +
+f ) is locally deﬁned asdd c(u+◦ θ) where u+ is
+a local potential; by deﬁnition, this measure (resp. its image onθ(C)) is called
+the slice of T +
+f by θ. The same deﬁnition applies for θ∗(T−
+f ).
+2.5. Deﬁnition and properties of µ f . In what follows, we can (and do) ﬁx
+the following data: a Kähler form κ on X and eigenvectors θ+
+f and θ−
+f with
+respect to the eigenvalues λ f and λ−1
+f for the endomorphism f∗ of H1,1(X;R)
+such that
+⟨θ+
+f|θ−
+f⟩ = 1, ⟨θ+
+f|[κ]⟩ =⟨θ−
+f|[κ]⟩ = 1. (2.1)
+
+=== PDF PAGE 13 ===
+DYNAMICS ON COMPLEX SURFACES 13
+Then, consider the currents T±
+f provided by Theorem 2.4. The wedge product
+T +
+f ∧ T−
+f is locally deﬁned as the dd c-derivative of u+dd cu−, where u+ and
+u− are local potentials for T + and T−. We deﬁne
+µ f := T +
+f ∧ T−
+f .
+This is an f -invariant probability measure on X. The dynamics of f with re-
+spect to µ f is ergodic and mixing; moreover,µ f is the unique f -invariant mea-
+sure with maximal entropy, and it describes the equidistribution of periodic
+points (see Section 1.1 and [21]).
+3. P ARAMETRIZATIONS OF STABLE MANIFOLDS
+In this section we see how Pesin theory provides parametrizations of the
+stable and unstable manifolds of the automorphism f by entire holomorphic
+curves, with a control of their derivatives. We provide the details of the proof
+of this classical fact, because the control of the derivative will be used system-
+atically in our forthcoming renormalization argument, and this control is hard
+to localize in the literature. We refer to [43] for a similar and more general
+statement in arbitrary dimension.
+3.1. Oseledets theorem and Lyapunov exponents (see[61, 46] and [7, 21]).
+As before let X be a complex projective surface and f be an automorphism of
+X with positive entropy logλ f . Let T±
+f be the invariant currents introduced in
+Section 2.4. The normalization chosen in Section 2.5, Equation (2.1) implies
+that T +
+f and T−
+f have mass 1 with respect to the Kähler form κ, and that µ f =
+T +
+f ∧ T−
+f is an f -invariant probability measure on X.
+Since µ f has positive entropy and is ergodic, it has one negative and one
+positive Lyapunov exponents; we denote them byλs and λu, with λs < 0 < λu
+(each of these exponents has multiplicity 2 if one viewsf as a diffeomorphism
+of the 4-dimensional manifold X).
+In what follows, ε always denotes a positive real number that satisﬁes ε≪
+min(|λs|, λu). The set Λ will be a Borel subset of X of total µ f -measure; its
+precise deﬁnition depends onε and may change from one paragraph to another.
+By construction, we can (and do) assume that Λ is invariant: indeed, Λ can
+always be replaced by ∩n∈Z f n(Λ). A measurable function α : Λ→]0,1] is
+ε-tempered if it satisﬁese−εα(x)≤ α( f (x))≤ eεα(x) for every x∈ Λ.
+We use the same notation∥·∥ for the standard hermitian norm on C2 and
+for the hermitian norm on the tangent bundle T X induced by the Kähler form
+
+=== PDF PAGE 14 ===
+DYNAMICS ON COMPLEX SURFACES 14
+κ. The distance on X is denoted distX; Bx(r) is the ball of radius r centered
+at x.
+Theorem 3.1 (Oseledets-Pesin). Let X be a complex projective surface and
+let f be an automorphism of X with positive entropy.
+There exist an f -invariant Borel subset Λ⊂ X with µ f (Λ) = 1, two ε-
+tempered functions q : Λ→]0,1], β : Λ→]0,1], and a family of holomorphic
+mappings (Ψx)x∈Λ satisfying the following properties.
+(1) Ψx is deﬁned on the bidiskD(q(x))× D(q(x)), takes values in X, maps
+the origin to the point x, and is a diffeomorphism onto its image.
+(2) β(x)∥ z1− z2∥≤ distX (Ψx(z1), Ψx(z2))≤∥ z1− z2∥ for all pairs of
+points z1, and z2 in the bidisk.
+(3) The local diffeomorphism f x := Ψ−1
+f (x)◦ f◦ Ψx is well deﬁned near the
+origin in D(q(x))× D(q(x)), and the matrix of D 0 fx is diagonal with
+coefﬁcients a(x) and b(x) that satisfy
+|a(x)|∈ eλu· [e−ε,eε], |b(x)|∈ eλs· [e−ε,eε].
+Moreover f x is ε-close to the linear mapping D0 fx in the C 1 topology.
+The global stable manifoldof a pointx is the setW s(x) of points x′ such that
+the distance between f n(x) and f n(x′) goes to 0 asn goes to +∞. The local sta-
+ble manifold W s,loc(x) is the connected component of W s(x)∩ Ψx(D(q(x))×
+D(q(x))) that contains x.
+In D(q(x))× D(q(x)), the inverse image by Ψx of the local stable manifold
+is a vertical graph; in other words, it can be parametrized by a holomorphic
+map
+γx : D(q(x))→ D(q(x))× D(q(x)), z↦→ (gx(z),z),
+where gx is holomorphic and satisﬁes gx(0) = 0, g′
+x(0) = 0, and Lip gx≤ 1.
+We haveW s(x) =∪n≥0 f−n(W s,loc( f n(x)).
+Notation 3.2. For x inΛ, we setσx := Ψx◦γx. This is a holomorphic parametriza-
+tion of the local stable manifold Ws,loc(x). By construction,
+• β(x)≤∥ σ′
+x(0)∥≤ 1,
+• f (W s,loc(x))⊂ W s,loc( f (x)) and Ws,loc(x)⊂ Bx(1),
+• limn→+∞ distX ( f n(x), f n(y)) = 0 for every y∈ W s,loc(x).
+We denote by Fx : D(q(x))→ D(q( f (x))) the mapping that satisﬁes
+f◦ σx = σ f (x)◦ Fx,
+
+=== PDF PAGE 15 ===
+DYNAMICS ON COMPLEX SURFACES 15
+and by Mx : D(q(x))→ D(q( f (x))) the linear mapping given by
+Mx(z) := mx· z, with mx := F′
+x(0).
+By construction, |mx|∈ eλs· [e−ε,eε] (note that mx is equal to the complex
+number b(x) of Theorem 3.1).
+3.2. Parametrization of stable manifolds.
+3.2.1. Linearization along local stable manifolds. The following proposition
+provides a linearization of f along the stable manifolds. We keep the same
+notations as in the previous paragraph; in particular, ε > 0 is ﬁxed and Λ is
+given by Theorem 3.1.
+Proposition 3.3. Let f be an automorphism of a complex projective surface
+X with positive entropy. If ε is small enough, there exist a real number c :=
+c(ε, λs)∈]0,1] and holomorphic injective functions (ηx)x∈Λ, such that
+(1) ηx is deﬁned on D(cq(x)), with values in D(q(x)), and it satisﬁes
+ηx(0) = 0 and η′
+x(0) = 1;
+(2) f◦ (σx◦ ηx) = (σ f (x)◦ η f (x))◦ Mx on D(cq(x)).
+Proof. We split the proof into four steps.
+• Preliminary choices.– Choose ε > 0 such that λs + 6ε < 0. Thus, the series
+s(ε) := ∑
+m≥0
+em(λs+6ε)
+converges. Then, decrease ε so that
+s(ε)e2ε(eε− 1)≤ 1/2, and eλs(eε− 1)≤ 1,
+and set c := 1
+24eλs(eε− 1). Then apply Theorem 3.1 and deﬁne
+s := s(ε) , q′(x) := 12cq(x) and Q(x) := 2e−λs+2εq(x)−1.
+• Contraction properties of Fx.– For x in Λ, denote the Taylor expansion
+of Fx(z) by Mx(z) + ∑p≥2 ap(x)zp. Since Fx maps D(q(x)) into D(q( f (x)),
+Cauchy formula yelds|ap(x)|≤ q( f (x))/q(x)p ; hence
+∀z∈ D(q(x)/2),|Fx(z)− Mx(z)|≤ 2q( f (x))
+q(x)2 |z|2≤ 2 eε
+q(x)|z|2. (3.1)
+Here, and in what follows, we use that q is ε-tempered, i.e. q( f (x))∈ q(x)·
+[e−ε,eε]. Thus, the deﬁnition ofq′(x) implies that
+∀z∈ D(q′(x)),|Fx(z)|≤| Mx(z)| +|Fx(z)− Mx(z)|≤ eλs+2ε|z|. (3.2)
+
+=== PDF PAGE 16 ===
+DYNAMICS ON COMPLEX SURFACES 16
+In particular, we obtain the inclusions
+Fx(D(q′(x)))⊂ D(eλs+2εq′(x))⊂ D(q′( f (x))).
+•The functions ˜ηx.– From the previous inclusion, we can deﬁne (for all x in
+Λ, z in D(q′(x)), and m≥ 0)
+˜ηm,x(z) := M−1
+x ◦··· M−1
+f m−1(x)◦ Ff m−1(x)◦···◦ Fx(z),
+with the convention ˜η0,x := IdD(q′(x)). These functions satisfy ˜ηm, f (x)◦ Fx =
+Mx◦ ˜ηm,x on D(q′(x)). Let us show by induction that
+∀z∈ D(q′(x)),| ˜ηm+1,x(z)− ˜ηm,x(z)|≤ em(λs+6ε)|z|2Q(x). (3.3)
+The case m = 0 is deduced from (3.1); indeed| ˜η1,x(z)− ˜η0,x(z)| is equal to
+|M−1
+x ◦ Fx(z)− z| = m−1
+x |Fx(z)− Mx(z)|≤ 2e−λs+2ε
+q(x) |z|2 =|z|2Q(x).
+Now assume that (3.3) is satisﬁed for somem≥ 0. In particular
+∀w∈ D(q′( f (x))),| ˜ηm+1, f (x)(w)− ˜ηm, f (x)(w)|≤ em(λs+6ε)|w|2Q( f (x)).
+For z∈ D(q′(x)), we know that Fx(z)∈ D(q′(x)), hence we can replace w by
+Fx(z) to obtain
+| ˜ηm+1, f (x)(Fx(z))− ˜ηm, f (x)(Fx(z))|≤ em(λs+6ε)|Fx(z)|2Q( f (x)).
+Multiplying by|m−1
+x | we obtain
+∀z∈ D(q′(x)),| ˜ηm+2,x(z)− ˜ηm+1,x(z)|≤ em(λs+6ε)|m−1
+x ||Fx(z)|2Q( f (x)).
+Using (3.2) the right hand side is less than or equal to
+em(λs+6ε)e−λs+εe2(λs+2ε)|z|2eεQ(x) = e(m+1)(λs+6ε)|z|2Q(x),
+which establishes (3.3) for m + 1 as desired.
+Since ˜η0,x(z) = z we can write
+∀x∈ Λ,∀z∈ D(q′(x)), ˜ηn,x(z) = z +
+n−1
+∑
+m=0
+( ˜ηm+1,x− ˜ηm,x)(z),
+and Equation (3.3) implies that ˜ηn,x converges locally uniformly on D(q′(x))
+to a function ˜ηx satisfying
+˜η′
+x(0) = 1, |( ˜ηx− Id)(z)|≤ s|z|2Q(x), and ˜η f (x)◦ Fx = Mx◦ ˜ηx.
+
+=== PDF PAGE 17 ===
+DYNAMICS ON COMPLEX SURFACES 17
+• Conclusion.– We now invert ˜ηx and ˜η f (x). First let us verify that Lip ( ˜ηx−
+Id)≤ 1/2. For that purpose, apply Cauchy’s formula
+( ˜ηx− Id)′(z) = 1
+2iπ
+∫
+C
+( ˜ηx− Id)(a)
+(a− z)2 da
+where C is the circle of radius q′(x) and z is taken in the disk D(q′(x)/2); the
+previous estimate|( ˜ηx− Id)(z)|≤ s|z|2Q(x) and the deﬁnitions of q′(x) and
+Q(x) yield
+|( ˜ηx− Id)′(z)|≤ sQ(x)q′(x)≤ 1/2,
+for all points x∈ Λ, and z∈ D(q′(x)/2); this implies Lip ( ˜ηx− Id)≤ 1/2 on
+D(q′(x)/2) as desired.
+We deduce
+1
+2|z1− z2|≤| ˜ηx(z1)− ˜ηx(z2)|≤ 3
+2|z1− z2|. (3.4)
+for all points z1 and z2 in D(q′(x)/2). It follows that ˜ηx can be inverted on the
+disk D(q′(x)/4), and we deﬁne
+ηx := ( ˜ηx)−1 : D(q′(x)/4)→ D(q′(x)/2).
+This function satisﬁes
+∀z1, z2∈ D(q′(x)/4), 2
+3|z1− z2|≤| ηx(z1)− ηx(z2)|≤ 2|z1− z2|. (3.5)
+Compose each term of the equality ˜η f (x)◦ Fx = Mx◦ ˜ηx on the right by ηx;
+one obtains ˜η f (x)◦Fx◦ ηx = Mx on D(q′(x)/4). Now, Equations (3.2) and (3.4)
+lead to
+| ˜η f (x)◦ Fx◦ ηx|≤ q′( f (x))/4
+on D(q′(x)/12). Composition on the left by η f (x) gives Fx◦ ηx = η f (x)◦ Mx
+on D(q′(x)/12) = D(cq(x)). To complete the proof, it sufﬁces to compose the
+latter expression on the left by σ f (x); the relation σ f (x)◦ Fx = f◦ σx provides
+f◦ (σx◦ ηx) = (σ f (x)◦ η f (x))◦ Mx on D(cq(x))) as desired. □
+3.2.2. Local and global stable manifolds. Deﬁnition 3.2 and Proposition 3.3
+allow to introduce the following deﬁnition.
+Notation 3.4. For every x∈ Λ, deﬁneξs,loc
+x : D(cq(x))→ W s,loc(x) by
+ξs,loc
+x := σx◦ ηx.
+By construction, ξs,loc
+x is holomorphic, injective and satisﬁes
+• ξs,loc
+x (0) = x and β(x)≤| (ξs,loc
+x )′(0)|≤ 1;
+• 2β(x)/3≤| (ξs,loc
+x )′|≤ 2 on D(cq(x));
+
+=== PDF PAGE 18 ===
+DYNAMICS ON COMPLEX SURFACES 18
+• f◦ ξs,loc
+x = ξs,loc
+f (x)◦ Mx on D(cq(x)).
+The global stable manifold satisﬁes
+W s(x) =∪n≥0 f−n (W s,loc( f n(x))).
+Thus, by construction, W s(x) is a simply connected Riemann surface.
+Proposition 3.5. For every x∈ Λ, the Riemann surface W s(x) is biholomor-
+phic to C. Moreover, there exists a biholomorphismξs
+x : C→ W s(x) such that
+• ξs
+x(0) = x,
+• ξs
+x = ξs,loc
+x on D(cq(x)),
+• f◦ ξs
+x = ξs
+f (x)◦ Mx on C.
+Proof. Set Mm
+x := M f m−1(x)◦ . . .◦ Mx : C→ C for every m≥ 1, and observe
+that|Mm
+x (z)|∈ emλs· [e−mε,emε]·| z|. Then, deﬁne
+∀z∈ C, ξs
+x(z) := f−m(z)◦ ξs,loc
+f m(z)(x)◦ Mm(z)
+x (z),
+where m(z) is a large positive integer, so thatMm(z)
+x (z)∈ D(cq( f m(z)(x))); such
+an integer exists because the function q is ε-tempered. One easily veriﬁes that
+(i) the deﬁnition of ξs
+x does not depend on m(z) and (ii) f◦ ξs
+x = ξs
+f (x)◦ Mx on
+C by analytic continuation. The map ξs
+x : C→ W s(x) is a biholomorphism by
+the deﬁnition ofW s(x) and the fact that f has empty critical set. □
+Remark 3.6. The deﬁnition of the biholomorphism ξs
+x : C→ W s(x) depends
+on the local parametrizations(ξs,loc
+x )x∈Λ, hence on Pesin’s theory. In particular,
+the derivative (ξs
+x)′(0) depends measurably on x.
+Two biholomorphisms C→ W s(x) differ by an afﬁne automorphism z↦→
+az + b where (a,b)∈ C∗× C. Thus, (i) the stable manifold W s(x) inherits a
+natural afﬁne structure and (ii) every biholomorphism C→ W s(x) sending 0
+to x is equal to ξs
+x modulo composition with a homothety z↦→ az.
+Remark 3.7. The fact that the stable manifolds are isomorphic to C is well
+known. Let us summarize the proof given in [7, section 2.6]. First, remark
+that the stable manifolds are Riemann surfaces which are homeomorphic to
+R2; thus, W s(x) is conformally equivalent to the unit disk D or the afﬁne line
+C. By ergodicity of µ f , one can assume that almost all stable manifolds have
+the same conformal type. If they were disks, f would induce isometries from
+W s(x) to W s( f (x)) with respect to the Poincaré metric, because conformal
+automorphisms of the unit disk are isometries; this would contradict the fact
+that f is a contraction along the stable manifolds.
+
+=== PDF PAGE 19 ===
+DYNAMICS ON COMPLEX SURFACES 19
+3.3. Ahlfors-Nevanlinna currents and stable manifolds. From Proposition 3.5,
+the stable manifolds of f are parametrized by entire curves ξs
+x : C→ W s(x).
+We associate Ahlfors currents to them: these closed positive currents coincide
+with T +
+f .
+3.3.1. Ahlfors-Nevanlinna currents. Let M be a complex space, let κ be a
+kähler form on M, and let ξ: C→ M be a non-constant entire curve. Let
+A(r; ξ) be the area of ξ(Dr), deﬁned as the integral of ξ∗κ on Dr, and let
+T (r; ξ) be the logarithmic average
+T (r; ξ) :=
+∫ r
+s=0
+A(s; ξ)ds
+s .
+The family of Ahlfors-Nevalinna currents N(r; ξ) is then deﬁned by
+N(r; ξ): α↦→ 1
+T (r; ξ)
+∫ r
+s=0
+{ξ(Ds)}(α)ds
+s
+where{ξ(Ds)} is the current of integration on ξ(Ds) (counting multiplicities).
+Lemma 3.8 (Ahlfors, see [15]). There exist sequences (ri)i∈N tending to +∞
+such that N(ri; ξ) converges to a closed positive current on X.
+By deﬁnition, these closed currents are the Ahlfors-Nevanlinna currents
+determined by ξ. Every such currentA has a cohomology class[A] in H1,1(X,R)
+(see § 2.4).
+Proposition 3.9 (see [15]). Let X be a compact Kähler surface and ξ: C→ X
+be a non-constant entire curve. Let A be an Ahlfors current determined by ξ.
+(1) If ξ(C) is contained in a curve E, then the genus of E is equal to 0 or
+1 and A is equal to Area(E)−1{E}.
+(2) If the area A(r; ξ) is bounded by a constant which does not depend on
+r, then ξ(C) is contained in a compact curve E⊂ X.
+If ξ(C) is not contained in a compact curve, then
+(3)⟨[A]|[C]⟩≥ 0 for every curve C⊂ X;
+(4) [A] is in the nef cone of X and [A]· [A]≥ 0.
+Remark 3.10. In Section 3.3.3 and Section 9.3, we shall also study theAhlfors
+currents, deﬁned as closed positive limits of
+1
+A(r; ξ){ξ(Dr}.
+Such closed currents exist, but Properties (3) and (4) may a priori fail for them.
+
+=== PDF PAGE 20 ===
+DYNAMICS ON COMPLEX SURFACES 20
+3.3.2. Stable and unstable Ahlfors currents. By the following theorem, the
+Ahlfors currents associated to the stable manifolds of f are equal to T +
+f ; to
+state it, recall that Λ is the set of full µ f -measure introduced in Theorem 3.1.
+Theorem 3.11 (see [21]). Let f be an automorphism of a compact Kähler
+surface X with positive entropy. Let x be a point of Λ, and ξs
+x : C→ X be a
+parametrization of the stable manifold W s(x). If ξs
+x(C) is not contained in a
+(compact) periodic curve, then all Ahlfors-Nevanlinna currents associated to
+ξs
+x coincide with T +
+f .
+For ξs
+x one can take the parametrization of Proposition 3.5. A similar result
+holds for unstable manifolds and the current T−
+f .
+Remark 3.12. In [33], Dinh and Sibony prove the following strengthening of
+Theorem 3.11: if ξ: C→ X is an entire curve such that
+• ξ(C) is not contained in an algebraic periodic curve of f , and
+• the family of entire curves f n◦ ξ, n≥ 1, is locally equicontinuous (i.e.
+is a normal family of entire curves),
+then all Ahlfors-Nevanlinna currents of ξ coincide with T +
+f . We shall not need
+this version of Theorem 3.11.
+3.3.3. Dinh-Sibony theorem. The following result is proved for complex man-
+ifolds in [31]. The proof extends to the case of compact complex spaces. To
+state it, recall that a Brody curve is a non-constant entire holomorphic curve
+ξ: C→ M whose velocity∥ ξ′(z)∥ is uniformly bounded.
+Theorem 3.13 (Dinh-Sibony, [32]). Let M be a compact complex analytic
+space. Let T be a closed positive current of bidegree (1,1) on M which is
+locally deﬁned by continuous potentials. Let ξ: C→ M be a Brody curve
+such that ξ∗(T ) = 0. Then, there is an Ahlfors current S determined by ξ that
+satisﬁes T∧ S = 0.
+Remark 3.14. Note that ξ∗T and T∧ S are well deﬁned because T has con-
+tinuous potentials: locally, ξ∗T is the positive measure deﬁned by dd c(u◦ ξ),
+where u is a local potential for T ; similarly, T∧ S is locally deﬁned as the
+current dd c(u· S).
+The following corollary is a crucial ingredient in the proof of Theorem 6.4;
+it is proved in Section 9.4, together with a corollary concerning Fatou sets of
+automorphisms of complex projective surfaces.
+
+=== PDF PAGE 21 ===
+DYNAMICS ON COMPLEX SURFACES 21
+Corollary 3.15. Let X be a complex projective surface and let f be an auto-
+morphism of X with positive entropy. Let π: X→ X0 be the contraction of the
+periodic curves of f . Then,
+(1) the Ahlfors currents Aν of every non-constant entire curve ν: C→ X0
+satisfy ∫
+X
+Aν∧ π∗(T +
+f + T−
+f ) > 0;
+(this product is well deﬁned becauseπ∗T +
+f and π∗T−
+f have continuous
+potentials on X0)
+(2) there is no non-constant entire curve ξ: C→ X0 with ξ∗(π∗(T +
+f +
+T−
+f )) = 0.
+4. P RODUCT STRUCTURE AND ABSOLUTE CONTINUITY
+The currents T±
+f have a common geometric property, called weak laminar-
+ity. To describe this property, we relate it to the dynamical notion of Pesin
+boxes, and explain that the measure µ f has a product structure in these boxes.
+These properties lead to the proof of Proposition 4.4: it says that all slices of
+T−
+f and T +
+f by Riemann surfaces give rise to absolutely continuous measures;
+in other words, one can transfer the regularity assumption on µ f to a (rather
+weak) regularity property of T +
+f and T−
+f .
+We refer to [7, 18, 35], as well as [21], for proofs of the results used in this
+section.
+4.1. Laminations and quasi-conformal homeomorphisms.
+4.1.1. Quasi-conformal homeomorphisms (see [1]). Let h: U→ V be an ori-
+entation preserving homeomorphism between two Riemann surfaces. One
+says that h is K-quasi-conformal if h is absolutely continuous on lines and
+|∂zh|≤ K− 1
+K + 1|∂zh|
+almost everywhere, see [1, Chapter II]. A 1-quasi-conformal mapping is con-
+formal, hence holomorphic.
+Lemma 4.1 (see [1],Chapter II, Theorem 3). If h is a quasi-conformal homeo-
+morphism, then h is absolutely continuous with respect to Lebesgue measure.
+
+=== PDF PAGE 22 ===
+DYNAMICS ON COMPLEX SURFACES 22
+To describe this statement in more details, ﬁx a local co-ordinate z on U,
+with Lebesgue measure Leb equal to the area form
+i
+2dz∧ dz.
+Then, the partial derivatives ofh are well deﬁned almost everywhere becauseh
+is absolutely continuous on lines, its jacobian determinant is locally integrable,
+and
+Leb(h(A)) =
+∫
+A
+Jac(h)(z) i
+2dz∧ dz
+for every Borel subset A of U.
+4.1.2. Laminations in bidisks (see[34, 39]). By deﬁnition, ahorizontal graph
+in the bidisk D× D is the graph{(z, ϕ(z));z∈ D} of a holomorphic function
+ϕ: D→ D; thus, horizontal graphs are smooth analytic subsets of D× D that
+intersect every vertical disk{z}× D in exactly one point. Vertical graphs are
+images of horizontal graphs by permutation of the co-ordinates.
+Consider a family of disjoint, horizontal, holomorphic graphs inD× D. If m
+is a point on the transversal{0}× D which is contained in one of these graphs,
+one denotes by ϕm : D→ D the holomorphic function such that z↦→ (z, ϕm(z))
+parametrizes the graph through m. By Montel and Hurwitz theorems, one can
+extend this family of graphs in a unique way into a laminationL of a compact
+subset K of D× D by disjoint horizontal graphs. The leaf ofL through a point
+m is denoted L(m).
+If z1 and z2 are two points on D, the vertical disks
+∆ j ={(z,w)| z = z j} ( j = 1,2)
+are transverse to the lamination L. Denote by hz1,z2 the holonomy from ∆1
+to ∆2. More generally, if ∆ and ∆′ are two complex analytic transversals (in-
+tersecting each leaf into exactly one point), one gets a holonomy map from
+∆ to ∆′. By the Λ-Lemma (see [34]), the holonomy is automatically quasi-
+conformal; in particular, it is absolutely continuous with respect to Lebesgue
+measure. The quasi-conformal constant of hz1,z2 satisﬁes
+0≤ K(z1,z2)− 1≤| z2− z1|.
+Hence it converges to 1 when ∆′ converges to ∆ in the C 1-topology.
+4.2. Laminarity and Pesin boxes.
+
+=== PDF PAGE 23 ===
+DYNAMICS ON COMPLEX SURFACES 23
+4.2.1. Pesin boxes (see [7, Section 4], and [18, 21, 35]). A Pesin box P for
+the automorphism f : X→ X consists in an open subset U of X which is bi-
+holomorphic to a bidisk D× D together with two transverse laminations Ls
+and Lu. To ﬁx the ideas the lamination Lu is horizontal: its leaves Lu(m)
+are horizontal graphs. These graphs Lu(m) intersect the vertical transversal
+{0}× D onto a compact set K− and the union of these graphs is homeomor-
+phic to the product D× K−. Similarly, Ls is a lamination by vertical graphs
+with support homeomorphic to K +× D.
+Given a point w∈ K− and a point w′∈ K +, the horizontal leaf Lu((0,w))
+intersect the vertical leaf Ls((w′,0)) in a unique point [w,w′]∈ U. This pro-
+vides a homeomorphism h between the product K−×K + and the intersection
+K⊂ U of the supports of Ls and Lu. Moreover, by deﬁnition, a Pesin box
+P = (U,Lu,Ls) must satisfy the following properties.
+(0) For µ f -almost every point x∈ K , the leaf Lu(x) (resp. Ls(x)) is con-
+tained in the global stable manifold W u(x) (resp. W s(x)).
+(1) There is a measure ν+ whose support is K + such that the laminar
+current
+T +
+P :=
+∫
+w∈K +
+{Ls(w)}dν+(w)
+is dominated by the restriction of T +
+f to U and coincides with T +
+f on
+the set of continuous (1,1)-forms whose support is a compact subset
+of the support of Ls.
+(2) There is, similarly, a uniformly laminar current T−
+P associated to the
+lamination Lu and a transverse measure ν− whose support is K−; this
+current is the restriction of T−
+f to the support of the unstable lamina-
+tion Lu.
+(3) Via the homeomorphism h: K−× K +→ K , the measure µ f corre-
+sponds to the product measure ν+⊗ ν−, i.e. µ f|K = h∗(ν+⊗ ν−).
+In a Pesin box P , the measure ν+ can be identiﬁed to the conditional mea-
+sure of µ f with respect to the lamination Ls (see property (3)). One way to
+specify this fact is the following. By property (1), one can slice T +
+f with an
+unstable leaf Lu(m) to get a measure (T +
+f )|Lu(m) (see § 2.4); then restrict this
+measure to the intersection ofLu(m) with the support of the stable lamination,
+and then push it on K + (using the holonomy of Ls); again, one gets ν+.
+Pesin boxes exist, and their union has full µ f -measure: this comes from
+Pesin theory of non-uniformly hyperbolic dynamical systems, and from the
+
+=== PDF PAGE 24 ===
+DYNAMICS ON COMPLEX SURFACES 24
+fact that T +
+f and T−
+f are Ahlfors currents of entire curves parametrizing generic
+stable and unstable manifolds. See [7, Section 4] (and also [18, 21, 35]).
+4.2.2. Laminar structure of T±
+f (see [7]). The previous section says that T±
+f
+is uniformly laminar current in each Pesin box. In fact, T±
+f is a sum of such
+currents. More precisely, there is a countable family of Pesin boxes Pi =
+(Ui,Lu
+i ,Ls
+i ), with transverse measures ν±
+i , such that the support of the stable
+laminations Ls
+i are disjoint, and T +
+f is the sum
+T +
+f = ∑
+i
+T +
+Pi
+where T +
+Pi is the laminar current
+T +
+Pi =
+∫
+w∈K +
+{Ls
+i (w)} dν+
+i (w).
+4.3. Absolute continuity of the slices of the invariant currents.
+4.3.1. Absolute continuity of the transverse measures ν± in Pesin boxes.
+Lemma 4.2. Let P = (U,Lu,Ls) be a Pesin box with transverse measures
+ν+ and ν− as in section 4.2. If µ f is absolutely continuous with respect to
+Lebesgue measure on X, then ν+ and ν− are absolutely continuous with re-
+spect to Lebesgue measure.
+The proof resides on the absolute continuity of the holonomy of Lu and
+Ls, which we obtained from the Λ-lemma. We provide this proof because it
+is closely related to the arguments of Section 7.1. There is a more general
+approach, due to Pesin, which necessitates a direct proof of the absolute con-
+tinuity of the stable and unstable laminations (see [2], chapter 8, and [56],
+chapter 7).
+Proof. Let ∆ be the vertical disk{0}× D; it is transverse to Lu. Let A⊂ ∆ be
+a Borel subset with Lebesgue measure 0. Let Lu(A) be the union of the leaves
+of Lu that intersect A. Since the holonomy maps are absolutely continuous
+(see § 4.1.2), every slice of Lu(A) by a vertical disk has Lebesgue measure
+0. Thus, by Fubini theorem and the absolute continuity of µ f , µ f (Lu(A)) = 0.
+Since µ f = h∗(ν+⊗ ν−) in K (see Property (3) of Pesin boxes), one concludes
+that ν+(A) = 0. This shows that ν+ is absolutely continuous with respect to
+Lebesgue measure. The argument is similar for ν−. □
+
+=== PDF PAGE 25 ===
+DYNAMICS ON COMPLEX SURFACES 25
+4.3.2. Slices of the invariant currents. The following general lemma will be
+useful several times.
+Lemma 4.3. Let M be a complex manifold. Let T be a closed positive (1,1)-
+current with continuous potentials on M. Let U be an open subset of C. Let
+νn : U→ M be a sequence of holomorphic mappings that converges uniformly
+to ν: U→ M on compact subsets of U. Then, the sequence of measures ν∗
+nT
+converges weakly to ν∗T as n goes to ∞.
+Proof. Let V be an open subset of M on which T is given by a continuous
+potential u. If ν maps U′⊂ U into V , then for every test function ϕ with
+support contained in U′, the dominated convergence theorem implies that
+⟨ν∗(T )|ϕ⟩ =
+∫
+U′
+u◦ ν(z)dd cϕ(z) = limn→∞
+∫
+U′
+u◦ νn(z)dd cϕ(z) = limn→∞⟨ν∗
+nT|ϕ⟩.
+The result follows. □
+Proposition 4.4. Let C be a Riemann surface. Letθ: C→ X be a non-constant
+holomorphic mapping. If µ f is absolutely continuous with respect to Lebesgue
+measure (on X), then the measures θ∗(T +
+f ) and θ∗(T−
+f ) are absolutely contin-
+uous with respect to Lebesgue measure (on C).
+Proof. According to Section 4.2.2, the current T +
+f is a countable sum of uni-
+formly laminar currents
+T +
+f =
+∞
+∑
+j=1
+T +
+P j ,
+where P j = (U j,Lu
+j ,Ls
+j) is a family of Pesin boxes with disjoint supports for
+the laminations Ls. Fix one of these Pesin boxes P j and an open subset V of
+C such that θ|V : V→ X is injective and θ(V ) is transverse to Ls
+j. It is proven
+in [7, Lemmas 8.2 and 8.3] that T +
+P j has continuous potentials and that θ∗(T +
+P j )
+coincides on V with the pull back of the transverse measure ν+
+j . Since θ is
+holomorphic and the holonomy ofLs is absolutely continuous, the pull back of
+this measure is absolutely continuous. Thus, θ∗(T +
+P j ) is absolutely continuous
+on the complement of the zeros of θ′ and the tangency points between θ(C)
+and Ls. The following lemma shows that the set of points z∈ C such that θ(z)
+is tangent to the lamination Ls
+j is actually a discrete subset of C. The same
+property holds for the zeros of θ′.
+
+=== PDF PAGE 26 ===
+DYNAMICS ON COMPLEX SURFACES 26
+Lemma 4.5 ([7], Lemma 6.4) . Let C and D be complex submanifolds of C2
+such that (i) C∩ D ={p} and (ii) TpC = TpD. Let U be a bounded neighbor-
+hood of p. If D′ is sufﬁciently close to D but D∩ D′ = /0, then the intersection
+of D′ and C in U is non-empty and non-tangential at all intersection points.
+Since θ∗(T +
+P j ) has a continuous potential, this measure has no atom. Thus,
+θ∗(T +
+P j ) is absolutely continuous with respect to the Lebesgue measure on C.
+Coming back to T +
+f , we deduce that its pull-back is a countable sum of abso-
+lutely continuous measures; since θ∗(T +
+f ) is locally ﬁnite, this measure has a
+L1
+loc density on C. □
+4.4. Lebesgue density points. Assume that µ f is absolutely continuous with
+respect to Lebesgue measure. According to Proposition 4.4 the pull-back
+of T +
+f and T−
+f by a curve θ: C→ X are absolutely continuous: in local co-
+ordinates
+θ∗(T±
+f ) = ϕ±(z) i
+2dz∧ dz
+where ϕ+ and ϕ− are non negative elements ofL1
+loc(Leb). Recall that aLebesgue
+density point for a function ϕ∈ L1
+loc(Leb) is a point z such that
+1
+πr2
+∫
+D(z,r)
+|ϕ(w)− ϕ(z)| i
+2dw∧ dw→ 0
+as r goes to 0. This notion does not depend on the choice of local co-ordinates;
+moreover, the set of density points of ϕ has full Lebesgue measure. Thus, on
+each curve W⊂ X, there is a well deﬁned set of density points
+Dens(W;T +
+f ) ={m∈ W| m is a density point of T +
+f|W}.
+In particular, each unstable manifoldW u
+f (x) contains a subset of full Lebesgue
+measure Dens(W u
+f (x);T +
+f ).
+Let us now ﬁx a Pesin boxP = (U,Ls,Lu), together with an isomorphism
+U≃ D× D; the unstable lamination Lu is a union of horizontal graphs and
+the stable one is a union of vertical graphs. One can identify Lu to a family of
+horizontal disks D×{ y} for y in K− in two ways:
+• with the holonomy maps h0,z from the vertical{0}× D to the vertical
+{z}× D; this parametrization is given by
+(x,y)∈ D× K−↦→ (x,h0,x(y)).
+• with the graphs ϕm : D→ D:
+(x,y)∈ D× K−↦→ (x, ϕ(0,y)(x)).
+
+=== PDF PAGE 27 ===
+DYNAMICS ON COMPLEX SURFACES 27
+We obtain a similar pair of homeomorphisms betweenK +×D and the support
+of Ls. Each leaf Lu(m) contains a set of density points Dens(Lu(m);T +
+f ) and
+the union of these sets is a subset of the support of Lu.
+Lemma 4.6. Let P be a Pesin box. If µf is absolutely continuous, the union of
+the density points D :=∪mDens(Lu(m);T +
+f ) is a subset of the support of Lu
+with full Lebesgue measure (resp. µ f -measure).
+Proof. Consider the second parametrization of the lamination Lu,
+D× K−−→D× D≃ U
+Φ: (x,y)↦→ (x, ϕ(0,y)(x))
+and pull-back the density set D by Φ in D× D. Since each ϕ(0,y) is holomor-
+phic, the pull-back of Dens (Lu(0,y);T +
+f ) on the horizontal disk D×{ y} has
+full Lebesgue measure. Thus, by Fubini theorem, it has full Lebesgue measure
+on D× K−. Then, slice Φ−1(D) by vertical disks and apply Fubini theorem
+again: for almost all points x in D,{x}× K− intersects Φ−1(D) onto a subset
+of full measure{x}× K−. Then, come back to U with the ﬁrst parametriza-
+tion: since the holonomy maps h0,x are absolutely continuous and map verti-
+cals to verticals, the result follows from Fubini theorem (with respect to the
+ﬁrst projection inU≃ D× D). □
+5. R ENORMALIZATION ALONG STABLE MANIFOLDS
+Our main goal in this section is the following theorem.
+Theorem 5.1. Let f be an automorphism of a complex projective surface X
+with positive entropy. Assume that the measure of maximal entropy µf = T +
+f ∧
+T−
+f is absolutely continuous with respect to Lebesgue measure. Then there
+exists a measurable subset Λ⊂ X such that (i) µ f (Λ) = 1 and (ii) every stable
+manifold Ws(x) for x∈ Λ is parametrized by an injective entire curveξs
+x : C→
+W s(x) satisfying
+ξs
+x(0) = x and (ξs
+x)∗T−
+f = i
+2dz∧ dz. (5.1)
+Remark 5.2. The parametrization of an unstable manifold W s(x) by C is
+unique up to composition by an afﬁne transformationz↦→ az + b of C. Thus,
+(1) every biholomorphism C→ W s(x) with properties (5.1) is equal to ξs
+x
+up to composition by a homothety z↦→ az with|a| = 1;
+
+=== PDF PAGE 28 ===
+DYNAMICS ON COMPLEX SURFACES 28
+(2) the parametrization ξs
+x is the same as the parametrization deﬁned in
+Section 3.2.2 up to composition by a dilatation z↦→ az, a̸= 0. This is
+the reason why we do not introduce a new notation.
+We prove Theorem 5.1 in three steps:
+• (see § 5.1) We exhibit local parametrizations ξx of a neighborhood of
+x in W s(x) such that ξ∗
+xT−
+f = α(x) i
+2dz∧ dz.
+• (see § 5.2) Let ξs
+x : C→ W s(x) be the global parametrization of W s(x)
+deﬁned in section 3.2.2. Using the ﬁrst step we obtain that(ξs
+x)∗T−
+f =
+α(x)|hx(z)|2(i/2)dz∧dz for some holomorphic functionhx on D(β(x)ρ(x)/4).
+• Finally, we show that|hx| is indeed constant by using recurrence and
+exhaustion arguments.
+5.1. First step: smoothness of a local density. In the following proposition
+Λ, β and q are respectively the measurable set and the ε-tempered functions
+introduced in Theorem 3.1. Let c > 0 be the constant introduced in Proposi-
+tion 3.3.
+Proposition 5.3. Let f be an automorphism of a complex projective surface
+X with positive entropy log λ f . Assume that µ f is absolutely continuous with
+respect to Lebesgue measure.
+(1) Then for every x∈ Λ there exist ρ(x) > 0 and an injective holomorphic
+mapping ξx : D(ρ(x))→ W s,loc(x) such that
+(i) ξx(0) = x and β(x)≤| ξ′
+x(0)|≤ 1,
+(ii) 2β(x)/3≤| ξ′
+x(z)|≤ 2 on D(ρ(x)),
+(iii) ξ∗
+xT−
+f = α(x)· i
+2dz∧ d ¯z on D(ρ(x)) for some α(x) > 0.
+(2) The Lyapunov exponents of µf satisfy
+λs =−1
+2 log λ f and λu = 1
+2 log λ f .
+Proof. We prove the ﬁrst assertion together with the estimate|log λ f + 2λs|≤
+2ε. The second assertion then follows from this estimate, applied to both f
+and f−1 for arbitrary small ε > 0.
+• Good subsets Ql,m.– To prove the proposition it sufﬁces to work in a ﬁxed
+Pesin box P because the union of all Pesin boxes has full µ f -measure. Let us
+recall that σx : D(q(x))→ W s,loc(x) is the injective parametrization of the local
+stable manifold introduced in Section 3.2.2. Let ηx : D(cq(x))→ D(q(x)) be
+
+=== PDF PAGE 29 ===
+DYNAMICS ON COMPLEX SURFACES 29
+the holomorphic function of Proposition 3.3; it satisﬁesηx(0) = 0, η′
+x(0) = 1,
+and
+f◦ (σx◦ ηx) = (σ f (x)◦ η f (x))◦ Mx.
+We recall that ξs,loc
+x = σx◦ ηx and that it is equal to the restriction of ξs
+x on
+D(cq(x)). Changing Λ in another invariant subset of full measure if nec-
+essary, Lemma 4.6 implies that for every x∈ P∩ Λ there exists a function
+ϕx∈ L1
+loc(D(cq(x))) such that 0 is a Lebesgue density point of ϕx and
+(ξs
+x)∗T−
+f = ϕx(z)· i
+2dz∧ d ¯z on D(cq(x)). (5.2)
+Since the origin 0 is a Lebesgue density point of ϕx, the value ϕx(0) is a well
+deﬁned non-negative number. Let us deﬁne for everyl≥ 1:
+Ql := P∩ Λ∩{ 1/l≤ cq(x)}∩{ 1/l≤ β(x)≤ 1}∩{ 1/l≤ ϕx(0)≤ l}.
+Then apply Lusin’s theorem to ﬁnd for every m≥ 1 a subset Ql,m⊂ Ql of
+measure (1− 1/m)µ f (Ql) on which β is continuous. One may assume Ql,m⊂
+Ql,m+1, and we have
+µ f (∪l,m≥1Ql,m) = µ(P ).
+Fix a pair of integers (l,m) and denote Ql,m by Q in what follows. Since
+the union of the sets Ql,m has full µ f -measure, we only need to prove the
+proposition for µ f -generic points x∈ Q.
+• Montel property.– Let ˜f : Q→ Q be the ﬁrst return map deﬁned as˜f (x) :=
+f r(x)(x) where r(x) is the smallest integer r≥ 1 satisfying f r(x)∈ Q. The
+induced measure ˜µ(·) := µ(Q∩· )/µ(Q) is ˜f -invariant and ergodic. Let x be a
+generic point ofQ. Birkhoff’s ergodic theorem, applied to ˜f , yields a sequence
+(n j) j depending on x such that f−n j(x) is contained in Q and converges to x.
+To simplify the exposition we avoid the indices of the subsequence and write
+f−n(x) instead of f−n j(x). Deﬁnexn := f−n(x), ηn = ηxn, and σn = σxn.
+Since cq≥ 1/l on Q = Ql,m, one can consider the restriction ηn : D(1/l)→
+D(q(xn))⊂ D. Montel’s and Hurwitz’s theorems provide a subsequence (still
+denoted ηn) such that
+(i) ηn converges towards an injective, holomorphic functionη : D(1/l)→
+D such that η(0) = 0 and η′(0) = 1. Moreover,|η(z)|≤ l|z| on D(1/l)
+by Schwarz’s lemma.
+We can also consider the restriction σn : D(1/l)→ W s,loc(xn). For large
+enough n, its image is contained in the ball Bx(2), and the image of Ψx◦
+
+=== PDF PAGE 30 ===
+DYNAMICS ON COMPLEX SURFACES 30
+Ψ−1
+xn ◦ σn is a graph above the vertical axis. Moreover |σ′
+n(0)|≥ β(xn)≥ 1/l.
+Montel’s theorem and the continuity of β on Q = Ql,m then yield
+(ii) σn converges towards an injective holomorphic mappingσ : D(1/l)→
+W s,loc(x) such that σ(0) = x and|σ′(0)|≥ β(x)≥ 1/l.
+Thus, the function ξ := σ◦ η : D(1/l2)→ W s,loc(x) is well deﬁned, injective
+and satisﬁes σ◦ η(0) = x; by construction, the sequence of parametrizations
+ξs
+n := σn◦ ηn converges towards the holomorphic mapξ on D(1/l2). This map
+will be our desiredξx, it is a non-constant holomorphic mapping with values in
+the stable manifold W s(x) (we shall compare it with ξs
+x in Section 5.2). Since
+all ξs
+n satisfy the Lipschitz property listed in Section 3.2.2, we get
+2β(x)/3≤| ξ′(z)|≤ 2 on D(1/l2).
+• Renormalization.– The identity ( f n)∗T−
+f = λ−n
+f T−
+f for n≥ 1 implies
+( f n◦ ξs
+n)∗T−
+f = λ−n
+f (ξs
+n)∗T−
+f on D(1/l2).
+Proposition 3.3 yields
+( f n◦ ξs
+n)∗T−
+f = (ξs
+x◦ Mn)∗T−
+f on D(1/l2),
+where Mn is deﬁned by Mn := Mx−1◦···◦ Mx−n. Note that Mn(z) = mn· z on
+D(1/l2) with|mn|∈ enλs· [e−nε,enε]. Combining these equations, one gets
+(ξs
+n)∗T−
+f = λn
+f M∗
+n (ξs
+x)∗T−
+f on D(1/l2). (5.3)
+Now, denote by ϕn the density of (ξs
+n)∗T−
+f and by ϕx the density for (ξs
+x)∗T−
+f ,
+as in Equation (5.2). Equation (5.3) gives
+ϕn(z) = λn
+f|mn|2ϕx(z).
+Since xn and x are in the set Q, the origin is a Lebesgue density point for the
+densities ϕn and ϕx, and l−1≤ ϕn(0), ϕx(0)≤ l. Thus,
+l−2≤ λn
+f|mn|2≤ l2.
+Taking logarithms and dividing by n leads to
+|log λ f + 2λs| < 2ε
+as desired. Moreover, taking a subsequence, one may assume that λn
+f|mn|2
+converges to a positive real number θ∈ [l−2,l2].
+Now, we come back to the equation (5.3) which can be written
+(ξs
+n)∗T−
+f = λn
+f|mn|2· ϕx(mnz)· i
+2dz∧ d ¯z on D(1/l2). (5.4)
+
+=== PDF PAGE 31 ===
+DYNAMICS ON COMPLEX SURFACES 31
+The left hand side converges to(ξ)∗T−
+f in the sense of distributions onD(1/l2),
+because T−
+f has continuous potentials (see Lemma 4.3). The right hand side
+converges in the sense of distributions to
+θ· ϕx(0)· i
+2dz∧ d ¯z,
+because Mn converges locally uniformly to the constant mapping 0 on compact
+subsets of D(1/l2) and 0 is a Lebesgue density point forϕx. As a consequence,
+(ξ)∗T−
+f = θ· ϕx(0)· i
+2dz∧ d ¯z on D(1/l2).
+Setting ξx = ξ, ρ(x) = 1/(l2) and α(x) = θ ϕx(0) we get ξ∗
+xT−
+f = α(x)· i
+2dz∧d ¯z
+on D(ρ(x)), as desired (ρ(x) can be deﬁned as the best constant l for which x
+is in Ql,m). □
+5.2. Second step: from ξx to ξs
+x. We need to translate Proposition 5.3 in
+terms of the global parametrization ξs
+x : C→ W s(x). Proposition 5.3 asserts
+that there is a parametrization ξx : D(ρ(x))→ W s(x) of a small neighborhood
+of x in W s(x) such that ξ∗
+xT−
+f = α(x)(i/2)dz∧ d ¯z on D(ρ(x)). Both ξx and ξs
+x
+satisfy the Lipschitz property
+2β(x)/3≤| ξ′(z)|≤ 2
+on their domain of deﬁnition, thus (ξs
+x)−1◦ ξx is deﬁned on D(ρ(x)) and the
+modulus of its derivative is bounded from below byβ(x)/3 and from above by
+3β(x)−1; moreover, its derivative at the origin is in between β(x) and β(x)−1.
+This function is injective and its domain of deﬁnition is D(ρ(x)). By Koebe
+one quarter theorem, its image contains the disk of radius β(x)ρ(x)/4, so that
+the reciprocal function is deﬁned on D(β(x)ρ(x)/4) and has derivative be-
+tween β(x)/3 and 3β(x)−1 on this disk.
+In order to pull back T−
+f by ξs
+x, one can ﬁrst compute its pull back by ξx,
+the result being α(x)(i/2)dz∧d ¯z, and then take its pull-back under(ξx)−1◦ ξs
+x.
+This gives
+(ξs
+x)∗T−
+f = α(x)|hx(z)| i
+2dz∧ d ¯z (5.5)
+on D(β(x)ρ(x)/4), where hx is holomorphic and|hx(z)| is bounded by
+β(x)/3≤| hx(z)|≤ 3β(x)−1. (5.6)
+
+=== PDF PAGE 32 ===
+DYNAMICS ON COMPLEX SURFACES 32
+5.3. Final step for the proof of Theorem 5.1. Now, ﬁx a Pesin box P , and
+a subset Q = Ql,m as in the proof of Proposition 5.3. Then, there exists an
+integer N such that
+1/N≤ (βρ/4)2≤ 1, 1/N≤ β/3≤ 1, and 1 /N≤ α≤ N
+on the set Q. Apply Birkhoff ergodic theorem: for a generic point x of Q there
+is a sequence of points f−ni(x)∈ Q that converges towards x. As above, we
+drop the index i from ni, and write xn for f−n(x), ξs
+n for ξs
+xn. As in Equation
+(5.3), we obtain
+(ξs
+x)∗T−
+f = λn
+f M∗
+n (ξs
+xn)∗T−
+f on C, (5.7)
+where Mn is a linear mapz↦→ mn·z with|mn|∈ enλs· [e−nε,enε]. Equation (5.5)
+shows that the right hand side of Equation (5.7) has density
+λn
+f|M′
+n|2· α(xn)·| hn(Mn(z))|2 (5.8)
+on M−1
+n (D(1/N)), where hn is holomorphic with modulus in [1/N,N]. Again,
+evaluation at z = 0 gives λn
+f|mn|2· α(xn)∈ [1/N5,N5], so that a subsequence
+of λn
+f|mn|2· α(xn) converges to some θ in [1/N5,N5]. Moreover Montel’s
+theorem and Equation (5.6) imply that the sequence (hn)n is equicontinu-
+ous on D(1/N); thus a subsequence converges locally uniformly to a function
+h : D(1/N)→ C with modulus in [1/N,N].
+Let γ(x) := θ|h(0)|2. Let K be a compact subset ofC and restrict the study to
+integers n≥ 1 such that K⊂ M−1
+n (D(1/N)). Since (Mn)n converges uniformly
+to zero on K, we get
+(ξs
+x)∗T−
+f = γ(x) i
+2dz∧ d ¯z on K.
+The same formula holds onC by compact exhaustion. Changing ξs
+x into ξs
+x(az)
+with|a|−2 := γ(x), we obtain the parametrization promised by Theorem 5.1.
+6. N ORMAL FAMILIES OF ENTIRE CURVES
+6.1. Singularities. In this section, we need to work on the surface X0, ob-
+tained by contracting all periodic curves of f . This surface may be singular.
+We refer to [30, 28] for all necessary concepts of pluri-potential theory on
+singular analytic spaces.
+Note that, up to now, all arguments were done on the smooth surface X,
+most of them at a generic point for µ f , but they could have been done on X0
+directly. (we worked on X to simplify the notations).
+
+=== PDF PAGE 33 ===
+DYNAMICS ON COMPLEX SURFACES 33
+Remark 6.1. Birkhoff ergodic theorem tells us that the forward orbit of a µ f -
+generic point equidistributes with respect to µ f .
+Let ξ: C→ X be an injective parametrization of a stable (resp. unstable)
+manifold W s(x). Assume that ξ is not contained in a periodic algebraic curve.
+Let D be an irreducible periodic algebraic curve, and suppose f (D) = D for
+simplicity. If W s(x) intersects D, the forward orbit of x converges towards D.
+On the other hand, µ f (D) = 0 because µ f does not charge any proper analytic
+subset of X. Thus, x is not a generic point with respect to µ f .
+Thus, in the deﬁnition of the set of generic points Λ in Oseledets-Pesin
+theorem (Theorem 3.1), we can add the hypothesis that the global stable man-
+ifolds W s(x), x∈ Λ, do not intersect the periodic curves of f (in X0, they do
+not go through the singularities). In particular, the injective parametrization
+ξs
+x : C→ X remains injective when one projects it into X0.
+In what follows, we keep the same notation ξu/s
+x for the unstable and stable
+manifolds, but consider them as entire curves in X0. We also keep the same
+notation T±
+f for the invariant currents.
+6.2. The family of entire curvesAu
+f . Let f be an automorphism of a complex
+projective surface with positive entropy and letT±
+f be the invariant currents of
+f deﬁned in Section 2.5. Let π : X→ X0 be the morphism that contracts the
+periodic curves of f (see Proposition 2.1). Let X reg
+0 be the smooth part of X0.
+Let T±
+0 := π∗T±
+f ; Remark 2.6 shows that these currents are well deﬁned and
+have continuous potentials.
+Deﬁnition 6.2. Let Au
+f be the family of entire curves ξ: C→ X0 such that
+ξ∗(T +
+0 ) = i
+2dz∧ dz and ξ∗(T−
+0 ) = 0.
+If µ f is absolutely continuous, Theorem 5.1 and Remark 6.1 show that al-
+most every unstable manifoldW u
+f (x) can be parametrized by an injective entire
+curve ξu
+x : C→ X0 that belongs to Au
+f . In particular Au
+f is not empty.
+6.3. Zalcman’s theorem and compactness ofAu
+f . Let M be a compact com-
+plex space. Fix a hermitian metric on M (see [30]).
+We say that a sequence of entire curves ξn : C→ M converges towards
+ξ: C→ M if ξn converges locally uniformly to ξ. A family E of entire curves
+on M is closed if the limit of every converging sequence (ξn)∈ E N is an
+element of E. It is normal if every sequence of elements of F contains a
+converging subsequence. It is compact if it is non empty, normal and closed.
+
+=== PDF PAGE 34 ===
+DYNAMICS ON COMPLEX SURFACES 34
+Lemma 6.3 (Zalcman [62]). Let M be a compact, complex analytic space.
+If a sequence of entire curves ξn : C→ M is not normal then there exists a
+sequence of afﬁne automorphisms z↦→ anz + bn such that
+(1) lim n an = 0,
+(2) the sequence νn : C→ M deﬁned by z↦→ ξn(anz + bn) converges to-
+wards a Brody curve ν: C→ M.
+The following result is a fundamental step in the proof of our main theorem.
+Its statement does not require any assumption on µ f .
+Theorem 6.4. Let f be an automorphism of a complex projective surface X
+with positive entropy, with π: X→ X0 the birational morphism that contracts
+the f -periodic curves. If non-empty, Au
+f is a compact family.
+Proof. Lemma 4.3 implies that Au
+f is closed. Let us prove that Au
+f is a normal
+family. If not, Zalcman’s Lemma provides a sequence ξn∈ Au
+f and automor-
+phisms gn : z↦→ anz + bn such that
+νn : z↦→ ξn(anz + bn)
+converges towards a Brody curve ν: C→ X0. This curve satisﬁes
+ν∗(T +
+0 ) = limn→∞ ν∗
+n(T +
+0 ) = limn→∞g∗
+n( i
+2dz∧ dz) = 0
+because limn an = 0. Similarly, ν∗(T−
+0 ) = 0. This contradicts the second as-
+sertion in Corollary 3.15. □
+6.4. The compact family Bu
+f of unstable manifolds. We assume that µ f is
+absolutely continuous, so that Au
+f is not empty.
+Deﬁnition 6.5. Let Bu
+f be the smallest compact subset of Au
+f that contains all
+injective parametrizations of unstable manifolds which are in Au
+f . We set
+Bu
+f (X0) = X reg
+0
+⋂ ⋃
+ξ∈Bu
+f
+ξ(C).
+Note that Au
+f and Bu
+f are invariant under translation and rotation: if ξ is an
+element of one of these sets, thenz↦→ ξ(eiθz +b) is an element of the same set
+for all b∈ C and θ∈ R. Using this remark, one veriﬁes thatBu
+f (X0) is a closed
+subset of X reg
+0 , because Bu
+f is a compact family of entire curves. The sets
+Bs
+f and Bs
+f (X0) are deﬁned in a similar way, with parametrizations of stable
+manifolds such that (ξs
+x)∗T−
+f = ( i
+2 )dz∧ dz.
+Let us now derive further properties of Bu
+f and Bu
+f (X0).
+
+=== PDF PAGE 35 ===
+DYNAMICS ON COMPLEX SURFACES 35
+Lemma 6.6. Let η1, η2 be elements of Bu
+f . Then either η1(C) and η2(C) are
+disjoint or η1(C) = η2(C). In the later case η1(z) = η2(eiθz + b) on C for
+some b∈ C and θ∈ R.
+Proof. The ﬁrst property follows from Hurwitz’s lemma (see [7], Lemma 6.4):
+Lemma 6.7 (Hurwitz). Let Cn and Dn be two families of irreducible curves in
+the unit ball of C2. Assume that C n∩ Dn is empty for all n, that C n converges
+to an irreducible curve C uniformly and that D n converges to an irreducible
+curve D uniformly. Then either C∩ D is empty or C coincides with D.
+To prove the second property, assume that η1 and η2 have the same im-
+age W. Let m be a point of W and ﬁx two pointsz1 and z2 such that η1(z1) =
+η2(z2) = m. Assume that m and z2 satisfy (η2)′(z2)̸= 0; one can always ﬁnd
+such pairs (m,z2) because η2 is not constant. Then η2 determines a local dif-
+feomorphism from a neighborhood of z2 in C to a neighborhood of m in W.
+The map ϕ = η−1
+2 ◦ η1 is deﬁned on a small disk centered at z1, is holomor-
+phic, and preserves (i/2)dz∧ d ¯z. Thus, ϕ(z) = eiθz + b for some b∈ C and
+θ∈ R. As a consequence, there is a non-empty open subset of C on which
+η2(eiθz + b) = η1(z); this property holds on C by analytic continuation. □
+Lemma 6.8. Let x be an element of Bu
+f (X0) and ξ be an element of Bu
+f with
+x = ξ(0). Let ε be a positive real number. There exists a neighborhoodV of x
+in Xreg
+0 such that: for every η∈ Bu
+f with η(0)∈ V , there existsθ∈ R satisfying
+∀z∈ Dr0, distX0(η(eiθz), ξ(z))≤ ε.
+Proof. If not, there exists a sequence ηn∈ Bu
+f such that ηn(0)∈ Bx( 1
+n) and
+∀θ∈ R,∃zn,θ∈ Dr0, dist(ηn(eiθzn,θ), ξ(zn,θ)) > ε.
+For every angle θ∈ R, choose a limit point zθ∈ Dr0 of the sequence zn,θ. By
+compactness of Bu
+f , one can assume that ηn converges to some η∈ Bu
+f with
+η(0) = x. By construction,
+∀θ∈ R, distX0(η(eiθzθ), ξ(zθ))≥ ε.
+In particular η is not equal to ξ up to a rotation, contradicting Lemma 6.6. □
+Proposition 6.9. Assume that the measure µ f is absolutely continuous with
+respect to Lebesgue measure. Let ξ be an element of Bu
+f . Then
+(1) ξ(C)∩ X reg
+0 is contained in Bu
+f (X0)∩ Bs
+f (X0);
+(2)∀z∈ C, ξ(z) is contained in the image of an entire curve ν∈ Bs
+f ;
+
+=== PDF PAGE 36 ===
+DYNAMICS ON COMPLEX SURFACES 36
+(3) the set of points z∈ C such that ξ intersects a stable manifold ξs
+y of f
+transversely at ξ(z) is dense in C.
+The same result holds if one permutes the roles of stable and unstable parame-
+trizations.
+Proof. (recall that, for simplicity, the current π∗(T±
+f ) is still denoted T±
+f )
+Assertion (2) is weaker than assertion (1). Thus, we only prove (1) and
+(3). First, by deﬁnition, ξ(C)∩ X reg
+0 is contained in Bu
+f (X0). Since Bu
+f (X0)
+is a closed subset of X reg
+0 , it contains ξ(C)∩ X reg
+0 ; similarly, Bs
+f (X0) contains
+η(C)∩ X reg
+0 for all curves η∈ Bs
+f . Since ξ∗T +
+f coincides with Lebesgue mea-
+sure, it has full support. But T +
+f is an Ahlfors-Nevanlinna current for every
+stable manifold ξs
+x : C→ X0 (see § 3.11). Taking ξs
+y in Bs
+f , we obtain
+ξ(C)⊂ ξsy(C)⊂ Bs
+f (X0),
+and the ﬁrst assertion follows from these inclusions.
+To prove assertion (3), we use the same curve ξs
+y∈ Bs
+f (X0). Recall that T +
+f
+is laminar and has continuous potentials. By [7, section 8], this implies that
+the slice of T +
+f by ξ is geometric; in particular, ξs
+y(C) intersects ξ(C) on a
+dense subset. By Lemma 4.5, each of these intersections can be approximated
+by transverse ones. This completes the proof of the proposition. □
+6.5. Local laminations. Every ξ∈ Bu
+f is a uniform limit of (generic) unstable
+manifolds ξu
+n∈ Au
+f ; in particular, ξu
+n takes values in X reg
+0 and (ξu
+n)′(z)̸= 0 for
+every z∈ C. But it may happen that ξ′(z) = 0 for some z∈ C. For instance, in
+(singular) Kummer examples, the velocity vanishes for the stable and unstable
+manifolds when they pass through the singularities of the surface.
+Deﬁnition 6.10. The velocity v(x) at a point x∈ Bu
+f (X0) is deﬁned by
+v(x) :=∥ ξ′(0)∥,
+where ξ is any element of Bu
+f such that ξ(0) = x. The set Bu
+f (X0) is partitioned
+into the set
+Bu,+
+f (X0) :=
+{
+x∈ Bu
+f (X0) , v(x) > 0
+}
+and
+Bu,0
+f (X0) :=
+{
+x∈ Bu
+f (X0) , v(x) = 0
+}
+.
+The fact that the velocity is well deﬁned, i.e. does not depend on the choice
+for ξ, follows from Lemma 6.6.
+
+=== PDF PAGE 37 ===
+DYNAMICS ON COMPLEX SURFACES 37
+Proposition 6.11. Assume that µ f is absolutely continuous. Let x be a point
+in Bu,+
+f (X0) and ξ be an element of Bu
+f such that ξ(0) = x. There are neigh-
+borhoods U⊂ U′ of x in X reg
+0 such that
+(1) U′ is isomorphic to a bidisk D× D.
+(2) The connected component of ξ(C)∩ U′ that contains x is a horizontal
+graph in U.
+(3) There is a laminationLu of the whole open setU by horizontal graphs,
+each of which is contained in the image of a curve η∈ Bu
+f . In particu-
+lar x is an interior point of Bu
+f (X0) in the complex surface Xreg
+0 .
+(4) If η is an element ofBu
+f , ∆ is an open subset ofC and η(∆) is contained
+in U then η(∆) is contained in a leaf of this lamination.
+(5) There is a transversal to the laminationLu which is a piece of a stable
+manifold of f .
+(6) The support of µ f in U coincides with U.
+U
+U"
+U’
+V
+FIGURE 1. The point x is the red point right in the middle. The
+open set V is the red shaded ball, the open set U is grey; U′ is light
+grey with a green contour, and U” is white with a blue contour. The
+horizontal curves represent pieces of unstable manifolds (one of them
+is not a graph above D).
+Proof. By deﬁnition,ξ′(0)̸= 0. Hence, there exist r0 > 0 and neighborhoods
+U′⊂ U′′ of x in X reg
+0 such that
+• ξ(Dr0) is a smooth curve,
+
+=== PDF PAGE 38 ===
+DYNAMICS ON COMPLEX SURFACES 38
+• the pair of open sets (U′,U′′) is isomorphic to a pair of bidisks (D×
+D, DR× DR), with R > 1,
+• ξ(∂Dr0)⊂ X reg
+0 \ U′ and ξ(Dr0) is contained in U′′,
+• ξ(Dr0)∩ U′ is a horizontal graph in the bidisk U′.
+Changing (U′,U′′) if necessary there exists r < r0 such that ξ(Dr0)∩ U′ =
+ξ(Dr).
+Lemma 6.12. Let r0 > 0 and U′ as above. There exists a neighborhood V of
+x in Xreg
+0 such that for every η∈ Bu
+f with η(0)∈ V , the curve η(Dr0)∩ U′ is a
+horizontal graph in U′.
+Proof. Apply Lemma 6.8: given ε > 0, there is a neighborhoodV of ξ(0) such
+that every curve η∈ Bu
+f with η(0)∈ V is ε-close to ξ on Dr0 after composition
+with a rotation z↦→ eiθz. All we need to prove, is that η is also a horizontal
+graph if ε is small enough.
+Let π: U′′≃ DR× DR→ DR denote the ﬁrst projection. The holomorphic
+mappings π◦ ξ and π◦ η are ε-close on Dr0. On the smaller disk Dr, the map
+π◦ ξ is one-to-one, with image equal to the unit disk D. If ε is small enough,
+|π◦ η− π◦ ξ| <|π◦ ξ| on the boundary of Dr0. Thus, Rouché theorem implies
+that π◦ η: Dr→ D is also one-to-one, and the result follows. □
+Fix V as in the previous lemma. The curves η(Dr0)∩ U′ with η∈ Bu
+f and
+η(0)∈ V form a family of horizontal graphs inU′. Let U be the union of these
+graphs. By Lemma 6.6 it is laminated by disjoint horizontal graphs; we denote
+this lamination by Lu. It remains to prove that U is an open neighborhood of
+ξ(Dr) in U′.
+Apply Proposition 6.9, Assertion (3), to the curve ξ. One can ﬁnd an ele-
+ment ξs
+y of Bs
+f such that ξs
+y(0)∈ ξ(Dr)∩ V , with transverse intersection. Let
+∆ be a disk centered at the origin for which ξs
+y(∆) is contained in V . Ap-
+ply Proposition 6.9, Assertion (1), but to the stable manifold ξs
+y: every point
+of ξs
+y(∆) is contained in the image of a curve η∈ Bu
+f . Thus, the set U con-
+tains ξs
+y(∆). But U is laminated, and the λ-lemma implies that the holonomy
+of a lamination are (quasi-conformal) homeomorphisms. Thus, U contains a
+neighborhood of ξ(Dr).
+For property (5), shrink ∆ and U to assure that ξs
+y(∆) is transverse to Lu.
+The previous argument shows that the support of the restriction T−
+f|U co-
+incides with U because its slice ξs
+y(T−
+f )|∆ is the Lebesgue measure (see the
+proof of Proposition 6.9). To prove property (6), ﬁx a small ballB⊂ U. Since
+
+=== PDF PAGE 39 ===
+DYNAMICS ON COMPLEX SURFACES 39
+T−
+f charges B, there is an unstable manifold that enters B. Take a point x′∈ B
+on this unstable manifold which intersects a stable manifold transversally, and
+apply properties (1) to (5) for the stable manifolds: we get a stable lamination
+Ls of a neighborhood W of x′ which is transverse to Lu. In W , the product of
+T−
+f and T u
+f is strictly positive; hence µ f (B) > 0. □
+7. H OLOMORPHIC FOLIATION AND HARTOGS EXTENSION
+We conclude the proof of the main theorem. The ﬁrst step is to promote the
+local laminations obtained in Proposition 6.11 into local holomorphic folia-
+tions. Then we use Hartogs phenomenon to extend the foliation into a global,
+singular foliation of X. The theorem eventually follows from a classiﬁcation
+of automorphisms preserving holomorphic foliations.
+7.1. From laminations to holomorphic foliations. Proposition 6.11 asserts
+that Bu
+f determines near every x∈ Bu,+
+f (X0) a local lamination denoted by
+Lu. In this section we promote these local laminations into local holomorphic
+foliations.
+Proposition 7.1. The local laminations Lu are holomorphic.
+Proof. The following argument is due to Ghys (see [38, 18]).
+Let U and U′ be connected open subsets of X reg
+0 such that U′ is biholomor-
+phic to a bidisk D× D, U is contained in U′, and the lamination Lu of U is
+made of disjoint horizontal graphs (as in Fig. 1). Denote by (x1,x2) the coor-
+dinates in U′≃ D× D and by π1 and π2 the two projections ( πi(x1,x2) = xi,
+i = 1,2). Let p = (p1, p2) be a point of U and ∆p⊂ U′ be the vertical curve
+{x1 = p1}. Denote by γ a continuous path in the leaf through x that starts
+at x and ends at another point q = (q1,q2). The holonomy map from the
+transversal ∆p to the transversal ∆q :={x1 = q1} is a homeomorphism hγ from
+∆p,U := ∆p∩ U to its image ∆q,U := ∆q∩ U. According to the Λ-lemma,
+this homeomorphism hp,q is K(p,q)-quasi-conformal, with a constant K(p,q)
+satisfying
+0≤ K(p,q)− 1≤ dist(p,q).
+Recall that a 1-quasi-conformal map is conformal, hence holomorphic (see
+§ 4.1.1).
+Instead of looking at vertical disks, we ﬁrst choose pairs of disks ∆ and ∆′
+which are contained in stable manifolds of f and are transverse to the lam-
+ination. Let γ be a path in a leaf Lu(m) that joins the intersection points
+
+=== PDF PAGE 40 ===
+DYNAMICS ON COMPLEX SURFACES 40
+x := ∆∩ Lu(m) and x′ := Lu(m)∩ ∆′, let hγ be the (germ of) holonomy from
+∆ to ∆′. Applying f−n and using Remark 3.6 there exists αn∈ C∗ such that
+f−n◦ ξu
+x(z) = ξu
+f−n(x)(αnz).
+Proposition 3.5 precisely asserts that limn αn = 0 for almost every point x.
+Using Poincaré recurrence theorem we can assume that f−n(x)∈ U. This
+and the compactness of Bu
+f imply that the path γ is shrunk uniformly under the
+action of f−n; simultaneously, the disks ∆ and ∆′ are mapped to large disks
+f−n(∆) and f−n(∆′): the connected components of f−n(∆)∩U and f−n(∆′)∩
+U containing f−n(x) and f−n(x′) are (smaller) vertical disks in U, and their
+relative distance goes to 0 with n. Thus, the holonomy h−n between these
+disks is Kn-quasi-conformal, with lim n Kn = 1. But f n conjugates h−n with
+hγ on a small neighborhood of x in ∆. Hence, for almost every point x∈ ∆
+(with respect to the conditional measure of µ f and therefore also with respect
+to Lebesgue measure), and for every ε > 0, the holonomy hγ is (1 + ε)-quasi-
+conformal on a small neighborhood∆ε⊂ ∆ of x. This implies that hγ is (1+ε)-
+quasi-conformal for all ε > 0; hence, hγ is indeed conformal.
+We have proved that the holonomy between two transversal disks which
+are contained in stable manifolds is holomorphic. By Proposition 6.9 these
+transversal disks form a dense subset of transversals. Consequently, the ho-
+lonomy between all pairs of vertical disks ∆x and ∆y is holomorphic. This
+implies that the lamination Lu is holomorphic. □
+7.2. A holomorphic foliation F u on Bu,+
+f (X0).
+Lemma 7.2. The local holomorphic foliations Lu deﬁned near every point of
+Bu,+
+f (X0) can be glued together to provide a holomorphic foliation F u of the
+open set Bu,+
+f (X0).
+Proof. Propositions 6.11 and 7.1 show that ifx is in Bu,+
+f (X0), then there exists
+a neighborhood U of x and a holomorphic foliation Lu of U such that all
+entire curves η∈ Bu
+f are tangent to Lu. More precisely, if η is an element of
+Bu
+f and η(∆) is contained in U, then η(∆) is contained in a leaf of Lu; in other
+words, if ωu is a holomorphic 1-form on U which deﬁnes the foliation Lu,
+then η∗ωu = 0 on ∆. The holomorphic foliation F u can therefore be deﬁned
+as the unique holomorphic foliation ofBu,+
+f (X0) such that the generic unstable
+manifolds of f are leaves of F u. □
+
+=== PDF PAGE 41 ===
+DYNAMICS ON COMPLEX SURFACES 41
+7.3. Hartogs extension of the holomorphic foliation F u. The holomorphic
+foliation F u is deﬁned on the open set Bu,+
+f (X0). Now, we extend it to X reg
+0
+(i.e. to Bu,0
+f (X0)).
+Proposition 7.3. Let x be an element ofBu,0
+f (X0). There exists a neighborhood
+V of x∈ X reg
+0 such that the holomorphic foliation F u extends as a (singular)
+holomorphic foliation of V .
+To prove this proposition, ﬁx a curveξ∈ Bu
+f with ξ(0) = x (and ξ′(0) = 0).
+Remark 7.4. The curve ξ(D) may have a singularity at x, but Proposition
+15 of [51] rules out this eventuality (see also [9]). On the other hand, this
+argument does not exclude the possibility of a vanishing velocity. (thanks to
+Misha Lyubich for pointing out this reference)
+Even if ξ(D) is singular, there exists an open neighborhoodV of x such that
+(i) V⊂ C2 up to a local choice of co-ordinates,
+(ii) the connected component of ξ−1(V ) containing 0 is a disk Dr,
+(iii) ξ′(0) = 0 but ξ′ does not vanish on Dr\{ 0}.
+Fix a radius s with 0 < s < r/3. Since ξ′ does not vanish on ∂Ds, there is an
+open neighborhood U⊂ V of ξ(∂Ds) and a holomorphic foliation Lu on U
+such that all entire curves η∈ Bu
+f are tangent to Lu in U.
+Fix ε > 0. Let θ∈ R and deﬁne xθ := ξ(seiθ). By Lemma 6.8 there ex-
+ists a neighborhood U(θ, ε)⊂ U of xθ such that, if η∈ Bu
+f and η(seiθ)∈
+U(θ, ε), then there exists a complex number a with|a| = 1 such that η(z) and
+ξ(az) are ε-close on Dr. In particular, the curve η(D2s) is contained in an
+ε-neighborhood of ξ(Dr).
+Thus, there is a neighborhood U0⊂ U of ξ(∂Ds) satisfying
+•∀ m∈ U0, the leaf of Lu through m is contained in a diskη(D2s) where
+η is an element of Bu
+f which is ε-close to ξ on Dr;
+• if (xn)∈ UN
+0 converges towards a point of ξ(Ds), one can choose such
+disks ηn(D2s) with ηn∈ Bu
+f converging towards ξ uniformly on Dr.
+Let (xn)n≥1 be such a sequence, with the additional property that xn is con-
+tained in an unstable manifold of f for all n. Then, ηn is a parametrization
+of an unstable manifold, and therefore η′
+n does not vanish. Hence, there is
+an open neighborhood Un of ηn(Ds) such that Lu extends as a holomorphic
+foliation of U0∪ Un. As explained in Section 7.2, the extensions of Lu to the
+open sets Un are compatible, and determine a foliation of U∞ :=∪n≥0Un.
+
+=== PDF PAGE 42 ===
+DYNAMICS ON COMPLEX SURFACES 42
+Note that U∞ is a subset of V⊂ C2. The slopes of the leaves of Lu deter-
+mine a holomorphic function su : U∞→ P1 (with P1 the projective line of all
+possible “slopes”). Such a function extends as a meromorphic function ˆsu on
+the envelop of holomorphy ˆU∞ of U∞ (see [42]). The function ˆsu determines
+a (singular) holomorphic foliation on ˆU∞ which extends Lu.
+It remains to show that ˆU∞ contains a neighborhood of ξ(Ds), hence a
+neighborhood of x. For this purpose, we apply the following theorem to
+D = U∞, Sn = ηn(Ds) and S = ξ(Ds), and we remark that the boundaries
+η(∂Ds) are contained in a compact neighborhood K of ξ(∂Ds) with K⊂ U0.
+Theorem 7.5 (Behnke-Sommer, [27], chapter 13) . Let D be a bounded do-
+main of Cm, m≥ 2. Let Sn be a sequence of complex analytic curves which are
+properly contained in D. Assume that S n converges towards a curve S⊂ Cm
+and that the boundaries ∂Sn converge to a curve Γ⋐ D. Then every holomor-
+phic function h∈ O(D) extends to a neighborhood of S.
+Since, on a surface, the singularities of a holomorphic foliation are isolated
+(they correspond to the indeterminacy points of the “slope function ˆsu”), there
+is an open neighborhood ofx in which Lu has at most one singular leaf, namely
+the leaf ξ(Dr).
+Corollary 7.6. The set Bu
+f (X0) coincides with X reg
+0 and the foliation F u ex-
+tends to a (singular) holomorphic foliation of X reg
+0 , and this foliation is f -
+invariant. Its lift to X by the birational morphism π: X→ X0 determines a
+(singular) f -invariant foliation of X.
+Proof. The set Bu
+f (X0) is closed. Propositions 6.11 and 7.3 show that Bu
+f (X0)
+is also open. Since X reg
+0 is isomorphic to the complement of ﬁnitely many
+curves in X, it is connected. Thus, Bu
+f (X0) is equal to X reg
+0 , and X reg
+0 supports
+a (singular) holomorphic foliation F u, such that every unstable manifold of f
+is a leaf of F u. This implies that f preserves F u.
+It remains to show that F u lifts to a holomorphic foliation of X. In the
+complement X′ of the periodic curves of f , the foliation π∗F u is a well-deﬁned
+holomorphic foliation. Given an open covering Ui of X′, the foliation π∗F u
+is deﬁned by local holomorphic vector ﬁeldsvi with isolated zeroes, such that
+on Ui∩ U j
+vi = gi, jv j
+for some non-vanishing holomorphic function gi, j∈ O∗(Ui∩ U j). This cocy-
+cle determines a line bundle onX′: the cotangent bundle T∗
+π∗F u of π∗F u. Since
+
+=== PDF PAGE 43 ===
+DYNAMICS ON COMPLEX SURFACES 43
+the periodic curves can be contracted, they are contained in arbitrarily small
+pseudo-convex open subsets of X, and the line bundle T∗
+π∗F u can be extended
+to a line bundle T on X. The relations vi = gi, jv j can be thought of as deﬁn-
+ing relations of a holomorphic section v of T⊗ T X on the open subset X′.
+Again, this section extends to a global holomorphic section on X. This sec-
+tion corresponds to local vector ﬁelds extendingπ∗F u to a global, f -invariant,
+(singular) holomorphic foliation on X. □
+7.4. Proof of the main theorem. To complete the proof of the main theorem,
+we refer to the articles [18] and [22, Théorème 3.1], in which the following
+theorem is proved:
+Theorem 7.7. Let X be a compact Kähler surface, with a (singular) holomor-
+phic foliation F and an automorphism f : X→ X of positive entropy. If f
+preserves F , then (X, f ) is a Kummer example, and the stable (or unstable)
+manifolds of f are leaves of F .
+The results of [18, 22] are more general: they classify triples (X,F , f )
+where X is a smooth surface, F is a (singular) holomorphic foliation of X,
+and f is a birational transformation of X of inﬁnite order preservingF .
+8. C ONSEQUENCES AND APPLICATIONS
+8.1. Equivalent dynamical characterizations. As before, consider an auto-
+morphism f of a complex projective surface X, with positive entropy logλ f .
+8.1.1. Ruelle’s inequalities and absolute continuity. The ﬁrst part of the fol-
+lowing result is due to Ruelle. The second part is proved by Ledrappier in [49,
+Corollaire 5.6], in a more general setting. Here the local product structure of
+µ f leads to a somewhat simpliﬁed proof.
+Proposition 8.1 (Ruelle, Ledrappier). Let X be a complex projective surface
+and f be an automorphism of X with positive entropy log λ f . Then the Lya-
+punov exponents of f with respect to µ f satisfy
+λs≤− 1
+2 log λ f and λu≥ 1
+2 log λ f .
+If equality holds simultaneously in these two inequalities, then µf is absolutely
+continuous with respect to Lebesgue measure.
+
+=== PDF PAGE 44 ===
+DYNAMICS ON COMPLEX SURFACES 44
+Proof. Ruelle’s inequality states that log(λ f )≤ 2 λu and log(λ f )≤− 2 λs (see
+[57] and [46], p. 669). Assume that equality holds simultaneously in these
+two inequalities. Fix a Pesin box P , as in Section 4.2. According to [49,
+Théorème 4.8], the conditional measures of µ f with respect to the stable and
+unstable manifolds are absolutely continuous with respect to Lebesgue mea-
+sure. In other words, both ν+ and ν− are absolutely continuous with respect
+to Lebesgue measure, because these measures coincide with the conditional
+measures of µ f with respect to the stable and unstable laminations ofP . In the
+Pesin box, µ f corresponds to the product measure ν+⊗ ν− via the homeomor-
+phism h of § 4.2.1. Since the holonomy of the stable and unstable laminations
+are quasi-conformal, they are absolutely continuous with respect to Lebesgue
+measure (see § 4.3.1). Hence, µ f is absolutely continuous with respect to the
+Lebesgue measure in P , and therefore in X. □
+8.1.2. Proof of Corollary 1.6. Our main theorem provides (1)⇒ (4), while
+the reverse implication is obvious. We proved(2)⇒ (1) in Proposition 8.1 and
+(1)⇒ (2) in Proposition 5.3 (recall that this equivalence is also a consequence
+of [49, Corollaire 5.6]). To prove (2)⇔ (3) we use Ruelle’s inequality [57],
+which provides λs≤− 1
+2 log λ f and λu≥ 1
+2 log λ f , and Young’s theorem [60]
+which ensures that the generic limits in property (3) are equal to (1/λu−
+1/λs)log λ f . (note that Young’s theorem is proved forC ∞-diffeomorphisms of
+compact surfaces, but her proof applies also to our context)
+8.2. K3 and Enriques surfaces.
+8.2.1. The Classiﬁcation Theorem. The Classiﬁcation Theorem stated in the
+introduction is proved in [22, 23]. Let us add two remarks. Assertion (1) of
+the Classiﬁcation Theorem rules out the case of Enriques surfaces. In partic-
+ular, if f is an automorphism of an Enriques surface with positive entropy,
+then µ f is singular with respect to Lebesgue measure. Assertion (3) is sharp,
+meaning that there are rational Kummer examples with λ f in Q(ζl) for all
+possible orders l = 3, 4, and 5. For instance, an example is given in [23], of
+an automorphism g of an abelian surface A such that λg =|1 + ζ5|2, where
+ζ5 is the primitive ﬁfth root of unity exp (2iπ/5). The linear transformation
+(x,y)↦→ (ζ5x, ζ5y) induces an automorphism of A, and the quotient is a ra-
+tional surface: this gives examples of Kummer automorphisms on rational
+surfaces for which λ f has degree 4.
+
+=== PDF PAGE 45 ===
+DYNAMICS ON COMPLEX SURFACES 45
+8.2.2. Proof of Corollary 1.7. This corollary is a direct consequence of the
+second assertion of the Classiﬁcation Theorem and the following classical re-
+sult.
+Lemma 8.2. Let X be a complex projective K3 surface, with Picard number
+equal to 2. The group of automorphisms of X is inﬁnite if and only if the
+intersection form does not represent 0 and−2 in NS(X). If it is inﬁnite, then
+it is virtually cyclic, and all elements of Aut(X) of inﬁnite order have positive
+topological entropy.
+Sketch of proof. Let Iso(NS(X)) be the group of isometries of the lattice NS(X)
+with respect to the intersection form⟨·|·⟩.
+Step 1.– By Hodge index theorem the intersection form has signature (1,1)
+on NS R(X). Assume that this form represents 0; this means that the two
+isotropic lines of ⟨·|·⟩ are deﬁned over Z: they contain primitive elements
+v1 and v2 in NS(X). Since the isotropic cone is Iso(NS(X))-invariant and the
+automorphisms of Z coincides with±Id, a subgroup of index at most 4 in
+Iso(NS(X)) preserves the two isotropic lines pointwise. Thus, Iso(NS(X)) has
+at most four elements. On the other hand, every element f of Aut(X) deter-
+mines an element f∗ in Iso(X) and the morphism f↦→ f∗ has ﬁnite kernel
+(because the group of automorphisms of a K3 surface is discrete). Thus, if the
+intersection form represents 0, the group Aut(X) is ﬁnite.
+Step 2.– Now assume that⟨·|·⟩ does not represent 0. Consider the subgroup
+Iso(NS(X))+ of Iso(NS(X)) that ﬁxes the connected component H of{u∈
+NSR(X);⟨u|u⟩ > 0} containing ample classes. This group is inﬁnite, and it
+is either cyclic, or dihedral (this is equivalent to the resolution of Pell-Fermat
+equations); more precisely, a subgroup of Iso(NS(X))+ of index at most 2 is
+generated by a hyperbolic isometry ψ, which dilates one of the isotropic lines
+by a factor λψ > 1 and contracts the other one by 1/λψ.
+If the ample cone of X coincides with H, Torelli theorem shows that the
+image of Aut(X) in Iso(NS(X)) is a ﬁnite index subgroup of Iso(NS(X))+
+(see [3]). Since the kernel of f↦→ f∗ is ﬁnite,Aut(X) is virtually cyclic and, if
+f is an automorphism of X of inﬁnite order,f∗ coincides with an iterate of ψl,
+l̸= 0. Thus, the topological entropy of f is equal to|l|log(λψ) and is positive.
+Step 3.– The ample cone of X is the subset of classes a in the cone H
+such that ⟨a|[E]⟩ > 0 for all irreducible curves E⊂ X with negative self-
+intersection. But, on a K3 surface, such a curve is a smooth rational curve
+with self-intersection−2. Thus, H coincides with the ample cone if and only
+
+=== PDF PAGE 46 ===
+DYNAMICS ON COMPLEX SURFACES 46
+if X does not contain any−2-curve. On the other hand, Riemann-Roch for-
+mula implies that X contains such a−2-curve if and only if the intersection
+form represents−2 on NS (X). To sum up, if ⟨·|·⟩ represents−2, the ample
+cone is a strict sub-cone of H. In that case, the group of isometries of NS (X)
+preserving both H and the ample cone is ﬁnite, so thatAut(X) is ﬁnite too. □
+8.2.3. Proof of Corollary 1.8. Let Z be an Enriques surface. The Néron-
+Severi group NS(Z) and its intersection form qZ form a non-degenerate lattice
+of dimension 10 and signature (1,9); this lattice is isomorphic to U⊕ (−E8).
+For a generic Enriques surface, the action ofAut(Z) on NS(Z) is an embedding
+that realizes Aut(Z) as a ﬁnite index subgroup inOqZ (Z): the image coincides
+with the subgroup of matrices B that preserve each connected component of
+the set{u∈ NS(Z)⊗ R| qZ(u) > 0} and are equal to the identity modulo 2
+(see [4]). Thus, Aut(Z) contains non-abelian free groups and contains many
+elements f with λ f > 1. To complete the proof it sufﬁces to apply Lemma 1.3
+(or, to notice that Enriques surfaces depend on 10 parameters and tori depend
+on 4 parameters).
+Remark 8.3. There are examples of Enriques surfaces with ﬁnite automor-
+phism group. There are examples for which Aut(Z) is inﬁnite but no automor-
+phism has positive entropy (see [4], Section 4; in that example,Aut(Z) is ﬁnite
+by cyclic). If Aut(Z) is not virtually abelian, then it contains a non abelian free
+group made of automorphisms with positive entropy (see [21]); each of these
+automorphisms has a singular measure of maximal entropy.
+8.2.4. Kummer surfaces. Building on the strategy of [19], it seems reasonable
+to expect the existence of Kummer surfaces X such that (i) X is a K3 surface,
+(ii) there is an automorphism f of X of positive entropy with µ f = ΩX∧ ΩX,
+and (iii) there is an automorphism g of X of positive entropy such that µg is
+singular.
+8.3. Rational surfaces and Galois conjugates.
+8.3.1. Proof of Corollary 1.9. Let A be a complex abelian surface. Its Picard
+number is bounded from above by h1,1(A;R) hence by 4. The dynamical de-
+gree λg of every g∈ Aut(A) is the largest eigenvalue ofg∗ on NS(A)⊗Z R. As
+such, λg is a root of the characteristic polynomial ofg∗ : NS(A)→ NS(A), and
+it is an algebraic integer of degree at most 4. Passing to a ﬁnite g-equivariant
+quotient π: A→ X0, one does not change the topological entropy. Thus, if
+
+=== PDF PAGE 47 ===
+DYNAMICS ON COMPLEX SURFACES 47
+(X, f ) is a Kummer example, the dynamical degree λ f is also an algebraic
+integer of degree at most 4.
+Example 8.4. In [5, 6] and [54], Bedford and Kim and McMullen construct
+examples of automorphisms fn : Xn→ Xn of rational surfaces with positive
+entropy. Corollary 1.9 shows that most of them have a singular measure of
+maximal entropy. For instance, with the notation of [54], the dynamical de-
+grees λn of the “Coxeter automorphisms” form a sequence of Salem numbers
+that converges towards the smallest Pisot number (a root of θ3 = θ + 1). This
+implies that the degree of λn goes to ∞ with n. Note that the existence of au-
+tomorphisms with a singular measure of maximal entropy had already been
+observed in [54], chapter 9.
+8.3.2. Blanc’s automorphisms.
+Lemma 8.5. Let f : X→ X be an automorphism of a complex projective sur-
+face with positive entropy log λ f . Assume that X contains a curve of genus 1
+which is periodic under the action of f . Then µ f is singular with respect to
+Lebesgue measure.
+Proof. An automorphism of an abelian surface with positive entropy does not
+preserve any curve of genus 1. The lemma follows from this remark and our
+main theorem. □
+Let us now describe a construction due to Blanc (see [13]).
+Consider a smooth plane cubic curve C. Given a point q on C, there is
+a unique birational involution σq : P2
+C99K P2
+C that ﬁxesC point-wise and pre-
+serves the pencil of lines throughq. The indeterminacy points of σq are q itself
+and the four points p of C such that the line (pq) is tangent to C at p. Blowing
+up these points, one can lift σq to an automorphism of a rational surface Xq.
+The strict transform of C is ﬁxed point-wise by this automorphism.
+Now, do that for ℓ points qi on the cubic C. Since C is ﬁxed point-wise
+by the involutions σqi, one can lift them simultaneously as automorphisms on
+the same surface (blowing up 5ℓ points). This provides an example of a ratio-
+nal surface Xℓ with a huge group of automorphisms: Blanc proved that there
+is no relation between the involutions, they generate a subgroup of Aut(Xℓ)
+isomorphic to the free product of ℓ copies of Z/2Z (see [13], Theorem 6).
+There is a meromorphic 2-form Ωℓ on Xℓ that does not vanish and has poles
+of order 1 along the strict transformC′ of C (two such forms are proportional).
+
+=== PDF PAGE 48 ===
+DYNAMICS ON COMPLEX SURFACES 48
+Now, deﬁne fl : Xℓ→ Xℓ to be the composition σq1◦ . . .◦ σqℓ of the ℓ in-
+volutions. If ℓ≥ 3, one gets an automorphism of Xℓ of positive entropy. The
+meromorphic 2-form Ωℓ determines a volume form Ωℓ∧ Ωℓ with poles along
+C′; this form has inﬁnite volume, as for
+i
+2
+dz∧ d ¯z
+z¯z
+near the origin in C. Thus, the transformation f preserves a “meromorphic”
+volume form of inﬁnite volume. Since f ﬁxes the strict transform of a smooth
+cubic curve, Lemma 8.5 implies the following proposition.
+Proposition 8.6. Let f l be Blanc’s example described above, with l≥ 3. Then
+µ f is singular with respect to Lebesgue measure.
+9. A PPENDIX
+(after Dinh-Sibony and Moncet)
+In this appendix, f is an automorphism of a complex projective (resp. compact
+Kähler) surface X with positive entropy log λ f , and X0 is the surface obtained by
+blowing down all periodic curves of f . Most of the results described in this appendix
+are due to Dinh, Sibony, and Moncet (see [31] and [55]).
+9.1. Contraction of periodic curves. The notations are as in Section 2. The tensor
+product NS(X)⊗Z A, for A a ring, is denoted NS(X;A).
+9.1.1. Periodic curves and the space N f . Consider the subspace PC f of NS(X;Q)
+generated by all classes of f -periodic curves. We consider it as a vector subspace of
+NS(X;Q), and we denote by PC f (Z) its integral points. By construction, PC f is a
+subspace of Π⊥
+f , because⟨θ±
+f|[C]⟩ = 0 for every periodic curve.
+Denote by Ψ f∈ Z[t] the minimal polynomial of the algebraic integerλ f . The char-
+acteristic polynomial of f∗∈ GL (NS(X)) is a product of Ψ f and cyclotomic factors.
+The vector space NS(X;Q) splits as a direct sum N f⊕ N⊥
+f such that
+(1) N f and N⊥
+f are f∗-invariant;
+(2) the characteristic polynomial of f∗ : N f→ N f is equal to Ψ f ;
+(3) the characteristic polynomial of f∗ : N⊥
+f → N⊥
+f is a product of cyclotomic
+factors;
+(4) N f contains θ+
+f and θ−
+f , and the intersection form is of Minkowski type on Nf ;
+(5) N⊥
+f contains PC f and the intersection form is negative deﬁnite on N⊥
+f .
+Remark 9.1. If PC f = Π⊥
+f then the plane Π f is deﬁned overQ and λ f is a quadratic
+unit, so that PC f is, usually, much smaller than Π⊥
+f . (see [24]).
+
+=== PDF PAGE 49 ===
+DYNAMICS ON COMPLEX SURFACES 49
+Lemma 9.2. Let E⊂ X be a smooth elliptic curve. If E is f -periodic the image of the
+restriction morphism
+resE : N f→ Pic(E)
+is ﬁnite.
+Proof. Replacing f by a positive iterate, one assumes that E is f -invariant. The auto-
+morphism f determines a holomorphic automorphism f ♯ of the group Pic0(E); since
+every holomorphic automorphism of an elliptic curve has ﬁnite order, we may assume
+that the automorphism f ♯ : Pic0(E)→ Pic0(E) is the identity.
+Every class c in N f intersects E trivially:⟨[E]|c⟩ = 0, because N f is orthogonal to
+PC f . Thus the image of res E is contained in Pic0(E). Since res E is equivariant under
+the action of f∗ on N f and the action of f ♯ on Pic0(E), we get
+resE◦ f∗ = resE.
+Consequently, the kernel of resE contains the image of f∗− IdN f ; but this image has
+ﬁnite index in Nf (Z) because 1 is not a root of Ψ f . □
+Let us now modify X by a ﬁnite sequence of equivariant blow-ups to assume that
+every irreducible f -periodic curve is smooth. Thus, each of these curves is either a
+rational curve or a smooth elliptic curve (see § 2.3).
+Lemma 9.3. There is a ﬁnite index subgroupN′
+f of N f (Z) such that every line bundle
+L with ﬁrst Chern class inN′
+f satisﬁes L|E = OE for every f -periodic irreducible curve
+E.
+Proof. If F is a rational periodic curve and if c1(L) is an element of Nf , the degree of
+L|F is equal to 0; hence,L|F = OF. Consequently, we can deﬁne N′
+f as the intersection
+of the kernels of resE, where E describe the ﬁnite set of elliptic periodic curves. □
+9.1.2. Big and nef classes (see [48]). The pseudo-effective cone is the closure, in
+NS(X;R), of the set of classes of effective R-divisors. A class u∈ NS(X;R) is big if
+it is in the interior of the pseudo-effective cone. A classu∈ NS(X;R) is big and nef if
+and only if it is nef and satisﬁesu2 > 0. The set of big and nef classes forms a convex
+cone that contains the Kähler cone.
+If the Chern class of a line bundle L is big and nef, then the Kodaira dimension of
+(X,L) is equal to 2 (see [36, 48]).
+Let u be a class with positive self-intersection. It is nef if and only if it intersects
+every irreducible curveC⊂ X non-negatively. In other words, the boundary of the big
+and nef cone is bounded by the quadratic cone{u2 = 0} and by hyperplanes
+⟨u|[C]⟩ = 0
+where C is an irreducible curve (one may need inﬁnitely many hyperplanes of this
+type to describe the boundary of the cone).
+
+=== PDF PAGE 50 ===
+DYNAMICS ON COMPLEX SURFACES 50
+9.1.3. X0 is projective.
+Theorem 9.4. Let f be an automorphism of a projective surface X, with dynamical
+degree λ f > 1. Let π: X→ X0 be the birational morphism that contracts all periodic
+curves of f , and only those curves. The (singular) surface X0 is projective.
+Recall that θ+
+f and θ−
+f denote the co-homology classes of T +
+f and T−
+f .
+Lemma 9.5. There is an open neighborhood W of the class θ+
+f + θ−
+f in N f which is
+contained in the big and nef cone.
+Proof. Denote by Σ the sum θ+
+f + θ−
+f . It is nef, because θ+
+f and θ−
+f are nef. Since
+Σ2 =⟨θ+
+f|θ−
+f⟩ > 0, it is also big. If C is a(n effective) curve then ⟨Σ|[C]⟩≥ 0, with
+equality if and only if [C] is in Π⊥
+f , if and only if C is a periodic curve, if and only if
+[C]∈ PC f (see § 2.3).
+We now prove the lemma by contradiction. Since the condition u2 > 0 is open, we
+may assume that there is a sequence (wn) of classes wn∈ N f converging towards Σ
+such that wn is not nef. Since wn is not nef, there exists an irreducible curve Cn such
+that⟨wn|[Cn]⟩ < 0 (see § 9.1.2). In particular, the curve Cn is not in PC f , because wn
+is an element of N f ; thus,⟨Σ|[Cn]⟩ > 0. Similarly, we may assume that the curves Cn
+are pairwise distinct; otherwise, we could extract a constant subsequenceCn j = C and
+we would have⟨Σ|[C]⟩≤ 0 because Σ is the limit of (wn): this would contradict the
+fact that C is effective but not in PCf .
+Take a subsequence of ([Cn]/∥ [Cn]∥) that converges to a pseudo-effective class
+c∞. We have⟨Σ|c∞⟩ = 0, because wn converges towardsΣ. Being pseudo-effective, c∞
+is in Π⊥
+f and consequently c2
+∞ < 0. On the other hand, c2
+∞ is the limit of⟨Cn|Cn+1⟩/(∥
+[Cn]∥∥ [Cm]∥) and, as such, is non-negative. This contradiction concludes the proof.
+□
+Remark 9.6. Since the cone of nef and big classes isf∗-invariant, this lemma implies
+that every element of the form aθ+
+f + bθ−
+f with a and b positive is in this cone, and is
+in the relative interior of this cone in Nf (R).
+To prove Theorem 9.4, we may assume that all periodic curves of f are smooth
+(otherwise, resolve the singularities by a ﬁnite, equivariant, sequence of blow-ups).
+Consider the set of all line bundles L such that c 1(L) is in N′
+f and is big and nef.
+The Kodaira dimension kod (X;L) of such a line bundle is equal to 2, but the linear
+system|L| may have ﬁxed components. Write
+L = M + F
+where M is the mobile part and F is the ﬁxed part; kod(X;M) is equal to 2, and the
+linear system|M| has no ﬁxed component. Taking sums (i.e. tensor products)L1 + L2
+the ﬁxed part decreases. Thus, there is an effective divisor R such that R is contained
+in the ﬁxed part of|L| for all such line bundles L and R is equal to the ﬁxed part of
+L if L is “sufﬁciently large”. By construction, R is uniquely determined by N f and is
+therefore f -invariant. Thus, R is a sum (with multiplicities) of periodic curves.
+Take L with ﬁxed part equal toR and consider its mobile part M. The linear system
+|M| may have base points. Again, we may choose L such that the set of base points
+
+=== PDF PAGE 51 ===
+DYNAMICS ON COMPLEX SURFACES 51
+is f -invariant. Blow-up these base points (including inﬁnitely near points), to get a
+new surface Y with a birational morphism ε: Y→ X. By construction f lifts to an
+automorphism fY of Y and all irreducible periodic curves of fY are smooth, because
+they are either strict transforms of periodic curves of f or exceptional divisors. The
+line bundle L lifts to a big and nef bundle LY such
+LY = MY + RY
+where the ﬁxed part RY is made of fY -periodic curves and the mobile part MY is
+base point free. Since the Kodaira dimension kod (Y ;MY ) is equal to 2, the linear
+system|MY| determines a morphism η: Y→ Z: the linear system |MY| corresponds
+to the linear system |MZ| of hyperplane sections of Z. On the surface Z, one gets
+LZ = MZ + RZ with, now, an ample mobile part. In particular, H1(Z,mMZ) vanishes
+if m is large enough (see [48], §1.4.D and 4.3). Thus, the morphism
+H0(Z;L⊗m
+Z )→ H0(RZ;L⊗m
+Z|RZ
+)
+is onto if m is large. Since, by Lemma 9.3, the restriction of LZ to each irreducible
+component of RZ is trivial, there is a section of L⊗m
+Z which does not vanish on RZ.
+Hence, L⊗m
+Z has no ﬁxed component and is ample. On the other hand,L (and thus LZ)
+intersects trivially all periodic curves of f (resp. of fZ). This implies that η contracts
+all periodic curves of fY ; in particular, η contracts all exceptional divisors of ε and
+η◦ ε−1 : X→ Z is a morphism that contracts all periodic curves of f . Since Z is a
+projective surface, X0 is also a projective surface.
+Remark 9.7. Once all periodic curves of f have been contracted, the classΣ becomes
+an ample class.
+9.2. Continuous potentials. Denote by π: X→ X0 the morphism that contracts all
+periodic curves of f (and is an isomorphism in the complement of these curves). By
+the previous section, the surface X0 is projective. Its Néron-Severi group NS(X0) lifts
+to the orthogonal complement of PCf in NS(X). Let (ui) be a basis of NS(X0;Q) such
+that every ui is ample. Each ui is the class of a Kähler form: up to a multiplicative
+factor, it is the restriction of the Fubini-Study form κFS to X0 for some embedding
+ιi : X0→ Pki in a projective space; more precisely ui is the class of the form κi,0 =
+ι∗
+i κFS. The pull-backs π∗κi,0 of these forms on X give a ﬁnite set of smooth (1,1)-
+forms κi which are Kähler forms in the complement of the set of periodic curves, and
+vanish along them. Moreover, if D is a connected component of the set of periodic
+curves, π maps D to a point q of X0; thus, each κi is given by a local potential wi in
+some neighborhood U of D. Moreover, adding a constant, wi vanishes identically on
+D. Now, use the fact that the pre-image of NS(X0) in NS(X) is f -invariant, and apply
+f∗ to κ1:
+1
+λn
+f
+( f n)∗κ1 = ∑ai(n)κi + dd c(vn)
+where the ai(n) are real numbers, vn : X→ R is a smooth function, and vn is constant
+on every connected component of the set of periodic curves of f .
+
+=== PDF PAGE 52 ===
+DYNAMICS ON COMPLEX SURFACES 52
+Then, apply the same strategy as in [32]: the sequence λ−n
+f ( f n)∗κ1 converges to-
+wards T +
+f ; each sequence of real numbers ai(n) converges to a real number αi; and
+(vn) converges uniformly to a Hölder continuous function w∞. Thus,
+T +
+f = dd c
+(
+∑
+i
+αiwi + w∞
+)
+= ∑
+i
+αiκi + dd cw∞,
+where the ﬁrst expression is a local one and the second is global. The function w∞
+is constant on every connected component of the set of periodic curves of f ; one can
+therefore write π∗(T +
+f ) = ∑i αiκi,0 + dd c(w∞,0) for some continuous function w∞,0 on
+X0. There are analogous expressions for T−
+f . Similarly, Remark 9.7 shows that
+π∗(T +
+f + T−
+f ) = κ + dd c(w)
+where κ is a kähler form on X0 and w: X0→ R is a continuous function.
+Theorem 9.8. Let f be an automorphism of a complex projective surface X, with
+positive entropy. The current T +
+f (resp. T−
+f ) is a closed positive current with Hölder
+continuous potentials. If D is a connected component of the union of all f -periodic
+curves, there exists a neighborhoodU of D and a Hölder continuous function u: U→
+R such that T +
+f = dd cu on U and u = 0 on D. The projection π∗T +
+f of T +
+f on
+X0 is a closed positive current with continuous potentials, and π∗(T +
+f + T−
+f ) is co-
+homologous to a Kähler form on X0.
+9.3. Dinh-Sibony Theorem.
+9.3.1. Brody curves and Dinh-Sibony theorem. Let M be a compact Kähler manifold
+(or compact, complex analytic space). Fix a hermitian metricκ on M. A Brody curve
+ξ: C→ M is a non-constant entire curve such that∥ ξ′(z)∥κ is uniformly bounded.
+Let ξ: C→ M be a non-constant entire curve, and denote by A(r; ξ) the area of
+ξ(Dr) and by L(r; ξ) the length of ∂ξ(Dr); more precisely,
+A(r; ξ) =
+∫
+ξ(Dr)
+κ =
+∫ r
+0
+∫ 2π
+0
+∥ ξ′(teiθ)∥2 tdtd θ
+L(r; ξ) =
+∫ 2π
+0
+∥ ξ′(reiθ)∥ rdθ.
+The currents
+Sr = 1
+A(r; ξ){ξ(Dr)}
+form a family of positive currents of mass 1; the mass of their boundary is equal to the
+ratio L(r; ξ)/A(r; ξ). An Ahlfors current for the curve ξ is a closed positive current
+obtained as a limit of the currents Sr along a subsequence (rn), with rn→n ∞; Ahlfors
+currents always exist (see [15]).
+
+=== PDF PAGE 53 ===
+DYNAMICS ON COMPLEX SURFACES 53
+Theorem 9.9 (Dinh-Sibony, see [31]). Let M be a compact Kähler manifold (resp.
+a compact, Kähler analytic space). Let T be a closed positive (1,1)-current with
+continuous potentials. Let ξ: C→ X be a Brody curve, such that ξ∗T = 0. Then there
+is at least one Ahlfors current S associated to ξ such that T∧ S = 0.
+In what follows, we shall apply this result in the singular surface X0.
+9.4. Applications.
+9.4.1. Proof of Corollary 3.15. The ﬁrst property follows from the fact thatπ∗(T +
+f +
+T−
+f ) is co-homologous to a Kähler form. More precisely, Section 9.2 shows that
+π∗(T +
+f + T−
+f ) is equal to the sum of a kähler form κ plus dd c(w) for some globally
+deﬁned continuous function. Hence, the total mass of the product measure π∗(T +
+f +
+T−
+f )∧ Aν is equal to the mass of κ∧ Aν and, therefore, to the mass of the current Aν
+with respect to κ; as such, it is positive.
+To prove the second property, assume that such a curveξ exists. If it is not a Brody
+curve, apply Zalcman’s re-parametrization Lemma and Lemma 4.3 to change it in a
+Brody curve. Then, apply Dinh-Sibony theorem to construct a Ahlfors current that
+contradicts the ﬁrst property.
+9.4.2. Fatou components. Let M be a compact, complex analytic space, with a ﬁxed
+hermitian metric. Let U be a subset of M. One says that U is hyperbolically embed-
+ded in M if there is a uniform bound for the derivative ∥ ϕ′(0)∥ of all holomorphic
+mappings ϕ: D→ U⊂ M. Brody’s Lemma implies that there exists a Brody curve
+ξ: C→ U if U is not hyperbolically embedded. If U is hyperbolically embedded,
+it is Kobayashi hyperbolic, meaning that the Kobayashi pseudo-distance is a distance
+(see [47]).
+Let f be an automorphism of a complex projective surface X with λ f > 1. The
+Fatou set Fat( f ) is the largest open subset on which the sequence ( f n)n∈Z is locally
+equicontinuous.
+Let K( f ) be the support of T +
+f + T−
+f , and let U( f ) be its complement. It is easy to
+show that Fat( f ) is contained in U( f ) (see [58, 31, 55]).
+Theorem 9.8 shows thatπ∗(T +
+f +T−
+f ) has continuous potentials onX0. If π(U( f ))⊂
+X0 is not hyperbolically embedded inX0, Brody re-parametrization lemma and Lemma 4.3
+provide a Brody curve ξ: C→ X0 such that ξ∗(π∗(T +
+f +T−
+f )) = 0. Dinh-Sibony The-
+orem asserts that there is an Ahlfors current S for ξ such that π∗(T +
+f + T−
+f )∧ S = 0.
+This contradicts Corollary 3.15. Thus, π(U( f )) is hyperbolically embedded in X0.
+Theorem 9.10 (Dinh-Sibony, Moncet). Let f be an automorphism of a complex pro-
+jective surface X with positive entropy. The Fatou set Fat( f ) is Kobayashi hyperbolic
+modulo periodic curves: if x and y are distinct points of Fat( f ) with Kobayashi dis-
+tance kobdist(x,y) = 0, then x and y are contained in a (reducible) connected periodic
+curve of f .
+Proof. The projection π: X→ X0 is holomorphic and every holomorphic map is 1-
+Lipschitz with respect to the Kobayashi distance. Hence, π(x) = π(y), because π(U)
+is Kobayashi hyperbolic. □
+
+=== PDF PAGE 54 ===
+DYNAMICS ON COMPLEX SURFACES 54
+REFERENCES
+[1] Lars V . Ahlfors. Lectures on quasiconformal mappings . Manuscript prepared with the
+assistance of Clifford J. Earle, Jr. Van Nostrand Mathematical Studies, No. 10. D. Van
+Nostrand Co., Inc., Toronto, Ont.-New York-London, 1966.
+[2] Luis Barreira and Yakov Pesin. Nonuniform hyperbolicity, volume 115 of Encyclopedia
+of Mathematics and its Applications . Cambridge University Press, Cambridge, 2007.
+Dynamics of systems with nonzero Lyapunov exponents.
+[3] Wolf P. Barth, Klaus Hulek, Chris A. M. Peters, and Antonius Van de Ven.Compact com-
+plex surfaces, volume 4 ofErgebnisse der Mathematik und ihrer Grenzgebiete.Springer-
+Verlag, Berlin, second edition, 2004.
+[4] Wolf P. Barth and ChrisA. M. Peters. Automorphisms of Enriques surfaces. Invent.
+Math., 73(3):383–411, 1983.
+[5] Eric Bedford and Kyounghee Kim. Continuous families of rational surface automor-
+phisms with positive entropy. Math. Ann., 348(3):667–688, 2010.
+[6] Eric Bedford and Kyounghee Kim. Dynamics of rational surface automorphisms: rota-
+tion domains. Amer. J. Math., 134(2):379–405, 2012.
+[7] Eric Bedford, Mikhail Lyubich, and John Smillie. Polynomial diffeomorphisms of C2.
+IV. The measure of maximal entropy and laminar currents. Invent. Math., 112(1):77–
+125, 1993.
+[8] Yves Benoist, Patrick Foulon, and François Labourie. Flots d’Anosov à distributions
+stable et instable différentiables. J. Amer. Math. Soc., 5(1):33–74, 1992.
+[9] Pierre Berger and Romain Dujardin. On stability and hyperbolicity for polynomial auto-
+morphisms of C2. preprint, http://arxiv.org/pdf/1409.4449.pdf, pages 1–24, 2014.
+[10] François Berteloot and Christophe Dupont. Une caractérisation des endomorphismes de
+Lattès par leur mesure de Green. Comment. Math. Helv., 80(2):433–454, 2005.
+[11] François Berteloot and Jean-Jacques Loeb. Une caractérisation géométrique des exem-
+ples de Lattès de Pk. Bull. Soc. Math. France, 129(2):175–188, 2001.
+[12] Sébastien Blachère, Peter Haïssinsky, and Pierre Mathieu. Harmonic measures ver-
+sus quasiconformal measures for hyperbolic groups. Ann. Sci. Éc. Norm. Supér. (4) ,
+44(4):683–721, 2011.
+[13] Jérémy Blanc. On the inertia group of elliptic curves in the Cremona group of the plane.
+Michigan Math. J., 56(2):315–330, 2008.
+[14] Jean Bourgain. Finitely supported measures on SL2(R) which are absolutely continuous
+at inﬁnity. InGeometric aspects of functional analysis, volume 2050 of Lecture Notes in
+Math., pages 133–141. Springer, Heidelberg, 2012.
+[15] Marco Brunella. Courbes entières et feuilletages holomorphes. Enseign. Math. (2), 45(1-
+2):195–216, 1999.
+[16] S. Cantat. Sur la dynamique du groupe d’automorphismes des surfaces K3. Transform.
+Groups, 6(3):201–214, 2001.
+[17] Serge Cantat. Dynamique des automorphismes des surfaces complexes compactes.Thèse
+de l’Ecole Normale Supérieure de Lyon, pages 1–189, 1999.
+[18] Serge Cantat. Dynamique des automorphismes des surfaces K3. Acta Math., 187(1):1–
+57, 2001.
+[19] Serge Cantat. Caractérisation des exemples de Lattès et de Kummer. Compos. Math.,
+144(5):1235–1270, 2008.
+[20] Serge Cantat. Quelques aspects des systèmes dynamiques polynomiaux: existence, ex-
+emples, rigidité. In Quelques aspects des systèmes dynamiques polynomiaux, volume 30
+of Panor. Synthèses, pages 13–95. Soc. Math. France, Paris, 2010.
+
+=== PDF PAGE 55 ===
+DYNAMICS ON COMPLEX SURFACES 55
+[21] Serge Cantat. Dynamics of automorphisms of compact complex surfaces. In Frontiers
+in Complex Dynamics: In celebration of John Milnor’s 80th birthday , volume 51 of
+Princeton Math. Series, pages 463–514. Princeton University Press, 2014.
+[22] Serge Cantat and Charles Favre. Symétries birationnelles des surfaces feuilletées. J.
+Reine Angew. Math., 561:199–235, 2003.
+[23] Serge Cantat and Charles Favre. Corrigendum à l’article: “Birational symmetries of
+foliated surfaces” (J. Reine Angew. Math. 561 (2003), 199–235). J. Reine Angew. Math.,
+582:229–231, 2005.
+[24] Serge Cantat and Stéphane Lamy. Normal subgroups in the Cremona group. Acta Math.,
+210(1):31–94, 2013. With an appendix by Yves de Cornulier.
+[25] Serge Cantat and Keiji Oguiso. Birational automorphism groups and the movable cone
+theorem for calabi-yau manifolds of wehler type via universal coxeter groups.to appear
+in Amer. J. Math., (arXiv:1107.5862), 2013.
+[26] Serge Cantat and Abdelghani Zeghib. Holomorphic actions, Kummer examples, and
+Zimmer program. Ann. Sci. Éc. Norm. Supér. (4), 45(3):447–489, 2012.
+[27] Boris V . Chabat. Introduction à l’analyse complexe. Tome 2. Traduit du Russe: Mathé-
+matiques. [Translations of Russian Works: Mathematics]. “Mir”, Moscow, 1990. Fonc-
+tions de plusieurs variables. [Functions of several variables], Translated from the Russian
+by Djilali Embarek.
+[28] Evgenii M. Chirka. Complex analytic sets, volume 46 of Mathematics and its Applica-
+tions (Soviet Series). Kluwer Academic Publishers Group, Dordrecht, 1989. Translated
+from the Russian by R. A. M. Hoksbergen.
+[29] François R. Cossec and Igor V . Dolgachev.Enriques surfaces. I, volume 76 of Progress
+in Mathematics. Birkhäuser Boston Inc., Boston, MA, 1989.
+[30] Jean-Pierre Demailly. Mesures de Monge-Ampère et caractérisation géométrique des
+variétés algébriques afﬁnes.Mém. Soc. Math. France (N.S.), (19):124, 1985.
+[31] Tien-Cuong Dinh and Nessim Sibony. Green currents for holomorphic automorphisms of
+compact Kähler manifolds. preprint, http://arxiv.org/abs/math/0311322v1 (see chapter
+6), pages 1–41, 2003.
+[32] Tien-Cuong Dinh and Nessim Sibony. Green currents for holomorphic automorphisms
+of compact Kähler manifolds. J. Amer. Math. Soc., 18(2):291–312, 2005.
+[33] Tien-Cuong Dinh and Nessim Sibony. Rigidity of Julia sets for Hénon type maps.
+preprint, http://arxiv.org/abs/1301.3917, pages 1–52, 2013.
+[34] Adrien Douady. Prolongement de mouvements holomorphes (d’après Słodkowski et
+autres). Astérisque, (227):Exp. No. 775, 3, 7–20, 1995. Séminaire Bourbaki, V ol.
+1993/94.
+[35] Romain Dujardin. Laminar currents and birational dynamics. Duke Math. J. ,
+131(2):219–247, 2006.
+[36] Takao Fujita. On semipositive line bundles. Proc. Japan Acad. Ser. A Math. Sci. ,
+56(8):393–396, 1980.
+[37] Étienne Ghys. Flots d’Anosov dont les feuilletages stables sont différentiables. Ann. Sci.
+École Norm. Sup. (4), 20(2):251–270, 1987.
+[38] Étienne Ghys. Holomorphic Anosov systems. Invent. Math., 119(3):585–614, 1995.
+[39] Étienne Ghys. Laminations par surfaces de Riemann. In Dynamique et géométrie com-
+plexes (Lyon, 1997) , volume 8 of Panor. Synthèses, pages ix, xi, 49–95. Soc. Math.
+France, Paris, 1999.
+
+=== PDF PAGE 56 ===
+DYNAMICS ON COMPLEX SURFACES 56
+[40] Étienne Ghys and Alberto Verjovsky. Locally free holomorphic actions of the complex
+afﬁne group. InGeometric study of foliations (Tokyo, 1993), pages 201–217. World Sci.
+Publ., River Edge, NJ, 1994.
+[41] Phillip Grifﬁths and Joseph Harris.Principles of algebraic geometry. Wiley-Interscience
+[John Wiley & Sons], New York, 1978. Pure and Applied Mathematics.
+[42] S. M. Ivashkovich. The Hartogs-type extension theorem for meromorphic maps into
+compact Kähler manifolds. Invent. Math., 109(1):47–54, 1992.
+[43] Mattias Jonsson and Dror Varolin. Stable manifolds of holomorphic diffeomorphisms.
+Invent. Math., 149(2):409–430, 2002.
+[44] Vadim A. Kaimanovich and Vincent Le Prince. Matrix random products with singular
+harmonic measure. Geom. Dedicata, 150:257–279, 2011.
+[45] Anatole Katok. Four applications of conformal equivalence to geometry and dynamics.
+Ergodic Theory Dynam. Systems, 8∗(Charles Conley Memorial Issue):139–152, 1988.
+[46] Anatole Katok and Boris Hasselblatt. Introduction to the modern theory of dynami-
+cal systems , volume 54 of Encyclopedia of Mathematics and its Applications . Cam-
+bridge University Press, Cambridge, 1995. With a supplementary chapter by Katok and
+Leonardo Mendoza.
+[47] Serge Lang. Introduction to complex hyperbolic spaces . Springer-Verlag, New York,
+1987.
+[48] Robert Lazarsfeld. Positivity in algebraic geometry. I , volume 48 of Ergebnisse der
+Mathematik und ihrer Grenzgebiete. 3. Folge. A Series of Modern Surveys in Mathe-
+matics. Springer-Verlag, Berlin, 2004. Classical setting: line bundles and linear series.
+[49] François Ledrappier. Propriétés ergodiques des mesures de Sinaï. Inst. Hautes Études
+Sci. Publ. Math., (59):163–188, 1984.
+[50] François Ledrappier. Applications of dynamics to compact manifolds of negative curva-
+ture. In Proceedings of the International Congress of Mathematicians, Vol. 1, 2 (Zürich,
+1994), pages 1195–1202. Birkhäuser, Basel, 1995.
+[51] Mikhail Lyubich and Han Peters. Classiﬁcation of invariant Fatou components for dissi-
+pative Hénon maps. Geom. Funct. Anal., 24(3):887–915, 2014.
+[52] V olker Mayer. Comparing measures and invariant line ﬁelds. Ergodic Theory Dynam.
+Systems, 22(2):555–570, 2002.
+[53] Curtis T. McMullen. Algebra and dynamics. Course Notes (Harvard Univer-
+sity, author webpage : www.math.harvard.edu/~ctm/home/text/class/harvard/275/03/
+html/home/pn/course.pdf), pages 1–108, 2004.
+[54] Curtis T. McMullen. Dynamics on blowups of the projective plane. Publ. Math. Inst.
+Hautes Études Sci., (105):49–89, 2007.
+[55] Arnaud Moncet. Géométrie et dynamique sur les surfaces algébriques réelles.Thèse Uni-
+versité Rennes 1 (see, perso.univ-rennes1.fr/serge.cantat/Documents/Moncet-these.pdf),
+pages 1–180, 2012.
+[56] Yakov B. Pesin. Lectures on partial hyperbolicity and stable ergodicity. Zurich Lectures
+in Advanced Mathematics. European Mathematical Society (EMS), Zürich, 2004.
+[57] David Ruelle. An inequality for the entropy of differentiable maps. Bol. Soc. Brasil.
+Mat., 9(1):83–87, 1978.
+[58] Tetsuo Ueda. Fatou sets in complex dynamics on projective spaces. J. Math. Soc. Japan,
+46(3):545–555, 1994.
+[59] Joachim Wehler. K3-surfaces with Picard number 2. Arch. Math. (Basel), 50(1):73–82,
+1988.
+
+=== PDF PAGE 57 ===
+DYNAMICS ON COMPLEX SURFACES 57
+[60] Lai Sang Young. Dimension, entropy and Lyapunov exponents.Ergodic Theory Dynam-
+ical Systems, 2(1):109–124, 1982.
+[61] Lai-Sang Young. Ergodic theory of differentiable dynamical systems. In Real and com-
+plex dynamical systems (Hillerød, 1993) , volume 464 of NATO Adv. Sci. Inst. Ser. C
+Math. Phys. Sci., pages 293–336. Kluwer Acad. Publ., Dordrecht, 1995.
+[62] Lawrence Zalcman. A heuristic principle in complex function theory. Amer. Math.
+Monthly, 82(8):813–817, 1975.
+[63] Anna Zdunik. Parabolic orbifolds and the dimension of the maximal measure for rational
+maps. Invent. Math., 99(3):627–649, 1990.
+[64] De-Qi Zhang. Algebraic varieties with automorphism groups of maximal rank. Math.
+Ann., 355(1):131–146, 2013.
+IRMAR (UMR 6625 DU CNRS), U NIVERSITÉ DE RENNES 1, F RANCE
+E-mail address: serge.cantat@univ-rennes1.fr
+E-mail address: christophe.dupont@univ-rennes1.fr

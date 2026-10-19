@@ -1,0 +1,136 @@
+{
+  "audited_utc": "2026-10-18T13:09:42.411905+00:00",
+  "purpose": "Notes 58-60: eight-dimensional common-preservation obstruction; affine infranil extension and exact countertests.",
+  "manifest_count": 54,
+  "new_pdf_files": [
+    {
+      "filename": "51_Lauret_Will_2004_Anosov_up_to_dimension_8.pdf",
+      "title": "Anosov diffeomorphisms on nilmanifolds up to dimension 8",
+      "author": "Jorge Lauret and Cynthia E. Will",
+      "download_url": "https://arxiv.org/pdf/math/0406199v2",
+      "landing_url": "https://arxiv.org/abs/math/0406199",
+      "publication_note": "2004 arXiv v2; includes rational-form classification later published separately. Compare the 2009 Transactions article.",
+      "resolved_url": "https://arxiv.org/pdf/math/0406199v2",
+      "bytes": 392839,
+      "sha256": "32f4a2b80664404938cfa9b155c07e75ddc3e86ddb4ba020945c1b82085b3446",
+      "pages": 37,
+      "collected_utc": "2026-10-18T10:22:04.476209+00:00"
+    },
+    {
+      "filename": "52_Bazzoni_Freibert_Latorre_Meinke_Complex_symplectic_Lie_algebras.pdf",
+      "title": "Complex symplectic structures on Lie algebras",
+      "author": "Giovanni Bazzoni, Marco Freibert, Adela Latorre, Benedict Meinke",
+      "download_url": "https://arxiv.org/pdf/1811.05969",
+      "landing_url": "https://doi.org/10.1016/j.jpaa.2020.106585",
+      "publication_note": "Locally stored arXiv:1811.05969v1, 14 November 2018, 35 pages; final Journal of Pure and Applied Algebra 225(6) (2021), 106585. Used as classification background; central-bound input verified in original LUV paper 54.",
+      "resolved_url": "https://arxiv.org/pdf/1811.05969",
+      "bytes": 398395,
+      "sha256": "14d47d69fc684ec768df80f6e197eb5351556682558f114c5cbb28ea8e11eb47",
+      "pages": 35,
+      "collected_utc": "2026-10-18T10:22:03.813425+00:00"
+    },
+    {
+      "filename": "53_Lauret_Will_Nilmanifolds_dimension_8_journal_author.pdf",
+      "title": "Nilmanifolds of dimension at most 8 admitting Anosov diffeomorphisms",
+      "author": "Jorge Lauret and Cynthia E. Will",
+      "download_url": "https://www.famaf.unc.edu.ar/documents/820/AMat78.pdf",
+      "landing_url": "https://doi.org/10.1090/S0002-9947-08-04757-0",
+      "publication_note": "2007 Universidad Nacional de Cordoba Serie A 78/07 author manuscript, 20 PDF pages including a cover; final Transactions AMS 361(5) (2009), 2377-2395. This and file 51 are versions of the same research, not independent classification theorems.",
+      "resolved_url": "https://www.famaf.unc.edu.ar/documents/820/AMat78.pdf",
+      "bytes": 317387,
+      "sha256": "539a70edf302b97e566bdb8c3d8c9c26a63c6b178ef16149063a9fc18902f2c2",
+      "pages": 20,
+      "collected_utc": "2026-10-18T10:22:05.391998+00:00"
+    },
+    {
+      "filename": "54_Latorre_Ugarte_Villacampa_Ascending_central_series.pdf",
+      "title": "The ascending central series of nilpotent Lie algebras with complex structure",
+      "author": "Adela Latorre, Luis Ugarte, Raquel Villacampa",
+      "download_url": "https://zaguan.unizar.es/record/79543/files/texto_completo.pdf",
+      "landing_url": "https://doi.org/10.1090/tran/7512",
+      "publication_note": "University repository author manuscript, 28 pages; final Transactions AMS 372(6) (2019), 3867-3903. Local Theorem 3.11 p.9 and Corollary 3.12 p.13 directly used; exact repository manuscript version date not asserted.",
+      "bytes": 431153,
+      "sha256": "296574b2c8dfaa41751ccf6a87a729b03ad47a77102b8c9e831c2e0eb710d6fa",
+      "pages": 28,
+      "collected_utc": "2026-10-18T10:27:08.390998+00:00"
+    }
+  ],
+  "new_research_works": 3,
+  "source_count": 5,
+  "sources": [
+    {
+      "filename": "51_Lauret_Will_2004_Anosov_up_to_dimension_8.pdf",
+      "absolute_path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\51_Lauret_Will_2004_Anosov_up_to_dimension_8.pdf",
+      "pages": 37,
+      "bytes": 392839,
+      "sha256": "32f4a2b80664404938cfa9b155c07e75ddc3e86ddb4ba020945c1b82085b3446",
+      "reviewed_full_pages": [
+        1
+      ],
+      "all_reviewed_pages_visually_inspected": true,
+      "publication_note": "2004 arXiv v2; includes rational-form classification later published separately. Compare the 2009 Transactions article."
+    },
+    {
+      "filename": "53_Lauret_Will_Nilmanifolds_dimension_8_journal_author.pdf",
+      "absolute_path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\53_Lauret_Will_Nilmanifolds_dimension_8_journal_author.pdf",
+      "pages": 20,
+      "bytes": 317387,
+      "sha256": "539a70edf302b97e566bdb8c3d8c9c26a63c6b178ef16149063a9fc18902f2c2",
+      "reviewed_full_pages": [
+        1,
+        3,
+        5,
+        8,
+        14,
+        18,
+        19
+      ],
+      "all_reviewed_pages_visually_inspected": true,
+      "publication_note": "2007 Universidad Nacional de Cordoba Serie A 78/07 author manuscript, 20 PDF pages including a cover; final Transactions AMS 361(5) (2009), 2377-2395. This and file 51 are versions of the same research, not independent classification theorems."
+    },
+    {
+      "filename": "54_Latorre_Ugarte_Villacampa_Ascending_central_series.pdf",
+      "absolute_path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\54_Latorre_Ugarte_Villacampa_Ascending_central_series.pdf",
+      "pages": 28,
+      "bytes": 431153,
+      "sha256": "296574b2c8dfaa41751ccf6a87a729b03ad47a77102b8c9e831c2e0eb710d6fa",
+      "reviewed_full_pages": [
+        3,
+        9,
+        13
+      ],
+      "all_reviewed_pages_visually_inspected": true,
+      "publication_note": "University repository author manuscript, 28 pages; final Transactions AMS 372(6) (2019), 3867-3903. Local Theorem 3.11 p.9 and Corollary 3.12 p.13 directly used; exact repository manuscript version date not asserted."
+    },
+    {
+      "filename": "52_Bazzoni_Freibert_Latorre_Meinke_Complex_symplectic_Lie_algebras.pdf",
+      "absolute_path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\52_Bazzoni_Freibert_Latorre_Meinke_Complex_symplectic_Lie_algebras.pdf",
+      "pages": 35,
+      "bytes": 398395,
+      "sha256": "14d47d69fc684ec768df80f6e197eb5351556682558f114c5cbb28ea8e11eb47",
+      "reviewed_full_pages": [
+        1,
+        17,
+        20
+      ],
+      "all_reviewed_pages_visually_inspected": true,
+      "publication_note": "Locally stored arXiv:1811.05969v1, 14 November 2018, 35 pages; final Journal of Pure and Applied Algebra 225(6) (2021), 106585. Used as classification background; central-bound input verified in original LUV paper 54."
+    },
+    {
+      "filename": "02_Zhang_2026_Invariant_complex_structures.pdf",
+      "absolute_path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\02_Zhang_2026_Invariant_complex_structures.pdf",
+      "pages": null,
+      "bytes": 409794,
+      "sha256": "98ae9ba19cc73f82e385838d9d04c4cc0a7c5d78c2111582b60f1261d6ce1137",
+      "reviewed_full_pages": [
+        3,
+        4
+      ],
+      "all_reviewed_pages_visually_inspected": true,
+      "publication_note": "2026 preprint, v1"
+    }
+  ],
+  "rendered_full_pages": 16,
+  "all_pages_visually_inspected": true,
+  "unavailable_comparison_pdf": "Foulon-Hasselblatt 2010 JMD: publisher export returned zero bytes and old data path 404; no file created, not a proof input."
+}

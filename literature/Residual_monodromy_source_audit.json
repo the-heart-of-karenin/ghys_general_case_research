@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-19",
+  "new_sources": [
+    {
+      "filename": "67_Franks_Handel_2005_Distortion_elements_v2.pdf",
+      "title": "Distortion Elements in Group actions on surfaces",
+      "authors": [
+        "John Franks",
+        "Michael Handel"
+      ],
+      "download_url": "https://arxiv.org/pdf/math/0404532v2",
+      "landing_url": "https://doi.org/10.1215/S0012-7094-06-13132-0",
+      "resolved_url": "https://arxiv.org/pdf/math/0404532v2",
+      "download_status": "downloaded",
+      "bytes": 283289,
+      "pages": 25,
+      "sha256": "4c5dbaa9bb1b2195668f94b0fafc2e19da71e827f8f21e63edffa6e9521dd245",
+      "collected_utc": "2026-10-19T01:52:35.193967+00:00",
+      "publication_note": "arXiv v2 dated 3 March 2005; PDF title page says 10 November 2018, retained as generation-date discrepancy. Journal Duke Math. J. 131 (2006), 441-468."
+    },
+    {
+      "filename": "68_Hurtado_Xue_2020_Global_rigidity_ABC_v2.pdf",
+      "title": "Global rigidity of some Abelian-by-cyclic group actions on T^2",
+      "authors": [
+        "Sebastian Hurtado",
+        "Jinxin Xue"
+      ],
+      "download_url": "https://arxiv.org/pdf/1909.10112v2",
+      "landing_url": "https://doi.org/10.2140/gt.2021.25.3133",
+      "resolved_url": "https://arxiv.org/pdf/1909.10112v2",
+      "download_status": "downloaded",
+      "bytes": 587546,
+      "pages": 36,
+      "sha256": "ba992626e0d784515f403db419103e9b8bda7b97b591542e55c2dad713f5b44d",
+      "collected_utc": "2026-10-19T01:52:36.044223+00:00",
+      "publication_note": "arXiv v2, 5 December 2020; journal Geometry & Topology 25 (2021), 3133-3178. General-dimensional ping-pong Theorem 1.11 is distinct from the T^2 classification."
+    }
+  ],
+  "new_file_integrity_checks": [
+    {
+      "filename": "67_Franks_Handel_2005_Distortion_elements_v2.pdf",
+      "sha256_matches": true,
+      "bytes_match": true,
+      "page_count_matches": true
+    },
+    {
+      "filename": "68_Hurtado_Xue_2020_Global_rigidity_ABC_v2.pdf",
+      "sha256_matches": true,
+      "bytes_match": true,
+      "page_count_matches": true
+    }
+  ],
+  "complete_pages_visually_checked": [
+    {
+      "source": "67_Franks_Handel_2005_Distortion_elements_v2.pdf",
+      "pdf_page": 1,
+      "image": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\Residual_monodromy_source_previews\\67_Franks_Handel_2005_Distortion_elements_v2_page_1.png",
+      "complete_page_visually_checked": true,
+      "status": "Full page viewed in this turn before compaction; page identity, statement, hypotheses and proof scope checked."
+    },
+    {
+      "source": "67_Franks_Handel_2005_Distortion_elements_v2.pdf",
+      "pdf_page": 2,
+      "image": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\Residual_monodromy_source_previews\\67_Franks_Handel_2005_Distortion_elements_v2_page_2.png",
+      "complete_page_visually_checked": true,
+      "status": "Full page viewed in this turn before compaction; page identity, statement, hypotheses and proof scope checked."
+    },
+    {
+      "source": "68_Hurtado_Xue_2020_Global_rigidity_ABC_v2.pdf",
+      "pdf_page": 5,
+      "image": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\Residual_monodromy_source_previews\\68_Hurtado_Xue_2020_Global_rigidity_ABC_v2_page_5.png",
+      "complete_page_visually_checked": true,
+      "status": "Full page viewed in this turn before compaction; page identity, statement, hypotheses and proof scope checked."
+    },
+    {
+      "source": "68_Hurtado_Xue_2020_Global_rigidity_ABC_v2.pdf",
+      "pdf_page": 8,
+      "image": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\Residual_monodromy_source_previews\\68_Hurtado_Xue_2020_Global_rigidity_ABC_v2_page_8.png",
+      "complete_page_visually_checked": true,
+      "status": "Full page viewed in this turn before compaction; page identity, statement, hypotheses and proof scope checked."
+    },
+    {
+      "source": "68_Hurtado_Xue_2020_Global_rigidity_ABC_v2.pdf",
+      "pdf_page": 9,
+      "image": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\Residual_monodromy_source_previews\\68_Hurtado_Xue_2020_Global_rigidity_ABC_v2_page_9.png",
+      "complete_page_visually_checked": true,
+      "status": "Full page viewed in this turn before compaction; page identity, statement, hypotheses and proof scope checked."
+    },
+    {
+      "source": "68_Hurtado_Xue_2020_Global_rigidity_ABC_v2.pdf",
+      "pdf_page": 10,
+      "image": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\Residual_monodromy_source_previews\\68_Hurtado_Xue_2020_Global_rigidity_ABC_v2_page_10.png",
+      "complete_page_visually_checked": true,
+      "status": "Full page viewed in this turn before compaction; page identity, statement, hypotheses and proof scope checked."
+    }
+  ],
+  "actual_external_inputs": [
+    {
+      "source": "68_Hurtado_Xue_2020_Global_rigidity_ABC_v2.pdf",
+      "pdf_page": 5,
+      "statement": "Theorem 1.11: fourfold transversality at one point for a transitive Anosov with equal stable and unstable dimensions produces a free subgroup generated by an iterate and its conjugate.",
+      "application": "notes/80: solvable actual action cannot have this transversality.",
+      "proof_pages_checked": [
+        8,
+        9
+      ],
+      "scope_exclusions": [
+        "Theorem 1.10 and Proposition 3.2 are dimension two only.",
+        "Theorem 1.12 gives only a free semigroup, which does not contradict solvability."
+      ]
+    }
+  ],
+  "comparison_only_sources": [
+    {
+      "source": "67_Franks_Handel_2005_Distortion_elements_v2.pdf",
+      "scope": "Distortion mechanism and literature comparison only; no surface Diff_0 theorem applied to the eight-dimensional fibre.",
+      "date_discrepancy": "arXiv v2 sidebar 2005-03-03; title page 2018-11-10; journal 2006."
+    }
+  ],
+  "independent_proof_files": [
+    "notes/79_note76_monodromy_derivative_growth_and_zero_rotation.md",
+    "notes/80_note76_finite_isotropic_directions_and_local_line.md",
+    "notes/81_note76_critical_cocycle_and_direction_countertests.md",
+    "notes/82_note76_central_cocycle_ellipticity_kills_slow_drift.md"
+  ],
+  "new_main_result": "Full central cocycle and the coefficient pairing N_1=I, N_i=-J imply an L2 coboundary with a uniform spectral estimate. The hyperbolic normalizer then forces the slow-base displacement to vanish identically, so the actual monodromy preserves each specified topological central fibre.",
+  "corrected_countertest_scope": "The square-root unitary cocycle of note81 satisfies projected equations but cannot extend to the full central equations. It is not a remaining countertest against actual slow-base drift elimination.",
+  "computational_scope": "No old mathematical suites rerun; no numerical experiment used as proof. New-file hashes, byte counts, page counts, manifest uniqueness and preview presence checked.",
+  "unresolved": [
+    "W_Y nonzero",
+    "Complex analytic regularity of the specified topological central fibres",
+    "Central error w_r vanishing",
+    "Global constant-rank regularity of the finite actual tangent directions",
+    "Identification of actual common lines with topological central fibres"
+  ],
+  "novelty": "Not confirmed. Finite primary-source searches and comparisons only.",
+  "notes": "New PDFs are old manuscripts of published work; no 2026 preprint theorem is needed for notes79-82."
+}

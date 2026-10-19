@@ -1,0 +1,33 @@
+{
+  "purpose": "Only new exact exterior-algebra calculations for notes 69-70; not an Anosov counterexample or novelty proof.",
+  "fixed_counterexample": {
+    "closed": true,
+    "fourth_power_nonzero": true,
+    "fourth_power_primitive": "24*t*eta",
+    "fourth_power_class_zero": true,
+    "complex_rank_at_t_1": 8,
+    "mixed_top_volume_constant": "-36*1",
+    "all_real_pencil_volumes_unchanged": true,
+    "recursion_defect_rank_for_nonzero_real_t": 4,
+    "recursion_defect_square_zero": true,
+    "recursion_Nijenhuis_tensor_zero": true,
+    "recursion_defect_commutes_with_hyperbolic_A": true
+  },
+  "actual_symplectic_realization": {
+    "closed": true,
+    "fourth_power_zero": true,
+    "mixed_volume_constant": true,
+    "canonical_representative_has_rank_8_when_su_nonzero": true,
+    "F_not_holomorphic_off_origin": true
+  },
+  "generic_cohomology_fourth_power_terms": 27,
+  "local_equations": {
+    "forces_T2": "24*M22*T1*T2*T3",
+    "forces_T4": "24*M22*T1*T3*T4",
+    "forces_detM": "-24*M11*M22*T1*T3 + 24*M12*M21*T1*T3",
+    "remaining_rank_equation": "-24*N22*T1*T3*h*p*q"
+  },
+  "local_cohomological_locus": "T2=T4=0, detM=0, M12*M21*N22=0 (M22*T1*T3 != 0)",
+  "local_actual_F_fixed_locus": "T2=T4=0, detM=0, N22=0",
+  "all_assertions_passed": true
+}

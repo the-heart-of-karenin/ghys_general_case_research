@@ -1,0 +1,312 @@
+=== PDF PAGE 1 ===
+BIHOLOMORPHISM TYPE OF LEFT-INV ARIANT COMPLEX
+STRUCTURES ON NILPOTENT LIE GROUPS
+KEIZO HASEGAWA, SÖNKE ROLLENSKE, LORENZO SILLARI, ADRIANO TOMASSINI
+AND KONSTANTIN WEHLER
+Abstract.In this note we prove a conjecture by Hasegawa stating that a simply
+connected, nilpotent Lie group of dimension2nendowed with a left-invariant
+complex structure is biholomorphic toCn.
+1.Introduction
+The uniformisation theorem is a cornerstone of the theory of complex manifolds.
+It characterises the topological, algebraic-geometric and differential-geometric prop-
+erties of a Riemann surface in terms of its universal cover being isomorphic toP1,C
+orH. The problem of characterising manifolds with a fixed type of universal cover
+or determining properties of the universal cover of a certain type of manifold has
+continued to see interest ever since, and gained traction especially in Kähler and
+algebraic geometry over the last decades, see for instance [Kol95, CDS14, GKT18].
+In the case of non-Kähler manifolds the picture is, as usual, less systematic and
+focuses on the homogeneous case. Here, the most prominent conjecture has been
+proposed by Hasegawa [Has09, Has10].
+Conjecture 1.1—LetGbe a simply connected, nilpotent Lie group of dimension
+2nand letJbe a left-invariant complex structure onG. Then the complex manifold
+(G, J)is biholomorphic toC n.
+We prove the conjecture by explicitly constructing a biholomorphism, which turns
+out to be polynomial in exponential coordinates.
+Theorem 1.2—LetGbe a simply connected, nilpotent Lie group of dimension2n
+and letJbe a left-invariant complex structure onG. Then the complex manifold
+(G, J)is biholomorphic toC n by a polynomial map. In particular, the universal
+cover of a complex nilmanifold of dimensionnis biholomorphic toCn.
+This theorem was already known in several special cases: Nakamura addressed
+the case of complex nilpotent Lie groups [Nak75], while the surface case was impli-
+citly contained in Kodaira’s work [Kod66], and explicitly in the work of Oeljeklaus–
+Richthofer [OR84].
+Note that complex nilmanifolds, that is, compact quotients of nilpotent Lie groups
+with left-invariant complex structure, provide a rich source of examples of compact
+K.H. is supported by JSPS (Japan Society for the Promotion of Science) KAKENHI Grant
+Number25K07000. S.R.andK.W.weresupportedbytheDFGthroughthegrantRO3734/4-1. L.S.
+is partially supported by INdAM - GNSAGA Project (code E53C24001950001). A.T. is partially
+supported by GNSAGA of INdAM. L.S. and A.T. are partially supported by the Project PRIN
+2022 “Real and Complex Manifolds: Geometry and Holomorphic Dynamics” (code 2022AP8HZ9).
+2020Mathematics Subject Classification.Primary: 32M10 , 22E25.
+Key words and phrases.Complex nilmanifold, left-invariant complex structure, nilpotent Lie
+group, universal cover.
+1
+arXiv:2606.31448v1  [math.DG]  30 Jun 2026
+
+=== PDF PAGE 2 ===
+2 K. HASEGA W A, S. ROLLENSKE, L. SILLARI, A. TOMASSINI, AND K. WEHLER
+non-Kähler manifolds, and have been intensively studied since Thurston’s construc-
+tion of a compact symplectic manifold admitting no Kähler metric, known as the
+Kodaira–Thurston manifold [Thu76].
+In this context, so-called nilpotent complex structures have been introduced in
+[CFGU97], and recently Kanda [Kan26] gave an explicit constructive proof of The-
+orem 1.2 in this special case. In terms of the universal cover, nilpotent complex
+structures can be characterised by(G, J)being an iterated holomorphic principal
+bundle for the additive groupC, so that this case can also be abstractly deduced
+from the Oka–Grauert principle [Gra58].
+In Example 4.1 we explicitly compute a polynomial biholomorphism from a6-
+dimensional Lie group with a non-nilpotent complex structure toC3, exhibiting the
+generality of our result.
+The key ingredient for the general case, beyond the classical work of Snow [Sno85,
+Sno86], is a theorem by Bialynicki-Birula and Rosenlicht [BBR62] stating that an
+injective polynomial self-map ofR n is already surjective. Surjectivity of injective
+algebraic self-maps was first established by Newman for polynomials inR2 [New60],
+and by Bialynicki-Birula and Rosenlicht for polynomial self-maps ofR n and for
+regular self-maps of complex algebraic varieties [BBR62]. The complex case was also
+obtained independently by Ax, Grothendieck and Borel [Ax69, Gro66, Bor69].
+As a direct consequence of the biholomorphism constructed in the proof of The-
+orem 1.2 being polynomial, the applications obtained by Kanda [Kan26] under the
+nilpotency assumption onJextend to arbitrary left-invariant complex structures. A
+further application to the moduli of complex nilmanifolds is developed in the thesis
+of Wehler [Weh26].
+One should note that the analogue of Theorem 1.2 fails if the Lie groupGis no
+longer nilpotent, but merely solvable. This can already be observed for the class
+of two-dimensional complex solvmanifolds, known as Inoue surfaces (cf. [Has05]),
+whose universal cover is biholomorphic toC×H. Nonetheless, Hasegawa [Has10]
+conjectured that, forGa simply connected, unimodular, solvable Lie group with a
+left-invariant complex structureJ, the complex manifold(G, J)is always Stein.
+Acknowledgements.The proof of Conjecture 1.1 was reached in parallel and in-
+dependently by K.Wehler in his PhD thesis [Weh26], supervised by S.Rollenske and
+N.Istrati, and by K.Hasegawa, L.Sillari and A.Tomassini. When we learned about
+the existence of each other’s proofs, we decided to publish the result together.
+2.Preliminaries and notation
+LetGbe a simply connected, nilpotent Lie group of dimension2nwith associated
+Lie algebrag. A left-invariant almost complex structure onGis an endomorphism
+J:g→gwithJ 2 =−id, extended to all ofT Gby left translations. The almost
+complex structureJyields a decomposition of the complexified Lie algebra
+gC =g 1,0 ⊕g 0,1
+into the±i-eigenspaces of its complex-linear extension, andJis integrable if and
+only ifg 1,0 is a complex Lie subalgebra ofg C, that is, if[g 1,0,g 1,0]⊆g 1,0. From
+now on we will always assume thatJis integrable, in which caseJdefines a left-
+invariant complex structure onG, and the pair(G, J)is a complex manifold of
+complex dimensionn.
+In [Sno86], Snow constructed a mapΦ: (G, J)→C n, which is used crucially in
+the proof of Theorem 1.2. We will briefly recall his construction. SinceGis simply
+
+=== PDF PAGE 3 ===
+BIHOLOMORPHISM TYPE OF LEFT-INV ARIANT COMPLEX STRUCTURES 3
+connected, we have an inclusionG ,→G C into the universal complexification ofG
+given by the inclusiong,→g C. Moreover, the exponential mapexp:g C →G C is a
+biholomorphism becauseG C is also simply connected and nilpotent. In particular,
+the subgroupsexp(g1,0) =G 1,0 andexp(g 0,1) =G 0,1 ofG C are closed. After choosing
+a basis ofg1,0, the composition
+(2.1) Cn ∼= g1,0 G1,0 GC GC/G0,1exp π
+defines a biholomorphismψ:G C/G0,1 →C n. We denote byΦ: (G, J)→C n the
+restriction ofψ◦π:G C →C n toG⊂G C, and by [Sno86, Theorem 1, p. 194] the
+mapΦis a local biholomorphism.
+Remark2.2—Snow also proves this result in the case whereGis just solvable, see
+Remark4.2. Inoursettingofnilpotentgroupshisproofcanbesomewhatstreamlined
+as follows: we first show that the composition given in (2.1) defines a biholomorphism
+GC/G0,1 ∼= Cn. Consider the multiplication map
+µ:G 1,0 ×G 0,1 →G C.
+In exponential coordinates, the decompositiong C =g 1,0 ⊕g 0,1 and the Baker–
+Campbell–Hausdorff formula show thatµis a polynomial mapC 2n →C 2n. It is
+injective becauseG 1,0 ∩G 0,1 ={e}. The Bialynicki-Birula–Rosenlicht Theorem (or
+the Ax–Grothendieck Theorem) now states that the mapµis also surjective, and
+therefore a biholomorphism. Hence, the groupGC is biholomorphic toG 1,0 ×G 0,1,
+and thusG C/G0,1 ∼= Cn.
+It remains to show thatΦis a local biholomorphism. The mapΦis equivariant
+with respect to the left action ofG. Hence,Φhas constant rank. The differential
+at the identitydΦ e :g→g C/g0,1 is the natural projection. It isC-linear, soΦis
+holomorphic, and injective sincekerdΦ e =g∩g 0,1 ={0}. As both sides have real
+dimension2n, the mapdΦ e is an isomorphism, andΦis a local biholomorphism.
+3.Proof of Theorem 1.2
+We will show that the mapΦ: (G, J)7→C n is bijective and polynomial in expo-
+nential coordinates. It follows directly from the construction ofΦthat it is injective
+ifGis nilpotent. Indeed, two elements in(G, J)have the same image underΦif
+and only if they differ by an element ofG∩G0,1, but since the exponential map is
+bijective we haveG∩G 0,1 = exp(g∩g 0,1) = exp(0).
+In order to show thatΦis also surjective we have to describe the map more
+explicitly. LetZ 1, . . . , Zn be a basis ofg1,0, and identifyC 2n withg C via the basis
+Z1, . . . , Zn, Z1, . . . ,Zn. Consider the splitting map
+Ψ:C 2n →C 2n,Ψ(w, u) = log
+
+exp
+
+
+nX
+j=1
+wjZj
+
+ exp
+ nX
+k=1
+ukZk
+!
+ ,
+wherew= (w 1, . . . , wn), u= (u 1, . . . , un)∈C n, andlogdenotes the inverse of
+the exponential map. By the Baker–Campbell–Hausdorff formula, which terminates
+becauseg C is nilpotent,Ψis a polynomial map. Moreover,Ψis injective because
+G1,0 ∩G 0,1 ={e}. Now, the determinant of the Jacobian matrix ofΨis a complex
+polynomialDthat vanishes nowhere, sinceΨis a local diffeomorphism. By the weak
+Hilbert’s Nullstellensatz [AM69, Corollary 7.10, p. 82] applied to the ideal⟨D⟩, we
+have thatDis a unit in the ring of complex polynomials, hence a non-zero constant.
+By [BCW82, Theorem 2.1, p. 294], an injective polynomial mapC2n →C 2n with
+
+=== PDF PAGE 4 ===
+4 K. HASEGA W A, S. ROLLENSKE, L. SILLARI, A. TOMASSINI, AND K. WEHLER
+constantJacobianisinvertiblewithpolynomialinverse. ThereforeΨ −1 ispolynomial.
+Finally, every real elementg∈G⊂G C can be written as
+g= exp
+ nX
+i=1
+ziZi + ziZi
+!
+,
+and the factorisation
+g= exp
+
+
+nX
+j=1
+wjZj
+
+ exp
+ nX
+k=1
+ukZk
+!
+is given by(w1, . . . , wn, u1, . . . , un) = Ψ −1(z, z). By the construction ofΦwe have
+Φ(g) = (w 1, . . . , wn), so the mapΦ◦exp:g→C n is polynomial in the variables
+zj, zj. IdentifyinggwithR 2n via the real and imaginary parts ofZ j, the map
+Φ◦exp:R 2n →C n ∼= R2n is a real polynomial map. Since we already showed that
+Φis injective, so isΦ◦exp. Hence, by the Bialynicki-Birula–Rosenlicht Theorem,
+Φ◦expisalsosurjective. Therefore,Φisabiholomorphism, polynomialinexponential
+coordinates, and(G, J) ∼= Cn.
+4.Concluding Remarks
+If the complex structureJis nilpotent in the sense of Cordero–Fernández–Gray–
+Ugarte [CFGU97], then there exists a basisZ1, . . . , Zn ofg 1,0 compatible with the
+ascending central series ofg. In this case, it follows directly from the argument in the
+previous section that the degree of the polynomials given by the mapΦis bounded
+by the nilpotency index of the Lie algebrag. This is explicitly demonstrated by the
+examples given in [Kan26, Section 5]. However, as the following example shows, this
+bound no longer holds if the complex structure is non-nilpotent.
+Example 4.1— The biholomorphismΦgiven in the proof of Theorem 1.2 is
+polynomial foreveryleft-invariant complex structure, including those that are non-
+nilpotent. In real dimension6there are, up to isomorphism, exactly two nilpotent
+Lie algebras carrying non-nilpotent complex structures [COUV16]; we treat one of
+them.
+Letg=h −
+19 be the3-step nilpotent Lie algebra with basis{X1, Y1, X2, Y2, X3, Y3}
+and non-trivial brackets
+[X1, X2] =−Y 3,[X 1, X3] =−X 2,[Y 1, Y2] =−Y 3,[Y 1, X3] =−Y 2,
+endowed with the complex structureJ Xk =Y k, fork= 1,2,3. Its center⟨Y 3⟩is one-
+dimensional and contains no non-zeroJ-invariant subspace, soJis non-nilpotent.
+Writingg= exp
+ P
+k xkXk +y kYk
+
+andz k = 1
+2(xk +iy k), a direct computation with
+the Baker–Campbell–Hausdorff formula givesΦ(g) = (w1, w2, w3)with
+w1 =z 1,
+w2 =z 2 + 1
+2 z1z3 + i
+4 z1
+ 
+z1z2 −z 1z2
+
++ i
+12 |z1|2z1(z3 + z3),
+w3 =z 3 + i
+2
+ 
+z1z2 − z1z2
+
+− i
+6 |z1|2(z3 + z3).
+This is a polynomial diffeomorphismR6 →C 3 of degree four, one larger than the
+nilpotency index, illustrating Theorem 1.2 in a case beyond the reach of [Kan26].
+Following the proof of Theorem 1.2 given in [Weh26] we obtain that a general bound
+on the degree of the polynomial mapΦis given by twice the nilpotency index ofg.
+
+=== PDF PAGE 5 ===
+BIHOLOMORPHISM TYPE OF LEFT-INV ARIANT COMPLEX STRUCTURES 5
+Remark4.2—As already mentioned in Remark 2.2, the mapΦcan also be defined
+ifGis just solvable. However, its image is in general only biholomorphic to a domain
+inC n. We observe that any homogeneous bounded domain inCn is a Siegel domain,
+which has a non-nilpotent solvable Lie group structure.
+References
+[AM69] M.F.AtiyahandI.G.Macdonald.Introduction to commutative algebra.Addison-Wesley
+Publishing Co., Reading, Mass.-London-Don Mills, Ont., 1969.
+[Ax69] J. Ax. Injective endomorphisms of varieties and schemes.Pacific J. Math., 31:1–7, 1969.
+[BBR62] A. Bialynicki-Birula and M. Rosenlicht. Injective morphisms of real algebraic varieties.
+Proc. Amer. Math. Soc., 13:200–203, 1962.
+[BCW82] H. Bass, E. H. Connell, and D. Wright. The Jacobian conjecture: reduction of degree
+and formal expansion of the inverse.Bull. Amer. Math. Soc. (N.S.), 7(2):287–330, 1982.
+[Bor69] A. Borel. Injective endomorphisms of algebraic varieties.Arch. Math. (Basel), 20:531–
+537, 1969.
+[CDS14] F. Catanese and A. J. Di Scala. A characterization of varieties whose universal cover is
+a bounded symmetric domain without ball factors.Adv. Math., 257:567–580, 2014.
+[CFGU97] L. A. Cordero, M. Fernández, A. Gray, and L. Ugarte. Nilpotent complex structures on
+compact nilmanifolds.Rend. Circ. Mat. Palermo (2) Suppl., 49:83–100, 1997.
+[COUV16] Manuel Ceballos, Antonio Otal, Luis Ugarte, and Raúl Villacampa. Invariant complex
+structures on6-nilmanifolds: classification, Frölicher spectral sequence and special Her-
+mitian metrics.J. Geom. Anal., 26(1):252–286, 2016.
+[GKT18] D.Greb, S.Kebekus, andBeB.hrouzTaji.Uniformisationofhigher-dimensionalminimal
+varieties. InAlgebraic geometry: Salt Lake City 2015, volume 97.1 ofProc. Sympos. Pure
+Math., pages 277–308. Amer. Math. Soc., Providence, RI, 2018.
+[Gra58] H. Grauert. Analytische Faserungen über holomorph-vollständigen Räumen.Math.
+Ann., 135:263–273, 1958.
+[Gro66] A. Grothendieck. Éléments de géométrie algébrique (IV): Étude locale des schémas et
+des morphismes de schémas (Troisième partie).Publ. Math. Inst. Hautes Études Sci.,
+28:1–255, 1966.
+[Has05] K. Hasegawa. Complex and Kähler structures on compact solvmanifolds.J. Symplectic
+Geom., 3(4):749–767, 2005.
+[Has09] K. Hasegawa. Complex and Kähler structures on compact homogeneous manifolds—
+their existence, classification and moduli problem. InSingularities—Niigata–Toyama
+2007, volume 56 ofAdv. Stud. Pure Math., pages 151–167. Math. Soc. Japan, 2009.
+[Has10] K. Hasegawa. Small deformations and non-left-invariant complex structures on six-
+dimensional compact solvmanifolds.Differential Geom. Appl., 28(2):220–227, 2010.
+[Kan26] S. Kanda. Holomorphic polynomial crystallographic actions of nilpotent groups. 2026.
+Preprint, arXiv:2606.04996.
+[Kod66] K. Kodaira. On the structure of compact complex analytic surfaces. II.Amer. J. Math.,
+88:682–721, 1966.
+[Kol95] J. Kollár.Shafarevich maps and automorphic forms. M. B. Porter Lectures. Princeton
+University Press, Princeton, NJ, 1995.
+[Nak75] I. Nakamura. Complex parallelisable manifolds and their small deformations.J. Differ-
+ential Geometry, 10:85–112, 1975.
+[New60] D. J. Newman. One-one polynomial maps.Proc. Amer. Math. Soc., 11:867–870, 1960.
+[OR84] K. Oeljeklaus and W. Richthofer. Homogeneous complex surfaces.Math. Ann.,
+268(3):273–292, 1984.
+[Sno85] D. M. Snow. Stein quotients of connected complex Lie groups.Manuscripta Math.,
+50:185–214, 1985.
+[Sno86] D. M. Snow. Invariant complex structures on reductive Lie groups.J. Reine Angew.
+Math., 371:191–215, 1986.
+[Thu76] W. P. Thurston. Some simple examples of symplectic manifolds.Proc. Amer. Math.
+Soc., 55(2):467–468, 1976.
+[Weh26] K. Wehler. Moduli spaces for complex nilmanifolds, 2026. PhD Thesis: ht-
+tps://doi.org/10.17192/openumr/689.
+
+=== PDF PAGE 6 ===
+6 K. HASEGA W A, S. ROLLENSKE, L. SILLARI, A. TOMASSINI, AND K. WEHLER
+Keizo Hasega w a: Department of Mathematics, Graduate School of Science, Osaka
+University, Toyonaka, Osaka 560-0043, Japan; and Department of Mathematics, F ac-
+ulty of Education, Niigata University, Ikarashi-nino-cho, Nishi-ku, Niigata 950-2181,
+Japan
+Email address:hasegawa@math.sci.osaka-u.ac.jp
+Email address:hasegawa@ed.niigata-u.ac.jp
+Sönke Rollenske: FB 12/Mathematik und Informatik, Philipps-Universität Mar-
+burg, Hans-Meer wein-Str. 6, 35032 Marburg, Germany
+Email address:rollenske@mathematik.uni-marburg.de
+Lorenzo Sillari: Dipartimento di Scienze Matematiche, Fisiche e Informatiche,
+Unità di Matematica e Informatica, Università degli Studi di Parma, Parco Area
+delle Scienze 53/A, 43124 Parma, Italy
+Email address:lorenzo.sillari@unipr.it
+Adriano Tomassini: Dipartimento di Scienze Matematiche, Fisiche e Informatiche,
+Unità di Matematica e Informatica, Università degli Studi di Parma, Parco Area
+delle Scienze 53/A, 43124 Parma, Italy
+Email address:adriano.tomassini@unipr.it
+Konstantin Wehler: FB 12/Mathematik und Informatik, Philipps-Universität Mar-
+burg, Hans-Meer wein-Str. 6, 35032 Marburg, Germany
+Email address:konstantin.wehler@uni-marburg.de

@@ -1,0 +1,870 @@
+=== PDF PAGE 1 ===
+arXiv:1009.5796v1  [math.DS]  29 Sep 2010
+Dynamics of automorphisms on
+compact K¨ ahler manifolds
+Henry De Th´ elin and Tien-Cuong Dinh
+November 14, 2018
+Abstract
+We study holomorphic automorphisms on compact K¨ ahler mani folds
+having simple actions on the Hodge cohomology ring. We show f or such
+automorphisms that the main dynamical Green currents admit complex
+laminar structures (woven currents) and the Green measure i s the unique
+invariant probability measure of maximal entropy.
+Key-words: holomorphic automorphism, Green current, laminar current, Gree n
+measure, entropy.
+AMS Classiﬁcation: 32U40, 32H50.
+1 Introduction
+Let ( X, ω ) be a compact K¨ ahler manifold of dimension k where ω denotes a
+K¨ ahler form on X. Let f : X → X be a holomorphic automorphism on X.
+The ﬁrst part of this paper deals with some geometric property of d ynamical
+Green currents associated with f . These currents were constructed by Sibony
+and the second author in [10]. We will show that they are woven. Roug hly
+speaking, woven currents admit a complex laminar structure in the s ense that
+they are averages of currents of integration on complex manifolds (see Section 2
+for precise deﬁnition). The property is fundamental in the dynamic al study of f
+using a geometric method (see Bedford-Lyubich-Smillie [1]).
+When X is a projective manifold, the problem was solved in [9] using that X
+admits many submanifolds of any dimension, see also Cantat [2] for th e case of
+dimension k = 2. For a general K¨ ahler manifold, the approach breaks down and
+it is necessary to use another technique. Our approach here uses in particular a
+recent result by the ﬁrst author which gives a criterion for a curre nt to be woven
+[5]. The criterion is valid in the local setting and allows us to work with gen eral
+K¨ ahler manifolds.
+1
+
+=== PDF PAGE 2 ===
+The second part of the paper deals with the uniqueness of invariant measure of
+maximal entropy. This property says that somehow the measure d escribes totally
+the most chaotic part of the dynamical system. Our approach follo ws partially
+the method developed in [1, 7]. One of our contribution here concern s some new
+results on the equidistribution towards the Green currents of f . A priori, these
+currents are not intersections of currents of bidegree (1 , 1) and this is a source of
+diﬃculties that we have to overcome in this work.
+Recall that the dynamical degree dp of order p of f is the spectral radius of
+the pull-back operator f ∗ acting on the Hodge cohomology group H p,p (X, C) for
+0 ≤ p ≤ k. We have d0 = dk = 1. An inequality due to Khovanskii, Teissier and
+Gromov [15] implies that the function p ↦→ log dp is concave on 0 ≤ p ≤ k. In
+particular, there are integers s and s′ with 0 ≤ s ≤ s′ ≤ k such that
+1 = d0 < · · ·< d s = · · ·= ds′ > · · ·> d k = 1.
+In what follows, we assume that the action of f ∗ on the Hodge cohomology
+ring ⊕ H ∗(X, C) admits a unique eigenvalue of modulus ds which is moreover a
+simple eigenvalue. We say that the action of f ∗ on Hodge cohomology group
+is simple. This property is equivalent to the fact that the sequence of linear
+operators d− n
+s (f n)∗ on ⊕ H ∗(X, C) converges to a rank 1 operator. The eigenvalue
+of maximal modulus is then equal to ds and we have s = s′, see [10, 11, 17] for
+details.
+An example of maps which do not satisfy the above property is the au tomor-
+phism ( y, z ) ↦→ (y, g (y)) on the product Y × Z of two compact K¨ ahler manifolds
+where g is an automorphism on Z. So, our hypothesis on f ∗ somehow insures the
+lack of neutral direction in the dynamical system. Under this natur al condition,
+it was shown in [10] that the sequences d− n
+s (f n)∗ω s and d− n
+s (f n)∗ω k− s converge
+to positive closed currents T + and T − respectively. We call them the main Green
+currents associated with f . We will not consider in this work the Green currents
+of other bidegree. Our ﬁrst main result is the following.
+Theorem 1.1. Let f be a holomorphic automorphism on a compact K¨ ahler man-
+ifold X. Assume that the action of the pull-back operator f ∗ on Hodge cohomology
+is simple. Then the main Green currents T ± of f are woven. If T + (resp. T − )
+is of bidegree (1, 1), then it is laminar.
+The intersection µ := T + ∧ T − of T + and T − is well-deﬁned and is a non-zero
+invariant positive measure. Multiplying ω with a constant allows us to assume
+that µ is a measure of probability. We call it the Green measure of f . The well-
+known variational principle says that the entropy of µ is bounded from above
+by the topological entropy of f which is equal to log ds according to results by
+Gromov and Yomdin [16, 22]. It was shown in [11] that µ is a measure of maximal
+entropy, i.e. its entropy is equal to log ds. Here is our second main result.
+2
+
+=== PDF PAGE 3 ===
+Theorem 1.2. Let f be as in Theorem 1.1. Then the Green measure of f is the
+unique invariant probability measure of maximal entropy.
+Acknowledgement. This paper was partially written during the visit of the sec-
+ond author at the Max-Planck institute. He would like to thank this or ganization
+for its support and its hospitality.
+2 Laminar and woven currents
+In this section, we introduce the notion of laminar/woven current a nd give some
+criteria for currents to be laminar/woven.
+Let X be a complex manifold of dimension k and consider a Hermitian metric
+ω on X. Consider a connected complex manifold Z of dimension k − p with
+1 ≤ p ≤ k − 1 and a holomorphic map g : Z → X. Assume that
+∫
+Z
+g∗(ω k− p
+|K ) < +∞
+for any compact subset K of X. According to the Wirtinger’s theorem, this
+condition means that the 2( k − p)-dimensional volume of g(Z) counted with
+multiplicity is locally ﬁnite in X. So, g∗[Z] deﬁnes a positive ( p, p )-current in X
+which is not closed in general. Here, [ Z] is the current of integration on Z.
+We refer the reader to Demailly [4] and Federer [14] for basic theory on cur-
+rents. The above integral on Z is the mass of g∗[Z] on K. Recall that the mass
+on a Borel set B ⊂ X of a positive ( p, p )-current S on X is deﬁned by
+∥S∥B :=
+⟨
+S, ω k− p
+|B
+⟩
+.
+Denote by Bp(X) the set of all the currents of the form g∗[Z] as above.
+Consider a positive measure ν on Bp(X) such that for any compact subset K of
+X, we have ∫
+∥S∥Kdν(S) < ∞ .
+Under this condition, we can deﬁne a positive ( p, p )-current T by
+T :=
+∫
+Sdν (S),
+that is,
+⟨T, α ⟩ =
+∫
+⟨S, α ⟩dν(S)
+for all test ( k − p, k − p)-form α on X. The condition on ν insures that the last
+integral is meaningful. Such a current T is called woven, see [9]. If moreover, for
+3
+
+=== PDF PAGE 4 ===
+ν-almost all currents S = g∗[Z] and S′ = g′
+∗[Z ′], the intersection g(Z) ∩ g′(Z ′) is
+empty or of maximal dimension k − p, we say that T is laminar, see [1].
+It is not diﬃcult to see that g∗[Z] can be written as a sum of currents of
+the same type with small support. Therefore, a current is woven if and only if
+it is locally woven. We will now give an equivalent deﬁnition of woven curre nt
+which gives a simpler geometric structure and is closer to the notion o f laminar
+current introduced in [1]. For simplicity, we assume that X is an open set in
+Ck. Otherwise, we can write X as a ﬁnite or countable union X i where Xi are
+disjoint charts such that T has no mass on ∂Xi and Proposition 2.1 below will
+give a description of T in each Xi.
+Consider a coordinates system ( z1, . . . , z k) of Ck and the associated real co-
+ordinates systems ( x1, . . . , x 2k) of Ck ≃ R2k with zj = xj + ixj+k. Divide Ck into
+cubes of size r using the real hyperplanes {xi = mr} with m ∈ Z and 1 ≤ i ≤ 2k.
+Such an r-cube is called basic r-cube and their union is denoted by Qr. We call
+this a division of Ck into r-cubes. We can choose the coordinates system so that
+for all r ∈ Q, the current T has no mass on the complementary of Qr, i.e. in the
+union of the hyperplanes {xi = mr}.
+Consider an irreducible submanifold Γ of codimension p in a basic r-cube D.
+We say that Γ is nice if it satisﬁes the following properties:
+(1) There is an irreducible submanifold Γ ′ of the basic 3 r-cube D′ containing
+D such that Γ is an open subset of Γ ′;
+(2) The manifold Γ ′ is the graph of a holomorphic map over its tangent space
+at each point.
+It is not diﬃcult to see that the volume of such a manifold Γ is bounded b y a
+universal constant times r2(k− p).
+Denote by Bp(r) the set of all the nice manifolds Γ of codimension p. Let ν
+be a positive measure on Bp(r) such that
+∫
+volume(Γ)dν(Γ) < ∞ .
+We say that the associated current S :=
+∫
+[Γ]dν(Γ) is a nice woven current , where
+[Γ] denotes the current of integration on Γ.
+Proposition 2.1. Let T be a woven (p, p )-current on an open subset X of Ck as
+above. Then there are nice woven currents Ti on Q2− i which vanish outside X
+and such that
+T =
+∞∑
+i=0
+Ti.
+Proof. Consider ﬁrst the case where T is equal to the current g∗[Z] as above. If
+dim g(Z) < k − p, then g∗[Z] = 0 as ( p, p )-currents. So, we can assume that
+4
+
+=== PDF PAGE 5 ===
+the dimension of g(Z) is k − p. Denote by Σ the set of points in Z where the
+diﬀerential of g is not of maximal rank. This is a proper analytic subset of Z.
+Therefore, its 2( k − p)-dimensional volume vanishes. It follows that [ Z \Σ] = [ Z]
+and g∗[Z \Σ] = g∗[Z].
+Deﬁne Gi := g− 1(Ck \Q2− i). This is an increasing sequence of closed subsets in
+Z. Their volumes are equal to 0 because g∗[Z] has no mass on the complementary
+of Q2− i. Denote by W0 the union of connected components of Z \G0 which are
+sent injectively by g to nice manifolds in basic 1-cubes. Deﬁne also by induction
+for i ≥ 1, Zi := Zi− 1 \W i− 1 and Wi the union of connected components of Zi \Gi
+which are sent injectively by g to a nice manifolds in basic 2 − i-cubes.
+Observe that for any a ∈ Z \Σ, if r is small enough, there is a neighbourhood
+U of a such that U is sent injectively to a nice submanifold of a basic r-cube.
+Therefore, the union of Wi contains the complementary of ∪ i≥ 0Gi ∪ Σ. Since the
+last set has zero volume, we obtain that T = ∑Ti where Ti := g∗(Wi). The
+currents Ti are nice woven in Q2− i. So, the proposition is true for g∗[Z].
+In general, write T =
+∫
+Sdν (S) where ν is a positive measure on Bp(X).
+Since T has no mass on the Ck \ Q2− i, the same property holds for ν-almost
+every S. Consider the decomposition S = ∑Si into nice currents obtained as
+above and deﬁne Ti :=
+∫
+Sidν(S). It is clear that Ti are nice woven currents and
+that T = ∑Ti.
+Woven currents appear naturally as certain limits of submanifolds. W e give
+now a criterium for a sequence of manifolds to be convergent towar ds a woven
+current. It was obtained by the second author in the case of proj ective manifolds
+[9] and generalized by the ﬁrst author to the local setting [5].
+Consider a sequence Mn of (smooth) submanifolds of dimension k − p in an
+open set X of Ck. Denote by G(k− p, k ) the set of complex subspaces of dimension
+k − p in Ck through the origin 0 ∈ Ck. This is a complex Grassmannian. Denote
+by TxMn the tangent space of Mn at x and deﬁne
+˜Mn =
+{
+(x, H ) ∈ Mn × G(k − p, k ), H parallel to TxMn
+}
+.
+The volume of ˜Mn is called the curvature of Mn, see [9]. We have the following
+result, see [5].
+Theorem 2.2. Let Mn be a sequence of submanifolds of pure dimension k − p in
+an open set X of Ck. Let vn be the volume of Mn and ˜vn its curvature. Assume
+that vn and ˜vn are ﬁnite and that the sequence Tn = v− 1
+n [Mn] converge to a current
+T (this property is always true for some subsequences). If ˜vn = O(vn), then T is
+woven.
+Here is another criterium that we will use in the proof of the ﬁrst main result.
+5
+
+=== PDF PAGE 6 ===
+Proposition 2.3. Let X and Y be two complex manifolds of dimensions k, l
+respectively. Let T be a positive (p, p )-current on X and S is a positive (q, q )-
+current on Y . Assume that T ⊗ S is woven in X × Y . Then T and S are woven
+in X and Y respectively.
+Proof. We will show that T is woven. The same proof works for S. Since the
+problem is local, we can assume that X and Y are bounded open domains in Ck
+and Cl respectively. Denote by Π X and Π Y the projections from X × Y to X
+and Y . Choose a linear projection π : Cl → Cl− q and a positive smooth form
+Ω of maximal degree with compact support in Y such that m := S ∧ π ∗(Ω) is a
+non-zero positive measure. Multiplying Ω with a constant allows us to a ssume
+that m is a probability measure. We deduce that (Π X)∗(T ⊗ m) = T .
+Deﬁne R := T ⊗ S and Π := π ◦ ΠY . Observe that
+T ⊗ m = (T ⊗ S) ∧ Π∗(Ω) = R ∧ Π∗(Ω).
+We will show that R ∧ Π∗(Ω) is woven. By deﬁnition of woven current, this
+property together with the identity (Π X )∗(T ⊗ m) = T will imply that T is also
+woven.
+Since R is woven, it is enough to consider the case where R is the current of
+integration on a connected manifold Γ of dimension k− p+l− q. If dim Π(Γ) < l− q,
+then [Γ] ∧ Π∗(Ω) = 0. So, we can assume that dim Π(Γ) = l − q. Let Σ denote
+the set of critical values of Π |Γ. Then, for a ̸∈ Σ, the intersection Γ ∩ Π− 1(a)
+is transversal and is either empty or a smooth manifold of dimension k − p. By
+Bertini’s theorem, Π − 1(Σ) ∩ Γ has zero volume in Γ. The Fubini’s theorem (see
+[3] p.334) implies that:
+[Γ] ∧ Π∗(Ω) =
+∫
+[Γ ∩ Π− 1(a)]dν(a),
+where ν is the positive measure deﬁned by Ω. Clearly, [Γ] ∧ Π∗(Ω) is woven. This
+completes the proof.
+We now give a criterion in order to prove that a woven (1, 1)-current is laminar.
+The following proposition was independently obtained by Dujardin [13].
+Proposition 2.4. Let T be a woven positive closed (1, 1)-current of a complex
+manifold X. Assume that the local potentials of T are integrable with respect to
+T (so, the wedge-product T ∧ T is well-deﬁned). If T ∧ T = 0, then T is laminar.
+Proof. The problem is local. So, we can assume that X is a domain in Ck. By
+Proposition 2.1, we can write T = ∑+∞
+i=0 Ti, where Ti are nice woven currents on
+Q2− i which vanish outside X. Denote by νi the measure associated with Ti which
+is deﬁned on the space of nice hypersurfaces in the components of Q2− i.
+Assume that T is not laminar. Then we can ﬁnd Γ 0 in the support of some
+νi and Γ ′
+0 in the support of some νj such that Γ 0 ∩ Γ′
+0 is a non-empty subvariety
+6
+
+=== PDF PAGE 7 ===
+of dimension k − 2. Denote by D (resp. D′) the 2 − i-cube (resp. 2 − j-cube) which
+contains Γ0 (resp. Γ ′
+0). Denote also by V ǫ
+i (resp. V ǫ
+j ) the set of nice hypersurfaces
+of D (resp. D′) whose distance to Γ 0 (resp. Γ ′
+0) is less than ǫ. If ǫ is small enough
+then for Γ ∈ V ǫ
+i and Γ ′ ∈ V ǫ
+j the intersection Γ ∩ Γ′ is a non-empty variety of
+dimension k − 2 (by Hurwitz’s theorem).
+Since Γ 0 is in the support of νi and Γ ′
+0 is in the support of νj, we have
+νi(V ǫ
+i ) > 0 and νj(V ǫ
+j ) > 0. Deﬁne S :=
+∫
+V ǫ
+i
+[Γ]dνi(Γ) and S′ =
+∫
+V ǫ
+j
+[Γ′]dνj(Γ′).
+Then the geometric intersection
+S ∧ g S′ :=
+∫
+V ǫ
+i
+∫
+V ǫ
+j
+[Γ ∩ Γ′]dνi(Γ)dνj(Γ′)
+is a positive closed (2 , 2)-current on D ∩ D′ with positive mass. Here, the inter-
+section Γ ∩ Γ′ is counted with multiplicity, see e.g. [4, Ch. III, Prop. 4.12].
+Now S ∧ S′ is well deﬁned in D ∩ D′ because S ≤ T and S′ ≤ T and T ∧ T is
+well deﬁned. It is not diﬃcult to show that S ∧ g S′ = S ∧ S′, see [8, Prop. 2.6].
+This is a contradiction because S ∧ S′ ≤ T ∧ T = 0.
+3 Woven structure of Green currents
+Consider now a holomorphic automorphism on a compact K¨ ahler manifold (X, ω )
+of dimension k. Fix a norm on the Hodge cohomology ring ⊕ H ∗(X, C). We will
+use the following result in order to obtain the ﬁrst main theorem.
+Proposition 3.1. Let λ n be the norm of the operator (f n)∗ on ⊕ H ∗(X, C). Let
+M be a submanifold of codimension p of X. Then all limit values of the sequence
+λ − 1
+n (f n)∗[M] are woven currents.
+Proof. Since X is a compact K¨ ahler manifold, the mass ∥T ∥ := ⟨T, ω k− p⟩ of a
+positive closed ( p, p )-current depends only on its cohomology class in ⊕ H ∗(X, C).
+Recall also that when T is given by integration on a manifold M, by Wirtinger’s
+theorem, the mass of T is (k − p)! times the volume of M. By deﬁnition of λ n, the
+mass of λ − 1
+n (f n)∗[M] is bounded uniformly on n. In particular, the limit values
+of λ − 1
+n (f n)∗[M] are positive closed ( p, p )-currents.
+Consider a limit T of a sequence λ − 1
+ni (f ni)∗[M]. We have to show that T is
+woven. For this purpose, we will apply Theorem 2.2 for the restrictio n of T to
+charts of X. It is enough to consider the case where T ̸= 0. This property is
+equivalent to the fact that the volume of Mni := f − ni(M) increases like λ ni when
+i → ∞ .
+Denote by T X the complex tangent bundle of X and deﬁne E := ⋀k− p T X the
+bundle of holomorphic tangent ( k − p)-vectors. Consider also the projectivization
+P(E) of E. The canonical projection π : P(E) → X deﬁnes a holomorphic
+ﬁbration whose ﬁbers are isomorphic to the projective space of dim ension r − 1
+where r := rank(E).
+7
+
+=== PDF PAGE 8 ===
+If a is a point in M, the tangent space of M at a is deﬁned by a non-zero
+holomorphic tangent ( k − p)-vector v which is unique up to a multiplicative
+constant. So, we can associate to a a point ˜a = (a, [v]) in π − 1(a). When a varies
+in M, the point ˜a describes a submanifold ˜M of dimension k − p in P(E). On a
+neighbourhood U of a, we can identify T X with the trivial vector bundle U × Ck
+and P(E) to the product U × Pr− 1. The Grassmannian G(k − p, k ) is canonically
+identiﬁed to a submanifold of Pr− 1 and ˜M coincides with the submanifold of
+U × G(k − p, k ) introduced in the deﬁnition of the curvature of M in Section 2.
+The automorphism f lifts canonically to an automorphism on T X. Hence, it
+also lifts canonically to an automorphism ˜f of P(E). This map ˜f preserves the
+ﬁbration π : P(E) → X, that is, π ◦ ˜f = f ◦ π. If ˜Mn is associated to Mn, we
+have ˜Mn = ˜f − n( ˜M). In order to apply Theorem 2.2, it is enough to show that
+volume(˜Mn) = O(λ n). According to Proposition 3.18 in Voisin [21], P(E) is a
+compact K¨ ahler manifold. So, it is enough to verify that ∥( ˜f n)∗∥ = O(λ n) on
+⊕ H ∗(P(E), C) for a ﬁxed norm on the last space.
+Consider the canonical line bundle O(1) of P(E). It is invariant under the
+action induced by ˜f . If h denotes the Chern class of O(1) in H 2(P(E), C), we have
+˜f ∗(h) = h. Moreover, according to Lemma 7.32 in [21], the ring ⊕ H ∗(P(E), C)
+is generated by h and by the sub-ring π ∗(⊕ H ∗(X, C)). In other words, any class
+in ⊕ H ∗(P(E), C) can be written as a linear combination of classes of the form
+hm ⌣ π ∗(c), where c is a class in ⊕ H ∗(X, C). Finally, we deduce from the above
+discussion that
+( ˜f n)∗(hm ⌣ π ∗(c)) = hm ⌣ π ∗(f n)∗(c).
+The norm of this class increases at most like λ n when n → ∞ . It follows that
+∥( ˜f n)∗∥ = O(λ n) which completes the proof.
+In the rest of this section, we give the proof of Theorem 1.1. We ass ume
+that the action of f ∗ on Hodge cohomology is simple and we will use the same
+notation given in Introduction. Consider the automorphism F on X × X deﬁned
+by F (x, y ) = ( f (x), f − 1(y)). By K¨ unneth formula [21], we have
+H l,l (X × X, C) ≃
+⨁
+p+p′=l
+q+q′=l
+H p,q (X, C) ⊗ H p′,q ′
+(X, C).
+Moreover, F ∗ = ( f ∗, f ∗) preserves this decomposition. It was shown in [9] that
+the spectral radius of f ∗ on H p,q (X, C) is bounded by
+√
+dpdq. It follows that the
+action of F ∗ on Hodge cohomology is simple. The dynamical degree dk(F ) of
+order k of F is the maximal one and is equal to d2
+s.
+The following result together with Propositions 2.3 and 2.4 imply Theore m
+1.1. Note that when T + is of bidegree (1 , 1), we have f ∗(T + ∧ T +) = d2
+1T + ∧ T +
+and we deduce that T + ∧ T + = 0 since in this case d2
+1 > d 1 > d 2. The same
+property holds for T − .
+8
+
+=== PDF PAGE 9 ===
+Proposition 3.2. Let ∆ denote the diagonal of X × X. Then
+d− 2n
+s (F n)∗[∆] → cT + ⊗ T − ,
+where c > 0 is a constant. Moreover, T + ⊗ T − is woven.
+Proof. We only have to prove the ﬁrst assertion. The second one is then a c on-
+sequence of Proposition 3.1 applied to F instead of f .
+Since the action of F ∗ on ⊕ H ∗(X × X, C) is simple and d2
+s is its spectral radius,
+the sequence d− 2n
+s (F n)∗ converges to a rank 1 linear operator on ⊕ H ∗(X × X, C).
+The image of the limit operator is a complex line. It is generated by the c lass
+{T +} ⊗ { T − } since we have F ∗(T + ⊗ T − ) = d2
+sT + ⊗ T − . In particular, if {∆}
+denotes the class of the current [∆] in H k,k (X × X, C), d− 2n
+s (F n)∗{∆} converge
+in H k,k (X × X, C) to c{T +} ⊗ { T − } for some constant c. We have c ≥ 0 since
+[∆] and T ± are positive closed currents. We ﬁrst show that c ̸= 0.
+Denote by Π 1 and Π 2 the projections from X × X on its factors. On one
+hand, the integral ⟨
+d− 2n
+s (F n)∗[∆], Π∗
+1ω k− s ∧ Π∗
+2ω s⟩
+(which can be computed cohomologically) converges to
+c⟨T + ⊗ T − , Π∗
+1ω k− s ∧ Π∗
+2ω s⟩.
+On the other hand, the same integral is equal to
+d− 2n
+s
+⟨
+[∆], (F n)∗(Π∗
+1ω k− s ∧ Π∗
+2ω s)
+⟩
+= d− 2n
+s
+⟨
+[∆], Π∗
+1(f n)∗ω k− s ∧ Π∗
+2(f n)∗ω s⟩
+= d− 2n
+s
+⟨
+(f n)∗ω k− s, (f n)∗ω s⟩
+.
+The last equality is obtained using that Π 1 and Π 2 are equal on ∆. Finally, the
+last expression is equal to
+d− 2n
+s
+⟨
+ω k− s, (f 2n)∗ω s⟩
+which converges to ⟨ω k− s, T +⟩ = ∥T +∥ ̸= 0. It follows that c ̸= 0.
+Now, according to Corollary 4.3.4 in [11], d− 2n
+s (F n)∗[∆] converges to a Green
+(k, k )-current in the cohomology class c{T +} ⊗ { T − }. It is follows from Theorem
+4.3.1 in [11], that this Green current is the unique positive closed curre nt in
+its cohomology class. Therefore, it is equal to cT + ⊗ T − . We conclude that
+d− 2n
+s (F n)∗[∆] converges to cT + ⊗ T − .
+4 Equidistribution towards Green currents
+In this section, we will give some results on the convergence toward s the main
+Green currents of f which will allow us to prove our second main result.
+9
+
+=== PDF PAGE 10 ===
+Let f : X → X be a holomorphic automorphism with simple action on Hodge
+cohomology as above. Let λ p,n denote the norm of ( f n)∗ on H p,p (X, C). Choose
+a basis on H p,p (X, C) such that f ∗ has the Jordan form. We see that λ p,n is
+equivalent to nmpdn
+p for some positive integer mp depending on p (mp + 1 is the
+size of a Jordan block). Recall that ds is the maximal dynamical degree and since
+the action of f ∗ on the Hodge cohomology is simple, we have ms = 1. We also
+have λ 0,n = λ k,n = d0 = dk = 1, dp− 1 < d p for p ≤ s and dp > d p+1 for p ≥ s. In
+particular, we have λ p− 1,n ≲ λ p,n for p ≤ s.
+Proposition 4.1. Let S be a positive closed current of bidegree (k − p, k − p)
+on an open subset U of X with p ≤ s. Let χ be a positive smooth function with
+compact support on U. Then there is a constant c > 0 such that for all r ≤ p
+and n, m ∈ N we have
+∥(f n)∗(χS ) ∧ (f m)∗(ω r)∥ ≤ cλ p,n λ r,m .
+Proof. We ﬁrst prove the proposition for r = 0 by induction on p. The property
+holds for p = 0 because in this case χS and Sn = (f n)∗(χS ) are positive measures
+of the same mass. Assume now the property for p − 1. We show it for p. Denote
+for simplicity S′ := χS . If Ω is a smooth closed form of bidegree ( p, p ), we show
+that
+|⟨(f n)∗(S′), Ω⟩|≲ λ p,n .
+We then obtain the result by taking Ω := ω p.
+Fix smooth closed ( p, p )-forms α 1, . . . , α h of bidegree ( p, p ) such that the
+classes {α i} form a basis of H p,p (X, C) on which f ∗ has the Jordan form. Observe
+that i∂
+∂χ is a closed smooth real (1 , 1)-form. So, it can be written as the diﬀer-
+ence of two positive closed (1 , 1)-forms on X. Therefore, we can write i∂∂S ′ =
+S1− S2 where S1, S 2 are two positive closed currents of bidegree ( k− p+1, k − p+1)
+on U. If χ ′ is a smooth positive function with compact support on U and
+equal to 1 on supp( χ ), then χ ′ = 1 on supp( i∂∂S ′). So, we can also write
+i∂∂S ′ = χ ′S1 − χ ′S2 and apply the induction hypothesis. We have
+∥i∂∂(f n)∗(S′)∥ = ∥(f n)∗(i∂∂S ′)∥ ≲ λ p− 1,n ≲ λ p,n .
+When Ω is exact, by ∂∂-lemma [21], we can write Ω = i∂∂Θ with Θ smooth.
+Since Θ can be bounded by positive closed forms, it follows that
+|⟨(f n)∗(S′), Ω⟩|= |⟨i∂∂(f n)∗(S′), Θ⟩|≲ λ p,n .
+So, the desired estimate holds when Ω is exact. Subtracting from Ω a n exact
+form allows us to assume that Ω is a linear combination of α i. Therefore, it is
+enough to consider the case where Ω = α i.
+A priori there are several Jordan blocks but we can work with each of them
+separately. So, without loss of generality, assume that {α 1, . . . , α l} corresponds to
+10
+
+=== PDF PAGE 11 ===
+a Jordan block with eigenvalue θ. In particular, we have f ∗{α i} = θ{α i}+{α i− 1}.
+We can choose α i so that f ∗(α i) = θα i + α i− 1 for 2 ≤ i ≤ l. Indeed, we can ﬁrst
+ﬁx α l and then deﬁne the other α i by induction. By deﬁnition of dp and mp, we
+also have |θ| ≤ dp and when |θ| = dp we should have l ≤ mp + 1. It suﬃces to
+consider the case where Ω = α i for 1 ≤ i ≤ l. We show by induction on 1 ≤ i ≤ l
+that
+|⟨(f n)∗(S′), α i⟩|≲ ni− 1dn
+p .
+Deﬁne
+In := ⟨(f n)∗(S′), α i⟩ = ⟨S′, (f n)∗(α i)⟩.
+Consider the case i = 1. Since the form β := f ∗(α 1) − θα 1 is exact, we obtain as
+above that
+|Ij+1 − θIj|= |⟨S′, (f j)∗(β )⟩|= |⟨(f j)∗(S′), β ⟩|≲ λ p− 1,j .
+On the other hand, we have
+In =
+n− 1∑
+j=0
+θn− 1− j(Ij+1 − θIj) + θnI0.
+It is easy to deduce that |In|≲ dn
+p . So, the desired inequality is true for α 1.
+Assume that the inequality is true for α i− 1 for some 2 ≤ i ≤ l. We show it
+for α i. Using that f ∗(α i) = θα i + α i− 1, we obtain that
+⟨S′, (f n)∗(α i)⟩ =
+n− 1∑
+j=0
+θn− 1− j⟨S′, (f j)∗(α i− 1)⟩ + θn⟨S′, α i⟩.
+Therefore,
+|⟨S′, (f n)∗(α i)⟩|≲
+n− 1∑
+j=0
+|θ|n− 1− jji− 2dj
+p + |θ|n ≲ ni− 1dn
+p .
+This completes the proof of the proposition for r = 0.
+The general case is also proved by induction on p. When p = 0, we have
+r = 0 and the estimate is clearly true. Assume the proposition for S of bidegree
+(k − p + 1, k − p + 1). We prove that it is also true for bidegree ( k − p, k − p). If
+r = p, we have
+∥(f n)∗(χS ) ∧ (f m)∗(ω p)∥ = ⟨(f n)∗(χS ), (f m)∗(ω p)⟩ = ⟨(f n+m)∗(χS ), ω p⟩.
+Using the case r = 0 above, we can bounded the last integral by a constant times
+λ p,n +m which is ≲ λ p,n λ p,m . So, the proposition is true for r = p.
+11
+
+=== PDF PAGE 12 ===
+Assume now that r ≤ p − 1. Deﬁne for simplicity S′′:= (f n)∗(χS ). We show
+for any smooth closed ( r, r )-form Ω that
+|⟨S′′, (f m)∗(Ω) ∧ ω p− r⟩|≲ λ p,n λ r,m .
+We obtain the result by taking Ω = ω r. The proof uses the same idea as above.
+First, we can reduce the problem to the case where Ω is a form corre sponding to
+a Jordan basis of H r,r (X, C). Then, we follow closely the arguments given in the
+case r = 0. The details are left to the reader. Note that our proof is valid fo r
+non-invertible maps and we only need to assume that dp− 1 < d p.
+Corollary 4.2. Let S and χ be as in Proposition 4.1. If T is a limit value of the
+sequence Sn := λ − 1
+p,n (f n)∗(χS ), then T is a positive closed current. If p = s then
+Sn := d− n
+s (f n)∗(χS ) converge to cT − where c ≥ 0 is a constant.
+Proof. We prove the ﬁrst assertion. The case p = 0 is clear since Sn is a positive
+measure and its mass is independent of n. So, assume that p ≥ 1. We have seen
+that i∂∂S ′ is the diﬀerence of two positive closed currents of bidegree ( k − p +
+1, k − p + 1) on U. Applying Proposition 4.1 to p − 1 instead of p and to r = 0,
+we obtain
+∥i∂∂S n∥ = λ − 1
+p,n ∥(f n)∗(i∂∂S ′)∥ ≲ λ − 1
+p,n λ p− 1,n .
+Since dp− 1 < d p, the last expression tends to 0. It follows that T is ∂∂-closed.
+Applying the same idea to the map ( f, f ) on X × X and to the current S ⊗ S,
+we obtain that T ⊗ T is ∂∂-closed (one can easily check that the degree of order
+2s of ( f, f ) is strictly larger than the other dynamical degrees). Now, we hav e
+0 = ∂∂(T ⊗ T ) = − ∂T ⊗ ∂T + ∂T ⊗ ∂T.
+By considering the degrees corresponding to each factor of X × X, we see that
+both terms in the last sum vanish. Hence, ∂T = 0, ∂T = 0 and T is closed.
+We now prove the second assertion for p = s and Sn := d− n
+s (f n)∗(χS ). By
+Proposition 4.1, the family of limit values of the sequence Sn is a compact set
+K . Let Sni be a subsequence which converges to a current T . We can extract a
+subsequence of Sni− 1 which converges to a current T1. Then, we have d− 1
+s f∗(T1) =
+T . By induction, we construct a sequence Ti in K with d− i
+s f i
+∗(Ti) = T .
+Recall that the action of f ∗ on the Hodge cohomology is simple. Since the
+Ti’s belong to a compact set and d− i
+s f i
+∗(Ti) = T , any limit value of d− i
+s f i
+∗{Ti}
+belongs to the line generated by the class {T − }. It follows that {T } = c{T − }
+for some c ∈ C. We have c ≥ 0 because T and T − are positive closed currents.
+By uniqueness of Green currents [10, Th.4.3.1]), T − is the unique positive closed
+current in its cohomology class. Therefore, we have T = cT − . It remains to show
+that the mass c does not depend on the choice of T .
+12
+
+=== PDF PAGE 13 ===
+Let α be a smooth ( s, s )-form in the class {T +}. We ﬁrst show that ⟨Sn, α ⟩
+converge. For this purpose, it is enough to verify that ⟨Sn, α ⟩−⟨ Sn+1, α ⟩ decreases
+exponentially fast. The last expression is equal to
+⟨Sn, α − d− 1
+s f ∗(α )⟩.
+Since f ∗(T +) = dsT +, the form α − d− 1
+s f ∗(α ) is exact. So, we can write it as
+i∂∂β with β a smooth form. Therefore,
+⟨Sn, α ⟩ − ⟨ Sn+1, α ⟩ = ⟨i∂∂S n, β ⟩.
+Proposition 4.1 implies that the last integral decreases exponentially fast. So,
+⟨Sn, α ⟩ converge to some constant c0.
+We deduce from this convergence that ⟨T, α ⟩ = c0. It follows that c⟨T − , α ⟩ =
+c0. Since α is cohomologous to T + and T + ∧ T − is a probability measure, we
+obtain that c = c0. So, c is independent of the choice of T and this completes
+the proof.
+Remark 4.3. Assume that mp = 0 and that Sn → 0. Since, λ − 1
+p,n λ p− 1,n decreases
+to 0 exponentially fast, we deduce from the estimates in the above p roofs that
+the mass of Sn on a compact set of U decreases to 0 exponentially fast.
+Corollary 4.2 allows us to deﬁne the intersection S ∧ T + of T + with a positive
+closed ( k − s, k − s)-current S on U. The intersection is a positive measure given
+by
+⟨S ∧ T +, χ ⟩ := lim
+n→ +∞
+⟨χS, d − n
+s (f n)∗(ω s)⟩ = lim
+n→ +∞
+⟨d− n
+s (f n)∗(χS ), ω s⟩
+for χ smooth with compact support in U. We have the following result.
+Proposition 4.4. Let S be a current of bidegree (k − s, k − s) and χ a function
+as above. Then d− n
+s (f n)∗(χS ) ∧ T + converge to cµ = cT + ∧ T − , where c ≥ 0 is
+the constant such that d− n
+s (f n)∗(χS ) → cT − .
+Proof. Fix a smooth function ϕ on X and consider
+Sn := d− n
+s (f n)∗(χS ) = d− n
+s (χ ◦ f − n)(f n)∗(S) and an := ⟨Sn ∧ T +, ϕ ⟩.
+We have Sn → cT − and
+an = lim
+N →∞
+⟨
+ϕS n, d − N
+s (f N )∗(ω s)
+⟩
+= lim
+N →∞
+⟨
+ϕS n, L N (ω s)
+⟩
+,
+where we denote for simplicity L := d− 1
+s f ∗. We want to show that an → c⟨µ, ϕ ⟩.
+We have T + = lim LN (ω s). Fix a smooth closed ( s, s )-form α in the class
+{T +}. We can complete {α } in order to obtain a Jordan basis for H s,s (X, C).
+The class {α } corresponds to the eigenvalue of maximal modulus ds of f ∗ which
+13
+
+=== PDF PAGE 14 ===
+is a simple eigenvalue. Arguing as in Proposition 4.1, we obtain that LN (ω s) −
+LN (α ) → 0 and hence LN (α ) → T +. So, we can write
+T + = α +
++∞∑
+N =0
+LN (Lα − α ).
+We also obtain in the same way that
+an = lim
+N →∞
+⟨
+ϕS n, L N (α )
+⟩
+.
+This allows us to write
+an = lim
+N →∞
+⣨
+ϕS n, α +
+N − 1∑
+m=0
+Lm(Lα − α )
+⟩
+= ⟨ϕS n, α ⟩ +
++∞∑
+m=0
+⟨
+ϕS n, L m(Lα − α )
+⟩
+.
+We claim that
+|⟨ϕS n, L m(Lα − α )⟩|≲ γm
+for some constant γ < 1 independent of n and m. Assume the claim. We ﬁrst
+complete the proof. The estimate allows us to take the limit term by te rm when
+n → ∞ in the last identity for an. It follows that an converges to
+⟨
+ϕcT − , α
+⟩
++
++∞∑
+m=0
+⟨
+ϕcT − , L m(Lα − α )
+⟩
+= c
+⟨
+ϕT − , lim
+m→ +∞
+Lm+1(α )
+⟩
+= c⟨µ, ϕ ⟩.
+For the convergence T − ∧ Lm+1(α ) → T − ∧ T + = µ see [11].
+It remains to prove the claim. Since L(T +) = T +, L(α ) is cohomologous to
+α . So, we can write Lα − α = i∂∂β with β a smooth ( s − 1, s − 1)-form. Adding
+to β a large constant times ω s− 1 allows us to assume that β is positive. We have
+|⟨ϕS n, L m(Lα − α )⟩|= |⟨i∂∂(ϕS n), L m(β )⟩|.
+We expand the current with ∂∂ and use Cauchy-Schwarz’s inequality in order to
+bound the last expresion. It is bounded by the sum of the following 4 in tegrals
+|⟨i∂∂ϕ ∧ Sn, L m(β )⟩|, |⟨ϕi∂ ∂S n, L m(β )⟩|
+and
+|⟨i∂ϕ ∧ ∂Sn, L m(β )⟩|, |⟨i∂ϕ ∧ ∂S n, L m(β )⟩|.
+According to Proposition 4.1, the ﬁrst two integrals are ≲ d− m
+s λ s− 1,m . So, they
+are ≲ λ m for some λ < 1. Choose a smooth positive function ˜χ with compact
+support in U such that i∂χ ∧ ∂χ ≤ ˜χω . Deﬁne ˜S := ω ∧ S and ˜Sn := d− n
+s (f n)∗(˜χ ˜S).
+14
+
+=== PDF PAGE 15 ===
+Since Sn = d− n
+s (f n)∗(χS ), using Cauchy-Schwarz’s inequality, we can bounded
+the two other integrals by
+|⟨i∂ϕ ∧ ∂ϕ ∧ Sn, L m(β )⟩|1/ 2|⟨˜Sn, L m(β )⟩|1/ 2.
+Proposition 4.1 implies that the last expression is also ≲ d− m
+s λ s− 1,m . The result
+follows.
+5 Uniqueness of measure of maximal entropy
+In this section, we prove Theorem 1.2. Consider an invariant probab ility measure
+ν of maximal entropy hν = log ds. We want to show that ν = µ. Recall that
+entropy is an aﬃne function on the convex compact set of invariant probability
+measures. The measure ν can be decomposed as an average of ergodic measures.
+So, we only have to consider the case where ν is ergodic.
+Denote by χ 1 ≥ χ 2 ≥ · · · ≥ χ k the Lyapounov exponents of ν. According to
+[6, Cor. 3], we have
+χ 1 ≥ · · · ≥ χ s ≥ 1
+2 log ds
+ds− 1
+> 0
+and
+0 > 1
+2 log ds+1
+ds
+≥ χ s+1 ≥ · · · ≥ χ k.
+This property allows us to use Pesin’s theory (see [20] and [18]). Ther e is a
+measurable f − 1-invariant partition ξu whose ﬁbers are open subsets of the local
+unstable manifolds associated with ν such that
+hν = hν (f, ξ u).
+Here, the last expression denotes the entropy of ν relatively to the partition ξu.
+These unstable manifolds are of dimension s. We now follow the approach of
+Bedford-Lyubich-Smillie, see [1, Prop. 3.2].
+For ν almost every point x, denote by ξu(x) the atom of the partition ξu
+which contains x. By construction, ξu(x) is an open set of a unstable manifold.
+So, we can choose an open set Ux such that ξu(x) is a submanifold of Ux. We
+can assume that ξu(x) admits a holomorphic extension to a neighbourhood of
+Ux. So, as we have seen above, T + ∧ [ξu(x)] is a well-deﬁned positive measure in
+Ux. Since, ξu(x) admits an extension, this measure is of ﬁnite mass and we can
+considered it as a measure on X. Moreover, the obtained measures verify
+(f i)∗(T + ∧ [ξu(x)]) = T + ∧ [f i(ξu(x))]
+di
+s
+.
+Here, is a crucial point of the proof.
+15
+
+=== PDF PAGE 16 ===
+Proposition 5.1. We have
+∥[ξu(x)] ∧ T +∥ > 0
+for ν almost every point x.
+We need the following result due to Newhouse [19] which is valid in a more
+general setting, see also [12, Lemma 5.2]. Choose relatively compact open subsets
+ηu(x) of ξu(x) which contains x.
+Proposition 5.2. For ν-almost every x, we have
+lim inf
+n→∞
+1
+n log volume(f n(ηu(x))) ≥ hν.
+Proof of Proposition 5.1. Let χ be a smooth positive function with compact
+support in Ux and equal to 1 on ηu(x) for x generic with respect to ν. We deduce
+from the last proposition that
+lim inf
+n→∞
+1
+n log ∥(f n)∗(χ [ξu(x)])∥ ≥ log ds.
+It follows from Corollary 4.2 and Remark 4.3 that Sn = d− n
+s (f n)∗(χ [ξu(x)])
+converges to cT − with c > 0. Therefore,
+∫
+χ [ξu(x)] ∧ T + = lim
+n→∞
+⟨χ [ξu(x)], d − n
+s (f n)∗(ω s)⟩ = lim
+n→∞
+⟨Sn, ω s⟩ > 0.
+The proposition follows. □
+End of the proof of Theorem 1.2. We obtain exactly as in [1, Prop. 3.2] the
+following lemma.
+Lemma 5.3. For ν almost every point x, the measure
+ηx = T + ∧ [ξu(x)]/ρ (x), where ρ(x) := ∥T + ∧ [ξu(x)]∥
+is equal to the conditional measure νx := ν(·|ξu(x)).
+Now, also following the same lines in [1, Th. 3.1], we obtain
+1
+n
+n− 1∑
+i=0
+f i
+∗(νx) → ν
+for ν almost every point x. Since νx is equal to ηx, it remains to show that
+1
+n
+n− 1∑
+i=0
+f i
+∗(ηx) → µ.
+But
+(f i)∗ηx = T + ∧ [f i(ξu(x))]
+ρ(x)di
+s
+·
+Now, it is enough to apply Proposition 4.4 in order to obtain the result. □
+16
+
+=== PDF PAGE 17 ===
+References
+[1] E. Bedford, M. Lyubich and J. Smillie, Polynomial diﬀeomorphisms of C2. IV: The
+measure of maximal entropy and laminar currents , Invent. Math., 112 (1993), 77-
+125.
+[2] S. Cantat, Dynamique des automorphismes des surfaces K3 , Acta Math., 187
+(2001), 1-57.
+[3] E. M. Chirka, Complex analytic sets , Kluwer Academic Publishers, Dordrecht
+(1989).
+[4] J.-P. Demailly, Complex analytic and algebraic geometry ,
+http://www-fourier.ujf-grenoble.fr/∼ demailly/books.html, 1997.
+[5] H. De Th´ elin, Un crit` ere de laminarit´ e locale en dimension quelconque , Amer. J.
+Math., 130 (2008), 187-205.
+[6] H. De Th´ elin, Sur les exposants de Lyapounov des applications m´ eromorphe s, In-
+vent. Math., 172 (2008), 89-116.
+[7] H. De Th´ elin, Sur les automorphismes r´ eguliers de Ck, Publ. Mat., 54 (2010),
+243-262.
+[8] J. Diller, R. Dujardin and V. Guedj, Dynamics of meromorphic maps with small
+topological degree II: Energy and invariant measure , to appear in Comment. Math.
+[9] T.-C. Dinh, Suites d’applications m´ eromorphes multivalu´ ees et courants lami-
+naires, J. Geom. Anal., 15 (2005), 207-227.
+[10] T.-C. Dinh and N. Sibony, Green currents for holomorphic automorphisms of com-
+pact K¨ ahler manifolds, J. Amer. Math. Soc., 18 (2005), no. 2, 291-312.
+[11] T.-C. Dinh and N. Sibony, Super-potentials for currents on compact K¨ ahler man-
+ifolds and dynamics of automorphisms , J. Algebraic Geom., 19 (2010), 473-529.
+[12] R. Dujardin, H´ enon-like mappings inC2, Amer. J. Math., 126 (2004), 439-472.
+[13] R. Dujardin, personal communication.
+[14] H. Federer, Geometric measure theory , Springer Verlag (1969).
+[15] M. Gromov, Convex sets and K¨ ahler manifolds, Teaneck, NJ ed., Word Sci. Pub-
+lishing, 1990.
+[16] M. Gromov, On the entropy of holomorphic maps , Enseign. Math. (2), 49 (2003),
+no. 3-4, 217-235.
+[17] V. Guedj, Propri´ et´ es ergodiques des applications rationnelles, Panoramas et
+Synth` eses, to appear.
+17
+
+=== PDF PAGE 18 ===
+[18] F. Ledrappier and J.-M. Strelcyn, A proof of the estimation from below in Pesin ’s
+entropy formula , Ergodic Theory Dynam. Systems, 2 (1982), 203-219.
+[19] S. E. Newhouse, Entropy and volume , Ergodic Theory Dynam. Systems, 8 (1988),
+283-299.
+[20] Y. Pesin, A description of the π-partition of a diﬀeomorphism with an invariant
+measure, Mat. Zametki, 22 (1977), 29-44.
+[21] C. Voisin, Th´ eorie de Hodge et g´ eom´ etrie alg´ ebrique complexe, Cours Sp´ ecialis´ es,
+10, Soci´ et´ e Math´ ematique de France, Paris, 2002.
+[22] Y. Yomdin, Volume growth and entropy , Isra¨ el J. Math.57 (1987), 285-300.
+Henry De Th´ elin, Laboratoire Analyse, G´ eom´ etrie et Applications, UMR 7539, Institut
+Galil´ ee, Universit´ e Paris 13, 99 Avenue J.-B. Cl´ ement, 93430 Villetaneuse, France.
+dethelin@math.univ-paris13.fr
+Tien-Cuong Dinh, UPMC Univ Paris 06, UMR 7586, Institut de Ma th´ ematiques de
+Jussieu, 4 place Jussieu, F-75005 Paris, France.
+dinh@math.jussieu.fr, http://www.math.jussieu.fr/∼ dinh
+18

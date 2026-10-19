@@ -1,0 +1,187 @@
+{
+  "audited_utc": "2026-10-18T08:35:38.243586+00:00",
+  "purpose": "Exact assumptions for Green/Margulis identification and leafwise singularity, notes 51-52.",
+  "sources": [
+    {
+      "filename": "20_Jang_2024_Kummer_rigidity.pdf",
+      "pages": 31,
+      "sha256": "b7f9c994f0d03c7ed083f0083415d7d5fecfdf0447f9c17db0cd738101d67114",
+      "reviewed_full_pages": [
+        2,
+        6,
+        10,
+        11
+      ]
+    },
+    {
+      "filename": "42_Ruelle_Sullivan_1975_Currents.pdf",
+      "pages": 9,
+      "sha256": "3a10b034eb5fddad1436bb5fb9553ae8ed0b7090bcca058802c786065b405025",
+      "reviewed_full_pages": [
+        1,
+        2,
+        6,
+        7
+      ]
+    },
+    {
+      "filename": "43_De_Thelin_Dinh_2012_Dynamics_Kahler.pdf",
+      "pages": 18,
+      "sha256": "6ccc045d62efcef16b77505ab8d95e16e5ae1ed8f1b484fa40952af213cea11a",
+      "reviewed_full_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "filename": "44_Dinh_Sibony_2010_Superpotentials_Kahler.pdf",
+      "pages": 53,
+      "sha256": "c31a081c32cad02425f2b52f635c41ec5c99cbd6e0cf6efb202bab3982af4a00",
+      "reviewed_full_pages": [
+        38
+      ]
+    },
+    {
+      "filename": "45_Young_2002_SRB_survey.pdf",
+      "pages": 21,
+      "sha256": "5de3a2ed19f2f03f0f46cdd1f681419a61589e1a9f8579442e4b842cbc725e42",
+      "reviewed_full_pages": [
+        2,
+        3,
+        6
+      ]
+    },
+    {
+      "filename": "46_Ledrappier_Young_1985_Entropy_I.pdf",
+      "pages": 32,
+      "sha256": "8f611bce4e328a50c3def42ce78f2d882ed24186e66867b6558c41588829d7a7",
+      "reviewed_full_pages": [
+        2,
+        3,
+        6
+      ]
+    }
+  ],
+  "full_page_previews": [
+    {
+      "source": "42_Ruelle_Sullivan_1975_Currents.pdf",
+      "page": 1,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\Green_RS_continuous_tangents.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "42_Ruelle_Sullivan_1975_Currents.pdf",
+      "page": 2,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\Green_RS_closed_current.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "42_Ruelle_Sullivan_1975_Currents.pdf",
+      "page": 6,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\Green_RS_Margulis_product.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "42_Ruelle_Sullivan_1975_Currents.pdf",
+      "page": 7,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\Green_RS_eigencurrents.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "44_Dinh_Sibony_2010_Superpotentials_Kahler.pdf",
+      "page": 38,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\Green_DS_class_uniqueness.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "43_De_Thelin_Dinh_2012_Dynamics_Kahler.pdf",
+      "page": 2,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\Green_DT_cohomology_hypotheses.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "43_De_Thelin_Dinh_2012_Dynamics_Kahler.pdf",
+      "page": 3,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\Green_DT_unique_MME.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "20_Jang_2024_Kummer_rigidity.pdf",
+      "page": 2,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\Green_Jang_rigidity_statement.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "20_Jang_2024_Kummer_rigidity.pdf",
+      "page": 6,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\Green_Jang_metric_gap.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "20_Jang_2024_Kummer_rigidity.pdf",
+      "page": 10,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\Green_Jang_Green_squares.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "20_Jang_2024_Kummer_rigidity.pdf",
+      "page": 11,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\Green_Jang_simple_eigenvalue.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "45_Young_2002_SRB_survey.pdf",
+      "page": 2,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\Green_Young_unique_SRB.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "45_Young_2002_SRB_survey.pdf",
+      "page": 3,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\Green_Young_log_Jacobian.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "46_Ledrappier_Young_1985_Entropy_I.pdf",
+      "page": 2,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\Green_LY_entropy_characterization.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "46_Ledrappier_Young_1985_Entropy_I.pdf",
+      "page": 3,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\Green_LY_absolute_continuity.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "46_Ledrappier_Young_1985_Entropy_I.pdf",
+      "page": 6,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\Green_LY_Theorem_A.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "45_Young_2002_SRB_survey.pdf",
+      "page": 6,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\Green_Young_stable_absolute_continuity.png",
+      "visually_inspected": true
+    }
+  ],
+  "reviewed_source_count": 6,
+  "reviewed_full_page_count": 17,
+  "checked_hypotheses": [
+    "Ruelle-Sullivan allows continuous tangent planes and smooth individual plaques, without transverse C1.",
+    "Their entropy scaling parameter equals exp(h_top), lambda^2 in complex dimension four here.",
+    "Dinh-Sibony Theorem 4.3.1 is uniqueness among all positive closed representatives under its spectral conditions.",
+    "IHS spectral conditions and Green-square normalization checked directly in Jang Proposition 7.",
+    "General woven statement not substituted for the Anosov uniformly laminar identification.",
+    "Young Theorem 1(i),(iii) used for SRB uniqueness and full basin; Theorem 3 for stable absolute continuity.",
+    "Young PDF page 2(ii) omits log in print; correct entropy equality taken from Ledrappier-Young Theorem A, PDF page 6.",
+    "The generic-set argument upgrades a.e. plaque statements using exact holonomy invariance."
+  ],
+  "limits": [
+    "No absolute continuity, smooth root current, transverse C1 or full classification proved.",
+    "The full-support singular model is noncompact and not an IHS counterexample.",
+    "Novelty not established; the current-identification mechanism is classical.",
+    "No actual periodic multipliers of the rank-three boundary example computed."
+  ]
+}

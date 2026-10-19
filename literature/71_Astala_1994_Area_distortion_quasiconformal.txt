@@ -1,0 +1,824 @@
+=== PDF PAGE 1 ===
+Acta Math., 173 (1994), 37-60 
+Area distortion of quasiconformal mappings 
+by 
+KARI ASTALA 
+University of Helsinki 
+Helsinki, Finland 
+1. Introduction 
+A homeomorphism f: f~--*f~' between planar domains fl and fl' is called K-quasicon- 
+formal if it is contained in the Sobolev class W~,loe(f~) and its directional derivatives 
+satisfy 
+maxlO~f(x)l~ <~ Kn~nlO~f(x)l a.e. xe~. 
+In recent years quasiconformal mappings have been an efficient tool in the study of 
+dynamical systems of the complex plane. We show here that, in turn, methods or ideas 
+from dynamical systems can be used to solve a number of open questions in the theory 
+of planar quasiconformal mappings. 
+It has been known since the work of Ahlfors [A] and Mori [Mo] that K-quasiconformal 
+mappings are locally H51der continuous with exponent 1/K. The function 
+fo(z) =zlzl 1/K-1 (1) 
+shows that this exponent is the best possible. In addition to distance, quasiconformal 
+mappings distort also the area by a power depending only on K, as shown first by 
+Bojarski [Bj]. Since IfoB(r)l =~rl-WKIB(r)IUK , where S(r)={zeC: Izl <r}, it is natural 
+to expect that the optimal exponent in area distortion is similarly 1/K. 
+In this paper we give a positive answer to this problem and prove the following result 
+which was conjectured and precisely formulated as below by Gehring and Reich [GR]. 
+We shall denote by A the open unit disk and by IEI the area of the planar set E. 
+THEOREM 1.1. Suppose f:A--~A is a K-quasiconformal mapping with f(O)=O. 
+Then we have 
+IfEI <~ MIEI UK (2) 
+
+
+=== PDF PAGE 2 ===
+38 KARI ASTALA 
+for all Borel measurable sets Ec A. Moreover, the constant M=M(K) depends only on 
+K with M(K)=I+O(K-1). 
+B n For the proof of (2) we consider families { i}l of disjoint disks Bi=Bi(A) which 
+depend holomorphically on the parameter )~ (in a sense to be defined later). After an 
+approximation (2) now becomes equivalent to 
+/ - \(1-1~l)/(l+lXl) 
+IB~(~)I ~< C(~-~ IB,(0)I) , (3) i=I ~/=I 
+where C depends only on A. ~rthermore, iterating the configuration one is led to 
+measures on Cantor sets and there we shall apply the Ruelle-Bowen thermodynamic 
+formalism [Bw]; if we write (3) in terms of the topological pressure, then the proof comes 
+out in a transparent way. 
+The function fo is extremal in the distortion of area as well as of distance, and 
+therefore it is natural to ask [I, 9.2] if for quasiconformal mappings the HSlder continuity 
+alone, rather than the dilatation, implies the inequality (2). However, this turns out to 
+be false, as shown recently by P. Koskela [K]. 
+As is well known the optimal control of area distortion answers several questions 
+in this field. For example, in general domains 12 one can interpret (2) in terms of the 
+local integrability of the Jacobian J! of the quasiconformal mapping f. This leads to a 
+solution of the well known problem [LV], [Gel on the value of the constant 
+p(K) = sup{p: Jf e L~or ) for each K-quasiconformal f on ~}. 
+COROLLARY 1.2. In every planar domain 12, p( K )= K / ( K-1). 
+In other words, for each K-quasiconformal f: ~-~l'~ p, 
+2K 
+WP'l~ P< K-l" 
+The example (1) shows that this is false for p~2K/(K-1). 
+Theorem 1.1 governs also the distortion of the Hausdorff dimension dim(E) of a 
+subset E. 
+COROLLARY 1.3. Let f: 12--*~' be K-quasiconformal and suppose ECI2 is compact, 
+Then 
+2Kdim(E) 
+dim(rE) ~ 2+ (K- 1) dim(E)" (4) 
+This inequality, as well, is the best possible. 
+
+
+=== PDF PAGE 3 ===
+AREA DISTORTION OF QUASICONFORMAL MAPPINGS 39 
+THEOREM 1.4. For each 0<t<2 and K>~I there are a set EcC with dim(E)=t 
+and a K-quasiconformal mapping f of C such that 
+dim(rE) = 2K dim(E) 
+2+(K- 1) dim(E)" 
+The estimate (4) was suggested by Gehring and V/fis/ilii [GV]. It can also be formu- 
+lated [IM2] in the symmetric form 
+1(11) 1 1( m~ ~) <K . dim(E) dim(rE) - 2 di E) (5) 
+The results 1.3 and 1.4 are closely related to the removability properties of quasiregu- 
+lar mappings, since in plane domains they can be represented as compositions of analytic 
+functions and quasiconformal mappings. The strongest removability conjecture, due to 
+Iwaniec and Martin JIM1], suggests that sets of Hausdorff d-measure zero, d= n~ (K + 1), 
+are removable for bounded K-quasiregular mappings in R n. Here we obtain the following. 
+COROLLARY 1.5. In planar domains sets E of Hausdorff dimension 
+2 
+dim(E) < K+-----1 
+are removable for bounded K-quasiregular mappings. 
+Conversely, for each K >11 and t > 2 / ( K + 1) there is a t-dimensional set E C C which 
+is not removable for some bounded K-quasiregular mappings. 
+In addition to [IM1] removability questions have recently been studied for instance 
+in [JV], [KM] and [Ri]. 
+Finally, we mention the applications to the regularity results of quasiregular map- 
+pings. Recall that a mapping 
+1 f e 1<q<2, 
+is said to be weakly K-quasiregular, if Jl >10 almost everywhere and 
+max IDf(x)hl ~ K rain IDf(x)h[ a.e. x e 12. lhl=l Ihl=l 
+Then f is K-quasiregular in the usual sense if fEWl, lor i.e. if Jf is locally integrable. 
+We can now consider the number q(K), the infimum of the q's such that every weakly 
+K-quasiregular mapping f EWql, loc(f~) is actually K-quasiregular. 
+
+
+=== PDF PAGE 4 ===
+40 KARl ASTALA 
+COROLLARY 1.6. q(K)=2K/(K§ 
+Indeed, Lehto and Virtanen [LV] have proven that the precise estimate on the L p- 
+integrability, Corollary 1.2, implies that q(K)<.2K/(K+I). The opposite inequality 
+q(g)~2g/(g+l) was shown by Iwaniec and Martin in [IM1]. 
+Quasiconformal mappings are also the homeomorphic solutions of the elliptic differ- 
+ential equations 
+Of(z) =#(z)Of(z); 
+here # is the complex dilatation or the Beltrami coefficient of f with 
+K-1 = < 1. 
+Hence there are close connections to the singular integral operators and especially to the 
+Beurling operator 
+1 f w(~)dm(~) Sw(z) ' 
+Jo 
+see [I], [IM1], [IK] for example. In fact, this operator was the main tool in the work of 
+Bojarski [Bj] and Gehring-aeich [GR], cf. also [IM2]. Below we shall use mostly different 
+approaches and the role of the S operator remains implicit. Still the area distortion 
+inequality has a number of implications on the properties of S. In particular, we have 
+COROLLARY 1.7. There is a constant (~1 such that for any measurable set Ec A, 
+/o ~ 
+ISXEt dm <~ JE t log ~-~. (6) 
+It is for this consequence that we must show the asymptotic estimate M(K)--I§ 
+O(K-1) and then, actually, Theorem 1.1 is equivalent to 1.7, cf. [GR].(1) 
+If we consider general functions w 9 L ~ (A) then the inequality (6) implies the correct 
+exponential decay for t(z 9 A : Re Sw > t}i when t--~ cx). As a consequence, for each 5 > 1 
+there is a constant M~ < c~ such that 
+/ ,Sv, dm<~5/A,V, log(l+M~ 'v' ~dm , vELlogL(A). (7) 
+Ivl ] 
+Here ]vi~=(1/~r) fa tvl dm is the integral mean of Iv]. It is a natural question whether (7) 
+holds at 5=1 as in (6) with characteristic functions. This would also imply the Iwaniec- 
+Martin removability conjecture in the planar case. However, in the last section we show, 
+again by considering the inequalities arising from the thermodynamic formalism, that in 
+fact (7) fails when 5=1. 
+(1) David Hamilton and Tadeusz Iwaniec have pointed out that now (6) holds with a----elf. 
+
+
+=== PDF PAGE 5 ===
+AREA DISTORTION OF QUASICONFORMAL MAPPINGS 41 
+Further results equivalent to the Gehring-Reich conjecture have been given by 
+Iwaniec and Kosecki [IK]. These include applications to the Ll-theory of analytic func- 
+tions, quadratic differentials and critical values of harmonic functions. Moreover, by 
+results of Lavrentiev, Bets and others the solutions of the elliptic differential equations 
+V-AVu=0 can be interpreted in terms of quasiregular mappings f. Therefore Corollary 
+1.2 yields sharp exponents of integrability on the gradient Vu; note that the dilatation of 
+f and so necessarily the optimal integrability exponent depends in a complicated manner 
+on all the entries of the matrix A rather than just on its ellipticity coefficient. 
+Acknowledgements. During the preparation of this manuscript a number of people 
+found simplifications to the first preliminary notes. Especially I would like to thank 
+Alexander Eremenko and Jos~ Ferns who both pointed out Corollary 2.4. Also, 
+I would thank Tadeusz Iwaniec and Michel Zinsmeister for important discussions and 
+comments on the topics in this paper and many people, including Alexander Eremenko, 
+Fred Gehring, Seppo Rickman, Juha Heinonen and Pekka Koskela for reading and making 
+corrections to the first draft. 
+2. Holomorphic deformations of Cantor sets 
+Let us first consider a family {Bi}i~l of nonintersecting subdisks of A. We shall study 
+the quasiconformal deformation of such families and, in particular, estimate sums 
+n 
+Zr(Bi)t' tea, (8) 
+i:l 
+where r(Bi) denotes the radius of Bi. Looking for the extremal phenomena we can iterate 
+the configuration {Bi}~l and are thus led to Cantor sets. There one needs measures # 
+which reflect in a natural manner the properties of the sums (8). It turns out that such 
+measures can, indeed, be found by using the thermodynamic formalism introduced by 
+auelle and Bowen, cf. [Bw], [W]. 
+To describe this in more detail suppose hence that we are given similarities 7i, 
+l<~i<.n, for which Bi=TiA. Since the 7i are contractions, there is a unique compact 
+subset J of the unit disk for which 
+i:l 
+Thus J is self-similar in the terminology of Hutchinson [H]. We can also reverse this 
+picture and define the mapping g: [Ji Bi-~A by glB~----7~ -1- Now 
+J= ~ g -k/x, 
+k----0 
+
+
+=== PDF PAGE 6 ===
+42 KARI ASTALA 
+and g is a n-to-1 expanding mapping with J completely invariant, j=gj__g-tj. Fur- 
+thermore, g represents the shift on J; in a natural manner we can identify the point 
+x E J with the sequence (jk)k~=0 E ( 1, ..., n} N by defining jk =i if gk (X) E Bi. Then, in this 
+9 O~ 9 OO 
+identification, g: (0k)k=0 ~-* (3k+l)k=0- 
+In the sequel we use the notation J= J(g) for our Cantor set and say also that it is 
+generated by the similarities 7i. 
+Next, let s=dim(J(g)), the Hausdorff dimension of J(g). Then the Hausdorff s- 
+measure is nonzero and finite on J(g) and after a normalization it defines a probability 
+measure #8 which is invariant under the shift g, i.e. #s(g-lE)=#s(E) for all Borelian 
+EC J(g). A general and systematic way to produce further invariant measures is provided 
+by the RueUe-Bowen formalism: Given a HSlder continuous and real valued function r 
+on J(g) there is a unique shift-invariant probability measure #=]~r called the Gibbs 
+measure of r for which the supremum 
+P(r Cd#:~ is g-invariant} 
+(g) 
+(9) 
+is attained, see [Bw] or [W]. Here h~,(g) denotes the entropy of # and the quantity P(r 
+is called the topological pressure of r 
+Let us then look for the Gibbs measures that are related to the sums (8). Recall 
+that s=dim(J(g)) is the unique solution of P(-s log ]g'l)=O, and this suggest the choices 
+Ct=-tlog Ig'l. It then readily follows from [Bw, Lemma 1.1.20], that 
+P-rio . '. =1o (gigl) r i 9 
+~i----1 ~ xi----I 
+(10) 
+In fact, the functions r162 are in our situation locally constant and therefore it 
+can be shown that the system g: (J(g), #r pC) is Bernoulli. In other words, the 
+numbers pi=#r satisfy n 1 "" ~i=lpi= and on J(g)=(1,...,n) N #0 is the product 
+measure determined by the probability distribution {P~}'~=I on {1, ..., n}i This enables 
+one to make the dynamical approach more elementary, as pointed to us by Alexander 
+Eremenko. We are grateful to him for letting us include this simplification here. 
+For the readers convenience let us recall the proof of the variational principle, the 
+counterpart of (9), in the elementary setting of product measures. Then also the entropy 
+of ~--~r attains the simple form 
+n 
+h~,(g) = - Zp, log p,. 
+1 
+
+
+=== PDF PAGE 7 ===
+AREA DISTORTION OF QUASICONFORMAL MAPPINGS 43 
+LEMMA 2.1. 
+tribution { qi } i~= l . 
+Let v be a product measure on J(g) determined by the probability dis- 
+Then for each tER, 
+(~ ) hv(g)-t L loglg'ldv<~log ~_r(Bi) t 
+(9) "i=1 " 
+with equality if and only if 
+r(Bi)t 1 ~< i ~< n. qi = n , , 
+~i=l r(Bi) 
+Proof. Since the logarithm is concave on R+, 
+hv(9)-t L log Igl d,, = ~ q, log = ~ q, log 
+(g) i=l qi i=l 
+r( Bi )* <. log r( Si ) t 
+qi - i=1 * 
+where the equality holds if and only if qir(Bi) -t has the same value for each l<.i<.n. 
+Remark. In this setup one can use (10) as the definition of the pressure P(-t log Igtl). 
+Note also that if S=dim(J(g)), then ~$_lr(Bi)S=-l, or PC-slog Ig'l)=O, and the ex- 
+tremal measure in Lemma 2.1 is again the normalized Hausdorff s-measure. 
+We shall next consider holomorphic families of Cantor sets or pairs (g~, J(g~)), 
+)~EA. By this we mean that each set J(gx) is generated as above by similarities 7i,x(z)= 
+ai(~)z+bi(~), l<~i<~n, where the coefficients a~(X)#0, bi(~) now depend holomorphicaUy 
+on the parameter A. On the other hand, we can also consider the Bi()~)='yi,xA and say 
+that {B~(),)}~ is a holomorphic family of disjoint disks in A. 
+Both of these configurations can be described as holomorphic motions; recall that a 
+function r A  A~C is called a holomorphic motion of a set AcC if 
+(i) for any fixed aEA, the map A~-*~(A, a) is holomorphic in A, 
+(ii) for any fixed ~eA, the map a~-*~x(a)=~()~,a) is an injection, and 
+(iii) the mapping r is the identity on A. 
+In fact, (global) quasiconformal mappings and holomorphic motions are just different 
+expressions of the same geometric quantity. For instance, according to Slodkowski's 
+generalized ~-lemma ([SI], see also [AM, 3.3]) the correspondence ~i,0(z)~+Ti,~(z) for 
+zEA and l<.i<~n, extends to a quasiconformal mapping r C-+C with 
+g(,I,,x) ~< I+I,Xl 
+1-I,XI" 
+Therefore the estimate 
+(~ \(*-I~,1)/0+1,~1) IS,()~)l ~ C IBdo)l) i=l "i=l 
+(11) 
+
+
+=== PDF PAGE 8 ===
+44 KARI ASTALA 
+is a special case of the Gehring-Reich conjecture. But after simplifying arguments, given 
+later in Lemmas 3.1 and 3.3, we will see that the conjecture is in fact equivalent to (11). 
+Expressing this inequality now in terms of the topological pressure (10) we end up 
+with the following formulation. 
+THEOREM 2.2. Suppose that (g~, J(g~)) depends holomorphically on the parameter 
+A C A. Then 
+1 -I,Xl P(-2 log Ig; I)- ?IAI P(-2 log Ig~l) ~< P(-2 log Ig~l) ~< 1-~ 
+Proof. By the variational inequality 2.1 for each A there is a unique (product) mea- 
+sure #a such that 
+P(-2 log Ig~l) = hu~ (g:~)- 2 f log Ig~](z) dl.t~(z) (12) 
+JJ (9~) 
+and clearly log Ig'~l(z) is harmonic in A. To use Harnack's inequality we "freeze" the 
+measure #~. In other words, given a probability distribution {p~}~ on {1, ..., n}, define 
+for each )~EA a product measure #~ on J(gx) by the condition fit~(J(g~)MBi(A))=pi; 
+this is possible since the disks Bi(A) remain disjoint. By the construction, h#~(g~) is 
+then constant in A. 
+Moreover, we have that P(-2 log I g~ l)< 0, since P(-s log Ig~l)is strictly decreasing 
+in s and it vanishes for s=dim(J(g))<2. Alternatively, we may also use here the identity 
+(10) to P(-2 log Igil)=log(E~_l r(Bi(A)) 2) <0. 
+If now the numbers {pi} are so chosen that/2o=#o (the maximizing measure in (12) 
+when the parameter/k=0), then Harnack's inequality with 2.1 implies that 
+1+')'1 l +l~' (hF, o(go)_2 fj(9o) log [g~[ dfito) l_l~ I P(-2 l~ Igol)= l_i)~i 
+~< h~.~(gx)-2 fj log Ig~l d~;~ ~< P(-2 log Ig~l) 
+which proves the first of the required inequalities. The second follows similarly by sym- 
+metry in ~ and 0. 
+When t>2 the same inequalities hold for P(-tlog Ig~l) as well. However, smaller 
+exponents must change with I~1 and we shall later see how this reflects in the precise 
+distortion of Hausdorff dimension under quasiconformal mappings. 
+COROLLARY 2.3. If (gx, J(ga)) is as above and 0<t~<2, set 
+t(l+l)q) 
+t(A)= 1-1~l-t-tlAl" 
+
+
+=== PDF PAGE 9 ===
+AREA DISTORTION OF QUASICONFORMAL MAPPINGS 45 
+Then 
+1 1-1A I 1 P(-t log Ig01). t(A) P(-t(A)log Ig~l) ~< I+IA---- i 
+Proof. If {~x}~e~ is a family of product measures on J(g~), all defined by a fixed 
+probability distribution {p~}~ like in the previous theorem, then by 2.1 
+1 .fj (1 ~) 1 h ~j t(A) hp~(9"~)- l~ t~) +~ p~(ga)- loglg~ld#x 
+1-I~1/h / 1 1--~[ L po(go)~-~-~) l h <~ +-~ po(go)- fa(go)l~ ) 
+1-1AI 1 P(-tlog IgGI) < 
+and taking the supremum over the product measures on J(g~) proves the claim. 
+The above estimates for the topological pressure hold actually in a much greater 
+generality. We can consider, for instance, polynomial-like mappings of Douady and 
+Hubbard [DH]. More precisely, suppose we have a family of holomorphic functions fA 
+defined on the open sets U~, AcA, such that U;~cf;~U;~. We need to assume that 
+OO 
+N n:0 
+is a mixing repeller for f~. That is, f~0 for zEJ(f~) and J(f~) is compact in C with 
+no proper f~-invariant relatively open subsets. Then the fx are expanding on J(fa) and 
+the thermodynamic formalism extends to fa: J(f~)-~J(fa), see [Bw] or [Ru]. 
+To consider the dependence on the parameter, let Ua depend continuously on A and 
+let (A, a)~-* f~ (a) be holomorphic whenever defined. Because the functions are expanding, 
+we have a holomorphic motion of the periodic points ([MSS], p. 198). Since these are 
+dense in the repeller J(fx), by the A-lemma of Mafi~, Sad and Sullivan we obtain a 
+holomorphic motion 9 of J(fo) such that J(f~)=O~J(fo) and f~o~x=O~of0. 
+Combining these facts we conclude that 
+l-[A[ } P(-t log (13) 1 P(-t(A)log If~l) ~< If~l)- t(A) x+IA I 
+Namely, since the variational principle generalizes to this setting, the proof of (13) is 
+as in Lemma 2.3. In this case to show that P(-t(A)log Is we may use Manning's 
+formula [M] 
+dim(#) = h~, (f~) 
+fj(f~,)log If~,l d/z 
+
+
+=== PDF PAGE 10 ===
+46 KARl ASTALA 
+and the fact [Su] that dim(#)-inf{dim(E):#(E)=l}<.dim(J(f~))<2. These hold for 
+any ergodic f~-invariant measure on J(f~). Especially, starting from a measure # on 
+J(fo) we can take the images #x=(b~p under the holomorphic motion, and since the 
+entropy is an isomorphism invariant, (13) follows. 
+On the other hand, if one looks for the minimal approach to the quasiconformal area 
+distortion, then the above leads also to a proof for (ll) that avoids the thermodynamic 
+formalism. In fact, this was shown to us by A. Eremenko and J. Ferns who inde- 
+pendently pointed out the following result on the (nonharmonic!) function log [If(z)[I- 
+COROLLARY 2.4. Let Bn={z6C n : [[z[[ < 1}. If f: A-*B n is a holomorphic mapping 
+such that all of its coordinate functions fi are everywhere nonzero, then 
+l+lzl log IIf(0)ll, 1- Izl log IIf(0)ll -< log Ill(z)II "< ,.zl I 
+Proof. If f = (fl, ..., fn), consider numbers Pi > 0 with ~ p, = 1 and set 
+n 
+u(z)=Zpilog Pi 
+Ifi(z)l 2 i=1 
+Then u(z) is harmonic and by Jensen's inequahty, e -=(*) <~pi[fi(z)[2/pi < 1, u is also 
+positive. Hence using the concavity of the logarithm and the Harnack's inequality we 
+may deduce 
+Tt n 
+log IIf(z)ll 2/> ~--~p, log Ifi(z)[2 >~ l+lzl ~p, log If~(~ 
+,=1 p----?- ,= 1 p-----S- 
+Choosing finally p~=lfi(O)12/llf(o)lt 2 proves the first inequality. The second follows by 
+symmetry. 
+3. Distortion of area 
+We shall reduce the proof of the area distortion estimate If El ~ MtE 11/K into two distinct 
+special cases. In the first, where we use the inequalities of the previous section, let us 
+assume that E is a finite union of nonintersecting disks B, = B (zi, ri) C A, 1 <~ i <<. n. 
+LEMMA 3.1. Suppose that f: A--,A is K-quasiconformal with f(O)=O. If f is con- 
+formal in E=U~ Bi, then 
+n (~=l,1/K ZlfBiI<~C(K) IBi]) , 
+i=1 
+
+
+=== PDF PAGE 11 ===
+AREA DISTORTION OF QUASICONFORMAL MAPPINGS 47 
+where the constant C(K) depends only on K. Moreover, C(K)=I +O(K-1). 
+Proof. Extend f first to ~2 by a reflection across S 1 and assume without loss of 
+generality that f(1)=1. Then we can embed f to a holomorphic family of quasicon- 
+formal mappings of C. However, in order to control the distortion as K~oo we need to 
+modify f near oo. Thus, if # is the Beltrami coefficient of (the extended) f , define for 
+each A E A new dilatations by 
+AK+I ~(z)= ~L--~ lz(z), Izl-< 2, 
+0, Izl>2. 
+By the measurable Riemann mapping theorem there are unique #x-quasiconformal 
+mappings f~: ~2--~ ~2 normalized by the condition 
+A(z)-z=O(1/Izl) as Izl--*oo. 
+Then f~ is conformal in E, f~(z) and its derivatives (when z E E) depend holomorphically 
+on A lAB, Theorem 3], fo(z)=z and if Ao=(K-1)/(K+I), then 
+f~o : Co f, (14) 
+where r is conformal in fB(O, 2). 
+To apply Theorem 2.2 note that by Koebe's 88 
+1 r Di(A) =- B(f~(zi), zr~l~(z,)l) c AB(zi, r~) 
+and similarly f~B(O, 2) C B(0, 8). Also Di (A) =r (0), where 
+r = f'~(z~)(z-z,)+ A(z~), 
+and thus {D~(A)}~ is a holomorphic family of disjoint disks contained in B(0, 8). There- 
+fore we need only choose extra similarities r B(0, 8)--~Di(0), l<<.i<<.n, set 7i,~=r162 
+and note that these generate a holomorphic family of Cantor sets J(g~)CB(0, 8). By 
+Theorem 2.2 
+1-1~1 . P(-2 log Ig~,l) ~< 1--~ P(-L log lg~l) 
+or, in other words, by (10) 
+r [Z ~ 2r2 j~ ij i ~324J~l/(l+lXl) 2~(1-1~1)/(1+1~1) 
+i=1 \i--1 ri ) " 
+
+
+=== PDF PAGE 12 ===
+48 KARI ASTALA 
+The lemma will then be completed by simple approximation arguments. Since the 
+images of circles under global quasiconformal mappings have bounded distortion, 
+min IA(z)-A(z~)l ~ lABel ~< ~r max IA(z)-A(z~)l 2 ~< ~Co(IAI) z~oB, zEOB~ 
+where the last estimate follows from the Schwarz lemma. Moreover, the correct expression 
+for the constant C0([A[), see [L, p. 16], shows that C0([A[)=I+O([A[). If we choose A0= 
+(K-1)/(K+I), it then follows that [f.xoE[<.Cl(g)[E[1/g with Cl(g)=l+O(g-1). 
+It remains to show that the function (I) in (14) satisfies 
+[(I)'(z)l >/C2(K)=(I+O(K-1)) -1 for all zeA. 
+First, since the diameter of f~oB(0, 2) is at least four [P, 11.1], the basic bounds on the 
+circular distortion, see [L, 1.2.5], imply that 
+B(Ao (0), e(K)) C Ao A = ,I,A 
+for a 0(K)>0 depending only on K. As above, I~'(0)I~>~(K) by the Schwarz lemma. 
+Yet another application of the Schwarz lemma, this time to the function AHf~(z)--z, 
+gives 
+IA(z)-zl ~< 101~l, z 9 B(0, 2). 
+This shows that we may choose o(g)=(l+O(g-1)) -1. 
+Fhrthermore, as fSl=S 1 and f-1 is uniformly Hhlder continuous with constants 
+depending only on K, fB(O, 2)DB(O, R) for an R=R(K)> 1. Then Koebe's distortion 
+theorem combined with Lehto's majorant principle [L, II.3.5] proves that 
+,((1-[z/R])3) (K-1)/(K+I) 
+Ir ~> Ir (0)l i%l~-~ , z 9 z~, 
+and the required estimates follow. 
+Remark 3.2. The above proof gives us the following "variational principle" for planar 
+quasiconformal mappings: 
+Suppose we are given numbers Pi > 0 with EiL1 Pi = 1 and disjoint disks Bi C A. Then 
+for each K-quasiconformal mapping f: A--,A for which f(0)=0 and 
+flt3": B, is conformal, (15) 
+
+
+=== PDF PAGE 13 ===
+AREA DISTORTION OF QUASICONFORMAL MAPPINGS 49 
+we have the inequality 
+n n 
+Zpi log If B~l ~< 1 y~p~ log IBiI +C( K) (16) 
+i=l Pi "~ K i=1 Pi 
+where C(K)=O(K-1) depends only on g. 
+In fact, choosing p~ = I fBi I/(~= 1 I fBi I) shows that (16) generalizes Lemma 3.1. 
+Somewhat curiously, the variational inequality (16) is not true for general quasi- 
+conformal mappings, for mappings which do not satisfy (15); we shall return to this in 
+w where it will have implications to the estimates of the L log L-norm of the Beurling 
+operator. 
+To prove the complementary case in the area distortion inequality we use therefore 
+a different method. We shall apply here the approach due to Gehring and Reich [GR] 
+based on a parametric representation. 
+LEMMA 3.3. Let f: A--+A be K-quasiconformal with f(0)=0. If Ec A is closed and 
+f is conformal outside E, then 
+IrE I <<. b(g)lE I 
+where b(K)=I+O(K-1) depends only on K. 
+Proof. As in [GR] define the Beltrami coefficients 
+ut(z)=sgn(#(z))tanh ~ arctanh I~(z)l , tee§ 
+where # is the complex dilatation of f, T=logK and sgn(w)=w/Iw I if wr with 
+sgn(O)=O. By the measurable Riemann mapping theorem we can find ut-quasiconformal 
+ht: A---~A with ht(O)=O. 
+If A(t)=lhtEI, then Gehring and Reich show that 
+~A(t) = r dx dy + c(t)lhtE I (17) 
+where S is the Beurling operator and Ic(t)l is uniformly bounded. The function r depends 
+only on the family {ht}, not on E, and from [GR, (2.6) and (3.6)] we conclude that 
+I1r ~< 1 and that r whenever P(htl(w))=0. 
+Suppose now that f is conformal outside the compact subset EcA. Then #-=0 in 
+A\E and, in particular, we obtain 
+Ir < Xh, E(Z). 
+4-945203 Acta Mathematica 173. Imprim6 le 5 oetobre 1994 
+
+
+=== PDF PAGE 14 ===
+50 KARl ASTALA 
+But S: L2--+L 2 is an isometry and therefore for any set FcC, 
+/F ,SXF, dx dy <<. IF,1/2 (/c ISXF,2 dx dy)I/2 ---- ,F ,. 
+Thus 
+(18) 
+~A(t)d <.CoA(t), 0<t<cr 
+and an integration gives IhtEl-=A(t)<~eCotA(O)=eCotlE I. Taking t=logK shows that 
+ifEi <eGO log KIE I=b(g)lEI ' where b(g)= I+O(K- 1). 
+Remark. On the other hand, as kindly pointed out by the referee, if one considers in 
+the solution f(z)=z+O(]z1-1) of the Beltrami equation f~=#h where # is supported 
+on E, then in that situation the following argument gives a direct proof for a very precise 
+estimate 
+If(E)l <~ KIE I. 
+Namely, for w=f~ we have/z=l+Sw with w=#(I+Slz+S(#S#)+...). In view of IISll2 = 
+1 we obtain 
+II(E)I = fE II+S 12-1"12 IEI+2Re fE 
+where for the kth iterate fE IS, S,... S,l <, II,II IEI as in (lS). Thus 
+[ 2 \ 
+I- l]-#Hoo \ / 
+The area distortion inequality is now an immediate corollary of the two previous 
+Lemmas 3.1 and 3.3. 
+Proof of Theorem 1.1. 
+proving the estimate 
+Suppose that f: A--.A is K-quasiconformal and f(O)=O. In 
+If EI ~ MIE[ 1/K 
+it suffices to study sets of the type E-~U~B~, where the Bi are subdisks of A with 
+pairwise disjoint closures. The general case follows then from Vitali's covering theorem. 
+To factor f we find by the measurable Pdemann mapping theorem a K-quasicon- 
+formal mapping g:A~A, g(0)--0, with complex dilatation #g=XA\E#I" Then g is 
+conformal in E and f=hog, where h: A--.A is also K-quasiconformal, h(O)-=O, but now 
+h is conformal outside gE. Since quasiconformal mappings preserve sets of zero area, 
+Ih(OgE)l=lOgE]=O, and then Lernmas 3.1 and 3.3 imply 
+]f E I = [h(gE)[ <<. b( K)[gE I <~ b( K)C( K)]E[ l/K, 
+
+
+=== PDF PAGE 15 ===
+AREA DISTORTION OF QUASICONFORMAL MAPPINGS 51 
+where M(K)-b(g)c(g)= 1 +o(g- 1) as required.(2) 
+One of the equivalent formulations of Theorem 1.1 is the statement that for a K- 
+quasiconformai f the Jacobian Jf belongs to the class weak-L p, p=K/(K-1). 
+COROLLARY 3.4. /f f: A--,A is K-quasiconformal, f(0)----0, then for all s>0, 
+I{z E A : Jy(z) ~ s}l ~ ( M; ~(K-l), 
+where M depends only on K. Moreover the exponent p=K/ ( K- 1) is the best possible. 
+Proof. If Es={zeA:Js(z)>~s }, then by Theorem 1.1 
+s[Es[ <~ f_ J/dm = [fE~ I <~ M(K)[Es[ 1/K. 
+s 
+No p larger than K/(K-1) will do, since [E~]=r(Ks) -K/(K-I) for f(z)=z[z[ 1/K-1. 
+Proof of Corollary 1.2. If D is a compact disk in the domain f~ and f: fluff1 is 
+K-quasiconformal, choose conformal r r which map neigbourhoods of D and fD, re- 
+spectively, onto the unit disk. As r and r are bilipschitz, applying Corollary 3.4 
+to r -1 proves that JfGL~oc(fl ) for all p<K/(K-1). 
+4. Distortion of dimension 
+In the previous section we determined the quasiconformal area distortion from the prop- 
+erties of the pressure P(-2 log Ig~ I)- Similarly Corollary 2.3, or the variational inequality 
+(16) with a suitable choice of the probabilities Pi, admits the following geometric inter- 
+pretation: 
+If f: A--~A is K-quasiconformal with f(0)=O and if, in addition, f is conformal in 
+the union of the disks Bi C A 1 ~i ~n7 then 
+(~. t'l/(1-l-t (K-- 1)) EIfB~ItK/(:+t(I':-I))<-.C(K) IBil ) 7 0<t~<l, 
+i 
+where the constant C(K) depends only on K. 
+Since the complementary Lemma 3.3 fails for exponents t<2, in the general case we 
+content with slightly weaker inequalities. 
+(2) David Hamilton has informed us that the same methods can also be used to obtain good bounds 
+for the constant M in [fE[~MIE[ 1/K if one considers instead of the case f: A---,A those mappings f 
+which are conformal outside A with f(z)-z=O(1/Izl). 
+
+
+=== PDF PAGE 16 ===
+52 KARI ASTALA 
+LEMMA 4.1. /f0<t<l, f: A--~A is K-quasiconformal, f(0)=0 and {Bi}~ are pair- 
+wise disjoint sets in A, then 
+E <<" CK(t'P)(~i [Bi[t)l/(l+t(K-1)) 
+whenever (l+t(K- 1))-ltK<p<~ 1. 
+Proof. We use the integrability of the Jacobian J/as in [GV]. Since p(l+t(K- 1)) > 
+tK we can choose an exponent l<po<K/(K-1) such that 
+1 l+t(K-1) (19) 
+-~qo < P tK ' 
+where qo=Po/(Po - 1) is the conjugate exponent. Then using Hhlder's inequahty twice 
+one obtains 
+~ 'f Bi'P = ~ (/B Jl dm )" <<. ~ (/B JfP~ dm)'/P~ v/q~ 
+~ (~ /B JlP~ dm)P/P~ (~i [Bi,(P/q~176176176176 
+~ (/A JfP~ dm)P/P~ (~i [Bi,(P/q~176176176176 
+On the other hand, as po(K-1)/K<l<p(l+t(K-1))/tK, it follows that Po/(Po-P)> 
+l+t(K-1). Combining this with Corollary 3.4 (or 1.2) yields 
+(~ ,1/O+t(K-l)) EtfB,]P <<.M ]Bi] (p/qO)(l+t(K-1))) 
+i 
+where M depends only on Po and K. Since by (19 ) also t < (p/qo) (1 + t ( K - 1)), t he claim 
+follows. 
+Proof of Corollary 1.3. If f: f~--~[21 is K-quasiconformal, let ECft be a compact 
+subset with dim(E)<2. Choose also a number 89 dim(E)<t~<l and cover E by squares 
+B~ with pairwise disjoint interiors. 
+According to [LV, Theorems III.8.1 and III.9.1], dia(fB~)2 ~< ColfBi[, where the con- 
+stant Co depends only on K, E and ~. Hence we conclude from Lemma 4.1 that 
+/ \l/(l+t(K--1)) 2tK 
+Ei dia(fB~)~ ~< C1 ~. dia(Bi) 2t) , 5 >l+t(K-1)" 
+
+
+=== PDF PAGE 17 ===
+AREA DISTORTION OF QUASICONFORMAL MAPPINGS 53 
+With a proper choice of the covering {Bi} the sum on the right hand side can be made 
+arbitrarily small and thus dim(f E)~<a. Consequently, 
+dim(fE) ~< 2K dim(E) (20) 
+2+(g- 1) dim(E) 
+which proves the corollary. 
+In the special case of K-quasicircles F, i.e. images of S 1 under global K-quasicon- 
+formal mappings, Corollary 1.3 reads as 
+K-1 2 
+dim(F) < I+ K+I -2- K+--~" 
+This sharpens recent results due to Jones-Makarov [JM] and Becker-Pommerenke [BP]. 
+On the other hand, Becker and Pommerenke showed that if the dilatation K~ i, then 
+0 K-1 2 1§ .09(~--~) ~<dim(F)<~l+37(K-l~ 2. 
+\K+I] 
+These results suggest the following 
+Question 4.2. If F is a K-quasicircle, is it true that 
+dim(F) ~< 1+ \K+i-] " 
+In the positive case, is the bound sharp? 
+Let us next show that the equality can occur in (20) for any value of K and dim(E). 
+Note first that in terms of the holomorphie motions Corollary 1.3 obtains the following 
+form. 
+COROLLARY 4.3. Let O:AxE--+C be a holomorphic motion of a set EcC and 
+write d(A)=dim(O~(E)). Then 
+2d(0) (21) 
+d(A) ~< (2-d(0))(1-I~l)/(l+l~l)+d(0)" 
+Proof. By Slodkowski's extended A-lemma (I)~ is a restriction of a K-quasiconformal 
+mapping of C, K ~< (1+ I AI)/(1 - I AI), and hence the claim follows from 1.3. 
+For the converse, we start by constructing holomorphic motions of Cantor sets such 
+that the equality holds in (21) up to a given s>0. Thus for each, say, n~> 10 find disjoint 
+disks B(zi, r)CA all of the same radius r=r~, such that 89 ~<nr2<~l. If 0<t<2, let also 
+/3(t) = log(nl/tr). (22) 
+
+
+=== PDF PAGE 18 ===
+54 KARI ASTALA 
+For n large enough, f~(t)>0 and 
+89 ~< log r 
+log r-~(t) 
+Set then 
+<~ 89 (23) 
+at( A ) = exp (-~(t)~-~ ) . 
+Clearly at is holomorphic in A with at(A)=A\{0}. Therefore we can consider the holo- 
+morphic family of similarities 
+7i,X(z) = rat()~)z+zi. 
+Since the disks ~/i,~AcB(zi,r) are disjoint, the similarities ~/i,x generate Cantor sets 
+(ga, J(g~)) as in w Furthermore, the derivatives 17~,~1 do not depend on i and so the 
+dimension d(s is determined from the equation n(rlat ()Q I) d(x) = 1. By (22) 
+n(rlat (0)1) t-- 1 and therefore 
+d(0) =t. 
+Similarly, if 0<)~<1, it follows from (23) that 
+d(0) log(rlad,~)l) logr-~(t)(1-)Q/(l+A) 
+d()Q log(rlat(O)l ) logr-~(t) (24) 
+~< 89 (1- 89 1-)~ 1-~+ E- 
+Proof of Theorem 1.4. Choose a countable collection {B~}~ of pairwise disjoint 
+subdisks of A and define, using the argument above, in each disk Bk a holomorphic 
+motion O of a Cantor set Jk with Ox(J~)cBk. If d()~)=dim(Ox(Jk)), we may assume 
+that d(0)=t and that for each k (24) holds with e=l/k. 
+Clearly this construction determines a holomorphic motion ko of the union J= U~ Jk. 
+Writing still d()~)=dim(~(J)) we have 
+2d(0) 0 ~< )~ < 1. 
+d(~) = (2-d(O))(1-~)/(l+)~)+d(O)' 
+Now Slodkowski's generalized )~-lemma applies and 9 extends to a K-quasiconformal 
+mapping f of C, where K--(I+)Q/(1-~), 0~<1. In other words, if E=J, then 
+dim(E) =t and dim(fg)=2K dim(E)/(2+(K- 1) dim(E)). 
+Finally, Corollary 1.5 is an immediate consequence of 1.3 and 1.4 since K-quasireg- 
+ular mappings f can be factored as f=r where r is holomorphic and g K-quasicon- 
+formal; for holomorphic r sets E with dim(E)< 1 are removable by Painlev~'s theorem 
+while those with dim(E)> 1 are never removable [Ga, III.4.5]. 
+
+
+=== PDF PAGE 19 ===
+AREA DISTORTION OF QUASICONFORMAL MAPPINGS 55 
+Therefore in considering the removability questions for K-quasiregular mappings, the 
+dimension dg=2/(K+l) is the border-line case and there we have the Iwaniec-Martin 
+conjecture that all sets of zero Hausdorff dg-measure are removable. More generally, it 
+is natural to ask whether the precise bound on the dimension 
+dim(rE) 2K dim(E) 
+<~ 2+(K-l) dim(E) 
+given by Corollary 1.3 is still correct on the level of measures. 
+Question 4.4. Let 0<T<2 and ~----~K(T)=2Kr/(2+T(K--1)). If f is a planar g- 
+quasiconformal mapping, is it true that 
+H~(E)=O ==~ H~(fE)=O. 
+If not, what is the optimal Hausdorff measure Hh or measure function h such that 
+f*gh <<W? 
+5. Estimates for the Beurling operator 
+As we saw earlier quasiconformal mappings have important connections to the singular 
+integrals and in particular to the Beurling operator, the complex Hilbert transform 
+Sw(z) = _lTr/c w(C)(C_z) 2am(C) 
+There are even higher dimensional counterparts, see [IM1] and the references there. 
+In fact, many properties of the S operator can be reduced to the distortion results of 
+quasiconformal mappings. We shall here consider only the operation of S on the function 
+space L log L and refer to the work of Iwaniec and Kosecki [IK] for further results. 
+In case of the characteristic functions w=XE we have then by Corollary 1.7 that 
+B o~[B[ (25) [SxE[ dm <. [E I log [E---I- 
+for all Borel subsets E of a disk BcC: the constant a does not depend on E or B. This 
+translates also to the L ~ setting: 
+COROLLARY 5.1. Let BcC be a disk. If w is a measurable function such that 
+]~d(z)[~XB(Z ) a.e., then 
+[{z E B: [ReSw(z)[ > t}[ ~< 2a[Ble -t. (26) 
+
+
+=== PDF PAGE 20 ===
+56 KARl ASTALA 
+Proof. Let E+={zEB :ReSw>t}. Since S has a symmetric kernel, 
+tlE+l<.Re[ S~dm=Re fjSx~+dm<.lE+llog ~lB---! JE+ IE+I 
+by (25). Thus [E+I <~ a lB [e -t and since by the same argument E_ = {z e B : Re S~v < -t} 
+satisfies [E-I .<~[Ble -~, the inequahty (26) follows. 
+The estimate (26) is sharp since for ~v=(z/Z)XA(z) we have 
+Sw = (1+2 log Izl)xA(z). 
+For the modulus IS~I Iwaniec and Kosecki [IK, Proposition 12] have shown that (25) 
+implies 
+I{z C B: ISw(z)l > t}l ~< a(l+19t)lBI e-t. (27) 
+It remains open if the linear term 19t can be replaced by a constant. 
+COROLLARY 5.2. For each 6>1 there is a constant M(6)<ee such that 
+s 'Sv' dm <~ 6 fB 'V(z)' log(l + M(6)~ ) dm(z) 
+whenever v is supported on B. 
+Proof. Let co be a function, unimodular in B and vanishing in C\B, such that 
+V 
+s f ~S, am=lvl. s S~ l-~am. 
+We apply then the elementary inequality ab<.a log(l+a)+e b- 1. Since by (27) 
+elS~l/6-1dm<<.tBIx2- i 1+5_1] =MI(~)IBI, 
+it follows that 
+fBISvldm~ Ml(5) fBIvldm+6 fBIVllog(l+611V@B) din" 
+Define now Eo={zeB: Iv(z)l<(1/e)lvlB}. As tHtlog(1/t) is increasing on (0, l/e), 
+-e s lVl l~ ( l~l l ) dm <~ lvl" lEol <~ fB lvl din, 
+
+
+=== PDF PAGE 21 ===
+AREA DISTORTION OF QUASICONFORMAL MAPPINGS 57 
+where we use the convention 0log0=0. Thus 
+fB 'vl l~ (e+6)) din+lEo Iv, log(l+~)dm 
+(28) 
+<" fBIvll~ ~dm' \ MB] 
+where M2 =e 2 +e6. In conclusion, if M=M2 exp(Ml (6)), 
+fBlSvldm<<- ~ fBMl~ dm<~ ~fBlvll~ dm, 
+which completes the estimation. 
+Since the variational inequality (16), 
+n n 
+Epilog [fB/I ~< 1 Epilog [Bi[ +C(K) /=1 Pi g/=1 Pi 
+with C(K)=O(K-1) and flu B, conformal, was the key in the area distortion Theorem 
+1.1 it is of interest to know whether the inequality is valid without any conformality 
+assumptions. Another natural question is whether Corollary 5.2 still holds at 6=1; for 
+characteristic functions this is true and (25) with [IK, Proposition 19] implies that for 
+nonnegative functions v, 
+/B\ElSV, dm<~/E,v(z),log(l+o~)dm(z), if supp(v) C E. 
+Indeed, it can be shown that these two questions are equivalent (if v~>0 in Corollary 
+5.2). However, it turns out that the answer to them is the negative. We omit here the 
+proof of the equivalence; instead we give first a simple counterexample to the general 
+variational inequality and then show how this reflects in the L log L estimates of the 
+complex Hilbert transform. 
+Example 5.3. Choose 0 < p< 1. For 1 ~<i ~< n consider the disjoint disks B/= B(p/, aQ/) 
+where 0<a<(1-p)/(l+p). Let also pi=l/n and fo(z)=zlzl UK-a. Then 
+~2 
+E Pi log ~ = (n + 1) log 6+ log n + log 71-a 2 
+i=1 
+while 
+n 
+Epilog If0B/I /> n+l 1 ~ IB/I K-1. /:1 p/ ~- log o+logn+Co = -ff 2.,P/log -~- +---if- Jog n+c'~, 
+i=1 
+where Co, C1 depend only on K and a. Letting n~oo shows that the variational inequal- 
+ity fails for fo- 
+
+
+=== PDF PAGE 22 ===
+58 KARI ASTALA 
+PROPOSITION 5.4. For each M<oo there is an e>0 and a nonnegative function 
+vELlogL(A) such that 
+fA ISvl dm > (l +e) fA IV(z)l log(l + M~ ) dm(z) 9 
+Proof. By inequality (28) it suffices to show that for no M<oo does 
+f lSvldm<~falv(z)ll~ (29) 
+i=1 ]htDi] dr [htDi[=- r 
+where [c(t)[ is uniformly bounded. Thus if (29) holds, then r162 and after 
+integration r ~< etr etf~ c(s)e -8 ds = ere(0) +ct (t). Taking t=log g we obtain 
+Zpi log P' ~< K Zpilog P' +C(K), 
+i=1 i-----1 
+where C(K)= (K- 1)log M+cl (log K). 
+FinaLly, if Bi,pi are as in the previous example with f-l(z)----fo(z)----z[zlUK-1, we 
+can choose Di=foBi. But this would mean that 
+" " IB,[, C(K) ~-.~p, loglfoB, l<~ 1 Zpilog..~_i. K- , 
+i=1 Pi -g i-~l 
+contradicting Example 5.3. Therefore (29) cannot hold and so the estimate of Corollary 
+5.2 is sharp. 
+hold for all nonnegative functions v E L log L(A). 
+We argue by contradiction. Hence consider first the mapping f(Z)~-Z[Z[ K-1 and 
+imbedd it to a one parameter family of quasiconformal mappings ht: A~A, as in the 
+proof of Lemma 3.3. Thus for t=log K, ht=f. 
+Suppose next that we have disjoint open sets {Di}~cA and numbers pi>0 with 
+n 
+~1 Pi =1" Set then 
+P' 
+~=1 [htDi[ Xh'D'(Z)" 
+Clearly fzxvt dm=l and if r log(Mvt)dm then by Jensen's inequality r 
+for M~>~r. Furthermore, we can deduce from the Gehring-Reich identity (17) that 
+
+
+=== PDF PAGE 23 ===
+AREA DISTORTION OF QUASICONFORMAL MAPPINGS 59 
+References 
+[A] AHLFORS, L., On quasiconformal mappings. J. Analyse Math., 3 (1954), 1-58. 
+[AB] AHLFORS, L. ~ BERS, L., Riemann's mapping theorem for variable metrics. Ann. of 
+Math., 72 (1960), 385-404. 
+[AM] ASTALA, K. &= MARTIN, G., Holomorphic motions. Preprint, 1992. 
+[Bj] BOJARSKI, B., Generalized solutions of a system of differential equations of first order 
+and elliptic type with discontinuous coefficients. Math. Sb., 85 (1957), 451-503. 
+[BP] BECKER, J. ~u: POMMERENKE, CHR., On the Hausdorff dimension of quasicircles. Ann. 
+Acad. Sci. Fenn. Ser. A I Math., 12 (1987), 329-333. 
+[Bw] BOWEN, R., Equilibrium States and the Ergodic Theory of Anosov Diffeomorphisms. 
+Lecture Notes in Math., 470. Springer-Verlag, New York-Heidelberg, 1975. 
+[DH] DOUADY, A. ~= HUBBARD, J., On the dynamics of polynomial-like mappings. Ann. Sci. 
+Ecole Norm. Sup., 18 (1985), 287-345. 
+[Ga] GARNETT, J., Analytic Capacity and Measure. Lecture Notes in Math., 297. Springer- 
+Verlag, New York-Heidelberg, 1972. 
+[Ge] GEHRING, F. W., Open problems, in Proc. Romanian-Finnish Seminar on TeichmiiUer 
+Spaces and Quasiconformal Mappings, Bra~ov, 1969, p. 306. 
+[GR] GEHRING, F. W. ~z REICH, E., Area distortion under quasiconformal mappings. Ann. 
+Acad. Sci. Fenn. Set. A I Math., 388 (1966), 1-14. 
+[GV] GEHRING, F. W. & VT.IS~.L~, J., Hausdorff dimension and quasiconformal mappings. 
+J. London Math. Soc. (2), 6 (1975), 504-512. 
+[H] HUTCHINSON, J. E., Fractals and self-similarity. Indiana Univ. Math. J., 30 (1981), 
+713-747. 
+[I] IWANIEC, T., LP-theory of quasiregular mappings, in Quasiconformal Space Mappings, A 
+Collection of Surveys 1960-1990. Lecture Notes in Math., 1508, pp. 39-64. Springer- 
+Verlag, New York-Heidelberg, 1992. 
+[IK] IWANIEC, T. 8z KOSECKI, R., Sharp estimates for complex potentials and quasiconformat 
+mappings. Preprint of Syracuse University. 
+JIM1] IWANIEC, W. ~z MARTIN, G., Quasiregular mappings in even dimensions. Acta Math., 
+170 (1992), 29-81. 
+[IM2] -- Quasiconformal mappings and capacity. Indiana Univ. Math. J., 40 (1991), 101-122. 
+[JM] JONES, P. 8z MAKAROV, N., Density properties of harmonic measure. To appear in 
+Ann. of Math. 
+[JV] JXRVI, P. & VUORINEN, M., Self-similar Cantor sets and quasiregutar mappings. 
+J. Reine Angew. Math., 424 (1992), 31-45. 
+[K] KOSKELA, P., The degree of regularity of a quasiconformal mapping. To appear in Proc. 
+Amer. Math. Soc. 
+[KM] KOSKELA, P. & MARTIO, O., Removability theorems for quasiregular mappings. To 
+appear in Ann. Acad. Sci. Fenn. Ser. A I Math. 
+[L] LEHTO, O., Univalent Functions and Teichmiiller Spaces. Springer-Verlag, New York- 
+Heidelberg, 1987. 
+[LV] LEtITO, O. 8z VIRTANEN K., Quasiconformal Mappings in the Plane. Second edition. 
+Springer-Verlag, New York-Heidelberg, 1973. 
+[Ma] MANNING, A., The dimension of the maximal measure for a polynomial map. Ann. of 
+Math., 119 (1984), 425-430. 
+[Mo] MORI, A., On an absolute constant in the theory of quasiconformal mappings. J. Math. 
+Soc. Japan, 8 (1956), 156-166. 
+[MSS] MAI~I~, R., SAD, P. & SULLIVAN, D., On the dynamics of rational maps. Ann. Sci. t~cole 
+Norm. Sup., 16 (1983), 193-217. 
+
+
+=== PDF PAGE 24 ===
+60 KARI ASTALA 
+[P] POMMERENKE, CHR., Univalent Functions. Vandenhoeck K: Ruprecht, GSttingen, 1975. 
+[ai] RICKMAN, S., Nonremovable Cantor sets for bounded quasiregular mappings. To appear 
+in Ann. Acad. Sci. Fenn. Ser. A I Math. 
+[Ru] RUELLE, D., Repellers for real analytic maps. Ergodic Theory Dynamical Systems, 2 
+(1982), 99-107. 
+IS1] SLODKOWSKI, Z., Holomorphic motions and polynomial hulls. Proc. Amer. Math. Soc., 
+111 (1991), 347-355.. 
+[Su] SULLIVAN, D., Quasiconformal homeomorphisms and dynamics I, II. Ann. of Math., 122 
+(1985), 401-418; Acta Math., 155 (1985), 243-260. 
+[W] WALTERS, P., An Introduction to Ergodic Theory. Springer-Verlag, New York-Heidel- 
+berg, 1982. 
+KARI ASTALA 
+Department of Mathematics 
+P.O. Box 4 
+SF-00014 University of Helsinki 
+Finland 
+astala@cc.helsinki.fi 
+Received February 8, 1993 

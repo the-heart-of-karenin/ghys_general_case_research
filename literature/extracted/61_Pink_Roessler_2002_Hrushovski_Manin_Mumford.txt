@@ -1,0 +1,366 @@
+=== PDF PAGE 1 ===
+arXiv:math/0212408v1  [math.NT]  1 Dec 2002
+ICM 2002 · Vol. I · 539–546
+On Hrushovski’s Proof of the
+Manin-Mumford Conjecture
+Richard Pink ∗ Damian Roessler †
+Abstract
+The Manin-Mumford conjecture in characteristic zero was ﬁr st proved by
+Raynaud. Later, Hrushovski gave a diﬀerent proof using mode l theory. His
+main result from model theory, when applied to abelian varie ties, can be
+rephrased in terms of algebraic geometry. In this paper we pr ove that inter-
+vening result using classical algebraic geometry alone. Al together, this yields
+a new proof of the Manin-Mumford conjecture using only class ical algebraic
+geometry.
+2000 Mathematics Subject Classiﬁcation: 14K12.
+Keywords and Phrases: Torsion points, Abelian varieties, Manin-Mumford
+conjecture.
+1. Introduction
+The Manin-Mumford conjecture is the following statement.
+Theorem 1.1 LetA be an abelian variety deﬁned over
+Q andX a closed subvariety
+of A. Denote by Tor(A) the set of torsion points of A. Then
+X ∩ Tor(A) =
+⋃
+i∈ I
+Xi ∩ Tor(A),
+whereI is a ﬁnite set and each Xi is the translate by an element of A of an abelian
+subvariety of A, immersed in X.
+This conjecture has a long history of proofs. A ﬁrst partial proof was given
+by Bogomolov in [2], who proved the statement when Tor( A) is replaced by its
+∗Department of Mathematics, ETH-Zentrum, CH-8092 Z¨ urich, Switzerland. E-mail:
+pink@math.ethz.ch
+†Department of Mathematics, ETH-Zentrum, CH-8092 Z¨ urich, Switzerland. E-mail:
+roessler@math.ethz.ch
+
+=== PDF PAGE 2 ===
+540 Richard Pink Damian Roessler
+ℓ-primary part for a prime number ℓ; he applies results of Serre, Tate and Raynaud
+(see [11]) on the existence of Hodge-Tate module structures on th e Tate module of
+abelian varieties over discrete valuation rings. A full proof of the co njecture was then
+given by Raynaud in [9] (see [8] for the case dim( X) = 1); his proof follows from a
+study of the reduction of A modulop2. A third and full proof of the conjecture was
+given by Hrushovski in [4]; he uses Weil’s theorem on the characterist ic polynomial
+of the Frobenius morphism on abelian varieties over ﬁnite ﬁelds in conj unction with
+the model theory (of mathematical logic) of the theory of ﬁelds wit h a distinguished
+automorphism. A fourth proof of the conjecture was given by Ullmo and Zhang
+(based on ideas of Szpiro) in [13] and [15] and goes via diophantine app roximation
+and Arakelov theory. They actually prove a more general conject ure of Bogomolov
+which generalizes the Manin-Mumford conjecture.
+This article was inspired by Hrushovski’s proof. The bulk of Hrushovs ki’s
+proof lies in the model theory part. It culminates in a result which, wh en applied
+to the special case of abelian varieties and stripped of model theor etic terminology,
+is essentially Theorem 2.1 below. In Section 2 we prove Theorem 2.1 with classical
+algebraic geometry alone. Neither scheme theory, nor Arakelov th eory, nor mathe-
+matical logic are used. In section 3, for the sake of completeness, we show how to
+apply Theorem 2.1 to prove the Manin-Mumford conjecture.
+In a subsequent article (cf. [7]), we shall consider the analogue of 2 .1 for
+varieties over function ﬁelds of characteristic p> 0.
+2. Hrushovski’s theorem for abelian varieties
+Let K be an algebraically closed ﬁeld of characteristic zero, endowed with a n
+automorphism σ . Let A be an abelian variety over K and X a closed subvariety
+ofA. For ease of notation, we use the language of classical algebraic ge ometry; thus
+A and X denote the respective sets of K-valued points. We assume that X ⊂ A
+are deﬁned already over the ﬁxed ﬁeld K σ . The automorphism of A induced by
+σ is again denoted by σ . Let P (T ) ∈ Z[T ] be a monic polynomial with integral
+coeﬃcients. In [4, Cor. 4.1.13, p.90], Hrushovski proves the gener alisation of the
+following theorem to semi-abelian varieties.
+Theorem 2.1 Let Γ denote the kernel of the homomorphism P (σ ) : A → A. As-
+sume that no complex root of P is root of unity. Then
+X ∩ Γ =
+⋃
+i∈ I
+Xi ∩ Γ,
+whereI is a ﬁnite set and each Xi is the translate by an element of A of an abelian
+subvariety of A, immersed in X.
+Remark If roots of unity are not excluded, the group Γ becomes too large f or such
+a result. For example, if T m − 1 divides P , all points of A over the ﬁxed ﬁeld K σ m
+of σ m are contained in Γ.
+
+=== PDF PAGE 3 ===
+On Hrushovski’s Proof of the Manin-Mumford Conjecture 541
+Proof WriteP (T ) = ∑n
+i=0aiT i with ai ∈ Z and an = 1. Let F be the endomor-
+phism of An deﬁned by the matrix
+
+
+
+
+
+
+
+
+0 1 0 ... 0
+.
+.
+. . . . . . . . . . .
+.
+.
+.
+.
+. . . . . . . 0
+0 ... ... 0 1
+−a0 −a1 ... ... −an− 1
+
+
+
+
+
+
+
+
+which is the companion matrix of the polynomial P , and note that P (F ) = 0. In
+the obvious way σ induces an automorphism of An, denoted again by σ , that sends
+X n to itself. Let ∆ denote the kernel of the homomorphism F − σ :An → An. By
+construction, there is a canonical bijection
+Γ → ∆, x ↦→ (x,σ (x),...,σ n− 1(x)).
+Since σ (X) = X, this induces a bijection
+X ∩ Γ → X n ∩ ∆.
+Its inverse is given by the projection to the ﬁrst factor An → A. Clearly, we are
+now reduced to the following theorem, applied to X n ⊂ An in place of X ⊂ A.
+Theorem 2.2 Let F : A → A be an algebraic endomorphism that commutes with
+σ and that satisﬁes P (F ) = 0 . Let ∆ denote the kernel of the homomorphism
+F − σ :A → A. Assume that no complex root of P is root of unity. Then
+X ∩ ∆ =
+⋃
+i∈ I
+Xi ∩ ∆,
+whereI is a ﬁnite set and each Xi is the translate by an element of A of an abelian
+subvariety of A, immersed in X.
+Remark 2.3 IfK is algebraic over the ﬁxed ﬁeld K σ , every element a ∈ ∆ satisﬁes
+F m(a) = σ m(a) = a for some m ≥ 1. In other words, we have a ∈ Ker(F m − id).
+The assumptions on F andP imply that F m − id is an isogeny; hence a is a torsion
+element. It follows that ∆ is a torsion subgroup, and the theorem fo llows from the
+Manin-Mumford conjecture in this case. However, the scope of th e above theorem
+is somewhat wider, and the Manin-Mumford conjecture will be deduc ed from it.
+Proof Let Y be the Zariski closure of X ∩ ∆. We claim that σ (Y ) = F (Y ) = Y .
+To see this, note ﬁrst that σ commutes with F , and so σ (∆) = ∆. By assumption
+we have σ (X) = X; hence σ (X ∩ ∆) = X ∩ ∆. Since σ : A → A comes from
+an automorphism of the underlying ﬁeld, it is a homeomorphism for the Zariski
+topology, so we have σ (Y ) = Y . On the other hand, the maps σ and F coincide
+on ∆, which implies F (X ∩ ∆) = X ∩ ∆. As F is a proper algebraic morphism,
+we deduce that F (Y ) = Y . Clearly, Theorem 2.2 is now reduced to the following
+theorem (see [3, Th. 3] for the case where F is the multiplication by an integer
+n> 1).
+
+=== PDF PAGE 4 ===
+542 Richard Pink Damian Roessler
+Theorem 2.4 LetA be an abelian variety over an algebraically closed ﬁeld of ch ar-
+acteristic zero. Let F :A → A be an algebraic endomorphism none of whose eigen-
+values on LieA is a root of unity. Let Y be a closed subvariety of A satisfying
+F (Y ) = Y . Then Y is a ﬁnite union of translates of abelian subvarieties of A.
+Proof We proceed by induction on the dimension d ofA. For d = 0 the statement
+is obvious; hence we assume d > 0. Next observe that Y ⊂ F (A). Thus if F is
+not surjective, we can replace A byF (A) and Y byF (A) ∩ Y , and are ﬁnished by
+induction. Thus we may assume that F is an isogeny.
+SinceF is proper andF (Y ) = Y , every irreducible component of Y is the image
+under F of some irreducible component of Y . Since the set of these irreducible
+components is ﬁnite, it is therefore permuted by F . We ﬁx such an irreducible
+component Z and an integer m ≥ 1 such that F m(Z) = Z.
+Any power F rm :A → A is an isogeny, and since char( K) = 0, it is a separa-
+ble isogeny. As a morphism of schemes it is therefore a ﬁnite ´ etale Ga lois covering
+with Galois group Ker( F rm), acting by translations on A. The same follows for
+the induced covering ( F rm)− 1(Z) → Z. As Z is irreducible, the irreducible com-
+ponents of ( F rm)− 1(Z) are transitively permuted by Ker( F rm) and each of them
+has dimension dim( Z). Since F rm(Z) = Z, we have Z ⊂ (F rm)− 1(Z), and so Z
+itself is one of these irreducible components. Let Gr denote the stabilizer of Z in
+Ker(F rm). Then F rm : Z → Z is generically a ﬁnite ´ etale Galois covering with
+Galois group Gr.
+We now distinguish two cases. Let Stab A(Z) denote the translation stabilizer
+of Z in A, which is a closed algebraic subgroup of A.
+Lemma 2.5 If |G1|> 1, then dim(StabA(Z))> 0.
+Proof For anyr ≥ 1, the morphism F rm :Z → Z is ﬁnite separable of degree |Gr|.
+Since degrees are multiplicative in composites, this degree is also equa l to |G1|r.
+Thus if |G1|> 1, we ﬁnd that |Gr| becomes arbitrarily large with r. Therefore
+StabA(Z) contains arbitrarily large ﬁnite subgroups, so it cannot be ﬁnite. Q. E. D.
+Lemma 2.6 If |G1|= 1, then dim(StabA(Z))> 0 or Z is a single point.
+Proof Since Z is irreducible, the assertion is obvious when dim( Z) = 0. So we
+assume that dim(Z)> 0. The assumption |G1|= 1 implies that F m induces a ﬁnite
+(separable) morphism ϕ :Z → Z of degree 1. The set of ﬁxed points of any positive
+powerϕ r is then Z ∩ Ker(F rm − id). On the other hand the assumptions on F and
+P imply that F rm − id is an isogeny on A. Thus this ﬁxed point set is ﬁnite for
+everyr ≥ 1; hence ϕ has inﬁnite order.
+Assume now that Stab A(Z) is ﬁnite. By Ueno’s theorem [12, Thm. 3.10] Z is
+then of general type, in the sense that any smooth projective va riety birationally
+equivalent to Z is of general type (see [12, Def. 1.7]). But the group of birational
+automorphisms of any irreducible projective variety Z of general type is ﬁnite (see
+[6] and also [5, Th. 10.11]) which yields a contradiction. Q. E. D.
+
+=== PDF PAGE 5 ===
+On Hrushovski’s Proof of the Manin-Mumford Conjecture 543
+If Z is a single point, it is a translate of the trivial abelian subvariety of A.
+Otherwise we know from the lemmas above that dim(Stab A(Z)) > 0, and we can
+use the induction hypothesis. Let B denote the identity component of Stab A(Z).
+Since F m(Z) = Z, we also have F m(B) = B. Set ¯A := A/B and ¯Z := Z/B , and
+let ¯F denote the endomorphism of ¯A induced by F m. Then we have ¯F ( ¯Z) = ¯Z,
+and every eigenvalue of ¯F on Lie ¯A is an eigenvalue of F m on Lie A and therefore
+not a root of unity. By Theorem 2.4, applied to ( ¯A, ¯Z, ¯F ) in place of ( A,Y,F ),
+we now deduce that ¯Z is a ﬁnite union of translates of abelian subvarieties of ¯A.
+But Z is irreducible; hence so is ¯Z. Thus ¯Z itself is a translate of an abelian
+subvariety. That abelian subvariety is equal to A′/B for some abelian subvariety
+A′ ⊂ A containing B, and so Z is a translate of A′, as desired. This ﬁnishes the
+proof of Theorem 2.4, and thus also of Theorems 2.2 and 2.1. Q. E. D.
+Remark Suppose that in the statement of the preceding theorem, we repla ce the
+assumption that none of the eigenvalues of F on Lie A is a root of unity by the
+weaker assumption that none of the eigenvalues of F on LieA is an algebraic unit.
+This case is suﬃcient for the application to the Manin-Mumford conje cture. Under
+this weaker assumption, the following alternative proof of Lemma 2.6 can be given;
+it does not use the theorems of Ueno and Matsumura but only elemen tary properties
+of cycle classes.
+We work under the hypotheses of Lemma 2.6 and with the notations u sed
+above. First, everything can be deﬁned over a countable algebraic ally closed sub-
+ﬁeld of K, and this subﬁeld can be embedded into C; thus without loss of gen-
+erality we may assume that K = C. Then for every integer i ≥ 0 we abbreviate
+H i := H i(A, Z). Let c := codim A(Z) and let cl( Z) ∈ H 2c be the cycle class of
+Z ⊂ A. We calculate the cycle class of ( F m)− 1(Z) in two ways. On the one
+hand, we have seen that the group Ker( F m) acts transitively on the set of irre-
+ducible components of ( F m)− 1(Z); the assumption |G1| = 1 implies that it also
+acts faithfully. Thus the number of irreducible components is |Ker(F m)|. Recall
+that Z is one of them. Since translation on A does not change cycle classes, we
+ﬁnd that all irreducible components of ( F m)− 1(Z) have cycle class cl( Z); hence
+cl
+(
+(F m)− 1(Z)
+)
+= |Ker(F m)| ·cl(Z). On the other hand F induces a pullback ho-
+momorphismF ∗ :H i → H i for every i ≥ 0, and by functoriality of cycle classes we
+have cl
+(
+(F m)− 1(Z)
+)
+=F ∗ (
+cl(Z)
+)
+. As cl( Z) is non-zero, we deduce that |Ker(F m)|
+is an eigenvalue of F ∗ on H 2c.
+Let d := dim(A), which is also the codimension of any point in A. Repeating
+the above calculation with the cycle class of a point, we deduce that |Ker(F m)| is
+also an eigenvalue of F ∗ on the highest non-vanishing cohomology group H 2d. Since
+cup product yields isomorphisms H i ∼
+= ΛiH 1 for all i ≥ 0, which are compatible
+with F ∗ , it yields an F ∗ -equivariant perfect pairing H 2c × H 2(d− c) → H 2d. From
+this we deduce that 1 is an eigenvalue of F ∗ on H 2(d− c). Moreover, this eigenvalue
+must be a product of 2(d− c) eigenvalues ofF ∗ onH 1. Now the eigenvalues of F ∗ on
+H 1 are precisely those of F on LieA and their complex conjugates. By assumption,
+they are algebraic integers but no algebraic units. Thus a product o f such numbers
+can be 1 only if it is the empty product. This shows that 2( d − c) = 0, that is,
+codimA(Z) = dim(A); hence Z is a point, as desired. Q. E. D.
+
+=== PDF PAGE 6 ===
+544 Richard Pink Damian Roessler
+3. Proof of the Manin-Mumford conjecture
+As a preparation let q =pr, where p is a prime number and r ≥ 1. Let Fq be
+the unique ﬁeld with q elements. Let A be an abelian variety deﬁned over Fq. As
+in classical algebraic geometry we identify A with the set of its
+Fq-valued points.
+Let ℓ be a prime number diﬀerent from p, and let Tℓ(A) be the ℓ-adic Tate module
+of A, which is a free Zℓ-module of rank 2 dim( A). We denote by ϕ the Frobenius
+morphism A → A, which acts on the coordinates of points by taking q-th powers.
+It also acts on the Tate module via its action on the torsion points. Th e following
+result, an analogue of the Riemann hypothesis, is due to Weil (see [14 ]):
+Theorem 3.1 Let T be an indeterminate. The characteristic polynomial of ϕ on
+Tℓ(A) ⊗ Zℓ Qℓ is a monic polynomial in Z[T ]. It is independent of ℓ, and all its
+complex roots have absolute value √ q.
+Consider now an abelian variety A deﬁned over Q and a closed subvariety X
+of A. We choose a number ﬁeld L ⊂ Q over which both X ⊂ A can be deﬁned and
+ﬁx their models over L. For any abelian group G we write Tor(G) for the group of
+torsion points of G. Moreover, for any prime p we write Tor p(G) for the subgroup
+of torsion points of order a power of p, and Tor p(G) for the subgroup of torsion
+points of order prime to p. Note that Tor( G) = Tor p(G) ⊕ Torp(G).
+Choose a prime ideal p of OL whereA has good reduction. Let Fq be the ﬁnite
+ﬁeld OL/ p, where q is a power of a prime number p. The following lemma is lemma
+5.0.10 in [4, p. 105]; we reproduce the proof for the convenience of t he reader. We
+use Weil’s theorem 3.1 and reduction modulo p to obtain an automorphism of Q
+and a polynomial that we can feed in Theorem 2.1 to obtain Theorem 1.1 .
+Lemma 3.2 There is an element σp ∈ Gal(Q|L) and a monic polynomial Pp(T ) ∈
+Z[T ] all of whose complex roots have absolute value √ q, such that Pp(σp)(x) = 0
+for every x ∈ Torp(A).
+Proof Let Lp be the completion of L at p. Extend the embedding֒→Lp to an
+embedding of the algebraic closures Q =֒→Lp, and the surjection OLp → Fq to
+a surjection OLp
+→ Fq. On the prime-to- p torsion groups we then obtain natural
+isomorphisms
+Torp(A) ∼
+= Torp(A
+Lp) ∼
+= Torp(A
+Fq
+).
+The second isomorphism expresses the fact that the ﬁeld of deﬁnit ion of every
+prime-to-p torsion point is unramiﬁed at p.
+Now, as before, let ϕ denote the automorphism of Fq and of Torp(AFq
+) induced
+by the Frobenius morphism over Fq. Then ϕ can be lifted to an element σp ∈
+Gal(Q|L) making the above isomorphisms equivariant. To see this, one ﬁrst lif ts ϕ
+to an element τnr
+p of Gal(Lnr
+p |Lp), where Lnr
+p is the maximal unramiﬁed extension
+of Lp. This lifting exists and is unique by [1, Th. 1, p. 26]. This element can the n
+be lifted further to a (non-unique) element τp of Gal(
+Lp|Lp), since Lnr
+p is a subﬁeld
+
+=== PDF PAGE 7 ===
+On Hrushovski’s Proof of the Manin-Mumford Conjecture 545
+of Lp. By construction the action of τp on Torp(ALp ) corresponds to the action of
+ϕ on Torp(AFq ). The restriction of τp to Q gives the desired element σp.
+Let Pp(T ) be the characteristic polynomial of ϕ on Tℓ(AFq
+) ⊗ Zℓ Qℓ for any
+prime number ℓ ̸= p. By construction, we then have Pp(ϕ ) = 0 on Tor ℓ(AFq ). By
+Weil’s result quoted above, the same equation holds for every prime ℓ ̸= p; so it
+holds on Tor p(AFq
+). From the construction of σp we deduce that Pp(σp) = 0 on
+Torp(A). Finally, Weil’s result also describes the complex roots of Pp. Q. E. D.
+Let now Lp, Lp ⊂ Q be the ﬁelds generated over L by the coordinates of
+all points in Tor p(A), resp. in Tor p(A). Both are inﬁnite Galois extensions of L.
+Their intersection is known to be ﬁnite over L by Serre [10, pp. 33–34, 56–59].
+Thus after replacing L by Lp ∩ Lp, we may assume that Lp and Lp are linearly
+disjoint over L. The subﬁeld of Q generated by the coordinates of all points in
+Tor(A) = Tor p(A) ⊕ Torp(A) is then canonically isomorphic to Lp ⊗ LLp.
+Let p′ be a second place of good reduction of A, of residue characteristic
+diﬀerent from p. Let σp, σp′ and Pp, Pp′ be the automorphisms and polynomials
+provided by Lemma 3.2, applied to p, resp. to p′. The automorphism of Lp ⊗ LLp
+induced byσp ⊗ σp′ then extends to some automorphism σ of Q overL. Since Pp(σp)
+vanishes on Tor p(A), so does Pp(σ ). Similarly, Pp′(σp′) vanishes on Tor p(A) ⊂
+Torp′
+(A); hence so does Pp′(σ ). Thus with P (T ) := Pp(T )Pp′(T ) we deduce that
+P (σ ) vanishes on Tor(A). In other words, we have Tor( A) ⊂ Γ := Ker P (σ ). With
+K = Q Theorem 1.1 now follows directly from Theorem 2.1. Q. E. D.
+References
+[1] Algebraic number theory. Proceedings of an instructional conf erence organized
+by the London Mathematical Society (a NATO Advanced Study Inst itute)
+with the support of the International Mathematical Union. Edited by J. W. S.
+Cassels and A. Fr¨ ohlich.Academic Press, London; Thompson Book Co., Inc.,
+Washington, D.C. 1967 xviii+366.
+[2] Bogomolov, F. A.: Points of ﬁnite order on abelian varieties. (Russ ian) Izv.
+Akad. Nauk SSSR Ser. Mat. 44 (1980), no. 4, 782–804.
+[3] Bogomolov, F. A.: Sur l’alg´ ebricit´ e des repr´ esentationsl-adiques. C. R. Acad.
+Sci. Paris S´ er. A-B290 (1980), no. 15, A701–A703.
+[4] Hrushovski, E.: The Manin-Mumford conjecture and the model t heory of dif-
+ference ﬁelds. Ann. Pure Appl. Logic 112 (2001), no. 1, 43–115.
+[5] Iitaka, S.: Algebraic geometry. An introduction to birational geo metry of al-
+gebraic varieties. Graduate Texts in Mathematics, 76. North-Holla nd Mathe-
+matical Library, 24. Springer-Verlag, New York-Berlin , 1982.
+[6] Matsumura, H.: On algebraic groups of birational transformatio ns. Atti Accad.
+Naz. Lincei Rend. Cl. Sci. Fis. Mat. Natur. (8) 34 (1963), 151–155.
+[7] Pink, R., Roessler, D.: On ψ -invariant subvarieties of semiabelian varieties and
+the Manin-Mumford conjecture. In preparation.
+
+=== PDF PAGE 8 ===
+546 Richard Pink Damian Roessler
+[8] Raynaud, M.: Courbes sur une vari´ et´ e ab´ elienne et points de torsion. Invent.
+Math. 71 (1983), no. 1, 207–233.
+[9] Raynaud, M.: Sous-vari´ et´ es d’une vari´ et´ e ab´ elienne et points de torsion. Arith-
+metic and geometry , Vol. I, 327–352, Progr. Math. 35, Birkh¨ auser Boston,
+Boston, MA, 1983.
+[10] Serre, J.-P.: Oeuvres, vol. IV (1985-1998). Springer 2000.
+[11] Tate, J. T.: p-divisible groups. Proc. Conf. Local Fields (Driebergen, 1966) ,
+158–183. Springer, Berlin.
+[12] Ueno, K.: Classiﬁcation of algebraic varieties, I. Compositio Math. 27 Fasc. 3
+(1973), 277–342.
+[13] Ullmo, E.: Positivit´ e et discr´ etion des points alg´ ebriques des courbes. Ann. of
+Math. (2) 147 (1998), no. 1, 167–179.
+[14] Weil, A.: Vari´ et´ es ab´ eliennes et courbes alg´ ebriques.Hermann 1948.
+[15] Zhang, S.-W.: Equidistribution of small points on abelian varieties. Ann. of
+Math. (2) 147 (1998), no. 1, 159–165.

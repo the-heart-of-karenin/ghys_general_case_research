@@ -1,0 +1,58 @@
+{
+  "exact_exterior_algebra": {
+    "green_raw_coefficient": 4,
+    "mixed_raw_coefficients": [
+      1,
+      1
+    ],
+    "symplectic_volume_raw_coefficient": 4,
+    "sum_fourth_power_equals_six_green_product": true,
+    "interpretation": "Gaussian i factors accounted for explicitly; polynomial coefficients are integers."
+  },
+  "exact_fixed_point_derivative_checks": [
+    {
+      "cosine": 1,
+      "determinant": "1",
+      "trace": "301/50"
+    },
+    {
+      "cosine": -1,
+      "determinant": "1",
+      "trace": "299/50"
+    }
+  ],
+  "bernoulli_pressure_gap": 0.05268025782891328,
+  "bernoulli_numerical_checks": [
+    {
+      "n": 10,
+      "m_tail": 0.12087388159999973,
+      "theta_complement": 0.17187499999999994,
+      "each_chernoff_bound": 0.5904899999999993
+    },
+    {
+      "n": 30,
+      "m_tail": 0.025616255335326698,
+      "theta_complement": 0.04936857335269489,
+      "each_chernoff_bound": 0.2058911320946482
+    },
+    {
+      "n": 100,
+      "m_tail": 0.0007368836015455897,
+      "theta_complement": 0.0004368599184561897,
+      "each_chernoff_bound": 0.005153775207320045
+    },
+    {
+      "n": 300,
+      "m_tail": 1.004989324005294e-08,
+      "theta_complement": 8.049664357842836e-09,
+      "each_chernoff_bound": 1.3689147905858315e-07
+    },
+    {
+      "n": 1000,
+      "m_tail": 3.152255144666164e-25,
+      "theta_complement": 6.520808864807339e-25,
+      "each_chernoff_bound": 1.3220708194806399e-23
+    }
+  ],
+  "scope": "Only finite coefficients, signs and toy-model bounds checked. No Anosov existence at epsilon=1/100, no infinite-dimensional or regularity conclusion is inferred. All analytic and geometric proofs are separate."
+}

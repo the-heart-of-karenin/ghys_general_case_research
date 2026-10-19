@@ -1,0 +1,1264 @@
+=== PDF PAGE 1 ===
+UNIVERSIDAD NACIONAL DE CÓRDOBA 
+ 
+FACULTAD DE MATEMÁTICA, ASTRONOMÍA Y FÍSICA 
+______________________________________________________________________ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SERIE “A” 
+ 
+ 
+ 
+ 
+TRABAJOS DE MATEMATICA 
+ 
+ 
+  
+ 
+Nº 78/07 
+ 
+ 
+Nilmanifolds of dimension  ≤ 8 admitting 
+anosov diffeomorphisms 
+ 
+ 
+ Jorge Lauret, Cynthia E. Will 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Editores: Jorge R. Lauret–Elvio A. Pilotta 
+____________________________________________________________ 
+ 
+CIUDAD UNIVERSITARIA – 5000 CÓRDOBA 
+ 
+REPÚBLICA ARGENTINA 
+
+
+=== PDF PAGE 2 ===
+NILMANIFOLDS OF DIMENSION ≤ 8 ADMITTING ANOSOV
+DIFFEOMORPHISMS
+JORGE LAURET, CYNTHIA E. WILL
+Abstract. After more than thirty years, the only known examples of Anosov
+diﬀeomorphisms are hyperbolic automorphisms of infranilmanifolds, and even
+the existence of an Anosov automorphism is a really strong condition on an
+infranilmanifold. Any Anosov automorphism determines an automorphism of
+the rational Lie algebra determined by the lattice, which is hyperbolic and
+unimodular (and conversely ...). These two conditions together are strong
+enough to make of such rational nilpotent Lie algebras (called Anosov Lie
+algebras) very distinguished objects. In this paper, we classify Anosov Lie
+algebras of dimension less or equal than 8.
+As a corollary, we obtain that if an infranilmanifold of dimension n≤ 8
+admits an Anosov diﬀeomorphism f and it is not a torus or a compact ﬂat
+manifold (i.e. covered by a torus), then n=6 or 8 and the signature of f
+necessarily equals{3, 3}or{4, 4}, respectively.
+1. Introduction
+A diﬀeomorphismf of a compact diﬀerentiable manifoldM is called Anosov if it
+has a global hyperbolic behavior, i.e. the tangent bundle T M admits a continuous
+invariant splitting TM = E+⊕E− such that df expands E+ and contracts E−
+exponentially. These diﬀeomorphisms deﬁne very special dynamical systems and it
+is then a natural problem to understand which are the manifolds supporting them
+(see [Sm]). After more than thirty years, the only known examples are hyperbolic
+automorphisms of infranilmanifolds (called Anosov automorphisms) and it is con-
+jectured that any Anosov diﬀeomorphism is topologically conjugate to one of these
+(see [Mr]). The conjecture is known to be true in many particular cases: J. Franks
+[Fr] and A. Manning [Mn] proved it for Anosov diﬀeomorphisms on infranilman-
+ifolds themselves; Y. Benoist and F. Labourie [BL] in the case the distributions
+E+,E− are diﬀerentiable and the Anosov diﬀeomorphism preserves an aﬃne con-
+nection (for instance a symplectic form); and J. Franks [Fr] when dim E+ = 1 (see
+also [Gh] for the holomorphic case and [Gr] for expanding maps).
+It is also important to note that the existence of an Anosov automorphism is
+a really strong condition on an infranilmanifold. An infranilmanifold is a quotient
+N/Γ, where N is a nilpotent Lie group and Γ ⊂K⋉N is a lattice (i.e. a discrete
+cocompact subgroup) which is torsion-free andK is a compact subgroup of Aut(N).
+Among some other more technical obstructions (see [Ma2] for further information),
+the ﬁrst natural obstruction for the infranilmanifold N/Γ to admit an Anosov au-
+tomorphism is that the nilmanifold N/(Γ∩N), which is a ﬁnite cover of N/Γ, has
+to do so.
+2000 Mathematics Subject Classiﬁcation. Primary: 37D20; Secondary: 22E25, 20F34.
+Supported by CONICET fellowships and grants from FONCyT and Fundaci´ on Antorchas.
+1
+
+=== PDF PAGE 3 ===
+2 JORGE LAURET, CYNTHIA E. WILL
+In the case of a nilmanifold N/Γ (i.e. when Γ ⊂N), any Anosov automorphism
+determines an automorphism A of the rational Lie algebra nQ = Γ⊗Q, the Lie
+algebra of the rational Mal’cev completion of Γ, which is hyperbolic (i.e.|λ|̸= 1 for
+any eigenvalueλ ofA) and unimodular (i.e. [A]β∈ GLn(Z) for some basisβ of nQ).
+Recall that nQ is a rational form of the Lie algebra n of N. These two conditions
+together are strong enough to make of such rational nilpotent Lie algebras (called
+Anosov Lie algebras ) very distinguished objects. It is proved in [I] and [De] that
+if Γ 1 and Γ 2 are commensurable (i.e. Γ 1⊗Q≃ Γ2⊗Q) then N/Γ1 admits an
+Anosov automorphism if and only if N/Γ2 does. All this suggests that the class of
+rational Anosov Lie algebras is the key algebraic structure to study if one attempts
+to classify infranilmanifolds admitting an Anosov diﬀeomorphism.
+Finally, if one is interested in just those Lie groups which are simply connected
+covers of such infranilmanifolds, then the objects to be studied are real nilpotent
+Lie algebras n supporting a hyperbolic automorphism A such that [A]β∈ GLn(Z)
+for some Z-basis β of n (i.e. with integer structure constants). Such Lie algebras
+will also be called Anosov. We note that a real Lie algebra is Anosov if and only if
+it has an Anosov rational form.
+The following would be then a natural program to classify all the infranilman-
+ifolds up to homeomorphism of a given dimension n which admits an Anosov dif-
+feomorphism:
+(i) Find all n-dimensional Anosov Lie algebras over R.
+(ii) For each real Lie algebra n obtained in (i), determine which rational forms
+of n are Anosov.
+(iii) For each rational Lie algebra nQ from (ii), classify up to isomorphism all
+the lattices Γ in N, the nilpotent Lie group with Lie algebra nQ⊗R, such
+that Γ⊗Q = nQ. In other words, classify up to isomorphism all the lattices
+in the commensurability class corresponding to nQ.
+(iv) Given a nilmanifold N/Γ from (iii), decide which of the ﬁnitely many in-
+franilmanifolds N/Λ essentially covered by N/Γ (i.e. Λ ∩N≃ Γ) admits
+an Anosov automorphism, that is, a hyperbolic automorphism ϕ ofN such
+that ϕ(Λ) = Λ (see [Ma2]).
+Parts (i) and (ii) have been solved for dimension n≤ 6 in [CKS] and [Ma1],
+yielding only two algebras overR: h3⊕ h3 and f3 (see Table 1). There is a construc-
+tion in [L1] (see [LW] for a generalization of it to an arbitrary number of terms)
+proving that n⊕ n is Anosov for any real graded nilpotent Lie algebra n which
+admits at least one rational form nQ. We note that the existing Anosov rational
+form is not necessarily nQ⊕ nQ. Since for instance any 2-step nilpotent Lie algebra
+is graded, this construction shows that part (i) of the program above is already a
+wild problem forn large (see [DM] for recent explicit examples attached to graphs).
+The goal of this paper is to approach an explicit classiﬁcation in small dimensions.
+We classify up to isomorphism real and rational Lie algebras of dimension≤ 8 which
+are Anosov. In other words, we have solved parts (i) and (ii) of the program for
+n = 7 andn = 8. We refer to Tables 1 and 3 for a quick look at the results obtained.
+Without an abelian factor, there are only three 8-dimensional real Lie algebras
+which are Anosov and none in dimension 7. This is a really small list, bearing
+in mind that there exist several one and two-parameters families and hundreds of
+isolated examples of 7 and 8-dimensional nilpotent Lie algebras.
+
+=== PDF PAGE 4 ===
+NILMANIFOLDS OF DIMENSION ≤ 8 ADMITTING ANOSOV DIFFEOMORPHISMS 3
+One of the corollaries which might be interesting from a dynamical point of view
+is that if an infranilmanifold of dimension n≤ 8 admits an Anosov diﬀeomorphism
+f and it is not a torus or a compact ﬂat manifold (i.e. covered by a torus), then
+n = 6 or 8 and the signature of f, deﬁned by{dimE+, dimE−}, necessarily equals
+{3, 3}or{4, 4}, respectively.
+We now give an idea of the structure of the proof. The type of a nilpotent Lie
+algebra n is ther-tuple (n1,...,n r) , whereni = dimCi−1(n)/Ci(n) andCi(n) is the
+central descending series. By using that any Anosov Lie algebra admits an Anosov
+automorphism A which is semisimple and some elementary properties of lattices,
+one sees that only a few types are allowed in each dimension 7 and 8. We then study
+these types case by case in Section 3 and strongly use that the eigenvalues of A are
+algebraic integers (even units). For each of the types we get only one or two real
+Lie algebras (sometimes no one at all) which are candidates to be Anosov. Some of
+them are excluded by using a criterion given in terms of a homogeneous polynomial
+(called the Pfaﬃan form) associated to each 2-step nilpotent Lie algebra, and the
+remainder are proved to be Anosov by exhibiting an Anosov automorphism.
+The results on rational forms obtained in [L2] (see Table 2) helps us to classify
+Anosov Lie algebras over Q in Section 4, and here we also need a criterion on the
+Pfaﬃan form to discard some of them, which has in this case integer coeﬃcients
+and hence some topics from number theory as the Pell equation and square free
+numbers appear. Such criterions and most of the known tools to deal with Anosov
+automorphisms are given in Section 2.
+Acknowledgements. We wish to thank M. Mainkar and S.G. Dani for very helpful
+comments on a ﬁrst version of this paper.
+2. Anosov diffeomorphisms and Lie algebras
+Anosov diﬀeomorphisms play an important and beautiful role in dynamics as
+the notion represents the most perfect kind of global hyperbolic behavior, giving
+examples of structurally stable dynamical systems. A diﬀeomorphism f of a com-
+pact diﬀerentiable manifold M is called Anosov if the tangent bundle TM admits
+a continuous invariant splitting T M = E+⊕E− such that df expands E+ and
+contractsE− exponentially, that is, there exist constants 0 <c and 0<λ< 1 such
+that
+||dfn(X)||≤cλn||X||, ∀X∈E−, ||dfn(Y )||≥cλ−n||Y||, ∀Y ∈E+,
+for all n∈ N. The condition is independent of the Riemannian metric. Some of
+the other very nice properties of these special dynamical systems, all proved mainly
+by D. Anosov, are: the distributions E+ and E− are completely integrable with
+C∞ leaves and determine two (unique) f-invariant foliations (unstable and stable,
+respectively) with remarkable dynamical properties; the set of periodic points (i.e.
+fm(p) = p for some m∈N) is dense in the set of those points of M such that for
+any neighborhood U of p there exist k̸=m∈N with fk(U)∩fm(U)̸=∅; the set
+of all Anosov diﬀeomorphisms form an open subset of Diﬀ( M) (see [V]).
+Example 2.1. LetN be a real simply connected nilpotent Lie group with Lie algebra
+n. Let ϕ be a hyperbolic automorphism of N, that is, all the eigenvalues of its
+derivative A = (dϕ)e : n↦→ n have absolute value diﬀerent from 1. If ϕ(Γ) =
+Γ for some lattice Γ of N (i.e. a uniform discrete subgroup) then ϕ deﬁnes an
+Anosov diﬀeomorphism on the nilmanifold M = N/Γ, which is called an Anosov
+
+=== PDF PAGE 5 ===
+4 JORGE LAURET, CYNTHIA E. WILL
+automorphism. The subspaces E+ and E− are obtained by left translation of the
+eigenspaces of eigenvalues of A of absolute value greater than 1 and less than 1,
+respectively, and so the splitting is diﬀerentiable. If more in general, Γ is a uniform
+discrete subgroup ofK⋉N, whereK is any compact subgroup of Aut(N), for which
+ϕ(Γ) = Γ (recall thatϕ acts on Aut(N) by conjugation), thenϕ also determines an
+Anosov diﬀeomorphism on M = N/Γ which is also called Anosov automorphism.
+In this caseM is called an infranilmanifold and is ﬁnitely covered by the nilmanifold
+N/(N∩Γ) (for the known examples of infranilmanifolds which are not nilmanifolds
+and admit Anosov automorphisms we refer to [Sh, P, Ma2]).
+In [Sm], S. Smale raised the problem of classifying all compact manifolds (up
+to homeomorphism) which admit an Anosov diﬀeomorphism. At this moment,
+the only known examples are of algebraic nature, namely Anosov automorphisms
+of nilmanifolds and infranilmanifolds described in the example above. It is con-
+jectured that any Anosov diﬀeomorphism is topologically conjugate to an Anosov
+automorphism of an infranilmanifold (see [Mr]).
+All this certainly highlights the problem of classifying all nilmanifolds which
+admit Anosov automorphisms, which are easily seen in correspondence with a very
+special class of nilpotent Lie algebras over Q. Nevertheless, not too much is known
+on the question since it is not so easy for an automorphism of a (real) nilpotent Lie
+algebra to be hyperbolic and unimodular at the same time.
+Deﬁnition 2.2. A rational Lie algebra nQ (i.e. with structure constants in Q) of
+dimensionn is said to be Anosov if it admits a hyperbolic automorphismA (i.e. all
+their eigenvalues have absolute value diﬀerent from 1) which is unimodular, that
+is, [A]β ∈ GLn(Z) for some basis β of nQ, where [ A]β denotes the matrix of A
+with respect to β. A hyperbolic and unimodular automorphism is called an Anosov
+automorphism. We also say that a real Lie algebra is Anosov when it admits a
+rational form which is Anosov. An automorphism of a real Lie algebra n is called
+Anosov if it is hyperbolic and [ A]β∈ GLn(Z) for some Z-basis β of n (i.e. with
+integer structure constants).
+The unimodularity condition onA in the above deﬁnition is equivalent to the fact
+that the characteristic polynomial of A has integer coeﬃcients and constant term
+equal to±1 (see [De]). It is well known that any Anosov Lie algebra is necessarily
+nilpotent, and it is easy to see that the classiﬁcation of nilmanifolds which admit
+an Anosov automorphism is essentially equivalent to that of Anosov Lie algebras
+(see [L1, D, I, De]). If n is a rational Lie algebra, we call the real Lie algebra n⊗R
+the real completion of n.
+We now give some necessary conditions a real Lie algebra has to satisfy in order
+to be Anosov (see [Ma1] and [LW]).
+Proposition 2.3. Let n be a real nilpotent Lie algebra which is Anosov. Then there
+exist a decomposition n = n1⊕...⊕ nr satisfying Ci(n) = ni+1⊕...⊕ nr, i = 0,...,r ,
+and a hyperbolic A∈ Aut(n) such that
+(i) Ani = ni for all i = 1,...,r .
+(ii) A is semisimple (in particular A is diagonalizable over C).
+(iii) For each i, there exists a basis βi of ni such that [Ai]βi∈ SLni(Z), where
+ni = dim ni and Ai =A|ni.
+Let n be a nilpotent Lie algebra over K, where K isR,Q orC.
+
+=== PDF PAGE 6 ===
+NILMANIFOLDS OF DIMENSION ≤ 8 ADMITTING ANOSOV DIFFEOMORPHISMS 5
+Deﬁnition 2.4. Consider the central descendent series of n deﬁned by C0(n) = n,
+Ci(n) = [ n,Ci−1(n)]. When Cr(n) = 0 and Cr−1(n)̸= 0, n is said to be r-step
+nilpotent, and we denote by (n1,...,n r) the type of n, where
+ni = dimCi−1(n)/Ci(n).
+We also take a decomposition n = n1⊕...⊕ nr, a direct sum of vector spaces, such
+that Ci(n) = ni+1⊕...⊕ nr for all i.
+Proposition 2.5. Let n be a real r-step nilpotent Lie algebra of type (n1,...,n r).
+If n is Anosov then at least one of the following is true:
+(i) n1≥ 4 and ni≥ 2 for all i = 2,...,r .
+(ii) n1 =n2 = 3 and ni≥ 2 for all i = 3,...,r .
+In particular, dim n≥ 2r + 2.
+Assume now that n is 2-step nilpotent, or equivalently of type ( n1,n 2). Fix
+a non-degenerate symmetric bilinear form ⟨·,·⟩ on n (i.e. an inner product) and
+consider the orthogonal decomposition of the form n =V⊕ [n, n], that is, n1 =V .
+For eachZ∈ [n, n] consider the linear transformation JZ :V −→V deﬁned by
+(1) ⟨JZX,Y⟩ =⟨[X,Y ],Z⟩, ∀X,Y ∈V.
+Recall thatJZ is skew symmetric with respect to⟨·,·⟩ and the mapJ : n↦→ so(V )
+is linear. The Pfaﬃan form of n, f : [n, n]−→K, is deﬁned by
+f(Z) = Pf(JZ|V ), Z ∈ [n, n],
+where Pf : so(V,K )↦→ K is the Pfaﬃan, that is, the only polynomial function
+satisfying Pf(B)2 = detB for all B∈ so(V,K ) and Pf(J) = 1 for
+J =
+[
+0 I
+−I 0
+]
+.
+If dimV = 2m and dim [n, n] = k then f =f(x1,...,x k) is a homogeneous polyno-
+mial of degree m in k variables with coeﬃcients in K. The projective equivalence
+class of the form f(x1,...,x k) is an isomorphism invariant of the Lie algebra n (see
+[S] or [L2]).
+Part (i) of the following proposition is essentially [AS, Theorem 3]
+Proposition 2.6. Let n = n1⊕ n2 be a real 2-step nilpotent Lie algebra with
+dim n2 =k. Assume that n is Anosov and let nQ denote the rational form which is
+Anosov.
+(i) If f is the Pfaﬃan form of n then for any c> 0 the region
+Rc ={(x1,...,x k)∈Rk :|f(x1,...,x k)|≤c}
+is unbounded.
+(ii) For the Pfaﬃan form f of nQ and for any p∈Z the set
+Sp ={(x1,...,x k)∈Zk :f(x1,...,x k) =p}
+is either empty or inﬁnite.
+Proof. (i) Consider A∈ Aut(n) satisfying all the conditions in Proposition 2.3.
+From the proof of [L2, Proposition 2.4] and the fact that det Ai = 1 for any i =
+1,...,r , we obtain
+f(x1,...,x k) =f(At(x1,...,x k)) ∀ (x1,...,x k)∈Rk = n2,
+
+=== PDF PAGE 7 ===
+6 JORGE LAURET, CYNTHIA E. WILL
+and so ARc⊂ Rc. Assume that Rc0 is bounded for some c0 > 0, by using that
+f is a homogeneous polynomial we get that Rc is bounded for any c >0; indeed,
+Rc = c− 1
+mR1 if m is the degree of f. Now, for a suﬃciently big c1 > 0 we may
+assume that Rc1 contains the basis β2 of n2, but only ﬁnitely many integral linear
+combinations of elements in this basis can belong to the bounded region Rc1. This
+implies thatAt|n2 leave a ﬁnite set of points invariant, and since such a set contains
+a basis of n2 we obtain that (At)l = I for some l∈N. The eigenvalues of A have
+then to be roots of the identity, contradicting its hyperbolicity.
+(ii) Analogously to the proof of part (i), we get thatAtSp⊂Sp. If Sp̸=∅ and ﬁnite
+then for the real subspace W⊂ n2 generated by Sp we have that AtW⊂ W and
+(At|W )l =I for some l∈N, which is again a contradiction by the hyperbolicity of
+A. □
+We now give an example of how the above proposition can be applied.
+Example 2.7. Rational Lie algebras of type (4 , 2) are parametrized by the set of
+square free numbers k∈ Z and their Pfaﬃan forms are fk(x,y ) = x2−ky2 (see
+[L2]). Thus the set of solutions
+{
+(x,y )∈Z2 : fk(x,y ) = 1
+}
+is inﬁnite if and only if k> 1 or k = 0 (Pell equation). By Proposition 2.6, (ii), the
+Lie algebra nQ
+k can never be Anosov for k <0 or k = 1. Recall that we could also
+discard nQ
+k, k< 0 as a real Anosov Lie algebra by applying Proposition 2.6, (i).
+3. Classification of real Anosov Lie algebras
+In this section, we will all the real Anosov Lie algebras of dimension ≤ 8. Our
+start point is Proposition 2.5, which implies that a nonabelian one has to be of
+dimension≥ 6 and gives only a few possibilities for the types in each dimension 6,
+7 and 8.
+We use Proposition 2.3 to make a few observations on the eigenvalues of an
+Anosov automorphism, which are necessarily algebraic integers. An overview on
+several basic properties of algebraic numbers needed here is given in [LW, Appen-
+dix].
+Lemma 3.1. Let n be a real nilpotent Lie algebra which is Anosov, and let A and
+n = n1⊕ n2⊕···⊕ nr be as in Proposition 2.3. If Ai =A|ni then the corresponding
+eigenvaluesλ1,...,λ ni, are algebraic units such that 1< dgrλi≤ni andλ1...λni =
+1.
+The proof of this lemma follows from the fact that [ Ai]βi ∈ SLni(Z) and so
+its characteristic polynomial pAi(x) ∈ Z[x] is a monic polynomial with constant
+coeﬃcient a0 = (−1)n detAi =±1, satisfying pAi(λj) = 0 for all j = 1,...,n i.
+Concerning the degree, it is clear that dgr λj ≤ ni for all j and if dgr λj = 1
+thenλj∈Q, is a positive unit and therefore λj = 1, contradicting the fact that Ai
+is hyperbolic.
+In the following, n,A,A i and ni will be as in the previous lemma. In order to be
+able of working with eigenvectors, we will always consider the complex Lie algebra
+nC = n⊗C and its decomposition nC = (n1)C⊕...⊕ (nr)C, where ( ni)C = ni⊗C.
+In the light of [LW, Theorem 3.1], we will always assume that n has no abelian
+factor. We now ﬁx more notation that will be used in the rest of this section. For
+
+=== PDF PAGE 8 ===
+NILMANIFOLDS OF DIMENSION ≤ 8 ADMITTING ANOSOV DIFFEOMORPHISMS 7
+Notation Type Lie brackets
+/x682k+1 (2k, 1) [ X1,X 2] =Z1,..., [X2k−1,X 2k] =Z1
+/x663 (3, 3) [ X1,X 2] =Z1, [X1,X 3] =Z2, [X2,X 3] =Z3
+/x67 (6, 2) [ X1,X 2] =Z1, [X1,X 3] =Z2, [X4,X 5] =Z1, [X4,X 6] =Z2
+/x68 (4, 4) [ X1,X 3] =Z1, [X1,X 4] =Z2, [X2,X 3] =Z3, [X2,X 4] =Z4
+/x6c4 (2, 1, 1) [ X1,X 2] =X3, [X1,X 3] =X4
+Table 1. Notation for some real nilpotent Lie algebras.
+simplicity, assume that n is a 2-step nilpotent Lie algebra. According to Proposition
+2.3, there exist
+β1 ={X1,X 2,...,X n1} and β2 ={Z1,Z 2,...,Z n2},
+basis of eigenvectors of (n1)C and (n2)C forA1 andA2, respectively. Let λ1,...,λ n1
+and µ1,...,µ n2 be the corresponding eigenvalues. This notation will be used
+throughout the classiﬁcation. The absence of abelian factor implies that [ n1, n1] =
+n2 and hence we may assume that for each Zi there exist Xj and Xl such that
+Zi = [Xj,Xl]. On the other hand, for each j,l, there exist scalars aj,l
+k ∈ C such
+that [Xj,Xl] =∑aj,l
+k Zk. Since{Zk}are linearly independent, for eachk we obtain
+(2) λjλlaj,l
+k =µkaj,l
+k .
+Hence, if aj,l
+k ̸= 0, µk = λjλl, and therefore, if aj,l
+k ̸= 0 ̸= aj,l
+k′, µk = µk′. In
+particular, if n2 = 2, since µ1̸= µ2, for each j,l, there exist a unique k such that
+[Xj,Xl] = akZk. If it is so, by (2), λjλl = µk. When n2 = 3 the same property
+holds. Indeed, µi̸=µj for all i̸=j since dgrµi > 1 for all i.
+We are going to consider all the possible coeﬃcients aj,l
+k ’s only in the cases when
+the classiﬁcation actually leads to a possible Anosov Lie algebra.
+Dimension 6
+Anosov Lie algebras of dimension ≤ 6 has already been classiﬁed in [Ma1] and
+[CKS]. We give an alternative proof here in order to illustrate our approach. Propo-
+sition 2.5 gives us the following possibilities for the types of a real Anosov Lie algebra
+without an abelian factor: (3 , 3) and (4, 2).
+Case (3, 3). The only real (resp. rational) Lie algebra of type (3 , 3) is the free
+2-step nilpotent Lie algebra on 3 generators f3 (resp. fQ
+3 ), which is proved to be
+Anosov in [D] and [De, Ma1].
+Case (4, 2). Let n be a real nilpotent Lie algebra of type (4 , 2), admitting a
+hyperbolic automorphism A as in Proposition 2.3. If {X1,...X 4} is a basis of
+
+=== PDF PAGE 9 ===
+8 JORGE LAURET, CYNTHIA E. WILL
+(n1)C of eigenvectors ofA1 with corresponding eigenvaluesλ1,...,λ 4, then without
+lost of generality we may assume that we are in one of the following cases:
+(a) [X1,X 2] =Z1, [X1,X 3] =Z2,
+(b) [X1,X 2] =Z1, [X3,X 4] =Z2.
+In the ﬁrst situation, (a) implies thatλ2
+1λ2λ3 = 1, and since detA1 =λ1λ2λ3λ4 =
+1, we obtain that λ1 =λ4. From this it is easy to see that dgr λ1 = dgrλ4 = 2 and
+moreover,λ2 =λ3 =λ−1
+1 . Therefore, we get to the contradiction µ1 =µ2 = 1.
+Concerning (b), we may assume that there is no more Lie brackets among the
+{Xi}since otherwise we will be in situation (a), and thus nC≃ (h3⊕ h3)C. This
+Lie algebra has two real forms: h3⊕ h3 and nQ
+−1⊗R (see [L2, Proposition 3.2]).
+The Lie algebra nQ
+−1⊗R can not be Anosov by Proposition 2.6, (i), and h3⊕ h3
+was proved to be Anosov in [Sm].
+Dimension 7
+According to Proposition 2.5, if n is a 7-dimensional real Anosov Lie algebra of
+type (n1,n 2,...,n r), then r = 2 and n is either of type (4 , 3) or (5, 2). We shall
+prove that there is no Anosov Lie algebras of any of these types.
+Case (4, 3). It is easy to see that the eigenvalues of A2 are three pairs of the form
+λiλj, so without any lost of generality we can assume that two of them are λ1λ2
+and λ1λ3. There are four possibilities for the third eigenvalue of A2, and by using
+that detA1 = 1 and detA2 = 1 we get to a contradiction in all the cases as follows:
+(i) λ1λ2.λ1λ3.λ1λ4 = 1, then λ2
+1 = 1 contradicting the hyperbolicity of A1.
+(ii) λ1λ2.λ1λ3.λ2λ3 = 1 implies that λ2
+4 = 1, but then A1 is not hyperbolic.
+(iii) λ1λ2.λ1λ3.λ2λ4 = 1, then λ1λ2 = 1 and so A2 would not be hyperbolic.
+(iv) λ1λ2.λ1λ3.λ3λ4 = 1, so λ1λ3 = 1 contradicting the hyperbolicity of A2.
+Case (5, 2). Let n be a real nilpotent Lie algebra of type (5 , 2), admitting a
+hyperbolic automorphism A as in Proposition 2.3. If λ1,...,λ 5, are the eigenvalues
+of A1 we can either have
+(i) λi̸=λj, 1≤i,j ≤ 5, or
+(ii) after reordering if necessary, λ1 =λ2.
+Note that in (ii), λ1 = λ2 implies that 2 ≤ 2 dgrλ1≤ 5 and therefore dgr λ1 =
+dgrλ2 = 2. From this it is easy to see that there exist i∈ {3, 4, 5} such that
+dgrλi = 1, contradicting the hyperbolicity of A1. Therefore, we assume (i).
+On the other hand, since dim n2 = 2, we have two linearly independent Lie
+brackets among the {Xi}, the basis of ( n1)C of eigenvectors of A1. Note that if
+they come from disjoint pairs of Xi, since λ1λ2λ3λ4λ5 = 1, it is clear that we
+would have λi = 1 for some 1 ≤ i≤ 5. Therefore, without any lost of generality
+we can only consider the case when we have at least the following non trivial Lie
+brackets:
+(3) [ X1,X 2] =Z1, [X1,X 3] =Z2.
+In the following we will show that either X4 or X5 are in the center of n, which
+would generate an abelian factor and hence a contradiction. From (3) we have that
+(4) λ2
+1λ2λ3 = 1, and then λ4λ5 =λ1.
+Therefore, [X4,X 5] = 0 because both of the assumptions [ X4,X 5] = cZ1 and
+[X4,X 5] = cZ2 with c̸= 0 leads to the contradictions λ2 = 1 and λ3 = 1, respec-
+tively. Also, if [X4,Xj]̸= 0 and [X5,Xk]̸= 0 for some 1≤j,k≤ 3, it follows from
+
+=== PDF PAGE 10 ===
+NILMANIFOLDS OF DIMENSION ≤ 8 ADMITTING ANOSOV DIFFEOMORPHISMS 9
+(i) that we only have the following possibilities:
+[X4,X 3] =cZ1 and [ X5,X 2] =dZ2, or
+[X5,X 3] =cZ1 and [ X4,X 2] =dZ2,
+(c,d̸= 0) which are clearly equivalent. Let us suppose then the ﬁrst one, and hence
+I.λ3λ4 =λ1λ2 and II. λ5λ2 =λ1λ3.
+From I, and using that λ4λ5 =λ1 we obtain λ3 =λ2λ5. Therefore by II, λ1 = 1
+which is a contradiction and then [X4,Xj] = 0 for all j or [X5,Xk] = 0 for all k as
+we wanted to show.
+Dimension 8
+In this case, Proposition 2.5 gives us the following possibilities for the types of a
+real Anosov Lie algebra without an abelian factor: (4 , 4), (5, 3), (6, 2), (3, 3, 2) and
+(4, 2, 2). Among all this Lie algebras we will show that there is, up to isomorphism,
+only three which are Anosov. One is of type (4 , 2, 2), one of type (6, 2) and one of
+type (4, 4). The ﬁrst one is an example of the construction given in [L1], the second
+one is isomorphic to [L1, Example 3.3] and the last one belongs to the family given
+in [DM].
+It has been proved in [LW, Section 4] that the types (5 , 3) and (3, 3, 2) are not
+possible for Anosov Lie algebras. We now consider the other three types allowed
+by Proposition 2.5
+Case (4, 4). We will show that there is only one real Anosov Lie algebra of this
+type. We ﬁrst note that there is only
+(4
+2
+)
+= 6 possible linearly independent brackets
+among the{Xi}and since dim[n, n] = 4, at most two of them can be zero. Therefore,
+without lost of generality, we can just consider the following two cases:
+(5) [ X1,X 3] =Z1, [X2,X 4] =Z2, [X2,X 3] =Z3, [X1,X 4] =Z4,
+that is, the possible zero brackets corresponds to disjoint pairs of {Xi} (namely
+{X1,X 2}and{X3,X 4}); and the other case is
+(6) [ X1,X 4] =Z1, [X2,X 4] =Z2, [X3,X 4] =Z3, [X2,X 3] =Z4,
+corresponding to the case of non disjoint pairs, {X1,X 2}and{X1,X 3}.
+However, the second case is not possible because we would have
+I)λ1λ2λ3λ4 = 1 and II) λ1λ2
+2λ2
+3λ3
+4 = 1.
+It follows that λ2λ3 = λ−2
+4 and replacing this in I) we get λ1 = λ4. This implies
+that the λi’s have all degree two, and λ2 = λ3 = λ−1
+4 . Hence µ3 = λ3λ4 = 1,
+contradicting the hyperbolicity of A2.
+Concerning case (5), if we assume that [ X1,X 2] = 0 and [X3,X 4] = 0
+A =
+[A1
+A2
+]
+, where A1 =
+[ λ
+λ−1
+λ2
+λ−2
+]
+and A2 =
+[
+λ3
+λ−3
+λ
+λ−1
+]
+is an automorphism of n for any λ∈R∗. If λ∈R∗ is an algebraic integer such
+that λ +λ−1 = 2a, a∈Z, a≥ 2, then it is easy to check that
+(7)
+β =
+{
+X1 +X2, (a2− 1)
+1
+2 (X1−X2), X3 +X4, (a2− 1)
+1
+2 (X3−X4),
+Z1 +Z2, (a2− 1)
+1
+2 (Z1−Z2), Z3 +Z4, (a2− 1)
+1
+2 (Z3−Z4)
+}
+
+=== PDF PAGE 11 ===
+10 JORGE LAURET, CYNTHIA E. WILL
+is a Z-basis of n. Moreover, if B =
+[a a2−1
+1 a
+]
+, then the matrix of A in terms of the
+basis β is given by
+[A]β =
+
+
+B
+B2
+B3
+B
+
+∈ SL(8,Z),
+showing that n is Anosov. Recall that this n is isomorphic to the Lie algebra h
+given in Table 1.
+It follows from Scheuneman duality that there is only one more real form of hC,
+namely, the dual of the Lie algebra nQ
+−1⊗R of type (4, 2) ( h is dual of h3⊕ h3).
+The fact that such a Lie algebra is not Anosov will be proved in Section 4, Case h.
+We will now show that if we add any more nonzero brackets in case (5), then the
+new Lie algebra ˜n does not admit a hyperbolic automorphism any longer. Suppose
+then that
+0̸= [X1,X 2] =a1Z1 +a2Z2 +a3Z3 +a4Z4.
+As we have already pointed out at the beginning of this classiﬁcation, since A is
+an automorphism and Zi are linearly independent, it follows that if aj̸= 0 then
+λ1λ2 =µj. Therefore, at most two of them can be non zero.
+If [X1,X 2] =ajZj then we can change Zj by ˜Zj =ajZj and the corresponding
+bracket in (5) by [X1,X 2] and we will be in the conditions of case (6).
+If [X1,X 2] = ajZj +akZk, aj, ak ̸= 0, then we have that λ1λ2 = µj = µk.
+One can check that for all the choices of j,k we obtain λi = λr = λs for some
+1≤ i,r,s ≤ 4 which is not possible because it implies that 2 ≤ 3 dgrλi≤ 4 and
+then dgrλi = 1.
+Hence we get [ X1,X 2] = 0 and by using the same argument we also obtain
+[X3,X 4] = 0 as we wanted to show.
+We also note that for any choice of nonzero scalars a,b,c,d , the Lie algebra ˜n
+given by
+[X1,X 3] =aZ1 [X2,X 4] =bZ2 [X2,X 3] =cZ3 [X1,X 4] =dZ4,
+is isomorphic to n.
+Case (6, 2). We will prove in this case that there is, up to isomorphism, only
+one Anosov Lie algebra with no abelian factor. As usual, let A be an Anosov
+automorphism of n and{X1,...,X 6,Z 1,Z 2} a basis of nC of eigenvectors of A,
+λ1,...,λ 6,µ 1,µ 2 the eigenvalues as above.
+As we have mentioned before, since µ1̸=µ2, for all i,j there exists k such that
+[Xi,Xj]∈CZk. Also, if dim [Xi, (n1)C] = 1 for any i, then nC is either isomorphic
+to (h3⊕R⊕ h3⊕R)C or (h3⊕ h5)C. The ﬁrst one has two real forms: h3⊕ h3⊕R2
+and (nQ
+−1⊗R)⊕R2, of which only h3⊕ h3⊕R2 is Anosov by [LW, Theorem 3.1]
+and the classiﬁcation in dimension 6. The only real form of ( h3⊕ h5)C is h3⊕ h5,
+and h3⊕ h5 has only one rational form with Pfaﬃan form f(x,y ) =xy2 (see [L2]).
+It then follows from Proposition 2.6, (ii) that it is not Anosov.
+Therefore, we can assume that
+(8) [ X1,X 2] =Z1, [X1,X 3] =Z2.
+From this, one has that
+(9) λ2
+1λ2λ3 = 1, or equivalently λ1 =λ4λ5λ6.
+
+=== PDF PAGE 12 ===
+NILMANIFOLDS OF DIMENSION ≤ 8 ADMITTING ANOSOV DIFFEOMORPHISMS 11
+In what follows, we will ﬁrst show that there exist a reorderingβ of{X1,...,X 6},
+such that
+(10) [ A1]β =
+
+
+λ
+λ−1
+ν
+ν−1
+µ
+µ−1
+
+,
+and after that, we will see that this implies that nC≃ gC, the complexiﬁcation of
+the Lie algebra g, which is proved to be Anosov in [L1, Example 3.3]. Moreover, g
+is known to be the only real form of gC (see [L2, Remark 4.2]).
+To do this, let us ﬁrst assume that
+a) λi =λl, denoted by λ, for some 1≤i̸=j≤ 6.
+Thus dgrλ = 2, or dgrλ = 3, but dgrλ = 3 is not possible. In fact, if dgr λ = 3
+then there exist a reordering of{Xi}such that the matrix of A1 in the new basis is
+A1 =
+[
+B 0
+0 B
+]
+, where B =
+[λ
+µ
+(λµ)−1
+]
+is conjugated to an element in SL 3(Z). This says that λ1,λ 2,λ 3∈
+{
+λ,µ, (µλ)−1}
+,
+and using (9) one can see that λ1 =λ2 (or equivalentlyλ1 =λ3), since every other
+choice ends up in a contradiction. Therefore, we may assume that λ1 = λ2 = λ
+and soλ3 =λ−3 =µ. Since every eigenvalue of A1 has multiplicity 2, we have that
+after a reordering if necessary, λ4 =λ5 =λ2 and λ6 =λ−3. Therefore, the matrix
+of A in the basis β ={X1,X 2,...,X 6,Z 1,Z 2}is given by [A]β =
+[A1
+A2
+]
+where
+A1 =
+
+
+λ
+λ
+λ−3
+λ2
+λ2
+λ−3
+
+ and A2 =
+[
+λ2
+λ−2
+]
+.
+Hence, since A is an automorphism of n, one gets that X4,X 5∈ (z∩ n1)C, contra-
+dicting our assumption of no abelian factor. Thus dgr λ = 2, from where assertion
+(10) easily follows.
+On the other hand, if
+b) λi̸=λj for all i̸=j,
+with no loss of generality, we can assume that [ X4,Xj] = aZ1, a̸= 0, for some
+j∈{ 3, 5, 6}.
+If j = 5 then it follows from 1 = det A2 =λ4λ5λ1λ3, that
+(11) λ2λ6 = 1.
+Now, we also have that [X6,Xk]̸= 0 for some k, and hence it is easy to see that
+we can either have
+I) [X6,X 3] =bZ1, b̸= 0, or
+II) [X6,X 4] =cZ2, c̸= 0, (or equivalently [X6,X 5] =cZ2).
+In case I), λ6λ3 = λ1λ2 and so by (11) we have that λ3 = λ1λ2
+2. By using (9) we
+get to the contradiction µ1 = 1.
+Concerning II), since λ6λ4 = λ1λ3, we obtain from (9) that λ5λ3 = 1 and
+therefore λ1λ4 = 1. This together with (11) implies assertion (10). The case when
+j = 6 is entirely analogous to the case j = 5 and so we are not going to consider it.
+If j = 3 then λ4λ3 =λ1λ2 and by (9) it is easy to see that
+(12) λ3 =λ5λ6λ2.
+
+=== PDF PAGE 13 ===
+12 JORGE LAURET, CYNTHIA E. WILL
+Analogously to the previous case, since [X5,Xk]̸= 0 for some k, it is easy to see
+that we can either have
+I) [X5,X 6] =bZ 1, or
+II) [X5,X 2] =cZ 2 (or equivalently [X5,X 4] =cZ2).
+It is easy to deduce from the situation I) that (12) implies that µ2 = µ2
+1 and so
+both of them are equal to 1 contradicting the fact that A2 is hyperbolic.
+In case II), λ5λ2 = λ1λ3 and it follows from (12) that λ6λ1 = 1. Also, since n
+has no abelian factor, it is easy to see that [ X6,X 4] = dZ2, d̸= 0, and therefore
+λ6λ4 = λ1λ3. Hence, using (9) we obtain λ2λ4 = 1, from where assertion (10)
+follows.
+To ﬁnish the proof we must study the case when (10) holds, that is,
+A1 =
+[
+Aλ
+Aν
+Aµ
+]
+where Aη =
+[η
+η−1
+]
+.
+Let λ1 =λ, λ2 =ν and thus, by (9), λ3 = 1
+λ2ν. It is easy to see that λ3 is diﬀerent
+from λ−1 or ν−1. Therefore, after a reordering if necessary, we have that
+A1 =
+
+
+λ
+ν
+(λ2ν)−1
+λ2ν
+λ−1
+ν−1
+
+ and A2 =
+[
+λν
+(λν)−1
+]
+.
+Using that A is an automorphism, one can see that [ V1,V 2] = 0, where V1 =
+⟨X1,X 2,X 3⟩C and V2 =⟨X4,X 5,X 6⟩C. Moreover, since nC has no abelian factor
+[V1,V 2] =⟨Z1,Z 2⟩C. From the classiﬁcation of 2-step nilpotent Lie algebras with 2-
+dimensional derived algebra in terms of Pfaﬃan forms given in [L2], it follows that
+there is only one Lie algebra satisfying these conditions and so nC is isomorphic to
+gC, as was to be shown.
+Case (4, 2, 2). Let n be a nilpotent Lie algebra of type (4 , 2, 2) and let A be an
+hyperbolic automorphism with eigenvectors {X1,...,X 4,Y 1,Y 2,Z 1,Z 2}, a basis of
+nC, and corresponding eigenvalues λ1,...,λ 4,η 1,η 2,µ 1,µ 2 as in Proposition 2.5.
+Since ηi =λjλk we have the following two possibilities:
+(I) In the decomposition of η1η2 as product of λi at least one of the λi appears
+twice, or
+(II) η1 =λ1λ2, η2 =λ3λ4, and λi̸=λj for 1≤i,j ≤ 4.
+In the ﬁrst case we can either have
+(a)η1 =λ1λ2, η2 =λ1λ3, (b)η1 =λ2
+1, η2 =λ2λ3, or (c) η1 =λ2
+1, η2 =λ−2
+1 .
+Note that (a) and (b) implies thatλ1λ2.λ1λ3 = 1 and henceλ4 =λ1. Thus dgrλ4 =
+dgrλ1 = 2, and moreover, λ2 = λ3 =±λ−1
+1 . Therefore in case (a) we get to the
+contradictionη1 =η2 =±1, and case (b) becomes (c).
+So it remains to study case (c). There is no lost of generality in assuming that
+λ1 =λ2 =λ and λ3 =λ4 =λ−1 and from this, using the Jacobi identity, it is easy
+to see that the possible nonzero brackets are
+(13)
+[X1,X 2] =Y1, [X2,Y 1] =aZ 1 [X1,Y 1] =a′ Z1
+[X3,X 4] =Y2, [X3,Y 2] =bZ 2. [X4,Y 2] =b′ Z2.
+Since nC has no abelian factor, we have that a̸= 0 or a′̸= 0 and b̸= 0 or b′̸= 0.
+Let n0 be the ideal of nC generated by{X1,X 2,Y 1,Z 1}and n′
+0 the ideal generated by
+
+=== PDF PAGE 14 ===
+NILMANIFOLDS OF DIMENSION ≤ 8 ADMITTING ANOSOV DIFFEOMORPHISMS 13
+{X3,X 4,Y 2,Z 2}. By the above observation, they are both four dimensional 3-step
+complex nilpotent Lie algebras. It is well known that there is up to isomorphism
+only one of such Lie algebras and therefore n0 and n′
+0 are both isomorphic to ( l4)C
+and nC = (l4⊕ l4)C. We know that l4⊕ l4 is the only real form of ( l4⊕ l4)C (see
+[L2]), and it is proved to be Anosov in [L1]. This concludes case (I).
+We will now study case (II). We can assume that
+(14) [ X1,X 2] =Y1, [X3,X 4] =Y2.
+Moreover, due to our assumption it is easy to see that there is no more non-
+trivial Lie brackets among them. On the other hand, we have that Zi∈ n3 and
+then for each i = 1, 2
+Zi = [Xji,Yki].
+If k1 = k2 we may assume that k1 = k2 = 1. By using Jacobi identity and the
+previous observation, one can see that j1,j 2 /∈{ 3, 4}, and hence we get
+[X1,Y 1] =Z1, [X2,Y 1] =Z2.
+From this we have that λ1.λ1λ2.λ2.λ1λ2 = 1 and therefore λ3
+1λ3
+2 = 1, a contradic-
+tion.
+Otherwise, we can assume thatk1 = 1 andk2 = 2. Therefore λj1λ1.λj2λ2.λ3λ4 =
+1 and then λj1λj2 = 1. Hence j1̸= j2 and since λ1λ2̸= 1 and λ3λ4̸= 1 we can
+suppose thatλ1λ3 = 1 andλ2λ4 = 1. Without any lost of generality we can assume
+that
+(15) [ X1,Y 1] =Z1 and [ X3,Y 2] =Z2,
+since by Jacobi [X1,Y 2] = [X3,Y 1] = 0. Note that we have obtained that the matrix
+of A is given by
+[A1] =
+[λ
+ν
+λ−1
+ν−1
+]
+, [A2] =
+[
+λν
+(λν)−1
+]
+and [ A3] =
+[
+λ2ν
+(λ2ν)−1
+]
+.
+From this, sinceλ̸=ν andA∈ Aut(nC), it is easy to see that we can not have other
+nonzero Lie brackets on nC but (14), (15), [X1,X 4] =aZ1 and [X2,X 3] =bZ2. This
+Lie algebra is isomorphic to the one with a =b = 0 (by changing for ˜X4 =X4 +Y1,
+˜X2 =X2 +Y2), and then nC is again isomorphic to ( l4⊕ l4)C.
+We summarize the results obtained in this section.
+Theorem 3.2. Up to isomorphism, the real Anosov Lie algebras of dimension ≤ 8
+are: Rn, n= 2,..., 8, h3⊕ h3, f3, h3⊕ h3⊕R2, f3⊕R2, g, h, and l4⊕ l4.
+4. Classification of rational Anosov Lie algebras
+In Section 3, we have found all real Lie algebras of dimension ≤ 8 having an
+Anosov rational form (see Theorem 3.2 or Table 3). On the other hand, the set of all
+rational forms (up to isomorphism) for each of these algebras has been determined
+in [L2] (see Table 2). In this section, we shall study which of these rational Lie
+algebras are Anosov, obtaining in this way the classiﬁcation in the rational case up
+to dimension 8.
+Case f3 (type (3, 3)). There is only one rational form fQ
+3 in this case which is
+proved to be Anosov in [D] and [De, Ma1].
+
+=== PDF PAGE 15 ===
+14 JORGE LAURET, CYNTHIA E. WILL
+RealLiealgebra Type Rationalforms
+/x683⊕ /x683 (4, 2) /x6e/x51
+k, k≥ 1
+/x663 (3, 3) /x66/x51
+3
+/x67 (6, 2) /x67/x51
+/x683⊕ /x685 (6, 2) ( /x683⊕ /x685)/x51
+/x68 (4, 4) /x68/x51
+k, k≥ 1
+/x6c4⊕ /x6c4 (4, 2, 2) /x6c/x51
+k, k≥ 1
+Table 2. Set of rational forms up to isomorphism for some real
+nilpotent Lie algebras (see [L2]). In all cases k runs over all square-
+free natural numbers.
+Case h3⊕ h3 (type (4, 2)). The rational forms of h3⊕ h3 are given by{nQ
+k},k≥ 1
+square-free (see [L2]). The fact that nQ
+k is Anosov for any k >1 has been proved
+in several papers (see [Sm, I, AS, Ma1]) and it also follows from the construction
+given in [L1]. The Pfaﬃan form of nQ
+1 isf1(x,y ) =x2−y2, and thus it follows from
+Proposition 2.6, (ii), that nQ
+1 is not Anosov.
+Case g (type (6, 2)). It is proved in Section 3 that the Lie algebra g is the only
+real Anosov Lie algebra of this type, and g has only one rational form, which is
+then the only rational Anosov Lie algebra of this type.
+Case h (type (4, 4)). We have seen in Section 3 that the only possible real Anosov
+Lie algebras of this type are the real forms of hC, namely, h and nQ
+−1⊗R. The
+rational forms of h can be parametrized by hQ
+k withk a square-free natural number
+(see [L2]). We know that the Pfaﬃan form of hQ
+k is fk(x,y,z,w ) = xw +y2−kz2
+and thenHfk = 4k. By renaming the basis β given in (7) as{X1,...,X 4,Z 1,...,Z 4},
+we have that the Lie bracket of the Anosov rational form hQ of h deﬁned by β is
+[X1,X 3] =Z1 +Z3, [X2,X 3] =Z2−Z4,
+[X1,X 4] =Z2 +Z4, [X2,X 4] = (a2− 1)(Z1−Z3).
+This implies that the maps JZ’s of hQ are given by
+JxZ1+yZ2+zZ3+wZ4 =
+[ 0 0 −x−z −y−w
+0 0 −y+w m(−x+z)
+x+z y −w 0 0
+y+w m(x−z) 0 0
+]
+,
+where m =a2− 1, and then its Pfaﬃan form is
+f(x,y,z,w ) =mx2−y2−mz2 +w2,
+
+=== PDF PAGE 16 ===
+NILMANIFOLDS OF DIMENSION ≤ 8 ADMITTING ANOSOV DIFFEOMORPHISMS 15
+with Hessian Hf = 16m2. We know that hQ has to be isomorphic to hQ
+k for some
+square-free natural number k, but in that case f ≃Q fk and so we would have
+Hf =q2Hfk for some q∈Q∗. Thus 16m2 =q2k, which implies that k = 1. This
+shows that the Anosov rational forms of h deﬁned by diﬀerent integers a’s are all
+isomorphic to hQ
+1 . In what follows, we shall prove that the other rational forms of
+h (i.e. hQ
+k for k> 1) are Anosov as well.
+Fix a square free natural number k >1. Consider the basis β ={X1,...,Z 4}of
+hQ
+k given in [L2, Proposition ....] and set n1 =⟨X1,...,X 4⟩Q and n2 =⟨Z1,...,Z 4⟩Q.
+Let (a,b )∈N×N any solution to the Pell equation x2−ky2 = 1. Let A : hQ
+k↦→ hQ
+k
+be the linear map deﬁned in terms of β by
+(16) A1 =A|n1 =
+[ 0 0 b −a
+0 0−a kb
+0 1 2n 0
+1 0 0 2 n
+]
+, A 2 =A|n2 =
+[ 0 0 0 −1
+0 −a b 4na
+0 −bk a4nbk
+−1−2n 0 2 n2
+]
+.
+It is easy to check that A∈ Aut(hQ
+k ) for any n∈N, and since detA1 = detA2 =
+1 we have that A1,A 2 ∈ SL4(Z), that is, A is unimodular. The characteristic
+polynomial of A1 is f(x) = (x2− 2nx +a−
+√
+kb)(x2− 2nx +a +
+√
+kb) and so its
+eigenvalues are
+(17)
+λ1 =n +
+√
+n2−a +
+√
+kb, λ 2 =n−
+√
+n2−a +
+√
+kb,
+µ1 =n +
+√
+n2−a−
+√
+kb, µ 2 =n−
+√
+n2−a−
+√
+kb.
+We take n∈N such that a +
+√
+kb < n2. Therefore 1 < λ1 and it follows from
+λ1λ2 =a−
+√
+kb = 1
+a+
+√
+kb < 1 that λ2 < 1. Also, 1 <µ 1 and µ1µ2 =a +
+√
+kb> 1,
+and hence µ2̸= 1, proving that A1 is hyperbolic. The eigenvalues of A2 are all of
+the form λiµj. Indeed, it can be checked that the eigenvector for λiµj is
+Z =Z1− (a−
+√
+kb)µjZ2− (a +
+√
+kb)λiZ3 +λiµjZ4.
+Now, the fact that λ2 < µ2 < µ1 < λ1 implies that λiµj̸= 1 for all i,j , showing
+that A2 is also hyperbolic and hence that A is an Anosov automorphism of hQ
+k .
+The above is the most direct and shortest proof of the fact that hQ
+k is Anosov
+for any square free k> 1, and it consists in just checking that A is unimodular and
+hyperbolic. But now, we would like to show where this A comes from, which will
+show at the same time that hQ
+k is not Anosov for k < 0. Since the proof of [L2,
+Proposition 4.5] actually shows that the set of rational forms up to isomorphism of
+hC is given by
+{hQ
+k :k a nonzero square free integer number},
+this will prove that the real completion nQ
+−1⊗R of those with k< 0 is not Anosov.
+First of all, it is easy to see that any ˜A of the form
+(18) ˜A1 = ˜A|n1 = [B 0
+0 C ], ˜A2 = ˜A|n2 =
+[b11C b12C
+b21C b22C
+] (
+B =
+[b11 b12
+b21 b22
+])
+,
+where B,C ∈ GL2(C), is an automorphism of hC, for which we are considering
+the basis α ={X1,...,Z 4}with Lie bracket deﬁned as in Table 1. Moreover, this
+forms a subgroup of Aut( hC) containing the connected component of the identity,
+since any other automorphism restricted to ( n1)C has the form [ 0 ⋆
+⋆ 0 ]. By taking
+˜A2 if necessary, we can assume that if hQ
+k is Anosov then it admits an Anosov
+automorphism of the form (18). The change of basis matrix Pk from the basis βk
+
+=== PDF PAGE 17 ===
+16 JORGE LAURET, CYNTHIA E. WILL
+of the rational form isomorphic to hQ
+k given in the proof of [L2, Proposition 4.5] to
+the basis α is
+Pk|n1 =
+
+
+√
+k 1 0 0
+0 0 1
+√
+k
+−
+√
+k 1 0 0
+0 0 1 −
+√
+k
+
+, P k|n2 =
+
+
+2
+√
+k 0 0 0
+0
+√
+k−1 0
+0
+√
+k 1 0
+0 0 0 −2
+√
+k
+
+,
+and hence
+P−1
+k |n1 = 1
+2
+[
+1/
+√
+k 0 −1/
+√
+k 0
+1 0 1 0
+0 1 0 1
+0 1 /
+√
+k 0 −1/
+√
+k
+]
+, P −1
+k |n2 = 1
+2
+
+
+1/
+√
+k 0 0 0
+0 1 /
+√
+k 1/
+√
+k 0
+0 −1 1 0
+0 0 0 −1/
+√
+k
+
+.
+We then have that A = P−1
+k ˜APk ∈ Aut(hQ
+k ) if and only if A1 = P−1
+k ˜A1Pk and
+A2 = P−1
+k ˜A2Pk belong to GL 4(Q). A straightforward computation shows that
+A1,A 2∈ GL4(Z) (i.e. A is unimodular) if and only if B∈ GL2(Z[
+√
+k]),C =B and
+detBdetB =±1. Here,Z[
+√
+k] is the integer ring of the quadratic numberﬁeldQ[
+√
+k]
+and the conjugation is deﬁned, as usual, by x +
+√
+kb = x−
+√
+kb for all x,y ∈Q.
+Recall that if det B = a−
+√
+kb, a,b ∈ Z, and we assume that det BdetB = 1,
+then a2−kb2 = 1, the Pell equation. In order to make easier the computation of
+eigenvalues we can take B in its rational form, say
+B =
+[
+0−a+
+√
+kb
+1 2 n
+]
+, B =
+[
+0−a−
+√
+kb
+1 2 n
+]
+,
+for some n∈Z. This implies that the characteristic polynomial of ˜A1 is f(x) =
+(x2− 2nx +a−
+√
+kb)(x2− 2nx +a +
+√
+kb) and so the eigenvalues of ˜A1 and A1
+are as in (17). Concerning the hyperbolicity, if k <0 then either b = 0 or a = 0
+and k =−1, which in any case implies that |µ1µ2|= 1, a contradiction. Therefore
+hQ
+k is not Anosov for k < 0, as was to be shown. For k > 0, we can easily see
+that conditions a,b,n ∈N, a +
+√
+kb < n2, are enough for the hyperbolicity of A1.
+ForA2, we can use the following general fact: the eigenvalues of a matrix of the
+form ˜A2 in (18) are precisely the possible products between eigenvalues of B and
+eigenvalues ofC; and so the hyperbolicity of A2 follows as in the short proof.
+We ﬁnally note that A = P−1
+k ˜APk with this B is precisely the automorphism
+proposed in (16).
+Remark 4.1. An alternative proof of the fact that any rational form of h is Anosov
+can be given by using [D, Corollary 2.3]. Indeed, the subgroup
+S = SL2(R)× SL2(R) ={A∈ Aut(h) :A1 = [B 0
+0 C ], B,C ∈ SL2(R)}
+is connected, semisimple and all its weights on h are non-trivial. Recall that such
+a corollary can not be applied to the cases h3⊕ h3 and l4⊕ l4, as they admit a
+rational form which is not Anosov.
+Case l4⊕ l4 (type (4, 2, 2)). The rational forms of l4⊕ l4 are denoted by lQ
+k , k a
+square free natural number. Let β denote the basis of lQ
+k given in [L2, Proposition
+5.1]. For a∈Z, a≥ 2, consider the hyperbolic matrix
+B =
+[a a2−1
+1 a
+]
+∈ SL2(Z),
+
+=== PDF PAGE 18 ===
+NILMANIFOLDS OF DIMENSION ≤ 8 ADMITTING ANOSOV DIFFEOMORPHISMS 17
+RealAnosov Dimension Type Anosov Non −Anosov Signature
+Liealgebra rat.forms rat.forms
+/x52n, 2≤n≤ 8 n n /x51n −− any
+/x683⊕ /x683 6 (4 , 2) /x6e/x51
+k, k> 1 /x6e/x51
+1 {3, 3}
+/x663 6 (3 , 3) /x66/x51
+3 −− { 3, 3}
+/x683⊕ /x683⊕ /x522 8 (6 , 2) /x6e/x51
+k⊕ /x512, k> 1 /x6e/x51
+1⊕ /x512 {4, 4}
+/x663⊕ /x522 8 (5 , 3) /x66/x51
+3⊕ /x512 −− { 4, 4}
+/x67 8 (6 , 2) /x67/x51 −− { 4, 4}
+/x68 8 (4 , 4) /x68/x51
+k, k≥ 1 −− { 4, 4}
+/x6c4⊕ /x6c4 8 (4 , 2, 2) /x6c/x51
+k, k> 1 /x6c/x51
+1 {4, 4}
+Table 3. Real and rational Anosov Lie algebras of dimension ≤ 8.
+with eigenvaluesλ1 =a + (a2− 1)
+1
+2 andλ2 =a− (a2− 1)
+1
+2. It is easy to check that
+the linear map A : lQ
+b −→ lQ
+b whose matrix in terms of β is
+[A]β =
+
+
+B
+...
+B
+
+
+is an automorphism of lQ
+b for b = a2− 1. A is hyperbolic since λ1 > 1 > λ2 and
+it is unimodular by deﬁnition, so that A is an Anosov automorphism. Recall that
+lQ
+k≃ lQ
+k′ if and only if k =q2k′ for some q∈Q∗ (see the proof of [L2, Proposition
+5.1]). Given a square-free natural number k >1, there always exist a,q ∈Z such
+thata2−1 =q2k (Pell equation), and thus any lQ
+k withk> 1 square free is Anosov.
+We now prove that lQ
+1 is not Anosov. In the proof of [L2, Proposition 5.1] it is
+showed that any A∈ Aut(lQ
+1 ) has the form
+A =
+
+
+A1 0 0 0
+⋆ A 2 0 0
+⋆ 0 A3 0
+⋆ ⋆ ⋆ A 4.
+
+
+and satisﬁes
+qf (z,w ) =f(At
+4(z,w )) ∀(z,w )∈Q2,
+where q = detA3A1 and f(z,w ) = z2−w2. In the same spirit of Proposition 2.6,
+this implies that At
+4 leaves a ﬁnite set invariant and so it can never be hyperbolic.
+The results obtained in this section can be summarized as follows.
+
+=== PDF PAGE 19 ===
+18 JORGE LAURET, CYNTHIA E. WILL
+Theorem 4.2. Up to isomorphism, the rational Anosov Lie algebras of dimension
+≤ 8 are
+• Qn, n= 2,..., 8, (Rn),
+• nQ
+k, k≥ 2, (h3⊕ h3),
+• fQ
+3, (f3),
+• nQ
+k⊕Q2, k≥ 2, (h3⊕ h3⊕R2),
+• fQ
+3⊕Q2, (f3⊕R2),
+• gQ, (g),
+• hQ
+k, k≥ 1, (h),
+• lQ
+k, k≥ 2, (l4⊕ l4),
+wherek always run over square-free numbers and the Lie algebra between parenthesis
+is the corresponding real completion.
+The signature of an Anosov diﬀeomorphism is the pair of natural numbers
+{p,q} ={dimE+, dimE−}. It is known that signature {1,n− 1} is only possi-
+ble for torus and their ﬁnitely covered spaces: compact ﬂat manifolds (see [Fr]).
+We do not actually of any nonabelian example of signature {2,q}.
+In the last column of Table 3 appear the signatures of the Anosov automorphisms
+found in each case. It follows from the proofs given in Section 3 that the eigenval-
+ues of any Anosov automorphism always appear in pairs {λ,λ−1}(with only one
+exception: f3), and thus there is only one possible signature for each nonabelian
+Anosov Lie algebra of dimension ≤ 8.
+Corollary 4.3. LetN/Γ be a nilmanifold (or infranilmanifold) of dimension ≤ 8
+which admits an Anosov diﬀeomorphism. Then N/Γ is either a torus (or a compact
+ﬂat manifold) or the dimension is 6 or 8 and the signature is {3, 3} or{4, 4},
+respectively.
+It is not true in general that there is only one possible signature for a given
+Anosov Lie algebra. For instance, it is easy to see that the free 2-step nilpotent
+Lie algebra on 4 generators admits Anosov automorphisms of signature {4, 6}and
+{5, 5}.
+References
+[AS] L. Auslander, J. Scheuneman, On certain automorphisms of nilpotent Lie groups, Global
+Analysis: Proc. Symp. Pure Math. 14 (1970), 9-15.
+[BL] Y. Benoist, F. Labourie , Sur le diﬀeomorphismes d’Anosov aﬃnes a feuilletages stable et
+instable diﬀerentiables, Inventiones Math. 111 (1993), 285-308.
+[CKS] C. Cassidy, N. Kennedy, D. Scevenels, Hyperbolic automorphisms for groups inT (4, 2),
+Contemporary Math. 262 (2000), 171-175.
+[D] S.G. Dani , Nilmanifolds with Anosov automorphism, J. London Math. Soc. 18 (1978),
+553-559.
+[DM] S.G. Dani, M. Mainkar, Anosov automorphisms on compact nilmanifolds associated with
+graphs, Trans. Amer. Math. Soc. 357 (2005), 2235-2251.
+[De] K. Dekimpe , Hyperbolic automorphisms and Anosov diﬀeomorphisms on nilmanifolds,
+Trans. Amer. Math. Soc. 353 (2001), 2859-2877.
+[DeDs] K. Dekimpe, S. Deschamps , Anosov diﬀeomorphisms on a class of 2-step nilmanifolds,
+Glasg. Math. J. 45 (2003), 269-280.
+[Fr] J. Franks, Anosov diﬀeomorphisms, Global Analysis: Proc. Symp. Pure Math. 14 (1970),
+61-93.
+[Gh] E. Ghys, Holomorphic Anosov systems, Invent. Math. 119 (1995), 585-614.
+
+=== PDF PAGE 20 ===
+NILMANIFOLDS OF DIMENSION ≤ 8 ADMITTING ANOSOV DIFFEOMORPHISMS 19
+[Gr] M. Gromov, Groups of polynomial growth and expanding maps, Inst. des Hautes Etudes
+Sci. 53 (1981), 53-73.
+[I] K. Ito, Classiﬁcation of nilmanifolds Mn (n≤ 6) admitting Anosov diﬀeomorphisms, The
+study of dynamical systems Kyoto (1989), 31-49, World Sci. Adv. Ser. Dynam. Systems 7.
+[L1] J. Lauret, Examples of Anosov diﬀeomorphisms, Journal of Algebra 262 (2003), 201-209.
+Corrigendum: 268 (2003), 371-372.
+[L2] J. Lauret , On rational forms of nilpotent Lie algebras, preprint 2004, available at
+www.famaf.unc.edu.ar/series (Serie A, 2007).
+[LW] J. Lauret, C.E. Will, On Anosov automorphisms of nilmanifolds, preprint 2004, available
+at www.famaf.unc.edu.ar/series (Serie A, 2007).
+[Ma1] W. Malfait, Anosov diﬀeomorphisms on nilmanifolds of dimension at most 6, Geom.
+Dedicata 79 (2000), 291-298.
+[Ma2] W. Malfait , An obstruction to the existence of Anosov diﬀeomorphisms on infra-
+nilmanifolds, Contemp. Math. 262 (2000), 233-251 (Kortrijk 1999).
+[Mn] A. Manning, There are no new Anosov diﬀeomorphisms on tori, Amer. J. Math. 96 (1974),
+422-429.
+[Mr] G. Margulis , Problems and conjectures in rigidity theory, Mathematics: Frontiers and
+perspectives 2000, IMU.
+[P] H. Porteous, Anosov diﬀeomorphisms of ﬂat manifolds, Topology11 (1972), 307-315.
+[S] J. Scheuneman, Two-step nilpotent Lie algebras, J. Algebra 7 (1967), 152-159.
+[Sh] M. Shub, Endomorphisms of compact diﬀerentiable manifolds, Amer. J. Math. 91 (1969),
+175-199.
+[Sm] S. Smale, Diﬀerentiable dynamical systems, Bull. Amer. Math. Soc. 73 (1967), 747-817.
+[V] A. Verjovsky, Sistemas de Anosov, Notas de Curso, IMPA (Rio de Janeiro).
+FaMAF and CIEM, Universidad Nacional de C ´ordoba, C´ordoba, Argentina
+E-mail address: lauret@mate.uncor.edu, cwill@mate.uncor.edu

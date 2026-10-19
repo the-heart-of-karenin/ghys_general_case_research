@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "scope": "Only new finite-dimensional identities for notes 74-76; no global theorem proved by this script.",
+  "flux_support_coefficients_checked": 25344,
+  "one_D_top_supports_checked": 840,
+  "two_D_square_coefficients": [
+    {
+      "i": 1,
+      "j": 2,
+      "coefficient": 2
+    },
+    {
+      "i": 1,
+      "j": 3,
+      "coefficient": 2
+    },
+    {
+      "i": 1,
+      "j": 4,
+      "coefficient": 2
+    },
+    {
+      "i": 2,
+      "j": 3,
+      "coefficient": 2
+    },
+    {
+      "i": 2,
+      "j": 4,
+      "coefficient": 2
+    },
+    {
+      "i": 3,
+      "j": 4,
+      "coefficient": 2
+    }
+  ],
+  "exact_ring_monodromy_normalizations": 6,
+  "monodromy_group_law_checks": 16,
+  "common_fixed_H1_dimension_real": 4,
+  "fiber_linearization_minimal_polynomial": "t^2-4t+1",
+  "noncompact_half_power_flow_checks": 64,
+  "local_Milnor_monodromies": [
+    {
+      "k": 2,
+      "H0_dimension": 2,
+      "Lefschetz_number": 0
+    },
+    {
+      "k": 3,
+      "H0_dimension": 3,
+      "Lefschetz_number": 0
+    },
+    {
+      "k": 4,
+      "H0_dimension": 4,
+      "Lefschetz_number": 0
+    },
+    {
+      "k": 5,
+      "H0_dimension": 5,
+      "Lefschetz_number": 0
+    },
+    {
+      "k": 6,
+      "H0_dimension": 6,
+      "Lefschetz_number": 0
+    }
+  ]
+}

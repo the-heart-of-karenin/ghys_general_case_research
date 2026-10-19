@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-18",
+  "notes": [
+    "71",
+    "72",
+    "73"
+  ],
+  "new_PDF_count": 2,
+  "total_PDF_count": 62,
+  "new_sources": [
+    {
+      "filename": "61_Pink_Roessler_2002_Hrushovski_Manin_Mumford.pdf",
+      "title": "On Hrushovski's proof of the Manin-Mumford conjecture",
+      "author": "Richard Pink and Damian Roessler",
+      "download_url": "https://arxiv.org/pdf/math/0212408v1",
+      "landing_url": "https://arxiv.org/abs/math/0212408",
+      "bytes": 132670,
+      "pages": 8,
+      "sha256": "ab4b71c42c561412841759cb2aefab33cbda0e018cb012f917d7fc421ba0d6ad",
+      "collected_utc": "2026-10-18T15:42:51.258659+00:00",
+      "publication_note": "ICM 2002, vol. I, 539-546; stored arXiv:math/0212408v1 dated 1 December 2002, 8 pages. Theorem 2.4 (PDF pp.4-5) is the directly used invariant-subvariety input; no no-algebraic-unit strengthening is used.",
+      "rendered_and_visually_inspected_pages": [
+        1,
+        4,
+        5
+      ],
+      "full_external_theorem_independently_reproved": false
+    },
+    {
+      "filename": "62_Catanese_Frediani_2005_Deformation_in_the_large_II.pdf",
+      "title": "Deformation in the large of some complex manifolds, II",
+      "author": "Fabrizio Catanese and Paola Frediani",
+      "download_url": "https://arxiv.org/pdf/math/0507508v1",
+      "landing_url": "https://arxiv.org/abs/math/0507508",
+      "bytes": 280796,
+      "pages": 23,
+      "sha256": "65ed01847fd9387303d21b91218e9e3e8a43d2e3afc008f7dfbc1e10d8ccb02b",
+      "collected_utc": "2026-10-18T15:42:52.953115+00:00",
+      "publication_note": "Original author manuscript arXiv:math/0507508v1, margin 25 July 2005; title page body date 18 May 2005, 23 pages. Theorem 3.6 and Proposition 3.7/Lemma 3.9/Corollary 3.10 directly used. Restricted-dimension Theorem 4.11 is not used.",
+      "rendered_and_visually_inspected_pages": [
+        1,
+        11,
+        12,
+        13
+      ],
+      "full_external_theorem_independently_reproved": false
+    }
+  ],
+  "reused_sources": [
+    {
+      "filename": "59_Wehler_2026_Teichmuller_moduli_complex_nilmanifolds.pdf",
+      "prior_audit": "nil_progression_source_audit.json",
+      "theorem": "Theorem 2.1",
+      "role": "Only note73 global affine conjugacy exit; not used for note71 or note72 geometric theorem.",
+      "new_pages_rendered": 0
+    }
+  ],
+  "full_new_pages_viewed": 7,
+  "distinctions": {
+    "original_hypotheses": "Albanese dimensions 0,2,4; projective; surjective; no divisorial critical values; W upper bound and actual Anosov leaf annihilation.",
+    "maximum_branch": "W dimension 4 is an explicit unproved interface; note72 fully recovers principal torus bundle.",
+    "model_exit": "Uses old Appell-Humbert and the previously audited 2026 Wehler preprint.",
+    "missing": "No general W lower bound and no exclusion of Albanese dimensions 0 or 2.",
+    "novelty": "Not established by finite search."
+  }
+}

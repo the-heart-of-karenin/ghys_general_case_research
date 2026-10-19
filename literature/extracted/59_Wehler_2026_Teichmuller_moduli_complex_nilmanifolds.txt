@@ -1,0 +1,3196 @@
+=== PDF PAGE 1 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX
+NILMANIFOLDS
+KONSTANTIN WEHLER
+Abstract. We develop several tools to study the local and global structure of the
+Teichmüller and moduli spaces for complex nilmanifolds. As a starting point, we
+prove a structure theorem for holomorphic maps between complex nilmanifolds,
+which allows for an explicit description of the Teichmüller and moduli spaces. We
+then introduce two period maps, and give general criteria for the existence of a
+complex structure on these spaces.
+To illustrate the theory, we prove a global Torelli theorem for various classes of
+nilmanifolds, including principal torus bundles over tori and almost abelian nil-
+manifolds. In particular, we show that there are nilmanifolds of arbitrary dimen-
+sion and nilpotency index for which the Teichmüller space admits the structure
+of a complex manifold.
+Contents
+Introduction 1
+Part I: General theory 7
+1. Preliminaries 7
+2. Holomorphic maps between complex nilmanifolds 12
+3. The space of left-invariant complex structures 16
+4. Teichmüller and moduli spaces 20
+5. Period maps 30
+Part II: Applications 37
+6. Torus bundles over tori 37
+7. Nilmanifolds with complex parallelisable structures 42
+8. Lie algebras with small commutator 44
+9. Almost abelian nilmanifolds 48
+10. Nilmanifolds of dimension six 52
+Bibliography 54
+Introduction
+Given a class C of complex manifolds with a fixed underlying smooth manifold,
+we can ask the following general question: is there a complex space whose points
+uniquely correspond to the biholomorphism classes of complex manifolds inC? Such
+2020 Mathematics Subject Classification.32Q57; 22E25, 14D22, 32G05.
+Key words and phrases.complex nilmanifold, moduli space, nilpotent Lie algebra, period map,
+Teichmüller space.
+1
+arXiv:2609.31516v1  [math.AG]  25 Sep 2026
+
+=== PDF PAGE 2 ===
+2 KONSTANTIN WEHLER
+a parameter space is called a moduli space and there are several classes of complex
+manifolds for which the existence of a moduli space has already been established,
+especially in algebraic geometry. Among the simplest examples are the classes of
+elliptic curves and Kodaira surfaces [Bor84], which belong to a much larger class of
+complex manifolds, known as complex nilmanifolds.
+A complex nilmanifold is a compact quotient of a simply connected nilpotent Lie
+group G by a latticeΓ ⊂ G, endowed with a left-invariant complex structure.
+Unfortunately, it was already shown by Kodaira and Spencer in [KS58] that a
+modulispacenolongerexistsforcomplextoriofhigherdimension, whiletheexistence
+of a moduli space for the higher-dimensional analogues of Kodaira surfaces, known
+as Kodaira manifolds, was ruled out in [Gra+04]. This suggests that one should
+instead consider another variant of a moduli space, known as the Teichmüller space.
+So far, complex tori and Kodaira manifolds are the only complex nilmanifolds for
+which the existence of a moduli space has been studied. We will establish general
+criteria for the existence of a complex structure on the Teichmüller space, and show
+that this space admits a complex structure for large classes of complex nilmanifolds.
+Teichmüller and moduli spaces.Let M = Γ\G be an even-dimensional nilman-
+ifold and let g be the Lie algebra of G. By left-translations, any almost complex
+structure J : g → g extends to an almost complex structure onG. This almost com-
+plex structure is invariant under the action of the latticeΓ and thus descends to
+an almost complex structure onM, also denoted byJ. If J is integrable, then the
+compact complex manifold(M, J) is called a complex nilmanifold.
+The lattice Γ and the Lie algebrag determine the Lie groupG up to canonical
+isomorphism, so we will often omit the Lie groupG from the notation and just say
+M is a nilmanifold of type(g, Γ). The main objects of our study are the following
+spaces: we define
+M(g, Γ) = {complex nilmanifolds (M, J)} / ∼=
+as the moduli space of biholomorphism classes of complex nilmanifolds of type(g, Γ).
+The Teichmüller space
+T (g) = {complex nilmanifolds (M, J)} / ∼
+is defined by the equivalence relation∼ identifying two complex nilmanifolds if they
+are biholomorphic via a diffeomorphism of M isotopic to the identity. Following
+the results of Section 2, we will see that the structure of the Teichmüller space only
+depends on the underlying Lie algebra, so we omit the lattice from the notation. Our
+main goal is to identify pairs(g, Γ) for which M(g, Γ) or T (g) can be endowed, in a
+natural way, with the structure of a complex space.
+In the same way as above, one can also define the moduli and Teichmüller spaces
+of all possible complex structures on M. However, it was shown in [Cat04] that
+even for the real six-dimensional torus these spaces have countably many connected
+components of unbounded dimension, so we will restrict our considerations to left-
+invariantcomplexstructures. Itturnsoutthatthisisnotaseriouslimitationsincewe
+locally stay in the realm of complex nilmanifolds, that is, every sufficiently small de-
+formation of a complex nilmanifold is again a complex nilmanifold [Rol09b; HST26].
+Under additional assumptions the spaceT (g) even makes up a union of connected
+components in the Teichmüller space of all complex structures onM [Rol09a].
+
+=== PDF PAGE 3 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 3
+Holomorphic maps between complex nilmanifolds.Since the spacesM(g, Γ)
+and T (g) are defined by the existence of certain holomorphic maps between complex
+nilmanifolds, our first goal will be to provide a classification of such maps. It is a
+classical result that a holomorphic map f : Γ\Cn → Λ\Cm between complex tori
+lifts to an affine mapF : Cn → Cm. Concretely, there is a linear mapΦ: Cn → Cm
+with Φ(Γ) ⊂ Λ and an element λ ∈ Λ such that F = Φ + λ. The following result
+generalises this fact to holomorphic maps between arbitrary complex nilmanifolds.
+Theorem A(Theorem 2.1) —Let f : X → Y be a holomorphic map between com-
+plex nilmanifolds X = (Γ\G, J) and Y = (Λ\H, I). Then there is a holomorphic lift
+F : (G, J) → (H, I) of f such that F = Rh ◦ Φ, where Rh is a right-translation onH
+and Φ: G → H is a group homomorphism withΦ(Γ) ⊂ Λ.
+As a consequence of Theorem A, we have a much simpler description of the Teich-
+müller and moduli spaces. Let us denote by
+C(g) = {J : g → g | J2 = − id, J integrable}
+the space of complex structures ong; for any latticeΓ the space C(g) contains all
+left-invariant complex structures on a nilmanifold of type(g, Γ). The space C(g)
+can be embedded as a locally closed subspace of a complex Grassmannian and,
+contrary to the Teichmüller and moduli spaces, it always comes equipped with the
+structure of a (possibly singular) complex space. The groupG acts onC(g) by right-
+translations and since every automorphism of the latticeΓ ⊂ G extends uniquely to
+an automorphism of the Lie groupG [VGS00], we have an action ofAut(Γ) on C(g),
+which descends to an action on the quotientC(g)/G.
+Corollary B(Corollary 4.3) —For any latticeΓ ⊂ G we have T (g) = C(g)/G and
+M(g, Γ) = T (g)/ Aut(Γ).
+The space C(g) also admits an action by the automorphism groupAut(g), and
+the quotientC(g)/ Aut(g) has already been studied for several classes of Lie algebras
+[Ceb+16; LUV23; And+26]. While understanding the space C(g)/ Aut(g) is of in-
+terest in its own right, it does not parametrise complex structures on any nilmanifold
+since the elements ofAut(g) usually do not descend to the quotientΓ\G. As already
+illustrated by the moduli space of Kodaira surfaces [Bor84], the situation becomes
+much more complicated as soon as the lattice starts to play a role.
+Unfortunately, the simpler description of the Teichmüller and moduli spaces given
+in Corollary B certainly does not imply that they have any nice geometric structure.
+In Section 4 we will give a precise meaning to the question whether or notT (g) or
+M(g, Γ) admits a natural complex structure. In this case, we will just say thatT (g),
+respectively M(g, Γ), exists as a complex space or a complex manifold.
+We will see that one of the main obstructions for these spaces to admit a com-
+plex structure is the existence of too many automorphisms. More precisely, to any
+complex nilmanifold parametrised byC(g) one can attach the dimension of its auto-
+morphism group, that is, the group of its biholomorphisms. We will show that if this
+dimension is not constant on the connected components ofC(g), then the Teichmüller
+space cannot exist as a complex space. For example, this occurs if the Lie algebrag
+is non-abelian and admits a complex parallelisable structure. In fact, bothT (g) and
+M(g, Γ) are far from Hausdorff in this case (see Proposition 7.1).
+Period maps. One of the most important geometric features of complex nilmani-
+folds is that their canonical bundle is always trivial [BDV09; Sal01]. While complex
+
+=== PDF PAGE 4 ===
+4 KONSTANTIN WEHLER
+tori are the only nilmanifolds that admit a Kähler metric, the Kähler case might give
+some insight into what one could hope for when considering deformations of complex
+nilmanifolds.
+Two central results in the deformation theory of Calabi–Yau manifolds, i.e., Kähler
+manifolds with trivial canonical bundle, are the Tian–Todorov theorem and the local
+Torelli theorem. The former states that for a Calabi–Yau manifoldY, the Kuranishi
+space Kur(Y )isalwayssmooth. Moreover, sinceeverysmalldeformationofaCalabi–
+Yau manifold is again a Calabi–Yau manifold one can define a local period map on
+Kur(Y ) by mapping a pointt ∈ Kur(Y ) to the de Rham class of a trivialising section
+of the canonical bundle ofYt. The local Torelli theorem states that this map is always
+a holomorphic embedding.
+Unfortunately, both of these statements are no longer true for complex nilmani-
+folds. As a consequence of a result by Rollenske [Rol09b], it was recently shown that
+the Kuranishi family of a complex nilmanifold only contains complex nilmanifolds
+[HST26]. However, the Kuranishi space of a complex nilmanifold is not necessarily
+smooth. For instance, it is almost always singular for complex parallelisable nil-
+manifolds [Rol11b; PRW26]. Secondly, and perhaps more surprisingly, we will see
+that in a holomorphic family of complex nilmanifolds there can be infinitesimal dir-
+ections which no longer have trivial canonical bundle. Due to this phenomenon a
+holomorphic local period map can only be defined on a suitable reduction of the
+Kuranishi space of a complex nilmanifold which, unlike in the Kähler case, is not
+necessarily injective. Nevertheless, it turns out that such a local period map is an
+important tool in the study of the Teichmüller space. For example, based on a result
+of Catanese [Cat13] we obtain the following useful criterion.
+PropositionC (Proposition5.1, Lemma5.6) — Let X be ann-dimensional complex
+nilmanifold with underlying Lie algebrag. If every left-invariant d-exact (n − 1, 1)-
+form is ∂-exact, then the natural map
+Kur(X) → T (g)
+is a local homeomorphism.
+Furthermore, since we consider complex nilmanifolds with a fixed underlying Lie
+algebra g, wecanextendthelocalperiodmaptoamaponthespace C(g). Concretely,
+if M is a nilmanifold of dimension2n with underlying Lie algebra g, then, up to
+scaling, the canonical bundle of a complex nilmanifold(M, J) can be trivialised by
+a unique closed left-invariant(n, 0)-form. So we obtain a map C(g) → PH n(g, C)
+by sending a complex structureJ ∈ C (g) to the class of an associated(n, 0)-form
+on (M, J). It turns out that this map is holomorphic on a reduction of the complex
+space C(g), and it descends to a map
+P : T (g) → PH n(g, C).
+We callP the global period map. The image of this map is contained in the so-called
+period domain D, which is an open subset of a projective variety inPH n(g, C). One
+of our main goals is to understand whenP is injective, as this has strong implications
+for the structure of the Teichmüller space.
+Applications. It is a well-known fact that every real nilmanifoldM has the struc-
+ture of an iterated real principal torus bundle, that is, there exists a tower of maps
+M = M1 M2 · · · Mν,
+π1 π2 πν−1
+
+=== PDF PAGE 5 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 5
+whereevery Mi isarealnilmanifold, themaps πi : Mi → Mi+1 arerealprincipaltorus
+bundles, and Mν is itself a real torus. Conversely, every smooth manifold admitting
+such a bundle structure is a nilmanifold. Unfortunately, this correspondence fails
+in the complex setting. While it is true that every iterated holomorphic principal
+bundle of complex tori is a complex nilmanifold, the converse no longer holds. In
+order to obtain a global description of the Teichmüller space we often rely on the
+existence of what is known as a (stable) principal torus bundle series, a notion that
+was first introduced by Rollenske in [Rol09a].
+Roughly speaking, a principal torus bundle series for a left-invariant complex
+structure J on M = Γ\G is a filtration on the Lie algebrag of G compatible with
+both the complex structureJ and the latticeΓ (see Definition 1.4). Geometrically,
+such a filtration induces a tower of principal bundles as above such that the complex
+structure J induces a complex structure on every nilmanifoldMi and the maps πi
+are holomorphic with respect to these complex structures.
+In [Rol09a] Rollenske proved the existence of a principal torus bundle series for
+several classes of complex nilmanifolds. Furthermore, he showed that such a torus
+bundle series is often stable in the sense that it is compatible with all complex
+structures on a given Lie algebrag and also with every lattice. As a first application
+we study the Teichmüller spaces for principal torus bundles over a torus.
+Theorem D(Theorem 6.5) —Let g be a 2-step nilpotent Lie algebra of dimension
+2n with a stable principal torus bundle series of length2. If dim Aut(X) = 1 for
+every complex nilmanifoldX of type(g, Γ), then the global period mapP : T (g) → D
+is injective.
+Moreover, the spaceC(g) is a complex manifold of dimension1
+2 n(n + 1) and the
+Teichmüller spaceT (g) exists as a complex manifold of dimension1
+2 n(n − 1) + 1.
+We will see several examples of nilmanifolds which satisfy the assumptions of this
+theorem, among them is the class of Kodaira manifolds. Unfortunately, if one loosens
+any of the assumptions in Theorem D, then it only holds for special classes of Lie
+algebras. One of these classes are Lie algebras whose commutatorC1g is at most
+two-dimensional, in particular, they are at most 3-step nilpotent. In [Rol09a] Rol-
+lenske provides a classification of nilpotent Lie algebras with at most two-dimensional
+commutator that admit a stable torus bundle series. Based on his classification we
+obtain a fairly complete picture for this class.
+Theorem E (Theorem 8.1) —Let g be a nilpotent Lie algebra admitting complex
+structures. If dim C1g ≤ 2, then we have the following cases.
+(i) If dim C1g = 1, then T (g) exists as a complex manifold and the global period
+map P is an embedding.
+(ii) If g is 2-step nilpotent and the centreZg is two-dimensional, thenT (g) does
+not exist as a complex space in general, butP is generically injective on the
+connected components ofT (g) containing complex parallelisable structures.
+(iii) If g is 2-step nilpotent and dim Zg is odd, then T (g) does not exist as a
+complex space in general.
+(iv) If g is 3-step nilpotent, thenT (g) exists as a complex manifold and the global
+period map P is an embedding.
+The existence of a stable principal torus bundle seriesS on a Lie algebrag also
+allows us to define another period mapP S : T (g) → U, where U is an open subset
+of a product of Grassmannians. This map roughly measures to what extent the
+complex tori making up the fibres and base of an iterated torus bundle determine
+
+=== PDF PAGE 6 ===
+6 KONSTANTIN WEHLER
+the isomorphism class of a complex nilmanifold. Even though there is generally no
+relation between the two period mapsP and P S we will see that it is much rarer
+for P S to be injective. In fact, we will often have a precise characterisation of Lie
+algebras for whichP S is injective.
+Another class for which the existence of a stable principal torus bundle seriesS has
+recently been proved is the class of so-called almost abelian Lie algebras [And+26].
+An almost abelian Lie algebra is a non-abelian Lie algebra admitting a codimen-
+sion one abelian ideal, and there exists a complete classification of nilpotent almost
+abelian Lie algebras admitting a complex structure [Arr+25]. Even though neither
+the nilpotency index nor the dimension of the commutator is bounded in this class,
+it turns out that almost abelian Lie algebras are very well suited for the study of our
+moduli problems.
+Theorem F (Theorem 9.4, Proposition 9.8) —Let g be a nilpotent almost abelian
+Lie algebra admitting complex structures.
+(i) The Teichmüller space T (g) exists as a complex manifold and the period
+map P : T (g) → D is an embedding.
+(ii) The period mapP S : T (g) → U is injective if and only ifg is the real Lie
+algebra underlying a Kodaira surface.
+Finally, we apply the previous results to study the Teichmüller and moduli spaces
+for nilmanifolds of dimension six. It was shown by Salamon in [Sal01] that there are
+18 isomorphism classes of six-dimensional nilpotent Lie algebras admitting a complex
+structure. While a complete description of all Teichmüller and moduli spaces in this
+class requires a more detailed analysis, we already cover some parts as an immediate
+consequence of our previous results. For instance, we obtain
+Theorem G (Theorem 10.1) —Let g be a nilpotent Lie algebra of dimension six
+admitting complex structures. If dim C1g ≤ 2, then P : T (g) → D ⊂ PH3(g, C)
+is injective and T (g) exists as a complex manifold, unlessg is the real Lie algebra
+underlying the Iwasawa manifold in which caseT (g) is non-Hausdorff.
+A different approach to understanding the Teichmüller and moduli spaces, which
+avoids the problem of dealing with non-Hausdorff spaces, was taken by Meersseman
+in [Mee19]. Instead of considering the Teichmüller and moduli spaces as topological
+spaces, Meersseman constructed them as stacks for an arbitrary smooth compact
+manifold. Moreover, he showed that under a mild condition on the dimension of the
+automorphism group, these stacks are analytic [Mee19], which is far from true on
+the level of topological spaces. Although the Teichmüller and moduli stacks are in
+general difficult to describe, our results suggest that an explicit description of some
+connected components should be possible for nilmanifolds admitting left-invariant
+complex structures.
+Acknowledgements. This work is part of my PhD thesis [Weh26]. I would like to
+thank my advisers Sönke Rollenske and Nicolina Istrati for their constant support,
+and many valuable comments and discussions. I would also like to thank Stefan
+Nemirovski for a helpful conversation regarding Proposition 2.6. This work was
+supported by the DFG through the grant RO 3734/4-1.
+
+=== PDF PAGE 7 ===
+Part I: General theory
+1. Preliminaries
+Thissectioncollectssomedefinitionsandbasicresultsaboutcomplexnilmanifolds.
+1.1. Complex structures on nilpotent Lie algebras.Let g be a real nilpotent
+Lie algebra of dimension2n. An almost complex structure ong is an endomorphism
+J : g → g such that J2 = − id, which is said to be integrable if its Nijenhuis tensor
+vanishes, that is, we have
+[x, y] − [J x, J y] + J[J x, y] + J[x, J y] = 0
+for all x, y ∈ g. In this case, the pair (g, J) is called a nilpotent Lie algebra with
+complex structure.
+Alternatively, we have a decompositiongC = g1,0 ⊕ g0,1 of the complexification
+of g into the ±i-eigenspaces of the complex linear extension of the almost complex
+structure J, and J is integrable if and only if[g1,0, g1,0] ⊂ g1,0. Conversely, every
+decomposition gC = V ⊕ V defines a unique almost complex structure ong whose
+i-eigenspace is V.
+It is often useful to describe complex structures ong in terms of differential forms.
+We defined: g∗ →V2 g∗ by
+(1.1) dα(x, y) = −α([x, y])
+for α ∈ g∗ and x, y ∈ g. The map d induces a map on the exterior algebraV• g∗
+and makes (V• g∗, d) into a differential graded algebra. The Jacobi identity ong
+corresponds to d2 = 0. If e1, . . . , e2n is a basis ofg∗, then the Lie algebrag can be
+described by the real structure equations
+dek =
+X
+i<j
+ck
+ijei ∧ ej,
+where the constants ck
+ij ∈ R are called the structure constants with respect to the
+chosen basis ofg∗.
+An almost complex structureJ also induces a decompositiong∗
+C = g∗1,0 ⊕ g∗0,1,
+and thus for1 ⩽ k ⩽ 2n the exterior algebra ofg∗
+C decomposes as
+Vk g∗
+C =L
+p+q=k
+Vp,q g∗,
+where Vp,q g∗ = Vp g∗1,0 ⊗Vq g∗0,1 and Vp,q g∗ = Vq,p g∗. With respect to this
+bi-grading we obtain maps ∂ : Vp,q g∗ → Vp+1,q g∗ and ∂ : Vp,q g∗ → Vp,q+1 g∗,
+defined by composing the differentiald with the respective projections. The almost
+complex structure J is integrable in the above sense if and only if the differentiald
+onV• g∗
+C decomposes as d = ∂ + ∂. If ω1, . . . , ωn is a complex basis ofg∗1,0, then
+the integrability ofJ implies that the differentialsdωk are of the form
+dωk =
+X
+i<j
+Ak
+ijωi ∧ ωj +
+X
+i,j
+Bk
+ijωi ∧ ωj,
+7
+
+=== PDF PAGE 8 ===
+8 KONSTANTIN WEHLER
+where Ak
+ij, Bk
+ij ∈ C. We will often abbreviateωi ∧ ωj = ωij and ωi ∧ ωj = ωi¯j. We
+refer to these equations as the complex structure equations for the pair(g, J) with
+respect to the chosen basis.
+1.2. Complex nilmanifolds. Let g be a nilpotent Lie algebra and let G be an
+associated simply connected nilpotent Lie group. A latticeΓ ⊂ G is a discrete co-
+compact subgroup ofG. By the results of [Mal51] a lattice exists if and only if there
+is a rational subalgebragQ of g such that gQ ⊗ R = g. Such a subalgebra is called a
+rational structure forg and its existence is equivalent to the existence of a basis of
+g∗ with rational structure constants.
+If Gdoes admitalattice Γ, thenΓactson Gby multiplicationfromthe left andthe
+compact manifoldM = Γ\G is called anilmanifold. Every complex structureJ on g
+induces a complex structure onG, making (G, J) into a complex manifold on which
+all left-translations are holomorphic. Since the latticeΓ acts by left-multiplication,
+this left-invariant complex structure onG descends to a complex structure onM.
+A complex structure onM is said to be left-invariant if it is induced by a complex
+structure on g in this way.
+Definition 1.2— Acomplex nilmanifold is a complex manifold(M, J), where M
+is a nilmanifold andJ is a left-invariant complex structure.
+Remark 1.3 — It was shown by Hasegawa in [Has89] that a nilmanifold is formal if
+and only if it is diffeomorphic to a torus. In particular, a complex nilmanifoldX
+does not carry a Kähler metric or satisfy the∂∂-lemma unlessX is a complex torus.
+1.3. Principal torus bundle series.In the following, we will recall some aspects
+of the real and complex geometry of nilmanifolds. Let g be a real nilpotent Lie
+algebra. Following the notation of [Rol09a], the ascending central series ong is the
+filtration defined by
+Z i+1g = {x ∈ g | [g, x] ⊂ Z ig},
+where Z0g = 0. The descending central series is the filtration defined by
+Ci+1g = [Cig, g]
+with C0g = g, and the Lie algebrag is said to be ν-step nilpotent if ν ∈ N is the
+smallest integer such thatZ νg = g, or equivalently,Cνg = 0.
+We also recall that a subalgebrah ⊂ g is called rational with respect to a rational
+structure gQ of giftheintersection h∩gQ isarationalstructurefor h. Thesubalgebras
+appearing in the ascending and descending central series ofgare rational with respect
+to every rational structure ong [CG90, Corollary 5.2.2, Theorem 5.2.3]. Therefore,
+both of these filtrations are compatible with every latticeΓ ⊂ G in an associated
+simply connected Lie group, in the sense that they induce a (possibly different) real
+iterated torus bundle structure on the nilmanifoldΓ\G (see [Rol09a, Section 1] for
+details).
+Unfortunately, this no longer works in the complex setting since both the ascend-
+ing and descending central series are not necessarily preserved by a given complex
+structure on g. So in order to obtain a holomorphic torus bundle structure on a
+complex nilmanifold we need the following notion introduced in [Rol09a].
+Definition 1.4— Let (g, J) be a nilpotent Lie algebra with complex structure and
+a fixed rational structure. AJ-invariant filtration
+0 = S0g ⊂ S 1g ⊂ · · · ⊂ S ℓg = g
+
+=== PDF PAGE 9 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 9
+of rational subalgebras is called aprincipal torus bundle seriesof lengthℓ if S ig is an
+ideal inS i+1g and S ig/S i−1g is contained in the centre ofg/S i−1g for alli = 1, . . . , ℓ.
+If the filtration (S ig)i=0,...,ℓ is invariant under every complex structure and the
+subspaces S ig are rational with respect to every rational structure ong, then it is
+called a stable principal torus bundle series (SPTBS).
+Remark 1.5 — The length ℓ of a principal torus bundle series may not coincide with
+the nilpotency index of g [Rol09a, Example 1.14]. The same example also shows
+that not every nilpotent Lie algebra admits a SPTBS. But, as shown in [Rol09a,
+Section 3], a SPTBS commonly exists on Lie algebras with small commutator, and
+for most Lie algebras up to real dimension six. Moreover, it was recently shown in
+[And+26] that a SPTBS always exists for almost abelian Lie algebras, which we will
+discuss in Section 9.
+A SPTBS of length ℓ on a nilpotent Lie algebrag with associated Lie group G
+induces for every complex structureJ on g and for every latticeΓ ⊂ G a tower of
+holomorphic principal torus bundles
+(1.6) X = X1 X2 · · · Xℓ
+π1 π2 πℓ−1
+on the complex nilmanifoldX = (Γ\G, J). Concretely, for a given (stable) principal
+torus bundle series(S ig)i=1,...,ℓ, the real Lie algebra underlying the complex nilman-
+ifold Xi is g/S ig and the fibres of the mapπi : Xi → Xi+1 are complex toriTi with
+underlying Lie algebra S ig/S i−1g. The complex structures on these manifolds are
+given by the complex structures ong/S ig and S ig/S i−1g, respectively, induced by
+the left-invariant complex structure onX.
+1.4. Abelian and complex parallelisable structures.The existence of a prin-
+cipal torus bundle series for a Lie algebra with complex structure(g, J) implies that
+J is a nilpotent complex structure in the sense of [Cor+00], but the converse does not
+hold in general [Rol09a, Example 1.14]. However, there are two classes of nilpotent
+complex structures where one always has a (not necessarily stable) principal torus
+bundle series. If the subalgebrag1,0 is abelian, or equivalently, ifd(V1,0 g∗) ⊂V1,1 g∗,
+then J is called anabelian complex structure.
+If [g1,0, g0,1] = 0, or equivalently, ifd(V1,0 g∗) ⊂V2,0 g∗, then the pair(g, J) is a
+complex Lie algebra andJ is called acomplex parallelisablestructure. In this case,
+the Lie group(G, J) is a complex Lie group and every complex nilmanifold(Γ\G, J)
+is complex parallelisable.
+The ascending central series is a principal torus bundle series for both abelian and
+complex parallelisable structures. While the descending central series is not neces-
+sarily preserved by an abelian complex structure, it also provides another principal
+torus bundle series for all complex parallelisable structures.
+Example 1.7— Consider the three-dimensional complex Heisenberg group
+H =
+
+
+
+
+
+1 z1 z3
+0 1 z2
+0 0 1
+
+
+
+zi ∈ C
+
+
+
+with its latticeΛ = GL(3, Z[i]) ∩ H. The Iwasawa manifold is the three-dimensional
+complex parallelisable nilmanifoldI = Λ\H. The mapH → C2 given by the projec-
+tion on (z1, z2) induces a principal bundleI → T2 over a complex 2-torusT2, where
+the fibreC is an elliptic curve with complex multiplication andT2 is isogenous to the
+product C × C [Win98, Example 9.1.3]. It was shown in [Rol09a, Proposition 3.8]
+
+=== PDF PAGE 10 ===
+10 KONSTANTIN WEHLER
+that the descending central series on the real Lie algebra underylingI defines a
+SPTBS.
+It turns out that many of the phenomena related to our moduli problems can be
+observed on the real nilmanifold underlyingI. So the Iwasawa manifold and its real
+Lie algebra will be a recurring example throughout the text.
+Remark 1.8 — In [Win98, Chapter 9] Winkelmann studied the complex toriTi ap-
+pearing as the fibres of the mapsπi : Xi → Xi+1 of an iterated bundle as in (1.6)
+for a given complex parallelisable nilmanifoldX. If the bundle structure on X is
+given by the descending central series, then the toriT1, . . . , Tν−1 are isogenous to a
+product of simple tori with complex multiplication [Win98, Theorem 9.1.1]. Under
+an additional assumption on the Lie algebra this also holds for the base torusTν
+[Win98, Proposition 9.1.2], as in Example 1.7. However, there is generally no re-
+lation between the fibres and base of an iterated principal torus bundle given by a
+nilmanifold with an abelian complex structure.
+Example 1.9 — A (primary)Kodaira surfaceis a non-trivial principal bundle of
+elliptic curves over an elliptic curve. Apart from complex tori, these are the only two-
+dimensional complex nilmanifolds, and all complex structures on a Kodaira surface
+are abelian. It was shown in [Bor84] that for every choice of elliptic curvesE1 and
+E2 there is a Kodaira surface with fibreE1 and base E2.
+1.5. Cohomology. Following [Rol09b], we will briefly describe the cohomology of
+a nilmanifold in terms of left-invariant forms.
+Let h be a Lie algebra of dimension m and let V be an h-module. Then, as
+explained in [Wei94, Section 7], the cohomologyH •(h, V ) of h with values inV can
+be computed via the Chevalley–Eilenberg complex
+0 V h∗ ⊗ V · · · Vm−1 h∗ ⊗ V Vm h∗ ⊗ V.d d d d
+For instance, ifh = g is a real nilpotent Lie algebra and we considerV = R as the
+trivial g-module, then the differential in the associated Chevalley–Eilenberg complex
+(V• g∗, d) is the differential defined in (1.1). Moreover, the space V• g∗ can be
+considered as the space of left-invariant forms on any nilmanifoldM with underlying
+Lie algebra g, and d coincides with the exterior derivative onM restricted toV• g∗.
+This yields an inclusion ofH •(g, R) into the de Rham cohomology ofM, which was
+shown to always be an isomorphism by Nomizu [Nom54].
+There is an analogous description of the Dolbeault cohomology of a complex nil-
+manifold. Let (g, J) be a nilpotent Lie algebra with complex structure and let
+g0,1 ⊂ gC be the associated (−i)-eigenspace. We will mostly be interested in the
+cohomology groups H q(g0,1, V ) for V = Vp g∗1,0 or V = g1,0. The g0,1-module
+structure onVp g∗1,0 is induced by the action
+g0,1 × g∗1,0 → g∗1,0, (x, ω) 7→ −x⌟∂ω.
+The associated Chevalley–Eilenberg complex is the complex(Vp,• g∗, ∂), and the
+groups
+H p,q(g, J) = H q(g0,1,Vp g∗1,0)
+are called the Dolbeault cohomology groups of(g, J). The g0,1-module structure on
+g1,0 is defined by
+g0,1 × g1,0 → g1,0, (x, y) 7→ [x, y]1,0
+and the differential in the Chevalley–Eilenberg complex computing the cohomology
+groups H q(g0,1, g1,0) is also denoted by∂.
+
+=== PDF PAGE 11 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 11
+As above we can identifyVp,q g∗ with the space of left-invariant(p, q)-forms on
+the complex nilmanifoldX = (M, J). Therefore, we obtain a map
+H p,q(g, J) → H p,q
+∂ (X)
+to the Dolbeault cohomology of X, which was recently shown to always be an
+isomorphism [HST26, Theorem 1.1]. Similarly, one has an isomorphism between
+H q(g0,1, g1,0) and H q(X, TX) ∼= H q(X, ΘX), where TX is the holomorphic tangent
+bundle ofX and ΘX is the sheaf of holomorphic vector fields [Rol09b, Corollary 2.5].
+1.6. Deformation theory. In this section, we review the deformation theory of
+complex nilmanifolds. If X is a complex nilmanifold with underlying Lie algebrag,
+then the Kodaira–Spencer DGLA controlling the deformation theory ofX [Man22,
+Section 8.3], contains the finite-dimensional DGLA
+(V• g∗0,1 ⊗ g1,0, ∂, [·, ·]).
+Here, (V• g∗0,1 ⊗ g1,0, ∂) is the Chevalley–Eilenberg complex for theg0,1-module g1,0
+discussed in the previous section, and forα ⊗ x, β ⊗ y ∈ g∗0,1 ⊗ g1,0 the bracket
+[α ⊗ x, β ⊗ y] = α ∧ Lxβ ⊗ y + β ∧ Lyα ⊗ x + α ∧ β ⊗ [x, y],
+where L is the Lie-derivative, is the restriction of the Schouten bracket onX to
+g∗0,1 ⊗ g1,0.
+It was shown in [Rol09b, Theorem 2.6] that the inclusion of(V• g∗0,1⊗g1,0, ∂, [·, ·])
+into the Kodaira–Spencer DGLA is a quasi-isomorphism if the Dolbeault cohomology
+of X is computed by left-invariant forms. Together with the main result of [HST26]
+mentioned in the previous section, this implies that sufficiently small deformations
+of any complex nilmanifold carry a left-invariant complex structure.
+The small deformations of a compact complex manifold are encoded by a complex
+space known as the Kuranishi space [Kur62]. We will briefly recall Kuranishi’s con-
+struction for a complex nilmanifoldX with underlying Lie algebrag (cf. [Rol11b;
+PRW26]). Since we already established that every sufficiently small deformation
+of the left-invariant complex structure onX is again left-invariant, every such de-
+formation can be described by a formϕ ∈ g∗0,1 ⊗ g1,0 satisfying the Maurer–Cartan
+equation
+(1.10) ∂ϕ + 1
+2[ϕ, ϕ] = 0.
+The first-order solutions of the Maurer–Cartan equation correspond to infinitesimal
+deformations of X, which are parametrised by H1(X, ΘX) ∼= H1(g0,1, g1,0). The
+complex manifold X is said to haveunobstructed deformations if every first-order
+solution can be integrated to an actual solution of the Maurer–Cartan equation.
+More precisely, this means that there exist representativesη1, . . . , ηm of a basis of
+H1(X, ΘX) such that for everyϕ1(t) = Pm
+i=1 tiηi with t = (t1, . . . , tm) ∈ Cm there
+is a formal solution
+(1.11) ϕ(t) = ϕ1(t) +
+X
+k≥2
+ϕk(t)
+to the system of equations
+(1.12) ∂ϕk(t) = −1
+2
+X
+0<i<k
+[ϕi(t), ϕk−i(t)], k ≥ 1.
+By the results of [Kur62] the existence of a formal solution to (1.12) also ensures the
+existence of a convergent solution.
+
+=== PDF PAGE 12 ===
+12 KONSTANTIN WEHLER
+In order to define the Kuranishi space ofX we have to remove the ambiguity in the
+choice of a possible solution to (1.12). This is achieved by choosing a left-invariant
+hermitian metric on X. Let Hq(X, ΘX) denote the space of harmonic(0, q)-forms
+with values inΘX defined for the chosen metric, and letG denote the Green operator.
+If θ1, . . . , θm is a basis ofH1(X, ΘX), then starting fromϕ1(t) = Pm
+i=1 tiθi we can
+recursively define
+(1.13) ϕk(t) = −∂
+∗
+G
+ 
+1
+2
+X
+0<i<k
+[ϕi(t), ϕk−i(t)]
+!
+.
+The resulting formal power series ϕ(t) = P
+k≥1 ϕk(t) now satisfies the Maurer–
+Cartan equation (1.10) if and only ifH[ϕ(t), ϕ(t)] = 0, where H is the projection to
+H2(X, ΘX). As in [Rol11b] we define the so-called obstruction map
+obs: H1(X, ΘX) → H2(X, ΘX)
+by obs(θ) = H[ϕ(t), ϕ(t)], where ϕ(t) is the power series defined by (1.13) with
+ϕ1(t) = θ. In this notation, Kuranishi’s theorem [Kur62] states that for sufficiently
+small ε > 0, there is a semi-universal family of deformations ofX over the Kuranishi
+space
+Kur(X) = {θ ∈ H1(X, ΘX) | ∥θ∥ < ε, obs(θ) = 0},
+known as the Kuranishi family ofX.
+Remark 1.14 — Although this construction depends on the chosen hermitian metric,
+different choices result in isomorphic families. Moreover, the complex spaceKur(X)
+is smooth, in which caseKur(X) is just an open ball around0 ∈ H1(X, ΘX), if and
+only if X has unobstructed deformations.
+In general, it is a difficult question whether or not a given complex manifold has
+unobstructed deformations, even for complex nilmanifolds. The only class of complex
+nilmanifolds where a precise characterisation is known is the class of complex paral-
+lelisable nilmanifolds [PRW26]. For this this class explicit solutions to the system of
+equations (1.12) were computed for several examples in [Rol11b] and [PSU22].
+2. Holomorphic maps between complex nilmanifolds
+The goal of this section is to prove the following structure theorem for holomorphic
+maps between complex nilmanifolds.
+Theorem 2.1— Let f : X → Y be a holomorphic map between complex nilmanifolds
+X = (Γ \G, J) and Y = (Λ \H, I). Then there is a holomorphic lift F : (G, J) →
+(H, I) of f such thatF = Rh◦Φ, whereRh is a right-translation onH and Φ: G → H
+is a group homomorphism withΦ(Γ) ⊂ Λ.
+This theorem is well-known for holomorphic maps between complex tori (see for
+instance [Deb05, Theorem 1.5]). In [HS80] this was generalised to a class of complex
+parallelisable nilmanifolds and later proved by Winkelmann for holomorphic maps
+between arbitrary complex parallelisable nilmanifolds [Win98, Theorem 5.2.5].
+2.1. The universal cover of a complex nilmanifold.In order to prove The-
+orem 2.1 we first recall a recent result stating that the universal cover of ann-
+dimensional complex nilmanifold is always biholomorphic toCn [Has+26; Weh26].
+Let J be a left-invariant complex structure on a simply connected nilpotent Lie
+group G, and letGC be its universal complexification. SinceGC is also simply con-
+nected and nilpotent, the exponential mapexp: gC → GC is a biholomorphism, and
+
+=== PDF PAGE 13 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 13
+thus exp(g1,0) and exp(g0,1) are closed subgroups of GC. We can define a biholo-
+morphism from Cn to GC/ exp(g0,1) by
+(2.2) Cn ∼= g1,0 exp(g1,0) GC GC/ exp(g0,1)
+exp π
+and we denote its inverse byφ: GC/ exp(g0,1) → Cn (cf. [Has+26, Remark 2.2]).
+Then, restricting φ ◦ π : GC → Cn to G ⊂ GC we obtain a holomorphic map
+P : (G, J) → Cn.
+This map was constructed by Snow in the more general setting of solvable Lie groups,
+where it was also shown thatP is a local biholomorphism [Sno86, Theorem 1, p. 194].
+However, much more can be said in the nilpotent case. Indeed, it was shown in
+[Weh26] that the mapP : (G, J) → Cn is a biholomorphism ifG is nilpotent. This
+result was also obtained independently by Hasegawa, Sillari, and Tomassini, and is
+contained in the joint article [Has+26].
+2.2. Proof of Theorem 2.1.We will first outline the strategy of the proof. Let
+X = (Γ \G, J) and Y = (Λ \H, I) be complex nilmanifolds of dimensionn and m,
+respectively. Let f : X → Y be a holomorphic map. The proof of Theorem 2.1 is
+roughly divided into three steps.
+Step 1: first, we will show that the proof of Theorem 2.1 can be reduced to the
+case where f maps the class of the neutral element[eG] ∈ X to the class[eH] ∈ Y.
+Under the assumption f([eG]) = [ eH], the map f has a unique holomorphic lift
+F : (G, J) → (H, I) such that F (eG) = eH and in particular F (Γ) ⊂ Λ. Thus, to
+prove the theorem it remains to show thatF is a group homomorphism.
+Step 2: next, we will pass from (G, J) to Cn and from (H, I) to Cm using the
+biholomorphism defined in the previous section. So the mapf : X → Y lifts to a
+holomorphic mapeF : Cn → Cm and by the first step we may assumeeF (0) = 0. We
+will prove that the lifteF : Cn → Cm is a polynomial map.
+Step 3: lastly, we will use the fact thateF is a polynomial map to deduce that the
+lift F : G → H is a group homomorphism.
+2.2.1. Step 1. Assume that Theorem 2.1 holds for every holomorphic map sending
+the class of eG ∈ G in X to the class of eH ∈ H. Suppose f : X → Y maps the
+class [eG] to [h] for some h ∈ H. Then the mapf ′ = Rh−1 ◦ f defines a holomorphic
+map X → Y ′ = (Λ \H, I′), where I ′ denotes the left-invariant complex structure
+dRh−1 ◦ I ◦ dRh and we havef ′([eG]) = [ eH]. By our assumption the mapf ′ now
+lifts to a holomorphic group homomorphismΦ: ( G, J) → (H, I′) and thus the map
+Rh◦Φ: ( G, J) → (H, I)isaholomorphicliftof f. Hence, wehaveprovedTheorem2.1
+under the assumption that it holds for maps sending[eG] to [eH]. From now on we
+will assume thatf([eG]) = [eH].
+2.2.2. Step 2. In this step, we will prove that the mapeF : Cn → Cm is a polynomial
+map. Concretely, we will show that there exists a constantC > 0 and k ∈ N such
+that
+∥eF (z)∥ ≤ C(1 + ∥z∥)k
+for all z ∈ Cn. It then follows from a generalised Liouville theorem that eF is a
+polynomial map of degree at mostk [Vla66, Section 6.3, p. 41].
+To this purpose, we endowCn with a multiplication· such that the biholomorph-
+ism P : (G, J) → (Cn, ·) defined in Section 2.1 is a group homomorphism, that is, we
+
+=== PDF PAGE 14 ===
+14 KONSTANTIN WEHLER
+set
+(2.3) w·z = P (P −1(w)P −1(z))
+for w, z ∈ Cn. Similarly, we will denote by∗ the multiplication making the biholo-
+morphism (H, I) → (Cm, ∗) into a group homomorphism. Throughout this section,
+we will considerΓ and Λ as lattices in(Cn, ·) and (Cm, ∗), respectively.
+Lemma 2.4— For every γ ∈ Γ and z ∈ Cn we have
+eF (γ·z) = eF (γ) ∗ eF (z).
+Proof. Let us fix an elementγ ∈ Γ. Since eF is a lift off we have a commutative
+diagram
+Cn Cm
+X Y
+eF
+π π′
+f
+and thus for everyz ∈ Cn there exists aλ(z) ∈ Λ such that eF (γ·z) = λ(z) ∗ eF (z).
+Consider the continuous maphγ : Cn → Cm defined by hγ(z) = eF (γ·z) ∗ (eF (z))−1.
+Then we have
+π′ ◦ hγ(z) = π′(λ(z) ∗ eF (z) ∗ (eF (z))−1) = π′(eF (z) ∗ (eF (z))−1) = [0].
+Hence, the maphγ only takes values in the latticeΛ and is therefore constant. Since
+we assumed eF (0) = 0 this implies that hγ(z) = eF (γ) for every z ∈ Cn which is
+equivalent toeF (γ·z) = eF (γ) ∗ eF (z). □
+By [VGS00, Corollary 2.8, p.45], thehomomorphismeF|Γ : Γ → Λextendsuniquely
+to a homomorphismeΦ: ( Cn, ·) → (Cm, ∗). The following lemma follows from the
+description of the biholomorphisms P : (G, J) → Cn and P ′ : (H, I) → Cm given
+in [Has+26].
+Lemma 2.5— The multiplication maps·: Cn × Cn → Cn, ∗: Cm × Cm → Cm, and
+the mapeΦ are polynomial maps in the variableszi, zi.
+Proof. It was shown in [Has+26] that the biholomorphismsP and P ′ are polynomial
+in exponential coordinates with polynomial inverse. Therefore, the corresponding
+multiplication maps defined by (2.3) are also polynomial. The mapeΦ fits in the
+commutative diagram
+g h
+(G, J) (H, I)
+(Cn, ·) (Cm, ∗),
+dΦeG
+exp exp
+Φ
+P P ′
+eΦ
+where Φ is the unique extension ofΦ|Γ. Again, since bothP and P ′ are polynomial
+in exponential coordinates with polynomial inverse, the composition
+eΦ = (P ′ ◦ exp) ◦ dΦeG ◦ (P ◦ exp)−1
+is also a polynomial map. □
+
+=== PDF PAGE 15 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 15
+Proposition 2.6— There exists a constantC > 0 and k ∈ N such that
+∥eF (z)∥ ≤ C(1 + ∥z∥)k
+for all z ∈ Cn. Hence, eF is a polynomial map.
+Proof. Since the lattice Γ ⊂ (Cn, ·) is co-compact, there exists a compact domain
+D ⊂ Cn such thatΓ · D = Cn. Hence, for everyz ∈ Cn, there is aγ ∈ Γ and z0 ∈ D
+such that z = γ · z0, and by Lemma 2.4 we have
+eF (z) = eF (γ · z0) = eF (γ) ∗ eF (z0).
+By Lemma 2.5, the map∗: Cm × Cm → Cm is polynomial, and thus we can estimate
+(2.7) ∥eF (z)∥ = ∥eF (γ) ∗ eF (z0)∥ ≤ c1(1 + ∥eF (γ)∥)d1(1 + ∥eF (z0)∥)d1
+for somec1 > 0 and d1 ∈ N. Since D is compact, the term(1+ ∥eF (z0)∥)d1 is bounded
+by some constantc2 > 0 for everyz0 ∈ D. Moreover, we haveeF (γ) =eΦ(γ) andeΦ is
+also a polynomial map, so we have
+∥eF (γ)∥ = ∥eΦ(γ)∥ ≤ c3(1 + ∥γ∥)d3
+for some c3 > 0 and d3 ∈ N. Therefore, we can further estimate (2.7) by
+c1(1 + ∥eF (γ)∥)d1(1 + ∥eF (z0)∥)d1 ≤ c1c2(1 + ∥eΦ(γ)∥)d1
+≤ c1c2(1 + c3)d1(1 + ∥γ∥)d1d3.
+(2.8)
+So far, none of the constants depend onz, z0 or γ. It remains to show that we can
+estimate ∥γ∥ by the norm ofz = γ · z0. Again by Lemma 2.5, the right-translation
+Rz−1
+0
+: (Cn, ·) → (Cn, ·) is a polynomial map, so we have
+∥γ∥ = ∥Rz−1
+0
+(z)∥ ≤ c(z0)(1 + ∥z∥)d(z0),
+where c(z0) > 0 and d(z0) ∈ N depend onz0. However, the degree of the polynomials
+Rz−1
+0
+is bounded by some d4 ≥ d(z0) and since D is compact we can also find a
+constant c4 > 0 with
+(2.9) ∥γ∥ = ∥Rz−1
+0
+(z)∥ ≤ c(z0)(1 + ∥z∥)d(z0) ≤ c4(1 + ∥z∥)d4
+for all γ ∈ Γ and z0 ∈ D. Substituting (2.9) into (2.8) we obtain
+c1(1 + ∥eF (γ)∥)d1(1 + ∥eF (z0)∥)d1 ≤ c1c2(1 + c3)d1(1 + c4)d1d3(1 + ∥z∥)d1d3d4.
+Hence, for C = c1c2(1 + c3)d1(1 + c4)d1d3 and k = d1d3d4, the inequality (2.7) yields
+∥eF (z)∥ ≤ C(1 + ∥z∥)k,
+which concludes the proof. □
+2.2.3. Step 3. Finally, we will show that the mapeF coincides with the homomorph-
+ism eΦ: ( Cn, ·) → (Cm, ∗). In this case, F : G → H is a composition of group
+homomorphisms and thus also a homomorphism. Recall that the mapseF and eΦ
+already coincide on the latticeΓ ⊂ Cn ∼= R2n.
+Lemma 2.10— If a polynomial functionp: R2n → R vanishes on Γ ⊂ R2n, then
+p = 0.
+
+=== PDF PAGE 16 ===
+16 KONSTANTIN WEHLER
+Proof. Let g be the Lie algebra of(Cn, ·) ∼= G and letep: g → R denote the compos-
+ition
+g (G, J) Cn ∼= R2n R.
+exp P p
+The mapep is again a polynomial map, which vanishes on the subsetlog(Γ) ⊂ g. By
+[VGS00, Theorem 2.13, p. 48] the setlog(Γ) contains an additive latticeΓ′ ⊂ g. We
+claim thatep = 0 because it vanishes onΓ′. Note that ifep vanishes on infinitely many
+points on a given lineL ⊂ g through the origin, thenep vanishes onL. Now, consider
+the set of linesL = {L ⊂ g | L intersects Γ′ in infinitely many points}. The mapep
+vanishes on infinitely many points of every line inL and thusep vanishes onS
+L∈L L.
+Since Γ′ ⊂ g is an additive lattice, the unionS
+L∈L L is a dense subset ofg and thus
+ep = 0. As P ◦ exp is a bijection this implies thatp = 0. □
+By the results of the previous section, botheF and eΦ can be considered as real
+polynomial maps onR2n, soeF −eΦ is a polynomial vanishing onΓ, and Lemma 2.10
+implies eF =eΦ. This concludes the proof of Theorem 2.1. □
+3. The space of left-inv ariant complex structures
+Let g be a nilpotent Lie algebra of dimension2n admitting complex structures.
+The goal of this section is to describe some properties of the space
+C(g) = {J : g → g | J2 = − id, J integrable}
+of complex structures on g. Recall that every almost complex structureJ on g is
+uniquely determined by thei-eigenspace g1,0 of JC : gC → gC. Hence, we can consider
+the set
+Un = {V ∈ Gr(n, gC) | V ∩ V = 0} ⊂ Gr(n, gC)
+as the space of almost complex structures ong. Note thatUn defines an open subset
+of the GrassmannianGr(n, gC) and thus we can considerUn as a complex manifold
+of dimension n2. Since a complex structure J on g is integrable if and only if the
+space g1,0 is closed under the Lie bracket we will identify
+C(g) = {V ∈ Gr(n, gC) | V ∩ V = 0, [V, V ] ⊂ V }.
+In this way, the spaceC(g) can be viewed as an open subset of the variety
+V(g) = {V ∈ Gr(n, gC) | [V, V ] ⊂ V } ⊂ Gr(n, gC),
+and as such has the structure of a complex space.
+To study some basic properties of this complex structure onC(g), we start with
+a description of the tangent space at a point J ∈ C (g): recall that the tangent
+space of the GrassmannianGr(n, gC) at a pointV can be identified with the space
+Hom(V, gC/V ) ∼= V ∗ ⊗ gC/V (see for instance [Voi07, Lemma 10.7]). In particular,
+if V = g0,1 is the (−i)-eigenspace in gC associated to the complex structure J,
+then gC/g0,1 ∼= g1,0 and thus we can describe the Zariski tangent spaceTJ C(g) as a
+subspace of g∗0,1 ⊗ g1,0 via the identification
+Tg0,1 Gr(n, gC) ∼= Hom(g0,1, g1,0) ∼= g∗0,1 ⊗ g1,0.
+Consider the map∂ : g∗0,1 ⊗ g1,0 →V2 g∗0,1 ⊗ g1,0 associated to J (see Section 1.5).
+In [Sal01, Proposition 4.2] Salamon showed that ifJ is a smooth point inC(g), then
+the tangent space atJ is contained in the kernel of∂. More generally, one has
+Lemma 3.1— The Zariski tangent space ofC(g) at the pointJ is TJ C(g) = ker ∂.
+
+=== PDF PAGE 17 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 17
+Proof. Let η ∈ g∗0,1 ⊗ g1,0 be a tangent vector ofGr(n, gC) at the point g0,1. To
+compute the tangent space TJ C(g) we work over the the dual numbers C[ε]/ε2.
+Consider an infinitesimal deformationg0,1
+ε = {z + εη(z) | z ∈ g0,1} of g0,1. Then the
+integrability condition[g0,1
+ε , g0,1
+ε ] ⊂ g0,1
+ε is equivalent to the Maurer–Cartan equation
+ε∂η + ε2
+2 [η, η] = 0,
+which overC[ε]/ε2 is equivalent to∂η = 0. □
+Next, we want to deduce a criterion for a point inC(g) to be reduced. To this
+purpose, it is often useful to considerC(g) as a subspace ofGr(n, g∗
+C) via the natural
+map Gr(n, gC) → Gr(n, g∗
+C) and describe it in terms of left-invariant differential
+forms. Recall that the GrassmannianGr(n, g∗
+C) can be embedded intoP (Vn g∗
+C) via
+the Plücker embedding
+ι: Gr( n, g∗
+C) ,→ P (Vn g∗
+C) ,
+which is given by mapping a vector spaceV = ⟨ω1, . . . , ωn⟩ to the class of then-form
+ω1 ∧ · · · ∧ ωn in P (Vn g∗
+C). We will first describe the image of the restriction ofι to
+C(g).
+Lemma 3.2— A class [α] ∈ P (Vn g∗
+C) is in the image ofι|C(g) if and only ifα is
+decomposable, d-closed, and α ∧ α ̸= 0.
+Proof. Let J be a complex structure ong. According to [Sal01, Theorem 1.3] there
+existsabasis ω1, . . . , ωn of g∗1,0 suchthat dωk+1 ∈ I(ω1, . . . , ωk), whereI(ω1, . . . , ωk)
+is the ideal in V2 g∗
+C generated by ω1, . . . , ωk. This implies that the form ω =
+ω1 ∧ · · · ∧ ωn is closed and sinceg∗1,0 ∩ g∗0,1 = 0, the 2n-form ω ∧ ω is non-zero.
+Conversely, we have to show that every closed decomposable formα = α1 ∧· · ·∧ αn
+satisfying α ∧ α ̸= 0 determines a complex structure ong. Setting V = ⟨α1, . . . , αn⟩,
+the condition α ∧ α ̸= 0 implies that V ⊕ V = g∗
+C and thusα uniquely determines an
+almost complex structure ong. It remains to show that the almost complex structure
+given by V is integrable, which is equivalent to the map
+V V2 g∗
+C
+V2 Vd π0,2
+being the zero-map. Let z1, . . . , zn be the dual basis ofα1, . . . , αn and consider for
+i ∈ { 1, . . . , n} the map ci : Vn+1 g∗
+C →V2 g∗
+C which sends a formβ ∈Vn+1 g∗
+C to
+ci(β) = (z1 ∧ · · · ∧bzi ∧ . . . zn)⌟β. Then for everyαi we have
+π0,2 ◦ d(αi) = π0,2 ◦ ci(dα) = 0
+since we assumedα to be closed. Hence, the spaceV defines a complex structure on
+the Lie algebrag. □
+Remark 3.3 — Considering C(g) as a subspace of P (Vn g∗
+C) = P(2n
+n )−1 via the
+Plücker embedding, the previous lemma shows thatC(g) = Un ∩ P ker d. This de-
+scription is often useful to determine the connected components ofC(g). By the
+Fulton–Hansen connectedness theorem the varietyV(g) = Gr(n, g∗
+C) ∩ P ker d is con-
+nected if n2 + dim kerd >
+ 2n
+n
+
+[FH79, Corollary 1]. Moreover, it follows from a
+Lefschetz-type theorem due to Sommese that the homotopy groupsπj(V(g)) coin-
+cide with πj(Gr(n, g∗
+C)) for j ≤ n2 + dim kerd −
+ 2n
+n
+
+− 1 [Som82, Corollary 3.5]. A
+comparison with [Sal01, Table A.1] shows thatV(g) is connected and simply connec-
+ted for nilpotent Lie algebras up to dimension six.
+
+=== PDF PAGE 18 ===
+18 KONSTANTIN WEHLER
+As explained above, up to scaling, the Plücker embedding associates to every
+complex structure J on g a form ω ∈Vn g∗
+C. For every elementη ∈ ker ∂ = TJ C(g)
+the form η⌟ω is a ∂-closed (n − 1, 1)-form.
+Proposition 3.4 — If J is a reduced point of C(g), then d(η⌟ω) = 0 for every
+η ∈ ker ∂, or equivalently, every∂-closed form inVn−1,1 g∗ is d-closed.
+Proof. The differential of the Plücker embedding
+dιJ : g∗0,1 ⊗ g1,0 → Hom (⟨ω⟩,Vn g∗
+C/⟨ω⟩) = T⟨ω⟩P (Vn g∗
+C)
+at the point corresponding toJ sends η ∈ g∗0,1 ⊗ g1,0 to the homomorphism given
+by (ω 7→ [η⌟ω]). Suppose C(g) is reduced at J. Then C(g) is reduced in an open
+neighbourhood U of J onwhichthemap ι|U : U → P ker disanembeddingofcomplex
+spaces. By Lemma 3.2 the image of the restriction of the Plücker embedding toC(g)
+is contained in P ker d ⊂ P (Vn g∗
+C). Hence, the image of (dι|U)J at the point J is
+contained inHom (⟨ω⟩, ker d/⟨ω⟩). Thus, ifη ∈ ker ∂ = TJ C(g), thend(η⌟ω) = 0. □
+Remark 3.5 — The necessary condition given in Proposition 3.4 is not sufficient for
+J to be a reduced point. For instance, ifJ is a complex parallelisable structure, that
+is, the pair(g, J) is a complex Lie algebra, then the condition is always satisfied since
+in this caseker ∂ = ker d ⊗ g1,0. But the Kuranishi space of a complex parallelisable
+nilmanifold is often not reduced (see [Rol11b, Table 1]).
+Example 3.6— Consider the real Lie algebrah underlying the Iwasawa manifold
+(see Example 1.7). By [Ceb+16, Lemma 2.11] there exists a complex structureJ on
+h with complex structure equations
+dω1 = dω2 = 0, dω 3 = ω1¯1 + ω1¯2.
+If z1, z2, z3 ∈ h1,0 is the dual basis ofω1, ω2, ω3, then
+∂(ω3 ⊗ z2) = ∂ω3 ⊗ z2 − ω3 ⊗ ∂z2 = 0.
+Hence, η = ω3 ⊗ z2 defines a tangent vector ofC(h) at J but d(η⌟ω123) = dω13¯3 =
+ω123¯1 is non-zero. Therefore, the complex spaceC(h) is not reduced and in particular
+not smooth atJ.
+Alternatively, we can describe the behaviour of a pointJ ∈ C (g) in terms of the
+Kuranishi space of a nilmanifold with complex structureJ. Let X = (Γ \G, J) be
+a complex nilmanifold with underlying Lie algebrag. As explained in Section 1.6,
+after fixing a left-invariant hermitian metrich on X we obtain a distinguished rep-
+resentative of every class in Kur(X) and we can consider Kur(X) as a subspace
+around 0 in the space H1(g0,1, g1,0) = H1(X, ΘX). In particular, we have an em-
+bedding Kur(X) ,→ C (g) depending on the choice of the hermitian metric. Let
+H0(g0,1, g1,0)⊥ ⊂ g1,0 be the orthogonal complement to the space of left-invariant
+holomorphic vector fields onX with respect toh. Then, for everyz ∈ H0(g0,1, g1,0)⊥
+and I ∈ Kur(X) we obtain a new left-invariant structure
+Rexp(z+¯z)∗I = dR−1
+exp(z+¯z) ◦ I ◦ dRexp(z+z).
+Hence, we have a map
+ψh : Kur( X) × H0(g0,1, g1,0)⊥ → C(g), (I, z) 7→ Rexp(z+z)∗I
+depending on the choice ofh.
+Proposition 3.7— If every complex nilmanifold of type(g, Γ) is unobstructed, then
+every connected component ofC(g) is a complex manifold.
+
+=== PDF PAGE 19 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 19
+Proof. We will show that the differential of ψh at the point (0, 0) ∈ Kur(X) ×
+H0(g0,1, g1,0)⊥ is an isomorphism for every unobstructed complex nilmanifoldX. To
+this purpose we considerKur(X) ⊂ C (g) as a subset of P (Vn g∗
+C) via the Plücker
+embedding. Let ω ∈ V g∗
+C be a left-invariant (n, 0)-form on X and let {Xt} be a
+one-parameter family of deformations ofX given by ϕ(t) = P tiϕi ∈ g0,1∗ ⊗ g1,0.
+Then the form
+ϕ(t)(ω) = ω + t(ϕ1⌟ω) + t2(ϕ1⌟(ϕ1⌟ω) + ϕ2⌟ω) + higher order terms
+is a left-invariant(n, 0)-form onXt representing the class inP (Vn g∗
+C) corresponding
+to Xt. Hence, for z ∈ H0(g0,1, g1,0)⊥ the map γ(t) = (ϕ(t)(ω), tz) defines a path in
+Kur(X) × H0(g0,1, g1,0)⊥ with d
+dt |t=0γ(t) = ( ϕ1, z) ∈ H 1(X, ΘX) × H0(g0,1, g1,0)⊥.
+On the image ofγ the map ψh is given by mappingγ(t) to the class of then-form
+ψh(γ(t)) = R∗
+exp(t(z+z))(ϕ(t)(ω)) = R∗
+exp(t(z+z))ω + t(ϕ1⌟ω) + higher order terms,
+which corresponds to a left-invariant complex structure inC(g). To compute the
+derivative d
+dt |t=0ψh(γ(t)) we first observe
+d
+dt |t=0
+R∗
+exp(t(z+z))ω = Lz+zω = d((z + z)⌟ω) = d(z⌟ω) = ∂(z⌟ω) = ∂z ⌟ω.
+The second to last equality holds because∂
+Vn−1,0 g∗
+
+= 0 and for the last equality
+we use the general formula∂(z⌟ω) = z⌟(∂ω) + (∂z)⌟ω [Xia22a, Lemma 2.4 (1)] and
+the fact thatω is closed. Thus, we have
+d
+dt |t=0
+ψh(γ(t)) = d
+dt |t=0
+(R∗
+exp(t(z+z))(ϕ(t)(ω))
+= d
+dt |t=0
+R∗
+exp(t(z+z))ω + ϕ1⌟ω
+= (ϕ1 + ∂z)⌟ω.
+Therefore, the differential
+dψh(0,0) : H1(X, ΘX) × H0(g0,1, g1,0)⊥ → ker ∂
+of ψh at (0, 0) ∈ Kur(X) × H0(g0,1, g1,0)⊥ is given by(η, z) 7→ η + ∂z, which is an
+isomorphism. □
+As a consequence of [Sal01, Theorem 1.3], it was shown in [BDV09, Theorem 2.7]
+that every complex nilmanifold of dimension n admits a (non-trivial) closed left-
+invariant (n, 0)-form. In particular, the canonical bundle of a complex nilmanifold is
+trivial. Let us give a more geometric interpretation of Example 3.6.
+Example 3.8— Consider again the Lie algebra with complex structure(h, J) given
+in Example 3.6. By the criterion of Malcev [Mal51], the simply connected Lie group
+H associated toh admits a latticeΓ, so we can consider the complex nilmanifoldY =
+(Γ\H, J). Then the left-invariant formω123 ∈V3,0 h∗ defined in Example 3.6 yields
+a trivialising section of the canonical bundle ofY. We already saw that the class
+[η] = [ω3 ⊗z2] ∈ H1(h0,1, h1,0) = H1(Y, ΘY ) defines an infinitesimal deformation ofY
+suchthattheform η⌟ω123 isnotclosed. Hence, thereareinfinitesimaldeformationsof
+Y which no longer have trivial canonical bundle. This phenomenon will be discussed
+in more detail in Section 5.
+
+=== PDF PAGE 20 ===
+20 KONSTANTIN WEHLER
+4. Teichmüller and moduli spaces
+In this section, we formulate the moduli problems we aim to solve. We start by
+introducing the main objects of our study: the Teichmüller and moduli space of
+complex nilmanifolds of a given type. We also recall the notions of coarse and fine
+moduli spaces in our setting and discuss some existence criteria.
+4.1. Definitions. Let M be a smooth compact connected manifold admitting com-
+plex structures. We denote byDiff(M) the group of diffeomorphisms ofM and by
+Diff0(M) the connected component of the identity inDiff(M), that is, the group of
+diffeomorphisms of M smoothly isotopic to the identity. There is an action of these
+groups on the space
+C(M) = {J ∈ End(T M) | J2 = − id, J integrable}
+of complex structures onM given by
+(4.1) (f, J) 7→ f∗J = d f−1 ◦ J ◦ d f.
+The so-calledTeichmüller spaceof M is defined as the quotient
+T (M) = C(M)/ Diff0(M)
+and themoduli spaceof complex structures onM is defined as
+M(M) = C(M)/ Diff(M).
+Alternatively, one can defineM(M) as the quotient of the Teichmüller space by the
+mapping class groupDiff(M)/ Diff0(M). We consider both the Teichmüller and the
+moduli space as topological spaces equipped with the quotient topology ofC(M).
+The connected components of the Teichmüller space are given by the deformation
+classes in the large. Concretely, two complex structuresJ and J ′ on M correspond
+to points in the same connected component of T (M) if and only if the complex
+manifold (M, J) is a deformation of (M, J ′) in the large [Cat13, Corollary 6]. In
+general, it is a difficult task to identify connected components ofT (M) and many
+examples where this is known to be possible belong to the class of nilmanifolds
+[Cat04; Rol09a; And+26].
+From now onM = Γ\G will denote a nilmanifold with underlying Lie algebrag
+and we will considerC(g) ⊂ C (M) as the space of left-invariant complex structures
+on M. We would like to restrict the notions of the Teichmüller and moduli space
+to the space C(g). However, the action (4.1) does not preserve C(g), that is, for
+an arbitrary diffeomorphism f ∈ Diff(M) and a complex structure J ∈ C (g) the
+complex structure f∗J is not necessarily left-invariant. We define the Teichmüller
+space of complex nilmanifolds of type(g, Γ) as
+T (g) = C(g)/ ∼,
+where the relation ∼ identifies two complex structures J and J ′ in C(g) if there
+exists a diffeomorphism f ∈ Diff0(M) such that f∗J = J ′. Analogously, we define
+the moduli space of complex nilmanifolds of type(g, Γ) as
+M(g, Γ) = C(g)/ ∼=,
+where J ∼= J ′ if there exists anf ∈ Diff(M) such that f∗J = J ′.
+As a consequence of Theorem 2.1, the spacesT (g) and M(g, Γ) can also be de-
+scribed as quotients of finite-dimensional group actions: by associating tog ∈ G the
+induced right-translationRg on M = Γ\Gwe can consider the groupGas a subgroup
+of Diff0(M). Similarly, given an automorphismφ ∈ Aut(Γ) we can uniquely extend
+
+=== PDF PAGE 21 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 21
+φ to an automorphism ofG [VGS00, Corollary 2.8, p. 45] which then descends to
+a diffeomorphism of M. Hence, we obtain actions of bothG and Aut(Γ) on C(M)
+defined as in (4.1).
+Lemma 4.2— The actions ofG and Aut(Γ) on C(M) preserve the spaceC(g).
+Proof. Let J ∈ C (g), viewed as a left-invariant complex structure onG. Then for
+all h, g ∈ G the maps Lh and Rg commute. Therefore, we have Lh∗(Rg∗J) =
+Rg∗(Lh∗J) = Rg∗J and thus Rg∗J ∈ C (g). Let φ ∈ Aut(Γ) and let Φ be its unique
+extension to G. Then Lh ◦ Φ = Φ ◦ LΦ−1(h) for all h ∈ G and thus Φ∗J is again
+left-invariant. □
+Note that the action of Aut(Γ) on C(g) descends to the quotient C(g)/G. The
+following corollary of Theorem 2.1 gives a greatly simplified description of the Teich-
+müller and moduli spaces.
+Corollary 4.3— We have T (g) = C(g)/G and M(g, Γ) = T (g)/ Aut(Γ).
+Proof. According to Theorem 2.1, every holomorphic mapf : (M, J) → (M, I) has a
+lift F : (G, J) → (G, I) of the formF = Rg ◦ Φ, where Rg is a right-translation onG
+and Φ: G → G is a group homomorphism preserving the latticeΓ ⊂ G. Therefore,
+it only remains to show thatF = Rg if f is isotopic to the identity onM. Note
+that the restrictionΦ|Γ : Γ → Γ coincides with the induced mapf∗ on π1(M) ∼= Γ.
+Hence, if f is isotopic to the identity, thenf∗ = Φ|Γ has to be the identity, but since
+Φ is already determined by its restriction toΓ this implies thatΦ is the identity. □
+Remark 4.4 — In[Has05, Theorem1]Hasegawashowedthateverycomplexstructure
+on a solvmanifold of dimension four or less is isomorphic to a left-invariant one. We
+already saw that the only complex nilmanifolds up to dimension two are complex tori
+and Kodaira surfaces (see Example 1.9). The real nilmanifold underlying a Kodaira
+surface is also called aKodaira–Thurston manifold. One consequence of Hasegawa’s
+result is that the Teichmüller space of all complex structures on such a manifold has
+a finite number of connected components.
+In higher dimensions the situation becomes much more complicated. For instance,
+it was shown in [Cat04, Corollary 7.7] that the Teichmüller spaceT (T 6) of the real
+six-dimensional torus T 6 already has countably many connected components of un-
+bounded dimension. Therefore, we will restrict our considerations to the spacesT (g)
+and M(g, Γ) which, as mentioned above, will often make up a union of connected
+components of T (M) and M(M), respectively.
+Remark 4.5 — Instead of considering the spaceC(M) of all complex structures on
+M one could fix an orientation ofM and consider the the spaceC+(M) of complex
+structures compatible with this orientation. In this case, one defines the Teich-
+müller space T +(M) as above and for the moduli spaceM+(M) one restricts the
+action to the groupDiff+(M) of orientation-preserving diffeomorphisms. The differ-
+ence between these approaches depends on the existence of an orientation-reversing
+diffeomorphism, as explained in [Mee19, Remark 2.1]: ifM admits no orientation-
+reversing diffeomorphism, thenT (M) and M(M) are disjoint unions of the oriented
+Teichmüller and moduli spaces of both orientations. IfM does admit an orientation-
+reversing diffeomorphism, then M+(M) = M(M), but T (M) has twice as many
+connected components asT +(M). We will usually not impose an orientation onM.
+Remark 4.6 — Leaving aside the lattice Γ for a moment and considering C(g) as
+the space of complex structures on the Lie algebra g, we have an action of the
+
+=== PDF PAGE 22 ===
+22 KONSTANTIN WEHLER
+automorphism group Aut(g) on C(g) given by(Φ, J) 7→ Φ−1 ◦ J ◦ Φ. So the quotient
+space C(g)/ Aut(g) parametrises equivalence classes of complex structures ong up to
+Lie algebra automorphism. Note that there is a map fromT (g) to C(g)/ Aut(g) since
+we can considerT (g) as the quotient ofC(g) by the inner automorphisms ofg. By
+taking the differential of an automorphism ofG induced by an automorphism ofΓ,
+we can also considerAut(Γ) as a subgroup ofAut(g). Hence, we have the quotient
+maps
+T (g) M(g, Γ)
+C(g)/ Aut(g).
+While there is not much known about the spaces T (g) and M(g, Γ), the space
+C(g)/ Aut(g)wasalreadydescribedforallLiealgebrasuptodimensionsixin[Ceb+16]
+and for some Lie algebras of dimension eight in [LUV23]. However, the equivalence
+relation given by theAut(g)-action is usually too coarse to studyT (g) or M(g, Γ)
+via its map toC(g)/ Aut(g). For instance, ifM is a Kodaira–Thurston manifold with
+its underlying Lie algebrag, then C(g)/ Aut(g) is just a point while bothT (g) and
+M(g, Γ) admit the structure of a complex two-dimensional manifold (cf. [Bor84] or
+Section 4.4.2).
+4.2. Fine and coarse moduli spaces. Let M = Γ \G be a real nilmanifold of
+dimension 2n with underlying Lie algebrag.
+The topological spacesT (g)and M(g, Γ)parametrise left-invariant complex struc-
+tures on M up to different notions of equivalence. To give a precise meaning to the
+question whether there exists a natural complex structure onT (g) or M(g, Γ) we
+first recall the notions of (topological) coarse and fine moduli spaces.
+To formally define a moduli problem for a classC of objects in some category, in
+our case the category of (reduced) complex spaces, one needs the notion of a family
+of these objects and a notion of equivalence of such families. The corresponding
+moduli functor is then defined as the contravariant functorG from the category of
+complex spaces to the category of sets, which associates to a complex spaceB the
+set of equivalence classes of families overB.
+A complex spaceS is said to be afine moduli spacefor a moduli functorG if there
+exists a universal familyX → S in G(S), that is, for every familyY → T in G(T )
+there exist unique morphismsf : T → S and F : Y → X such that
+Y X
+T S
+F
+f
+is a cartesian diagram. In this case, the complex spaceS represents the functorG. If
+a fine moduli space exists it is unique up to unique isomorphism. However, due to the
+existence of non-trivial automorphisms a fine moduli space will often not exist. This
+phenomenon already occurs for moduli of elliptic curves, as described in [CMP17,
+Example 8.4.1]. Thus, one is usually concerned with the more general notion of a
+coarse moduli space, we recall here the definition given in [BL99, Chapter 7.1].
+Definition 4.7— Acoarse moduli spacefor a moduli functorG is a complex space
+S together with a natural transformation
+Ψ : G → Mor( · , S)
+
+=== PDF PAGE 23 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 23
+satisfying the following properties:
+(i) for a point p the map Ψ(p): G(p) → Mor(p, S) is bijective, that is, the
+isomorphism classes of objects inC are in bijection with points inS;
+(ii) foranycomplexspace T andeverynaturaltransformation Ψ′ : G → Mor( · , T),
+there exists a unique morphism of complex spacesψ : S → T such that the
+associated diagram
+(4.8)
+G Mor( · , S)
+Mor( , · T )
+Ψ
+Ψ′ ψ◦
+commutes.
+Similarly, atopological coarse moduli spacefor G is a topological spaceT together
+with a natural transformationΦ: G → C( · , T) to the set of continuous maps toT
+satisfying properties (i) and (ii) in the previous definition with all morphisms being
+just continuous maps. It immediately follows from property(ii) that a (topological)
+coarse moduli space is unique up to unique isomorphism if it exists.
+We will mostly be concerned with the following two moduli functors associated to
+a class C ⊂ C (g) of left-invariant complex structures on the nilmanifoldM.
+• The functorF associates to a complex spaceB the set of equivalence classes
+of holomorphic families of complex nilmanifolds inC. Two familiesπ : X →
+B and π′ : X ′ → B are equivalent if there exists a biholomorphismF : X →
+X ′ such that the diagram
+(4.9)
+X X ′
+B
+F
+π π′
+commutes. To any morphism of complex spacesf : B′ → B we define the
+map F(f): F(B) → F (B′) by sending a family X → B to the pull-back
+family f ∗X → B′.
+• Thefunctor F0 associatestoacomplexspace B thesetofequivalenceclasses
+of pairs
+(π : X → B, [ϕ: M → X ]),
+where π is a holomorphic family of complex nilmanifolds inC and [ϕ: M →
+X ] is a Diff0(M)-framing of the family π. For a morphism f : B′ → B
+the map F0(f): F0(B) → F 0(B′) is given by sending the pair (X →
+B, [ϕ: M → X ]) to (f ∗X → B, [M
+ϕ
+− → X →f ∗X ]).
+Following [Mee19], we briefly recall the notion of aDiff0(M)-framing, also known
+as a Teichmüller structure (see [AC09, Section 3]), for a given family. ADiff0(M)-
+framing for a familyπ : X → B over a connected baseB is given by the isotopy class
+of a mapM → X, which is a diffeomorphism onto a fibre ofπ. Here, an isotopy is a
+smooth map H : M × [0, 1] → X such that for everyt ∈ [0, 1] the map Ht = H( · , t)
+defines a diffeomorphism of M to a fibre of π. If H is such an isotopy and both
+H0 and H1 map to the same fibre ofπ, then the diffeomorphism H −1
+1 ◦ H0 of M
+lies in Diff0(M). Now, suppose H and H ′ are isotopies with H0 = H ′
+0 = ϕ and
+such that H1 and H ′
+1 are diffeomorphisms to the same fibre ofπ. Then, H1 and
+H ′
+1 differ by the diffeomorphismH −1
+1 ◦ H ′
+1 = (H −1
+1 ◦ H0) ◦ (H −1
+0 ◦ H ′
+1) ∈ Diff0(M).
+
+=== PDF PAGE 24 ===
+24 KONSTANTIN WEHLER
+Hence, a Diff0(M)-framing gives an identification of the fibres ofπ with M, which
+is defined up to a diffeomorphism in the identity componentDiff0(M). We say that
+two families (π : X → B, [ϕ: M → X ]) and (π′ : X ′ → B, [ϕ′ : M → X ′]) with a
+Diff0(M)-framing are equivalent if there exists a biholomorphic mapF : X → X ′
+such that the above diagram (4.9) commutes and the framing[F ◦ ϕ: M → X ′]
+coincides with [ϕ′ : M → X ′].
+Remark 4.10 — After choosing a hermitian metric on a complex nilmanifoldX0 =
+(M, J0) the Kuranishi family ofX0 comes with aDiff0(M)-framing: on the product
+M ×Kur(X0) there exists the structure of a complex spaceK such that the projection
+π : K → Kur(X0) is holomorphic andπ−1(t) = (M, Jt), where Jt is the left-invariant
+complex structure corresponding to the power series solution (1.13) with respect to
+the chosen metric.
+4.3. Existence. Our first goal will be to show that the spacesM(g, Γ) and T (g)
+alwaysformatopologicalcoarsemodulispaceforthefunctors F and F0, respectively,
+when they are defined for the classC = C(g)of all complex nilmanifolds of type(g, Γ).
+This is well-known for the moduli space of complex tori, i.e., wheng is abelian (see
+[BL99, Theorem 3.2, p. 216]). By the universal property of coarse moduli spaces, this
+allows us to give some non-existence criteria for a complex moduli space depending
+on the topology ofM(g, Γ) and T (g). First, we have to construct suitable natural
+transformations Ψ: F → C( · , M(g, Γ)) and Ψ0 : F0 → C( · , T (g)). We will begin
+with the construction ofΨ.
+Let π : X → B be a family of complex nilmanifolds. Then we can define a map
+τπ : B → M (g, Γ) by mapping b ∈ B to the isomorphism class representing the
+complex nilmanifoldπ−1(b). Note that this does not give a well-defined map toC(g)
+or T (g) since the identification of the fibreπ−1(b) with a pair(M, Jb), where Jb is a
+left-invariant complex structure onM, is only defined up to diffeomorphism.
+Lemma 4.11— The map τπ is continuous.
+Proof. Let b ∈ B and denote Xb = π−1(b). Then there exists a small neigbourhood
+U of b in B and a holomorphic mapf : U → Kur(Xb) such that the restriction of
+the family π to U is equivalent to the pull-back of the Kuranishi family ofXb along
+f. After choosing a hermitian metric on Xb the Kuranishi space Kur(Xb) can be
+embedded intoC(g). By composing this embedding withf we obtain a holomorphic
+map σ : U → C (g), which depends both on the mapf and the choice of hermitian
+metric on Xb. However, after composingσ with the projection C(g) → M(g, Γ) we
+obtain a continuous mapU → M(g, Γ) independent of these choices which coincides
+with the restriction ofτπ to U. □
+We can now define the natural transformation
+Ψ: F → C( · , M(g, Γ))
+by sending a familyπ to the continuous mapτπ.
+For the construction ofΨ0 : F0 → C( · , T (g)) we consider a family of complex
+nilmanifolds (π : X → B, [ϕ: M → X ]) with a Diff0(M)-framing. For each b ∈ B
+the framing yields an identification of the fibreπ−1(b) with a complex nilmanifold
+(M, Jb), defined up to an element ofDiff0(M). Hence, sendingb ∈ B to the class of
+Jb in T (g) defines a map
+(4.12) τπ,[ϕ] : B → T (g),
+
+=== PDF PAGE 25 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 25
+which depends on the framing[ϕ: M → X ] of the family. As in Lemma 4.11 one
+shows that the mapτπ,[ϕ] : B → T (g) is continuous and we can define the natural
+transformation
+Ψ0 : F0 → C( · , T (g))
+by associating to a pair(π : X → B, [ϕ: M → X ]) the continuous mapτπ,[ϕ].
+Remark 4.13 — In [Rol09b, Section 2.2] Rollenske constructs a family over the com-
+plex space C(g) such that the fibre overJ ∈ C(g) is the complex nilmanifold(M, J):
+consider the pull-back U(g) = ( G × U n) ×Un C(g) with respect to the projection
+(G × U n) → U n and the inclusion C(g) ,→ U n. The lattice Γ acts on U(g) from
+the left and by taking the quotient we obtain a family π : U(g, Γ) → C (g) with
+π−1(J) = ( M, J). In particular, the family π comes with a framing [ϕ] and the
+induced maps τπ : C(g) → M(g, Γ) and τπ,[ϕ] : C(g) → T (g) coincide with the projec-
+tions C(g) → M(g, Γ) and C(g) → T (g), respectively.
+The following generalises the existence of a topological coarse moduli space for
+complex tori [BL99, Theorem 3.2, p. 216] to complex nilmanifolds.
+Proposition 4.14— The topological spacesM(g, Γ) and T (g) together with the nat-
+ural transformationsΨ and Ψ0 are topological coarse moduli spaces for the functors
+F and F0, respectively.
+Proof. We begin with the functorF. For a pointp the map
+Ψ(p): F(p) → C(p, M(g, Γ)) = M(g, Γ)
+is bijective since the equivalence of families over a point identifies biholomorphic
+complex nilmanifolds. Let T be a topological space and letΨ′ : F → C( · , T) be a
+natural transformation. To prove the second item of Definition 4.7 we have to show
+that there exists a unique continuous mapψ : M(g, Γ) → T such that the diagram
+(4.8) commutes. Consider the maps
+F(p) M(g, Γ)
+T.
+Ψ(p)
+Ψ′(p)
+Itsufficestoshowthatthemap ψ = Ψ′(p)◦Ψ(p)−1 iscontinuous. Considerthefamily
+π : U(g, Γ) → C (g) from Remark 4.13 with the associated mapτπ : C(g) → M(g, Γ).
+Evaluating the mapΨ′(C(g)): F(C(g)) → C(C(g), T) on the equivalence class of the
+family π we obtain a continuous mapτ ′
+π : C(g) → T such that ψ ◦ τπ = τ ′
+π. Since τπ
+is the quotient map this implies thatψ has to be continuous. This proves the claim
+for the functorF with the natural transformationΨ.
+For the functorF0 and a pointp the set F0(p) is the set of equivalence classes of
+pairs (X, [ϕ]), whereX isacomplexmanifoldbiholomorphictoacomplexnilmanifold
+of type(g, Γ) and [ϕ] is the isotopy class of a diffeomorphismϕ: M → X. Two pairs
+(X, [ϕ])and (X ′, [ϕ′])areequivalentifthereexistsabiholomorphism f : X → X ′ such
+that [f ◦ ϕ] = [ ϕ′]. Clearly, the associated mapΨ0(p): F0(p) → T (g) is surjective.
+Suppose Ψ0(p)(X, [ϕ]) = Ψ0(p)(X ′, [ϕ′]) and let X = (N, J) and X ′ = (N ′, J′). We
+can assume thatϕ∗J and (ϕ′)∗J ′ are left-invariant complex structures onM, so the
+assumption Ψ0(p)(X, [ϕ]) = Ψ0(p)(X ′, [ϕ′]) implies that ϕ∗J and (ϕ′)∗J ′ correspond
+to the same point inT (g) and thus there is a diffeomorphismg ∈ Diff0(M) defining
+a biholomorphism from(M, ϕ∗J) to (M, (ϕ′)∗J ′). Hence, the mapf = ϕ′ ◦ g ◦ ϕ−1 is
+
+=== PDF PAGE 26 ===
+26 KONSTANTIN WEHLER
+a biholomorphism fromX to X ′ and we have[f ◦ ϕ] = [ϕ′ ◦ g] = [ϕ′]. Therefore, the
+pairs (X, [ϕ]) and (X ′, [ϕ′]) are equivalent and the mapΨ0(p): F0(p) → T (g) is a
+bijection. To prove the second condition in Definition 4.7 one uses exactly the same
+argument as forF and the fact that the mapτπ,[ϕ] : C(g) → T (g) is just the quotient
+map. □
+Suppose there are complex structures onM(g, Γ) and T (g) such that the maps
+τπ and τπ,[ϕ] defined above are holomorphic for every familyπ and every framing[ϕ].
+Then Ψ and Ψ0 are natural transformations from F to Mor( · , M(g, Γ)) and from
+F0 to Mor( · , T (g)), respectively. If the complex structure onM(g, Γ) makes it into
+a coarse moduli space with respect to the functorF and the natural transformation
+Ψ we will simply say thatM(g, Γ) exists as a complex space. Similary, we say that
+T (g) exists as a complex space if it exists as a coarse moduli space forF0 with the
+natural transformation Ψ0.
+The following is an immediate consequence of Proposition 4.14 together with the
+universal property of coarse moduli spaces (cf. [BL99, Corollary 1.2, p.211]).
+Corollary 4.15 — If M(g, Γ), respectively T (g), is not Hausdorff, thenM(g, Γ),
+respectively T (g), does not exist as a complex space.
+We will see in Section 7 thatT (g) is not a Hausdorff space ifg is a non-abelian
+Lie algebra admitting a complex parallelisable structure (see Proposition 7.1). This
+is roughly due to the fact that the dimension of the automorphism group varies in
+the Kuranishi family of a complex parallelisable nilmanifold when it is not a complex
+torus [Rol11a, Theorem 5.1]. Generally, this jumping phenomenon of the dimension
+of the automorphism group is the major obstruction for the existence of a complex
+coarse moduli space. As in [Mee19], we define the function
+h0 : C(g) → N0, J 7→ dim H0(g0,1, g1,0).
+Recall that for a complex nilmanifoldX = (M, J) we have
+h0(J) = dim H0(g0,1, g1,0) = dim H0(X, ΘX) = dim Aut(X).
+Hence, if we considerC(g) as the space of left-invariant complex structures onM,
+then the functionh0 assigns toJ ∈ C(g) the dimension of the automorphism group of
+X. It was proved by Grauert in [Gra60] that the functionh0 is upper-semi continuous
+in holomorphic families, so in our setting we haveh0(J ′) ≤ h0(J) for all complex
+structures J ′ in a sufficiently small neighbourhood aroundJ in C(g).
+The main strategy to obtain a complex structure onT (g) is to glue Kuranishi
+spaces of the complex manifolds parametrised byT (g) to a global complex structure
+on T (g). This requires the assumption that the Kuranishi families are universal,
+which is equivalent to the functionh0 being constant, provided that the Kuranishi
+space is reduced [Wav69, Theorem 4.2].
+More precisely, for a complex nilmanifoldX = (M, J) with a fixed left-invariant
+hermitian metric we have an embeddingKur(X) ,→ C (g). So by composing this
+embedding with the projectionC(g) → T (g) we obtain a continuous map
+πX : Kur( X) → T (g).
+This map coincides with the mapτπ,[ϕ] : Kur( X) → T (g) defined in (4.12), where
+π : K → Kur(X) is the Kuranishi family and[ϕ] is the Diff0(M)-framing described
+in Remark 4.10. The mapπX is surjective onto the germT (g)J of T (g) at the point
+corresponding to the complex structureJ since the Kuranishi family is complete. As
+
+=== PDF PAGE 27 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 27
+explained in [Cat13, Remark 14], the mapπX : Kur( X) → T (g)J is a homeomorph-
+ism if and only if it is injective, in which caseT (g) is at least locally analytic around
+the class of J. The following is a precise formulation of [Cat13, Remark 14] in our
+setting.
+Proposition 4.16— Suppose the following holds for every complex nilmanifoldX
+of type (g, Γ).
+(i) The map πX : Kur( X) → T (g) is injective.
+(ii) The Kuranishi family ofX is universal.
+If T (g) is a Hausdorff space, thenT (g) exists as a complex space.
+Proof. Let X and X ′ be complex nilmanifolds of type(g, Γ). Since πX and πX ′ are
+injective we can considerKur(X) and Kur(X ′) as subspaces of T (g). Taking the
+intersection Kur(X) ∩ Kur(X ′) in T (g) we obtain an open subset in bothKur(X)
+and Kur(X ′) where the complex structures coincide because the Kuranishi families
+of X and X ′ are universal. Therefore, the charts given by the Kuranishi spaces define
+a complex structure onT (g) and since we assumedT (g) to be Hausdorff this makes
+T (g) into a complex space.
+With respect to this complex structure onT (g) the mapsτπ,[ϕ] : B → T (g) defined
+for a family(π : X → B, [ϕ: M → X ]) with aDiff0(M)-framing are holomorphic and
+thus Ψ0 defines a natural transformation fromF0 to Mor( · , T (g)).
+Since we already proved thatT (g) is a topological coarse moduli space it suffices
+to prove the universal property for holomorphic maps. LetS be a complex space
+and let Ψ′ : F0 → Mor(·, S ) be a natural transformation. We have to show that
+for a point p the induced map ψ0 = Ψ ′(p) ◦ Ψ0(p)−1 : T (g) → S is holomorphic.
+Consider the Kuranishi familyπ : K → Kur(X) for a given complex nilmanifoldX.
+Then, byevaluatingthemaps Ψ0(Kur(X)): F0(Kur(X)) → Mor(Kur(X), T (g))and
+Ψ′(Kur(X)): F0(Kur(X)) → Mor(Kur(X), S ) on the class of the Kuranishi family
+π, we obtain a commutative diagram
+Kur(X) T (g)
+S,
+πX
+φ ψ0
+where φisholomorphicand πX isalocalbiholomorphismbyconstruction. Since T (g)
+is constructed by glueing Kuranishi spaces this implies thatψ0 is holomorphic. □
+Of course, the assumptions of Proposition 4.16 are very strong and in general
+difficult to verify. Nevertheless, we will see in Section 5 that there are several criteria
+on the Lie algebra underlyingM implying these assumptions.
+Remark 4.17 — The map πY : Kur( Y ) → T (Y ) can be defined for every compact
+complex manifold Y and has been studied for several classes of manifolds. See for
+instance [Cat13] for Calabi Yau manifolds and surfaces of general type, or [OV24,
+Section 28.3] for Hopf manifolds. The case in whichπY is a local homeomorphism is
+often referred to by the slogan Kuranishi = Teichmüller.
+The following proposition shows that there is a partial converse to the existence
+criterion given in Proposition 4.16.
+Proposition 4.18 — If T (g) exists as a complex space, then the function h0 is
+constant on the connected components ofC(g).
+
+=== PDF PAGE 28 ===
+28 KONSTANTIN WEHLER
+Proof. If T (g) exists as a complex space, then there is a complex structure onT (g)
+such that the quotient mapπ : C(g) → T (g) is holomorphic. In particular, the graph
+Graph(π) = {(J, π(J)) | J ∈ C(g)}
+of π is an analytic subspace of C(g) × T (g) [Rem57, Theorem 12]. Consider the
+holomorphic mapid ×π : C(g) × C(g) → C(g) × T (g). Then the preimage of Graph(π)
+under the mapid ×π is the subset
+R = {(J, g · J) | J ∈ C(g), g ∈ G}
+of C(g) × C(g) generated by theG-action on C(g) and since Graph(π) is analytic so
+is R. Restricting the projection C(g) × C(g) → C (g) onto the first factor toR, we
+obtain a holomorphic mapp: R → C (g) such that the fibrep−1(J) = (J, G · J) has
+the dimension of theG-orbit G · J. Since p is a holomorphic map the fibre dimension
+of p, which is just the orbit dimension, is an upper-semi continuous function onC(g)
+[Rem57, Theorem 15]. Because the dimension of the stabiliser of theG-action with
+respect to a pointJ is equal toh0(J) the dimension of the stabiliser is also upper-
+semi continuous [Gra60]. Buth0(J)+dim G · J always equals half the real dimension
+of G and since bothh0 and the orbit dimension are upper-semi continuous functions
+this implies that they are both constant on the connected components ofC(g). □
+If T (g) exists as a complex space, then the existence of a complex structure on
+M(g, Γ) depends on the properness of theAut(Γ)-action on T (g). Indeed, suppose
+Y is a complex space andΛ is a group acting properly discontinuously onY, that
+is, for any two compact subsetsK1, K2 ⊂ Y the set {λ ∈ Λ | λK1 ∩ K2 ̸= ∅} is finite.
+Then the quotientY /Λ also admits the structure of a complex space such that the
+map Y → Y /Λ is holomorphic [Car57]. Moreover, if Y is reduced or normal so is
+Y /Λ and ifY is a complex manifold and the action is also free, thenY /Λ is a complex
+manifold.
+4.4. First examples. There are two classes of complex nilmanifolds for which the
+existence of a moduli space has already been studied, namely, complex tori and so-
+called Kodaira manifolds, which are the higher-dimensional analogues of Kodaira
+surfaces. The results about complex tori go back to Kodaira and Spencer [KS58],
+while the study of moduli for Kodaira surfaces was carried out by Borcea in [Bor84],
+and later extended to Kodaira manifolds in [Gra+04]. We will briefly recall their
+results.
+4.4.1. Complex tori. Let g ∼= R2n be the abelian Lie algebra of dimension2n. Since
+every almost complex structure ong is integrable, the spaceC(g) of complex struc-
+tures on g can be viewed as the open subsetUn = {V ∈ Gr(n, gC) | V ∩ V = 0} of
+Gr(n, gC). For a fixed latticeΓ ∼= Z2n the space Un parametrises all complex tori of
+dimension n.
+Alternatively, we can describe this space by varying the lattice in the complex Lie
+group Cn: after fixing a basis of gC ∼= C2n an element V ∈ U n can be identified
+with the class of a complexn × 2n matrix A. The complex torus corresponding to
+A is X = Cn/AZ2n and the matrixA is called aperiod matrixfor X. Two matrices
+define the same complex torus if they correspond to the same element ofGr(n, C2n),
+that is, they differ by an element ofGL(n, C). Hence, the space of complex tori of
+dimension n can also be described as
+Un =
+(
+[A] ∈ Gr(n, C2n)
+ det
+A
+A
+
+̸= 0
+)
+.
+
+=== PDF PAGE 29 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 29
+The space Un has two connected components U+
+n and U −
+n given by the sign of
+det
+A
+A
+
+. As already mentioned in Section 2, a holomorphic map between com-
+plex tori is affine. Since translations by the abelian Lie groupG = R2n act trivially
+on Un, the Teichmüller space of complex tori of dimensionn is just Un. For the
+lattice Γ ∼= Z2n we have Aut(Γ) ∼= GL(2n, Z), so the moduli space of complex tori
+is the quotientUn/ GL(2n, Z), where the action of an elementM ∈ GL(2n, Z) on a
+class [A] ∈ U n is given by[AM].
+It was first observed in [KS58] that unlessn = 1 the action ofGL(2n, Z) on Un is
+not properly discontinuous, and in factUn/ GL(2n, Z) is not a Hausdorff space. In
+particular, there exists no coarse moduli space of complex tori of dimensionn for
+n ≥ 2 (cf. [BL99, Corollary 3.3, p. 216]).
+4.4.2. Kodaira manifolds.AKodairamanifoldisacomplexnilmanifoldwhoseunder-
+lying Lie algebra is isomorphic toh2k+1 ⊕ R, whereh2k+1 is the(2k + 1)-dimensional
+Heisenberg algebra. The case k = 1 corresponds to the class of Kodaira surfaces
+studied in [Bor84].
+Let g = h2k+1⊕R. Then there exists a basise1, . . . , ek, f1, . . . , fk, c, zof gsuch that
+the only non-zero brackets are[ei, fi] = c for i = 1, . . . , k. For everyσ = (σ2, . . . , σk)
+with σi ∈ {1, −1} we can define an almost complex structureJσ on g by
+Jσe1 = f1,
+Jσei = σifi, i = 2, . . . , k,
+Jσc = z.
+It was proved in [Rol09a, Proposition 3.6] thatJσ is integrable, and up to Lie algebra
+automorphism, every complex structure ong is of this form.
+Therefore, every complex structure ong preserves the centreZg = ⟨c, z⟩ and the
+filtration 0 ⊂ Z g ⊂ g defines a SPTBS ong. Hence, every Kodaira manifold with
+underlying Lie algebrag has the structure of a principal elliptic curve bundle over a
+complex torus of dimensionk.
+We begin by describing the Teichmüller spaceT (g). Let us define
+Hk =
+(
+[A] ∈ U k
+ A
+
+0 −Ik
+Ik 0
+
+AT = 0
+)
+,
+considered as a subspace of the space of complex structures on the abelian Lie algebra
+⟨e1, . . . , ek, f1, . . . , fk⟩. The connected components of the complex spaceHk are the
+subsets
+Hk,ℓ =
+(
+[A] ∈ U k
+ A
+
+0 −Ik
+Ik 0
+
+AT = 0, index
+ 
+iA
+
+0 −Ik
+Ik 0
+
+AT
+!
+= ℓ
+)
+,
+defined for ℓ = 0 , . . . , k. Here, the index is the number of negative eigenvalues.
+We will see in Section 6 that the Lie algebrag = h2k+1 ⊕ R always satisfies the
+assumptions of Proposition 4.16. Together with the results of [Gra+04, Sections 4.1-
+4.4] we obtain the following description ofT (g).
+Proposition 4.19 — The Teichmüller space T (g) exists as a complex manifold
+biholomorphic to Hk × U1. In particular, we havedim T (g) = 1
+2 k(k + 1) + 1and the
+connected components ofT (g) are of the formHk,ℓ × U ±
+1 .
+
+=== PDF PAGE 30 ===
+30 KONSTANTIN WEHLER
+The factor Hk parametrises complex tori of dimensionk appearing as the base of
+a Kodaira manifold andU1 parametrises the elliptic curves in the fibre.
+Turning to the moduli space, by [Bor84, Theorem 1] the latticesΓ in the Lie
+group G associated to g = h3 ⊕ R are classified up to isomorphism by the single
+torsion coefficient m of H1(Γ\G, Z). A representative for each isomorphism class of
+these lattices is given by the latticeΓm generated by exp(e1), exp(f1), exp(z), and
+exp( 1
+m c). So it suffices to treat the caseΓ = Γ m, and it was shown in [Bor84] that
+M(g, Γm)isbiholomorphictotheproductof Cwithapunctureddisc. Unfortunately,
+as for complex tori, a moduli space does not exist for Kodaira manifolds of higher
+dimension. Concretely, it was shown in [Gra+04] that the quotientM(h2k+1, Γ) is
+non-Hausdorff for k ≥ 2 and for every choice of latticeΓ.
+Remark 4.20 — SupposewefixanorientationforagivenKodairamanifold M = Γ\G
+with underlying Lie algebrag = h2k+1 ⊕ R. Then G = H2k+1 × R, where H2k+1 is
+a simply connected Lie group associated toh2k+1. According to [GH09, Theorem 5]
+there exists a latticeΓ′ ⊂ H2k+1 such thatΓ ∼= Γ′×Z. The automorphismidΓ′ ×− idZ
+of Γ′ × Z induces an orientation-reversing diffeomorphism of the Kodaira manifold
+M. Hence, the oriented Teichmüller spaceT +(g) has only half the connected com-
+ponents of T (g) while the oriented moduli space coincides with the unoriented one
+(cf. Remark 4.5).
+5. Period maps
+In this section we introduce two period maps. These will be our main tools for
+the study of the Teichmüller space.
+We first explain how the classical period map defined for families of Calabi–Yau
+manifolds can also be defined as a holomorphic map on a suitable reduction of the
+space of left-invariant complex structures on a given nilmanifold or holomorphic
+families thereof. We then investigate how the behaviour of this map corresponds to
+the structure of the Teichmüller space.
+Next, we introduce our second period map which depends on the choice of a stable
+principal torus bundle series on a given Lie algebra. This map is roughly defined
+by mapping a given complex nilmanifold with the structure of an iterated principal
+torus bundle to the product of complex tori appearing as the fibres of this bundle.
+We then study some basic properties of this map and explain how the two period
+maps are related.
+5.1. Period maps associated to a nilmanifold. As already mentioned in the
+introduction, the Tian–Todorov theorem (see [Tia87]) states that a Calabi–Yau
+manifold Y is unobstructed, that is, the Kuranishi spaceKur(Y ) of Y is smooth.
+Since small deformations ofY are still Calabi–Yau manifolds one can define a map
+PY : Kur( Y ) → PH n
+dR(Y, C) by sending t ∈ Kur(Y ) to the class of a trivialising
+section of the canonical bundle of the fibreYt in the Kuranishi family. This map is
+known as the local period map ofY and it was shown by Griffiths in [Gri68] that
+PY is in fact a holomorphic map. Moreover, he computed the differential ofPY at
+0 ∈ Kur(Y ) and it follows from the canonical bundle ofY being trivial together
+with Serre duality thatPY is an embedding. As a consequence, it was proved by
+Catanese that the mapπY : Kur( Y ) → T (Y ) is always injective (cf. Section 4.3).
+More generally, he proved the following criterion [Cat13, Proposition 15].
+
+=== PDF PAGE 31 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 31
+Proposition 5.1— If there exists an injective continuous mapf : Kur( X) → S to
+a Hausdorff spaceS factoring through πX, then the mapπX : Kur( X) → T (X) is a
+local homeomorphism.
+Inlight ofPropostion4.16, wewouldliketoapplythiscriteriontocomplexnilman-
+ifolds. Let X = (M, J) be a complex nilmanifold of dimensionn and of type(g, Γ).
+We have already remarked thatX will never admit a Kähler structure unless it is a
+complex torus [Has89]. However, as mentioned in Section 3, the canonical bundle of a
+complex nilmanifold can always be trivialised by a closed left-invariant form [BDV09,
+Theorem 2.7]. Since this left-invariant form is unique up to scaling by a constant
+this allows us, as in the Kähler case, to associate a complex structure inKur(X) or
+C(g) to the class of a left-invariant closed(n, 0)-form in PH n(g, C) = PH n
+dR(M, C).
+Unfortunately, unlike in the Kähler case, the Kuranishi space ofX and thus C(g)
+may not be smooth or even reduced (see Example 3.6). As explained in Example 3.8,
+this corresponds to the fact that an infinitesimal deformation ofX may no longer
+have trivial canonical bundle. So for now we only have continuous maps
+|C(g)| PH n(g, C)
+| Kur(X)|
+eP
+PX
+on the topological spaces|C(g)| and | Kur(X)| underlying C(g) and Kur(X), respect-
+ively. Both eP and PX are given by associating to a complex structureI the one-
+dimensional vector spaceH n,0(g, I) ⊂ H n(g, C) considered as a point inPH n(g, C).
+Proposition 5.2— The mapseP and PX are holomorphic on the reduction ofC(g)
+and Kur(X), respectively. Moreover, the differentials
+ker ∂ ⊃ TJ C(g)red Hom
+ 
+H n,0(g, J), Hn(g, C)/H n,0(g, J)
+
+H1(X, ΘX) ⊃ T0 Kur(X)red
+d ePJ
+(dPX)0
+are given by dePJ(η) = [ η⌟ω] = ( dPX)0([η]), where η ∈ TJ C(g)red and ω ∈ Vn g∗
+C
+generates the spaceH n,0(g, J) ⊂ PH n(g, C).
+Proof. Recall that the Plücker embeddingι: Gr( n, g∗
+C) → P (Vn g∗
+C)is a holomorphic
+embedding and letJ ∈ C (g) ⊂ Gr(n, g∗
+C). Then every formω representing the class
+ι(J) ∈ P (Vn g∗
+C) is closed by Lemma 3.2 and we have⟨ω⟩ = H n,0(g, J). Hence, ι(J)
+is contained in the subspaceP ker d ⊂ P (Vn g∗
+C) and by restrictingι to the reduction
+of C(g) we obtain an embedding C(g)red ,→ P ker d. Moreover, the form ω cannot
+be exact since ∂(Vn−1,0 g∗) = 0 . In particular, the image of C(g)red ,→ P ker d is
+contained in the domain of the projection P ker d 99K PH n(g, C). Therefore, the
+diagram
+C(g)red P ker d
+PH n(g, C)
+ι
+eP
+
+=== PDF PAGE 32 ===
+32 KONSTANTIN WEHLER
+commutes and the mapeP is holomorphic. To compute the differential ofeP, we recall
+that the differential of the Plücker embedding
+dι: g∗0,1 ⊗ g1,0 → Hom (⟨ω⟩,Vn g∗
+C/⟨ω⟩) = T⟨ω⟩P (Vn g∗
+C)
+at the point J takes an element η ∈ g∗0,1 ⊗ g1,0 to the homomorphism mapping
+ω to the class of η⌟ω in Vn g∗
+C/⟨ω⟩. Thus, the differential of eP takes η to the
+homomorphism sending[ω] ∈ H n(g, C) to [η⌟ω] ∈ H n(g, C)/⟨[ω]⟩. After choosing an
+hermitian metric onX we can considerKur(X)red as a subspace ofC(g)red such that
+PX is the restriction ofeP to Kur(X)red. Hence, PX is holomorphic on Kur(X)red
+and its differential at0 is as above. □
+Remark 5.3 — Note that the period mapeP can also be defined as a holomorphic
+map on the complex spaceC(g) ∩ P ker d, which is possibly larger than the reduction
+of C(g). Similarly, we could definePX on the complex spaceKur(X) ∩ P ker d after
+choosing an embedding Kur(X) ,→ C (g). However, for our purposes there is no
+advantage in making this distinction, so we will always work with the reduction of
+C(g) and Kur(X).
+We will refer toPX : Kur( X)red → PH n(g, C) as thelocal period mapassociated
+to X or J.
+Remark 5.4 — One could also define the local period map via the universal property
+of the Grassmannian: if the Kuranishi spaceKur(X) is smooth, then the subspaces
+H n,0(g, Jt) ⊂ H n(g, C) determine a holomorphic subbundle of the trivial bundle of
+rank bn(g) on Kur(X). By the universal property of the Grassmannian every such
+bundle is obtained as the pullback of the universal bundle onGr(1, Hn(g, C)) =
+PH n(g, C) along a uniquely determined mapKur(X) → PH n(g, C). This map coin-
+cides with the local period mapPX.
+Remark 5.5 — It was shown in [Xia22b] that under certain cohomological conditions,
+the map PY can be defined on the base of a smooth family of deformations of a (not
+necessarily Kähler) manifold Y with trivial canonical bundle. In our setting, these
+conditions translate to the equality
+Vn,1 g∗ ∩ d
+Vn g∗
+C
+
+= d
+Vn,0 g∗
+
+.
+Since d
+Vn,0 g∗
+
+= 0 this is equivalent to every∂-closed form inVn−1,1 g∗ being
+d-closed, which is a necessary condition for the Kuranishi space of a complex nil-
+manifold with underlying Lie algebrag to be reduced (see Proposition 3.4).
+To define a period map on the Teichmüller space we recall that the identity
+component Diff0(M) of the diffeomorphism group of M = Γ \G acts trivially on
+H n
+dR(M, C) ∼= H n(g, C). Again, we view the Lie groupG as a subgroup ofDiff0(M)
+by associating to g ∈ G the map Rg : M → M induced by the right-translation on
+G. Therefore, the mapeP : C(g) → PH n(g, C) descends to a map
+P : T (g) → PH n(g, C).
+We will refer toP as theglobal period mapassociated to g. In general, this map is
+just continuous sinceT (g) may not admit a complex structure. The image ofP is
+contained in the so-calledperiod domain
+D = {[α] ∈ PH n(g, C) | α ∧ α ̸= 0, [α ∧ α] = 0},
+
+=== PDF PAGE 33 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 33
+which is an open subset of a projective variety inPH n(g, C). It follows directly from
+[Bor86, Theorem B] thatP is surjective ontoD if g = R4 or g = h3 ⊕ R. However,
+the period map will generally not be surjective for nilmanifolds of higher dimension.
+In fact, by Lemma 3.2 a class inD is in the image ofP only if it has a decomposable
+representative.
+For our purposes we will be mostly interested in the question when the local or
+global period maps are injective. For instance, the mapP makes the diagram
+Kur(X) T (g)
+D
+πX
+PX
+P
+commute for every complex nilmanifoldX of type (g, Γ). So by the criterion given
+in Proposition 5.1 the map πX is a local homeomorphism if PX is injective. The
+following lemma will be used frequently throughout the text.
+Lemma 5.6— If every d-exact form inVn−1,1 g∗ is ∂-exact, then the local period
+map PX is an embedding.
+In particular, the mapPX is an embedding if the Frölicher spectral sequence ofX
+degenerates at the first page.
+Proof. Suppose ω generates the spaceVn,0 g∗. Then the contraction map
+⌟ω : V0,k g∗ ⊗ g1,0 →Vn−1,k g∗
+is an isomorphism, which descends to an isomorphism between H k(X, ΘX) and
+H n−1,k
+∂ (X). Let [η] ∈ TJ Kur(X)red ⊂ H1(X, ΘX) such that (dPX)0([η]) = 0 .
+Then there exists a form β = β1 + β2 ∈ Vn−1,0 g∗ ⊕Vn−2,1 g∗ such that dβ =
+∂β1 + ∂β2 = η⌟ω, and by our assumption ∂β2 = 0. Since the contraction map
+above is an isomorphism there exists an elementz ∈ g1,0 such that z⌟ω = β1 and
+thus 0 = η⌟ω − ∂(z⌟ω) = ( η + ∂z)⌟ω. Therefore η = −∂z, and thus the class
+[η] ∈ H1(X, ΘX) is zero. □
+In the following sections we will see several criteria for the global period map to
+be injective. We will often use the following criterion to show that the Teichmüller
+space exists as a complex space.
+Proposition 5.7 — Suppose C(g) is reduced and the fibres ofeP : C(g) → D are
+connected. If the local period mapPX is an embedding for every complex nilmanifold
+of type(g, Γ), then T (g) exists as a complex space and the global period mapP is an
+embedding.
+Proof. According to Proposition 4.16 we first have to show that for everyX the map
+πX : Kur( X) → T (g) is injective and that its Kuranishi family is universal. The
+former is implied by Proposition 5.1 since we assumedPX to be an embedding.
+Let J be a complex structure on g. If J is a reduced point in C(g), then the
+local period map PX with respect to X = ( M, J) is an embedding if and only
+if every d-exact form inVn−1,1 g∗ is already ∂-exact. Under this assumption on
+forms inVn−1,1 g∗ it was shown in [RZ18, Theorem 3.6] that the functionh0 given
+by h0(I) = dim Aut(M, I) is constant on the Kuranishi space of X. Hence, the
+Kuranishi family ofX is universal by [Wav69, Theorem 4.2].
+Since the map πX is a local homeomorphism and the local period map PX is
+injective at every point, it follows that the fibres of the global period mapP are
+
+=== PDF PAGE 34 ===
+34 KONSTANTIN WEHLER
+discrete, and because we assumed the fibres ofeP to be connected, this implies that
+P has connected and discrete fibres. Thus, the global period mapP is injective. In
+particular, the Teichmüller spaceT (g) is Hausdorff and it follows from Proposition
+4.16 that T (g) exists as a complex space such thatP is an embedding. □
+Remark 5.8 — Note that for everyJ ∈ C(g) the fibre dimension ofeP at J is equal to
+dim G · J = n − h0(J) if P is injective, and since the fibre dimension ofeP is upper-
+semi continuous onC(g), both n − h0 and h0 are upper-semi continuous. Thus, the
+function h0 is constant on the connected components ofC(g) if P is injective.
+5.2. Period maps associated to a stable torus bundle series.Throughout
+this section we fix a nilpotent Lie algebrag of dimension 2n with nilpotency index
+ν, together with a SPTBS
+0 = S0g ⊂ S 1g ⊂ S 2g ⊂ · · · ⊂ S ν−1g ⊂ S νg = g.
+Let ti = S ig/S i−1g and set 2ki = dim ti. Then, as explained in Section 1.3, for
+every lattice Γ ⊂ G in the associated simply connected Lie group, the nilmanifold
+M = Γ\G has the structure of an iterated real principal torus bundle
+M = M1 M2 · · · Mν = T 2kνπ1 π2 πν−1
+such that the fibre ofπi is a2ki-dimensional torusT 2ki with Lie algebrati. Moreover,
+for every i = 1, . . . , ν, a complex structureJ on g induces complex structuresJi on
+g/S i−1g and J i on ti. So we get a holomorphic iterated principal torus bundle
+(5.9) X = X1 X2 · · · Xν = Tν,
+π1 π2 πν−1
+where Xi = ( Mi, Ji) and with fibres Ti = ( T 2ki, Ji). Considering Uki ⊂ Gr(ki, ti
+C)
+as the space of left-invariant complex structures onT 2ki, we can associate to every
+J ∈ C (g) a tuple of complex structures(J1, . . . , Jν) ∈ U k1 × · · · × U kν. Similar to
+eP, sending a complex structureJ to the tuple(J1, . . . , Jν) defined with respect to
+S = (S ig)i=1,...,ν is initially only well-defined as a continuous map
+eP S : |C(g)| → U = Uk1 × · · · × Ukν
+because X may admit infinitesimal deformations that no longer have a torus bundle
+structure. As for the period maps defined in the previous section we have
+Proposition 5.10— The map eP S is holomorphic on the reduction ofC(g).
+Proof. Consider the set
+V =
+
+
+V ∈ Gr(n, gC)
+
+dimC(V ∩ S igC) =
+iX
+j=1
+kj for all i = 1, . . . , ν
+
+
+ .
+The set V describes a Schubert cell inGr(n, gC), so V is an open subset of a normal
+variety in Gr(n, gC) [RR85, Theorem 3]. Let us denote by pi : gC → gC/S igC the
+projection. Then we can define a holomorphic map
+V → Gr(k1, t1
+C) × Gr(k2, t2
+C) × · · · × Gr(kν, tν
+C)
+by
+V 7→
+ 
+V ∩ S1gC, p 1(V ∩ S2gC), . . . , pν−2(V ∩ S ν−1gC), p ν−1(V )
+
+.
+Since S defines a SPTBS ong, the setC(g) ⊂ Gr(n, gC) is contained inV and for a
+complex structure J the space pi(g1,0 ∩ S i−1gC) ⊂ ti
+C defines the complex structure
+
+=== PDF PAGE 35 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 35
+J i on ti. Hence, this map coincides witheP S on |C(g)| and thus it is holomorphic on
+the reduction ofC(g). □
+Remark 5.11 — As for the period map eP (see Remark 5.3) we could define eP S
+on a possibly larger complex space, but for our purposes it suffices to consider the
+reduction of C(g).
+Also, note that one may define maps similar toeP and eP S for every suitable filtra-
+tion of g compatible with every complex structure. The mapseP and eP S correspond
+to the two extremal cases of the trivial filtration and a stable principle torus bundle
+series.
+Since ti is contained in the centre ofg/S i−1g, the right-action ofG on C(g) induces
+the trivial action onUki for every i. In other words, if there exists a holomorphic
+right-translation between two complex nilmanifoldsX = (M, J) and X ′ = (M, J ′),
+then the fibre toriTi and T ′
+i with respect to the SPTBSS are the same. Therefore,
+the mapeP S descends to a map
+P S : T (g) → U .
+In the same way as above, we can define a local versionP S
+X : Kur( X)red → U of P S
+which satisfies P S
+X = P S ◦ πX.
+5.3. Relation between the period maps.Before we apply the period mapsP
+and P S to the study of our moduli spaces we briefly explain the relation between
+these maps. Fori = 1, . . . , ν,we denote by
+Zi = im
+
+ePi : C(g/S i−1g) → PH ni(g/S i−1g, C)
+
+theimageoftheperiodmapson C(g/S i−1g), where2ni = dim g/S i−1g. Inparticular,
+Zν can be identified withUkν since the Lie algebrag/S ν−1g is abelian. Our goal is
+to construct mapsτi : Zi → Zi+1 making the diagram
+C(g) C(g/S1g) . . . C(g/S ν−2g) C(g/S ν−1g)
+Z1 Z2 . . . Zν−1 Zν
+eP eP2 ePν−1 ePν
+τ1 τ2 τν−2 τν−1
+commute. We will construct these maps as follows: let ωi ∈ Vni(g/S i−1g)∗
+C be a
+representative of a class inZi corresponding to a complex structureJi on g/S i−1g
+and consider the associated map
+φωi : (g/S i−1g)C →Vni−1(g/S i−1g)∗
+C,
+which sendsx ∈ (g/S i−1g)C to the formx⌟ωi. The kernel ofφωi is exactly the space
+g0,1
+i of (0, 1)-vectors with respect toJi. Let x1, . . . , xki be a basis of the vector space
+g0,1
+i ∩ ti
+C = g1,0
+i ∩ ti
+C which determines the induced complex structure onti. Then the
+form ωi+1 = (x1 ∧ · · · ∧ xki)⌟ωi vanishes on ti
+C ⊂ (g/S i−1g)C, so we can consider it
+as an element ofVni+1(g/S ig)∗
+C and ωi+1 corresponds to the complex structureJi+1
+on g/S ig induced by Ji. Hence, the class [ωi+1] defines an element ofZi+1 and we
+have
+Lemma 5.12— The class [ωi+1] ∈ Zi+1 does not depend on the representative of
+the class [ωi] ∈ Zi nor on the chosen basis.
+
+=== PDF PAGE 36 ===
+36 KONSTANTIN WEHLER
+Proof. By the definition of a SPTBS the elementsx1, . . . , xki are contained in the
+centre of gC/S i−1gC and thus we have
+(x1 ∧ · · · ∧ xki)⌟(ωi + dβ) = ωi+1 + (−1)kid((x1 ∧ · · · ∧ xki)⌟β)
+for every β ∈Vni−1 g∗
+C. □
+Hence, we can defineτi : Zi → Zi+1 by τi([ωi]) = [ ωi+1] and the above diagram
+commutes. We immediately obtain
+Proposition 5.13 — Let J and J ′ be complex structures ong with their induced
+complex structures Ji and J ′
+i on g/S i−1g. If eP(J) = eP(J ′), then eP(Ji) = eP(J ′
+i) for
+every i = 1 , . . . , ν. In particular, the induced complex structures on the base torus
+Mν coincide.
+If one restrictseP to the (possibly empty) subset of abelian complex structures on
+g and S is the ascending central series, theneP(J) = eP(J ′) implies eP S(J) = eP S(J ′),
+that is, all the complex tori given by the bundle structure of(M, J) and (M, J ′)
+coincide. However, as the following example will show, this is generally not the case.
+Example 5.14— Let X = I × E be the product of the Iwasawa manifoldI with
+an elliptic curveE. Then there is basisω1, . . . , ω4 of left-invariant(1, 0)-forms on X
+with structure equations
+dω1 = dω2 = dω3 = 0, dω 4 = ω12,
+and the ascending central series on the underlying real Lie algebra providesX with
+the structure of a principal bundle over a complex 2-torusT2 whose fibre is a complex
+2-torus T1. If z1, . . . , z4 denotes the dual basis, then the class ofω3 ⊗ z4 defines an
+element of H1(X, ΘX). For small t ∈ C the forms tω3 ⊗ z4 define a one-parameter
+family {Jt} of deformations of the complex structureJ = J0 on X, deforming only
+the fibre torus T1. So the complex nilmanifolds Xt with complex structure Jt are
+still 2-torus bundles overT2 but the fibre tori are different fromT1. Nevertheless, we
+still have
+eP(Jt) = [ω123 ∧ (ω4 + tω3)] = [ω1234 + tdω34¯3] = [ω1234] = eP(J).
+
+=== PDF PAGE 37 ===
+Part II: Applications
+In the following sections we will study the behaviour of the previously introduced
+period maps and the Teichmüller spaces for several classes of nilmanifolds.
+6. Torus bundles over tori
+In this section, we are concerned with the Teichmüller spaces for principal torus
+bundles over a torus. We first recall some results on deformations of holomorphic
+principal torus bundles.
+6.1. Deformations of principal torus bundles.Let π : X → Y be a principal
+torus bundle with fibreT, where both X and Y are complex nilmanifolds. Let us
+denote by g, t ⊂ g, and b = g/t the underlying real Lie algebras ofX, T, and Y,
+respectively. The aim of this section is to study the spaceH1(X, ΘX) of infinitesimal
+deformations ofX and to discuss how small deformations ofX relate to deformations
+of T and Y.
+In [Höf93] Höfer studied the more general situation of small deformations of holo-
+morphic principal torus bundles over compact complex manifolds. We start by re-
+calling his results for the bundleπ : X → Y. Following the notation of [Höf93], the
+d2-differential of the Borel spectral sequence forπ induces homomorphisms
+γ : H1,0
+∂ (T ) → H1,1
+∂ (Y ), ε : H0,1
+∂ (T ) → H0,2
+∂ (Y ).
+In our setting these maps can be described as follows: consider the decomposition of
+the complexifications bC = b1,0 ⊕ b0,1 and tC = t1,0 ⊕ t0,1 given by the left-invariant
+complexstructureson Y and T. Then, asexplainedinSection1.5, wehave H1,0
+∂ (T ) =
+t∗1,0, H0,1
+∂ (T ) = t∗0,1 and the cohomology groups H p,q
+∂ (Y ) are computed by the
+complex (Vp,• b∗, ∂). After choosing a basis of g1,0 compatible with the filtration
+0 ⊂ t1,0 ⊂ g1,0 and taking its dual we can identifyt∗1,0 with a subspace of g∗1,0.
+Restricting ∂ on g∗1,0 to t∗1,0 we get a map∂ : t∗1,0 → ker
+
+∂ : V1,1 b∗ →V1,2 b∗
+
+by identifyingb∗ with Ann t ⊂ g∗. This map does not depend on the choice of basis
+and we have the commutative diagram
+H1,0
+∂ (T ) = t∗1,0 ker
+
+∂ : V1,1 b∗ →V1,2 b∗
+
+H1,1
+∂ (Y ).
+∂
+γ
+37
+
+=== PDF PAGE 38 ===
+38 KONSTANTIN WEHLER
+Similarly, the mapε is given by the restriction of∂ to t∗0,1. The mapsγ, ε and their
+duals induce the following maps (for more details, see [Höf93, Section 14]):
+ε ⊗ id: H0,1
+∂ (T ) ⊗ t1,0 → H0,2
+∂ (Y ) ⊗ t1,0,
+γ1 : H0(Y, ΘY ) → H0,1
+∂ (Y ) ⊗ t1,0,
+γ2 : H1(Y, ΘY ) → H0,2
+∂ (Y ) ⊗ t1,0,
+γ3 : H0,1
+∂ (T ) ⊗ H0(Y, ΘY ) → H2(Y, ΘY ),
+and
+γ4 = γ1 ⊗ id: H0(Y, ΘY ) ⊗ H0,1
+∂ (T ) → H0,1
+∂ (Y ) ⊗ t1,0 ⊗ H0,1
+∂ (T ).
+As in [Höf93] we denote AF = ker( ε ⊗ id), AT = coker γ1, AP = ker γ2 and
+AD = ker γ3 ∩ ker γ4. We collect the results of [Höf93, Section 14] in the follow-
+ing proposition.
+Proposition 6.1— The space H1(X, ΘX) admits a decomposition
+H1(X, ΘX) ∼= AF ⊕ AT ⊕ AP ⊕ AD,
+where
+(i) the space AF parametrises deformations of the fibre torusT,
+(ii) the space AT parametrises deformations ofX preserving both Y and T,
+(iii) the space AP parametrises deformations of the baseY while preserving the
+bundle structure,
+(iv) the space AD parametrises deformations destroying the bundle structure.
+The decomposition given in Proposition 6.1 was also considered in [Suw79] in a
+more general setup, where it was shown that the infinitesimal deformations inAT
+are always unobstructed. In our setting this is easily verified since the spacet1,0
+is contained in the centre ofgC and thus the Schouten bracket of two elements in
+AT vanishes. By the same argument the infinitesimal deformations inAF are also
+unobstructed. Since the deformations parametrised byAT do not change the fibre
+or the base of π : X → Y but only the bundle structure, they are called thetwist
+deformations of π.
+6.2. Period maps and the Teichmüller space.Due to the existence of twist
+deformations, the period map P S associated to a SPTBS S will almost never be
+injective. Our first goal is to give a precise characterisation of2-step nilpotent Lie
+algebras for whichP S is injective and to deduce some criteria for the injectivity of
+P. This allows us construct the Teichmüller space as a complex manifold for certain
+2-step nilpotent Lie algebras.
+Let us fix a2-step nilpotent Lie algebrag of dimension2n and letM be a nilman-
+ifold with underlying Lie algebrag. Suppose we have a complex structureJ on g
+admitting a (not necessarily stable) principal torus bundle series0 ⊂ t ⊂ g of length
+2. Hence, the complex nilmanifoldX = (M, J) has the structure of a holomorphic
+principal torus bundleπ : X → Y over a complex torusY with fibreT. Consider the
+decomposition
+H1(X, ΘX) = AF ⊕ AT ⊕ AP ⊕ AD
+given in Proposition 6.1. We are particularly interested in the case where the fibre
+T is an elliptic curve.
+
+=== PDF PAGE 39 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 39
+Proposition 6.2— The space of twist deformationsAT of the bundle π : X → Y
+is trivial if and only ifdim Aut(X) = 1. In this case, the fibreT is an elliptic curve
+and X has the following properties.
+(i) We havedim H1(X, ΘX) = dim(AF ⊕ AP ) = 1
+2 n(n − 1) + 1.
+(ii) The Kuranishi family ofX is smooth and universal.
+(iii) The local period mapPX is an embedding.
+Proof. Since J preserves the filtration 0 ⊂ t ⊂ g where dim t = 2 k, there exists
+a basis ω1, . . . , ωn−k, ωn−k+1, . . . , ωn of g∗1,0 compatible with this filtration. So we
+have
+t∗
+C ∼= t∗1,0 ⊕ t∗0,1 = ⟨ωn−k+1, . . . , ωn⟩ ⊕ ⟨ωn−k+1, . . . ,ωn⟩
+and we denote
+b∗
+C = b∗1,0 ⊕ b∗0,1 = ⟨ω1, . . . , ωn−k⟩ ⊕ ⟨ω1, . . . ,ωn−k⟩.
+In particular, we getdωi = 0 for i ≤ n − k and dωi ∈V2 b∗
+C for i > n − k. Hence,
+for the basisz1, . . . , zn of g1,0 dual to ω1, . . . , ωn we have ∂zi = 0 for i > n − k and
+∂zi ∈ b∗0,1 ⊗ t1,0 for i ≤ n − k. Recall from Section 6.1 that
+AT = coker
+ 
+∂ : b1,0 → b∗0,1 ⊗ t1,0
+.
+Therefore, AT = 0 is equivalent to the map ∂ : b1,0 → b∗0,1 ⊗ t1,0 being surject-
+ive. Hence, t1,0 has to be one-dimensional and the map is an isomorphism. Since
+dim Aut(X) = dim ker
+ 
+∂ : g1,0 → g∗0,1 ⊗ g1,0
+this is equivalent todim Aut(X) = 1.
+From now on we will assume thatAT = 0, or equivalentlydim Aut(X) = 1. Hence,
+we havek = 1 and thus t∗1,0 = ⟨ωn⟩ and t1,0 = ⟨zn⟩ because dim t1,0 ≤ dim Aut(X).
+For the first item, it follows from the assumptionAT = 0 that the dimension of
+H1(X, ΘX) equals the dimension ofAF ⊕ AP ⊕ AD, where
+AF ⊕ AP = ker
+
+∂ : (b∗0,1 ⊗ b1,0) ⊕ (t∗0,1 ⊗ t1,0) →V2 b∗0,1 ⊗ t1,0
+
+and
+AD = ker
+
+∂ : t∗0,1 ⊗ b1,0 → (V2 b∗0,1 ⊗ b1,0) ⊕ (t∗0,1 ⊗ b∗0,1 ⊗ t1,0)
+
+.
+We first observe thatAD = 0 since the mapid ⊗∂ : t∗0,1 ⊗ b1,0 → t∗0,1 ⊗ b∗0,1 ⊗ t1,0
+is an isomorphism ifAT = 0. Moreover, the map ∂ : b∗0,1 ⊗ b1,0 →V2 b∗0,1 ⊗ t1,0
+is surjective if AT = 0 since ∂ vanishes on b∗0,1 and ∂ : b1,0 → b∗0,1 ⊗ t1,0 is an
+isomorphism. Therefore, we have
+dim H1(X, ΘX) = dim(AF ⊕ AP ) = (n − 1)2 + 1 −
+n − 1
+2
+
+= 1
+2 n(n − 1) + 1.
+For the second item it suffices to show thatKur(X) is smooth since the function
+h0 is constant on Kur(X) by the assumption h0(J) = dim Aut(X) = 1 . It then
+follows from Wavrik’s criterion that the Kuranishi family is universal [Wav69]. We
+will again use the fact that the map∂ : b∗0,1 ⊗ b1,0 →V2 b∗0,1 ⊗ t1,0 is surjective. Let
+ϕ be a representative of a class inH1(X, ΘX) = AF ⊕ AP. Then we can assume that
+ϕ = ϕF + ϕP, where ϕF ∈ t∗0,1 ⊗ t1,0 and ϕP ∈ b∗0,1 ⊗ b1,0. Computing the Schouten
+bracket [ϕ, ϕ] yields
+[ϕ, ϕ] = [ϕF , ϕF ] + [ϕP , ϕP ] + 2[ϕF , ϕP ] = [ϕP , ϕP ] + 2[ϕF , ϕP ] ∈V2 b∗0,1 ⊗ t1,0.
+Therefore, we have[ϕ, ϕ] ∈ im
+
+∂ : b∗0,1 ⊗ b1,0 →V2 b∗0,1 ⊗ t1,0
+
+. Since the Schouten
+bracket of two elements inb∗0,1 ⊗b1,0 is also always contained inV2 b∗0,1 ⊗t1,0 ⊂ im ∂
+
+=== PDF PAGE 40 ===
+40 KONSTANTIN WEHLER
+this allows us to construct for everyϕ a solution to the system of equations (1.12)
+given by the Maurer–Cartan equation.
+Finally, it remains to show that the local period mapPX : Kur( X) → D is an
+embedding. By Lemma 5.6 we can equivalently show that every d-exact form inVn−1,1 g∗ is ∂-exact. Concretely, we will prove that everyd-exact form inVn−1,1 g∗
+is contained in the subspaceVn−1,1 b∗ ⊂Vn−1,1 g∗. Since dim Aut(X) = 1, the map
+∂ : Vn−1,0 g∗ → Vn−1,1 b∗ has rank n − 1, and thus it is surjective. Hence, every
+form inVn−1,1 b∗ is ∂-exact.
+Let α ∈ Vn−1,1 g∗ and let β ∈ Vn−1 g∗
+C such that dβ = α. The vector spaceVn−1 g∗
+C can be decomposed into
+Vn−1 b∗
+C ⊕
+Vn−2 b∗
+C ⊗ t∗1,0
+
+⊕
+Vn−2 b∗
+C ⊗ t∗0,1
+
+⊕
+Vn−3 b∗
+C ⊗ t∗1,0 ⊗ t∗0,1
+
+,
+so β can be written asβ = β0 + β1,0 + β0,1 + β1,1. Since every form inb∗
+C is closed,
+the form β0 is closed, and both dβ1,0 and dβ0,1 are contained inVn−1,1 b∗. So it
+remains to treatdβ1,1. We can writeβ1,1 = γ ∧ ωn ∧ ωn for some γ ∈Vn−3 b∗
+C, and
+by assumption dβ1,1 ∈Vn−1,1 g∗, so we have
+dβ1,1 = (−1)n−3γ ∧ (∂ω n ∧ ωn − ωn ∧ ∂ωn).
+Let q be the largest index such that the(p, q)-part γp,q of γ is non-zero withp + q =
+n − 3. Then, γp,q ∧ ωn ∧ ∂ωn has to be zero, which is equivalent toγp,q ∧ ∂ωn = 0.
+Writing ∂ωn =Pn−1
+i=1 βi∧ωi with βi ∈ b∗1,0, we get∂zi = β
+i
+⊗zn for the dualzi ∈ b1,0
+of ωi. Again, sincedim Aut(X) = 1, the map∂ : b1,0 → b∗0,1 ⊗⟨zn⟩ is an isomorphism
+and thus the formsβ1, . . . , βn−1 are a basis ofb∗1,0. Therefore, the formγp,q ∧ ∂ωn
+is zero if and only ifγp,q = 0. Since q was chosen as the largest index withγp,q ̸= 0,
+this implies thatγ = 0. Hence, dβ1,1 = 0, and thusα = d(β1,0 + dβ0,1) ∈Vn−1,1 b∗
+is ∂-exact. This concludes the proof. □
+Suppose the principal torus bundle seriesS = (0 ⊂ t ⊂ g) is stable, and consider
+the associated period map P S : T (g) → U . We saw in Example 5.14 that there is
+usually no relation between the period mapsP and P S. However, we have
+Lemma 6.3 — Let J, J′ ∈ C (g) such that eP(J) = eP(J ′). If dimR t = 2, then
+eP S(J) = eP S(J ′).
+Proof. As in the proof of Proposition 6.2 we have a basisω1, . . . , ωn of (1, 0)-forms
+with respect to J such that the only non-closed form isωn since dim t = 2. Let
+ω = ω1 ∧ · · · ∧ ωn and let ω′ ∈Vn g∗
+C be a representative of the classeP(J ′) ∈ D.
+If eP(J) = eP(J ′), then we can assume that ω′ = ω + dβ for some β ∈ Vn−1 g∗
+C.
+Moreover, it follows from Proposition 5.13, thatJ and J ′ induce the same complex
+structure on g/t. So we may assume that ω′ = ω1 ∧ · · · ∧ ωn−1 ∧ (ωn + α) with
+α = Pn
+i=1 λiωi. To show that eP S(J) = eP S(J ′) it suffices to show that λn = 0.
+Seeking a contradiction, suppose thatλn ̸= 0. Then the formλnω1 ∧ · · · ∧ωn−1 ∧ ωn
+appears as a summand of the formdβ. Since dωi = 0 for i < n this implies that
+β has a summand of the formγ ∧ ωn ∧ ωn, where γ ∈Vn−3,0 g∗ with respect to J.
+From here, one derives a contradiction using the same argument as for the injectivity
+of the local period map in the proof of Proposition 6.2. □
+Lemma 6.4— For every complex structureJ on g we have (eP S)−1(eP S(J)) = G · J
+if and only ifh0(J) = 1. In particular, we have(eP)−1(eP(J)) = G · J if h0(J) = 1.
+
+=== PDF PAGE 41 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 41
+Proof. Since g is 2-step nilpotent we have (eP S)−1(eP S(J)) = G · J if and only if
+the space of twist deformationsAT associated the torus bundle given byJ and S
+is trivial. By Proposition 6.2 this is equivalent toh0(J) = 1 . If h0(J) = 1 , then
+dim t = 2 and by Lemma 6.3 we haveG · J ⊂ (eP)−1(eP(J)) ⊂ (eP S)−1(eP S(J)) = G · J
+and thus(eP)−1(eP(J)) = G · J □
+We can now prove the main result of this section.
+Theorem 6.5 — Let g be a 2-step nilpotent Lie algebra of dimension2n with a
+SPTBS S of length 2. If dim Aut(X) = 1 for every complex nilmanifoldX of type
+(g, Γ), then the following holds.
+(i) The period maps P S : T (g) → U and P : T (g) → D are both injective.
+Moreover, the mapP S is injective only ifdim Aut(X) = 1 for every complex
+nilmanifold X of type (g, Γ).
+(ii) The spaceC(g) is a complex manifold of dimension1
+2 n(n+1) and the Teich-
+müller spaceT (g) exists as a complex manifold of dimension1
+2 n(n − 1) + 1.
+Proof. The first item follows directly from Lemma 6.4. By Proposition 6.2 the Kur-
+anishi space of every complex nilmanifoldX of type(g, Γ)is smooth and of dimension
+1
+2 n(n −1)+1. Hence, it follows from Proposition 3.7 thatC(g) is a complex manifold
+of dimension
+dim Kur(X) + (n − dim Aut(X)) = 1
+2 n(n − 1) + 1 + (n − 1) = 1
+2 n(n + 1).
+Since P is injective the Teichmüller spaceT (g) is Hausdorff, and becausePX is also
+an embedding for everyX by Proposition 6.2, it follows from Propositions 4.16 and
+5.7 thatT (g) exists as a complex space compatible with the Kuranishi charts. Again,
+since Kur(X) is smooth and of dimension 1
+2 n(n − 1) + 1 for every X, this implies
+that T (g) is a complex manifold of the same dimension. □
+Remark 6.6 — It follows directly from the description given in Section 4.4.2 that
+every Kodaira manifoldX satisfies dim Aut(X) = 1. Hence, Theorem 6.5 describes
+the Teichmüller space for the Lie algebrash2k+1 ⊕ R. In Section 10 we will see that
+starting in dimension six there are several Lie algebras not of this form satisfying
+the assumptions of Theorem 6.5. We will also see in Section 9 that the condition
+dim Aut(X) = 1 is not necessary for the period mapP to be injective.
+In light of the previous theorem, it is natural to consider the space
+C1(g) = {J ∈ C(g) | h0(J) = 1}.
+Since h0 is always at least 1 this defines an open subset ofC(g), which is dense on
+the connected components ofC(g) intersecting C1(g). Note that C1(g) can only be
+non-empty if dim t = 2. If X = (M, J) is a complex nilmanifold of type(g, Γ) with
+complex structureJ ∈ C1(g), then every complex structure parametrised byKur(X)
+is also contained in C1(g). Hence, the image of the map πX : Kur( X) → T (g) is
+contained in the open subset
+T1(g) = {[J] ∈ T (g) | h0(J) = 1} ⊂ T (g).
+Similar to T (g), the space T1(g) can be constructed as a topological coarse moduli
+space for framed complex nilmanifolds of type (g, Γ) with one-dimensional auto-
+morphism group, and with the same argument as in Theorem 6.5 one shows
+Proposition 6.7 — If g admits a stable principal torus bundle series of length 2,
+then T1(g) is a complex manifold andP embeds T1(g) into PH n(g, C).
+
+=== PDF PAGE 42 ===
+42 KONSTANTIN WEHLER
+The space T1(g) will play an important role in the subsequent sections.
+Example 6.8— As in the Examples 3.6 and 3.8 we consider the real Lie algebra
+h underlying the Iwasawa manifold. It follows from the description ofC(h) given in
+[KS04] that every connected component ofC(h)admits a complex structure with one-
+dimensional automorphism group, so by the previous proposition the global period
+map P is at least generically injective on the Teichmüller space of the Iwasawa
+manifold. As we will see in the next section, this is the best one can hope for if the
+Lie algebra admits complex parallelisable structures.
+7. Nilmanifolds with complex parallelisable structures
+Let g be a non-abelian nilpotent Lie algebra. We denote the space of complex
+parallelisable structures ong by Cpar(g). Recall that a complex structureJ on g is
+complex parallelisable if and only if[g1,0, g0,1] = 0. Therefore, the spaceCpar(g) is a
+closed subset ofC(g) and we can identify
+Cpar(g) = {V ∈ C(g) | [V, V ] = 0}.
+It follows from the results of [Win98, Chapter 5] or Theorem 2.1, that if two complex
+parallelisable nilmanifolds of type (g, Γ) are biholomorphic via a biholomorphism
+smoothly isotopic to the identity, then these manifolds are the same. So the complex
+space Cpar(g)is already the Teichmüller space for complex parallelisable structures on
+g. In particular,Cpar(g) can be embedded as a subspace ofT (g), but this embedding
+is usually not well-behaved.
+Proposition 7.1— The spaceT (g) is not locally Hausdorff at any point represent-
+ing a complex parallelisable structure.
+Proof. Let J be a complex parallelisable structure ong. To show thatT (g) is not
+locally Hausdorff at the pointJ ∈ T (g) we start by constructing a one-parameter
+family {Jt} of complex parallelisable deformations ofJ. In particular, every complex
+structure Jt defines a distinct point inT (g). Then we show that for everyJt there
+exist a one-parameter family {J s
+t } of deformations of Jt such that for s ̸= 0 the
+classes of J s
+t and J s
+t′ in T (g) coincide for allt and t′. Hence, the complex structures
+in the family{Jt} are inseparable inT (g) and thus T (g) is not locally Hausdorff at
+J0 = J ∈ T (g). Since J is complex parallelisable, it preserves the descending central
+series
+0 = Cνg ⊂ C ν−1g ⊂ · · · ⊂ C 1g ⊂ g.
+So we can choose a basis ω1, . . . , ωn of g∗1,0 with dual basis z1, . . . , zn which is
+compatiblewiththisfiltration. Supposethevectors zm, . . . , zn areabasisof Cν−1g1,0.
+For allk ≥ m the differentials dωk have the form
+dωk =
+X
+i<j<k
+Ak
+ijωij.
+Then, becauseg1,0 is ν-stepnilpotent, thereexistindices iand j suchthat zj ∈ C ν−2g,
+ωi ∈ Ann(C1g1,0), and Ak
+ij is non-zero for some indicesk. Notice that for any suchk
+the elementzk is in the centre ofgC and we havedωi = 0. In particular, the element
+ωi ⊗
+
+−P
+k Ak
+ijzk
+
+is ∂-closed and its Schouten bracket vanishes. Hence, for small
+t ∈ C, we can consider the complex structuresJt on g corresponding to the direction
+tωi ⊗
+ 
+−
+X
+k
+Ak
+ijzk
+!
+∈ H1(g0,1, g1,0).
+
+=== PDF PAGE 43 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 43
+The space of (n, 0)-forms with respect to the complex structureJt is generated by
+the form
+ωt = ω1 ∧ · · · ∧ ωm−1 ∧
+ 
+ωm − tAm
+ij ωi
+∧ · · · ∧
+ 
+ωn − tAn
+ijωi
+Since the vectorP
+k Ak
+ijzk is in the centre ofgC the complex structures Jt remain
+complex parallelisable [Rol11b, Theorem 5.1]. To contruct the deformationsJ s
+t we
+consider the element
+ϕt(s) = sωi ⊗
+ 
+zi + t
+X
+k
+A
+k
+ijzk
+!
+∈ g∗0,1
+t ⊗ g1,0
+t .
+Since ωi is closed we get ∂tϕt(s) = 0 , where ∂t is taken with respect to Jt, and
+becauseP
+k Ak
+ijzk is in the centre we have[ϕt(s), ϕt(s)] = 0. Therefore, we can set
+J s
+t to be the small deformations ofJt corresponding to ϕt(s). Notice that zi is not
+contained in the centre and thus the complex structuresJ s
+t are no longer complex
+parallelisable fors ̸= 0 [Rol11b, Theorem 5.1]. We claim that the complex structures
+J s
+0 and J s
+t are isomorphic for alls and t. The formωt + ϕt(s)⌟ωt generates the space
+of (n, 0)-forms with respect to the complex structureJ s
+t. It suffices to show that
+for all s ̸= 0, the formω0 + ϕ0(s)⌟ω0 differs from ωt + ϕt(s)⌟ωt by a suitable right-
+translation. For t ∈ R, let gs,t = exp
+  t
+s zj + t
+s zj
+
+, where j is the same index as in
+the construction ofJt and ϕt(s). Then we compute
+R∗
+gs,t(ω0 + ϕ0(s)⌟ω0) = ω0 + R∗
+gs,t(ω1 ∧ · · · ∧ ωi−1 ∧ sωi ∧ ωi+1 ∧ · · · ∧ ωn)
+= ω0 + ω1 ∧ · · · ∧ sωi ∧ · · · ∧ ωm−1 ∧ R∗
+gs,t(ωm ∧ · · · ∧ ωn)
+= ω0 + ω1 ∧ · · · ∧ sωi ∧ · · · ∧ ωm−1
+∧
+
+ωm + t
+s
+X
+k<j
+Am
+kj ωk − t
+s
+X
+k>j
+Am
+jk ωk
+
+
+∧ · · · ∧
+
+ωn + t
+s
+X
+k<j
+An
+kj ωk − t
+s
+X
+k>j
+An
+jk ωk
+
+
+= ω1 ∧ · · · ∧ (ωi + sωi) ∧ · · · ∧ ωm−1
+∧
+
+ωm + t
+s Am
+ij ωi
+
+∧ · · · ∧
+
+ωn + t
+s An
+ijωi
+
+= ω1 ∧ · · · ∧ (ωi + sωi) ∧ · · · ∧ ωm−1
+∧
+ 
+ωm − tAm
+ij ωi
+∧ · · · ∧
+ 
+ωn − tAn
+ijωi
+= ωt + ϕt(s)⌟ωt
+Therefore, the classes[J s
+t ] and [J s
+t′] coincide for allt, t′ ∈ R and we can conclude that
+T (g) is not locally Hausdorff atJ. □
+Remark 7.2 — Let Xt and Xt′ be complex nilmanifolds endowed with the complex
+structures Jt and Jt′, respectively, constructed in the proof above. The deformation
+families {J s
+t } and {J s
+t′} define holomorphic families X → ∆ and X ′ → ∆ over a
+small disc ∆ ⊂ C centred at 0 such that X and X ′ are isomorphic over∆\{0}. In
+particular, the moduli spaceM(g, Γ) is also non-Hausdorff for any latticeΓ.
+In [Mee24, Definition 12.1], two manifolds admitting such families are called ana-
+lytically non-separated, which is generally stronger thanJt and Jt′ just being insep-
+arable points inT (g).
+
+=== PDF PAGE 44 ===
+44 KONSTANTIN WEHLER
+Proposition 7.1 shows in particular that the the period maps onT (g) cannot be
+injective if g is non-abelian and admits complex parallelisable structures. In fact,
+since complex tori with complex multiplication are discrete in their parameter space,
+it follows from the results of [Win98, Chapter 9] that the period map associated
+to the descending central series is often constant on the connected components of
+Cpar(g).
+If g admits complex parallelisable structures, then both the centre and the com-
+mutatorof ghavetobeeven-dimensional. Inthesimplestcase dim Zg = dim C1g = 2
+it was shown in [Rol09a, Proposition 3.8] that the filtration0 ⊂ C 1g ⊂ g defines a
+SPTBS on g. In this case, we have some control over the period maps outside of
+Cpar(g).
+Proposition 7.3 — Suppose dim Zg = dim C1g = 2 and let S = (0 ⊂ C 1g ⊂ g).
+Then the setT1(g) is dense in the union of connected components ofT (g) containing
+complex parallelisable structures.
+In particular, the period mapsP and P S are generically injective on the union of
+connected components ofT (g) containing complex parallelisable structures.
+Proof. By Lemma 6.4 it suffices to show that every connected component ofC(g)
+containing a complex parallelisable structure also contains a complex structureI
+with h0(I) = 1. Let J be a complex parallelisable structure ong. Then the com-
+plex Lie algebra g1,0 is nilpotent with dimC C1g1,0 = 1 = dim C Zg1,0. Hence, g1,0
+is isomorphic to a Heisenberg Lie algebra, sog∗1,0 has a basis ω1, . . . , ω2k+1 with
+structure equations
+dω1 = · · · = dω2k = 0, dω 2k+1 =
+kX
+j=1
+ω2j−1 ∧ ω2j.
+We will construct small deformationsJt of J with h0(Jt) = 1. Consider the element
+ϕ(t) = t
+
+
+nX
+j=1
+ω2j−1 ⊗ z2j + ω2j ⊗ z2j−1
+
+ + t2ω2k+1 ⊗ z2k+1 ∈ g∗0,1 ⊗ g1,0,
+where z1, . . . , z2k+1 denotes the dual basis toω1, . . . , ω2k+1. Then one computes that
+ϕ(t) satisfies the Maurer–Cartan equation, and we setJt as the complex structure
+corresponding to ϕ(t). According to [Xia21, Theorem 1.2], the number h0(Jt) is
+equal to the dimension of the kernel of the mapg1,0 → g∗0,1 ⊗ g1,0 given by sending
+z ∈ g1,0 to ∂z + [z, ϕ(t)]. Recall that the bracket is defined as
+[x, α ⊗ y] = x⌟dα ⊗ y − α ⊗ [x, y]
+for x, y ∈ g1,0 and α ∈ g∗0,1. Since J is complex parallelisable ∂z = 0 and for
+z =P2k+1
+i=1 λizi we compute
+[z, ϕ(t)] =
+
+
+kX
+j=1
+λ2j−1ω2j−1 − λ2jω2j
+
+ ⊗ z2k+1.
+Therefore, the kernel of this map is generated byz2k+1 and thus h0(Jt) = 1. □
+8. Lie algebras with small commutator
+In this section we will study the period maps and the Teichmüller space for nil-
+manifolds whose underlying Lie algebra has at most two-dimensional commutator.
+
+=== PDF PAGE 45 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 45
+Let g be a nilpotent Lie algebra withdim C1g ≤ 2 admitting complex structures. In
+[Rol09a, Propositions 3.6 and 3.8], Rollenske provided the following classification.
+• If dim C1g = 1, then every complex structure ong is abelian. In particular,
+the ascending central series is a SPTBS ong.
+• If dim C1g = 2 and g is 2-step nilpotent, then we have the following cases.
+(i) If dim Zg is even, then g does not admit a SPTBS in general, unless
+dim Zg = 2 in which case the ascending and descending central series
+coincide and define a SPTBS ong.
+(ii) If dim Zg is odd, then the descending central series is a SPTBS ong.
+• If g is 3-step nilpotent, then every complex structure ong is abelian, so the
+ascending central series is a SPTBS ong.
+The goal of this section is to prove the following theorem.
+Theorem 8.1 — let g be a nilpotent Lie algebra admitting complex structures. If
+dim C1g ≤ 2 and either dim Zg = 2 or dim Zg is odd, then we have the following
+cases.
+(i) If dim C1g = 1, then T (g) exists a complex manifold and the period mapP
+is an embedding.
+(ii) If g is 2-step nilpotent and dim Zg = 2 , then T (g) does not exist as a
+complex space in general, but ifT1(g) is non-empty, then T1(g) exists as a
+complex manifold andP is an embedding onT1(g).
+(iii) If g is 2-step nilpotent and dim Zg is odd, then T (g) does not exist as a
+complex space in general.
+(iv) If g is 3-step nilpotent, thenT (g) exists a complex manifold and the period
+map P is an embedding.
+The second item of Theorem 8.1 follows directly from Propositions 6.7 and 7.3
+proved in the previous sections. Note that the results in Section 7 do not cover
+the case where g has odd-dimensional centre, since such Lie algebras do not admit
+complex parallelisable structures. In Section 9 we will see many examples of such
+Lie algebras where T (g) exists as a complex manifold and the period mapP is an
+embedding, but this does not hold in general as the next example shows.
+Example 8.2— Consider the complex structureJ given by the structure equations
+dω1 = dω2 = dω3 = dω4 = 0, dω 5 = (ω1 + ω1) ∧ ω2 + ω34.
+Let h be the underlying real Lie algebra and letz1, . . . , z5 denote the basis dual to
+ω1, . . . , ω5. Then we haveC1hC = ⟨z5, z5⟩ and ZhC = ⟨z1 − z1, z5, z5⟩. According to
+Proposition 4.18,T (h)can only exist as a complex space if the functionh0 is constant
+on the connected components ofC(h). So it suffices to construct a deformationJt of
+J such that h0(Jt) < h0(J). First, we compute
+∂z1 = 0, ∂z2 = −ω1 ⊗ z5, ∂z3 = 0, ∂z4 = 0, ∂z5 = 0.
+Hence, we haveh0(J) = 4. Consider for smallt ∈ C the form
+ϕ(t) = tω3 ⊗ z3.
+Since ∂ϕ(t) = 0 and [ϕ(t), ϕ(t)] = 0 , the form ϕ(t) defines a deformation Jt of J.
+We will again use the fact thath0(Jt) equals the dimension of the kernel of the map
+h1,0 → h∗0,1 ⊗ h1,0 given by sendingz ∈ h1,0 to ∂z + [z, ϕ(t)] [Xia21, Theorem 1.2].
+
+=== PDF PAGE 46 ===
+46 KONSTANTIN WEHLER
+So we compute
+∂z1 + [z1, ϕ(t)] = 0,
+∂z2 + [z2, ϕ(t)] = −ω1 ⊗ z5,
+∂z3 + [z3, ϕ(t)] = 0,
+∂z4 + [z4, ϕ(t)] = −ω3 ⊗ [z4, z3] = ω3 ⊗ z5,
+∂z5 + [z5, ϕ(t)] = 0.
+Hence, the kernel of this map is three-dimensional and thush0(Jt) = 3 < h0(J).
+Example 8.2 proves the third item of Theorem 8.1. To complete the proof of
+Theorem 8.1 it remains to cover the cases, whereg is either 3-step nilpotent or has
+one-dimensional commutator. The latter are Lie algebras of the formh2k+1 ⊕ Rm.
+The main ingredient to show that in either of these cases the Teichmüller space exists
+as a complex manifold is the following lemma.
+Lemma 8.3— Let X be a complex nilmanifold with underlying Lie algebrag, and
+let ω1, . . . , ωn be a basis ofg∗1,0 with dωk =P
+i,j≤n Bk
+ijωi ∧ ωj. Suppose there exist
+1-forms ξ1, . . . , ξn such that the following holds.
+(i) The forms ω1, . . . , ωn, ξ1, . . . , ξn are a basis ofg∗
+C.
+(ii) We have dωk =P
+i,j≤n Bk
+ijωi ∧ ξj for all k = 1, . . . , n.
+Then the Frölicher spectral sequence ofX degenerates at the first page. In particular,
+the Kuranishi family ofX is smooth and universal, and the local period mapPX is
+an embedding.
+Proof. Consider the isomorphism φ: L
+1≤p,q≤n
+Vp,q g∗ → L
+1≤k≤n
+Vk g∗
+C given by
+φ(ωk) = ωk and φ(ωk) = ξk for k = 1, . . . , n. Then we have
+φ(∂ω k) =
+X
+i,j≤n
+Bk
+ijφ(ωi) ∧ φ(ωj) =
+X
+i,j≤n
+Bk
+ijωi ∧ ξj = dωk = dφ(ωk)
+and
+φ(∂ωk) = 0 = dξk = dφ(ωk).
+Hence, φ is an isomorphism preserving the total degrees satisfyingφ ◦ ∂ = d ◦ φ, and
+thus induces an isomorphismL
+p+q=k H p,q
+∂ (X) ∼= H k(g, C) for every k = 1 , . . . , n.
+Therefore, the Frölicher spectral sequence ofX degenerates at the first page. □
+To a apply the previous lemma in our special cases we have to understand the
+possible structure equations of complex structures on the two classes of Lie algebras
+at hand.
+Lemma 8.4— Let g be a nilpotent Lie algebra of dimension2n with dim C1g ≤ 2
+and let J be a complex structure ong.
+(i) If dim C1g = 1, then there exists a basisω1, . . . , ωn of g∗1,0 with structure
+equations
+dω1 = · · · = dωn−1, dω n =
+kX
+i=1
+σiωi ∧ ωi
+for some k < n and σi ∈ {1, −1}.
+
+=== PDF PAGE 47 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 47
+(ii) If g is 3-step nilpotent, then there exists a basisω1, . . . , ωm, . . . , ωn of g∗1,0
+with structure equations
+dωm = ω1¯1, dω n =
+X
+i,j<m
+Bijωi¯j + λBijωj¯i + (B1mω1m + λB1mωm¯1).
+for some λ ∈ C\{0} and dωk = 0 for k ̸= m, n.
+Proof. The first item follows directly from the classification of complex structures on
+Lie algebras with one-dimensional commutator proved in [Rol09a, Propostion 3.6].
+If g is 3-step nilpotent, then every complex structure ong preserves the ascending
+central series and since dim C1g = 2, the Lie algebra g/Zg of dimension 2m has
+one-dimensional commutator. Therefore, there exists a basisω1, . . . , ωm, . . . , ωn of
+g∗1,0 such that the only non-zero differentials aredωm = Pk
+i=1 σiωi ∧ ωi for some
+k < m and σi ∈ { 1, −1}. Moreover, since dim C1gC = rk
+
+d: g∗
+C →V2 g∗
+C
+
+= 2 we
+can assume that the only other non-closed form isωn with
+dωn =
+X
+i,j<n
+Bijωi ∧ ωj.
+Furthermore, we havedωn = λdωn for some λ ∈ C because dim⟨dωm, dωn, dωn⟩ =
+dim C1gC = 2 and the Lie algebragC/ZgC has one-dimensional commutator. Hence,
+we getBji = −λBij, and sinceg is 3-step nilpotent there exists an indexj such that
+the coefficient Bmj is non-zero. Therefore, we have
+0 = d2ωn = dωm ∧
+
+X
+j
+Bmjωj + ¯λBmjωj
+
+ .
+This implies that there is an indexi such that dωm = ωi¯i and Bmj = 0 for i ̸= j, so
+we may assumei = 1. □
+The following proposition completes the proof of Theorem 8.1.
+Proposition 8.5 — Let g be a nilpotent Lie algebra withdim C1g ≤ 2 admitting
+complex structures. If dim C1g = 1 or g is 3-step nilpotent, then T (g) exists as a
+complex manifold and the period mapP is an embedding.
+Proof. Let J be a complex structure ong. Let ω = ω1 ∧ · · · ∧ωn, whereω1, . . . , ωn is
+a basis ofg∗1,0 with structure equations as in Lemma 8.4. We will prove the claim by
+verifying the assumptions of the criterion given in Proposition 5.7 for the Lie algebra
+g. Using Lemma 8.4 we will first show that both cases satisfy the assumption of
+Lemma 8.3, so it remains to show that the period mapeP has connected fibres. We
+will treat the two cases separately.
+Case 1: dim C1g = 1. Applying Lemma 8.3 for ξk = ωk, we get that C(g) is
+smooth, and PX is an embedding for every complex nilmanifoldX with underlying
+Lie algebrag. So in order to apply Proposition 5.7 it remains to show that the fibres
+of the period mapeP are connected. Since every complex structure ongis abelian, the
+ascending central seriesZ defines a SPTBS ong and it follows from Proposition 5.13
+that eP(eP −1(J)) ⊂ (eP Z)−1(eP Z(J)). Hence, every complex structure in the fibre
+eP(eP −1(J)) admits a basis of(1, 0)-forms of the formω1, . . . , ωn−1, ωn + α with α ∈
+⟨ω1, . . . ,ωk⟩. Conversely, every choice of such a basis determines a complex structure
+
+=== PDF PAGE 48 ===
+48 KONSTANTIN WEHLER
+in the fibreeP(eP −1(J)). Indeed, ifα =Pk
+i=1 λiωi and β =Pk
+i=1(−1)kλiω1 ∧ . . .cωk ∧
+· · · ∧ ωn−1 ∧ ωn, then
+ω + dβ = ω1 ∧ · · · ∧ ωn−1 ∧ (ωn + α).
+Therefore, the fibreeP(eP −1(J)) is connected and Proposition 5.7 concludes this case.
+Case 2: g is 3-step nilpotent. Again, we can apply Lemma 8.3 with
+ξk =
+(
+ωk + ωk k = 1, m, n
+ωk else
+to conclude thatC(g)is smooth andPX is always an embedding. Since every complex
+structure on g is abelian, the quotient map g → g/Zg induces a map T (g) →
+T (g/Zg). The Lie algebrag/Zg has one-dimensional commutator. So by the same
+computation as in the previous case the fibreeP(eP −1(J)) is connected. Hence, it
+follows from Proposition 5.7 that T (g) exists as a complex manifold andP is an
+embedding. □
+Proof of Theorem 8.1.As explained above, Theorem 8.1 now follows from Proposi-
+tions 6.7 and 7.3 together with Example 8.2 and Proposition 8.5. □
+9. Almost abelian nilmanifolds
+The goal of this section is to describe the Teichmüller spaces for almost abelian
+nilmanifolds.
+9.1. Almost abelian complex nilmanifolds.An almost abelian Lie algebra is a
+non-abelian Lie algebra admitting an abelian ideal of codimension one. An almost
+abelian (complex) nilmanifold is a (complex) nilmanifold whose underlying Lie al-
+gebra is almost abelian. Following [And+26], we will briefly set up the notation used
+throughout this section.
+Let g be a nilpotent almost abelian Lie algebra of dimension2n + 2and let a ⊂ g
+be an abelian ideal of codimension one. Choose e0 ̸∈ a and let A be the matrix
+representing the mapade0 : a → a with respect to a chosen basis ofa. Then the Lie
+algebra g can be written as the semi-direct product
+gA = ⟨e0⟩ ⋉A R2n+1,
+and it was shown in [Fre12] that two such Lie algebras are isomorphic if and only if
+their corresponding matrices are conjugate. Thus, the partition of2n+1 given by the
+Jordan normal form of the nilpotent matrixA uniquely determines the isomorphism
+type of gA.
+In terms of this partition, there is a complete description of nilpotent almost
+abelian Lie algebras admitting a complex structure. Concretely, it was shown in
+[Arr+25, Theorem 4.10] that a (2n + 2)-dimensional nilpotent almost abelian Lie
+algebra gA admits a complex structure if and only if there exists an indexj ∈ N and
+a partition
+n =
+X
+i>0
+pi · i,
+
+=== PDF PAGE 49 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 49
+such that the partition of2n + 1 given by the Jordan normal form ofA is
+2n + 1 =
+
+
+
+X
+i>0
+i̸=j, j−1
+2pi · i + (2pj + 1) · j + (2pj−1 − 1) · (j − 1), if j > 1,
+X
+i>1
+2pi · i + (2p1 + 1) · 1, if j = 1.
+Throughout this section we also set
+(9.1) ε =
+(
+1, if j > 1,
+0, if j = 1.
+9.2. Period maps and Teichmüller spaces.Let g = gA be an almost abelian Lie
+algebra of dimension2n + 2admitting complex structures. Our first goal is to show
+that we can apply Proposition 5.7 to prove thatT (g) always exists as a complex
+manifold, so we need the following lemma.
+Lemma 9.2— The fibres ofeP : C(g) → D are connected.
+Proof. Let J be a complex structure ong. We will describe the fibreeP −1(eP(J)).
+According to [And+26, Corollary 3.13] there exists a basis
+α, β0
+1, . . . , β0
+k0, . . . , βr
+1, . . . , βr
+kr
+of g∗1,0 such that its dual basisz, y0
+1, . . . , y1
+k0, . . . , yr
+1, . . . , yr
+kr satisfies the following
+bracket relations
+[z, z] = −ε(y0
+1 − y0
+1),
+[yℓ
+i , z] = yℓ
+i+1, [yℓ
+i, z] = yℓ
+i+1,
+[yℓ
+i , z] = yℓ
+i+1, [yℓ
+i, z] = yℓ
+i+1.
+(9.3)
+with ε as in (9.1). SupposeJ ′ is another complex structure ong with eP(J) = eP(J ′).
+If ω = α ∧ β1
+0 ∧ · · · ∧ βr
+kr and ω′ is a representative of the classeP(J ′), then we can
+assume ω′ = ω + dγ for some γ ∈Vn g∗
+C. Since dγ does not have a(n + 1, 0)-part
+with respect toJ, we have
+ω′ = (α + ν) ∧ (β0
+1 + ν0
+1) ∧ · · · ∧ (βr
+kr + νr
+kr),
+where ν, νℓ
+i ∈ g∗0,1. It follows from the structure equations that we can write
+dγ = (α + α) ∧ η1 + α ∧ α ∧ η2
+for some ηi ∈Vn+1−i⟨β0
+1, . . . , βr
+kr , β
+0
+1, . . . ,β
+r
+kr ⟩. Note that the coefficient of α in ν
+cannot be 1 since this would imply thatω′ ∧ ω′ = 0. Therefore, we have
+ω′ = ω + α ∧ α ∧ η2
+and thus we can assume νℓ
+i = λℓ
+iα for some λℓ
+i ∈ C and ν = 0. Moreover, the
+coefficients λℓ
+1 have to be0 for all ℓ > 0: if λℓ
+1 were to be non-zero for someℓ, then
+the form ω′ would have a summand of the formλℓ
+1α ∧ α ∧ ((z ∧ z ∧ yℓ
+1)⌟ω), but again
+the structure equations imply that no exact(n + 1)-form can have such a summand.
+Let us denote
+V = ⟨y0
+1, . . . , y0
+k0, y1
+2, . . . , y1
+k1, . . . , yr
+2, . . . , yr
+kr ⟩ ⊂ g1,0.
+
+=== PDF PAGE 50 ===
+50 KONSTANTIN WEHLER
+Then the class[ω′] ∈ P
+Vn+1 g∗
+C
+
+is contained in the connected subset
+R = {[ω + η⌟ω] | η ∈ ⟨α⟩ ⊗ V } ⊂ P
+Vn+1 g∗
+C
+
+.
+So it remains to see that every element ofR determines a complex structure ong con-
+tained ineP −1(eP(J)). The bracket relations of the basisz, y0
+1, . . . , y1
+k0, . . . , yr
+1, . . . , yr
+kr
+given in (9.3) imply that∂z = α ⊗ y0
+1 and ∂y ℓ
+i = α ⊗ yℓ
+i+1. Thus, we have
+⟨α⟩ ⊗ V = im
+ 
+∂ : g1,0 → g∗0,1 ⊗ g1,0
+.
+Hence, every element[ω + η⌟ω] ∈ R can be written as
+[ω + η⌟ω] = [ω + (∂x)⌟ω] = [ω + ∂(x⌟ω)] = [ω + d(x⌟ω)]
+for some x ∈ g1,0. Here the second to last equality comes from the general formula
+∂(x⌟ω) = x⌟(∂ω) + (∂x)⌟ω [Xia22a, Lemma 2.4 (1)] and the fact that ∂ω = 0.
+Therefore, the fibreeP −1(eP(J)) = R is connected. □
+We can now prove the main result of this section.
+Theorem 9.4— The Teichmüller spaceT (g) exists as a complex manifold and the
+period map P : T (g) → D is an embedding.
+Proof. Let X = (Γ \G, J) be an almost abelian complex nilmanifold. By Theorem
+[And+26, Theorem 1.2] the Kuranishi space ofX is a smooth universal deformation
+space. Moreover, the Frölicher spectral sequence of X degenerates at the first page
+[And+26, Theorem 1.1], so Lemma 5.6 implies that the local period mapPX is an
+embedding. Now, Lemma 9.2 allows us to apply Proposition 5.7 to conclude that
+T (g) exists as a complex manifold and the period mapP is an embedding. □
+Remark 9.5 — The dimension ofT (g) equals dim Kur(X) = dim H n−1,1
+∂ (X) for any
+almost abelian complex nilmanifoldX of type (g, Γ), which can be computed with
+the combinatorial formula given in [And+26, Proposition 4.11].
+Next, we study the period map associated to the filtration
+(9.6) 0 ⊂ Z g = Z1g ⊂ · · · ⊂ Z j−1g ⊂ Z j−1g + Cν−jg ⊂ · · · ⊂ Z j−1g + C1g ⊂ g,
+where ν is the nilpotency index ofg = gA and j ∈ N is defined as in Section 9.1. It
+was shown in [And+26, Corollary 3.15] that this filtration, which we will denote by
+S = (S ig)i=1,...,ν, defines a SPTBS ong. So for every complex structure ong we get
+a tower of principal torus bundles:
+(9.7) X = X1 X2 · · · Xν−1 Xν = Tν.
+π1 π2 πν−2 πν−1
+The simplest examples of almost abelian complex nilmanifolds are Kodaira surfaces,
+that is, nilmanifolds with underlying Lie algebrag = h3 ⊕ R. In this case,S is just
+0 ⊂ Z g ⊂ g and X → X2 is a bundle of elliptic curves over an elliptic curve. It turns
+out that h3 ⊕ R is the only almost abelian Lie algebra for which the period mapP S
+is injective.
+Proposition 9.8 — If g is almost abelian, then the period mapP S : T (g) → U is
+injective if and only ifg = h3 ⊕ R.
+Proof. Since every Kodaira surface has a one-dimensional automorphism group it
+follows from Theorem 6.5 thatP S is injective if g = h3 ⊕ R. Let X be an almost
+abelian complex nilmanifold with complex structureJ and associated bundle as in
+(9.7). Let us denote byT the fibre of the mapπ1 : X → X2 and let t1,0 be the space
+
+=== PDF PAGE 51 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 51
+of left-invariant holomorphic vector fields onX tangent to T. Recall from Section
+6.1 that every element of the space
+AT = coker
+
+γ1 : H0(X2, ΘX2) → H0,1
+∂ (X2) ⊗ t1,0
+
+defines a deformation of J which is in the same fibre ofeP S as J. In particular,
+P S can only be injective if AT = 0, i.e., if γ1 is surjective. In what follows, we
+will compute the dimensions of H0(X2, ΘX2) and H0,1
+∂ (X2) and see that γ1 can
+only be surjective ifX is a Kodaira surface. We separate the proof into two cases
+depending on the value ofε ∈ {0, 1} defined as in (9.1). As in the proof of Lemma
+9.2, α, β0
+1, . . . , β0
+k0, . . . , βr
+1, . . . , βr
+kr denotes a basis of left-invariant(1, 0)-forms on X
+whose dual basisz, y0
+1, . . . , y1
+k0, . . . , yr
+1, . . . , yr
+kr satisfies the bracket relations given in
+(9.3).
+Case 1: ε = 0. In this case we havek0 = 0. Since g is ν-step nilpotent the indices
+ki are at mostν and for i = 1, . . . , rwe define
+mi =
+(
+ki for ki < ν,
+ki − 1 for ki = ν.
+The first vector space in the filtrationS, i.e., the real Lie algebra underlying the fibre
+T, is the commutatorCν−1g. Therefore, the formsα, β1
+1, . . . , β1
+m1, . . . , βr
+1, . . . , βr
+mr are
+a basis of left-invariant(1, 0)-forms on X2. Since ∂α = 0 and ∂β
+ℓ
+i = α ∧ β
+ℓ
+i−1 we get
+H0,1
+∂ (X2) = ⟨α, β
+1
+1, . . . ,β
+r
+1⟩.
+Similarly, z, y0
+1, . . . , y1
+m1, . . . , yr
+1, . . . , yr
+mr form a basis of left-invariant (1, 0)-vector
+fields on X2. The bracket relations (9.3) imply∂z = 0 and ∂y ℓ
+i = α ⊗ yℓ
+i+1 and thus
+we get
+H0(X2, ΘX2) = ⟨z, y1
+m1, . . . , yr
+mr ⟩.
+Therefore, we havedim H0,1
+∂ (X2) = dim H0(X2, ΘX2) but since γ1(z) = 0, the map
+γ1 can never be surjective ifε = 0.
+Case 2: ε = 1. The real Lie algebra underlyingT is the centre Zg. Hence, the
+forms α, β0
+1, . . . , β0
+k0−1, . . . , βr
+1, . . . , βr
+kr−1 are a basis of(1, 0)-forms and the vectors
+z, y0
+1, . . . , y1
+k0−1, . . . , yr
+1, . . . , yr
+kr−1 form a basis of(1, 0)-vector fields onX2. As in the
+case ε = 0, we have∂α = 0, ∂β
+ℓ
+i = α ∧ β
+ℓ
+i−1 and ∂y ℓ
+i = α ⊗ yℓ
+i+1, but unlessk0 = 1
+we have∂z = α ⊗ y0
+1. So for k0 ≥ 2 we get
+H0,1
+∂ (X2) = ⟨α, δ0β
+0
+1, . . . , δrβ
+r
+1⟩
+and
+H0(X2, ΘX2) = ⟨δ0y0
+k0−1, . . . , δryr
+kr−1⟩,
+where we define δi = 0 if ki = 1 and δi = 1 if ki > 1. Therefore, we have
+dim H0(X2, ΘX2) < H 0,1
+∂ (X2) and thus γ1 is never surjective. If k0 = 1, then y0
+1
+is in the centre ofgC and thus ∂z = 0 if z is considered as a vector field onX2. In
+this case, we havedim H0(X2, ΘX2) = dim H0,1
+∂ (X2). Hence, ifγ1 is surjective, then
+dim t1,0 = 1 and thusdim Zg = 2. But this implies that the matrixA corresponding
+to g has only two Jordan blocks and thuski = 0 for all i > 0. Since we already
+showed that k0 = 1 if γ1 is surjective, the formsα, β0
+1 are a basis of left-invariant
+(1, 0)-forms on X with structure equationsdα = 0 and dβ0
+1 = α ∧ α. Therefore, X
+is a Kodaira surface. □
+
+=== PDF PAGE 52 ===
+52 KONSTANTIN WEHLER
+10. Nilmanifolds of dimension six
+In this section, we will apply our previous results to the the class of six-dimensional
+nilmanifolds. Here, we will only consider those nilmanifolds for which the descrip-
+tion of the Teichmüller or moduli space follows directly from one of the preceding
+theorems. The remaining cases will be treated in a separate article.
+Following Salamon’s notation [Sal01], we describe a nilpotent Lie algebrag, or
+rather its isomorphism class, by writing g = ( de1, de2, . . . , de2n) for a given basis
+e1, . . . , e2n of g∗, and abbreviating eij = ei ∧ ej to ij. For example, the tuple
+(0, 0, 0, 12) represents the four-dimensional Lie algebra with the single non-trivial
+differential de4 = e12.
+Real nilpotent Lie algebras are classified up to dimension seven, which is the
+smallest dimension where infinite families start to appear (see for instance [Mag86]).
+The analysis which Lie algebras up to dimension six admit a complex structure was
+carried out by Salamon in [Sal01]: up to dimension four there are two non-abelian
+nilpotent Lie algebras, namely,(0, 0, 0, 12) and (0, 0, 12, 13). The former is the real
+Lie algebra underlying a Kodaira surface and the latter does not admit a complex
+structure [Sal01, Proposition 2.3].
+In dimension six the situation becomes more involved. There are 34 isomorphism
+classes of real nilpotent Lie algebras and Salamon’s classification states that a six-
+dimensional nilpotent Lie algebra g admits a complex structure if and only ifg is
+isomorphic to one of the following Lie algebras (cf. [Sal01, Table A.1] or [Uga07,
+Theorem 8]):
+h1 = (0, 0, 0, 0, 0, 0)
+h2 = (0, 0, 0, 0, 12, 34)
+h3 = (0, 0, 0, 0, 0, 12 + 34)
+h4 = (0, 0, 0, 0, 12, 14 + 34)
+h5 = (0, 0, 0, 0, 13 + 42, 14 + 23)
+h6 = (0, 0, 0, 0, 12, 13)
+h7 = (0, 0, 0, 12, 13, 23)
+h8 = (0, 0, 0, 0, 0, 12)
+h9 = (0, 0, 0, 0, 12, 14 + 25)
+h10 = (0, 0, 0, 12, 13, 14)
+h11 = (0, 0, 0, 12, 13, 14 + 23)
+h12 = (0, 0, 0, 12, 13, 24)
+h13 = (0, 0, 0, 12, 13 + 14, 24)
+h14 = (0, 0, 0, 12, 14, 13 + 42)
+h15 = (0, 0, 0, 12, 13 + 42, 14 + 23)
+h16 = (0, 0, 0, 12, 14, 24)
+h−
+19 = (0, 0, 0, 12, 23, 14 − 35)
+h+
+26 = (0, 0, 12, 13, 23, 14 + 25)
+Note that all of these Lie algebras have rational structure constants, so an asso-
+ciated simply connected Lie group always admits a lattice. The following theorem
+can readily be deduced from our previous results.
+Theorem 10.1— Let g be a nilpotent Lie algebra of dimension six admitting com-
+plex structures, and letΓ be a lattice in an associated simply connected Lie group.
+(i) If g ∈ {h1, h2, h3, h4, h6, h8, h9, h10}, then the global period map
+P : T (g) → PH3(g, C)
+is injective and the Teichmüller spaceT (g) exists as a complex manifold.
+(ii) If g = h5, then T (g) and M(g, Γ) are non-Hausdorff.
+(iii) If g ∈ {h13, h14, h15}, then T (g) does not exist as a complex space.
+Proof. We begin with the first item. The Lie algebrash2 and h4 admit a SPTBS of
+length 2 [Rol09a, Theorem B], and by the classification of complex structures given
+in [Ceb+16] every complex structureJ on h2 or h4 satisfies h0(J) = 1, that is, every
+complex nilmanifold of type (h2, Γ) or (h4, Γ) has one-dimensional automorphism
+
+=== PDF PAGE 53 ===
+TEICHMÜLLER AND MODULI SPACES FOR COMPLEX NILMANIFOLDS 53
+group. Hence, for the Lie algebrash2 and h4 the first item follows from Theorem 6.5.
+The Lie algebrash3 and h8 have one-dimensional commutator and are thus covered
+by the first item of Theorem 8.1. The Lie algebrah9 is 3-step nilpotent and has
+two-dimensional commutator, so the result follows from the last item of Theorem
+8.1. Finally, the almost abelian Lie algebrash6 and h10 are covered by Theorem 9.4.
+The Lie algebra h5 is non-abelian and admits complex parallelisable structures.
+Thus, T (h5) and M(h5, Γ) are non-Hausdorff by Proposition 7.1.
+For the Lie algebras listed in the last item, it again follows from the classification
+of complex structures proved in [Ceb+16] that the functionh0 is not constant on
+the connected components ofC(g) and thus the Teichmüller space does not exist as
+a complex space by Proposition 4.18. □
+Remark 10.2 — The Lie algebra h5 is the real Lie algebra underlying the Iwasawa
+manifold. We already mentioned in Example 6.8 that the period map P on the
+Teichmüller space of the Iwasawa manifoldT (h5) is generically injective. This allows
+one to replaceT (h5) by its largest Hausdorff quotient to obtain a complex manifold
+of dimension four, parametrising complex structures on h5, which coincides with
+T (h5) on a dense open subset. This approach will be further explored in a separate
+article.
+
+=== PDF PAGE 54 ===
+Bibliography
+[AC09] Enrico Arbarello and Maurizio Cornalba. ‘Teichmüller space via Kuran-
+ishi families’. In:Ann. Sc. Norm. Super. Pisa Cl. Sci. (5)8.1 (2009),
+pp. 89–116.
+[And+26] Adrián Andrada, Romina M Arroyo, María L Barberis, Sönke Rollenske
+and Konstantin Wehler. ‘Almost abelian complex nilmanifolds’. In:Rev-
+ista Matemática Complutense(2026), pp. 1–25.
+[Arr+25] Romina M. Arroyo, María L. Barberis, Verónica S. Diaz, Yamile Godoy
+and Isabel Hernández. ‘Classification of almost abelian Lie groups admit-
+ting left-invariant complex or symplectic structures’. In:J. Geom. Anal.
+35.11 (2025), Paper No. 331, 40.
+[BDV09] María L. Barberis, Isabel G. Dotti and Misha Verbitsky. ‘Canonical
+bundles of complex nilmanifolds, with applications to hypercomplex geo-
+metry’. In:Math. Res. Lett.16.2 (2009), pp. 331–347.
+[BL99] Christina Birkenhake and Herbert Lange. Complex tori. Vol. 177. Pro-
+gress in Mathematics. Birkhäuser Boston, Inc., Boston, MA, 1999.
+[Bor84] Ciprian Borcea. ‘Moduli for Kodaira surfaces’. In:Compositio Math.52.3
+(1984), pp. 373–380.
+[Bor86] Ciprian Borcea. ‘Diffeomorphisms of a K3 surface’. In:Math. Ann.275.1
+(1986), pp. 1–4.
+[Car57] Henri Cartan. ‘Quotient d’un espace analytique par un groupe
+d’automorphismes’. In:Algebraic geometry and topology. A symposium
+in honor of S. Lefschetz. Princeton Univ. Press, Princeton, NJ, 1957,
+pp. 90–102.
+[Cat04] Fabrizio Catanese. ‘Deformation in the large of some complex manifolds.
+I’. In:Ann. Mat. Pura Appl. (4)183.3 (2004), pp. 261–289.
+[Cat13] F. Catanese. ‘A superficial working guide to deformations and moduli’.
+In: Handbook of moduli. Vol. I. Vol. 24. Adv. Lect. Math. (ALM). Int.
+Press, Somerville, MA, 2013, pp. 161–215.
+[Ceb+16] M. Ceballos, A. Otal, L. Ugarte and R. Villacampa. ‘Invariant complex
+structures on 6-nilmanifolds: classification, Frölicher spectral sequence
+and special Hermitian metrics’. In:J. Geom. Anal.26.1 (2016), pp. 252–
+286.
+[CG90] Lawrence J. Corwin and Frederick P. Greenleaf.Representations of nilpo-
+tent Lie groups and their applications. Part I. Vol. 18. Cambridge Studies
+in Advanced Mathematics. Basic theory and examples. Cambridge: Cam-
+bridge University Press, 1990, pp. viii+269.
+[CMP17] James Carlson, Stefan Müller-Stach and Chris Peters.Period mappings
+and period domains. Second. Vol. 168. Cambridge Studies in Advanced
+Mathematics.CambridgeUniversityPress,Cambridge,2017,pp.xiv+562.
+54
+
+=== PDF PAGE 55 ===
+BIBLIOGRAPHY 55
+[Cor+00] Luis A. Cordero, Marisa Fernández, Alfred Gray and Luis Ugarte. ‘Com-
+pact nilmanifolds with nilpotent complex structures: Dolbeault cohomo-
+logy’. In:Trans. Amer. Math. Soc.352.12 (2000), pp. 5405–5433.
+[Deb05] Olivier Debarre. Complex tori and abelian varieties. French. Vol. 11.
+SMF/AMS Texts and Monographs. American Mathematical Society,
+Providence, RI; Société Mathématique de France, Paris, 2005.
+[FH79] William Fulton and Johan Hansen. ‘A connectedness theorem for pro-
+jective varieties, with applications to intersections and singularities of
+mappings’. In:Ann. of Math. (2)110.1 (1979), pp. 159–166.
+[Fre12] Marco Freibert. ‘Cocalibrated structures on Lie algebras with a codimen-
+sion one Abelian ideal’. In:Ann. Glob. Anal. Geom.42 (2012), pp. 537–
+563.
+[GH09] Amira Ghorbel and Hatem Hamrouni. ‘Discrete cocompact subgroups
+of the five-dimensional connected and simply connected nilpotent Lie
+groups’.In:SIGMA Symmetry Integrability Geom. Methods Appl.5(2009),
+Paper 020, 17.
+[Gra+04] Gueo Grantcharov, Colin McLaughlin, Henrik Pedersen and Yat Sun
+Poon. ‘Deformations of Kodaira manifolds’. In:Glasg. Math. J. 46.2
+(2004), pp. 259–281.
+[Gra60] Hans Grauert. ‘Ein Theorem der analytischen Garbentheorie und die
+Modulräume komplexer Strukturen’. In:Inst. Hautes Études Sci. Publ.
+Math. 5 (1960), p. 64.
+[Gri68] Phillip A. Griffiths. ‘Periods of integrals on algebraic manifolds. II. Local
+study of the period mapping’. In:Amer. J. Math.90 (1968), pp. 805–865.
+[Has+26] Keizo Hasegawa, Sönke Rollenske, Lorenzo Sillari, Adriano Tomassini
+and Konstantin Wehler. ‘Biholomorphism type of left-invariant complex
+structuresonnilpotentLiegroups’.In: arXiv preprint: 2606.31448(2026).
+[Has05] Keizo Hasegawa. ‘Complex and Kähler structures on compact solvman-
+ifolds’. In: vol. 3. 4. Conference on Symplectic Topology. 2005, pp. 749–
+767.
+[Has89] KeizoHasegawa.‘Minimalmodelsofnilmanifolds’.In: Proc. Amer. Math.
+Soc. 106.1 (1989), pp. 65–71.
+[Höf93] Thomas Höfer. ‘Remarks on torus principal bundles’. In:J. Math. Kyoto
+Univ. 33.1 (1993), pp. 227–259.
+[HS80] A. T. Huckleberry and G. Schumacher. ‘Holomorphic maps of generalized
+Iwasawa manifolds’. In:Manuscripta Math.30.2 (1979/80), pp. 107–117.
+[HST26] Keizo Hasegawa, Lorenzo Sillari and Adriano Tomassini. ‘Invariant forms
+compute the Dolbeault cohomology of complex nilmanifolds’. In:arXiv
+preprint: 2607.26786 (2026).
+[KS04] Georgios Ketsetzis and Simon Salamon. ‘Complex structures on the Iwas-
+awa manifold’. In:Adv. Geom.4.2 (2004), pp. 165–179.
+[KS58] K. Kodaira and D. C. Spencer. ‘On deformations of complex analytic
+structures. I, II’. In:Ann. of Math. (2)67 (1958), pp. 328–466.
+[Kur62] M.Kuranishi.‘Onthelocallycompletefamiliesofcomplexanalyticstruc-
+tures’. In:Ann. of Math. (2)75 (1962), pp. 536–577.
+[LUV23] Adela Latorre, Luis Ugarte and Raquel Villacampa. ‘Complex structures
+on nilpotent Lie algebras with one-dimensional center’. In:J. Algebra614
+(2023), pp. 271–306.
+
+=== PDF PAGE 56 ===
+56 BIBLIOGRAPHY
+[Mag86] L. Magnin. ‘Sur les algèbres de Lie nilpotentes de dimension≤ 7’. In:J.
+Geom. Phys.3.1 (1986), pp. 119–144.
+[Mal51] A. I. Malcev. ‘On a class of homogeneous spaces’. In:Amer. Math. Soc.
+Translation 1951.39 (1951), p. 33.
+[Man22] MarcoManetti. Lie methods in deformation theory.SpringerMonographs
+in Mathematics. Springer, Singapore, 2022, pp. xii+574.
+[Mee19] Laurent Meersseman. ‘The Teichmüller and Riemann moduli stacks’. In:
+J. Éc. polytech. Math.6 (2019), pp. 879–945.
+[Mee24] Laurent Meersseman. ‘Geography of the Teichmüller stack’. In:arXiv
+preprint: 2409.00072 (2024).
+[Nom54] Katsumi Nomizu. ‘On the cohomology of compact homogeneous spaces
+of nilpotent Lie groups’. In:Ann. of Math. (2)59 (1954), pp. 531–538.
+[OV24] LiviuOrneaandMishaVerbitsky. Principles of locally conformally Kähler
+geometry.Vol.354.ProgressinMathematics.Birkhäuser/Springer,Cham,
+2024, pp. xxi+736.
+[PRW26] MatthiasPaulsen,SönkeRollenskeandKonstantinWehler.‘Verbalideals
+and unobstructed complex parallelisable nilmanifolds’. In:Math. Z.313.2
+(2026), Paper No. 31, 18.
+[PSU22] Dan Popovici, Jonas Stelzig and Luis Ugarte. ‘Deformations of higher-
+page analogues of ∂∂-manifolds’. In:Math. Z. 300.3 (2022), pp. 2611–
+2635.
+[Rem57] Reinhold Remmert. ‘Holomorphe und meromorphe Abbildungen kom-
+plexer Räume’. In:Math. Ann.133 (1957), pp. 328–370.
+[Rol09a] Sönke Rollenske. ‘Geometry of nilmanifolds with left-invariant complex
+structure and deformations in the large’. In:Proc. Lond. Math. Soc. (3)
+99.2 (2009), pp. 425–460.
+[Rol09b] Sönke Rollenske. ‘Lie-algebra Dolbeault-cohomology and small deforma-
+tions of nilmanifolds’. In:J. Lond. Math. Soc. (2)79.2 (2009), pp. 346–
+362.
+[Rol11a] SönkeRollenske.‘Dolbeaultcohomologyofnilmanifoldswithleft-invariant
+complexstructure’.In:Complex and differential geometry.Vol.8.Springer
+Proc. Math. Springer, Heidelberg, 2011, pp. 369–392.
+[Rol11b] Sönke Rollenske. ‘The Kuranishi space of complex parallelisable nilman-
+ifolds’. In:J. Eur. Math. Soc. (JEMS)13.3 (2011), pp. 513–531.
+[RR85] S. Ramanan and A. Ramanathan. ‘Projective normality of flag varieties
+and Schubert varieties’. In:Invent. Math.79.2 (1985), pp. 217–224.
+[RZ18] Sheng Rao and Quanting Zhao. ‘Several special complex structures and
+their deformation properties’. In:J. Geom. Anal.28.4 (2018), pp. 2984–
+3047.
+[Sal01] S. M. Salamon. ‘Complex structures on nilpotent Lie algebras’. In:J.
+Pure Appl. Algebra157.2-3 (2001), pp. 311–333.
+[Sno86] Dennis M. Snow. ‘Invariant complex structures on reductive Lie groups’.
+In: J. Reine Angew. Math.371 (1986), pp. 191–215.
+[Som82] Andrew John Sommese. ‘Complex subspaces of homogeneous complex
+manifolds. II. Homotopy results’. In:Nagoya Math. J.86 (1982), pp. 101–
+129.
+[Suw79] Tatsuo Suwa. ‘Deformations of holomorphic Seifert fiber spaces’. In:In-
+vent. Math.51.1 (1979), pp. 77–102.
+
+=== PDF PAGE 57 ===
+BIBLIOGRAPHY 57
+[Tia87] Gang Tian. ‘Smoothness of the universal deformation space of compact
+Calabi-Yau manifolds and its Petersson-Weil metric’. In:Mathematical
+aspects of string theory (San Diego, Calif., 1986). Vol. 1. Adv. Ser. Math.
+Phys. World Sci. Publishing, Singapore, 1987, pp. 629–646.
+[Uga07] Luis Ugarte. ‘Hermitian structures on six-dimensional nilmanifolds’. In:
+Transform. Groups12.1 (2007), pp. 175–202.
+[VGS00] E. B. Vinberg, V. V. Gorbatsevich and O. V. Shvartsman. ‘Discrete sub-
+groups of Lie groups [MR0968445 (90c:22036)]’. In:Lie groups and Lie
+algebras, II. Vol. 21. Encyclopaedia Math. Sci. Springer, Berlin, 2000,
+pp. 1–123, 217–223.
+[Vla66] Vasili˘ ı Sergeevič Vladimirov.Methods of the theory of functions of many
+complex variables. Ed. by Leon Ehrenpreis. Translated from the Russian
+by Scripta Technica, Inc. The M.I.T. Press, Cambridge, Mass.-London,
+1966, pp. xii+353.
+[Voi07] Claire Voisin. Hodge theory and complex algebraic geometry. I. English.
+Vol. 76. Cambridge Studies in Advanced Mathematics. Translated from
+the French by Leila Schneps. Cambridge University Press, Cambridge,
+2007.
+[Wav69] John J. Wavrik. ‘Obstructions to the existence of a space of moduli’. In:
+Global Analysis (Papers in Honor of K. Kodaira). Univ. Tokyo Press,
+Tokyo, 1969, pp. 403–414.
+[Weh26] K. Wehler. Moduli spaces for complex nilmanifolds. PhD Thesis. DOI:
+https://doi.org/10.17192/openumr/689. 2026.
+[Wei94] Charles A. Weibel. An introduction to homological algebra. Vol. 38. Cam-
+bridge Studies in Advanced Mathematics. Cambridge University Press,
+Cambridge, 1994, pp. xiv+450.
+[Win98] Jörg Winkelmann. ‘Complex analytic geometry of complex parallelizable
+manifolds’. In:Mém. Soc. Math. Fr. (N.S.)72-73 (1998).
+[Xia21] Wei Xia. ‘Deformations of Dolbeault cohomology classes for Lie algebra
+withcomplexstructures’.In:Ann. Global Anal. Geom.60.3(2021),pp.709–
+734.
+[Xia22a] Wei Xia. ‘Deformations of Dolbeault cohomology classes’. In:Math. Z.
+300.3 (2022), pp. 2931–2973.
+[Xia22b] Wei Xia. ‘Variation of Hodge structures for non-Kahler manifolds’. In:
+arXiv preprint: 2205.09274(2022).
+Konstantin Wehler, FB 12/Mathematik und Informatik, Philipps-Universität Mar-
+burg, Hans-Meer wein-Str. 6, 35032 Marburg, Germany
+Email address: konstantin.wehler@uni-marburg.de

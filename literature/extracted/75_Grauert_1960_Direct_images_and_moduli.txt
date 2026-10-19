@@ -1,0 +1,2586 @@
+--- PDF PAGE 1 ---
+P UBLICATIONS MATHÉMATIQUES DE L ’I.H.É.S.
+HANS GRAUERT
+Ein Theorem der analytischen Garbentheorie und die
+Modulräume komplexer Strukturen
+Publications mathématiques de l’I.H.É.S. , tome 5 (1960), p. 5-64
+<http://www.numdam.org/item?id=PMIHES_1960__5__5_0>
+© Publications mathématiques de l’I.H.É.S., 1960, tous droits réservés.
+L’accès aux archives de la revue « Publications mathématiques de l’I.H.É.S. » ( http://
+www.ihes.fr/IHES/Publications/Publications.html) implique l’accord avec les conditions géné-
+rales d’utilisation ( http://www.numdam.org/conditions). Toute utilisation commerciale ou im-
+pression systématique est constitutive d’une infraction pénale. Toute copie ou impression de
+ce ﬁchier doit contenir la présente mention de copyright.
+Article numérisé dans le cadre du programme
+Numérisation de documents anciens mathématiques
+http://www.numdam.org/
+
+--- PDF PAGE 2 ---
+INSTITUT
+DES HAUTES ETÜDES
+SCIENTIFIQUES
+EIN THEOREM
+DER ANALYTISCHEN GARBENTHEORIE
+UND DIE MODULRÄUME KOMPLEXER
+STRUKTUREN
+von Hans GRAUERT
+1960
+PUBLICATIONS MATHEMATIQUES, N0 5
+5, ROND.POINT BUGEAUD — PARIS (XVI6)
+
+
+--- PDF PAGE 3 ---
+DfiPOT LfiGAL
+ITe Edition . . . . . . 3® trimestre 1960
+TOUS DROITS
+reserves pour tous pays
+© 1960, Institut des Hautes JStudes Scientißques
+
+
+--- PDF PAGE 4 ---
+Einleitung
+1. Seit den grundlegenden Publikationen B. RIEMANNS über abelsche Funktionen
+hat man versucht, in der Menge M der kompakten Riemannschen Flächen vom
+Geschlecht p in natürlicher Weise eine Topologie und eine komplexe Struktur einzuführen,
+so daß M zu einem komplexen Raum My wird, den schon RIEMANN als den Modulraum
+der Riemannschen Flächen vom Geschlecht p bezeichnete. Darüber hinaus hat man
+versucht, die Menge R^= (JR zu einem komplexen Raum zu machen. Die natürliche
+B6Mp
+Projektion n : R ->M sollte dabei zu einer holomorphen Abbildung werden. Außerdem
+möchte man M und R kompaktifizieren.
+Bis heute ist die Lösung dieser Aufgabe nur teilweise gelungen. Die Ideen
+0. TEICHMÜLLERS haben zur Konstruktion einer {^p—3)-dimensionalen komplexen
+Mannigfaltigkeit M^ und einer komplexen Mannigfaltigkeit R^ geführt, die durch
+eine eigentliche holomorphe Abbildung TC* auf My bezogen ist [i]. Als Urbild der
+Punkte aus M* erhält man alle Riemannschen Flächen vom Geschlecht p. Allerdings
+ist die Zuordnung zu den Punkten von M^ nicht eineindeutig. Sie wird es erst dann,
+wenn man den Begriff « Riemannsche Fläche » durch « Riemannsche Fläche mit
+ausgezeichneter Basis der i. Fundamentalgruppe » ersetzt.
+2. Im Falle höherer Dimensionen sind bislang nur wenige Untersuchungen
+bekannt geworden. K. KODAIRA und D. C. SPENCER veröffentlichten im vergangenen
+Jahre eine Arbeit [9], in der sie (außer differenzierbaren) komplex-analytische Scharen
+kompakter komplexer Mannigfaltigkeiten betrachten. Sie verstehen darunter eine
+komplexe Mannigfaltigkeit X, die durch eine eigentliche surjektive holomorphe
+Abbildung TT : X-^M auf eine komplexe Mannigfaltigkeit M bezogen ist. Der Rang
+der Funktionalmatrix von TT ist überall gleich dim^M. Die kompakten komplexen
+Mannigfaltigkeiten 'Xy=n~~l{Jy), j/eM, werden als die Scharelemente angesehen. Wie
+man unmittelbar sieht, sind alle Räume Xy differenzierbar äquivalent, die komplexe
+Struktur kann dagegen von j^eM abhängen.
+Bei der Untersuchung dieser komplex-analytischen Scharen erwies es sich nun, daß
+die komplex-analytische Garbentheorie besonders geeignet ist. Nach K. KODAIRA und
+D. G. SPENCER wird auf X mit © die Garbe der Keime von lokalen holomorphen Feldern
+von solchen Vektoren bezeichnet, die in Richtung der Fasern X^ zeigen. Die beiden
+Autoren ordnen der Schar X nach einer angegebenen Vorschrift eine Kohomologieklasse
+^eH^X, ©) zu und zeigen durch Integration :
+X ist genau dann ein komplex-analytisches Faserbündel, wenn das Leraysche Bild von ^ in
+H°(M, ^(@)) die Nullschnittfläche in ^(@), der i. Leray sehen Bildgarbe von ©, ist.
+233
+
+
+--- PDF PAGE 5 ---
+6 HANS GRAUERT
+Da jedes Faserbündel nach Definition« lokal trivial» ist, bedeutet das inbesondere,
+daß dann die komplexe Struktur von X nicht von y abhängt.
+Natürlich möchte man einfachere Bedingungen kennen, unter denen X->M
+ein komplex-analytisches Faserbündel ist. Zu dem Zwecke wurden unter Benutzung
+der Theorie der harmonischen Integrale in [9] folgende Sätze hergeleitet :
+(1) Die Funktion r^(jy}==dim^H^(Xy, @y) ist halbstetig nach oben (d,h, lim r^(y)<,r^(y^)).
+y—^y»
+Dabei bezeichnet @y die Garbe der Keime von lokalen holomorphen Vektorfeldern
+auf X.
+(2) Ist r^(y) unabhängig von y für pi<v, so ist T:^(Q) eine freie Garbe. Bezeichnet F^
+ein Vektorraumbündel über M, so daß ^(Q) isomorph ^u der Garbe F^ der Keime von lokalen
+holomorphen Schnitten in F^ ist, so kann man die Punkte von F^ über yeM (in natürlicher
+Weise) mit den Kohomologieklassen aus H^(X^ @y) identifizieren (1).
+Aus (i) und (2) folgt ein schon von A. FRÖHLICHER und A. NIJENHUIS [5] bewiesenes
+Resultat :
+(3) Ist dimQHl(Xyy Q^)=o, so ist X—>M in einer Umgebung von y ein komplex-
+analytisches Faserbündel.
+3. Der Verf. der vorl. Arbeit bemerkte, daß diese und ähnliche Sätze aus [9] sehr
+eng mit der Frage verknüpft sind, ob die analytischen Bildgarben kohärenter Garben
+über X kohärente Garben über M sind. Die Sätze ergeben sich zum Teil unmittelbar
+durch eine einfache, rein algebraische Ableitung, wenn die Kohärenz gesichert ist.
+Darüber hinaus folgen aus den Kohärenzaussagen weitere interessante Eigenschaften
+analytischer Scharen komplexer Strukturen, die nicht mit Hilfe der Theorie harmonischer
+Integrale hergeleitet werden konnten.
+In [6] wurde gezeigt :
+(A) Es seien Y ein komplexer Raum, Pn der komplex n-dimensionale projektive Raum,
+T die eigentliche holomorphe Produktabbildung YxP71—^, S eine kohärente analytische Garbe
+über YxPn. Dann sind die Bildgarben ^^(S), v=o, i, 2, . . ., kohärente analytische Garben
+über Y.
+(1) Die beiden Autoren leiten die Aussagen (i) und (2) m.m. sogar her, wenn M nur eine differenzierbare
+Mannigfaltigkeit und TT : X—>M eine differenzierbare Schar von komplexen Mannigfaltigkeiten Xy und © eine
+beliebige freie Garbe über X ist. — Der in § 7 angedeutete Beweis der Aussagen (i) und (2) ist, da er auf die
+Hauptsätze I und II aufbaut, bedeutend schwieriger als der von KODAIRA und SPENCER angegebene. Jedoch
+gelingt es hier, (i) und (2) wesentlich allgemeiner zu beweisen (vgl. die Sätze 3 und 5 in § 7). Unter der Voraus-
+setzung, daß X->Y eine komplexe Schar ist und die auf X gegebene Garbe S frei ist, würde sich der Beweis
+der Sätze 3 und 5 allerdings wesentlich vereinfachen. Ebenso lassen sich die Hauptsätze I, II unter diesen
+Voraussetzungen mit rein garbentheoretischen Methoden ziemlich einfach herleiten.
+234
+
+
+--- PDF PAGE 6 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 7
+Machen wir für unsere komplex-analytische Schar X->M die Voraussetzung :
+(*) ^u jedem Punkt yeM gibt es eine Umgebung U(y) und eine biholomorphe Abbildung
+9 : n-^^^UxP^
+so kann man leicht zeigen, daß die Aussage (A) auch für X->M gilt (1).
+Allerdings impliziert (*), daß jede Fasermenge X^, eine projektiv algebraische
+Mannigfaltigkeit ist. Das ist natürlich sehr einschränkend, besonders auch deswegen,
+weil die Untersuchungen von KODAIRA und SPENCER zu zeigen scheinen, daß einfache
+Gesetzmäßigkeiten in der Berechnung der Dimension von Modulräumen nur dann
+bestehen, wenn man auf die Algebraizität der komplexen Strukturen verzichtet.
+Andererseits genügt es keineswegs, nur komplexe Mannigfaltigkeiten zu untersuchen.
+Man muß Mannigfaltigkeiten mit singulären Punkten (d.h. in unserem Falle : komplexe
+Räume) in die Betrachtung einbeziehen, um auch nur zu einigermaßen befriedigenden
+Ergebnissen zu gelangen. In der vorl. Arbeit wird deshalb gezeigt :
+(I) Es seien X, Y komplexe Räume, n : X—>Y eine eigentliche holomorphe Abbildung,
+S eine kohärente analytische Garbe über X. Dann sind alle Bildgarben von S kohärente analytische
+Garben über V.
+Der Beweis von (I) ist bedeutend schwieriger als der in [6] gegebene semial-
+gebraische Beweis für (A). Da X, Y komplexe Räume mit nicht-uniformisierbaren
+Punkten sind, ist es auch nicht möglich, die potentialtheoretischen Methoden von Kodaira
+und Spencer zu verwenden. Es muß ein besonderer Weg beschritten werden. Es handelt
+sich dabei vor allem um eine verfeinerte Anwendung von Potenzreihen. Zweckmäßig,
+jedoch nicht unbedingt notwendig ist auch die Verwendung eines neuen allgemeineren
+Begriffes des komplexen Raumes. Wir werden diese neuen Räume einfach « komplexe
+Räume » nennen. Die von H. CARTAN und J. P. SERRE definierten komplexen Räume
+werden in der vorl. Arbeit« reduzierte komplexe Räume » heißen. Allgemeine komplexe
+Räume können in ihren lokalen Ringen nilpotente Elemente enthalten. Ihre Analoga
+in der algebraischen Geometrie sind seit einiger Zeit bekannt. Sie wurden m.W. zum
+ersten Male von A. GROTHENDIECK angegeben.
+4. Es sei noch eine kurze Übersicht über den Inhalt der vorl. Arbeit gegeben.
+Im § i werden die neuen komplexen Räume eingeführt. Der § 2 beschäftigt sich mit
+der analytischen Garbentheorie auf diesen Räumen. Der § 3 bringt Untersuchungen
+über kartesische Produkte ®=GxK(p), wobei GcC^ ein Gebiet und K(p) einen
+772-dimensionalen Polyzylinder bezeichnet. Ist S eine kohärente analytische Garbe
+über ©, so werden in dem Vektorraum der Koketten über ® mit Koeffizienten in
+S Pseudonormen definiert. Es werden Beschränktheitsaussagen für diese Pseudonormen
+hergeleitet. Im § 4 werden die Pseudonormen und die Beschränktheitsaussagen auf
+(1) Man braucht dabei nicht vorauszusetzen, daß TT : X —> M eine komplex-analytische Schar ist. Es genügt,
+daß X, M komplexe Räume sind, daß TT eine eigentliche holomorphe Abbildung ist und daß (*) erfüllt ist.
+235
+
+
+--- PDF PAGE 7 ---
+8 HANS GRAUERT
+komplexe Räume X ausgedehnt, die durch eine eigentliche holomorphe Abbildung n
+in einen Polyzylinder K(p) abgebildet sind. Es werden in X Meßatlanten, Meßüber-
+deckungen etc. definiert, aus denen sich dann die Pseudonormen ableiten. Im § 5 wird
+schließlich ein wichtiges Lemma für einen Fall VQ hergeleitet. Dazu müssen Induktions-
+annahmen gemacht werden, die u.a. die Kohärenz der Bildgarben ^(S), v>Vo enthalten,
+wenn S eine gewisse kohärente analytische Garbe über X bezeichnet. Im § 6 wird sodann
+gezeigt, daß aus dem Lemma für v^ die Kohärenz von 7r^(S) folgt. Da T^(S) für sehr
+großes v gleich null und somit kohärent ist, wird dadurch eine vollständige Induktion
+gegeben, die den vorne angegebenen Satz (I) beweist (vgl. Hauptsatz I in § 6).
+Neben dem Hauptsatz I werden im § 6 noch weitere Aussagen hergeleitet, die einen
+Zusammenhang zwischen der Kohomologie der Fasern n^^yjyeY und den Bildgarben
+T^(S) liefern (Vgl. Hauptsätze II, Ha). Der § 7 zeigt noch, wie sich die Resultate (i),
+(2) von KODAIRA und SPENCER in verallgemeinerter Form aus der in der vorl. Arbeit
+durchgeführten Theorie ergeben. Ferner wird dort aus dem Hauptsatz I der bekannte
+Remmertsche Satz über eigentliche holomorphe Projektionen analytischer Mengen
+abgeleitet (1). Dieser Satz ist damit aufs Neue bewiesen und in eine größere Theorie
+eingeordnet (Hauptsatz I kann als ein Ergebnis über analytische Projektion mit
+« Vielfachheit » gedeutet werden).
+§ i« Ein neuer Begriff des komplexen Raumes«
+i. Die grundlegenden Begriffe der Garbentheorie seien als bekannt vorausgesetzt.
+Wir bezeichnen mit X einen beliebigen topologischen Raum. A=A(X) sei eine Garbe
+von komplexen Algebren über X, alle Halme A^, ;veX von A seien kommutativ,
+assoziativ und mögen ein Einselement ly^ besitzen, die Abbildung x->\^ sei stetig.
+Wir nennen im folgenden einen topologischen Raum X, über dem eine Garbe A
+definiert ist, einen (komplex) beringten Raum. A=A(X) heißt die Strukturgarbe von X.
+Ein beringter Raum muß also als ein Paar (X, A) angesehen werden. Wir schreiben
+jedoch einfach X, wenn das nicht zu Mißverständnissen führt. Beringte Räume wurden
+in [n], [6] eingehend untersucht. Wir werden deshalb hier die Terminologie aus [6]
+übernehmen, jedoch werde folgende in [6] nicht enthaltene Definition getroffen :
+Definition i. Es seien (X, A(X)), (Y, A(Y)) beringte Räume, Eine morphe Abbil-
+dung Y von X in Y ist ein Paar (^ ^) einer stetigen Abbildung ^o •* X—>Y und einer stetigen
+Abbildung^: X@^A(Y) =={(x, a) : xeX, aGAy(Y), y=^(x)}-^A(X), die jede Algebra
+(x, Ay(Y)) homomorph in die Algebra A^(X), y^^^x) abbildet (2). Y heißt eine bimorphe
+(surjektive) Abbildung^ wenn ^o, ^i topologische Abbildungen sind und ^ stets die Algebren
+(x, Ay(Y)) isomorph auf die Algebren A^(X), y=^Q(x) projiwrt.
+(1) Vgl. Remmert [10].
+(2) Wir setzen dabei voraus, daß dieser Homomorphismus nicht entartet ist, also nicht ganz (x, Ay(Y)) auf
+das Nullelement von A^(X) abbildet.
+236
+
+
+--- PDF PAGE 8 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 9
+Man kann ein einfaches Beispiel eines beringten Raumes betrachten. Es sei G ein
+Teilgebiet des n-dimensionalen komplexen Zahlenraumes C", 0=0 (G) bezeichne
+über G die Garbe der Keime von lokalen holomorphen Funktionen. Offenbar ist 0 eine
+Garbe von komplexen Algebren, G mit der Strukturgarbe 0 also ein komplex beringter
+Raum.
+Wir bezeichnen mit AcG eine analytische Teilmenge, mit I*c0 einekohärente
+Untergarbe von Idealen, deren Nullstellenmenge mit A übereinstimmt. Die Quotienten-
+garbe ^=0/1* besitzt über G—A nur Halme, die aus Nullmoduln bestehen.
+Betrachtet man nur die Halme von 'H, die über A liegen, so erhält man über A eine
+Garbe H==H(A) von lokalen Ringen. Wird A mit dieser Strukturgarbe versehen, so
+ist A ein beringter Raum. Wie man leicht sieht, werden i.a. die Halme H^,.yeA nilpotente
+Elemente enthalten.
+Durch die Quotientenabbildung 0->'H wird jedem Element oeO^, xeA ein
+Element SeH^; zugeordnet. Wir nennen $ die Beschränkung von o auf (A, H) (in
+Zeichen $==(? | (A, H)). Ebenso wird jeder Schnittfläche seF{G, 0(G)) durch 0-^H
+eine Schnittfläche ?er(A, H) zugeordnet. Auch s werde mit« Beschränkung von s
+auf (A, H) » bezeichnet (? ==s \ (A, H)).
+Ein besonderer Fall tritt ein, wenn I* die Garbe der Keime aller lokalen
+holomorphen Funktionen ist, die auf A verschwinden. Wir bezeichnen im folgenden
+diese Garbe stets mit 1=1 (A). Nach einem bekannten Satz von H. CARTAN ist I
+kohärent. Offenbar gilt stets I*d, wenn I* eine allgemeine kohärente Idealgarbe
+ist, deren Nullstellenmenge mit A übereinstimmt. Es werde mit 0(A) die Beschränkung
+der Garbe 0(G)/I auf A bezeichnet. 0(A) kann in natürlicher Weise als eine Unter-
+garbe der Garbe G (A) der Keime stetiger Funktionen auf A angesehen werden. Die
+Schnittflächen in 0(A) sind also spezielle stetige Funktionen über A. Da I*cl gilt,
+gibt es den durch Quotientenbildung kanonisch definierten Homomorphismus red :
+H(A)-^0(A).
+Definition 2. Ein beringter Raum (X, A(X)) heißt ein komplexer Raum, wenn folgendes
+gilt :
+1) X ist ein Hausdorffscher Raum.
+2) ^u jedem Punkt xeX gibt es eine Umgebung U(x), einen beringten Raum (A,H(Aj),
+der auf die vorhin beschriebene Weise definiert ist, und eine bimorphe surjektive Abbildung Y :
+U(x)-^A.
+(X, A(X)) heißt ein reduzierter komplexer Raum, wenn X hausdorffsch und
+V{x) stets zu einem beringten Raum (A, 0(A)) bimorph äquivalent ist. Offenbar
+ist ein komplexer Raum genau dann ein reduzierter komplexer Raum, wenn die Halme
+A^(X) seiner Strukturgarbe keine nilpotenten Elemente enthalten.
+2. Es seien A^cG^cG^ analytische Mengen, H^, 0^ Strukturgarben über A^,
+die wie vorhin definiert sind, red^ seien die Projektionen H^->0^, v =1,2; ferner sei
+237
+
+
+--- PDF PAGE 9 ---
+io HANS GRAUERT
+y === (^ ^) eine morphe Abbildung des beringten Raumes (A^, H^) in den beringten
+Raum (Ag, Ha). Wir zeichnen Untergarben von H^ v== 1,2 aus :
+H^ sei die Menge der Elemente <j von H^, für die folgendes gilt :
+Es gibt zu (T eine offene Menge UcA^, und eine Schnittfläche s==s(x) Er(U, HJ,
+so daß
+1) (JES,
+2) s{x) für alle xeV im maximalen Ideal von (HJ^ enthalten ist.
+Offenbar ist H^ nichts anderes als die Kerngarbe des Homomorphismus red^,.
+Da aber H^ durch eine innere Eigenschaft der Garbe H^, definiert ist, bildet ^ den
+Raum A^e^H^ in H^ homomorph ab. Daraus folgt insbesondere, daß ^ eine
+Abbildung ^ : 0^@^A^->0^ definiert. Y* = (^o, ^) ist eine morphe Abbildung des
+komplexen Raumes (A^, 0^) in den komplexen Raum (Ag, Og).
+Nun kann C\ als Untergarbe von C(AJ gedeutet werden, v ==1,2. Ordnet
+man einem beliebigen Funktionskeim feC[A^) den Funktionskeim /o^eC(Ai) zu,
+so erhält man eine stetige Abbildung X : A^@^C{A^)->C{A^). Das Diagramm :
+C(A,)<-A^G(A,)
+^ ^
+AI ->Aa
+ist kommutativ. Wir zeigen :
+Satz i. X bildet A-^@^0^ in 0^ ab. Es gilt X==^.
+Beweis. Da <^^ ein Ringhomomorphismus ist, bildet ^ stets das Einselement
+i ^(Og), j^==^o(^), A:eAi ab auf das Einselement ^xe{^l)x' Da ferner ^ ein Homo-
+morphismus von komplexen Algebren ist, folgt, daß ^ eine Abbildung der konstanten
+Funktionen aus F(V, Og) in die konstanten Funktionen aus r(U, O^) erzeugt (1)
+(mit U^^o^V), VcAg eine offene Menge). Die Funktion f^c geht in die Funktion
+g^c über.
+Es seien nun XQ^A-^ ein beliebiger Punkt, J;o==^^(A:o) e^L2 un(l cre (^2)2/0 eln
+Garbenelement. Man kann eine Umgebung V(j^) cAg und eine komplexe Funktion
+yer(V, Og) finden, die in j^ den Keim o erzeugt. Das ^-EÜld vonyseimit^ bezeichnet
+(^eF^O^.U^^^^V)). Durch ^ wird f—f{y} auf die Funktion g—f{y) abge-
+bildet (mit j^eV festgewählt). Der Keim von f—f{y) gehört zum maximalen Ideal
+von (Og)^. Also muß der Keim von g—f{jy) in jedem Punkt xe^^^y) zum maxi-
+malen Ideal von (O^ gehören. Das heißt f{y)==g{^)' Also gilt : g==fo^ Daraus
+folgt aber unmittelbar die Behauptung von Satz i.
+3. Es sei ^* eine holomorphe Abbildung eines Gebietes G^cC^* in ein Gebiet
+G^cG^, die eine analytische Menge A^cG^ in eine analytische Menge A^cG^ abbildet.
+(1) Wir werden im folgenden stets eine Abbildung, die durch eine Abbildung a erzeugt ist, auch
+mit a bezeichnen. In unserem Falle steht also auch für die erzeugte Abbildung (j^.
+238
+
+
+--- PDF PAGE 10 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 11
+Es sei H^ eine Strukturgarbe über A^, die durch Beschränkung einer Quotientengarbe
+X==0(GO/^ definiert ist, ^=1,2. ^ erzeugt dann eine Abbildung
+9 : G^J^O(G^.
+Bildet 9 die Garbe G^e^J^ in I[ ab, so erhalten wir außerdem einen Homomorphismus
+^ '" A^e$*H^->H^. (4'*|A^, ^) ist eine morphe Abbildung. Wir sagen, daß sie von ^*
+erzeugt ist. — Wir verwenden die gleiche Bezeichnungsweise wie im vorigen Abschnitt
+und zeigen :
+Satz 2. Es gibt ^u jedem Punkt xeA^ einein G-^ offene Umgebung U(x)cG^ und eine
+holomorphe Abbildung ^ : U->G^, die die morphe Abbildung T[ UnA^ erzeugt.
+Beweis. Wir bezeichnen mit ^ . . ., ^ komplexe Koordinaten in Gg, /„ sei
+die durch die Quotientenprojektion 0(G^-^'B.^ definierte Bildschnittfläche von ^
+aus r(Ag, Hg), ferner sei g^ das ^-Bild von /, in F(Ai, Hi), v== i, ..., n^ Ist die
+Umgebung U{x),xeA^ hinreichend klein gewählt, so kann man holomorphe Fun-
+ktionen g^ über U bestimmen, die vermöge der Quotientenprojektion (^(G^-^Hi die
+Schnittflächen ^ definieren. Es sei dann ^ die durch {g^ ..., ^J bestimmte holomorphe
+Abbildung. Aus Satz i folgt : ^ [ U n A^ == ^ | U n Ai.
+Es seien j^e^UnAi) ein beliebiger Punkt, ^(H^ ein beliebiges Garbenele-
+ment. Ist V (j^o) eine hinreichend kleine, in Gg offene Umgebung von j^, so gibt es eine
+holomorphe Funktion f aus F(V, 0(V)), die f^ definiert. Wir setzen W = ^-^ V),
+g =fo^. g ist eine in W holomorphe Funktion. Wir haben zu zeigen, daß g das Element
+^^iCü^Hi)^, ^^(jo) bestimmt. Dazu ist es notwendig, einen Hilfssatz heran-
+zuziehen, der ein Spezialfall des in § 3 bewiesenen Satzes 2 ist.
+Hilfssatz i. Es sei 0^ der Ring der Keime holomorpher Funktionen in einem Punkte
+0 eC", IQ sei ein Ideal in 0^. Ist dann fe OQ ein Keim einer holomorphen Funktion und gibt
+es w jeder natürlichen ^ahl k ein Element hel^, so daß der holomorphe Funktionskeim f—h in 0
+eine Nullstelle k-ter Ordnung hat, so gilt f^I^.
+Wir verzichten hier darauf, Hilfssatz i zu beweisen und führen den Beweis von
+Satz 2 fort.
+Es sei k eine vorgegebene natürliche Zahl. Man kann dann ein Polynom
+Q^Q^i? • • •? ^nj finden, so daß die Funktion f'=f—Q im Punkte y^ mindestens
+von der Ordnung A; verschwindet. Wir setzen P==Qo^ und bezeichnen mit g^ bzw. P^
+den von g bzw. P in XQ erzeugten holomorphen Funktionskeim. // sei das von //
+definierte Element aus (Hg)^, g'^ sei sein ^-Bild in (Hi)^. Ferner seien ^ bzw. ^
+holomorphe Funktionskeime in XQ, die g^ bzw. g'^ definieren. Offenbar kann man ^
+so wählen, daß der Funktionskeim in XQ eine Nullstelle k-ter Ordnung hat. Ebenso hat
+j^—P^ in XQ eine Nullstelle der Ordnung k. Offenbar ist (^—^J—^—PJ +^;
+in der zur Definition von 'H^ verwendeten Idealgarbe 1\ enthalten, weil
+P„ (Ai, Hi)=^(Q^|(A„ H,)
+239
+
+
+--- PDF PAGE 11 ---
+12 HANS GRAUERT
+ist. Da k beliebig sein kann, folgt aus Hilfssatz i : ^-^e(I^, g definiert also das
+Element g^, q.e.d.
+4. Wir behalten die Terminologie des Abschnittes 2 bei. Es seien /i, ...,/ e I^Ag, H^)
+endlich viele Schnittflächen. Durch die Projektion H^O^Ag) erhaken wir m
+Zuordnung zu den Schnittflächen /, q komplex-wertige Funktionen aus r(Aa, 0^))
+die eine stetige Abbildung <p„ : A,->C» definieren. Man kann ^ in kanonischer Weise
+zu einer morphen Abbildung ergänzen.
+Wir bezeichnen die Punkte des C" mit z= {^, .. ., ^), y^A, sei ein beliebiger
+Punkt. Wir setzen ^ = <Po f^o) = (^', . .., ^'). Nach Definition der Garbe H^ kann
+man eine Umgebung U^cG^ und in U holomorphe Funktionen /, finden, deren
+Beschränkung auf (A^nU, H^) mit /JA^nU übereinstimmt. Die Funktionen /
+definieren eine holomorphe Abbildung 90 : U->GS deren Beschränkung auf A^nU
+die Abbildung yo|AanU ist. y„ definiert in natürlicher Weise einen Homomorphismus
+der Algebra O^C") in die Algebra O^(Ga). Nach Anwendung der Quotienten-
+abbildung 0(Ga)^Ha erhält man sodann einen Homomorphismus 9^ : 0, (C^-^Hg)
+Offenbar ist y^ von der Wahl der Funktionen /„...,/, unabhängig. Die Menge
+'Pi^iJ l^ann man schließlich als eine Abbildung A^O (Ü) ->Ha auffassen und
+<^ == (?o» •Pi) ist die gesuchte morphe Abbildung.
+Es sei ^er(Ai, Hi) das ^-Bild der Schnittflächen /„ v== i, . .., q. Die Schnitt-
+Bächen tei,...,,?,) definieren wieder eine morphe Abbildung A^->CI, die wir mit
+°=(yo? ^i) bezeichnen wollen. Aus Satz 2 folgt unmittelbar :
+Satz 3. Das Diagramm :
+\y
+A^ -> A,
+-\ /<s> ^ » $
+C»
+z'ri kommutativ.
+5. Die Sätze 1-3 führen zu einfachen Folgerungen für komplexe Räume :
+(i) Es sei (X, H) ein komplexer Raum. Dann gibt es eine eindeutig bestimmte Untergarbe
+0=0(X)cC(X) von komplexen Algebren, so daß (X, 0) ein reduzierter komplexer Raum
+ist. Es ist kanonisch eine Abbildung red : H->0 definiert, so daß das Diagramm :
+red
+H -> 0
+\ /
+X
+kommutativ ist. Bezeichnet i die Identität, so ist (i, red) eine morphe Abbildung von (X 0)
+auf(X,H). ' ' /
+Wir werden im folgenden (X, 0) die Reduktion von (X, H) nennen.
+240
+
+
+--- PDF PAGE 12 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 13
+(2) Es seien (X, H) ein komplexer Raum, f^, ...,/g endlich viele Schnittßächen aus
+T(X, H). Dann definieren f^ ...,/^ eine morphe Abbildung 0=^,<pJ von X in den
+q-dimensionalen komplexen ^ahlenraum Cq.
+(3) Es seien (X^, HJ, v== 1,2,3 komplexe Räume, Oi= (^, ^} bzw. Og = (^, ^)
+sei eine morphe Abbildung von (X-^, H^) in (X^, H^) bzw. von (X^, H^) in ( X^, H^).
+Es werde <pi : X^@y{yo^)H^->H^ so definiert, daß gilt :
+?i l (^ (H,)J = (^ \ (x„ (H,)J)o(^ \ (x„ (H,)J),
+wenn X^E X^, v =1,2,3 Punkte sind, die in der Beziehung : x^==^(x^), x^=^(x^) stehen.
+Dann ist Og = ^, cpj mit ^==^0^ eine morphe Abbildung von (X^ H^) in (X^H^),
+die auch mit OgoO^ bezeichnet werde. Den morphen Abbildungen <S>^ entsprechen morphe Abbil-
+dungen 0^ der zugeordneten reduzierten Räume (X^ OJ. Man hat 0^==(I)^oO^. Das Diagramm :
+(H,)^(H,)^(H,)^
+^ ^ ^
+(OJ^<-(0,)^(0,)^
+ist kommutativ.
+Wir geben noch einige weitere elementare Eigenschaften komplexer Räume an :
+(4) Es sei (X, H) ein komplexer Raum, UcX eine offene Teilmenge. Dann ist (U, H\U)
+ebenfalls ein komplexer Raum.
+(5) Sind (X-^, H^), (X^, H^) komplexe Räume, so ist auf dem kartesischen Produkt
+X^ x X^ in kanonischer Weise eine Strukturgarbe definiert, die X-^ X X^ zu einem komplexen Raum
+macht.
+Man erhält die Strukturgarbe von X^xXg auf folgender Weise. Es sei U^cX^,
+v == 1,2 je eine offene Menge, die durch eine bimorphe Abbildung Y^, auf eine analytische
+Menge \cG^ abgebildet ist, die mit einer Strukturgarbe H^==0(GJ/I^ versehen
+sei. Mit I^cO^, ^== {z^ z^)eG=G^xG^ werde sodann das Ideal bezeichnet, das durch
+die Funktionskeime /£0^(G'i) oder eO^Gg) erzeugt wird. Man sieht sofort (1), daß
+I*==ll^| eine kohärente Garbe ist, die genau A^xAg zur Nullstellenmenge hat.
+H*=0(G)/I* ist dann eine Strukturgarbe über A^xAg, die durch ^) x ^) nach
+U^xUa zu einer Strukturgarbe H übertragen werden kann. Wählt man andere
+analytische Mengen und andere bimorphe Abbildungen, so erhält man zwar eine andere
+Strukturgarbe H'über UiXÜ^, jedoch auch einen natürlichen Isomorphismus H »H7.
+Das bedeutet, daß eine Strukturgarbe über X^xXg eindeutig bestimmt ist, q.e.d.
+Man zeigt leicht unter Verwendung von Orthogonalreihen, daß die so definierte
+komplexe Struktur von X^ X Xg mit der von J. P. SERRE eingeführten Struktur überein-
+stimmt, wenn X^, Xg reduzierte komplexe Räume sind.
+(1) Es werden im folgenden die Grundtatsachen der analytischen Garbentheorie über reduzierten komplexen
+Räumen als bekannt vorausgesetzt. Man vgl. die Publikationen von H. CARTAN und K. OKA über diesen Gegenstand.
+241
+
+
+--- PDF PAGE 13 ---
+^ HANS GRAUERT
+(6) Jeder komplexe Raum ist lokal zusammenhängend, er zerfällt in offene wammenhängende
+Komponenten, ^u jedem seiner Punkte gibt es beliebig kleine Umgebungen, die in sich auf den Punkt
+Zusammenziehbar sind.
+Da zu jedem komplexen Raum (X, H) ein reduzierter komplexer Raum (X, 0)
+gehört, gelten für den topologischen Raum X alle Eigenschaften, die von den komplexen
+Räumen des alten Sprachgebrauchs her bekannt sind. Man kann den Begriff der
+komplexen Dimension erklären. Wir werden im folgenden X reindimensional nennen,
+wenn diese Dimension in allen Punkten von X die gleiche ist. Ferner kann man die
+irreduziblen Komponenten von X definieren (sofern man diese nur als topologische
+Unterräume auffaßt). Wir werden von diesen und ähnlichen Begriffen ausgiebig
+Gebrauch machen.
+Es seien noch einige weitere Definitionen getroffen :
+Definition 3. Ein komplexer Raum (X, H) heißt normal, wenn jeder lokale Ring
+H^ x G X normal, d.h. ganz abgeschlossen in seinem Quotientenring ist.
+Definition 4. Ein komplexer Raum (X, H) heißt regulär, wenn jeder lokale Ring H^
+isomorph zu einem lokalen Ring eines kartesischen Produktes PxG ist. Dabei bezeichnet GcC^
+ein Gebiet, PeC^ einen Punkt, der mit einer Strukturgarbe Op^C^/Zp versehen ist, wobei 7p
+ein Ideal bezeichnet, das P zur genauen Nullstellenmenge hat (1).
+Offenbar ist ein reduzierter komplexer Raum genau dann regulär, wenn er eine
+komplexe Mannigfaltigkeit ist.
+Definition 5. Ein komplexer Raum (X, H) heißt ein holomorph-vollständiger (holomorph-
+konvexer, K-vollständiger) Raum, wenn seine Reduktion ( X, 0) holomorph-vollständig (holomorph-
+konvex, K-vollständig) ist.
+Für holomorph-vollständige Räume werden wir im nächsten Paragraphen interes-
+sante garbentheoretische Resultate herleiten.
+Definition 6. Es sei (X, H) ein komplexer Raum. Eine Teilmenge AcX heißt eine
+analytische (Teil-) Menge von ( X, H), wenn A eine analytische Menge in der Reduktion ( X, 0)
+ist.
+Wir nennen fortan morphe Abbildungen zwischen komplexen Räumen holomorph,
+Schnittflächen aus F(X, H) seien mit« holomorphe Funktionen» bezeichnet.
+6. Es sei (X, H) ein allgemeiner komplexer Raum. Wir verstehen wie in Abschnitt 2
+unter H^ die Kerngarbe der Abbildung red : H->0(X). H^ ist eine Untergarbe
+von Idealen über X. H^, ^=1,2,3, ... sei diejenige Untergarbe von Idealen von H,
+die von den Elementen CTI. . . . .^ mit ^, .... ^eH^ erzeugt wird. Offenbar gilt
+H^^HDH^DH^D ... DH^DH^D ....
+(1) Der Begriff« regulär » weicht hier von der üblichen Definition ab. Im folgenden wird sich öfter zeigen
+da^ aus der Algebra bekannte Begriffe in unserer Theorie nicht sinnvoll sind (vgl. auch die Definition des Torsions^elementes in § 7).
+242
+
+
+--- PDF PAGE 14 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 15
+Es folgt sofort :
+Satz 4. ^u jedem relativkompakten Teilbereich BccX gibt es eine natürliche ^ahl
+k=k(B), so daß H^= o ist.
+Beweis. Offenbar braucht man diesen Satz nur lokal und für den Fall zu beweisen,
+daß X=AcGcCn eine analytische Menge und H(X)==H(A)==0(G)/I* der Quotient
+der Garbe 0(G) und einer in G kohärenten Idealgarbe I* ist, die A zur genauen
+Nullstellenmenge hat. Die Garbe I==I(A) der Keime holomorpher Funktionen, die
+auf A verschwinden, ist ebenfalls kohärent (nach einem Satz von H. CARTAN). Wegen
+der lokalen Natur unseres Satzes dürfen wir sodann annehmen, daß über G endlich
+viele Schnittflächen s^ . .., ^eF(G, I) existieren, die in jedem Punkte xeG den
+Halm 1^ erzeugen.
+Die Halme H^, v= 1,2,3, . . . werden nun von Elementen erzeugt, die in den
+Schnittflächen ^. . . . .jj (A, H), i<^<i^<, . . .^^<q, enthalten sind. Da jede
+Schnittfläche s^ [L==I, ...,q die Nullstellenmenge der Idealgarbe I* umfaßt, folgt
+aus dem Hilbertschen Nullstellensatz, daß es zu jedem Punkt xeA eine natürliche Zahl
+k=k{x) gibt, so daß jeder Keim, der in x von einem Produkt TT=^ ..... ^ definiert
+wird, in 1^ enthalten ist. Nach dem Cartan-Rückertschen Basissatz ist dann n eine
+Schnittfläche in I* über einer ganzen Umgebung von x. Ist BccA eine relativ-
+kompakte Teilmenge und k hinreichend groß gewählt, so ist jedes Produkt s ' .. . 's
+eine Schnittfläche in I* über einer offenen Umgebung von B. Das heißt aber
+HW\B==o, q.e.d.
+§ 2. Garbentheorie.
+i. Wir werden im diesem Paragraphen die Theorie analytischer Garben über
+komplexen Räumen entwickeln.
+Definition i. Es sei (X, H) ein komplexer Raum. Eine Garbe S von abelschen Gruppen
+über X heißt eine analytische Garbe, wenn jeder Ring H^, xeX auf dem Halm S^ operiert, so
+daß die dadurch definierte Abbildung \^H^@S^->S eine stetige Abbildung ist.
+x
+Zwischen analytischen Garben kann man wie üblich analytische Garbenhomomorphismen
+definieren. Wir nennen einen analytischen Homomorphismus einfach einen Homo-
+morphismus, wenn das nicht zu Mißverständnissen führt. Es werde definiert :
+Definition 2. Es seien (X^, H-^), (X^, H^) komplexe Räume, 0== (^, <pJ : X^->X^
+eine holomorphe Abbildung, S^ b^w. 63 eine analytische Garbe über X^ b^w. X^. Dann heißt
+eine stetige Abbildung \ : X^@^S^S^ ein Garbenhomomorphismus 63 ->S^ (über <S)), wenn
+folgendes gilt :
+1) X bildet jeden Halm (x, S^y) homomorphin S^ ab,
+2) man hat: \(x, Sy'fy) ==\(x, Sy) '^(fy), SyES^,fyeH^,y^^(x).
+243
+
+
+--- PDF PAGE 15 ---
+16 HANS GRAUERT
+Wie im Falle reduzierter komplexer Räume kann man direkte Summen und Tensor-
+produkte von analytischen Garben erklären. Wir bezeichnen mit S^, KP usw. die ^-fache
+direkte Summe der Garben S, H usw. mit sich selbst. S^, H? usw. sei die ^-fache
+Tensorpotenz. Man kann ferner den Begriff der Kohärenz analytischer Garben definieren :
+Definition 3. Eine analytische Garbe S über einem komplexen Raum (X^ H) heißt kohärente
+wenn es ^u jedem Punkt x e X eine Umgebung U(x) und über U eine exakte Garbensequen^, :
+HP^H^S->O gibt.
+In [6] 5 § i wurde eine etwas andere Definition der Kohärenz gegeben. Aus
+einem Satz von K. OKA über die Relationengarbe eines Systems f^ .. .,^4 von y-tupeln
+holomorpher Funktionen folgt jedoch, daß H im Sinne von [6] kohärent ist. Daraus
+ergibt sich dann die Äquivalenz der Definition 3 mit der Definition i in [6].
+Wie in [6] gewinnt man folgende Aussagen :
+(a) In einer exakten analytischen Sequenz o—>S'—>S—>Sff—>o von analytischen Garben
+über einem komplexen Raum (X, H) sind alle drei Garben kohärente wenn wenigstens ^wei von
+ihnen kohärent sind.
+(b) Es sei 9 : .Si-^iSg ein analytischer Homomorphismus ^wischen ^wei kohärenten Garben
+über X. Dann sind der Kern, der Kokern^ das Bild von cp kohärente analytische Garben.
+(c) Die direkte Summe S-^@S^ das Tensorprodukt (über H) S^S^, die Garbe
+Hom(S^ 63) sind kohärente analytische Garben, wenn S^ 63 kohärent sind.
+(d) Es seien S eine kohärente analytische Garbe über (X, H), MC S eine analytische
+Untergarbe von S. Dann ist M bereits dann kohärent, wenn es ^u, jedem Punkt xeX eine Umgebung
+U(x) gibt, so daß die Schnittflächen aus F (U, M) jeden Halm M^ xeU erzeugen.
+2. Es sei IcH eine analytische Untergarbe. Offenbar ist dann jeder Halm 1^
+ein Ideal im Ring H^. Wir nennen die Menge der Punkte xeX, in denen 1^ 4= H^ gilt,
+die Nullstellenmenge der Idealgarbe I (in Zeichen N(I)).
+Es werde nun X* == N (I) gesetzt. Als Teilmenge von X ist X* ein Hausdorffscher
+Raum. Wir versehen X* mit der Strukturgarbe H* == (H/I) |X*. Es folgt :
+Satz i. (X*, H*} ist ein komplexer Raum., X^cX eine analytische Menge.
+Bevor wir Satz i beweisen können, muß eine allgemeine Betrachtung durchgeführt
+werden. Wir machen dazu die Annahme, daß (X*, H*) ein komplexer Raum, X*cX
+eine analytische Menge ist. Es sei S* eine analytische Garbe über X*. Man kann S*
+trivial zu einer Garbe 'S* = S über X fortsetzen : Die Halme von S stimmen über X*
+mit den Halmen von S* überein, über X—X* hat S nur Nullhalme. Man zeigt leicht :
+Satz 2. S ist genau dann kohärente wenn S* kohärent ist.
+Der Beweis von Satz 2 kann wie in [6] geführt werden (vgl. § 2 (c)). Es sei deshalb
+hier auf ihn verzichtet. — Wir werden im folgenden S* und die triviale Fortsetzung
+von S* als gleiche Garben behandeln, wenn das nicht zu Mißverständnissen führt.
+244
+
+
+--- PDF PAGE 16 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 17
+Beweis von Sak i. Man braucht Satz i nur für den Fall zu beweisen, daß
+X^AcGcC^ eine analytische Menge und H==0(G)/I* die im vorigen Paragraphen/-»^
+beschriebene Quotientengarbe ist. Wir bezeichnen mit I cO(G) die kohärente Kerngarbe /^^/
+des Homomorphismus 0(G)->H/I. Offenbar stimmt die Nullstellenmenge von I mit
+X*cX=A überein, und es gilt : H* = H/I ==0 (G)/T, X*cX ist eine analytische
+Teilmenge, q.e.d.
+Wir nennen fortan einen Raum (X*, H*) einen komplexen Unterraum von (X, H).
+Es sei S eine kohärente analytische Garbe über X. Durch die Festsetzung
+S*==S/S-I[X erhält man eine kohärente analytische Garbe über X*. S* heiße
+die analytische Beschränkung von S auf X* (in Zeichen S*==S[^X oder einfach
+S*==S|X). Durch die Quotientenabbildung S->S* wird jedem Garbenelement
+aeS^ ;ceX* ein Garbenelement a*eS^ zugeordnet, in analoger Weise erhält man zu
+jeder Schnittfläche seF(V, S), UnX* 4= o eine Schnittfläche j*er(UnX*, S*). Wir
+nennen o-* bzw. s* die analytische Beschränkung von a bzw. s auf X*. In den folgenden
+Paragraphen werden wir das Wort « analytisch » i.a. fortlassen.
+3. In [6] wurde die Godementsche Kohomologietheorie mit Koeffizienten in Garben
+von abelschen Gruppen entwickelt. Wir werden in dieser Arbeit im wesentlichen nur
+parakompakte Räume untersuchen und können uns deshalb auf die Chechsche Definition
+der Kohomologiegruppen beschränken. Wir betrachten nur Koketten, Kozyklen etc.,
+die antikommutativ in ihren Indices sind (d.h. ^...ta...t&...tr=—^o...t&...ta...tr)•
+Dadurch ergeben sich wesentliche Vereinfachungen in der Rechnung. Die Struktur der
+Kohomologiegruppen ändert sich jedoch nicht.
+Für holomorph-vollständige Räume ergeben sich interessante Aussagen :
+Satz 3. (Analogen ^um Theorem B von H. Cartan). Es seien (X, H) ein holomorph-
+vollständiger komplexer Raum, S eine kohärente analytische Garbe über X. Dann gilt H^ (X, S) = o
+für ^>o.
+Beweis. Wir definieren H^, v =0,1,2, ... wie in § i, Abschnitt 6 und setzen
+S^S-H^. Es ist S^S. Die Garben S^-^/S^ kann man als analytische Garben
+über der Reduktion (X, 0) auffassen. Wie man leicht sieht, ist S^^/S^ kohärent.
+Man hat exakte Sequenzen : o-^S^-^-^S^-^/S^-.o, zu denen Kohomo-
+logiesequenzen : H^X, S^-^H^X, S^-^H^X, S^-^/S^) gehören. Da aber
+(X, 0) ein holomorphvollständiger Raum ist, folgt aus [3], theoreme B, daß
+(*)H^(X, S^)-^P(X, S^-^o, pi= 1,2,3, ...
+exakt ist.
+Wir schöpfen X durch eine aufsteigende Folge X^, x === 1,2,3, ... relativkompakter
+Teilbereiche aus. Nach § i, Satz 4 gibt es zu jedem x eine natürliche (kleinste Zahl) A:(x),
+so daß S^^jX^o ist. Es sei U=={Uj eine beliebige offene Überdeckung von X,
+^eZ^U, S) sei ein Kozyklus, pi>o. Ist V eine Verfeinerung von U, T die Abbildung
+245
+3
+
+
+--- PDF PAGE 17 ---
+18 HANS GRAUERT
+der zugehörigen Indexmengen, so bezeichne ri; das induzierte Bild von ^ in Z^V, S)(1).
+Wegen der exakten Sequenz (*) gibt es nun eine Verfeinerung Vi und eine Kokette
+^eC^-^Vi, S), so daß Si-^—S^eZ^Vi, S^) gilt. Durch nochmalige Anwen-
+dung von (*) kann man sodann eine Verfeinerung Vg von Vi und eine Kokette
+^eCy-^V^S^) finden, so daß ^T^—S^eZ^V^S^2») gilt. Man hat ^|Xi=o.
+So kann man beliebig fortfahren. Man erhält eine Verfeinerungsfolge V^, x= 1,2,3, . . .,
+für die man annehmen darf, daß V^ | X^_g == V^_^ [ X^_g ist. Es gibt daher eine Über-
+deckung V von X, die feiner als alle Überdeckungen V^ ist. V ist auch eine Verfeinerung
+von U. Man kann das Bild TT]^ e C^~1 (V, S) der zu den Überdeckungen konstruierten
+00
+Koketten betrachten. Da T7]jX^_i==o ist, läßt sich die Summe T]=^ TT]^ definieren.
+x=i
+Es folgt T^=ST], d.h. jeder Kozyklus aus Z^U, S) repräsentiert die Nullkohomologie-
+klasse. Somit gilt H^X, S) ==o, q.e.d.
+Es gilt auch ein Analogen zu [3], theoreme A :
+Satz 4. Es seien (X, H) ein holomorph-vollständiger komplexer Raum, S eine kohärente
+analytische Garbe über X. Dann erzeugen die Schnittflächen aus F (X, S) über der Operatorgarbe H
+jeden Halm von S.
+Beweis. Wir betrachten wie vorhin die Folge S= S^DS^DS^D . .. kohärenter
+Garben über (X, H). Wegen Satz 3 bestehen die exakten Sequenzen :
+Q H°(X, S^-^H^X, S^/S^o
+Es sei creS^eX ein Garbenelement. Da (X, 0) ein holomorphvollständiger reduzierter
+komplexer Raum ist, folgt aus [3], theoreme A, daß es endlich viele Schnittflächen
+^=1,...,^ aus P (X, S/SW) gibt, so daß cr| (X, 0) =S(^./^ mit /^eO,
+ist. Es sei red die Projektion H->0. Man kann Garbenelemente f^eti^ finden, deren
+red-Bild f^ ist. Wegen Q gibt es Schnittflächen ?^er(X, S) mit a^)^.
+Offenbar ist a^= a—K?^)^./^ in S^ enthalten. Man kann nun das gleiche Verfahren
+v-
+auf CTI und das Bild von a-^ in S^/S^ anwenden und so fortfahren. Man erhält Folgen
+o^eS^ und Darstellungen ^=^_i—S(?y)^/^ mit /^eH^ und ?^er(X, S^-^).
+^
+Ist k hinreichend groß gewählt, so gilt S^^o in einer Umgebung von x und mithin
+cr,==o. Also folgt: (T=lS(?y)j^,q.e.d.
+X(J(.
+4. Es sei 0 == (905 ?i) : X->Y eine holomorphe Abbildung einen komplexen
+Raumes (X, H(X)) in einem komplexen Raum (Y, H(Y)). S sei eine analytische
+Garbe über X. Nach J. LERAY ist S eine Folge ^v(S), v= 152,3, .. . von analytischen
+Bildgarben über Y zugeordnet. Man kann jede Garbe <I\ (S) leicht durch ein analytisches
+Garbendatum definieren.
+(1) Wir bezeichnen mit T stets die Verfeinerungsabbildung. Wir werden jedoch im folgenden das T fast immer
+fortlassen und anstelle von T^ einfach ^ setzen.
+246
+
+
+--- PDF PAGE 18 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 19
+Definition 4. Ein analytisches Garbendatum über einem komplexen Raum
+(Y,H(Y)) ist ein System {(M(U),r^) : VcU, U, VeT(Y)}, indem T(Y) die
+Menge der offenen Mengen von Y, M (U) einen der offenen Menge U zugeordneten
+Modul über I (U), dem Ring der in U holomorphen Funktionen, bezeichnen und r^
+Homomorphismen M(U)->M(V) sind, die den Relationen r^ == Identität, r^r^=^1
+genügen.
+Ein analytisches Garbendatum definiert in der wohlbekannten Weise stets eine
+analytische Garbe über Y. Zur Definition der Bildgarben ^(S) wählen wir das
+Garbendatum: M, ={(^(9^ (U), S), ^) : VcUeT(Y)}. Dabei bezeichnet ^ den
+natürlichen Beschränkungshomomorphismus H^cp^CU), S)-^!?^^1^), S). Wie im
+Falle reduzierter komplexer Räume sind alle Kohomologiegruppen I-r^^Cü), S)
+Moduln über dem Ring der in ^^(U) holomorphen Funktionen. Da durch die Abbil-
+dung <pi der Ring I (U) in I^^CÜ)) homomorph abgebildet wird, ist H^^^^U), S)
+erst recht ein Modul über I (U) und somit M^, ein Garbendatum. In analoger Weise
+zu [6], § 2-ergeben sich folgende Aussagen :
+(a) Es sei [7=={[/J eine ojfene Überdeckung von X, ?,eZ^(U, S) sei ein Kozyklus.
+Dann definiert ^ eine Schnittfläche 0^ (^) e F (Y, <I\ (S)}. 0„ (^) hängt dabei nur von der Koho-
+mologieklasse von ^ ab.
+Es ist also auch jeder Kohomologieklasse 7]e]:P(X, S) eine Schnittfläche aus
+r(Y, <t\(S)) zugeordnet. Wir werden im folgenden diese Schnittfläche auch mit O^CY])
+bezeichnen.
+(b) Die I(Y)-Moduln Y(X, S) und T(Y, ^o(S)} sind unter der Abbildung <&o :
+r (X, S) -> r (Y, Oo (s)) isomorph. Man kann jede Schnittfläche aus T (Y, Oo (s)) als Schnitt-
+fläche aus r (X, S) aujfassen.
+(c) Sind alle Garben <S>^(S)=o für ^=1,2,3, ..., so besteht sogar ein kanonischer
+Isomorphismus : H^X, S) w H^(Y, ^o(S)}.
+(d) Ist o->S'->S->S"->o eine exakte Sequenz analytischer Garben über X, so besteht eine
+kanonisch zugeordnete Bildsequenz : O—^^>Q(S')-^^Q(S)—>^>Q(S")->^(S')->. .. .
+o' o"(e) Ist X—^Y->Z eine Folge holomorpher Abbildungen zwischen komplexen Räumen
+(X, H(X}}, (Y, H(Y}}, (Z, H (Z)}, und ist S eine analytische Garbe über X, so gilt
+(9"o(S)')o(S)=^'Q (^o(S)). Verschwinden die Garben ^(S), v>o, so hat man außerdem :
+(<S>".<S>')^(S) =0, W S)), ^ 1,2,3, ....
+Besonders einfach werden die analytischen Bildgarben, wenn 0= (<po, 9^) : X->Y
+eine holomorphe Abbildung eines komplexen Raumes (X, H(X)) in einen komplexen
+Raum (Y, H(Y)) ist, bei der das (po-Urbild einer jeden diskreten Menge in Y eine
+diskrete Menge in X ist. Wir nennen solche Abbildungen nirgends entartet. Es folgt
+sofort (vgl. [7]) :
+(f) Ist 0 : X->Y eine nirgends entartete holomorphe Abbildung und S eine analytische
+Garbe über X, so gilt 0^ (S) ==-. o, v>o.
+247
+
+
+--- PDF PAGE 19 ---
+20 HANSGRAUERT
+Es sei nun 0 : X-^Y eine biholomorphe Abbildung von X auf Y. Ist dann S
+eine analytische Garbe über X, so wird jeder Halm S^ durch 0 zu einem Halm über
+jy==^o {x) verpflanzt. Man erhält eine analytische Garbe S* über Y. Wie man sofort
+sieht, gilt S*=Oo(S).
+Man kann holomorphe Abbildungen O* == (cpo, 9^) : X-^-Y* eines komplexen
+Raumes (X, H(X)) in einen komplexen Unterraum (Y*, H(Y*)) eines komplexen
+Raumes (Y, H(Y)) betrachten. Ist S eine analytische Garbe über X, so lassen sich
+die Bildgarben 0^(S) in Y trivial fortsetzen. Ferner definiert die Abbildung O* eine
+morphe Abbildung 0 : X—^Y. Es gilt 'O^(S) ==0^(S), v =0,1,2, .... Wir werden je
+nach Bedarf mit ^(S) die Garbe über Y* oder die triviale Fortsetzung in Y verstehen.
+Im folgenden wird besonders der Fall interessieren, daß 0 : X->Y* eine surjektive
+biholomorphe Abbildung ist. Wir nennen eine solche Abbildung eine biholomorphe
+Abbildung von X in Y. Man hat die Aussage :
+(g) Es sei S eine analytische Garbe über X, 0 : X->Y eine biholomorphe Abbildung.
+Dann ist Oo (S) genau dann kohärent, wenn S kohärent ist.
+5. Wir werden im § 6 einen Satz benötigen, der in enger Beziehung zu der
+Aussage (c) des vorigen Abschnittes steht.
+Satz 5. Es seien X, Y komplexe Räume, 0 : X—>Y eine holomorphe Abbildung und S eine
+analytische Garbe über X. Ferner werde vorausgesetzt, daß alle Bildgarben ^>^(S), v =0,1,2, ...
+kohärente analytische Garben über Y sind und daß Y ein holomorph-vollständiger Raum ist. Dann
+ist 0„ : H^ (X, S)->r(Y, <b^(S)) ein (surjektiver) Isomorphismus.
+Beweis. Wir wählen eine exakte Auflösung :
+0 £ 1*T ^lAT al I^T a2
+o->S->Wo-^Wi->W2->...YO—" vvi-^ vva-
+von S mit welken Garben W^, x=o,i,2, ... (vgl. [6], § i und § 2). Es gilt H^X, S) ==
+Ker aJa,_i(r(X, W,_0). Die Bildsequenz :
+o->Oo(S) -^(Wo) ^Oo(Wi) ^Oo(W,) ^...
+ist zwar noch eine welke Auflösung von Oo(^)» jedoch i.a. nicht mehr an den Stellen
+<I)(»(WJ, x==i,2,3, ... exakt. Wir setzen : B^=Im a^_i, K^=Ker a^, %==i,2,3, ....
+Man hat natürliche Isomorphien :
+F(Y, (Do(wj)» F(X, wj,
+F(Y, KJ w Ker F(X, WJ,
+F(Y, Kera„) » F(Y, 0„(S)) » F(X, S)
+und exakte Sequenzen :
+o-^B^->K^^<D^(S)^o, %=i,2,3,...,
+o-^K^_i-^<I»o(W^_i)-^B^^o, %=2,3,4, ...,
+o-^<Do(S)-^<Do(Wo)->B^o.
+248
+
+
+--- PDF PAGE 20 ---
+EIN THEOREM DL R ANALYTISCHEN GARBENTHEORIE 21
+Unter Benutzung von Satz 3 folgt sodann durch Induktion, daß alle Garben B^, K„,
+azyklysch sind (B-Garben). Durch Übergang zu den Kohomologiesequenzen erhält man :
+F(Y, o,(S)) ^ F(Y, KJ/F(Y, BJ ^ F(Y, KJ/^_,F(Y, d>o(w,_j) ^
+KerF(X, WJ/a,_,F(X, W,_^IP(X,S).
+Man sieht leicht, daß die Isomorphie IP(X, S) » F(Y, <D,(S)) mit dem Homomorphismus
+0, übereinstimmt. Gleiches gilt für r(X, S) w F(Y, ^(ä))- Damit ist Satz 5 beweisen.
+6. Es sei (X, H) ein komplexer Raum. Unter einer Karte in X verstehen wir
+ein Tripel (W, <D, G), in dem WcX eine offene Menge, GcC" ein Gebiet und
+0 : W->G eine biholomorphe Abbildung von W in G bezeichnet. Ein Quintupel
+2B=(W, <D, G, G7, r : O^Oo(S)-^o) heißt eine Meßkarte (i. Art) bzgl. einer kohä-
+renten Garbe S über X, wenn (W, 0, G) eine Karte, G ein Holomorphiegebiet, G' cG
+ein Teilgebiet und F eine exakte Garbensequenz über G ist. Durch jede Messkarte W
+wird in F(X, S) eine Pseudonorm definiert : Ist ^eF(X, S) eine Schnittfläche, so gibt
+es, da G ein Holomorphiegebiet ist, ein ^-tupel holomorpher Funktionen /eF(G, 0^),
+so daß a(/)=Oo(j-[W) ist. Wir setzen dann : ||j||3ß=min supj^G')]. Dabei ist
+f ={fi'> '",fq) und |/(^)|==max|/^)|. Gilt G'ccG, so ist \\s\\^ stets endlich,
+[| .$•11^ also eine Norijn (1).
+Natürlich ist der komplexe Vektorraum F(X, S) nicht vollständig, wenn er
+mit der durch unsere Pseudonorm induzierten Topologie versehen wird. Ist aber X ein
+holomorph-vollständiger Raum, so läßt sich in F(X, S) eine Metrik einführen, die
+r(X, S) sogar zu einem Frechetschen Raum macht. Wir gehen folgendermaßen vor :
+1) Wir schöpfen X durch eine Folge (offener) analytischer Polyeder P^CCX aus
+mit P.ccP^i, v =0,1,2, ....
+2) Wir definieren biholomorphe Abbildungen <I\ : P^->Z^ der Polyeder I\ in
+Polyzylinder Z^, c G^.
+3) Wir wählen einen Polyzylinder Z^, so daß <D,(P^)cZ„ konstruieren über
+einem Polyzylinder Z„ mit Z^ccZ^ccZ^ eine exakte Sequenz F„ : 0^-°^$^(S)-»o
+(Anwendung des Theorem A von Gartan) für v=i,2,3, ....
+4) Wir setzen P^O^ZJ, 93S,=(P„ 0„ Z„ Z^, FJ.
+00
+5) Wir definieren die Metrik : dist (^i,^)=i/^ S 2-^ arctg \\s^—s^ ||g^, die, wie
+v= i
+man leicht sieht, F(X, S) zu einem Frechetschen Raum macht.
+7. Wir zeigen folgenden Satz :
+Satz 6. Es seien (X, H) ein kompakter komplexer Raum, S eine kohärente analytische
+Garbe über X. Dann gilt dim^(X, S)<oo für v =0,1,2,3, ... und dim^(X, S)==o
+für v>.Vo-
+(1) Wir verwenden im folgenden für den Begriff« Pseudonorm » auch häufig das Wort« Norm ».
+249
+
+
+--- PDF PAGE 21 ---
+22 HANSGRAUERT
+Beweis. Wir definieren die Garbenfolge H^H^bH^bH^b . .. wie in § i,
+Abschnitt 6. Da X kompakt ist, folgt : H^==o für v>Vo. Wir setzen : S^S.H^
+Über X hat man dann die exakten Sequenzen :
+(*) o-^S^-^S^-^-^S^-^/S^-^o.
+Die Reduktion (X, 0) ist ein komplexer Unterraum von (X, H). Man kann deshalb
+§(v-i)^(v) auf (X, 0) beschränken. Die Beschränkung sei mit A^ bezeichnet. Offenbar
+ist die triviale Fortsetzung von A„ zu S^-^/S^ kanonisch isomorph. Aus (*) ergeben
+sich also die exakten Kohomologiesequenzen :
+Q o-^H°(X, S^H°(X, S^-^H^X, AJ-^HW(X, S^....
+Nun ist Satz 6 nach [4] für reduzierte komplexe Räume gültig. Aus (*) folgt : Der Satz 6
+ist für S^-^ richtig, wenn er für S^ gilt. Da S^ = o ist, ergibt sich unser Satz durch
+vollständige Induktion.
+8. Für die Untersuchungen in den folgenden Paragraphen ist es bequem, eine
+vereinfachende Redeweise einzuführen. Wir bezeichnen mit F^, Fg zwei komplexe
+Vektorräume, die mit Pseudonormen |[;v|[ibzw. \\jy\\^ ausgerüstet seien. R^, y),
+XG^l'>yE^2 sel eme Relation zwischen den Vektoren von F^ und Fg (im logischen Sinne).
+Wir nennen R(^,j^) linear beschränkt (in der Richtung Fg-^Fi), wenn es eine von y
+unabhängige Konstante c gibt und zu jedem Vektor y, \\y\\z<a<^ ein xeF^ gehört
+mit R(^,j^) ==« wahr» und ||A;[|i<^ß. Hängen die Räume F^, Fg und die Relation
+R(^.j^) noch von einem Parameter p ab und kann c unabhängig von p gewählt werden,
+so sagen wir, daß R(^,j^) unabhängig von p linear beschränkt ist.
+Es seien (X, H) ein kompakter komplexer Raum, U={U, : L==I, ...,L^}
+eine endliche Steinsche Überdeckung von X. Wir setzen z==(^, . . ., Q' Nach Satz 3
+gilt H^H, S) =o, pi>o, wenn S eine kohärente analytische Garbe über X bezeichnet.
+Aus einem Satz von Leray (vgl. § 4, Abschnitt 6) folgt daher :
+Es existiert ein kanonischer Isomorphismus :
+IP(U, S) ^:EP(X, S).
+Man kann deshalb Kozyklen ^ ..., ^eZ^(U, S) finden, deren Bilder bzgl. der
+Abbildung X : Z^U, S)-^:EP(U, S^H^X, S) den komplexen Vektorraum H^X, S)
+aufspannen.
+Nun ist jedes U„ i= (1.0, . . ., ^) ein holomorph-vollständiger Raum. Wir führen
+nach Abschnitt 6 in r(U„ S) eine Metrik dist,(Ji, s^) ein und setzen für zwei Koketten
+T^^T^eC^U.S) : dist (7]i, ^)=max dist, (T]W, 7^). Offenbar wird C^U, S)i
+durch diese Metrik zu einem Frechetschen Raum. Durch die Relativ- bzw. Produkt-
+topologie (und-metrik) werden ebenfalls Z^U.S) und C8 X O1-1 (U, S) zu Frechetschen
+Räumen. Die Abbildung ß : ((a^ ..., ßj, T]) ->ST] + I a^: C8 x O1-1 (U, S) -^ (U, S)
+v=l
+250
+
+
+--- PDF PAGE 22 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 23
+ist surjektiv und stetig. Aus einem Satz von Banach ([2], chap. i, § 3) folgt deshalb :
+(*) ß ist eine offene Abbildung.
+Wir werden aus (*) eine einfache Aussage herleiten. Wir nehmen dazu an, daß
+jedes U, in einer offenen Teilmenge U,cX enthalten ist, die Träger einer Meßkarte
+3ß^. = (Ü„ <&„ G„ G„ F.) ist. Ferner seien U' =={1^} eine Steinsche Überdeckung
+von X, die eine Verfeinerung von U ist, ^^(U^ O^, G^, G,7, F^) eine weitere
+Kollektion von Meßkarten mit G.ccG^Ü^O^^G^.H'cÜ,. Es gelte Ü,ccU„. Wir
+definieren in C^U, S) bzw. C^U', S) die Pseudonormen : | [ T] [ [i = min max 11 T]J [gß ^
+^ ^
+ll^lla^minmax ||^|[^. Dabei sind T] ={^}, T]' =={^}, ^,er(U, S) mit
+•^ ^
+^m=7]„ ^eI^U,7, S) mit ^IU^T^. Aus (*) folgt unmittelbar :
+Satz 7. Es seien ^ ..., ^e^(U, S) Ko^yklen, so daß die Kohomologieklassen X^J
+eine Basis von H^(X^ S) bilden. Dann gibt es ^u jedem Ko^yklus ?,^^(U, S) eine Kokette
+s
+'^eCtl'~l(U, S) und komplexe Zahlen a^ ...,ßg so daß ^= ^ ß^^+S7] gilt. Die Zuordnung
+x=i
+^->ßi, ..., a^ ist in be^ug auf die Normen 11 S | [i? 117] 112? \ay.\ li^^ beschränkt.
+In der Tat ! Die Kozyklen ^Z^U, S) mit ||S[|i<£ sind für c->o in beliebig
+kleinen Umgebungen von OeZ^U, S) (in bezug auf dist) enthalten. Die Koketten
+•^eC^-^U, S) mit |h||2<i bilden jedoch eine Umgebung von OeC^-^U, S).
+Nach (*) ist daher ^eZ^U, S), ||S||i<s im ß-Bild des Raumes
+{(^1, ...,ff„ 7]) : |ßJ<I, ||^||2<l}
+enthalten, wenn £>o hinreichend klein ist. Daraus ergibt sich die Behauptung
+von Satz 7.
+9. Wir werden im nächsten Paragraphen Folgen von Untergarben von kohärenten
+analytischen Garben betrachten müssen. Es werde deshalb gezeigt :
+Satz 8. Es seien (X, H) ein komplexer Raum, S eine kohärente Garbe über X und S^
+v==i^2,3, ..., eine Folge von kohärenten Untergarben von S, für die S^cS^^^ gilt. Dann kann
+man ^JL jedem relativ-kompakten Teilbereich BccX eine natürliche ^ahl VQ finden, so daß S^= S^
+für ^>_^Q ist.
+Beweis. Offenbar ist der Satz lokaler Natur. Man darf deshalb annehmen, daß X
+ein komplexer Unterraum eines Holomorphiegebietes GcC^ ist. Da man die Garben S,
+S„ trivial zu kohärenten Garben nach G fortsetzen kann, ist es sogar möglich, ohne
+Einschränkung der Allgemeinheit vorauszusetzen, daß X == G ist und daß über G eine
+exakte Garbensequenz O^-^O^-^S-^o erklärt ist. Wir setzen O^Ker^-^S/SJ und
+brauchen nur noch zu zeigen, daß zu jedem relativ-kompakten Teilbereich BccG
+eine natürliche Zahl v^ existiert, so daß 0„==0^ für v>_^o gilt.
+Nun sind alle Garben O^cO^ kohärent, ferner hat man O^cO^p Da nach
+251
+
+
+--- PDF PAGE 23 ---
+24 HANSGRAUERT
+bekannten Sätzen jeder Ring 0^, xeG ein noetherscher Ring ist, folgt aus dem Tei-
+lerkettensatz, daß für v>_v(^) gilt: (OJ^=(C\^.
+Wir setzen 0*=(j0^. Da G ein Holomorphiegebiet ist, wird C\ von den
+v
+Schnittflächen aus F(G, OJ erzeugt. Mithin wird auch O* von F(G, 0*) erzeugt
+und ist deshalb kohärent. Da O* lokal schon von endlich vielen Schnittflächen
+je r (G, 0*) erzeugt wird und mit Hilfe des Cartan-Rückertschen Basissatzes aus
+j(^)e(0^ für eine volle Umgebung V {x) folgt : .ylV'eI^V7, 0,^), hat sich
+ergeben, daß eine Umgebung V {x) existiert, für die gilt : OJV==0^[V, v>_v(^).
+Damit ist Satz 8 bewiesen.
+§ 3. Garben in Gebieten des komplexen Zahlenraumes.
+i. Es bezeichne p = (pi, . . ., p^) ein m-tupel positiver reeller Zahlen, t == (t^ . . ., ^J
+ein m-tupel komplexer Zahlen, b == [d^ .. ., d^) ein m-tupel natürlicher Zahlen, die
+auch + °° sein dürfen. Wir setzen t^ = o und verstehen unter I (b) c0 (G^) diejenige
+kohärente Idealgarbe, die von den holomorphen Funktionen t^eF^C^1, 0(0^)),
+v = i, ..., m erzeugt wird. K (p, b) sei sodann der komplexe Raum, der den Polyzylinder
+Ki={t : K[<p„ v=i, ..., w}n{I(b)=o} als Trägerraum und H(b) =0(0^/1 (b)
+als Strukturgarbe besitzt. Ferner sei po = (p^, ..., p^) ein festgewähltes w-tupel positiver
+Zahlen. Es seien folgende abkürzende Bezeichnungen eingeführt : b^ == (oo, ..., oo),
+K (b) = K (po, b), K (p) == K (p, b,), K == K (po). Wir nennen p ^ po, wenn für alle v :
+Pv ^ P^ gilt und betrachten Polyzylinder K (p, b) mit p.<.po.
+Ist GcCn ein Gebiet, so trägt das kartesische Produkt GxK(b) eine natürliche
+Strukturgarbe H(b). GxK(p, b) ist also ein komplexer Raum. Es werde in
+r = r (G X K (p, b), IP (b)) eine Pseudonorm eingeführt, p == i, 2, 3, ... : Jede
+Schnittfläche /eF kann durch Beschränkung eines j^-tupels/ in GxK(p) holomor-
+b~l /^\x
+pher Funktionen erhalten werden, f läßt sich daher in eine Potenzreihe f== ^ A( ~ >c=0 \P/
+entwickeln, bei der b—i = (ä?i—i,...,^—i), x= (x^, ..., x^) und
+w^y1.....^\p/ \pi/ \pjist. Die f^ sind /»-tupel in G holomorpher Funküonen. Wir setzen \\fy, | |o =
+S sup [/M (G) |,/,=(/'?>, ...,/^) und H./U^supH/JI,. ||/J|^ ist auf einemV %
+Untervektorraum von F endlich und macht diesen zu einem vollständigen Banach'schen
+Raum (1).
+Wie man leicht sieht, kann man jeden über K(b) definierten analytischen
+Garbenhomomorphismus h : IP^-^H^b) durch Beschränkung eines analytischen
+Homomorphismus h : O^K^-^O^K) erhalten. Wir brauchen also nur Homomor-
+phismen h zu untersuchen. Es werde zunächst die Annahme gemacht, daß G = 0 ein
+(1) Wir werden das b in der Bezeichnung dieser und der später zu definierenden Normen häufig fortlassen.
+252
+
+
+--- PDF PAGE 24 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 25
+Punkt, also GxK(p, b)=K(p, b) ist. Wir setzen in diesem Falle [|/[|^= [[/l^.
+Es werde beachtet : Gilt b^b (d.h. rf^ö?,), so ist K (p, bi) ein komplexer
+Unterraum von K (p, b). Jede Schnittfläche /£F(K(p, bi), H^bi)) läßt sich in eine
+bi—l /t\x
+Potenzreihe P : /= I /x - entwickeln, in der /, /?-tupel komplexer Zahlen sind.x=0 \P/
+Man kann P aber auch als Potenzreihenentwicklung einer Schnittfläche
+*/er(K(p,b),H^(b))
+auffassen. Wir bezeichnen */ als die Polynomfortsetzung von /. Es gilt stets
+*/|K(p, bi)=/ (aber nicht umgekehrt * (^|K(p, bi)) =g, ^er(K(p, b), H^b)). Wir
+werden im folgenden / und */ mit gleichen Symbolen bezeichnen, wenn das nicht zu
+Mißverständnissen führt.
+Es werde mit e==(^, ...,^J, ^<oo, stets ein m-tupel natürlicher Zahlen
+bezeichnet.
+Satz i. Es seien h : OP(K}->Oq(K) ein analytischer Garbenhomomorphismus, b ein
+m'tupel natürlicher fahlen (einschl. co), h(b) die Beschränkung von h auf K(^). Ist dann p
+hinreichend klein (^<^(d^ ..., d^ h)<_^) (^, so gibt es w jeder endlichen Schnittfläche
+fe^(K(^b},Hq(<!)}}, mit f\K(t)Eh(t)oHP(t) für alle e<_b, eine endliche Schnittfläche
+geT(K(^, b),!!10^}} mit f=h(^)og, so daß die Zuordnung f-^g unabhängig von d^ linear
+beschränkt ist.
+Beweis. Wir schwächen Satz i zunächst ab : Wir machen eine zusätzliche Voraus-
+setzung : « Die Zahlen d,^^ ..., d^ seien endlich », so dann eine Abschwächung des
+Resultates : « Die Zuordnung f-^g ist von d^ unabhängig linear beschränkt, wenn
+j+ o ist. » Die so erhaltene Aussage sei mit Satz ig bezeichnet.
+Für s=o sind die Räume F(K(p, b), HP(b)), F(K(p, b), H^(b)) endlich
+dimensionale komplexe Vektorräume. Satz IQ ist also trivial. Ferner stimmt Satz i
+mit Satz i überein. Zeigen wir, daß (bei festem Homomorphismus A) aus der Gültigkeit
+von Satz i, für S<SQ seine Gültigkeit für S==SQ folgt, so ist Satz i bewiesen. Es sei deshalb
+fortan die Induktionsannahme gemacht, daß Satz i^, S<SQ bewiesen ist.
+Es müssen einige Bezeichnungen eingeführt werden. Wir setzen :
+(a) b^=(oo,4 ...,0,
+(b) M=Ä(O^), M(b)==Ä(b)oIP(b)==M|K(b),
+(c) X= denjenigen Homomorphismus H^b^/M^^-.H^bJ/M^), der durch
+die Zuordnung <J->^-(T erzeugt wird,
+(d) d~[= kleinste natürliche Zahl, so daß der Homomorphismus X den Halm
+^-i.(H^(b„)/M(b„))o, mit OeK Nullpunkt, injektiv abbildet (2),
+(e) b^^^...^).
+(1) p hinreichend klein bedeutet stets, daß ein pi^po existiert, so daß für p < p^ die btrf. Aussage gilt.
+(2) Die Existenz der natürlichen Zahlt d\ ergibt sich auf folgende Weise : Wir setzen Q=H?(b^)/M(b^).
+Die Garben Q.v=joeQ : t^.a=o\ bilden eine aufsteigende Folge von kohärenten Untergarben von Q,. Nach
+Satz 8, § 2 gilt : (Q^)o=(Q,^)o für V>VQ. Mithin wird t]° • Qp durch X injektiv abgebildet.
+253
+4
+
+
+--- PDF PAGE 25 ---
+26 HANSGRAUERT
+Es sei nun p<pi, pi<po sehr klein, /eF(K(p, b), I-P(b)), eine endliche Schnitt-
+fläche mit H/II^OM und/|K(e)eM(e) für alle e<b. Gilt d^<d^ so ergibt eine
+Anwendung von Satz i ^_^ das gewünschte Resultat. Da es nur endlich viele natürliche
+Zahlen d-^<d^ gibt, ist die Relation f—>g unabhängig von d^<d^ linear beschränkt.
+Es sei daher fortan d^>d^. Es folgt :
+(*) Es sei /=V/^Yer(K(p, b), H^(b)), l>d\. Es gelte /|K(e)eM(e) für
+alle e< b und ||/J|^<^ mit /,er(K(p, b-), H^bQ), b'= (i, 4 . . ., ü. Dann gibt
+es eine Schnittfläche ^*er(K(p, b^), KP^)), derart, daß
+/ f \l—d++l di—l /f\v-
+/- ^ -hw^= s r^}\Pl/ %=?+! \Pl/
+und \g*\\^<c^ l|/^||bp<^^s%-^+^ gilt. Die Konstanten q, ^>i sind von d^
+und c^ sogar von (ö?i, pi) unabhängig. £=£(pi) wird mit pi beliebig klein. Ist d~[=i,
+so ist auch c^ von (rf^, p^) unabhängig.
+/f\^—i
+Beweis von (*). Wir definieren f°==f^ ( — und setzen p°== (p^, pg, .... p^).
+\Pi/ /o\^—i
+p0 sei hinreichend klein im Sinne von Satz i^_p Es gilt ||/°||y< pl 9K^. Da
+\Pi/
+Satz ig—i voraussgesetzt und y°|K(e)eM(e) ist (1), kann man eine Schnittfläche
+^*er(K(p,bJ,H^b^)) finden mit ||^* H^^/^Y1"1 und Ä^)0^*-/0. Dabei
+\Pi7
+ist CQ> i von y, 6/1, pi, / unabhängig. Wie man leicht sieht, gibt es eine weitere von g*,
+b^, b^b^, unabhängige Konstante c'>i, so daß ||Ä(b)o^* \\^<c' \\g* [|^ gilt.
+Daraus folgt sofort, daß /—(-^) 1+ Ä(b)o^*= S /^^ymit
+\Pl/ >c=^4-l \Pl/
+ii^ii^^+^^f^y"'\pi/ist, q.e.d.
+Es sei fortan p^ so klein gewählt, daß für p<pi die Zahl c^<il^ ist.
+dl-l /^^K
+Wir wählen eine beliebige Schnittfläche f= lf^(-} er(K(p, b), H^b)) mit
+x=< \Pl/
+/|K(e)6M(e) für alle e<b und H/^I^OK. Nach (*) gibt es eine Schnittfläche
+^er(K(p, bj, H^(bJ), derart, daß
+n^ii^^^/^^-^y-Äwo^^ 's1 /^^y,\Pl/ x=^+l \Pl/
+ll^)llbp<^•(I+4-'+dQ.
+(1) Esgilt/°|K(e)eM(e) für e^b+ aus folgenden Gründen : Zunächst folgt aus Satz ig_i :/[K(p,b)=Ä(b)o^
+mit b ==(/+!, ß?2, ..., </^), ^er(K(p, b), HP(b)), wenn p hinreichen klein ist. Also ist
+7=Ä(b^)oier(K(p,b^),M(b^))
+und mithin liegt der Keim von f° =//^—dt+l über 0 in M(b^). Es ist aber f\ K(p, b) =f \ K(p, b) und
+daher/°==/°|K(p, b+), woraus/§ EM (b4-) folgt, q.e.d.
+254
+
+
+--- PDF PAGE 26 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 27
+Durch Anwendung von (*) auf /(1) gewinnt man sodann eine Schnittfläche
+&^r(K(p, b„), IP(b„)) mit
+II^II^W +4-1), f^^-WhWog^ Y /^W
+\Pl/ x=^+2 \Pl/
+ll/^ ||bp<^(I+4d+l-x+4d+l+l-%• (I+4-l))=^(I+4d+l+l->(+2.4^-').
+Durch Fortsetzung des Verfahrens gelingt es, Schnittflächen
+^r(K(p,b„), ip(b„)), /^^/^-^y.ÄWo^er^p.b), HW)\pl/
+zu konstruieren. Immer bleibt 11 /(v) | [ < 2 9K und mithin | [ ^ | (^ 2 q9K. Für
+^= S f-^y^ gilt : A(b)o^=/.
+V-iVPl/
+Ist /er(K(p,b),H^(b)) mit /|K(e)eM(e) und \\f\\^<m eine beliebige
+Schnittfläche, so kann man f^^f \ K(p, b4') bilden. Nach den Überlegungen zu Anfang
+des Beweises gibt es dann eine Schnittfläche g+ e F(K(p, b^), IP(b^)) mit [ |^+ [ \^< cVSl
+und Ä(b+)o^+=/+. Wir setzen /* =/—Ä(b)o^+, es gilt wieder /*|K(e)^M(e)
+di—l / f \x
+für alle e^b, aber darüber hinaus : /*= S /^ -2 . Also läßt sich das letzte
+^==d\ \Pl/
+Resultat anwenden. Satz i ist damit bewiesen.
+Im Falle, daß rf^==i ist, vereinfacht sich der Beweis von Satz i etwas. Es folgt
+dann :
+Zusatz I. Die Zuordnung f->g ist sogar von (^ d^) unabhängig linear beschränkt.
+Offenbar ist d^ genau dann gleich i, wenn der Homomorphismus X die Garbe
+S == H^b^/M^) über K(pi, b^), pi< po injektiv abbildet (1). Wir werden später solche
+Garben torsionsrecht nennen. Wie man leicht sieht, ist i.a. f->g nicht von pi^p^
+unabhängig linear beschränkt.
+Wir definieren noch :
+a) Eine Folge e^ = (^), . . ., e^) von m-tupeln natürlicher Zahlen konvergiert
+gegen oo, wenn jede Komponentenfolge e^ gegen oo konvergiert.
+b) min(e, b) = (min(^, ä?i), .. ., min(^, rfj).
+Zusatz II. Es gibt eine von f und p<pi unabhängige Funktion /(e) <e, deren Werte
+und Argumente m-tupel natürlicher fahlen sind, so daß folgendes gilt :
+1) limf(t)=co,C-i-OO
+2) Ist f\K(min(t, b^==o, so kann man g so wählen, daß g\K(min(f(t)^ ^))=o
+und die ^uordnung f->g unabhängig von d^ linear beschränkt ist.
+(1) Der Träger T der Garbe Ker X ist eine analytische Menge, da Ker X kohärent ist (vgL § 7). Es gilt O^T.
+Daraus folgt die Aussage.
+255
+
+
+--- PDF PAGE 27 ---
+28 HANSGRAUERT
+Der Beweis von Zusatz n ergibt sich unmittelbar, wenn man dem Gang des
+Beweises von Satz i folgt.
+Man erhält nun unmittelbar eine Aussage, in der § i, Hilfssatz i enthalten ist :
+Satz 2. Es seien Afo, MQ c 0^, 0 e K == Nullpunkt, Untermoduln, ^u jedem
+m-tupel t natürlicher fahlen und ^,u jedem Element feM^ gebe es ein Element feM'^
+^it f—fleOi'I(^). Dann gilt M^cM^
+Beweis. Nach dem Rückertschen Basissatz gibt es Basen f'^ ..., f'^ f^ . .., f^ von
+M.Q bzw. Mß. Ist po hinreichend klein, so sind alle diese Funktionen in K holomorph,
+durch die Zuordnung (ß^, ..., ap)->Tia^f'^ erhält man dann einen Homomorphismus
+h : (y-^O3. Nach Satz i gilt /JK(p) eF(K(p), Ä(O^), wenn p<po und mithin
+MoCM„.
+2. Es seien GcC^ ein Holomorphiegebiet, n die Produktprojektion GxK-^G,
+F ein y-rangiges komplex-analytisches Vektorraumbündel über G X K. Es ergibt sich :0
+Satz 3. F ist analytisch äquivalent ^u der Liftung T: (F) eines q-r angigen komplex-o
+analytischen Vektorraumbündels F über G.
+o
+Beweis. Wir setzen F=F[Gxo (mit o = Nullpunkt aus K) und erhalten ein
+Vektorraumbündel über G, da G X o w G ist. Weil G X K auf G X o zusammenziehbar0
+ist, sind F und T€~ (F) topologisch äquivalent, weil ferner GxK ein holomorph-voll-
+ständiger Raum ist, folgt nach [8], Satz l die analytische Äquivalenz TT^F) w F.
+Man braucht zwischen analytisch äquivalenten Bündeln nicht zu unterscheideno
+und darf deshalb voraussetzen, daß F==TC (F) ist.
+Es sei T=={T^, E.GI} eine hinreichend feine Steinsche Überdeckung von G.o
+F kann dann durch einen Kozyklus 0 == {O^ (^) : 4, ^eI^eZ^T, GL[q, G)) gegeben
+werden. Die Ausdrücke 0^ (^) sind holomorphe Abbildungen T^ = T^nT^-^GL (y, C)
+und werden wie üblich « transition functions » genannt. Das Bündel F entsteht durch
+Verheftung der kartesischen Produkte T^xG^^-^i, ^ w) : ^eT^, weC^ vermöge der
+biholomorphen Abbildungen : T^xC^T^xG3 : (ig, ^, w)-^{^ ^ (]>^J^)ow).
+Wir setzen t={t, =T\ x K : iel), ^{O^^O^oT^eZ^t, GL(?, C)). Es
+folgt sofort, daß F durch den Kozyklus 0 gegeben wird. Da F durch Verheftung entstanden
+ist, gibt es kanonische holomorphe Abbildungen ^ : 9—1(TJ -> T^ X G*7, die durch Liftung
+der kanonischen Abbildungen ^ : y"^^) ->T^ X Cq erhalten sind. Dabei bezeichnen 9, ipo
+die Bündelprojektionen F->G, F-^GxK.
+Ist je r (B, F), BcT^ eine Schnittfläche, so wird s durch ^ auf eine Schnittfläche^
+in dem trivialen Bündel T^ X Cq abgebildet, die man als ein ^-tupel holomorpher Funk-
+tionen deuten kann. Wir bezeichnen dieses ^-tupel mit ^iM-
+Es sei nun U=={U^ : zej} eine offene Überdeckung von G. Wir nehmen an,
+daß U eine « eigentliche Verfeinerung » von T ist (in Zeichen UccT). Das bedeutet
+256
+
+
+--- PDF PAGE 28 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 29
+folgendes : Zu jedem Element iej ist ein Element T(z)el definiert, so daß aus ^=r(?)
+folgt : U.ccT,.
+Wir greifen auf die Bezeichnungen des vorigen Abschnittes zurück und setzen
+Ü(p)=={U,xK(p)} und führen in C^L^.F) eine Pseudonorm ein. Ist
+^{^...tv}60^1^?^ F) eine Kokette, so setzen wir:
+ll^llup= sup 11+(^...J ll^,.,p boo =(oo,...,oo).
+to,...,t\„tA,l=T(^)
+Wir untersuchen zunächst den Fall, wo K == o ein Punkt ist, und setzen in diesem
+Falle anstelle von ||^[^ einfach ||S[[u. Es gilt F=F. Wir setzen fortan voraus,
+daß U eine Steinsche Überdeckung von G ist. Ein Satz von Leray besagt dann, daß
+H'(U, F)==:ET(G, F) ist, v =0,1,2, ... . Aus dem Theorem B von H. Cartan folgt
+deshalb : H^U, F) ==o, v = 1,2,3, .... Wir zeigen darüber hinaus :
+Hilfssatz i. Es seien G'ccG ein Teilgebiet, V={V,} eine offene endliche Überdeckung
+von G', die eine eigentliche Verfeinerung der Überdeckung U ist. Dann gibt es ^u jedem Koy>klus
+^e^(U, F), v>i eine Kokette ^eC^-^V, F), so daß HG'=87] ist. Die Zuordnung
+$-^7] ist in bewg auf die Normen [ [ ^ | [^ \ \ T] 11„ linear beschränkt.
+Beweis. Die Gruppen C^U, F), Z^U, F) lassen sich als komplexe Vektorräume
+auffassen. Versehen mit der Topologie der kompakten Konvergenz sind sie Frechetsche
+Räume. Da 8 : G^-^U, F^Z^U, F) stetig, linear, surjektiv ist, folgt aus einem Satz
+von Banach ([2]), daß 8 eine offene Abbildung ist. Daraus ergibt sich aber unmittelbar
+die Behauptung des Hilfssatzes (vgl. § 2, Abschnitt 8, wo ein ähnlicher Schluss durch-
+geführt ist).
+Die Aussage von Hilfssatz i überträgt sich unmittelbar auf unsere Produkt-
+gebiete GxK(p) :
+Satz 4. Es seien G'ccG ein Teilgebiet, V={V,} eine offene endliche Überdeckung
+von G\ die eine eigentliche Verfeinerung der Überdeckung U ist. Dann gibt es ^u jedem Ko^yklus
+Se^YtYp;, F), v^i eine Kokette r^eC^-^V (p), F), so daß ^\G' xK(^) =87] ist. Die
+Relation ^-^ ist in bewg auf die Normen ||S||up, IHIvp unabhängig von p linear beschränkt.
+Der Beweis ergibt sich durch Potenzreihenentwicklung von ^ nach den Variablen t
+von K (p).
+3. Wir zeigen jetzt, indem wir die Bezeichnungsweise des vorigen Abschnittes
+beibehalten :
+Satz 5. Es seien F^ FQ ^wei komplex-analytische Vektorraumbündel über G X K, h ein
+analytischer Homomorphismus der Garbe F^ in die Garbe FQ. Femer seien FCC Ucc T, 7, Ü
+die im vorigen Abschnitt definierten Überdeckungen. Ist dann p<po hinreichend klein, so gibt es ^u
+jedem Ko^yklus ^={^^^(U(^), FJ mit ^,.^r^,^p;, M), M=h(FJ
+einen Ko^yklus 7]e^(V(p), FJ, so daß ^\G' X K(p) ==h(^) ist. Die Zuordnung ^->^
+ist linear beschränkt.
+257
+
+
+--- PDF PAGE 29 ---
+30 HANSGRAUERT
+Zum Beweis von Satz 5 zeigen wir zunächst :
+(*) Es gibt zu Fo, FI ein Holomorphiegebiet P mit G'ccPccG und zu jedem
+p<po ein pi mit p^pi^po^ so daß über PxK(pi) eine exakte Garbensequenz
+o ->- Fj ^ ^1-1 ^ • • • -> FI -^FO existiert, in der F„, v==o, i, . . ., komplex-analy-
+tische Vektorraumbündel vom Range p^ bezeichnen und Ag == h ist.
+Beweis von (*}. Wir wählen ein (offenes) analytisches Polyeder P mit G'ccPccG
+und ein m-tupel pi? p^pi^po* Ist Mi der Kern der Abbildung h^ so wird jeder Halm
+von Mi über einer Umgebung U(PxK(pi)) durch festgewählte Schnittflächen
+s^, ..., ^(=r(GxK, Mi) erzeugt, h^ : (^), . .., a^-^^a^s^ ist dann ein analytischer
+Homomorphismus von Fg== 0^(11) auf Mi |UcFi |U, die Sequenz (i) : Fg^Fi-^Fo
+somit über U exakt. Da es beliebig kleine Holomorphiegebiete P7 mit PccP' gibt,
+kann man das geiche Verfahren auf Mg = Ker AI anwenden und so beliebig fortfahren.
+Nach dem Hilbertschen Syzygiensatz gibt es eine Zahl K^n + m, so daß M^_i eine freie
+Garbe ist. Wir definieren dann : Fj=M;_i und erhalten damit die exakte Sequenz (*).
+Satz 5 läßt sich nun durch Induktion über / beweisen. Wegen (*) kann man fortan
+ohne Einschränkung der Allgemeinheit voraussetzen, daß über GxK eine exakte
+Sequenz :
+O^F,->F,_,->...^F^FO
+gegeben ist. Wir betrachten zunächst den Fall der Kozyklen vom Grade v=o und
+führen folgende Bezeichnungen ein :
+1) Es sei G^, x ==0,1,2, 3 eine Folge von Holomorphiegebieten mit Go=G,
+G-cGs, G^^ccG,.
+2) Es seien U^={Uy}, x==o, 1,2,3 Steinsche für x =)= o endliche Überdeckungen
+von G^ bzw. von Gi im Falle x == i. Es gelte Uo == U, V c Ug, U^ _^ ^ sei eigentliche Verfei-
+nerung von U^. Alle Elemente U^GÜi seien Polyzylinder und so klein gewählt, daß
+für sehr kleines p für den Polyzylinder Ü^^U^xK^p) die Aussage von Satz i gilt.
+Wir dürfen voraussetzen, daß p unabhängig von L « hinreichend » klein gewählt
+ist. Wir setzen Ü^U^ xK(p), Ü^=={Ü^}.
+Es sei nun ^er(G, Fo), H^j^pOK vorgegeben. Nach Satz i gibt es Schnittflächen
+^er(ÜW,Fi) mit |[SJ|^)p<qSÜl und Ä(^)=^. Für den Kozyklus T] ^S^JeZ^Üi, Fi)
+'s
+gilt DT] |[^p<2 c^Sl. Nach Induktionsvoraussetzung läßt sich ein Kozyklus T^eZ^Üg, Fg)
+mit AI (T]*) =T], [ [ T]* [l^p^gSIJl finden. Satz 4 ergibt :
+^=-SY,TeC°(Ü3,F,), \\^\\^<c,m.
+Es ist ^* =^1(7) ^--^^I^Gg, Fi) unabhängig von i definiert, es gilt
+h{^)=^, \\^\\„<c,m, q.e.d.
+In ähnlicher Weise folgt aus der Induktionsvoraussetzung die allgemeine Aussage
+des Satzes. Zunächst seien wieder einige Bezeichnungen eingeführt :
+258
+
+
+--- PDF PAGE 30 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 31
+1) Es sei G^, x==o, 1,2,3 eine Folge von Holomorphiegebieten mit G()=G,
+G'cG^ G^ccG,.
+2) Es seien ^^{U^} Steinsche Überdeckungen von G^, x=o, i, ...53.
+Es gelte Uo=U, U^ccU^, VcUg. Die Überdeckungen U^, x + o seien endlich.
+Es sei wieder p hinreichend klein gewählt und ^ = {^_ J e Z^Üo, Fo), 11 ^ | [^ p<9K
+vorgegeben. Wie vorhin gezeigt, lassen sich Schnittflächen ^ ^er(U^ ^, F^),
+IIC..JIU'1' p<^ bestimmen. Wir setzen 7]=S{^...JeZV+l(Ül, Fi) und wählen
+ein T^eZ^+^Üa, F^) mit Äi(7]*)=7] und ein y^C^Üg, iy mit 8Y=7]*- Es gilt
+IMkp<^- ^=={^...^-^(^^^^3,^) ist ein Kozyklus, für den h^')=^
+\\^^<c^l gilt,q.e.d.
+Damit ist der Induktionsschluß durchgeführt. Um die Induktionsbasis zu gewinnen,
+müssen wir exakte Sequenzen (2) O-^F^-^FQ betrachten. Da man aber (2) durch
+o->o—^Fi->Fo ersetzen darf, genügt es die Sequenzen o—^o->Fo zu untersuchen. Für
+diesen Fall ist jedoch die Aussage von Satz 5 trivial.
+Aus dem Beweis zu Satz 5 und dem Zusatz i zu Satz i folgt :
+Zusatz zu Satz 5. Es sei S=FQfh(I\) torsionsrecht. Dann ist die Zuordnung ^->T]
+von pi^p^ unabhängig linear beschränkt, wenn pi sehr klein ist.
+Dabei nennen wir eine Garbe S über einem Gebiet GxK torsionsrecht, wenn
+der Homomorphismus X : SQ->SO : (y—^i-cr injektiv ist. Sg bezeichnet die Menge
+der Halme von S über GxO, OeK.
+Korollar zu Satz 5. Es sei McO^GxK) eine kohärente Untergarbe. Ist
+dann p<po hinreichend klein gewählt, so gibt es zu jedem Kozyklus ^eZ^^p), M)
+eine Kokette ^eC"-1^ (p). M) mit ^G'xK^p) =ST]. Die Zuordnung S-^T] ist
+linear beschränkt. Ist Oq|M torsionsrecht, so ist ^->T] sogar von pi unabhängig
+linear beschränkt.
+Beweis. Es seien Pi ein analytisches Polyeder mit G'ccPiCcG und pi<po ein
+m-tupel positiver Zahlen. Man kann über PiXK(pi) eine exakte Sequenz (y->M->o
+definieren. Das Korollar ergibt sich sofort durch Anwendung von Satz 4 und Satz 5.
+4. Wir werden im folgenden Satz 5 nur für den Fall benutzen, daß Fi=0^,
+Fo==03 ist. Es sei fortan T stets die triviale Überdeckung T=={G} von G. Wir
+fahren mit der Verallgemeinerung von Satz i fort :
+A -^.
+Satz 6. Es seien h : Op (G X K) -> O'1 (G X K) ein analytischer Homomorphismus, U, V
+die in Abschnitt 2 definierten Steinschen Überdeckungen von GxK, b^w. G' X K, b ein m-tupel
+von fahlen i,2,3,...,oo. Ist dann p<po hinr-eichend klein gewählt, so gibt es ^u je'dem Kozyklus
+^={^ ^}eV(U(^),M(^)) mit M (b) =h(b}o0p einen Ko^klus ^eZ^V(^), H^b)},
+so daß ^==h(^)or^ ist. Die Zuordnung ^->r\ ist in bewg auf die Normen ||^||up5 ll^llvp l^^
+beschränkt.
+259
+
+
+--- PDF PAGE 31 ---
+32 HANSGRAUERT
+Beweis. Wir definieren über GxK eine kohärente Untergarbe M^ von O^G X K),
+indem wir :
+1)MJGx(K—K(b))=(y(GxK)|Gx(K—K(b)),
+2)/,e(M,),^/JGxK(b)E(M(b))„^eGxK(b)
+fordern. Es seien
+^=(1, o, ...,o),^=(o, 1,0, ..., o), .... /;,==(o, .... o, i)er(GxK, O^GxK))
+y-tupel holomorpher Funktionen. Es werde k^=t^. ^ gesetzt. Ferner sei Z„ v= i, ... ,p
+das Ä-Bild der Schnittfläche (o, ..., o, i, o, ..., o) e I^O^G X K)). Bezeichnet dann ^ :
+--! = v —^ Stelle""^
+O^^GxK^O^GxK) denjenigen Homomorphismus, der durch die Zuordnung
+^(^ ^J^SCT^+SOT^ erzeugt wird, so bildet ^ : (y+^GxK) auf M^ ab.
+Schreiben wir O^+^GxK) =0^0^, so wird 0^ durch ^ auf M und 0^ auf
+(y-Hb) abgebildet, wobei I(b) die von den Funktionen ^,v==i, ...,772 erzeugte
+Idealgarbe bezeichnet.
+Ist nun SeZ^L^p), M(b)) ein Kozyklus, so wenden wir auf jeden Koeffizienten
+Sto...iv die im Abschnitt i beschriebene Polynomfortsetzung an und erhalten einen
+Kozyklus S*=={S\...j£Z'(Ü(p), M^. Nach Satz 5 gibt es einen Kozyklus
+T^ee-Wp^O^^)
+mit S*=^(T]*). Wir bezeichnen mit T] das Bild von T]* in C'-^V^p), IP(b)), das
+dort durch die natürliche Abbildung O^eO^-.O^H^b) definiert wird. Offenbar
+gilt A(b)o7]=^, die Zuordnung S-^ ist linear beschränkt, q.e.d.
+In den folgenden Paragraphen wird benutzt werden, daß die Zuordnung ^->r\
+sogar von d^ unabhängig linear beschränkt ist. Wir zeigen zunächst :
+Satz T. Es seien h : OP(G X K) -> O'1 (G X K) ein analytischer Homomorphismus, G' cc G
+ein relativ-kompaktes Teilgebiet, b== (d^, .... d^) ein m-tupel von fahlen i, 2, 3, .... oo.
+Ist dann p<po hinreichend klein, so gibt es w jeder Schnittßäche s e F (G X K (p, b^l, M (t)}}
+eine Schnittfläche/7e^(GfxK(^b},HP(t))} mit s\G' x Ä^p, b; =h(b}o7. Die Zuordnung
+s->s ist unabhängig von d-^ linear beschränkt.
+Beweis. Da man mit Hilfe der Methoden des Beweises von Satz 6 zu M^,
+i)* == (00? ^25 • • •? ^m) übergehen kann, darf man ohne Beschränkung der Allgemeinheit
+voraussetzen, daß ^==00, v=2, ...,772 ist.
+Wir überdecken einen abgeschlossenen Polyzylinder P, G'ccPccG mit kleinen
+Polyzylindern Z^cG und wählen p so klein, daß für die Polyzylinder Z,xK(p) der
+Satz i gilt. Über Z^xK(p) lassen sich sodann Schnittflächen 7^ in 0^ bestimmen,
+so daß Ä(b)o?^=^|Z,xK(p, b) ist. Die Zuordnung j-^ ist unabhängig von ^ in
+bezug auf die Normen |[j|[^, ||Tj[^ linear beschränkt. Wir setzen ^=Ä(7^—7J.
+Es folgt : ?^JZ^xK(p, b)=o. Wir dürfen wegen Satz 6 voraussetzen, daß d^d^
+und t^~l'Oq|M torsionsrecht ist. Bezeichnet MD M die kohärente Untergarbe der
+260
+
+
+--- PDF PAGE 32 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 33
+Keime ^e03 mit ^-^eM, so gilt ^=^J^er(Z^xK(p), M). Durch Anwen-
+dung des Korollars zu Satz 5 folgt : Es gibt eine Kokette {^}, s[eT(Z[ xK(p), M)
+mit ^{•O^^J- Dabei bezeichnet Z/=={Z^/} eine Polyzylinderüberdeckung
+von P, die eine eigentliche Verfeinerung der Überdeckung Z = {Zj ist. Die Zuordnung
+{^J->{^} ist linear beschränkt.
+Man kann nun nach Satz i Schnittflächen \eT(Z[ xK(p), 0^) bestimmen, so
+daß A(^)==^1.^ ist. s^==^—^+^—^ ist ein Kozyklus aus Z^Z^ xK(p), Ker Ä).
+Es gilt nach dem Korrollar zu Satz 5 : KJ=S{^}, ^eT(Z[' xK(p), Ker Ä). Dabei
+ist Z"=={Z','} eine endliche offene Überdeckung von P, die eine eigentliche Verfei-
+nerung von Z' ist. Setzen wir 7==^—-^—^, so erhalten wir die gewünschte Schnittfläche.
+Man sieht sofort, daß die Zuordnung J->T unabhängig von d^ linear beschränkt ist
+Es folgt sofort :
+Zusatz zu Satz ^'. Ist Hq(b^}|h(b^}oHP('i)^} torsionsrecht, so ist s->T sogar von
+Fpi? ^i) unabhängig linear beschränkt,
+Unter Benutzung von Satz 7' und der Methoden des Beweises von Satz 7^ ergibt
+sich sofort :
+Satz 7. In Sat^ 6 ist die Zuordnung ^->Y] sogar von d^ unabhängig linear beschränkt.
+Zusatz» Ist H<l(^^)|h(^^)oHP(^^) torsionsrecht, so ist ^->r\ sogar von (^ d-^)
+unabhängig linear beschränkt.
+Die Durchführung des Beweises sei dem Leser überlassen.
+5. Es sei S eine kohärente analytische Garbe über GxK. Da GxK ein Holo-
+morphiegebiet ist, kann man über jeder kompakten Teilmenge von GxK eine exakte
+Sequenz F : Oq->S->o definieren. Wir nehmen im folgenden an, daß F über ganz
+GxK erklärt ist.
+Man kann die analytische Garbe und ebenso die Auflösung F auf jeden Unterraum
+GxK(b) beschränken. Die Beschränkungen seien mit S(b) bzw. F(b) : H^(b)-°>S(b)-^o
+bezeichnet. F(b) ist wieder exakt.
+Ist BcG eine offene Teilmenge, so können wir in r(BxK(p, b), S(b)) eine
+Pseudonorm einführen. Wir setzen für j-er(BxK(p, b), S(b)) : |H|Bp= inf H/llsp.a(b)o/=:s
+Dabei durchläuft/die Schnittflächen aus F(BxK(p, b), H^b)) mit a(b)o/=j. Gibt
+es keine Schnittfläche / mit a(b) o/*== s, so sei 11 s \ |g == oo.
+Eine ähnliche Norm läßt sich für die Koketten definieren. Es sei wieder U=={UJ
+eine offene Überdeckung von G, U(p) die in Abschnitt 2 definierte Überdeckung
+von GxK(p), die wir auch als Überdeckung von GxK(p, b) auffassen. Ist dann
+^{^..JEGTO^SW) eine Kokette, so setzen wir: l|^=max|l^ J|, lo.-.iv ^...IVP
+Es seien nun wieder U eine Steinsche Überdeckung von G, V={Vj eine
+261
+5
+
+
+--- PDF PAGE 33 ---
+34 HANSGRAUERT
+endliche offene Überdeckung von G'ccG, die eine eigentliche Verfeinerung von U ist.
+Wir zeigen :
+Satz S.Ist p^po hinreichend klein gewählt, so gibt es zu jedem Kozyklus ^e^(U(p) S(^))
+eine Kokette ^^(V^), S^}) mit S^\G'. Die Zuordnung ^ ist in bezugauf die
+Normen ||^||^, \\^ unabhängig von (^, d^), p<p^po linear beschränkt.
+Es ist zweckmässig zum Beweise von Satz 8 zunächst drei Hilfsaussagen herzuleiten :
+Analog zu Satz 4 folgt aus Hilfsatz i :
+^>atz4a. Es sei ^^(Ü (p), H^b)) ein Kozyklus. Dann gibt es eine Kokette
+^C- ^Vf^.H^W) mit ^^\G'. Die Zuordnung ^ ist unabhängig von ((>, ö)
+linear beschränkt. \r, /
+Wir zeigen ferner :
+HUfssatz s. Es sei M(-ö) cH^b) nne kohärente Untergarbe. Ist dann p<p„ hinreichend
+klein, so gibt es zu jedem Kozyklus W(Ü(^), M(b}} eine Kokette ^C'l-l(V(p), M^))
+mit 87i=^| G'. Die Zuordnung ^->-^ ist linear beschränkt.
+Beweis. Wir gehen wie im Beweis von Satz 6 zu M,c0^ über. Unser Hilfsatz
+ergibt sich sodann unmittelbar aus dem Korollar zu Satz 5.
+Es folgt weiter :
+Hilfssatz 3. Es sei Af/bJ eine kohärente Untergarbe von H9^^} über GxKCö^},
+ö*=foo,<4, ...,dJ. M(b) bezeichne die Beschränkung von M(b^) auf GxK(t)). Ist
+dann p<^p„ hinreichend klein gewählt, so gibt es zu jedem Kozyklus ^e^(Ü(p), M ('{)}} eine
+Kokette ^CV-1(V(^, M(^)) mit ^==^G'. Die Zuordnung ^ ist in bezug auf die
+Normen ||^||„p, 1|^||^ unabhängig von (^, dj, p<pi<po linear beschränkt.
+Beweis. Wir bezeichnen mit M^ die Garbe M(b„)n^-H»(b„). Man zeigt leicht :
+(1) Alle Garben M^ sind kohärent.
+Es werde M,=t^M, gesetzt. Alle Garben M„ ^=o, i, 2, .. . sind ebenfalls
+kohärente Untergarben von H»(b„). Es gilt M(b„) =M,cM^c.... Wegen § 2, Satz 8
+dürfen wir annehmen, daß eine natürliche Zahl ^ existiert, so daß M„=M, für
+^> V-o g^t. rff sei die kleinste der Zahlen (Xg. Wir zeigen : lt ll'
+(2) Die Zuordnung ^ ist für <4<o> unabhängig von ^ linear beschränkt.
+Für <4=i ist das trivial. Es ist also nur zu zeigen, daß aus der Gültigkeit der
+Aussage für den Fall d^<d^ ihre Gültigkeit für den Fall d^==d^ folgt.
+Es seien G„, x=i,2 Holomorphiegebiete mit G'ccG^ccGiCcG, V mit
+VccV^ccViCCÜ^ endliche Steinsche Überdeckungen von G,. Wir beschränken den
+Kozyklus ^Z-(U(p), M(b„)), bo= (d^, d„..„ dj auf
+GxK(p,bo),b,=(^°)-i,<4, ...,rfj
+262
+
+
+--- PDF PAGE 34 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 35
+und bestimmen eine Kokette ^eC-^V^p), M(bo)) mit 8^ == ^ [ G^ X K (p, bo).
+Nach Satz 7 kann man eine Kokette -^eC'-^V^p), H^bo)) finden, so daß,
+Ä(t>o)°^=-')i gilt. Dabei ist h : O^O" ein Garbenhomomorphismus, so daß
+^(b^oH^b^^M^) ist. Es gibt eine von (pi, (/w) unabhängige Konstante c,
+*\ /?(°) 1
+derart, daß ||^||^.<^|M|^<^ ' .|hi|^„ gilt (mit p* = (p^, p„ ..., pj).
+Wir setzen ^=Ä(bo)o7]\ Es folgt |l^lkp<^'||-»li||^p, wenn p sehr klein ist.
+Es ist Sl=^—^)y/(^yl~leZV(V2(p),M^_,(I, 4 ...,dJ) ein Kozyklus.
+Man kann nach Hilfssatz 2 eine Kokette ^3eC''-l(V(p), M^.i_i (i, <4, ...,ä?J)
+(^ \ ^(o)_^
+finden, so daß 8^3 =^1 ist. Es folgt für 7]=7]2+ -1) 733 die Gleichheit ^[G'^ST].
+.Pi/
+Man sieht sofort, daß T)-^ unabhängig von pi linear beschränkt ist, q.e.d.
+Nach dem vorstehenden ist klar, daß Hilfssatz 3 gilt, wenn H^b^/M^)
+torsionsrecht ist. Um ihn zu beweisen dürfen wir jetzt annehmen, daß d-^>d\ gilt.
+Wir beschränken den Kozyklus ^ auf GxK(p, b+). Wie wir gezeigt haben, kann
+man eine Kokette Tj+eC^-^V^p), M(b+)) finden, so daß 8^==^ GiXK(p, b4-) gilt.
+Wie vorhin kann man T]+ zu einer Kokette ^eC'-^V^p), M(b)) fortsetzen. Die
+Zuordnung T]+->T]* ist unabhängig von (pi, d^) linear beschränkt. Es folgt
+^=(s-^*)y^ ^Z-(V,(P), M„(b))
+und mithin ^=8^ wobei ^^Y unabhängig von (pi, ^) linear beschränkt ist,
+da M^ torsionsrecht ist. Für ^=7j*+Y.^y1 gilt: ST^IG', was den Beweis des
+\Pi/Hilfssatzes abschließt.
+Der Beweis von Satz 8 ist nun nicht mehr schwer. Wir bezeichnen mit M(b^)
+die Kerngarbe der Abbildung a(b^) : H^(b*)->S(b*), G^ sei wieder ein Holomorphie-
+gebietmit ^G'ccGiCcG und Vi eine Steinsche Überdeckung, wie im letzten Beweis.
+Ist ^eZ^l^p), S(b)) endlich, so gibt es eine endliche Kokette -^eC^L^p), H^(b))
+mit a(b)o7]i=^ Der Kozyklus 8^ liegt in Z^^p), M(b)). Es gibt also eine
+Kokette ^eG^V^p), M(b)) mit S^-S^. ^^^—^eZ^V^p), H^(b)) ist also
+ein Kozyklus. Nach Satz 4 a gilt : ^=8y, yGG^-Wp), H^b)). Also hat sich
+ergeben : ^=ST] für 7]=a(b)oy und es ist klar, daß die Zuordnung ^->T] unab-
+hängig von (pi, ä?i) linear beschränkt ist.
+In analoger Weise folgt aus Hilfssatz 3 leicht der folgende Satz :
+Satz 9. Ist p < po hinreichend klein, so ist die Zuordnung
+s^s'==s\G'xK^ b),jer(GxK(p,b),S(b))
+in bezug auf die Normen |M|^,|H|^ unabhängig von (d^ pi) linear beschränkt.
+Der Beweis sei dem Leser überlassen.
+263
+
+
+--- PDF PAGE 35 ---
+36 HANSGRAUERT
+6. Unsere Norm für die Schnittflächen in S(b) wird im wesenlichen durch die
+Auflösung r(b) : H^b)—^^)—^ bestimmt. Im nächsten Paragraphen wird
+besonders das Verhalten dieser Norm bei Änderung der Auflösung interessieren. Es
+werde deshalb folgende Betrachtung durchgeführt :
+Es seien G^xK, x=i,2 zwei Holomorphiegebiete über denen kohärente ana-
+lytische Garben S^ und Auflösungen I\ : 0^-^S^->o gegeben sind. ^o sel elne
+holomorphe Abbildung von Gg X K in Gi X K, die die Punkte (^2, t) e Gg X K. auf Punkte
+(^,t)eGiXK abbildet, also in t die Identität ist. Über dieser Abbildung möge eine
+stetige Abbildung ^i : S^e^GgXK-^Sg gegeben sein, die die Moduln (Si)a; opera-
+torverträglich in (83)^ x==^jy) abbildet, also ein Garbenhomomorphismus ist (1). Das
+Diagramm :
+§2 ^ SiC^G^xK
+^ ^
+G^xK -^ GiXK
+^0
+ist kommutativ.
+Weil GgXK ein Holomorphiegebiet ist, kann man über GaXK eine stetige
+Abbildung ^ : O^^GiX^e^GgXK-^O^^GgXK) bestimmen, so daß (^ ^2) ein
+Garbenhomomorphismus und das Diagramm :
+0^ t O^G^xK
+a, ^ ai ^
+82 <- S^^G^xKVl
+kommutativ ist.
+Es seien nun B„ccG^ v===i,2 offene Teilmengen, ipo bilde B2=B2XK in
+Bi==BiXK ab. Wir zeigen :
+Hilfssatz 4. Es sei /eIY^XÄYp, b^, H^^)), p<pi<po eine Schnittßäche. Dann
+ist die Zuordnung f-^g^fo^B^X K(^ t)) unabhängig von (p, b) linear beschränkt.
+Beweis. Wir setzen zunächst voraus, daß/von t unabhängig ist. Es ist dann/ noch
+in BiXK(b) holomorph und es gilt [|/|[^p===||/|^^=9K. Für die Potenzreihenent-
+b /^\x
+wicklung g == i <?x - hat man deshalb
+x=0 \P/
+[^<?iW^r. ••• .teV^?!^^ lx|=x,+...+x„ a=maxpW<i.
+\Pl/ \Pw/ v
+b f^Y
+Ist / beliebig, so folgen für /o^ |B2XK(p) =,?== S ^ - die Ungleichungen
+oo / \m %==0 ^/
+l^l<?i^ l a^==m —L-) , wenn 9K=[|/|[^ ist, q.e.d.%== o \ i —a
+(1) 4'i müßte, genau genommen, als Paar (<^Q, ^^) definiert werden. Vgl. die Definition in § i.
+264
+
+
+--- PDF PAGE 36 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 37
+Durch ^ werden die Schnittflächen /i==(i, o, ..., o), /2=(o? I? o, ..., 0)3...,
+f,= (o, .. ., o, i) eF(GiXK, O31) auf Schnittflächen /.eI^G^xK, 0^) abgebildet,
+v=i, ...,yi.Über B^xK^ccG^xK gilt:/,= i y^Wmit
+^o \P7
+17^1 <c.a^, a<i,c>i.
+Ist /= ^ V.er(BiXK(p, b), H^(b)) eine Schnittfläche mit ||/[|^=S [|^[^^v==l
+so hat man für g= ^ (^°^o)/v die Beziehung
+v=i
+?i b /+\>c /+\^ b/+\l(
+^== y y y^f- Y^ - — y i} v y^) 7^)^ ^ 2'~%\o/*/(Jl\o/~~-lo/ L ^^—^Jv.y „v ) '/'^^K—^J (J1.3
+% vv==l x=0 tJi \P/ \P/ x=0\P/ {JL^:
+b /tVwobei Ä;,o^= ^ ^) - gesetzt ist. Nach dem Hilfssatz gilt : \k^ [<^9Jl. Somit folgt :x=0 \P/
+/ j \w
+l [<? l \B^<(!l9coc9[ —^- SK? wobei sämtliche Konstanten von (b, p) unabhängig sind. —
+Damit ist gezeigt :
+Satz 10. Es sei p<pi<po. Die Schnittflächen aus F(BiXK(p, b), S(b)) seien
+mit s bezeichnet. Dann ist die Zuordnung .y-^^^^) [Bg x K(p, b) in bezug auf die
+Normen |[^|[^p, \\s' ||^p unabhängig von (p, b) linear beschränkt.
+Unsere Pseudonormen sind also von der Wahl der Auflösung F und der Lage der
+Ebenen t == const. im wesentlichen unabhängig.
+In den folgenden Paragraphen werden wir nur die Sätze 8, 9, 10 anwenden.
+§ 4. Messatlanten»
+i. Es seien X ein komplexer Raum, K, K (p) Polyzylinder im Sinne des vorigen
+Paragraphen. Ferner sei TT : X—^K eine eigentliche holomorphe Abbildung. Wir setzen :
+1) X(p)==7^-l(K(p)),p<po.
+2) U(p)=UnX(p)=={UnX(p)}, wenn U={UJ eine offene Überdeckung
+von X ist.
+3) S für eine kohärente analytische Garbe über X.
+Definition i. Eine Meßkarte in X(^) (in be^ug auf S) ist ein Quintupel
+m=.(w, w\ o, ®=GxÄYp;, r : o^^s)^)
+für das folgendes gilt :
+1) W, W sind offene Teilmengen von X(^)y die abgeschlossene Hülle WnX(p) ist
+in W enthalten.
+2) G ist ein Gebiet eines komplexen ^ahlenraumes C^.
+265
+
+
+--- PDF PAGE 37 ---
+38 HANSGRAUERT
+3) O : W->(5 ist eine biholomorphe Abbildung von W auf einen komplexen Unterraum
+A c®, derart, daß das Diagramm :
+a»W——>(6
+n\ /p
+K(9)
+kommutativ ist, wenn p die Produktprojektion (5->K(p) bezeichnet.
+4) r : Oq->^>Q(S} ->o ist eine über ® definierte exakte Garbensequen^.
+Man kann Oo(S) trivial zu einer analytischen Garbe über G X K (p) fortsetzen.
+Oo(S) werde deshalb auch als analytische Garbe über G x K(p) aufgefaßt.
+Wir wollen Meßkarten zu Meßatlanten vereinigen. Zu dem Zwecke werde zunächst
+eine einfache Operation definiert.
+Es sei McGxK eine beliebige Teilmenge. Wir projizieren M durch (5->G
+auf G und erhalten eine Menge M* eG. Es bezeichne H^(M), r> o, den offenen Kern
+des Durchschnittes aller Holomorphiegebiete GcC^ die M* enthalten und deren
+/—«^'
+Rand 8G von M* mindestens den Abstand r hat. Wir setzen dann :
+sat^(M)=HHM)xK(p).
+sa4p(M) ist eine offene, holomorph-vollständige Teilmenge von C^K^p), die M
+enthält. Ist M relativ-kompakt in © enthalten und © ein Holomorphiegebiet, so gilt
+für kleines r>o : sat^p(M)c©.
+Man kann nun die Verträglichkeit zweier Meßkarten in X(p) definieren :
+Definition 2. ^wei Meßkarten
+2B,= (W^ W^ 0„ (5,=G, x K(p), r, : 0^->^(S}->o)
+in X(^) heißen miteinander verträglich, wenn folgende Bedingungen erfüllt sind :
+1) Ist W^ == W[ n W^ 4= o, so ist für eine hinreichend kleine positive ^ahl r die Menge
+saty^S>^(W^) in Gg X K(^) enthalten und es ist über sat^<S>^(W'^) ein Homomorphismus
+VF= (^ ^') der analytischen Garbe ^(S) in die analytische Garbe ^(S) definiert.
+2) Es gilt : ^oOg^^i, ^o(D^==0^^o^=^ (mit p^:^->K(^)).
+Es wird also nicht verlangt, daß dim^G^ = dim^Gg ist, auch braucht die Abbil-
+dung ^ : sat^p02(W^)->Gi X K(p) keine biholomorphe Abbildung zu sein. Unsere
+Verträglichkeitsrelation ist nicht kommutativ, Meßkarten brauchen nicht notwendig
+mit sich selbst verträglich sein.
+Definition 3. Eine endliche Menge
+2B={SB,=r^ ^ Q^G,xK(p), rj, L=I,...,^}
+von Meßkarten in X(^) heißt ein Meßatlas in X(^)^ wenn :
+1) 2ß^ stets mit 2B^ verträglich ist, ^ i^€l==[i, ..., i^}.
+2)LW-W ^2.
+I
+266
+
+
+--- PDF PAGE 38 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 39
+Ist ein Meßatlas in X(p) gegeben, so kann man natürlich r unabhängig von
+(ii, ^) wählen. Ein solches r sei fest gegeben und mit r^=r„<(Sß) bezeichnet. Ferner
+seien immer feste Homomorphismen ^^=(^1^5 ^\J definiert. Wir setzen stets
+voraus, daß alle Abbildungen Y^ die identischen Homomorphismen sind.
+2. Wir müssen noch die Existenz von Meßkarten und Meßatlanten nachweisen.
+Zunächst zeigen wir :
+Satz i. Es gibt ^u jedem Punkt x e XQ = n~1 ( 0), mit 0 e K = Nullpunkt, eine Meßkarte
+m==(W, W^,(S=GxK(^}, r : O^OoW—oJ in x(^). f^^ ^e^' gilt (wenn
+P^Po^-
+Beweis. Nach Definition des komplexen Raumes kann man eine Umgebung W*(A:)
+durch eine biholomorphe Abbildung $* auf einen komplexen Unterraum A* eines
+Gebietes G* cC" abbilden. Das kartesische Produkt d) ==(]>* x TT bildet W* biholomorph
+auf einen komplexen Unterraum A7 cG* X K ab : Wird die zu A* gehörende Idealgarbe
+in einem Punkte ^o6^* von den holomorphen Funktionskeimen h^ ^= i, ...,/:, auf-
+gespannt, so wird die Idealgarbe von A' in jedem Punkte (^o, to), tg e K von den Funktions-
+keimen Ä„ g^— (^)(^t^ v = i, . .., A;, (A == i, . . ., m erzeugt. Dabei sind die ^ holomorphe
+Funktionskeime in ^eG*, deren Beschränkung auf A* gleich (^o^0^*)"1)^ ist. —
+Die Garbe S wird durch 0 nach A' übertragen. Die triviale Fortsetzung der übertragenen
+Garbe stimmt mit Oo(S) überein. Also ist Oo(S) kohärent. Man kann eine holomorph-
+vollständige Umgebung G X K(p) von ^>{x) finden (p^po), über der sich eine exakte
+Sequenz: F : (^-^(ä)-'0 definieren läßt. Wir setzen noch W=<D~1(G X K(p)) cW*,
+A=A/n(G X K(p)) und wählen für W' eine in W relativ-kompakt enthaltene offene
+Menge und haben damit Satz i bewiesen.
+Für die Existenz von Meßatlanten gilt folgende Aussage :
+Satz 2. Es sei p<po hinreichend klein gewählt. Dann gibt es einen Meßatlas in X(^).
+Beweis. Wir wählen zunächst eine endliche Menge von Meßkarten
+^-(W,, W:, d\, ®^=G,xK(pJ, F, : o^d\o(S)->o), L=I, ...,^,
+derart, daß XoC|jW^. Da Xo regulär ist, gibt es sodann relativkompakte Teilgebiete
+G[" CCG['CCG„ \o daß die offenen Mengen W,"7 ^Or-^G^ X K(p,)) noch Xo
+überdecken. Offenbar kann man nun eine Überdeckung {G^, v= i, . . ., vj der abge-
+schlossenen Hülle von G[" mit Gebieten G^CCG^, ein p, o<p<p, und einr>o mit
+folgender Eigenschaft finden : Gilt (G„ X K(p))nO,(W;;) =(= o, so folgt ®„cG,xK(p),
+®„nA,=®„n<^(WJ, wenn (S„=sat,p(G„ x K(p)) und
+A^^w^w^or-^xi^p))
+gesetzt wird (L=I,...,^). Wir definieren :
+M,={v : v= i, ..., v, (G, x K(p))nO,(W:/) + o},
+267
+
+
+--- PDF PAGE 39 ---
+40 HANSGRAUERT
+A^==®^nA^ veM^. und betrachten die biholomorphe Abbildung X^==(I)^oO^~1 :
+A^-»A^. Sind r, p und alle Gebiete G^ sehr klein, so wird auch (5^ sehr klein und/^^/
+\.^ durch Beschränkung einer holomorphen Abbildung \^ : (S^-^C^X K(p) erhalten,
+die mit den Produktprojektionen ®^->-K(p), C^ X K(p)->K(p) kommutiert. Gilt z==i,
+so sei X,^ die Identität. Da die Garben O^S) außerhalb der Mengen \ Nullgarben/-»»/ /"^/ /"^/
+sind, erhält man eine Abbildung X^ : ^(S)®^. ©iv-^o^)? so daß (X^, X^) ein
+analytischer Garbenhomomorphismus ist (y e MJ.
+Es werde weiterhin vorausgesetzt, daß r, p und die Gebiete G^ äußerst klein
+sind. Dann bildet X^ sicher ©^ in G^ X K(p) ab, veM^. Ferner ist {W^},
+W^^O^G^ X K(p)) eine offene Überdeckung von X(p). Wir setzen x==(t,v),
+1=1, ...,^,v=i, ...,v, und definieren W^=W,nX(p), 0^=0„ ®^(p) =G, X K(p),
+r,== r„ T^^== (^,^J. Gilt W^„ + o, so folgt v^M^, mithin ist Y,^ definiert.
+Außerdem liegt dann sat,pO^(W^Jc®^^ in Gjp). Also ist
+{2B,=(W„ W„ <&„ ®,(p), rj}
+ein Meßatlas in X(p), q.e.d.
+Wir setzen im folgenden stets voraus, daß schon po hinreichen klein gewählt
+ist und daß über X==X(po) ein fester Meßatlas 3B=={3B„, x==i, ...,x^} gegeben
+ist. Die Allgemeinheit unserer Resultate wird dadurch nicht eingeschränkt werden.
+3. Es sei McX eine beliebige Teilmenge. Wir definieren :
+sät^M^^sat^MnW,)) cW,nX(p)
+für p<po? y^^(3B)3^= i? •••3^*- sä^(M) ist stets eine offene holomorph-vollständige
+Teilmenge von X. Ist {Uj eine Umgebungsbasis eines Punktes ^eXo^W^, so ist
+auch {sät^U, : p<po, 'r<r^} eine Umgebungsbasis von XQ.
+Definition 4. Ein Paar U == ( ü, r), r == r (U) < r^ heißt eine Meßüberdeckung von X(^),
+wenn folgendes gilt :
+1) U=== {U^ : L= i, . . ., L^ ==L^(U}} ist eine endliche Steinsche Überdeckung von X(^),
+r ist eine positive ^ahl.
+2) U ist auf SB bezogen, d.h. : jedem ie/={i, . . ., ^} sind nicht leere Teilmengen
+J^u(1} c'^u(L} cK={i, . .., x„J zugeordnet.
+3) Es ist J^u(^ ' • • ^i) = ^u(^) n •. • ^ ^u(^) + °5 wenn u^...^0 ist'
+4) Es gilt: U,cW'^sät^(UJcW'^ wenn xeJ\W.
+5) Ist xe^V^ft-oJ, so überdecken die Umgebungen U„y.eJV^(L) die Menge sät^(U^),
+die Mengen U^mit x^.A^/^1 haben mit sät^(U^) einen leeren Durchschnitt.
+6) Jeder Punkt xeX(p) ist in höchstens A (W) =x^ 'max ^'^^ Elementen der Über-
+deckung U enthalten.
+Es sei 93== (V, r(95)) eine beliebige weitere Meßüberdeckung von X(p). Wir
+definieren :
+268
+
+
+--- PDF PAGE 40 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 41
+Definition 5. 93 heißt eine zulässige Verfeinerung von U (in reichen 93 C U;, wenn folgende
+Eigenschaften vorhanden sind :
+1) V ist eine Verfeinerung von U.
+2) ^N=N^(^)), NI^)=NI^(.)).
+3) sät,^^(VJcU^ xe.Mß(U 1=1, ...,^7;.
+4) ^ &^ ^ ^r(<B)p^x/^...^ ^ ^Wp^/^M...^^ ^ ^^
+Xi, Xa e .A^/LO, . . ., h) = ^(^o)^ • • • ^ «AV^.
+Bei einer zulässigen Verfeinerung wird sät,(u^(UJ, xeN^io) sogar von den
+Mengen V„ xeN^i.) überdeckt. — Wir werden im folgenden statt Ny, Ny, etc., auch N,
+N7, etc., schreiben, wenn das nicht zu Mißverständnissen führt.
+Wir zeigen :
+Satz 3. Es sei v^ eine natürliche ^ahl. Ist dann p<po hinreichend klein gewählt, so gibt
+es Meßüberdeckungen U,== (U^ rj, v= i, . .., v^ yo/z Z^, ^ra^, daß U, zulässige
+Verfeinerung von U^_^ ist, v ==2, . .., v^.
+Beweis. Wir konstruieren zunächst eine auf 933 bezogene Überdeckung
+ü={u : i=i,...,^}.
+Die Träger W^ der Meßkarten 2B^ bilden eine offene Überdeckung von X. Nach
+dem Schrumpfungssatz kann man offene Mengen W^ccW^ccW,, finden, so daß
+noch XodJW^7 gilt. Es sei U eine endliche Steinsche Überdeckung einer UmgebungX
+von Xo, die so fein ist, daß aus W^nÜ^o bzw. Ü^nW^+o folgt: sät^(ÜJcW^
+bzw. sät,^(U)cW^ und Ü^W^ (mit r, ^ hinreichend klein unabhängig von L,
+x gewählt). Wir setzen N'(i)={x : W^nÜ^o}, N(i)={x : W^nÜ^o}. Offenbar
+wird für kleines ^ die Menge sät^(UJ, xeN^io) von den Umgebungen Ü„ xeN(i)
+überdeckt, die Durchschnitte sät^jÜJnU, x^N(t) sind leer.
+Es gibt nun Steinsche Überdeckungen Ü^^Ü^ : E.==I, ...,tJ, v=o, ...,v^
+einer Umgebung von Xo und stark absteigende Folgen reeller Zahlen
+r^>ro=r>r^> ... >r^>o, po>?>Pi> •. ->Pv,>o,
+derart, daß folgendes gilt :
+1) Üo=Ü.
+^^ /<^/
+2) U„ ist eine Verfeinerung von U^_^ (Verfeinerungsabbildung T=r^_i).
+3) sät^(Ü^)cÜ^ für xeN,(0=N,_,(T(t)), No(t)==N(t).
+4) ^ (sat^^(%Lj)ccsat^_^_0,JXonÜ^ x^, X,EN,(LO, ..., ^).
+5) Jeder Punkt von X ist in höchstens A(9fB) Elementen der Überdeckung Ü^
+enthalten, wenn v+o ist.
+269
+6
+
+
+--- PDF PAGE 41 ---
+42 HANSGRAUERT
+/"^ • . /^Die Konstruktion der Steinschen Uberdeckungen U^ ist einfach. Um z.B. U^ zu
+erhalten, wählt man zunächst Gebiete G^ccG^, so daß die Mengen O^^G^xK) noch
+eine Umgebung von Xg überdecken. Durch eine Unterteilung des C^ in rechtwinklige
+Kästen, deren Seiten zu den reellen Achsen des G^ w R2^ parallel sind, gelingt es sodann
+eine (beliebig feine) endliche Überdeckung {G^} von G^ zu konstruieren, die folgende
+Eigenschaft hat :
+1) Alle Elemente G^ sind offene holomorph-vollständige Teilmengen von G^.
+2) Jeder Punkt von G^ ist in höchstens s2^ Elementen G^ enthalten.
+Nach dem Schrumpfungssatz gibt es eine offene Überdeckung U'^^U,"} einer
+Umgebung von Xo mit U^ccU,. Sind die Mengen G^ und das T/z-tupel pi sehr
+klein gewählt, so gibt es zu jedem (x, (i) ein i, so daß U^J^O^G^ X K(pi)) in V,
+enthalten ist. Wir können deshalb eine Verfeinerungsabbildung r(x, [L) definieren,
+so daß stets U^JcU^ ^ gilt. Sind r^ pi, G^ sehr klein, so sind offenbar für die Über-
+deckung Ui=={U^} alle verlangten Eigenschaften vorhanden.
+Die Konstruktion der Überdeckung Ug geschieht in analoger Weise. Man muß/^«^ <-^/ /-^ ^»^
+nur Ug mit U^ vertauschen. Man kann also U^.^ aus U^ konstruieren und erhält
+dadurch die Kette U^, v == o, .. ., v^.
+Wir wählen nun p<p„,v==i,2, ...,v^ so klein, daß alle Überdeckungen U^,
+die Tube X(p) überdecken und setzen U^U^-i^r^p) : L=I, ..., L,}. Wie
+man leicht sieht, sind alle Paare (U^,, rj = U^ Meßüberdeckungen, U^ ist eine zulässige
+Verfeinerung von U^__^, q.e.d.
+Wir setzen fortan immer voraus, daß schon po so klein gewählt ist, daß über
+X=X(po) eine Folge von Meßüberdeckungen U^, v=o, . . ., v^ im Sinne von Satz 3
+existiert. Wir werden uns im folgenden stets auf eine solche festgewählte Folge beziehen.
+Die Zahl v^ wird später bestimmt werden.
+4. Es sei U==(U=={U^ : (.==1, ...,(.^}, r) eine Meßüberdeckung von X. Wir
+setzen U(p) -{U,(p) : L- i, . . ., ^}=UnX(p) ={UnX(p) : L=I,...,^} und
+ordnen den Koketten i^eC^^p), S), eine Norm || S ||up zu. Wir setzen zunächst für
+die Schnittflächen S*£F(*U,S) mit *U=U^^(p) :
+|[S*||^= max inf|h*||^.
+%eN(io...^) -/i*
+Dabei ist B^=sat,pO^(U^ , ^) und 7]*e:T(B^ 0^(S)) durchläuft die Schnittflächen
+mit T]* OJ*U) =$^(^*). Gibt es keine solche Schnittfläche, so sei H^Hu^up^00-
+11 T)* [[- ist die in S ^ definierte Norm für die Schnittflächen in einer Garbe über (S...111 l |ä^p 0 ^J K
+Die Norm für die Koketten ^=={^ ^eG^^p), S) ergibt sich nun sofort.
+Wir setzen einfach |[S ||üp=max ||^...j|uu^... .(p)p-lo-..^
+Es gilt :
+Satz 4. Es sei 93 eine Meßüberdeckung von X, die eine zulässige Verfeinerung einer Meßüber-
+deckung U ist. Ist dann ^ECl(U(p), S) eine Kokette, so folgt : [|S ||<ßp^ ||^| |up.
+270
+
+
+--- PDF PAGE 42 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 43
+Der Beweis ist einfach. Er folgt unmittelbar aus vorstehender Definition der Norm.
+Die Brauchbarkeit unserer Norm ergibt sich durch folgende Aussage :
+Satz 5. Es sei U^== (U^=={U^}, rj, v =—2, —i, o eine Kette zulässiger Verfei-
+nerungen von Meßüberdeckungen von X. Ist dann p< po, so wird die Beschränkung ^\X(^}
+jeder Kohomologieklasse ^eB.l(X(^+e), S) durch einen Ko^yklus ^e^Y^/p^, S) mit
+endlicher Norm IHJ^p repräsentiert. £=(^i, ...,£,J ist dabei ein m-tupel beliebig kleiner
+positiver fahlen.
+Beweis, Da U_2(p+s) eine Steinsche Überdeckung ist, wird ^ durch einen
+Kozyklus T^eZ^UL^p+s), S) repräsentiert. Wir betrachten die Schnittflächen
+^«...^r^^u^jp+s)), 0,0(8)), XEN(LO, ..., i,).
+Ihre Beschränkung auf ^—sat.^p^O^U^-1^) sei mit y^...^ bezeichnet (T(^)=(J.
+Da ^ ein holomorph-vollständiger Raum ist, ist y^,...^ unter dem Homomorphismus
+a^ : 0^->0^(S) Bild einer Schnittfläche ^,.^r(^, 0^). Die Beschränkung y^ ^
+von ^_^ auf sat^p$^(U^ ^) hat dann endliche Norm (wenn T(A:J==zJ.
+Setzen wir noch : 73-TT]* |X(p), so gilt <^o(^...^) =^(Y^^). Also hat T] in
+bezug auf die Meßüberdeckung Uo==(Uo,ro) endliche Norm. Offenbar erzeugt T] die
+Kohomologieklasse ^|X(p). Damit ist Satz 5 bewiesen.
+5. Es sei U eine Meßüberdeckung von X. Eine Meßüberdeckung 33 von X heißt
+eine hinreichend starke zulässige Verfeinerung von U (in Zeichen 93ccU), wenn es
+zwischen 33 und U eine für die in Betracht gezogenen Untersuchungen genügend große
+endliche Anzahl von Meßüberdeckungen U^, v == o, .. ., ^* gibt, so daß UQ === U, U^ == 93
+und U^ eine zulässige Verfeinerung von U^_i ist, v= i, . . ., v^.
+Wir treffen folgende Festsetzungen.
+1) Sind U, 93, etc. Meßüberdeckungen von X, so werde stets
+U=(U={H :\=i,...,^(U)}, r(U)), S=(V-{VJ, r(93)), etc.
+gesetzt.
+2) *U sei stets ein Durchschnitt U,^ ,(p).
+3) *V sei (bei beliebigen Verfeinerungen V von U) ein Durchschnitt V^ ^ (p)
+mit T(^)=^.
+4) *Ü=0^(*U) für ein festgewähltes xeN'(z'o, . .., ^).
+5) *Ü=sat^p(D,(H,.,,).
+6) V={V\=<I^(V,(p)) : xeN(i)} für das feste x.
+7) V'-^-sat^pO^) :XEN(L)}.
+Es sei ferner d eine natürliche Zahl, die auch + oo sein darf. Wir bezeichen
+mit 1^, die von der holomorphen Funktion t^on in X erzeugte Untergarbe von H(X)
+und setzen S^==S/S-I^. Die Quotientenabbildung q{d) : S—^ ist ein analytischer
+271
+
+
+--- PDF PAGE 43 ---
+44 HANSGRAUER T
+Garbenhomomorphismus, der sich auf die Gruppen der Koketten, Kohomologieklassen
+überträgt. Wir bezeichnen die so gewonnenen Homomorphismen ebenfalls mit q[d).
+Ferner generiert q(d} Abbildungen q^{d) : 0^(S)-^0^(S^). Wir setzen o^(äf) ==^(öf)oo^
+ax(d)
+und r^ : 0^ -^ O^^)-^0 und erhalten dadurch aus 93S einen Meßatlas 28^ für die
+Garbe S^. Die in bezug auf äß^ gebildeten Normen bezeichnen wir durch Zufügen
+eines d zu den bei 3B benutzten Symbolen, z.B. ||S||f(p, ||S* llwup usw- Trivialer Weise
+ist die Abbildung ^/^(^KeC^p), S,), SeC^U(p), S) in bezug auf die Normen
+ll^llup? II^Hlip unabhängig von (p, d) linear beschränkt.
+Es seien 33 C U Meßüberdeckungen von X. Wir führen in den Vektorrraum
+C^UnV, S) eine weitere Pseudonorm ein. Ist ^eC^UnV, S) eine Kokette, so werde
+T] =r0^(^) eC^UnV, O^S)) gesetzt (mit xeN'(^, . . ., ^)). Man beachte, daß wegen-*> .. <•<
+Axiom 5 in Definition 4 V eine Uberdeckung von *U ist. — Wird nun Y] durch
+Beschränkung einer Kokette ^eC^UnV, ^(S)) erhalten, so sei || ^ || ==inf||^|(^^ .
+^
+Gibt es keine Kokette ^, so setzen wir wieder 11 ^ 11 = oo. Damit haben wir für T] die
+Norm 11 T] 11^ = max ||^o(7])ll erhalten.KEN' (io... ii)
+In gleicher Weise erhält man für die Koketten TjeC^UnV, S^) eine Norm
+| [ T] 11 ^p. Die durch q{d) erzeugte Abbildung G^UnV, S)->CX(*UnV, SJ ist
+unabhängig von (p, d) linear beschränkt.
+Wir zeigen :
+Satz 6. Es seien SS'ccSScITccII eine Kette von Meßüberdeckungen von X und
+^e^(*UnV(^), S^) ein (endlicher) Ko^yklus, p^po sei hinreichend klein. Dann gibt es eine
+Kokette ^eC^-Y* U'r\ V'(^), SJ mit S^=^\*U'. Die Zuordnung ^->7] ist in be^ug auf
+die Normen \\^\\ ^up? 117] 11 ''S'*u'p unabhängig von fp^, d) linear beschränkt.
+Beweis. Wir wählen x e N' (z'o, ..., ^). Da [ | ^ 11 ^p endlich ist, wird ^ = O^o(^)/-»^ /-^/ /-»^
+durch Beschränkung einer Kokette ^ e G^UnV, ^o(^d)) erhalten. Wir wählen Meßüber-
+deckungen aS„U„v=i,2 mit aS'c^cSSiCaS, U'cUgCUlCU. Da 9Si, Ui zulässige/•%»/ /^^ i^»«/
+Verfeinerungen von 33, U sind, ist S|*UinVi sicher ein Kozyklus (Axiom 3, Defi-/-^ /<^-'
+nition 5). Natürlich wird im allgemeinen V^ nicht *Ui überdecken. Sicher wird jedoch/~s^/
+wegen Axiom 5, Definition 4 die Menge ^(W^)n*Ui überdeckt. Da die betrachtete/^^ '^>>-'
+Garbe nur hier von null verschieden ist, können wir *UinVi zu einer Steinschen.. /"^«-/ /-^^ /^^/ /"^
+Uberdeckung von *Ui ergänzen und ^ ] *Ui als Kozyklus über *Ui ansehen. Nach
+§ 3, Satz 8 gibt es eine Kokette ^eC^-^ÜgnV^ O^)) mit 8^=T| *V^ so daß dier-»/
+Zuordnung ^ ->'"?f unabhängig von (rf, pi) linear beschränkt ist. Diese Kokette definiert
+eine Kokette T^eC^^UgnVg, SJ. Aus § 3, Satz 10 folgt sodann, daß
+T^T^eG^U'nV^p), S,)
+die verlangten Eigenschaften hat.
+272
+
+
+--- PDF PAGE 44 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 45
+Wir zeigen eine weitere wichtige Aussage :
+Satz 7. Es seien S' ccSScIT ccU Meßüberdeckungen von X, ^e^°(*Un ^(p), SJ
+ein endlicher Koyklus. Dann kann man S als Schnittfläche aus F(*U, SJ auffassen. Die
+Zuordnung M]*^ ist in be^ug auf die Normen ||S||^up. 11 S |*^ H^u'p unabhängig
+von (^ d) linear beschränkt (wenn p <^ p^.
+JS^^j. Wir gehen wieder zu *Ü, V' über (in bezug auf ein xeN^o, ..., ^))
+und dürfen voraussetzen, daß i[*Üi durch Beschränkung eines Kozyklus
+SeZ°(*UinVi,(D^(S,)) erhalten wird (wenn »/ cS^C^dö, U7 cl^cHiCll). Wir setzen
+wieder die Überdeckung *ÜinVi zu einer Steinschen Überdeckung von *Üi fort.
+Nach § 3, Satz 9 folgt deshalb, daß die Zuordnung T->S* =T|*Ü2 in bezug auf die
+Normen ||S||^p, ||S*||^p unabhängig von {d, pi) linear beschränkt ist. Aus § 3,
+Satz 10 folgt sodann die Behauptung unseres Satzes.
+6. J. LERAY hat folgenden Satz hergeleitet :
+Es seien T ein topologischer Raum, A eine Garbe von abelschen Gruppen über T, U==(U}
+sei eine offene Überdeckung von T, die b^gl. A arktisch ist, d.h. die Kohomologiegruppen
+H')(u^.^^ A) verschwinden für v>o, /=o, i, 2, . . . . Dann gilt
+H^U, A}wH-(T, ^,v=o,i,2,... .
+Da nach dem Theorem B von H. GARTAN jede Steinsche Überdeckung V bzgl.
+einer kohärenten analytischen Garbe S azyklisch ist, kann man den Lerayschen Satz
+in der komplexen Analysis verwenden. Es sagt dann insbesondere aus, daß die Kohomo-
+logiegruppen IT(V, S) unabhängig von V sind.
+Wir werden hier den Lerayschen Satz für unsere Zwecke in einer verschärften
+Form beweisen müssen :
+Satz 8. Es seien S'ccScUccU' Meßüberdeckungen von X. Ist dann p hinreichend
+klein ('p<pi<po^, so gibt es ^u jedem endlichen Ko^klus ^e^l(V(^}, SJ eine Kokette
+rlecl~l(Vt(9}, SJ und einen Ko^klus ^e^l(U(^}, SJ, so daß b^gl. der Überdeckung
+V'(^) die Beziehung ^=^4-87] gilt. Die Zuordnung ^-^*, T] ist unabhängig von (^,d)
+in bewg auf die Normen \\^\\^ \\^\\^ |H|^p linear beschränkt.
+Beweis. Wir wählen eine Kette zulässiger Verfeinerungen von Meßüberdeckungen
+von X :
+a^ccS^cdB^cc... cc^o-^cUccU^ccU^cc... cclIo-lT
+und setzen ^:)...^to...^==ut)...^(p)^V^..^(p). Eine Kollektion von in den Indizes
+^o? • • • 3 h ^d ^05 • • • 5 ^ antikommutativen Schnittflächen ^ .. , ^ , in S^ über
+UfL^to...^ werde eine Kokette aus C^=C^(U,(p), V,(p)) genannt. Wir bezeichnen
+mit 8 die Korandoperation in bezug auf die Indizes ^, mit ^ die Korandoperarion
+in bezug auf die Indizes L^. Offenbar gilt 88=c>a==o, 8a=a8. G^ ist also für festes v
+273
+
+
+--- PDF PAGE 45 ---
+46 HANSGRAUERT
+ein Doppelkomplex, da alle Durchschnitte U,„,^, V^.^ holomorph-vollständige
+Räume sind, folgt aus dem Theorem B von H. GARTAN, daß 8 und 3. sogar exakt sind.
+Wir definieren für C^ eine Pseudonorm. Jede Kokette ^={S, , , , }eC^
+ist, wenn iy,...,i^ festgesetzt werden, eine Kokette ^ , eC^U^nVJp), S^)
+^=1^',^?). Wir setzen ||^^= max ||^.,,||^. Aus'Satz 6 folgt "sofort ^
+to '' * ^k
+(i) Es sei X+o. Danre gibt es zu jeder endlichen Kokette ^<=C^ mit <^=o eine
+Kokette 7)eC^\-1, für die ^=^ gilt. Die Zuordnung ^ ist in bewg auf die Normen
+ll^llv^ 117) l l^+i, p unabhängig von (^,d) linear beschränkt.Ivp' l l l l lv+1,
+Satz 7 ergibt :
+(2) Die Zuordnung ^'eC^^p), SJ mit ^eC^ und ^=o ist in bewg auf die
+Normen ||^||,p, ||^'||up unabhängig von (^, d) linear beschränkt.
+Wir definieren :
+und setzen (1)
+Z^={^C^ : 8^=^=0}, A>o, X>o,
+B^=S?CS-1^-1, Ä>o, X>o,
+B^=3{^C^-1 : 8^=0), X>o,
+B$'°=^eC^-1-0 : ^=o), A>o,
+B;'°=^eG^,SS-^=o}
+H^=Z^/B^.
+Es sei S ={^... Je Z'(V (p), S,) ein Kozyklus mit ||S||^<M. Wir definieren
+einige Folgen von Koketten :
+^ ={^....„ -„...,_J eZ^-, v=o, ...,/.
+^={X„...<„„..,,_J eZ^-"(V^(p), V^(p)), v =i, ...,/.
+71v=K...^_„.o...,_J eC^'-", v=i,...,/.
+^=R<....s-^.....-J e^-^-^V^.^p), V„_,(p)), v=i, ...,/.
+Yv={7.•„...,,_^„...^_,}eCV-l'^-'>-l(V„(p), V„(p)), v=i, ...,/-i.
+Y,={Y.....J eC'(V„(p)).
+Wir setzen zunächst ^...^=^,...1, und erhalten ^. Es werde dann T), so
+bestimmt, daß ^ = ^_^ ist. ^ sei ST)^. Die Definition von ^ ist besonders einfach :
+^=(—I)——•^.•.•^v-„'.•.•',-v} mit ^....._„.o...t,.,=^....T.,_.T.„...^_,. Setzen wir
+^=^, so gilt offenbar : ^=Tv-i, ^1=^) (Man beachte, daß alle Koketten anti-
+kommutativ in ihren Indizees sind), y^ wird so gewählt, daß
+^1=^1—^1, ^Yv=^—71.—SYv-l
+(1) Die Beweisidee ist, daß wir zeigen :
+H^p), S,) »H^H^-1.1» ... w^wtl^VW, S,,).
+S74
+
+
+--- PDF PAGE 46 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 47
+ist. Es folgt 8ay, =Tv—^ ^ = §T. = ^ = ^ = o. Dabei ist ^ == {A^.. ^ ^= y,^... J
+zu setzen.
+(i) ergibt sofort : man kann die Kokettenfolgen so bestimmen, daß die Norm
+der Koketten stets kleiner als c-^M. ist {c-^> i eine von ^ und pi, d unabhängige
+Konstante). Betrachtet man sodann ^ als einen Kozyklus i;* aus Z^(U(p), S^), so
+folgt aus (2) die Beziehung |p;* ||yp<^M (mit CQ>I wieder eine von ^ pi, d unabhän-
+gige Konstante). Es ist ^* =={^„ ...^==^„ ...^ ^o}^^ un(^ T^*—^==8^- Nach (2)
+hat man ebenfalls [|TYj|<ß.p<const. • M. Damit ist Satz 8 bewiesen.
+§ ^. Ein Lemma.0 *>r
+i. Es sei wieder X ein komplexer Raum, K^^po^C^ ein Polizylinder,
+T: : X—^K eine eigentliche holomorphe Abbildung. Ferner sei
+2B={9[B,= (W„ W„ $„ ®,-G, X K, r, : 0^->0,o(S)->o) : x= i, ..., x„}
+ein Meßatlas in X. Im übrigen sei die gleiche Terminologie wie in § 4 gewählt.
+Wir bezeichnen mit e = (^i, . . ., ^J ein m-tupel natürlicher Zahlen und mit
+I(e) bzw. I(e) diejenige kohärente analytische Untergarbe von 0(K) bzw. H(X),
+die von den holomorphen Funktionen t^ bzw. t^on, v= i, ...,772 erzeugt wird. Wir
+setzen S,=S/S6, Se=S. I(e). Esgiltüber X—Xo mit XO^-TT-^O), OeK= Nullpunkt,
+die Gleichheit Sg=o.
+Durch die Quotientenabbildung S—^Sg erhält man einen Homomorphismus
+H^(X(p), S)-^H^(X, Se), C^(U(p), S)-^^^, SJ, etc., der auch mit y(e) bezeichnet sei.
+Wir werden im nächsten Paragraphen zeigen, daß die analytischen Bildgarben
+7^(S), /==o, i, 2, ... kohärent sind. Der Beweis dieser Aussage benutzt ein an sich
+interessantes Lemma, dessen Formulierung noch einige weitere Definitionen von Bezeich-
+nungen erfordert.
+1) X : 7T^(S) ->Q^ sei ein Homomorphismus der Garbe T^(S) in eine kohärente
+analytische Garbe Q^ über K.
+2) H^ (X(p), S) sei die Untergruppe derjenigen Kohomologieklassen von
+H^X(p), S), deren TCpBild eine Schnittfläche in der Garbe KerX|K(p) ist.
+3) Z^(U(p), S) sei die Gruppe der Kozyklen aus Z^^p), S) die Kohomologie-
+klassen aus H^(X(p), S) repräsentieren. Dabei ist U eine offene Überdeckung von X.
+Hauptlemma. Es seien 93 CC U CC Uo Meßüberdeckungen von X. Es gibt dann ein pi <_ po
+und endliche Kozyklen ^, . . ., ^se^l\(^(^l}) ^) un^ ^u J^em endlichen Kozyklus
+^e^(U(p), S), p^.pi eine Kokette '^eCl~l(V(^}, S) und in K(^) holomorphe Funktionen
+s
+a^(t), v= i, ..., s, so daß ^== S ^W •SV+ST] gilt. Die Zuordnung ^->a^(t), T] ist linear
+v=i
+beschränkt in be^ug auf die Normen : \\^\ |yp, 11 a^(i) \ |p, 11 T] 11 <ßp.
+275
+
+
+--- PDF PAGE 47 ---
+48 HANSGRAUERT
+Zusatz« Es gibt eine Funktion f(t), deren Werte m-tupel natürlicher fahlen sind, mit
+lim f(t) == oo, so daß folgendes gilt (1) ; Ist q(t)o^ kohomolog null, so kann man die Funktionen€—> oo
+a^(i) so wählen, daß sie in OeK Schnittßächen in der Idealgarbe I(f(t)) sind.
+Wir bezeichnen mit Ä=ach(S) die kleinste ganze Zahl, zu der sich natürliche
+Zahlen rf„_^, . . ., d^< oo finden lassen, so daß die Garbe S- (^o7r)^=o ist,
+v=7z4-i^ .. .,m. n heiße der Achsenrang von S bzgl. TT.
+In den folgenden Abschnitten dieses Paragraphen werden wir das Hauptlemma
+für den Fall (/, n) der Kohomologie vom Grade / und ach (S) = n aus einigen Induktions-
+annahmen herleiten :
+1) TT^(S) ist kohärent, wenn l*> l; ach (S) < TZ.
+2) Das Hauptlemma und der Zusatz gelten für den Fall (/*, %*), /*> /; n* < n.
+3) TT^(S) ist kohärent, wenn ach(S)<72, Z* = o, i, 2, ....
+4) Das Hauptlemma und der Zusatz gelten für (Z*, ??*), n*<yz.
+Wir setzen bei der Induktion, die erst im nächsten Paragraphen vollständig zu
+Ende geführt werden wird, voraus, daß X, TT, K festgegeben sind. Ebenfalls sei SB fest
+vorgegeben, jedoch nicht die Auflösungen I\. S sei nicht fest und eine ganz beliebige
+kohärente analytische Garbe über X.
+2. Es müssen zunächst einige Vorbereitungen gemacht werden, u.a. ist es notwendig
+mehrere Hilfssätze zu beweisen :
+Hilfssatz i. Gelten Lemma und ^usat^für den Fall (l, n), Q^== o, so folgt ihre Gültigkeit
+für den Fall (l, n), Q^ beliebig.
+^^ r^^
+Beweis. Wir wählen zunächst für Q/=o Kozyklen Si? • • •? S^Z^L^piJ, S) im
+? ^
+Sinne des Hauptlemmas. Durch die Zuordnung (<^, ..., ^)-> S ^^(^v) erhalten wir
+v==i
+einen Homomorphismus^ : O^-^TT^S). Wir setzen ^=\o:f und bezeichnen mit M die
+Kerngarbe von y. Da 0^ und Q^ kohärente Garben sind, ist auch M kohärent. Wir
+können ein pg< pi, eine natürliche Zahl s und über K^pg) eine exakte Sequenz
+(y-^M-^o definieren.
+Wir setzen :
+(^?, ...,^)==ß(o,^...,^i,^..^o),
+i—te Stelle
+^lb^i=i,...,s.
+Es sei nun $eZ^(U(p), S), p<pa ein endlicher Kozyklus, dessen ^(e)-Bild
+^ /^ ^kohomolog null ist. ^ läßt sich dann in der Form ^ = ^ a (t) ^ + S7] darstellen, in der
+v=l
+(1) Wir verlangen nur, daß /(e) von ^ und p^pi, nicht aber, daß diese Funktion von p^, ^v, etc., unabhängig
+ist.
+276
+
+
+--- PDF PAGE 48 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 49
+die Funktionen^ ^(t) Schnittflächen in der Garbe If7(e)) sind. Andererseits ist das
+T-tupel y= f^(t), .. .,^(t)) eine Schnittfläche in M. Nach Satz i, § 3 gibt es, wenn p
+sehr klein ist, ein ^-tupel a= W), ^.., a,(t)) in K(p) holomorpher Funktionen,
+die Schnittflächen in einer Garbe 1(7 (7(e))) sind, so daß ß(a) =V gilt. Man hat
+^v2!^^871' offenbar ist die Zuordnung ^a,(t), T) linear beschränkt, q.e.d.
+Aus dem Hauptlemma ergibt sich ein einfaches Korollar :
+KoroUar I. Es sei l*>l, ach(S)^n oder ach(S)<n, ^e^(U(p}, S) ein endlicher
+Kozyklus mit TC,.^==o,p<pi hinreichend klein. Dann gilt ^,=ST], ^eC^-^Vfp), S}. Die
+Zuordnung ^->Y) ist linear beschränkt.
+Beweis. Nach dem Hauptlemma gibt es endliche Kozyklen ^, ..., ^eZ'*(U(pi), S),
+so daß ^=2ß,(i)^+8Y) und TT,.(^)=O gilt (man setze Q.=^(^), X= Identität). Für
+hinreichend kleines p, hat man : W^)=^, ^eC1*-1^^), S), |[7)JL„<9%
+Also ist ^=SY, Y=Sa^+7i, q.e.d.
+Um ein weiteres Korollar zu gewinnen, bezeichnen wir mit d< oo eine natürliche
+Zahl und mit S„, die in § 4 definierte kohärente analytische Garbe über X. q{d) sei
+der natürliche Homomorphismus S-»S„, C'*(X, S^G^X, S^), etc.
+Korollar H. Das Hauptlemma ist in bewg auf S^ ^(U(^), S,} richtig, wenn
+ach(S) <ji und ^(U(p), SJ — abweichend von der Definition in Abschnitt i — die Gruppe der
+Kozyklen ^e^(U(p), SJ bezeichnet, für die folgendes gilt :
+Ist teÄYp^n{^=o} ein beliebiger Punkt, so gibt es stets eine Umgebung B(-v:~^(i))
+und einen Ko^yklus ^e^l(B^\U(p), S), so daß ^\B^q(d)o^ ist.
+Beweis. Da die Induktionsvoraussetzungen von Abschnitt i bestehen (1), brauchen
+wir nur zu zeigen, daß man Ziy(U(p), S<,) auch wie in Abschnitt i definieren kann.
+Zu dem Zwecke ist eine kohärente analytische Garbe CL und ein Homomorphismus
+\j : 7r,(S,,)->Q^ zu definieren.
+Wir setzen S''= (^r) .ScS. Offenbar ist S" eine kohärente analytische Garbe
+über X. Nach Induktionsvoraussetzung ist das (/+i)-Bild kohärenter Garben
+mit ach<ra kohärent. Also folgt die Kohärenz von TC^^S^). Nun besteht
+über X die exakte Sequenz : o^S^S^S^o, zu der die exakte Bildsequenz
+^(S^T^S,)-^,.).^)-^. .. gehört. Wir setzen \=c, Q^^^S''). Unter Verwen-
+dung des (üblichen) Lerayschen Satzes folgt sofort, daß Q,„, \ nach der in Abschnitt i
+angegebenen Vorschrift gerade unsere Gruppe Z^(U(p), S„) definieren.
+achrs^^ih"' eme vertauschung ^'n durchführen können, können wir S,, so behandeln, als ob
+,37?'
+
+
+--- PDF PAGE 49 ---
+50 HANSGRAUERT
+3. Es werde ein weiterer Hilfssatz hergeleitet :
+Hilfssatz 2. Es seien 95ccU Messüberdeckungen von X, d eine natürliche ^ahl. Dann gibt
+es ^u jeder Kokette ^eC^Uf^), S^, p^po, eine Kokette ^eCl(V(p}, S) mit K^Xon} •^Y].
+^ \\Pi/ /
+Die Zuordnung T]->^ ist in be^ug auf die Normen ||-y]||up, |[^||<Bp unabhängig von d linear
+beschränkt.
+Beweis. Wir wählen Meßüberdeckungen 2^, (JL=O, i, 2 mit 33 ==^00^00^0-= U
+und eine feste Funktion x=x(Lo, . .., ^) eN'^o, . . ., ^) und setzen *V^=V^^,
+B^=sat^^pO^(*V^), T]* =Y]^ ^. Wie in § 3, Abschnitt 6 kann man über einer Umgebung
+von Ei die exakte Sequenz O^-^O^C8)-^0 zu ^er exakten Sequenz :
+(*) O^O^O^S)-^
+ergänzen. Wir beschränken (*) auf BinG^xK(p, (rf, oo, ..., oo)) und erhalten das
+kommutative Diagramm :
+H^^H^^^O^S^-.o
+(**) res. f res, f res, f
+1 h ' a„ _ l
+0^ ^ 0^ ^ (D,o(S) ->0
+in dem die Zeilen exakt sind.
+Da T] endlich ist, gibt es eine Schnittfläche 7]*<=r(Bi, 0^) mit OC^T]*) =<S>^*).
+Es gilt wegen^eC^V^p)^^ die Beziehung a^äf)ores^* =o. Es läßt sich also eine
+Schnittfläche ^eI^Cy) finden mit Ä^ores^* ==resi7]*, derart, daß die Zuordnung
+T]->'?]'* unabhängig von d linear beschränkt ist.
+Wir setzen ^ ^t^^—ho^^) und Y*=ajy*)- Man hat ^('^^^•Y*-
+Wird noch ^ ^^O^^y*) und ^=={^ J definiert, so ist ||^||sp endlich, die
+Zuordnung T]-»^ ist unabhängig von d in bezug auf die Normen | |T] | |^p, [ \^\ \^ linear
+beschränkt. Ferner gilt ^.^=7].
+Wir zeigen, daß aus dem Lemma und den Induktionsannahmen der Zusatz
+folgt :
+Hilfssatz 3. Gilt das Hauptlemmafür (l, n), so ist auch sein ^usat^für (l, n) richtig'
+Beweis. Wegen Hilfssatz i können wir uns auf den Fall Q,==o beschränken.
+Wir wählen eine Kette von Meßüberdeckungen SccUsCCU^cU^ccUccUo. Es sei
+^eZ^t^p), S) ein beliebiger endlicher Kozyklus. ^(e)o^ sei kohomolog null, d eine
+beliebige natürliche Zahl. Wir nehmen an, daß e sehr groß ist, u.a. daß e^> d gilt.
+Nach Induktionsvoraussetzung ist der Zusatz des Hauptlemmas für S^ richtig.
+Man kann also endliche Kozyklen tfi, .. .,T^Z^(U(pi), S^) bestimmen, so daß
+^(rf)o^=2^(t)T+8^ ist. Dabei ist ^eG^-^U^p), S^) eine Kokette, die ß,(t) sind
+holomorphe Funktionen in K(p), die Schnittflächen in einer Idealgarbe I(/^)) sind.
+Ist pa<pi hinreichend klein, so gibt es (genauer : nach Verfeinerung von U)
+278
+
+
+--- PDF PAGE 50 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 51
+endliche Kozyklen Si, ..., ^eZ\U(ps), S) so daß q{d)o^=^\X(p.,) gilt,v=i, ...,7.
+Ferner kann man zu ^ durch die in § 3 beschriebene Polynomfortsetzung eine endliche
+Kokette •»leC'-^U^p), S) finden, für die q{d)^=r^ ist.
+?
+Wir setzen ^*=^—- S ^(t)^—-o-y] und erhalten einen Kozyklus mit q(d)o^==o,v =1
+p<p2. Es sei d+<d eine natürliche Zahl, derart, daß S^ torsionsrecht (1) ist.
+/11 Y—^^=^^iJ-\ ist dann (bei sehr kleinem p) ein Kozyklus aus Z^L^p), S) mit
+>s / \^1/
+11^ Ikp^'ll^*lkp- Aus dem Hauptlemma folgt : Es gibt endliche Kozyklen
+^, ....^Z^p^S), so daß ^=S^(^+^* gilt (mit ^eC^C^p), S)). Man
+hat also : S^S^+^V 'S^+^+f^-Y \*V Offenbar ist die Zuordnung
+\Pi/ \ \Pi/ /
+^->a^ b^ etc., linear beschränkt. Es folgt, da nun der Zusatz für das Kozyklensystem
+(^, 0 gilt, daß der Zusatz auch für ein beliebiges Kozyklensystem
+(^....yEZ^p,), s)
+richtig ist, das eine Basis von Z^L^p), S) im Sinne des Hauptlemmas ist, q.e.d.
+4. Offenbar kann man ohne Einschränkung der Allgemeinheit die Voraussetzung
+machen, daß p^^p^ gilt. Wir bezeichnen mit p* das TTz-tupel (i, pg, ...,pJ
+und mit 93 c U Meßüberdeckungen von X. Man kann nun jeder endlichen Kokette
+Y]eÜ(U(p), S) eine Zerlegung T)== 2 f-^) ^ zuordnen, in der ^eC^p*), S)v=0 \Pl/
+Koketten sind :
+Es sei wieder x==x(io, .... ^eN'fto, . . .3 ^) eine beliebige, aber feste Funktion.
+Wir betrachten die Auflösung O^-^O^S)-^. ^(^o...^) wird durch Beschränkung
+einer Schnittfläche T]* =7]^^^er(B, 0^(S)) erhalten (mit B==sat,(y)pO^(U^ ^)).
+T]* ist das a^-Bild einer Schnittfläche S=^...i^r(B, 0^). Wir entwickeln ^ in eine
+/^Potenzreihe : ^ = S — ) ^. 1;„ kann als eine (nicht von ^ abhängende) Schnittfläche
+aus r(B', 0^) angesehen werden (B^sat^p^OJU^ ...^)). Wir setzen nun
+^L.-^a^JlV^,,
+und T^= {7^^ ^}. Man sieht sofort, daß die Zuordnung T]—^ unabhängig von v,
+pi in bezug auf die Normen ||v][|up5 ll^vllsßp* linear beschränkt ist.
+Wir zeigen :
+Hilfssatz 4. Es seien SccUccUo Messüberdeckungen von X. Ist pi^po hinreichend
+klein, so gibt es endliche Kozyklen ^^^(U^pJ, S), so daß folgendes gilt: Ist ^e^(U(p}, S),
+(1) Das bedeutet hier, daß der durch CT->(^OTT:).CT erzeugte Homomorphismus S^—^S^ über Xp injektiv
+ist. Zur Existenz vgl. Fussnote (2) auf p. 25.
+279
+
+
+--- PDF PAGE 51 ---
+52 HANSGRAUERT
+p^pi ^ra endlicher Kozyklus, so lassen sich eine Kokette ^eC^fVCp), S) und u.
+K(p) holomorphe Funktionen a,(i) finden, derart, daß die Zuordnung ' S-^, a,(t),
+in
+> "vi t),
+IIPl•(^— S a^(t)^—S-r^) in bezugauf die Normen
+v"l
+ll^llup. lkW||p, |h||sp, l|i/PrO;—2^t^—Nlk
+und in bezug auf die letztere sogar unabhängig von pi linear beschränkt ist.
+Beweis. Wir entwickeln zunächst ^ nach der vorhin angegebenen Vorschrift in
+eine Potenzreihe S=J^)^ setzen ^= 2;f-^)^ und definieren
+^={T.V)...,«}=^..p^l=8f-v21p^lf^y^V\ H=0 \Pl/ /
+Wir wählen Meßüberdeckungen ^, ..., ^ mit »cc^eCC... CC^iCCU. Die Zuord-
+nung i^y, ist dann in bezug auf die Normen |!S||up, ||yj|s,p, unabhängig von v, pi
+linear beschränkt. Es gilt Yv6zt+lCvl(p*), S").
+Wir bestimmen nach Hilfssatz 2 eine Kokette 'yveC'+^V^p*), S) mit t^-^=^.
+Es sei rfeine natürliche Zahl, so daß S^ torsionsrecht ist. ^•Tv==^-PF1^ ist'dann
+ein Kozyklus aus Z^1^?*), S"). Es gilt T^(^)==O. Also folgt" aus dem
+Korollarl: ^•'^=80; mit ^eC'(V3(p*), S^).
+Wirsetzen i=?^+i)o(^—pi<rj eZ'(V3(p*), S^,) für v></, l=y(rf+1)0^.
+Nach Induktionsvoraussetzung gilt : t,=SÄ,„(t)^+8o\, wobei
+v-
+^Z^Cl^), S^i), ^eC'-^V^p*), S,^)
+und die Funktionen a^(t) in K(p*) holomorph sind. Ist p^ p„ noch hinreichend
+klein, so sind i „<?(</+i) -Bilder endlicher Kozyklen ^€Z'(U(p^), S) (genauer : nach
+einer Verfeinerung von U), ferner ist ^q(d+ i)-Bild einer Kokette »^^^^(p*), S).
+Alle Zuordnungen ^o^, a^(t) sind in bezug auf die Normen
+ll^llllp. ll^liiB.p.. ll^(t)|lp„V>rf bzw. P^l^ll%||<B.p.,P^<il ^(t)llp.
+unabhängig von (v, p^) linear beschränkt.
+Nun ist das q{d+i)-Kld der Kokette
+0:=^-p,<T:-S^(t)^-8(o„ v></, o^= S f^V^-S^^-StOo
+H v=0\Pl/
+gleich null. Nach Hilfssatz 2 läßt sich eine Kokette
+o.eCTOp*), S), OoeC'CW), S),(T,6C'(V6(p*), S)
+konstruieren, so daß o^ = ^o,,, o: = f^^,, c: = ^(T„ v = rf+ i, d+ 2, ... . Wir setzen
+SSO
+
+
+--- PDF PAGE 52 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 53
+o== S ^JX(p), a,(t)= S ^^(t)+ao,(t)lK(p),
+v=d+lPi v==d+l p^
+(o=o)o+ S ^——coJX(p), 0==^0o+ S •^JX(p).
+v==d+l Pi v=d+lPi
+Man hat dann :
+S——^W^——^ == ^i • 0 + Pi<T.
+Offenbar ist die Zuordnung E,—^(t), co, 0, a in bezug auf die Normen
+imiup, ii^ii^n^iip
+und in bezug auf [|o||<Bp5 |M|<Bp unabhängig von pi linear beschränkt. Daraus folgt
+sofort der Hilfssatz 4.
+5. Der Beweis des Hauptlemmas kann nunmehr in wenigen Schritten erbracht
+werden. Wir wenden den Hilfssatz 4 und den Satz 8 aus § 4 an und wählen eine Meßüber-
+deckung ®i mit S3cc33iCcU. Es seien Ti, . • .^^(L^pi), S) endliche Kozyklen
+von der Art, wie sie in Hilfssatz 4 auftreten. Ist ^eZ^U^p), S), ||^||yp<9?l ein Kozyklus,
+so können wir Funktionen ^(t) und eine Kokette '^^^^(V^p), S) bestimmen, so
+daß | ^(t)||p<..9K, Iholkp^ä» und |[^ ||<^< p^.SK ist, wenn ^Z^p), S)
+• /^/
+den Kozyklus ^{==^— S ^(^Sv^S^o bezeichnet. Dabei ist c> i eine von ^, ^ eine
+v=i
+auch von pi unabhängige Konstante. Nach dem Lerayschen Satz 8 kann man jedoch einen
+Kozyklus ^^(L^p), S), ||^ ||up<q^pi9K und eine Kokette
+T^-Wp), S), ||73o||^<^/pl9?^
+bestimmen, so daß ^—^==ST^ ist. q> i ist wieder eine von pi und ^ unabhängige
+Konstante.
+Wir wenden nun das gleiche Verfahren auf ^ an, konstruieren ^3, ^(t), 7]i, T]{, ^2,
+wenden dann das Verfahren auf ^ an ü11^ fahren so fort. Offenbar konver-
+00 00
+gieren die Reihen ß^(t) = ^ ^(t),^^ S (^y. + ^p,), wenn c^c'^<i^2 ist. Es gilt dann
+(A=0 (A=0 ^^
+| ß^(t) | [p< const 9?l, [ | T] 11 <gp< const 9?l und ^ == Sß^v + S^]- Damit ist das Hauptlemma
+aus den Voraussetzungen in Abschnitt i hergeleitet.
+6. Im Falle ach(S) ==o gibt es natürliche Zahlen d^ . . ., d^ so daß über Xo die
+Halme der Garben t^' S == o sind, v = i, .. ., w. Man kann S als kohärente analytische
+Garbe über dem kompakten komplexen Raum Y= (XQ, H (X)/1 (0^3 . . ., d^)) auffassen,>s
+wobei I(^i, ..., d^) die von den holomorphen Funktionen ^OTT, v= i, ..., m über X
+definierte Idealgarbe bezeichnet. Das Hauptlemma (und der für diesen Sonderfall
+triviale Zusatz) folgen also für (/, o) aus folgenden Satz :
+Satz i. Es sei X ein kompakter komplexer Raum, der durch eine holomorphe Abbil-
+dung-K : X->K auf den Nullpunkt eines Poly^ylinders KcC1" abgebildet ist. SSccUccUo sei eine
+281
+
+
+--- PDF PAGE 53 ---
+54 HANSGRAUERT
+Folge von Messüberdeckungen von X. Sind dann ^ . .., ^eZY<7, S) endliche Ko^yklen^ die
+eine Basis der Kohomologiegruppe H^X, S) bilden, so gibt es ^u jeden endlichen Ko^yklus
+SE^YC/, S) komplexe fahlen a^ v=i, ...,,? und eine Kokette ^eC^YF, S), so daß
+S=S^+OT] gilt. Die Zuordnung ^->a^ T] ist in be^ug auf die Normen ||^||up, |h||<ßp,
+| a^ \ linear beschränkt.
+Beweis. Wir wählen zunächst eine feste Funktion x=x(io, .. ., L^) eN((.o, ...,^)
+und setzen i== (io, . . ., i^). Wir wählen sodann eine Meßüberdeckung U7 mit SccITccU
+und natürliche Zahlen ä?i, ... 5 ä^, so daß ^ • S == o gilt, v == i, ...,772. Man hat in X die
+Meßkarten (i. Art) :
+2ßiz=(sät,(u)p,(,)U„ 0,(,), sat^O^(U,), ...), 2B^- (sät.^^U,, 0,^, ...).
+Da auch ^.$^(S)==o gilt und wir deshalb bei der Definition der Normen || ||yp,
+[| 11 u'3 [l ||i? II ||2 mlt Schnittflächen f in 0^ auskommen, die Polynome vom
+^-Grade<^ sind, folgt, daß die Abbildung ^->^ für S^Z^U, S) bzw. T]->T] für
+TieÜ-^U', S) in bezug auf die Normen ||^ ||^->| [^ |], bzw. ||T] H^H^ |[^ linear
+beschränkt ist. Also ergibt sich Satz unmittelbar aus Satz 7, § 2.
+Ferner ist das Hauptlemma für den Fall (/, 72)3 ^>A(2B), richtig. Da wir nur
+alternierende Koketten betrachten, gilt für />A(2B) : (^(L^p), S) ==o. Darüber hinaus
+folgt, daß TT^S), ^A(2B) gleich null und damit kohärent ist.
+§ 6. Die Kohärenz.
+i. Es ist zweckmäßig, zunächst das Lemma des vorigen Paragraphen abzuändern.
+Wir bezeichnen mit e== (^, . . ., e^) ein T/z-tupel natürlicher Zahlen und mit H^(X, Sg)
+den komplexen Vektorraum ^(e)oH^(X(p), S) cH^X, Sg). p sei dabei so klein gewählt,
+daß H^(X, Sg) maximal ist. Dieses ist stets möglich, da H^X, SJ als Kohomologie-
+gruppe eines kompakten komplexen Raumes aufgefaßt werden kann und deshalb endliche
+Dimension hat.
+Lemma (*). Aus den Induktionsvorausset^ungen § 5, Abschnitt i folgt : Es gibt ein m-tupel
+natürlicher fahlen CQ, so daß folgendes gilt : Sind ^ . . ., ^eH\X(p^), S), pi<po Kohomologie-
+klassen^ derart^ daß ^(Co)o^, v== i, . .., s den komplexen Vektorraum H\ (X, S^) aufspannen^
+so gibt es ^u jeder Klasse ^H[(X(^)^ S) in K(^)^ p<pi holomorphe Funktionen a^(t),
+s
+v=i, ...,j, so daß ^ X(p) == S a^(t)^\X(p) ist. Es gibt eine Funktion f(t)<t mit
+v=i
+limf(t)==co und folgender Eigenschaft : Ist ^fe^o^===o, so kann man die Funktionen a^(t)
+e -> oo
+so wählen, daß sie Schnittflächen in der Idealgarbe I(f(t)) sind (1).
+Beweis. Wir wählen eine Folge SccItccUo von Meßüberdeckungen von X.
+Nach § 4, Satz 5 gibt es endliche Kozyklen ^*, ^ aus Z^L^p), S), die die Kohomologie-
+(1) Wir fordern fortan nur, daß /(e) von ^, pj, p unabhängig ist.
+282
+
+
+--- PDF PAGE 54 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 55
+klassen S|X(p), ^|X(p) repräsentieren. Ist pa> pi noch hinreichend klein, so
+existieren endliche Kozyklen y^ • • •? T^6^1^)? s)? so daß in bezug auf y^, . . ., ^
+und jeden endlichen Kozyklus ^eZ^^p), S), p< pi die Aussage des Hauptlemmas
+gilt.
+Man kann komplexe Zahlen c^ finden, so daß ^(eo)o(y^—£^J;)==o ist. (JL
+Y^ bezeichnet dabei die von y^ repräsentierte Kohomologieklasse. Ist Co hinreichend groß,
+P
+so hat man in X(p) die Darstellungen Yv—2^^= S ^WT^ Inder ß (t) in K(p)
+^==1
+holomorphe Funktionen sind, die in oeK(p) verschwinden. Das Gleichungssystem läßt
+s
+sich deshalb nach Yv auflösen: yJX(p)= ^ ^^.
+[A==l p
+Nun gilt nach dem Hauptlemma : ^[X(p)= S ßv(t)Yv und mithin folgt
+v==l
+s;|X(p)=s^(<).v^jx(p),v, ^
+q.e.d.
+Die Existenz der Funktion /(e) ergibt sich unmittelbar aus dem Zusatz des
+Hauptlemmas.
+2. Es seien to==(^°, . . ., ^) eK ein beliebiger Punkt, e=(^, . . ., ej ein y/z-tupel^.
+natürlicher Zahlen, I(e, to) bzw. I(e, to), die von den Funktionen (^—1°,)^ bzw.
+(^—O^071? v:== I? • • • 3 w erzeugte kohärente Idealgarbe über K bzw. X, S^=S/S • I (e, tj,
+y(e, to) die Projektion S—^S^. Ferner sei H^(X, Sgj die Untergruppe derjenigen
+Kohomologieklassen ^eH^X, S^), zu denen es eine Umgebung ^TrT"1^)) und
+eine Kohomologieklasse ^eH^U, S) mit ^(e, to)o^=^ gibt.
+Es seien in den folgenden Abschnitten 2-4 die Induktionsvoraussetzungen aus § 5,
+Abschnitt i gemacht. Wir leiten daraus einige Sätze her.
+Satz i. Es sei p^Lpo hinreichend klein gewählt. Dann gibt es ^u jedem e und ^u jedem
+Punkt IQEK(^) Kohomologieklassen i^e, i^) EH1'(X(^), S), v=i, ..., s==s(t, 1^), so
+daß q(^, t^o^e, to) den komplexen Vektorraum H1 ( Xy S^) aufspannen,
+Beweis. Wir zeigen zunächst folgende Aussage :
+(*) Satz i gilt für Garben S* mit ach(S*)<n. In diesem Falle kann man sogar
+p == po setzen.
+In der Tat! Wir setzen S^'^S- I(e, to) und erhalten die exakte Sequenz :
+o^S^S-^S^o.
+Unter Verwendung von Satz 5, § 2 ergibt sich daraus ein kommutatives Diagramm,
+dessen Zeilen exakt sind :
+->ff(X, S^H^X, SJ^H^+^X, S^0)-^...
+^ ^ ^ ^ ^ T^l+l
+-^r(K, ^(S))-^r(K, ^(sj)-^r(K, ^(s^))-^... .
+283
+
+
+--- PDF PAGE 55 ---
+56 HANSGRAUERT
+Für jede Klassen ^eH^(X, SJ gilt: TC,^^=O und mithin : 7^=<n], ^r(K, TT,(S)).
+Also ist S==<"t; ^. Da H'(X, S^) endlich dimensional ist, folgt (*).
+Der Beweis von Satz i ergibt sich nunmehr leicht aus (*). Wir wählen ein pi<pg,
+so daß folgende Aussage gilt :
+(**) Ist SeH^Wp^S)^?! eine Kohomologieklasse mit TT,,^)=O so
+gilt ^=o.
+Nach dem Korollar I aus § 5, Abschnitt 2 existiert ein solches pi. — Es sei nun
+^^•(p), p<pi ein beliebiger Punkt und e ein beliebiges w-tupel natürlicher
+Zahlen. Wir wählen eine natürliche Zahl d so, daß — nach allen biholomorphen
+Transformationen (T : K(p)-^K(p), t'^0 mit t' = {t°„ f„ ..., (JeK(p) — die Garben
+(t!—(?)(i• 85(^1—<?)(i•7^;+l(S) torsionsrecht sind, und setzen S*=S • (t—t'^2d+el, S = S/S*.
+Es gilt dann ach(S^)<ra (genauer : nach allen Transformationen <r). Nach (*)
+gibt es also Klassen ^, ..., ^eH'(X(p), S„), so daß die Klassen ?(e)oteH'(X, S^)
+den komplexen Vektorraum H^(X, S,t,) erzeugen. Aus der exakten Sequenz :
+o^S*->S—S^o
+folgt die Kohomologiesequenz :
+-^H'(X(p), S) ^H^(X(p), S„) ^Hl+l(X(p), S*) ^....
+Für jede Klasse ^ eH'(X(p), S^) ist sicher 4/(^—^+" eine eindeutig bestimmte
+Kohomologieklasse aus ^^(p). S), es ist
+(^-^^+l(4/(^-^el+d) =7^(4 /(^l-^)61) =0.
+Also folgt a^/(^—^)e>=o, wenn diese Klasse als Kohomologieklasse aus ^^(p). S)
+betrachtet wird.
+Bezeichnet S+ die Garbe S. (^—^el und S+ die Garbe S/S+, so erhält man
+die exakte Sequenz
+o-^S+->S->S+-^o.
+Ferner hat man Abbildungen : S*-^S+, S»-^S+ und mithin ein kommutatives Diagramm:
+->H'(X(p), S) ^H'(X(p), S^) ^H'-*- l(X(p), S») -^...
+t ^6 ^6
+-^H^p), S^H^p), S+)^Hl+l(X(p), S+)-^...,
+in dem die Zeilen exakt sind. Es gilt ^=0 und also ^^ =cS, ^eH'(X(p), S). Ferner
+ist y(e, to)o^ =y(e, to)o^. Man kann also Klassen ^eH'(X(p), S) mit
+?(e,toK,=y(e,to)o^
+bestimmen, womit Satz i bewiesen ist.
+3. Wir werden jetzt in mehreren Schritten aus unseren Induktionsvoraussetzungen
+die Kohärenz der analytischen Bildgarbe 7r,(S) zeigen (ach(S)=w). Es sei wieder pi
+hinreichend klein gewählt.
+284
+
+
+--- PDF PAGE 56 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 57
+Hilfssatz i. Es gibt endlich viele Schnittflächen s^ . .., s^T(K(^), ^(S)), die über
+K(p) jeden Halm von TC^S) erzeugen, p<pi.
+Wir wählen pi so klein, daß das Lemma (*) und der Satz i gelten. Es sei
+^Kfp), p<pi ein beliebiger Punkt, K'ccKcK(p) sehr kleine Polyzylinder um to.
+Ist Co ein ^-tupel natürlicher Zahlen, so gibt es Klassen ^(Co, to) eH^pi), S), derart,
+daß die Kohomologieklassen ^(e, to)o^(Co, to) eine Basis des komplexen Vektorraumes
+Hl^ äeoto) bilden. Nach Lemma (*) gibt es ferner feste, nicht von Co, to abhängende
+Kohomologieklassen ^, . . ., ^eH^X(p), S), p<pi, so daß ^{e„ Q =2^(Co, to) ^
+gilt.
+Wir wählen nun ^ sehr^ groß. Ist dann K sehr klein, so kann man zu jeder
+Kohomologieklasse ^ eH^-^K), S) in K' holomorphe Funktionen b^t) finden,
+so daß l\n-l(K')=^t)^ gilt. Da man zu jedem Element Y^(S))t/ ein K und
+ein ^ finden kann, so daß ^(^==Y ist, folgt, daß die Schnittflächen ^=^(^) jeden
+Halm der Garbe ^(S)|K(p) erzeugen, q.e.d.
+Wie man sogleich sieht, ist auch folgender Zusatz richtig :
+Zusatz. Es gibt eine Funktion f(t, ^ =f(t) == (f^(t), ... ,/„/€;; mit lim f(t) = oo,
+so daß man die b^(i) so wählen kann, daß sie Schnittflächen in der Idealgarbe l(J(t), tj sind.
+Wir benötigen noch einen weiteren Satz :
+Satz 2. Es sei pi^po hinreichend klein gewählt, to^^P^ P<Pi ein beliebiger Punkt,
+^eHl(X(^), S) eine Kohomologieklasse mit q(t, to)o^==o. Dann gilt eine Darstellunn
+s
+^\X(P)== S a/(t}^\X(^), in der ^ feste, nicht von e, to, S abhängige Kohomologieklasseg
+aus Hl(X(pJ, S) sind und a^(i) über K (p) Schnittflächen in der Idealgarbe I(f(t), i^)
+sind. Dabei ist f(t) =f(z, t^} = (f^(t), . . .,fJ^}} eine Funktion von e mit limf(t) == oo.
+e -> oo
+Beweis. Wir zeigen zunächst :
+(*) Ist S* eine kohärente Garbe über X mit ach(S*)<n, so gilt Satz 2. Man
+kann in diesem Falle sogar pi=po—s setzen, s>o beliebig klein.
+In der Tat! Nach dem Lemma (*) gibt es eine Funktion /(e)=/(e, to), so daß
+7r^)er(K(pi), 7r,(S*).I(/(e), to)) gilt. Da ^(S*) kohärent ist, gibt es endlich viele
+Schnittflächen ^, .. ., ^er(K(pi), ^(S*)), welche die Garbe ^(S*)[K(pi) erzeugen.
+Bezeichnet a den Homomorphismus (a^, . . ., ^)-> l ^ : O^TT^S*), so liegt (7T^))t,
+im Bild der Garbe *0^©I(/(e), to). Es folgt nach Gartan [3] : Es gibt eine Schnittfläche
+oer(K(pi), ^O^) mit a(o) ==^(S). Daraus ergibt sich unmittelbar (*), weil nach
+Satz 5, § 2 die Beziehung H^(X(p), S*)»r(K(p), ^(S*)), p<po, /*=o, i, 2, ... gilt.
+Der Beweis von Satz 2 ist nunmehr schnell erbracht. Wir definieren S*, S^,
+S4-, S+ wie beim Beweis von Satz i. Nach (*) bestimmen wir Kohomologieklassen
+285
+8
+
+
+--- PDF PAGE 57 ---
+58 HANSGRAUERT
+Si, ..., ^eir(X(pi), S„), so daß Satz 2 in bezug aufS„, Si, . . ., ^ gilt. Wie im Beweis
+von Satz i konstruieren wir dann Kohomologieklassen ^, ...,^, derart, daß das
+A-Bild von ^ in H^X(pi), S+) mit dem 6-Bild von t übereinstimmt. Ferner seien
+Sg+i 3- • -5 ^^^(pi), S) Kohomologieklassen, für die das Lemma (*) gilt (zur
+Darstellung von Klassen ?,'eH\X{^), S) mit p<pi<pi).
+Man hat nun :
+q
+^(1) ^ = Bild von ^ in H^(X(p,), S„) = S ^(t)^
+mit ^(t)er(K(p,),I(/(e),to)),
+2) (S- t ^(t)y/(^-^e-d£?(X(p,), S)
+v—j- s
+und mithin gleich ^S ^(t)Sv, wobei die a^t) in K(p) holomorphe Funktionen
+sind. Wir setzen a,(t) =<^(t). (^—(^-ä und erhalten ^= f a,(t)^, q.e.d.
+v=l
+Es ist klar, daß der Satz 2 in bezug auf jede Basis Si, ..., ^eH^pi), S), pi^ p
+richtig ist, für die das Lemma (*) gilt.
+4. Um die Kohärenz von TT,(S) über K(p'), p'<p„ zu zeigen, muß nur noch
+nachgewiesen werden, daß für eine spezielle im Sinne von Hilfssatz i konstruierte Basis
+Si, ...,s, auch jeder Halm der Relationengarbe R(^, ..., Sy) |K(p') von Schnittflächen
+über K(p') erzeugt wird. Wir wählen p'<p (p im Sinne von Hilfssatz i). Es sei
+toeK(p') ein beliebiger Punkt, f^, v= i, ...,q, q Keime von holomorphen Funktionen
+i
+m to, so daß I ^/^=o gilt. Man kann dann einen kleinen Polyzy linder KcK(p')
+um to und in K holomorphe Funktionen /„ v== i, ..., q finden, die in to den Keim
+/vt, erzeugen, so daß S/>,=o gilt. Wir wählen q in K(p) holomorphe Funktionen
+ß^ • • -,f^, so daß /.—/y über K eine Schnittfläche in I(e, to) ist. Dabei ist e ein
+ffz-tupel natürlicher Zahlen. Nach Konstruktion von ^, ...,Sy gibt es Kohomologie-
+klassen ^eH'(X(p),S),v=i, ...,q mit n^)^s„. Die Klasse ^(e, to)oS/^/ ist
+sicher kohomolog null. Wir dürfen annehmen — wie das nach Konstruktion von s^ .v., s
+im Beweis von Hilfssatz i der Fall ist — daß in bezug auf die Kohomologieklassen
+^n • • •, ^^^(p), S) das Lemma (*) gilt. Es gibt nach Satz 2 holomorphe Funktionen
+^'(t)6r(K(p'),I(/(e),to)) mit S/^S^t)^. Man hat also
+W-^, ..., (^)-^))eI\=r(K(p'),R(,„ ...,^)).
+Es gilt (/M—aW)—^eI(/(e), to). Mithin folgt aus dem in § 3 bewiesenen Satz 2, da
+/'(e) beliebig groß sein kann, daß der Halm (R(^, ...,^)\ von den Schnittflächen
+aus I\ erzeugt wird.
+5. Es ist nun möglich geworden, eine allgemeine Aussage über die Kohärenz
+der analytischen Bildgarben zu machen. Offenbar kann man jeden Punkt toeK durch
+eine biholomorphe Abbildung K^K auf den Nullpunkt oeK transformieren. Jeder
+286
+
+
+--- PDF PAGE 58 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 59
+Punkt von K ist also gleichberechtigt. Es folgt daher die Kohärenz von 7r;(S) über
+ganz K. Das bedeutet, daß die in den Paragraphen 5 und 6 durchgeführte Induktion
+vollständig ist. Alle Garben T^(S), l==o, i, 2, . . . sind kohärent. Wir zeigen darüber
+hinaus :
+Hauptsatz i. Es seien TT : X->Y eine eigentliche holomorphe Abbildung eines komplexen
+Raumes X in einen komplexen Raum Y und S eine kohärente analytische Garbe über Y. Dann sind
+die Bildgarben 7T/5J, /==o, i, 2, ... kohärente analytische Garben über Y.
+Beweis. Der Satz ist in bezug auf Y von lokaler Natur. Wir dürfen daher annehmen,
+daß Y biholomorph in einen Polyzylinder K eingebettet ist. Man hat also eine eigentliche
+holomorphe Abbildung n^ : X-^K. Nun ist TC^(S) = ^(S), die triviale Fortsetzung
+der Bildgarbe TT^(S). Ferner ist T^(S) genau dann kohärent, wenn ^„(S) es ist. Damit
+ist der Hauptsatz I bewiesen.
+Wir geben noch eine andere wichtige Aussage an. Es sei jyeY ein beliebiger
+Punkt, m das maximale Ideal des lokalen Ringes Hy, rrC das Unterideal von m, das von
+den Elementen /r ... -j^, f^ . . .,/„em aufgespannt wird, v= i, 2, 3, ... . Ferner sei
+m" der Keim entlang TT"^) der Untergarbe von H(X), der von den Schnittflächen
+fön, fern" erzeugt wird. Man sieht sofort, daß es einen natürlichen Homomorphismus
+x : ^i^y-^^i^ß'^y g^t, der durch die Beschränkungsabbildung S-^S/S-w"
+definiert wird.
+Hauptsatz II. Es sei ^e(^(S))y ein Element, dessen \-Bild in (^(SfS' rn") gleich
+null ist. Dann gilt : ^e^n^S) 'm^^y. Dabei ist f(^) eine von ^ unabhängige Funktion mit
+lim /(v) == oo.
+V-> 00
+Beweis. Man darf Y==K, ^=oeK setzen. Da man eine Schnittfläche-A- ^>
+SeF(K, T^(S)) finden kann, so daß ^o—^(^(S)-^)o gilt, folgt der II. Hauptsatz
+unmittelbar aus dem Lemma (*).
+Wir zeigen noch :
+Hauptsatz II a. Es gilt lim (^(S|S'rri)))yW lim (^(8)^-^(8))^
+^-> 00 V-». 00
+Beweis. Wir dürfen uns wieder auf den Fall Y=K,^==oeK beschränken. Wir
+setzen S^=S/S\ S^^S-TT^. Man erhält aus der exakten Sequenz o-^S^S-^-^o
+die exakte Bildsequenz -^(S^Tr^SJ-^Tr^^S^-^. . . . Es gibt eine natürliche Pro-
+jektion q^ : lim7^(SJ->7^(SJ. Ist ^e lim (^(SJ)o ein beliebiges Element, so gilt
+V-^> 00 V-> 00
+sicher ro^o^e Bild von (^-^(S^o, [L beliebig groß. Nach dem Hauptsatz II hat man
+daher : roq^en^^) •I(/^([i)) und mithin roq^=o (vgl. § 3, Satz 2). Also gibt es
+ein Element te(^(S))o mit a(t)==^. Die Zuordnung ^^->^(S)/^(S) • I(/(v))
+liefert den gesuchten Isomorphismus.
+Der Hauptsatz II a wurde in der algebraischen Geometrie von A. GROTHENDIECK
+hergeleitet.
+287
+
+
+--- PDF PAGE 59 ---
+60 HANSGRAUERT
+§ 7. Anwendungen.
+In diesem Paragraphen werden einige Resultate angegeben, die sich mit Hilfe
+der Hauptsätze der vorl. Arbeit herleiten lassen. Die Beweise der so gewonnenen Aussagen
+können in der vorl. Arbeit teilweise nur angedeutet werden. Sie sind jedoch i.a. nicht
+schwierig. Ihre vollständige Durchführung muß einer späteren Arbeit überlassen bleiben.
+i. Es seien X, Y reduzierte komplexe Räume, n : X->Y eine eigentliche
+holomorphe Abbildung. R. REMMERT hat gezeigt [10] :
+Satz i. rc(X) cY ist eine analytische Menge.
+Dieser Satz ergibt sich sofort aus unserem Hauptsatz I. Es werde folgende
+Betrachtung durchgeführt :
+Es seien Z ein beliebiger (allgemeiner) komplexer Raum, S eine kohärente
+analytische Garbe über Z. Wir bezeichnen mit | S | die Menge derjenigen Punkte
+^ e Z, in denen der Halm Sg nicht der Nullhalm ist. Wählt man für I die größte analy-
+tische Untergarbe von H(Z), so daß I-S==o ist, so ist I als Annulatorgarbe (vgl. [6]
+p. 401) kohärent. Die Nullstellenmenge von I stimmt mit |S| überein. Mithin ist |S|
+eine analytische Menge.
+Wir haben gezeigt :
+(i) Der Träger \S\ jeder kohärenten analytischen Garbe S ist eine analytische Menge
+Im Falle von Satz i gilt : 7r(X) == |7To(H(X)) |. Da 7To(H(X)) nach Hauptsatz I
+kohärent ist, haben wir Satz i bewiesen.
+Natürlich ist der Remmertsche Beweis bedeutend einfacher. Unser Beweis zeigt
+jedoch, daß sich der Satz i dem Hauptsatz I unterordnet.
+2. Es seien nun X, Y zwei allgemeine komplexe Räume, TT : X->Y eine surjektive
+eigentliche, holomorphe Abbildung, S eine kohärente analytische Garbe über X. Ferner
+sei J^Y ein beliebiger Punkt. Wir bezeichnen mit m ==m{_yo) die Untergarbe der
+Funktionskeime aus H(Y), deren Wert in y^ gleich null ist. m==m{jyo) sei diejenige
+analytische Untergarbe von H(X), die von den Funktionskeimen
+(/OT^ mit feniy, y=^[x)
+erzeugt wird. Sowohl m als auch m sind kohärente analytische Garben.
+Es sei X„ der komplexe Raum, der die Menge X^Tr"1^) als Träger und die
+Garbe H(X)/w.H(X) |X7 zur Strukturgarbe hat. Wir setzen S(j/) =S/^.S \Xy und
+erhalten eine kohärente analytische Garbe über Xy.
+Ist aen^S) ein beliebiges Garbenelement, so wird er durch einen Keim a einer
+/-dimensionalen Kohomologieklasse mit Koeffizienten in S repräsentiert. Der Keim o-
+ist dabei entlang Xy gebildet. Durch die Beschränkungsabbildung S->S(j/) erhält
+man sodann eine Kohomologieklasse SIX^eH^Xy, S(j^)). Offenbar wird jedes Element
+aus ^(S)y-w in die Nullklasse abgebildet. Daraus folgt :
+288
+
+
+--- PDF PAGE 60 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 61
+(2) Es gibt ^u jedem Punkt y^Y einen natürlichen Homomorphismus
+\ : ^(S)^(S)^m(y)->Hl(X„ S(y)).
+Es läßt sich zeigen :
+Satz 2. Es sei Y reduziert. Dann bildet die Menge M der Punkte jyeY, in denen \y nicht
+bijektiv ist, eine nieder dimensionale analytische Menge von Y (1).
+Der Beweis sei nur angedeutet. Man zeigt zunächst, daß die Menge nirgends dicht
+ist. Man betrachtet sodann die Homomorphismen :
+n^ : ^(^/m^.Tr^S)^^^ S(^))^(S(jO).
+Man kann die Garben ^(S)/wfj^) -T^(S), 7^(S(j^)) und die Homomorphismen T^oX
+als je eine kohärente analytische Garbe bzw. als einen Homomorphismus F über dem
+kartesischen Produkt YxY auffassen. Wir sehen Y als Diagonale von YxY an. Da
+^ die Gruppe H^, S(j)) bijektiv abbildet, folgt M=Yn(|Ker r|u|Coker F |)
+und damit der Satz 2.
+3. Die Garben 7r;(S) werden im allgemeinen keine freien Garben über Y sein-
+Jedoch gilt die wohlbekannte Aussage :
+(3) Es seien ^ ein reduzierter komplexer Raum, S eine kohärente analytische Garbe über ^
+Dann bilden die Punkte ^e/^, in denen S^ kein freier Modul über H(^)^ ist, eine nieder-dimen.
+sionale analytische Menge F(S) c^
+Beweis. Es ist F(S)== [Tor^S, H/m(^)) [, wobei H==H(Z) gesetzt wird und
+die Garben m[^) als eine kohärente analytische Garbe über Z x Z und Z als Diagonale
+betrachtet werden. Also ist F(S) analytisch. Man zeigt leicht, daß F(S) nirgends dicht
+ist (trivial, vgl. [7], p. 306).
+Ebenso folgt ziemlich leicht :
+(4) Es seien ^ ein reduzierter komplexer Raum, S eine kohärenteana lytische Garbe über ^.
+Dann ist die Vereinigung \Ja^ wobei cr^*^ die Torsionselemente des Moduls S^ durchläuft^
+z,az
+eine kohärente analytische Garbe T(S) über <^. | T(S) \ ist eine niederdimensionale analytische
+Menge in ^.
+Zum Beweise von (4) konstruiert man unter Verwendung einer lokalen exakten
+Sequenz OP->Oq->S->o zu jedem Punkt ^;eZ eineumgebung U(^) und eine in U
+holomorphe Funktion h, deren Funktionskeime nicht Nullteiler sind, so daß die Garbe
+h • S über U keine Torsionselemente enthält, h erzeugt einen Homomorphismus
+a : S->S : o-XT-A. Es gilt T(S) |U==Ker a. Daraus folgt die Kohärenz. Daß |T(Z) |
+niederdimensional ist, ergibt sich aus (3).
+Es sei nun Z ein beliebiger komplexer Raum, Z' seine Reduktion. Wir nennen
+(1) Ist Y nicht reduziert, so kann M==Y gelten. M ist jedoch stets eine analytische Menge.
+289
+
+
+--- PDF PAGE 61 ---
+62 HANSGRAUERT
+dann ein Garbenelement creSg ein Torsionselement, wenn es einen holomorphen
+Funktionskeim jfe(H(Z))^ mit f'a==o gibt, derart, daß f\'Z,' kein Nullteiler ist. Die
+Vereinigung der Torsionselemente c sei wieder mit T(S) bezeichnet. Es folgt unter
+Verwendung von Satz 4, § i :
+(4') Die Aussage (4) gilt für T(S) sogar, wenn ^ ein beliebiger komplexer Raum ist.
+Die Aussage (4) wird zum Beweis von Satz 2 herangezogen (um zu zeigen, daß
+M nirgends dicht ist) (1).
+4. Es sei fortan n : X-^Y stets eine surjektive, eigentliche holomorphe Abbildung
+eines komplexen Raumes X in einen reduzierten komplexen Raum Y (2). S sei wieder
+eine kohärente analytische Garbe über X. Wir nennen S über einem Punkte j^eY platt,
+wenn Tor^S, C)=o ist (3). S heißt platt über Y, wenn S über allen Punkten von Y
+platt ist. Man kann zeigen :
+(5) Die Menge P (S) der Punkte j^eY, über denen S nicht platt ist, bildet eine nieder-
+dimensionale analytische Teilmenge von Y.
+Auf einen Beweis sei hier verzichtet.
+Wir setzen im folgenden voraus, daß S über Y platt ist.
+Satz 3. Die Funktion r^y)=dim^H]'(X^ S(y)) ist halbstetig nach oben, d.h. es gibt ^u
+jedem Punkt y^Y eineumgebung U(yo), so daß dim^H^Xy, S(y)) ^dim^H^Xy^ S^}}
+für ye U ist (l==o, 1,2,.. .).
+Der Beweis von Satz 3 macht wesentlich davon Gebrauch, daß man die Familie X
+der komplexen Räume X nach komplexen Räumen Y7 liften kann, die durch
+holomorphe Abbildungen 9 : Y'-^Y in Y abgebildet sind. Zur Definition der Liftung
+bilden wir das kartesische Produkt XxY7, definieren in XxY7 die analytische Menge
+X^^y) :7r(A;)=cp(y)} und versehen X' mit der Strukturgarbe H^XxY^/H* [X7,
+wobei H* diejenige analytische Untergarbe von H(XxY') bezeichnet, die von
+den Funktionskeimen fo n—/ocp mit /eH(Y)^, [x,y'}eK' beliebig, erzeugt wird. Die
+Produktprojektion XxY'-^Y7 bzw. XxY'-^X definiert eine eigentliche holomorphe
+Abbildung n' : X'—^Y7 bzw. eine holomorphe Abbildung 9 : X'—^X. Es gilt: 907^= TTO^.
+Wir bezeichnen mit S7 die analytische Urbildgarbe von S bzgl. 9. S' ist eine kohärente
+analytische Garbe über X'. Man zeigt leicht unter der Vorausssetzung, daß auch Y'
+ein reduzierter komplexer Raum ist :
+(6) Die komplexen Räume Xy und X'y mit y=^(y') sind analytisch äquivalent.
+(7) Es sei y-==^(y') und die Garbe S platt über y. Dann ist die Garbe S' platt über y'.
+(1) (4) ist ein Spezialfall — oder besser — steht in naher Beziehung zu einem von W. THIMM ohne Beweis
+angegebenen Satze. Vgl. W. THIMM, Math. Annalen (1960).
+(2) Analoge Sätze gelten auch, wenn Y nicht reduziert ist. Jedoch ist eine solche Verallgemeinerung nur
+sinnvoll, wenn man an stelle der Garbe \m{y}\ der lokalen Ringe m(y) allgemeinere Garben verwendet.
+(3) S^ und der komplexe Zahlkörper G können in natürlicher Weise als Modul über (H(Y))y, y=-T:{x)
+aufgefaßt werden. — Der Begriff platt wurde m.W. von A. GROTHENDIECK eingeführt.
+290
+
+
+--- PDF PAGE 62 ---
+EIN THEOREM DER ANALYTISCHEN GARBENTHEORIE 63
+Der Beweis von Satz 3 folgt leicht aus (7) durch Induktion über dim Y. Wie vorne
+gezeigt, kann man einen niederdimensionalen reduzierten komplexen Unterraum Y' cY
+finden, so daß T^(S) über Y—Y7 eine freie Garbe ist und daß die Homomorphismen
+Xy für j^eY—V bijektiv sind. Also ist Satz 3 über Y—Y' richtig. Nach Induktions-
+voraussetzung gilt er auch für Y7. Ferner ergibt sich unser Satz unter Verwendung
+der Hauptsätze leicht, wenn Y eine Riemannsche Fläche ist. Da man zu jedem Punkt
+j^eY7 und zu jeder der endlich vielen an y^ grenzenden zusammenhängenden Kompo-
+nenten von Y—Y7 ein Stück KcY einer Riemannschen Fläche finden kann, das y^
+enthält und sonst ganz in Y—Y7 verläuft, folgt, daß es eine Umgebung U(j^o) gibt,
+so daß für ^(Y—Y^nU gilt: dim.H^X,, S(^)<_dim^H\X^ S(jo)). Das ist dann
+sogar für ye V richtig, wenn VcU eine hinreichend kleine Umgebung von y bezeichnet.
+Damit ist der Satz bewiesen.
+5. Es werde nun vorausgesetzt, daß dim^H^X^, S(j^)) unabhängig von y ist.
+Es folgt zunächst :
+Satz 4. Die Garben A^==T^.^(S '^(j^)) sind torsionsfrei, j^eY.
+Beweisandeutung. Man zeigt zunächst, daß die natürlichen Abbildungen S^w^)—^
+injektiv sind. Daraus folgt sodann, daß auch die Abbildungen
+W^^I^^^^S-m^lS.m^1^)
+injektiv sind. Ist ^ ein Keim eines Kozyklus mit Koeffizienten in S-w^) entlang X^3
+so kann man E;==Sß^ setzen, wobei ^ Koketten mit Koeffizienten in S und a^ überj^
+linear unabhängige Elemente aus m>)(y) sind. SJX sind dann Kozyklen. Dadurch
+wird ein formales Konstruktionsverfahren für Koketten r^ mit ST] = ^ gegeben. Man
+leitet damit leicht her :
+(a) Sat^ 4 gilt für allgemeine reduzierte komplexe Räume Y, wenn er in be^ug auf normale
+komplexe Räume Y bewiesen ist.
+Man zeigt nun :
+(b) Satz 4 folgt für normale komplexe Räume Y, wenn er für allgemeine komplexe Räume
+von kleinerer Dimension als Y richtig ist.
+Für den Fall von Riemannschen Flächen Y läßt sich unser Satz unter der Voraus-
+setzung dim^H^Xy, S(j^))=const. sehr leicht nachweisen. Damit ist eine vollständige
+Induktion gegeben, die unseren Satz beweist.
+6. Es folgt nun sofort, daß die Beschränkungsabbildung H^V, S^H^Xy, S(j^))
+mit V==7T—1(U) surjektiv ist, wenn U eine sehr kleine Umgebung von y bezeichnet.
+Es seien ^i, ...,^eH^V, S) Kohomologieklassen, so daß SJXy, v=i, ...,^ eine
+Basis des komplexen Vektorraumes H^Xy, S(j^)) bilden. Man zeigt leicht :
+(a) Die Schnittflächen ^==^i(^) erzeugen in einer Umgebung von y die Garbe ^i(S).
+291
+
+
+--- PDF PAGE 63 ---
+64 HANSGRAUERT
+Man braucht dazu nur die Voraussetzung von Lemma (*) für ein beliebiges
+m-tupel e nachzuweisen.
+Damit hat sich auch ergeben :
+(b) Die Abbildung \y ist bijektiv.
+Ferner sieht man sofort, daß dim^H^X^S (y)) nicht vonjy unabhängig sein kann,
+wenn die Relationengarbe von (v]i, .. ., 7^) von null verschieden ist. Also gilt :
+Satz 5. Die Garbe ^(S) ist eine freie Garbe, die Homomorphismen
+\ •• ^(S)y|(^(S)'m(y))^Hl(X„S(y))
+sind bijektiv.
+Beispiele zeigen, daß die Voraussetzungen für die Sätze 3-5 wesentlich sind. Ist
+z.B. S nicht platt über Y, so braucht die Funktion dim^H^X , S(j^)) nicht halbstetig
+nach oben zu sein.
+7. Unter der Voraussetzung, daß S platt über Y und Y reduziert und zusammen-
+hängend ist, kann noch eine weitere wichtige Folgerung gezogen werden. Wir setzen
+00
+xfjO == S (—iydim^T(X^S(^)). Die Summe ist natürlich für jedes fester endlich,1=0
+d.h. -^{y) existiert immer. Es folgt :
+Satz 6. j^(y) hängt nicht von y ab.
+Auf den Beweis, der selbstvertändlich nur für den Fall erbracht werden muß,
+daß Y eine Riemannsche Fläche ist, sei hier verzichtet.
+LITERATUR
+[i] AHLFORS, L. V. : Aufsatz im Congressband Funktionentheorietagung Princeton 1957. Princeton University
+Press, 1960.
+[s] BOURBAKI, N. : Espaces vectoriels topologiques. Hermann, Paris.
+[3] CARTAN, H. : Varietes analytiques complexes et cohomologie. Coll. de Bruxelles, 41-55 (1953).
+[4] CARTAN, H. und J.-P. SERRE : Un theoreme de finitude concernant les varietes analytiques compactes. C.R.
+Acad. Sei. Paris, 237, 128-130 (1953). Vgl. auch Seminaire E.N.S. H. Cartan 1953/54, Expose 17.
+[5] FRÖHLICHER, A. und A. NIJENHUIS : A theorem on stability of complex structures. Proc. Nat. Acad. Sei. USA,
+43, 239-241 (i957)-
+[6] GRAUERT, H. und R. REMMERT : Bilder und Urbilder analytischer Garben. Ann. of Math., 68, 393-443 (1958).
+[7] GRAUERT, H. und R. REMMERT : Komplexe Räume. Math. Annalen, 136, 245-318 (1958).
+[8] GRAUERT, H. : Analytische Faserungen über holomorph-vollständigen Räumen. Math. Annalen, 135, 263-
+273 (i958).
+[9] KODAIRA, K. und D. C. SPENCER : On Deformations of complex-analytic Structures. Teil I und II : Ann. of
+Math., 67, 328-466 (1958), Teil III erscheint in den Ann. of Math., 1959/60.
+[10] REMMERT, R. : Holomorphe und meromorphe Abbildungen komplexer Räume. Math. Annalen, 133, 338-
+370 (1957). Femer : Projektionen analytischer Mengen. Math. Annalen, 130, 410-441 (1956).
+[n] SERRE, J.-P. : Faisceaux algebriques coherents. Ann. of Math., 61, 197-278 (1955).
+1960. — Imprimerie des Presses Universitaires de France. — Vendöme (France)
+ßDIT. NO 26 038 IMPMMIS EN FRANCE IMP. N° 16 257

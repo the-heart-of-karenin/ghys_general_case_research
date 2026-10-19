@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-19",
+  "research_notes": [
+    "notes/86_full_suspension_twisted_returns_and_separated_stable_parameters.md",
+    "notes/87_global_common_line_on_an_invariant_full_measure_open_set.md",
+    "notes/88_localization_stop_countertests_and_next_identification.md"
+  ],
+  "new_pdf_downloads": 0,
+  "reused_source": {
+    "filename": "68_Hurtado_Xue_2020_Global_rigidity_ABC_v2.pdf",
+    "title": "Global rigidity of some Abelian-by-cyclic group actions on T^2",
+    "authors": ["Sebastian Hurtado", "Jinxin Xue"],
+    "version_url": "https://arxiv.org/pdf/1909.10112v2",
+    "journal_url": "https://doi.org/10.2140/gt.2021.25.3133",
+    "version_date": "2020-12-05",
+    "journal": "Geometry & Topology 25 (2021), 3133-3178",
+    "prior_integrity_record": "Residual_monodromy_source_audit.json",
+    "sha256_from_prior_record": "ba992626e0d784515f403db419103e9b8bda7b97b591542e55c2dad713f5b44d",
+    "integrity_checks_rerun": false
+  },
+  "new_complete_page_visually_checked": {
+    "pdf_page": 7,
+    "image": "Residual_monodromy_source_previews/68_Hurtado_Xue_2020_Global_rigidity_ABC_v2_page_7.png",
+    "complete_page_visually_checked": true,
+    "content": "Inclination lemma, Corollary 2.5, Proposition 2.6 statement and first part of its proof. Proposition does not require the two diffeomorphisms to be conjugate."
+  },
+  "prior_complete_pages_reused": [8, 9],
+  "actual_external_input": {
+    "statement": "Proposition 2.6",
+    "pdf_pages": [7, 8],
+    "use": "Four transverse local stable/unstable disk intersections at two hyperbolic fixed points imply free subgroup generation by large common powers.",
+    "independent_extension_in_notes": "notes/87 section 2 deduces the two-Anosov form from dense periodic points and local stable manifold continuity."
+  },
+  "scope_exclusions": [
+    "No dimension-two classification applied.",
+    "No contradiction from a free semigroup.",
+    "Theorem 1.11 is not silently restated as an arbitrary pair theorem.",
+    "No area compactness result inferred from search snippets.",
+    "No new 2026 preprint theorem required."
+  ],
+  "novelty": "Not confirmed; finite primary-source searches and comparisons only.",
+  "verification_scope": "One new complete PDF page checked. Existing source integrity and pages reused. No old mathematical suites rerun; mathematical proofs and countertests are analytic in notes86-88."
+}

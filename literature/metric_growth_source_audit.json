@@ -1,0 +1,203 @@
+{
+  "audited_utc": "2026-10-18T09:14:55.882541+00:00",
+  "purpose": "Notes 53-54: two-sided differential growth, actual Kahler axis, global and leafwise derivative tails. No full rigidity claim.",
+  "manifest_count": 48,
+  "new_downloads": [
+    {
+      "filename": "47_De_Thelin_2008_Lyapunov_exponents.pdf",
+      "title": "Sur les exposants de Lyapounov des applications meromorphes",
+      "author": "Henry de Thelin",
+      "download_url": "https://arxiv.org/pdf/math/0609628",
+      "landing_url": "https://doi.org/10.1007/s00222-007-0095-5",
+      "publication_note": "Inventiones Mathematicae 172 (2008), 89-116; arXiv author manuscript, first submitted 2006. Text extraction has broken font encoding; theorem verified on rendered PDF page 2.",
+      "bytes": 294830,
+      "pages": 27,
+      "sha256": "b8387607a7bee4dbadf1b8bf2a01b38c9fec7be4d084c1754866c05d9c04b2cd",
+      "collected_utc": "2026-10-18T09:07:46.506511+00:00"
+    },
+    {
+      "filename": "48_Bressaud_Liverani_2002_Anosov_coupling.pdf",
+      "title": "Anosov diffeomorphisms and coupling",
+      "author": "Xavier Bressaud and Carlangelo Liverani",
+      "download_url": "https://www.math.univ-toulouse.fr/~bressaud/Papiers/ForwarCouplingDec2000.pdf",
+      "landing_url": "https://doi.org/10.1017/S0143385702000056",
+      "publication_note": "Ergodic Theory and Dynamical Systems 22 (2002), 129-152; author-hosted manuscript dated December 20, 2000. Proposition 4.1 used only for its two-sided Jacobian bound.",
+      "resolved_url": "https://www.math.univ-toulouse.fr/~bressaud/Papiers/ForwarCouplingDec2000.pdf",
+      "bytes": 339475,
+      "pages": 24,
+      "sha256": "35c6e624f0f47e3b66091f3d881421e33b9a6f8b1e909f95e058cb30c51d55b6",
+      "collected_utc": "2026-10-18T09:07:50.243749+00:00"
+    }
+  ],
+  "sources": [
+    {
+      "filename": "20_Jang_2024_Kummer_rigidity.pdf",
+      "absolute_path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\20_Jang_2024_Kummer_rigidity.pdf",
+      "pages": 31,
+      "bytes": 757714,
+      "sha256": "b7f9c994f0d03c7ed083f0083415d7d5fecfdf0447f9c17db0cd738101d67114",
+      "reviewed_full_pages": [
+        7,
+        8,
+        9,
+        11
+      ],
+      "role": "proof input or scope comparison, specified in metric_growth_scope_and_novelty_log.md"
+    },
+    {
+      "filename": "36_Lesieutre_Satriano_2021_Canonical_heights.pdf",
+      "absolute_path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\36_Lesieutre_Satriano_2021_Canonical_heights.pdf",
+      "pages": 38,
+      "bytes": 830167,
+      "sha256": "6a82bc962c499dcc6494ae36d5bff539cdbec572f8103aaa64b99b31c5a888e2",
+      "reviewed_full_pages": [
+        16,
+        17
+      ],
+      "role": "proof input or scope comparison, specified in metric_growth_scope_and_novelty_log.md"
+    },
+    {
+      "filename": "02_Cantat_2004_Diffeomorphismes_holomorphes_Anosov.pdf",
+      "absolute_path": "D:\\Users\\Desktop\\work\\2\\historical_literature\\02_Cantat_2004_Diffeomorphismes_holomorphes_Anosov.pdf",
+      "pages": 19,
+      "bytes": 224773,
+      "sha256": "57dc5025ce67c9f7ce22fb7ad2e1b7621e7b4822464aeb5fe4ac7399123b3e40",
+      "reviewed_full_pages": [
+        7,
+        8,
+        9
+      ],
+      "role": "historical comparison; not newly downloaded"
+    },
+    {
+      "filename": "47_De_Thelin_2008_Lyapunov_exponents.pdf",
+      "absolute_path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\47_De_Thelin_2008_Lyapunov_exponents.pdf",
+      "pages": 27,
+      "bytes": 294830,
+      "sha256": "b8387607a7bee4dbadf1b8bf2a01b38c9fec7be4d084c1754866c05d9c04b2cd",
+      "reviewed_full_pages": [
+        1,
+        2
+      ],
+      "role": "proof input or scope comparison, specified in metric_growth_scope_and_novelty_log.md"
+    },
+    {
+      "filename": "46_Ledrappier_Young_1985_Entropy_I.pdf",
+      "absolute_path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\46_Ledrappier_Young_1985_Entropy_I.pdf",
+      "pages": 32,
+      "bytes": 1881817,
+      "sha256": "8f611bce4e328a50c3def42ce78f2d882ed24186e66867b6558c41588829d7a7",
+      "reviewed_full_pages": [
+        6
+      ],
+      "role": "proof input or scope comparison, specified in metric_growth_scope_and_novelty_log.md"
+    },
+    {
+      "filename": "48_Bressaud_Liverani_2002_Anosov_coupling.pdf",
+      "absolute_path": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\48_Bressaud_Liverani_2002_Anosov_coupling.pdf",
+      "pages": 24,
+      "bytes": 339475,
+      "sha256": "35c6e624f0f47e3b66091f3d881421e33b9a6f8b1e909f95e058cb30c51d55b6",
+      "reviewed_full_pages": [
+        6,
+        7
+      ],
+      "role": "proof input or scope comparison, specified in metric_growth_scope_and_novelty_log.md"
+    }
+  ],
+  "full_page_previews": [
+    {
+      "source": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\20_Jang_2024_Kummer_rigidity.pdf",
+      "page": 7,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\metric_growth_BBF_signature.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\20_Jang_2024_Kummer_rigidity.pdf",
+      "page": 8,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\metric_growth_eigenclasses.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\20_Jang_2024_Kummer_rigidity.pdf",
+      "page": 9,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\metric_growth_null_locus.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\20_Jang_2024_Kummer_rigidity.pdf",
+      "page": 11,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\metric_growth_simple_eigenvalue.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\36_Lesieutre_Satriano_2021_Canonical_heights.pdf",
+      "page": 16,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\metric_growth_periodic_subvarieties.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\36_Lesieutre_Satriano_2021_Canonical_heights.pdf",
+      "page": 17,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\metric_growth_odd_dimension_comparison.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "D:\\Users\\Desktop\\work\\2\\historical_literature\\02_Cantat_2004_Diffeomorphismes_holomorphes_Anosov.pdf",
+      "page": 7,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\metric_growth_Cantat_comparison.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "D:\\Users\\Desktop\\work\\2\\historical_literature\\02_Cantat_2004_Diffeomorphismes_holomorphes_Anosov.pdf",
+      "page": 8,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\metric_growth_Cantat_positive_forms.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "D:\\Users\\Desktop\\work\\2\\historical_literature\\02_Cantat_2004_Diffeomorphismes_holomorphes_Anosov.pdf",
+      "page": 9,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\metric_growth_Cantat_regularization.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\47_De_Thelin_2008_Lyapunov_exponents.pdf",
+      "page": 1,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\metric_growth_Thelin_integrability.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\47_De_Thelin_2008_Lyapunov_exponents.pdf",
+      "page": 2,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\metric_growth_Thelin_corollary3.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\46_Ledrappier_Young_1985_Entropy_I.pdf",
+      "page": 6,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\metric_growth_LY_equality.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\48_Bressaud_Liverani_2002_Anosov_coupling.pdf",
+      "page": 6,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\metric_growth_holonomy_definitions.png",
+      "visually_inspected": true
+    },
+    {
+      "source": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\48_Bressaud_Liverani_2002_Anosov_coupling.pdf",
+      "page": 7,
+      "preview": "D:\\Users\\Desktop\\work\\ghys_general_case_research\\literature\\previews\\metric_growth_holonomy_Jacobian_bounds.png",
+      "visually_inspected": true
+    }
+  ],
+  "full_page_count": 14,
+  "source_count": 6,
+  "warnings": [
+    "Source 47 font encoding breaks text extraction: Corollary 3 checked on the complete rendered page.",
+    "Source 48 page 7 first Jacobian-ratio display has an unusable printed negative exponent. Only its later explicit two-sided Jacobian bounds are used.",
+    "No C1 holonomy, smooth Green root current, absolute continuity or IHS Anosov exclusion has been proved.",
+    "Hamilton-Kotschick 2021 publisher PDF was checked only for scope. Parallelism is an additional hypothesis, not an input obtained here.",
+    "Finite searches do not establish novelty."
+  ]
+}

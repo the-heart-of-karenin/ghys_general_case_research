@@ -659,5 +659,502 @@
     "pages": 13,
     "sha256": "9472ad14b3eb652fb24d19ee994241a795f9ff1ff3dd5751a3a44e7617794f91",
     "collected_utc": "2026-10-18T07:44:26.625254+00:00"
+  },
+  {
+    "filename": "42_Ruelle_Sullivan_1975_Currents.pdf",
+    "title": "Currents, flows and diffeomorphisms",
+    "author": "David Ruelle and Dennis Sullivan",
+    "download_url": "https://www.math.stonybrook.edu/~dennis/publications/PDF/DS-pub-0023.pdf",
+    "landing_url": "https://doi.org/10.1016/0040-9383(75)90016-6",
+    "publication_note": "Topology 14 (1975), 319-327; publisher-formatted PDF on Sullivan's institutional site.",
+    "bytes": 720336,
+    "pages": 9,
+    "sha256": "3a10b034eb5fddad1436bb5fb9553ae8ed0b7090bcca058802c786065b405025",
+    "collected_utc": "2026-10-18T08:29:27.991746+00:00"
+  },
+  {
+    "filename": "43_De_Thelin_Dinh_2012_Dynamics_Kahler.pdf",
+    "title": "Dynamics of automorphisms on compact Kahler manifolds",
+    "author": "Henry de Thelin and Tien-Cuong Dinh",
+    "download_url": "https://arxiv.org/pdf/1009.5796",
+    "landing_url": "https://arxiv.org/abs/1009.5796",
+    "publication_note": "Advances in Mathematics 229 (2012), 2640-2655; arXiv manuscript.",
+    "bytes": 215326,
+    "pages": 18,
+    "sha256": "6ccc045d62efcef16b77505ab8d95e16e5ae1ed8f1b484fa40952af213cea11a",
+    "collected_utc": "2026-10-18T08:29:28.685415+00:00"
+  },
+  {
+    "filename": "44_Dinh_Sibony_2010_Superpotentials_Kahler.pdf",
+    "title": "Super-potentials for currents on compact Kahler manifolds and dynamics of automorphisms",
+    "author": "Tien-Cuong Dinh and Nessim Sibony",
+    "download_url": "https://arxiv.org/pdf/0804.0860",
+    "landing_url": "https://arxiv.org/abs/0804.0860",
+    "publication_note": "Journal of Algebraic Geometry 19 (2010), 473-529; arXiv manuscript.",
+    "bytes": 563417,
+    "pages": 53,
+    "sha256": "c31a081c32cad02425f2b52f635c41ec5c99cbd6e0cf6efb202bab3982af4a00",
+    "collected_utc": "2026-10-18T08:29:29.537010+00:00"
+  },
+  {
+    "filename": "45_Young_2002_SRB_survey.pdf",
+    "title": "What are SRB measures, and which dynamical systems have them?",
+    "author": "Lai-Sang Young",
+    "download_url": "https://math.nyu.edu/~lsy/papers/SRBsurvey.pdf",
+    "landing_url": "https://math.nyu.edu/~lsy/publications-all.html",
+    "publication_note": "Journal of Statistical Physics 108 (2002), 733-754; author-hosted manuscript. Used as an original-author survey for SRB uniqueness, not as a new research theorem.",
+    "resolved_url": "https://math.nyu.edu/~lsy/papers/SRBsurvey.pdf",
+    "bytes": 246558,
+    "pages": 21,
+    "sha256": "5de3a2ed19f2f03f0f46cdd1f681419a61589e1a9f8579442e4b842cbc725e42",
+    "collected_utc": "2026-10-18T08:29:32.104892+00:00"
+  },
+  {
+    "filename": "46_Ledrappier_Young_1985_Entropy_I.pdf",
+    "title": "The metric entropy of diffeomorphisms. Part I: Characterization of measures satisfying Pesin's entropy formula",
+    "author": "Francois Ledrappier and Lai-Sang Young",
+    "download_url": "https://math.nyu.edu/~lsy/papers/metric-entropy-part1.pdf",
+    "landing_url": "https://math.nyu.edu/~lsy/publications-all.html",
+    "publication_note": "Annals of Mathematics 122 (1985), 509-539; original paper hosted by coauthor.",
+    "resolved_url": "https://math.nyu.edu/~lsy/papers/metric-entropy-part1.pdf",
+    "bytes": 1881817,
+    "pages": 32,
+    "sha256": "8f611bce4e328a50c3def42ce78f2d882ed24186e66867b6558c41588829d7a7",
+    "collected_utc": "2026-10-18T08:29:33.637260+00:00"
+  },
+  {
+    "filename": "47_De_Thelin_2008_Lyapunov_exponents.pdf",
+    "title": "Sur les exposants de Lyapounov des applications meromorphes",
+    "author": "Henry de Thelin",
+    "download_url": "https://arxiv.org/pdf/math/0609628",
+    "landing_url": "https://doi.org/10.1007/s00222-007-0095-5",
+    "publication_note": "Inventiones Mathematicae 172 (2008), 89-116; arXiv author manuscript, first submitted 2006. Text extraction has broken font encoding; theorem verified on rendered PDF page 2.",
+    "bytes": 294830,
+    "pages": 27,
+    "sha256": "b8387607a7bee4dbadf1b8bf2a01b38c9fec7be4d084c1754866c05d9c04b2cd",
+    "collected_utc": "2026-10-18T09:07:46.506511+00:00"
+  },
+  {
+    "filename": "48_Bressaud_Liverani_2002_Anosov_coupling.pdf",
+    "title": "Anosov diffeomorphisms and coupling",
+    "author": "Xavier Bressaud and Carlangelo Liverani",
+    "download_url": "https://www.math.univ-toulouse.fr/~bressaud/Papiers/ForwarCouplingDec2000.pdf",
+    "landing_url": "https://doi.org/10.1017/S0143385702000056",
+    "publication_note": "Ergodic Theory and Dynamical Systems 22 (2002), 129-152; author-hosted manuscript dated December 20, 2000. Proposition 4.1 used only for its two-sided Jacobian bound.",
+    "resolved_url": "https://www.math.univ-toulouse.fr/~bressaud/Papiers/ForwarCouplingDec2000.pdf",
+    "bytes": 339475,
+    "pages": 24,
+    "sha256": "35c6e624f0f47e3b66091f3d881421e33b9a6f8b1e909f95e058cb30c51d55b6",
+    "collected_utc": "2026-10-18T09:07:50.243749+00:00"
+  },
+  {
+    "filename": "49_Cantat_Dupont_2020_Surface_Kummer_rigidity.pdf",
+    "title": "Automorphisms of surfaces: Kummer rigidity and measure of maximal entropy",
+    "author": "Serge Cantat and Christophe Dupont",
+    "download_url": "https://arxiv.org/pdf/1410.1202",
+    "landing_url": "https://doi.org/10.4171/JEMS/946",
+    "fallback_urls": [
+      "https://perso.univ-rennes1.fr/serge.cantat/Articles/smooth-final.pdf",
+      "http://serge_cantat.pages.math.cnrs.fr/Articles/smooth-final.pdf",
+      "https://arxiv.org/pdf/1410.1202"
+    ],
+    "publication_note": "JEMS 22 (2020), 1289-1351; locally stored arXiv:1410.1202v1, 5 October 2014, verified from its margin. Corollaries 1.6 and 1.7 here correspond to 1.7 and 1.8 in the later author-final manuscript. Author-final HTTPS certificate and old host failed; the arXiv primary manuscript was used.",
+    "bytes": 596004,
+    "pages": 57,
+    "sha256": "d70b423205d981e2110552dfcd885810753608810c3bc84f36b0bd12654f3f9a",
+    "collected_utc": "2026-10-18T09:39:55.736511+00:00"
+  },
+  {
+    "filename": "50_Rey_Bellet_Young_2008_Large_deviations.pdf",
+    "title": "Large deviations in non-uniformly hyperbolic dynamical systems",
+    "author": "Luc Rey-Bellet and Lai-Sang Young",
+    "download_url": "https://luc-umass.github.io/pdf/lsy1.pdf",
+    "landing_url": "https://doi.org/10.1017/S0143385707000478",
+    "publication_note": "ETDS 28 (2008), 587-612; author-hosted journal PDF. Used for standard pressure/logarithmic-moment background, not to claim its tower theorem verbatim gives the independent all-parameter Gibbs calculation.",
+    "resolved_url": "https://luc-umass.github.io/pdf/lsy1.pdf",
+    "successful_download_url": "https://luc-umass.github.io/pdf/lsy1.pdf",
+    "download_failures": [],
+    "bytes": 277262,
+    "pages": 26,
+    "sha256": "8b644bcfb24b138dfecff993d18ce9438ecd4bd6f40a989d0a3f638ca7185651",
+    "collected_utc": "2026-10-18T09:39:56.534266+00:00"
+  },
+  {
+    "filename": "51_Lauret_Will_2004_Anosov_up_to_dimension_8.pdf",
+    "title": "Anosov diffeomorphisms on nilmanifolds up to dimension 8",
+    "author": "Jorge Lauret and Cynthia E. Will",
+    "download_url": "https://arxiv.org/pdf/math/0406199v2",
+    "landing_url": "https://arxiv.org/abs/math/0406199",
+    "publication_note": "2004 arXiv v2; includes rational-form classification later published separately. Compare the 2009 Transactions article.",
+    "resolved_url": "https://arxiv.org/pdf/math/0406199v2",
+    "bytes": 392839,
+    "sha256": "32f4a2b80664404938cfa9b155c07e75ddc3e86ddb4ba020945c1b82085b3446",
+    "pages": 37,
+    "collected_utc": "2026-10-18T10:22:04.476209+00:00"
+  },
+  {
+    "filename": "52_Bazzoni_Freibert_Latorre_Meinke_Complex_symplectic_Lie_algebras.pdf",
+    "title": "Complex symplectic structures on Lie algebras",
+    "author": "Giovanni Bazzoni, Marco Freibert, Adela Latorre, Benedict Meinke",
+    "download_url": "https://arxiv.org/pdf/1811.05969",
+    "landing_url": "https://doi.org/10.1016/j.jpaa.2020.106585",
+    "publication_note": "Locally stored arXiv:1811.05969v1, 14 November 2018, 35 pages; final Journal of Pure and Applied Algebra 225(6) (2021), 106585. Used as classification background; central-bound input verified in original LUV paper 54.",
+    "resolved_url": "https://arxiv.org/pdf/1811.05969",
+    "bytes": 398395,
+    "sha256": "14d47d69fc684ec768df80f6e197eb5351556682558f114c5cbb28ea8e11eb47",
+    "pages": 35,
+    "collected_utc": "2026-10-18T10:22:03.813425+00:00"
+  },
+  {
+    "filename": "53_Lauret_Will_Nilmanifolds_dimension_8_journal_author.pdf",
+    "title": "Nilmanifolds of dimension at most 8 admitting Anosov diffeomorphisms",
+    "author": "Jorge Lauret and Cynthia E. Will",
+    "download_url": "https://www.famaf.unc.edu.ar/documents/820/AMat78.pdf",
+    "landing_url": "https://doi.org/10.1090/S0002-9947-08-04757-0",
+    "publication_note": "2007 Universidad Nacional de Cordoba Serie A 78/07 author manuscript, 20 PDF pages including a cover; final Transactions AMS 361(5) (2009), 2377-2395. This and file 51 are versions of the same research, not independent classification theorems.",
+    "resolved_url": "https://www.famaf.unc.edu.ar/documents/820/AMat78.pdf",
+    "bytes": 317387,
+    "sha256": "539a70edf302b97e566bdb8c3d8c9c26a63c6b178ef16149063a9fc18902f2c2",
+    "pages": 20,
+    "collected_utc": "2026-10-18T10:22:05.391998+00:00"
+  },
+  {
+    "filename": "54_Latorre_Ugarte_Villacampa_Ascending_central_series.pdf",
+    "title": "The ascending central series of nilpotent Lie algebras with complex structure",
+    "author": "Adela Latorre, Luis Ugarte, Raquel Villacampa",
+    "download_url": "https://zaguan.unizar.es/record/79543/files/texto_completo.pdf",
+    "landing_url": "https://doi.org/10.1090/tran/7512",
+    "publication_note": "University repository author manuscript, 28 pages; final Transactions AMS 372(6) (2019), 3867-3903. Local Theorem 3.11 p.9 and Corollary 3.12 p.13 directly used; exact repository manuscript version date not asserted.",
+    "bytes": 431153,
+    "sha256": "296574b2c8dfaa41751ccf6a87a729b03ad47a77102b8c9e831c2e0eb710d6fa",
+    "pages": 28,
+    "collected_utc": "2026-10-18T10:27:08.390998+00:00"
+  },
+  {
+    "filename": "55_Console_Fino_2001_Dolbeault_nilmanifolds.pdf",
+    "title": "Dolbeault cohomology of compact nilmanifolds",
+    "author": "Sergio Console and Anna Fino",
+    "download_url": "https://arxiv.org/pdf/math/9803135",
+    "landing_url": "https://doi.org/10.1007/BF01597131",
+    "publication_note": "Transformation Groups 6 (2001), 111-124; stored arXiv:math/9803135v2, 23 January 2001, 15 pages. Scalar Dolbeault background; tangent-coefficient input is verified directly in file 57.",
+    "bytes": 212239,
+    "pages": 15,
+    "sha256": "951caebd80729e75a94ab2e2a491966c1f064f0370c99b9fffc3ce41d0de78ea",
+    "collected_utc": "2026-10-18T13:35:54.897703+00:00"
+  },
+  {
+    "filename": "56_Rollenske_2009_Dolbeault_small_deformations_nilmanifolds.pdf",
+    "title": "Lie-algebra Dolbeault cohomology and small deformations of nilmanifolds",
+    "author": "Soenke Rollenske",
+    "download_url": "https://arxiv.org/pdf/0709.0467v2",
+    "landing_url": "https://doi.org/10.1112/jlms/jdn076",
+    "publication_note": "JLMS 79(2) (2009), 346-362; author arXiv v2, 20 January 2009.",
+    "bytes": 245110,
+    "pages": 19,
+    "sha256": "effd7644a355167bd2a2b88bf1e0aa4a6fba3d055bf11c2cefac5e441b283c5e",
+    "collected_utc": "2026-10-18T13:35:55.347295+00:00"
+  },
+  {
+    "filename": "57_Console_Fino_Poon_Stability_abelian_complex_structures.pdf",
+    "title": "Stability of abelian complex structures",
+    "author": "Sergio Console, Anna Fino, Yat-Sun Poon",
+    "download_url": "https://arxiv.org/pdf/math/0506314v1",
+    "landing_url": "https://doi.org/10.1142/S0129167X06003576",
+    "publication_note": "International Journal of Mathematics 17(4) (2006), 401-416; download is arXiv:math/0506314v1, margin 15 June 2005, but title page reads November 9, 2018. Both dates recorded without inferring file-generation history. Theorems 1-3 directly checked.",
+    "bytes": 197655,
+    "pages": 17,
+    "sha256": "53006a5c434f3cfe63912e62ab7da6f9191c5e2cd960d0670a1a438456aaa9c9",
+    "collected_utc": "2026-10-18T13:35:59.997473+00:00"
+  },
+  {
+    "filename": "58_Hasegawa_Sillari_Tomassini_2026_Invariant_forms_Dolbeault.pdf",
+    "title": "Invariant forms compute the Dolbeault cohomology of complex nilmanifolds",
+    "author": "Keizo Hasegawa, Lorenzo Sillari, Adriano Tomassini",
+    "download_url": "https://arxiv.org/pdf/2607.26786v1",
+    "landing_url": "https://arxiv.org/abs/2607.26786",
+    "publication_note": "2026 arXiv v1, 29 July 2026; preprint, not represented here as a refereed journal publication.",
+    "bytes": 417450,
+    "pages": 19,
+    "sha256": "4c76d685ef473cdbd04f86213701bbef42d6d95d90c61663e4da9b9b52eebac5",
+    "collected_utc": "2026-10-18T14:23:52.884477+00:00"
+  },
+  {
+    "filename": "59_Wehler_2026_Teichmuller_moduli_complex_nilmanifolds.pdf",
+    "title": "Teichmueller and moduli spaces for complex nilmanifolds",
+    "author": "Konstantin Wehler",
+    "download_url": "https://arxiv.org/pdf/2609.31516v1",
+    "landing_url": "https://arxiv.org/abs/2609.31516",
+    "publication_note": "2026 arXiv v1, 25 September 2026; preprint. Holomorphic-map theorem is inspected for overlap with the local-affinity argument.",
+    "bytes": 741146,
+    "pages": 57,
+    "sha256": "081eee0f96542f94c7d083401ea7ff5431c215bfb0c4671baa4f077999d12454",
+    "collected_utc": "2026-10-18T14:24:04.789597+00:00"
+  },
+  {
+    "filename": "60_Hasegawa_Rollenske_Sillari_Tomassini_Wehler_2026_Biholomorphism_type.pdf",
+    "title": "Biholomorphism type of left-invariant complex structures on nilpotent Lie groups",
+    "author": "Keizo Hasegawa, Soenke Rollenske, Lorenzo Sillari, Adriano Tomassini, Konstantin Wehler",
+    "download_url": "https://arxiv.org/pdf/2606.31448v1",
+    "landing_url": "https://arxiv.org/abs/2606.31448",
+    "publication_note": "2026 arXiv v1, 30 June 2026; preprint; polynomial universal-cover theorem inspected as a possible separate global input.",
+    "bytes": 405855,
+    "pages": 6,
+    "sha256": "14b6d6484520b07abd37a92c7ccf4337f154ba80f4072935880d1ae1517cdf24",
+    "collected_utc": "2026-10-18T14:24:08.763133+00:00"
+  },
+  {
+    "filename": "61_Pink_Roessler_2002_Hrushovski_Manin_Mumford.pdf",
+    "title": "On Hrushovski's proof of the Manin-Mumford conjecture",
+    "author": "Richard Pink and Damian Roessler",
+    "download_url": "https://arxiv.org/pdf/math/0212408v1",
+    "landing_url": "https://arxiv.org/abs/math/0212408",
+    "bytes": 132670,
+    "pages": 8,
+    "sha256": "ab4b71c42c561412841759cb2aefab33cbda0e018cb012f917d7fc421ba0d6ad",
+    "collected_utc": "2026-10-18T15:42:51.258659+00:00",
+    "publication_note": "ICM 2002, vol. I, 539-546; stored arXiv:math/0212408v1 dated 1 December 2002, 8 pages. Theorem 2.4 (PDF pp.4-5) is the directly used invariant-subvariety input; no no-algebraic-unit strengthening is used."
+  },
+  {
+    "filename": "62_Catanese_Frediani_2005_Deformation_in_the_large_II.pdf",
+    "title": "Deformation in the large of some complex manifolds, II",
+    "author": "Fabrizio Catanese and Paola Frediani",
+    "download_url": "https://arxiv.org/pdf/math/0507508v1",
+    "landing_url": "https://arxiv.org/abs/math/0507508",
+    "bytes": 280796,
+    "pages": 23,
+    "sha256": "65ed01847fd9387303d21b91218e9e3e8a43d2e3afc008f7dfbc1e10d8ccb02b",
+    "collected_utc": "2026-10-18T15:42:52.953115+00:00",
+    "publication_note": "Original author manuscript arXiv:math/0507508v1, margin 25 July 2005; title page body date 18 May 2005, 23 pages. Theorem 3.6 and Proposition 3.7/Lemma 3.9/Corollary 3.10 directly used. Restricted-dimension Theorem 4.11 is not used."
+  },
+  {
+    "filename": "63_Gimenez_Conejero_Le_Nuno_Ballesteros_2023_Thom_monodromy.pdf",
+    "title": "Thom condition and monodromy",
+    "author": "R. Gimenez Conejero, Dung Trang Le, J. J. Nuno-Ballesteros",
+    "download_url": "https://real.mtak.hu/191928/1/s13398-022-01353-y.pdf",
+    "landing_url": "https://doi.org/10.1007/s13398-022-01353-y",
+    "bytes": 693366,
+    "pages": 26,
+    "sha256": "f7414db2cab895f886f499dc814b4b4e439ff988886dc759f634134bc8435cfe",
+    "collected_utc": "2026-10-19T00:11:58.752514+00:00",
+    "publication_note": "Journal version, RACSAM 117 (2023), article 18; online 13 November 2022. Theorem 0.1 gives A Campo Lefschetz vanishing with no isolated-critical-point hypothesis; Theorem 0.2 proves a fixed-point-free geometric monodromy."
+  },
+  {
+    "filename": "64_Cattaneo_Tomassini_2017_Complex_symplectic_ddbar_v2.pdf",
+    "title": "Complex symplectic structures and the partial-barpartial-lemma",
+    "download_url": "https://arxiv.org/pdf/1612.08183v2",
+    "landing_url": "https://doi.org/10.1007/s10231-017-0672-1",
+    "resolved_url": "https://arxiv.org/pdf/1612.08183v2",
+    "download_status": "downloaded",
+    "bytes": 188471,
+    "pages": 11,
+    "sha256": "8108fd266c384bfedac9eff689357e2d896a4b9eb705bd1b4463c93dc19b31aa",
+    "collected_utc": "2026-10-19T00:50:44.720675+00:00",
+    "publication_note": "arXiv v2, 15 September 2017; Ann. Mat. Pura Appl. 197 (2018), 139-151.",
+    "authors": [
+      "Andrea Cattaneo",
+      "Adriano Tomassini"
+    ]
+  },
+  {
+    "filename": "65_Baouendi_Rothschild_Winkelmann_Zaitsev_2004_Lie_groups.pdf",
+    "title": "Lie group structures on groups of diffeomorphisms and applications to CR manifolds",
+    "download_url": "https://www.maths.tcd.ie/~zaitsev/papers/brwz.pdf",
+    "landing_url": "https://www.maths.tcd.ie/~zaitsev/papers/brwz.pdf",
+    "resolved_url": "https://www.maths.tcd.ie/~zaitsev/papers/brwz.pdf",
+    "download_status": "downloaded",
+    "bytes": 225695,
+    "pages": 18,
+    "sha256": "b63e34fd8abf16f0aae2164154382a69e5705d2039c5cb0a2376567da8be5d03",
+    "collected_utc": "2026-10-19T00:50:45.023612+00:00",
+    "publication_note": "Author manuscript of Ann. Inst. Fourier 54 (2004), 1279-1303; Theorem 3.5 recalls Bochner-Montgomery.",
+    "authors": [
+      "M. S. Baouendi",
+      "L. P. Rothschild",
+      "J. Winkelmann",
+      "D. Zaitsev"
+    ]
+  },
+  {
+    "filename": "66_Wilkinson_Xue_2017_Abelian_by_cyclic_actions.pdf",
+    "title": "Rigidity of some Abelian-by-cyclic solvable group actions on T^N",
+    "download_url": "https://www.math.uchicago.edu/~wilkinso/papers/rigidity_solvable.pdf",
+    "landing_url": "https://doi.org/10.1007/s00220-019-03658-3",
+    "resolved_url": "https://www.math.uchicago.edu/~wilkinso/papers/rigidity_solvable.pdf",
+    "download_status": "downloaded",
+    "bytes": 476752,
+    "pages": 40,
+    "sha256": "f0887ac4dfb39b0293b264ee52ced93874570eb7414ada46e6b58e4a90f86b75",
+    "collected_utc": "2026-10-19T00:50:45.982482+00:00",
+    "publication_note": "Author manuscript dated 22 May 2017; journal publication CMP 376 (2020), 1223-1259.",
+    "authors": [
+      "Amie Wilkinson",
+      "Jinxin Xue"
+    ]
+  },
+  {
+    "filename": "67_Franks_Handel_2005_Distortion_elements_v2.pdf",
+    "title": "Distortion Elements in Group actions on surfaces",
+    "authors": [
+      "John Franks",
+      "Michael Handel"
+    ],
+    "download_url": "https://arxiv.org/pdf/math/0404532v2",
+    "landing_url": "https://doi.org/10.1215/S0012-7094-06-13132-0",
+    "resolved_url": "https://arxiv.org/pdf/math/0404532v2",
+    "download_status": "downloaded",
+    "bytes": 283289,
+    "pages": 25,
+    "sha256": "4c5dbaa9bb1b2195668f94b0fafc2e19da71e827f8f21e63edffa6e9521dd245",
+    "collected_utc": "2026-10-19T01:52:35.193967+00:00",
+    "publication_note": "arXiv v2 dated 3 March 2005; PDF title page says 10 November 2018, retained as generation-date discrepancy. Journal Duke Math. J. 131 (2006), 441-468."
+  },
+  {
+    "filename": "68_Hurtado_Xue_2020_Global_rigidity_ABC_v2.pdf",
+    "title": "Global rigidity of some Abelian-by-cyclic group actions on T^2",
+    "authors": [
+      "Sebastian Hurtado",
+      "Jinxin Xue"
+    ],
+    "download_url": "https://arxiv.org/pdf/1909.10112v2",
+    "landing_url": "https://doi.org/10.2140/gt.2021.25.3133",
+    "resolved_url": "https://arxiv.org/pdf/1909.10112v2",
+    "download_status": "downloaded",
+    "bytes": 587546,
+    "pages": 36,
+    "sha256": "ba992626e0d784515f403db419103e9b8bda7b97b591542e55c2dad713f5b44d",
+    "collected_utc": "2026-10-19T01:52:36.044223+00:00",
+    "publication_note": "arXiv v2, 5 December 2020; journal Geometry & Topology 25 (2021), 3133-3178. General-dimensional ping-pong Theorem 1.11 is distinct from the T^2 classification."
+  },
+  {
+    "filename": "69_Duval_2017_Around_Brody_lemma_v1.pdf",
+    "title": "Around Brody lemma",
+    "authors": [
+      "Julien Duval"
+    ],
+    "download_url": "https://arxiv.org/pdf/1703.01850v1",
+    "landing_url": "https://arxiv.org/abs/1703.01850",
+    "resolved_url": "https://arxiv.org/pdf/1703.01850v1",
+    "download_status": "downloaded",
+    "bytes": 144382,
+    "pages": 10,
+    "sha256": "eb0bf8aaaffd3cc0fd3c27d85263e3e920b914cc4702805e89f0797814a5f14c",
+    "collected_utc": "2026-10-19T02:33:51.139315+00:00",
+    "publication_note": "arXiv v1 6 March 2017. Published in Hyperbolicity properties of algebraic varieties, Panoramas et Syntheses 56 (2021), pp. 1-12; local manuscript pagination is recorded separately.",
+    "publication_landing_url": "https://smf.emath.fr/publications/autour-du-lemme-de-brody"
+  },
+  {
+    "filename": "70_Mane_Sad_Sullivan_1983_Rational_maps.pdf",
+    "title": "On the dynamics of rational maps",
+    "authors": [
+      "Ricardo Mane",
+      "Paulo Sad",
+      "Dennis Sullivan"
+    ],
+    "download_url": "https://www.numdam.org/item/ASENS_1983_4_16_2_193_0.pdf",
+    "landing_url": "https://doi.org/10.24033/asens.1446",
+    "publication_note": "Annales scientifiques de l Ecole Normale Superieure (4) 16 (1983), 193-217; scanned journal PDF with Numdam cover.",
+    "resolved_url": "https://www.numdam.org/item/ASENS_1983_4_16_2_193_0.pdf",
+    "download_status": "downloaded",
+    "bytes": 3221866,
+    "pages": 26,
+    "sha256": "9ae5222a441b4eae94828668ef028082509b79da05d906ded01a870cf0c1043a",
+    "collected_utc": "2026-10-19T09:11:10.022579+00:00"
+  },
+  {
+    "filename": "71_Astala_1994_Area_distortion_quasiconformal.pdf",
+    "title": "Area distortion of quasiconformal mappings",
+    "authors": [
+      "Kari Astala"
+    ],
+    "download_url": "https://archive.ymsc.tsinghua.edu.cn/pacm_download/117/6501-11511_2006_Article_BF02392568.pdf",
+    "landing_url": "https://doi.org/10.1007/BF02392568",
+    "publication_note": "Acta Mathematica 173 (1994), 37-60; archived journal PDF.",
+    "resolved_url": "https://archive.ymsc.tsinghua.edu.cn/pacm_download/117/6501-11511_2006_Article_BF02392568.pdf",
+    "download_status": "downloaded",
+    "bytes": 1015939,
+    "pages": 24,
+    "sha256": "21f09b6a43d782754b0b16347270b946d240ecb0ec1785a63dedaacdfade95a3",
+    "collected_utc": "2026-10-19T09:11:10.979774+00:00"
+  },
+  {
+    "filename": "72_Fernandez_Hernandez_Gimenez_Conejero_2024_Plane_curve_rigidity.pdf",
+    "title": "A note on complex plane curve singularities up to diffeomorphism and their rigidity",
+    "authors": [
+      "A. Fernandez-Hernandez",
+      "R. Gimenez Conejero"
+    ],
+    "download_url": "https://link.springer.com/content/pdf/10.1007/s40687-024-00439-w.pdf",
+    "landing_url": "https://doi.org/10.1007/s40687-024-00439-w",
+    "publication_note": "Research in the Mathematical Sciences 11, article 28 (2024); published 27 March 2024. Only Section 2.1, Definition 2.1 and Theorem 2.3 used for classical ambient topological invariance of smoothness of a plane curve.",
+    "resolved_url": "https://link.springer.com/content/pdf/10.1007/s40687-024-00439-w.pdf?error=cookies_not_supported&code=72381fad-7745-4b26-861b-71d8a204cc8c",
+    "download_status": "downloaded",
+    "bytes": 923029,
+    "pages": 21,
+    "sha256": "1b2b7519a9991a3ede4a5f7f5bc1fdd35843af0e13f5e6929fe25e08256c9148",
+    "collected_utc": "2026-10-19T09:46:33.812046+00:00"
+  },
+  {
+    "filename": "73_Buchdahl_1999_On_compact_Kahler_surfaces.pdf",
+    "title": "On compact Kahler surfaces",
+    "authors": [
+      "Nicholas Buchdahl"
+    ],
+    "download_url": "https://www.numdam.org/article/AIF_1999__49_1_287_0.pdf",
+    "landing_url": "https://doi.org/10.5802/aif.1674",
+    "publication_note": "Annales de l Institut Fourier 49 (1999), no. 1, 287-302. Journal scan with Numdam cover. Only Theorem 11: an even first Betti number implies a compact complex surface is Kahler.",
+    "resolved_url": "https://www.numdam.org/article/AIF_1999__49_1_287_0.pdf",
+    "download_status": "downloaded",
+    "bytes": 1645763,
+    "pages": 17,
+    "sha256": "9d5be904779f040102392f41f6acb4717e2b8ec874443d128532f234406c8c0e",
+    "collected_utc": "2026-10-19T11:46:03.426955+00:00"
+  },
+  {
+    "filename": "74_Douady_1966_Modules_compact_analytic_subspaces.pdf",
+    "title": "Le probleme des modules pour les sous-espaces analytiques compacts d'un espace analytique donne",
+    "authors": [
+      "Adrien Douady"
+    ],
+    "download_url": "https://www.numdam.org/item/10.5802/aif.226.pdf",
+    "landing_url": "https://doi.org/10.5802/aif.226",
+    "publication_note": "Annales de l Institut Fourier 16 (1966), no. 1, 1-95. Journal scan with Numdam cover. Section 9: local construction, universal proper flat family, tangent Hom(I,O), finite dimensionality.",
+    "resolved_url": "https://www.numdam.org/item/10.5802/aif.226.pdf",
+    "download_status": "downloaded",
+    "bytes": 7529827,
+    "pages": 96,
+    "sha256": "c9f53b70c17ef8a5ebdfa8fca37f043736feda9338da1602d5bb2c97234f5185",
+    "collected_utc": "2026-10-19T11:46:03.447275+00:00"
+  },
+  {
+    "filename": "75_Grauert_1960_Direct_images_and_moduli.pdf",
+    "title": "Ein Theorem der analytischen Garbentheorie und die Modulraume komplexer Strukturen",
+    "authors": [
+      "Hans Grauert"
+    ],
+    "download_url": "https://www.numdam.org/item/10.1007/BF02684746.pdf",
+    "landing_url": "https://doi.org/10.1007/BF02684746",
+    "publication_note": "Publications Mathematiques de l IHES 5 (1960), 5-64. Numdam scan, 63 PDF pages including cover and front matter. Only Section 7 Satz 3 and Satz 5 used, with 1963 corrigendum checked.",
+    "resolved_url": "https://www.numdam.org/item/10.1007/BF02684746.pdf",
+    "download_status": "downloaded",
+    "bytes": 7632181,
+    "pages": 63,
+    "sha256": "0559856be254902e7dd116725732117606912ab7d72b0f0fe88b600566829cde",
+    "collected_utc": "2026-10-19T12:18:33.089862+00:00"
+  },
+  {
+    "filename": "76_Grauert_1963_Direct_image_corrigendum.pdf",
+    "title": "Berichtigung: Ein Theorem der analytischen Garbentheorie und die Modulraume komplexer Strukturen",
+    "authors": [
+      "Hans Grauert"
+    ],
+    "download_url": "https://www.numdam.org/item/10.1007/BF02684291.pdf",
+    "landing_url": "https://doi.org/10.1007/BF02684291",
+    "publication_note": "Publications Mathematiques de l IHES 16 (1963), 35-36. Three PDF pages with cover. Corrects proof estimates and the claim in Section 7 Satz 2 that the base-change failure locus must be closed; that claim is not used here.",
+    "resolved_url": "https://www.numdam.org/item/10.1007/BF02684291.pdf",
+    "download_status": "downloaded",
+    "bytes": 229804,
+    "pages": 3,
+    "sha256": "04b24590e8c56e1a05c0cb520843e8160447ebb560d9ca2394b0682d83ed489c",
+    "collected_utc": "2026-10-19T12:18:33.090861+00:00"
   }
 ]

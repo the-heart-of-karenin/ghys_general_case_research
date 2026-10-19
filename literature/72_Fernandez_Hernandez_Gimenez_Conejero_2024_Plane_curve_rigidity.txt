@@ -1,0 +1,1292 @@
+--- PDF page 1 ---
+A.Fernández-Hernández,R.GiménezConejero Res Math Sci(2024)11:28
+https://doi.org/10.1007/s40687-024-00439-w
+RESEARCH
+Anoteoncomplexplanecurve
+singularitiesuptodiﬀeomorphismand
+theirrigidity
+A.Fernández-Hernández1 andR.GiménezConejero 2*
+*Correspondence:
+Roberto.Gimenez@uv.es
+1DepartamentdeMatemátiques,
+UniversitatdeValència,Campus
+deBurjassot,46100Burjassot,
+Spain
+Fulllistofauthorinformationis
+availableattheendofthearticle
+R.GiménezConejeroispartially
+supportedbyNKFIHGrant
+“Élvonal(Frontier)”KKP144148
+Abstract
+Weprovethatiftwogermsofplanecurves( C,0)and( C′,0)withatleastonesingular
+branchareequivalentbya(real)smoothdiﬀeomorphism,then C iscomplex
+isomorphicto C′ orto C′.AsimilarresultwasshownbyEphraimforirreducible
+hypersurfacesbefore,buthisproofisnotconstructive.Indeed,weshowthatthe
+complexisomorphismisgivenbytheTaylorseriesofthediﬀeomorphism.Wealso
+proveananalogousresultforthecaseofnon-irreduciblehypersurfacescontainingan
+irreduciblecomponentthatisnon-factorable.Moreover,weprovideageneral
+overviewofthediﬀerentclassiﬁcationsofplanecurvesingularities.
+Keywords: Classiﬁcationofcomplexsingularities,Diﬀeomorphisms,Smooth
+equivalence
+Mathematics Subject Classiﬁcation: Primary32B10;Secondary14H20,32S25
+1 Introduction
+Aclassicalproblemistheclassiﬁcationofplanecurvesingularitiesuptosomeequivalence.
+Amongthose,themostclassicalclassiﬁcationistheonegivenbyambienttopologicaltype
+or,simply, up to(ambient)homeomorphism.On theother sideofthespectrum, bothby
+rigidityandhistorically,onehasthecomplexanalyticclassiﬁcation.
+In this work, we provide a self-contained proof of a classiﬁcation that sits strictly in
+betweenthesetwoclassiﬁcations:classiﬁcationupto(real)diﬀeomorphismoftheambient
+space.Giventwogermsof(notnecessarilyirreducible)planecurves( C,0),(C
+′,0) ⊂ (C2,0)
+withequations g(x,y)and g′(x,y)and atleastonesingularbranch ,weshowinTheorem 5.4
+thefollowing.
+Theorem (C,0)and(C′,0)arediﬀeomorphicif,andonlyif,theyarecomplexisomorphic
+orC iscomplexisomorphicto C′,whichisalsoacomplexcurvewithequation g′(x,y) = 0.
+Furthermore, any diﬀeomorphismψ that takes one plane curve singularity to another
+hasaholomorphicorantiholomorphicTaylorseriesT ∞ ψ.
+This was previously done by Ephraim in [15] for irreducible hypersurfaces, but with
+a non-constructive proof. Nevertheless, we present a stronger statement showing the
+123 ©The Author(s) 2024. This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use,
+sharing,adaptation,distributionandreproductioninanymediumorformat,aslongasyougiveappropriatecredittotheoriginal
+author(s)andthesource,providealinktotheCreativeCommonslicence,andindicateifchangesweremade.Theimagesorother
+thirdpartymaterialinthisarticleareincludedinthearticle’sCreativeCommonslicence,unlessindicatedotherwiseinacreditline
+to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by
+statutoryregulationorexceedsthepermitteduse,youwillneedtoobtainpermissiondirectlyfromthecopyrightholder.Toview
+acopyofthislicence,visit http://creativecommons.org/licenses/by/4.0/.
+0123456789().,–: volV
+
+--- PDF page 2 ---
+28 Page2of21 A.Fernández-Hernández,R.GiménezConejero Res Math Sci(2024)11:28
+Fig. 1 Generaloverviewofdiﬀerentclassiﬁcationsofplanecurvesingularities
+rigidityofthediﬀeomorphismforcurves.Wealsoproveapartialresultfornon-irreducible
+hypersurfacesusingEphraim’sideas.Itisimportanttoknowthattheequivalentresultfor
+curveswithonlysmoothbranchesisfalse,andweshowthisinSect. 6.
+In Sect.2, we provide a concise review of the main diﬀerent classiﬁcations we have,
+encompassing all the formal deﬁnitions and setting the notation. Furthermore, for some
+ofthem,someresultsinmoredimensionsarementioned.
+Section3isashortaccountonformalpowerseries.Formalpowerseriesarealsopresent
+inSect. 4,wherewestudybrieﬂywhatwecall formalparametrizations.
+Theprevioustwosectionsareusedintheproofofourmainresult,giveninSect. 5.We
+also provide a detailed account on Ephraim’s work in Sect.7to show that these ideas are
+alsousefultoprovethenon-irreduciblesettinginsomecases.
+We make some comments on the case of curves with only smooth branches in Sect.6,
+sincebothEphraim’sstatementandthestatementofourresultisfalseinthatcase.
+Finally,weoﬀerextrainsightsinSect. 8.
+2 Diﬀerentclassiﬁcations
+While completing this work, we noticed that the singularity theory community lacks a
+small review about the main diﬀerent classiﬁcations of plane curve singularities. Indeed,
+some of the results we state below are not widely known, despite their simplicity and
+importance. We include this short survey here, since we use the analytic classiﬁcation,
+which is based on the topological classiﬁcation, and give results about the smooth classi-
+ﬁcation.
+Unlessotherwisestated,werestrictourselvestothecaseofplanecurvesingularities.
+ThegeneraloverviewofthediﬀerentclassiﬁcationsgivenbyrigidityisprovidedinFig. 1.
+2.1 Topological
+The coarsest and most traditional classiﬁcation is the topological classiﬁcation. A com-
+prehensive reference on this classiﬁcation can be found, for example, in Wall’s book [58,
+Chapter5],oralsoin[ 6,50].Seealsoaverydetailedaccountin[ 21].
+Deﬁnition 2.1 Wesaythattwocurves( C,0),(C′,0) ⊂ (C2,0)are (ambient)topologically
+equivalent (also (ambient) homeomorphic,o requisingular)i ft h e r ei sag e r mo fh o m e o -
+morphism ψ :( C2,0) → (C2,0) so thatψ(C) = C′. The class of equivalence is called
+topologicalclass.
+Inthiscase,itturnsoutthatthetopologicalclassofacurveiscompletelydeterminedby
+the isotopy class of itslink, namely the intersection of the curve with a suﬃciently small
+
+--- PDF page 3 ---
+A.Fernández-Hernández,R.GiménezConejero Res Math Sci (2024)11:28 Page3of21 28
+Fig. 2 Representationoftwoplanecurvesingularities,oneirreducible(left)andtheotherwithtwobranches
+(right).Observetheconicalstructureovertheirlink.
+sphere centered at the origin, because a curve is ambient homeomorphic to a cone over
+itslink(seeFig. 2).Inthiscase,thelink inthesingularitytheorysenseisalsoa link inthe
+topologicalsense,i.e.,adisjointunionofknotsin S3 (oneforeachirreduciblecomponent
+ofthecurve).
+Theoriginoftheseideasdatesbackto1905,whenWirtingerstartedthinkingaboutthe
+possiblegroupsthatcouldarisefromalgebraicknots.HesuggestedthisproblemtohisPhD
+student Brauner, who gave the ﬁrst steps toward the classiﬁcation. They settled the key
+ideastoshowthattwobrancheswiththesamePuiseuxcharacteristichaveisotopicknots.
+ThePuiseuxcharacteristicandthesemigroupofabranchareequivalentandcontainthe
+sameinformation,sowedeﬁneandmentionthesemigroupfromnowon.
+Deﬁnition 2.2 Let (C,0) be an irreducible plane curve (a branch) and assumeγ is an
+injectiveparametrization.The semigroupofC isthesetoforders
+/Gamma1
+C:=
+{
+ord η◦γ : η∈ C
+{
+x,y
+}}
+.
+Brauner described the links via stereographic projections in his paper [7], in 1928.
+A clearer perspective, however, was given by Kähler in [33]. Later, in 1932, Burau and
+ZariskinoticedindependentlythattheAlexanderpolynomialofanalgebraicknotcouldbe
+harnessed to extract the semigroup of its corresponding branch. This, therefore, showed
+that the semigroup is a complete topological invariant for branches. More generally, a
+complete answer in the case of curves with several branches is the following theorem. A
+detailedhistoricalaccount,withmanyreferences,is[ 34,Theorem1.1ofp.730].
+Theorem 2.3 Twogermsofanalyticplanecurvesaretopologicallyequivalentif,andonly
+if, there exists a bijection between their branches that preserves both the semigroup of the
+branchesandtheirpairwiseintersectionnumbers.
+Remark2.4 Hypersurfaces in more dimensions are still classiﬁed by their link, since it is
+stilltruethattheambienttopologicaltypeofahypersurfacesingularityisthatofthecone
+over its link (a general result in this direction is the conic structure lemma of Burghelea
+and Verona [8, Lemma 3.2]). The works of Saeki, Perron and King also showed that
+topologicalequivalenceofhypersurfacescoincideswithtopologicalleft-rightequivalence
+of their equations; [52, Theorem 1], [49, Teórème 3’] and [35, Theorem 3]. A complete
+classiﬁcationintermsofamathematicalobjectisfarmorecomplicated,andthesekindof
+problems are still source of many other problems in diﬀerent areas of singularity theory.
+
+--- PDF page 4 ---
+28 Page4of21 A.Fernández-Hernández,R.GiménezConejero Res Math Sci(2024)11:28
+Some examples of this are [40,42], the more recent [10,46,47] or the celebrated preprint
+[19].
+2.2 Bilipschitz
+TheLipschitzconditionisslightlymorerestrictivethanjustcontinuity,butlessthanasking
+for analyticity or smoothness. Recall that a mapf between the metric spaces (X,dX)a n d
+(Y,dY)is Lipschitz ifthereisaconstant c suchthat
+dY
+(
+f(p),f (q)
+)
+≤ cdX(p,q).
+Obviously,bilipschitzmapsareLipschitzmapswithaLipschitzinverseandsinceLipschitz
+impliescontinuous,theyarealsohomeomorphisms.
+There are two natural metrics we can give to a complex set (X,0) ⊂ (Cn,0) induced
+fromthestandardmetricon Cn:theoutermetric andtheinnermetric.
+Deﬁnition 2.5 The outer metric dout in (X,0) is the one induced by the distance inCn.
+Theinner metric dinn is given by the minimal length of (real) curves withinX. They only
+dependonthecomplexanalytictypeof X andnotontheembedding.
+The ﬁrst contributions on the classiﬁcation of plane curves up to bilipschitz equiv-
+alence were given by Pham and Teissier in 1969 (see a translation in English in [51]).
+Other contributions, including more dimensions, were also given by Mostowski in [44],
+Parusinskiin[ 48]andFernandesin[ 20].Theseresultshadsomeanalytic,semi-algebraic
+orsimilarrestrictions,butitwasin2013thatNeumannandPichonin[ 45]thatclosedthe
+classiﬁcationforcurveswithoutextrarestrictions.Thecompleteresultisthefollowing.
+Theorem 2.6 Fortwoplanecurves (C,0),(C′,0),thefollowingareequivalent:
+(i) thereisahomeomorphism ψ| :( C,0) → (C′,0)thatisbilipschitzfortheoutermetric;
+(ii) there is a homeomorphismψ| :( C,0) → (C′,0), holomorphic except at zero, that is
+bilipschitzfortheoutermetric;
+(iii) thereisabilipschitzhomeomorphism ψ :( C2,0) → (C2,0)suchthat ψ(C) = C′;
+(iv) C istopologicallyequivalenttoC ′.
+Fortheinnermetric,itisverysimpleevenforspatialcurves.
+Proposition 2.7 Any curve(C,0) ⊂ (Cn,0) is metrically conical, i.e., bilipschitz to the
+metricconeonitslink,fortheinnermetric.
+Remark2.8 Lipschitz geometry has experienced an explosion of activity in the recent
+years in many directions. For instance, the global case is also studied, see [23,54,56], but
+manyotheraspectsofLipschitzgeometryarealsobeingstudied,forexample,[ 3,11].
+2.3 Real analytic and smooth
+Regardingrigidityof isomorphisms,thenextonesamongthetypicalonesareequivalences
+by smooth (real) diﬀeomorphism and real analytic diﬀeomorphism. This is the object of
+studyofthispaper.
+Deﬁnition 2.9 We say that two plane curve singularities (C,0),(C
+′,0) are (ambient)
+diﬀeomorphic, smooth equivalentor C∞ -isomorphic if there is a (real) diﬀeomorphism
+ψ :( C2,0) → (C2,0)suchthat ψ(C) = C′.
+
+--- PDF page 5 ---
+A.Fernández-Hernández,R.GiménezConejero Res Math Sci (2024)11:28 Page5of21 28
+Analogously, we deﬁne the notion ofreal analytic diﬀeomorphicor Cω-isomorphic
+curveswhenthediﬀeomorphismisrealanalytic.
+These two of equivalences were ﬁrst addressed by Ephraim in his PhD thesis in 1971,
+under the supervision of Laufer and Gunning, later published as an article in [15]. He
+showedthatthesmoothandrealanalyticequivalencesareequivalent themselvesforreal
+analyticsets,infullgenerality.Inotherwords:
+Proposition 2.10 LetV andW begermsofrealanalyticsets.Theyare
+C∞ -isomorphicif,
+andonlyif,theyare Cω-isomorphic.
+Now,observethatif V isacomplexset,then V isalsoacomplexset,givenbythesame
+equationbutwithconjugatedcoeﬃcients.Ephraimalsoshowedthefollowing.
+Theorem 2.11 Let (V,0) be an irreducible germ of hypersurface. Then, if V is C∞ -
+isomorphictoagermofacomplexsetW,V is C-isomorphictoW or W.
+WereviewhisproofinSect. 7andusethesameideastoshowthefollowing.
+Proposition 2.12 Theorem2.11holdsalsofornon-irreduciblehypersurfacesifV contains
+acomponentthatcannotbewrittenasaproductofvarietiesoflowerdimension.
+Finally, we give a stronger statement for the case of plane curve singularities in Sect.5
+with at least one singular branch. The case of smooth branches is covered in Sect.6,
+showingthattheequivalentstatementofTheorem 2.11andthefollowingtheoremfailin
+diﬀerentways.
+Theorem 2.13 If (C,0) is C∞ -isomorphic to(C′,0) by a diﬀeomorphismψ,i t sT a y l o r
+seriesT ∞ ψ isholomorphic orantiholomorphic.
+Remark2.14 Itissurprisinghowlittlethesedirectionisknownandhowlittleithasbeen
+researched. There are few instances of works focusing on the smooth aspect of complex
+varieties.Forexample,Ephraimshowedthatonecanwriteanyirreduciblecomplexvariety
+of any codimension as a product ofindecomposable varieties and used this structure
+theoremtoshowwhentwocomplexsetsare
+C∞ -isomorphicin[ 17].Healsogeneralized
+hisstructuretheoremforanyreducedvarietyin[ 18].
+2.4 Complex analytic
+Themostrestrictiveclassiﬁcationis,naturally,thecomplexanalyticclassiﬁcation.
+Deﬁnition 2.15 Twoplanecurves( C,0),(C′,0)are biholomorphic, C-isomorphicorana-
+lyticequivalent ifthereisabiholomorphism φ:( C2,0) → (C2,0)suchthat φ(C) = C′.
+While the mathematical community has held an interest in the classiﬁcation of plane
+curves for a considerable period, a complete classiﬁcation was not attained until 2020.
+The ﬁrst complete classiﬁcation was given for branches in 2011 by Hefez and Hernan-
+des (Marcelo Escudeiro) in [28,30]. For two branches by Hefez, Hernandes (Marcelo
+Escudeiro) and Hernandes (Maria Elenice Rodrigues) in [31] in 2015. And, ﬁnally, for
+non-irreducible curves in a preprint version of 2021 by Hernandes (Marcelo Escudeiro)
+andHernandes(MariaEleniceRodrigues)in[ 29].
+
+--- PDF page 6 ---
+28 Page6of21 A.Fernández-Hernández,R.GiménezConejero Res Math Sci(2024)11:28
+A huge number of authors have contributed to this problem before these works were
+made. To mention some of them together with some of their work: Ebey gave some
+normal forms in 1965 in [14]; Zariski made important contributions, in particular to
+the moduli space of some class of curves in 1973 in [59]; Delorne, Granger, Laudal and
+Pﬁster, and Greuel and Pﬁster also contributed to the study of the moduli space in,
+respectively,[12,24,26,41];BruceandGaﬀneyclassiﬁedsimpleirreduciblecurvesin1982
+in[4];KolgushkinandSadykov,andGenzmerandPaulgavenormalformsinsomecases
+in,respectively,[ 25,38];andmanymore.
+Deﬁnition 2.16 Let (C,0) be a plane branch parametrized byγ(t) =
+(
+γ
+1(t),γ2(t)
+)
+.T h e
+setofordersofKählerdiﬀerentials ofC is
+/Lambda1:=
+{
+ordt
+(
+η◦γ(t)γ′
+1(t) + ξ◦γ(t)γ′
+2(t)
+)
++1: η,ξ∈ O2
+}
+\ {1}.
+It is a/Gamma1C-module, i.e.,/Gamma1C + /Lambda1⊆ /Lambda1, and it isA-invariant. Furthermore, if/Lambda1\ /Gamma1̸= ∅,
+theZariskiinvariant ofC is
+λ:=min(/Lambda1\ /Gamma1) − v0,
+wherev0 isthemultiplicityofthecurve.
+When it comes to study irreducible plane curves underC-isomorphism, it is a well-
+known fact that the isomorphism class of the branches coincides exactly with theA-
+equivalenceclassoftheirparametrizations.
+Theorem 2.17 (Normal Forms Theorem, see [28, Theorem 2.1])Let γ be an injective
+parametrization of a singular plane branch with semigroup/Gamma1= ⟨v0,... ,vℓ⟩. Then, either
+γis A-equivalenttothemonomialparametrization (tv0,tv1)ortotheparametrization
+⎛
+⎝tv0,tv1 +tλ +
+∑
+i>λ,i/∈/Lambda1−v0
+aiti
+⎞
+⎠ , (1)
+where λis its Zariski invariant and/Lambda1is the set of orders of Kähler diﬀerentials of the
+branch.
+Moreover,if γand γ′,withcoeﬃcientsa ′
+i insteadofa i,areparametrizationsasinEq.( 1)
+representingtwoplanebrancheswithsamesemigroupandsamesetofvaluesofdiﬀerentials,
+then γ ∼
+A γ′ ifandonlyifthereisr ∈ C∗suchthatr λ−v1 = 1andai = ri−v1a′
+i,foralli.
+This classiﬁcation is far more subtle, since the moduli space of a curve can be non-
+discrete, i.e., a family{Cε}ε varying analytically int can yield diﬀerent analytic classes
+for eacht. (An example of this phenomenon is given in Example5.5.) In contrast, the
+topologicalclassofaplanebranchparametrizedby
+γ(t) = (tv0,
+∑
+r>m
+artr)
+is solely determined by its exponentsr with ar ̸= 0 (speciﬁcally those in the Puiseux
+characteristic)insteadofthecoeﬃcients ar themselves.
+2.5 Other classiﬁcations
+There are some categories that we have not mentioned, e.g., the one regardingC1 home-
+omorphisms. As far as we know, not much about this has been studied. For example, it
+
+--- PDF page 7 ---
+A.Fernández-Hernández,R.GiménezConejero Res Math Sci (2024)11:28 Page7of21 28
+is known that multiplicity of hypersurfaces is aC1-invariant (see [16]). Examples seem to
+suggestthatthe C1-isomorphismclassiﬁcationmaycoincidewiththetopologicalone(see
+Example8.3andQuestion 8.4).
+Thereareotherequivalences,speciallyintherealanalyticortheglobalsetting.See,for
+example, the blow-spherical equivalence in [2,53], and the blow-analytic equivalence in
+[22,36,39,57].
+3 Preliminariesonformalpowerseries
+3.1 Formal power series
+Wewilluseﬂuentlysomefundamentalfactsaboutformalpowerseriesso,forthesakeof
+clarity,westatethemhere.
+Proposition 3.1 Giventheformalpowerseries a(t) = ∑∞
+n=0 antn and b(t) = ∑∞
+n=0 bntn,
+whereb0 = 0,onehasthatthecompositionis
+c(t):=a
+(
+b(t)
+)
+=
+∞∑
+n=1
+cntn,
+wherec0 = a0 and
+cn =
+n∑
+k=1
+ak
+∑
+i∈Pk(n)
+bi1 ··· bik, (2)
+forthepartitions
+Pk(n):=
+{
+(i1,... ,ik): i1 +···+ ik = n
+}
+.
+Thisiscommonlyknownas FaádiBruno’sformula .Withit,knowingtwooftheseries
+a, bor cissometimesenoughtocomputetheotherbymeansofEq.( 2).
+Deﬁnition 3.2 Wesaythatthe order of a isv0 ifa0 =···= av0−1 = 0and av0 ̸= 0.
+Furthermore, aformal change of variableon the seriesa is precomposing with a series
+boforderone.
+Lemma 3.3 If a ∈ C[[t]] is a formal power series of order n, then there exists a formal
+power series of order oner such that rn = a. Furthermore, ifa has order v0, it admits a
+formalchangeofvariablesothattheresultingseriesispreciselyt v0.
+Proof Since ahasorder n ≥ 1,onecanwrite a = axn(1+e)for a ̸= 0and eaformalpower
+series with constant term 0. Letr ∈ C be such thatbn = a, and expande = ∑+∞
+s=1 ests.
+Noticethatwehaveanexpansionfor(1 + e)1/n givenby
+(1 + e)n−1
+= 1 +n−1e + n−1(n−1 − 1)
+2 e2 + ... (3)
+Foraﬁxed s ∈ N,onlyaﬁnitenumberoftermsofEq.( 3)contributetothecoeﬃcientof ts.
+Thus,thepreviousexpansiondeﬁnesapowerseries g(t).Hence,theseries r = btg(t)has
+clearlyorder1sincetheinitialtermof gis1and b ̸= 0.Itsatisﬁesthat rn = atn(1+e) = a.
+Finally, as an immediate consequence, any power series of orderv0 admits a formal
+change of variable so that the resulting series is preciselytv0 by the Lagrange inversion
+formula (see,forexample,[ 55,Proposition5.4.1andTheorem5.4.2]). ⊓⊔
+
+--- PDF page 8 ---
+28 Page8of21 A.Fernández-Hernández,R.GiménezConejero Res Math Sci(2024)11:28
+Remark3.4 Theexistenceofrootsofpowerseriesmaybeeasilyderivedfromthisresult.
+More precisely, ifa ∈ C[[t]] has ordermn, thena may be written asa = rmn for some
+formalpowerseries r oforderone.Then, rn isan m-throotof a.
+4 Formalparametrizations
+Weneedtoprovesomeresultsonwhatwecall formalparametrizations.
+Deﬁnition 4.1 A formal parametrizationγ∞ of a curve (C,0) ⊂ (C2,0) given by a com-
+plexequation g isapairofformalpowerseries
+γ∞ (t) =
+( ∞∑
+i=1
+αiti,
+∞∑
+i=1
+α′
+iti
+)
+suchthattheformalcomposition g ◦γ∞ iszero.
+Example4.2 Formalparametrizationsarenotnecessarilyanalytic.Forexample,consider
+anyanalyticparametrization γ(t)ofacurve C andmakeachange t foranybadly-behaved
+formalseries.Theeasiest,andmostdisappointing,examplehappensfor γ(t) = (t,0),the
+curve
+{
+y = 0
+}
+andtheseries ∑n!tn.
+Foragivenformalparametrization,ifwetrytoundothechangeshowninExample 4.2
+by a formal change of variables (which we can do by Remark3.4), we recover something
+analytic by the lemma below. This is particularly relevant when we do not know if the
+formalparametrizationcomesfromachangesuchastheoneinExample 4.2.
+Lemma 4.3 (cf.[13,Corollary5.1.8(3)]) Aformalparametrization γ
+∞ (t)oftheform
+γ∞ (t) =
+(
+tm,
+∞∑
+i=1
+α′
+iti
+)
+isanalytic.Thesameholdsif,moregenerally,theﬁrstformalpowerseriesisanalytic.
+It is a well-known fact that every injective parametrizationγ :( C,0) → (C2,0) isA-
+ﬁnite in Mather’s sense. Therefore, for large enoughk, γ and its Taylor polynomial of
+order k parametrize C-isomorphic branches by Mather ﬁnite determinacy theorem (see
+[43,Chapter6]).
+Theorem 4.4 Let γ∞ (t)beaformalparametrizationofthecurveC ofminimalorder(the
+multiplicityofC).Assumeithastheform
+γ∞ (t) =
+( ∞∑
+i=1
+αiti,
+∞∑
+i=1
+α′
+iti
+)
+.
+Then,forabigenoughk,
+γk(t):=
+⎛
+⎝
+k∑
+i=1
+αiti,
+k∑
+i=1
+α′
+iti
+⎞
+⎠
+parametrizesacurveisomorphictoC.
+Proof Assumethattheﬁrstformalpowerserieshaslowerorderthanthesecondone,and
+that this order ism, i.e.,α1 = ··· = αm−1 = 0a n dαm ̸= 0 .T h e n ,w em a k eac h a n g eo f
+
+--- PDF page 9 ---
+A.Fernández-Hernández,R.GiménezConejero Res Math Sci (2024)11:28 Page9of21 28
+variablessothat
+˜tm =
+∞∑
+i=m
+αiti.
+Inotherwords,wehavetotakean m-rootofthepowerseries(i.e.,asolutionof ∑∞
+i=m αiti−
+ym = 0, which exist by Remark3.4), say r(t), and its inverse by compositionr⟨−1⟩,a s
+it exists since r has order 1 (by the Lagrange inversion formula, see for example [55,
+Proposition 5.4.1 and Theorem 5.4.2]). As we want˜t = r(t), we have to perform the
+changet = r⟨−1⟩(˜t
+)
+.
+Afterthis,asthenewformalparametrizationisalsoaformalparametrizationof C with
+ﬁrst entry˜tm, we have a complex parametrizationγ(˜t)o fC, by Lemma4.3. Notice that
+both r and its inverser⟨−1⟩ can be computed recursively so, for two series that are equal
+uptoahighorder,the m-rootsandtheirinversesareequaluptoahighdegreeaswell(up
+tochoiceof m-roots).Thisistrue,inparticular,ifwetake
+k∑
+i=m
+αiti and
+∞∑
+i=m
+αiti.
+Hence,if,for k ≫ 0,weconsider
+γk(t):=
+⎛
+⎝
+k∑
+i=1
+αiti,
+k∑
+i=1
+α′
+iti
+⎞
+⎠
+and proceed similarly with the polynomial ∑k
+i=1 αiti, we reach another complex
+parametrization that is equal, up to some degree, toγ(˜t). In particular, sinceγk is A-
+ﬁnitebytheassumptionontheorderof γ,byMatherﬁnitedeterminacytheorem(see[ 43,
+Chapter6]),theparametrizationsare A-equivalent,sothecurves C andthecurvethatis
+parametrizedby γk areisomorphic. ⊓⊔
+5 Mainresult
+Letusconsidertwoirreducibleplanecurvesingularities,( C,0)and( C′,0)in( C2,0),with
+equations g and g′, that areC∞ -isomorphic by the diﬀeomorphismψ(xR,xI,yR,yI). By
+composing with convenientC-isomorphisms, we can assume that the curves admit a
+normalformparametrization(seeTheorem 2.17):
+γ(t) =
+⎛
+⎝tv0,tv1 +tλ +
+∑
+s>λ,s /∈/Lambda1−v0
+ωsts
+⎞
+⎠ , and
+γ′(t) =
+⎛
+⎝tv0,tv1 +tλ′
++
+∑
+s>λ′,s /∈/Lambda1′−v0
+ω′
+sts
+⎞
+⎠ .
+To simplify notation, we setωv1 = ωλ = ωλ′:=1 and we writeγ(t) = (tv0,∑ ωsts) and
+γ′(t) =
+(
+tv0,∑ ω′
+sts)
+fromnowon.
+Ifweconsiderareallinein( C,0)parametrizedby teiθfort ∈(R,0)andﬁxed θ∈ R,we
+havethat
+g′ ◦ψ ◦γ
+(
+teiθ) = 0.
+Hence,thesameholdstrueforthecompositionofTaylorseries
+g′ ◦T∞ ψ ◦γ(teiθ) = 0.
+
+--- PDF page 10 ---
+28 Page10of21 A.Fernández-Hernández,R.GiménezConejero Res Math Sci(2024)11:28
+Therefore,as T∞ ψ ◦γ(teiθ)is,forevery θ∈ R,aformalpowerserieson t thatsatisﬁesthe
+equationg′,T∞ ψ ◦γ(teiθ)isaformalparametrizationof C′ asdeﬁnedinDeﬁnition 4.1.
+Wewillstudythisformalparametrizationtoseethat,indeed, T∞ ψ hastobeverysimple
+provided,asitiswithourassumptions,that C andC′ areinnormalforms.
+Letusestablishthenotation.TheTaylorseriesof ψ istheformalpowerseries
+T∞ ψ(xR,xI,yR,yI) =
+( ∑
+i,j,k,ℓ
+αR
+ijkℓxi
+Rxj
+Iyk
+Ryℓ
+I,
+∑
+i,j,k,ℓ
+αI
+ijkℓxi
+Rxj
+Iyk
+Ryℓ
+I,
+∑
+i,j,k,ℓ
+βR
+ijkℓxi
+Rxj
+Iyk
+Ryℓ
+I,
+∑
+i,j,k,ℓ
+βI
+ijkℓxi
+Rxj
+Iyk
+Ryℓ
+I
+)
+,
+which,writing α•:=αR
+• +iαI
+•and β•:=βR
+• +iβI
+•,canbewrittenas
+T∞ ψ(xR,xI,yR,yI) =
+( ∑
+i,j,k,ℓ
+αijkℓxi
+Rxj
+Iyk
+Ryℓ
+I,
+∑
+i,j,k,ℓ
+βijkℓxi
+Rxj
+Iyk
+Ryℓ
+I
+)
+.
+Withoutanyfurtherinformation,theformalparametrizationhastheform
+T∞ ψ ◦γ(teiθ)
+=
+( ∑
+i,j,k,ℓ
+αijkℓ cosi(θv0)sinj(θv0)tv0(i+j) (∑
+s Re(ωseiθs)ts)k (∑
+s Im(ωseiθs)ts)ℓ ;
+∑
+i,j,k,ℓ
+βijkℓ cosi(θv0)sinj(θv0)tv0(i+j) (∑
+s Re(ωseiθs)ts)k (∑
+s Im(ωseiθs)ts)ℓ
+)
+.
+5.1 Simpliﬁcation to linear terms
+By Lemma3.3, we can ﬁnd a formal change of variable such that the ﬁrst entry of the
+formalparametrization T∞ ψ ◦γ(teiθ)is tv0.Ifweproceedwiththischangeofvariable,by
+Lemma 4.3, we necessarily recover a normal form parametrizationγ′(t) = (tv0,∑ ω′
+sts)
+(oranyothernormalformequivalenttothisone).
+AswepointedoutinSect. 3.1,ifweknowtheresultofthechangeofvariablesweobtain
+some information of the change of variables itself by means of the equations of Faá di
+Bruno’sformula,Proposition 3.1.FollowingthenotationofSect. 3.1,wehave
+a(t) =
+∑
+αijkℓ cosi(θv0)sinj(θv0)tv0(i+j) (∑
+s Re(ωseiθs)ts)k (∑
+s Im(ωseiθs)ts)ℓ
+c(t) = tv0
+andwewanttoﬁnd b(t),thechangeofvariables.Asitisthesamechangeweperformon
+the second entry of the formal parametrization and it has to yield∑ω′
+sts, we will obtain
+informationabouttheﬁrstseries a(t).
+TheﬁrstequationsofFaádiBruno’sformulaare:
+c1 = 0 = 0,
+..
+.
+..
+.
+c
+v0−1 = 0 = 0,
+cv0 = 1 = av0bv0
+1 .
+(4)
+Assume thata(t) has a term of order bigger thanv0. This happens if, and only if, there is
+some αijkℓ ̸= 0with( i,j,k, ℓ) ̸= (1,0,0,0),(0,1,0,0). Then,ifM istheminimalfromsuch
+
+--- PDF page 11 ---
+A.Fernández-Hernández,R.GiménezConejero Res Math Sci (2024)11:28 Page11of21 28
+orders,theequationscontinuewith
+cv0+1 = 0 = κav0bv0−1
+1 b2 +av0+1bv0+1
+1 ,
+for some irrelevant constantκ, givingb2 = 0i fv0 +1 < M (soav0+1 = 0). For the same
+reason,b3 =···= bM−v0 = 0.Finally,theequation
+cM = 0 = κ′av0bv0−1
+1 bM−v0+1 +aMbM
+1
+gives bM−v0+1 ̸= 0. This term in the change of variable will reﬂect into restrictions on
+a(t) when we proceed with the change of variable of the second entry of the formal
+parametrizationT∞ ψ ◦γ(teiθ).Indeed,bytheexpressionof a(t),
+M = v0(i0 +j0) +v1(k0 + ℓ0)
+forsome i0,j0,k0,ℓ0,so bv0(i0+j0−1)+v1(k0+ℓ0)+1 ̸= 0.
+Whenweconsiderthechangeofvariablegivenby b(t)onthesecondentry,theresulting
+seriescontainsaterm,say T,oforder
+v1 − 1 +(M − v0 +1) = v0(i0 +j0 − 1) +v1(k0 + ℓ0 +1)
+coming from a product ofv1 − 1t i m e sb1 and one timebM−v0+1 when computingbv1.
+Indeed,T hastheminimumorderonecangetafterthechangeofvariablesifoneignores
+allthetermscominguniquelyfromthelinearpart b1 of b(t).Wewillusethisfactshortly.
+Recallthattheresultingchangeofvariableyields
+γ′(t) =
+⎛
+⎝tv0,tv1 +tλ′
++
+∑
+s>λ′,s /∈/Lambda1′−v0
+ω′
+sts
+⎞
+⎠ .
+Hence,as v0(i0 +j0 − 1) +v1(k0 + ℓ0 +1) ∈ /Gamma1′ − v0 ⊂ /Lambda1′ − v0,theresultingtermofthis
+order has to be zero (for everyθ) since it is notv1,λnor anys /∈ /Lambda1′ − v0. Furthermore,
+there are no cancellations becauseT has minimum order, soT = 0 for everyθ.T h i si sa
+contradiction.Therefore, αijkℓ = 0if( i,j,k, ℓ) ̸= (1,0,0,0),(0,1,0,0).
+Hence,theformalparametrizationhastheform
+T∞ ψ ◦γ(teiθ) =
+( (
+α1000 cos(θv0) + α0100 sin(θv0)
+)
+tv0;
+∑
+i,j,k,ℓ
+βijkℓ cosi(θv0)sinj(θv0)tv0(i+j) (∑
+s Re(ωseiθs)ts)k (∑
+s Im(ωseiθs)ts)ℓ
+)
+.
+It is obvious that the change of variablesb(t) is just a constant timest. After the change
+of variables we recoverγ′(t), soβijkℓ = 0i fi +j ≥ 1o rk + ℓ ≥ 2, otherwise we would
+have a term of orderv0(i +j) +v1(k + ℓ) ∈ /Lambda1′ − v0. Therefore, the parametrization has
+theform
+T∞ ψ ◦γ(teiθ) =
+( (
+α1000 cos(θv0) + α0100 sin(θv0)
+)
+tv0;
+β0010
+(∑
+s Re(ωseiθs)ts)
++ β0001
+(∑
+s Im(ωseiθs)ts) )
+and
+T∞ ψ(xR,xI,yR,yI) = (α1000xR + α0100xI,β0010yR + β0001yI).
+
+--- PDF page 12 ---
+28 Page12of21 A.Fernández-Hernández,R.GiménezConejero Res Math Sci(2024)11:28
+5.2 Holomorphy
+We are going to prove thatT∞ ψ is either holomorphic or antiholomorphic (i.e., holo-
+morphic after conjugation on both variables) by studying further the change of variable
+wehaveshownabove.Tosimplifynotation,weset
+α:=α
+1000
+α′:=α0100
+β:=β0010
+β′:=β0001.
+Lemma 5.1 The coeﬃcientsα,α′,β,β′ are not zero. Furthermore,α is orthogonal toα′
+and βisorthogonalto β′.
+Proof Firstofall,as ψ isadiﬀeomorphism,itsdiﬀerential
+dψ0 =
+⎡
+⎢⎢⎢⎣
+αR α′R 00
+αI α′I 00
+00 βR β′R
+00 βI β′I
+⎤
+⎥⎥⎥⎦,
+hasmaximumrank,so α,α′,β,β′ arenonzero.
+FromEq.( 4),weseethat
+b1 = 1
+a
+1/v0
+v0
+= 1
+(
+αcos(θv0) + α′ sin(θv0)
+)1/v0
+.
+Wedonotcareatthemomentaboutthelackofprecisionaboutthe v0-throot.
+When we apply the change of variable given byb(t) = b1t on the second entry of
+T∞ ψ ◦γ(teiθ),weseethat,necessarily,thecoeﬃcientof tv1 is
+1 = βcos(θv1) + β′ sin(θv1)
+(
+αcos(θv0) + α′ sin(θv0)
+)v1/v0
+,
+so
+(
+αcos(θv0) + α′ sin(θv0)
+)v1 =
+(
+βcos(θv1) + β′ sin(θv1)
+)v0. (5)
+Setting θ=± π
+2v0 inEq.( 5),weobtain
+(±1)v1 α′v1 =
+(
+βcos
+( πv1
+2v0
+)
+± β′ sin
+( πv1
+2v0
+)) v0
+.
+Taking modules, we see thatβ and β′ have to be orthogonal. Likewise, withθ =± π
+2v1 ,
+onededucesthat αand α′ areorthogonalaswell. ⊓⊔
+Weneedasmalltechnicallemma.
+Lemma 5.2 Forapairoforthogonalcomplexnumbersz,z ′ ∈ C \0and ρ/∈ π
+2 Z,if
+⏐⏐zcos ρ+z′ sin ρ
+⏐⏐
+|zsin ρ+z′ cos ρ| = |z|
+|z′|,
+then |z| =
+⏐⏐z′⏐⏐.
+
+--- PDF page 13 ---
+A.Fernández-Hernández,R.GiménezConejero Res Math Sci (2024)11:28 Page13of21 28
+Proof Afterachangeofcoordinates,wecanassumethat z = aandz′ = ib′ fora,b ′ ∈ R.
+Then,takingsquaresinbothsides,
+a2 cos2 ρ+b′2 sin2 ρ
+a2 sin2 ρ+b′2 cos2 ρ = a2
+b′2,
+andtherefore,
+a2b′2 cos2 ρ+b′4 sin2 ρ = a4 sin2 ρ+a2b′2 cos2 ρ.
+Simplifying,a4 = b′4 andtheresultfollows. ⊓⊔
+Lemma 5.3 α =± iα′ and β =± iβ′,withthesamesign.
+Proof RecallEq.( 5),
+(
+αcos(θv0) + α′ sin(θv0)
+)v1 =
+(
+βcos(θv1) + β′ sin(θv1)
+)v0.
+Ifweconsiderthederivativeon θofEq.( 5),weobtain
+v0v1
+(
+αcos(θv0) + α′ sin(θv0)
+)v1−1(
+− αsin(θv0) + α′ cos(θv0)
+)
+= v0v1
+(
+βcos(θv1) + β′ sin(θv1)
+)v0−1(
+− βsin(θv1) + β′ cos(θv1)
+)
+.
+(6)
+Now,weperformatrickinEq.( 6):Multiplyby αcos(θv0) + α′ sin(θv0),andthensimplify
+usingEq.( 5).Thisyields
+(
+βcos(θv1) + β′ sin(θv1)
+)(
+− αsin(θv0) + α′ cos(θv0)
+)
+=
+(
+αcos(θv0) + α′ sin(θv0)
+)(
+− βsin(θv1) + β′ cos(θv1)
+)
+.
+(7)
+EvaluatingEq.( 7)at θ= 0yie l ds
+βα′ = αβ′. (8)
+Evaluating Eq. (7)a tθ = π
+2v0 and using Eq. (8), after a small manipulation, it is easy to
+obtain
+βcos
+(
+πv1
+2v0
+)
++ β′ sin
+(
+πv1
+2v0
+)
+−βsin
+(
+πv1
+2v0
+)
++ β′ cos
+(
+πv1
+2v0
+) = α
+α′ = β
+β′. (9)
+TheresultfollowsfromEq.( 9)andLemmas 5.1and5.2. ⊓⊔
+5.3 Proof
+WeknowfromSect. 5.1that
+T∞ ψ(xR,xI,yR,yI) =
+(
+αxR + α′xI,βyR + β′yI
+)
+.
+Thismappingisholomorphicif,byCauchy–Riemannequations, α =− iα′ and β =− iβ′
+anditisantiholomorphicif α = iα′ and β = iβ′.ByLemma 5.3,T∞ ψ isaholomorphicor
+antiholomorphicmapping.Thisispreciselywhatwemeanby rigidity:Thenormalforms
+forcetheTaylorseriesof ψ tobeaholomorphicorantiholomorphiclinearmap.
+Theorem 5.4 Let(C,0),(C
+′,0) ⊂ (C2,0) be two plane curve singularities, not necessarily
+irreducible, with equations g(x,y) and g′(x,y). Assume also that they contain a singular
+branch. Then, they areC∞ -isomorphic if, and only if, they areC-isomorphic or C isC-
+isomorphicto C′,whichisalsoacomplexcurvewithequation g′(x,y) = 0.
+Furthermore, any diﬀeomorphismψ taking C to C′ has a holomorphic or antiholomor-
+phicTaylorseriesT ∞ ψ.
+
+--- PDF page 14 ---
+28 Page14of21 A.Fernández-Hernández,R.GiménezConejero Res Math Sci(2024)11:28
+Proof Thesameargumentwehaveshownaboveworks,andisfarsimpler,formonomial
+parametrizations γ(t) = (tv0,tv1).
+Assumethat ψ isthediﬀeomorphismthattakes C toC′,so
+g′ ◦ψ ◦γi = 0
+for a parametrizationγi of any branch ofC. In particular,ψ takes a singular branch of
+C to a singular branch ofC′,s oT∞ ψ is a holomorphic or antiholomorphic mapping by
+Lemmas5.1and 5.3.Itstillholdsthat
+g′ ◦T∞ ψ ◦γi = 0
+as formal power series, for any other branch ofC. Hence,T∞ ψ also takesC to C′. This
+provestheresult. ⊓⊔
+WiththeNormalFormsTheorem(Theorem 2.17)andTheorem 5.4,wecaneasilyﬁnd
+pairs of curves that areC∞ -isomorphic but notC-isomorphic or curves such that the
+C∞ -classcoincideswithits C-class.
+Example5.5 Thefamilyofcurves
+γε(t) =
+(
+t4,t9 +t10 + 19
+18t11 + εt15
+)
+(10)
+is,forany ε∈ C,abranchwithsemigroup /Gamma1=⟨ 4,9⟩withthepropertythatthebranches
+γε and γε′ are analytically equivalent if and only ifε = ε′. This can be deduced from
+Theorem2.17(seealsothe10-throwof[ 27,Table1]and[ 5]).Thisisthereforeaparametric
+family of branches with diﬀerent analytic classes for each value ofε. In particular,γεand
+γεare alwaysC∞ -isomorphic but they areC-isomorphic if, and only if,ε∈ R, in which
+casetheyparametrizethesameset.
+6 Curveswithonlysmoothbranches
+Theorem 5.4 omits the case of several smooth branches. Let us consider a curve singu-
+larities (C,0),(C′,0) ⊂ (C2,0) given by several lines. IfC and C′ have three lines, they
+are C-isomorphic, so we can assume that they have at least four lines. After long but
+straightforward computations of linear algebra, one can show that aC∞ -isomorphism ψ
+between C and C′ with at least four lines induces aC-isomorphism betweenC and C′
+or C′. Indeed, the diﬀerentialdψ preserves three of the complex lines and it induces the
+C-isomorphism.Weleavethedetailstothereader.Thisshowsthatthe C∞ -classiﬁcation
+of tangentspaces coincideswiththe C-classiﬁcationmoduloconjugation.
+However, in the case of only smooth branches, the Taylor series of aC∞ -isomorphism
+could be far from being analytic. For example, one can take id ×f(yR,yI)a s C∞ -
+isomorphism taking the lineL =
+{
+y = 0
+}
+to itself, where the only condition onf is
+to be a diﬀeomorphism preserving the origin. One can construct a similar example for
+an arbitrary number of transverse lines and a radial diﬀeomorphism. Moreover, it is not
+eventruethatthe
+C∞ -classiﬁcationandthe C-classiﬁcationcoincidemoduloconjugation
+whenoneconsiderstangentsmoothbranches,asthefollowingexampleshows.
+Example6.1 Considerthepairofcurveswithtwobranches(with a,b ̸= 1)
+(y − x2)(y − ax2) = 0,and
+(y − x2)(y − bx2) = 0.
+
+--- PDF page 15 ---
+A.Fernández-Hernández,R.GiménezConejero Res Math Sci (2024)11:28 Page15of21 28
+Fig. 3 Thediﬀeomorphismψ ofEq.( 11)
+I ti ss h o w ni n[31, Section 5] (cf. [9, Example 3]) that they areC-isomorphic if, and only
+if, a = b or a = 1
+b. Assume they are notC-isomorphic and, for simpliﬁcation, assume
+a,b ∈ R.Itisclearthatthebranchesofthecurvesareparametrized,respectively,by
+t ↦→ (t,t2),t ↦→ (t,at2)and
+t ↦→ (t,t2),t ↦→ (t,bt2).
+Considerthe C∞ -isomorphism ψ :( C2,0) → (C2,0)sothat
+ψ(r1eiθ1,r2eiθ2) =
+(
+r1eiθ1,
+(
+r2 + b − 1
+a − 1(r2 − r2
+1)
+)
+eiθ2
+)
+, (11)
+inpolarcoordinates(seeFig. 3).Writing t = reθ, ψ ﬁxesthebranch y − x2 = 0,since
+ψ(reθ,r2ei2θ) =
+(
+reθ,
+(
+r2 + b − 1
+a − 1(r2 − r2)
+)
+ei2θ)
+,
+andsends y − ax2 = 0to y − bx2 = 0,since
+ψ(reθ,ar2ei2θ) =
+(
+reθ,
+(
+r2 + b − 1
+a − 1(ar2 − r2)
+)
+ei2θ)
+.
+Hence,thecurvesare C∞ -isomorphic,buttheyarenot C-isomorphic.Observethatwhen
+a,b ∈ R,theyarealsoinvariantbyconjugation.
+It is clear that more sophisticated examples withC∞ -isomorphisms similar to Eq. (11)
+can be built from the ideas of Example6.1 and Fig.3. Hence, theC∞ classiﬁcation of
+curveswithonlysmoothbranchesisverycoarse.
+7 Hypersurfacescase
+WearenowgoingtoreviewEphraim’sworkon[ 15]andcompareitwithourownresult.
+Recallthatthemainresultofthatpaperisthefollowing:
+Theorem 7.1 (see [15, Theorem 4.2])Let V be an irreducible germ of hypersurface at a
+point.Then,ifV is C∞ -isomorphictoagermofacomplexsetW,V is C-isomorphictoW
+orW.
+There are two reasons to review his work. The ﬁrst one is because it is an interesting
+paperwithsomesmartideasthatisnotwell-knownenoughinthesingularitycommunity.
+The second reason is that we can squeeze its proof to solve a big portion of the non-
+irreduciblecaseswithsimilarideas.
+
+--- PDF page 16 ---
+28 Page16of21 A.Fernández-Hernández,R.GiménezConejero Res Math Sci(2024)11:28
+The ﬁrst result he proves simpliﬁes the problem ofC∞ -isomorphism to real analytic
+isomorphism.
+Proposition 7.2 (see[15,Proposition1.1]) LetV andW berealanalyticsets.Iftheyare
+C∞ -isomorphic,thentheyarerealanalyticisomorphic.
+Ephraim’s proof uses the fact that the rings of real analytic mappings ofV and W,
+AV and AW, are isomorphic (which is equivalent to the statement) if their completions,
+ˆAV and ˆAW, are isomorphic. This is a result of Artin (see [1, Corollary 1.6] and also the
+previous work of Hironaka and Rossi in [32]). In general, for a local ringR, ˆR denotes its
+completion,i.e.,the(projective)limitofthe(projective)system
+R/m ← R/m2 ← R/m3 ←···
+Despite not being explicit, it is not diﬃcult to see along Ephraim’s proof that, ifψ is
+thediﬀeomorphismtakingV toW,thenitsTaylorseries T∞ ψ inducestheisomorphism
+between ˆAV and ˆAW. Then, Artin’s work implies that there are isomorphisms between
+AV and AW that coincide withT∞ ψ up to any arbitrary order. It is, however, unclear
+from this approach whetherT∞ ψ is analytic itself. Therefore, since Ephraim’s proof of
+Theorem 7.1 starts with a real analytic isomorphism, his work is not constructive. This
+is the main diﬀerence with our proof of Theorem7.1 given for the plane curve case in
+Theorem 5.4: We show the stronger statement thatT∞ ψ itself is either holomorphic or
+antiholomorphic.
+Thenextresultprovidesanalgebraicrelationbetween V andW toproveTheorem 7.1.
+Theorem 7.3 (see [15, Theorem 2.1])Let (f1,... ,fs) be the radical ideal of the germ of
+complex variety (V,0) ⊂ (Cn,0) and fR
+i ,f I
+i ∈ An the real and imaginary parts of fi,
+respectively. The ideal of real analytic germs vanishing on V is(fR
+1 ,... ,f R
+s ,f I
+1 ,... ,f I
+s ) if,
+andonlyif,V isirreducible.Equivalently,if •denotesconjugation,theidealofrealanalytic
+germsvanishingonV is (f1,... ,fs,f1,... ,fs)if,andonlyif,V isirreducible.
+With this result, ifgV,gW are the reduced equations of (V,0),(W,0) ⊂ (Cn,0) andψ is
+arealanalyticisomorphismtaking V toW,then
+gV
+(
+ψ−1(z)
+)
+=η1(z)gW(z) + η2(z)gW(z),and
+gW
+(
+ψ(z)
+)
+=ξ1(z)gV(z) + ξ2(z)gV(z).
+(12)
+Atthispoint,Ephraimusesaninterestingtechniquetogofromtherealanalyticcategory
+totheholomorphiccategory.
+Deﬁnition 7.4 (cf.[15,p.18])Let f ∈ C
+[[
+x1,y1,... ,xn,yn
+]]
+.Changingvariablesto z• =
+x• +iy•,z• = x• − iy•onecanwrite f = ∑
+I,J aIJ zI zJ.The holomorphicTaylorseries off
+is
+Tzf =
+∑
+I
+aI0zI.
+Thedeﬁnitionforthe antiholomorphicTaylorseries isanalogous.
+Itisnothardtoseethat:
+• Tz deﬁnesaringhomomorphism Tz : C
+[[
+x1,y1,... ,xn,yn
+]]
+→ C[[z1,... ,zn]],
+• Tz restrictsto Tz| : A2n → On,and
+
+--- PDF page 17 ---
+A.Fernández-Hernández,R.GiménezConejero Res Math Sci (2024)11:28 Page17of21 28
+• Tz(f ◦g) = Tzf ◦Tzg (thisisnotmentionedin[ 15]).
+Remark7.5 ThisisequivalenttoformaTaylor-likeseriesusingthe Wirtingerderivatives:
+∂
+∂z:=1
+2
+( ∂
+∂x − i ∂
+∂y
+)
+fortheholomorphicTaylorseriesand
+∂
+∂z:=1
+2
+( ∂
+∂x +i ∂
+∂y
+)
+fortheantiholomorphicTaylorseries.
+Now, we can take the holomorphic Taylor series in Eq. (12) and, by Cauchy–Riemann
+equations,wehavethat
+gV
+(
+Tzψ−1(z)
+)
+=Tzη1(z)gW(z), and
+gW
+(
+Tzψ(z)
+)
+=Tzξ1(z)gV(z).
+(13)
+At this point, if one shows thatTzψ or Tzψ−1 are isomorphisms, thenV and W are
+C-isomorphic. In order to follow this direction, one needs two extra conditions that are,
+aswewillseelaterinExamples 7.8and8.1,necessary.
+Theﬁrstconditionistechnical:
+(i) η1(0)ξ1(0) ̸= 0.
+In this case,V and W will be C-isomorphic. In a similar way, but arguing with the
+antiholomorphicTaylorseriesandconjugatingEq.( 12),onecanshowthatif
+(i’) η2(0)ξ2(0) ̸= 0,
+thenV andW are C-isomorphic.Thisisprovenin[ 15,Lemma4.1].Ephraimthenshows
+inasimpleargumentthat i)ori’)hold.
+Thesecondconditionisthat V orW havezero-dimensionalisosingularlocus,theorigin.
+Otherwise,V ∼= V′ ×Cs,W ∼= W′ ×Cs′
+andonereasonswith V′ andW′ ×Cs−s′
+(assume
+s > s′).
+Under these two conditions, either the holomorphic or the antiholomorphic Taylor
+series of theCω-isomorphism have linear part of maximum rank and they provide the
+isomorphism betweenV and W or W that concludes the proof (see [15, Theorem 3.1]).
+A large part of the article is dedicated to prove this technical fact. This ﬁnishes the proof
+ofTheorem 7.1.
+Despite the fact that Ephraim focuses his attention solely on the irreducible case, the
+ideas that are implemented to prove his main result, Theorem7.1, can be adapted to
+extendthescopetosomenon-irreduciblehypersurfaces.
+Deﬁnition 7.6 (see[17,Deﬁnition3.2])Anirreduciblevarietyis non-factorableorinde-
+composable ifitcannotbewrittenasaproductofvarietiesoflowerdimension.
+Proposition 7.7 Let V be a (not necessarily irreducible) germ of hypersurface at a point.
+Assume that an irreducible component of V, say V
+0, is non-factorable. Then, if V isC∞ -
+isomorphictoagermofacomplexsetW,V is C-isomorphictoW or W.
+
+--- PDF page 18 ---
+28 Page18of21 A.Fernández-Hernández,R.GiménezConejero Res Math Sci(2024)11:28
+Proof V and W are stillCω-isomorphic by someψ, and Artin’s result [1, Corollary 1.6]
+holds in the non-irreducible case and so does Proposition7.2. If one applies the argu-
+ment shown above to prove Theorem7.1to the componentV0, it follows that either the
+holomorphic or the antiholomorphic Taylor series ofψ has linear part with maximum
+rank,sinceeithercondition (i)or(i’)hold.Thus,Eq.( 13),oritsantiholomorphicversion,
+applied to each irreducible component ofV also shows that the same Taylor series pro-
+vides the isomorphism taking all the components ofV to the components ofW,o rW.
+Hence,V iseither C-isomorphicto W orW. ⊓⊔
+The next example shows that the proof assumes necessary conditions; otherwise, the
+statementisfalse.SeealsoSect. 6.
+Example7.8 Ephraimin[ 15,Example2]providesafamilyofnormalsurfacesingularities
+in (C3,0) that are notC-isomorphic to their conjugates. His family is a bit technical,
+but one can take the family given by four lines with diﬀerent cross-ratios and exclude
+conjugatesofthisfamily(seealsothefamilygiveninExample 5.5).Ifonetakes V,V
+′ two
+non-isomorphicelementsofthisfamilyandconsiders
+V1 =V × C2 ∪ C2 ×V′,
+V2 =V × C2 ∪ C2 ×V′,
+V3 =V × C2 ∪ C2 ×V′,
+V4 =V × C2 ∪ C2 ×V′,
+they areCω-isomorphic but notC-isomorphic. (This idea is also shown in [15,E x a m p l e
+2].) For example, takingV1 and V2,t h eCω-isomorphism is idC2 ×idC2. If one takes the
+(anti)holomorphic Taylor series of this map, it is idC2 ×0( o r0×idC2). This shows that
+theargument,andthestatement,isfalseforthenon-irreduciblecase.
+8 Concludingremarks
+Letusconsiderthefollowingexample.
+Example8.1 Consider any germ of irreducible hypersurface with zero-dimensional
+isosingular locus (V,0) ⊂ (Cn,0). Now, takeV × C.I ti sC∞ -isomorphic to itself if one
+considersthemap ψ:=idCn ×f,where f :( C,0) → (C,0)isa(real)diﬀeomorphismwith
+a Taylor series that does not converge at any point. These functions certainly exist, and
+one can take examples of such functions from the real setting (see [37]). Then,T
+∞ ψ is
+obviouslynotanalytic.However, TK ψ forany K ≥ 1isanalyticanda Cω-isomorphismof
+V × Ctoitself(notnecessarilya C-isomorphismeither).
+InviewofExample 8.1andourmainresultTheorem 5.4,itisnaturaltoaskthefollowing
+question.
+Question8.2 Let V be an irreducible germ of hypersurface at a point with zero-
+dimensional isosingular locus. Then, ifψ is a diﬀeomorphism takingV to a germ of a
+complexset W,theTaylorseriesof ψ iseitherholomorphicorantiholomorphic.
+This holds for plane curve singularities by Theorem5.4, and it is not true for positive-
+dimensionalisosingularlocusbyExample 8.1.
+
+--- PDF page 19 ---
+A.Fernández-Hernández,R.GiménezConejero Res Math Sci (2024)11:28 Page19of21 28
+Example8.3 (see [15, Example 1]) Ephraim showed that the curves given by the
+parametrizations
+γ1(t) = (t3,t7)and
+γ2(t) = (t3,t7 +t8)
+are C1-isomorphic, but notC-isomorphic. It is easy to see that they are topologically
+equivalent.Incontrast,twosetsoffourlineswithdiﬀerentcross-ratiosareanexampleof
+planecurvesthataretopologicallyequivalentbutnot C,
+C1, Cω nor C∞ -isomorphic.
+As far as we know,C1-equivalence is not closed, and it is the last natural classiﬁcation
+one can give that remains open. Examples such as the one given above motivate this
+question,whichcouldseemcounterintuitiveatﬁrst.
+Question8.4 The
+C1-equivalence coincides with the topological equivalence for irre-
+ducibleplanecurvesingularities.
+Acknowledgements
+WearespeciallythankfultoMarcoMarengon,whomotivatedustoanswerthequestionaboutsmoothclassiﬁcationof
+curvesandsuﬀeredmanyofthepartialtechnicalresultsintheprocessofmakingthiswork.WethankMarceloEscudeiro
+Hernandesforhisusefulcommentsandencouragement.WealsowanttothankEdsonSampaioforpointingouttous
+Ephraim’swork,unfortunatelyfewdaysafterﬁnishingourproof.
+Funding Information
+OpenaccessfundingprovidedbyHUN-RENAlfrédRényiInstituteofMathematics.
+Data availability
+Thisworkdoesnotuseanysetofdata.
+Author details
+1DepartamentdeMatemátiques,UniversitatdeValència,CampusdeBurjassot,46100Burjassot,Spain, 2AlfrédRényi
+InstituteofMathematics,Reáltanodautca13-15,Budapest1053,Hungary.
+Received:27August2023 Accepted:1March2024 Publishedonline:27March2024
+References
+1. Artin,M.:Onthesolutionsofanalyticequations.Invent.Math. 5,277–291(1968)
+2. Birbrair,L.,Fernandes,A.,Grandjean,V.:Thick-thindecompositionforrealdeﬁnableisolatedsingularities.IndianaUniv.
+Math.J. 66(2),547–557(2017)
+3. Birbrair, L., Fernandes, A., Sampaio, J.E., Verbitsky, M.: Multiplicity of singularities is not a bi-lipschitz invariant. Math.
+Ann.377(1–2),115–121(2018)
+4. Bruce,J.W.,Gaﬀney,T.J.:Simplesingularitiesofmappings C,0 → C2,0.J.Lond.Math.Soc.SecondSer. 26(3),465–474
+(1982)
+5. Bayer, V., Hefez, A.: Algebroid plane curves whose Milnor and Tjurina numbers diﬀer by one or two. Boletim da
+SociedadeBrasileiradeMatemática.NovaSérie 32(1),63–81(2001)
+6. Brieskorn,E.,Knörrer,H.:Planealgebraiccurves.ModernBirkhäuserClassics.Birkhäuser/SpringerBaselAG,Basel(1986).
+TranslatedfromtheGermanoriginalbyJohnStillwell,[2012]reprintofthe1986edition
+7. Brauner,K.:ZurGeometriederFunktionenzweierkomplexenVeränderlichen.II–IV.Abh.Math.Sem.Hambg. 6,1–54
+(1928)
+8. Burghelea,D.,Verona,A.:Localhomologicalpropertiesofanalyticsets.Manuscr.Math. 7,55–66(1972)
+9. Campillo,A.,Delgado,F.,Gusein-Zade,S.:Extendedsemigroupofaplanecurvesingularity.TrudyMatematicheskogo
+InstitutaImeniV.A.Steklova 221,149–167(1998)
+10. Caubel, C., Némethi, A., Popescu-Pampu, P.: Milnor open books and Milnor ﬁllable contact 3-manifolds. Topol. Int. J.
+Math.45(3),673–689(2006)
+11. de Bobadilla, J.F., Fernandes, A., Sampaio, J.E.: Multiplicity and degree as bi-lipschitz invariants for complex sets. J.
+Topol.11(4),958–966(2017)
+12. Delorme, C.: Sur les modules des singularités des courbes planes. Bulletin de la Société Mathématique de France
+106(4),417–446(1978)
+13. de Jong, T., Pﬁster, G.: Local analytic geometry. In: Advanced Lectures in Mathematics. Friedr. Vieweg & Sohn,
+Braunschweig,(2000).Basictheoryandapplications
+14. Ebey,S.:Theclassiﬁcationofsingularpointsofalgebraiccurves.Trans.Am.Math.Soc. 118,454–471(1965)
+15. Ephraim,R.: C∞ andanalyticequivalenceofsingularities.RiceUniv.Stud. 59(1),11–32(1973)
+16. Ephraim,R.: C1 preservationofmultiplicity.DukeMath.J. 43(4),797–803(1976)
+
+--- PDF page 20 ---
+28 Page20of21 A.Fernández-Hernández,R.GiménezConejero Res Math Sci(2024)11:28
+17. Ephraim, R.: The Cartesian product structure andC∞ equivalances of singularities.Trans. Am. Math. Soc. 224(2),
+299–311(1977),1976
+18. Ephraim, R.: Isosingular loci and the Cartesian product structure of complex analytic singularities. Trans. Am. Math.
+Soc.241,357–371(1978)
+19. FernándezdeBobadilla,J.,Pełka,T.:Symplecticmonodromyatradiuszeroandequimultiplicityof μ-constantfamilies.
+arXiv:2204.07007(2022)
+20. Fernandes, A.: Topological equivalence of complex curves and bi-Lipschitz homeomorphisms. Mich. Math. J.51(3),
+593–606(2003)
+21. Fernández-Hernández, A.: On the topological classiﬁcation of complex plane curve singularities.Degree ﬁnal project.
+Universitat de València.arXiv:2402.13941(2021–2022)
+22. Fichou,G.,Shiota,M.:Onalmostblow-analyticequivalence.Proc.Lond.Math.Soc.ThirdSer. 103(4),676–709(2011)
+23. Fernandes,A.,Sampaio,J.E.:OnLipschitzrigidityofcomplexanalyticsets.J.Geom.Anal. 30(1),706–718(2020)
+24. Greuel,G.-M.,Pﬁster,G.:Moduliforsingularities.In:Singularities(Lille,1991),volume201ofLondonMath.Soc.Lecture
+NoteSer.,pp.119–146.CambridgeUniv.Press,Cambridge(1994)
+25. Genzmer, Y., Paul, E.: Normal forms of foliations and curves deﬁned by a function with a generic tangent cone.
+MoscowMath.J. 11(1),41–72(2011)
+26. Granger,J.-M.:Surunespacedemodulesdegermedecourbeplane.BulletindesSciencesMathématiques.2eSérie
+103(1),3–16(1979)
+27. Hefez, A., Hernandes, M.E.: Analytic classiﬁcation of plane branches up to multiplicity 4. J. Symb. Comput.44(6),
+626–634(2009)
+28. Hefez,A.,Hernandes,M.E.:Theanalyticclassiﬁcationofplanebranches.Bull.Lond.Math.Soc. 43(2),289–298(2011)
+29. Hernandes,M.E.,Hernandes,M.E.R.:Theanalyticclassiﬁcationofplanecurves. arXiv:2010.04874(2020)
+30. Hefez,A.,Hernandes,M.E.:Theanalyticclassiﬁcationofirreducibleplanecurvesingularities.In:HandbookofGeometry
+andTopologyofSingularitiesII,pp.1–65.Springer,Cham(2021)
+31. Hefez, A., Hernandes, M.E., Hernandes, M.E.R.: The analytic classiﬁcation of plane curves with two branches. Math. Z.
+279(1–2),509–520(2015)
+32. Hironaka, H., Rossi, H.: On the equivalence of imbeddings of exceptional complex spaces. Math. Ann.156, 313–333
+(1964)
+33. Kähler, E.: Über die Verzweigung einer algebraischen Funktion zweier Veränderlichen in der Umgebung einer sin-
+gulärenStelle.Math.Z. 30(1),188–204(1929)
+34. Kähler, E.: Mathematische Werke/Mathematical works. Walter de Gruyter & Co., Berlin, (2003). Edited by Rolf Berndt
+andOswaldRiemenschneider
+35. King,H.C.:Topologicaltypeofisolatedcriticalpoints.Ann.Math.SecondSer. 107(2),385–397(1978)
+36. Kobayashi,M.,Kuo,T.-C.:Onblow-analyticequivalenceofembeddedcurvesingularities.In:RealAnalyticandAlgebraic
+Singularities(Nagoya/Sapporo/Hachioji,1996),volume381ofPitmanResearchNotesinMathematicsSeries,pp.30–
+37.Longman,Harlow(1998)
+37. Kim,S.S.,Kwon,K.H.:Smooth( C
+∞ )butnowhereanalyticfunctions.Am.Math.Mon. 107(3),264–266(2000)
+38. Kolgushkin, P.A., Sadykov, R.R.: Simple singularities of multigerms of curves. Revista Matemática Complutense14(2),
+311–344(2001)
+39. Kuo,T.C.:Onclassiﬁcationofrealsingularities.Invent.Math. 82(2),257–262(1985)
+40. Lê,D.T.:Calculdunombredecyclesévanouissantsd’unehypersurfacecomplexe.Ann.Inst.Fourier(Grenoble) 23(4),
+261–270(1973)
+41. Laudal,O.A.,Pﬁster,G.:LocalModuliandSingularities,volume1310ofLectureNotesinMathematics.Springer,Berlin
+(1988).WithanappendixbyB.MartinandPﬁster
+42. Lê, D.T., Ramanujam, C.P.: The invariance of Milnor’s number implies the invariance of the topological type. Am. J.
+Math.98(1),67–78(1976)
+43. Mond, D., Nuño-Ballesteros, J.J.: Singularities of Mappings. Grundlehren der mathematischen Wissenschaften, vol.
+357.Springer,Cham(2020)
+44. Mostowski, T.: Lipschitz equisingularity. Polska Akademia Nauk Polska Akademia Nauk. Instytut Matematyczny. Dis-
+sertationesMathematicae.RozprawyMatematyczne 243,46(1985)
+45. Neumann,W.D.,Pichon,A.:Lipschitzgeometryofcomplexcurves.J.Singul. 10(2014),225–234(2013)
+46. Némethi, A., Szilárd, A.: Milnor Fiber Boundary of a Non-isolated Surface Singularity. Lecture Notes in Mathematics,
+vol.2037.Springer,Heidelberg(2012)
+47. Némethi,A.,Tosun,M.:Invariantsofopenbooksoflinksofsurfacesingularities.Stud.Sci.Math.Hung.Comb.Geom.
+Topol.(CoGeTo) 48(1),135–144(2011)
+48. Parusi´nski, A.: Lipschitz stratiﬁcation of subanalytic sets. Annales Scientiﬁques de l’École Normale Supérieure. Qua-
+trièmeSérie 27(6),661–696(1994)
+49. Perron, B.: Conjugaison topologique des germes de fonctions holomorphes à singularité isolée en dimension trois.
+Invent.Math. 82(1),27–35(1985)
+50. Pham,F.:Singularitésdescourbesplanes:Uneintroductionàlagéométrieanalytiquecomplexe.ÉcolePolytechnique,
+Centre de Mathématiques, Paris,: Cours de 3e Cycle, Faculté des Sciences de Paris, Année Universitaire 1969–1970,
+PremièrePartie.RédactiondeJ.L,Dupeyrat(1970)
+51. Pham,F.Teissier,B.:LipschitzfractionsofacomplexanalyticalgebraandZariskisaturation(2020)
+52. Saeki,O.:Topologicaltypesofcomplexisolatedhypersurfacesingularities.KodaiMath.J. 12(1),23–29(1989)
+53. Sampaio, J.E.: Multiplicity, regularity and blow-spherical equivalence of real analytic sets. Math. Z.301(1), 385–410
+(2022)
+54. Sampaio,J.E.:OnLipschitzgeometryatinﬁnityofcomplexanalyticsets.Calc.Var.PartialDiﬀer.Equ. 62(2),69(2023)
+55. Stanley, R.P.: Enumerative combinatorics, volume 62 of Cambridge Studies in Advanced Mathematics, Vol. 2. Cam-
+bridgeUniversityPress,Cambridge,(1999).WithaforewordbyGian-CarloRotaandappendix1bySergeyFomin
+56. Targino, R.: Outer Lipschitz geometry of complex algebraic plane curves. Int. Math. Res. Not. IMRN15, 13255–13289
+(2023)
+
+--- PDF page 21 ---
+A.Fernández-Hernández,R.GiménezConejero Res Math Sci (2024)11:28 Page21of21 28
+57. Valle,C.:Ontheblow-analyticequivalenceoftribranchedplanecurves.J.Math.Soc.Jpn. 68(2),823–838(2016)
+58. Wall,C.T.C.:SingularPointsofPlaneCurves.LondonMathematicalSocietyStudentTexts,vol.63.CambridgeUniversity
+Press,Cambridge(2004)
+59. Zariski,O.: Le problème des modules pour les branches planes.ÉcolePolytechnique,Paris,1973.CoursdonnéauCentre
+de Mathématiques de l’École Polytechnique, Paris, Octobre-Novembre 1973, Rédigé par François Kmety et Michel
+Merle, Avec un Appendice de Bernard Teissier et une réimpression de “Characterization of plane algebroid curves
+whose module of diﬀerentials has maximum torsion” (Proc. Nat. Acad. Sci. U.S.A.56(3), 781–786), par Oscar Zariski
+(1966)
+Publisher’sNote
+SpringerNatureremainsneutralwithregardtojurisdictionalclaimsinpublishedmapsandinstitutionalaﬃliations.
