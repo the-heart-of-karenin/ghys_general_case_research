@@ -72,7 +72,8 @@
     "The actual holomorphic torsor class obeys G* kappa = lambda^2 kappa. If its restriction vanishes at zero, dense translates and base change make it vanish globally.",
     "A holomorphic section produces a closed holomorphic two-form on Q and a complete horizontal characteristic line, hence an actual holomorphic symplectic product.",
     "Properness descends to the complex two-dimensional fast quotient because the other factor Y is compact; the resulting aspherical Z4 complex surface is a torus by the existing surface lemma.",
-    "If W_X has dimension one, kappa_0 must be nonzero, Y has W_Y=0, and H1(Y,O) has a new fast eigenclass outside H1(Y,C), so h01>=9."
+    "If W_X has dimension one, kappa_0 must be nonzero, Y has W_Y=0, and H1(Y,O) has a new fast eigenclass outside H1(Y,C), so h01>=9.",
+    "The fast Dolbeault eigenclass cannot survive to total degree-one de Rham cohomology, so it must support a nonzero d1 or d2 in the Frolicher spectral sequence."
   ],
   "algebra_checks": "Only the new theta6 identity, 64 Lefschetz entries and fast determinant checked with exact integer polynomials. See notes/single_fast_flux_checks.json. No previous suites rerun.",
   "remaining": [
