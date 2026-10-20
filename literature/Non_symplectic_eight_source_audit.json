@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-20",
+  "notes": [
+    108,
+    109
+  ],
+  "new_PDFs": 0,
+  "sources": [
+    {
+      "filename": "53_Lauret_Will_Nilmanifolds_dimension_8_journal_author.pdf",
+      "title": "Nilmanifolds of dimension at most 8 admitting Anosov diffeomorphisms",
+      "landing_url": "https://doi.org/10.1090/S0002-9947-08-04757-0",
+      "sha256": "539a70edf302b97e566bdb8c3d8c9c26a63c6b178ef16149063a9fc18902f2c2",
+      "verified_full_pdf_pages": [
+        8,
+        14,
+        18
+      ],
+      "roles": [
+        "Table 1 h bracket",
+        "Theorem 3.2 complete real Anosov-type list",
+        "Table 3 real/rational distinction"
+      ],
+      "visual_status": "Every listed complete rendered page visually inspected this round.",
+      "preview_paths": [
+        "literature/Non_symplectic_eight_source_previews/53_page_8.png",
+        "literature/Non_symplectic_eight_source_previews/53_page_14.png",
+        "literature/Non_symplectic_eight_source_previews/53_page_18.png"
+      ]
+    },
+    {
+      "filename": "54_Latorre_Ugarte_Villacampa_Ascending_central_series.pdf",
+      "title": "The ascending central series of nilpotent Lie algebras with complex structure",
+      "landing_url": "https://doi.org/10.1090/tran/7512",
+      "sha256": "296574b2c8dfaa41751ccf6a87a729b03ad47a77102b8c9e831c2e0eb710d6fa",
+      "verified_full_pdf_pages": [
+        9,
+        13
+      ],
+      "roles": [
+        "Theorem 3.11 center bound",
+        "Corollary 3.12: dimension-eight strongly nonnilpotent structures have one-dimensional center"
+      ],
+      "visual_status": "Every listed complete rendered page visually inspected this round.",
+      "preview_paths": [
+        "literature/Non_symplectic_eight_source_previews/54_page_9.png",
+        "literature/Non_symplectic_eight_source_previews/54_page_13.png"
+      ]
+    }
+  ],
+  "full_pages_this_round": 5,
+  "independent_proof_parts": [
+    "Nijenhuis central-input identity and the rank-0/2/3 argument forcing JZ=Z on h.",
+    "Two-by-two tensor spectral obstruction; repeated real roots and Jordan cases included.",
+    "Combining the obstruction with the previous no-Omega exclusions."
+  ],
+  "previous_repository_inputs": [
+    "60 constant coefficient section lemma",
+    "58 exclusions of g, l4+l4, and f3+R2 independent of Omega",
+    "59 actual compact nonabelian example"
+  ],
+  "comparison_only": [
+    {
+      "url": "https://arxiv.org/html/2508.05885v1",
+      "title": "Complex structures on two-step nilpotent Lie groups",
+      "author": "Maria Laura Barberis",
+      "scope": "HTML introduction, definitions, and thematic searches only; not a theorem input; no Anosov classification located; no PDF downloaded.",
+      "public_date": "2025-08-07",
+      "manuscript_header_date": "January 2023"
+    }
+  ],
+  "exact_checks": "notes/non_symplectic_eight_model_checks.json",
+  "novelty": "Not confirmed; finite source comparison is not an exhaustive literature review."
+}

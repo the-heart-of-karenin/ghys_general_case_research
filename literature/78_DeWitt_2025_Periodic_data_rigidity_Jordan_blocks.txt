@@ -1,0 +1,1770 @@
+===== PDF PAGE 1 =====
+Ergod. Th. & Dynam. Sys., (2025), 45, 1129–1160 © The Author(s), 2024. Published by Cambridge
+University Press. This is an Open Access article, distributed under the terms of the Creative
+Commons Attribution-NonCommercial-NoDerivatives licence ( https://creativecommons.org/licenses/
+by-nc-nd/4.0), which permits non-commercial re-use, distribution, and reproduction in any medium,
+provided that no alterations are made and the original article is properly cited. The written permission
+of Cambridge University Press must be obtained prior to any commercial use and/or adaptation of the
+article.
+doi:10.1017/etds.2024.56
+1129
+Periodic data rigidity of Anosov automorphisms
+with Jordan blocks
+JONATHAN DEWITT
+Department of Mathematics, The University of Maryland, Maryland, MD 20742, USA
+(e-mail: dewitt@umd.edu)
+(Received 16 May 2023 and accepted in revised form 07 August 2024)
+Abstract. Anosov automorphisms with Jordan blocks are not periodic data rigid. We
+introduce a reﬁnement of the periodic data and show that this reﬁned periodic data
+characterizes C1+ conjugacy for Anosov automorphisms on T4 with a Jordan block.
+Key words: Anosov diffeomorphism, rigidity, periodic data, reducibility
+2020 Mathematics Subject Classiﬁcation: 37D20 (Primary); 37D25 (Secondary)
+1. Introduction
+An Anosov diffeomorphism of a Riemannian manifold M is a diffeomorphism
+F : M → M such that TM continuously splits into two DF -invariant bundles Eu and
+Es such that vectors in Eu are uniformly expanded by DF and vectors in Es are uniformly
+contracted by DF .I f L ∈ SL(n, Z) does not have any eigenvalues of unit modulus, then
+the map induced by L on Tn is an Anosov diffeomorphism, which is called an Anosov
+automorphism due to its algebraic construction. Anosov diffeomorphisms of tori exhibit
+strong topological rigidity. If F : Tn → Tn is Anosov and in the homotopy class of
+L ∈ SL(n, Z), then by work of Franks [ Fra69] and Manning [ Man74], there exists a
+homeomorphism h such that h− 1Fh = L.T h em a ph is called a conjugacy and is Hölder
+continuous. In this paper, we study ridigity of Anosov automorphisms deﬁned by a matrix
+L ∈ SL(4, Z) that have a Jordan block.
+This paper is the ﬁrst to show rigidity of an Anosov diffeomorphism with a Jordan
+block. There are two main contributions of this paper. The ﬁrst is the identiﬁcation of the
+correct reﬁnement of the periodic data for this setting and showing that these data exist and
+are well deﬁned. The second main contribution is a new approach to studying the regularity
+of conjugacies that does not rely on either conformality or an abundance of dynamically
+invariant foliations. In fact, in this paper, we contend with Anosov automorphisms that,
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 2 =====
+1130 J. DeWitt
+restricted to their unstable manifold, preserve only a single one-dimensional foliation and
+whose differential has polynomial growth of conformal distortion.
+In this paper, we study a rigidity property of conjugacies between Anosov diffeomor-
+phisms. Speciﬁcally, we will investigate conditions that imply that a conjugacy h is C1.
+One well-known obstruction to the existence of a C1 conjugacy is the periodic data, which
+we now describe. Suppose that F and G are two diffeomorphisms that are C1 conjugate by
+a conjugacy h.I f p is a periodic point of period n,t h e nh(p) is a periodic point of G of
+period n. By the chain rule, we must have that
+DpFn = Dh(p)hDh(p)Gn(Dh(p)h)− 1.
+Thus, the return maps of DF and DG at corresponding periodic points are conjugate.
+Given two diffeomorphisms F and G with a conjugacy h between them, we say that F and
+G have the same periodic data with respect to h if for each periodic point p of period n,w e
+have that DpFn and Dh(p)Gn are conjugate as linear maps. In some situations, if F and G
+have the same periodic data, then h is C1.
+We say that a diffeomorphism is Ck+ when it is Ck and its kth derivative is α-Hölder
+continuous for some α> 0. We write Diff k+(M) for the group of diffeomorphisms of M
+that are Ck+. This leads us to the deﬁnition of rigidity in which we are interested here.
+Deﬁnition 1.1. We say that an Anosov diffeomorphism F : M → M is periodic data rigid
+if for any Anosov diffeomorphism G ∈ Diff2+(M) in the homotopy class of F,i f F and G
+have the same periodic data with respect to a conjugacy h,t h e nh is C1+.
+The main examples of diffeomorphisms F exhibiting this type of rigidity are Anosov
+automorphisms.
+Periodic data rigidity is well studied. Early work was done by De la Llave, Marco, and
+Moriyon. See, for example, [ dlL87, dlL92, MM87]. More recently, a paper by Gogolev,
+Kalinin, and Sadovskaya [ GKS11] showed local periodic data rigidity of an Anosov
+automorphism of Tn, under the assumption that no three eigenvalues of L have the same
+modulus and that L and L4 are both irreducible. This result implies, as a consequence,
+earlier results obtained in [ Gog08]. See also the recent preprint [ DG24], which obtains
+non-perturbative versions of these results. Closely related to periodic data rigidity is
+Lyapunov spectrum rigidity, see [ GKS20, SY19] for generalizations of these results to
+this setting. The paper [SY19] proves local Lyapunov spectrum rigidity for perturbations of
+Anosov automorphisms with Lyapunov exponents of multiplicity one as well as some fur-
+ther generalizations to the partially hyperbolic setting. These results rely on a careful study
+of entropy along invariant foliations. The paper [ GKS20] uses a related technique to gen-
+eralize the results of [ GKS11] from periodic data rigidity to Lyapunov spectrum rigidity.
+The previously mentioned results apply to Anosov automorphisms of tori. The author
+recently also obtained periodic data rigidity results for Anosov automorphisms of nilmani-
+folds [DeW21]. Recently, Gogolev and Rodriguez Hertz [ GRH22] have proved additional
+periodic data rigidity results relying on a novel condition called very non-algebraicity
+using a technique of matching functions that they introduced. They also extended these
+results to codimension one Anosov diffeomorphisms in [ GRH21].
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 3 =====
+Rigidity of Anosov automorphisms with Jordan Blocks 1131
+In this paper, we consider Anosov automorphisms of T4 with a Jordan block, such as
+the following:
+A =
+⎡
+⎢⎢⎣
+2110
+1101
+0021
+0011
+⎤
+⎥⎥⎦.( 1 )
+Such automorphisms with Jordan blocks are known to not be periodic data rigid due to
+examples of de la Llave in [ dlL02, §6], and do not seem to have been studied after the
+construction of those counterexamples. In fact, any Anosov automorphism of T4 that has
+a Jordan block in its periodic data is not periodic data rigid. In this paper, we nonetheless
+recover a periodic data rigidity result for such automorphisms by introducing a reﬁnement
+of the periodic data, which we call the Jordan periodic data. As we will explain after
+the theorem when we deﬁne Jordan periodic data, this extra data will allow us to detect
+precisely when the derivative cocycle DF is cohomologous to constant.
+THEOREM 1.2. If L ∈ SL(4, Z) deﬁnes an Anosov automorphism of T4 with a Jordan
+block and F is any C2+ Anosov diffeomorphism of T4 in the homotopy class of L with
+the same periodic data as L, then the two have well-deﬁned Jordan periodic data and
+are C1+ conjugate if and only if their full Jordan periodic data coincide. Further, the
+condition of having the same full Jordan data as L is equivalent to DF being continuously
+cohomologous to the constant cocycle given by L.
+In Proposition A.1, we give an explicit description of to which Anosov automorphisms
+this theorem applies. In fact, the work of Kalinin, Sadovskaya, and Wang [ KSW23]g i v e s
+the following as an immediate corollary.
+COROLLARY 1.3. Suppose that L is as in Theorem 1.2. Then there exists k ∈ N such that if
+Fi sa si nT h e o r e m1.2 and F is a Ck small perturbation of L, then F is C∞ conjugate to L.
+This follows from the main theorem [KSW23, Th eorem 1.3], which is a ‘bootstrapping’
+result that says C1 conjugacies between a weakly irreducible Anosov automorphism and
+its perturbation are C∞ . The automorphisms we consider are weakly irreducible due to
+[KSW23, Lemma 3.1] and Proposition A.1.
+In the course of the proof of Theorem 1.2, we investigate how one may think about
+periodic data in this setting, which leads us to the Jordan periodic data, which we describe
+below.
+1.1. Jordan periodic data. Fix some λ> 0. If we have a cocycle taking values in the set
+of matrices
+Uλ =
+{[λa
+0 λ
+]
+| a ∈ R
+}
+,
+then knowing that two such cocycles have the same periodic data may not be enough
+to determine that they are cohomologous as GL (2, R) cocycles. In fact, if we have two
+continuous cocycles A and B over a map σ : /Sigma1→ /Sigma1taking values in Uλ, and all of the
+periodic data of A and B has a Jordan block, then their periodic data are identical because
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 4 =====
+1132 J. DeWitt
+all such Jordan blocks are conjugate. If we write these cocycles as
+[λα A
+0 λ
+]
+and
+[λα B
+0 λ
+]
+,
+then these two cocycles are continuously cohomologous as GL (2, R) cocycles precisely
+when there exists a constant C and a continuous map ψ : /Sigma1→ R such that
+αA = CαB + ψ ◦σ − ψ .( 2 )
+We then deﬁne [ αA] to be the set of all functions αB such that there is a solution C, ψ to
+equation (2). We call [αA] a cohomology class. One can check that [ αA]i sd e t e r m i n e db y
+the periodic data of αA,i . e .[αA] is determined by the sums of αA along all periodic orbits.
+We refer to [ αA]a st h e Jordan periodic data associated to A. For the formal deﬁnition
+of Jordan periodic data, see Deﬁnition 3.2 as well as the surrounding discussion, which
+explains the relationship between this cohomology class and periodic data.
+Not all cocycles are immediately recognizable as taking values in Uλ.W es a yt h a t
+a cocycle is Uλ-framed if it may be continuously conjugated into Uλ. If a cocycle is
+Uλ-framed and has a Jordan block, then its Jordan periodic data may be deﬁned, and indeed
+is well deﬁned independent of the conjugacy into Uλ.
+Our main result has two parts. The ﬁrst part shows that if an Anosov diffeomorphism
+has the same periodic data as an Anosov automorphism with a Jordan block, then it has
+well-deﬁned Jordan periodic data.
+PROPOSITION 1.4. Let L be an Anosov automorphism of T4 with a Jordan block and
+eigenvaluesλ, λ− 1. Suppose that F is a C2 Anosov diffeomorphism with the same periodic
+data as L. Then the stable and unstable bundles of F are trivial, and Uλ and Uλ− 1 -framed,
+respectively.
+In the case that the stable and unstable bundles admit such framings, one obtains [ αF
+u ]
+and [ αF
+s ] as before; we refer to these as the unstable and stable Jordan periodic data,
+respectively. We refer to the pair [αF
+u ]a n d[αF
+s ]a st h e full Jordan periodic data.
+The second part of the main result shows that if an Anosov diffeomorphism has the
+same Jordan periodic data as an Anosov automorphism, then the two are C1+-conjugate.
+PROPOSITION 1.5. Suppose that L is an Anosov automorphism of T4 with a Jordan block
+and that F is a C2+ Anosov diffeomorphism such that:
+(1) F has the same periodic data as L with respect to a conjugacy h;
+(2) the stable and unstable bundles of F are trivial and admit Uλ− 1 and Uλ-framings,
+respectively;
+(3) F has the same full Jordan periodic data as L.
+T h e nhi sa C1+ conjugacy between F and L.
+These immediately combine to prove Theorem 1.2.
+There are several directions for further investigation beyond the results of this paper.
+The ﬁrst is to consider what happens for higher dimensional Jordan blocks. In this paper,
+we have only addressed the case of a two-dimensional Jordan block. Another direction
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 5 =====
+Rigidity of Anosov automorphisms with Jordan Blocks 1133
+would also be to consider Anosov automorphisms with Jordan blocks that have more
+than two Lyapunov exponents. A third direction would be to move past rigidity of Anosov
+automorphisms to the case where the derivative cocycle is not cohomologous to constant.
+For example, the author does not know the answer to the following question, which would
+give a nonlinear generalization of Theorem 1.2.
+Question 1.6. Suppose that F and G are Anosov diffeomorphisms with the same periodic
+data as a linear Anosov diffeomorphism of T4 that has a Jordan block. If the full Jordan
+data of F and G coincide, then are F and GC1 conjugate?
+1.2. Outline of proof. The proof follows the following outline.
+(1) We introduce the ‘Jordan’ periodic data.
+(2) We do some preliminary work to produce a DF -invariant ﬂag E on which the Jordan
+periodic data are well deﬁned.
+(3) We show the existence of ‘slow’ foliations within each unstable leaf tangent to E and
+their unique integrability.
+(4) We show that the conjugacy h intertwines these slow foliations and is uniformly C1+
+along them.
+(5) We show that the ‘slow’ foliation is C1+ and that its holonomies are uniformly
+regular over long distances.
+(6) Using the de la Llave argument [ dlL02], we construct a C1 model of the conjugacy,
+h0, such that Fn ◦h0 ◦L−n → h uniformly. By studying the derivatives Fnh0L−n,
+we obtain that h is Lipschitz.
+(7) Once we know that h is suitably Lipschitz, we can differentiate it and use cocycle
+rigidity to conclude that its derivative is continuous and hence h is differentiable.
+2. Preliminaries
+For deﬁnitions concerning foliations, we refer the reader to [ PSW97], which contains a
+thorough discussion of the topic. We use the same terminology as that paper, which is
+standard. We now set some notation that will be of particular use in our argument. For
+a foliation F, we write F(x) for the leaf containing the point x. As an extension of this
+notation, if S is a set, then we write F(S) for ⋃
+x∈S F(x).I f F is a foliation with C1
+leaves that foliates a Riemannian manifold M and if x ∈ F(y),t h e nw ed e n o t eb ydF(x, y)
+the distance between x and y as measured along the immersed submanifold F,w h e r eF
+is endowed with the pullback Riemannian metric obtained from its inclusion into M.I f
+h : M → M is a map, then we say that h intertwines the foliations F and G if h(F(x)) =
+G(h(x)) for all points x ∈ M.
+We say that a map f is C1+ if there exists 0 <α< 1 such that the derivative of f is
+Cα. When we say that a map of a non-compact space is uniformly Cα, we mean that there
+exist α, δ> 0 such that, restricted to balls of radius δ,t h em a pi sCα Hölder with uniform
+constant.
+In the following argument, we will often work with uniform transversals to a C1
+foliation F ⊂ M. What we mean by this encompasses two things. First, that there is a
+uniform upper bound on the C1 norm of the transversals when we regard them as maps
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 6 =====
+1134 J. DeWitt
+of a disk into M. Second, that there is a uniform lower bound on the angle between the
+tangent space to γ and T F. In other words, when we work with uniform transversals,
+we are assuming a uniform upperbound on the C1 norm of these transversals as well as
+a uniform lower bound on the angle that they make with the foliation to which they are
+transverse.
+If W is a set such that each leaf of F intersects W at most once, then we write /Pi1W for
+the projection onto W along the leaves of F. Speciﬁcally, if z is a point such that z ∈ F(x)
+for some x ∈ W ,t h e n /Pi1W (z) = x.W es a yt h a ts e t sT and W are holonomy related if
+W ⊂ F(T ) and vice versa. We will typically use this notation for projections onto a curve
+contained in an unstable leaf that is transverse to a subfoliation of the the unstable foliation.
+For an Anosov diffeomorphism F,w ed e n o t eb yWu,F the unstable foliation of F.T h i s
+foliation has uniformly C2+ leaves when F is C2+.W ed e n o t eb yEu,F the unstable bundle
+of F; similarly we deﬁne the stable foliation Ws,F and the stable bundle Es,F .
+If E is an n-dimensional vector bundle over a manifold M,t h e nb ya framing of E,w e
+mean a choice of basis [ e1, ... , en]o f Ex for each x that varies continuously with x.F o r
+an Anosov automorphism L on T4 with a Jordan block, we have a translation invariant
+framing [eL
+1 , eL
+2 ] that presents the differential of DL|Eu,L as a Jordan block:
+[λ 1
+0 λ
+]
+.
+3. Jordan periodic data
+Suppose that A : /Sigma1→ GL(2, R) is a continuous function deﬁning a cocycle over a
+transitive hyperbolic systemσ : /Sigma1→ /Sigma1, such as a transitive Anosov diffeomorphism. The
+natural notion of equivalence for two cocycles is the notion of conjugacy.W es a yt h a tt w o
+continuous cocycles A1, A2 : /Sigma1→ GL(2, R) are continuously conjugate if there exists a
+continuous function B : /Sigma1→ GL(2, R) such that for all x ∈ /Sigma1,
+A2(x) = (B(σ(x)))− 1A1(x)B(x) .
+We analogously speak of two cocycles being Hölder conjugate if we may take B to be
+Hölder. We speak of other regularities analogously. Further, we say that a cocycle A is
+conjugate into a subgroup H ⊆ GL(2, R) if there exists B : /Sigma1→ GL(2, R) such that for
+every x ∈ /Sigma1,
+(B(σ(x)))− 1A1(x)B(x) ∈ H .
+Suppose that A is continuously conjugate to a cocycle taking values in the group Uλ ⊂
+GL(2, R) given by
+Uλ =
+{[λa
+0 λ
+]
+| a ∈ R
+}
+.
+We say that such a cocycle is reducible to a cocycle taking values in Uλ,o ri s Uλ-framed.
+By assumption, the cocycles of interest in this paper have non-trivial Jordan blocks in their
+periodic data. If a cocycle has a Jordan block in its periodic data for every periodic point,
+then we say that this cocycle has Jordan-full periodic data. Note that this happens when
+a cocycle has the same periodic data as a constant cocycle deﬁned by a Jordan block. We
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 7 =====
+Rigidity of Anosov automorphisms with Jordan Blocks 1135
+now consider the cohomology of such cocycles that are Hölder conjugate to Uλ and have
+Jordan-full periodic data. We may write such a cocycle as
+[λα A
+0 λ
+]
+(3)
+for αA : /Sigma1→ R a Hölder continuous function. The function αA characterizes A up to
+Hölder GL(2, R)-conjugacy: two Uλ-valued coycles A and B are Hölder conjugate if and
+only if αA and αB lie in the same ‘projective’ cohomology class. The following follows
+from a much more detailed result of Sadovskaya [ Sad13, Proposition 5.1], which gives a
+detailed description of GL(2, R) cocycles.
+LEMMA 3.1. Suppose that (/Sigma1, σ) is a transitive hyperbolic system and that A, B : /Sigma1→
+GL(2, R) are two Hölder continuous functions deﬁning cocycles reducible to Uλ that are
+Jordan-full. Then, A and B are Hölder conjugate if and only if there exists a constant
+C ̸= 0 and a Hölder continuous function φ: /Sigma1→ R such that
+αA = CαB + φ ◦σ − φ.
+In fact, if A and B take values in Uλ, then any conjugacy between A and B takes values in
+upper triangular matrices.
+By the usual abelian Livsic theorem, αA = CαB + φ ◦σ − φ if and only if there exists
+C such that for each periodic point p of period k, ∑k
+i=1 αA(σip) = C ∑k
+i=1 αB(σip).I f
+there is such a C, we say that the periodic data of A and B are in the same projective class.
+Given this preliminary, the following deﬁnition is well deﬁned.
+Deﬁnition 3.2. Suppose that A : /Sigma1→ GL(2, R) is a function deﬁning a cocycle over a
+transitive hyperbolic system that is reducible to Uλ.L e tP e r(/Sigma1)be the set of periodic
+points of /Sigma1. As before, associated to A is the function αA : /Sigma1→ R.W ed e ﬁ n et h eJordan
+periodic data of A to be the projective class of the function Per (/Sigma1)→ R that sends a
+periodic point p of period k to the sum of αA along its orbit:
+p ↦→
+k∑
+i=1
+αA(σi(p)).
+Lemma 3.1 shows that the Jordan periodic data characterize up to conjugacy the
+cocycles for which they are deﬁned.
+The discussion above deﬁnes the Jordan periodic data for cocycles over a single ﬁxed
+system. If we have two cocycles over different conjugate systems, then we may pull back
+the cocycle by the conjugacy. We then say that two cocycles have the same Jordan periodic
+data with respect to a conjugacy h if the pulled back cocycle has the same Jordan periodic
+data as the original cocycle.
+If F is an Anosov diffeomorphism such that Eu,F and Es,F are trivial bundles and admit
+Uλ and Uλ− 1 -framings, then we write [ αF
+u ] for the Jordan data of DF |Eu,F and [αF
+s ]f o r
+the Jordan data of the stable bundle. We call the pair the full Jordan data of F.
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 8 =====
+1136 J. DeWitt
+4. Preliminary reductions
+In this section, we give some preliminary reductions that bring us closer to producing the
+Uλ-framings we need to deﬁne the periodic data.
+LEMMA 4.1. Suppose L is as in Proposition A.1 and that F is a C2 Anosov diffeomorphism
+with the same periodic data as L. Then there exists a non-trivial Hölder continuous
+DF -invariant ﬂag
+0 ⊂ E ⊂ Eu,F
+and Hölder continuous Riemannian metrics on E and Eu,F /E such that with respect to
+these metrics, the differential of F has pointwise norms exactly λ. The same holds for Es,F .
+Proof. Because F has the same periodic data as L, the top and bottom Lyapunov exponents
+of the measures supported on periodic orbits are equal. Thus, we may apply the continuous
+amenable reduction [ KS13, Theorem 3.9] to conclude that either DF |Eu,F is conformal
+with respect to some Hölder continuous metric, or that there exists a Hölder continuous
+DF invariant ﬂag
+0 ⊂ E ⊂ Eu,F .( 4 )
+As DF |Eu,F has Jordan blocks in its periodic data, it cannot be conformal, and thus we
+obtain the non-trivial ﬂag in equation ( 4).
+We now appeal to our knowledge of the periodic data for the claim about the metric.
+Note that because E is one-dimensional, the map N : T4 → R× given by x ↦→∥ DxF|E∥
+deﬁnes a cocycle over F. Further, note that the assumption on periodic data implies
+that all the periodic data of N are a power of λ. Thus, by the abelian Livsic theorem
+[KH97,T he o r e m1 9 . 2 . 1 ] ,N is Hölder cohomologous to the constant cocycle λ,t h a ti s ,
+N = λ(φ◦F)φ− 1 for some Hölder φ: T4 → R×. If we replace the reference metric ∥·∥
+on E with the metric φ∥·∥ , then for this new metric, we have that the norm of DF |E is
+exactly λ at every point.
+Precisely the same considerations show that Eu,F /E admits a norm with the same
+property.
+Remark 4.2. The reason that the above lemma is phrased in terms of a norm instead of
+in terms of a cocycle conjugacy is that there is nothing telling us that the bundle E is
+orientable.
+Remark 4.3. After this point, we will always equip Eu,F with a metric obtained from
+Lemma 4.1. The lemma gives metrics on E and Eu,F /E. Here is how we can obtain a
+metric on Eu,F .T ob e g i n ,ﬁ xac o m p l e m e n tEc to E inside of Eu,F ; this can be done
+by taking the orthogonal complement to E with respect to any ﬁxed reference metric, for
+instance. Then we have a projection π : Eu,F → Eu,F /E. We may pull back the metric on
+Eu,F /E to Ec via π. We then obtain a metric on Eu,F by declaring the metrics on Ec and
+E to be orthogonal. We will use this choice of metric below.
+We now remark on some useful properties of the new metric we just constructed. The
+most useful property is that if we measure distance along unstable leaves by using this
+metric, then curves tangent to E will be uniformly stretched by a factor of exactly λ under
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 9 =====
+Rigidity of Anosov automorphisms with Jordan Blocks 1137
+the dynamics. Throughout the rest of the proof, we will measure distance along unstable
+leaves with respect to this new metric. The old and new metrics on Eu,F each make the
+leaves of the unstable foliation into metric spaces. A useful observation is that the (metric
+space) metrics on the leaves of the unstable foliation are bi-Lipshitz equivalent whether we
+choose to measure distance with the old or the new metric.
+We will continue using this metric until we can obtain a better one, which happens once
+we know that Eu,F is in fact Uλ-framed. See Remark 6.7.
+5. The ‘slow’ foliation
+Note that if we identify a Wu,L leaf with R2 by use of the framing [eL
+1 , eL
+2 ], then Wu,L has
+an invariant foliation tangent to the eL
+1 line ﬁeld. We call this foliation SL. We think of this
+foliation as ‘slow’ because vectors tangent to it grow at only rate O(λn) when we iterate
+L. The following proposition constructs an analogous ‘slow’ foliation SF that subfoliates
+the unstable foliation Wu,F .
+In this proof, we will use the notion of a quasi-isometry. Consider a surjection of
+metric spaces f : (M1, d1) → (M2, d2).T h e nf is an (A, B)-quasi-isometry if there exist
+constants A ≥ 1a n dB ≥ 0 such that for any x, y ∈ M1,
+1
+Ad1(x, y) − B ≤ d2(f (x), f( y) )≤ Ad1(x, y) + B.
+PROPOSITION 5.1. Suppose that F is a C2+ Anosov diffeomorphism that has the same
+periodic data as L ∈ SL(4, Z), which is hyperbolic and has a Jordan block, and that h
+is a conjugacy between F and L. Restricted to a Wu,F leaf, the bundle spanned by eF
+1
+is uniquely integrable and tangent to a foliation SF , which has uniformly C1+ leaves.
+Further, h intertwines SF with the foliation SL.
+Proof. Throughout this proof, we endow M with the metrics obtained from Lemma 4.1 as
+described in Remark 4.3.B y[ DeW21, Cor ollary 2.7], there exist uniform constants A, B
+such that for all x ∈ T4, h|Wu,L(x) : Wu,L(x) → Wu,F (h(x)) is an (A, B)-quasi-isometry.
+Note that
+[λ 1
+0 λ
+]n
+= λn
+[1 n/λ
+01
+]
+.
+This implies that if x ∈ Wu,L(y) and x/∈ SL(y), then there exists C> 0 such that
+dWu,L(Ln(x), Ln(y)) ≥ Cλnn.
+As h is a quasi-isometry, this implies that
+dWu,F (Fn(h(x)), Fn(h(y))) = dWu,F (h(Ln(x)), Ln(y)) ≥ A− 1Cλnn − B.( 5 )
+However, if q ∈ Wu,F (r),a n d q and r are two points connected by a curve tangent to E
+contained within Wu,F (r),t h e n
+dWu,F (Fn(q), Fn(r)) ≤ λn (6)
+because ∥DF |E∥= λ when we use the metric from Lemma 4.1. Thus, if q and r are
+connected by such a curve, then h− 1(q) and h− 1(r) must lie in the same SL leaf inside
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 10 =====
+1138 J. DeWitt
+of Wu,L because otherwise, equation ( 6) would contradict equation ( 5). This implies that
+the curves inside an unstable leaf tangent to E uniquely integrate to a foliation. Further,
+this foliation has uniformly C1+ leaves because the E distribution is uniformly Hölder by
+Proposition 4.1.
+6. Differentiability along the slow foliation and the Jordan periodic data
+The approach we follow for showing thath is differentiable along SL is not new and follows
+exactly the same argument as in [DeW21, §2.5]. Consequently, we will just give an outline
+of the idea. To establish differentiability of h along SL, we will use the following result,
+which is a C1+ version of Saghin and Y ang [SY19, Theorem G]. All the deﬁnitions used
+in this section and a thorough discussion may be found in [ DeW21, §2.5].
+Deﬁnition 6.1. Let F be an expanding foliation for aC1+ diffeomorphism f.A n f -invariant
+measure μ is a Gibbs expanding state along F if for any foliation chart of F,t h e
+disintegration of μ along the plaques of the chart is equivalent to the Lebesgue measure
+o nt h ep l a q u ef o rμ-almost every plaque.
+Using this deﬁnition, we may state the following.
+LEMMA 6.2. [ DeW21, Lemma 13] Let M be a smooth closed manifold and let
+f , g ∈ Diff1+(M).L e t F be a one-dimensional expanding foliation for f, and let G be
+an expanding foliation for g such that F and G have uniformly C1+ leaves. Let μ be a
+Gibbs expanding state of f along F. Suppose that f and g are topologically conjugate by a
+homeomorphism h and that h intertwines F and G. Then the following two conditions are
+equivalent:
+(1) ν := h∗(μ) is a Gibbs expanding state of g along the foliation G;
+(2) h restricted to each F leaf within the support of μ is uniformly C1+.
+The main thing that needs to be veriﬁed to apply the previous lemma is that the SF
+foliation is absolutely continuous. This is immediate from the following lemma because
+∥DF |E∥= λis constant. This lemma follows from work of Ledrappier and Y oung [LY85].
+An equivalent statement that applies to our setting appears in [ SY19, Theorem 2.5]
+LEMMA 6.3. Let F be a C1+ diffeomorphism and let μ be an F-invariant measure.
+Suppose that F is an expanding foliation for F. Suppose thatξis an increasing measurable
+partition subordinate to F and μ. Then the conditional measures of μ are absolutely
+continuous on the leaves of F if and only if
+Hμ(F− 1ξ| ξ)=
+∫
+log ∥DF |T F ∥ dμ,
+where Hμ(F− 1ξ| ξ) is the conditional entropy of F− 1ξ given ξ.
+The previous two lemmas then combine to show the following.
+PROPOSITION 6.4. The conjugacy h in Proposition 5.1 is uniformly C1+ on leaves of the
+SL foliation.
+Using this differentiability, we can show the following proposition.
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 11 =====
+Rigidity of Anosov automorphisms with Jordan Blocks 1139
+PROPOSITION 6.5. The bundle E in Lemma 4.1 is trivial.
+Proof. Recall the linear frame [ eL
+1 , eL
+2 ]o f Eu,L. Because h intertwines SL and SF ,a n di s
+C1+ along these foliations, we see that Dh(eL
+1 ) is a continuous framing of E; hence, E is
+trivial.
+We can now prove Proposition 1.4,w h i c hs a y st h a ti fF has the same periodic data
+as L, which has Jordan blocks, then the stable and unstable bundles of F are Uλ and
+Uλ− 1 -framed, respectively.
+Proof of Proposition 1.4. By Proposition 6.5, the bundle E from Lemma 4.1 has a framing
+˜eF
+1 . The periodic data for DF |E is exactly multiplication by λ. Hence, by application of a
+Livsic argument, we can rescale the ˜eF
+1 framing by a Hölder function to ﬁnd a new framing
+eF
+1 with the property that
+DxFeF
+1 (x) = λeF
+1 (F(x)) .
+We now show that Eu and Eu/E are trivial. By Proposition B.3, the bundle Eu is
+orientable, and hence, by [MS74, Problem 12-A],w1(Eu) = 0. However,Eu is isomorphic
+to Eu/E ⊕ E,s o w1(Eu) = w1(Eu/E) ⊕ w1(E) by additivity of the ﬁrst Stiefel–Whitney
+class, see [ MS74, §4]. Thus, we ﬁnd that w1(Eu/E) = 0, and hence this bundle is trivial.
+This also implies that Eu is trivial as it is the sum of trivial bundles.
+Thus, we see that Eu,F /E also admits a non-vanishing section eF
+2 because it is trivial.
+By the same Livsic argument as before, we can rescaleeF
+2 so that DF acts on this section as
+multiplication by λ.L e teF
+2 be a Hölder continuous section of Eu projecting to eF
+2 along E.
+Then, with respect to the framing [eF
+1 , eF
+2 ], DF |Eu is Uλ-framed. The same considerations
+apply to the stable bundle.
+Deﬁnition 6.6. In the following, we will say that an Anosov diffeomorphism is Uλ-framed
+if the following hold:
+(1) F is in the same homotopy class as an Anosov automorphism L ∈ SL(4, Z) with a
+Jordan block;
+(2) the stable and unstable bundles of F are trivial;
+(3) DF |Eu,F and DF |Es,F admit Hölder continuous Uλ-a n d Uλ− 1 -framings, where
+λ> 1 is an eigenvalue of L. We refer to the unstable framing as [ eF
+1 , eF
+2 ].
+Remark 6.7. Once we know that the bundleEu,F is Uλ-framed, for some framing [eF
+1 , eF
+2 ],
+we may then choose a new metric on Eu,F as in Remark 4.3 by declaring eF
+1 and eF
+2 to
+be unit length and orthogonal. This new metric will satisfy all of the properties of the
+metric from that remark, but will have the additional property that it makes [ eF
+1 , eF
+2 ]a n
+orthogonal frame. We will use this metric below.
+7. Regularity of the ‘slow’ foliation
+To upgrade the regularity of the ‘slow’ foliation, we will use the normal forms developed
+by Kalinin and Sadovskaya. The following theorem is a combination of [ Kal24, Theorem
+4.6, Corollary 4.8, and Remark 4.2]. In the following theorem, the required estimate on ϵ is
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 12 =====
+1140 J. DeWitt
+particularly simple because we have assumed that r is bounded away from 1 (see [ Kal24,
+Corollary 4.8]).
+THEOREM 7.1. (Non-stationary linearization) Let F be a Cr , r ∈ (3/2, ∞ ] diffeomor-
+phism of a smooth manifold X and let W be an F-invariant topological foliation of X
+with uniformly Cr leaves. Let χ> 0 and
+0 <ϵ<χ / 5.
+Suppose that the linear extension DF |T W satisﬁes
+eχ−ϵ∥v∥≤∥ DxF(v) ∥≤ eχ+ϵ∥v∥.( 7 )
+Then, there exists a family {Hx}x∈X of Cr diffeomorphisms Hx : W(x) → Tx W(x)
+satisfying Hx(x) = 0 and D0Hx = Id such that for each x ∈ X,
+DxF|T W(x) = HF(x) ◦F ◦H− 1
+x : Tx W → TF(x) W(F(x)) .( 8 )
+The maps Hx restricted to balls of uniform radius depend continuously on x ∈ X in
+the C⌊r⌋ topology and have derivative that is uniformly r −⌊ r⌋ Hölder. Further, for each
+y ∈ Wx ,t h em a pHy ◦H− 1
+x : Tx W → Ty W is afﬁne.
+We now upgrade the regularity of the SF foliation. The idea behind the subsequent
+proofs is to use that the normal forms coordinates are uniformly bilipschitz on small
+balls. This allows us to compare the rate at which curves shrink in both the normal forms
+coordinates and in the ambient manifold.
+PROPOSITION 7.2. Suppose that F is a C2+ Anosov diffeomorphism that is Uλ-framed as
+in Deﬁnition 6.6 and has the same Jordan data as L. Then, the SF foliation is uniformly
+C2+ when restricted to Wu,F leaves.
+Remark 7.3. The following proof uses the normal forms coordinates. One could also prove
+this by using that the cocycle holonomies restricted to leaves are C1+ and show that the eF
+1
+distribution is invariant under these holonomies by studying the map FnHF−nxF −nyF−n,
+where Hxy denotes the cocycle holonomy between two points x and y in the same unstable
+leaf.
+Proof. To begin, let us explain why normal forms coordinates exist for the Wu,F foliation
+using Theorem 7.1. The main thing to check is equation ( 7). Due to our assumption on the
+periodic data, from [ Kal11, Theorem 1.3], it follows that for each ϵ> 0, there is cϵ > 0
+such that for any v ∈ Eu,F ,
+cϵeχ−ϵ∥v∥ < ∥Dxf( v)∥ <c − 1
+ϵ eχ+ϵ∥v∥.
+We can then eliminate the constant cϵ by passing to an adapted metric. Thus, we see that
+the coordinates from the conclusion of Theorem 7.1 exist. We call these normal forms
+coordinates.
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 13 =====
+Rigidity of Anosov automorphisms with Jordan Blocks 1141
+We now use the normal forms to ﬁnish the proof. Note that if γ : [0, 1] → M is a C1
+curve tangent to the eF
+1 distribution, then for some C = len(γ ),w eh a v e
+dWu,F (F−nγ(0), F−nγ(1)) ≤ Cλ−n,( 9 )
+because DF − 1(eF
+1 ) = λ− 1eF
+1 . Note that for any x ∈ M, the Riemannian distance on
+Wu,F
+loc (x) and the Euclidean distance on Wu,L with respect to the normal forms chart
+on Wu,F are uniformly bi-Lipschitz as the normal forms depend continuously on the
+basepoint in the C1 topology.
+Note that Tx Wu,F comes equipped with the framing [ eF
+1 , eF
+2 ], which gives coordinates
+on it as a manifold and as a vector space. We will always use this framing to express
+differentials of maps as matrices. As explained in Remark 6.7, we may choose an adapted
+metric on Tx Wu,F that makes eF
+1 and eF
+2 orthonormal.
+Note that
+[λ 1
+0 λ
+]−n
+= λ−n
+[1 −nλ− 1
+01
+]
+.
+Hence, by equation ( 8), F−n,w h e nv i e w e da sam a pTx Wu,F → TF−n(x) Wu,F in normal
+forms coordinates, is
+HF−n(x)F−nH− 1
+x = λ−n
+[1 −nλ− 1
+01
+]
+.( 1 0 )
+Suppose that γ : [0, 1] → Tx Wu,F is non-constant in the eF
+2 direction. Then, it is
+immediate from equation ( 10) that there exists C1 such that
+dTF−n(x) Wu,F (HF−n(x)F−nH− 1
+x (γ (0)), HF−n(x)F−nH− 1
+x (γ (1))) ≥ C1nλ−n.( 1 1 )
+Consider now a curve η in Wu,F that is tangent to the eF
+1 distribution. Then, as in
+equation (9), there exists C2 such that
+dWu,F (F−n(x))(F−n(η(0)), F−n(η(1))) ≤ C2λ−n.
+Note that under backwards iteration, the curve F−n ◦γ lies in a uniformly small ball.
+There exists C3 such that on such uniformly small balls, Hx is C3-bi-Lipschitz. Thus,
+dTF−n(x) Wu,F (HF−n(x)F−n(η(0)), HF−n(x)F−n(η(1))) ≤ C3C2λ−n.( 1 2 )
+Thus, Hxη must lie tangent to the linear eF
+1 foliation on Tx Wu,F because otherwise,
+equation (11) would contradict equation ( 12).
+This implies that the linear foliation of Tx Wu,F tangent to eF
+1 pushes forward by Hx to
+the SF foliation. Thus, the SF foliation has the same regularity as Hx ,a si ti st h ei m a g e
+under Hx of the eF
+1 foliation. As the maps Hx are uniformly locally C2+,t h i si m p l i e st h a t
+SF is a uniformly C2+ foliation subordinate to Wu,F .
+We may consider holonomies along the SL foliation between distant uniform transver-
+sals T and W. As the holonomies of the SL foliation are isometries, this implies that the
+resulting map T → W is uniformly continuous independent of the distance between T
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 14 =====
+1142 J. DeWitt
+and W along SL leaves. We will now develop a sequence of lemmas and prove that the
+analogous property holds for SF .
+For θ∈ [0, π], we say that a transversal W is θ-transverse to SF if at every point, we
+have that W makes an angle of at least θ with SF . The following says that transversals to
+the SF foliation travel between uniformly distant leaves in uniform time. To describe the
+distance between leaves, we use the notion of the Hausdorff distance between two sets in
+a metric space (M, d).T h eHausdorff distance is deﬁned as
+dH (X, Y) = max
+{
+sup
+x∈X
+d(x , Y) ,s u p
+y∈Y
+d(y , X)
+}
+.
+If X and Y are two sets which both lie inside a leaf W of another foliation W, then we write
+dW
+H (X, Y) = max
+{
+sup
+x∈X
+dW (x, Y) ,s u p
+y∈Y
+dW (y, X)
+}
+,
+where dW is the distance along the leaf W with the W term’s pullback metric.
+We will prove the following by covering the foliation with tiny charts in which the claim
+is trivial.
+LEMMA 7.4. Suppose that F is Uλ-framed. For anyD> 0, θ∈ (0, π/2],t h e r ee x i s tC> 0
+such that if x ∈ Wu,F (y) and dWu,F
+H (SF (x), SF (y)) < D,t h e na n yθ-uniform transversal
+from x to SF (y) hits SF (y) in distance at most C.
+Before we begin the proof, we introduce some deﬁnitions. As a reminder, a local product
+neighborhood for a point in a foliation is a foliation chart on a neighborhood of the point.
+Let B
+n
+r (0) denote the ball of r radius in Rn. For what follows, we will work with foliation
+charts whose domain is of the form φ:[ −a, b] × Bn− 1
+r (0) ⊂ Rn → M; the reason for this
+is so that we can refer to the ‘top’ and ‘bottom’ plaques of the chart, by which we mean
+φ({−a}× Bn− 1
+r (0)) and φ({b}× Bn− 1
+r (0)).A st h eSF foliation is transversely orientable,
+we require that this ordering of the end leaves agrees with the transverse orientation on the
+foliation.
+As the SL foliation restricted to Wu leaves is essentially the same as a foliation of
+Euclidean R2 by parallel lines, it makes perfect sense to speak of the vertical ‘distance’
+between two leaves. This distance is precisely equal to the Hausdorff distance between two
+leaves, though we refer to it as vertical as we are thinking of it in this geometric way.
+Deﬁnition 7.5. For θ∈ (0, π/2], t
+0 > 0, ϵ> 0, a (θ, t0, ϵ)-chart for a point x is a local
+product neighborhood for the SF foliation such that x lies in the middle of the bottom
+plaque of the neighborhood and any unit speed transversal beginning from x that is
+θ-transverse hits the top leaf of the foliation chart in at most t0 time. Further, we require
+that h carries the top and bottom plaques of the chart to leaves of the SL foliation at vertical
+distance at least ϵ from each other.
+Proof of Lemma 7.4. To begin, we show that for every θ∈ (0, π], there exist tθ, ϵ> 0
+such that every point x ∈ T4 is contained in the bottom leaf of a (θ, tθ, ϵθ)-chart. To prove
+this, we essentially use two claims, one about the uniform continuity of h and the other
+about the uniform C1-ness of SF .
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 15 =====
+Rigidity of Anosov automorphisms with Jordan Blocks 1143
+(1) Note that because h is uniformly continuous, for any ϵ> 0, there exists ϵL > 0s u c h
+that if P1 and P2 are two bounded plaques of the SF foliation in the same Wu,F leaf
+with d(P1, P2)>ϵ ,t h e nh(P1), h(P2) lie in leaves of the SL foliation at vertical
+distance at least ϵL > 0a p a r t .
+(2) For a ﬁxed θ∈ (0, π], because the SF foliation is uniformlyC1, for every sufﬁciently
+small ϵ> 0, there exist tϵ,θ > 0a n dδϵ,θ > 0 such that every point x is contained in
+the middle of the bottom plaque of a product neighborhood where a θ-transversal
+beginning from x hits the top plaque in at most tϵ,θ time and, in addition, d(P1, P2)>
+δϵ,θ.
+By combining these two statements, we obtain that for any θ> 0, there exist tθ, ϵθ > 0
+and a cover of the SF foliation by (θ, tθ, ϵθ)-charts. Further, note that as the SF foliation
+is transversely orientable, we may choose these charts to agree with this transverse
+orientation.
+We now show that uniform transversals uniformly travel ‘vertically’. Consider a
+θ-transverse curve γ to the SF foliation passing through a point x.L e t B be a
+(θ, tθ, ϵθ)-neighborhood for x and let P1, P2 be the top and bottom plaques of B.N o t e
+that the vertical distance between h(P1) and h(P2) is at least ϵθ. Thus, we see that as γ
+traverses B, the vertical height of h(γ )increases by ϵθ. This implies that h(γ (0)) and
+h(γ (ntθ)) are vertical distance at least nϵθ apart.
+If SF (x) and SF (y) are at Hausdorff distance at most D apart, then because h is a
+quasi-isometry, there exists D′ > 0 such that dWu,L
+H (h(SF ), h(SF )) < D′. Thus, we see
+that a unit-speed uniform θ-transversal starting at the SF (x) leaf will reach the SF (y) leaf
+in at most ⌈D′ϵ− 1
+θ tθ⌉ time. The claim follows.
+We may now prove the following.
+LEMMA 7.6. Suppose that F is Uλ-framed, then the holonomies of the SF foliation are
+uniformly C1. That is, if W and T are two uniform C1 holonomy related transversals,
+then the map /Pi1T ,W : T → W has uniformly continuous Jacobian, which is bounded
+independent of the transversals.
+The approach of the following proof is to use normal forms coordinates to linearize the
+SF foliation and study how transversals to the SF foliation are stretched by its holonomies.
+Because SF is intertwined with the SL foliation, which has isometric holonomies, the
+holonomies of SF can only stretch curves a limited amount transverse to the SF foliation.
+This observation then implies the result.
+Proof. By Lemma 7.4, there exists C1 > 0s u c ht h a ti fT is a transversal to the SF foliation
+of length less than 1, and W is a uniform transversal to the SF foliation, then /Pi1W (T ) has
+length less that C1. This is immediate because /Pi1W (T ) is itself a uniform transversal.
+Let Hx : Wu,F (x) → Tx Wu,F (x) be the normal forms coordinates as in Theorem
+7.1. On balls of uniform radius r0 ≫ C1, the normal forms coordinates are uniformly
+D-bi-Lipschitz for some D ≥ 1. By that theorem, we have in addition that if x ∈ Wu,F (y),
+then the map Hy ◦H− 1
+x : Tx Wu,F → Ty Wu,F is afﬁne. In fact, its differential, with
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 16 =====
+1144 J. DeWitt
+respect to the [eF
+1 , eF
+2 ] framing, is of the form
+[ab
+0 c
+]
+,( 1 3 )
+because the normal forms intertwine the SF foliation with the linear foliation of Tx Wu,F
+tangent to eF
+1 as we saw in the proof of Proposition 7.2.
+Fix a small number 0 <ϵ ≪ r0. Suppose that I is a uniform transversal to the SF
+foliation through the point x that has length at least ϵ, but length less than r0.
+Let Ix = Hx ◦I . Then, Ix is a curve in Tx Wu,F . Suppose that dIx/dt is α(t)eF
+1 +
+β(t)eF
+2 . Because Ix has length at least D− 1ϵ and is uniformly transverse to SF ,t h e r e
+exists a uniform constant C2 > 0 such that
+∫
+β(t) dt ≥ C2D− 1ϵ.( 1 4 )
+Consider a point y ∈ Wu,F such that y ∈ SF (I) .I fw ev i e wIx in the Ty Wu,F normal
+coordinates, then Ix has differential DHy H− 1
+x ◦Ix , which by equation (13) has differential
+with eF
+2 component equal to
+cβ(t)eF
+2 .
+Let J be a curve through 0 in Ty Wu,F tangent to eF
+2 .N o t et h a tH− 1
+y J is a uniform
+transversal to the SF foliation. As a curve in Ty Wu,F , /Pi1J Hy H− 1
+x Ix has tangent cβ(t)eF
+2 .
+Thus, by equation ( 14),
+len(/Pi1J HyI) ≥ cC2D− 1ϵ.
+However, by the uniform D-bi-Lipschitzness of normal coordinates, this implies that
+len(/Pi1HyJ I) ≥ cC2D− 2ϵ.
+However, by the ﬁrst paragraph of this proof, the length of this curve is at most C1. Thus,
+C1 ≥ cC2D− 2ϵ,
+so
+c ≤ C1C− 1
+2 D2ϵ− 1.
+Note that this estimate is independent of x and y. This implies that in normal forms
+coordinates, the holonomies are uniformly C1 because the entry c in equation ( 13)i s
+uniformly bounded. However, this implies that the same result holds for theSF holonomies
+because the normal forms coordinates are uniformly locally C2+.
+The previous discussion shows that the distribution deﬁned by the vector ﬁeld eF
+1 is
+C1+; however, this is not the same as the vector deﬁning the distribution being C1.W e
+now upgrade the regularity by using regularity for solutions of Livsic equations following
+[NT98, Theorem 2.2].
+LEMMA 7.7. Suppose that F is Uλ-framed. Then, the vector ﬁeld eF
+1 is uniformly C1+
+along Wu,F .
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 17 =====
+Rigidity of Anosov automorphisms with Jordan Blocks 1145
+Proof. The vector ﬁeld eF
+1 is only Hölder continuous, but we would like a C1+ version
+of it. So, let ˜eF
+1 be a C1+ rescaling of eF
+1 , which exists because eF
+1 is tangent to a C1+
+distribution by Lemma 7.2.
+Let [eF
+1 ] denote the subspace tangent to eF
+1 . Then consider the C1+ cocycle A : T4 → R
+arising from DF |[eF
+1 ] : T4 → R that sends x to the number η(x) such that DF˜eF
+1 =
+eη(x)˜eF
+1 .N o t et h a ti fp is a periodic point of period p,t h e n∑n
+i=1 A(Fi(p)) = n ln λ.
+We claim that, in fact, A is cohomologous to constant via a transfer functionφ: T4 → R
+that is uniformly C1+ along Wu leaves. This follows from the argument in [ NT98,
+Theorem 2.2], which we now sketch. If we view the function A as deﬁning a cocycle
+A on the space T4 × R, then this cocycle is partially hyperbolic because R is abelian.
+Hence, the unstable foliations lift to T4 × R and these are uniformly C1+ foliations Wu,A.
+If B is another uniformly C1+R-valued cocycle along Wu,F leaves arising from a function
+B : T4 → R, then we similarly get uniformly C1+ foliations Wu,B. One can then check
+that the transfer function carries Wu,A leaves to Wu,B leaves. As each of these foliations
+has uniformly C1+ leaves, we see by the implicit function theorem that a transfer function
+must be uniformly C1+ as well.
+Using the function φ to rescale ˜eF
+1 , we may ﬁnd a new vector ﬁeld ˆeF
+1 that is uniformly
+C1+ on Wu,F leaves and satisﬁes DF ˆeF
+1 = λˆeF
+1 . It sufﬁces to now check that eF
+1 coincides
+with ˆeF
+1 .N o t et h a t ˆeF
+1 = β(x)eF
+1 for some continuous function β. Then computing
+DFβ(x)eF
+1 in two different ways, we ﬁnd
+λβ(x)eF
+1 (σ(x)) = λβ(F(x))eF
+1 ,
+and hence β is constant on orbits and hence is constant. Thus, in fact ˆeF
+1 = ce :1 F and so
+eF
+1 was C1+ all along.
+LEMMA 7.8. Suppose that F is Uλ-framed and let φt be the ﬂow along the eF
+1 vector ﬁeld,
+that is, tangent to slow leaves. Then,
+φt = Fn ◦φλ−nt ◦F−n.( 1 5 )
+Proof. Both sides of the equality are ﬂows of C1 vector ﬁelds, so it sufﬁces to check that
+they have the same generating ﬁeld, that is, the right-hand side is generated by eF
+1 .
+If we write φt in coordinates as (x, y) ↦→ (x, y) + teF
+1 + O(t 2), then we see that the
+composition takes
+(x, y) ↦→ F−n(x, y)
+↦→ F−n(x, y) + tλ−neF
+1 + O((λ−nt)1+α)
+↦→ (x, y) + teF
+1 + O(nλ−nαt1+α),
+as desired.
+The following proof is the only place where we use that the Jordan periodic data of
+F are exactly those of L. It seems that, in general, if G has Jordan periodic data αG
+and
+∫
+αG d vol > 0, then the following proof can still be carried out. It is unknown
+to the author whether this property necessarily holds for the Jordan data of all Anosov
+diffeomorphisms with the periodic data of L.
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 18 =====
+1146 J. DeWitt
+LEMMA 7.9. L e tFb eUλ-framed. Let φt be the ﬂow along eF
+1 and suppose that F has the
+same Jordan data as L. Then, the ﬂow φt carries uniform C1 transversals to SF to uniform
+C1 transversals to SF .
+Proof. To do this, we will study the differential of the ﬂow φt in the [eF
+1 , eF
+2 ] framing. We
+will do so by ﬁrst studying the differential of the ﬂow φt . We write all differentials below
+with respect to the [ eF
+1 , eF
+2 ] framing.
+Because eF
+1 is a C1+ vector ﬁeld, we have that the ﬂow map φt(x) is C1+ in time and
+initial conditions. (The author is unaware of a reference in the literature for this claim;
+however, one can show this by reading, for example, [ Izz99] and keeping track of the
+Hölder constant during Picard iteration.) Thus, in a coordinate chart, we may write Dφt =
+Id +O(tσ) for the differential of the ﬂow of time t for some 0 <σ< 1. We will only be
+interested in this differential for increasingly short times λ−nt.
+We now ﬁnd an expression for Dφt in terms of the [ eF
+1 , eF
+2 ] framings. We can always
+choose our coordinates to be tangent to the vector ﬁelds [ eF
+1 , v], where v is some smooth
+transverse ﬁeld to eF
+1 . Then, v = αeF
+1 + βeF
+2 and we can insist that both α and β are
+Cσ-Hölder and that β is uniformly bounded below by transversality. For ease of notation,
+let x be the initial point and y = φλ−nt .
+To change into t he [eF
+1 , eF
+2 ] framing, we must conjugate Id +O(λ−nσtσ) as follows:
+[1 −α(y)β− 1(y)
+0 β− 1(y)
+]
+[Id +O(λ−nσtσ)]
+[1 α(x)
+0 β(x)
+]
+=
+[1 −α(y)β− 1(y)
+0 β− 1(y)
+][ 1 α(x)
+0 β(x)
+]
++ O(λ−nσtσ)
+=
+[1 α(x) − α(y)β− 1(y)β(x)
+0 β− 1(y)β(x)
+]
++ O(λ−nσtσ) .
+Note that d(x , y) = O(λ−nt).A s β is bounded below, this implies that
+β− 1(y)β(x) = 1 + O(λ−nσtσ).
+Using a Hölder estimate on α and canceling gives that with respect to the [ eF
+1 , eF
+2 ]
+framings,
+Dφλ−nt = Id +O(tσλ−nσ)
+for some 0 <σ< 1.
+Hence, with respect to the framings, using the relation φt = Fn ◦φλ−nt ◦F−n,w eﬁ n d
+Dφt =
+[λn nλn− 1
+0 λn
+]
+(Id +O(tσλ−σn))
+[λ−n −nλ−n− 1
+0 λ−n
+]
+.
+However, this is converging to Id as n →∞ . Thus, we see that for all times t, Dφt is the
+map that sends eF
+1 ↦→ eF
+1 and eF
+2 ↦→ eF
+2 at corresponding base points.
+In particular, this implies the result because it shows that curves that are uniformly
+transverse to the ﬂow direction eF
+1 remain uniformly transverse to eF
+1 and are not distorted
+in length as the ﬁelds eF
+1 and eF
+2 are uniformly bounded above and below in length.
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 19 =====
+Rigidity of Anosov automorphisms with Jordan Blocks 1147
+Remark 7.10. It is perhaps not surprising that the eF
+2 ﬁeld is preserved by φt because the
+frames [ce :1 F , ce :2 F ] are the only frames that present the cocycle as a constant Jordan
+block.
+7.1. The conjugacy is Lipschitz. Now that we have established stronger properties of the
+SF foliation, we will use these to show that h is Lipschitz.
+LEMMA 7.11. Suppose that F is C2+, Uλ-framed, and has the same Jordan periodic data
+as L. Then, h is uniformly Lipschitz restricted to each unstable leaf.
+The proof of Lemma 7.11is based on exhibiting h as the uniform limit of a sequence
+of uniformly C1 functions. The main difﬁculty we encounter is that we cannot establish
+regularity of h in a single step. Instead, we establish regularity of h incrementally by
+studying its regularity in some directions before others. As an ansatz, suppose we knew
+that h was differentiable with
+Dzh =
+[a(z) b(z)
+0 c(z)
+]
+,
+with respect to the framings [ eL
+1 , eL
+2 ]a n d[ eF
+1 , eF
+2 ]. It is easy to deduce that a(z) = C for
+some number C because h intertwines the SL and SF foliations. It is straightforward to
+check that c(z) = C as well by using that b(z) is uniformly bounded. Below, we study the
+‘differential’ of h in this manner building up information little by little. We ﬁrst study the
+possible diagonal ‘entries’ of the matrix representing the derivative of h and then study
+the ‘upper right-corner’ of Dh.
+What makes this approach difﬁcult is that the existence of a particular partial derivative
+is not a property that is invariant under coordinate change. To see what is meant by
+this, consider a function φ: R2 → R that has a partial derivative ∂xφ at every point but
+does not have the partial derivative ∂yφ deﬁned at any point. If we precompose φ by a
+diffeomorphism f : R2 → R2,t h e nφ ◦f : R2 → R may not have any partial derivatives
+at any point. This may happen, for instance, if f does not preserve the leaves of the foliation
+of R2 by horizontal lines. Naturally,φ ◦f still has derivatives along some curves. However,
+the existence of the derivative is not guaranteed by merely knowing that the curve is tangent
+to a particular direction. For example, there are smooth curves γ1, γ2 : (− 1, 1) → R2 such
+that ˙γ1(0) =˙γ2(0),w h e r eφ ◦γ1 has a derivative at 0 yet φ ◦γ2 is not differentiable at 0.
+For instance, consider a curve γ2 that is tangent to a horizontal line but only to ﬁrst order.
+We will deal with the issues alluded to in the above paragraph by using foliations to
+control the directions in which we differentiate. By proceeding in this manner, we can still
+recover the information we need by studying a derivative normal to the foliations
+SL and
+SF , which we introduce in Deﬁnition 7.16.
+This section relies on the following lemma of de la Llave. The version we give below is
+a slight rephrasing of the original adapted to our setting. See [GKS20] for a recent example
+of the use of this lemma in a similar context.
+LEMMA 7.12. [dlL02, Theorem 2.1] Let F , G be C1 Anosov diffeomorphisms of a closed
+manifold M. Let h be a homeomorphism of M such that:
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 20 =====
+1148 J. DeWitt
+(1) h ◦F = G ◦h.
+Let k be a map—not necessarily invertible or continuous—such that:
+(2) k(
+Wu,F
+x ) ⊂ Wu,G
+h(x) ; and
+(3) sup x dWu,G(k(x), h(x)) < ∞ .
+Then,
+h(x) = limn→∞ G−n ◦k ◦Fn(x),
+and the limit is reached uniformly with respect to the distances dWu,F and dWu,G .
+As the convergence in Lemma 7.12 is uniform, we can use it to study whether the
+conjugacy is Lipschitz by exhibiting the conjugacy as a uniform limit of uniformly
+Lipschitz functions.
+In the following, we will write Dh(eL
+1 ) to mean the derivative of h in the direction of eL
+1
+along the foliation SL. By Proposition 6.4, this derivative exists. Note that when we make
+use of this notation, we are not asserting that h is differentiable.
+LEMMA 7.13. There exists C1 ̸= 0 such that DheL
+1 = C1eF
+1 . Without loss of generality,
+we may assume that C1 = 1.
+Proof. By Proposition 6.4, we know that this derivative exists and that
+Dh(eL
+1 ) = c(x)eF
+1
+for some Hölder function c(x). Because
+F ◦h = h ◦L,
+we can differentiate this equation along SL on both sides and use the chain rule to ﬁnd that
+λc(x)eF
+1 = λDh(eL
+1 ) = Dh(eL
+1 )λ= c(L(x))λeF
+1 .
+Thus, c(x) is constant on orbits. Hence, as c(x) is continuous, it is constant. To ensure that
+C1 = 1, we replace [eF
+1 , eF
+2 ]w i t h[C1eF
+1 , C1eF
+2 ]. Note that this does not change the Jordan
+periodic data or the function α representing the data in this framing.
+We now show our ﬁrst smoothing lemma.
+LEMMA 7.14. Suppose that F is C2+ and Uλ-framed. There exists a function h0 : M → M
+such that, writing hx for the restriction h0|Wu,L(x) , we have that:
+(1) h0 intertwines the Wu,L and Wu,F foliations as well as the SL and SF foliations;
+(2) hx is C1 and is uniformly C0 close to h with respect to dWu ;
+(3) with respect to the framings [eL
+1 , eL
+2 ], [eF
+1 , eF
+2 ], the differential of h0 is
+[1 b(x)
+0 a(x)
+]
+,
+where a is a uniformly bounded continuous function on each leaf and the uniformity
+is independent of the leaf.
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 21 =====
+Rigidity of Anosov automorphisms with Jordan Blocks 1149
+Before beginning the proof, we describe how one studies the regularity in a situation
+like this. If we want to show that a function k : Wu,L(x) → Wu,F (h(x)) is uniformly C1,
+then it sufﬁces to check that this is true in a particular family of charts adapted to the
+C1 norms on these manifolds. While Wu,L(x) admits a chart ψL : R2 → Wu,L(x) that is
+an isometry, and hence uniformly C1, the leaf Wu,F (h(x)) does not ap r i o r ihave such a
+nice parameterization. However, Wu,F does admit a uniform family of charts, which we
+now describe. Let φ be the ﬂow of the C1+ vector ﬁeld eF
+1 along the leaves of SF .N o t e
+that for any ﬁxed t0 > 0, the maps φt for t ∈ [−t0, t0] are uniformly C1+. Fixing numbers
+N, t0 > 0 and a parameter θ> 0, if γ( t): (−δ, δ)→ Wu,F (h(x)) is any unit speed curve
+of length between N and 2N that makes an angle of at least θ with eF
+1 distribution, then
+the map ψF
+γ : (−δ, δ)× (−t0, t0) → Wu,F (h(x)) deﬁned by
+(t1, t2) ↦→ φt2γ( t1),
+is a parameterization of a subset of Wu,F . In addition, ψF
+γ is a C1+ chart for the SF
+foliation.
+In particular, given this uniform family of charts, we may study regularity in the
+following way. If we want to show that a map k : Wu,L(x) → Wu,F (h(x)) is uniformly
+C1, it sufﬁces to show that for each uniform pair of charts ψF
+γ and ψL,w eh a v et h a t
+(ψF
+γ )− 1 ◦k ◦ψL (16)
+is uniformly C1 as a map deﬁned on a subset of R2. In the proof that follows, we will use
+this family of charts to study the regularity.
+As mentioned before, because the leaves of the Wu,L foliation are Euclidean, they admit
+global uniformly smooth charts. Speciﬁcally, on the Wu,L foliation, we exclusively work
+with the global charts of the form
+(t1, t2) ↦→ x + t1eL
+1 + t2eL
+2 .
+We construct these charts around a speciﬁc transversal to the SL foliation of the form
+T0 : t ↦→ x + teL
+2 in a manner analogous to equation ( 16) .W es i m i l a r l yd e n o t es u c ha
+chart by ψL
+T0 . In addition, these transversals t ↦→ x + teL
+2 deﬁne a linear foliation, which
+we denote by FL.
+Before proceeding, we obtain the following lemma that says that usable transversals to
+the SF foliation exist.
+LEMMA 7.15. In each Wu,F leaf, there exists a uniform C1 transversal to the SF foliation.
+Moreover, this transversal is given by a map R → Wu,F with uniformly continuous,
+bounded derivative. Further, this transversal is uniformly C0 close to the image of a
+uniform transversal to the SL foliation under h.
+Proof. To begin, observe that there exist uniformly Hölder continuous topological
+transversals to the SF foliation such ash(T0),w h e r eT0 is a leaf of FL. Call this transversal
+T1. We will mollify this transversal to obtain the lemma.
+We ﬁrst describe how locally we can mollify this transversal to make it uniformly C1.
+As the SF foliation is a C1+-foliation, we may view T1 in a small, uniformly C1+ foliation
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 22 =====
+1150 J. DeWitt
+box for the SF foliation. Pulling everything back by this chart, we have a foliation box
+[− 1, 1] × [− 1, 1]. By choosing the foliation box sufﬁciently small and correctly placed
+relative to T1, we may arrange that within this box, T1 is represented by the graph of a
+Hölder continuous map φ such that φ(0) = 0a n d φ(1) ∈ (− 1/2, 1/2). We mollify φ to
+obtain a new function ˆφ that is uniformly C1+ on the interval (− 3/4, 3/4). Note that the
+derivatives of ˆφ are uniformly bounded because this is always the case for molliﬁcations
+of uniformly Hölder functions by convolution with a ﬁxed standard molliﬁer. Thus, we
+can locally smooth ˆφ with uniform estimates regardless of where we are smoothing.
+However, these local molliﬁcations might not piece together to form the full molliﬁed
+transversal while staying C0 close to the original one. Nevertheless, we can ﬁx this
+within the chart where we are mollifying: we may use the C1+ ﬂow along the eF
+1 vector
+ﬁeld as in Lemma 7.9 to ﬁx our molliﬁed curve so that it does not drift away from the
+topological transversal T1. As we need only ﬂow a ﬁnite distance, the tangent of the ﬂowed
+curve remains uniformly transverse to the SF foliation and the curve’s derivative stays
+uniformly bounded. Thus, by inductively proceeding along the transversal T1, we obtain
+the result.
+We now proceed with the proof of the ﬁrst smoothing lemma.
+Proof of Lemma 7.14. We give the construction for a single leaf Wu,L(x). The full result
+follows by repeating the construction on each leaf.
+Fix a uniform C1 transversal TF : R → Wu,F (h(x)) to the SF foliation as obtained
+from Lemma 7.15. In particular, we may use that h(T0) and TF are uniformly C0 close
+as maps R → Wu,F (x) and that the transversal has a parameterization with uniformly
+bounded derivative.
+Letting T0 : R → Wu,L be a transversal to SL tangent to eL
+2 ,d e ﬁ n e P : R → R by
+T − 1
+F ◦/Pi1TF ◦h ◦T0.N o t et h a tP is uniformly Hölder because it is the composition of
+uniformly Hölder maps.
+Along the FL leaf T0, we can mollify P as follows to get a function ˜PT0 . Fixing any
+smooth bump function σ on R,w ed e ﬁ n e
+˜PT0(t) :=
+∫
+P(t − x)σ(x) dx .
+Note that ˜PT0 is C0 close to P and that TF ◦ ˜PT0 is uniformly C0 close to TF ◦PTF =
+/Pi1TF ◦h ◦T0.H o w e v e r ,a sTF is C0 close to h ◦T0, this is uniformly C0 close to h ◦T0
+and hence TF ◦ ˜PT0 is uniformly C0 close to h ◦T0 as maps R → Wu,F .
+We now deﬁne the map hx .D e ﬁ n e ˆh2 to be the map TF ◦ ˜PT0 .W eu s e ˆh2 deﬁned in
+this way to ensure that the parameterization of TF we obtain remains C0 close to the
+corresponding parameterization of h(T0). As before, let φ be the ﬂow along the eF
+1 vector
+ﬁeld tangent to the SF foliation. In the coordinates (t1, t2) = x + t1eL
+1 + t2eL
+2 on Wu,L,
+deﬁne
+hx : (t1, t2) ↦→ φt1(ˆh2(t2)).( 1 7 )
+We now check that hx has the required regularity properties. From the deﬁnition, it is
+immediate that hx is C1. Next, we claim that hx is C0 close to h. From earlier, we have
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 23 =====
+Rigidity of Anosov automorphisms with Jordan Blocks 1151
+that h(T0(t)) is uniformly close to TF ◦ ˜PT0(t). We claim that independent of s,
+φs(TF ◦ ˜PT0(t)) is uniformly close to h(s, t) = φs(h(T0(t)).
+This follows because the ﬂow φs is a uniform quasi-isometry independent of the value of
+s: this follows because h is a quasi-isometry and intertwines the ﬂow φs with the linear
+ﬂow along SL, which is isometric.
+We now turn to the differentiability properties of hx . From the deﬁnition of hx in
+equation (17), hx is manifestly C1 and Dhx(eL
+1 ) = eF
+1 . It just remains to check that when
+written with respect to the bases [ eL
+1 , eL
+2 ]a n d[eF
+1 , eF
+2 ], the bottom right corner of Dhx is
+uniformly bounded.
+We begin by checking the corresponding claim for a pair of uniform charts. For a uni-
+form transversalγ to SF , we have uniform chartsψF
+γ and ψL, and may writehx as (h1, h2)
+in these charts. We claim that in such uniform charts, the derivative of hx looks like
+[1 b
+0 a
+]
+,( 1 8 )
+where a is a uniformly bounded continuous function. To see this, note ﬁrst that h2 in these
+charts is equal to γ− 1 ◦/Pi1γ ◦TF ◦ ˜PT0 . By Lemma 7.6,t h em a p /Pi1γ is uniformly C1 as
+am a p TF → γ, as these are both uniform transversals. Thus, as the remaining maps in
+the composition are uniformly C1, so is the entire composition. Hence, a is uniformly
+bounded.
+Getting uniformity for the speciﬁc framing in the lemma requires only slightly more
+work. The matrix in equation ( 18) is written with respect to the chart coordinate frames,
+which are vector ﬁelds [ eL
+1 , eL
+2 ]a n d[ eF
+1 , ∂y ], where ∂y depends on the chart ψF
+γ .T h e
+ﬁeld eF
+2 in which we are actually interested is a linear combination of eF
+1 and the chart
+coordinate ∂y ,t h a ti s ,eF
+2 = ce :1 F + d∂y ,w h e r ec and d are uniformly Hölder and d is
+uniformly bounded away from 0 because, in uniform charts, the coordinate directions are
+uniformly transverse. Thus, written with respect to bases [ eL
+1 , eL
+2 ]a n d[ eF
+1 , eF
+2 ], Dhx has
+the following form:
+[1 ∗
+0 ad− 1
+]
+.
+Thus, the derivative is uniformly bounded as required.
+7.2. Normal differentiability. For a function A : R2 → R2, one often studies differen-
+tiability of A by studying the partial derivatives of A. However, the usual deﬁnition of a
+partial derivative is far from being formulated in a coordinate independent way: the partial
+derivatives of a function are its derivatives along the coordinate directions. For a function
+A that is C1, then there is no problem with this, because we can recover the derivative of A
+in any particular direction from the knowledge of the directional derivatives of A in other
+directions. For a C1 function A, the derivatives of A are determined by its derivatives along
+certain curves. If we know the derivative along enough of these curves, then we know the
+derivative along any curve.
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 24 =====
+1152 J. DeWitt
+Normal differentiability deals with the situation where we cannot differentiate along
+curves, so we cannot use curves directly to deﬁne a derivative. However, we may be able
+to obtain a derivative once we quotient by a foliation. Consider a map φ: R2 → R2 that
+preserves the foliation by horizontal lines. Then φ induces a map ˜φ: R → R,w h e r ew e
+identify R with the space of horizontal lines. It is entirely plausible that this map ˜φ is
+smooth even though the map φ restricted to any vertical line is not even differentiable. In
+this case, we think of φ as being differentiable and the derivative of ˜φ as being a ‘normal’
+derivative to the foliation by horizontal lines. By quotienting by the foliation, we are able
+to canonically detect this normal component of φ.
+We say that a foliation F has well-deﬁned holonomy if for any two transversals I and
+J such that I ⊂ F(J) , we have that for each x ∈ I , |F(x) ∩ J|= 1. For example, the
+foliation of R2 by lines has well-deﬁned holonomy; in particular, note that SL and SF
+both have well-deﬁned holonomy when restricted to unstable leaves. A foliation of a
+closed manifold might not have well-deﬁned holonomy. When restricted to a coordinate
+neighborhood, all foliations have well-deﬁned holonomy. However, we will not work with
+such a local notion as it is not necessary in our case.
+Deﬁnition 7.16. Suppose that
+F and G are two C1 foliations with well-deﬁned holonomy.
+Suppose that φ is a continuous map intertwining the F and G foliations. We say that φ is
+normally C1 differentiable to F and G if for any pair T and W of smooth transversals to F
+and G, respectively, with φ(T) ⊂ G(W) ,t h em a pT → W given by /Pi1W ◦φ is C1.( H e r e ,
+as before, /Pi1W denotes the projection to W along the leaves of G.)
+Note that because F and G are C1 foliations, the holonomy between different transver-
+sals is C1, and hence this notion of differentiability is well deﬁned independent of the
+choice of transversals.
+When we have ﬁxed a pair of transversals T and W, we will speak about differentiability
+of φ along the transversals T and W normal to the foliations F and G. Further, because the
+holonomies of F and G are absolutely continuous with respect to the Lebesgue measure,
+it makes sense to speak of normal differentiability almost everywhere along a transversal.
+We may also speak of normal differentiability at a pair of points x and y ∈ G(φ(x)).
+We will restrict the use of this deﬁnition to the case where the foliations have dimension
+1 and subfoliate a space of dimension 2. In fact, if we have differentiability along such
+foliations and v and w vectors transverse to F and G such that the basepoint of w is the
+image of the basepoint of v, then there is a well-deﬁned number Dv,wφ that we call the
+normal derivative of φ between v and w, which we deﬁne in the following manner. Let T
+and W be two transversals with dT/dt = v and dW/dt = w at corresponding points. We
+then deﬁne Dv,wφ by
+D(/Pi1W ◦φ ◦T )(∂t) = (Dv,wφ)w.
+Having made this deﬁnition, we now list a number of claims describing the basic and
+hopefully intuitive properties of this construction for later use.
+CLAIM 7.17. Suppose that φ: M1 → M2 intertwines foliations F and G with well-deﬁned
+holonomy. Suppose that v ∈ TxM1 \ Tx F and w ∈ TyM2 \ Ty G such that Dv,wφ exists.
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 25 =====
+Rigidity of Anosov automorphisms with Jordan Blocks 1153
+Then, for any v′ ∈ TM 1|F(x) \ T F(x) and w′ ∈ TM 2|G(φ(x)) \ T G(x), the normal deriva-
+tive Dv′,w′ φ exists.
+Proof. Supposing such a pair exists, we can express the derivative deﬁning Dv′,w′ φ
+by composing with smooth maps. By deﬁnition, Dv,wφ existing means that if T is a
+transversal tangent to w at 0, then
+/Pi1W ◦φ ◦T : R → W
+is differentiable at 0. However, this implies that if T ′ is a transversal tangent to v′ at t = 0
+and W′ is tangent to w′,t h e n
+/Pi1W′ /Pi1W ◦φ ◦T ◦T − 1 ◦/Pi1T ◦T ′ = /Pi1W′ ◦φ ◦T ′
+is also differentiable at 0 by the chain rule as we have pre- and post-composed with smooth
+functions. However,D(/Pi1W′ ◦φ ◦T ′) deﬁnes Dv′,w′φ, which we see exists.
+CLAIM 7.18. Suppose that φ: M1 → M2 intertwines foliations F and G with well-deﬁned
+holonomy. Suppose that ψ is another map intertwining these foliations. Then if
+ψ : M1 → M2 satisﬁes ψ(x) ∈ F(φ(x)) for all x, ψ and φ are both differentiable where
+either is differentiable and at such points, φ and ψ have the same normal derivative.
+Proof. For a pair of transversals W and T,n o t et h a t/Pi1W ◦φ ◦T = /Pi1W ◦ψ ◦T ;t h e
+conclusion is immediate.
+CLAIM 7.19. If φ is C1 and intertwines foliations as before, then the normal derivative
+agrees with the usual derivative in the appropriate sense. Namely, if Dφ(v) = λw,t h e n
+Dv,wφ = λ. More broadly, if T F and T G are the tangents to F and G,t h e n
+/Pi1T G
+w Dφ(v) = (Dv,wφ)w,( 1 9 )
+where /Pi1T G
+w denotes the projection onto the subspace spanned by w along T G.
+Proof. We begin by checking equation (19). As before, ﬁx C1 transversals T and W tangent
+to v and w. The normal derivative Dv,wF is equal to the λ satisfying, for C1 transversals,
+(D/Pi1W ◦φ ◦T )(∂t) = (Dv,wφ)w.
+As φ is C1, we can rewrite this as
+D(/Pi1W ◦φ ◦T )(∂t) = (D/Pi1W )(Dφ ◦T )(∂t) = /Pi1T G
+w (DF(v)) ,
+which gives equation (19) as desired.
+The statement in the second sentence of the claim then follows from equation ( 19). In
+this case, if D(φ(v)) is a multiple of w,t h e n/Pi1T G
+w Dφ(v) = Dφ(v),s o Dv,wφ = λ by the
+deﬁnition of Dv,wφ.
+CLAIM 7.20. Suppose that φ intertwines two foliations F and G as before and that Dv,wφ
+exists. If v′, w′ are another pair of vectors with the same respective basepoints, then we can
+compute Dv′,w′ φ in the following way. Let q be the tangent to F at v and r be the tangent
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 26 =====
+1154 J. DeWitt
+to G at the basepoint of w. For a pair of vectors a and b in R2,w r i t e/Pi1a
+b for the projection
+onto b along a. Then, if /Pi1q
+w′ w = λw′ and /Pi1r
+v′ v = ηv′,t h e nDv′,w′ φ = ληDv,wφ.
+Proof. As before, we can rewrite the formula that deﬁnes the normal derivative Dv′,w′φ
+into one involving the normal derivative Dv,wφ. Namely,
+/Pi1W′ ◦φ ◦T = (/Pi1W′ ) ◦/Pi1W ◦φ ◦T ◦(T − 1 ◦/Pi1T ◦T ′).
+The projections in the statement of the claim are the differentials of the terms in
+parentheses written in appropriate coordinates.
+7.3. Normal differentiability of the conjugacy.
+LEMMA 7.21. For the SL and SF foliations, for any pair T , W of corresponding
+transversals, we have that h is normally differentiable at almost every point of T. In fact,
+for uniform transversals T and W, the induced map /Pi1W h : T → W is uniformly Lipschitz.
+Proof. We will show this only for the case of uniform transversals, as, by the preceding
+discussion, this implies normal differentiability for all transversals. We will show this
+by studying the convergence in Lemma 7.12.L e t hn = F−n ◦h0 ◦Ln,w h e r eh0 is as
+in Lemma 7.14. We calculate the differential Dzhn with respect to the [ eL
+1 , eL
+2 ], [eF
+1 , eF
+2 ]
+framings,
+Dhn =
+[λ−n −nλ−n− 1
+0 λ−n
+][ 1 c(Lnz)
+0 a(Lnz)
+][ λn nλn− 1
+0 λn
+]
+=
+[1 cn(z)
+0 a(Lnz)
+]
+,
+where a is a uniformly bounded continuous function and cn(z) is some continuous function
+depending on n. Fix uniform transversals T : (− 1, 1) → Wu,L(x) and W : (− 1, 1) →
+Wu,F (h(x)) to the SL and SF foliations, respectively. We can write ˙T as αL(t)eL
+1 +
+βL(t)eL
+2 and ˙W as αF (t)eF
+1 + βF (t)eF
+2 . The tangent to hn ◦T is then
+[α(t) + β(t)cn(T (t))
+a(Ln(T (t)))β(t)
+]
+.
+Let /Pi1W be the projection to W along SF and let eW be the tangent ﬁeld to W. Then, the
+differential of /Pi1W : F(W) → W , with respect to these framings [ eF
+1 , eF
+2 ]a n d[eW ], is
+[0, ω]
+for some continuous function ω. We claim that ω is uniformly continuous. Note that for
+a point y, ω(y) is the derivative of the map /Pi1w ◦η for η a uniform transversal tangent to
+eF
+2 (y); by Lemma 7.6, this derivative is uniformly bounded.
+Thus, the derivative of /Pi1W ◦hn ◦TL : R → W sends
+∂t ↦→ a(Ln(T (t)))β(t)ω(F −nk(Ln(x)))eW ,
+which is uniformly bounded. Thus, the sequence of maps ηn = /Pi1W ◦hn ◦TL is uniformly
+Lipschitz. As the sequence ηn converges uniformly to the map /Pi1W ◦h ◦TL, we see that
+this map is uniformly Lipschitz as well, and hence differentiable almost everywhere with
+uniformly bounded derivative.
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 27 =====
+Rigidity of Anosov automorphisms with Jordan Blocks 1155
+As noted after its deﬁnition, the normal derivative is well deﬁned independent of the
+transversals used to calculate it. We now determine the normal derivative of h.
+LEMMA 7.22. There exists C such that for almost every z, DeL
+2 (z),eF
+2 (h(z))h = C.
+Proof. We have that F ◦h = h ◦L. Both of these are normally differentiable almost
+everywhere to the foliations SF and SL, and thus they have the same normal derivatives.
+Writing a(z) for the derivative DeL
+2 (z),eF
+2 (h(z))h, by calculating the derivative of h ◦L in
+two ways, we see that for almost every z,
+λa(z) = a(L(z))λ.
+Thus, by ergodicity, as a is almost surely (a.s.) L-invariant, it agrees almost everywhere
+with a constant C. Thus, there exists C such that DeL
+2 ,eF
+2 (h(z)h is equal to C almost
+everywhere.
+We now give another smoothing argument to produce an approximation k to h with
+even better properties. This time, we do not smooth in the normal direction because by
+Lemma 7.21, h already has some regularity in this direction.
+LEMMA 7.23. There exists C ̸= 0 and a function h0 : M → M such that, writing hx for
+the restriction h0|Wu,L(x) , we have that:
+(1) h0 intertwines the Wu,L and Wu,F foliations as well as the SL and SF foliations;
+(2) hx is uniformly C0 close to h;
+(3) hx is uniformly C1;
+(4) with respect to the framings [eL
+1 , eL
+2 ], [eF
+1 , eF
+2 ], the differential of h0 is
+Dh0 =
+[1 b
+0 C
+]
+,
+where b is a uniformly continuous bounded function on each leaf and the bounded-
+ness is independent of the leaf.
+Proof. We show how to do the smoothing for a particular leafWu,L(x0). The result follows
+by smoothing on each leaf.
+As in the proof of Lemma 7.14, we ﬁx a uniform global transversal TF to the SF foliation
+and T0, a parameterization of an FL leaf. Then, we deﬁne ω(t) ∈ R by
+φω(t) h(T0(t)) ∈ TF .
+Note that ω is bounded and uniformly Cα for some α> 0. Thus, as in Lemma 7.15,w e
+may mollify ω to obtain ˜ω, which is uniformly C1 and uniformly close to ω.W en o wd e ﬁ n e
+a new version of h, hx0 : Wu,L(x0) → Wu,L(h(x0)) using the (t1, t2) = x0 + t1eL
+1 + t2eL
+2
+coordinates on Wu,L:
+hx0 (t1, t2) = φ˜ω(t2)+t1/Pi1TF ◦h(T0(t2)).
+We claim that this map satisﬁes the conclusion of the lemma. The ﬁrst two claims follow as
+in the proof of Lemma 7.14. We will show the remaining claims by studying the derivatives
+of hx0 in uniform charts.
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 28 =====
+1156 J. DeWitt
+By Lemma 7.9,f o ra l l t ∈ R, φt(TF ) is a uniform transversal to the SF foliation.
+Hence, we may restrict to using a uniform chart on Wu,F formed from such transversals
+φtTF . This gives us a uniform chart ψF = ψF
+φt0 TF
+: (t1, t2) ↦→ φt0+t1TF (t2).L e tu st a k e
+the chart ψL : (t1, t2) ↦→ (x0 + t0eF
+1 ) + t1eF
+1 + t2eF
+2 on WL. Then, in these charts, the
+map (ψF )− 1 ◦hx0 ◦ψL = (˜ω(t2) + t1, t2), which is uniformly C1.
+It now remains to verify the properties of the differential of hx0 . That the differential
+has block form
+[1 b
+0 c
+]
+for two continuous function b and c is immediate from its coordinate expression. In
+particular, we can read off from this that Dhx0(eL
+1 ) = eF
+1 . Also, note that b is uniformly
+bounded as ˜ω is uniformly C1.
+It only remains to check that c is constant. For this, it sufﬁces to show that there exists
+aﬁ x e d C ̸= 0s u c ht h a tDhx0(eL
+2 ) = ce :2 F + deF
+1 for some function d.W ec h e c kt h i s
+using properties of the normal derivative. Because hx0 is C1 and intertwines the SL and
+SF foliations, by Claim 7.19, we have that at places where hx0 is differentiable, the normal
+derivative agrees with the actual derivative. This means that if /Pi1
+eF
+1
+eF
+2
+denotes the projection
+of a vector onto eF
+2 along eF
+1 ,t h e na shx0 is C1,
+ce :2 F = /Pi1
+eF
+1
+eF
+2
+Dhx0 (eL
+2 ) = (DeL
+2 ,eF
+2
+hx0)eF
+2 .
+So by Lemma 7.22, at almost every point, DeL
+2 ,eF
+2
+hx0 = C. This implies that almost
+everywhere, c = C.H o w e v e r ,c is continuous so c = C everywhere.
+LEMMA 7.24. In Lemma 7.23,w em u s th a v eC = 1.
+Proof. For the sake of contradiction, suppose that C ̸= 1. We write hn = F−n ◦h0 ◦Ln
+a n da p p l yL e m m a7.12. The differential of hn at z is equal to
+λ−n
+[1 − 1/λ
+01
+]n [1 b(Ln(z))
+0 C
+]
+λn
+[11 /λ
+01
+]n
+=
+[1 n/λ− Cn/λ+ b(Ln(z))
+0 C
+]
+.
+Note that the upper right-hand corner of this matrix is not only unbounded, but is going
+uniformly to inﬁnity because b(Ln(z)) is uniformly bounded. Letγ : [0, 1] → Wu,L be the
+curve t ↦→ x + teL
+2 . Then, by integrating the derivative of hn, we see that arbitrarily small
+segments of γ are stretched to uniform length by hn for sufﬁciently large n.H o w e v e r ,t h i s
+implies that the sequence hn can have no uniform modulus of continuity, which contradicts
+the uniform convergence of hn to a continuous function h.
+We can now show that h is Lipschitz on each leaf.
+Proof of Lemma 7.11. We can now conclude by applying Lemma 7.12again. By applying
+Lemmas 7.23 and 7.24, we obtain a map h0 that is uniformly C1+ on Wu,L leaves and such
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 29 =====
+Rigidity of Anosov automorphisms with Jordan Blocks 1157
+that the differential Dh0 is, with respect to the frames [ eL
+1 , eL
+2 ], [eF
+1 , eF
+2 ],
+[1 a(z)
+01
+]
+,
+where a is uniformly bounded. As before, let hn = F−n ◦h0 ◦Ln. Then, we may calculate
+as before that the differentials of the functions hn are
+[1 a(Ln(x))
+01
+]
+.
+However, note that as these differentials are uniformly bounded, the sequence hn is
+uniformly Lipschitz. By Lemma 7.12,a s h is the uniform limit of the hn, we obtain that h
+is uniformly Lipschitz on each leaf.
+8. Differentiability of the conjugacy
+We can now prove Proposition 1.5. We will use the following result.
+THEOREM 8.1. [KSW23, Theorem 2.1] Let F be a transitive C1+Hölder Anosov diffeo-
+morphism of a compact manifold M, and let A and B be β-Hölder linear cocycles over F.
+Suppose that A has one Lyapunov exponent and B is ﬁber bunched.
+Let μ be an ergodic F-invariant measure on M with full support and local product
+structure. Then, any μ-measurable conjugacy between A and B is β-Hölder continuous,
+that is, coincides with a β-Hölder continuous conjugacy on a set of full measure.
+We now turn to the proof of Proposition 1.5.
+Proof of Proposition 1.5. The hypotheses include that F is Uλ-framed. Hence, by
+Lemma 7.11, h is Lipschitz and hence differentiable almost everywhere along unstable
+leaves. Its derivative, with respect to the framings [ eL
+1 , eL
+2 ]a n d[eF
+1 , eF
+2 ], satisﬁes
+[λ 1
+0 λ
+]
+Dxh = DL(x)h
+[λ 1
+0 λ
+]
+. (20)
+Both DF |Eu,F and DL|Eu,L have one exponent and are ﬁber bunched. Moreover, with
+respect to volume, we have that equation ( 20) holds almost everywhere. Thus, we see
+from Theorem 8.1 that Dh agrees volume almost everywhere with a Hölder continuous
+function. In particular, this implies that h is uniformly C1+ along unstable manifolds as h
+is Lipschitz and hence is the integral of its derivative. The same argument shows that h is
+C1+ along stable manifolds. Thus, by Journé’s lemma, h is C1+ (see [Jou88]o r[ DeW21,
+Lemma 35]).
+Acknowledgements. The author thanks Daniel Mitsutani for useful comments on this
+paper. The author is also grateful to Aaron Brown, Andrey Gogolev, Boris Hasselblatt,
+and Amie Wilkinson for helpful discussions. The author is very grateful to the anonymous
+referees for their careful reading of the manuscript and their helpful suggestions. This
+material is based upon work supported by the National Science Foundation under Award
+No. DMS-2202967.
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 30 =====
+1158 J. DeWitt
+A. Appendix. Conjugacy of integer matrices with Jordan blocks
+The purpose of this appendix is to give the characterization of the elements of SL (4, Z)
+that we consider in this paper. The Anosov automorphisms to which Theorem 1.2 applies
+may be described quite succinctly.
+PROPOSITION A.1. Suppose that L ∈ SL(4, Z) is a matrix with a Jordan block and no
+eigenvalues of modulus 1. Then, L is conjugate to a block matrix of the form
+[AC
+0 B
+]
+,
+where A, B ∈ GL(2, Z), C ̸= 0, and the characteristic polynomials of A and B are equal
+and have two distinct real roots.
+Proof of Proposition A.1. We ﬁrst show that such a hyperbolic matrix is conjugate to a
+matrix of the given form. Letp(λ) denote the characteristic polynomial of L. Then, because
+L’s eigenvalues each have multiplicity 2 and L is hyperbolic, we see that p(λ) = q(λ)2 for
+some irreducible q ∈ Z[λ]. By [New72, Theorem III.12], any integer matrix L is conjugate
+to a block upper triangular matrix, where the diagonal blocks of the matrix correspond to
+the irreducible factors of the characteristic polynomial of L. In our case, this implies that
+L is conjugate to a matrix of the given form.
+Remark A.2. It is possible that the diagonal blocks in Proposition A.1 may not be conjugate
+through integer matrices. For example, consider the automorphism deﬁned by
+⎡
+⎢⎢⎣
+3 210
+4 301
+0 001
+00 − 16
+⎤
+⎥⎥⎦ .( A . 1 )
+B. Appendix. Orientability of the unstable bundle
+The purpose of this section is to show that the unstable bundle of an Anosov diffeomor-
+phism on a torus is orientable. This is relatively straightforward to show once one has
+introduced appropriate deﬁnitions. The central idea is just that topological conjugacies
+preserve the notion of topological orientability of topological foliations. Hence, if we know
+a foliation is conjugate to an orientable topological foliation, we will use this information
+to upgrade that topological orientability to an orientation of the tangent to the foliation.
+Let (/Sigma1,
+F) be a foliation of an n-manifold by leaves of dimension k that is given by
+a foliation atlas {(Ui , φi)}, where each φi : Ui ⊂ M → Rk × Rn−k , so that the transition
+functions have the form
+φiφ− 1
+j (x, y) = (αij(x, y)), γij(y)).
+Note that even if the maps φi are C0, it makes sense to say whether the transition
+function is orientation preserving. This is because for a ﬁxed y0, αij(x, y0) as a topological
+map may preserve or reverse the topological orientation at any given point, that is, its
+map on local homology is ±1 at every point. If this map is 1 at every point, then α
+ij is
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 31 =====
+Rigidity of Anosov automorphisms with Jordan Blocks 1159
+orientation preserving. If αij is orientation preserving for each point in its domain, then
+we say that the transition function φiφ− 1
+j is orientation preserving.
+Deﬁnition B.1. [HH81, §2.3] We say that a foliation (/Sigma1, F) is orientable if it admits an
+atlas such that all transition functions φiφ− 1
+j , as above, are orientation preserving.
+When we speak of an orientation of a foliation F with uniformly C1 leaves, what we
+mean is that there exists an orientation on T F as a continuous bundle. The following
+proposition says that if a foliation with uniformly C1 leaf is orientable as a topological
+foliation, then it is orientable.
+PROPOSITION B.2. Suppose that M is a C1 manifold and that F is a foliation of M with
+uniformly C1k-dimensional leaves. Then, if F admits an oriented topological foliation
+atlas, then T F is orientable as a continuous bundle over M.
+Proof. We will construct a continuous non-vanishing section of /Omega1kT F, the space of
+k-forms on T F. Fix a continuous Riemannian metric on TM .
+If we have a point x ∈ M,t h e n x is in the domain of some foliation chart φ: U →
+Rk × Rn−k .I fw el e t Ux be the plaque of this chart containing x,t h e nw em a yﬁ n da C1
+disk Dx containing x inside of Ux whose orientation agrees with the chart orientation on
+the plaque. As F is uniformlyC1, we may ﬁx a local smooth transversal foliation T deﬁned
+in a neighborhood of Ux . This gives us holonomy maps Tx,y : D → Dy , between D and its
+image in the plaque Uy via the T holonomies. Let ω ∈ /Omega1kTD be a choice of orientation
+on Dx agreeing with the chart orientation. Then, D(Tx,y)∗ω g i v e sa no r i e n t a t i o no nDy .
+Thus, on a neighborhood V ⊂ M of x, we may deﬁne a continuous unit norm section ˆω of
+/Omega1kT F by setting ˆω = ω/∥ω∥.
+Note that the oriented atlas of F gives, at every point z ∈ M, a choice of generator of
+the local homology [μz] ∈ Hn(F(z), F(z) \ z).H o w e v e r ,f o rs u c haC1 manifold endowed
+with a metric, [μz] is associated to a unique element ˆωx ∈ /Omega1dim M
+z TM of unit norm. If we
+let {μz}z∈M be the choice of generators of Hn(F, F(z) \ z) arising from the topological
+oriented foliation atlas, then observe that [ μz]a n d ˆω correspond to the same orientation.
+Thus, we may extend the deﬁnition ˆω globally because any section we construct agrees
+with [μz]. Then, ˆω is continuous due to its local construction.
+For a discussion of Anosov automorphims of nilmanifolds, see [ DeW21, §2]. Note that
+a torus is a nilmanifold, so the following result applies in our setting.
+PROPOSITION B.3. Suppose that F : N//Gamma1→ N//Gamma1is an Anosov diffeomorphism of a
+nilmanifold. Then, the unstable bundle Eu,F is orientable.
+Proof. By the work of Franks [ Fra69] and Manning [ Man74], there exists an Anosov
+automorphism L : N//Gamma1→ N//Gamma1and a conjugacy h between F and L. From the discussion
+in [DeW21, §2.2], we see that the foliation Wu,L is orientable. Thus, as h intertwines the
+foliation Wu,F and Wu,L, by Proposition B.2, T Wu,F = Eu,F is an orientable bundle.
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press
+
+===== PDF PAGE 32 =====
+1160 J. DeWitt
+REFERENCES
+[DeW21] J. DeWitt. Local Lyapunov spectrum rigidity of nilmanifold automorphisms. J. Mod. Dyn. 17 (2021),
+65–109.
+[DG24] J. DeWitt and A. Gogolev. Dominated splitting from constant periodic data and global rigidity of
+Anosov automorphisms. Geom. Funct. Anal. 34(5) (2024), 1370–1398.
+[dlL87] R. de la Llave. Invariants for smooth conjugacy of hyperbolic dynamical systems. II. Comm. Math.
+Phys. 109 (3) (1987), 369–378.
+[dlL92] R. de la Llave. Smooth conjugacy and SRB measures for uniformly and non-uniformly hyperbolic
+systems. Comm. Math. Phys. 150 (2) (1992), 289–320.
+[dlL02] R. de la Llave. Rigidity of higher-dimensional conformal Anosov systems. Ergod. Th. & Dynam. Sys.
+22 (6) (2002), 1845–1870.
+[Fra69] J. Franks. Anosov diffeomorphisms on tori. Trans. Amer. Math. Soc. 145 (1969), 117–124.
+[GKS11] A. Gogolev, B. Kalinin and V . Sadovskaya. Local rigidity for Anosov automorphisms. Math. Res.
+Lett. 18 (05) (2011), 843–858.
+[GKS20] A. Gogolev, B. Kalinin and V . Sadovskaya. Local rigidity of Lyapunov spectrum for toral automor-
+phisms. Israel J. Math. 238 (2020), 389–403.
+[Gog08] A. Gogolev. Smooth conjugacy of Anosov diffeomorphisms on higher-dimensional tori. J. Mod. Dyn.
+2 (4) (2008), 645.
+[GRH21] A. Gogolev and F. Rodriguez Hertz. Smooth rigidity for very non-algebraic Anosov diffeomorphisms
+of codimension one. Preprint, 2021, arXiv:2105.10539.
+[GRH22] A. Gogolev and F. Rodriguez Hertz. Smooth rigidity for very non-algebraic expanding maps. J. Eur.
+Math. Soc. (JEMS) 25 (2022), 3289–3323.
+[HH81] G. Hector and U. Hirsch. Introduction to the Geometry of Foliations, Part A (Aspects of
+Mathematics, 1). Friedr. Vieweg & Sohn, Braunschweig, 1981.
+[Izz99] A. Izzo. Cr convergence of Picard’s successive approximations. Proc. Amer. Math. Soc. 127 (7)
+(1999), 2059–2063.
+[Jou88] J. -L. Journé. A regularity lemma for functions of several variables. Rev. Mat. Iberoam. 4 (2) (1988),
+187–193.
+[Kal11] B. Kalinin. Livšic theorem for matrix cocycles. Ann. of Math. (2) 173 (2011), 1025–1042.
+[Kal24] B. Kalinin. Non-stationary normal forms for contracting extensions. A Vision for Dynamics in
+the 21st Century—The Legacy of Anatole Katok . Cambridge University Press, Cambridge, 2024,
+pp. 207–231.
+[KH97] A. Katok and B. Hasselblatt. Introduction to the Modern Theory of Dynamical Systems .C a m b r i d g e
+University Press, Cambridge, 1997.
+[KS13] B. Kalinin and V . Sadovskaya. Cocycles with one exponent over partially hyperbolic systems. Geom.
+Dedicata 167 (1) (2013), 167–188.
+[KSW23] B. Kalinin, V . Sadovskaya and Z. J. Wang. Smooth local rigidity for hyperbolic toral automorphisms.
+Comm. Amer. Math. Soc. 3 (2023), 290–328.
+[LY85] F. Ledrappier and L. -S. Y oung. The metric entropy of diffeomorphisms: Part I: Characterization of
+measures satisfying Pesin’s entropy formula. Ann. of Math. (2) 122 (1985), 509–539.
+[Man74] A. Manning. There are no new Anosov diffeomorphisms on tori. Amer. J. Math. 96 (3) (1974),
+422–429.
+[MM87] J. M. Marco and R. Moriyon. Invariants for smooth conjugacy of hyperbolic dynamical systems. I.
+Comm. Math. Phys. 109 (4) (1987), 681–689.
+[MS74] J. W . Milnor and J. D. Stasheff.Characteristic Classes (Annals of Mathematics Studies, 76). Princeton
+University Press, Princeton, NJ; University of Tokyo Press, Tokyo, 1974.
+[New72] M. Newman. Integral Matrices (Pure and Applied Mathematics, 45) . Academic Press, 1972.
+[NT98] V . Nitica and A. Török. Regularity of the coboundary for cohomologous cocycles. Ergod. Th. &
+Dynam. Sys. 18 (1998), 1187–1209.
+[PSW97] C. Pugh, M. Shub and A. Wilkinson. Hölder foliations. Duke Math. J. 86 (3) (1997), 517–546.
+[Sad13] V . Sadovskaya. Cohomology ofGL(2, R)-valued cocycles over hyperbolic systems. Discrete Contin.
+Dyn. Syst. Ser. A 33 (5) (2013), 2085–2104.
+[SY19] R. Saghin and J. Y ang. Lyapunov exponents and rigidity of Anosov automorphisms and skew
+products. Adv. Math. 355 (2019), 106764.
+https://doi.org/10.1017/etds.2024.56 Published online by Cambridge University Press

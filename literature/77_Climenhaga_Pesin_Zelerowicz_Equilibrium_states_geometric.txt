@@ -1,0 +1,3130 @@
+===== PDF PAGE 1 =====
+BULLETIN (New Series) OF THE
+AMERICAN MATHEMATICAL SOCIETY
+Volume 56, Number 4, October 2019, Pages 569–610
+https://doi.org/10.1090/bull/1659
+Article electronically published on December 10, 2018
+EQUILIBRIUM STATES IN DYNAMICAL SYSTEMS
+VIA GEOMETRIC MEASURE THEORY
+VAUGHN CLIMENHAGA, YAKOV PESIN, AND AGNIESZKA ZELEROWICZ
+Abstract. Given a dynamical system with a uniformly hyperbolic (chaotic)
+attractor, the physically relevant Sina˘ı–Ruelle–Bowen (SRB) measure can be
+obtained as the limit of the dynamical evolution of the leaf volume along local
+unstable manifolds. We extend this geometric construction to the substan-
+tially broader class of equilibrium states corresponding to H¨older continuous
+potentials; these states arise naturallyin statistical physics and play a crucial
+role in studying stochastic behavior of dynamical systems. The key step in our
+construction is to replace leaf volume with a reference measure that is obtained
+from a Carath´eodory dimension structure via an analogue of the construction
+of Hausdorﬀ measure. In particular, we give a new proof of existence and
+uniqueness of equilibrium states that does not use standard techniques based
+on Markov partitions or the speciﬁcation property; our approach can be ap-
+plied to systems that do not have Markov partitions and do not satisfy the
+speciﬁcation property.
+Contents
+1. Introduction 569
+2. Motivating examples 573
+3. Equilibrium states and their relatives 576
+4. Description of reference measures and main results 585
+5. Carath´eodory dimension structure 593
+6. Outline of proofs 597
+About the authors 608
+Acknowledgments 608
+References 608
+1. Introduction
+1.1. Systems with hyperbolic behavior.A smooth dynamical system with dis-
+crete time consists of a smooth manifoldM—the phase space—and a diﬀeomor-
+phism f: M → M. Each state of the system is represented by a pointx ∈M,
+whose orbit (f
+n(x))n∈Z gives the time evolution of that state. We are interested in
+the case where the dynamics off exhibit hyperbolic behavior. Roughly speaking,
+Received by the editors March 28, 2018, and, in revised form, October 23, 2018.
+2010 Mathematics Subject Classiﬁcation. Primary 37D35, 37C45; Secondary 37C40, 37D20.
+The ﬁrst author was partially supported by NSF grants DMS-1362838 and DMS-1554794.
+The second and third authors were partially supported by NSF grant DMS-1400027.
+c⃝2018 American Mathematical Society
+569
+
+===== PDF PAGE 2 =====
+570 VAUGHN CLIMENHAGA, YAKOV PESIN, AND AGNIESZKA ZELEROWICZ
+this means that orbits of nearby points separate exponentially quickly in either for-
+ward or backward time; if the phase space is compact, this leads to the phenomenon
+popularly known aschaos.
+Hyperbolic behavior turns out to be quite common, and for such systems it is not
+feasible to make speciﬁc forecasts of a single trajectory far into the future, because
+small initial errors quickly grow large enough to spoil the prediction. On the other
+hand, one may hope to make statistical predictions about the asymptotic behavior
+of orbits off. A measurement of the system corresponds to a functionϕ: M → R;
+the sequenceϕ, ϕ◦f, ϕ◦f
+2,... represents the same observation made at successive
+times. When speciﬁc forecasts ofϕ◦fn are impossible, we can treat this sequence
+as a stochastic process and make predictions about its asymptotic behavior. For
+a more complete discussion of this point of view, see [ER85], [Ma˜n87, Chapter 1],
+and [Via97].
+1.2. Physical measures and equilibrium states.To fully describe the stochas-
+tic process (ϕ◦fn)n∈Z, we need a probability measureμon M that represents the
+likelihood of ﬁnding the system in a given state at the present time. The measure
+f∗μdeﬁned by
+∫
+ϕd(f∗μ)=
+∫
+ϕ◦fd μrepresents the distribution one unit of time
+into the future. Aninvariant measure hasμ= f∗μ, and henceμ= fn
+∗μfor alln,
+so the sequence of observations becomes astationary stochastic process.
+In this paper we will consideruniformly hyperbolic systems, for which the tangent
+bundle admits an invariant splittingTM = Eu ⊕Es such that Eu is uniformly
+expanded andEs uniformly contracted byDf;s e e§2 for examples and§3.1 for a
+precise deﬁnition. Such systems have an extremely large set of invariant measures;
+for example, standard results show that there are inﬁnitely many periodic orbits,
+each supporting an atomic invariant measure. Thus one is led to the problem of
+selecting a distinguished measure, or class of measures, that is most dynamically
+signiﬁcant.
+Since we work on a smooth manifold, it would be natural to consider an invariant
+volume form onM, or at least an invariant measure that is absolutely continuous
+with respect to volume. However, for dissipative systems such as the solenoid
+described in §2.2, no such invariant measure exists, and one must instead look
+for a Sina˘ı–Ruelle–Bowen(SRB) measure, which we describe in§§3.2–3.3. Such
+a measure is absolutely continuous “in the unstable direction”, which is enough
+to guarantee that it isphysically relevant; it describes the asymptotic statistical
+behavior of volume-typical trajectories.
+SRB measures can be constructed via the followinggeometric approach:l e tm
+be a normalized Lebesgue measure (volume) for some Riemannian metric onM,
+consider its forward iteratesf
+n
+∗m, then average the ﬁrstN of these and take a limit
+measure asN →∞ .
+Another approach to SRB measures, which we recall in§3.4, is via thermody-
+namic formalism, which imports mathematical tools from equilibrium statistical
+physics in order to describe the behavior of large ensembles of trajectories. This
+program began in the late 1950s, when Kolmogorov and Sina˘ı introduced the con-
+cept of entropy into dynamical systems; see [Kat07] for a historical overview. Given
+a potential functionϕ: M → R, one studies theequilibrium statesassociated toϕ,
+which are invariant measures that maximize the quantityh
+μ(f)+
+∫
+ϕdμ,w h e r ehμ
+
+===== PDF PAGE 3 =====
+EQUILIBRIUM STATES IN DYNAMICAL SYSTEMS 571
+denotes the Kolmogorov–Sina˘ı entropy.1 The maximum value is called thetopolog-
+ical pressureof ϕand is denotedP(ϕ).
+In the 1960s and 1970s, it was shown by Sina˘ı, Ruelle, and Bowen that for uni-
+formly hyperbolic systems, every H¨older continuous potential has a unique equilib-
+rium state (see§3.1). Applying this result to the particular case of thegeometric
+potential2 ϕgeo(x)= −log|detDf|Eu(x)|, one hasP(ϕgeo) = 0 and the equilibrium
+state is the SRB measure described above; see§3.4.
+1.3. Diﬀerent approaches to constructing equilibrium states.Therearetwo
+main classical approaches to thermodynamic formalism. The ﬁrst usesMarkov par-
+titions of the manifoldM; we recall the general idea in§3.5. The second approach
+uses thespeciﬁcation property,w h i c hw er e v i e wi n§3.6.
+The purpose of this paper is to describe a third geometric approach, which
+was outlined above for SRB measures: produce an equilibrium state as a limiting
+measure of the averaged pushforwards of somereference measure, which need not
+be invariant. For the physical SRB measure, this reference measure was Lebesgue;
+to extend this approach to other equilibrium states, one must start by choosing a
+new reference measure. The deﬁnition of this reference measure, and its motivation
+and consequences, is the primary goal of this paper, and our main result can be
+roughly stated as follows.
+For every H¨older continuous potentialϕ, one can use the tools of geometric
+measure theory to deﬁne a reference measuremϕ for which the averages of the
+pushforwards fn
+∗mϕ converge to the unique equilibrium state forϕ.
+A precise statement of the result is given in§4. An important motivation for
+this work is that the geometric approach can be applied to more general situations
+beyond the uniformly hyperbolic systems studied in this paper. For example, the
+geometric approach was used in [CDP16] to construct SRB measures for some
+nonuniformly hyperbolic systems, and in [CPZ18] we use it to construct equilibrium
+states for some partially hyperbolic systems. The ﬁrst two approaches—Markov
+partitions and speciﬁcation—have also been extendedbeyond uniform hyperbolicity
+(see [CP17] for a survey of the literature), but the overall theory in this generality
+is still very far from being complete, so it seems worthwhile to add another tool by
+developing the geometric approach as well.
+1.4. Reference measures for general potentials.Inthegeometricconstruction
+of the physical SRB measure, one can take the reference measure to be either a
+Lebesgue measure m on M or a Lebesgue measurem
+W on anylocal unstable leaf
+W = Vu
+loc(x). These leaves aredu-dimensional submanifolds ofM that are tangent
+at each point to theunstable distributionEu(x) ⊂TxM; they are expanded by the
+dynamics off and have the property thatf(Vu
+loc(x)) ⊃Vu
+loc(f(x)); see§3.1 for more
+details. Given a local unstable leafW = Vu
+loc(x), we will writemW or mu
+x for the
+1From the statistical physics point of view, the quantityEμ := −(hμ(f)+
+∫
+ϕdμ)i st h ef r e e
+energy of the system, so that anequilibrium state minimizesthe free energy; see [Sar15,§1.6] for
+more details.
+2Here the determinant is taken with respect to any orthonormal bases forEu(x)a n dEu(f(x)).
+If the mapf is of the class of smoothnessC1+α for someα> 0, then one can show thatϕgeo(x)
+is H¨older continuous.
+
+===== PDF PAGE 4 =====
+572 VAUGHN CLIMENHAGA, YAKOV PESIN, AND AGNIESZKA ZELEROWICZ
+leaf volume determined by the induced Riemannian metric. This has the following
+key properties.
+(1) mW = mu
+x is a ﬁnite nonzero Borel measure onW.
+(2) If W1 and W2 are local unstable leaves with nontrivial intersection, then
+mW1 and mW2 agree on the overlap.
+(3) Under the dynamics off, the leaf volumes scale by the rule
+(1.1) mu
+f(x)(A)=
+∫
+f−1A
+|detDf|Eu(y)|dmu
+x(y).
+As mentioned in§1.2, the geometric potentialϕgeo(x)= −log|detDf|Eu(x)| has
+P(ϕgeo) = 0, so the integrand in (1.1) can be written aseP(ϕgeo)−ϕgeo(y).I n §4.3,
+given a continuous potentialϕ, we will construct on every local unstable leafW =
+Vu
+loc(x) a reference measuremC
+x satisfying similar properties tomu
+x, but with the
+scaling rule3
+(1.2) mC
+f(x)(A)=
+∫
+f−1A
+eP(ϕ)−ϕ(y) dmC
+x(y).
+The superscriptC is shorthand for aCarath´eodory dimension structuredetermined
+by the potentialϕand a scaler> 0; see§5 for the essential facts about such struc-
+tures, and see [Pes97] for a complete description. Roughly speaking, the deﬁnitions
+of P(ϕ)a n dmC
+x are analogous to the deﬁnitions of Hausdorﬀ dimension and Haus-
+dorﬀ measure, respectively, but they take the dynamics into account. Recall that
+the latter deﬁnitions involve covers by balls of decreasing radius; the modiﬁcation
+to obtain our quantities involves covering by dynamically deﬁned balls, as explained
+in §4.3.
+1.5. Some history. The idea of constructing dynamically signiﬁcant measures for
+uniformly hyperbolic maps by ﬁrst ﬁnding measures on unstable leaves with certain
+scaling properties goes at least as far back as work of Sina˘ı [Sin68], which relies on
+Markov partitions. For uniformly hyperbolic dynamical systems with continuous
+time (ﬂows) and the potentialϕ= 0, the corresponding equilibrium state, which
+is the measure of maximal entropy, was obtained by Margulis [Mar70]. He used a
+diﬀerent construction of leaf measures via functional analysis of a special operator
+(induced by the dynamics) acting on the Banach space of continuous functions with
+compact support on unstable leaves. These leaf measures were studied further in
+[RS75,BM77].
+Hasselblatt gave a description of the Margulis measure in terms of Hausdorﬀ
+dimension [Has89], generalizing a result obtained by Hamenst¨adt for geodesic ﬂows
+on negatively curved compact manifolds [Ham89]. In this geometric setting, where
+stable and unstable leaves are naturally identiﬁed with the ideal boundary of the
+universal cover, Kaimanovich observed in [Kai90,Kai91] that these leaf measures
+couldbeidentiﬁedwiththemeasuresontheidealboundaryintroducedbyPatterson
+[Pat76] and Sullivan [Sul79]. For geodesic ﬂows in negative curvature, this approach
+was recently extended to nonzero potentials by Paulin, Pollicott, and Schapira
+[PPS15].
+For general hyperbolic systems and nonzero potential functions, families of leaf
+measureswiththeappropriatescalingpropertieswereconstructedbyHaydn[Hay94]
+and Leplaideur [Lep00], both using Markov partitions. The key innovation in the
+3Note that in generalP(ϕ) ̸=0 .
+
+===== PDF PAGE 5 =====
+EQUILIBRIUM STATES IN DYNAMICAL SYSTEMS 573
+present paper is that we can construct these leaf measures directly, without us-
+ing Markov partitions, by an approach reminiscent of Hasselblatt’s from [Has89].
+This requires us to interpret quantities in thermodynamic formalism by analogy
+with Hausdorﬀ dimension, an idea which was introduced by Bowen for entropy in
+[Bow73], developed by Pesin and Pitskel
+′ for pressure in [PP84], and generalized
+further by Pesin in [Pes88,Pes97].
+1.6. Plan of the paper. We describe some motivating examples in§2, and give
+general background deﬁnitions in §3. These sections are addressed to a general
+mathematical audience, and the reader who is already familiar with thermodynamic
+formalism for hyperbolic dynamical systems can safely skip to§4, where we give
+the new deﬁnition of the reference measuresmC
+x and formulate our main results.
+In §5 we recall the necessary results on Carath´eodory dimension characteristics
+and describe some applications of our results to dimension theory. For well-known
+general results, we omit the proofs and give references to the literature where proofs
+can be found. For the new results stated here, we give an outline of the proofs in
+§6a n dr e f e rt o[ C P Z 1 8 ]f o rc o m p l e t ed e t a i l s .
+2. Motivating examples
+Before recalling general deﬁnitions about uniformly hyperbolic systems and their
+invariant measures in §3, we describe three examples to motivate the idea of a
+physical measure. Our discussion here is meant to convey the overall picture and
+omits many details.
+2.1. Hyperbolic toral automorphisms.Ourﬁrst exampleisthediﬀeomorphism
+f on the torus T
+2 = R2/Z2 induced by the linear action of the matrixL =
+(21
+11
+)
+on R2, as shown in Figure 2.1.
+21
+11 (mod Z2)
+Eu
+Es
+Figure 2.1. Lebesgue measure is preserved byf
+This system isuniformly hyperbolic:T h em a t r i xL has two positive real eigen-
+values λs < 1 <λu, whose associated eigenspacesEs and Eu give aDf-invariant
+splitting of the tangent bundleT T2. The lines in R2 parallel to these subspaces
+project tof-invariant foliationsWs and Wu of the torus.
+What about invariant measures? If p ∈T2 has fn(p)= p, then the measure
+μ= 1
+n(δp+δf(p)+··· +δfn−1(p)) is invariant. Every point with rational coordinates
+is periodic for f, so this gives inﬁnitely many f-invariant measures. Lebesgue
+measure is also invariant since detDf =d e tL = 1. (This is far from a complete
+list, as we will see.)
+Am e a s u r eμis ergodic if every f-invariant function (every ϕ∈L1(μ) with
+ϕ= ϕ◦f) is constantμ-almost everywhere. One can check easily that the periodic
+
+===== PDF PAGE 6 =====
+574 VAUGHN CLIMENHAGA, YAKOV PESIN, AND AGNIESZKA ZELEROWICZ
+Figure 2.2. No absolutely continuous invariant measure
+orbit measures from above are ergodic and, with a little more work, that Lebesgue
+measure is ergodic too.4 Birkhoﬀ’s ergodic theorem says that ifμis ergodic, then
+μ-almost everywhere orbit has asymptotic behavior controlled byμ. More precisely,
+we say that thebasin of attractionfor μis the set of initial conditions satisfying a
+law of large numbers governed byμfor continuous observables:
+(2.1) Bμ=
+{
+x ∈T2 : 1
+n
+n−1∑
+k=0
+ϕ(fkx)
+n→∞
+−−−−→
+∫
+ϕdμfor allϕ∈C(T2, R)
+}
+.
+The ergodic theorem says that ifμis ergodic, thenμ(Bμ)=1 .
+For periodic orbit measures, this says very little, since it leaves open the pos-
+sibility that the measureμonly controls the asymptotic behavior of ﬁnitely many
+orbits.5 For Lebesgue measurem, however, this says quite a lot:m governs the sta-
+tistical behavior of Lebesgue-almost every orbit, and in particular, a point chosen
+at random with respect to any volume form onT
+2 has a trajectory whose asymp-
+totic behavior is controlled bym. This is the sense in which Lebesgue measure is
+the physically relevantinvariant measure, and we make the following deﬁnition.
+Deﬁnition 2.1. An invariant measureμfor a diﬀeomorphismf is aphysical mea-
+sure if its basinBμhas positive volume.
+2.2. Smale–Williams solenoid. From Birkhoﬀ’s ergodic theorem, we see that if
+μis an ergodic invariant measure that is equivalent to a volume form,6 then that
+volume form gives full weight to the basinBμ, and so a volume-typical trajectory
+has asymptotic behavior controlled byμ.
+The problem now is that there are many examples for which no suchμexists.
+One such is theSmale–Williams solenoid studied in [Sma67,§I.9] and [Wil67]; see
+also [PC09, Lecture 29] for a gentle introduction and further discussion. This is a
+map from the open solid torusU into itself. Abstractly, the solid torus is the direct
+product of a disc and a circle, so that one may use coordinates (x,y,θ)o nU,w h e r e
+x and y give coordinates on the disc andθis the angular coordinate on the circle.
+Deﬁne a mapf: U → U by
+(2.2) f(x,y,θ): =(
+1
+4x+ 1
+2 cosθ,1
+4y + 1
+2 sinθ,2θ).
+Figure 2.2 shows two iterates off, with half of the original torus for reference.
+Every invariant measure is supported on theattractor Λ= ⋂
+n≥0 fn(U), which
+has zero volume. In particular, there is no invariant measure that is absolutely
+4This can be proved either by Fourier analysis or by the more geometricHopf argument;s e e
+§4.2.2.
+5In factBμ is inﬁnite, being a union of leaves of the stable foliationWs.
+6Recall that two measuresμand νare equivalent if μ≪ νand ν≪ μ,i nw h i c hc a s ew ew r i t e
+μ∼ν.
+
+===== PDF PAGE 7 =====
+EQUILIBRIUM STATES IN DYNAMICAL SYSTEMS 575
+Figure 2.3. A cross-section of the attractor
+continuous with respect to volume. Nevertheless, it is still possible to ﬁnd an
+invariant measure that is physically relevant in the sense given above. To do this,
+ﬁrst observe that since the solenoid mapf contracts distances along each cross-
+section D2 ×{ θ0}, any two points in the same cross-section have orbits with the
+same (forward) asymptotic behavior: given an invariant measureμ, the basinBμ
+is a union of such cross-sections.
+This fact suggests that we should look for an invariant measure that is absolutely
+continuous in the direction of the circle coordinateθ, which is expanded byf.T o
+construct such a measure, observe that each cross-section intersects the images
+fn(U) in a nested sequence of unions of discs (as shown in Figure 2.3) so the
+attractor Λ intersects this cross-section in a Cantor set. Thus Λ is locally the direct
+product of an interval in the expanding direction and a Cantor set in the contracting
+directions. Letm
+u be the Lebesgue measure on the circle, and letμbe the measure
+on Λ that projects tomu and gives equal weight to each of the 2n pieces at thenth
+level of the Cantor set construction in Figure 2.3. One can show without too much
+diﬃculty thatμis invariant and ergodic and that, moreover,B
+μhas full volume in
+the solid torusU. Thus even thoughμis singular, it is still the physically relevant
+invariant measure due to its absolute continuity in the expanding direction.
+2.3. Smale’s horseshoe.Finally, we recall an example for which no physical mea-
+sure exists—thehorseshoe introduced by Smale in the early 1960s; see [Sma67,§I.5]
+and [PC09, Lecture 31] for more details, see also [Sma98] for more history. Con-
+sider a mapf: R → R
+2 which acts on the squareR := [0,1]2 a ss h o w ni nF i g u r e
+2.4: ﬁrst the square is contracted vertically by a factor ofα< 1/2 and stretched
+horizontally by a factor ofβ> 2, then it is bent and positioned so thatf(R)∩R
+consists of two rectangles of heightαand length 1.
+Observe that a part of the squareR is mapped to the complement ofR.C o n -
+sequently, f2 is not deﬁned on the whole squareR but only on the union of two
+vertical strips inR. The set wheref3 is deﬁned is the union of four vertical strips,
+two inside each of the previous ones, and so on; there is a Cantor setCu ⊂[0,1]
+β
+αR
+f (R11) f (R12)
+f (R22)f (R21)
+R11
+R12
+R22
+R21
+f (R)
+Figure 2.4. No physical measure
+
+===== PDF PAGE 8 =====
+576 VAUGHN CLIMENHAGA, YAKOV PESIN, AND AGNIESZKA ZELEROWICZ
+such that every point outsideCu ×[0,1] can be iterated only ﬁnitely many times
+before leaving R. In particular, every f-invariant measure hasBμ ⊂Cu × [0,1]
+and, hence,Bμis Lebesgue-null, so there is no physical measure.
+Note that the argument in the previous paragraph did not consider the stable
+(vertical) direction at all. For completeness, observe that there is a Cantor set
+C
+s ⊂[0,1] such that⋂
+n≥0 fn(R)=[ 0,1] ×Cs and that the maximalf-invariant
+set Λ :=⋂
+n∈Z fn(R) is a direct productCu ×Cs.
+2.4. Main ideas. The three examples discussed so far have certain features in
+common, which are representative of uniformly hyperbolic systems.
+First, every invariant measure lives on a compact invariant set Λ that is locally
+the direct product of two sets, one contracted by the dynamics and one expanded.
+For the hyperbolic toral automorphism
+(
+21
+11
+)
+,Λ= T2, and both of these sets were
+intervals; for the solenoid, there was an interval in the expanding direction and a
+Cantor set in the contracting direction; for the horseshoe, both were Cantor sets.
+Second, the physically relevant invariant measure (when it existed) could also
+be expressed as a direct product. For the hyperbolic toral automorphism, it was
+a product of Lebesgue measure on the two intervals. For the solenoid, it was a
+product of Lebesgue measure on the interval (the expanding circle coordinate) and
+a(
+1
+2, 1
+2)-Bernoulli measureon the contracting Cantor set.
+Third, and most crucially for our purposes, in identifying the physical measure, it
+is enough to look at how invariant measures behavealong the expanding(unstable)
+direction. We will make this precise in§3.2 when we discussconditional measures,
+and this idea will motivate our main construction in§4.3 of reference measures
+associated to diﬀerent potential functions.
+Note that there is an asymmetry in the previous paragraph, because we privilege
+the unstable direction over the stable one. This is because our notion of physical
+measure has to do with asymptotic time averages asn → +∞. If we would instead
+consider the asymptotics asn →− ∞, then the roles of stable and unstable objects
+would be reversed. We should also stress an important diﬀerence between the case
+when the invariant set Λ is an attractor (as in the second example) and the case
+when it is a Cantor set (as in the third example). In the former case the trajectories
+that start near Λ exhibit chaotic behavior for all timet> 0 (thephenomenon known
+aspersistent chaos), while in thelattercase thechaoticbehavior occurs fora limited
+period of time whenever the trajectory passes by in a vicinity of Λ (the phenomenon
+known asintermittent chaos).
+3. Equilibrium states and their relatives
+3.1. Hyperbolic sets. Now we make our discussion more precise and more gen-
+eral. We consider a smooth Riemannian manifoldM and aC
+1+α diﬀeomorphism
+f: M → M and restrict our attention to the dynamics off on a locally maximal
+hyperbolic set. We recall here the basic deﬁnition and most relevant properties,
+referring the reader to the book of Katok and Hasselblatt [KH95, Chapter 6] for
+a more complete account. In what follows it is useful to keep in mind the three
+examples discussed above.
+A hyperbolic setfor f is a compact set Λ⊂M with f(Λ) = Λ such that for every
+x ∈Λ, the tangent space admits a decompositionT
+xM = Es(x)⊕Eu(x)w i t ht h e
+following properties.
+
+===== PDF PAGE 9 =====
+EQUILIBRIUM STATES IN DYNAMICAL SYSTEMS 577
+(1) The splitting isDf-invariant: Dfx(Eσ(x)) =Eσ(fx)f o rσ= s,u.
+(2) The stable subspaceEs(x) is uniformly contracting and the unstable sub-
+space Eu(x) is uniformly expanding: there are constantsC ≥1a n d0<
+χ<1 such that for everyn ≥0a n dvs,u ∈Es,u(x), we have
+∥Dfnvs∥≤ Cχn∥vs∥ and ∥Df−nvu∥≤ Cχn∥vu∥.
+Replacing the original Riemannian metric with anadapted metric,7 we can
+(and will) takeC =1 .
+In the case where Λ =M,t h em a pf is called anAnosov diﬀeomorphism.
+Of course there are some diﬀeomorphisms that do not have any hyperbolic sets
+(think of isometries), but it turns out that a very large class of diﬀeomorphisms
+do, including the examples from the previous section. These examples also have
+the property that Λ islocally maximal, meaning that there is an open setU ⊃
+Λ for which any invariant set Λ
+′ ⊂ U i sc o n t a i n e di nΛ ;i no t h e rw o r d s ,Λ=⋂
+n∈Z fn(U). In this case every C1-perturbation of f also has a locally maximal
+hyperbolic set contained inU. In particular, the set of diﬀeomorphisms possessing
+a locally maximal hyperbolic set is open in theC1-topology.
+A number of properties follow from the deﬁnition of a hyperbolic set. First, the
+subspaces Es,u(x) depend continuously onx ∈Λ. In particular, the angle between
+them is uniformly away from zero. In fact, sincef is C1+α, the dependence onx is
+H¨older continuous:
+(3.1) ρ(Es,u(x),Es,u(y)) ≤Kd(x,y)β,
+where ρis the Grassmannian distance between the subspaces,d is the distance in
+M generated by the (adapted) Riemannian metric, andK,β >0.
+Proposition 3.1 ([KH95, Theorem 6.2.3]). The subspacesEs,u can beintegrated
+locally: for everyx ∈Λ,t h e r ee x i s tlocal stable and unstablesubmanifolds Vs,u
+loc (x)
+given via the graphs ofC1+α functions ψs,u
+x : Bs,u
+x (0,τ) → Eu,s(x),8 for which we
+have the following:
+(1) Vs,u
+loc (x)=e x px{v +ψs,u
+x (v): v ∈Bs,u
+x (0,τ)};
+(2) x ∈Vs,u
+loc (x) and TxVs,u
+loc (x)= Es,u(x);
+(3) f(Vu
+loc(x)) ⊃Vu
+loc(f(x)) and f(Vs
+loc(x)) ⊂Vs
+loc(f(x));
+(4) there is λ∈(χ,1) such that d(f(y),f (z)) ≤λd(y,z) for all y,z ∈Vs
+loc(x)
+and d(f−1(y),f −1(z)) ≤λd(y,z) for all y,z ∈Vu
+loc(x);9
+(5) there is C> 0 such that the H¨older seminorm satisﬁes |Dψs,u
+x |α ≤C for
+all x ∈Λ.
+The numberτis thesize of the local manifolds, and it will be ﬁxed at a suﬃ-
+ciently small value to guarantee various estimates (such as the last item in the list
+above). Note that the properties listed above remain true ifτis decreased. The
+manifolds V
+s,u
+loc (x) depend continuously onx ∈Λ.
+Given a hyperbolic set Λ, there isε> 0 such that for every x,y ∈Λ with
+d(x,y) <ε, the intersection Vs
+loc(x) ∩Vu
+loc(y) consists of a single point, denoted
+by [x,y] and called theSmale bracket of x and y. One can show that Λ is locally
+7This metric may not be smooth but will be at leastC1+γ for someγ>0, which is suﬃcient
+for our purposes.
+8Here Bs,u
+x (0,τ) is the ball inEs,u(x) ⊂TxM of radiusτcentered at 0.
+9This means that the local unstable manifold forf is the local stable manifold forf−1.
+
+===== PDF PAGE 10 =====
+578 VAUGHN CLIMENHAGA, YAKOV PESIN, AND AGNIESZKA ZELEROWICZ
+R x
+y [x,y ]
+Vs
+R(x)
+Vu
+R (y)
+Figure 3.1. A rectangle in the case when Λ =M.
+maximal if and only if [x,y] ∈Λ for all suchx,y; this is the local product structure
+referred to in§2.4.
+Deﬁnition 3.2. Ac l o s e ds e tR ⊂Λ is called arectangle if [x,y] is deﬁned and lies
+in R for allx,y ∈R.G i v e np ∈R,w ew r i t eVs,u
+R (p)= Vs,u
+loc (p)∩R for the parts of
+the local manifolds that lie inR; see Figure 3.1.
+Given a rectangle R and a point p ∈R,l e tA = Vu
+R(p) ⊂Vu
+loc(p)a n dB =
+Vs
+R(p) ⊂Vs
+loc(p). Then [x,y] is deﬁned for allx ∈A and y ∈B,a n d
+(3.2) R =[ A,B]: ={[x,y]: x ∈A,y ∈B}.
+Conversely, it is not hard to show that (3.2) deﬁnes a rectangle wheneverp ∈Λa n d
+the closed setsA ⊂Vu
+loc(p)∩Λa n dB ⊂Vs
+loc(p)∩Λ are contained in a suﬃciently
+small neighborhood ofp.
+For the hyperbolic toral automorphism from§2.1, we can takeA and B to be
+intervals aroundp in the stable and unstable directions, respectively. Then [A,B]i s
+the direct product of two intervals, consistent with our usual picture of a rectangle.
+However, in general, we could just as easily letA and B be Cantor sets and, thus,
+obtain a dynamical rectangle that does not look like the picture we are familiar
+with. For the solenoid and horseshoe, this is the only option; in these examples the
+hyperbolic set Λ has zero volume and empty interior, and we see that rectangles
+are not even connected.
+Indeed, there is a general dichotomy: given a C
+1+α diﬀeomorphismf and a
+locally maximal hyperbolic set Λ, we either have Λ =M (in which casef is an
+Anosov diﬀeomorphism) or Λ has zero volume.10 Even when m(Λ) = 0, the dy-
+namics on Λ still inﬂuences the behavior of nearby trajectories, as is most apparent
+when Λ is anattractor, meaning that there is an open setU ⊃Λ (called atrapping
+region) such thatf(U) ⊂U and Λ =⋂
+n∈N fn(U), as was the case for the solenoid.
+In this case every trajectory that entersU is shadowed by some trajectory in Λ,
+and Λ is a union of unstable manifolds:Vu
+loc(x) ⊂Λ for everyx ∈Λ.
+One ﬁnal comment on the topological dynamics of hyperbolic sets is in order.
+Recall that if X is a compact metric space andf: X → X is continuous, then
+the system (X,f ) is calledtopologically transitiveif for every open setU,V ⊂X
+there is n ∈N such thatU ∩f−n(V) ̸= ∅and is calledtopologically mixing if for
+every suchU,V there is N ∈N such thatU ∩f−n(V) ̸= ∅for all n ≥N.E v e r y
+locally maximal hyperbolic set Λ admits aspectral decomposition[Sma67]. It can
+be written as a union of disjoint closed invariant subsets Λ1,..., Λk ⊂Λ such that
+each f|Λi is topologically transitive, and moreover each Λi is a union of disjoint
+10This dichotomy can fail iff is onlyC1; see [Bow75b].
+
+===== PDF PAGE 11 =====
+EQUILIBRIUM STATES IN DYNAMICAL SYSTEMS 579
+closed invariant subsets Λi,1,..., Λi,ni such thatf(Λi,j)=Λ i,j+1 for 1 ≤j<n i,
+f(Λi,ni)=Λ i,1,a n de a c hfni|Λi,j is topologically mixing. For this reason there is
+no real loss of generality in restricting our attention to topologically mixing locally
+maximal hyperbolic sets.
+3.2. Conditional measures. Now we consider measures on Λ, writingM(Λ) for
+the set of all Borel probability measures on Λ, andM(f,Λ) for the set of all
+such measures that are f-invariant. We brieﬂy mention several basic facts that
+play an important role in the proofs (see [EW11, Chapter 4] for details): the set
+M(f,Λ) is convex, and its extreme points are precisely the ergodic measures; every
+μ∈M(f,Λ) has a uniqueergodic decompositionμ=
+∫
+Me(f,Λ)νdζ(ν), where ζ
+is a probability measure on the space of ergodic measuresMe(f,Λ); and ﬁnally,
+M(f,Λ) is compact in the weak* topology.
+As suggested by the discussion in§2.4, in order to understand how an invariant
+measure μgoverns the forward asymptotic behavior of trajectories, we should study
+how μbehaves along the unstable direction. To make this precise, we now recall
+the notion ofconditional measures; for more details, see [Roh52] or [EW11,§5.3].
+Given μ∈M(f,Λ), consider a rectangleR ⊂Λ withμ(R) > 0. Let ξbe the
+partition of R by local unstable setsVu
+R(x)= Vu
+loc(x) ∩R, x ∈R. These depend
+continuously on the pointx, so the partitionξis measurable.T h i si m p l i e st h a tt h e
+measure μcan be disintegrated with respect toξ:f o rμ-almost everyx ∈R,t h e r e
+is aconditional measureμξ
+Vu
+R (x) on the partition elementVu
+R(x) such that for any
+Borel subsetE ⊂R,w eh a v e11
+(3.3) μ(E)=
+∫
+R
+∫
+Vu
+R (x)
+1E(y)dμξ
+Vu
+R (x)(y)dμ(x).
+Since μξ
+Vu
+R (x) = μξ
+Vu
+R (x′), wheneverx′ ∈Vu
+R(x), the outer integral in (3.3) can also be
+written as an integral over the quotient spaceR/ξ, which inherits a factor measure
+˜μfrom μ|R in the natural way. By the local product structure ofR, we can also
+ﬁx p ∈R and identify R/ξwith Vs
+R(p). Then ˜μgives a measure on Vs
+R(p)b y
+˜μ(A)= μ(⋃
+x∈A Vu
+R(x)). Writing μu
+x = μξ
+Vu
+R (x) for the conditional measure on the
+leaf throughx, we can rewrite (3.3) as12
+(3.4) μ(E)=
+∫
+Vs
+R(p)
+∫
+Vu
+R (x)
+1E(y)dμu
+x(y)d˜μ(x).
+This disintegration is unique under the assumption that the conditional measures
+are normalized. Although the deﬁnition depends onR, in fact choosing a diﬀerent
+rectangle R′ merely has the eﬀect of multiplyingμu
+x by a constant factor onR∩R′
+[CPZ18, Lemma 2.5].
+One can similarly deﬁne a system of conditional measures{μs
+x} on Vs
+R(x)f o r
+x ∈Vu
+R(p). It is then natural to ask whether the conditional measureμs
+p agrees
+with the measure ˜μon Vs
+R(p) from (3.4), and we will return to this question in
+§4.2.2 when we discussabsolute continuityand theHopf argument.
+11For a ﬁnite partition, the obvious way to deﬁne a conditional measure on a partition element
+A with μ(A) > 0i st op u tμA(E)= μ(E ∩A)/μ(A). Roughly speaking, measurability of ξ
+guarantees that it can be written as a limit of ﬁnite partitions, and the conditional measures in
+(3.3) are the limits of the conditional measures for the ﬁnite partitions; see Proposition 6.7 for a
+precise statement.
+12Note thatμu
+x depends onR, although this is suppressed in the notation.
+
+===== PDF PAGE 12 =====
+580 VAUGHN CLIMENHAGA, YAKOV PESIN, AND AGNIESZKA ZELEROWICZ
+3.3. SRB measures. Now suppose that Λ is a hyperbolic attractor and, hence,
+contains the local unstable leafVu
+loc(x) for everyx ∈Λ.
+Deﬁnition 3.3. Given a hyperbolic attractor Λ forf and a pointy ∈Λw i t ha
+local unstable leaf W = Vu
+loc(y), let mW b et h el e a fv o l u m eo nW generated by
+the restriction of the Riemannian metric toW. An invariant measureμis aSina˘ı–
+Ruelle–Bowen (SRB) measure if for every rectangleR ⊂Λ withμ(R) > 0, the
+conditional measuresμu
+x are absolutely continuous with respect to the leaf volumes
+mu
+x for ˜μ-almost everyx.
+One of the major goals in the study of systems with some hyperbolicity is to
+construct SRB measures. In the uniformly hyperbolic setting, this was done by
+Sina˘ı, Ruelle, and Bowen.
+Theorem 3.4 ([Sin68,Bow75a,Rue76]) . Let Λbe a topologically transitive hyper-
+bolic attractor for aC1+α diﬀeomorphismf. Then there is a unique SRB measure
+for f|Λ.
+As suggested by the discussion in§2, it is not hard to show that SRB measures
+are physical in the sense of Deﬁnition 2.1. In fact, one can prove that for hyperbolic
+attractors, SRB measures are theonly physical measures.13
+In addition to this physicality property, it was shown in [Sin68,Rue76] that the
+SRB measureμhas the property that
+(3.5) μ= lim
+n→∞
+1
+n
+n−1∑
+k=0
+fk
+∗m|U,
+where m|U is normalized volume on the trapping regionU ⊃Λ.14 In [PS82], this
+i d e aw a su s e di no r d e rt oconstruct SRB measures15 with m|U replaced by leaf
+volume mVu
+loc(x). We refer to this as thegeometric constructionof SRB measures
+and will return to it when we discuss our main results. First, though, we observe
+that the original constructions of SRB measures followed a diﬀerent approach and
+used mathematical tools borrowed from statistical physics, as we discuss in the next
+section.
+3.4. Equilibrium states. It turns out that it is possible to relate the absolute
+continuity requirement in Deﬁnition 3.3 to a variational problem. The Margulis–
+Ruelle inequality [Rue78a] (see also [BP13,§9.3.2]) states that for any invariant
+Borel measure μs u p p o r t e do nah y p e r b o l i cs e tΛ ,
+16 we have the following upper
+bound for the Kolmogorov–Sina˘ı entropy:
+(3.6) hμ(f) ≤
+∫
+log|detDf|Eu(x)|dμ.
+13An example due to Bowen and Katok [Kat80,§0.3] shows that when Λ is not an attractor,
+it can support a physical measure that is not an SRB measure.
+14In fact, they proved the stronger property thatfn
+∗m|U → μ.
+15More precisely, [PS82] considered the partially hyperbolic setting and used this approach to
+construct invariant measures that are absolutely continuous along unstable leaves; SRB measures
+are a special case of this when the center bundle is trivial.
+16There is a more general version of this inequality that holds without the assumption that
+μis supported on a hyperbolic set, but it requires the notion ofLyapunov exponents,w h i c ha r e
+beyond the scope of this paper.
+
+===== PDF PAGE 13 =====
+EQUILIBRIUM STATES IN DYNAMICAL SYSTEMS 581
+Recall thathμ(f) can be interpreted as the average asymptotic rate at which infor-
+mation is gained if we observe a stochastic process distributed according toμ; (3.6)
+says that this rate can never exceed the average rate of expansion in the unstable
+direction.
+Pesin’s entropy formula [Pes77] states that equality holds in (3.6) ifμis abso-
+lutely continuous with respect to volume. In fact, Ledrappier and Strelcyn proved
+that it is suﬃcient forμto have conditional measures on local unstable manifolds
+that are absolutely continuous with respect to leaf volume [LS82], and Ledrappier
+proved that this condition is also necessary [Led84]. In other words, equality holds
+in (3.6) if and only ifμis an SRB measure.
+Since every hyperbolic attractor Λ has an SRB measure, we conclude that the
+function ϕ
+geo(x)= −log|detDf|Eu(x)| has the property that
+sup
+μ∈M(f,Λ)
+(
+hμ(f)+
+∫
+ϕgeo dμ
+)
+=0 ,
+and the SRB measure for f is the unique measure achieving the supremum, as
+claimed in§1.2. More generally, we have the following deﬁnition.
+Deﬁnition 3.5. Let ϕ: M → R be a continuous function, which we call apotential.
+An equilbrium state (or equilibrium measure)f o rϕis a measureμachieving the
+supremum
+(3.7) sup
+μ∈M(f,Λ)
+(
+hμ(f)+
+∫
+ϕdμ
+)
+.
+ThusSRBmeasuresareequilibriumstatesforthe geometric potentialϕgeo,w h i c h
+is H¨older continuous on every hyperbolic set as long asf is C1+α, by (3.1). This
+means that existence and uniqueness of SRB measures is a special case of the
+following classical result.
+Theorem 3.6([Sin72,Bow75a,Rue78b]). Let Λbe a locally maximal hyperbolic set
+for aC1+α diﬀeomorphismf,a n dl e tϕ:Λ → R be a H¨older continuous potential.
+Assume thatf|Λ is topologically transitive. Then there exists a unique equilibrium
+state μfor ϕ.
+In §§3.5–3.6 we brieﬂy recall two classical proofs of Theorem 3.6 which are based
+on either symbolic representation off|Λ as a topological Markov chain or on the
+speciﬁcation property of f|Λ.I n §4.3 we introduce the tools that we will use to
+provide a new proof which is based on some constructions in geometric measure
+theory.
+The functionμ↦→ h
+μ(f)+
+∫
+ϕdμis aﬃne. It follows that the unique equilibrium
+stateμmust beergodic; otherwise, everyelementofitsergodicdecompositionwould
+also be an equilibrium state. In fact, it has manygood ergodic properties: one can
+prove that it is Bernoulli, has exponential decay of correlations, and satisﬁes the
+central limit theorem [Bow75a].
+The fundamental result of thermodynamic formalism is thevariational principle,
+which establishes that the supremum in (3.7) is equal to thetopological pressureof
+ϕ, which can be deﬁned as follows without reference to invariant measures.
+Deﬁnition 3.7. G i v e na ni n t e g e rn ≥0, consider thedynamical metric of ordern
+(3.8) dn(x,y)=m a x{d(fkx,f ky):0 ≤k<n }
+
+===== PDF PAGE 14 =====
+582 VAUGHN CLIMENHAGA, YAKOV PESIN, AND AGNIESZKA ZELEROWICZ
+and the associatedBowen balls Bn(x,r)= {y : dn(x,y) <r } for eachr> 0. We
+say thatE ⊂Λi s(n,r)-separated if dn(x,y) ≥r for allx ̸= y ∈E,a n dt h a tE is
+(n,r)-spanning for X ⊂Λi fX ⊂⋃
+x∈E Bn(x,r).
+Writing Snϕ(x)= ∑n−1
+k=0 ϕ(fkx)f o rt h enth Birkhoﬀ sumalong the orbit ofx,
+the partition sumof ϕon a setX ⊂Λ refers to one of the following two quantities:
+Zspan
+n (X,ϕ,r): =i n f
+{ ∑
+x∈E
+eSnϕ(x) : E ⊂X is (n,r)-spanning forX
+}
+,
+Zsep
+n (X,ϕ,r): =s u p
+{ ∑
+x∈E
+eSnϕ(x) : E ⊂X is (n,r)-separated
+}
+.
+Then the topological pressure is given by17
+(3.9) P(ϕ) = lim
+r→0
+lim
+n→∞
+1
+n logZspan
+n (Λ,ϕ,r) = lim
+r→0
+lim
+n→∞
+1
+n logZsep
+n (Λ,ϕ,r).
+(One gets the same value iflim is replaced by lim.)
+It is worth noting at this point that the deﬁnition ofP(ϕ) bears a certain sim-
+ilarity to the deﬁnition of box dimension: one coversX by a collection of balls
+at a given scale, associates a certain weight to this collection, and then computes
+the growth rate of this weight as the balls in the cover are reﬁned. The diﬀer-
+ence is that here the reﬁnement is done dynamically rather than statically, and
+diﬀerent balls carry diﬀerent weight according to the ergodic sumS
+nϕ(x); we will
+discuss this point further in§4.3 and §5. When ϕ= 0, we obtain thetopological
+entropy htop(f)= P(0), which gives the asymptotic growth rate of the cardinality
+of an (n,r)-spanning or (n,r)-separated set. One can show that this is also the
+asymptotic growth rate of the number of periodic orbits in Λ of lengthn.
+Now the variational principle [Wal82, Theorem 9.10] can be stated as follows:
+(3.10) P(ϕ)= s u p
+μ∈M(f,Λ)
+(
+hμ(f)+
+∫
+ϕdμ
+)
+.
+The discussion at the beginning of this section shows thatP(ϕgeo)=0 .G i v e na
+potential ϕ, we see that an equilibrium state forϕis an invariant measureμϕ such
+that P(ϕ)= hμϕ(f)+
+∫
+ϕdμϕ. For the potential functionϕ= 0, the equilibrium
+state μϕ= μ0 is themeasure of maximal entropy.
+3.5. First proof of Theorem 3.6: symbolic representation of f|Λ. The
+original proof of Theorem 3.6 uses a symbolic coding of the dynamics on Λ. If
+Λ= X1 ∪···∪ Xp, then we say that a bi-inﬁnite sequenceω∈Ωp := {1,...,p }Z
+codes the orbitof x ∈Λi ffnx ∈Xωn for all n ∈Z. When Λ is a locally max-
+imal hyperbolic set, it is not hard to show that everyω∈Ωp codes the orbit of
+at most onex ∈Λ; if such anx exists, call itπ(ω). Let Σ⊂Ωp be the set of all
+sequences that code the orbit of somex ∈Λ. Then Σ is invariant under the shift
+map σ:Ωp → Ωp deﬁned by (σω)n = ωn+1,a n dt h em a pπ:Σ → Λi satopological
+17The fact that the limits coincide is given by an elementary argument comparingZspan
+n and
+Zsep
+n . In fact, the limit in r can be removed due to expansivity off|Λ; see Deﬁnition 3.9 and
+[Wal82, Theorem 9.6].
+
+===== PDF PAGE 15 =====
+EQUILIBRIUM STATES IN DYNAMICAL SYSTEMS 583
+semiconjugacy, meaning that the following diagram commutes.
+(3.11) Σ σ →→
+π
+↓↓
+Σ
+π
+↓↓
+Λ
+f →→Λ
+If the setsXi overlap, then the coding map may fail to be injective. One would like
+to produce a coding space Σ with anice structure for which the failure of injectivity
+is small. This was accomplished by Sina˘ıw h e nΛ=M [Sin68] and by Bowen in the
+general setting [Bow70,Bow75a]. They showed that things can be arranged so that
+Σ is deﬁned by a nearest-neighbor condition, with the failure of injectivity conﬁned
+to sets that are invisible from the point of view of equilibrium states.
+Theorem 3.8([Bow75a]). If Λis a locally maximal hyperbolic set for a diﬀeomor-
+phism f, then there is aMarkov partition Λ =X
+1 ∪···∪ Xp such that eachXi is
+a rectangle that is the closure of its interior(in the induced topology onΛ)and the
+corresponding coding spaceΣis a topological Markov chain
+(3.12) Σ = {ω∈Ωp : f(intXωn)∩intXωn+1 ̸= ∅for all n ∈Z},
+and there is a setΛ′ ⊂Λsuch that
+(1) every x ∈Λ′ has a unique preimage underπ,a n d
+(2) if μ∈M(f,Λ)is an equilibrium state for a H¨older continuous potential
+ϕ:Λ → R,t h e nμ(Λ′)=1 .
+With this result in hand, the problem of existence and uniqueness of equilibrium
+states can be transferred from the smooth system (Λ,f,ϕ) to the symbolic system
+(Σ,σ,˜ϕ:= ϕ◦π), where tools from statistical mechanics and Gibbs distributions
+can be used. We recall here the most important ideas, referring to [Sin72,Bow75a,
+Rue78b] for full details.
+Give Σ the metricd(ω,ω
+′)=2 −min{|n|:ωn̸=ω′
+n}, so that two sequences are close
+if they agree on a long interval of integers around the origin. The coding mapπis
+H¨older continuous in this metric, so ˜ϕis also H¨older continuous. Fixingr ∈(1
+2,1),
+the Bowen balls associated to the dynamical metric (3.8) are given by
+(3.13) Bn(ω,r)= {ω′ ∈Σ: ω′
+i = ωi for all 0≤i<n } =: Cn(ω),
+which we call then-cylinder of ω.L e tEn ⊂Σ contain exactly one point from
+each n-cylinder. Then En is both (n,r)-spanning and (n,r)-separated, and writing
+Zn(Σ, ˜ϕ)= ∑
+ω∈En
+eSn ˜ϕ(ω), one obtains
+P(ϕ)= P(˜ϕ) = lim
+n→∞
+1
+n logZn(Σ, ˜ϕ).
+To understand what an equilibrium state for ˜ϕshould look like, recall that the
+Kolmogorov–Sina˘ı entropy of aσ-invariant measure ˜μis deﬁned as
+h˜μ(σ) = lim
+n→∞
+1
+n
+∑
+ω∈En
+−˜μ(Cn(ω))log ˜μ(Cn(ω)).
+A short exercise using the invariance of ˜μand the continuity ofϕshows that
+∫
+˜ϕd˜μ= lim
+n→∞
+∑
+ω∈En
+∫
+Cn(ω)
+˜ϕd˜μ= lim
+n→∞
+∑
+ω∈En
+˜μ(Cn(ω))· 1
+nSn ˜ϕ(ω).
+
+===== PDF PAGE 16 =====
+584 VAUGHN CLIMENHAGA, YAKOV PESIN, AND AGNIESZKA ZELEROWICZ
+Thus maximizing h˜μ(σ)+
+∫
+˜ϕd˜μinvolves maximizing the limit of a sequence of
+expressions of the formF(p1,...,p N)= ∑N
+i=1 pi(−logpi+ai), whereN(n)=# En
+and pi,ai are given by ˜μ(Cn(ω)) and Sn ˜ϕ(ω), so thatpi ≥0a n d∑
+i pi =1 . I t
+is a calculus exercise to show that withai ﬁxed, F achieves its maximum value of
+F =l o g∑eaj =l o gZn(Σ, ˜ϕ) ≈nP(ϕ)w h e npi = eai/ ∑
+j eaj ≈eaie−nP(ϕ).
+This last relation can be rewritten as ˜μ(Cn(ω)) ≈eSn ˜ϕ(ω)e−nP(ϕ). With this in
+mind, one can use tools from functional analysis and statistical mechanics to show
+that there is aσ-invariant ergodic measure ˜μon Σ which has theGibbs property
+with respect to ˜ϕ:t h e r ei sQ> 0 such that for everyω∈Σa n dn ∈N,w eh a v e
+(3.14) Q
+−1 ≤ ˜μ(Cn(ω))
+exp(−P(ϕ)n+Sn ˜ϕ(ω)) ≤Q.
+By a general result that we will state momentarily, this is enough to guarantee
+that ˜μis the unique equilibrium state for (Σ,σ,˜ϕ), and hence by Theorem 3.8, its
+projection μ= π∗˜μis the unique equilibrium state for (Λ,f,ϕ).
+To formulate the link between the Gibbs property and equilibrium states, we
+ﬁrst recall the following more general deﬁnitions.
+Deﬁnition 3.9. Given a compact metric spaceX, a homeomorphismf: X → X is
+said to beexpansive if there isε>0 such that everyx ̸= y ∈X has d(fnx,f ny) >ε
+for somen ∈Z.
+Deﬁnition 3.10. Am e a s u r eμon X is aGibbs measurefor ϕ: X → R if for every
+small r> 0t h e r ei sQ = Q(r) > 0 such that for everyx ∈X and n ∈N,w eh a v e
+(3.15) Q−1 ≤ μ(Bn(x,r))
+exp(−P(ϕ)n+Snϕ(x)) ≤Q.
+Note thatσ:Σ → Σ is expansive, and that (3.14) implies (3.15) in this symbolic
+setting. Then uniqueness of the equilibrium state is a consequence of the following
+general result.
+Proposition 3.11 ([Bow75, Lemma 8]). If X is a compact metric space,f: X →
+X is an expansive homeomorphism, andμis an ergodicf-invariant Gibbs measure
+for ϕ: X → R,t h e nμis the unique equilibrium state forϕ.
+We remark that (3.15) does not require the Gibbs measure to be invariant.
+Indeed, one can separate the problem of ﬁnding a unique equilibrium state into
+two parts: ﬁrst construct a Gibbs measure without worrying about whether or
+not it is invariant; then ﬁnd a density function (bounded away from 0 and∞)t h a t
+produces an ergodic invariant Gibbs measure, which is the unique equilibrium state
+by Proposition 3.11.
+3.6. Second proof of Theorem 3.6: speciﬁcation property.There is another
+proof of Theorem 3.6 which is due to Bowen [Bow75] and avoids symbolic dynam-
+ics. Instead, it uses the fact thatf satisﬁes the followingspeciﬁcation propertyon
+a topologically mixing locally maximal hyperbolic set Λ. For eachδ> 0, there
+is an integerp(δ) such that given any pointsx
+1,...,x n ∈Λa n di n t e r v a l so fi n t e -
+gers I1,...I n ⊂[a,b] with d(Ii,Ij) ≥p(δ)f o ri ̸= j,t h e r ei sap o i n tx ∈Λ with
+fb−a+p(δ)(x)= x and d(fk(x),f k(xi)) <δfor k ∈Ii. Roughly speaking, f satis-
+ﬁes speciﬁcation if for every ﬁnite number of orbit segments one can ﬁnd a single
+periodic orbit that consecutively approximates each segment with a ﬁxed precision
+
+===== PDF PAGE 17 =====
+EQUILIBRIUM STATES IN DYNAMICAL SYSTEMS 585
+δ>0 and such that transition times are bounded byp(δ). This property allows one
+to study some topological and statistical properties off by only analyzing periodic
+orbits.
+The construction of the Gibbs measure ˜μin the ﬁrst approach uses eigendata of a
+certain linear operator acting on an appropriately chosen Banach space of functions
+on Λ. The speciﬁcation property allows one to use a more elementary construction
+and obtain a Gibbs measure on Λ as a weak* limit point of measures supported on
+periodic orbits. Let Per
+n := {x ∈Λ: fnx = x} and Zper
+n (ϕ): = ∑
+x∈Pern
+eSnϕ(x)
+(compare this toZspan
+n and Zsep
+n from Deﬁnition 3.7). Then consider thef-invariant
+Borel probability measures given by
+μn := 1
+Zper
+n (ϕ)
+∑
+x∈Pern
+eSnϕ(x)δx,
+where δx is the atomic probability measure withδx({x})=1 .
+Using some counting estimates on the partition sumsZper
+n (ϕ) provided by the
+speciﬁcation property, one can prove that every weak* limit pointμof the sequence
+μn is an ergodic Gibbs measure as in (3.15). Then Proposition 3.11 shows thatμ
+is the unique equilibrium state forϕ; a posteriori, the sequenceμn converges.
+4. Description of reference measures and main results
+In this section, and especially in Theorem 4.11, we describe a new proof of The-
+orem 3.6 that avoids Markov partitions and the speciﬁcation property and instead
+mimics the geometric construction of SRB measures in§3.3. Given a locally max-
+imal hyperbolic set Λ and a H¨older continuous potentialϕ:Λ → R, we deﬁne for
+each x ∈Λam e a s u r em
+C
+x on X = Vu
+loc(x)∩Λ such that the sequence of measures
+(4.1) μn = 1
+n
+n−1∑
+k=0
+fk
+∗mC
+x
+mCx(X)
+converges to the unique equilibrium state.18 In §4.2 we give some motivation for the
+properties we require the reference measuresmC
+x to have, then in§4.3 we explain
+our construction of these measures. In§4.4 we state our main results establishing
+the properties ofmC
+x, including how these measures can be used to prove Theorem
+3.6. In §6 we outline the proofs of these results, referring to [CPZ18] for complete
+details and for proofs of various technical lemmas.
+4.1. Conditional measures as reference measures.We start with the obser-
+vation that if we were already in possession of the equilibrium stateμ, then the
+conditional measures ofμwould immediately deﬁne reference measures for which
+the construction just described producesμ. Indeed, supposeX is a compact topo-
+logical space,f: X → X is a continuous map, andμis a ﬁnitef-invariant ergodic
+Borel probability measure onX.G i v e nY ⊂X with μ(Y) > 0 and a measurable
+partition ξof Y,l e t˜μbe the corresponding factor measure on˜Y := Y/ξ, and let
+{μξ
+W : W ∈ξ} be the conditional measures on partition elements.19 We prove the
+18To be more precise we need ﬁrst to extendmC
+x from X to a measure on Λ by assigning to
+any Borel setE ⊂Λt h ev a l u emC
+x(E ∩X). We shall always assume that in (4.1)mC
+x is extended
+in this way.
+19Note thatξis not assumed to have any dynamical signiﬁcance; in particular it need not be a
+partition into local unstable leaves, although this is the most relevant partition for our purposes.
+
+===== PDF PAGE 18 =====
+586 VAUGHN CLIMENHAGA, YAKOV PESIN, AND AGNIESZKA ZELEROWICZ
+following result in§6.4; it follows from an even more general result in ergodic theory
+that we state below as Proposition 6.11.
+Theorem 4.1. For ˜μ-almost every W ∈ξ, any probability measureνon W such
+that ν≪ μξ
+W has the property that νn := 1
+n
+∑n−1
+k=0 fk
+∗νconverges in the weak∗
+topology to the measureμ.
+Of course, Theorem 4.1 is not much help in ﬁnding the equilibrium stateμ,
+because we need to know μto obtain the conditional measures μξ
+W.W e m u s t
+construct the reference measuremC
+x independently, without using any knowledge
+of existence of equilibrium states. Once we have done this, we will eventually show
+that mC
+x is equivalent to the conditional measure of the constructed equilibrium
+state, so our approach not only allows us to develop a new way of constructing
+equilibrium states, but also describes their conditional measures.
+4.2. Conditions to be satisﬁed by reference measures.To motivatethe prop-
+ertiesthat our referencemeasures must have, we ﬁrst consider thespeciﬁc case when
+Λ is an attractor and outline the steps in constructing SRB measures.
+(1) Given a local unstable leafW = V
+u
+loc(x) through x ∈Λa n dn ≥0, the
+image Wn := fn(W) is contained in the union of local leavesVu
+loc(yi)f o r
+some pointsy1,...,y s ∈Wn, and the leaf volumemu
+x is pushed forward to
+am e a s u r efn
+∗mu
+x
+such that (fn
+∗mu
+x
+)|Vu
+loc(yi) ≪ mu
+yi for eachi.
+(2) Each μn := 1
+n
+∑n−1
+k=0 fk
+∗mu
+x
+can be written as a convex combination of mea-
+sures with the formρi
+n dmu
+y
+i for some functionsρi
+n: Vu
+loc(yi) → [0,∞)t h a t
+are uniformly bounded away from 0 and∞.
+(3) To show that any limit measureμ= limj→∞ μnj has absolutely continuous
+conditional measures on unstable leaves, ﬁrst observe that given a rectangle
+R, the partition ξinto local unstable leaves can be approximated by a
+reﬁning sequence of ﬁnite partitionsξℓ, and the conditional measuresμξ
+x
+are the weak* limits of the conditional measuresμξℓ
+x as ℓ →∞ .
+(4) The bounds on the density functionsρi
+n allow us to control the conditional
+measures μξℓ
+x , and hence to controlμξ
+x as well; in particular, these measures
+are absolutely continuous with respect to leaf volume, and thusμis an SRB
+measure.
+Now we describe two crucial properties of the leaf volumesmu
+x, which we will
+eventually need to mimic with our reference measuresmC
+x. The ﬁrst of these already
+appeared in (1.1) and describes howmu
+x scales under iteration byf; this will let
+us conclude that the SRB measureμis an equilibrium state forϕgeo. The second
+propertydescribeshow mu
+x behaveswhenwe slide along stable leavesviaa holonomy
+map; this issue has so far been ignored in our discussion, but plays a key role in
+the proof that the SRB measureμis ergodic, and hence is theunique equilibrium
+state forϕgeo.
+4.2.1. Scaling under iteration.Given anyx,y ∈Λa n dA ⊂f(Vu
+loc(x))∩Vu
+loc(y), we
+have
+f∗mu
+x(A)= mu
+x(f−1A)=
+∫
+A
+|detf−1|Eu(z)|dmu
+y(z)=
+∫
+A
+eϕgeo(f−1z) dmu
+y(z),
+
+===== PDF PAGE 19 =====
+EQUILIBRIUM STATES IN DYNAMICAL SYSTEMS 587
+and so the Radon–Nikodym derivative comparing the family of measuresmu
+x to
+their pushforwards is given in terms of the geometric potential
+(4.2) d(f∗mu
+x)
+dmuy
+(z)= eϕgeo(f−1(z)).
+Iterating this, we see that givenA ⊂fn(Vu
+loc(x))∩Vu
+loc(y), we have
+(4.3) fn
+∗mu
+x
+(A)= mu
+x(f−nA)=
+∫
+A
+e
+∑n
+k=1 ϕgeo(f−kz) dmu
+y(z).
+By H¨older continuity ofϕgeo and the fact thatf−1 contracts uniformly along each
+Vu
+loc, one can easily show that
+(4.4)
+⏐⏐
+⏐
+n∑
+k=1
+(
+ϕgeo(f−kz1)−ϕgeo(f−kz2)
+)⏐⏐
+⏐ ≤Q
+u for allz1,z2 ∈Vu
+loc(y),
+where Qu is a constant independent ofy ∈Λ,z1,z2 ∈Vu
+loc(y), and n ∈ N (see
+Lemma 6.6 for details). Together with (4.3), this gives
+(4.5) e−Qu ≤ mu
+x(f−nA)
+eSnϕgeo(x)muy(A) ≤eQu for allA ⊂fn(Vu
+loc(x))∩Vu
+loc(y).
+In particular, writingBu(y,r)= B(y,r)∩Vu
+loc(y), we observe that for eachr> 0
+there is a constantK = K(r) > 0 such thatmu
+y(Bu(y,r)) ∈[K−1,K] for ally ∈Λ,
+and deduce from (4.5) that theu-Bowen ball
+Bu
+n(x,r): ={z ∈Vu
+loc(x): dn(x,z) <r } = f−nBu(fnx,r)
+admits the leaf volume estimate
+(4.6) K−1e−Qu ≤mu
+x(Bu
+n(x,r))
+eSnϕgeo(x) ≤KeQu.
+Deﬁnition 4.2. Consider a family of measures {μx : x ∈Λ} such that μx is
+supported on Vu
+loc(x). We say that this family has the u-Gibbs property20 with
+respect to the potential functionϕ:Λ → R if there isQ1 = Q1(r) > 0 such that
+for allx ∈Λa n dn ∈N,w eh a v e
+(4.7) Q−1
+1 ≤ μx(Bu
+n(x,r))
+e−nP(ϕ)+Snϕ(x) ≤Q1.
+In particular, (4.6) says thatmu
+x has theu-Gibbs property with respect to the po-
+tential functionϕgeo. Since the SRB measureμconstructed above has conditional
+measures that are given by multiplying the leaf volumesmu
+x by nice density func-
+tions, one can use (4.6) to ensure that the conditional measures ofμalso have the
+u-Gibbs property. Integrating these conditional measures gives the Gibbs property
+forμ, and then some straightforward estimates involvingZspan
+n (Λ,ϕ,r)demonstrate
+that μis an equilibrium state corresponding to the functionϕgeo.
+20Note that this is a diﬀerent notion than the idea ofu-Gibbs state from [PS82].
+
+===== PDF PAGE 20 =====
+588 VAUGHN CLIMENHAGA, YAKOV PESIN, AND AGNIESZKA ZELEROWICZ
+4.2.2. Sliding along stable leaves. It remains, then, to show thatμis the unique
+equilibrium state forϕgeo; this will follow from Proposition 3.11 ifμis proved to
+be ergodic. To establish ergodicity, we use theHopf argument, which goes back to
+E. Hopf’s work on geodesic ﬂow over surfaces [Hop39]. The ﬁrst step is to observe
+that ifμis any invariant measure, then by Birkhoﬀ’s ergodic theorem,
+21 for every
+ψ∈L1(μ), the forward and backward ergodic averages exist and agree forμ-a.e. x:
+(4.8) lim
+n→∞
+1
+n
+n−1∑
+k=0
+ψ(fkx) = lim
+n→∞
+1
+n
+n−1∑
+k=0
+ψ(f−kx).
+Let B⊂ Λ be the set of points where the limits in (4.8) exist and agree for every
+continuous ψ:Λ → R; such points are calledBirkhoﬀ regular.F o r e a c hx ∈B,
+write ψ(x) for the common value of these limits; note thatψis deﬁnedμ-a.e. It is
+not hard to prove thatμis ergodic if and only if the functionψ: B→ R is constant
+μ-a.e. for every continuousψ:Λ → R. By topological transitivity and the fact that
+ψ◦f = ψon B, one obtains the following standard result, whose proof we omit.
+Lemma 4.3. An f-invariant measureμis ergodic if and only if for every contin-
+uous ψ:Λ → R and every rectangleR ⊂Λ, the functionψ: B∩R → R is constant
+μ-a.e.
+Now comes the central idea of the Hopf argument: Givenψ∈C(Λ), ifψ(x)
+exists, then a short argument using the left-hand side of (4.8) givesψ(y)= ψ(x)
+for ally ∈B∩Vs
+R(x). Similarly, ψis constant onB∩Vu
+R(x) using the right-hand
+side of (4.8).
+We want to conclude the proof of ergodicity by saying something like the follow-
+ing:
+Since B has full measure inR, it has full measure in almost every
+stable and unstable leaf in R.T h u s t h e r e i sp ∈R such that
+Bp := ⋃
+x∈B∩V u
+R (p) B∩ Vs
+R(x) has full measure in R,a n db yt h e
+previous paragraph,ψis constant onBp, so Lemma 4.3 applies.
+There is a subtlety involved in making this step rigorous. To begin with, the
+term “full measure” is used in two diﬀerent ways: “B has full measure inR”m e a n s
+that its complementBc = R \B has μ(R \B ) = 0, while “B has full measure in
+the stable leafVs
+R(x)” means thatμs
+x(Bc)=0 ,w h e r eμs
+x is the conditional measure
+of μalong the stable leaf. Using the analogue of (3.3)–(3.4) for the decomposition
+into stable leaves, we have
+(4.9) μ(Bc)=
+∫
+R
+μs
+x(Bc)dμ(x)=
+∫
+Vu
+R (p)
+μs
+x(Bc)d˜μp(x),
+where ˜μp is the measure onVu
+R(p) deﬁned by
+˜μp(A)= μ
+( ⋃
+x∈A
+Vs
+R(x)
+)
+.
+21This is a more general version of the ergodic theorem than the one we mentioned in§2.1.
+This version applies even whenμis not ergodic, but does not require that the limits in (4.8) are
+equal to
+∫
+ψdμ;i n s t e a d ,o n eo b t a i n s
+∫
+ψdμ=
+∫
+ψdμ, which implies the earlier version in the case
+when ψis constantμ-a.e.
+
+===== PDF PAGE 21 =====
+EQUILIBRIUM STATES IN DYNAMICAL SYSTEMS 589
+Let B′ = {x ∈R : μs
+x(Bc)=0 }. It follows that
+0= μ(Bc)=
+∫
+R
+μs
+x(Bc)dμ(x)=
+∫
+R\B0
+μs
+x(Bc)dμ(x),
+and sinceμs
+x(Bc) > 0 for allx ∈R\B0 by deﬁnition, we conclude thatμ(R\B′)=0 ;
+in other words,μs
+x(Bc)=0f o rμ-a.e. x ∈R. A similar argument producesB′′ ⊂B′
+such thatμ(R\B ′′)=0a n dμu
+x(Bc)= μs
+x(Bc) = 0 for everyx ∈B′′.
+So far, things are behaving as we expect. Now, can we conclude thatμ(Bp)=
+μ(R)f o rp ∈B′′, thus completing the proof of ergodicity? Using (4.9), we have
+μ(Bp)=
+∫
+Vu
+R (p)
+μs
+x
+( ⋃
+y∈B∩V u
+R (p)
+B∩Vs
+R(y)
+)
+d˜μp(x)
+≥
+∫
+B′′∩Vu
+R (p)
+μs
+x(B)d˜μp(x)=˜μp(B′′).
+We would like to say that ˜μp(B′′)=˜μp(Vu
+R(p)) =μ(R), and conclude thatBp has
+full μ-measure inR. We know thatμu
+p(B′′)= μu
+p(Vu
+R(p)), and so the proof will be
+complete if the answer to the following question is “yes”.
+Question. Are the measures ˜μp and μu
+p on Vu
+R(p)e q u i v a l e n t ?
+Note that the measuresμu
+p are deﬁned in terms of the foliationVu
+R, while the
+measures ˜μp are deﬁned in terms of the foliationVs
+R.W ec a nw r i t et h em e a s u r e s
+˜μp in terms ofμu
+p as follows. GivenA ⊂Vu
+R(p), we have
+(4.10) ˜ μp(A)= μ
+( ⋃
+x∈A
+Vs
+R(x)
+)
+=
+∫
+R
+μu
+y{Vu
+R(y)∩Vs
+R(x): x ∈A}dμ(y).
+For eachp,y ∈R, consider the (stable) holonomy mapπpy : Vu
+R(p) → Vu
+R(y) deﬁned
+byπpy(x)= Vu
+R(y)∩Vs
+R(x), which maps one unstable leaftoanother bysliding along
+stable leaves; see Figure 4.1. Then (4.10) becomes
+˜μp(A)=
+∫
+R
+(μu
+y ◦πpy)(A)dμ(y).
+In other words, ˜μp is the average of the conditional measuresπ∗
+pyμu
+y
+= μu
+y ◦πpy
+taken over ally ∈R.
+Deﬁnition 4.4. Let {νx}x∈R be a family of measures onR with the property that
+each νx is supported on Vu
+R(x), and let νx = νy whenever y ∈Vu
+R(x). We say
+x
+y πpy (x)πpy (A)
+Vs
+R(x)
+Vu
+R (y)A
+p Vu
+R (p)
+Figure 4.1. The stable holonomy map fromVu
+R(p)t oVu
+R(y)
+
+===== PDF PAGE 22 =====
+590 VAUGHN CLIMENHAGA, YAKOV PESIN, AND AGNIESZKA ZELEROWICZ
+that the family{νx} is absolutely continuous22 with respect to stable holonomiesif
+π∗
+xyνy ≪ νx for allx,y ∈R.
+The preceding arguments lead to the following result; full proofs (and further
+discussion) can be found in [CHT16].
+Proposition 4.5. Let Λbe a topologically transitive hyperbolic set for aC1+α
+diﬀeomorphismf,a n dl e tμbe an f-invariant measure on Λ. Suppose that for
+every rectangle R ⊂Λwith μ(R) > 0, the unstable conditional measuresμu
+x are
+absolutely continuous with respect to stable holonomies. Thenμis ergodic.
+4.3. Construction of reference measures.In light of the previous section, our
+goal is to construct for each potentialϕa reference measuremC
+x on each leafVu
+loc(x)
+satisfying a property analogous to (4.2) withϕin place ofϕgeo, together with the
+absolute continuity property from Deﬁnition 4.4.
+From now on we ﬁx a local unstable manifoldW = Vu
+loc(x) of sizeτand consider
+the setX = W ∩Λ on which we will build our reference measure. Before treating
+general potentials, we start with the geometric potentialϕgeo, and we assume that
+Λ is an attractor forf,s ot h a tW ⊂Λ. This is necessary for the moment since the
+measure we build will be supported onW ∩Λ, and the support ofmW is all ofW;
+in the general construction below we will not require Λ to be an attractor. For the
+geometric potentialϕ
+geo, we know the reference measuremC
+x should be equivalent
+to the leaf volumemW on W.23 Leaf volume is equivalent to the Hausdorﬀ measure
+mH(·,α) withα=d i mEu, which is deﬁned by
+(4.11) mH(Z,α) := lim
+ε→0
+inf
+∞∑
+i=1
+(diamUi)α,
+where the inﬁmum is taken over all collections{Ui} of open sets Ui ⊂W with
+diamUi ≤εwhich coverZ ⊂W.
+Wewanttodescribeameasurethatisequivalentto mH(·,α)butwhosedeﬁnition
+uses the dynamics of f. In (4.11), the covers used to measure Z were reﬁned
+geometrically by sendingε→ 0. We consider instead covers that reﬁnedynamically:
+we restrict the setsUi to beu-Bowen ballsBu
+n(x,r)= Bn(x,r)∩W, and reﬁne the
+covers by requiringn to be large rather than by requiringr to be small. Note that
+if Ui is a metric ballB(x,ε), then (diamUi)α ≈mW(Ui) up to a multiplicative
+factor that is bounded away from 0 and∞.F o rau-Bowen ball, on the other hand,
+(4.6) givesmW(Bu
+n(x,r)) ≈eSnϕgeo(x), and so we use this quantity to compute the
+weight of the cover. This suggests that we should ﬁxr> 0 and deﬁne the measure
+of Z ⊂W by
+(4.12) mϕgeo
+x (Z) := lim
+N→∞
+inf
+∞∑
+i=1
+eSniϕgeo(xi),
+where the inﬁmum is taken over all collections{Bu
+ni(xi,r)} of u-Bowen balls with
+xi ∈W, ni ≥N,w h i c hc o v e rZ. It is relatively straightforward to derive property
+(4.2) from (4.12).
+22There is a related, but distinct, notion of absolute continuity of a foliation (with respect to
+volume), which also plays a key role in smooth ergodic theory; see [BP07,§8.6].
+23From Theorem 4.1 we see that the equivalence class of the measure isthe crucial thing for
+the geometric construction to work.
+
+===== PDF PAGE 23 =====
+EQUILIBRIUM STATES IN DYNAMICAL SYSTEMS 591
+Now it is nearly apparent what the deﬁnition should be for a general potential:
+we want to replaceϕgeo with ϕin (4.12). There is one small subtlety, though. First,
+Deﬁnition 3.7 givesP(ϕ+c)= P(ϕ)+c for c ∈R. This along with the deﬁnition of
+equilibrium state and the variational principle (3.10) shows that adding a constant
+to ϕdoes not change its equilibrium states, and thus we should also expect thatϕ
+and ϕ+c produce the same reference measure onW ∩Λ. For this to happen, we
+need to modify (4.12) so that adding a constant toϕdoes not aﬀect the value. This
+can be achieved by multiplying each term in the sum bye
+−niP(ϕ).N o t et h a ts i n c e
+P(ϕgeo) = 0, this does not modify (4.12). Thus we make the following deﬁnition.
+Deﬁnition 4.6. Let 0<r< τ
+3. We deﬁne a measure onX := W ∩Λb y
+(4.13) mC
+x(Z) := lim
+N→∞
+inf
+∑
+i
+e−niP(ϕ)eSniϕ(xi),
+where the inﬁmum is taken over all collections{Bu
+ni(xi,r)} of u-Bowen balls with
+xi ∈X, ni ≥N,w h i c hc o v e rZ, and for convenience we writeC =( ϕ,r) to keep
+track of the data on which the reference measure depends.
+Both deﬁnitions (4.12) and (4.13) are speciﬁc cases of the Carath´eodory mea-
+sure produced by a dynamically deﬁned Carath´eodory dimension structure, which
+we discuss at greater length in§5; this is the Pesin–Pitskel′ deﬁnition of topolog-
+ical pressure [PP84] that generalized Bowen’s deﬁnition of topological entropy for
+noncompact sets [Bow73]. In particular, Proposition 5.4 establishes the crucial
+property that every local unstable leaf carries the same topological pressure as the
+entire set Λ.
+4.4. Statements of main results.Now we state the most important propertiesof
+m
+C
+x and show how it can be used as a reference measure to construct the equilibrium
+state forϕ. All results in this section are proved in detail in [CPZ18];24 we outline
+the proofs in §6. Our ﬁrst main result shows that the measuremC
+x is ﬁnite and
+nonzero.
+Theorem 4.7 ([CPZ18, Theorem 4.2]). Let Λbe a topologically transitive locally
+maximal hyperbolic set for aC1+α diﬀeomorphismf,a n dl e tϕ:Λ → R be H¨older
+continuous. Fixr as in Deﬁnition4.6,a n df o re a c hx ∈Λ,l e tmC
+x be given by(4.13),
+where C =( ϕ,r). Then there isK> 0 such that for everyx ∈Λ, mC
+x is a Borel
+measure onVu
+loc(x)∩Λwith mC
+x(Vu
+loc(x)∩Λ)∈[K−1,K].I fVu
+loc(x)∩Vu
+loc(y)∩Λ̸= ∅,
+then mC
+x and mC
+y agree on the intersection.
+As described in §4.2, we need to understand how the measuresmC
+x transform
+under (1) the dynamics off and (2) sliding along stable leaves via holonomy. For
+the ﬁrst of these properties, the following result gives the necessary scaling property
+analogous to (4.2).
+Theorem 4.8([CPZ18, Theorem 4.4]). Under the hypotheses of Theorem4.7,f o r
+every x ∈Λ, we havef
+∗mC
+f(x) := mC
+f(x) ◦f ≪ mC
+x, with Radon–Nikodym derivative
+eP(ϕ)−ϕ, so that(1.2) holds.
+24The numbering of references within [CPZ18] refers to the ﬁrst arXiv version; it is possible
+that the numbering will change between this and the ﬁnal published version.
+
+===== PDF PAGE 24 =====
+592 VAUGHN CLIMENHAGA, YAKOV PESIN, AND AGNIESZKA ZELEROWICZ
+Corollary 4.9 ([CPZ18, Corollary 4.5]). Under the hypotheses of Theorem4.7,
+the family of measures{mC
+x}x∈Λ has the u-Gibbs property from Deﬁnition4.2.I n
+particular, for every relatively openU ⊂Vu
+loc(x)∩Λ, we havemC
+x(U) > 0.
+The ﬁnal crucial property of the reference measures is that they are absolutely
+continuous under holonomy.
+Theorem 4.10 ([CPZ18, Theorem 4.6]). Under the hypotheses of Theorem4.7,
+there is a constantQ2 > 0 such that for every rectangleR ⊂Λand everyy,z ∈R,
+the measuresπ∗
+yzmC
+z
+= mC
+z ◦πyz and mC
+y are equivalent onVu
+R(y),w i t h
+Q−1
+2 ≤dπ∗
+yzmC
+z
+dmCy
+≤Q2.
+Note that Theorem 4.10 in particular shows that given a rectangleR ⊂Λ, if
+mC
+x(Vu
+R(x)) > 0f o rs o m ex ∈R, then the same is true for everyx ∈R.M o r e o v e r ,
+by Corollary 4.9 this happens wheneverR is the closure of its interior (relative to
+Λ).
+Using these properties of the measures mC
+x, we can carry out the geometric
+construction of equilibrium states; see§6 for the proof of the following.
+Theorem 4.11. Under the hypotheses of Theorem4.7, the following are true.
+(1) For everyx ∈Λ, the sequence of measuresμn:= 1
+n
+∑n−1
+k=0 fk
+∗mC
+x
+/mC
+x
+(Vu
+loc(x))
+from (4.1) is weak* convergent asn →∞ t oap r o b a b i l i t ym e a s u r eμϕ that
+is independent ofx.
+(2) The measureμϕ is ergodic, gives positive weight to every open set inΛ, has
+the Gibbs property(3.15), and is the unique equilibrium state for(Λ,f,ϕ).
+(3) For every rectangleR ⊂Λwith μϕ(R) > 0, the conditional measuresμu
+y
+generated byμϕ on unstable setsVu
+R(y) are equivalent forμϕ-almost every
+y ∈R to the reference measuresmC
+y|Vu
+R (y). Moreover, there existsQ3 > 0,
+independent ofR and y, such that forμϕ-almost everyy ∈R we have25
+(4.14) Q−1
+3 ≤ dμu
+y
+dmCy
+(z)mC
+y(R) ≤Q3 for μu
+y-a.e. z ∈Vu
+R(y).
+Theorems 4.10 and 4.11(3) allow us to show that the equilibrium stateμϕ has
+local product structure, as follows. Consider a rectangleR ⊂Λ withμϕ(R) > 0,
+and a system of conditional measuresμu
+x with respect to the partitionξof R into
+local unstable leaves. Given p ∈R, deﬁne a measure ˜μp on Vs
+R(p)b y˜μp(A)=
+μϕ(⋃
+x∈A Vu
+R(x)) as in the paragraph preceding (3.4). SinceR is homeomorphic to
+the direct product ofVu
+R(p)a n dVs
+R(p), the product of the measuresμu
+p and ˜μp gives
+am e a s u r eo nR that we denote byμu
+p ⊗˜μp. The following local product structure
+result is a consequence of Theorem 4.10, Theorem 4.11(3), and (3.4); see§6.3.3.
+Corollary 4.12. For every rectangle R and μϕ-almost every p ∈R, we have
+π∗
+pyμu
+y
+∼ μu
+p for ˜μp−almost every y ∈Vs
+R(p),a n dt h u sμϕ ∼ μu
+p ⊗˜μp.M o r e -
+over, it follows that˜μp is equivalent toμs
+p, the conditional measure onVs
+R(p) with
+respect to the partition into stable leaves, forμϕ-a.e. p ∈R.
+25It is reasonable to expect, based on analogy with the case of SRB measure, that the Radon–
+Nikodym derivative in (4.14) is in fact H¨older continuous and is given by an explicit formula. At
+present we can only prove this for a modiﬁed version ofmC
+x, whose deﬁnition we omit here.
+
+===== PDF PAGE 25 =====
+EQUILIBRIUM STATES IN DYNAMICAL SYSTEMS 593
+We remark that Corollary 4.12 was also proved by Leplaideur [Lep00]. His proof
+uses Markov partitions to construct families of leaf measures with the properties
+given in Theorems 4.7 and 4.10. Historically, this description ofμϕ in terms of its
+direct product structure dates back to Margulis [Mar70], who described the unique
+measure of maximal entropy for a transitive Anosov ﬂow as a direct product of leaf-
+wise measures satisfying the continuous-time analogue of (1.2) forϕ=0 .I nt h i s
+speciﬁc case the equivalences in Corollary 4.12 can be strengthened to equalities.
+5. Carath´eodory dimension structure
+The deﬁnition of the measuresm
+C
+x in (4.13) is a speciﬁc instance of theCarath´e-
+odory dimension constructionintroduced by the second author in [Pes88] (see also
+[Pes97, §10]). It is a substantial generalization and adaptation to dynamical sys-
+tems of the classical construction of Carath´eodory measure in geometric measure
+theory, of which Lebesgue measure and Hausdorﬀ measure are the most well-known
+examples. We brieﬂy recall here the Carath´eodory dimension construction together
+with some of its basic properties.
+5.1. Carath´eodory dimension and measure.ACarath´eodory dimension struc-
+ture,o rC-structure,o nas e tX is given by the following data.
+(1) An indexed collection of subsets ofX, denotedF = {U
+s : s ∈S}.
+(2) Functions ξ,η,ψ: S→ [0,∞) satisfying the following conditions:
+(A1) if Us = ∅,t h e nη(s)= ψ(s)=0 ;i f Us ̸= ∅,t h e nη(s) > 0a n d
+ψ(s) > 0;26
+(A2) for anyδ>0 one can ﬁndε>0 such thatη(s) ≤δfor anys ∈S with
+ψ(s) ≤ε;
+(A3) for any ε> 0 there exists a ﬁnite or countable subcollectionG⊂S
+that covers X (meaning that ⋃
+s∈GUs ⊃ X) and has ψ(G): =
+sup{ψ(s): s ∈S}≤ ε.
+Note that no conditions are placed onξ(s), which we interpret as theweight of Us.
+The valuesη(s)a n dψ(s) can each be interpreted as asize or scale of Us; we allow
+these functions to be diﬀerent from each other.
+The C-structure (S,F,ξ,η,ψ) determines a one-parameter family of outer mea-
+sures onX as follows. Fix a nonempty setZ ⊂X, and consider someG⊂S that
+coversZ (meaning that ⋃
+s∈GUs ⊃Z). Thenψ(G) is interpreted as the largest size
+of sets in the cover, and we set for eachα∈R,
+(5.1) mC(Z,α) := lim
+ε→0
+inf
+G
+∑
+s∈G
+ξ(s)η(s)α,
+where the inﬁmum is taken over all ﬁnite or countableG⊂S covering Z with
+ψ(G) ≤ε. Deﬁning mC(∅,α) := 0, it follows from [Pes97, Proposition 1.1] that
+mC(·,α) is an outer measure. The measure induced bymC(·,α)o nt h eσ-algebra of
+measurable sets is theα-Carath´eodory measure;i tn e e dn o tbeσ-ﬁnite or nontrivial.
+Proposition 5.1 ([Pes97, Proposition 1.2]). For any setZ ⊂X,t h e r ee x i s t sa
+critical valueαC ∈R such that mC(Z,α)= ∞ for α<αC and mC(Z,α)=0 for
+α>αC.
+26In [Pes97], condition (A1) includes the requirement that there iss0 ∈S such thatUs0 = ∅.
+Here we remove this assumption and instead deﬁnemC(∅,α) := 0, which is equivalent.
+
+===== PDF PAGE 26 =====
+594 VAUGHN CLIMENHAGA, YAKOV PESIN, AND AGNIESZKA ZELEROWICZ
+We call dimC Z = αC the Carath´eodory dimension of the setZ associated to
+the C-structure (S,F,ξ,η,ψ). By Proposition 5.1,α=d i mC X is the only value
+of αfor which (5.1) can possibly produce a nonzero ﬁnite measure onX, though it
+is still possible thatmC(X,dimC X)i se q u a lt o0o r∞.
+5.2. Examples ofC-structures. The C-structures in which we are interested are
+generated by other structures on the setX.
+5.2.1. Hausdorﬀ dimension and measure.If X is a metric space, then consider the
+C-structure given byS := X ×(0,∞)a n d
+F := {B(x,r): x ∈X,r > 0},ξ (x,r)=1 ,η (x,r)= ψ(x,r)= r.
+Comparing (4.11) and (5.1), we see thatmC(Z,α)= mH(Z,α) for everyZ ⊂X,
+and the Hausdorﬀ dimension dimH(Z) is the critical value such thatmH(Z,α)i s
+inﬁnite forα<dimH(Z)a n d0f o rα>dimH(Z). Thus dimC Z =d i mH Z,a n dt h e
+outer measuremC(·,dimH Z)o nZ is the (dimH Z)-dimensional spherical Hausdorﬀ
+measure.
+It is useful to understand when an outer measure deﬁnes a Borel measure on a
+metric space. Recall that an outer measurem on a metric space (X,d)i sa metric
+outer measureif m(E ∪F)= m(E)+ m(F) whenever
+d(E,F ): =i n f{d(x,y): x ∈E,y ∈F)} > 0.
+Proposition 5.2 ([Fed69, §2.3.2(9)]). If X is a metric space andm is a metric
+outer measure onX, then every Borel set inX is m-measurable, and som deﬁnes
+a Borel measure onX.
+Given anyE,F ⊂X, withd(E,F ) > 0, we see that any coverG⊂F of E ∪F
+with ψ(G) ≤d(E,F )/2 can be written as the disjoint union of a cover ofE and a
+cover ofF; using this it is easy to show thatmH(E∪F,α)= mH(E,α)+mH(F,α),
+so mH(·,α) is a metric outer measure. By Proposition 5.2, this deﬁnes a Borel
+measure onX.
+5.2.2. Topological pressure as a Carath´eodory dimension. Let f be a continuous
+map of a compact metric spaceX, and letϕ: X → R be a continuous function.
+Then as described already in§4.3, one can consider covers that are reﬁned dynami-
+cally rather than geometrically. This was done ﬁrst by Bowen to deﬁne topological
+entropy in a more general setting [Bow73], and then extended by Pesin and Pitskel′
+to topological pressure [PP84]. Here we give a deﬁnition that diﬀers slightly from
+[PP84] but gives the same dimensional quantity [Cli11, Proposition 5.2].
+Fix r> 0a n dt oe a c h(x,n) ∈X × N, associate the Bowen ballB
+n(x,r). Let
+F be the collection of all such Bowen balls, and letS = X × N,s os =( x,n)h a s
+Us = Bn(x,r). Now put
+(5.2) ξ(x,n)= eSnϕ(x),η (x,n)= e−n,ψ (x,n)= 1
+n.
+It is easy to see that (S,F,ξ,η,ψ) satisﬁes (A1)–(A3), so this deﬁnes aC-structure.
+The associated outer measure is given by
+(5.3) mC(Z,α) = lim
+N→∞
+inf
+G
+∑
+(x,n)∈G
+eSnϕ(x)e−nα,
+where the inﬁmum is over allG⊂S such that ⋃
+(x,n)∈GBn(x,r) ⊃Z and n ≥N
+for all (x,n) ∈G.
+
+===== PDF PAGE 27 =====
+EQUILIBRIUM STATES IN DYNAMICAL SYSTEMS 595
+Remark 5.3. The measuremC(·,α) is not necessarily a metric outer measure, since
+there may bex ̸= y ∈X such thaty ∈Bn(x,r) for alln ∈N.27 Thus, Borel sets
+in X need not bemC(·,α)-measurable.
+Writing dimr
+C Z for the critical value ofα, where the superscript emphasizes the
+dependence onr,t h eq u a n t i t y
+PZ(ϕ)= lim
+r→0
+dimr
+C Z
+is called the thetopological pressureof ϕon the setZ. Observe that this notion
+of topological pressure is more general than the one introduced in Deﬁnition 3.7 as
+it is more suited to arbitrary subsetsZ (which need not be compact or invariant);
+both deﬁnitions agree whenZ = X [Pes97, Theorem 11.5].
+5.2.3. A C-structure on local unstable leaves.Now consider the setting of Theorems
+4.7–4.10. Λ is a hyperbolic set for aC1+α diﬀeomorphismf,a n dϕ:Λ → R is
+H¨older continuous. Fixr> 0 and deﬁne aC-structure onX = Vu
+loc(x)∩Λ, which
+depends onϕ, in the following way. To each (x,n) ∈X × N, associate the Bowen
+ball Bn(x,r). Let F be the collection of all such balls, and letS = X × N,s o
+s =( x,n)h a sUs = Bn(x,r). Now put
+(5.4) ξ(x,n)= eSnϕ(x),η (x,n)= e−n,ψ (x,n)= 1
+n.
+Again, (S,F,ξ,η,ψ) satisﬁes (A1)–(A3) and deﬁnes aC-structure, whose associ-
+ated outer measure is given by
+(5.5) mC(Z,α) = lim
+N→∞
+inf
+G
+∑
+(x,n)∈G
+eSnϕ(x)e−nα,
+where the inﬁmum is over allG⊂S such that ⋃
+(x,n)∈GBn(x,r) ⊃Z and n ≥N
+for all (x,n) ∈G.
+Given x ∈Λ, we are interested in two things:
+(1) the Carath´eodory dimension ofX, as determined by thisC-structure; and
+(2) the (outer) measure onX deﬁned by (5.3) atα=d i mC(X).
+The ﬁrst of these is settled by the following, which is proved in [CPZ18, Theorem
+4.2(1)].
+Proposition 5.4. With Λ,f,ϕ,r as above, and theC-structure deﬁned onX =
+Vu
+loc(x)∩Λby Bowen ballsBn(x,r) and (5.4), we havedimr
+C(X)= P(ϕ) for every
+x ∈Λ. In particular, this implies thatPX(ϕ)= PΛ(ϕ).
+Note that on eachX = Vu
+loc(x)∩Λ, covers by Bowen ballsBn(x,r)a r et h es a m e
+t h i n ga sc o v e r sb yu-Bowen ballsBu
+n(x,r)= Bn(x,r)∩Vu
+loc(x), which we used in
+§4.3. Thus when we putα= P(ϕ), we see that (5.5) agrees with (4.13) for every
+Z ⊂X, and in particular, the quantitymC
+x(Z) deﬁned in (4.13) is the outer measure
+on X associated to theC-structure above and the parameter valueα= P(ϕ).
+Onemust stilldosomeworktoshowthatthisoutermeasureisﬁniteandnonzero;
+this is done in [CPZ18], and the idea of the argument is given in§6.1 below. We
+conclude this section by observing that the issue raised in Remark 5.3 is not a
+problem here, and that we have in fact deﬁned ametric outer measure. Indeed,
+given anyx ∈Λa n dy ∈V
+u
+loc(x) ∩Λ, we have diamBu
+n(y,r) ≤rλn for all n ∈N
+by Proposition 3.1, so ifE,F ⊂X have d(E,F ) > 0, then there isN ∈N such
+27In fact,mC(·,α) is an outer measure if and only iff is positively expansive to scaler.
+
+===== PDF PAGE 28 =====
+596 VAUGHN CLIMENHAGA, YAKOV PESIN, AND AGNIESZKA ZELEROWICZ
+that Bn(y,r) ∩Bk(z,r)= ∅whenever y ∈E, z ∈F,a n dk,n ≥N.T h e n f o r
+N suﬃciently large, anyG as in (5.5) has the property that it splits into disjoint
+covers ofE and F, and thusmC
+x(E ∪F)= mC
+x(E)+ mC
+x(F). By Proposition 5.2,
+mC
+x deﬁnes a Borel measure onX, as claimed in Theorem 4.7.
+5.3. An application: measures of maximal dimension.If X is a measurable
+space with a measureμ, and dimC is a Carath´eodory dimension onX, then the
+quantity
+dimC μ=i n f{dimC Z: μ(Z)=1 }
+= lim
+δ→0
+inf{dimC Z: μ(Z) > 1−δ}
+is called theCarath´eodory dimensionof μ.W es a yt h a tμis ameasure of maximal
+Carath´eodory dimensionif dimC μ=d i mC X. Note that if the Carath´eodory mea-
+sure mC(X,α)a td i m e n s i o nα=d i mC X is ﬁnite and positive, then this measure
+is a measure of maximal Carath´eodory dimension.
+With f:Λ → Λ as in Theorem 4.7, we consider a particular but important family
+of potential functionsϕgeo
+t (x) on Λ, called thegeometric t-potentials: for anyt ∈R
+ϕgeo
+t (x): =−tlog|detDf|Eu(x)|.
+Since the subspaceEu(x) depends H¨older continuously onx ∈Λ (see (3.1)), for
+each t ∈R the functionϕgeo
+t (x)i sH ¨older continuous and hence, it admits a unique
+equilibrium stateμt := μϕgeo
+t
+.
+We consider the functionP(t): =P(ϕgeo
+t ) called thepressure function.O n ec a n
+show that this function is monotonically decreasing, convex, and real analytic int.
+Moreover, P(t) → +∞ as t →− ∞and P(t) →− ∞as t → +∞ with P(1) ≤0.
+Therefore, there is a number 0<t 0 ≤1 which is the unique solution ofBowen’s
+equation P(t) = 0. We shall show that givenx ∈Λ, there is aC-structure on the
+set X = Vu
+loc(x) ∩Λ with respect to whicht0 is the Carath´eodory dimension of
+the set X. Indeed, since P(t0)=0 ,t h em e a s u r emt0
+x := mC
+x, given by (4.13) for
+C =( ϕgeo
+t0 ,r), can be written as
+(5.6) mt0
+x (Z) = lim
+N→∞
+inf
+{∑
+i
+( ni−1∏
+k=0
+det
+(
+Df|Eu(fk(xi))
+))−t0
+}
+,
+where the inﬁmum is taken over all collections{Bu
+ni(xi,r)} of u-Bowen balls with
+xi ∈X, ni ≥N,w h i c hc o v e rZ.
+Relation (5.6) shows that the measuremt0
+x is the Carath´eodory measure gener-
+ated by theC-structure τ′ =( S,F,ξ′,η′,ψ), where
+ξ′(x,n): =1,η ′(x,n): =
+ni−1∏
+k=0
+det
+(
+Df|Eu(fk(xi))
+)−1
+.
+It is easy to see that with respect to theC-structure τ′ we have that dimC,τ′ X =
+t0 and the measure mt0
+x = mC,τ′(·,t) is the measure of maximal Carath´eodory
+dimension. In particular, the Carath´eodory dimension of X = Vu
+loc(x) ∩Λd o e s
+not depend on the choice of the pointx ∈Λ. It is also clear that the numbert0
+depends continuously onf in theC1 topology and hence, so does the Carath´eodory
+dimension dimC,τ′ X.
+
+===== PDF PAGE 29 =====
+EQUILIBRIUM STATES IN DYNAMICAL SYSTEMS 597
+Weconsidertheparticularcasewhenthemap f isu-conformal; thatisDf|Eu(x)=
+a(x)Isomx for allx ∈Λ, where Isomx is an isometry. The direct calculation involv-
+ing (5.6) shows that in this casemt0
+x is a measure of full Hausdorﬀ dimension and
+that t0 dimEu =d i mH X.
+Given a locally maximal hyperbolic set Λ, it has been a long-standing open prob-
+lem to compute the Hausdorﬀ dimension of the setX = Vu
+loc(x) ∩Λ and to ﬁnd
+an invariant measure whose conditional measures on unstable leaves have maximal
+Hausdorﬀ dimension, provided such a measure exists. The above result solves this
+problem for u-conformal diﬀeomorphisms. The reader can ﬁnd the original proof
+and relevant references in [Pes97]. It was recently proved that without the assump-
+tion ofu-conformality, there are examples for which there is no invariant measure
+whose conditionals have full Hausdorﬀ dimension; see [DS17]. Theorem 4.11 pro-
+vides one way to settle the issue in the nonconformal case by replacing “measure
+of maximal Hausdorﬀ dimension” with “measure of maximal Carath´eodory dimen-
+sion” with respect to theC-structure τ
+′ just described.
+6. Outline of proofs
+In §§6.1–6.2 we outline the proofs of Theorems 4.7–4.10, referring to [CPZ18]
+for complete details; see Remarks 2.3 and 4.1 of that paper for an explanation of
+why the setting here is covered. In§6.3 we prove Theorem 4.11, again referring to
+[CPZ18] for certain technicalities. In§6.4 we give a complete proof of Theorem 4.1.
+6.1. Reference measures are nonzero and ﬁnite. Recall that Λ is a locally
+maximal hyperbolic set forf, on which eachx has local stable and unstable man-
+ifolds of size τ> 0. We assume that f|
+Λ is topologically transitive. In what
+follows, we occasionally use the following notation: givenA,B,C,a ≥0, we write
+A = C±aB as shorthand to meanC−aB ≤A ≤CaB. The key to the proof of
+Theorem 4.7 is the following result.
+Proposition 6.1. For everyr1 ∈(0,τ) and r2 ∈(0,τ/3],t h e r ei sC> 1 such that
+for everyx ∈Λand n ∈N we have
+(6.1) Zspan
+n (Bu
+Λ(x,r1),ϕ,r2)= C±1enP(ϕ).
+Similar partition sum bounds are obtained in Bowen’s paper [Bow75], where
+they are proved for all of Λ instead of for a single unstable leaf. For the full proof
+of Proposition 6.1, see [CPZ18,§6]; we outline the argument below. As in Bowen’s
+case, the underlying mechanism is a set of elementary lemmas, which we give in
+§6.1.1. In§6.1.2 we explain why it is reasonable to expect these lemmas to apply to
+the sequenceZ
+span
+n ,a n di n§6.1.3 we outline how Proposition 6.1 leads to Theorem
+4.7.
+6.1.1. Elementary counting lemmas.
+Lemma 6.2. If Zn > 0 is a sequence of numbers satisfyingZn+m ≤ZnZm for
+all m,n,t h e nP = limn→∞ 1
+n logZn exists and is equal to infn∈N 1
+n logZn.I n
+particular, Zn ≥enP for everyn.
+Proof. Fix n ∈N. Then for all m ∈N, we can writem = an + b,w h e r ea ∈N
+and b ∈{0,1,...,n −1}, and iterate the submultiplicativity property to obtain
+
+===== PDF PAGE 30 =====
+598 VAUGHN CLIMENHAGA, YAKOV PESIN, AND AGNIESZKA ZELEROWICZ
+Zm ≤Za
+nZb. Taking logs and dividing bym gives
+1
+m logZm ≤ a
+m logZn + logZb
+m ≤an
+m · 1
+n logZn + max{logZ0,..., logZn−1}
+m .
+Sending m →∞ ,w es e et h a tan
+m → 1, so
+(6.2) lim
+m→∞
+1
+m logZm ≤1
+n logZn.
+Since n was arbitrary, we deduce that
+lim
+m→∞
+1
+m logZm ≤inf
+n∈N
+1
+n logZn ≤ lim
+n→∞
+1
+n logZn,
+whence all three terms are equal and the limit exists. Now (6.2) implies that
+Zn ≥enP. □
+Lemma 6.3. If Zn > 0 is a sequence of numbers satisfyingZn+m ≤CZnZm for
+all m,n,w h e r eC> 0 is independent ofm,n,t h e nP = limn→∞ 1
+n logZn exists and
+is equal toinfn∈N 1
+n log(CZn).I np a r t i c u l a r ,Zn ≥C−1enP for all n.
+Proof. The proof follows by applying Lemma 6.2 to the sequenceYn = CZn,w h i c h
+satisﬁes Yn+m = CZn+m ≤C2ZnZm = YnYm. □
+Lemma 6.4. If Zn > 0 is a sequence of numbers satisfyingZn+m ≥C−1ZnZm
+for allm,n,w h e r eC> 0 is independent ofm,n,t h e nP = limn→∞ 1
+n logZn exists
+and is equal tosupn∈N
+1
+n log(Zn/C).I np a r t i c u l a r ,Zn ≤CenP for all n.
+Proof. The proof follows by applying Lemma 6.2 to the sequenceYn = C/Zn,w h i c h
+satisﬁes Yn+m = C/Zn+m ≤C2/(ZnZm)= YnYm. □
+6.1.2. Partition sums are nearly multiplicative.In light ofLemmas 6.3 and 6.4, Pro-
+position6.1canbeprovedbyshowingthatthepartitionsums Zspan
+n (Bu
+Λ(x,r1),ϕ,r2)
+are nearly multiplicative: Zspan
+n+m = C±1Zspan
+n Zspan
+m . As h o r ta r g u m e n tg i v e ni n
+[CPZ18, Lemma 6.3] shows thatZsep
+n = e±QuZspan
+n , and thus it suﬃces to show
+that
+Zspan
+n+m ≤CZspan
+n Zspan
+m ,Z sep
+n+m ≥C−1Zsep
+n Zsep
+m ,
+where we are being deliberately vague about the arguments ofZspan and Zsep.
+Figure 6.1 illustrates the idea driving the estimateforZsep:i fEn={y1,...,y a}⊂
+Bu
+Λ(x,r1)i sam a x i m a l(n,r2)-separated set of points, and to each 1≤i ≤a we
+x
+y1
+fny1 fn
+y2
+fny2
+fn
+y3 fny3fn
+Bu(x,r1)
+Bu(fny1,r2)
+z3
+1
+z3
+2
+Figure 6.1. Proving thatZsep
+n+m ≥C−1Zsep
+n Zsep
+m
+
+===== PDF PAGE 31 =====
+EQUILIBRIUM STATES IN DYNAMICAL SYSTEMS 599
+associate a maximal (m,r2)-separated setEi
+m = {zi
+1,...,z i
+bi}⊂ Bu
+Λ(fnyi,r2), then
+pulling back all the pointszi
+j gives an (m+n,r2)-separated set
+Em+n =
+a⋃
+i=1
+f−n(Ei
+m)= {f−nzi
+j :1 ≤i ≤a,1 ≤j ≤bi}⊂ Bu
+Λ(x,r1),
+so we expect to get an estimate along the lines of
+Zsep
+m+n ≥
+∑
+p∈Em+n
+eSm+nϕ(p) =
+∑
+p∈Em+n
+eSnϕ(p)eSmϕ(fn(p))
+⪆
+a∑
+i=1
+bi∑
+j=1
+eSnϕ(yi)eSmϕ(zi
+j) =
+a∑
+i=1
+eSnϕ(yi)
+( bi∑
+j=1
+eSmϕ(zi
+j)
+)
+(6.3)
+≈
+( a∑
+i=1
+eSnϕ(yi)
+)
+Zsep
+m ≈Zsep
+m Zsep
+n ,
+where we continue to be deliberately vague about the arguments ofZsep.I fw ec a n
+make this rigorous, then a similar argument with spanning sets instead of separated
+sets will lead toZ
+span
+m+n ≤CZspan
+m Zspan
+n , which will prove Proposition 6.1.
+But how do we make (6.3) rigorous? There are two sources of error which are
+hinted at by the “≈” symbols.
+(1) Given p∈Em+n and the correspondingy∈En (where fn(p)∈Bu
+Λ(fny,r2)),
+the approximation on the ﬁrst line of (6.3) requires us to compare the
+ergodic sums Snϕ(p)a n dSnϕ(y). In particular, we must ﬁnd a constant
+Qu (independent of y,p,n ) such that|Snϕ(p) −Snϕ(y)|≤ Qu whenever
+p ∈Bu
+n(y,r2).
+(2) The omission of the arguments forZsep
+n obscures the fact thatZsep
+m+n and
+Zsep
+m in (6.3) both refer to (n,r2)-separated subsets ofBu
+Λ(x,r1), whileZsep
+n
+refers to (n,r2)-separated subsets ofBu
+Λ(fnyi,r2). Thus we must control
+how Zsep
+n (Bu
+Λ(x,r1),ϕ,r2) changes when we ﬁxn and let x,r1,r2 vary; in
+particular, we must ﬁnd for eachr1,r′
+1,r2,r′
+2 a constant C such that for
+every n,x,y ,w eh a v e
+Zsep
+n (Bu
+Λ(x,r1),ϕ,r2)= C±1Zsep
+n (Bu
+Λ(y,r′
+1),ϕ,r′
+2).
+The ﬁrst source of error described above can be controlled by establishing a
+generalized version of property (4.4).
+Deﬁnition 6.5. We say that a potentialϕ:Λ → R has the u-Bowen property if
+there isQu > 0 such that for everyx ∈Λ,n ≥0, and y ∈Bu
+n(x,τ)∩Λ, we have
+|Snϕ(x)−Snϕ(y)|≤ Qu.W ea l s os a yt h a tϕhas thes-Bowen propertyif there is
+Qs > 0 such that for everyx ∈Λ,n ≥0, andy ∈Bs
+Λ(x,τ)= Bs(x,τ)∩Λ, we have
+|Snϕ(x)−Snϕ(y)|≤ Qs.28
+Lemma 6.6. If ϕ:Λ → R is H¨older continuous, thenϕhas theu-Bowen property
+and thes-Bowen property.29
+28The asymmetry in the deﬁnition comes becauseSnϕis a forward Birkhoﬀ sum andBu
+n(x,τ)
+is deﬁned in terms of forward iterates; one could equivalently deﬁne thes-Bowen property in terms
+of backward Birkhoﬀ sums ands-Bowen balls. The s-Bowen property is needed to control the
+second source of error described above.
+29This is the only place where H¨older continuity is used; in particular, H¨older continuity could
+be replaced by theu-a n ds-Bowen properties in all our main results.
+
+===== PDF PAGE 32 =====
+600 VAUGHN CLIMENHAGA, YAKOV PESIN, AND AGNIESZKA ZELEROWICZ
+Proof. Weprovethe u-Bowenproperty; theproofofthe s-Bowenpropertyissimilar.
+Given y ∈Bu
+n(x,τ), for every 0≤k<n ,w eh a v ed(x,y) ≤τλn−k where 0<λ< 1
+is as in Proposition 3.1(4), so writingβfor the H¨older exponent ofϕ,w eh a v e
+|Snϕ(x)−Snϕ(y)|≤
+n−1∑
+k=0
+|ϕ(fkx)−ϕ(fky)|≤
+n−1∑
+k=0
+|ϕ|βd(fkx,f ky)β
+≤|ϕ|βτβ
+n−1∑
+k=0
+λβ(n−k) < |ϕ|βτβ(1−λβ)−1 =: Qu. □
+To control the second source of error described above, the ﬁrst main idea is that
+topological transitivity guarantees that for everyδ> 0, the images fk(Bu
+Λ(y,δ))
+eventually come within δof x, and that the k for which this occurs admits an
+upper bound that depends only onδ. Then given a spanning setE ⊂Bu
+Λ(y,δ), the
+part of the imagefk(E) that lies nearx can be moved by holonomy along stable
+manifolds to give a spanning set in the unstable leaf ofx.T h i si sm a d ep r e c i s ei n
+[CPZ18, Lemma 6.4]. One can use similar arguments to change the scalesr1,r2;
+for example, ifx,y are on the same local unstable leaf and have orbits that remain
+within r2 of each other until timen, then they remain withinr2λk of each other
+until timen−k; see [CPZ18,§6] for full details.
+6.1.3. Proving Theorem 4.7. Fix x ∈Λa n ds e tX := Vu
+loc(x) ∩Λ. We showed
+in §5.2.3 that mC
+x deﬁnes a metric outer measure onX, and hence gives a Borel
+measure. Note that the ﬁnal claim in Theorem 4.7 about agreement on intersections
+is immediate from the deﬁnition. Thus it remains to prove thatmC
+x(X) ∈[K−1,K],
+where K is independent ofx; this will complete the proof of Theorem 4.7, and will
+also prove Proposition 5.4. For full details, see [CPZ18,§6.5].
+The idea is that it suﬃces to prove that for a ﬁxedr> 0, we havemC
+x(Bu
+Λ(x,r))
+uniformly bounded away from 0 and∞, since eachVu
+loc(x)c a nb ec o v e r e dw i t ha
+uniformly ﬁnite number of ballsBu
+Λ(y,r). The upper bound is easier to prove since
+it only requires that we exhibit a cover satisfying the desired inequality. This is
+provided by Proposition 6.1, which guarantees existence of an (n,r)-spanning set
+E
+n ⊂Bu
+Λ(x,r) such that
+∑
+y∈En
+eSnϕ(y) ≤CenP(ϕ),
+and thus (4.13) gives
+mC
+x(Bu
+Λ(x,r)) ≤ lim
+n→∞
+∑
+y∈En
+e−nP(ϕ)eSnϕ(y) ≤C.
+The lower bound is a little trickier since we must obtain a lower bound for an
+arbitrary cover by u-Bowen balls as in (4.13), which are allowed to be of diﬀer-
+ent orders, so we do not immediately get an (n,r)-spanning set for some par-
+ticular n. This can be resolved by observing that any open cover of Bu
+Λ(x,r)
+has a ﬁnite subcover, so to boundmC
+x(Bu
+Λ(x,r)) it suﬃces to consider covers of
+the form {Bu
+ni(yi,r):1 ≤ i ≤ a,ni ≥ N}. Given such a cover, one can take
+n =m a x (n1,...,n a) and use arguments similar to those in the proof of Proposi-
+tion 6.1 to cover eachBu
+ni(yi,r) by a union ofu-Bowen ballsBu
+n(zj
+i ,r)( 1≤j ≤bi)
+
+===== PDF PAGE 33 =====
+EQUILIBRIUM STATES IN DYNAMICAL SYSTEMS 601
+satisfying ∑
+j
+eSnϕ(zj
+i ) ≤C′e(n−ni)P(ϕ)eSniϕ(yi)
+for some constant C′ that is independent of our choice of covers. Then the set
+E = {zj
+i :1 ≤i ≤a,1 ≤j ≤bi} is (n,r)-spanning forBu
+Λ(x,r) and satisﬁes
+C−1enP(ϕ) ≤
+∑
+z∈E
+eSnϕ(z) ≤
+a∑
+i=1
+C′e(n−ni)P(ϕ)eSniϕ(yi).
+Dividing through byenP(ϕ), taking an inﬁmum over all covers, and sendingN →∞
+gives C−1 ≤C′mC
+x(Bu
+Λ(x,r)). Again, full details are in [CPZ18,§6.5].
+6.2. Behavior of reference measures under iteration and holonomy.
+6.2.1. Iteration and theu-Gibbs property.The simplest case of Theorem 4.8 occurs
+when ϕ= 0, so the claim is thatmC
+f(x) = eP(0)mC
+x ◦f−1, which is exactly the
+scaling property satisﬁed by the Margulis measures on unstable leaves. GivenE ⊂
+Vu
+loc(f(x)), we see from the relationship f−1Bu
+n(y,r)= Bu
+n+1(f−1y,r)t h a ta n y
+cover {Bu
+ni(yi,r)} of E leads immediately to a cover{Bu
+ni+1(f−1yi,r)} of f−1E,
+and vice versa. Using this bijection in the deﬁnition of the reference measures in
+(4.13), we get
+m
+C
+f(x)(E) = lim
+N→∞
+inf
+∑
+i
+e−niP(0)
+= eP(0) lim
+N→∞
+inf
+∑
+i
+e−(ni+1)P(0) = eP(0)mC
+x(f−1E).
+For nonzero potentials one must account for the factor ofeSniϕ(xi) in (4.13). This
+canbedonebypartitioning E intosubsets E1,...,E T onwhich ϕisnearlyconstant,
+and repeating the above argument on eachEi to get an approximate result that
+improves to the desired result asT →∞ ;s e e[ C P Z 1 8 ,§7.1] for details.
+Once (1.2) has been proved, we can iterate it to obtain
+(6.4) mC
+fn(x)(A)=
+∫
+f−n(A)
+enP(ϕ)−Snϕ(y) dmC
+x(y)
+for all A ⊂Vu
+loc(fn(x)). Applying this to A = Bu(fn(x),δ)= fn(Bu
+n(x,δ)) and
+using Theorem 4.7 gives a constantQ4 = Q4(δ) such that
+mC
+x(Bu
+n(x,δ))enP(ϕ)−Snϕ(x) = e±Qu
+∫
+Bun(x,δ)
+enP(ϕ)−Snϕ(y) dmC
+x(y)
+= e±QumC
+fn(x)(Bu(fn(x),δ)) =e±QuQ±1
+4 ,
+for every x,n, where the ﬁrst estimate uses theu-Bowen property from Lemma
+6.6. This establishes the u-Gibbs property formC
+x with Q1 = Q4eQu and proves
+Corollary 4.9.
+6.2.2. Holonomy maps. Given nearby points y,z and sets Ey ⊂ Vu
+loc(y), Ez ⊂
+Vu
+loc(z) such thatπyz(Ey)= Ez (with respect to some rectangle), we observe that
+every cover of Ey by u-Bowen balls {Bu
+ni(xi,r)} produces a cover of Ez by the
+images {πyzBu
+ni(xi,r)}.I f y,z are close enough to each other to guarantee that
+(6.5) πyzBu
+ni(xi,r) ⊂Bu
+ni(xi,2r)
+
+===== PDF PAGE 34 =====
+602 VAUGHN CLIMENHAGA, YAKOV PESIN, AND AGNIESZKA ZELEROWICZ
+for eachi,t h e nw eg e tEz ⊂⋃
+i Bu
+ni(xi,2r). Fixingk ∈N such that eachx ∈Λh a s
+Bu
+Λ(x,2r) ⊂ ⋃k
+j=1 Bu
+Λ(xj,r)f o rs o m ex1,...,x k,w es e et h a tEz ⊂ ⋃
+i,j Bu
+ni(xj
+i,r),
+and thus (4.13) gives
+mC
+z(Ez) ≤
+∑
+i,j
+e−niP(ϕ)eSniϕ(xj
+i) ≤k
+∑
+i
+e−niP(ϕ)eSniϕ(xi)+Qu.
+Taking an inﬁmum and then a limit givesmC
+z(Ez) ≤keQumC
+y(Ey).
+In general, ify,z lie close enough for holonomy maps to be deﬁned but not close
+enough for (6.5) to hold, then we can iterateEy,Ez forward until some timen at
+which fny,f nz are close enough for the previous part to work, and use Theorem
+4.8 to get (assuming without loss of generality thatEy ⊂Bu
+n(y,τ), and similarly
+for Ez)
+mC
+z(Ez)=
+∫
+fn(Ez)
+e−nP(ϕ)+Snϕ(f−nx) dmC
+fnz(x)
+≤keQu
+∫
+fn(Ey)
+e−nP(ϕ)+Snϕ(f−nx′)+Qs dmC
+fny(x′)= keQu+QsmC
+y(Ey),
+where the inequality uses the result from the previous paragraph. Since the roles of
+y,z were symmetric, this proves Theorem 4.10 withQ2 = keQu+Qs. See [CPZ18,
+§7.3] for a more detailed version of this argument.
+6.3. Geometric construction of equilibrium states.N o wt h a tw eh a v ee s t a b -
+lished the basic properties of the reference measuresmC
+x associated to a H¨older
+continuous potential function ϕ, the steps in the geometric construction of the
+unique equilibrium stateμϕ are as follows.
+(1) Provethateveryweak*limit point μofthesequenceofprobability measures
+μn = 1
+n
+∑n−1
+k=0 fk
+∗mC
+x
+/mC
+x
+(Vu
+loc(x)) is an invariant measure whose conditional
+measures satisfy part (3) of Theorem 4.11; in particular, they are equivalent
+to the reference measuresm
+C
+y.
+(2) Use this to deduce that any such μsatisﬁes part (2) of Theorem 4.11,
+namely:
+(a) the conditional measures ofμare absolutely continuous with respect
+to stable holonomies, and thereforeμis ergodic by the Hopf argument
+(Proposition 4.5);
+(b) μgives positive weight to every open set in Λ;
+(c) theu-Gibbs property of the referencemeasures implies the Gibbs prop-
+erty (3.15) forμ;a n d
+(d) μis the unique equilibrium state forϕby Proposition 3.11.
+(3) Observe that eachμn is a Borel probability measure on Λ, and thus every
+subsequence has a subsubsequence that converges in the weak* topology
+to a Borel probability measureμ, which must be the unique equilibrium
+state μϕby the previous step. Since every subsequence ofμn has a subsub-
+sequence converging toμϕ, it follows that the sequence itself converges to
+this limit, which establishes part (1) of Theorem 4.11.
+The ﬁrst step takes most of the work; once it is done, parts (a)–(c) of the second
+step only require short arguments that leverage the properties already established,
+part (d) of the second step merely consists of observing thatμsatisﬁes the hypothe-
+ses of Proposition 3.11, and the third step is completely contained in the description
+
+===== PDF PAGE 35 =====
+EQUILIBRIUM STATES IN DYNAMICAL SYSTEMS 603
+in (3). Thus we outline here the argument for the ﬁrst step and parts (a)–(c) of
+the second step, referring once more to [CPZ18] for complete details.
+6.3.1. Conditional measures of limiting measures.In order to understand the con-
+ditional measures ofμ= limk→∞ μnk, we start by studying the conditional mea-
+sures of μn.G i v e nx ∈Λa n dn ∈ N, the iterate fn
+∗mC
+x
+is supported on Wn =
+fn(Vu
+loc(x)∩Λ), and given anyy ∈Wn, we can iterate the formula from Theorem
+4.8 and obtain
+(6.6)
+d((fn
+∗mC
+x
+)|Vu
+loc(y))
+dmCy
+(z)= e−nP(ϕ)+Snϕ(f−nz) =: gn(z)
+for everyz ∈Wn∩Vu
+loc(y). One can show thatgn → 0a sn →∞ ,s oi ti sc o n v e n i e n t
+to writeρy
+n(z): =gn(z)/gn(y), and Lemma 6.6 gives
+(6.7) ρy
+n(z)= eSnϕ(f−nz)−Snϕ(f−ny) ∈[e−Qu,eQu].
+These functions describe the conditional measures offn
+∗mC
+x
+. Indeed, given a rectan-
+gle R,c h o o s ey1,...,y a ∈fn(Vu
+loc(x))∩R such thatfn(Vu
+loc(x))∩R ⊂⋃a
+i=1 Vu
+loc(yi),
+as in Figure 6.2. Then for every Borel setE ⊂R,w eh a v e30
+(6.8) fn
+∗mC
+x
+(E)=
+a∑
+i=1
+∫
+E
+gn(z)dmC
+yi(z)=
+a∑
+i=1
+gn(yi)
+∫
+E
+ρyi
+n (z)dmC
+yi(z).
+In other words, one can writefn
+∗mC
+x
+|R as a linear combination of the measures
+ρyi
+n dmC
+yi associated to the standard pairs31 (Vu
+loc(yi),ρyi
+n ), with coeﬃcients given
+by gn(yi). This immediately implies that the conditional measures ofμn on local
+unstable leaves are absolutely continuous with respect to the reference measures
+mC
+x, with densities bounded away from 0 and∞.
+To go further, we need the following characterization of the conditional measures,
+which is an immediate consequence of [EW11, Corollary 5.21].32
+x
+Vu
+loc(x)
+z1 z2 z3 z4 z5
+R
+y1
+y2
+y3
+y4
+y5
+fn
+(zi = f−n(yi))
+Figure 6.2. Studying fn
+∗mC
+x
+on a rectangleR
+30There is a small technical issue here, namely that there may be someyi at whichWn does
+not crossR completely, and so the integral in (6.8) actually gives too large a value. However, this
+can only occur ifzi = f−n(yi) is very close to the boundary ofVu
+loc(x), and the contribution of
+such points is negligible in the limit; see [CPZ18].
+31Standard pairs consisting of a local leafVu
+loc(y) and a density functionρwere introduced by
+Chernov and Dolgopyat in [CD09] to study stochastic properties of dynamical systems. They are
+also used in constructing SRB measures for some dynamical systems with weak hyperbolicity; see
+[CDP16].
+32See[PS82] for the analogous argument controlling the conditionals ofμwhen ϕis the geo-
+metric potential and the reference measure is leaf volume. In that setting, the role of Proposition
+6.7 here is played by [PS82, Lemma 13].
+
+===== PDF PAGE 36 =====
+604 VAUGHN CLIMENHAGA, YAKOV PESIN, AND AGNIESZKA ZELEROWICZ
+ξ0
+R
+ξ1 ξ2 ξ3
+Figure 6.3. A reﬁning sequence of partitions ofR
+Proposition 6.7. Let μbe a ﬁnite Borel measure on Λ,a n dl e tR ⊂ Λbe a
+rectangle withμ(R) > 0.L e t{ξℓ}ℓ∈N be a reﬁning sequence of ﬁnite partitions ofR
+that converge to the partitionξinto local unstable setsVu
+R(y)= Vu
+loc(y)∩R.T h e n
+there is a setR′ ⊂R with μ(R′)= μ(R) such that for every y ∈R′ and every
+continuous ψ: R → R, we have
+(6.9)
+∫
+Vu
+R (y)
+ψ(z)dμu
+y(z) = lim
+ℓ→∞
+1
+μ(ξℓ(y))
+∫
+ξℓ(y)
+ψ(z)dμ(z),
+where ξn(y) denotes the element of the partitionξℓ that containsy.
+Now the proof of part (3) of Theorem 4.11 goes as follows. Given a rectangle
+R ⊂Λ withμ(R) > 0, letξℓ be a reﬁning sequence of ﬁnite partitions ofR such that
+for everyy ∈R and ℓ ∈N,t h es e tξℓ(y) is a rectangle, and⋂
+ℓ∈N ξℓ(y)= Vu
+R(y),
+as in Figure 6.3. LetR′ ⊂R be the set given by Proposition 6.7. We prove that
+(4.14) holds for eachy ∈R′ by showing that for every positive continuous function
+ψ: R → R,w eh a v e
+(6.10)
+∫
+Vu
+R (y)
+ψdμu
+y = Q±1
+3
+mCy(Vu
+R(y))
+∫
+Vu
+R (y)
+ψdmC
+y,
+where Q3 is a constant that is independent ofψ. To this end, we need to compare
+μ(ξℓ(y)) and
+∫
+ξℓ(y) ψ(z)dμ(z) and then apply (6.9). We see from (6.7) and (6.8)
+that for eachj ∈N, there is a ﬁnite setYj ⊂R such that
+(6.11)
+∫
+ξℓ(y)
+ψd(fn
+∗mC
+x
+)=
+∑
+p∈Yj
+gj(p)
+∫
+Vu
+R (p)
+ψ(z)e±Qu dmC
+p(z).
+Given p ∈ξℓ(y), Theorem 4.10 gives
+∫
+Vu
+R (p)
+ψdmC
+p = Q±1
+2
+∫
+Vu
+R (y)
+ψ(πpyz′)dmC
+y(z′)=( 2Q2)±1
+∫
+Vu
+R (y)
+ψdmC
+y
+whenever p,y are suﬃciently close thatψ(πpyz′)=2 ±1ψ(z′) for all z′ ∈Vu
+R(y).
+Thus for all suﬃciently largeℓ, (6.11) gives
+∫
+ξℓ(y)
+ψd(fn
+∗mC
+x
+)= e±Qu(2Q2)±1
+( ∑
+p∈Yj
+gj(p)
+) ∫
+Vu
+R (y)
+ψdmC
+y.
+Averaging over 0≤j<n k and sendingk →∞ gives
+(6.12)
+∫
+ξℓ(y)
+ψdμ=( 2Q2eQu)±1
+(
+lim
+k→∞
+1
+nk
+nk−1∑
+j=0
+∑
+p∈Yj
+gk(p)
+) ∫
+Vu
+R (y)
+ψdmC
+y.
+When ψ≡1, this gives
+(6.13) μ(ξℓ(y)) = (2Q2eQu)±1
+(
+lim
+k→∞
+1
+nk
+nk−1∑
+j=0
+∑
+p∈Yj
+gk(p)
+)
+mC
+y(Vu
+R(y)).
+
+===== PDF PAGE 37 =====
+EQUILIBRIUM STATES IN DYNAMICAL SYSTEMS 605
+Dividing (6.12) by (6.13), sendingℓ →∞ , and using (6.9) yields
+∫
+Vu
+R (y)
+ψdμu
+y =( 2Q2eQu)±2 1
+mCy(Vu
+R(y))
+∫
+Vu
+R (y)
+ψdmC
+y.
+Since ψ> 0 was arbitrary, this proves (4.14), modulo some minor technical issues
+around the boundary ofVu
+loc(x) that are dealt with in [CPZ18].
+6.3.2. Other properties of limiting measures.Throughout this section,μwill denote
+an arbitraryf-invariant Borel probability measure on Λ that satisﬁes (4.14), so that
+the conditional measuresμu
+y are equivalent to the reference measuresmC
+y.B yt h e
+previous section, this includes every limit point of the sequenceμn.
+We ﬁrst observe that by Theorem 4.10 and (4.14), for every rectangleR with
+μ(R) > 0, μ-a.e. y,z ∈R, and everyA ⊂Vu
+R(z), we have
+(6.14)
+μu
+y(πzyA)= Q±1
+3 mC
+y(πzyA)/mC
+y(R)= Q±1
+3 Q±2
+2 mC
+z(A)/mC
+z(R)=( Q3Q2)±2μu
+z(A).
+In particular, holonomy maps along stable manifolds are absolutely continuous with
+respect to the conditional measuresμu
+y, and thus by the standard Hopf argument
+(Proposition 4.5),μis ergodic.
+Now we prove thatμis fully supported and satisﬁes the Gibbs property. Let
+δ>0 be small enough that for everyx ∈Λ, the rectangle
+R(x,δ): =[Bu
+Λ(x,δ),Bs
+Λ(x,δ)] ={[y,z]: y ∈Bu
+Λ(x,δ),z ∈Bs
+Λ(x,δ)}
+is well deﬁned, as in (3.2). Givenn ∈N, consider the rectangle
+Rn(x,δ): =[Bun(x,δ)∩Λ,Bs
+Λ(x,δ)] ⊂R(x,δ).
+It is shown in [CPZ18, Lemma 8.3] that for everyδ>0, there areδ1,δ2 > 0s u c h
+that
+(6.15) Rn(x,δ1) ⊂Bn(x,δ) ⊂Rn(x,δ2)
+for everyx ∈Λa n dn ∈N; thus to prove the Gibbs property (3.14) it suﬃces to
+establish the corresponding bounds onμ(Rn(x,δ)).
+Lemma 6.8. Given δ>0,t h e r ei sQ5 > 0 such that for everyx,δ,nas above, we
+have
+(6.16) μ(Rn(x,δ)) =Q±1
+5 e−nP(ϕ)+Snϕ(x)μ(R(x,δ)).
+Proof. Writing μu
+y for the conditional measures ofμon unstable leaves inR(z,δ),
+we have
+μ(Rn(x,δ)) =
+∫
+R(x,δ)
+μu
+y(Rn(x,δ))dμ(y)
+= Q±1
+3
+∫
+R(x,δ)
+mC
+y(Rn(x,δ))
+mCy(R(x,δ)) dμ(y)
+=( KQ3)±1
+∫
+R(x,δ)
+mC
+y(πxyBun(x,δ))dμ(y)
+=( KQ3Q2)±1mC
+x(Bun(x,δ))μ(R(x,δ)),
+where the ﬁrst equality uses the deﬁnition of conditional measures, the second
+uses (4.14), the third uses Theorem 4.7, and the fourth uses Theorem 4.10. Since
+
+===== PDF PAGE 38 =====
+606 VAUGHN CLIMENHAGA, YAKOV PESIN, AND AGNIESZKA ZELEROWICZ
+Bu
+n(x,δ) ⊂Bun(x,δ) ⊂Bu
+n(x,2δ), the result follows from theu-Gibbs property of
+mC
+x. □
+Lemma 6.9 ([CPZ18, Lemma 8.4]). For every suﬃciently smallδ> 0,t h e r ei s
+δ′ > 0 such that for everyz ∈Λand x ∈R(z,δ′), we haveR(z,δ′) ⊂R(x,δ).
+Lemma 6.10.If y ∈Λhas a backward orbit that is dense inΛ,t h e nμ(R(y,δ)) > 0
+for all δ>0.
+Proof. Letδ′ > 0beas in Lemma 6.9. Since Λ is compact, thereis aﬁnite setE ⊂Λ
+such that ⋃
+z∈E R(z,δ′)=Λ ,a n dt h u st h e r ei sz ∈E with μ(R(z,δ′)) > 0. Since
+the backward orbit ofy is dense, there isn ≥0 such thatx := f−n(y) ∈R(z,δ′).
+By Lemma 6.9 and our choice ofx,w eh a v e
+μ(R(x,δ)) ≥μ(R(z,δ′)) > 0.
+By Lemma 6.8, we conclude thatμ(Rn(x,δ)) > 0. Moreover, we have
+fnRn(x,δ)= fn[Bu
+n(x,δ)∩Λ,Bs
+Λ(x,δ)] ⊂[Bu
+Λ(y,δ),Bs
+Λ(y,δ)] =R(y,δ),
+where we use the fact that ∥Df|Es∥≤ 1. Since μis f-invariant, this gives
+μ(R(y,δ)) ≥μ(Rn(x,δ)) > 0. □
+Since f is topologically transitive on Λ, every (relatively) open set in Λ contains
+a set of the formR(y,δ)w h e r ey has a dense backward orbit. Thus Lemma 6.10
+implies thatμis fully supported on Λ.
+Finally, we deduce the Gibbs property (3.15) forμas follows. Given δ> 0,
+let δ′ > 0 be as in Lemma 6.9, and once again letE ⊂Λ be a ﬁnite set with⋃
+z∈E R(z,δ′) = Λ. Sinceμis fully supported, we haveη:= minz∈E μ(R(z,δ′)) > 0.
+Now given anyx ∈Λ, we havex ∈R(z,δ′)f o rs o m ez ∈E, and thus Lemma 6.9
+gives
+μ(R(x,δ)) ≥μ(R(z,δ′)) ≥η.
+In particular, η≤μ(R(x,δ)) ≤1 for everyx ∈Λ, and then the Gibbs property
+(3.15) follows immediately from Lemma 6.8 and (6.15).
+6.3.3. Local product structure.To prove Corollary 4.12, we ﬁrst observe that (6.14)
+gives π∗
+ypμu
+p
+∼μu
+y for μ-a.e. p,y ∈R, which is the ﬁrst claim. For the second claim,
+we deﬁne a functionh: R → (0,∞)b yh(z)= dμu
+z
+d(π∗zpμu
+p
+)(z), so that (3.4) gives
+μ(E)=
+∫
+Vs
+R(p)
+∫
+Vu
+R (y)
+1E(z)dμu
+y(z)d˜μp(y)
+=
+∫
+Vs
+R(p)
+∫
+Vu
+R (y)
+1E(z)h(z)d(π∗
+zpμu
+p
+)(z)d˜μp(y)(6.17)
+=
+∫
+E
+h(z)d(μu
+p ⊗˜μp)(z)
+for every measurableE ⊂R. For the third claim, we observe that (6.17) gives
+μ(E)=
+∫
+E
+h(z)d(μu
+p ⊗˜μp)(z)=
+∫
+Vu
+R (p)
+∫
+Vs
+R(y)
+1E(z)h(z)d(π∗
+yp˜μp)(z)dμu
+p(y),
+and sinceμs
+y is uniquely determined up to a scalar (forμ-a.e. y) by the condition
+that
+μ(E)=
+∫
+Vu
+R (p)
+∫
+Vs
+R(y)
+1E(z)dμs
+y(z)dν(y)
+for some measureνon Vu
+R(p), we conclude thatdμs
+y = hd(π∗
+yp˜μp).
+
+===== PDF PAGE 39 =====
+EQUILIBRIUM STATES IN DYNAMICAL SYSTEMS 607
+6.4. Proof of Theorem 4.1.We have that for any Borel subsetE ⊂Y
+(6.18) μ(E)=
+∫
+˜Y
+∫
+W
+1E(z)dμξ
+W(z)d˜μ(W).
+Without loss of generality we may assume thatμξ
+W is normalized, so thatμξ
+W(W)=
+1. Consider the setB of all Birkhoﬀ generic pointsx ∈X, for which
+(6.19) lim
+n→∞
+1
+n
+n−1∑
+k=0
+h(fk(x)) =
+∫
+X
+hdμ
+for every continuous functionh on X.S i n c eμis ergodic, we have thatB has full
+measure inY. By (6.18), there is a setD ⊂˜Y such that ˜μ(˜Y \D) = 0, and for every
+W ∈D we haveμξ
+W(W \B)=0 .G i v e na n ys u c hW and any measureν≪ μξ
+W,
+we haveν(X\B) = 0. Then Theorem 4.1 is a consequence of the following general
+result.
+Proposition 6.11.LetX be a compact metric space, letf: X → X be a continuous
+map, and letμbe anf-invariant Borel probability measure onX.L e tB be the set
+of Birkhoﬀ generic points forμ,a n dl e tνbe any probability measure onX such
+that ν(B)=1 . Then the sequence of measuresνn := 1
+n
+∑n−1
+k=0 fk
+∗νconverges in the
+weak* topology to the measureμ.
+Before proving Proposition 6.11, we note thatμis not required to be ergodic. In
+t h ec a s ew h e nμis ergodic, Birkhoﬀ’s theorem givesμ(B) = 1, so that in particular
+B is nonempty. For nonergodicμ,t h es e tB can be either empty or nonempty.
+Proof of Proposition6.11. Let κbe a weak* limit point of the sequenceνn,s ot h a t
+there is a subsequence{nℓ}ℓ∈N such that for every continuous functionh on X,w e
+have
+(6.20)
+∫
+X
+hdκ= lim
+ℓ→∞
+∫
+X
+hdνnℓ = lim
+ℓ→∞
+∫ 1
+nℓ
+nℓ−1∑
+k=0
+h◦fkdν.
+We show thatκ≤μ, which implies thatκ= μsince both are probability measures.
+It suﬃces to show that
+∫
+hdκ≤
+∫
+hdμfor every nonnegative continuous function
+h.
+Fix h as above. GivenN ∈N and ε>0, let
+BN(ε): =
+{
+x ∈B :
+⏐⏐⏐1
+nSnh(x)−
+∫
+hdμ
+⏐⏐⏐ <εfor alln ≥N
+}
+.
+Then for every ε> 0w eh a v e⋃
+N∈N BN(ε)= B, hence there is Nε such that
+ν(B \BN(ε)) <ε. By (6.20) we can choosenℓ >N εsuch that
+∫
+X
+hdκ≤ε+
+∫ 1
+nℓ
+Snℓhdν= ε+
+∫
+BN(ε)
+1
+nℓ
+Snℓhdν+
+∫
+B\BN(ε)
+1
+nℓ
+Snℓhdν
+≤2ε+
+∫
+hdμ+ν(B \BN(ε))∥h∥ <ε(2+ ∥h∥)+
+∫
+hdμ.
+Since ε>0 was arbitrary, this completes the proof of the proposition. □
+
+===== PDF PAGE 40 =====
+608 VAUGHN CLIMENHAGA, YAKOV PESIN, AND AGNIESZKA ZELEROWICZ
+About the authors
+Vaughn Climenhaga is associate professor of mathematics at University of Hous-
+ton.
+Yakov Pesin is Distinguished Professor of Mathematics at Pennsylvania State
+University and is director of the Anatole Katok Center for Dynamical System and
+Geometry at Penn State.
+Agnieszka Zelerowica is a PhD candidate in mathematics at Penn State.
+The authors’ research interests include dynamical systems, ergodic theory, ther-
+modynamic formalism, and dimension theory.
+Acknowledgments
+This work had its genesis in workshops at ICERM (Brown University) and ESI
+(Vienna) in March and April 2016, respectively. We are grateful to both institutions
+for their hospitality and for creating a productive scientiﬁc environment.
+References
+[BM77] R. Bowen and B. Marcus, Unique ergodicity for horocycle foliations, Israel J. Math.26
+(1977), no. 1, 43–67, DOI 10.1007/BF03007655. MR0451307
+[Bow70] R. Bowen, Markov partitions for AxiomA diﬀeomorphisms,A m e r .J .M a t h .92 (1970),
+725–747, DOI 10.2307/2373370. MR0277003
+[Bow73] R. Bowen, Topological entropy for noncompact sets, Trans. Amer. Math. Soc. 184
+(1973), 125–136, DOI 10.2307/1996403. MR0338317
+[Bow75] R. Bowen, Some systems with unique equilibrium states, Math. Systems Theory 8
+(1974/75), no. 3, 193–202, DOI 10.1007/BF01762666. MR0399413
+[Bow75a] R. Bowen, Equilibrium states and the ergodic theory of Anosov diﬀeomorphisms,
+Lecture Notes in Mathematics, Vol. 470, Springer-Verlag, Berlin-New York, 1975.
+MR0442989
+[Bow75b] R. Bowen,A horseshoe with positive measure, Invent. Math.29 (1975), no. 3, 203–204,
+DOI 10.1007/BF01389849. MR0380890
+[BP07] L. Barreira and Y. Pesin, Nonuniform hyperbolicity, Encyclopedia of Mathematics and
+its Applications, vol. 115, Cambridge University Press, Cambridge, 2007. Dynamics of
+systems with nonzero Lyapunov exponents. MR2348606
+[BP13] L. Barreira and Y. Pesin, Introduction to smooth ergodic theory, Graduate Stud-
+ies in Mathematics, vol. 148, American Mathematical Society, Providence, RI, 2013.
+MR3076414
+[CD09] N. Chernov and D. Dolgopyat, Brownian Brownian motion. I,M e m .A m e r .M a t h .S o c .
+198 (2009), no. 927, viii+193, DOI 10.1090/memo/0927. MR2499824
+[CDP16] V. Climenhaga, D. Dolgopyat, and Y. Pesin,Non-stationary non-uniform hyperbolicity:
+SRB measures for dissipative maps, Comm. Math. Phys.346 (2016), no. 2, 553–602,
+DOI 10.1007/s00220-016-2710-z. MR3535895
+[CHT16] Y. Coud`ene, B. Hasselblatt, and S. Troubetzkoy, Multiple mixing from weak hy-
+perbolicity by the Hopf argument,S t o c h .D y n .16 (2016), no. 2, 1660003, 15, DOI
+10.1142/S0219493716600030. MR3470552
+[Cli11] V. Climenhaga, Bowen’s equation in the non-uniform setting, Ergodic Theory Dynam.
+Systems 31 (2011), no. 4, 1163–1182, DOI 10.1017/S0143385710000362. MR2818690
+[CP17] V. Climenhaga and Y. Pesin, Building thermodynamics for non-uniformly hyper-
+bolic maps, Arnold Math. J. 3 (2017), no. 1, 37–82, DOI 10.1007/s40598-016-0052-8.
+MR3646530
+[CPZ18] V. Climenhaga, Ya. Pesin, and A. Zelerowicz,Equilibrium measures for some partially
+hyperbolic systems, arXiv:1810.08663v1 (2018).
+[DS17] T. Das and D. Simmons, The Hausdorﬀ and dynamical dimensions of self-aﬃne
+sponges: a dimension gap result , Invent. Math. 210 (2017), no. 1, 85–134, DOI
+10.1007/s00222-017-0725-5. MR3698340
+
+===== PDF PAGE 41 =====
+EQUILIBRIUM STATES IN DYNAMICAL SYSTEMS 609
+[ER85] J.-P. Eckmann and D. Ruelle, Ergodic theory of chaos and strange attractors,R e v .
+Modern Phys.57 (1985), no. 3, 617–656, DOI 10.1103/RevModPhys.57.617. MR800052
+[EW11] M. Einsiedler and T. Ward, Ergodic theory with a view towards number theory,G r a d -
+uate Texts in Mathematics, vol. 259, Springer-Verlag London, Ltd., London, 2011.
+MR2723325
+[Fed69] H. Federer, Geometric measure theory, Die Grundlehren der mathematischen Wis-
+senschaften, Band 153, Springer-Verlag New York Inc., New York, 1969. MR0257325
+[Ham89] U.Hamenst¨adt,A new description of the Bowen-Margulis measure,Ergodic Theory Dy-
+nam. Systems 9 (1989), no. 3, 455–464, DOI 10.1017/S0143385700005095. MR1016663
+[Has89] B. Hasselblatt, A new construction of the Margulis measure for Anosov ﬂows,E r g o d i c
+Theory Dynam. Systems 9 (1989), no. 3, 465–468, DOI 10.1017/S0143385700005101.
+MR1016664
+[Hay94] N. T. A. Haydn, Canonical product structure of equilibrium states, Random Comput.
+Dynam. 2 (1994), no. 1, 79–96. MR1265227
+[Hop39] E. Hopf, Statistik der geod¨atischen Linien in Mannigfaltigkeiten negativer Kr¨ummung
+(German), Ber. Verh. S¨achs. Akad. Wiss. Leipzig91 (1939), 261–304. MR0001464
+[Kai90] V. A. Kaimanovich, Invariant measures of the geodesic ﬂow and measures at inﬁnity on
+negatively curved manifolds (English, with French summary), Ann. Inst. H. Poincar´e
+Phys. Th´eor. 53 (1990), no. 4, 361–393. Hyperbolic behaviour of dynamical systems
+(Paris, 1990). MR1096098
+[Kai91] V. A. Kaimanovich, Bowen-Margulis and Patterson measures on negatively curved
+compact manifolds, Dynamical systems and related topics (Nagoya, 1990), Adv. Ser.
+Dynam. Systems, vol. 9, World Sci. Publ., River Edge, NJ, 1991, pp. 223–232, DOI
+10.1080/02681119408806180. MR1164891
+[Kat80] A. Katok, Lyapunov exponents, entropy and periodic orbits for diﬀeomorphisms,I n s t .
+Hautes ´Etudes Sci. Publ. Math.51 (1980), 137–173. MR573822
+[Kat07] A. Katok, Fifty years of entropy in dynamics: 1958–2007,J .M o d .D y n .1 (2007), no. 4,
+545–596, DOI 10.3934/jmd.2007.1.545. MR2342699
+[KH95] A. Katok and B. Hasselblatt, Introduction to the modern theory of dynamical systems,
+Encyclopedia of Mathematics and its Applications, vol. 54, Cambridge University Press,
+Cambridge, 1995. With a supplementary chapter by Katok and Leonardo Mendoza.
+MR1326374
+[Led84] F. Ledrappier, Propri´et´es ergodiques des mesures de Sina¨ı(French), Inst. Hautes´Etudes
+Sci. Publ. Math.59 (1984), 163–188. MR743818
+[Lep00] R. Leplaideur, Local product structure for equilibrium states, Trans. Amer. Math. Soc.
+352 (2000), no. 4, 1889–1912, DOI 10.1090/S0002-9947-99-02479-4. MR1661262
+[LS82] F. Ledrappier and J.-M. Strelcyn, A proof of the estimation from below in Pesin’s
+entropy formula, Ergodic Theory Dynam. Systems 2
+(1982), no. 2, 203–219 (1983),
+DOI 10.1017/S0143385700001528. MR693976
+[Ma˜n87] R. Ma˜n´e, Ergodic theory and diﬀerentiable dynamics, Ergebnisse der Mathematik und
+ihrer Grenzgebiete (3) [Results in Mathematics and Related Areas (3)], vol. 8, Springer-
+Verlag, Berlin, 1987. Translated from the Portuguese by Silvio Levy. MR889254
+[Mar70] G. A. Margulis, Certain measures that are connected with U-ﬂows on compact manifolds
+(Russian), Funkcional. Anal. i Priloˇzen. 4 (1970), no. 1, 62–76. MR0272984
+[Pat76] S. J. Patterson, The limit set of a Fuchsian group,A c t aM a t h .136 (1976), no. 3-4,
+241–273, DOI 10.1007/BF02392046. MR0450547
+[PC09] Y. Pesin and V. Climenhaga, Lectures on fractal geometry and dynamical systems,
+Student Mathematical Library, vol. 52, American Mathematical Society, Providence,
+RI, 2009. MR2560337
+[ P e s 7 7 ] J a .B .P e s i n ,Characteristic Ljapunov exponents, and smooth ergodic theory(Russian),
+Uspehi Mat. Nauk32 (1977), no. 4 (196), 55–112, 287. MR0466791
+[Pes88] Ya. B. Pesin, Dimension-like characteristics f or invariant sets of dynamical sys-
+tems (Russian), Uspekhi Mat. Nauk 43 (1988), no. 4(262), 95–128, 255, DOI
+10.1070/RM1988v043n04ABEH001892; English transl., Russian Math. Surveys 43
+(1988), no. 4, 111–151. MR969568
+[Pes97] Y. B. Pesin, Dimension theory in dynamical systems, Chicago Lectures in Mathematics,
+University of Chicago Press, Chicago, IL, 1997. Contemporary views and applications.
+MR1489237
+
+===== PDF PAGE 42 =====
+610 VAUGHN CLIMENHAGA, YAKOV PESIN, AND AGNIESZKA ZELEROWICZ
+[ P P 8 4 ] Y a .B .P e s i na n dB .S .P i t s k e l′, Topological pressure and the variational principle for
+noncompact sets(Russian, with English summary),Funktsional. Anal. i Prilozhen.18
+(1984), no. 4, 50–63, 96. MR775933
+[PPS15] F. Paulin, M. Pollicott, and B. Schapira, Equilibrium states in negative curvature
+(English, with English and French summaries), Ast´ erisque 373 (2015), viii+281.
+MR3444431
+[PS82] Ya. B. Pesin and Ya. G. Sina˘ ı,Gibbs measures for partially hyperbolic attrac-
+tors, Ergodic Theory Dynam. Systems 2 (1982), no. 3-4, 417–438 (1983), DOI
+10.1017/S014338570000170X. MR721733
+[Roh52] V. A. Rohlin, On the fundamental ideas of measure theory,A m e r .M a t h .S o c .T r a n s l a -
+tion 1952 (1952), no. 71, 55. MR0047744
+[RS75] D. Ruelle and D. Sullivan, Currents, ﬂows and diﬀeomorphisms, Topology 14 (1975),
+no. 4, 319–327, DOI 10.1016/0040-9383(75)90016-6. MR0415679
+[Rue76] D. Ruelle, A measure associated with axiom-A attractors,A m e r .J .M a t h .98 (1976),
+no. 3, 619–654, DOI 10.2307/2373810. MR0415683
+[Rue78a] D. Ruelle, An inequality for the entropy of diﬀerentiable maps,B o l .S o c .B r a s i l .M a t .
+9 (1978), no. 1, 83–87, DOI 10.1007/BF02584795. MR516310
+[Rue78b] D. Ruelle, Thermodynamic formalism, Encyclopedia of Mathematics and its Applica-
+tions, vol. 5, Addison-Wesley Publishing Co., Reading, Mass., 1978. The mathematical
+structures of classical equilibrium statistical mechanics; With a foreword by Giovanni
+Gallavotti and Gian-Carlo Rota. MR511655
+[Sar15] O. M. Sarig, Thermodynamic formalism for countable Markov shifts , Hyperbolic
+dynamics, ﬂuctuations and large deviations, Proc. Sympos. Pure Math., vol. 89,
+Amer. Math. Soc., Providence, RI, 2015, pp. 81–117, DOI 10.1090/pspum/089/01485.
+MR3309096
+[Sin68] Ja. G. Sina˘ı,Markov partitions and U-diﬀeomorphisms(Russian), Funkcional. Anal. i
+Priloˇzen 2 (1968), no. 1, 64–89. MR0233038
+[Sin72] Ja. G. Sina˘ı,Gibbs measures in ergodic theory(Russian), Uspehi Mat. Nauk27 (1972),
+no. 4(166), 21–64. MR0399421
+[Sma67] S. Smale, Diﬀerentiable dynamical systems, Bull. Amer. Math. Soc.73 (1967), 747–817,
+DOI 10.1090/S0002-9904-1967-11798-1. MR0228014
+[Sma98] S. Smale, Finding a horseshoe on the beaches of Rio, Math. Intelligencer 20 (1998),
+no. 1, 39–44, DOI 10.1007/BF03024399. MR1601831
+[Sul79] D. Sullivan, The density at inﬁnity of a discrete group of hyperbolic motions,I n s t .
+Hautes ´Etudes Sci. Publ. Math.50 (1979), 171–202. MR556586
+[Via97] Marcelo Viana, Stochastic dynamics of deterministic systems, Lecture notes XXI Braz.
+Math. Colloq., IMPA, Rio de Janeiro, 1997.
+[Wal82] P. Walters, An introduction to ergodic theory, Graduate Texts in Mathematics, vol. 79,
+Springer-Verlag, New York-Berlin, 1982. MR648108
+[Wil67] R. F. Williams, One-dimensional non-wandering sets, Topology
+6 (1967), 473–487,DOI
+10.1016/0040-9383(67)90005-5. MR0217808
+Department of Mathematics, University of Houston, Houston, Texas 77204
+Email address: climenha@math.uh.edu
+URL: https://www.math.uh.edu/~climenha/
+Department of Mathematics, Pennsylvania State University, University Park, Penn-
+sylvania 16802
+Email address: pesin@math.psu.edu
+URL: http://www.math.psu.edu/pesin/
+Department of Mathematics, Pennsylvania State University, University Park, Penn-
+sylvania 16802
+Email address: axz157@psu.edu

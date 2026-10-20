@@ -36,11 +36,18 @@ flowchart TD
       MP["69–70 周期恢复反例与局部方程"]
       MA["71–100 闭一形式与真实动力学（见下图）"]
       BACK["101 未完成提醒；一阶变形方向备用"]
-      NOW["102 回退：固定模型的全局参数与连通分支（规划）"]
+      NOW["102 全局参数与连通分支（规划暂存）"]
+      BASIC["103 再退回固定 J₀ 的辛形式切片（已有结果整理）"]
+      MC -. "撤去保辛，另选类型问题" .-> SWITCH["107 换路：不保辛八维底群类型"]
+      SWITCH --> NOSYMP["108–109 h 排除；不保辛模型底群仅两种类型（闭合）"]
+      NOSYMP --> SE["……"]
       MC --> MD --> MP
       MP -. "换用真实闭一形式" .-> MA
-      MA --> BACK --> NOW --> ME["……"]
+      MA --> BACK --> NOW --> BASIC --> ME["……"]
     end
+    TURN -. "原规划 A3；104 重新选择" .-> TOR["104 环面拓扑与周期切导数（规划）"]
+    TOR --> SCALAR["105–106 周期行列式诊断与紧致实反检验；标量入口暂停"]
+    SCALAR --> TE["……"]
     TURN --> K0
     TURN -. "后来返回模型分类" .-> MC
     classDef research fill:#eaf2ff,stroke:#4776ad,color:#182c46;
@@ -48,9 +55,9 @@ flowchart TD
     classDef open fill:#fff1da,stroke:#b17b28,color:#503609;
     classDef plan fill:#f0f0f0,stroke:#888,color:#333;
     class S,R,R2,K0,KT,KG,KN,KM,MD,MA research;
-    class MC closed;
-    class RG,STOP,MP open;
-    class TURN,BACK,NOW,KE,ME plan;
+    class MC,NOSYMP closed;
+    class RG,STOP,MP,SCALAR open;
+    class TURN,BACK,NOW,BASIC,TOR,TE,SWITCH,SE,KE,ME plan;
 ```
 
 ## 模型化路线的后半段
@@ -110,5 +117,15 @@ flowchart TD
 | 单张快形式与 Dolbeault 障碍 | [98](notes/98_single_fast_form_flux_and_exact_flow_normal_form.md) · [99](notes/99_single_fast_form_proper_holomorphic_reduction.md) · [100](notes/100_single_fast_form_forces_a_fast_Dolbeault_torsor_class.md) |
 | 未完成提醒与备用方向 | [101](notes/101_unfinished_one_form_branch_and_retreat_to_the_reduction_family.md) |
 | 进一步回退：全局模型参数 | [102](notes/102_larger_retreat_to_global_fixed_model_parameter_components.md) |
+
+| 再退回固定复结构的形式切片 | [103](notes/103_retreat_to_the_fixed_complex_structure_symplectic_slice.md) |
+
+| 返回未系统展开的 A3 环面拓扑方向 | [104](notes/104_return_to_unexplored_toral_topology_route_A3.md) |
+
+| A3 首轮检验：标量障碍与方法边界 | [105](notes/105_toral_periodic_Jacobian_is_exactly_the_SRB_entropy_obstruction.md) · [106](notes/106_compact_analytic_toral_countertest_to_scalar_periodic_rigidity.md) |
+
+| 换路比较与不保辛八维模型候选 | [107](notes/107_alternative_routes_after_the_scalar_toral_stop.md) |
+
+| 不保辛八维模型：h 排除与类型分类闭合 | [108](notes/108_tensor_bracket_center_lemma_excludes_h_without_symplecticity.md) · [109](notes/109_eight_dimensional_holomorphic_nil_model_types_without_symplecticity.md) |
 
 本图只作导航，没有新增数学结论，也没有展开各分支的下一步任务。

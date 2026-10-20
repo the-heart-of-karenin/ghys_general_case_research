@@ -1156,5 +1156,65 @@
     "pages": 3,
     "sha256": "04b24590e8c56e1a05c0cb520843e8160447ebb560d9ca2394b0682d83ed489c",
     "collected_utc": "2026-10-19T12:18:33.090861+00:00"
+  },
+  {
+    "filename": "77_Climenhaga_Pesin_Zelerowicz_Equilibrium_states_geometric.pdf",
+    "title": "Equilibrium states in dynamical systems via geometric measure theory",
+    "authors": [
+      "Vaughn Climenhaga",
+      "Yakov Pesin",
+      "Agnieszka Zelerowicz"
+    ],
+    "download_url": "https://www.yakovpesin.com/papers/CPZ-Bulletin.pdf",
+    "landing_url": "https://doi.org/10.1090/bull/1659",
+    "publication_note": "Bulletin of the American Mathematical Society 56 (2019), 569–610; electronically published 10 December 2018; author-hosted journal PDF.",
+    "resolved_url": "https://www.yakovpesin.com/papers/CPZ-Bulletin.pdf",
+    "download_status": "downloaded",
+    "bytes": 938077,
+    "sha256": "2717087314e2f42369bff448ed1f879530fe4453a7bbee349a172f0926cab72d",
+    "pages": 42,
+    "collected_utc": "2026-10-20T09:12:26.766477+00:00",
+    "verified_full_pdf_pages": [
+      12,
+      13,
+      16,
+      23,
+      24
+    ],
+    "visual_status": "All listed full rendered pages visually inspected.",
+    "preview_paths": [
+      "literature/Toral_scalar_source_previews/77_page_12.png",
+      "literature/Toral_scalar_source_previews/77_page_13.png",
+      "literature/Toral_scalar_source_previews/77_page_16.png",
+      "literature/Toral_scalar_source_previews/77_page_23.png",
+      "literature/Toral_scalar_source_previews/77_page_24.png"
+    ],
+    "proof_role": "Classical SRB/geometric potential, Gibbs bounds, specification; not claimed new."
+  },
+  {
+    "filename": "78_DeWitt_2025_Periodic_data_rigidity_Jordan_blocks.pdf",
+    "title": "Periodic data rigidity of Anosov automorphisms with Jordan blocks",
+    "authors": [
+      "Jonathan DeWitt"
+    ],
+    "download_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/64DC5DC8F02F1A05551681E662B637C6/S0143385724000567a.pdf/periodic-data-rigidity-of-anosov-automorphisms-with-jordan-blocks.pdf",
+    "landing_url": "https://doi.org/10.1017/etds.2024.56",
+    "publication_note": "Ergodic Theory and Dynamical Systems 45 (2025), 1129–1160; accepted 7 August 2024; journal PDF.",
+    "resolved_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/64DC5DC8F02F1A05551681E662B637C6/S0143385724000567a.pdf/periodic-data-rigidity-of-anosov-automorphisms-with-jordan-blocks.pdf",
+    "download_status": "downloaded",
+    "bytes": 379928,
+    "sha256": "25704ec3b47e07f12d96b2b6d9a747904005f6cbba67cbc173809def04dbfde0",
+    "pages": 32,
+    "collected_utc": "2026-10-20T09:12:35.675005+00:00",
+    "verified_full_pdf_pages": [
+      2,
+      3
+    ],
+    "visual_status": "All listed full rendered pages visually inspected.",
+    "preview_paths": [
+      "literature/Toral_scalar_source_previews/78_page_2.png",
+      "literature/Toral_scalar_source_previews/78_page_3.png"
+    ],
+    "proof_role": "Comparison and novelty boundary for Jordan/periodic data; not used as a black-box proof of the explicit example."
   }
 ]
